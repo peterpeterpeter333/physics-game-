@@ -3,18 +3,20 @@ import type { Chapter, Problem } from "../types";
 import { MathText } from "./MathText";
 
 export function ReviewView({
-  chapter,
+  chapters,
   starred,
   onToggleStar,
 }: {
-  chapter: Chapter;
+  chapters: Chapter[];
   starred: string[];
   onToggleStar: (problemId: string) => void;
 }) {
   const problems: { problem: Problem; stageTitle: string }[] = [];
-  for (const stage of chapter.stages) {
-    for (const p of stage.problems) {
-      if (starred.includes(p.id)) problems.push({ problem: p, stageTitle: stage.title });
+  for (const chapter of chapters) {
+    for (const stage of chapter.stages) {
+      for (const p of stage.problems) {
+        if (starred.includes(p.id)) problems.push({ problem: p, stageTitle: stage.title });
+      }
     }
   }
 

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { mechanics1 } from "./content/mechanics";
+import { chapters } from "./content";
 import { formulas } from "./content/formulas";
 import type { Stage } from "./types";
 import {
@@ -23,12 +23,12 @@ type View =
   | { type: "review" }
   | { type: "settings" };
 
-const chapter = mechanics1;
-
 function findStage(stageId: string): Stage {
-  const s = chapter.stages.find((s) => s.id === stageId);
-  if (!s) throw new Error(`unknown stage: ${stageId}`);
-  return s;
+  for (const c of chapters) {
+    const s = c.stages.find((s) => s.id === stageId);
+    if (s) return s;
+  }
+  throw new Error(`unknown stage: ${stageId}`);
 }
 
 export default function App() {
@@ -60,7 +60,7 @@ export default function App() {
       <div className="app-inner">
         {view.type === "map" && (
           <QuestMap
-            chapter={chapter}
+            chapters={chapters}
             progress={progress}
             onOpenLesson={(id) => setView({ type: "lesson", stageId: id })}
             onOpenBattle={(id) => setView({ type: "battle", stageId: id })}
@@ -127,7 +127,7 @@ export default function App() {
         )}
         {view.type === "review" && (
           <ReviewView
-            chapter={chapter}
+            chapters={chapters}
             starred={progress.starred}
             onToggleStar={(pid) =>
               update((p) => ({

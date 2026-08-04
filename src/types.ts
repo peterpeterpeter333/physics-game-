@@ -54,6 +54,8 @@ export type Formula = {
   name: string;
   tex: string;
   meaning: string;
+  /** 分野名 (公式集のグループ表示に使う) */
+  category: string;
   /** 導出があるレッスンのステージID */
   stageId?: string;
 };

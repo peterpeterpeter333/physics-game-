@@ -835,5 +835,73 @@ p { line-height: 1.85; }
   border-top: 1px solid var(--card-border);
 }
 
+/* ---------- 分野アコーディオン ---------- */
+
+.chapter-list { display: flex; flex-direction: column; gap: 12px; }
+.chapter-block.complete .chapter-toggle { border-color: rgba(255, 209, 102, 0.5); }
+
+.chapter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid var(--card-border);
+  background: linear-gradient(135deg, rgba(78, 225, 255, 0.1), rgba(200, 107, 255, 0.1));
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  color: var(--text);
+  font-family: inherit;
+  margin-bottom: 0;
+  transition: border-color 0.2s;
+}
+.chapter-toggle:active { transform: scale(0.99); }
+.chapter-icon {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+.chapter-toggle-info { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.chapter-toggle-title { font-size: 17px; font-weight: 900; }
+.chapter-toggle-sub { font-size: 12px; color: var(--text-dim); }
+.chapter-progress { display: flex; align-items: center; gap: 8px; margin-top: 3px; }
+.chapter-progress-bar {
+  flex: 1;
+  height: 7px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+  overflow: hidden;
+  display: block;
+}
+.chapter-progress-fill {
+  display: block;
+  height: 100%;
+  background: var(--grad-main);
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+.chapter-progress-label { font-size: 11px; color: var(--text-dim); }
+.chapter-chevron {
+  font-size: 16px;
+  color: var(--text-dim);
+  transition: transform 0.25s;
+}
+.chapter-chevron.open { transform: rotate(180deg); }
+
+.chapter-block .stage-path { padding: 14px 4px 4px; }
+
+.formula-category-title {
+  margin: 22px 0 0;
+  font-size: 15px;
+  color: var(--cyan);
+  letter-spacing: 0.08em;
+}
+
 /* KaTeX 微調整 */
 .katex { font-size: 1.06em; }
