@@ -1,0 +1,80 @@
+import {
+  XtSlope,
+  StrobeAccel,
+  VtArea,
+  FreeFall,
+  NewtonCarts,
+  EnergySlide,
+  Projectile,
+  Collision,
+  Circular,
+  Spring,
+} from "./mechanics";
+import {
+  HeatFlow,
+  GasBox,
+  WaveTravel,
+  Beats,
+  Refraction,
+  Doppler,
+  Interference,
+  Circuit,
+  Induction,
+  Coulomb,
+  Capacitor,
+  Photoelectric,
+  HalfLife,
+  Bohr,
+} from "./fields";
+
+const REGISTRY: Record<string, () => JSX.Element> = {
+  "xt-slope": XtSlope,
+  "strobe-accel": StrobeAccel,
+  "vt-area": VtArea,
+  freefall: FreeFall,
+  newton: NewtonCarts,
+  "energy-slide": EnergySlide,
+  projectile: Projectile,
+  collision: Collision,
+  circular: Circular,
+  spring: Spring,
+  "heat-flow": HeatFlow,
+  "gas-box": GasBox,
+  "wave-travel": WaveTravel,
+  beats: Beats,
+  refraction: Refraction,
+  doppler: Doppler,
+  interference: Interference,
+  circuit: Circuit,
+  induction: Induction,
+  coulomb: Coulomb,
+  capacitor: Capacitor,
+  photoelectric: Photoelectric,
+  halflife: HalfLife,
+  bohr: Bohr,
+};
+
+export function Figure({ id }: { id: string }) {
+  const Comp = REGISTRY[id];
+  if (!Comp) return null;
+  return (
+    <div className="fig-wrap">
+      <Comp />
+    </div>
+  );
+}
+
+/** 開発用: 全図解の一覧 (URLに #figs を付けると表示) */
+export function FigureGallery() {
+  return (
+    <div className="screen">
+      <h1>図解ギャラリー (dev)</h1>
+      {Object.keys(REGISTRY).map((id) => (
+        <div key={id} style={{ marginBottom: 20 }}>
+          <div style={{ color: "#9aa3c7", fontSize: 12, marginBottom: 4 }}>{id}</div>
+          <Figure id={id} />
+        </div>
+      ))}
+    </div>
+  );
+}

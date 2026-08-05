@@ -903,5 +903,23 @@ p { line-height: 1.85; }
   letter-spacing: 0.08em;
 }
 
+/* ---------- 図解 ---------- */
+
+.fig-wrap { margin-top: 14px; }
+.fig {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+}
+.fig-slider {
+  width: 100%;
+  margin-top: 10px;
+  accent-color: var(--cyan);
+  height: 22px;
+}
+
 /* KaTeX 微調整 */
 .katex { font-size: 1.06em; }

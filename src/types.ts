@@ -3,6 +3,8 @@
 export type LessonStep = {
   heading: string;
   body: string;
+  /** アニメーション図解のID (src/components/figures 参照) */
+  figure?: string;
   /** 強調表示する公式 (KaTeX、$は不要) */
   formula?: string;
   /** 公式の意味の一言メモ */

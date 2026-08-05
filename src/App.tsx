@@ -14,6 +14,7 @@ import { FormulaBook } from "./components/FormulaBook";
 import { ReviewView } from "./components/ReviewView";
 import { SettingsView } from "./components/SettingsView";
 import { AIChat } from "./components/AIChat";
+import { FigureGallery } from "./components/figures";
 
 type View =
   | { type: "map" }
@@ -33,6 +34,7 @@ function findStage(stageId: string): Stage {
 
 export default function App() {
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
+  const isGallery = typeof window !== "undefined" && window.location.hash === "#figs";
   const [view, setView] = useState<View>({ type: "map" });
   const [chatOpen, setChatOpen] = useState(false);
 
@@ -54,6 +56,16 @@ export default function App() {
     if (view.type === "formulas") return "公式集を閲覧中。";
     return "クエストマップ(単元選択画面)を閲覧中。";
   }, [view]);
+
+  if (isGallery) {
+    return (
+      <div className="app">
+        <div className="app-inner">
+          <FigureGallery />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="app">

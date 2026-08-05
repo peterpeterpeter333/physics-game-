@@ -238,4 +238,28 @@ export const formulas: Formula[] = [
     category: "原子",
     stageId: "a-nucleus",
   },
+  // ---------- 追加分: 力学(発展) ----------
+  { id: "f-momentum", name: "運動量", tex: "p = mv", meaning: "質量つきの勢い。向きを持つベクトル量。", category: "力学", stageId: "m-momentum" },
+  { id: "f-impulse", name: "力積と運動量の変化", tex: "F\\Delta t = \\Delta p", meaning: "力×時間のぶんだけ運動量が変わる。時間を稼げば力は小さい(エアバッグ)。", category: "力学", stageId: "m-momentum" },
+  { id: "f-p-conserve", name: "運動量保存則", tex: "m_1v_1 + m_2v_2 = \\text{一定}", meaning: "外力がなければ合計の運動量は不変。衝突・分裂はまずこれ。", category: "力学", stageId: "m-momentum" },
+  { id: "f-centripetal-a", name: "向心加速度", tex: "a = \\dfrac{v^2}{r}", meaning: "円運動の加速度。向きは常に中心向き。", category: "力学", stageId: "m-circular" },
+  { id: "f-centripetal-f", name: "向心力", tex: "F = \\dfrac{mv^2}{r}", meaning: "円運動を保つのに必要な中心向きの力。", category: "力学", stageId: "m-circular" },
+  { id: "f-gravity", name: "万有引力の法則", tex: "F = G\\dfrac{Mm}{r^2}", meaning: "すべての物体は引き合う。距離の2乗に反比例。月を回す力=リンゴを落とす力。", category: "力学", stageId: "m-circular" },
+  { id: "f-hooke", name: "復元力(フックの法則)", tex: "F = -kx", meaning: "ずれに比例して引き戻す力。これがあると単振動が生まれる。", category: "力学", stageId: "m-shm" },
+  { id: "f-shm-spring", name: "ばね振り子の周期", tex: "T = 2\\pi\\sqrt{\\dfrac{m}{k}}", meaning: "重いほどゆっくり、硬いほど速い。振幅にはよらない。", category: "力学", stageId: "m-shm" },
+  { id: "f-pendulum", name: "単振り子の周期", tex: "T = 2\\pi\\sqrt{\\dfrac{l}{g}}", meaning: "長さとgだけで決まる(等時性)。質量・振幅は無関係。", category: "力学", stageId: "m-shm" },
+  // ---------- 追加分: 熱力学(発展) ----------
+  { id: "f-ideal-gas", name: "理想気体の状態方程式", tex: "PV = nRT", meaning: "気体の法則の完成形。ボイル・シャルルの「一定」の正体は nR。", category: "熱力学", stageId: "t-ideal" },
+  { id: "f-internal-u", name: "内部エネルギー(単原子)", tex: "U = \\tfrac{3}{2}nRT", meaning: "分子の運動エネルギーの合計。絶対温度に比例。", category: "熱力学", stageId: "t-ideal" },
+  // ---------- 追加分: 波動(発展) ----------
+  { id: "f-doppler", name: "ドップラー効果(音源接近)", tex: "f' = f\\,\\dfrac{V}{V - v_s}", meaning: "前方は波面が詰まって高い音に。「詰まるから高い」を式にしただけ。", category: "波動", stageId: "w-doppler" },
+  { id: "f-interference", name: "干渉条件", tex: "\\text{強: } m\\lambda, \\quad \\text{弱: } (m+\\tfrac{1}{2})\\lambda", meaning: "経路差が波長の整数倍なら強め合い、半端なら打ち消し合い。", category: "波動", stageId: "w-interference" },
+  // ---------- 追加分: 電磁気(発展) ----------
+  { id: "f-coulomb-law", name: "クーロンの法則", tex: "F = k\\dfrac{q_1q_2}{r^2}", meaning: "電気版・万有引力。同符号は反発、異符号は引力。", category: "電磁気", stageId: "e-field" },
+  { id: "f-efield", name: "電場の定義", tex: "E = \\dfrac{F}{q}", meaning: "+1Cあたりが受ける力の「地図」。電荷qが受ける力は F = qE。", category: "電磁気", stageId: "e-field" },
+  { id: "f-epotential", name: "一様電場と電位差", tex: "V = Ed", meaning: "電場は電位の坂の傾き。傾き×距離=高低差。", category: "電磁気", stageId: "e-field" },
+  { id: "f-capacitor-q", name: "コンデンサー", tex: "Q = CV", meaning: "たまる電気量は電圧に比例。Cは電気容量(F)。", category: "電磁気", stageId: "e-capacitor" },
+  { id: "f-capacitor-u", name: "コンデンサーのエネルギー", tex: "U = \\tfrac{1}{2}CV^2", meaning: "½はQ-Vグラフの三角形の面積(平均電圧V/2で運ぶ)。", category: "電磁気", stageId: "e-capacitor" },
+  // ---------- 追加分: 原子(発展) ----------
+  { id: "f-debroglie", name: "物質波(ド・ブロイ波)", tex: "\\lambda = \\dfrac{h}{mv}", meaning: "電子などの粒子も波。速いほど波長が短い(電子顕微鏡の原理)。", category: "原子", stageId: "a-bohr" },
 ];

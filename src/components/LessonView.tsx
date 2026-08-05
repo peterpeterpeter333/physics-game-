@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { Stage } from "../types";
 import { MathText, MathBlock } from "./MathText";
+import { Figure } from "./figures";
 
 export function LessonView({
   stage,
@@ -41,6 +42,7 @@ export function LessonView({
             <p>
               <MathText text={step.body} />
             </p>
+            {step.figure && <Figure id={step.figure} />}
             {step.formula && (
               <div className="formula-card">
                 <MathBlock tex={step.formula} />
