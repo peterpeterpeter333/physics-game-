@@ -71,6 +71,39 @@ PWAとして公開したあと、[Bubblewrap](https://github.com/GoogleChromeLab
 ドップラーの波面、電磁誘導など)。エネルギー保存と気体分子はスライダーで操作できるインタラクティブ図解。
 開発時は URL に `#figs` を付けると全図解のギャラリーが見られる。
 
+## 利用状況の計測 (任意)
+
+「何人が、どのくらい遊んでいるか」を見るための仕組みが入っている。**初期状態は完全にオフ**
+(通信も一切しない)で、下記の設定をして初めて有効になる。
+
+### 設定手順
+
+1. [Umami Cloud](https://cloud.umami.is/) に無料登録 → Websites → Add website で
+   `https://peterpeterpeter333.github.io` を登録し、**Website ID** をコピー
+2. `src/analytics.ts` の先頭を書き換える:
+   ```ts
+   const PROVIDER: Provider = "umami";
+   const SITE_ID = "コピーしたWebsite ID";
+   ```
+3. commit → push すると自動デプロイされ、以後 Umami のダッシュボードで数字が見られる
+
+GoatCounter を使う場合は `PROVIDER = "goatcounter"`、`SITE_ID` にサブドメイン名を入れる。
+
+### 見られるもの
+
+| 標準で取れる | 送っているカスタムイベント |
+|---|---|
+| 訪問者数 / 訪問回数 / 滞在時間 / 国 / 端末 / 流入元 | `lesson-start` `lesson-complete` `battle-start` `battle-victory` `battle-defeat` `chat-open` `formulas-open` `review-open`(いずれもステージIDつき) |
+
+このアプリは画面が変わってもURLが変わらないため、**カスタムイベントがないと「開いた」しか分からない**。
+上記イベントにより「どの単元が人気か」「どこで脱落するか」まで追える。
+
+### プライバシー方針
+
+- Cookieを使わず、個人を識別するIDも発行しない(Umami / GoatCounter はいずれもCookieレス)
+- 送るのは匿名の行動イベントのみ。**問題の解答内容・AIチャットの内容・APIキーは一切送らない**
+- 主な利用者が未成年であることを踏まえ、個人特定につながるデータは収集しない
+
 ## ロードマップ
 
 - [x] フェーズ1: バトル/レッスン/復習/公式集/AIチャットの仕組みが動くMVP

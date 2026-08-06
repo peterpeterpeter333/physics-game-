@@ -15,6 +15,7 @@ import { ReviewView } from "./components/ReviewView";
 import { SettingsView } from "./components/SettingsView";
 import { AIChat } from "./components/AIChat";
 import { FigureGallery } from "./components/figures";
+import { analytics } from "./analytics";
 
 type View =
   | { type: "map" }
@@ -74,8 +75,14 @@ export default function App() {
           <QuestMap
             chapters={chapters}
             progress={progress}
-            onOpenLesson={(id) => setView({ type: "lesson", stageId: id })}
-            onOpenBattle={(id) => setView({ type: "battle", stageId: id })}
+            onOpenLesson={(id) => {
+              analytics.lessonStart(id);
+              setView({ type: "lesson", stageId: id });
+            }}
+            onOpenBattle={(id) => {
+              analytics.battleStart(id);
+              setView({ type: "battle", stageId: id });
+            }}
           />
         )}
         {view.type === "lesson" && (
@@ -84,6 +91,8 @@ export default function App() {
             onExit={() => setView({ type: "map" })}
             onComplete={(firstTime) => {
               const stage = findStage(view.stageId);
+              analytics.lessonComplete(view.stageId);
+              analytics.battleStart(view.stageId);
               update((p) => ({
                 ...p,
                 xp: p.xp + (firstTime ? 20 : 0),
@@ -117,6 +126,8 @@ export default function App() {
             }
             firstClear={!progress.clearedStages.includes(view.stageId)}
             onFinish={(xp, cleared, bestCombo) => {
+              if (cleared) analytics.battleVictory(view.stageId);
+              else analytics.battleDefeat(view.stageId);
               update((p) => ({
                 ...p,
                 xp: p.xp + xp,
@@ -171,13 +182,19 @@ export default function App() {
           </button>
           <button
             className={view.type === "formulas" ? "active" : ""}
-            onClick={() => setView({ type: "formulas" })}
+            onClick={() => {
+              analytics.formulaBookOpen();
+              setView({ type: "formulas" });
+            }}
           >
             <span className="nav-icon">📖</span>公式集
           </button>
           <button
             className={view.type === "review" ? "active" : ""}
-            onClick={() => setView({ type: "review" })}
+            onClick={() => {
+              analytics.reviewOpen();
+              setView({ type: "review" });
+            }}
           >
             <span className="nav-icon">⭐</span>復習
           </button>
@@ -190,7 +207,10 @@ export default function App() {
         </nav>
       )}
 
-      <button className="chat-fab" onClick={() => setChatOpen(true)} title="AI先生に質問">
+      <button className="chat-fab" onClick={() => {
+          analytics.chatOpen();
+          setChatOpen(true);
+        }} title="AI先生に質問">
         🤖
       </button>
       {chatOpen && <AIChat context={chatContext} onClose={() => setChatOpen(false)} />}
