@@ -39,10 +39,58 @@ npm run preview  # ビルドの確認
 `dist/` を静的ホスティング(Cloudflare Pages / GitHub Pages / Vercel 等)に置くだけ。
 サーバーもDBも不要。
 
-## Google Play への道(予定)
+## アプリ版 (App Store / Google Play)
 
-PWAとして公開したあと、[Bubblewrap](https://github.com/GoogleChromeLabs/bubblewrap)(TWA)で
-そのままAndroidアプリ化する。コードベースは1つのまま。
+**Capacitor** で、このWebコードのまま両ストアに出せるようにしてある。セットアップ済み:
+
+- `capacitor.config.ts` — appId `app.physicsquest.game`
+- `android/` — Androidプロジェクト(アイコン・スプラッシュ生成済み)
+- `src/native.ts` — 触覚フィードバック(正解/不正解で振動)、ステータスバー制御
+- Webの成果物を**アプリ内に同梱**する構成(URLを開くだけのラッパーではない → Apple審査対策)
+
+### 共通のビルド手順
+
+```bash
+npm run sync          # ビルド + ネイティブへ反映 (コード変更のたびに実行)
+npm run open:android  # Android Studio が開く
+npm run open:ios      # Xcode が開く (Mac のみ)
+```
+
+### Google Play (Windowsのみで完結)
+
+| 項目 | 内容 |
+|---|---|
+| 費用 | $25(買い切り) |
+| 必要環境 | Android Studio(Windows可) |
+| 関門 | 新規個人アカウントは**クローズドテスト(テスター12人 × 14日間)**を経ないと本番公開できない |
+
+1. [Android Studio](https://developer.android.com/studio) をインストール
+2. `npm run sync` → `npm run open:android`
+3. Build → Generate Signed Bundle → **AAB** を作成(キーストアは作成後**必ずバックアップ**。紛失すると二度と更新できない)
+4. [Play Console](https://play.google.com/console) で$25支払い → アプリ作成 → AABをアップロード
+5. クローズドテストを12人×14日 → 本番申請
+
+### App Store (Macが必要)
+
+| 項目 | 内容 |
+|---|---|
+| 費用 | $99 / **年** |
+| 必要環境 | **Mac + Xcode 必須**(Windowsでは提出不可) |
+| 関門 | ガイドライン4.2「Webサイトを包んだだけのアプリ」は却下される |
+
+1. Macで `npx cap add ios` → `npm run sync` → `npm run open:ios`
+2. Xcode で Signing & Capabilities に Apple ID を設定
+3. Product → Archive → Distribute App
+4. App Store Connect でスクリーンショット・説明文・プライバシー情報を登録して審査提出
+
+**4.2 対策として既に入れてあるもの**: 全コンテンツをアプリ内に同梱(オフライン動作)、
+触覚フィードバック、ネイティブのスプラッシュ/ステータスバー、142問の独自コンテンツ。
+審査時は「Webサイトの再表示ではなく、オフラインで完結する学習アプリ」である点を説明する。
+
+### 推奨する順番
+
+**Google Play → App Store。** Playは$25・Windowsだけで完結・審査も比較的緩やか。
+先にPlayでストア公開の実務を経験してから、Macを用意してApp Storeに挑むのが安全。
 
 ## AI先生についての注意
 
@@ -111,7 +159,9 @@ GoatCounter を使う場合は `PROVIDER = "goatcounter"`、`SITE_ID` にサブ�
 - [ ] フェーズ2: ブラウザ公開(静的ホスティング + PWA確認)
 - [x] フェーズ2.5: 受験範囲の基本を網羅(27ステージ)+ アニメーション図解24種
 - [ ] フェーズ3: 入試レベルの演習を追加(基礎の次の段階)
-- [ ] フェーズ4: Bubblewrap(TWA)でGoogle Play公開(クローズドテスト12人×14日 → 本番)
+- [x] フェーズ3.5: Capacitor導入(Androidプロジェクト生成・アイコン・触覚フィードバック)
+- [ ] フェーズ4: Google Play公開(クローズドテスト12人×14日 → 本番)
+- [ ] フェーズ5: App Store公開(Mac + $99/年 が必要)
 - [ ] 将来: 対人戦モード(ユーザーが十分に集まってから検討)
 
 ## コンテンツ執筆の方針

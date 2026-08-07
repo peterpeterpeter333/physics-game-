@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Problem, Stage } from "../types";
 import { MathText } from "./MathText";
+import { hapticSuccess, hapticError } from "../native";
 
 const QUESTION_TIME = 30; // 秒
 const MAX_HEARTS = 3;
@@ -91,11 +92,13 @@ export function BattleView({
       setEnemyHp((hp) => Math.max(0, hp - damage));
       setDamageFloat({ value: damage, key: Date.now() });
       setEnemyHit(true);
+      hapticSuccess();
       setTimeout(() => setEnemyHit(false), 500);
     } else {
       setCombo(0);
       setHearts((h) => h - 1);
       setPlayerHit(true);
+      hapticError();
       setTimeout(() => setPlayerHit(false), 500);
     }
     setPhase("feedback");

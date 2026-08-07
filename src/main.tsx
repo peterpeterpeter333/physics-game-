@@ -2,9 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { initAnalytics } from "./analytics";
+import { initNative } from "./native";
 import "./styles.css";
 
 initAnalytics();
+initNative();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
