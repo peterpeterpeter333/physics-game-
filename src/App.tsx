@@ -16,6 +16,7 @@ import { SettingsView } from "./components/SettingsView";
 import { AIChat } from "./components/AIChat";
 import { FigureGallery } from "./components/figures";
 import { analytics } from "./analytics";
+import { SHOW_AI_CHAT } from "./config";
 
 type View =
   | { type: "map" }
@@ -207,13 +208,21 @@ export default function App() {
         </nav>
       )}
 
-      <button className="chat-fab" onClick={() => {
-          analytics.chatOpen();
-          setChatOpen(true);
-        }} title="AI先生に質問">
-        🤖
-      </button>
-      {chatOpen && <AIChat context={chatContext} onClose={() => setChatOpen(false)} />}
+      {SHOW_AI_CHAT && (
+        <button
+          className="chat-fab"
+          onClick={() => {
+            analytics.chatOpen();
+            setChatOpen(true);
+          }}
+          title="AI先生に質問"
+        >
+          🤖
+        </button>
+      )}
+      {SHOW_AI_CHAT && chatOpen && (
+        <AIChat context={chatContext} onClose={() => setChatOpen(false)} />
+      )}
     </div>
   );
 }

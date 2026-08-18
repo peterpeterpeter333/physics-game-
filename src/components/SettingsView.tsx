@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { loadApiKey, saveApiKey } from "../game/state";
+import { SHOW_AI_CHAT } from "../config";
 
 export function SettingsView({ onResetProgress }: { onResetProgress: () => void }) {
   const [key, setKey] = useState(loadApiKey());
@@ -14,6 +15,7 @@ export function SettingsView({ onResetProgress }: { onResetProgress: () => void 
         </div>
       </header>
 
+      {SHOW_AI_CHAT && (
       <section className="settings-section">
         <h2>🤖 AI先生 (Claude API)</h2>
         <p className="screen-note">
@@ -51,6 +53,7 @@ export function SettingsView({ onResetProgress }: { onResetProgress: () => void 
           で発行できます。共有端末では設定しないでください。
         </p>
       </section>
+      )}
 
       <section className="settings-section">
         <h2>🗑️ データ</h2>
