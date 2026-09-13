@@ -7,7 +7,8 @@ export function useT(): number {
     let raf: number;
     const t0 = performance.now();
     const loop = (now: number) => {
-      setT((now - t0) / 1000);
+      // rAFのタイムスタンプは開始時刻より前になり得る(負の経過時間)ので0で下限を切る
+      setT(Math.max(0, (now - t0) / 1000));
       raf = requestAnimationFrame(loop);
     };
     raf = requestAnimationFrame(loop);

@@ -268,10 +268,13 @@ export function Figure({ id }: { id: string }) {
 
 /** 開発用: 全図解の一覧 (URLに #figs を付けると表示) */
 export function FigureGallery() {
+  // #figs=id1,id2 で絞り込み (全部同時に動かすと重いため)
+  const only = typeof window !== "undefined" ? window.location.hash.split("=")[1] : "";
+  const ids = only ? only.split(",").filter((k) => REGISTRY[k]) : Object.keys(REGISTRY);
   return (
     <div className="screen">
       <h1>図解ギャラリー (dev)</h1>
-      {Object.keys(REGISTRY).map((id) => (
+      {ids.map((id) => (
         <div key={id} style={{ marginBottom: 20 }}>
           <div style={{ color: "#9aa3c7", fontSize: 12, marginBottom: 4 }}>{id}</div>
           <Figure id={id} />

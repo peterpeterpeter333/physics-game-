@@ -46,7 +46,7 @@ export function GaussRecipe() {
     <FigSvg>
       <Steps3 active={Math.floor(t / 1.4) % 3} labels={[["① 対称性から", "　 Eの向きを見抜く"], ["② Eが一定になる", "　 袋(面)を選ぶ"], ["③ E×面積 =", "　 Q/ε₀ を解く"]]} />
       <text x={30} y={158} fontSize={11.5} fill={C.gold}>使える型は 球・円筒・平面 の3つだけ</text>
-      <Caption text="法則は常に正しいが、計算に使えるのは「Eを積分の外に出せる」対称性のときだけ" />
+      <Caption text="計算に使えるのは「Eを積分の外に出せる」対称性のときだけ" />
     </FigSvg>
   );
 }
@@ -170,7 +170,7 @@ export function CapDerivation() {
           </g>
         );
       })}
-      <text x={40} y={156} fontSize={11} fill="#fff">σ = Q/S を入れると、板も電荷も消えて S と d だけ残る</text>
+      <text x={40} y={156} fontSize={11} fill="#fff">σ = Q/S を入れると S と d だけ残る</text>
       <Caption text="高校の公式は4手で「作れる」" />
     </FigSvg>
   );
@@ -189,9 +189,7 @@ export function FieldEnergy() {
       {[60, 95, 130].map((y) => (
         <Arrow key={y} x={104} y={y} dx={108} dy={0} color={C.gold} w={1 + 2 * q} />
       ))}
-      <text x={110} y={30} fontSize={11} fill="#fff">板の間の空間に電場 E</text>
-      <text x={240} y={70} fontSize={10.5} fill={C.gold}>明るさ ∝ E²</text>
-      <text x={240} y={86} fontSize={10.5} fill={C.gold}>= エネルギー密度</text>
+      <text x={40} y={30} fontSize={11} fill="#fff">板の間の電場 E — 明るさ ∝ E² (エネルギー密度)</text>
       <text x={20} y={172} fontSize={10.5} fill={C.dim}>u = ½ε₀E²: 式に残ったのはEだけ — エネルギーは空間の状態に宿る</text>
       <Caption text="" />
     </FigSvg>
@@ -383,10 +381,10 @@ export function AmpereCircle() {
       <circle cx={px} cy={py} r={6} fill={C.cyan} />
       <Arrow x={px} y={py} dx={-30 * Math.sin(a)} dy={30 * Math.cos(a)} color={C.purple} w={3} />
       <text x={px - 30 * Math.sin(a) + 6} y={py + 30 * Math.cos(a) + 4} fontSize={11} fill={C.purple}>B</text>
-      <text x={210} y={60} fontSize={11.5} fill="#fff">どこでも B は円に沿い、</text>
-      <text x={210} y={76} fontSize={11.5} fill="#fff">大きさも同じ</text>
-      <text x={210} y={104} fontSize={11.5} fill={C.gold}>∮B·dr = B×2πr</text>
-      <text x={210} y={122} fontSize={11.5} fill={C.gold}>= μ₀I</text>
+      <text x={198} y={60} fontSize={11} fill="#fff">どこでもBは円に沿い</text>
+      <text x={198} y={76} fontSize={11} fill="#fff">大きさも同じ</text>
+      <text x={198} y={104} fontSize={11.5} fill={C.gold}>∮B·dr = B×2πr</text>
+      <text x={198} y={122} fontSize={11.5} fill={C.gold}>= μ₀I</text>
       <Caption text="輪を同心円に選べば1行で B = μ₀I/2πr" />
     </FigSvg>
   );
@@ -436,7 +434,7 @@ export function Generator() {
       <polyline points={flux.join(" ")} fill="none" stroke={C.purple} strokeWidth={2} />
       <text x={152} y={38} fontSize={10.5} fill={C.purple}>磁束 Φ = BAcosωt</text>
       <polyline points={emf.join(" ")} fill="none" stroke={C.green} strokeWidth={2} />
-      <text x={152} y={100} fontSize={10.5} fill={C.green}>起電力 V = −dΦ/dt = BAωsinωt</text>
+      <text x={152} y={100} fontSize={10.5} fill={C.green}>起電力 V = −dΦ/dt ∝ sinωt</text>
       <Caption text="Φの微分が交流電圧。速く回すほど(ω大)高電圧" />
     </FigSvg>
   );
@@ -456,9 +454,9 @@ export function InductorInertia() {
         <line x1={45} y1={150} x2={45} y2={25} />
       </g>
       <line x1={45} y1={50} x2={295} y2={50} stroke={C.dim} strokeDasharray="5 4" />
-      <text x={200} y={44} fontSize={10.5} fill={C.dim}>抵抗だけなら一瞬でここ</text>
+      <text x={168} y={44} fontSize={10.5} fill={C.dim}>抵抗だけなら一瞬でここ</text>
       <polyline points={pts.join(" ")} fill="none" stroke={C.cyan} strokeWidth={2.5} />
-      <text x={60} y={36} fontSize={11} fill={C.cyan}>コイルあり: 電流 I がゆっくり立ち上がる</text>
+      <text x={60} y={24} fontSize={11} fill={C.cyan}>コイルあり: 電流 I がゆっくり立ち上がる</text>
       <text x={60} y={168} fontSize={10.5} fill={C.gold}>V = −L(dI/dt) が変化に逆らう = 電流の慣性 (質量の役)</text>
       <Caption text="" />
     </FigSvg>
@@ -482,7 +480,7 @@ export function Transformer() {
       <text x={200} y={30} fontSize={11} fill={C.gold}>2次: 6巻き → 電圧2倍</text>
       <rect x={104} y={44} width={112} height={92} fill={C.purple} opacity={0.08 + 0.12 * Math.abs(s)} />
       <text x={128} y={95} fontSize={11} fill={C.purple}>磁束 Φ(t)</text>
-      <text x={20} y={170} fontSize={10.5} fill={C.dim}>V₂ = −M dI₁/dt: 導線でつながず、磁束の変化でエネルギーを渡す</text>
+      <text x={20} y={170} fontSize={10.5} fill={C.dim}>V₂ = −M dI₁/dt: 磁束の変化でエネルギーを渡す</text>
       <Caption text="" />
     </FigSvg>
   );
@@ -538,7 +536,7 @@ export function RlRise() {
         </g>
       )}
       <text x={56} y={36} fontSize={11} fill={C.cyan}>ON: τ = L/R でゆっくり立ち上がる</text>
-      <Caption text="電流の慣性を急に止めると、質量を壁で急停止させる衝撃の電気版" />
+      <Caption text="電流の慣性を急停止させる衝撃の電気版" />
     </FigSvg>
   );
 }
@@ -610,7 +608,7 @@ export function MaxwellFour() {
       {panel(1, 86, "②ガウス(B)", "磁力線は閉じる", <g><circle cx={120} cy={78} r={22} fill="none" stroke={C.gold} strokeDasharray="3 3" /><ellipse cx={120} cy={78} rx={30} ry={12} fill="none" stroke={C.purple} strokeWidth={1.5} /></g>)}
       {panel(2, 160, "③ファラデー", "B変化→Eの渦", <g><ellipse cx={194} cy={78} rx={24} ry={10} fill="none" stroke={C.cyan} strokeWidth={2} /><line x1={194} y1={104} x2={194} y2={56} stroke={C.purple} strokeWidth={2} /><polygon points="194,50 189,60 199,60" fill={C.purple} /></g>)}
       {panel(3, 234, "④アンペール+", "I・E変化→Bの渦", <g><ellipse cx={268} cy={78} rx={24} ry={10} fill="none" stroke={C.purple} strokeWidth={2} /><line x1={268} y1={104} x2={268} y2={56} stroke={C.gold} strokeWidth={2} /><polygon points="268,50 263,60 273,60" fill={C.gold} /></g>)}
-      <Caption text="電磁気の全法則はこの4本。試験は「意味を説明せよ」型が定番" />
+      <Caption text="電磁気の全法則はこの4本" />
     </FigSvg>
   );
 }

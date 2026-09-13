@@ -36,7 +36,7 @@ function findStage(stageId: string): Stage {
 
 export default function App() {
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
-  const isGallery = typeof window !== "undefined" && window.location.hash === "#figs";
+  const isGallery = typeof window !== "undefined" && window.location.hash.startsWith("#figs");
   const [view, setView] = useState<View>({ type: "map" });
   const [chatOpen, setChatOpen] = useState(false);
 

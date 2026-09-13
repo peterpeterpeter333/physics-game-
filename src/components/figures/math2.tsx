@@ -38,10 +38,10 @@ export function AvgVsInstant() {
       <polyline points={pts.join(" ")} fill="none" stroke={C.cyan} strokeWidth={2.5} />
       <line x1={45} y1={150 - 55 * avg} x2={295} y2={150 - 55 * avg} stroke={C.gold} strokeDasharray="5 4" strokeWidth={2} />
       <circle cx={45 + 250 * u} cy={150 - 55 * speedAt(u)} r={6} fill={C.cyan} />
-      <text x={200} y={150 - 55 * avg - 8} fontSize={11} fill={C.gold}>平均の速さ (割り算の答え)</text>
+      <text x={150} y={150 - 55 * avg - 8} fontSize={11} fill={C.gold}>平均の速さ (割り算の答え)</text>
       <text x={52} y={40} fontSize={11} fill={C.cyan}>メーターの針 = その瞬間の速さ</text>
       <text x={130} y={140} fontSize={10} fill={C.dim}>信号待ち</text>
-      <Caption text="割り算は区間全体をならしてしまう。瞬間を知るには区間を縮めるしかない" />
+      <Caption text="割り算は区間をならす。瞬間を知るには区間を縮める" />
     </FigSvg>
   );
 }
@@ -66,8 +66,8 @@ export function DeltaToD() {
           <text x={150} y={56 + i * 22} fontSize={12} fill={i === 4 ? C.gold : "#fff"}>{r[1]} m/s</text>
         </g>
       ))}
-      <text x={200} y={130} fontSize={11} fill={C.dim}>Δ = 有限の差</text>
-      <text x={200} y={146} fontSize={11} fill={C.gold}>d = 限りなく小さい差</text>
+      <text x={215} y={56} fontSize={11} fill={C.dim}>Δ = 有限の差</text>
+      <text x={215} y={72} fontSize={11} fill={C.gold}>d = 限りなく小さい差</text>
       <Caption text="区間を縮めるほど答えは10に落ち着く。その行き先を dx/dt と書く" />
     </FigSvg>
   );
@@ -95,7 +95,7 @@ export function AntiderivativeFamily() {
       <text x={54} y={149 - 22 * pick} fontSize={10.5} fill={C.gold}>初期条件 x(0)</text>
       <text x={150} y={40} fontSize={11} fill="#fff">どの曲線も傾き(微分)は同じ</text>
       <text x={150} y={56} fontSize={11} fill={C.dim}>違いは上下のずれ = C</text>
-      <Caption text="微分は出発点を忘れる。だから逆再生には C が付き、初期条件が1本を選ぶ" />
+      <Caption text="微分は出発点を忘れる → 逆再生には C が付く" />
     </FigSvg>
   );
 }
@@ -197,7 +197,7 @@ export function PythagorasVec() {
       <line x1={ox + ax} y1={oy} x2={ox + ax} y2={oy - ay} stroke={C.purple} strokeWidth={4} />
       <line x1={ox} y1={oy} x2={ox + ax} y2={oy - ay} stroke={C.gold} strokeWidth={4} />
       {arrowHead(ox + ax, oy - ay, ax, -ay, C.gold)}
-      <text x={ox + 40} y={oy - 50} fontSize={12} fill={C.gold} opacity={ph >= 2 ? 1 : 0.4}>|A| = √(9+16) = 5</text>
+      <text x={90} y={40} fontSize={12} fill={C.gold} opacity={ph >= 2 ? 1 : 0.4}>|A| = √(9+16) = 5</text>
       <text x={ox + ax / 2 - 10} y={oy - 4} fontSize={11} fill={C.cyan}>Ax = 3</text>
       <text x={ox + ax + 6} y={oy - ay - 6} fontSize={11} fill={C.purple}>Ay = 4</text>
       <Caption text="成分は直角三角形の2辺、矢印本体は斜辺 — 三平方の定理そのもの" />
@@ -260,7 +260,7 @@ export function Wrench() {
           <text x={ex - 90} y={ey - 22} fontSize={11.5} fill={C.red}>柄に平行に押す → 回らない ✗</text>
         </g>
       )}
-      <Caption text="回転に効くのは直角な成分だけ — 内積(平行度)ではなく別の掛け算が要る" />
+      <Caption text="回転に効くのは直角な成分だけ — 別の掛け算が要る" />
     </FigSvg>
   );
 }
@@ -365,11 +365,11 @@ export function PeriodMass() {
       <line x1={40} y1={30} x2={280} y2={30} stroke={C.dim} strokeWidth={3} />
       {spring(100, y1)}
       <circle cx={100} cy={y1 + 12} r={12} fill={C.cyan} />
-      <text x={70} y={175} fontSize={11} fill={C.cyan}>質量 m: 速い振動</text>
+      <text x={56} y={22} fontSize={11} fill={C.cyan}>質量 m: 速い振動</text>
       {spring(220, y2)}
       <circle cx={220} cy={y2 + 18} r={18} fill={C.purple} />
-      <text x={176} y={175} fontSize={11} fill={C.purple}>質量 4m: 周期は2倍</text>
-      <Caption text="T = 2π√(m/k): 重いほどのっそり、硬いほどせわしない。振幅は無関係" />
+      <text x={176} y={22} fontSize={11} fill={C.purple}>質量 4m: 周期は2倍</text>
+      <Caption text="T = 2π√(m/k): 重いほどのっそり。振幅は無関係" />
     </FigSvg>
   );
 }

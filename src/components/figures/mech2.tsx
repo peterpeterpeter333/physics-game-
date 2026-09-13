@@ -117,7 +117,7 @@ export function PathIndependent() {
   const u = (t % 4) / 4;
   const stairs = [[40, 150], [80, 150], [80, 120], [120, 120], [120, 90], [160, 90], [160, 60], [200, 60]];
   const sPath = stairs.map((p) => p.join(",")).join(" ");
-  const idx = Math.min(Math.floor(u * 7), 6);
+  const idx = Math.max(0, Math.min(Math.floor(u * 7), 6));
   const f = u * 7 - idx;
   const bx = stairs[idx][0] + (stairs[idx + 1][0] - stairs[idx][0]) * f;
   const by = stairs[idx][1] + (stairs[idx + 1][1] - stairs[idx][1]) * f;
@@ -208,7 +208,7 @@ export function Restitution() {
       {ball(160, 0.6, "e = 0.6", C.gold)}
       {ball(250, 0, "e = 0", C.red)}
       <text x={40} y={26} fontSize={11.5} fill="#fff">e = 離れる速さ ÷ 近づく速さ</text>
-      <Caption text="運動量は常に保存。運動エネルギーが保存するのは e=1 のときだけ" />
+      <Caption text="運動量は常に保存、運動エネルギーは e=1 のときだけ" />
     </FigSvg>
   );
 }
@@ -363,7 +363,7 @@ export function DampedResonance() {
       <text x={176} y={30} fontSize={11} fill={C.gold}>共振: 外力の振動数が</text>
       <text x={176} y={44} fontSize={11} fill={C.gold}>固有振動数に一致で振幅最大</text>
       <text x={230} y={166} fontSize={10} fill={C.dim}>外力の振動数 →</text>
-      <Caption text="ブランコ・地震で揺れるビル・電子レンジ・ラジオの選局はすべて共振" />
+      <Caption text="ブランコ・地震のビル・電子レンジ・ラジオはすべて共振" />
     </FigSvg>
   );
 }
@@ -400,7 +400,7 @@ export function InertiaShapes() {
       {shape(160, disk, "円板", "I = ½MR²")}
       {shape(260, sphere, "球", "I = ⅖MR²")}
       <text x={40} y={30} fontSize={11} fill={C.dim}>同じ質量M・同じ半径R。点=質量の分布</text>
-      <Caption text="質量が外側にあるほど回しにくい — 積分せずに大小が当てられる" />
+      <Caption text="質量が外側にあるほど回しにくい" />
     </FigSvg>
   );
 }
@@ -422,7 +422,7 @@ export function ParallelAxis() {
         <line x1={200} y1={92} x2={200 + L * Math.cos(a2)} y2={92 + L * Math.sin(a2)} stroke={C.purple} strokeWidth={6} strokeLinecap="round" />
         <circle cx={200} cy={92} r={4} fill="#fff" />
         <circle cx={200 + (L / 2) * Math.cos(a2)} cy={92 + (L / 2) * Math.sin(a2)} r={4} fill={C.gold} />
-        <text x={176} y={150} fontSize={11} fill={C.purple}>端で回す (重心が半径l/2で回る)</text>
+        <text x={176} y={150} fontSize={11} fill={C.purple}>端で回す: 重心も回る</text>
         <text x={176} y={166} fontSize={11} fill={C.gold}>I = I_G + M(l/2)² = Ml²/3</text>
       </g>
       <text x={40} y={30} fontSize={11} fill="#fff">同じトルクでも端持ちは4倍回しにくい</text>
@@ -508,7 +508,7 @@ export function MoonFall() {
         <polyline key={k} points={p.join(" ")} fill="none" stroke={k === ph ? C.gold : C.dim} strokeWidth={k === ph ? 2.5 : 1.2} opacity={k <= ph ? 1 : 0.25} />
       ))}
       <text x={20} y={30} fontSize={11.5} fill={C.gold}>{["ゆっくり撃つ → 近くに落ちる", "速く撃つ → 遠くに落ちる", "十分速い → 落ち続けて一周 = 軌道!"][ph]}</text>
-      <Caption text="月も人工衛星も「地球に向かって落ち続けている」— 横に速いので着地しないだけ" />
+      <Caption text="月も衛星も「落ち続けている」— 横に速いので着地しない" />
     </FigSvg>
   );
 }
