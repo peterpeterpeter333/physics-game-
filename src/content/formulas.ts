@@ -269,7 +269,7 @@ export const formulas: Formula[] = [
   { id: "fu-product", name: "積の微分", tex: "(fg)' = f'g + fg'", meaning: "両方変わるなら寄与は2口。長方形の面積の増え方。", category: "大学: 数学の武器庫", stageId: "um-rules" },
   { id: "fu-smallangle", name: "微小角近似", tex: "\\sin\\theta \\approx \\theta \\quad (\\theta \\ll 1)", meaning: "滑らかな曲線は拡大すれば直線。振り子を単振動に変える近似。", category: "大学: 数学の武器庫", stageId: "um-taylor" },
   { id: "fu-binomial", name: "二項近似", tex: "(1+x)^n \\approx 1 + nx", meaning: "物理で最頻出の近似。|x|が小さければ高次項は無視できる。", category: "大学: 数学の武器庫", stageId: "um-taylor" },
-  { id: "fu-dot", name: "内積", tex: "\\vec{A}\\cdot\\vec{B} = AB\\cos\\theta = A_xB_x + A_yB_y", meaning: "「同じ向き度」を測る掛け算。仕事の定義の心臓部。", category: "大学: 数学の武器庫", stageId: "um-vector" },
+  { id: "fu-dot", name: "内積", tex: "\\vec{A}\\cdot\\vec{B} = AB\\cos\\theta = A_xB_x + A_yB_y", meaning: "「同じ向き度」を測る掛け算。仕事の定義の心臓部。", category: "大学: 数学の武器庫", stageId: "um-dot" },
   { id: "fu-cross", name: "外積", tex: "|\\vec{A}\\times\\vec{B}| = AB\\sin\\theta", meaning: "平行四辺形の面積。向きは右ねじ。トルク・角運動量・ローレンツ力の言語。", category: "大学: 数学の武器庫", stageId: "um-cross" },
   { id: "fu-decay", name: "指数関数的減衰", tex: "\\dfrac{dN}{dt} = -\\lambda N \\ \\Rightarrow\\ N = N_0e^{-\\lambda t}", meaning: "減り方が今の量に比例→指数減衰。変数分離で解ける。", category: "大学: 数学の武器庫", stageId: "um-ode" },
   { id: "fu-shm-eq", name: "単振動の方程式", tex: "\\dfrac{d^2x}{dt^2} = -\\omega^2 x", meaning: "「変位に比例して中心へ引き戻す」。解は x = A sin(ωt+φ)。", category: "大学: 数学の武器庫", stageId: "um-shm-ode" },

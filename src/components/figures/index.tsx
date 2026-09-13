@@ -44,6 +44,21 @@ import {
   LorentzCircle,
   RcCharge,
 } from "./univ";
+import {
+  PowerRule,
+  SlopeTrace,
+  DxAnatomy,
+  ChainGears,
+  ProductRect,
+  VectorComponents,
+  Ftc,
+  EulerE,
+  LineIntegral,
+  SurfaceTiles,
+  XvaChain,
+  TorqueDoor,
+  ComSeesaw,
+} from "./univ2";
 
 const REGISTRY: Record<string, () => JSX.Element> = {
   "xt-slope": XtSlope,
@@ -86,6 +101,19 @@ const REGISTRY: Record<string, () => JSX.Element> = {
   "ampere-wire": AmpereWire,
   "lorentz-circle": LorentzCircle,
   "rc-charge": RcCharge,
+  "power-rule": PowerRule,
+  "slope-trace": SlopeTrace,
+  "dx-anatomy": DxAnatomy,
+  "chain-gears": ChainGears,
+  "product-rect": ProductRect,
+  "vector-components": VectorComponents,
+  ftc: Ftc,
+  "euler-e": EulerE,
+  "line-integral": LineIntegral,
+  "surface-tiles": SurfaceTiles,
+  "xva-chain": XvaChain,
+  "torque-door": TorqueDoor,
+  "com-seesaw": ComSeesaw,
 };
 
 export function Figure({ id }: { id: string }) {
