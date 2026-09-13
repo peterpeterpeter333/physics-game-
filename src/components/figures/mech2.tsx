@@ -37,8 +37,8 @@ export function DragForces() {
       <text x={122} y={y + 42} fontSize={11} fill={C.red}>重力 mg (一定)</text>
       <Arrow x={110} y={y - 14} dx={0} dy={-40 * v - 2} color={C.green} />
       <text x={122} y={y - 30 * v - 18} fontSize={11} fill={C.green}>空気抵抗 kv (速いほど大)</text>
-      <text x={200} y={150} fontSize={11.5} fill="#fff">{v > 0.95 ? "つり合った → 加速終了" : "まだ重力の勝ち → 加速中"}</text>
-      <Caption text="運動方程式: m(dv/dt) = mg − kv。右辺は「重力 − 抵抗」の残り" />
+      <text x={172} y={150} fontSize={11.5} fill="#fff">{v > 0.95 ? "つり合った → 加速終了" : "まだ重力の勝ち → 加速中"}</text>
+      <Caption text="m(dv/dt) = mg − kv: 右辺は「重力 − 抵抗」の残り" />
     </FigSvg>
   );
 }
@@ -85,7 +85,7 @@ export function KeBank() {
       <text x={246} y={166} fontSize={10.5} fill={C.gold}>½mv²</text>
       <text x={30} y={40} fontSize={11} fill="#fff">力が仕事をする → 貯金箱 ½mv² が増える</text>
       <text x={30} y={56} fontSize={10.5} fill={C.dim}>d/dt(½mv²) = F·v (毎秒の入金)</text>
-      <Caption text="運動エネルギーは ma=F の中から自然に現れる「仕事の貯金箱」" />
+      <Caption text="運動エネルギー = ma=F から現れる「仕事の貯金箱」" />
     </FigSvg>
   );
 }
@@ -106,7 +106,7 @@ export function PowerFlow() {
       <text x={224} y={165} fontSize={10.5} fill={C.red}>重力へ出る</text>
       <text x={170} y={40} fontSize={11.5} fill={pin >= pout ? C.green : C.red}>{pin >= pout ? "入る > 出る → 加速" : "入る < 出る → 減速"}</text>
       <text x={170} y={58} fontSize={10.5} fill={C.dim}>P = F·v [W]</text>
-      <Caption text="運動エネルギーの変化率 = 正味の仕事率。エネルギーは「流量」で見る" />
+      <Caption text="運動エネルギーの変化率 = 正味の仕事率" />
     </FigSvg>
   );
 }
@@ -130,7 +130,7 @@ export function PathIndependent() {
       <line x1={215} y1={60} x2={215} y2={150} stroke={C.cyan} strokeWidth={2} />
       <text x={222} y={110} fontSize={11.5} fill={C.cyan}>高さ h</text>
       <text x={30} y={36} fontSize={11.5} fill="#fff">階段でも斜面でも、重力に逆らう仕事は同じ mgh</text>
-      <text x={30} y={52} fontSize={10.5} fill={C.dim}>道によらない = 保存力 → 位置だけで決まる貯金 U が定義できる</text>
+      <text x={30} y={52} fontSize={10.5} fill={C.dim}>道によらない = 保存力 → 貯金 U が定義できる</text>
       <Caption text="摩擦は道が長いほど損する(道による)ので、保存力ではない" />
     </FigSvg>
   );
@@ -162,7 +162,7 @@ export function EnergyLandscape() {
       <text x={44} y={sy(E) - 8} fontSize={11} fill={C.gold}>力学的エネルギー E</text>
       <text x={sx(-xt) - 4} y={165} fontSize={10.5} fill={C.green}>動ける範囲 (E − U = 運動エネルギー ≥ 0)</text>
       <text x={200} y={40} fontSize={10.5} fill={C.dim}>丘の頂上 = 不安定</text>
-      <Caption text="U(x)のグラフに水平線Eを引くと、行ける場所・止まる場所が読める" />
+      <Caption text="U(x) に水平線 E を引くと、行ける場所が読める" />
     </FigSvg>
   );
 }
@@ -180,8 +180,8 @@ export function ImpulseArea() {
       <rect x={x0} y={150 - h} width={w} height={h} rx={w / 2 > 20 ? 20 : w / 2} fill={soft ? C.green : C.red} opacity={0.6} />
       <text x={x0 + 8} y={150 - h - 8} fontSize={11.5} fill={soft ? C.green : C.red}>{soft ? "エアバッグ: 長く・弱く" : "壁: 短く・強く"}</text>
       <text x={170} y={60} fontSize={11.5} fill={C.gold}>面積 ∫F dt = Δp は同じ</text>
-      <text x={170} y={78} fontSize={10.5} fill={C.dim}>止まるまでの勢いの変化は変えられない</text>
-      <text x={170} y={94} fontSize={10.5} fill={C.dim}>→ 時間を伸ばして高さ(力)を下げる</text>
+      <text x={170} y={78} fontSize={10.5} fill={C.dim}>Δp は変えられない</text>
+      <text x={170} y={94} fontSize={10.5} fill={C.dim}>→ 時間を伸ばして力を下げる</text>
       <Caption text="力積 = 力×時間の蓄積 = 運動量の変化。安全設計の基礎式" />
     </FigSvg>
   );
