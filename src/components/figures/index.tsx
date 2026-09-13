@@ -84,6 +84,27 @@ import {
   PeriodMass,
   ValleyParabola,
 } from "./math2";
+import {
+  DragForces,
+  DragModels,
+  KeBank,
+  PowerFlow,
+  PathIndependent,
+  EnergyLandscape,
+  ImpulseArea,
+  Restitution,
+  AngularMomentum,
+  TorqueSpinup,
+  KeplerSweep,
+  PendulumForce,
+  PendulumSync,
+  DampedResonance,
+  InertiaShapes,
+  ParallelAxis,
+  TranslateRotate,
+  TrainInertia,
+  MoonFall,
+} from "./mech2";
 
 const REGISTRY: Record<string, () => JSX.Element> = {
   "xt-slope": XtSlope,
@@ -160,6 +181,25 @@ const REGISTRY: Record<string, () => JSX.Element> = {
   "init-family": InitFamily,
   "period-mass": PeriodMass,
   "valley-parabola": ValleyParabola,
+  "drag-forces": DragForces,
+  "drag-models": DragModels,
+  "ke-bank": KeBank,
+  "power-flow": PowerFlow,
+  "path-independent": PathIndependent,
+  "energy-landscape": EnergyLandscape,
+  "impulse-area": ImpulseArea,
+  "restitution": Restitution,
+  "angular-momentum": AngularMomentum,
+  "torque-spinup": TorqueSpinup,
+  "kepler-sweep": KeplerSweep,
+  "pendulum-force": PendulumForce,
+  "pendulum-sync": PendulumSync,
+  "damped-resonance": DampedResonance,
+  "inertia-shapes": InertiaShapes,
+  "parallel-axis": ParallelAxis,
+  "translate-rotate": TranslateRotate,
+  "train-inertia": TrainInertia,
+  "moon-fall": MoonFall,
 };
 
 export function Figure({ id }: { id: string }) {
