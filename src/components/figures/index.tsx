@@ -26,6 +26,24 @@ import {
   HalfLife,
   Bohr,
 } from "./fields";
+import {
+  DerivSlope,
+  IntegralSum,
+  SmallAngle,
+  DotProduct,
+  CrossProduct,
+  ShmCircle,
+  TerminalV,
+  PotentialSlope,
+  MomentInertia,
+  Rolling,
+  Skater,
+  GaussSphere,
+  FluxTilt,
+  AmpereWire,
+  LorentzCircle,
+  RcCharge,
+} from "./univ";
 
 const REGISTRY: Record<string, () => JSX.Element> = {
   "xt-slope": XtSlope,
@@ -52,6 +70,22 @@ const REGISTRY: Record<string, () => JSX.Element> = {
   photoelectric: Photoelectric,
   halflife: HalfLife,
   bohr: Bohr,
+  "deriv-slope": DerivSlope,
+  "integral-sum": IntegralSum,
+  "small-angle": SmallAngle,
+  "dot-product": DotProduct,
+  "cross-product": CrossProduct,
+  "shm-circle": ShmCircle,
+  "terminal-v": TerminalV,
+  "potential-slope": PotentialSlope,
+  "moment-inertia": MomentInertia,
+  rolling: Rolling,
+  skater: Skater,
+  "gauss-sphere": GaussSphere,
+  "flux-tilt": FluxTilt,
+  "ampere-wire": AmpereWire,
+  "lorentz-circle": LorentzCircle,
+  "rc-charge": RcCharge,
 };
 
 export function Figure({ id }: { id: string }) {

@@ -8,6 +8,9 @@ const CHAPTER_ICONS: Record<string, string> = {
   waves: "🌊",
   em: "⚡",
   atomic: "⚛️",
+  umath: "📐",
+  umech: "🚀",
+  uem: "🧲",
 };
 
 export function QuestMap({
