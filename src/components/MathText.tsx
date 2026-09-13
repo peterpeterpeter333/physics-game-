@@ -12,34 +12,38 @@ function renderMath(tex: string, displayMode: boolean): string {
   }
 }
 
-function renderSegment(text: string, keyBase: number): JSX.Element[] {
-  // **bold** を処理
-  const parts = text.split(/\*\*(.+?)\*\*/g);
-  return parts.map((part, i) =>
-    i % 2 === 1 ? (
-      <strong key={`${keyBase}-${i}`}>{part}</strong>
-    ) : (
-      <span key={`${keyBase}-${i}`}>{part}</span>
-    )
-  );
+function renderMathSegments(text: string, keyBase: string): JSX.Element[] {
+  // $...$ のインライン数式を処理 (エスケープなしの単純規則)
+  const parts = text.split(/\$(.+?)\$/g);
+  const out: JSX.Element[] = [];
+  parts.forEach((part, i) => {
+    if (i % 2 === 1) {
+      out.push(
+        <span
+          key={`${keyBase}-m${i}`}
+          className="math-inline"
+          dangerouslySetInnerHTML={{ __html: renderMath(part, false) }}
+        />
+      );
+    } else if (part) {
+      out.push(<span key={`${keyBase}-t${i}`}>{part}</span>);
+    }
+  });
+  return out;
 }
 
 export function MathText({ text, className }: { text: string; className?: string }) {
   const nodes = useMemo(() => {
+    // 先に **bold** で分割してから、各断片の中の $...$ を処理する。
+    // (逆順だと「太字の中に数式」が分断されて ** が生のまま表示される)
+    const parts = text.split(/\*\*(.+?)\*\*/g);
     const out: JSX.Element[] = [];
-    // $...$ で分割 (エスケープなしの単純規則)
-    const parts = text.split(/\$(.+?)\$/g);
     parts.forEach((part, i) => {
+      if (!part) return;
       if (i % 2 === 1) {
-        out.push(
-          <span
-            key={`m-${i}`}
-            className="math-inline"
-            dangerouslySetInnerHTML={{ __html: renderMath(part, false) }}
-          />
-        );
-      } else if (part) {
-        out.push(...renderSegment(part, i));
+        out.push(<strong key={`b-${i}`}>{renderMathSegments(part, `b${i}`)}</strong>);
+      } else {
+        out.push(...renderMathSegments(part, `p${i}`));
       }
     });
     return out;
