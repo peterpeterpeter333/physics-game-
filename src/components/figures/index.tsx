@@ -66,6 +66,7 @@ import {
   TwoWords,
   LoopIntegral,
   ParallelMiss,
+  AreaVector,
 } from "./univ3";
 
 const REGISTRY: Record<string, () => JSX.Element> = {
@@ -128,6 +129,7 @@ const REGISTRY: Record<string, () => JSX.Element> = {
   "two-words": TwoWords,
   "loop-integral": LoopIntegral,
   "parallel-miss": ParallelMiss,
+  "area-vector": AreaVector,
 };
 
 export function Figure({ id }: { id: string }) {

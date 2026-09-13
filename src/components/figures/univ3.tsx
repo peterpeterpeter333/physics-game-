@@ -200,3 +200,32 @@ export function ParallelMiss() {
     </FigSvg>
   );
 }
+
+/** 面積ベクトル: 面(広さ+向き)は矢印1本で表せる。向き=垂直、長さ=面積 */
+export function AreaVector() {
+  const t = useT();
+  const th = 0.35 * Math.sin(0.8 * t) + 0.4;
+  const fx = -Math.sin(th), fy = Math.cos(th);
+  const nx = Math.cos(th), ny = -Math.sin(th);
+  const tile = (cx: number, cy: number, half: number, arrow: number, label: string, area: string) => (
+    <g>
+      <line x1={cx - half * fx} y1={cy - half * fy} x2={cx + half * fx} y2={cy + half * fy} stroke={C.gold} strokeWidth={6} strokeLinecap="round" />
+      <line x1={cx} y1={cy} x2={cx + arrow * nx} y2={cy + arrow * ny} stroke={C.purple} strokeWidth={3} />
+      <polygon
+        points={`${cx + (arrow + 9) * nx},${cy + (arrow + 9) * ny} ${cx + (arrow - 3) * nx - 5 * ny},${cy + (arrow - 3) * ny + 5 * nx} ${cx + (arrow - 3) * nx + 5 * ny},${cy + (arrow - 3) * ny - 5 * nx}`}
+        fill={C.purple}
+      />
+      <text x={cx - 26} y={cy + half + 18} fontSize={11} fill={C.gold}>{label}</text>
+      <text x={cx + (arrow + 14) * nx - 10} y={cy + (arrow + 14) * ny - 6} fontSize={10.5} fill={C.purple}>{area}</text>
+    </g>
+  );
+  return (
+    <FigSvg>
+      {tile(78, 96, 24, 30, "面積 S", "dA")}
+      {tile(196, 96, 44, 56, "面積 2S", "長さも2倍")}
+      <text x={14} y={24} fontSize={11} fill="#fff">面の情報は「広さ」と「向き」の2つだけ</text>
+      <text x={14} y={40} fontSize={11} fill={C.purple}>→ 矢印1本で表せる: 向き=面に垂直、長さ=面積</text>
+      <Caption text="面積ベクトル dA: 向き=垂直、長さ=面積。だから B·dA が書ける" />
+    </FigSvg>
+  );
+}

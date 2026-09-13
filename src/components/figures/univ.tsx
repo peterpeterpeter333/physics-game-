@@ -410,32 +410,45 @@ export function GaussSphere() {
   );
 }
 
-/** 磁束: 面を傾けると貫く本数が減る Φ = BAcosθ */
+/** 磁束: 面(横から見た線)を傾けると、貫く本数がcosθで減る */
 export function FluxTilt() {
   const [deg, setDeg] = useState(20);
   const th = (deg * Math.PI) / 180;
-  const cosv = Math.cos(th);
-  const cx = 170, cy = 92;
-  const halfW = 62 * cosv;
-  const arrows = [];
-  for (let i = 0; i < 5; i++) {
-    const y = 40 + i * 26;
-    const through = Math.abs(y - cy) < 58 * cosv + 6;
-    arrows.push(
-      <g key={i} opacity={through ? 1 : 0.3}>
-        <line x1={40} y1={y} x2={288} y2={y} stroke={through ? C.cyan : C.dim} strokeWidth={2} />
-        <polygon points={`296,${y} 284,${y - 5} 284,${y + 5}`} fill={through ? C.cyan : C.dim} />
+  const cx = 168, cy = 95, L = 60;
+  // 面は横から見ると線分。法線が矢印(+x)とθをなす → 面の向きは(−sinθ, cosθ)
+  const fx = -Math.sin(th), fy = Math.cos(th);
+  const rows = [45, 70, 95, 120, 145];
+  const halfH = L * Math.abs(Math.cos(th));
+  const arrows = rows.map((y) => {
+    const hit = Math.abs(y - cy) <= halfH + 0.5 && Math.cos(th) > 0.02;
+    let ix = cx;
+    if (hit) {
+      const s2 = (y - cy) / Math.cos(th);
+      ix = cx + s2 * -Math.sin(th);
+    }
+    return (
+      <g key={y} opacity={hit ? 1 : 0.3}>
+        <line x1={30} y1={y} x2={286} y2={y} stroke={hit ? C.cyan : C.dim} strokeWidth={2} />
+        <polygon points={`294,${y} 282,${y - 5} 282,${y + 5}`} fill={hit ? C.cyan : C.dim} />
+        {hit && <circle cx={ix} cy={y} r={4} fill={C.gold} />}
       </g>
     );
-  }
+  });
+  const n = Math.round(5 * Math.max(Math.cos(th), 0));
   return (
     <div>
       <FigSvg>
         {arrows}
-        <ellipse cx={cx} cy={cy} rx={Math.max(halfW, 2)} ry={58} fill={C.gold} opacity={0.14} />
-        <ellipse cx={cx} cy={cy} rx={Math.max(halfW, 2)} ry={58} fill="none" stroke={C.gold} strokeWidth={3} />
-        <text x={44} y={172} fontSize={11} fill="#fff">傾き θ = {deg}°　Φ = BAcosθ</text>
-        <Caption text="真正面(θ=0)で最大、真横(θ=90°)で0 — 磁束は「貫く本数」" />
+        <line x1={cx - L * fx} y1={cy - L * fy} x2={cx + L * fx} y2={cy + L * fy} stroke={C.gold} strokeWidth={5} strokeLinecap="round" />
+        <line x1={cx} y1={cy} x2={cx + 34 * Math.cos(th)} y2={cy - 34 * Math.sin(th)} stroke={C.purple} strokeWidth={2.5} />
+        <polygon
+          points={`${cx + 42 * Math.cos(th)},${cy - 42 * Math.sin(th)} ${cx + 31 * Math.cos(th) + 5 * Math.sin(th)},${cy - 31 * Math.sin(th) + 5 * Math.cos(th)} ${cx + 31 * Math.cos(th) - 5 * Math.sin(th)},${cy - 31 * Math.sin(th) - 5 * Math.cos(th)}`}
+          fill={C.purple}
+        />
+        <text x={cx + 46 * Math.cos(th)} y={cy - 46 * Math.sin(th) + 4} fontSize={10.5} fill={C.purple}>法線</text>
+        <text x={14} y={26} fontSize={11} fill={C.dim}>面を横から見た図 (金の線 = 面)</text>
+        <text x={14} y={172} fontSize={11.5} fill="#fff">θ = {deg}°　貫く本数: {n}/5 本　Φ = BAcosθ</text>
+        <Caption text="" />
       </FigSvg>
       <input className="fig-slider" type="range" min={0} max={90} value={deg}
         onChange={(e) => setDeg(Number(e.target.value))} />
