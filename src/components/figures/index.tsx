@@ -59,6 +59,14 @@ import {
   TorqueDoor,
   ComSeesaw,
 } from "./univ2";
+import {
+  PredictMachine,
+  SolveRecipe,
+  FieldMap,
+  TwoWords,
+  LoopIntegral,
+  ParallelMiss,
+} from "./univ3";
 
 const REGISTRY: Record<string, () => JSX.Element> = {
   "xt-slope": XtSlope,
@@ -114,6 +122,12 @@ const REGISTRY: Record<string, () => JSX.Element> = {
   "xva-chain": XvaChain,
   "torque-door": TorqueDoor,
   "com-seesaw": ComSeesaw,
+  "predict-machine": PredictMachine,
+  "solve-recipe": SolveRecipe,
+  "field-map": FieldMap,
+  "two-words": TwoWords,
+  "loop-integral": LoopIntegral,
+  "parallel-miss": ParallelMiss,
 };
 
 export function Figure({ id }: { id: string }) {
