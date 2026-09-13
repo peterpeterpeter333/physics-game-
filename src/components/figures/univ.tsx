@@ -415,8 +415,9 @@ export function FluxTilt() {
   const [deg, setDeg] = useState(20);
   const th = (deg * Math.PI) / 180;
   const cx = 168, cy = 95, L = 60;
-  // 面は横から見ると線分。法線が矢印(+x)とθをなす → 面の向きは(−sinθ, cosθ)
-  const fx = -Math.sin(th), fy = Math.cos(th);
+  // 面は横から見ると線分。法線 n=(cosθ, −sinθ) が矢印(+x)とθをなす。
+  // 面の向きは法線に垂直: f=(sinθ, cosθ) (画面座標はy下向き。f·n = 0 を満たす)
+  const fx = Math.sin(th), fy = Math.cos(th);
   const rows = [45, 70, 95, 120, 145];
   const halfH = L * Math.abs(Math.cos(th));
   const arrows = rows.map((y) => {
@@ -424,7 +425,7 @@ export function FluxTilt() {
     let ix = cx;
     if (hit) {
       const s2 = (y - cy) / Math.cos(th);
-      ix = cx + s2 * -Math.sin(th);
+      ix = cx + s2 * Math.sin(th);
     }
     return (
       <g key={y} opacity={hit ? 1 : 0.3}>

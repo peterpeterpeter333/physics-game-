@@ -205,7 +205,8 @@ export function ParallelMiss() {
 export function AreaVector() {
   const t = useT();
   const th = 0.35 * Math.sin(0.8 * t) + 0.4;
-  const fx = -Math.sin(th), fy = Math.cos(th);
+  // 面の向き f と法線 n が直交するように (画面座標はy下向き): f=(sinθ, cosθ), n=(cosθ, −sinθ)
+  const fx = Math.sin(th), fy = Math.cos(th);
   const nx = Math.cos(th), ny = -Math.sin(th);
   const tile = (cx: number, cy: number, half: number, arrow: number, label: string, area: string) => (
     <g>
@@ -225,7 +226,7 @@ export function AreaVector() {
       {tile(196, 96, 44, 56, "面積 2S", "長さも2倍")}
       <text x={14} y={24} fontSize={11} fill="#fff">面の情報は「広さ」と「向き」の2つだけ</text>
       <text x={14} y={40} fontSize={11} fill={C.purple}>→ 矢印1本で表せる: 向き=面に垂直、長さ=面積</text>
-      <Caption text="面積ベクトル dA: 向き=垂直、長さ=面積。だから B·dA が書ける" />
+      <Caption text="面積ベクトル dA: 向き=面に垂直、長さ=面積" />
     </FigSvg>
   );
 }
