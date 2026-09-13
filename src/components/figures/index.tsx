@@ -68,6 +68,22 @@ import {
   ParallelMiss,
   AreaVector,
 } from "./univ3";
+import {
+  AvgVsInstant,
+  DeltaToD,
+  AntiderivativeFamily,
+  PartialHill,
+  TaylorApprox,
+  VectorBundle,
+  PythagorasVec,
+  DotComponents,
+  Wrench,
+  RightHand,
+  DecaySlope,
+  InitFamily,
+  PeriodMass,
+  ValleyParabola,
+} from "./math2";
 
 const REGISTRY: Record<string, () => JSX.Element> = {
   "xt-slope": XtSlope,
@@ -130,6 +146,20 @@ const REGISTRY: Record<string, () => JSX.Element> = {
   "loop-integral": LoopIntegral,
   "parallel-miss": ParallelMiss,
   "area-vector": AreaVector,
+  "avg-vs-instant": AvgVsInstant,
+  "delta-to-d": DeltaToD,
+  "antiderivative-family": AntiderivativeFamily,
+  "partial-hill": PartialHill,
+  "taylor-approx": TaylorApprox,
+  "vector-bundle": VectorBundle,
+  "pythagoras-vec": PythagorasVec,
+  "dot-components": DotComponents,
+  "wrench": Wrench,
+  "right-hand": RightHand,
+  "decay-slope": DecaySlope,
+  "init-family": InitFamily,
+  "period-mass": PeriodMass,
+  "valley-parabola": ValleyParabola,
 };
 
 export function Figure({ id }: { id: string }) {
