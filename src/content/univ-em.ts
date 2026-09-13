@@ -213,8 +213,8 @@ export const univEm: Chapter = {
             heading: "① ガウスの法則は、何を主張しているのだろう?",
             figure: "gauss-sphere",
             body:
-              "任意の**閉じた面(袋)**について $\\oint\\vec{E}\\cdot d\\vec{A} = \\frac{Q_{内}}{\\varepsilon_0}$ — **袋を貫いて出る電気力線の正味の本数は、袋の中の電荷だけで決まる**。図: 小さい球面も大きい球面も貫く本数は同じ12本。**なぜか?** 電気力線は電荷でしか生まれず、途中で消えないから。外の電荷は「入って出ていく」ので正味0。クーロンの1/r²を、幾何(面積は距離の2乗で広がる)で言い直したもの。",
-            formula: "\\oint \\vec{E}\\cdot d\\vec{A} = \\dfrac{Q_{内}}{\\varepsilon_0}",
+              "任意の**閉じた面(袋)**について $\\oint\\vec{E}\\cdot d\\vec{A} = \\frac{Q_{\\text{内}}}{\\varepsilon_0}$ — **袋を貫いて出る電気力線の正味の本数は、袋の中の電荷だけで決まる**。図: 小さい球面も大きい球面も貫く本数は同じ12本。**なぜか?** 電気力線は電荷でしか生まれず、途中で消えないから。外の電荷は「入って出ていく」ので正味0。クーロンの1/r²を、幾何(面積は距離の2乗で広がる)で言い直したもの。",
+            formula: "\\oint \\vec{E}\\cdot d\\vec{A} = \\dfrac{Q_{\\text{内}}}{\\varepsilon_0}",
             formulaNote: "閉じた袋を貫く本数 = 中の電荷 ÷ ε₀。外の電荷は無関係",
           },
           {
@@ -228,7 +228,7 @@ export const univEm: Chapter = {
             figure: "gauss-cyl-plane",
             body:
               "**円筒対称**(帯電した直線、線密度λ): 袋=同軸円筒(長さL)、側面だけ貫いて $E\\cdot2\\pi rL = \\lambda L/\\varepsilon_0$ → $E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r}$(1/rで減る)。**平面対称**(帯電した板、面密度σ): 袋=板を貫く箱、両面から出て $E = \\frac{\\sigma}{2\\varepsilon_0}$ — **距離によらず一定**。点1/r²→線1/r→面一定: 電荷の集まり方の次元が下がるほど、電場は遠くまで届く。",
-            formula: "E_{球} = \\dfrac{Q}{4\\pi\\varepsilon_0 r^2}, \\quad E_{線} = \\dfrac{\\lambda}{2\\pi\\varepsilon_0 r}, \\quad E_{面} = \\dfrac{\\sigma}{2\\varepsilon_0}",
+            formula: "E_{\\text{球}} = \\dfrac{Q}{4\\pi\\varepsilon_0 r^2}, \\quad E_{\\text{線}} = \\dfrac{\\lambda}{2\\pi\\varepsilon_0 r}, \\quad E_{\\text{面}} = \\dfrac{\\sigma}{2\\varepsilon_0}",
             formulaNote: "3つの対称性の答え。点→線→面の順に減衰が緩くなる",
           },
           {
@@ -740,8 +740,8 @@ export const univEm: Chapter = {
             heading: "② アンペールの法則は、何を主張しているのだろう?",
             figure: "ampere-wire",
             body:
-              "$\\oint\\vec{B}\\cdot d\\vec{r} = \\mu_0I_{貫}$ — **閉じた輪に沿って磁場の「後押し」を一周分集めると、輪を貫く電流×μ₀に等しい**。ガウスの法則と同じ思想(「周辺の集計=中身」)の線積分バージョン。図のように電流の周りには磁場がぐるぐる回っている(右手の親指=電流、4本指=磁場の向き)。",
-            formula: "\\oint \\vec{B}\\cdot d\\vec{r} = \\mu_0 I_{貫}",
+              "$\\oint\\vec{B}\\cdot d\\vec{r} = \\mu_0I_{\\text{貫}}$ — **閉じた輪に沿って磁場の「後押し」を一周分集めると、輪を貫く電流×μ₀に等しい**。ガウスの法則と同じ思想(「周辺の集計=中身」)の線積分バージョン。図のように電流の周りには磁場がぐるぐる回っている(右手の親指=電流、4本指=磁場の向き)。",
+            formula: "\\oint \\vec{B}\\cdot d\\vec{r} = \\mu_0 I_{\\text{貫}}",
             formulaNote: "輪を一周した磁場の集計 = 貫く電流。ガウスの磁場版",
           },
           {
@@ -768,7 +768,7 @@ export const univEm: Chapter = {
         {
           id: "p-uea-1",
           difficulty: 2,
-          question: "アンペールの法則 $\\oint\\vec{B}\\cdot d\\vec{r} = \\mu_0I_{貫}$ の構造が似ている法則は?",
+          question: "アンペールの法則 $\\oint\\vec{B}\\cdot d\\vec{r} = \\mu_0I_{\\text{貫}}$ の構造が似ている法則は?",
           choices: [
             "オームの法則",
             "ガウスの法則 — 「周辺での集計 = 中身」という同じ思想",
