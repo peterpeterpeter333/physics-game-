@@ -205,6 +205,48 @@ export function PythagorasVec() {
   );
 }
 
+/** 内積の定義: Bの向きに落としたAの影 (A cosθ) × Bの長さ。θが90°を越えると影が逆向き=負 */
+export function DotProjection() {
+  const t = useT();
+  // θ を 20° → 160° → 20° と往復させる
+  const tri = Math.abs(((t / 5) % 2) - 1); // 0..1..0
+  const th = (20 + 140 * tri) * (Math.PI / 180);
+  const ox = 95, oy = 138;
+  const B = 175, A = 84;
+  const bx = ox + B, by = oy;
+  const ax = ox + A * Math.cos(th), ay = oy - A * Math.sin(th);
+  const shadow = A * Math.cos(th);
+  const sx = ox + shadow;
+  const neg = shadow < 0;
+  const col = neg ? C.red : C.green;
+  const deg = Math.round((th * 180) / Math.PI);
+  const verdict = neg ? "< 0 (逆向き) → 内積は負" : Math.abs(shadow) < 8 ? "≈ 0 (直角) → 内積は 0" : "> 0 (同じ向き) → 内積は正";
+  return (
+    <FigSvg>
+      <text x={16} y={22} fontSize={11.5} fill="#fff">A·B = (Bに落としたAの影) × (Bの長さ)</text>
+      <text x={16} y={40} fontSize={11.5} fill={col}>影 = A cosθ {verdict}</text>
+      {/* B (基準の向き) */}
+      <line x1={ox} y1={oy} x2={bx} y2={by} stroke={C.cyan} strokeWidth={3.5} />
+      <polygon points={`${bx},${by} ${bx - 10},${by - 5} ${bx - 10},${by + 5}`} fill={C.cyan} />
+      <text x={bx - 12} y={by + 18} fontSize={12} fill={C.cyan} fontWeight={700}>B</text>
+      {/* 影 (A cosθ) */}
+      <line x1={ox} y1={oy + 1} x2={sx} y2={oy + 1} stroke={col} strokeWidth={7} opacity={0.8} />
+      <text x={(ox + sx) / 2} y={oy + 18} fontSize={10.5} fill={col} textAnchor="middle">影</text>
+      {/* 垂線 (真上から光を当てる) */}
+      <line x1={ax} y1={ay} x2={sx} y2={oy} stroke={C.dim} strokeWidth={1.2} strokeDasharray="4 3" />
+      {/* A */}
+      <line x1={ox} y1={oy} x2={ax} y2={ay} stroke={C.gold} strokeWidth={3.5} />
+      <circle cx={ax} cy={ay} r={4} fill={C.gold} />
+      <text x={ax + (Math.cos(th) >= 0 ? 8 : -18)} y={ay - 6} fontSize={12} fill={C.gold} fontWeight={700}>A</text>
+      {/* 角度 */}
+      <path d={`M ${ox + 24} ${oy} A 24 24 0 0 0 ${ox + 24 * Math.cos(th)} ${oy - 24 * Math.sin(th)}`} fill="none" stroke="#fff" strokeWidth={1} />
+      <text x={ox + 28} y={oy - 28} fontSize={11} fill="#fff">θ = {deg}°</text>
+      <circle cx={ox} cy={oy} r={3} fill="#fff" />
+      <Caption text="影の長さ×相手の長さ。平行で最大、直角で0、逆向きで負" />
+    </FigSvg>
+  );
+}
+
 /** 内積の成分計算: x̂·x̂=1、x̂·ŷ=0 で混ざり項が全滅する */
 export function DotComponents() {
   const t = useT();
@@ -397,7 +439,7 @@ export function ValleyParabola() {
       <text x={24} y={36} fontSize={11} fill={C.cyan}>本物のポテンシャル(でこぼこ)</text>
       <text x={24} y={52} fontSize={11} fill={C.gold}>点線: 放物線 ½kx²</text>
       <text x={200} y={168} fontSize={11} fill={C.green}>{zoom > 2.2 ? "谷底にズーム: 一致!" : "谷底(安定点)"}</text>
-      <Caption text="安定点の近くはテイラー展開で必ず放物線 → 小さな揺れは何でも単振動" />
+      <Caption text="安定点の近くは必ず放物線 → 小さな揺れは何でも単振動" />
     </FigSvg>
   );
 }

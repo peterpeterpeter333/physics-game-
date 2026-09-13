@@ -20,7 +20,7 @@ export function LessonView({
   const allRevealed = revealed >= lesson.steps.length;
 
   return (
-    <div className="screen lesson">
+    <div className="screen lesson" data-stage-id={stage.id}>
       <header className="screen-header">
         <button className="btn-back" onClick={onExit}>
           ←

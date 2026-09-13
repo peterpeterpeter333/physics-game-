@@ -294,16 +294,16 @@ export function KeplerSweep() {
 export function PendulumForce() {
   const t = useT();
   const th = 0.55 * Math.sin(1.6 * t);
-  const ox = 160, oy = 30, L = 105;
+  const ox = 160, oy = 28, L = 82;
   const bx = ox + L * Math.sin(th), by = oy + L * Math.cos(th);
-  const g = 46;
+  const g = 34;
   return (
     <FigSvg>
       <line x1={110} y1={oy} x2={210} y2={oy} stroke={C.dim} strokeWidth={3} />
       <line x1={ox} y1={oy} x2={bx} y2={by} stroke={C.dim} strokeWidth={1.5} />
-      <circle cx={bx} cy={by} r={11} fill={C.cyan} />
+      <circle cx={bx} cy={by} r={10} fill={C.cyan} />
       <Arrow x={bx} y={by} dx={0} dy={g} color={C.red} w={2} />
-      <text x={bx + 6} y={by + g + 10} fontSize={10.5} fill={C.red}>mg</text>
+      <text x={bx + 7} y={by + g / 2 + 4} fontSize={10.5} fill={C.red}>mg</text>
       <Arrow x={bx} y={by} dx={-g * Math.sin(th) * Math.cos(th)} dy={g * Math.sin(th) * Math.sin(th)} color={C.gold} />
       <text x={bx - 80 * Math.sign(th || 1) - 20} y={by - 6} fontSize={10.5} fill={C.gold}>戻す力 mg sinθ</text>
       <text x={20} y={160} fontSize={11} fill="#fff">弧に沿う運動方程式: ml(d²θ/dt²) = −mg sinθ</text>

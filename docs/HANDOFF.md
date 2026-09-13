@@ -38,7 +38,7 @@
 | ステージ | 56 |
 | 演習問題 | 266問(4択、難易度1〜3、全問ヒント+解説付き) |
 | 公式 | 87本(全て導出レッスンにリンク) |
-| アニメーション図解 | 119種(SVG+requestAnimationFrame、一部スライダー操作可) |
+| アニメーション図解 | 120種(SVG+requestAnimationFrame、一部スライダー操作可) |
 
 ---
 
@@ -80,7 +80,9 @@ src/
   types.ts                Chapter/Stage/Lesson/Problem/Formula 型定義
   content/                ★教材データ本体(mechanics/thermo/waves/electromagnetism/atomic/formulas)
   components/             QuestMap/LessonView/BattleView/FormulaBook/ReviewView/SettingsView/AIChat/MathText
-  components/figures/     図解エンジン(anim.ts=rAFフック、24図をREGISTRYに登録、URL末尾#figsで一覧)
+  components/figures/     図解エンジン(anim.ts=rAFフック、120図をREGISTRYに登録、URL末尾#figsで一覧、#figs=id1,id2で絞り込み)
+scripts/audit/            Playwrightによる全コンテンツ自動プレイ(play.mjs)・敗北フロー(defeat.mjs)・図解撮影(shots.mjs)。
+                          使い方: npm run build → python3 -m http.server 8000 --directory dist → OUT=出力先 node scripts/audit/play.mjs
   ai/tutor.ts             Claude API呼び出し(claude-opus-5、ストリーミング、日本語家庭教師プロンプト)
   game/state.ts           localStorage進捗管理
 capacitor.config.ts       appId: app.physicsquest.game / appName: Physics Quest / webDir: dist

@@ -203,7 +203,7 @@ export function Ftc() {
       <text x={60} y={142} fontSize={11} fill={C.cyan}>たまった面積 A(x)</text>
       <rect x={296} y={150 - barH} width={14} height={barH} fill={C.cyan} opacity={0.8} />
       <text x={286} y={166} fontSize={10} fill={C.cyan}>A(x)</text>
-      <Caption text="xを少し進めると、面積は「高さ×幅」だけ増える → dA/dx = f(x)" />
+      <Caption text="xを少し進めると面積は「高さ×幅」だけ増える → dA/dx = f(x)" />
     </FigSvg>
   );
 }

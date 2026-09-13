@@ -139,7 +139,7 @@ export const univMath: Chapter = {
           answerIndex: 0,
           hint: "v = dx/dt。微分=接線の傾き。",
           explanation:
-            "$v = \\frac{dx}{dt}$ とは「**上のグラフの傾きを、下のグラフの値として描き直す**」という関係(図解 xva-chain の通り)。同じ関係が v→a にも成り立つ。高校の「グラフの傾き=速度」は、この微分関係の絵の読み方だった。",
+            "$v = \\frac{dx}{dt}$ とは「**上のグラフの傾きを、下のグラフの値として描き直す**」という関係(上の図の通り)。同じ関係が v→a にも成り立つ。高校の「グラフの傾き=速度」は、この微分関係の絵の読み方だった。",
         },
       ],
     },
@@ -606,7 +606,7 @@ export const univMath: Chapter = {
           },
           {
             heading: "② 内積は、何を計算しているのだろう?",
-            figure: "vector-components",
+            figure: "dot-projection",
             body:
               "定義は $\\vec{A}\\cdot\\vec{B} = AB\\cos\\theta$。読み方1:「Bの向きに落としたAの**影の長さ**($A\\cos\\theta$ — 図の成分そのもの)× Bの長さ」。読み方2:「2本が**どれだけ同じ向きか**の点数」— 平行で満点、直角で0、逆向きで負。結果は向きのない**ただの数(スカラー)**になる。",
             formula: "\\vec{A} \\cdot \\vec{B} = AB\\cos\\theta",

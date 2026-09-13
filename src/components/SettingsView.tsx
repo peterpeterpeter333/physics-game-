@@ -65,7 +65,7 @@ export function SettingsView({ onResetProgress }: { onResetProgress: () => void 
       <section className="settings-section">
         <h2>ℹ️ このアプリについて</h2>
         <p className="screen-note">
-          Physics Quest は「暗記ではなく理解」を合言葉にした高校物理の学習RPGです。
+          Physics Quest は「暗記ではなく理解」を合言葉にした高校・大学物理の学習RPGです。
           すべての公式に導出レッスンが付いています。オフラインでも動作します(AI先生を除く)。
         </p>
       </section>

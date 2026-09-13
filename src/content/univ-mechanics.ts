@@ -37,7 +37,7 @@ export const univMechanics: Chapter = {
           },
           {
             heading: "③ なぜ、わざわざ矢印を付けて書くのだろう?",
-            figure: "vector-components",
+            figure: "vector-bundle",
             body:
               "力も加速度も向きを持つ**ベクトル**だから — そして武器庫でやったとおり、**ベクトルの等式は「成分ごとの等式の束」**だから。$m\\ddot{x} = F_x$、$m\\ddot{y} = F_y$、$m\\ddot{z} = F_z$ の3本が1本に束ねられている。高校の「水平と鉛直で別々に立式」は、この束をほどく作業だった。",
             formula: "m\\dfrac{d^2\\vec{r}}{dt^2} = \\vec{F}",
@@ -95,7 +95,7 @@ export const univMechanics: Chapter = {
           question: "斜め投射で「水平方向は等速直線運動」になる理由は?",
           choices: [
             "空気が押してくれるから",
-            "水平方向に働く力が0で、m\\ddot{x} = 0 → 速度一定となるから",
+            "水平方向に働く力が0で、$m\\ddot{x} = 0$ → 速度一定となるから",
             "重力が水平に働くから",
             "初速が大きいから",
           ],
@@ -214,7 +214,7 @@ export const univMechanics: Chapter = {
           question: "解 $v(t) = \\frac{mg}{k}(1 - e^{-kt/m})$ で、$e^{-kt/m}$ が表しているのは?",
           choices: [
             "終端速度そのもの",
-            "「まだ終端速度に達していない度合い」— 時間とともに消える项",
+            "「まだ終端速度に達していない度合い」— 時間とともに消える項",
             "空気の密度",
             "重力加速度の変化",
           ],
@@ -719,7 +719,7 @@ export const univMechanics: Chapter = {
             "gの中にmが隠れているから",
           ],
           answerIndex: 1,
-          hint: "ml\\ddot{θ} = −mgθ で両辺のmが…",
+          hint: "$ml\\ddot{\\theta} = -mg\\theta$ で両辺の $m$ が…",
           explanation:
             "方程式 $ml\\ddot{\\theta} = -mg\\theta$ の**両辺からmが割れて消える**。力が2倍なら慣性も2倍で、動きは同じ — 自由落下でガリレオが見つけた「重さによらない」と同じ構造。式を自分で立てると、この相殺が目に見える。",
         },
@@ -967,7 +967,7 @@ export const univMechanics: Chapter = {
           question: "剛体の運動を完全に記述するために必要な方程式の組は?",
           choices: [
             "運動方程式1本だけ",
-            "重心の並進の式 M\\ddot{r}_G = F と、重心まわりの回転の式 Iα = N の2本立て",
+            "重心の並進の式 $M\\ddot{r}_G = F$ と、重心まわりの回転の式 $I\\alpha = N$ の2本立て",
             "エネルギー保存則だけ",
             "角運動量保存則だけ",
           ],

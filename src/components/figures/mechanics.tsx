@@ -12,11 +12,40 @@ export function FigSvg({ children }: { children: React.ReactNode }) {
   );
 }
 
+// おおよその描画幅 (全角 ≈ fontSize, 半角 ≈ 0.56×fontSize)
+function estWidth(s: string, fs: number): number {
+  let w = 0;
+  for (const ch of s) w += ch.charCodeAt(0) > 0x2e7f ? fs * 1.08 : fs * 0.6;
+  return w;
+}
+
+// 長いキャプションは (1) 文字を少し縮め、(2) それでも入らなければ2行に折り返す
 export function Caption({ text }: { text: string }) {
+  const maxW = W - 16;
+  let fs = 11;
+  while (fs > 9.5 && estWidth(text, fs) > maxW) fs -= 0.5;
+  if (estWidth(text, fs) <= maxW) {
+    return (
+      <text x={W / 2} y={H - 8} textAnchor="middle" fontSize={fs} fill={C.dim}>
+        {text}
+      </text>
+    );
+  }
+  const chars = [...text];
+  const mid = Math.floor(chars.length / 2);
+  const sep = /[、。，,;；:：—→=)）」]/;
+  let cut = mid;
+  for (let d = 0; d < mid; d++) {
+    if (sep.test(chars[mid + d] ?? "")) { cut = mid + d + 1; break; }
+    if (sep.test(chars[mid - d] ?? "")) { cut = mid - d + 1; break; }
+  }
+  const l1 = chars.slice(0, cut).join("");
+  const l2 = chars.slice(cut).join("");
   return (
-    <text x={W / 2} y={H - 8} textAnchor="middle" fontSize={11} fill={C.dim}>
-      {text}
-    </text>
+    <g fontSize={9.5} fill={C.dim} textAnchor="middle">
+      <text x={W / 2} y={H - 18}>{l1}</text>
+      <text x={W / 2} y={H - 6}>{l2}</text>
+    </g>
   );
 }
 

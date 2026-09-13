@@ -246,7 +246,7 @@ export function BattleView({
         </div>
       )}
 
-      <div className="question-card">
+      <div className="question-card" data-problem-id={problem.id} data-answer-index={problem.answerIndex}>
         <div className="question-meta">
           <span className="difficulty">{"★".repeat(problem.difficulty)}</span>
           <button
