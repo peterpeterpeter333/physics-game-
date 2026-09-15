@@ -297,6 +297,10 @@ p { line-height: 1.85; }
 .lesson-step h2 { color: var(--cyan); }
 .lesson-step p { margin: 0; font-size: 15px; }
 .lesson-step { scroll-margin-top: 12px; }
+/* Scaling a tall card changes its top edge during scrollIntoView. Fade only,
+   so the destination stays visible after the entrance animation finishes. */
+.lesson-step.pop-in { animation-name: lesson-fade-in; }
+@keyframes lesson-fade-in { from { opacity: 0; } to { opacity: 1; } }
 .lesson-destination {
   margin: 0 0 16px;
   padding: 12px 14px;
