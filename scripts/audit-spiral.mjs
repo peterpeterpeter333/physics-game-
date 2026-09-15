@@ -47,5 +47,12 @@ for(const u of [0,.2,.5,.6])for(const h of [.01,.1,.4]){
  assert(Math.abs(pathStep(u,h/2).error-p.error/4)<1e-12);
 }
 assert.equal(explained,36);
+const sphereCards=spiralLessons['ue-integrals'].find(c=>c.id==='sphere-area').cards;
+assert(sphereCards[0].tex.includes('Delta'),'Start with finite angle changes, not unexplained differentials');
+for(const card of sphereCards)assert(!/角度幅|小片|大円|緯線/.test(card.text),'Use plain descriptions in the sphere-area slides');
+const arcGuide=integralEquationGuides['sphere-area'][0];
+assert(arcGuide.steps.findIndex(s=>s.tex.includes('0.2'))<arcGuide.steps.findIndex(s=>s.tex.includes('lim')),'Numerical arc example must precede the derivative');
+assert(arcGuide.symbols.some(([symbol])=>symbol==='Δs'));
+assert(arcGuide.symbols.some(([symbol])=>symbol==='Δθ'));
 console.log({equationGuides:explained,derivationSteps,pathApproximation:'PASS'});
 console.log({result:'PASS',slides:counts,characters:{min:Math.min(...lengths),max:Math.max(...lengths)}});

@@ -7,7 +7,7 @@ const sum:[string,string][]=[...work,['N','分ける区間の個数'],['i','区�
 const path:[string,string][]=[['r(u)','目盛りuで指定した位置 [m]'],['u','道に付けた無次元の目盛り。時間とは限らない'],['L・H','道の横幅・高さ [m]'],['r′(u)','uあたりの位置の変化 [m]'],['du・dr','微小な目盛りの変化・それに対応する移動']];
 const field:[string,string][]=[['E','電場 [N/C = V/m]。矢印付きはベクトル'],['q','運ぶ電荷 [C]。電子では−e'],['e','正の電気素量 [C]'],['·','対応する成分同士の積を足す内積'],['W','電気力がする仕事 [J]']];
 const surface:[string,string][]=[['ΦE','電気束 [N·m²/C]。仕事ではない'],['n','面に垂直な長さ1のベクトル'],['dA','小さな面積 [m²]'],['dA（矢印付き）','向きnと面積dAを組にしたベクトル'],['S','集計する面'],['θ','電場と法線のなす角']];
-const sphere:[string,string][]=[['R','球の半径 [m]'],['θ','北極からの角度、0〜π [rad]'],['φ','軸の周りの角度、0〜2π [rad]'],['dθ・dφ','ごく小さい角度の幅'],['A・dA','球面全体の面積・小片の面積 [m²]']];
+const sphere:[string,string][]=[['R','球の半径 [m]'],['θ','中心で測る、上向きの軸からの角度 [rad]'],['φ','軸の周りを回る方向の角度 [rad]'],['dθ・dφ','それぞれの角度の微小な変化。dという数との掛け算ではない'],['A・dA','球面全体の面積・細かく区切った一つ分の微小な面積 [m²]'],['rad（ラジアン）','弧の長さ÷半径で測る角度。半周はπ、一周は2π']];
 
 /** One guide per card, including equations introduced in prose and diagrams. */
 export const integralEquationGuides:Record<string,[EquationGuide,EquationGuide,EquationGuide]>={
@@ -123,13 +123,17 @@ export const integralEquationGuides:Record<string,[EquationGuide,EquationGuide,E
    s('L³があっても体積ではない。βの単位と合わせて電気束の単位になる。',r`\frac{\mathrm V}{\mathrm m^2}\,\mathrm m^3=\mathrm{V\,m}=\frac{\mathrm{N\,m^2}}{\mathrm C}`)),
  ],
  'sphere-area':[
-  g('球面の目盛り','角度を二つ使って、球面上の小片の場所を指定する。',sphere,
-   s('ラジアンの定義は、角度＝弧の長さ÷半径。したがって弧の長さ＝半径×角度。',r`\theta=\frac sR\ \Rightarrow\ ds=R\,d\theta`),
+  g('角度から長さへ','Δは二点間の変化。まず普通の長さを計算し、その関係を微分で表す。',[['R','青い円の半径 [m]。図の例は2 m'],['Δθ','二本の半径の間の角度 [rad]。位置の角度θとは別'],['Δs','二点間を円周に沿って進む長さ [m]。直線距離ではない'],['rad（ラジアン）','弧の長さ÷半径で測る角度。度数をそのまま代入しない'],...sphere.slice(1,5),['s・ds','円周に沿った長さ・その微小な変化 [m]']],
+   s('ラジアンの定義。弧が半径と同じ長さなら角度は1 rad。',r`\Delta\theta=\frac{\Delta s}{R}`),
+   s('両辺に同じ半径Rを掛け、右辺のRを約分する。',r`R\,\Delta\theta=R\frac{\Delta s}{R}=\Delta s`),
+   s('半径2 m、角度の変化0.1 radなら、表面に沿った長さは0.2 m。',r`\Delta s=(2\,\mathrm m)\times0.1=0.2\,\mathrm m`),
+   s('半径は一定。角度あたりの長さの変化は、区間を縮めてもR。極限を微分と呼ぶ。',r`\frac{ds}{d\theta}=\lim_{\Delta\theta\to0}\frac{\Delta s}{\Delta\theta}=R`),
+   s('微分の関係をds＝R dθと書く。dsは微小な長さ、dθは対応する角度の微小な変化。',r`ds=R\,d\theta`),
    s('θは北極から南極まで半周、φは軸の周りに一周。',r`0\le\theta\le\pi,\qquad0\le\varphi\le2\pi`)),
-  g('球面の面積要素','縦の小幅×横の小幅。横方向の輪の半径はRではなくRsinθ。',[...sphere,['ρ','その緯線の輪の半径 [m]']],
+  g('表面を区切った一つ分の面積','縦と横の長さを掛ける前に、それぞれが通る円の半径を確かめる。',[['ρ','同じ高さを一周する金色の輪の半径 [m]'],['dsθ・dsφ','球の表面に沿う、縦・横の微小な長さ [m]'],...sphere],
    s('軸を含む断面の直角三角形で、sinθ＝輪の半径÷球の半径。',r`\sin\theta=\frac\rho R\ \Rightarrow\ \rho=R\sin\theta`),
    s('弧の長さ＝半径×角度を、縦と横それぞれに使う。',r`ds_\theta=R\,d\theta,\qquad ds_\varphi=\rho\,d\varphi=R\sin\theta\,d\varphi`),
-   s('二方向は直交する。微小な小片の面積は二つの小幅の積。',r`dA=(R\,d\theta)(R\sin\theta\,d\varphi)=R^2\sin\theta\,d\theta\,d\varphi`)),
+   s('小さく区切るほど長方形に近づく。極限で縦×横が微小な面積dAになる。',r`dA=(R\,d\theta)(R\sin\theta\,d\varphi)=R^2\sin\theta\,d\theta\,d\varphi`)),
   g('球面積を導く','θ方向の積分は2、φ方向は2π。R²と掛けて4πR²。',sphere,
    s('小面積の式を、球全体の角度の範囲で積分する。',r`A=R^2\int_0^{2\pi}\int_0^\pi\sin\theta\,d\theta\,d\varphi`),
    s('−cosθを微分するとsinθ。cos0=1、cosπ=−1を使う。',r`\int_0^\pi\sin\theta\,d\theta=[-\cos\theta]_0^\pi=1-(-1)=2`),

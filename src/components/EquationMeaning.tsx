@@ -2,7 +2,7 @@ import {useState} from 'react';
 import type {EquationGuide} from '../content/em-equation-guides';
 import {EquationImage} from './CalculationBoard';
 
-export function EquationMeaning({guide,tex}:{guide:EquationGuide;tex?:string}){
+export function EquationMeaning({guide,tex,openDerivation=false}:{guide:EquationGuide;tex?:string;openDerivation?:boolean}){
  const [step,setStep]=useState(0);
  const current=guide.steps[step];
  return <section className="equation-meaning" aria-label="式の読み方と導出">
@@ -11,7 +11,7 @@ export function EquationMeaning({guide,tex}:{guide:EquationGuide;tex?:string}){
   <p className="meaning-caption">{guide.read}</p>
   <dl className="equation-symbols">{guide.symbols.slice(0,4).map(([symbol,meaning])=><div key={symbol}><dt>{symbol}</dt><dd>{meaning}</dd></div>)}</dl>
   {guide.symbols.length>4&&<details className="more-symbols"><summary>ほかの記号・途中式の記号（{guide.symbols.length-4}）</summary><dl className="equation-symbols">{guide.symbols.slice(4).map(([symbol,meaning])=><div key={symbol}><dt>{symbol}</dt><dd>{meaning}</dd></div>)}</dl></details>}
-  <details className="equation-derivation"><summary>どこから来た式？ · 途中式を開く</summary>
+  <details className="equation-derivation" open={openDerivation||undefined}><summary>どこから来た式？ · 途中式を開く</summary>
    <p className="meaning-caption">{step+1} / {guide.steps.length} · {current.note}</p>
    {step>0&&<div className="equation-before"><span>一つ前</span><EquationImage tex={guide.steps[step-1].tex}/><span>↓</span></div>}
    <div className="equation-current"><EquationImage tex={current.tex}/></div>

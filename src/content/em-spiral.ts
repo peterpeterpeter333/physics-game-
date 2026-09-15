@@ -45,7 +45,7 @@ const lessonSources:Record<string,SpiralCycle[]>={
  c('面全体を足すのに、なぜ積分が二回必要？','一度x方向に足すと、薄い横一帯の集計になります。その帯をy方向にも並べて足す必要があるため二重積分です。最初の積分は、すでに計算した一次関数の積分に戻ります。',r`\int_0^L\beta x\,dx=\frac{\beta L^2}{2}`,undefined,'r-surfacecalc'),
  c('新しい積分は、知っている二つの積分だった','一帯の集計βL²/2はyによらないので、次の積分は一定値×長さL。結果はβL³/2です。一次関数の積分と一定値の積分を組み合わせるだけで、面全体の電気束が求まりました。',r`\Phi_E=\int_0^L\frac{\beta L^2}{2}\,dy=\frac{\beta L^3}{2}`,undefined,'r-surfacecalc'),
  ]},
- {id:'sphere-area',title:'平面の小片を球面へ広げる',uses:'前の段：面を二つの目盛りで覆う',gain:'球面積要素と4πR²を導く',references:['r-spherearea','r-area'],cards:[
+ {id:'sphere-area',title:'球の表面を区切り、面積を求める',uses:'前の段：面を細かく分けて足した → 今度は球の表面で考える',gain:'球の微小な面積dAと、全面積4πR²を導く',references:['r-spherearea','r-area'],cards:[
  c('球では、縦横の代わりに二つの角度を使う','北極からの角度θと、軸の周りの角度φで球面の場所を指定します。縦の小幅はR dθ。横方向は緯線に沿います。長方形で使った「縦×横」を、球のごく小さな小片に使ってみましょう。',undefined,undefined,'r-spherearea'),
  c('横幅もR dφでよいのでは？','極の近くの緯線は、赤道より小さな輪です。輪の半径はR sinθなので、横幅はR sinθ dφ。図の輪を北から南へ動かすと、同じ経度差でも横幅が違う理由が見えます。',r`dA=(R\,d\theta)(R\sin\theta\,d\varphi)`,undefined,'r-spherearea'),
  c('小片を足すと、知っている球面積が出る','θを0〜π、φを0〜2πで足します。sinθの原始関数は−cosθなので最初の積分は2、周方向は2π。面積は4πR²になりました。次章では、この同じ小片に電場の垂直成分を掛けます。',r`A=R^2\int_0^{2\pi}d\varphi\int_0^\pi\sin\theta\,d\theta=4\pi R^2`,undefined,'r-spherearea'),
