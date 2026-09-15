@@ -3,3 +3,5 @@ dist/
 *.log
 .DS_Store
 tsconfig.tsbuildinfo
+public/generated-equations/
+src/content/calculations/equations.generated.json

@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import type { Stage } from "../types";
-import { MathText, MathBlock } from "./MathText";
+import { MathText } from "./MathText";
 import { Figure } from "./figures";
+import { CalculationBoard, EquationImage } from './CalculationBoard';
+import { getCalculation } from '../content/calculations';
+import { UniqueFigure, uniqueShots } from './figures/unique';
 
 export function LessonView({
   stage,
@@ -19,6 +22,8 @@ export function LessonView({
   const [page, setPage] = useState(0);
   const allRevealed = page === slides.length - 1;
   const step = slides[page];
+  const calculation = getCalculation(step);
+  const shot = uniqueShots[stage.id]?.[page];
   const card = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (page === 0) window.scrollTo({top:0});
@@ -48,13 +53,10 @@ export function LessonView({
             <p>
               <MathText text={step.body} />
             </p>
-            {step.figure && <Figure id={step.figure} />}
-            {step.formula && (
-              <div className="formula-card">
-                <MathBlock tex={step.formula} />
-                {step.formulaNote && <div className="formula-note">💡 <MathText text={step.formulaNote} /></div>}
-              </div>
-            )}
+            {shot ? <UniqueFigure shot={shot} id={`${stage.id}/${page}`} /> : step.figure && <Figure id={step.figure} />}
+            {calculation && <CalculationBoard calculation={calculation} />}
+            {step.formula && !calculation?.lines.some(line => line.tex === step.formula) && <div className="formula-card"><EquationImage tex={step.formula}/></div>}
+            {step.formulaNote && <div className="formula-note">💡 <MathText text={step.formulaNote} /></div>}
           </div>
       </div>
 
@@ -69,11 +71,11 @@ export function LessonView({
       <div className="lesson-controls">
         <div className="lesson-navigation">
           <button className="btn btn-ghost" disabled={page === 0} onClick={() => setPage(p => p - 1)}>← 前へ</button>
-          <label>スライド
-            <select aria-label="スライドを選ぶ" value={page} onChange={e => setPage(Number(e.target.value))}>
-              {slides.map((s, i) => <option key={i} value={i}>{i + 1}. {s.heading}</option>)}
-            </select>
-          </label>
+          <nav className="lesson-dots" aria-label="スライドを選ぶ">
+            {slides.map((s, i) => <button key={i} className={`lesson-dot ${i === page ? 'active' : ''}`}
+              aria-label={`スライド ${i + 1}: ${s.heading}`} aria-current={i === page ? 'step' : undefined}
+              title={`${i + 1}. ${s.heading}`} onClick={() => setPage(i)}><span /></button>)}
+          </nav>
         </div>
         {!allRevealed ? (
           <button className="btn btn-primary btn-big" onClick={() => setPage(p => p + 1)}>
