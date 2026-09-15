@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { Chapter, Problem } from "../types";
 import { MathText } from "./MathText";
+import { ProblemMeaning } from './ProblemMeaning';
 
 export function ReviewView({
   chapters,
@@ -11,11 +12,11 @@ export function ReviewView({
   starred: string[];
   onToggleStar: (problemId: string) => void;
 }) {
-  const problems: { problem: Problem; stageTitle: string }[] = [];
+  const problems: { problem: Problem; stageTitle: string; stageId:string }[] = [];
   for (const chapter of chapters) {
     for (const stage of chapter.stages) {
       for (const p of stage.problems) {
-        if (starred.includes(p.id)) problems.push({ problem: p, stageTitle: stage.title });
+        if (starred.includes(p.id)) problems.push({ problem: p, stageTitle: stage.title,stageId:stage.id });
       }
     }
   }
@@ -39,11 +40,12 @@ export function ReviewView({
         </div>
       ) : (
         <div className="review-list">
-          {problems.map(({ problem, stageTitle }) => (
+          {problems.map(({ problem, stageTitle,stageId }) => (
             <ReviewItem
               key={problem.id}
               problem={problem}
               stageTitle={stageTitle}
+              stageId={stageId}
               onUnstar={() => onToggleStar(problem.id)}
             />
           ))}
@@ -56,10 +58,12 @@ export function ReviewView({
 function ReviewItem({
   problem,
   stageTitle,
+  stageId,
   onUnstar,
 }: {
   problem: Problem;
   stageTitle: string;
+  stageId:string;
   onUnstar: () => void;
 }) {
   const [open, setOpen] = useState(false);
@@ -87,6 +91,7 @@ function ReviewItem({
           <div className="explanation">
             <div className="explanation-tag">なぜそうなるか</div>
             <MathText text={problem.explanation} />
+            <ProblemMeaning problem={problem} stageId={stageId}/>
           </div>
         </div>
       )}

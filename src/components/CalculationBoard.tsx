@@ -19,7 +19,7 @@ export function CalculationBoard({calculation}: {calculation:Calculation}) {
   const [playing, setPlaying] = useState(false);
   const list = useRef<HTMLOListElement>(null);
   useEffect(() => {
-    if (playing) list.current?.children[active]?.scrollIntoView({block:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    if (playing) list.current?.firstElementChild?.scrollIntoView({block:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
   }, [active,playing]);
   useEffect(() => {
     if (!playing) return;
@@ -31,13 +31,14 @@ export function CalculationBoard({calculation}: {calculation:Calculation}) {
     <header className="calculation-header"><h3>{calculation.title}</h3>
       {lines.length > 1 && <span>{active + 1} / {lines.length}</span>}</header>
     <ol className="calculation-lines" ref={list}>
-      {lines.map((line, i) => <li key={i} className={`calculation-line ${i === active ? 'is-active' : ''} ${i > active ? 'is-upcoming' : ''}`}>
+      {lines.map((line, i) => i===active?<li key={i} className="calculation-line is-active">
         <button className="calculation-line-select" onClick={() => {setPlaying(false);setActive(i);}}
           aria-label={`途中式 ${i+1}: ${line.note}`} aria-current={i === active ? 'step' : undefined}>
           <span className="calculation-number">{i + 1}</span><span>{line.note}</span>
         </button>
+        {i>0&&!calculation.reference&&<div className="calculation-history"><p>一つ前の式</p><EquationImage tex={lines[i-1].tex}/><p>↓ {line.note}</p></div>}
         <EquationImage tex={line.tex} />
-      </li>)}
+      </li>:null)}
     </ol>
     {lines.length > 1 && <div className="calculation-controls">
       <button className="btn btn-ghost" onClick={() => { if (active === lines.length-1) setActive(0); setPlaying(p => !p); }}
@@ -45,5 +46,6 @@ export function CalculationBoard({calculation}: {calculation:Calculation}) {
       <button className="btn btn-ghost" disabled={active === 0} onClick={() => {setPlaying(false);setActive(n => n-1);}}>一段戻る</button>
       <button className="btn btn-ghost" disabled={active === lines.length-1} onClick={() => {setPlaying(false);setActive(n => n+1);}}>次の式 ↓</button>
     </div>}
+    {lines.length>1&&<details className="calculation-all"><summary>{calculation.reference?'このスライドの式を一覧で確認':'導出全体を一覧で確認'}</summary>{lines.map((line,i)=><div key={i}><p>{i+1}. {line.note}</p><EquationImage tex={line.tex}/></div>)}</details>}
   </section>;
 }

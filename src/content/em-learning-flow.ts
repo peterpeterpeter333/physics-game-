@@ -1,10 +1,10 @@
 import type {SpiralCard,SpiralCycle} from './em-spiral';
 const r=String.raw;
 type CardEdit={from:number;title:string;text:string;tex?:string;guideIndex?:number;pathPart?:number};
-type Flow={goal:string;cards:[CardEdit,CardEdit,CardEdit,CardEdit]};
+type Flow={goal:string;cards:CardEdit[]};
 const p=(from:number,title:string,text:string,tex?:string,guideIndex?:number,pathPart?:number):CardEdit=>({from,title,text,tex,guideIndex,pathPart});
 
-/** Four distinct jobs per cycle, not a relabelled FAQ sequence. */
+/** A foundation and conclusion surround as many reasoning steps as needed. */
 export const learningFlows:Record<string,Flow>={
  work:{goal:'一定力の仕事6Jを、小区間の和と積分でも求める。',cards:[
   p(0,'求めるのは、力がする仕事','ここでは、2Nの一定の力で物体を同じ向きに3m動かすときの仕事を求めます。力Fと距離Lを掛けると6Jです。図の縦軸は力、横軸は位置なので、長方形の面積が仕事を表します。まず、この掛け算を出発点にします。'),

@@ -1,0 +1,13 @@
+.study-overview,.study-original,.study-symbols details{color:#b7c9e5;font-size:13px;line-height:1.8;margin:12px 0;}
+.study-overview summary,.study-original summary,.study-symbols summary{cursor:pointer;min-height:28px;}
+.study-overview button{background:transparent;color:#c3d7f3;border:0;text-align:left;font:inherit;padding:8px;cursor:pointer;}
+.study-overview button[aria-current]{color:#9ee7bd;text-decoration:underline;}
+.study-symbols{border:1px solid #34445d;border-radius:12px;padding:12px;margin-top:18px;background:#101b2d;}
+.study-symbols h3{font-size:14px;margin:0;color:#e4edfc;}
+.study-next{font-size:13px!important;color:#b7c8e4!important;line-height:1.7;}
+.lesson-step>.spiral-context{margin:0 0 18px;}
+.calculation-history{opacity:.65;border-left:2px solid #384968;padding-left:10px;}
+.calculation-history>p{font-size:12px;color:#aebed5;}
+.calculation-controls{flex-wrap:wrap;}
+.calculation-all{font-size:13px;line-height:1.7;margin-top:12px;color:#bacce8;}
+.calculation-all summary{cursor:pointer;}

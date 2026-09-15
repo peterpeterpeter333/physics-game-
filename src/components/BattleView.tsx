@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Problem, Stage } from "../types";
 import { MathText } from "./MathText";
+import { ProblemMeaning } from './ProblemMeaning';
 import { hapticSuccess, hapticError } from "../native";
 
 const QUESTION_TIME = 30; // 秒
@@ -300,6 +301,7 @@ export function BattleView({
             <div className="explanation">
               <div className="explanation-tag">なぜそうなるか</div>
               <MathText text={problem.explanation} />
+              <ProblemMeaning problem={problem} stageId={stage.id}/>
             </div>
             <button className="btn btn-primary btn-big" onClick={next}>
               {enemyHp <= 0 ? "🏆 とどめ!" : hearts <= 0 ? "結果へ" : "次の問題へ →"}

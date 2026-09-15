@@ -1,5 +1,8 @@
 import type { Formula } from "../types";
 import { MathBlock } from "./MathText";
+import { QuantityGlossary } from './QuantityGlossary';
+import './spiral-lesson.css';
+import './study-flow.css';
 
 export function FormulaBook({
   formulas,
@@ -32,6 +35,7 @@ export function FormulaBook({
                   <div className="formula-item-name">{f.name}</div>
                   <MathBlock tex={f.tex} />
                   <div className="formula-item-meaning">{f.meaning}</div>
+                  {f.stageId&&<details className="study-original"><summary>この公式の記号・単位を確認</summary><QuantityGlossary stageId={f.stageId} expressions={[f.tex]}/></details>}
                   {f.stageId && (
                     <button className="btn btn-ghost btn-sm" onClick={() => onOpenLesson(f.stageId!)}>
                       📖 導出をレッスンで見る
