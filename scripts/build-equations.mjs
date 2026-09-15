@@ -9,10 +9,10 @@ import { liteAdaptor } from 'mathjax-full/js/adaptors/liteAdaptor.js';
 import { RegisterHTMLHandler } from 'mathjax-full/js/handlers/html.js';
 import { AllPackages } from 'mathjax-full/js/input/tex/AllPackages.js';
 
-const bundle = await build({stdin:{contents:`export {chapters} from './src/content'; export {getCalculation,calculationRules} from './src/content/calculations';`,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs'});
+const bundle = await build({stdin:{contents:`export {chapters} from './src/content'; export {getCalculation,calculationRules} from './src/content/calculations'; export {spiralLessons} from './src/content/em-spiral';`,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs'});
 const mod = new Module(`${process.cwd()}/.equations-build.cjs`);
 mod._compile(bundle.outputFiles[0].text,mod.id);
-const {chapters,getCalculation,calculationRules} = mod.exports;
+const {chapters,getCalculation,calculationRules,spiralLessons} = mod.exports;
 const steps = chapters.flatMap(c => c.stages.flatMap(s => s.lesson.steps));
 const headings = new Set(steps.map(s => s.heading));
 const usedHeadings = new Set();
@@ -27,8 +27,10 @@ const document = mathjax.document('',{InputJax:new TeX({packages:AllPackages}),O
 const output = {};
 mkdirSync('public/generated-equations', {recursive:true});
 writeFileSync('public/generated-equations/LICENSE.txt', 'MathJax SVG font outlines: Copyright (c) 2017-2022 The MathJax Consortium.\nGenerated typesetting of Physics Quest equations.\n\n'+readFileSync('node_modules/mathjax-full/LICENSE','utf8'));
-for (const step of steps) for (const line of [...(getCalculation(step)?.lines ?? []), ...(step.formula ? [{tex:step.formula,note:'既存の公式'}] : [])]) {
-  if (!line.tex || !line.note) throw new Error(`Empty equation: ${step.heading}`);
+const lines=steps.flatMap(step=>[...(getCalculation(step)?.lines??[]),...(step.formula?[{tex:step.formula,note:'既存の公式'}]:[])]);
+lines.push(...Object.values(spiralLessons).flatMap(cycles=>cycles.flatMap(c=>c.cards.filter(s=>s.tex).map(s=>({tex:s.tex,note:s.title})))));
+for (const line of lines) {
+  if (!line.tex || !line.note) throw new Error(`Empty equation: ${line.note}`);
   if (output[line.tex]) continue;
   const node = document.convert(line.tex,{display:true,em:20,ex:10,containerWidth:700});
   const outer = adaptor.outerHTML(node);
