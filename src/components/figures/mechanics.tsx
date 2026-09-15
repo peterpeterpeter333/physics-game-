@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useT, C } from "./anim";
+import { useT, useSweep, C } from "./anim";
 
 const W = 320;
 const H = 190;
@@ -175,16 +174,16 @@ export function NewtonCarts() {
 
 /** エネルギー保存: スライダーで玉を動かす (インタラクティブ) */
 export function EnergySlide() {
-  const [s, setS] = useState(15);
+  const [s, setS] = useSweep(15, 0, 100);
   const sx = s / 100;
   const px = 40 + 200 * sx;
-  const py = 40 + 95 * Math.pow(2 * sx - 1, 2);
-  const uRatio = (135 - py) / 95; // 高さ比 0..1
+  const py = 135 - 95 * Math.pow(2 * sx - 1, 2);
+  const uRatio = (135 - py) / 95; // screen y increases downward
   const kRatio = 1 - uRatio;
   const curve: string[] = [];
   for (let i = 0; i <= 40; i++) {
     const cx = 40 + (200 * i) / 40;
-    const cy = 40 + 95 * Math.pow((2 * i) / 40 - 1, 2);
+    const cy = 135 - 95 * Math.pow((2 * i) / 40 - 1, 2);
     curve.push(`${cx},${cy}`);
   }
   return (

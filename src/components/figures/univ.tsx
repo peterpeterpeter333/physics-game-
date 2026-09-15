@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useT, C } from "./anim";
+import { useT, useSweep, C } from "./anim";
 import { FigSvg, Caption } from "./mechanics";
 
 // 大学編の図解。
@@ -104,7 +103,7 @@ export function SmallAngle() {
 
 /** 内積: 仕事に効くのは移動方向の成分だけ (スライダーで角度を変える) */
 export function DotProduct() {
-  const [deg, setDeg] = useState(35);
+  const [deg, setDeg] = useSweep(35, 0, 90);
   const th = (deg * Math.PI) / 180;
   const ox = 55, oy = 125;
   const dLen = 150;
@@ -140,7 +139,7 @@ export function DotProduct() {
 
 /** 外積: 平行四辺形の面積 ABsinθ + 右ねじで紙面手前 */
 export function CrossProduct() {
-  const [deg, setDeg] = useState(60);
+  const [deg, setDeg] = useSweep(60, 5, 175);
   const th = (deg * Math.PI) / 180;
   const ox = 70, oy = 140;
   const aLen = 105, bLen = 75;
@@ -246,9 +245,9 @@ export function TerminalV() {
 
 /** F = −dU/dx: ポテンシャルの谷で、力は坂を下る向き */
 export function PotentialSlope() {
-  const [s, setS] = useState(22);
+  const [s, setS] = useSweep(22, 0, 100);
   const u = s / 100;
-  const U = (q: number) => 55 + 80 * Math.pow(2 * q - 1, 2);
+  const U = (q: number) => 135 - 80 * Math.pow(2 * q - 1, 2);
   const dU = (q: number) => 320 * (2 * q - 1) / 100; // px単位の傾き
   const px = 45 + 230 * u;
   const py = U(u);
@@ -412,7 +411,7 @@ export function GaussSphere() {
 
 /** 磁束: 面(横から見た線)を傾けると、貫く本数がcosθで減る */
 export function FluxTilt() {
-  const [deg, setDeg] = useState(20);
+  const [deg, setDeg] = useSweep(20, 0, 90);
   const th = (deg * Math.PI) / 180;
   const cx = 168, cy = 95, L = 60;
   // 面は横から見ると線分。法線 n=(cosθ, −sinθ) が矢印(+x)とθをなす。

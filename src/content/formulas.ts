@@ -1,6 +1,6 @@
 import type { Formula } from "../types";
 
-export const formulas: Formula[] = [
+const baseFormulas: Formula[] = [
   // ---------- 力学 ----------
   {
     id: "f-velocity",
@@ -305,3 +305,30 @@ export const formulas: Formula[] = [
   { id: "fu-lc", name: "LC振動", tex: "\\omega = \\dfrac{1}{\\sqrt{LC}}", meaning: "電気のばね振り子(L↔m、1/C↔k)。ラジオの選局の原理。", category: "大学: 電磁気", stageId: "ue-transient" },
   { id: "fu-light", name: "電磁波の速さ", tex: "c = \\dfrac{1}{\\sqrt{\\varepsilon_0\\mu_0}}", meaning: "マクスウェル方程式から出てきた速さが光速と一致。光=電磁波の発見。", category: "大学: 電磁気", stageId: "ue-maxwell" },
 ];
+
+// Keep IDs stable while making the formula book use the same assumptions as lessons.
+const notes: Record<string, Partial<Formula>> = {
+  'f-velocity': { meaning:'平均の速さ＝道のり÷経過時間。平均速度は変位÷経過時間で、往復では区別する。' },
+  'f-distance': { meaning:'一定速度、開始時刻0・初期位置0の式。一般の位置はx=x₀+vt。' },
+  'f-acceleration': { meaning:'経過時間tの平均加速度。一定加速度なら瞬間の値と等しい。' },
+  'f-ua-2': { meaning:'加速度一定。xは開始位置からの変位。v-tグラフの符号付き面積を長方形と三角形で足す。' },
+  'f-kelvin': { tex:'T[\\mathrm K]=t[{}^\\circ\\mathrm C]+273.15', meaning:'温度目盛りの0をずらした定義。概算では273。絶対零度でも量子的な零点運動まで消えるとは限らない。' },
+  'f-p-conserve': { meaning:'外力の合計または衝突中の外力の力積が無視できる系で成立する。作用・反作用で内力が相殺するため。' },
+  'f-pendulum': { meaning:'小角・抵抗なし・軽い糸の近似。sinθ≈θから導く。大きい振幅では周期にも補正が必要。' },
+  'f-coulomb-law': { tex:'F=k\\dfrac{|q_1q_2|}{r^2}', meaning:'点電荷間の力の大きさ。向きは同符号で反発・異符号で引力。実験から得られた基本法則。' },
+  'f-epotential': { meaning:'一様な電場と平行な距離dでの電圧の大きさ。電場方向への移動はV後−V前=−Ed。' },
+  'f-photon': { meaning:'光子1個のエネルギーを与える量子の基本関係。光電効果では保存則からK最大=hν−仕事関数を導く。' },
+  'f-emc2': { meaning:'静止質量mの静止エネルギー。相対論に基づく関係。核反応の放出量は質量差Δmを使いΔE=Δmc²。' },
+  'f-debroglie': { meaning:'量子の基本関係λ=h/pへ低速のp=mvを代入。電子を古典的な軌道上の波と同一視しない。' },
+  'fu-integral': { tex:'x(t)-x(t_0)=\\int_{t_0}^t v(s)\\,ds', meaning:'速度×微小時間を足すと変位になる。位置を求めるには初期位置を加える。' },
+  'fu-rot-eq': { meaning:'固定軸などの回転でI一定なら、L=IωとdL/dt=Nから導く。一般の3D回転には拡張が必要。' },
+  'fu-flux': { meaning:'面に垂直な磁場成分の面積分。線の本数はたとえ。一様なB・平面ならBAcosθ。θは法線との角度。' },
+  'fu-gauss': { meaning:'閉曲面の外向き電気束は内部電荷/ε₀。Eを積分の外へ出すには適切な対称性が必要。' },
+  'fu-vdef': { tex:'V_B-V_A=-\\int_A^B\\vec E\\cdot d\\vec r', meaning:'静電場の電位差。逆にE=−∇V。誘導起電力と単なる静電位差は区別する。' },
+  'fu-current': { meaning:'電子電荷の大きさ×数密度×断面積×ドリフト速度。信号速度と電子自身の移動速度は異なる。' },
+  'fu-cyclotron': { tex:'r=\\dfrac{mv_\\perp}{|q|B}', meaning:'一様磁場、電場なし。垂直速度による円運動の半径。平行速度を含むとらせんになる。' },
+  'fu-ampere': { meaning:'定常電流の場合の周回積分。時間変化する電場にはマクスウェルの補正項を加える。' },
+  'fu-solenoid': { meaning:'十分長い真空のコイル中央部での近似。n=N/lは単位長さあたりの巻数。端の影響を無視する。' },
+  'fu-faraday': { tex:'\\mathcal E=-\\dfrac{d\\Psi}{dt}', meaning:'Ψは鎖交磁束。N巻きで同じ磁束Φを共有すればΨ=NΦ。起電力は静電位差とは区別する。' },
+};
+export const formulas: Formula[] = baseFormulas.map(formula=>({...formula,...notes[formula.id]}));

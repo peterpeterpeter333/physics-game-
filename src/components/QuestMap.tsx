@@ -101,42 +101,36 @@ export function QuestMap({
               {isOpen && (
                 <div className="stage-path pop-in">
                   {chapter.stages.map((stage, i) => {
-                    const prevCleared =
-                      i === 0 || progress.clearedStages.includes(chapter.stages[i - 1].id);
                     const cleared = progress.clearedStages.includes(stage.id);
                     const lessonDone = progress.finishedLessons.includes(stage.lesson.id);
-                    const locked = !prevCleared;
 
                     return (
                       <div
                         key={stage.id}
-                        className={`stage-node ${locked ? "locked" : ""} ${cleared ? "cleared" : ""}`}
+                        className={`stage-node ${cleared ? "cleared" : ""}`}
                       >
                         {i > 0 && <div className="stage-connector" />}
                         <div className="stage-card">
-                          <div className="stage-enemy">{locked ? "🔒" : stage.enemy.emoji}</div>
+                          <div className="stage-enemy">{stage.enemy.emoji}</div>
                           <div className="stage-info">
                             <div className="stage-title">
                               {stage.title}
                               {cleared && <span className="stage-star">⭐</span>}
                             </div>
                             <div className="stage-subtitle">{stage.subtitle}</div>
-                            {!locked && (
+                            {(
                               <div className="stage-actions">
                                 <button className="btn btn-ghost" onClick={() => onOpenLesson(stage.id)}>
                                   📖 {lessonDone ? "レッスンを見返す" : "レッスンで学ぶ"}
                                 </button>
                                 <button
                                   className="btn btn-primary"
-                                  disabled={!lessonDone}
-                                  title={lessonDone ? "" : "先にレッスンで理解してから挑戦!"}
                                   onClick={() => onOpenBattle(stage.id)}
                                 >
                                   ⚔️ バトルに挑む
                                 </button>
                               </div>
                             )}
-                            {locked && <div className="stage-locked-note">前のステージをクリアで解放</div>}
                           </div>
                         </div>
                       </div>

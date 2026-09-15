@@ -1,20 +1,35 @@
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
+
+export const MotionContext = createContext({ paused: false, speed: 1 });
 
 /** 経過秒数 (60fps更新)。図解アニメーションの共通時計。 */
 export function useT(): number {
   const [t, setT] = useState(0);
+  const elapsed = useRef(0);
+  const { paused, speed } = useContext(MotionContext);
   useEffect(() => {
+    if (paused) return;
     let raf: number;
-    const t0 = performance.now();
+    let previous = performance.now();
     const loop = (now: number) => {
-      // rAFのタイムスタンプは開始時刻より前になり得る(負の経過時間)ので0で下限を切る
-      setT(Math.max(0, (now - t0) / 1000));
+      elapsed.current += Math.min(.1, Math.max(0, (now - previous) / 1000)) * speed;
+      previous = now;
+      setT(elapsed.current);
       raf = requestAnimationFrame(loop);
     };
     raf = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(raf);
-  }, []);
+  }, [paused, speed]);
   return t;
+}
+
+/** Sweep a physical parameter, then keep the learner's manual setting until replay. */
+export function useSweep(initial: number, min: number, max: number, period = 10): [number, (value: number) => void] {
+  const t = useT();
+  const [manual, setManual] = useState<number | null>(null);
+  const phase = Math.acos(1 - 2 * (initial - min) / (max - min));
+  const value = min + (max-min) * (1-Math.cos(t*2*Math.PI/period+phase))/2;
+  return [manual ?? Math.round(value * 10)/10, setManual];
 }
 
 /** 0..range を往復する折り返し(壁での反射に使う) */

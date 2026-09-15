@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import { MotionContext } from './anim';
+import { Flux3D, Cross3D, Helix3D, EmWave3D } from './spatial';
+import { Longitudinal, StandingWave, YoungSlits, ChargeWork, Nuclide, MassEnergy } from './foundations';
 import {
   XtSlope,
   StrobeAccel,
@@ -135,7 +139,10 @@ import {
   JourneyMap,
 } from "./em2";
 
-const REGISTRY: Record<string, () => JSX.Element> = {
+export const REGISTRY: Record<string, () => JSX.Element> = {
+  'flux-3d': Flux3D, 'cross-3d': Cross3D, 'helix-3d': Helix3D, 'em-wave-3d': EmWave3D,
+  'longitudinal': Longitudinal, 'standing-wave': StandingWave, 'young-slits': YoungSlits,
+  'charge-work': ChargeWork, 'nuclide': Nuclide, 'mass-energy': MassEnergy,
   "xt-slope": XtSlope,
   "strobe-accel": StrobeAccel,
   "vt-area": VtArea,
@@ -259,11 +266,19 @@ const REGISTRY: Record<string, () => JSX.Element> = {
 };
 
 export function Figure({ id }: { id: string }) {
+  const [paused, setPaused] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const [speed, setSpeed] = useState(1);
+  const [replay, setReplay] = useState(0);
   const Comp = REGISTRY[id];
-  if (!Comp) return null;
+  if (!Comp) return <p role="alert">図を読み込めませんでした。</p>;
   return (
-    <div className="fig-wrap">
-      <Comp />
+    <div className="fig-wrap" data-figure-id={id}>
+      <MotionContext.Provider value={{paused, speed}}><Comp key={`${id}-${replay}`} /></MotionContext.Provider>
+      <div className="figure-controls">
+        <button className="btn btn-ghost" aria-label={paused?'アニメーションを再生':'アニメーションを一時停止'} onClick={()=>setPaused(p=>!p)}>{paused?'▶ 再生':'Ⅱ 一時停止'}</button>
+        <button className="btn btn-ghost" onClick={()=>{setReplay(n=>n+1);setPaused(false);}}>↻ 最初から</button>
+        <label>速度 <select aria-label="アニメーション速度" value={speed} onChange={e=>setSpeed(+e.target.value)}><option value={.5}>0.5×</option><option value={1}>1×</option><option value={2}>2×</option></select></label>
+      </div>
     </div>
   );
 }

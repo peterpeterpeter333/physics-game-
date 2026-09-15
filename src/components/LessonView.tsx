@@ -1,8 +1,7 @@
-import { useMemo, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Stage } from "../types";
 import { MathText, MathBlock } from "./MathText";
 import { Figure } from "./figures";
-import { lessonSlides } from "../lessonSlides";
 
 export function LessonView({
   stage,
@@ -16,10 +15,15 @@ export function LessonView({
   onExit: () => void;
 }) {
   const lesson = stage.lesson;
-  const slides = useMemo(() => lessonSlides(lesson.steps), [lesson.steps]);
-  // 表示済みステップ数 (0 = イントロのみ)
-  const [revealed, setRevealed] = useState(0);
-  const allRevealed = revealed >= slides.length;
+  const slides = lesson.steps;
+  const [page, setPage] = useState(0);
+  const allRevealed = page === slides.length - 1;
+  const step = slides[page];
+  const card = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (page === 0) window.scrollTo({top:0});
+    else card.current?.scrollIntoView({block:'start'});
+  }, [page]);
 
   return (
     <div className="screen lesson" data-stage-id={stage.id}>
@@ -38,9 +42,8 @@ export function LessonView({
       </p>
 
       <div className="lesson-steps">
-        {slides.slice(0, revealed).map((step, i) => (
-          <div className="lesson-step pop-in" key={i}>
-            <div className="lesson-card-count">ゆっくり読む {i + 1} / {slides.length}</div>
+          <div className="lesson-step pop-in" key={page} ref={card}>
+            <div className="lesson-card-count" aria-live="polite">{page + 1} / {slides.length}</div>
             <h2>{step.heading}</h2>
             <p>
               <MathText text={step.body} />
@@ -49,12 +52,10 @@ export function LessonView({
             {step.formula && (
               <div className="formula-card">
                 <MathBlock tex={step.formula} />
-                {step.formulaNote && <div className="formula-note">💡 {step.formulaNote}</div>}
+                {step.formulaNote && <div className="formula-note">💡 <MathText text={step.formulaNote} /></div>}
               </div>
             )}
-            <div className="lesson-checkpoint">🧭 {step.checkpoint}</div>
           </div>
-        ))}
       </div>
 
       {allRevealed && (
@@ -66,14 +67,17 @@ export function LessonView({
       )}
 
       <div className="lesson-controls">
-        <div className="step-dots">
-          {slides.map((_, i) => (
-            <span key={i} className={`dot ${i < revealed ? "on" : ""}`} />
-          ))}
+        <div className="lesson-navigation">
+          <button className="btn btn-ghost" disabled={page === 0} onClick={() => setPage(p => p - 1)}>← 前へ</button>
+          <label>スライド
+            <select aria-label="スライドを選ぶ" value={page} onChange={e => setPage(Number(e.target.value))}>
+              {slides.map((s, i) => <option key={i} value={i}>{i + 1}. {s.heading}</option>)}
+            </select>
+          </label>
         </div>
         {!allRevealed ? (
-          <button className="btn btn-primary btn-big" onClick={() => setRevealed((r) => r + 1)}>
-            {revealed === 0 ? "レッスンを始める" : "次へ →"}
+          <button className="btn btn-primary btn-big" onClick={() => setPage(p => p + 1)}>
+            次へ →
           </button>
         ) : (
           <button className="btn btn-battle btn-big glow-pulse" onClick={() => onComplete(!alreadyFinished)}>

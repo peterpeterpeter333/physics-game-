@@ -19,7 +19,7 @@ export function FormulaBook({
         </div>
       </header>
       <p className="screen-note">
-        すべての公式に「導出」がある。丸暗記せず、作り方ごと覚えよう。
+        公式の途中計算と成立条件をレッスンで確認できます。定義・実験に基づく基本法則と、そこから導ける結果を区別して理解しましょう。
       </p>
       {categories.map((cat) => (
         <section key={cat} className="formula-category">

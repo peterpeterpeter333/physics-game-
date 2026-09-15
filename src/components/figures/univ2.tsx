@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useT, C } from "./anim";
+import { useT, useSweep, C } from "./anim";
 import { FigSvg, Caption } from "./mechanics";
 
 // 大学編・第2弾の図解。「どうしてこうなるのか」を絵で見せるための道具たち。
@@ -385,7 +385,7 @@ export function TorqueDoor() {
 
 /** 重心: 質量で重み付けした平均位置。シーソーが釣り合う点 */
 export function ComSeesaw() {
-  const [m2, setM2] = useState(3);
+  const [m2, setM2] = useSweep(3, 1, 6);
   const m1 = 2;
   const x1 = 75, x2 = 250;
   const xg = (m1 * x1 + m2 * x2) / (m1 + m2);

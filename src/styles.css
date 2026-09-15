@@ -245,7 +245,6 @@ p { line-height: 1.85; }
   align-items: flex-start;
 }
 .stage-node.cleared .stage-card { border-color: rgba(78, 225, 255, 0.45); }
-.stage-node.locked .stage-card { opacity: 0.55; }
 
 .stage-enemy {
   font-size: 38px;
@@ -267,7 +266,6 @@ p { line-height: 1.85; }
   margin-top: 12px;
   flex-wrap: wrap;
 }
-.stage-locked-note { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
 
 .coming-soon { margin-top: 26px; }
 .coming-soon-inner {
@@ -305,14 +303,16 @@ p { line-height: 1.85; }
   letter-spacing: .04em;
   margin-bottom: 6px;
 }
-.lesson-checkpoint {
-  margin-top: 12px;
-  border-left: 3px solid var(--purple);
-  color: var(--text-dim);
-  font-size: 13px;
-  line-height: 1.65;
-  padding-left: 10px;
-}
+.lesson-navigation { display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+.lesson-navigation label { min-width:0; flex:1; font-size:12px; color:var(--text-dim); }
+.lesson-navigation select { display:block; width:100%; margin-top:4px; }
+.lesson-navigation select, .figure-controls select { color:var(--text); background:var(--bg); border:1px solid var(--text-dim); border-radius:8px; padding:8px; }
+.figure-controls { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:8px; font-size:12px; }
+.figure-controls .btn { padding:8px; font-size:12px; }
+.figure-range { display:flex; gap:12px; align-items:center; font-size:12px; color:var(--text-dim); margin:8px 0; }
+.figure-range input { flex:1; min-width:0; accent-color:var(--cyan); }
+.figure-note { font-size:12px !important; color:var(--text-dim); }
+.lesson-step { overflow-wrap:anywhere; }
 
 .formula-card {
   margin-top: 14px;

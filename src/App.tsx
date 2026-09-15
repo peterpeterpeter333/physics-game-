@@ -88,6 +88,7 @@ export default function App() {
         )}
         {view.type === "lesson" && (
           <LessonView
+            key={view.stageId}
             stage={findStage(view.stageId)}
             onExit={() => setView({ type: "map" })}
             onComplete={(firstTime) => {

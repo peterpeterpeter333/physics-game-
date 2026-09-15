@@ -566,6 +566,9 @@ export function LcOscillation() {
 
 /** インピーダンス: コイルは高周波に強気、コンデンサは弱気 */
 export function Impedance() {
+  const t = useT();
+  const cursor = 50 + 240 * (1 - Math.cos(t*.5))/2;
+  const cw = (cursor - 45)/245;
   const zl: string[] = [];
   const zc: string[] = [];
   for (let x = 50; x <= 290; x += 4) {
@@ -583,6 +586,9 @@ export function Impedance() {
       </g>
       <polyline points={zl.join(" ")} fill="none" stroke={C.purple} strokeWidth={2.5} />
       <polyline points={zc.join(" ")} fill="none" stroke={C.cyan} strokeWidth={2.5} />
+      <line x1={cursor} x2={cursor} y1={25} y2={150} stroke={C.gold} strokeDasharray="3 3" />
+      <circle cx={cursor} cy={150-110*cw} r={4} fill={C.purple} />
+      <circle cx={cursor} cy={Math.max(28,150-14/(cw+.06))} r={4} fill={C.cyan} />
       <text x={200} y={50} fontSize={11} fill={C.purple}>コイル Z = ωL</text>
       <text x={200} y={135} fontSize={11} fill={C.cyan}>コンデンサ Z = 1/ωC</text>
       <Caption text="周波数で通しやすさが変わる = 音域分割・フィルタの仕分け人" />
