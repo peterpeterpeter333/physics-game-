@@ -8,6 +8,7 @@ import { univEmPlans } from './univ-em';
 import { corrections } from './corrections';
 import { intros } from './intros';
 import { highSchoolReviews } from '../high-school-review';
+import { guidedLessons, guidedProblems } from '../guided-em';
 
 const basePlans = { ...mechanicsPlans, ...thermalWavePlans, ...emAtomicPlans, ...mathPlans, ...univMechanicsPlans, ...univEmPlans };
 export const explanationPlans = Object.fromEntries(Object.entries(basePlans).map(([id, plan]) => [id,
@@ -19,6 +20,7 @@ const spatialFigures: Record<string,string> = {
 };
 export function enrichChapters(source: Chapter[]): Chapter[] {
  return source.map(chapter => ({...chapter, stages: chapter.stages.map(stage => {
+  if (guidedLessons[stage.id]) return {...stage,lesson:guidedLessons[stage.id],problems:guidedProblems[stage.id]};
   const plan = explanationPlans[stage.id];
   if (!plan) throw new Error(`Missing authored explanation plan: ${stage.id}`);
   const original = stage.lesson.steps;

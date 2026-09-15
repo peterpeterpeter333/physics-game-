@@ -1,6 +1,12 @@
 // コンテンツのデータ型。数式は文字列中に $...$ (インライン) / $$...$$ (ブロック) で埋め込む。
 
 export type LessonStep = {
+  /** A synchronized, learner-controlled visual explanation. */
+  story?: {
+    scene: string;
+    beats: { action: string; text: string; focus: string; tex?: string }[];
+    check?: { question: string; choices: { text: string; feedback: string }[]; answer: number };
+  };
   /** University prerequisites, explained in place instead of requiring an earlier stage. */
   review?: boolean;
   heading: string;

@@ -1,0 +1,44 @@
+.guided-lesson { --guided-edge:rgba(159,184,221,.2); }
+.guided-intro,.guided-context {color:#c4ccdf;line-height:1.9;font-size:15px;}
+.guided-destination {scroll-margin-top:16px;border-left:3px solid #ffd166;padding:8px 16px;margin:25px 0 12px;background:rgba(255,209,102,.045);border-radius:0 12px 12px 0;}
+.guided-eyebrow {font-size:12px;letter-spacing:.04em;color:#c3cce0;}
+.guided-destination p {margin:7px 0 17px;line-height:1.65;color:#e5d9b6;font-size:14px;}
+.guided-topic-count {color:#86ddec;font-size:12px;margin-bottom:7px;}
+.guided-destination h2 {font-size:23px;line-height:1.5;margin:0;color:#f5f6ff;}
+.guided-board {scroll-margin-top:14px;border:1px solid var(--guided-edge);background:#121a30;border-radius:18px;padding:20px;margin:20px 0;}
+.guided-beat-head {display:flex;justify-content:space-between;gap:12px;color:#a0b5d3;font-size:12px;}
+.guided-current-question {color:#e5d9b6;font-size:13px;line-height:1.6;margin:0 0 12px;}
+.guided-board h3 {font-size:21px;margin:10px 0 16px;line-height:1.5;}
+.guided-scene {width:100%;height:auto;display:block;background:#0d1427;border-radius:12px;overflow:hidden;}
+.guided-drawing {animation:guided-reveal .32s ease-out;}
+.guided-look {display:flex;flex-direction:column;gap:5px;font-size:14px;line-height:1.75;border-left:2px solid #4ee1ff;padding:0 12px;color:#dce7f6;margin:17px 0;}
+.guided-look>span:first-child {color:#4ee1ff;font-size:11px;}
+.guided-explanation p {font-size:16px;line-height:1.95;margin:19px 0;}
+.guided-equation {padding:18px 10px;background:rgba(255,255,255,.035);border-radius:10px;border:1px solid var(--guided-edge);}
+.guided-equation .equation-image-scroll {max-width:100%;}
+.guided-equation .equation-image {max-width:100%;height:auto;}
+.guided-beat-actions {display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:20px;}
+.guided-beat-actions .btn {white-space:normal;min-height:46px;font-size:14px;line-height:1.5;}
+.guided-beat-actions .btn-primary {flex:1;max-width:75%;}
+.guided-complete {color:#8be3ba;font-size:13px;}
+.guided-recap,.guided-contents {border-top:1px solid var(--guided-edge);margin-top:18px;padding-top:15px;color:#b8c9e1;font-size:14px;}
+.guided-recap summary,.guided-contents summary {cursor:pointer;min-height:35px;}
+.guided-recap ol,.guided-contents ol {padding-left:26px;}
+.guided-recap button,.guided-contents button {color:#d4e4fa;background:none;border:0;text-align:left;cursor:pointer;font:inherit;line-height:1.65;padding:8px 4px;}
+.guided-check {border:1px solid #4c5368;background:rgba(139,227,186,.025);border-radius:14px;padding:18px;margin:20px 0;}
+.guided-check h3 {font-size:17px;line-height:1.7;margin:10px 0 15px;}
+.guided-choices {display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.guided-choices button {font:inherit;font-size:14px;line-height:1.7;min-height:56px;padding:10px;border:1px solid #4d5b79;border-radius:10px;background:#182038;color:#ecf1ff;cursor:pointer;}
+.guided-choices button[aria-pressed=true] {border-color:#8be3ba;background:#1b3937;}
+.guided-feedback {margin:15px 0 0;font-size:14px;line-height:1.85;color:#d4e9e4;}
+.guided-feedback strong {display:block;color:#8be3ba;}
+.guided-next {margin:22px 0;}
+.guided-page-navigation {display:flex;align-items:center;gap:16px;}
+.guided-page-navigation>.btn {flex-shrink:0;font-size:13px;}
+.guided-camera {display:flex;flex-direction:column;gap:10px;line-height:1.6;font-size:12px;color:#c6bfd8;margin:15px 0;}
+.guided-camera input {width:100%;accent-color:#c2a2ff;min-height:32px;}
+.guided-outro {font-size:15px;line-height:1.9;color:#c4ccdf;}
+.guided-lesson button:focus-visible,.guided-lesson summary:focus-visible {outline:3px solid #4ee1ff;outline-offset:3px;}
+@keyframes guided-reveal {from {opacity:.3;} to {opacity:1;}}
+@media (max-width:480px) {.guided-board {padding:14px 10px;}.guided-destination h2 {font-size:20px;}.guided-choices {grid-template-columns:1fr;}.guided-page-navigation {flex-direction:column;align-items:stretch;}.guided-page-navigation .lesson-dots {justify-content:center;}.guided-scene {margin:0;width:100%;}.guided-explanation p {font-size:15px;}.guided-beat-actions .btn {font-size:13px;padding:10px;}}
+@media (prefers-reduced-motion:reduce) {.guided-drawing {animation:none;}}

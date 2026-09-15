@@ -6,8 +6,12 @@ import { CalculationBoard, EquationImage } from './CalculationBoard';
 import { getCalculation } from '../content/calculations';
 import { UniqueFigure, getUniqueShot } from './figures/unique';
 import { LessonOrientation } from './LessonOrientation';
+import { GuidedLesson } from './GuidedLesson';
 
-export function LessonView({
+export function LessonView(props: {stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void}) {
+  return props.stage.lesson.steps[0]?.story ? <GuidedLesson {...props}/> : <StandardLessonView {...props}/>;
+}
+function StandardLessonView({
   stage,
   alreadyFinished,
   onComplete,

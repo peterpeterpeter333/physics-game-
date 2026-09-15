@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
 import { MotionContext, useT } from '../anim';
-import { integralShots } from './integrals';
-import { gaussShots } from './gauss';
 import type { Shot } from './primitives';
 import { highSchoolReviews } from '../../../content/high-school-review';
 import { mechanicsReviewScenes } from './review-mechanics';
 import { emReviewScenes } from './review-electromagnetism';
-export const uniqueShots: Record<string,Shot[]> = {'ue-integrals':integralShots,'ue-gauss':gaussShots};
+export const uniqueShots: Record<string,Shot[]> = {};
 const reviewScenes = { ...mechanicsReviewScenes, ...emReviewScenes };
 export const reviewShots: Record<string, Shot> = Object.fromEntries(Object.values(highSchoolReviews).flat().map(({step}) => {
   const scene = reviewScenes[step.figure!];

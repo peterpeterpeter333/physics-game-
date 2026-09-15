@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:guided": "npm run equations && node scripts/audit-guided.mjs",
     "test:math": "node scripts/audit-math.mjs",
     "test:lessons": "node scripts/audit-lessons.mjs",
     "test:calculations": "npm run equations && node scripts/audit-calculations.mjs",

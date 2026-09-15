@@ -37,6 +37,9 @@ jobs:
       - name: Audit equation images and original storyboards
         run: npm run test:calculations
 
+      - name: Audit synchronized electromagnetic lessons
+        run: npm run test:guided
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:

@@ -13,6 +13,7 @@ const imports = `
  export { REGISTRY, Figure } from './src/components/figures';
  export { getUniqueShot } from './src/components/figures/unique';
  export { highSchoolReviews } from './src/content/high-school-review';
+ export { guidedLessons, guidedProblems } from './src/content/guided-em';
  export { mechanics } from './src/content/mechanics';
  export { thermo } from './src/content/thermo';
  export { waves } from './src/content/waves';
@@ -26,7 +27,8 @@ const bundle=await build({stdin:{contents:imports,resolveDir:process.cwd(),loade
 const module=new Module(`${process.cwd()}/.lesson-audit.cjs`);
 module.paths=Module._nodeModulePaths(process.cwd());
 module._compile(bundle.outputFiles[0].text,module.id);
-const { chapters, explanationPlans, REGISTRY, Figure, formulaBook, getUniqueShot, highSchoolReviews, ...raw }=module.exports;
+const { chapters, explanationPlans, REGISTRY, Figure, formulaBook, getUniqueShot, highSchoolReviews, guidedLessons, guidedProblems, ...raw }=module.exports;
+assert.deepEqual(Object.keys(guidedLessons).sort(),['ue-gauss','ue-integrals']);
 const originals=['mechanics','thermo','waves','electromagnetism','atomic','univMath','univMechanics','univEm'].flatMap(key=>raw[key].stages);
 const stages=chapters.flatMap(c=>c.stages);
 assert.equal(stages.length,56);
@@ -41,15 +43,17 @@ const prose=(text)=>{
 };
 for(const stage of stages){
  const original=originals.find(s=>s.id===stage.id),plan=explanationPlans[stage.id];
- assert.deepEqual(stage.problems,original.problems,`problem change: ${stage.id}`);
+ assert.deepEqual(stage.problems,guidedProblems[stage.id] ?? original.problems,`problem change: ${stage.id}`);
+ assert.deepEqual(stage.problems.map(p=>p.id).sort(),original.problems.map(p=>p.id).sort(),`problem IDs changed: ${stage.id}`);
  assert.equal(stage.lesson.id,original.lesson.id);
  assert(stage.lesson.steps.length>=10);
- assert.equal(stage.lesson.steps.length,original.lesson.steps.length+plan.bridges.length,`lost bridge: ${stage.id}`);
+ if(!guidedLessons[stage.id]) assert.equal(stage.lesson.steps.length,original.lesson.steps.length+plan.bridges.length,`lost bridge: ${stage.id}`);
+ else assert.deepEqual(stage.lesson,guidedLessons[stage.id]);
  for(const bridge of plan.bridges){assert(bridge.before>=0&&bridge.before<=original.lesson.steps.length);assert(bridge.step.body.length>=45);}
  bridges+=plan.bridges.length;
  const distinct=new Set();
  for(const step of stage.lesson.steps){
-  assert(REGISTRY[step.figure] || getUniqueShot(stage.id,step),`missing animation ${stage.id}/${step.heading}: ${step.figure}`);
+  assert(step.story || REGISTRY[step.figure] || getUniqueShot(stage.id,step),`missing animation ${stage.id}/${step.heading}: ${step.figure}`);
   assert(!distinct.has(step.body),`duplicate body: ${stage.id}`);distinct.add(step.body);
   if(REGISTRY[step.figure])used.add(step.figure);prose(step.body);prose(step.heading);
   if(step.formula)math(step.formula);
@@ -57,7 +61,7 @@ for(const stage of stages){
   total++;
  }
  prose(stage.lesson.intro);prose(stage.lesson.outro);
- if (/^(uc|ue)-/.test(stage.id)) {
+ if (/^(uc|ue)-/.test(stage.id) && !guidedLessons[stage.id]) {
   assert(highSchoolReviews[stage.id]?.length>=3,`missing prerequisites: ${stage.id}`);
   assert(stage.lesson.steps[0].review,`prerequisites must come first: ${stage.id}`);
   for(const review of highSchoolReviews[stage.id]) {
