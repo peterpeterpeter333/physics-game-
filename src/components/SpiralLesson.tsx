@@ -7,6 +7,8 @@ import {EquationImage} from './CalculationBoard';
 import {PathMeaning} from './PathMeaning';
 import {EquationMeaning} from './EquationMeaning';
 import {integralEquationGuides} from '../content/em-equation-guides';
+import {EMScene3D} from './EMScene3D';
+import {scene3DFor} from './em3d-model';
 import './question-lesson.css';
 import './spiral-lesson.css';
 
@@ -33,6 +35,7 @@ export function SpiralLesson({stage,alreadyFinished,onComplete,onExit}:{stage:St
  const [page,setPage]=useState(0),[diagram,setDiagram]=useState(0);
  const cycles=spiralLessons[stage.id],level=Math.floor(page/4),phase=page%4,cycle=cycles[level],card=cycle.cards[phase];
  const equationGuide=stage.id==='ue-integrals'?integralEquationGuides[cycle.id]?.[card.guideIndex??phase]:undefined;
+ const scene3D=scene3DFor(cycle.id,phase);
  const anchor=useRef<HTMLDivElement>(null),total=cycles.length*4;
  const source=stage.lesson.steps.find(s=>s.story?.scene===card.scene)?.story;
  useEffect(()=>{setDiagram(card.beat??phase);anchor.current?.scrollIntoView({block:'start'});},[page,card]);
@@ -42,7 +45,7 @@ export function SpiralLesson({stage,alreadyFinished,onComplete,onExit}:{stage:St
   <p className="question-progress">第{level+1}段 / {cycles.length} · {page+1}/{total}</p>
   <p className="question-answer">{card.text}</p>
   <section className="question-picture" aria-label="図で確かめる" key={`${cycle.id}/${phase}`}>
-   {card.pathPart!==undefined?<PathMeaning initialPart={card.pathPart}/>:card.lab?<WorkPlot kind={card.lab} phase={card.beat??phase}/>:card.figure?<Figure id={card.figure}/>:card.scene?<><GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>{!['r-path','r-calculate','r-compare'].includes(card.scene)&&<label className="guided-camera">図を比較<input aria-label="図の段階を比較" type="range" min="0" max={(source?.beats.length??3)-1} step="1" value={diagram} onChange={e=>setDiagram(Number(e.target.value))}/></label>}</>:null}
+   {scene3D?<><EMScene3D scene={scene3D} phase={phase}/><details className="em3d-original"><summary>元の平面図と比較する</summary>{card.figure?<Figure id={card.figure}/>:card.scene?<GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>:null}</details></>:card.pathPart!==undefined?<PathMeaning initialPart={card.pathPart}/>:card.lab?<WorkPlot kind={card.lab} phase={card.beat??phase}/>:card.figure?<Figure id={card.figure}/>:card.scene?<><GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>{!['r-path','r-calculate','r-compare'].includes(card.scene)&&<label className="guided-camera">図を比較<input aria-label="図の段階を比較" type="range" min="0" max={(source?.beats.length??3)-1} step="1" value={diagram} onChange={e=>setDiagram(Number(e.target.value))}/></label>}</>:null}
   </section>
   {equationGuide?<EquationMeaning key={page} guide={equationGuide} tex={card.tex}/>:card.tex&&<div className="guided-equation"><EquationImage tex={card.tex}/></div>}
   {phase===3&&<p className="spiral-gain">次に使えること：{cycle.gain}</p>}
