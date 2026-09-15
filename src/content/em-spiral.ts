@@ -1,8 +1,9 @@
+import {buildLearningFlow} from './em-learning-flow';
 const r=String.raw;
-export type SpiralCard={title:string;text:string;tex?:string;figure?:string;scene?:string;lab?:'constant'|'linear';beat?:number};
-export type SpiralCycle={id:string;title:string;uses:string;gain:string;references:string[];cards:[SpiralCard,SpiralCard,SpiralCard]};
+export type SpiralCard={title:string;text:string;tex?:string;figure?:string;scene?:string;lab?:'constant'|'linear';beat?:number;guideIndex?:number;pathPart?:number};
+export type SpiralCycle={id:string;title:string;uses:string;gain:string;goal?:string;references:string[];cards:SpiralCard[]};
 const c=(title:string,text:string,tex?:string,figure?:string,scene?:string):SpiralCard=>({title,text,tex,figure,scene});
-export const spiralLessons:Record<string,SpiralCycle[]>={
+const lessonSources:Record<string,SpiralCycle[]>={
  'ue-integrals':[
  {id:'work',title:'掛け算から積分へ',uses:'出発点：同じ向きの一定力の仕事 W=FL',gain:'一定の値の積分は長方形の面積になる',references:['r-work','r-sum'],cards:[
  {...c('一定の力なら、仕事は長方形になる','2Nの力で同じ向きに3m動かすと、仕事は6J。横軸を移動距離、縦軸を力にすれば、縦×横がそのまま仕事になります。まず、この知っている掛け算を図に対応させます。',r`W=FL=2\times3=6\,\mathrm J`),lab:'constant'},
@@ -93,3 +94,4 @@ export const spiralLessons:Record<string,SpiralCycle[]>={
  ]},
  ],
 };
+export const spiralLessons=buildLearningFlow(lessonSources);

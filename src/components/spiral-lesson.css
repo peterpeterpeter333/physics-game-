@@ -1,5 +1,6 @@
 .spiral-context{border-left:2px solid #ffd36a;padding:8px 12px;margin-top:20px;color:#c2cde2;font-size:12px;line-height:1.7;}
 .spiral-context nav{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;}
+.spiral-goal{margin:0 0 6px;color:#eef1ff;font-size:14px;line-height:1.65;}
 .spiral-context button{padding:7px 9px;border:1px solid #36435c;background:#121c32;color:#9eafcb;border-radius:20px;font:inherit;cursor:pointer;}
 .spiral-context button[aria-current]{background:#24483e;color:#b3f0cf;border-color:#72bda4;}
 .spiral-gain{border-left:2px solid #92e5bd;padding-left:12px;font-size:14px;line-height:1.7;color:#afe8cc;}
