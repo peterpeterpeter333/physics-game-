@@ -9,10 +9,10 @@ import { liteAdaptor } from 'mathjax-full/js/adaptors/liteAdaptor.js';
 import { RegisterHTMLHandler } from 'mathjax-full/js/handlers/html.js';
 import { AllPackages } from 'mathjax-full/js/input/tex/AllPackages.js';
 
-const bundle = await build({stdin:{contents:`export {chapters} from './src/content'; export {getCalculation,calculationRules} from './src/content/calculations'; export {spiralLessons} from './src/content/em-spiral';`,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs'});
+const bundle = await build({stdin:{contents:`export {chapters} from './src/content'; export {getCalculation,calculationRules} from './src/content/calculations'; export {spiralLessons} from './src/content/em-spiral'; export {integralEquationGuides} from './src/content/em-equation-guides';`,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs'});
 const mod = new Module(`${process.cwd()}/.equations-build.cjs`);
 mod._compile(bundle.outputFiles[0].text,mod.id);
-const {chapters,getCalculation,calculationRules,spiralLessons} = mod.exports;
+const {chapters,getCalculation,calculationRules,spiralLessons,integralEquationGuides} = mod.exports;
 const steps = chapters.flatMap(c => c.stages.flatMap(s => s.lesson.steps));
 const headings = new Set(steps.map(s => s.heading));
 const usedHeadings = new Set();
@@ -29,6 +29,7 @@ mkdirSync('public/generated-equations', {recursive:true});
 writeFileSync('public/generated-equations/LICENSE.txt', 'MathJax SVG font outlines: Copyright (c) 2017-2022 The MathJax Consortium.\nGenerated typesetting of Physics Quest equations.\n\n'+readFileSync('node_modules/mathjax-full/LICENSE','utf8'));
 const lines=steps.flatMap(step=>[...(getCalculation(step)?.lines??[]),...(step.formula?[{tex:step.formula,note:'既存の公式'}]:[])]);
 lines.push(...Object.values(spiralLessons).flatMap(cycles=>cycles.flatMap(c=>c.cards.filter(s=>s.tex).map(s=>({tex:s.tex,note:s.title})))));
+lines.push(...Object.values(integralEquationGuides).flatMap(guides=>guides.flatMap(guide=>guide.steps)));
 for (const line of lines) {
   if (!line.tex || !line.note) throw new Error(`Empty equation: ${line.note}`);
   if (output[line.tex]) continue;

@@ -21,7 +21,7 @@ export const spiralLessons:Record<string,SpiralCycle[]>={
  ]},
  {id:'path',title:'曲がる道を計算する',uses:'前の段：一歩の仕事は qE·dr',gain:'線積分を一変数の積分に直す',references:['r-path','r-sum'],cards:[
  c('曲がるたびに、その場の内積を取り直す','元の図で、金色は道の向きに効く成分です。移動方向が曲がっても、その場所で内積を取り直せば一歩の仕事が分かります。それを道に沿って足した極限が、ベクトル場の線積分です。',r`W=\int_Cq\vec E\cdot d\vec r`,'line-integral'),
- c('道が曲がっているのに、積分の変数はどう決める？','道を目盛りuで表します。例えばr(u)=(Lu,Hu²)、0≤u≤1。uを少し変えたときの移動はr′(u)duなので、場にも同じ道の座標を代入します。uは位置の目盛りで、時間とは限りません。',r`d\vec r=(L,2Hu)\,du`,undefined,'r-path'),
+ c('道の式と「小さな移動」は、どう読む？','まず横1m・縦1mの道で、uを動かして位置を確かめます。次に近い二点の移動を比べ、最後にL・Hを使う式へ。「位置を決める」から順に図を切り替えてください。',undefined,undefined,'r-path'),
  c('一様な横向き電場なら、曲線でも計算できた','図は内積の概念図です。計算例では電場を横向きE=(E₀,0)に限定すると、縦の移動は仕事に寄与しません。結果はqE₀L。曲線の線積分が、最初に計算した一定値の積分へ戻りました。',r`W=\int_0^1q(E_0,0)\cdot(L,2Hu)\,du=qE_0L`,'line-integral'),
  ]},
  {id:'variable-path',title:'場も道も変わる場合へ',uses:'前の段：E(r(u))とr′(u)の内積を積分する',gain:'二次元の場で電子の仕事を最後まで計算する',references:['r-calculate','r-power','r-path'],cards:[
@@ -46,7 +46,7 @@ export const spiralLessons:Record<string,SpiralCycle[]>={
  ]},
  {id:'sphere-area',title:'平面の小片を球面へ広げる',uses:'前の段：面を二つの目盛りで覆う',gain:'球面積要素と4πR²を導く',references:['r-spherearea','r-area'],cards:[
  c('球では、縦横の代わりに二つの角度を使う','北極からの角度θと、軸の周りの角度φで球面の場所を指定します。縦の小幅はR dθ。横方向は緯線に沿います。長方形で使った「縦×横」を、球のごく小さな小片に使ってみましょう。',undefined,undefined,'r-spherearea'),
- c('横幅もR dφでよいのでは？','極の近くの緯線は、赤道より小さな輪です。輪の半径はR sinθなので、横幅はR sinθ dφ。図の輪を北から南へ動かすと、同じ経度差でも横幅が違う理由が見えます。',r`dA=(R,d\theta)(R\sin\theta\,d\varphi)`,undefined,'r-spherearea'),
+ c('横幅もR dφでよいのでは？','極の近くの緯線は、赤道より小さな輪です。輪の半径はR sinθなので、横幅はR sinθ dφ。図の輪を北から南へ動かすと、同じ経度差でも横幅が違う理由が見えます。',r`dA=(R\,d\theta)(R\sin\theta\,d\varphi)`,undefined,'r-spherearea'),
  c('小片を足すと、知っている球面積が出る','θを0〜π、φを0〜2πで足します。sinθの原始関数は−cosθなので最初の積分は2、周方向は2π。面積は4πR²になりました。次章では、この同じ小片に電場の垂直成分を掛けます。',r`A=R^2\int_0^{2\pi}d\varphi\int_0^\pi\sin\theta\,d\theta=4\pi R^2`,undefined,'r-spherearea'),
  ]},
  ],

@@ -7,3 +7,29 @@
 .work-plot label{display:flex;align-items:center;gap:12px;font-size:13px;color:#becde4;margin:10px 0;}
 .work-plot input{min-width:0;flex:1;min-height:36px;accent-color:#ffd36a;}
 @media(max-width:400px){.work-plot label{flex-direction:column;align-items:stretch;gap:2px;}}
+.meaning-tabs{display:flex;gap:6px;flex-wrap:wrap;}
+.meaning-tabs button,.equation-derivation button{background:#172239;border:1px solid #42506a;color:#e6edff;border-radius:12px;padding:10px;font:inherit;font-size:13px;cursor:pointer;}
+.meaning-tabs button[aria-pressed=true]{border-color:#ffd36a;color:#ffd36a;background:#302b20;}
+.equation-derivation button:disabled{opacity:.4;cursor:default;}
+.meaning-caption{font-size:14px;line-height:1.8;color:#d0daec;margin:12px 0;}
+.meaning-values{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;color:#d5e7f6;}
+.meaning-values span{flex:1 1 100px;padding:8px;border-radius:8px;background:#17263d;line-height:1.7;}
+.meaning-panel{margin-top:16px;padding-top:8px;border-top:1px solid #394760;}
+.path-meaning svg{display:block;width:100%;max-width:470px;margin:auto;}
+.path-meaning label{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:#c4d3e9;}
+.path-meaning input{min-height:36px;min-width:100px;flex:1;accent-color:#65e2ff;}
+.equation-meaning{border:1px solid #3a4963;background:#101b2d;border-radius:16px;padding:16px;margin:18px 0;min-width:0;}
+.equation-meaning header{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+.equation-meaning h2{font-size:16px;margin:0;color:#eff4ff;}
+.equation-kind{font-size:11px;border:1px solid #476657;border-radius:20px;padding:4px 8px;color:#a6e6c5;}
+.equation-symbols{display:grid;grid-template-columns:1fr;gap:5px;margin:12px 0;font-size:12px;line-height:1.6;}
+.equation-symbols>div{display:grid;grid-template-columns:minmax(55px,24%) 1fr;gap:8px;}
+.equation-symbols dt{color:#ffd36a;overflow-wrap:anywhere;}
+.equation-symbols dd{margin:0;color:#bfcfe5;}
+.more-symbols summary{font-size:12px;color:#b3c8e8;cursor:pointer;}
+.equation-derivation{border-top:1px solid #34445d;padding-top:12px;margin-top:14px;}
+.equation-derivation summary{cursor:pointer;color:#9ee7e6;font-size:13px;}
+.equation-derivation nav{display:flex;justify-content:space-between;gap:8px;margin-top:16px;}
+.equation-before{font-size:11px;color:#9dafc9;opacity:.7;}
+.equation-current{border-left:2px solid #ffd36a;padding-left:8px;margin:10px 0;}
+.spiral-lesson .equation-meaning .equation-image-scroll{max-width:100%;}
