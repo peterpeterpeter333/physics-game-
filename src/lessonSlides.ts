@@ -1,9 +1,9 @@
 import type { LessonStep } from "./types";
 
 /**
- * A lesson used to show one dense paragraph per screen. That made the early
+ * A lesson used to show one dense paragraph per screen.  That made the early
  * chapters feel much faster than the carefully scaffolded university EM
- * lessons. This adapter keeps the authored content intact, but breaks a
+ * lessons.  This adapter keeps the authored content intact, but breaks a
  * short lesson into roughly ten small, readable teaching cards.
  *
  * The benchmark lessons that already have ten or more authored steps (for
@@ -13,6 +13,7 @@ export type LessonSlide = LessonStep & {
   sourceStep: number;
   part: number;
   parts: number;
+  checkpoint: string;
 };
 
 const TARGET_SLIDES = 10;
@@ -42,19 +43,22 @@ function splitIntoParts(text: string, parts: number): string[] {
     return result;
   }
 
-  // A few concise steps contain fewer Japanese sentence boundaries than the
-  // number of cards assigned to them. Split only at whitespace as a fallback;
-  // if there is no safe boundary, leave the authored sentence whole rather
-  // than corrupting math notation.
-  const words = text.split(/\s+/).filter(Boolean);
-  if (words.length >= parts) {
-    return Array.from({ length: parts }, (_, index) => {
-      const start = Math.floor((index * words.length) / parts);
-      const end = Math.floor(((index + 1) * words.length) / parts);
-      return words.slice(start, end).join(" ");
-    });
-  }
+  // Do not split at spaces: spaces can occur inside LaTeX or Markdown and a
+  // malformed expression is worse than one slightly longer card.
   return [text];
+}
+
+function checkpoint(step: LessonStep, part: number, parts: number): string {
+  if (part < parts) {
+    return "ここでいったん止まろう。今の文で「何を比べたか」を、自分の言葉で言い直してから次へ進もう。";
+  }
+  if (step.formulaNote) {
+    return `式を暗記する前に、「${step.formulaNote}」を例を使って説明できるか確かめよう。`;
+  }
+  if (step.figure) {
+    return "図の矢印・線・量のうち、本文で説明しているものを一つ指さして対応を確かめよう。";
+  }
+  return "この話を、記号を使わずに日常の言葉で一文に言い換えられたら次へ進もう。";
 }
 
 function allocations(steps: LessonStep[]): number[] {
@@ -86,7 +90,7 @@ function allocations(steps: LessonStep[]): number[] {
 export function lessonSlides(steps: LessonStep[]): LessonSlide[] {
   const perStep = allocations(steps);
 
-  return steps.flatMap((step, sourceStep) => {
+  const expanded = steps.flatMap((step, sourceStep) => {
     const bodies = splitIntoParts(step.body, perStep[sourceStep]);
     return bodies.map((body, index) => {
       const parts = bodies.length;
@@ -103,7 +107,31 @@ export function lessonSlides(steps: LessonStep[]): LessonSlide[] {
         sourceStep,
         part: index + 1,
         parts,
+        checkpoint: checkpoint(step, index + 1, parts),
       };
     });
   });
+
+  // Extremely concise authored steps are kept whole to protect math markup.
+  // Fill any resulting gap with active-recall cards, rather than inventing
+  // scientific detail that has not been reviewed in the source curriculum.
+  let cursor = 0;
+  while (expanded.length < TARGET_SLIDES && steps.length > 0) {
+    const sourceStep = cursor % steps.length;
+    const step = steps[sourceStep];
+    expanded.push({
+      ...step,
+      heading: `理解チェック — ${step.heading}`,
+      body: `ここまでの「${step.heading}」を、式を見ずに説明してみよう。本文に出てきた具体例について、「何が変わり、何を比べるのか」を順に言えるか確かめる。`,
+      figure: undefined,
+      formula: undefined,
+      formulaNote: undefined,
+      sourceStep,
+      part: 1,
+      parts: 1,
+      checkpoint: "答えを急がず、本文の例へ戻って理由を確かめよう。",
+    });
+    cursor += 1;
+  }
+  return expanded;
 }
