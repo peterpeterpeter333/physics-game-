@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { Stage } from "../types";
 import { MathText, MathBlock } from "./MathText";
 import { Figure } from "./figures";
+import { lessonSlides } from "../lessonSlides";
 
 export function LessonView({
   stage,
@@ -15,9 +16,10 @@ export function LessonView({
   onExit: () => void;
 }) {
   const lesson = stage.lesson;
+  const slides = useMemo(() => lessonSlides(lesson.steps), [lesson.steps]);
   // 表示済みステップ数 (0 = イントロのみ)
   const [revealed, setRevealed] = useState(0);
-  const allRevealed = revealed >= lesson.steps.length;
+  const allRevealed = revealed >= slides.length;
 
   return (
     <div className="screen lesson" data-stage-id={stage.id}>
@@ -36,7 +38,7 @@ export function LessonView({
       </p>
 
       <div className="lesson-steps">
-        {lesson.steps.slice(0, revealed).map((step, i) => (
+        {slides.slice(0, revealed).map((step, i) => (
           <div className="lesson-step pop-in" key={i}>
             <h2>{step.heading}</h2>
             <p>
@@ -63,7 +65,7 @@ export function LessonView({
 
       <div className="lesson-controls">
         <div className="step-dots">
-          {lesson.steps.map((_, i) => (
+          {slides.map((_, i) => (
             <span key={i} className={`dot ${i < revealed ? "on" : ""}`} />
           ))}
         </div>
