@@ -1,6 +1,8 @@
 // コンテンツのデータ型。数式は文字列中に $...$ (インライン) / $$...$$ (ブロック) で埋め込む。
 
 export type LessonStep = {
+  /** University prerequisites, explained in place instead of requiring an earlier stage. */
+  review?: boolean;
   heading: string;
   body: string;
   /** アニメーション図解のID (src/components/figures 参照) */

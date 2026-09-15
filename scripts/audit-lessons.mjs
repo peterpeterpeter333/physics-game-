@@ -11,6 +11,8 @@ const imports = `
  export { explanationPlans } from './src/content/explanations';
  export { formulas as formulaBook } from './src/content/formulas';
  export { REGISTRY, Figure } from './src/components/figures';
+ export { getUniqueShot } from './src/components/figures/unique';
+ export { highSchoolReviews } from './src/content/high-school-review';
  export { mechanics } from './src/content/mechanics';
  export { thermo } from './src/content/thermo';
  export { waves } from './src/content/waves';
@@ -24,7 +26,7 @@ const bundle=await build({stdin:{contents:imports,resolveDir:process.cwd(),loade
 const module=new Module(`${process.cwd()}/.lesson-audit.cjs`);
 module.paths=Module._nodeModulePaths(process.cwd());
 module._compile(bundle.outputFiles[0].text,module.id);
-const { chapters, explanationPlans, REGISTRY, Figure, formulaBook, ...raw }=module.exports;
+const { chapters, explanationPlans, REGISTRY, Figure, formulaBook, getUniqueShot, highSchoolReviews, ...raw }=module.exports;
 const originals=['mechanics','thermo','waves','electromagnetism','atomic','univMath','univMechanics','univEm'].flatMap(key=>raw[key].stages);
 const stages=chapters.flatMap(c=>c.stages);
 assert.equal(stages.length,56);
@@ -47,14 +49,22 @@ for(const stage of stages){
  bridges+=plan.bridges.length;
  const distinct=new Set();
  for(const step of stage.lesson.steps){
-  assert(REGISTRY[step.figure],`missing animation ${stage.id}/${step.heading}: ${step.figure}`);
+  assert(REGISTRY[step.figure] || getUniqueShot(stage.id,step),`missing animation ${stage.id}/${step.heading}: ${step.figure}`);
   assert(!distinct.has(step.body),`duplicate body: ${stage.id}`);distinct.add(step.body);
-  used.add(step.figure);prose(step.body);prose(step.heading);
+  if(REGISTRY[step.figure])used.add(step.figure);prose(step.body);prose(step.heading);
   if(step.formula)math(step.formula);
   if(step.formulaNote)prose(step.formulaNote);
   total++;
  }
  prose(stage.lesson.intro);prose(stage.lesson.outro);
+ if (/^(uc|ue)-/.test(stage.id)) {
+  assert(highSchoolReviews[stage.id]?.length>=3,`missing prerequisites: ${stage.id}`);
+  assert(stage.lesson.steps[0].review,`prerequisites must come first: ${stage.id}`);
+  for(const review of highSchoolReviews[stage.id]) {
+   assert(stage.lesson.steps.some(s=>s.figure===review.step.figure));
+   assert(review.step.body.includes('大学へのつながり：'));
+  }
+ }
 }
 for(const id of used){
  const html=renderToStaticMarkup(React.createElement(Figure,{id}));

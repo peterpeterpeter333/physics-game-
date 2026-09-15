@@ -7,8 +7,12 @@ import { univMechanicsPlans } from './univ-mechanics';
 import { univEmPlans } from './univ-em';
 import { corrections } from './corrections';
 import { intros } from './intros';
+import { highSchoolReviews } from '../high-school-review';
 
-export const explanationPlans = { ...mechanicsPlans, ...thermalWavePlans, ...emAtomicPlans, ...mathPlans, ...univMechanicsPlans, ...univEmPlans };
+const basePlans = { ...mechanicsPlans, ...thermalWavePlans, ...emAtomicPlans, ...mathPlans, ...univMechanicsPlans, ...univEmPlans };
+export const explanationPlans = Object.fromEntries(Object.entries(basePlans).map(([id, plan]) => [id,
+ {...plan, bridges: [...(highSchoolReviews[id] ?? []), ...plan.bridges]},
+]));
 const spatialFigures: Record<string,string> = {
  'cross-product':'cross-3d', 'right-hand':'cross-3d', 'area-vector':'flux-3d',
  'flux-tilt':'flux-3d', 'helix':'helix-3d', 'em-wave':'em-wave-3d',

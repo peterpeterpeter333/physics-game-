@@ -59,13 +59,14 @@ for (const stage of stages) {
   assert(destination.theme.length > 8 && destination.goal.length > 25, `Empty destination: ${stage.id}`);
   for (const [page, step] of stage.lesson.steps.entries()) {
     const html = renderToStaticMarkup(React.createElement(LessonOrientation, {
-      stageId: stage.id, heading: step.heading, page, total: stage.lesson.steps.length,
+      stageId: stage.id, heading: step.heading, page, total: stage.lesson.steps.length, review: step.review,
     }));
     for (const label of ['この章のテーマ', '目標の式・性質', '今の話']) assert(html.includes(label));
     assert(html.includes(destination.theme), `Wrong theme: ${stage.id}/${page}`);
     assert(html.includes(`${page + 1} / ${stage.lesson.steps.length}`), 'Wrong slide progress');
     assert(html.indexOf('lesson-destination') < html.indexOf('<h2>'), 'Destination must come before the current topic');
     assert(!html.includes('katex-error'));
+    if(step.review) assert(html.includes('高校の復習・大学への準備'));
     orientedSlides++;
   }
 }

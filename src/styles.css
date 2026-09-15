@@ -314,6 +314,8 @@ p { line-height: 1.85; }
 .lesson-destination .lesson-theme { color: var(--gold); font-weight: 700; font-size: 14px; }
 .lesson-current-label { display: flex; align-items: center; gap: 10px; color: var(--cyan); font-size: 11px; font-weight: 700; }
 .lesson-current-label .lesson-card-count { margin: 0; }
+.lesson-current-label { flex-wrap: wrap; }
+.lesson-review-tag { color: var(--gold); border: 1px solid rgba(255,209,102,.3); border-radius: 5px; padding: 2px 6px; }
 .lesson-orientation h2 { margin-top: 5px; }
 .lesson-card-count {
   color: var(--text-dim);

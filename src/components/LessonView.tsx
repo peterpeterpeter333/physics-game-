@@ -4,7 +4,7 @@ import { MathText } from "./MathText";
 import { Figure } from "./figures";
 import { CalculationBoard, EquationImage } from './CalculationBoard';
 import { getCalculation } from '../content/calculations';
-import { UniqueFigure, uniqueShots } from './figures/unique';
+import { UniqueFigure, getUniqueShot } from './figures/unique';
 import { LessonOrientation } from './LessonOrientation';
 
 export function LessonView({
@@ -24,7 +24,7 @@ export function LessonView({
   const allRevealed = page === slides.length - 1;
   const step = slides[page];
   const calculation = getCalculation(step);
-  const shot = uniqueShots[stage.id]?.[page];
+  const shot = getUniqueShot(stage.id, step);
   const card = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (page === 0) window.scrollTo({top:0});
@@ -49,10 +49,10 @@ export function LessonView({
 
       <div className="lesson-steps">
           <div className="lesson-step pop-in" key={page} ref={card}>
-            <LessonOrientation stageId={stage.id} heading={step.heading} page={page} total={slides.length} />
-            <p>
-              <MathText text={step.body} />
-            </p>
+            <LessonOrientation stageId={stage.id} heading={step.heading} page={page} total={slides.length} review={step.review} />
+            {step.body.split(/\n\s*\n/).map((paragraph, index) => (
+              <p key={index}><MathText text={paragraph} /></p>
+            ))}
             {shot ? <UniqueFigure shot={shot} id={`${stage.id}/${page}`} /> : step.figure && <Figure id={step.figure} />}
             {calculation && <CalculationBoard calculation={calculation} />}
             {step.formula && !calculation?.lines.some(line => line.tex === step.formula) && <div className="formula-card"><EquationImage tex={step.formula}/></div>}

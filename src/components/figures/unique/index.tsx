@@ -3,7 +3,20 @@ import { MotionContext, useT } from '../anim';
 import { integralShots } from './integrals';
 import { gaussShots } from './gauss';
 import type { Shot } from './primitives';
+import { highSchoolReviews } from '../../../content/high-school-review';
+import { mechanicsReviewScenes } from './review-mechanics';
+import { emReviewScenes } from './review-electromagnetism';
 export const uniqueShots: Record<string,Shot[]> = {'ue-integrals':integralShots,'ue-gauss':gaussShots};
+const reviewScenes = { ...mechanicsReviewScenes, ...emReviewScenes };
+export const reviewShots: Record<string, Shot> = Object.fromEntries(Object.values(highSchoolReviews).flat().map(({step}) => {
+  const scene = reviewScenes[step.figure!];
+  if (!scene) throw new Error(`Missing review animation: ${step.figure}`);
+  return [step.figure!, {...scene, heading:step.heading}];
+}));
+/** Match by heading: inserting prerequisites must not shift existing scenes. */
+export function getUniqueShot(stageId: string, step: { heading: string; figure?: string }) {
+  return (step.figure ? reviewShots[step.figure] : undefined) ?? uniqueShots[stageId]?.find(shot => shot.heading === step.heading);
+}
 
 function ShotCanvas({shot,manual,yaw}: {shot:Shot;manual:number|null;yaw:number}) {
   const time = useT();
