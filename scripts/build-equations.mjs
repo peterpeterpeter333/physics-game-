@@ -1,6 +1,6 @@
 import { build } from 'esbuild';
 import Module from 'node:module';
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { mathjax } from 'mathjax-full/js/mathjax.js';
 import { TeX } from 'mathjax-full/js/input/tex.js';
@@ -26,6 +26,7 @@ RegisterHTMLHandler(adaptor);
 const document = mathjax.document('',{InputJax:new TeX({packages:AllPackages}),OutputJax:new SVG({fontCache:'none'})});
 const output = {};
 mkdirSync('public/generated-equations', {recursive:true});
+writeFileSync('public/generated-equations/LICENSE.txt', 'MathJax SVG font outlines: Copyright (c) 2017-2022 The MathJax Consortium.\nGenerated typesetting of Physics Quest equations.\n\n'+readFileSync('node_modules/mathjax-full/LICENSE','utf8'));
 for (const step of steps) for (const line of [...(getCalculation(step)?.lines ?? []), ...(step.formula ? [{tex:step.formula,note:'既存の公式'}] : [])]) {
   if (!line.tex || !line.note) throw new Error(`Empty equation: ${step.heading}`);
   if (output[line.tex]) continue;
