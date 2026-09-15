@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { RigorousScene } from './RigorousScene';
 const c={field:'#4ee1ff',charge:'#ffd166',other:'#c2a2ff',bad:'#ff969e',muted:'#929fbd',good:'#8be3ba'};
 const txt=(x:number,y:number,s:string,color=c.muted,size=16)=><text x={x} y={y} textAnchor="middle" fill={color} fontSize={size}>{s}</text>;
 const line=(x:number,y:number,X:number,Y:number,color=c.muted,dashed=false)=><line x1={x} y1={y} x2={X} y2={Y} stroke={color} strokeWidth="2.5" strokeDasharray={dashed?'5 5':undefined}/>;
@@ -13,6 +14,7 @@ const plates=()=> <>{line(38,42,38,217,c.charge)}{line(442,42,442,217,c.other)}{
 
 /** Each scene has authored, discrete states. A single beat drives figure, prose and equation. */
 export function GuidedScene({scene,beat,yaw=.55}:{scene:string;beat:number;yaw?:number}) {
+ if(scene.startsWith('r-')||scene.startsWith('g-'))return <RigorousScene scene={scene} beat={beat}/>;
  const b=beat;let art:ReactNode;
  switch(scene){
  case 'probe':art=<>{plates()}{txt(240,29,'同じ点Pで、別々に測る')}{charge(140,95)}{arrow(157,95,237,95)}{txt(137,130,'1C',c.charge)}{txt(225,76,'2N',c.field)}{b>0&&<>{charge(140,180)}{arrow(157,180,317,180)}{txt(137,215,'2C',c.charge)}{txt(289,160,'4N',c.field)}</>}{b===0&&txt(240,230,'電場を作る板は動かさない')}{b===2&&txt(350,240,'どちらも 2N/C',c.good)}</>;break;

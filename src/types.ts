@@ -4,6 +4,11 @@ export type LessonStep = {
   /** A synchronized, learner-controlled visual explanation. */
   story?: {
     scene: string;
+    goal?: string;
+    basis?: string;
+    result?: string;
+    goalTex?: string;
+    notes?: { title:string; text:string; tex:string }[];
     beats: { action: string; text: string; focus: string; tex?: string }[];
     check?: { question: string; choices: { text: string; feedback: string }[]; answer: number };
   };

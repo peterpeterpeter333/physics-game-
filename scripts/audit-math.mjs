@@ -43,7 +43,7 @@ function walk(value, location = 'content') {
   for (const [key, child] of Object.entries(value)) {
     const path = `${location}.${key}`;
     if (typeof child === 'string') {
-      if (key === 'formula' || key === 'tex') {
+      if (key === 'formula' || key === 'tex' || key === 'goalTex') {
         katex.renderToString(child, { throwOnError: true, strict: 'ignore' });
         expressions++;
       } else if (!['id', 'stageId', 'figure', 'color', 'icon'].includes(key)) checkProse(child, path);

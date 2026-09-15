@@ -20,7 +20,10 @@ const spatialFigures: Record<string,string> = {
 };
 export function enrichChapters(source: Chapter[]): Chapter[] {
  return source.map(chapter => ({...chapter, stages: chapter.stages.map(stage => {
-  if (guidedLessons[stage.id]) return {...stage,lesson:guidedLessons[stage.id],problems:guidedProblems[stage.id]};
+  if (guidedLessons[stage.id]) return {...stage,
+   title:stage.id==='ue-integrals'?'線積分・面積分を計算する':'ガウスの法則を証明する',
+   subtitle:stage.id==='ue-integrals'?'ベクトル場から仕事と電気束を求める':'偏心球の積分から任意の閉曲面へ',
+   lesson:guidedLessons[stage.id],problems:guidedProblems[stage.id]};
   const plan = explanationPlans[stage.id];
   if (!plan) throw new Error(`Missing authored explanation plan: ${stage.id}`);
   const original = stage.lesson.steps;

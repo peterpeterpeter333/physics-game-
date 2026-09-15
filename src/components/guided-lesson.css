@@ -17,6 +17,21 @@
 .guided-equation {padding:18px 10px;background:rgba(255,255,255,.035);border-radius:10px;border:1px solid var(--guided-edge);}
 .guided-equation .equation-image-scroll {max-width:100%;}
 .guided-equation .equation-image {max-width:100%;height:auto;}
+.rigorous-purpose {border-bottom:1px solid var(--guided-edge);padding-bottom:12px;margin-bottom:20px;line-height:1.8;font-size:14px;}
+.rigorous-purpose>strong {color:#ffd36a;}
+.rigorous-basis {color:#bfcce1;font-size:13px;}
+.rigorous-basis strong {display:block;color:#c3a2ff;}
+.rigorous-result {margin:22px 0 0;padding:15px;border-left:3px solid #92e5bd;background:#92e5bd09;font-size:15px;line-height:1.9;}
+.rigorous-result strong {color:#92e5bd;}
+.rigorous-readout {font-size:13px;line-height:1.8;color:#cbd7ed;}
+.rigorous-lab .btn {min-height:44px;}
+.guided-recap li {margin-bottom:22px;line-height:1.85;}
+.guided-recap .equation-image-scroll {max-width:100%;}
+.guided-page-navigation .lesson-dots {flex-wrap:wrap;}
+.guided-equation {overflow:hidden;}
+.guided-equation .equation-image-scroll {overflow-x:auto;justify-content:flex-start;}
+.guided-equation .equation-image {max-width:none;flex-shrink:0;}
+.guided-equation::after {content:'長い式は横にスクロールできます';display:block;color:#a7b5ce;font-size:10px;margin-top:8px;}
 .guided-beat-actions {display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:20px;}
 .guided-beat-actions .btn {white-space:normal;min-height:46px;font-size:14px;line-height:1.5;}
 .guided-beat-actions .btn-primary {flex:1;max-width:75%;}
