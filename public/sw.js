@@ -1,5 +1,5 @@
 // シンプルなオフライン対応: 同一オリジンのGETをキャッシュ(network-first, cache-fallback)
-const CACHE = "physics-quest-v1";
+const CACHE = "physics-quest-v2";
 
 self.addEventListener("install", (e) => {
   self.skipWaiting();
@@ -8,7 +8,7 @@ self.addEventListener("install", (e) => {
 self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+      Promise.all(keys.filter((k) => k.startsWith("physics-quest-") && k !== CACHE).map((k) => caches.delete(k)))
     )
   );
   self.clients.claim();
@@ -19,11 +19,21 @@ self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
   e.respondWith(
     fetch(e.request)
-      .then((res) => {
+      .then(async (res) => {
+        if (!res.ok) return (await caches.match(e.request)) || res;
         const copy = res.clone();
-        caches.open(CACHE).then((c) => c.put(e.request, copy));
+        e.waitUntil(caches.open(CACHE).then((c) => c.put(e.request, copy)));
         return res;
       })
-      .catch(() => caches.match(e.request).then((hit) => hit || caches.match("./index.html")))
+      .catch(async () => {
+        const hit = await caches.match(e.request);
+        if (hit) return hit;
+        // Never return HTML for a missing image or JavaScript file.
+        if (e.request.mode === "navigate") {
+          const page = await caches.match(new URL("./index.html", self.registration.scope).href);
+          if (page) return page;
+        }
+        return Response.error();
+      })
   );
 });

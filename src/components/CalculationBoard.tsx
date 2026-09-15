@@ -1,12 +1,15 @@
 import { useEffect, useState, useRef } from 'react';
 import type { Calculation } from '../content/calculations/schema';
 import equations from '../content/calculations/equations.generated.json';
+import { MathBlock } from './MathText';
 
 const images: Record<string, { src: string; width: number; height: number }> = equations;
 export function EquationImage({tex}: {tex:string}) {
+  const [failedTex, setFailedTex] = useState<string | null>(null);
   const asset = images[tex];
-  if (!asset) throw new Error(`Missing equation SVG: ${tex}`);
+  if (!asset || failedTex === tex) return <div className="equation-image-scroll" data-equation-fallback><MathBlock tex={tex}/></div>;
   return <div className="equation-image-scroll"><img className="equation-image" src={`${import.meta.env.BASE_URL}${asset.src}`}
+    onError={() => setFailedTex(tex)}
     alt={`数式: ${tex}`} width={asset.width} height={asset.height} draggable={false} /></div>;
 }
 

@@ -37,6 +37,9 @@ jobs:
       - name: Audit equation images and original storyboards
         run: npm run test:calculations
 
+      - name: Audit offline image handling
+        run: node scripts/audit-offline.mjs
+
       - name: Audit synchronized electromagnetic lessons
         run: npm run test:guided
 
@@ -45,3 +48,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          # Open tabs can still reference a previous build's hashed equation images.
+          keep_files: true

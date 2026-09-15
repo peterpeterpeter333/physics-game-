@@ -30,6 +30,8 @@ writeFileSync('public/generated-equations/LICENSE.txt', 'MathJax SVG font outlin
 const lines=steps.flatMap(step=>[...(getCalculation(step)?.lines??[]),...(step.formula?[{tex:step.formula,note:'既存の公式'}]:[])]);
 lines.push(...Object.values(spiralLessons).flatMap(cycles=>cycles.flatMap(c=>c.cards.filter(s=>s.tex).map(s=>({tex:s.tex,note:s.title})))));
 lines.push(...Object.values(integralEquationGuides).flatMap(guides=>guides.flatMap(guide=>guide.steps)));
+// Keep this previously published equation available to already-open lesson tabs.
+lines.push({tex:String.raw`dA=R^2\sin\theta\,d\theta\,d\varphi`,note:'旧版の球面積スライドとの互換性'});
 for (const line of lines) {
   if (!line.tex || !line.note) throw new Error(`Empty equation: ${line.note}`);
   if (output[line.tex]) continue;
