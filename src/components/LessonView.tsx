@@ -5,6 +5,7 @@ import { Figure } from "./figures";
 import { CalculationBoard, EquationImage } from './CalculationBoard';
 import { getCalculation } from '../content/calculations';
 import { UniqueFigure, uniqueShots } from './figures/unique';
+import { LessonOrientation } from './LessonOrientation';
 
 export function LessonView({
   stage,
@@ -48,8 +49,7 @@ export function LessonView({
 
       <div className="lesson-steps">
           <div className="lesson-step pop-in" key={page} ref={card}>
-            <div className="lesson-card-count" aria-live="polite">{page + 1} / {slides.length}</div>
-            <h2>{step.heading}</h2>
+            <LessonOrientation stageId={stage.id} heading={step.heading} page={page} total={slides.length} />
             <p>
               <MathText text={step.body} />
             </p>
