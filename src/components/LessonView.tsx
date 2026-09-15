@@ -40,6 +40,7 @@ export function LessonView({
       <div className="lesson-steps">
         {slides.slice(0, revealed).map((step, i) => (
           <div className="lesson-step pop-in" key={i}>
+            <div className="lesson-card-count">ゆっくり読む {i + 1} / {slides.length}</div>
             <h2>{step.heading}</h2>
             <p>
               <MathText text={step.body} />
@@ -51,6 +52,7 @@ export function LessonView({
                 {step.formulaNote && <div className="formula-note">💡 {step.formulaNote}</div>}
               </div>
             )}
+            <div className="lesson-checkpoint">🧭 {step.checkpoint}</div>
           </div>
         ))}
       </div>
