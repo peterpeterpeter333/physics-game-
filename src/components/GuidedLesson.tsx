@@ -4,6 +4,7 @@ import { MathText } from './MathText';
 import { EquationImage } from './CalculationBoard';
 import { GuidedScene } from './GuidedScene';
 import './guided-lesson.css';
+import {MicroLesson} from './MicroLesson';
 
 function Story({step,onNext,last}:{step:LessonStep;onNext:()=>void;last:boolean}) {
  const story=step.story!;
@@ -43,7 +44,7 @@ function Story({step,onNext,last}:{step:LessonStep;onNext:()=>void;last:boolean}
  </>;
 }
 
-export function GuidedLesson({stage,alreadyFinished,onComplete,onExit}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void}) {
+function LegacyGuidedLesson({stage,alreadyFinished,onComplete,onExit}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void}) {
  const [page,setPage]=useState(0);
  const top=useRef<HTMLElement>(null);
  const first=useRef(true);
@@ -60,4 +61,8 @@ export function GuidedLesson({stage,alreadyFinished,onComplete,onExit}:{stage:St
   <details className="guided-contents"><summary>問いの一覧から選ぶ</summary><ol>{steps.map((s,i)=><li key={s.heading}><button onClick={()=>setPage(i)} aria-current={page===i?'step':undefined}>{s.heading}</button></li>)}</ol></details>
   {page===steps.length-1&&<p className="guided-outro">{stage.lesson.outro}</p>}
  </div>;
+}
+
+export function GuidedLesson(props:Parameters<typeof LegacyGuidedLesson>[0]){
+ return ['ue-integrals','ue-gauss'].includes(props.stage.id)?<MicroLesson {...props}/>:<LegacyGuidedLesson {...props}/>;
 }
