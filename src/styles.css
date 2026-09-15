@@ -353,7 +353,15 @@ p { line-height: 1.85; }
   margin-top: 8px;
 }
 .math-block { font-size: 20px; overflow-x: auto; padding: 4px 0; }
-.math-inline { white-space: nowrap; }
+.math-inline {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0.15em 0;
+}
 
 .lesson-outro {
   background: linear-gradient(135deg, rgba(123, 255, 178, 0.1), rgba(78, 225, 255, 0.08));

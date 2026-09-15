@@ -809,7 +809,7 @@ export const univMechanics: Chapter = {
           },
         ],
         outro:
-          "重心 = 質量の平均位置(外力は重心の運動を支配)。慣性モーメント I = Σmr² は「回転の質量」で、距離の2乗が効く(v=rωだから)。軸がずれたら I_G + Md²。",
+          "重心 = 質量の平均位置(外力は重心の運動を支配)。慣性モーメント $I = \\sum mr^2$ は「回転の質量」で、距離の2乗が効く($v=r\\omega$だから)。軸がずれたら $I_G + Md^2$。",
       },
       problems: [
         {
@@ -863,7 +863,7 @@ export const univMechanics: Chapter = {
             "$Ml^2$",
           ],
           answerIndex: 2,
-          hint: "I = I_G + Md²、d = l/2。",
+          hint: "$I = I_G + Md^2$、$d = l/2$。",
           explanation:
             "$I = \\frac{1}{12}Ml^2 + M\\left(\\frac{l}{2}\\right)^2 = \\frac{1}{12}Ml^2 + \\frac{1}{4}Ml^2 = \\frac{1}{3}Ml^2$ — 中心持ちの**4倍**回しにくい。平行軸の定理は「重心まわり+重心を回す分」という意味さえ掴めば符号も形も忘れない。",
         },

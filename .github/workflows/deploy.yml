@@ -31,6 +31,9 @@ jobs:
       - name: Audit lessons and animation coverage
         run: npm run test:lessons
 
+      - name: Audit inline math and formula rendering
+        run: npm run test:math
+
       - name: Audit equation images and original storyboards
         run: npm run test:calculations
 
