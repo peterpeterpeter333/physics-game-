@@ -20,7 +20,7 @@ export const univEmPlans: Record<string, Plan> = {
  ]},
  'ue-potential': { figures:[], bridges:[
   b(0,'電位差は始点と終点を書く','line-integral',r`静電場で$V_B-V_A=-\int_A^B\vec E\cdot d\vec r$。基準点Aで$V_A=0$と選べばBでの電位を定義できる。どの道でも同じになる保存性が必要で、変動磁場による誘導電場は一般にこれだけでは表せない。`),
-  b(1,'微小移動なら掛け算1回に戻る','contour-map',r`x方向へdxだけ動くと$dV=-E_x\,dx$。dxで割って極限をとれば$E_x=-\frac{\partial V}{\partial x}$。他の座標を固定していることを∂が表す。3方向の成分をまとめて−∇Vと書く。`,r`\vec E=-\nabla V`),
+  b(1,'微小移動なら掛け算1回に戻る','potential-gradient',r`**目的：電位の分布Vから、その場所の電場のx成分Eₓを求めます。** 静電場でy,zを固定し、二点の電位差ΔVを距離Δxで割ります。区間を縮めた極限が偏微分∂V/∂x。電場は電位が下がる向きなので、$E_x=-\partial V/\partial x$です。`,r`E_x=-\frac{\partial V}{\partial x}`),
   b(2,'等電位面と垂直になる理由','contour-map',r`等電位面に沿う微小移動ではdV=0。したがってE·dr=0で、Eは面内のどの移動とも垂直。等電位線の間隔が狭いほど、同じ電位差を短い距離で変えるため電場が強い。`),
   b(3,'点電荷の電位を無限遠から積分','coulomb',r`点電荷Qの半径方向成分は$E_r=\frac{Q}{4\pi\varepsilon_0r^2}$。V(∞)=0として$-\int_\infty^r E_r(s)\,ds$。s⁻²の原始関数は−1/sなので、積分の外と中の負号が打ち消す。`,r`V(r)=-\frac{Q}{4\pi\varepsilon_0}\left[-\frac1s\right]_{\infty}^{r}=\frac{Q}{4\pi\varepsilon_0r}`),
   b(3,'電荷を置いたときのエネルギーへ','contour-map',r`電位Vの場所に試験電荷qを置くとU=qV。Qとqが異符号ならU<0で引き合い、無限に離すには外から仕事が必要。高電位へ動くか低電位へ動くかはqの符号も含めて考える。`),

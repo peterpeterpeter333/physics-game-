@@ -24,7 +24,7 @@ export function PredictMachine() {
       {curve.length > 1 && <polyline points={curve.join(" ")} fill="none" stroke={C.gold} strokeWidth={2.5} />}
       <text x={196} y={60} fontSize={11} fill={C.gold}>出力: 軌道 x(t)</text>
       <text x={196} y={74} fontSize={10} fill={C.dim}>(未来の全歴史)</text>
-      <Caption text="力を入れて解くと、全時刻の運動がまるごと出てくる「予言マシン」" />
+      <Caption text="力の法則に初期位置・初速度を加え、運動方程式から運動を求める" />
     </FigSvg>
   );
 }
@@ -88,8 +88,8 @@ export function FieldMap() {
       <text x={cx - 4} y={cy + 4} fontSize={11} fill="#fff">+</text>
       <circle cx={tx} cy={ty} r={7} fill={C.gold} />
       <line x1={tx} y1={ty} x2={tx + 20 * Math.cos(ang)} y2={ty + 20 * Math.sin(ang)} stroke={C.gold} strokeWidth={3} />
-      <text x={16} y={26} fontSize={11} fill={C.gold}>+1Cを置くと、その場所の矢印の向きに押される</text>
-      <Caption text="電場E = 空間の各点に生えた「+1Cが受ける力」の地図" />
+      <text x={16} y={26} fontSize={11} fill={C.gold}>小さな正の試験電荷qに働く力Fを測る</text>
+      <Caption text="電場 E = F/q：各位置での単位電荷あたりの力" />
     </FigSvg>
   );
 }
@@ -110,8 +110,8 @@ export function TwoWords() {
         ))}
         <circle cx={px} cy={110} r={6} fill={C.gold} />
         <text x={26} y={62} fontSize={11.5} fill={C.cyan}>電圧(電位差)</text>
-        <text x={26} y={78} fontSize={10} fill={C.dim}>= 道沿いにした仕事</text>
-        <text x={26} y={138} fontSize={10} fill={C.gold}>∫E·dr</text>
+        <text x={26} y={78} fontSize={10} fill={C.dim}>= −(電気力の仕事)/q</text>
+        <text x={26} y={138} fontSize={10} fill={C.gold}>−∫E·dr（始点→終点）</text>
       </g>
       <g opacity={left ? 0.4 : 1}>
         <rect x={168} y={40} width={140} height={108} rx={10} fill="none" stroke={left ? C.dim : C.purple} strokeWidth={1.5} />
@@ -123,7 +123,7 @@ export function TwoWords() {
           </g>
         ))}
         <text x={182} y={62} fontSize={11.5} fill={C.purple}>磁束</text>
-        <text x={182} y={78} fontSize={10} fill={C.dim}>= 面を貫く本数</text>
+        <text x={182} y={78} fontSize={10} fill={C.dim}>= 垂直成分×面積の合計</text>
         <text x={252} y={138} fontSize={10} fill={C.gold}>∫B·dA</text>
       </g>
       <Caption text="電磁気の法則はこの2つの量で書かれる — 1つずつ作ろう" />

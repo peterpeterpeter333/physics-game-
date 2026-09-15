@@ -208,7 +208,7 @@ export function Restitution() {
       {ball(160, 0.6, "e = 0.6", C.gold)}
       {ball(250, 0, "e = 0", C.red)}
       <text x={40} y={26} fontSize={11.5} fill="#fff">e = 離れる速さ ÷ 近づく速さ</text>
-      <Caption text="運動量は常に保存、運動エネルギーは e=1 のときだけ" />
+      <Caption text="外力の力積が無視できる衝突：運動量保存。e=1なら運動エネルギーも保存" />
     </FigSvg>
   );
 }
@@ -284,7 +284,7 @@ export function KeplerSweep() {
       <circle cx={px} cy={py} r={7} fill={C.cyan} />
       <text x={sunx - 14} y={cy + 24} fontSize={10.5} fill={C.gold}>太陽</text>
       <text x={24} y={30} fontSize={11} fill="#fff">重力は常に太陽向き → トルク r×F = 0 → L 一定</text>
-      <text x={24} y={46} fontSize={10.5} fill={C.dim}>L = mvr 一定: r が小さいほど v が大きい</text>
+      <text x={24} y={46} fontSize={10.5} fill={C.dim}>L = mr v⊥ 一定：v⊥は半径に垂直な速度成分</text>
       <Caption text="同じ時間に掃く面積(金)は等しい — 角運動量保存の絵姿" />
     </FigSvg>
   );
@@ -333,7 +333,7 @@ export function PendulumSync() {
       {pend(100, 8, C.cyan, "軽いおもり")}
       {pend(220, 16, C.purple, "重いおもり")}
       <text x={96} y={20} fontSize={11} fill="#fff">同じ長さ → 同じ周期 (mは式から消える)</text>
-      <Caption text="T = 2π√(l/g): 質量も振幅も入らない。長さとgだけ" />
+      <Caption text="小振幅・抵抗なしの振り子：T ≈ 2π√(l/g)。大振幅では周期が変わる" />
     </FigSvg>
   );
 }
@@ -350,7 +350,8 @@ export function DampedResonance() {
   const res: string[] = [];
   for (let x = 175; x <= 300; x += 2) {
     const w = (x - 175) / 125;
-    const A = 1 / Math.sqrt(Math.pow(1 - Math.pow(w / 0.55, 2), 2) + 0.05);
+    const ratio = w / 0.55;
+    const A = 1 / Math.sqrt((1-ratio*ratio)**2 + (0.22*ratio)**2);
     res.push(`${x},${(150 - 20 * A).toFixed(1)}`);
   }
   return (
@@ -361,9 +362,9 @@ export function DampedResonance() {
       <line x1={175} y1={150} x2={300} y2={150} stroke={C.dim} strokeWidth={1} />
       <polyline points={res.join(" ")} fill="none" stroke={C.gold} strokeWidth={2.5} />
       <text x={176} y={30} fontSize={11} fill={C.gold}>共振: 外力の振動数が</text>
-      <text x={176} y={44} fontSize={11} fill={C.gold}>固有振動数に一致で振幅最大</text>
+      <text x={176} y={44} fontSize={11} fill={C.gold}>固有振動数の近くで振幅が大</text>
       <text x={230} y={166} fontSize={10} fill={C.dim}>外力の振動数 →</text>
-      <Caption text="ブランコ・地震のビル・電子レンジ・ラジオはすべて共振" />
+      <Caption text="弱い減衰では共振点は固有振動数の近く。減衰量でも変わる" />
     </FigSvg>
   );
 }

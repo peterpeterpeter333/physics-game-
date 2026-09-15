@@ -121,7 +121,7 @@ export function VtArea() {
       <text x={110} y={137} fontSize={12} fill={C.cyan}>v₀t</text>
       <text x={175} y={100} fontSize={12} fill={C.gold}>½at²</text>
       <text x={225} y={38} fontSize={11} fill={C.green}>v = v₀ + at</text>
-      <Caption text="グラフの下の面積 = 移動距離 (長方形+三角形)" />
+      <Caption text="速度の符号付き面積 = 変位。この図は速度が正なので道のりと同じ" />
     </FigSvg>
   );
 }

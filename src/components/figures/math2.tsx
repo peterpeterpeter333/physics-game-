@@ -439,7 +439,7 @@ export function ValleyParabola() {
       <text x={24} y={36} fontSize={11} fill={C.cyan}>本物のポテンシャル(でこぼこ)</text>
       <text x={24} y={52} fontSize={11} fill={C.gold}>点線: 放物線 ½kx²</text>
       <text x={200} y={168} fontSize={11} fill={C.green}>{zoom > 2.2 ? "谷底にズーム: 一致!" : "谷底(安定点)"}</text>
-      <Caption text="安定点の近くは必ず放物線 → 小さな揺れは何でも単振動" />
+      <Caption text="滑らかな谷底で U″>0 なら、十分小さい揺れは単振動で近似" />
     </FigSvg>
   );
 }

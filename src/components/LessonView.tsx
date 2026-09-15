@@ -74,7 +74,7 @@ function StandardLessonView({
             {summary!==step.body&&<details className="study-original"><summary>補足・元の詳しい説明</summary>{step.body.split(/\n\s*\n/).map((p,i)=><p key={i}><MathText text={p}/></p>)}</details>}
             {shot ? <UniqueFigure shot={shot} id={`${stage.id}/${page}`} /> : step.figure && <Figure id={step.figure} />}
             {expressions.length>0&&<QuantityGlossary key={`symbols-${page}`} stageId={stage.id} expressions={expressions}/>}
-            {calculation && <CalculationBoard key={`calculation-${page}`} calculation={calculation} />}
+            {calculation && <CalculationBoard key={`calculation-${page}`} calculation={calculation} purpose={step.heading==='微小移動なら掛け算1回に戻る'?'静電場の電位分布Vから、観測点の電場成分Eₓを求める':unit.goal} />}
             {step.formula && !calculation?.lines.some(line => line.tex === step.formula) && <div className="formula-card"><EquationImage tex={step.formula}/></div>}
             {step.formulaNote && <div className="formula-note">💡 <MathText text={step.formulaNote} /></div>}
             {offset===count-1&&<p className="spiral-gain">つながったこと：{unit.gain}</p>}

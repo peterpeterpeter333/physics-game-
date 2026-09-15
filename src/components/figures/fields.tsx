@@ -36,7 +36,7 @@ export function HeatFlow() {
       <text x={143} y={80} fontSize={11} fill={C.gold}>熱</text>
       <text x={78} y={48} fontSize={11} fill={C.red}>高温 (激しく振動)</text>
       <text x={192} y={48} fontSize={11} fill={C.cyan}>低温 (おだやか)</text>
-      <Caption text="熱 = 分子の揺れの受け渡し。必ず高温→低温の一方通行" />
+      <Caption text="熱は温度差によるエネルギー移動。自発的な正味の移動は高温→低温" />
     </FigSvg>
   );
 }
@@ -272,7 +272,7 @@ export function Coulomb() {
       <text x={258} y={97} fontSize={11} fill="#0b1026" fontWeight="bold">+</text>
       <text x={236} y={70} fontSize={10} fill={C.cyan}>置いた電荷は</text>
       <text x={236} y={82} fontSize={10} fill={C.cyan}>力を受ける</text>
-      <Caption text="電場 = 「+1Cを置いたら受ける力」の地図 (電気力線)" />
+      <Caption text="電場 E = F/q。場を乱さない小さな正電荷qで力を測る" />
     </FigSvg>
   );
 }
@@ -389,7 +389,7 @@ export function Bohr() {
           <polyline points="0,0 6,-5 12,5 18,-5 24,5 30,0" fill="none" stroke={C.purple} strokeWidth={2.5} />
         </g>
       )}
-      <text x={30} y={35} fontSize={11} fill={C.dim}>電子は決まった軌道(準位)だけ</text>
+      <text x={30} y={35} fontSize={11} fill={C.dim}>ボーア模型：許される円軌道だけを描く</text>
       <text x={222} y={30} fontSize={10} fill={C.purple}>落ちるとき光子を放出</text>
       <Caption text="軌道が飛び飛び → 出る光の色も飛び飛び (線スペクトル)" />
     </FigSvg>

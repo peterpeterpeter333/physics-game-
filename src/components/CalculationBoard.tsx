@@ -13,7 +13,7 @@ export function EquationImage({tex}: {tex:string}) {
     alt={`数式: ${tex}`} width={asset.width} height={asset.height} draggable={false} /></div>;
 }
 
-export function CalculationBoard({calculation}: {calculation:Calculation}) {
+export function CalculationBoard({calculation,purpose}: {calculation:Calculation;purpose?:string}) {
   const {lines} = calculation;
   const [active, setActive] = useState(0);
   const [playing, setPlaying] = useState(false);
@@ -30,6 +30,8 @@ export function CalculationBoard({calculation}: {calculation:Calculation}) {
   return <section className={`calculation-board ${calculation.reference?'is-reference':''}`} aria-label={calculation.title}>
     <header className="calculation-header"><h3>{calculation.title}</h3>
       {lines.length > 1 && <span>{active + 1} / {lines.length}</span>}</header>
+    {purpose&&<p className="figure-note">この計算の目的：{purpose}</p>}
+    {calculation.reference&&<p className="figure-note">ここは本文の式の確認欄です。途中式を示す導出ではありません。</p>}
     <ol className="calculation-lines" ref={list}>
       {lines.map((line, i) => i===active?<li key={i} className="calculation-line is-active">
         <button className="calculation-line-select" onClick={() => {setPlaying(false);setActive(i);}}

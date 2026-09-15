@@ -45,8 +45,8 @@ export function GaussRecipe() {
   return (
     <FigSvg>
       <Steps3 active={Math.floor(t / 1.4) % 3} labels={[["① 対称性から", "　 Eの向きを見抜く"], ["② Eが一定になる", "　 袋(面)を選ぶ"], ["③ E×面積 =", "　 Q/ε₀ を解く"]]} />
-      <text x={30} y={158} fontSize={11.5} fill={C.gold}>使える型は 球・円筒・平面 の3つだけ</text>
-      <Caption text="計算に使えるのは「Eを積分の外に出せる」対称性のときだけ" />
+      <text x={30} y={158} fontSize={11.5} fill={C.gold}>典型例：球対称・円筒対称・平面対称</text>
+      <Caption text="法則は一般に成立。対称性があると、電場を簡単に求められる" />
     </FigSvg>
   );
 }
@@ -100,7 +100,7 @@ export function ShellZero() {
       <circle cx={cx + 18 * Math.cos(a)} cy={cy + 18 * Math.sin(a)} r={6} fill={C.cyan} />
       <text x={cx - 44} y={cy + 4} fontSize={10.5} fill={C.cyan}>中の袋: 電荷0</text>
       <text x={cx - 60} y={cy - 66} fontSize={11} fill={C.red}>帯電した殻 (電荷は表面)</text>
-      <text x={18} y={168} fontSize={10.5} fill={C.dim}>内側の袋を貫く本数 = 0 → 内部の E = 0 (静電遮蔽)</text>
+      <text x={18} y={168} fontSize={10.5} fill={C.dim}>一様な球殻：球対称性と流束0を併せて内部E=0</text>
       <Caption text="" />
     </FigSvg>
   );
@@ -123,9 +123,9 @@ export function ContourMap() {
         const r0 = 22;
         return <Arrow key={k} x={cx + r0 * Math.cos(th)} y={cy + r0 * Math.sin(th)} dx={26 * Math.cos(th)} dy={26 * Math.sin(th)} color={C.cyan} w={2.5} />;
       })}
-      <text x={20} y={26} fontSize={11} fill={C.purple}>紫 = 等電位面 (同じ標高の線)</text>
+      <text x={20} y={26} fontSize={11} fill={C.purple}>紫 = 等電位線（平面上で電位が等しい線）</text>
       <text x={20} y={42} fontSize={11} fill={C.cyan}>水色 = 電場 (等電位面に直角、混む所で強い)</text>
-      <Caption text="E = −dV/dr: 電場は電位の坂の傾き" />
+      <Caption text="静電場：電場は等電位線に垂直で、電位が下がる向き" />
     </FigSvg>
   );
 }
@@ -237,8 +237,8 @@ export function Drift() {
         return <circle key={i} cx={x} cy={95 + 12 * Math.sin(i)} r={5} fill={C.cyan} />;
       })}
       <rect x={sig} y={70} width={14} height={50} fill={C.gold} opacity={0.5} />
-      <text x={24} y={50} fontSize={11} fill={C.cyan}>電子のドリフト: 秒速0.1mm以下</text>
-      <text x={24} y={150} fontSize={11} fill={C.gold}>「動け」の合図(電場)はほぼ光速で全区間へ</text>
+      <text x={24} y={50} fontSize={11} fill={C.cyan}>電子の平均の移動は遅い（電流密度などによる）</text>
+      <text x={24} y={150} fontSize={11} fill={C.gold}>場の変化は有限の速さで伝わる（媒質・構造による）</text>
       <Caption text="導線は電子で満水。蛇口をひねれば先端からすぐ水が出る" />
     </FigSvg>
   );
@@ -264,9 +264,9 @@ export function DriftCollisions() {
       ))}
       <polyline points={path.join(" ")} fill="none" stroke={C.cyan} strokeWidth={2} />
       {path.length > 0 && <circle cx={x - 20} cy={95 + 28 * Math.sin((path.length - 1) * 2.3)} r={5} fill={C.cyan} />}
-      <Arrow x={40} y={160} dx={220} dy={0} color={C.gold} w={2} />
-      <text x={110} y={175} fontSize={10.5} fill={C.gold}>電場Eの向きに、平均するとゆっくり進む</text>
-      <text x={20} y={30} fontSize={11} fill="#fff">加速 → 格子(赤)に衝突してエネルギーを渡す(=ジュール熱) → 加速…</text>
+      <Arrow x={260} y={160} dx={-220} dy={0} color={C.gold} w={2} />
+      <text x={16} y={175} fontSize={10.5} fill={C.gold}>金：電場は左向き。青：電子は平均して右へ</text>
+      <text x={20} y={30} fontSize={11} fill="#fff">青：電子の模式軌道。赤：散乱を起こす格子の目印</text>
       <Caption text="" />
     </FigSvg>
   );
@@ -614,7 +614,7 @@ export function MaxwellFour() {
       {panel(1, 86, "②ガウス(B)", "磁力線は閉じる", <g><circle cx={120} cy={78} r={22} fill="none" stroke={C.gold} strokeDasharray="3 3" /><ellipse cx={120} cy={78} rx={30} ry={12} fill="none" stroke={C.purple} strokeWidth={1.5} /></g>)}
       {panel(2, 160, "③ファラデー", "B変化→Eの渦", <g><ellipse cx={194} cy={78} rx={24} ry={10} fill="none" stroke={C.cyan} strokeWidth={2} /><line x1={194} y1={104} x2={194} y2={56} stroke={C.purple} strokeWidth={2} /><polygon points="194,50 189,60 199,60" fill={C.purple} /></g>)}
       {panel(3, 234, "④アンペール+", "I・E変化→Bの渦", <g><ellipse cx={268} cy={78} rx={24} ry={10} fill="none" stroke={C.purple} strokeWidth={2} /><line x1={268} y1={104} x2={268} y2={56} stroke={C.gold} strokeWidth={2} /><polygon points="268,50 263,60 273,60" fill={C.gold} /></g>)}
-      <Caption text="電磁気の全法則はこの4本" />
+      <Caption text="場の四つの法則。物体の運動にはローレンツ力なども必要" />
     </FigSvg>
   );
 }

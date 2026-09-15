@@ -43,6 +43,9 @@ jobs:
       - name: Audit chapter-wide learning progression
         run: node scripts/audit-study-flow.mjs
 
+      - name: Check potential and field explanation regressions
+        run: node scripts/test-potential-context.mjs
+
       - name: Audit synchronized electromagnetic lessons
         run: npm run test:guided
 

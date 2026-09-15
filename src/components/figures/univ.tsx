@@ -404,7 +404,7 @@ export function GaussSphere() {
       <text x={cx - 5} y={cy + 4} fontSize={11} fill="#fff">+</text>
       <text x={16} y={36} fontSize={11} fill={C.cyan}>内側の球面: 12本</text>
       <text x={210} y={170} fontSize={11} fill={C.purple}>外側の球面: 12本</text>
-      <Caption text="貫く本数は中の電荷だけで決まる。広い面ほど1点のEは薄い" />
+      <Caption text="中心の点電荷と同心球：E×4πr²は一定。線は流束の目印" />
     </FigSvg>
   );
 }
@@ -522,7 +522,7 @@ export function LorentzCircle() {
       <line x1={px} y1={py} x2={px + (cx - px) * 0.5} y2={py + (cy - py) * 0.5} stroke={C.red} strokeWidth={2.5} />
       <text x={px + (cx - px) * 0.56} y={py + (cy - py) * 0.56} fontSize={11} fill={C.red}>F</text>
       <text x={16} y={20} fontSize={10.5} fill={C.dim}>⊙ = 磁場B (紙面の手前向き)</text>
-      <Caption text="F = qv×B は常に速度と直角 → 向きだけ変える = 円運動" />
+      <Caption text="一様な磁場に速度が垂直、電場なし：磁気力で円運動" />
     </FigSvg>
   );
 }

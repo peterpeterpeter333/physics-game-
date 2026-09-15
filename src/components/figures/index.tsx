@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { PotentialGradient } from './PotentialGradient';
 import { MotionContext } from './anim';
 import { Flux3D, Cross3D, Helix3D, EmWave3D } from './spatial';
 import { Longitudinal, StandingWave, YoungSlits, ChargeWork, Nuclide, MassEnergy } from './foundations';
@@ -140,6 +141,7 @@ import {
 } from "./em2";
 
 export const REGISTRY: Record<string, () => JSX.Element> = {
+  'potential-gradient': PotentialGradient,
   'flux-3d': Flux3D, 'cross-3d': Cross3D, 'helix-3d': Helix3D, 'em-wave-3d': EmWave3D,
   'longitudinal': Longitudinal, 'standing-wave': StandingWave, 'young-slits': YoungSlits,
   'charge-work': ChargeWork, 'nuclide': Nuclide, 'mass-energy': MassEnergy,
@@ -274,11 +276,11 @@ export function Figure({ id }: { id: string }) {
   return (
     <div className="fig-wrap" data-figure-id={id}>
       <MotionContext.Provider value={{paused, speed}}><Comp key={`${id}-${replay}`} /></MotionContext.Provider>
-      <div className="figure-controls">
+      {id!=='potential-gradient'&&<div className="figure-controls">
         <button className="btn btn-ghost" aria-label={paused?'アニメーションを再生':'アニメーションを一時停止'} onClick={()=>setPaused(p=>!p)}>{paused?'▶ 再生':'Ⅱ 一時停止'}</button>
         <button className="btn btn-ghost" onClick={()=>{setReplay(n=>n+1);setPaused(false);}}>↻ 最初から</button>
         <label>速度 <select aria-label="アニメーション速度" value={speed} onChange={e=>setSpeed(+e.target.value)}><option value={.5}>0.5×</option><option value={1}>1×</option><option value={2}>2×</option></select></label>
-      </div>
+      </div>}
     </div>
   );
 }
