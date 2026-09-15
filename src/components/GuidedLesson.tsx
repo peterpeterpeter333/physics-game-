@@ -4,7 +4,7 @@ import { MathText } from './MathText';
 import { EquationImage } from './CalculationBoard';
 import { GuidedScene } from './GuidedScene';
 import './guided-lesson.css';
-import {MicroLesson} from './MicroLesson';
+import {QuestionLesson} from './QuestionLesson';
 
 function Story({step,onNext,last}:{step:LessonStep;onNext:()=>void;last:boolean}) {
  const story=step.story!;
@@ -64,5 +64,5 @@ function LegacyGuidedLesson({stage,alreadyFinished,onComplete,onExit}:{stage:Sta
 }
 
 export function GuidedLesson(props:Parameters<typeof LegacyGuidedLesson>[0]){
- return ['ue-integrals','ue-gauss'].includes(props.stage.id)?<MicroLesson {...props}/>:<LegacyGuidedLesson {...props}/>;
+ return ['ue-integrals','ue-gauss'].includes(props.stage.id)?<QuestionLesson {...props}/>:<LegacyGuidedLesson {...props}/>;
 }

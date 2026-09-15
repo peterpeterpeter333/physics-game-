@@ -1,0 +1,19 @@
+.question-lesson{max-width:820px;margin:auto;padding-bottom:105px;}
+.question-lesson h1{font-size:clamp(22px,4vw,30px);line-height:1.55;}
+.question-progress{color:#9aaccb;font-size:12px;margin:14px 0;}
+.question-answer{font-size:17px;line-height:1.95;color:#e2eaf7;margin:16px 0 24px;overflow-wrap:anywhere;}
+.question-picture{padding:14px;border:1px solid #33415d;border-radius:16px;background:#11192d;margin:18px 0;}
+.question-picture .fig-wrap{margin:0;}
+.question-picture .guided-scene{max-width:540px;margin:auto;}
+.question-picture .rigorous-readout{display:none;}
+.question-detail{border-top:1px solid #33415d;margin:24px 0 12px;padding-top:16px;min-width:0;}
+.question-detail summary{cursor:pointer;color:#aebed9;min-height:40px;}
+.question-detail p{font-size:15px;line-height:1.9;overflow-wrap:anywhere;}
+.question-detail h2{font-size:18px;}.question-detail h3{font-size:16px;margin-top:24px;}
+.question-detail .equation-image-scroll{max-width:100%;overflow-x:auto;justify-content:flex-start;}
+.question-detail .equation-image{max-width:none;flex-shrink:0;}
+.question-assumption{color:#bac5dc;}
+.question-navigation{display:flex;justify-content:space-between;gap:14px;margin:24px 0 18px;}
+.question-lesson .lesson-dots{flex-wrap:wrap;justify-content:center;gap:6px;}
+.question-index{display:block;width:100%;background:none;border:0;text-align:left;color:#c7d9f5;font:inherit;font-size:14px;line-height:1.7;padding:10px;cursor:pointer;}
+@media(max-width:480px){.question-answer{font-size:16px;line-height:1.9;}.question-picture{padding:8px;}.question-lesson .figure-controls{flex-wrap:wrap;}}
