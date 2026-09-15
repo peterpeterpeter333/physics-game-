@@ -74,7 +74,9 @@ for(const id of used){
  const html=renderToStaticMarkup(React.createElement(Figure,{id}));
  assert(html.includes('<svg'),`no svg ${id}`);
  assert(!/NaN|Infinity/.test(html),`invalid numeric geometry ${id}`);
- assert(html.includes('アニメーションを一時停止'),`no playback control ${id}`);
+ if(id==='potential-gradient') {
+  assert(html.includes('aria-label="二点の距離 Δx"')&&html.includes('type="range"'),`no interactive distance control ${id}`);
+ } else assert(html.includes('アニメーションを一時停止'),`no playback control ${id}`);
  for(const m of html.matchAll(/(?:width|height|r)="(-[\d.]+)"/g))assert(false,`negative SVG dimension ${id}: ${m[0]}`);
 }
 for(const formula of formulaBook){
