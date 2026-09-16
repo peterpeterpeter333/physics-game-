@@ -129,6 +129,9 @@ for (const stage of stages) {
     assert(levelReadings[step.figure], `「この図で見ること」がない: ${step.figure}`);
     figureIds.add(step.figure);
     assert(beats.includes(step.beat), `四拍子の札がない: ${at}`);
+    assert(['観察', '問い', '操作', '解釈', '固定'].includes(step.role), `スライドの役割がない: ${at}`);
+    // 本文は最大5行。1行はモバイル幅で折り返さない全角34字までとする。
+    assert(Math.ceil([...step.body].length / 34) <= 5, `本文が5行を超えている: ${at}`);
     if (step.formula) tex(step.formula, `${at}/formula`);
     if (step.formulaNote) prose(step.formulaNote, `${at}/formulaNote`);
     const calculation = getCalculation(step);

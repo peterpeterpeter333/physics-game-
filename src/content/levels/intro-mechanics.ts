@@ -43,6 +43,7 @@ export const ui_mech: LevelChapter = {
       slides: [
         {
           heading: '仕事とは、何を測った量なのだろう?',
+          role: '観察',
           beat: '基本事項',
           figure: 'uim-push-box',
           body: '物理でいう仕事は「力 × その力の向きに動いた距離」と決めた量だ。2 Nで押しながら同じ向きに3 m動かせば、仕事は2×3で6になる。まずはこの掛け算1回の形を出発点にする。',
@@ -56,6 +57,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: 'この掛け算は、グラフのどこに見えるのだろう?',
+          role: '解釈',
           beat: '解決',
           figure: 'uim-work-rect',
           body: '縦軸に力、横軸に位置を取る。力が2 Nで一定なら、グラフは高さ2の水平線。3 m動く間に囲まれるのは縦2×横3の長方形で、その面積6がそのまま仕事6 Jにあたる。',
@@ -63,6 +65,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: 'なぜ答えの単位はジュールになるのだろう?',
+          role: '解釈',
           beat: '解決',
           figure: 'uim-work-units',
           body: '掛けているのは数だけではない。力の単位Nと距離の単位mも一緒に掛かり、N·mという単位になる。このN·mに付けた別名がJ（ジュール）だ。単位を見れば、何を掛けたかが分かる。',
@@ -73,6 +76,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '押しても動かないとき、仕事はいくらだろう?',
+          role: '固定',
           beat: '新しい基本事項',
           figure: 'uim-no-move',
           body: '壁を200 Nで押しても、壁が動かなければ距離は0 m。W=200×0=0となり、仕事はゼロだ。疲れることと仕事があることは別。動いた距離がなければ、この量は増えない。',
@@ -80,12 +84,14 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '力を2倍にするのと、距離を2倍にするのは同じだろうか?',
+          role: '問い',
           beat: '疑問',
           figure: 'uim-work-compare',
           body: '2 Nで3 m動かすと6 J。力だけ4 Nにすると12 J、距離だけ6 mにしても12 Jになる。長方形の縦を倍にしても横を倍にしても面積は倍。仕事は両方に同じように比例する。',
         },
         {
           heading: '進む向きと逆に力がはたらくと、どうなるのだろう?',
+          role: '操作',
           beat: '解決',
           figure: 'uim-work-negative',
           body: '右へ2 m進む間、摩擦が左向きに1 Nはたらくとする。力の向きが移動と逆なので、仕事は−1×2=−2 Jとなる。負号は「取り出された側」という向きの情報を表している。',
@@ -96,6 +102,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '斜めに引いたら、力のどこが効くのだろう?',
+          role: '操作',
           beat: '解決',
           figure: 'uim-work-angle',
           body: '同じ10 Nでも、真上に引けば右へは1 mmも進まない。右へ進めたのは右向きの成分だけだ。角度を変えると前向き成分が変わり、仕事もその分だけ変わる。矢印の長さをそのまま掛けない。',
@@ -103,6 +110,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '区間に分けて足すと、答えは変わるのだろうか?',
+          role: '固定',
           beat: '新しい基本事項',
           figure: 'uim-work-split-same',
           body: '3 mを1 mずつ3回に分けると、2+2+2で6 J。2分割でも合計は6 Jのままだ。力が一定なら分け方は自由。この「分けて足す」やり方が、力が変わる場合の武器になる。',
@@ -188,6 +196,7 @@ export const ui_mech: LevelChapter = {
       slides: [
         {
           heading: '力が変わらないときの仕事を、もう一度確かめよう',
+          role: '観察',
           beat: '基本事項',
           figure: 'uim-step-base',
           body: '2 Nの力で同じ向きに3 m動かすと、仕事は2×3=6 J。縦軸が力、横軸が位置のグラフでは、高さ2 N・幅3 mの長方形の面積にあたる。ここが今回の出発点になる。',
@@ -196,12 +205,14 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '力が途中で変わったら、どのFを掛ければよいのだろう?',
+          role: '問い',
           beat: '疑問',
           figure: 'uim-step-stairs',
           body: '位置0〜1 mで2 N、1〜2 mで3 N、2〜3 mで1 N、3〜4 mで2 Nだとする。グラフは階段になり、高さが1つに決まらない。W=FLのFに何を入れるか選べなくなる。',
         },
         {
           heading: '最初の1 mだけなら、計算できるだろうか?',
+          role: '操作',
           beat: '解決',
           figure: 'uim-step-piece1',
           body: '区間0〜1 mの中では、力はずっと2 Nのままだ。この区間だけなら力は一定なので、長方形1個として計算できる。2 N×1 m=2 Jが、最初の1 mでした仕事になる。',
@@ -212,6 +223,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '二つ目の区間を足すと、いくつになるだろう?',
+          role: '操作',
           beat: '解決',
           figure: 'uim-step-piece2',
           body: '区間1〜2 mでは力は3 N。この区間の仕事は3 N×1 m=3 Jだ。最初の2 Jと合わせると、ここまでで5 J。長方形を1個ずつ作って、順に足していけばよい。',
@@ -222,6 +234,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '残りの区間も、同じやり方でよいのだろうか?',
+          role: '操作',
           beat: '解決',
           figure: 'uim-step-piece34',
           body: '区間2〜3 mは1 Nなので1 N×1 m=1 J。区間3〜4 mは2 Nなので2 J。幅が同じでも高さが違えば面積は違う。力の小さい区間では、仕事も小さくなる。',
@@ -232,6 +245,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '全部を合計すると、仕事はいくらになるだろう?',
+          role: '解釈',
           beat: '新しい基本事項',
           figure: 'uim-step-total',
           body: '4つの区間の仕事は2 J、3 J、1 J、2 J。合計すると2+3+1+2=8 Jになる。各区間は「その場所の力 × その区間の距離」で、全体はその足し算だ。',
@@ -245,12 +259,14 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: 'なめらかに変わる力でも、同じ手が使えるだろうか?',
+          role: '問い',
           beat: '疑問',
           figure: 'uim-step-smooth',
           body: '階段ではなく、力がなめらかに変わる場合を考える。4個の長方形で近似すると、曲線との間にすき間がはみ出しとして残る。合計は出せるが、少しずれてしまう。',
         },
         {
           heading: '区間を増やすと、ずれはどうなるのだろう?',
+          role: '操作',
           beat: '解決',
           figure: 'uim-step-refine',
           body: '4個を8個、16個、32個と増やしていくと、長方形の上端が曲線に沿うようになり、はみ出しが小さくなる。合計の値はある数に落ち着いていく。細かくするほど答えが安定する。',
@@ -259,6 +275,7 @@ export const ui_mech: LevelChapter = {
         },
         {
           heading: '結局、変わる量の合計はどう求めればよいのだろう?',
+          role: '固定',
           beat: '新しい基本事項',
           figure: 'uim-step-integral-preview',
           body: '変わる量の合計は「その場所の値 × 小さな幅」を足して求める。仕事なら力×区間の距離。この読み方は、距離・電気の仕事・磁束でも同じ形で使い回せる。',

@@ -41,3 +41,20 @@ export function AdvancedPreviewCard({ stageId }: { stageId: string }) {
     </section>
   );
 }
+
+/** 初級・中級のスライド見出し。
+ * 章テーマ・目標・段の説明を同じ強さで並べず、現在地は小さく一行だけ出す。 */
+export function LevelSlideHeader({ page, total, heading, beat, role }: {
+  page: number; total: number; heading: string; beat?: string; role?: string;
+}) {
+  return (
+    <section className="level-slide-head" aria-label="今やっていること">
+      <p className="level-now">
+        <span className="level-now-phase">{beat ?? 'いまの話'}</span>
+        {role && <span className={`level-role role-${['観察', '問い', '操作', '解釈', '固定'].indexOf(role)}`}>{role}</span>}
+        <span className="level-now-count" aria-live="polite">{page + 1} / {total}</span>
+      </p>
+      <h2>{heading}</h2>
+    </section>
+  );
+}

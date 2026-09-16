@@ -16,6 +16,8 @@ export type LessonStep = {
   review?: boolean;
   /** 初級・中級の一段を構成する四拍子。画面に札として出す。 */
   beat?: '基本事項' | '疑問' | '解決' | '新しい基本事項';
+  /** この1枚が担う役割。1枚につき1つだけ。 */
+  role?: '観察' | '問い' | '操作' | '解釈' | '固定';
   heading: string;
   body: string;
   /** アニメーション図解のID (src/components/figures 参照) */

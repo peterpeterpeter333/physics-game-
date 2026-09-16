@@ -1067,3 +1067,32 @@ p { line-height: 1.85; }
   font-size: 13px;
   cursor: pointer;
 }
+
+/* 初級・中級のスライド見出し: 現在地は小さく一行だけ */
+.level-slide-head { margin-bottom: 10px; }
+.level-now {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px;
+  font-size: 12px;
+  color: var(--dim);
+}
+.level-now-phase { font-weight: 700; color: var(--cyan); }
+.level-now-count { margin-left: auto; }
+.level-slide-head h2 { margin: 0; font-size: 19px; line-height: 1.4; }
+.level-beat-line { margin: 4px 0 0; font-size: 11px; color: var(--dim); }
+.level-role {
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  font-size: 11px;
+}
+.level-role.role-0 { color: var(--cyan); }
+.level-role.role-1 { color: var(--gold); }
+.level-role.role-2 { color: var(--green); }
+.level-role.role-3 { color: var(--purple); }
+.level-role.role-4 { color: var(--orange, #ff8a5c); }
+.level-symbols { margin-top: 12px; }
+.level-symbols > summary { font-size: 13px; color: var(--dim); cursor: pointer; }
+.level-gain { font-size: 13px; }

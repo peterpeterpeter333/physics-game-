@@ -13,6 +13,10 @@ export const r = String.raw;
 /** 一段の四拍子。画面に札として出るので、必ずこの順で並べる。 */
 export type Beat = '基本事項' | '疑問' | '解決' | '新しい基本事項';
 
+/** 1枚のスライドが担う役割。1枚に1つだけ持たせる。
+ * 観察=図が主役 / 問い=具体的な疑問を一文 / 操作=式変形を一手 / 解釈=式と図を対応づける / 固定=新しい基本事項を言い切る */
+export type SlideRole = '観察' | '問い' | '操作' | '解釈' | '固定';
+
 export type LevelSlide = {
   /** 疑問形を基本とする見出し。計算行の対応キーにもなるので全教材で一意にする。 */
   heading: string;
@@ -21,6 +25,8 @@ export type LevelSlide = {
   /** REGISTRY に登録した図解ID。全スライド必須。 */
   figure: string;
   beat: Beat;
+  /** この1枚の役割。本文は最大5行、式変形は一手まで。 */
+  role?: SlideRole;
   /** 強調表示する式（KaTeX、$ は不要）。 */
   formula?: string;
   formulaNote?: string;
@@ -87,6 +93,7 @@ function toStep(slide: LevelSlide): LessonStep {
     body: slide.body,
     figure: slide.figure,
     beat: slide.beat,
+    ...(slide.role ? { role: slide.role } : {}),
     ...(slide.formula ? { formula: slide.formula } : {}),
     ...(slide.formulaNote ? { formulaNote: slide.formulaNote } : {}),
   };
