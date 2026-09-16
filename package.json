@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:ten-principles": "npm run equations && node scripts/test-ten-principles.mjs",
     "test:micro": "node scripts/audit-micro.mjs",
     "test:guided": "npm run equations && node scripts/audit-guided.mjs && node scripts/audit-micro.mjs && node scripts/audit-questions.mjs && node scripts/audit-spiral.mjs && node scripts/audit-em3d.mjs",
     "test:math": "node scripts/audit-math.mjs",

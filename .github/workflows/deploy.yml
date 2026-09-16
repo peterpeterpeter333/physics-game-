@@ -49,6 +49,9 @@ jobs:
       - name: Audit synchronized electromagnetic lessons
         run: npm run test:guided
 
+      - name: Check all ten teaching principles (regression checks)
+        run: npm run test:ten-principles
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:

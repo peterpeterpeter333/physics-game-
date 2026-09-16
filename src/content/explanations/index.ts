@@ -9,6 +9,7 @@ import { corrections } from './corrections';
 import { intros } from './intros';
 import { highSchoolReviews } from '../high-school-review';
 import { guidedLessons, guidedProblems } from '../guided-em';
+import {clarify} from '../clarity-revisions';
 
 const basePlans = { ...mechanicsPlans, ...thermalWavePlans, ...emAtomicPlans, ...mathPlans, ...univMechanicsPlans, ...univEmPlans };
 export const explanationPlans = Object.fromEntries(Object.entries(basePlans).map(([id, plan]) => [id,
@@ -30,7 +31,7 @@ export function enrichChapters(source: Chapter[]): Chapter[] {
   const steps = Array.from({length:original.length+1}, (_, index) => [
    ...plan.bridges.filter(bridge => bridge.before === index).map(bridge => bridge.step),
    ...(index < original.length ? [{...original[index], figure: original[index].figure ?? plan.figures[index], ...corrections[stage.id]?.[index]}] : []),
-  ]).flat().map(step => ({...step, heading:step.heading.replace(/^[①-⑳]\s*/,''), figure:spatialFigures[step.figure ?? ''] ?? step.figure}));
+  ]).flat().map(step => clarify(stage.id,{...step, heading:step.heading.replace(/^[①-⑳]\s*/,''), figure:spatialFigures[step.figure ?? ''] ?? step.figure}));
   if (steps.length < 10 || steps.some(step => !step.figure)) throw new Error(`Incomplete slides: ${stage.id}`);
   return {...stage, lesson:{...stage.lesson, steps, intro:intros[stage.id] ?? stage.lesson.intro,
    ...(stage.id==='ue-maxwell' ? {outro:'交流の応答を微分積分で求め、真空のマクスウェル方程式から波動方程式と光速を導いた。基本法則・成立条件・そこからの計算を区別して読むことが、次の現象を理解する道具になる。'} : {}),

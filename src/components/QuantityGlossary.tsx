@@ -1,9 +1,18 @@
 import {quantityGlossary,notationHelp} from '../content/quantity-glossary';
 
+export function expressionSymbols(expressions:string[]){
+ const normalized=expressions.join(' ')
+  .replace(/\\mathcal\s*\{?E\}?/g,'\\mathcalE')
+  .replace(/\\varepsilon/g,'\\epsilon').replace(/\\varphi/g,'\\phi')
+  .replace(/_\{\\(?:rm|mathrm|text)\s*\{?([^{}]+)\}?\}/g,'_$1')
+  .replace(/\\(?:mathrm|text|rm|operatorname)\{[^}]*\}/g,'');
+ return new Set(normalized.match(/\\[A-Za-z]+(?:_\{?[\p{L}\p{N}]+\}?)?|[A-Za-z](?:_\{?[\p{L}\p{N}]+\}?)?/gu)?.map(t=>t.replace(/^\\/,'').replace(/[{}]/g,''))??[]);
+}
+
 export function QuantityGlossary({stageId,expressions}:{stageId:string;expressions:string[]}){
  const definitions=quantityGlossary(stageId);
  // Match tokens, not characters inside command names such as sin or frac.
- const tokens=new Set(expressions.join(' ').replace(/\\(?:mathrm|text|rm|operatorname)\{[^}]*\}/g,'').match(/\\[A-Za-z]+(?:_\{?\w+\}?)?|[A-Za-z](?:_\{?\w+\}?)?/g)?.map(t=>t.replace(/^\\/,'').replace(/[{}]/g,''))??[]);
+ const tokens=expressionSymbols(expressions);
  const used=definitions.filter(d=>tokens.has(d.key));
  const top=used.slice(0,4),rest=definitions.filter(d=>!top.includes(d));
  const list=(entries:typeof definitions)=><dl className="equation-symbols">{entries.map(d=><div key={d.key}><dt>{d.label}</dt><dd>{d.meaning}</dd></div>)}</dl>;

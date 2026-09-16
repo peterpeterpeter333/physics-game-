@@ -24,6 +24,13 @@ const extra:Record<string,Definitions>={
 const labels:Record<string,string>={theta:'θ',phi:'φ',lambda:'λ',omega:'ω',Omega:'Ω',tau:'τ',rho:'ρ',sigma:'σ',epsilon_0:'ε₀',mu_0:'μ₀',mu:'μ',kappa:'κ',Phi:'Φ',Psi:'Ψ',nu:'ν',eta:'η',ell:'ℓ',hbar:'ℏ',mathcalE:'ℰ'};
 export function quantityGlossary(stageId:string){
  const base=stageId.startsWith('um-')?math:stageId.startsWith('uc-')||stageId.startsWith('m')?motion:stageId.startsWith('t-')?thermal:stageId.startsWith('w-')?wave:stageId.startsWith('a-')?atom:electric;
- return Object.entries({...base,...extra[stageId]}).map(([key,meaning])=>({key,label:labels[key]??key.replace(/_0/g,'₀').replace(/_B/g,'ᵦ').replace(/_A/g,'ₐ'),meaning}));
+ const revisions:Record<string,Definitions>={
+  't-firstlaw':{W_out:'気体が外部にした仕事 [J]。この章のWとは逆符号',e:'熱効率として使う式ではηと同じ。無次元'},
+  'um-integral':{s:'積分の途中を指定する変数。v(s)の例では時刻 [s]、f(s)では関数の入力',t_0:'変位の集計を始める時刻 [s]'},
+  'uc-newton':{s:'時間積分の途中の時刻 [s]。上端tとは別の積分変数'},
+  'ue-current':{P_送:'送電する電力 [W]',P_損:'送電線で失う電力 [W]',V_送:'送電側の電圧 [V]',R_線:'送電線の抵抗 [Ω]'},
+  'ue-maxwell':{Z_L:'コイルの複素インピーダンス [Ω]。|Z_L|は振幅比',Z_C:'コンデンサの複素インピーダンス [Ω]。|Z_C|は振幅比'},
+ };
+ return Object.entries({...base,...extra[stageId],...revisions[stageId]}).map(([key,meaning])=>({key,label:labels[key]??key.replace(/_0/g,'₀').replace(/_B/g,'ᵦ').replace(/_A/g,'ₐ'),meaning}));
 }
 export const notationHelp=[['Δ（デルタ）','後の値−前の値という変化分。Δxとxは別。'],['d・∂','微分・積分の記号。dxは微小な変化、∂は他の変数を固定する偏微分に使う。'],['∫・Σ','指定した量を指定した範囲で足す。∫は積分、Σは番号の付いた項の和。'],['添字0・番号','0は初期値など、番号は区別の印。掛け算ではない。'],['矢印・太字','大きさと向きを持つベクトル。どの物理量かと単位は本文で指定する。'],['≈・≃','近似的に等しい。成立範囲や無視した項を確かめる。'],['sin・cos','直角三角形の辺の比から定める三角関数。微分では角度をラジアンで測る。']];

@@ -7,9 +7,11 @@ import {EquationImage} from './CalculationBoard';
 import {PathMeaning} from './PathMeaning';
 import {EquationMeaning} from './EquationMeaning';
 import {integralEquationGuides} from '../content/em-equation-guides';
+import {gaussEquationGuide} from '../content/gauss-equation-guides';
 import {EMScene3D} from './EMScene3D';
 import {scene3DFor} from './em3d-model';
 import {phaseLabel} from '../content/learning-paths';
+import {ChapterFoundation} from './ChapterFoundation';
 import './question-lesson.css';
 import './spiral-lesson.css';
 
@@ -38,7 +40,7 @@ export function SpiralLesson({stage,alreadyFinished,onComplete,onExit}:{stage:St
  const {level,phase,cycle,card}=pages[page];
  const start=cycles.slice(0,level).reduce((n,c)=>n+c.cards.length,0),last=phase===cycle.cards.length-1;
  const phases=cycle.cards.map((_,i)=>phaseLabel(i,cycle.cards.length));
- const equationGuide=stage.id==='ue-integrals'?integralEquationGuides[cycle.id]?.[card.guideIndex??phase]:undefined;
+ const equationGuide=stage.id==='ue-integrals'?integralEquationGuides[cycle.id]?.[card.guideIndex??phase]:gaussEquationGuide(stage,cycle,phase);
  const scene3D=scene3DFor(cycle.id,phase);
  const anchor=useRef<HTMLDivElement>(null),total=pages.length;
  const source=stage.lesson.steps.find(s=>s.story?.scene===card.scene)?.story;
@@ -47,6 +49,7 @@ export function SpiralLesson({stage,alreadyFinished,onComplete,onExit}:{stage:St
   <header className="screen-header"><button className="btn-back" aria-label="章一覧へ戻る" onClick={onExit}>←</button><div><div className="screen-header-tag">{stage.title} · {cycle.title}</div><h1>{card.title}</h1></div></header>
   <div className="spiral-context"><p className="spiral-goal">この段で求めること：{cycle.goal}</p><span>{cycle.uses}</span><nav aria-label="この段の学び方">{phases.map((p,i)=><button key={p} aria-current={phase===i?'step':undefined} onClick={()=>setPage(start+i)}>{p}</button>)}</nav></div>
   <p className="question-progress">第{level+1}段 / {cycles.length} · {page+1}/{total}</p>
+  <ChapterFoundation stageId={stage.id}/>
   <p className="question-answer">{card.text}</p>
   <section className="question-picture" aria-label="図で確かめる" key={`${cycle.id}/${phase}`}>
    {scene3D?<><EMScene3D scene={scene3D} phase={phase}/><details className="em3d-original"><summary>元の平面図と比較する</summary>{card.figure?<Figure id={card.figure}/>:card.scene?<GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>:null}</details></>:card.pathPart!==undefined?<PathMeaning initialPart={card.pathPart}/>:card.lab?<WorkPlot kind={card.lab} phase={card.beat??phase}/>:card.figure?<Figure id={card.figure}/>:card.scene?<><GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>{!['r-path','r-calculate','r-compare'].includes(card.scene)&&<label className="guided-camera">図を比較<input aria-label="図の段階を比較" type="range" min="0" max={(source?.beats.length??3)-1} step="1" value={diagram} onChange={e=>setDiagram(Number(e.target.value))}/></label>}</>:null}

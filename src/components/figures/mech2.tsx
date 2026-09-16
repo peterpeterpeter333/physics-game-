@@ -234,7 +234,7 @@ export function AngularMomentum() {
         <line x1={248} y1={62} x2={232} y2={78} />
       </g>
       <text x={216} y={104} fontSize={11} fill={C.green}>L = r × p (奥向き⊗)</text>
-      <text x={216} y={120} fontSize={11} fill={C.green}>大きさ mvr</text>
+      <text x={206} y={120} fontSize={10} fill={C.green}>円運動：mvr</text>
       <Caption text="回転の勢い。運動量pの「回転版」" />
     </FigSvg>
   );
@@ -450,7 +450,7 @@ export function TranslateRotate() {
       <circle cx={gx} cy={gy} r={4} fill={C.gold} />
       <text x={30} y={30} fontSize={11} fill={C.gold}>重心は綺麗な放物線 (並進: M r̈_G = F)</text>
       <text x={30} y={46} fontSize={11} fill={C.cyan}>その周りで回転 (回転: I ω̇ = N)</text>
-      <Caption text="どんな複雑な動きも「並進+回転」の2本立てで解ける" />
+      <Caption text="図は平面運動。重心の並進と、重心まわりの回転に分ける" />
     </FigSvg>
   );
 }

@@ -98,7 +98,7 @@ export function WaveTravel() {
       <circle cx={px} cy={py} r={7} fill={C.red} />
       <text x={175} y={150} fontSize={11} fill={C.red}>この点はその場で上下するだけ</text>
       <text x={42} y={34} fontSize={11} fill={C.cyan}>波の形は右へ進む →</text>
-      <Caption text="進むのは「振動のパターン」。媒質は移動しない" />
+      <Caption text="進むのは波の形。媒質の粒は平衡位置の周りを往復する" />
     </FigSvg>
   );
 }

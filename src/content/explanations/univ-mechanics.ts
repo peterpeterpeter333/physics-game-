@@ -15,7 +15,7 @@ export const univMechanicsPlans: Record<string, Plan> = {
   b(2,'終端までの差を新しい変数にする','terminal-v',r`w=v∞−vと置く。v∞は定数なのでw′=−v′。v′=g−(k/m)v=(k/m)(v∞−v)だからw′=−(k/m)w。差が指数関数で減る式に変わった。`),
   b(2,'差の式を積分する','decay-slope',r`w′/w=−k/mを積分しln|w|=−kt/m+C。初速0ならw(0)=v∞なので$w=v_\infty e^{-kt/m}$。最後にv=v∞−wへ戻す。`,r`v(t)=\frac{mg}{k}\left(1-e^{-kt/m}\right)`),
   b(3,'初速が0でない場合にも広げる','init-family',r`w(0)=v∞−v₀を使うと$v=v_\infty+(v_0-v_\infty)e^{-kt/m}$。初速が終端より大きければ減速し、小さければ加速する。同じ式に両方の振る舞いが含まれる。`),
-  b(3,'時間の尺度m/kを単位から読む','time-constant',r`kt/mは指数の中なので無次元。τ=m/kは秒の単位で、終端との差が1/eになる時間。tが小さいと$e^{-t/\tau}\approx1-\frac{t}{\tau}$だからv≈gtとなり、落ち始めは自由落下と一致する。`),
+  b(3,'時間の尺度m/kを単位から読む','terminal-v',r`終端速度へ近づく時間を求める。τ=m/kは秒の単位で、終端との差が1/eになる時間。$v=(mg/k)(1-e^{-t/\tau})$にt=τを入れると終端速度の約63%となる。落ち始めではv≈gtと自由落下に戻る。`),
   b(4,'2乗抵抗の終端速度は平方根','drag-models',r`下向き運動で抵抗=cv²とすればm v′=mg−cv²。v′=0を入れ、cv∞²=mgを解くとv∞=√(mg/c)。上向きも含める符号付きモデルは抵抗−c|v|vと書く。`),
  ]},
  'uc-work': { figures:[], bridges:[

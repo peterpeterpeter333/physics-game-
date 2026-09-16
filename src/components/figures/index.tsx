@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { figureReadings } from '../../content/figure-readings';
 import { PotentialGradient } from './PotentialGradient';
+import { HeatEngine } from './HeatEngine';
 import { MotionContext } from './anim';
 import { Flux3D, Cross3D, Helix3D, EmWave3D } from './spatial';
 import { Longitudinal, StandingWave, YoungSlits, ChargeWork, Nuclide, MassEnergy } from './foundations';
@@ -141,6 +143,7 @@ import {
 } from "./em2";
 
 export const REGISTRY: Record<string, () => JSX.Element> = {
+  'heat-engine': HeatEngine,
   'potential-gradient': PotentialGradient,
   'flux-3d': Flux3D, 'cross-3d': Cross3D, 'helix-3d': Helix3D, 'em-wave-3d': EmWave3D,
   'longitudinal': Longitudinal, 'standing-wave': StandingWave, 'young-slits': YoungSlits,
@@ -275,12 +278,14 @@ export function Figure({ id }: { id: string }) {
   if (!Comp) return <p role="alert">図を読み込めませんでした。</p>;
   return (
     <div className="fig-wrap" data-figure-id={id}>
+      <p className="figure-reading"><strong>この図で見ること：</strong>{figureReadings[id]}</p>
       <MotionContext.Provider value={{paused, speed}}><Comp key={`${id}-${replay}`} /></MotionContext.Provider>
       {id!=='potential-gradient'&&<div className="figure-controls">
         <button className="btn btn-ghost" aria-label={paused?'アニメーションを再生':'アニメーションを一時停止'} onClick={()=>setPaused(p=>!p)}>{paused?'▶ 再生':'Ⅱ 一時停止'}</button>
         <button className="btn btn-ghost" onClick={()=>{setReplay(n=>n+1);setPaused(false);}}>↻ 最初から</button>
         <label>速度 <select aria-label="アニメーション速度" value={speed} onChange={e=>setSpeed(+e.target.value)}><option value={.5}>0.5×</option><option value={1}>1×</option><option value={2}>2×</option></select></label>
       </div>}
+      <details className="figure-reading-details"><summary>図の動きと尺度について</summary><p>「速度」は再生の速さです。物理量を変える操作は、角度・距離など名前を付けたスライダーで行います。視点を変えても物理量は変わりません。数値のない絵は模式図で、画面上の長さから物理量を測らないでください。</p></details>
     </div>
   );
 }

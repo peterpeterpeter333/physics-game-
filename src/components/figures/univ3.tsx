@@ -49,7 +49,7 @@ export function SolveRecipe() {
       {box(2, 222, "③ 積分して", "　 解く")}
       <polygon points="106,93 114,88 114,98" fill={C.dim} />
       <polygon points="210,93 218,88 218,98" fill={C.dim} />
-      <text x={44} y={160} fontSize={11.5} fill={C.gold}>落下も振動も惑星も、この3歩だけ</text>
+      <text x={28} y={160} fontSize={11} fill={C.gold}>初期条件を指定し、解の意味と近似も確かめる</text>
       <Caption text="法則が1本だから、手順も1つで済む" />
     </FigSvg>
   );
@@ -224,7 +224,7 @@ export function AreaVector() {
     <FigSvg>
       {tile(78, 96, 24, 30, "面積 S", "dA")}
       {tile(196, 96, 44, 56, "面積 2S", "長さも2倍")}
-      <text x={14} y={24} fontSize={11} fill="#fff">面の情報は「広さ」と「向き」の2つだけ</text>
+      <text x={14} y={24} fontSize={11} fill="#fff">微小な面の広さと法線方向を、矢印で表す</text>
       <text x={14} y={40} fontSize={11} fill={C.purple}>→ 矢印1本で表せる: 向き=面に垂直、長さ=面積</text>
       <Caption text="面積ベクトル dA: 向き=面に垂直、長さ=面積" />
     </FigSvg>
