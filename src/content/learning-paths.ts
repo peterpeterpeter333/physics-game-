@@ -1,8 +1,9 @@
+import { levelPaths } from './university-levels';
 /** Hand-authored destinations and boundaries, chosen by physics, not slide count.
  * end is exclusive in the existing enriched lesson. Original material is retained. */
 export type LearningUnit={end:number;goal:string;gain:string};
 const u=(end:number,goal:string,gain:string):LearningUnit=>({end,goal,gain});
-export const learningPaths:Record<string,LearningUnit[]>={
+const advancedPaths:Record<string,LearningUnit[]>={
  'm1-velocity':[u(5,'時間をそろえて速さを比べ、単位を換算する','距離を時間で割るのは1秒ぶんにそろえる操作。単位も同じ割り算で換算できる。'),u(8,'道のりと、向きのある位置の変化を区別する','往復では道のりと変位が異なる。平均速度には位置の差Δxを使う。'),u(11,'一定速度から位置を予測し、平均の取り方を確かめる','一定速度ならx=x₀+vt。不均一な往復では総距離と総時間から平均の速さを求める。')],
  'm1-acceleration':[u(5,'速度の変化を1秒あたりにそろえる','加速度の単位m/s²は、速度が毎秒何m/s変わるかを表す。'),u(9,'速度と加速度の向きをグラフに対応させる','負の加速度でも増速する場合がある。速度の符号と、グラフの傾きを別々に読む。'),u(11,'平均の加速度から瞬間の加速度へ進む','短い区間の速度変化を時間で割った極限がdv/dt。加速度0でも動き続けられる。')],
  'm1-uniform-accel':[u(3,'加速度一定の条件から速度の式を作る','加速度の定義を並べ替えるとv=v₀+at。負の速度は逆向きの移動を表す。'),u(6,'速度グラフの面積から変位の式を作る','初速度の長方形と、増加分の三角形を足すと変位v₀t+at²/2になる。'),u(9,'2本の式から時間を消去する','台形の面積とat=v−v₀を組み合わせるとv²−v₀²=2ax。別の経験則ではない。'),u(12,'与えられた条件に合わせて式を使う','停止はv=0という条件。変位を計算してから初期位置を足せば、位置も求まる。')],
@@ -58,6 +59,9 @@ export const learningPaths:Record<string,LearningUnit[]>={
  'ue-transient':[u(6,'回路の電圧の和を電荷の微分方程式にする','I=dq/dtを使い、最終電荷との差を変数にすると指数減衰の方程式になる。'),u(10,'時定数で充電と放電の速さを読む','RCは時間の単位。時定数一回で最終値との差が1/eになり、充電量は約63%になる。'),u(12,'RL回路を同じ「最終値との差」で解く','抵抗とコイルの電圧を足して微分方程式を作る。時定数はRCでなくL/R。'),u(14,'LC回路の電荷の式を振動へ結ぶ','抵抗なしでは電場と磁場のエネルギーが交換され、qの二階微分が−q/(LC)になる。')],
  'ue-maxwell':[u(6,'交流の振幅と位相を、微分・積分で求める','コイルの電圧は電流の微分、コンデンサの電荷は電流の積分。ωLと1/(ωC)の違いはそこから出る。'),u(10,'四つの基本法則と変位電流の役割を整理する','法則そのものと導出する結果を区別する。変位電流を含めることで、充電中の回路の電荷保存と整合する。'),u(14,'真空の平面波に絞り、積分形を場所の変化へ直す','小さい長方形の周回積分は向かい合う辺の場の差。面積で割った極限が空間微分になる。'),u(18,'場を消去して波動方程式と光速を導く','二式を微分してBを消すとEの波動方程式。波を代入して速さとE・B・進行方向の関係が分かる。')],
 };
+
+/** 初級・中級の段は各章のファイルで書く。 */
+export const learningPaths:Record<string,LearningUnit[]>={...advancedPaths,...levelPaths};
 
 export function unitAt(units:LearningUnit[],page:number){
  const index=units.findIndex(unit=>page<unit.end);

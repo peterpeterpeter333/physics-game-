@@ -90,6 +90,7 @@ export default function App() {
           <LessonView
             key={view.stageId}
             stage={findStage(view.stageId)}
+            onOpenStage={(id) => setView({ type: "lesson", stageId: id })}
             onExit={() => setView({ type: "map" })}
             onComplete={(firstTime) => {
               const stage = findStage(view.stageId);

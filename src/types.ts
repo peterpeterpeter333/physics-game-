@@ -14,6 +14,8 @@ export type LessonStep = {
   };
   /** University prerequisites, explained in place instead of requiring an earlier stage. */
   review?: boolean;
+  /** 初級・中級の一段を構成する四拍子。画面に札として出す。 */
+  beat?: '基本事項' | '疑問' | '解決' | '新しい基本事項';
   heading: string;
   body: string;
   /** アニメーション図解のID (src/components/figures 参照) */
@@ -57,11 +59,20 @@ export type Stage = {
   };
 };
 
+/** 大学編は同じ主題を初級・中級・上級の三段階で扱う。既存章は level を持たず上級として表示する。 */
+export type ChapterLevel = 'intro' | 'middle' | 'advanced';
+
 export type Chapter = {
   id: string;
   title: string;
   subtitle: string;
   stages: Stage[];
+  /** 大学編の三段階。省略した既存章は上級として扱う。 */
+  level?: ChapterLevel;
+  /** 同じ主題の初級・中級・上級を束ねる識別子。 */
+  familyId?: string;
+  /** 先に見ておくと楽な章（ロックはしない）。 */
+  recommendedPrevious?: string[];
 };
 
 export type Formula = {

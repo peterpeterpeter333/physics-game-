@@ -1,3 +1,4 @@
+import { levelFoundations } from './university-levels';
 /** Authored entry points, not inferred from keywords in an equation. */
 export type Foundation = {
  known:string; startingPoint:string; conditions:string;
@@ -6,7 +7,7 @@ export type Foundation = {
 };
 const r=String.raw;
 const f=(known:string,startingPoint:string,conditions:string,given:string,tex:string,read:string):Foundation=>({known,startingPoint,conditions,example:{given,tex,read}});
-export const chapterFoundations:Record<string,Foundation>={
+const advancedFoundations:Record<string,Foundation>={
  'm1-velocity':f('距離を時間で割ると、時間の長さをそろえて比較できる。','速さは道のり÷時間、平均速度は変位÷時間という定義から出発する。','位置の原点と正方向を決める。折り返すと道のりと変位は異なる。','右を正にし、位置1 mから7 mへ2 sで移動する。',r`\bar v=\frac{7-1}{2}=3\,\mathrm{m/s}`,'求まるのは区間の平均速度。各瞬間の速度が一定とは限らない。'),
  'm1-acceleration':f('速度は位置の変わり方だった。次は速度自体の変わり方を測る。','平均加速度を速度の変化÷時間で定義する。','同じ軸の符号で前後の速度を表す。負の加速度が必ず減速とは限らない。','右向き速度2 m/sが3 s後に8 m/sになる。',r`\bar a=\frac{8-2}{3}=2\,\mathrm{m/s^2}`,'1秒あたりの速度変化を平均で表した。瞬間値は時間幅を縮めて求める。'),
  'm1-uniform-accel':f('加速度から速度変化、速度のグラフの面積から変位を求められる。','加速度の定義と、時間ごとの移動の足し算を組み合わせる。','この3公式は加速度一定の場合。位置xは初期位置からの変位として使う。','初速度1 m/s、加速度2 m/s²で3 s進む。',r`v=1+2\times3=7\,\mathrm{m/s},\quad\Delta x=1\times3+\frac12\times2\times3^2=12\,\mathrm m`,'速度と変位を同じ条件から予測できる。半分の係数は三角形の面積から出る。'),
@@ -64,3 +65,6 @@ export const chapterFoundations:Record<string,Foundation>={
  'ue-transient':f('回路の電圧の収支にI=dq/dtを入れると、時間変化の方程式になる。','理想素子の関係と電圧収支からRC・RLの微分方程式を導く。','素子値一定、指定したスイッチ操作と初期条件。LCの保存は抵抗なしのモデル。','R=1 kΩ、C=1 μFを直列につなぐ。',r`\tau=RC=10^3\times10^{-6}=10^{-3}\,\mathrm s=1\,\mathrm{ms}`,'時定数は反応の時間の尺度。1 msで充電が完全終了するという意味ではない。'),
  'ue-maxwell':f('微分・積分で交流の応答を求め、電場と磁場の法則を空間変化へつなぐ。','マクスウェル方程式は基本法則。真空の波動方程式と波の速さをその結果として導く。','波の導出では電荷・電流のない真空と平面波を指定。四法則だけで物体の運動まで決まるわけではない。','周波数fの真空中の電磁波で、波長と速さを結ぶ。f=100 MHz。',r`\lambda=\frac cf=\frac{3.0\times10^8}{1.0\times10^8}=3.0\,\mathrm m`,'求めた光速を使うと波長を予測できる。電場の振動方向は進行方向と直交する。'),
 };
+
+/** 初級・中級は各章のファイルで出発点を書く。 */
+export const chapterFoundations:Record<string,Foundation>={...advancedFoundations,...levelFoundations};

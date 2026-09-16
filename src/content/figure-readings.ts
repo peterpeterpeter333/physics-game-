@@ -1,5 +1,6 @@
+import { levelReadings } from '../components/figures/levels';
 /** Readings describe the actual diagram, not a title inferred from the surrounding lesson. */
-export const figureReadings:Record<string,string>={
+const advancedReadings: Record<string, string> = {
  'heat-engine':'熱機関の一周期の収支。100 Jの吸収熱を、外へする仕事と低温側への排熱に分ける。内部エネルギーは一周期後に元へ戻る。',
  'potential-gradient':'位置xと電位Vのグラフ。二点の距離だけを縮め、同じ電位分布の傾きから電場を求める。粒子の軌道ではない。',
  'flux-3d':'一様な磁場Bと平面。面に垂直な矢印が法線。角度を変えるとBA cosθが変わり、視点だけ変えても値は変わらない。',
@@ -133,3 +134,6 @@ export const figureReadings:Record<string,string>={
  'em-wave':'進行方向に垂直な電場と磁場の模式図。真空の平面波の例で、矢印は物質が振動する方向ではない。',
  'journey-map':'数学の道具を各分野へ使う学習の見取り図。現象から方程式を立て、解の条件と意味を確かめる流れを示す。',
 };
+
+/** 初級・中級の図解の読み方も、同じ表にまとめる。 */
+export const figureReadings: Record<string, string> = { ...advancedReadings, ...levelReadings };

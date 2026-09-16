@@ -8,6 +8,7 @@ import { univMath } from "./univ-math";
 import { univMechanics } from "./univ-mechanics";
 import { univEm } from "./univ-em";
 import { enrichChapters } from './explanations';
+import { levelChapters } from './university-levels';
 
 // 高校物理の5分野 + 大学編3分野。分野間は独立(学校の進度に合わせてどこからでも始められる)。
 // 全ステージを自由に選べる。説明は主題ごとの手書きの補足を組み込む。
@@ -21,4 +22,4 @@ export const chapters: Chapter[] = enrichChapters([
   univMath,
   univMechanics,
   univEm,
-]);
+]).concat(levelChapters);

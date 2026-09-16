@@ -30,7 +30,8 @@ module._compile(bundle.outputFiles[0].text,module.id);
 const { chapters, explanationPlans, REGISTRY, Figure, formulaBook, getUniqueShot, highSchoolReviews, guidedLessons, guidedProblems, ...raw }=module.exports;
 assert.deepEqual(Object.keys(guidedLessons).sort(),['ue-gauss','ue-integrals']);
 const originals=['mechanics','thermo','waves','electromagnetism','atomic','univMath','univMechanics','univEm'].flatMap(key=>raw[key].stages);
-const stages=chapters.flatMap(c=>c.stages);
+// 初級・中級は scripts/audit-university-levels.mjs が検査する。ここは既存56ステージの保存を保証する。
+const stages=chapters.filter(c=>!c.level||c.level==='advanced').flatMap(c=>c.stages);
 assert.equal(stages.length,56);
 assert.deepEqual(stages.map(s=>s.id),originals.map(s=>s.id));
 let total=0, formulas=0, bridges=0;

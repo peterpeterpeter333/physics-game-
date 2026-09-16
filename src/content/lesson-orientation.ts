@@ -1,10 +1,11 @@
+import { levelOrientations } from './university-levels';
 export type LessonOrientation = { theme: string; goal: string };
 const r = String.raw;
 const focus = (theme: string, goal: string): LessonOrientation => ({ theme, goal });
 
 /** Stage-wide destination, deliberately stable while the current slide changes.
  * Laws, definitions, approximations and consequences are not interchangeable. */
-export const lessonOrientations: Record<string, LessonOrientation> = {
+const advancedOrientations: Record<string, LessonOrientation> = {
   'm1-velocity': focus('位置の変化を、時間と向きで表す', r`平均速度 $\bar v=\Delta x/\Delta t$ の意味を理解し、速度一定の式 $x=x_0+vt$ を作る。`),
   'm1-acceleration': focus('速度がどれだけ変わるかを測る', r`平均加速度 $a=\Delta v/\Delta t$ の意味と、加速度の正負が表す向きを理解する。`),
   'm1-uniform-accel': focus('加速度が一定の運動を予測する', r`初期位置を0として、$v=v_0+at$、$x=v_0t+\frac12at^2$、$v^2-v_0^2=2ax$ を定義とグラフから導く。`),
@@ -62,3 +63,6 @@ export const lessonOrientations: Record<string, LessonOrientation> = {
   'ue-transient': focus('スイッチを切り替えた後の回路の時間変化', r`初めに電荷0のRC充電で $q=CV_0(1-e^{-t/(RC)})$ を導き、RC・RLの時定数とLC振動を求める。`),
   'ue-maxwell': focus('交流の応答から、電磁波と光速へ', r`コイル・コンデンサの交流応答を求め、真空のマクスウェル方程式から波動方程式と $c=1/\sqrt{\mu_0\varepsilon_0}$ を導く。`),
 };
+
+/** 初級・中級は各章のファイルで theme と goal を書く。ここでまとめて取り込む。 */
+export const lessonOrientations: Record<string, LessonOrientation> = { ...advancedOrientations, ...levelOrientations };

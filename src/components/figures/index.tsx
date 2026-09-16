@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { figureReadings } from '../../content/figure-readings';
+import { levelFigures } from './levels';
 import { PotentialGradient } from './PotentialGradient';
 import { HeatEngine } from './HeatEngine';
 import { MotionContext } from './anim';
@@ -142,7 +143,7 @@ import {
   JourneyMap,
 } from "./em2";
 
-export const REGISTRY: Record<string, () => JSX.Element> = {
+const ADVANCED_REGISTRY: Record<string, () => JSX.Element> = {
   'heat-engine': HeatEngine,
   'potential-gradient': PotentialGradient,
   'flux-3d': Flux3D, 'cross-3d': Cross3D, 'helix-3d': Helix3D, 'em-wave-3d': EmWave3D,
@@ -269,6 +270,8 @@ export const REGISTRY: Record<string, () => JSX.Element> = {
   "em-wave": EmWave,
   "journey-map": JourneyMap,
 };
+
+export const REGISTRY: Record<string, () => JSX.Element> = { ...ADVANCED_REGISTRY, ...levelFigures };
 
 export function Figure({ id }: { id: string }) {
   const [paused, setPaused] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);

@@ -1,3 +1,4 @@
+import { levelFamilyOfStage, levelGlossaries } from './university-levels';
 /** Context-dependent definitions: a symbol is never assigned one meaning globally. */
 type Definitions=Record<string,string>;
 const motion:Definitions={x:'選んだ軸上の位置、または本文で指定する変位 [m]',y:'縦方向の位置・変位 [m]',t:'測定開始からの時間 [s]',v:'速度。大きさを使う場面では速さ [m/s]',a:'速度の時間変化率である加速度 [m/s²]',m:'対象物の質量 [kg]',F:'対象物に働く力。運動方程式では合力 [N]',g:'重力加速度の大きさ。正の値 [m/s²]',x_0:'開始時刻の位置 [m]',v_0:'開始時刻の速度 [m/s]',theta:'本文で指定した二方向のなす角。sin・cosや微分ではラジアン'};
@@ -23,6 +24,11 @@ const extra:Record<string,Definitions>={
 };
 const labels:Record<string,string>={theta:'θ',phi:'φ',lambda:'λ',omega:'ω',Omega:'Ω',tau:'τ',rho:'ρ',sigma:'σ',epsilon_0:'ε₀',mu_0:'μ₀',mu:'μ',kappa:'κ',Phi:'Φ',Psi:'Ψ',nu:'ν',eta:'η',ell:'ℓ',hbar:'ℏ',mathcalE:'ℰ'};
 export function quantityGlossary(stageId:string){
+ const family=levelFamilyOfStage[stageId];
+ if(family){
+  const levelBase=family==='umath'?math:family==='umech'?{...motion,...energy}:electric;
+  return Object.entries({...levelBase,...levelGlossaries[stageId]}).map(([key,meaning])=>({key,label:labels[key]??key.replace(/_0/g,'₀').replace(/_B/g,'ᵦ').replace(/_A/g,'ₐ'),meaning}));
+ }
  const base=stageId.startsWith('um-')?math:stageId.startsWith('uc-')||stageId.startsWith('m')?motion:stageId.startsWith('t-')?thermal:stageId.startsWith('w-')?wave:stageId.startsWith('a-')?atom:electric;
  const revisions:Record<string,Definitions>={
   't-firstlaw':{W_out:'気体が外部にした仕事 [J]。この章のWとは逆符号',e:'熱効率として使う式ではηと同じ。無次元'},

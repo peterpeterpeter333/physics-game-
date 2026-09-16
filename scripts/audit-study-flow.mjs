@@ -6,7 +6,8 @@ const b=await build({stdin:{contents:`export {chapters} from './src/content';exp
 const m=new Module(`${process.cwd()}/.study-audit.cjs`);m._compile(b.outputFiles[0].text,m.id);
 const {chapters,learningPaths,unitAt,phaseLabel,slideSummaries,quantityGlossary}=m.exports;
 const stages=chapters.flatMap(c=>c.stages).filter(s=>!s.lesson.steps[0]?.story);
-assert.equal(stages.length,54);
+const advanced=chapters.filter(c=>!c.level||c.level==='advanced').flatMap(c=>c.stages).filter(s=>!s.lesson.steps[0]?.story);
+assert.equal(advanced.length,54);
 assert.deepEqual(Object.keys(learningPaths).sort(),stages.map(s=>s.id).sort());
 let units=0,slides=0,summaries=0;const counts=new Set(),long=[];
 for(const stage of stages){

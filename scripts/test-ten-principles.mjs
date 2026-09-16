@@ -35,7 +35,7 @@ function check(number,name,fn){fn();results.push({number,name,automated:'PASS',p
 function equation(tex){assert(tex);katex.renderToString(tex,{throwOnError:true,strict:'ignore'});assert(images[tex],`No generated image: ${tex}`);assert(existsSync(`public/${images[tex].src}`));}
 function audit(file){process.stdout.write(execFileSync(process.execPath,[`scripts/${file}`],{encoding:'utf8'}));}
 check(1,'知識のつながり',()=>{
- assert.equal(stages.length,56);assert.deepEqual(Object.keys(chapterFoundations).sort(),stages.map(s=>s.id).sort());
+ assert.equal(chapters.filter(c=>!c.level||c.level==='advanced').flatMap(c=>c.stages).length,56);assert.deepEqual(Object.keys(chapterFoundations).sort(),stages.map(s=>s.id).sort());
  for(const s of stages){assert(chapterFoundations[s.id].known.length>15,s.id);const path=learningPaths[s.id]??spiralLessons[s.id];assert(path.length>=2,s.id);for(const u of path)assert(u.goal&&u.gain,s.id);}
  audit('audit-study-flow.mjs');
 });

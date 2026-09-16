@@ -11,11 +11,12 @@ import { learningPaths, unitAt, phaseLabel } from '../content/learning-paths';
 import { slideSummaries } from '../content/slide-summaries';
 import { QuantityGlossary } from './QuantityGlossary';
 import { ChapterFoundation } from './ChapterFoundation';
+import { AdvancedEntry, AdvancedPreviewCard } from './LevelBridge';
 import { clarityRevisions } from '../content/clarity-revisions';
 import './spiral-lesson.css';
 import './study-flow.css';
 
-export function LessonView(props: {stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void}) {
+export function LessonView(props: {stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onOpenStage?:(id:string)=>void}) {
   return props.stage.lesson.steps[0]?.story ? <GuidedLesson {...props}/> : <StandardLessonView {...props}/>;
 }
 function StandardLessonView({
@@ -23,11 +24,13 @@ function StandardLessonView({
   alreadyFinished,
   onComplete,
   onExit,
+  onOpenStage,
 }: {
   stage: Stage;
   alreadyFinished: boolean;
   onComplete: (firstTime: boolean) => void;
   onExit: () => void;
+  onOpenStage?: (id: string) => void;
 }) {
   const lesson = stage.lesson;
   const slides = lesson.steps;
@@ -63,10 +66,12 @@ function StandardLessonView({
       </details>
 
       <ChapterFoundation stageId={stage.id}/>
+      <AdvancedEntry stageId={stage.id} onOpenStage={onOpenStage}/>
 
       <div className="lesson-steps">
           <div className="lesson-step pop-in" key={page} ref={card}>
             <LessonOrientation stageId={stage.id} heading={step.heading} page={page} total={slides.length} review={step.review} />
+            {step.beat&&<p className="lesson-beat"><span className={`lesson-beat-tag beat-${['基本事項','疑問','解決','新しい基本事項'].indexOf(step.beat)}`}>{step.beat}</span></p>}
             <section className="spiral-context" aria-label="今の段で求めること">
              <p className="spiral-goal">第{unitIndex+1}段：{unit.goal}</p>
              {unitIndex>0&&<details><summary>前の段から使うこと</summary><p>{units[unitIndex-1].gain}</p></details>}
@@ -81,6 +86,7 @@ function StandardLessonView({
             {calculation && <CalculationBoard key={`calculation-${page}`} calculation={calculation} purpose={step.heading==='微小移動なら掛け算1回に戻る'?'静電場の電位分布Vから、観測点の電場成分Eₓを求める':unit.goal} />}
             {step.formula && !calculation?.lines.some(line => line.tex === step.formula) && <div className="formula-card"><EquationImage tex={step.formula}/></div>}
             {step.formulaNote && <div className="formula-note">💡 <MathText text={step.formulaNote} /></div>}
+            {allRevealed&&<AdvancedPreviewCard stageId={stage.id}/>}
             {offset===count-1&&<p className="spiral-gain">つながったこと：{unit.gain}</p>}
             {offset===count-1&&unitIndex<units.length-1&&<p className="study-next">次は：{units[unitIndex+1].goal}</p>}
           </div>

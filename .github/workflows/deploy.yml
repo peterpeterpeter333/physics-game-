@@ -40,6 +40,9 @@ jobs:
       - name: Audit offline image handling
         run: node scripts/audit-offline.mjs
 
+      - name: Audit university intro and middle levels
+        run: node scripts/audit-university-levels.mjs
+
       - name: Audit chapter-wide learning progression
         run: node scripts/audit-study-flow.mjs
 

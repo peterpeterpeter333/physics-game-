@@ -992,3 +992,78 @@ p { line-height: 1.85; }
 
 /* KaTeX 微調整 */
 .katex { font-size: 1.06em; }
+
+/* ===== 大学編の三段階（初級・中級・上級） ===== */
+.level-picker { padding: 10px 0 0; }
+.level-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.level-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 4px;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.level-tab .level-tab-name { font-weight: 800; font-size: 14px; }
+.level-tab .level-tab-count { font-size: 11px; color: var(--dim); }
+.level-tab.current {
+  border-color: rgba(78, 225, 255, 0.6);
+  background: linear-gradient(135deg, rgba(78, 225, 255, 0.16), rgba(200, 107, 255, 0.12));
+}
+.level-tab.current .level-tab-count { color: var(--cyan); }
+.level-tagline { margin: 0 0 8px; font-size: 13px; color: var(--dim); }
+
+/* 一段の四拍子 */
+.lesson-beat { margin: 6px 0 2px; }
+.lesson-beat-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid var(--card-border);
+  color: var(--dim);
+}
+.lesson-beat-tag.beat-0 { color: var(--cyan); border-color: rgba(78, 225, 255, 0.5); }
+.lesson-beat-tag.beat-1 { color: var(--gold); border-color: rgba(255, 209, 102, 0.5); }
+.lesson-beat-tag.beat-2 { color: var(--green); border-color: rgba(123, 255, 178, 0.5); }
+.lesson-beat-tag.beat-3 { color: var(--purple); border-color: rgba(200, 107, 255, 0.5); }
+
+/* 上級編での到達点の予告 */
+.advanced-preview {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px dashed rgba(200, 107, 255, 0.5);
+  background: linear-gradient(135deg, rgba(200, 107, 255, 0.1), rgba(78, 225, 255, 0.06));
+}
+.advanced-preview h3 { margin: 0 0 8px; font-size: 14px; color: var(--purple); }
+.advanced-preview dl { margin: 6px 0 0; display: grid; gap: 6px; }
+.advanced-preview dt { font-size: 12px; color: var(--dim); }
+.advanced-preview dd { margin: 0; font-size: 14px; }
+
+/* 上級の入口に置く初級・中級への案内 */
+.level-bridge-toolkit { margin: 6px 0; padding-left: 20px; font-size: 14px; }
+.level-bridge-toolkit li { margin: 3px 0; }
+.level-bridge-note { font-size: 12px; color: var(--dim); margin: 6px 0; }
+.level-bridge-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.level-bridge-links button {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(78, 225, 255, 0.45);
+  background: rgba(78, 225, 255, 0.1);
+  color: var(--cyan);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
