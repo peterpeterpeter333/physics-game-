@@ -1,4 +1,5 @@
 import { levelOrientations } from './university-levels';
+import { universityCurriculum } from './university-curriculum';
 export type LessonOrientation = { theme: string; goal: string };
 const r = String.raw;
 const focus = (theme: string, goal: string): LessonOrientation => ({ theme, goal });
@@ -66,3 +67,4 @@ const advancedOrientations: Record<string, LessonOrientation> = {
 
 /** 初級・中級は各章のファイルで theme と goal を書く。ここでまとめて取り込む。 */
 export const lessonOrientations: Record<string, LessonOrientation> = { ...advancedOrientations, ...levelOrientations };
+for(const topic of universityCurriculum)lessonOrientations[topic.id]={...lessonOrientations[topic.id],goal:topic.advanced};

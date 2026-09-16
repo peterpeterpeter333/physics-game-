@@ -8,6 +8,8 @@ import katex from 'katex';
 
 const imports = `
  export { chapters } from './src/content';
+ export { universitySourceStages } from './src/content/university-source';
+ export { removedIndices } from './src/content/university-curriculum';
  export { explanationPlans } from './src/content/explanations';
  export { formulas as formulaBook } from './src/content/formulas';
  export { REGISTRY, Figure } from './src/components/figures';
@@ -27,7 +29,7 @@ const bundle=await build({stdin:{contents:imports,resolveDir:process.cwd(),loade
 const module=new Module(`${process.cwd()}/.lesson-audit.cjs`);
 module.paths=Module._nodeModulePaths(process.cwd());
 module._compile(bundle.outputFiles[0].text,module.id);
-const { chapters, explanationPlans, REGISTRY, Figure, formulaBook, getUniqueShot, highSchoolReviews, guidedLessons, guidedProblems, ...raw }=module.exports;
+const { chapters, universitySourceStages, removedIndices, explanationPlans, REGISTRY, Figure, formulaBook, getUniqueShot, highSchoolReviews, guidedLessons, guidedProblems, ...raw }=module.exports;
 assert.deepEqual(Object.keys(guidedLessons).sort(),['ue-gauss','ue-integrals']);
 const originals=['mechanics','thermo','waves','electromagnetism','atomic','univMath','univMechanics','univEm'].flatMap(key=>raw[key].stages);
 // 初級・中級は scripts/audit-university-levels.mjs が検査する。ここは既存56ステージの保存を保証する。
@@ -47,8 +49,8 @@ for(const stage of stages){
  assert.deepEqual(stage.problems,guidedProblems[stage.id] ?? original.problems,`problem change: ${stage.id}`);
  assert.deepEqual(stage.problems.map(p=>p.id).sort(),original.problems.map(p=>p.id).sort(),`problem IDs changed: ${stage.id}`);
  assert.equal(stage.lesson.id,original.lesson.id);
- assert(stage.lesson.steps.length>=10);
- if(!guidedLessons[stage.id]) assert.equal(stage.lesson.steps.length,original.lesson.steps.length+plan.bridges.length,`lost bridge: ${stage.id}`);
+ assert(stage.lesson.steps.length>=(universitySourceStages[stage.id]?2:10));
+ if(!guidedLessons[stage.id]) assert.equal(stage.lesson.steps.length,original.lesson.steps.length+plan.bridges.length-removedIndices(stage.id).size,`lost bridge: ${stage.id}`);
  else assert.deepEqual(stage.lesson,guidedLessons[stage.id]);
  for(const bridge of plan.bridges){assert(bridge.before>=0&&bridge.before<=original.lesson.steps.length);assert(bridge.step.body.length>=45);}
  bridges+=plan.bridges.length;
@@ -64,9 +66,9 @@ for(const stage of stages){
  prose(stage.lesson.intro);prose(stage.lesson.outro);
  if (/^(uc|ue)-/.test(stage.id) && !guidedLessons[stage.id]) {
   assert(highSchoolReviews[stage.id]?.length>=3,`missing prerequisites: ${stage.id}`);
-  assert(stage.lesson.steps[0].review,`prerequisites must come first: ${stage.id}`);
+  assert(!stage.lesson.steps.some(s=>s.review),`prerequisites must be relocated: ${stage.id}`);
   for(const review of highSchoolReviews[stage.id]) {
-   assert(stage.lesson.steps.some(s=>s.figure===review.step.figure));
+   assert(chapters.filter(c=>c.level==='intro'||c.level==='middle').flatMap(c=>c.stages).some(s=>[...s.lesson.steps,...(s.lesson.supplements??[])].some(step=>step.sourceStageId===stage.id&&step.figure===review.step.figure)),`missing relocated review: ${stage.id}/${review.step.heading}`);
    assert(review.step.body.includes('大学へのつながり：'));
   }
  }

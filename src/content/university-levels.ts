@@ -6,6 +6,8 @@ import { ui_mech } from './levels/intro-mechanics';
 import { um_mech } from './levels/middle-mechanics';
 import { ui_em } from './levels/intro-em';
 import { um_em } from './levels/middle-em';
+import { completeUniversityLevels } from './levels/completion';
+import { universityCurriculum } from './university-curriculum';
 
 /** 大学編の三段階。既存の三章は上級として保存し、初級・中級を足す。
  * 上級をロックする仕組みは作らない。初級を終えていなくても上級を開ける。 */
@@ -66,9 +68,9 @@ export const advancedFamilyOf: Record<string, UniversityFamily['id']> = {
   uem: 'uem',
 };
 
-const built: BuiltLevelChapter[] = [ui_math, um_math, ui_mech, um_mech, ui_em, um_em]
+const built: BuiltLevelChapter[] = completeUniversityLevels([ui_math, um_math, ui_mech, um_mech, ui_em, um_em]
   .filter(source => source.stages.length > 0)
-  .map(buildLevelChapter);
+  .map(buildLevelChapter));
 
 const merge = <T,>(pick: (b: BuiltLevelChapter) => Record<string, T>): Record<string, T> =>
   Object.assign({}, ...built.map(pick));
@@ -84,8 +86,8 @@ export const levelCalculations = built.flatMap(b => b.calculations);
 
 /** 初級・中級ステージID → 所属系列。記号表の基本セットを選ぶのに使う。 */
 export const levelFamilyOfStage: Record<string, UniversityFamily['id']> = {};
-for (const source of [ui_math, um_math, ui_mech, um_mech, ui_em, um_em]) {
-  for (const stage of source.stages) levelFamilyOfStage[stage.id] = source.familyId;
+for (const source of levelChapters) {
+  for (const stage of source.stages) levelFamilyOfStage[stage.id] = source.familyId as UniversityFamily['id'];
 }
 
 /** 初級・中級ステージのID集合。監査スクリプトが既存56ステージと区別するために使う。 */
@@ -93,10 +95,17 @@ export const levelStageIds = new Set(levelChapters.flatMap(c => c.stages.map(s =
 
 /** 上級ステージ → その準備になる初級・中級ステージ。上級の入口に復習リンクとして出す。 */
 export const preparationFor: Record<string, { id: string; title: string; level: LevelKey }[]> = {};
+for(const topic of universityCurriculum){
+ preparationFor[topic.id]=(['intro','middle'] as const).map(level=>{
+  const stage=levelChapters.flatMap(c=>c.stages).find(s=>s.id===topic[level].id)!;
+  return {id:stage.id,title:stage.title,level};
+ });
+}
 for (const source of [ui_math, um_math, ui_mech, um_mech, ui_em, um_em]) {
   for (const stage of source.stages) {
     for (const advanced of stage.leadsTo ?? []) {
-      (preparationFor[advanced] ??= []).push({ id: stage.id, title: stage.title, level: source.level });
+      if(!preparationFor[advanced]?.some(s=>s.id===stage.id))
+       (preparationFor[advanced] ??= []).push({ id: stage.id, title: stage.title, level: source.level });
     }
   }
 }

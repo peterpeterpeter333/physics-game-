@@ -13,7 +13,7 @@ const bundle = await build({stdin:{contents:`export {chapterFoundations} from '.
 const mod = new Module(`${process.cwd()}/.equations-build.cjs`);
 mod._compile(bundle.outputFiles[0].text,mod.id);
 const {chapterFoundations,chapters,getCalculation,calculationRules,spiralLessons,integralEquationGuides,levelPreviews} = mod.exports;
-const steps = chapters.flatMap(c => c.stages.flatMap(s => s.lesson.steps));
+const steps = chapters.flatMap(c => c.stages.flatMap(s => [...s.lesson.steps,...(s.lesson.supplements??[])]));
 const headings = new Set(steps.map(s => s.heading));
 const usedHeadings = new Set();
 for (const rule of calculationRules) for (const heading of rule.headings) {

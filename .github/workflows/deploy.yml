@@ -43,6 +43,9 @@ jobs:
       - name: Audit university intro and middle levels
         run: node scripts/audit-university-levels.mjs
 
+      - name: Audit all 29 topics and lossless level relocation
+        run: node scripts/audit-university-curriculum.mjs
+
       - name: Audit chapter-wide learning progression
         run: node scripts/audit-study-flow.mjs
 

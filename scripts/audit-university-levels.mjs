@@ -10,6 +10,10 @@ import katex from 'katex';
 
 const imports = `
  export { chapters } from './src/content';
+ export { newLevelStageIds } from './src/content/levels/completion';
+ export { foregroundText } from './src/content/lesson-text';
+ export { getUniqueShot } from './src/components/figures/unique';
+ export { figureReadings } from './src/content/figure-readings';
  export { levelStageIds, levelPreviews, preparationFor, universityFamilies, levelChapters } from './src/content/university-levels';
  export { REGISTRY, Figure } from './src/components/figures';
  export { levelReadings } from './src/components/figures/levels';
@@ -31,7 +35,7 @@ const mod = new Module(`${process.cwd()}/.level-audit.cjs`);
 mod.paths = Module._nodeModulePaths(process.cwd());
 mod._compile(bundle.outputFiles[0].text, mod.id);
 const {
-  chapters, levelStageIds, levelPreviews, preparationFor, universityFamilies, levelChapters,
+  chapters, newLevelStageIds, foregroundText, getUniqueShot, figureReadings, levelStageIds, levelPreviews, preparationFor, universityFamilies, levelChapters,
   REGISTRY, Figure, levelReadings, lessonOrientations, learningPaths, unitAt, phaseLabel,
   quantityGlossary, chapterFoundations, getCalculation, calculationRules,
 } = mod.exports;
@@ -73,7 +77,7 @@ const prose = (text, where) => {
 };
 const tex = (value, where) => {
   katex.renderToString(value, { throwOnError: true, strict: 'ignore' });
-  assert(!/[぀-ヿ一-鿿]/.test(value.replace(/\\text\{[^}]*\}/g, '')),
+  assert(!/[぀-ヿ一-鿿]/.test(value.replace(/\\(?:text|mathrm)\{[^}]*\}|\\rm\s+[^}]*/g, '')),
     `数式の中の日本語は \\text{} で包む: ${where}: ${value}`);
 };
 
@@ -113,7 +117,7 @@ for (const stage of stages) {
   }
 
   // スライド
-  assert(stage.lesson.steps.length >= 6, `スライドが少ない: ${where}`);
+  assert(stage.lesson.steps.length >= (newLevelStageIds.has(stage.id)?3:6), `スライドが少ない: ${where}`);
   prose(stage.lesson.intro, `${where}/intro`);
   prose(stage.lesson.outro, `${where}/outro`);
   const seen = new Set();
@@ -121,17 +125,17 @@ for (const stage of stages) {
     const at = `${where}/${i}`;
     prose(step.heading, `${at}/heading`);
     prose(step.body, `${at}/body`);
-    assert([...step.body].length <= 150, `本文が150字を超えている: ${at}`);
+    assert([...foregroundText(stage.id,step,i)].length <= 150, `本文が150字を超えている: ${at}`);
     assert(!seen.has(step.body), `本文が重複している: ${at}`);
     seen.add(step.body);
     assert(step.figure, `図解のないスライドがある: ${at}`);
-    assert(REGISTRY[step.figure], `図解IDが見つからない: ${at}: ${step.figure}`);
-    assert(levelReadings[step.figure], `「この図で見ること」がない: ${step.figure}`);
-    figureIds.add(step.figure);
+    assert(REGISTRY[step.figure]||getUniqueShot(stage.id,step), `図解IDが見つからない: ${at}: ${step.figure}`);
+    assert(levelReadings[step.figure]||figureReadings[step.figure]||getUniqueShot(stage.id,step)?.observe, `「この図で見ること」がない: ${step.figure}`);
+    if(REGISTRY[step.figure])figureIds.add(step.figure);
     assert(beats.includes(step.beat), `四拍子の札がない: ${at}`);
     assert(['観察', '問い', '操作', '解釈', '固定'].includes(step.role), `スライドの役割がない: ${at}`);
     // 本文は最大5行。1行はモバイル幅で折り返さない全角34字までとする。
-    assert(Math.ceil([...step.body].length / 34) <= 5, `本文が5行を超えている: ${at}`);
+    assert(Math.ceil([...foregroundText(stage.id,step,i)].length / 34) <= 5, `本文が5行を超えている: ${at}`);
     if (step.formula) tex(step.formula, `${at}/formula`);
     if (step.formulaNote) prose(step.formulaNote, `${at}/formulaNote`);
     const calculation = getCalculation(step);
@@ -146,7 +150,7 @@ for (const stage of stages) {
   const order = stage.lesson.steps.map(s => s.beat);
   assert.equal(order[0], '基本事項', `最初のスライドは基本事項から: ${where}`);
   assert.equal(order.at(-1), '新しい基本事項', `最後のスライドは新しい基本事項で締める: ${where}`);
-  assert(order.includes('疑問'), `疑問のスライドがない: ${where}`);
+  if(!newLevelStageIds.has(stage.id))assert(order.includes('疑問'), `疑問のスライドがない: ${where}`);
   assert(order.includes('解決'), `解決のスライドがない: ${where}`);
 
   // 記号表
@@ -163,7 +167,8 @@ for (const stage of stages) {
   }
 
   // 問題
-  assert(stage.problems.length >= 4, `確認問題が4問未満: ${where}`);
+  // Migrated compact lessons have one authored application; no duplicate padding questions.
+  assert(stage.problems.length >= (newLevelStageIds.has(stage.id)?1:4), `確認問題が不足: ${where}`);
   for (const problem of stage.problems) {
     const at = `${where}/${problem.id}`;
     assert(/^p-u[im]/.test(problem.id), `問題IDの接頭辞: ${at}`);
@@ -198,7 +203,7 @@ for (const [advancedId, list] of Object.entries(preparationFor)) {
 }
 
 // 計算行の見出しは、実在するスライドと一対一で対応していること
-const headings = new Set(all.flatMap(s => s.lesson.steps.map(step => step.heading)));
+const headings = new Set(all.flatMap(s => [...s.lesson.steps,...(s.lesson.supplements??[])].map(step => step.heading)));
 for (const rule of calculationRules) {
   for (const heading of rule.headings) assert(headings.has(heading), `対応するスライドがない計算行: ${heading}`);
 }

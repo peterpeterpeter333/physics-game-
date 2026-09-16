@@ -1,4 +1,5 @@
 import { levelPaths } from './university-levels';
+import { removedIndices } from './university-curriculum';
 /** Hand-authored destinations and boundaries, chosen by physics, not slide count.
  * end is exclusive in the existing enriched lesson. Original material is retained. */
 export type LearningUnit={end:number;goal:string;gain:string};
@@ -61,7 +62,27 @@ const advancedPaths:Record<string,LearningUnit[]>={
 };
 
 /** 初級・中級の段は各章のファイルで書く。 */
-export const learningPaths:Record<string,LearningUnit[]>={...advancedPaths,...levelPaths};
+export const learningPaths:Record<string,LearningUnit[]>={...Object.fromEntries(Object.entries(advancedPaths).map(([id,path])=>{
+ const removed=removedIndices(id);
+ if(!removed.size)return [id,path];
+ let end=0,start=0;
+ const kept=path.flatMap(unit=>{
+  const count=Array.from({length:unit.end-start},(_,i)=>start+i).filter(i=>!removed.has(i)).length;
+  start=unit.end;
+  if(!count)return [];
+  end+=count;
+  return [{...unit,end}];
+ });
+ // A one-card remaining argument belongs to the neighbouring argument, not a new empty phase.
+ for(let i=kept.length-1;i>=0;i--){
+  const count=kept[i].end-(i?kept[i-1].end:0);
+  if(count===1&&kept.length>1){
+   if(i>0){kept[i-1]={end:kept[i].end,goal:kept[i-1].goal+' ／ '+kept[i].goal,gain:kept[i-1].gain+' '+kept[i].gain};kept.splice(i,1);}
+   else {kept[1]={...kept[1],goal:kept[0].goal+' ／ '+kept[1].goal};kept.splice(0,1);}
+  }
+ }
+ return [id,kept];
+})),...levelPaths};
 
 export function unitAt(units:LearningUnit[],page:number){
  const index=units.findIndex(unit=>page<unit.end);

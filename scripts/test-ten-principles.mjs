@@ -9,6 +9,7 @@ import {renderToStaticMarkup} from 'react-dom/server';
 import katex from 'katex';
 const b=await build({stdin:{contents:`
  export {chapters} from './src/content';
+ export {foregroundText,allLessonSteps} from './src/content/lesson-text';
  export {chapterFoundations} from './src/content/chapter-foundations';
  export {figureReadings} from './src/content/figure-readings';
  export {learningPaths,phaseLabel} from './src/content/learning-paths';
@@ -27,7 +28,7 @@ const b=await build({stdin:{contents:`
  `,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs',packages:'external',jsx:'automatic'});
 const m=new Module(`${process.cwd()}/.ten-principles.cjs`);m.paths=Module._nodeModulePaths(process.cwd());m._compile(b.outputFiles[0].text,m.id);
 const {chapters,chapterFoundations,figureReadings,learningPaths,phaseLabel,spiralLessons,slideSummaries,lessonOrientations,quantityGlossary,notationHelp,getCalculation,REGISTRY,Figure,getUniqueShot,gaussEquationGuide,integralEquationGuides}=m.exports;
-const stages=chapters.flatMap(c=>c.stages),all=stages.flatMap(s=>s.lesson.steps),results=[];
+const stages=chapters.flatMap(c=>c.stages),all=stages.flatMap(s=>m.exports.allLessonSteps(s.lesson)),results=[];
 const {clarityRevisions}=m.exports;
 const images=JSON.parse(readFileSync('src/content/calculations/equations.generated.json','utf8'));
 const src=path=>readFileSync(path,'utf8');
@@ -36,7 +37,7 @@ function equation(tex){assert(tex);katex.renderToString(tex,{throwOnError:true,s
 function audit(file){process.stdout.write(execFileSync(process.execPath,[`scripts/${file}`],{encoding:'utf8'}));}
 check(1,'知識のつながり',()=>{
  assert.equal(chapters.filter(c=>!c.level||c.level==='advanced').flatMap(c=>c.stages).length,56);assert.deepEqual(Object.keys(chapterFoundations).sort(),stages.map(s=>s.id).sort());
- for(const s of stages){assert(chapterFoundations[s.id].known.length>15,s.id);const path=learningPaths[s.id]??spiralLessons[s.id];assert(path.length>=2,s.id);for(const u of path)assert(u.goal&&u.gain,s.id);}
+ for(const s of stages){assert(chapterFoundations[s.id].known.length>15,s.id);const path=learningPaths[s.id]??spiralLessons[s.id];assert(path.length>=1,s.id);for(const u of path)assert(u.goal&&u.gain,s.id);}
  audit('audit-study-flow.mjs');
 });
 check(2,'基本事項・可変ステップ・つながったこと',()=>{
@@ -50,13 +51,13 @@ check(3,'目的・既知と未知・今の話',()=>{
  audit('test-potential-context.mjs');
 });
 check(4,'短い本文と省略しない補足',()=>{
- for(const [id,revisions] of Object.entries(clarityRevisions))for(const [heading,revision] of Object.entries(revisions)){assert.equal(stages.find(s=>s.id===id).lesson.steps.find(s=>s.heading===heading)?.body,revision.body,`${id}/${heading}: unapplied revision`);assert(revision.body.length<=150,`${id}/${heading}: ${revision.body.length}`);}
- for(const s of stages){if(spiralLessons[s.id]){for(const c of spiralLessons[s.id])for(const card of c.cards)assert(card.text.length<=210,`${s.id}/${card.title}`);}else for(const [i,step] of s.lesson.steps.entries())assert((slideSummaries[s.id]?.[i]??step.body).length<=150,`${s.id}/${i}`);}
+ for(const [id,revisions] of Object.entries(clarityRevisions))for(const [heading,revision] of Object.entries(revisions)){const step=stages.flatMap(s=>m.exports.allLessonSteps(s.lesson).filter(step=>(step.sourceStageId??s.id)===id&&step.heading===heading))[0];assert.equal(step?.body,revision.body,`${id}/${heading}: unapplied revision`);assert(revision.body.length<=150,`${id}/${heading}: ${revision.body.length}`);}
+ for(const s of stages){if(spiralLessons[s.id]){for(const c of spiralLessons[s.id])for(const card of c.cards)assert(card.text.length<=210,`${s.id}/${card.title}`);}else for(const [i,step] of m.exports.allLessonSteps(s.lesson).entries())assert(m.exports.foregroundText(s.id,step,i).length<=150,`${s.id}/${i}`);}
  assert(src('src/components/LessonView.tsx').includes('補足・元の詳しい説明'));
  for(const f of Object.values(chapterFoundations))for(const t of [f.known,f.startingPoint,f.conditions,f.example.given,f.example.read])assert(t.length<=150);
 });
 check(5,'式の意味・具体例・記号・計算',()=>{
- for(const s of stages){const f=chapterFoundations[s.id];equation(f.example.tex);assert(f.example.given&&f.example.read);if(!spiralLessons[s.id])assert(quantityGlossary(s.id).length>=8);for(const step of s.lesson.steps){const c=getCalculation(step);if(c)for(const line of c.lines){assert(line.note);equation(line.tex);}}}
+ for(const s of stages){const f=chapterFoundations[s.id];equation(f.example.tex);assert(f.example.given&&f.example.read);if(!spiralLessons[s.id])assert(quantityGlossary(s.id).length>=8);for(const step of m.exports.allLessonSteps(s.lesson)){const c=getCalculation(step);if(c)for(const line of c.lines){assert(line.note);equation(line.tex);}}}
  for(const [id,cycles] of Object.entries(spiralLessons))for(const c of cycles)c.cards.forEach((card,i)=>{const guide=id==='ue-gauss'?gaussEquationGuide(stages.find(s=>s.id===id),c,i):integralEquationGuides[c.id][card.guideIndex??i];assert(guide.read&&guide.symbols.length&&guide.steps.length);for(const line of guide.steps)equation(line.tex);});
  assert(src('src/components/CalculationBoard.tsx').includes('途中式を示す導出ではありません'));
 });

@@ -1,5 +1,7 @@
-import { advancedToolkit, levelLabels, levelPreviews, preparationFor } from '../content/university-levels';
+import { levelLabels, levelPreviews, preparationFor } from '../content/university-levels';
+import { topicById } from '../content/university-curriculum';
 import { EquationImage } from './CalculationBoard';
+import { MathText } from './MathText';
 
 /** 上級ステージの入口。初級・中級で身につけた読み方と、対応するステージへのリンクを置く。
  * 初級・中級を終えていなくても上級は開ける。ここは案内であって条件ではない。 */
@@ -11,9 +13,9 @@ export function AdvancedEntry({ stageId, onOpenStage }: { stageId: string; onOpe
   const preparation = [...pick('intro'), ...pick('middle')];
   return (
     <details className="study-overview level-bridge">
-      <summary>この章で使う初級・中級の部品（3分の復習）</summary>
+      <summary>この上級単元の前提を確認・復習へ戻る</summary>
       <ul className="level-bridge-toolkit">
-        {advancedToolkit.map(item => <li key={item}>{item}</li>)}
+        {[topicById[stageId]?.intro.goal,topicById[stageId]?.middle.goal].filter(Boolean).map(item => <li key={item}>{item}</li>)}
       </ul>
       <p className="level-bridge-note">先に見ておくと読みやすい段です。飛ばしてこのまま進んでも構いません。</p>
       <ul className="level-bridge-links">
@@ -38,8 +40,8 @@ export function AdvancedPreviewCard({ stageId }: { stageId: string }) {
       <h3>上級編での到達点</h3>
       <EquationImage tex={preview.goal} />
       <dl>
-        <div><dt>今できればよいこと</dt><dd>{preview.now}</dd></div>
-        <div><dt>後で増えるもの</dt><dd>{preview.later}</dd></div>
+        <div><dt>今できればよいこと</dt><dd><MathText text={preview.now}/></dd></div>
+        <div><dt>後で増えるもの</dt><dd><MathText text={preview.later}/></dd></div>
       </dl>
     </section>
   );
@@ -57,7 +59,7 @@ export function LevelSlideHeader({ page, total, heading, beat, role }: {
         {role && <span className={`level-role role-${['観察', '問い', '操作', '解釈', '固定'].indexOf(role)}`}>{role}</span>}
         <span className="level-now-count" aria-live="polite">{page + 1} / {total}</span>
       </p>
-      <h2>{heading}</h2>
+      <h2><MathText text={heading.replace(/^(復習|橋渡し)：/,'')}/></h2>
     </section>
   );
 }

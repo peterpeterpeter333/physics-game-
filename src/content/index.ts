@@ -4,9 +4,8 @@ import { thermo } from "./thermo";
 import { waves } from "./waves";
 import { electromagnetism } from "./electromagnetism";
 import { atomic } from "./atomic";
-import { univMath } from "./univ-math";
-import { univMechanics } from "./univ-mechanics";
-import { univEm } from "./univ-em";
+import { universitySource } from './university-source';
+import { removedIndices, topicById } from './university-curriculum';
 import { enrichChapters } from './explanations';
 import { levelChapters } from './university-levels';
 
@@ -19,7 +18,12 @@ export const chapters: Chapter[] = enrichChapters([
   waves,
   electromagnetism,
   atomic,
-  univMath,
-  univMechanics,
-  univEm,
-]).concat(levelChapters);
+]).concat(universitySource.map(chapter=>({...chapter,level:'advanced' as const,
+ stages:chapter.stages.map(stage=>stage.lesson.steps[0]?.story?stage:{...stage,
+  subtitle:topicById[stage.id].advanced,
+  lesson:{...stage.lesson,intro:topicById[stage.id].advanced,
+   steps:stage.lesson.steps.map((step,i)=>({...step,sourceStageId:stage.id,sourceSlideIndex:i}))
+    .filter(step=>!removedIndices(stage.id).has(step.sourceSlideIndex)),
+  },
+ }),
+}))).concat(levelChapters);

@@ -156,7 +156,7 @@ export const um_em: LevelChapter = {
           beat: '新しい基本事項',
           role: '固定',
           figure: 'ume-dot-one-edge',
-          body: '$\\Delta W_i=\\vec F(\\vec r_i)\\cdot\\Delta\\vec r_i$。成分なら $F_x\\Delta x+F_y\\Delta y$ で計算できる。',
+          body: 'この区間では力が一定で、移動は直線とする。$\\Delta W_i=\\vec F(\\vec r_i)\\cdot\\Delta\\vec r_i$。成分なら $F_x\\Delta x+F_y\\Delta y$ で計算できる。',
           formula: r`\Delta W_i=\vec F(\vec r_i)\cdot\Delta\vec r_i`,
           formulaNote: '力の大きさではなく、道方向の成分×小移動',
         },
@@ -281,8 +281,8 @@ export const um_em: LevelChapter = {
           beat: '基本事項',
           role: '観察',
           figure: 'ume-piece-work-dot',
-          body: '書けている。$\\Delta W_i=\\vec F(\\vec r_i)\\cdot\\Delta\\vec r_i$。効くのは道方向の成分だけだった。',
-          formula: r`\Delta W_i=\vec F(\vec r_i)\cdot\Delta\vec r_i`,
+          body: '力が変わる道では、小区間の力を代表点の値で近似する。$\\Delta W_i\\simeq\\vec F(\\vec r_i)\\cdot\\Delta\\vec r_i$。区間を細かくする極限で、正確な仕事を求める。',
+          formula: r`\Delta W_i\simeq\vec F(\vec r_i)\cdot\Delta\vec r_i`,
         },
         {
           heading: '道に沿って力が変わると、何が困るのだろう?',
@@ -338,7 +338,7 @@ export const um_em: LevelChapter = {
           beat: '疑問',
           role: '問い',
           figure: 'ume-refine-path',
-          body: 'N=4、8、16と増やすと、折れ線が曲線Cに近づく。合計の値も、ある数へ落ち着いていく。',
+          body: 'ここからは別の滑らかな電場と道で、分割数だけを変えて比較する。N=4、8、16と増やすと折れ線が曲線に近づき、和も一定の値へ近づく。前の3 Jの例とは別の計算だ。',
         },
         {
           heading: 'その落ち着き先は、どう書けばよいのだろう?',
@@ -1229,7 +1229,7 @@ export const um_em: LevelChapter = {
       theme: '球対称のとき、面積分が掛け算1回に退化する仕組みを見る',
       goal: r`球面上で $\vec E$ が法線と平行かつ大きさ一定なので $\oiint_S\vec E\cdot d\vec A=E(4\pi r^2)$ と書けることを説明できる。`,
       intro: '閉じた面の束を数える道具はそろった。最後に、面の選び方しだいで和が掛け算1回に退化する場面を見る。上級で電場を取り出すとき、この一手が要になる。',
-      outro: '球面上では、電場も外向き法線も半径方向で平行。同じ $r$ なら $E$ の大きさも同じ。だから $E$ を面積分の外へ出せて、残りが球の表面積 $4\\pi r^2$ になる。これは証明ではなく計算上の準備で、電荷が中心からずれた球や任意形状の面では、この一手は使えない。',
+      outro: '中心球では電場と法線が平行で、電場の大きさも一定。クーロンの法則の電場に球面積を掛けると、電気束は $Q/\\varepsilon_0$ になる。中心がずれた球や任意形状の面でも同じになることは、上級で別に示す。',
       foundation: {
         known: '閉じた面では外向き法線をとること。面積分が、タイルごとの内積の和であること。',
         startingPoint: '点電荷を中心とする球面の上で、電場と法線の関係を1枚ずつ確かめるところから出発する。',
@@ -1248,7 +1248,7 @@ export const um_em: LevelChapter = {
       units: [
         { end: 2, goal: '点電荷の場を読み、閉じた面として球面を選ぶ', gain: '点電荷の電場は半径方向。球面はその対称性に合わせた面の選び方になる。' },
         { end: 6, goal: '平行と等しさを使って、和を掛け算に退化させる', gain: '全タイルでcosが1、Eも同じ。だからEを外へ出せて、残りは球の表面積4πr²。' },
-        { end: 9, goal: 'これが証明ではなく準備であることを確かめる', gain: '法則は任意の閉曲面で成り立つ。対称性は、Eを外に出せるようにする計算上の条件。' },
+        { end: 10, goal: '中心球の電気束を求め、まだ示していない範囲を区別する', gain: 'クーロンの法則から中心球でQ/ε₀を得た。任意の閉曲面でも同じになる証明は上級で行う。' },
       ],
       slides: [
         {
@@ -1319,17 +1319,28 @@ export const um_em: LevelChapter = {
         },
         {
           heading: 'この一手が使えないのは、どんな場合だろう?',
-          beat: '新しい基本事項',
-          role: '固定',
+          beat: '解決',
+          role: '解釈',
           figure: 'ume-gauss-preview',
           body: '電荷が中心からずれた球や、いびつな面だ。$E$ がタイルごとに違い、外へ出せなくなる。',
-          formulaNote: '上級では右辺が $Q_{\\text{内}}/\\varepsilon_0$ になり、両辺を比べて $E$ を出す',
+          formulaNote: 'ずれた球では面を取り替えず、各点の内積をそのまま積分する',
+        },
+        {
+          heading: '中心球の電気束は、クーロンの法則からいくらになる？',
+          beat: '新しい基本事項',role: '固定',figure: 'gauss-sphere',
+          body: '出発点はクーロンの法則。球の中心に点電荷Qを置く場合だけ計算する。電場の逆二乗と球面積の二乗が打ち消し合い、電気束は半径によらなくなる。一般の面の証明はまだ残っている。',
+          formula: r`\Phi_E=\frac{Q}{\varepsilon_0}`,
+          calculation: [
+            {note:'クーロンの法則で中心の点電荷が作る電場を与える',tex:r`E=\frac{Q}{4\pi\varepsilon_0r^2}\quad(Q>0)`},
+            {note:'中心球では電場と外向き法線が平行。全面積を掛ける',tex:r`\Phi_E=\frac{Q}{4\pi\varepsilon_0r^2}\,4\pi r^2`},
+            {note:'共通の4πr²を約分。任意の面の証明とは区別する',tex:r`\Phi_E=\frac{Q}{\varepsilon_0}`},
+          ],
         },
       ],
       preview: {
         goal: r`\oiint_S\vec E\cdot d\vec A=\frac{Q_{\text{in}}}{\varepsilon_0}`,
-        now: '球面を選べば、左辺が $E\\times4\\pi r^2$ に書き換わること',
-        later: '右辺が袋の中の電荷で決まること、円筒や平面での面の選び方',
+        now: '中心球に限って、クーロンの法則から電気束 $Q/\\varepsilon_0$ を計算できること',
+        later: '中心がずれた球を積分し、任意の閉曲面でも内部の正味の電荷だけで決まると示すこと',
       },
       leadsTo: ['ue-gauss', 'ue-integrals'],
       problems: [

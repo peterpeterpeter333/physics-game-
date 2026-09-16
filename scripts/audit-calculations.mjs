@@ -18,7 +18,7 @@ for(const stage of stages){
     assert.equal(shots.length,stage.lesson.steps.filter(s=>!s.review).length,`original storyboard coverage changed: ${stage.id}`);
     for(const shot of shots) assert(stage.lesson.steps.some(s=>s.heading===shot.heading),`orphaned storyboard: ${shot.heading}`);
   }
-  for(const [i,step] of stage.lesson.steps.entries()){
+  for(const [i,step] of [...stage.lesson.steps,...(stage.lesson.supplements??[])].entries()){
     const calculation=getCalculation(step);
     if(step.formula) assert(images[step.formula],`original formula lost: ${stage.id}/${i}`);
     if(calculation){

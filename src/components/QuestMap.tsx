@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { universityCurriculum } from '../content/university-curriculum';
 import type { Chapter } from "../types";
 import { levelProgress, type Progress } from "../game/state";
 import { advancedFamilyOf, levelLabels, universityFamilies, type LevelKey, type UniversityFamily } from "../content/university-levels";
@@ -220,6 +221,13 @@ export function QuestMap({
                     ))}
                   </div>
                   <p className="level-tagline">{active.tagline}</p>
+                  <details className="study-overview curriculum-map"><summary>全単元の初級・中級・上級から選ぶ</summary>
+                    <p>同じ行が同じ単元です。どの段階からでも開けます。</p>
+                    {universityCurriculum.filter(t=>t.family===family.id).map(topic=><section key={topic.id}>
+                      <h3>{chapters.flatMap(c=>c.stages).find(s=>s.id===topic.id)?.title}</h3>
+                      <div className="level-tabs">{(['intro','middle','advanced'] as const).map(level=><button className="btn btn-ghost" key={level} onClick={()=>onOpenLesson(level==='advanced'?topic.id:topic[level].id)}>{levelLabels[level]}</button>)}</div>
+                    </section>)}
+                  </details>
                   {stageList(active.chapter)}
                 </div>
               )}

@@ -2,9 +2,9 @@ import assert from 'node:assert/strict';
 import {build} from 'esbuild';
 import Module from 'node:module';
 import katex from 'katex';
-const b=await build({stdin:{contents:`export {chapters} from './src/content';export * from './src/content/learning-paths';export {slideSummaries} from './src/content/slide-summaries';export {quantityGlossary} from './src/content/quantity-glossary';`,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs'});
+const b=await build({stdin:{contents:`export {chapters} from './src/content';export * from './src/content/learning-paths';export {slideSummaries} from './src/content/slide-summaries';export {quantityGlossary} from './src/content/quantity-glossary';export {foregroundText} from './src/content/lesson-text';export {universitySourceStages} from './src/content/university-source';`,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs'});
 const m=new Module(`${process.cwd()}/.study-audit.cjs`);m._compile(b.outputFiles[0].text,m.id);
-const {chapters,learningPaths,unitAt,phaseLabel,slideSummaries,quantityGlossary}=m.exports;
+const {chapters,learningPaths,unitAt,phaseLabel,slideSummaries,quantityGlossary,foregroundText,universitySourceStages}=m.exports;
 const stages=chapters.flatMap(c=>c.stages).filter(s=>!s.lesson.steps[0]?.story);
 const advanced=chapters.filter(c=>!c.level||c.level==='advanced').flatMap(c=>c.stages).filter(s=>!s.lesson.steps[0]?.story);
 assert.equal(advanced.length,54);
@@ -24,10 +24,10 @@ for(const stage of stages){
  assert.equal(new Set(definitions.map(d=>d.key)).size,definitions.length);
  for(const entry of definitions)assert(entry.label&&entry.meaning);
  for(const [index,summary] of Object.entries(slideSummaries[stage.id]??{})){
-  assert(stage.lesson.steps[Number(index)],`${stage.id}/${index}`);assert(summary.length<=150,`${stage.id}/${index}: ${summary.length}`);summaries++;
+  assert((universitySourceStages[stage.id]??stage).lesson.steps[Number(index)],`${stage.id}/${index}`);assert(summary.length<=150,`${stage.id}/${index}: ${summary.length}`);summaries++;
  }
  stage.lesson.steps.forEach((step,i)=>{
-  const text=slideSummaries[stage.id]?.[i]??step.body;
+  const text=foregroundText(stage.id,step,i);
   assert.equal((text.match(/\$/g)||[]).length%2,0);
   for(const match of text.matchAll(/\$([^$]+)\$/g))katex.renderToString(match[1],{throwOnError:true,strict:'ignore'});
   if(text.length>150)long.push(`${stage.id}/${i}: ${text.length}`);

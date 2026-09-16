@@ -1,4 +1,5 @@
 import { levelFamilyOfStage, levelGlossaries } from './university-levels';
+import { completedLevelOrigins } from './levels/completion';
 /** Context-dependent definitions: a symbol is never assigned one meaning globally. */
 type Definitions=Record<string,string>;
 const motion:Definitions={x:'選んだ軸上の位置、または本文で指定する変位 [m]',y:'縦方向の位置・変位 [m]',t:'測定開始からの時間 [s]',v:'速度。大きさを使う場面では速さ [m/s]',a:'速度の時間変化率である加速度 [m/s²]',m:'対象物の質量 [kg]',F:'対象物に働く力。運動方程式では合力 [N]',g:'重力加速度の大きさ。正の値 [m/s²]',x_0:'開始時刻の位置 [m]',v_0:'開始時刻の速度 [m/s]',theta:'本文で指定した二方向のなす角。sin・cosや微分ではラジアン'};
@@ -23,7 +24,8 @@ const extra:Record<string,Definitions>={
  'ue-potential':{E_x:'観測点の電場のx方向成分。符号は向きを表す [V/m = N/C]',E_y:'電場のy方向成分 [V/m]',E_z:'電場のz方向成分 [V/m]',x:'観測点のx座標 [m]',y:'観測点のy座標。x偏微分では固定 [m]',z:'観測点のz座標。x偏微分では固定 [m]',s:'線積分の途中の位置を表す変数 [m]',r:'点電荷からの距離 [m]',U:'電荷qを置いたときの位置エネルギーqV [J]'},'ue-capacitor':{sigma:'板の電荷の面密度Q/S [C/m²]',u:'場の単位体積あたりのエネルギー [J/m³]',kappa:'比誘電率ε/ε₀。無次元'},'ue-current':{n:'電子の個数密度。1 m³あたりの個数 [1/m³]',v:'電子の平均ドリフトの速さ [m/s]',j:'電流密度。単位断面積あたりの電流 [A/m²]',sigma:'電気伝導率 [S/m]',rho:'電気抵抗率 [Ω·m]',tau:'散乱までの平均時間 [s]',ell:'導線の長さ [m]',m:'電子の質量 [kg]'},'ue-lorentz':{v:'荷電粒子の速度 [m/s]',m:'粒子の質量 [kg]',T:'円運動の周期 [s]。磁場の単位Tとは別',ell:'導線の向きと長さを表すベクトル [m]',p:'らせんのピッチとして使う式では一巻きの進み [m]'},'ue-ampere':{n:'ソレノイドの単位長さあたりの巻数 [1/m]',N:'コイルの全巻数',L:'閉路やソレノイドの長さ [m]',ell:'電流または積分経路に沿った長さ [m]'},'ue-faraday':{L:'自己インダクタンス [H]',M:'相互インダクタンス [H]',N:'コイルの巻数',Psi:'鎖交磁束。各巻きを貫く磁束の合計 [Wb]',omega:'コイルの角速度 [rad/s]',v:'動く導線の速さ [m/s]',ell:'動く導線の長さ [m]',mathcalE:'起電力。閉路一周の仕事を電荷で割った量 [V]'},'ue-transient':{L:'自己インダクタンス [H]',tau:'変化の時間の尺度。RCまたはL/R [s]',q:'コンデンサの時刻tの電荷 [C]',omega:'LC振動の角振動数 [rad/s]',u:'最終値までの差として導入する変数'},'ue-maxwell':{L:'自己インダクタンス [H]',omega:'交流・波の角振動数 [rad/s]',k:'電磁波の波数 [rad/m]',c:'真空中の電磁波の速さ [m/s]',x:'波の進行方向の位置 [m]',phi:'電流と電圧などの位相差 [rad]',J:'電流密度 [A/m²]',rho:'電荷密度 [C/m³]'},
 };
 const labels:Record<string,string>={theta:'θ',phi:'φ',lambda:'λ',omega:'ω',Omega:'Ω',tau:'τ',rho:'ρ',sigma:'σ',epsilon_0:'ε₀',mu_0:'μ₀',mu:'μ',kappa:'κ',Phi:'Φ',Psi:'Ψ',nu:'ν',eta:'η',ell:'ℓ',hbar:'ℏ',mathcalE:'ℰ'};
-export function quantityGlossary(stageId:string){
+export function quantityGlossary(stageId:string):{key:string;label:string;meaning:string}[]{
+ if(completedLevelOrigins[stageId])return quantityGlossary(completedLevelOrigins[stageId]);
  const family=levelFamilyOfStage[stageId];
  if(family){
   const levelBase=family==='umath'?math:family==='umech'?{...motion,...energy}:electric;

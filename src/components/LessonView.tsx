@@ -8,12 +8,13 @@ import { UniqueFigure, getUniqueShot } from './figures/unique';
 import { LessonOrientation } from './LessonOrientation';
 import { GuidedLesson } from './GuidedLesson';
 import { learningPaths, unitAt, phaseLabel } from '../content/learning-paths';
-import { slideSummaries } from '../content/slide-summaries';
+import { foregroundText } from '../content/lesson-text';
 import { QuantityGlossary } from './QuantityGlossary';
 import { ChapterFoundation } from './ChapterFoundation';
 import { AdvancedEntry, AdvancedPreviewCard, LevelSlideHeader } from './LevelBridge';
 import { levelStageIds } from '../content/university-levels';
-import { clarityRevisions } from '../content/clarity-revisions';
+import { MovedMaterial } from './MovedMaterial';
+import { TopicRoute } from './TopicRoute';
 import './spiral-lesson.css';
 import './study-flow.css';
 
@@ -42,7 +43,7 @@ function StandardLessonView({
   const shot = getUniqueShot(stage.id, step);
   const units=learningPaths[stage.id];
   const {unit,index:unitIndex,start,offset,count}=unitAt(units,page);
-  const summary=clarityRevisions[stage.id]?.[step.heading]?.body??slideSummaries[stage.id]?.[page]??step.body;
+  const summary=foregroundText(stage.id,step,page);
   const expressions=[...(calculation?.lines.map(line=>line.tex)??[]),...(step.formula?[step.formula]:[]),...Array.from(step.body.matchAll(/\$([^$]+)\$/g),m=>m[1])];
   const isLevel = levelStageIds.has(stage.id);
   const card = useRef<HTMLDivElement>(null);
@@ -69,6 +70,7 @@ function StandardLessonView({
 
       <ChapterFoundation stageId={stage.id}/>
       <AdvancedEntry stageId={stage.id} onOpenStage={onOpenStage}/>
+      <TopicRoute stageId={stage.id} onOpenStage={onOpenStage}/>
 
       <div className="lesson-steps">
           <div className="lesson-step pop-in" key={page} ref={card}>
@@ -98,6 +100,7 @@ function StandardLessonView({
           </div>
       </div>
 
+      <MovedMaterial stage={stage}/>
       {allRevealed && (
         <div className="lesson-outro pop-in">
           <p>

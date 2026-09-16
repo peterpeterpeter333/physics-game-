@@ -1,6 +1,10 @@
 // コンテンツのデータ型。数式は文字列中に $...$ (インライン) / $$...$$ (ブロック) で埋め込む。
 
 export type LessonStep = {
+  /** Stable provenance: filtering/reordering must never change which summary is shown. */
+  sourceStageId?: string;
+  sourceSlideIndex?: number;
+  summary?: string;
   /** A synchronized, learner-controlled visual explanation. */
   story?: {
     scene: string;
@@ -33,6 +37,8 @@ export type Lesson = {
   title: string;
   intro: string;
   steps: LessonStep[];
+  /** Material relocated from advanced lessons; optional, not repeated in the main flow. */
+  supplements?: LessonStep[];
   /** レッスンの締め: 何が理解できたか */
   outro: string;
 };
