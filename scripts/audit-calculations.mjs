@@ -4,10 +4,10 @@ import Module from 'node:module';
 import {build} from 'esbuild';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
-const source=`export {chapters} from './src/content'; export {getCalculation,calculationRules} from './src/content/calculations'; export {uniqueShots,reviewShots,getUniqueShot} from './src/components/figures/unique';`;
+const source=`export {chapters} from './src/content'; export {getCalculation,calculationRules} from './src/content/calculations'; export {uniqueShots,reviewShots,getUniqueShot} from './src/components/figures/unique'; export {levelStageIds} from './src/content/university-levels';`;
 const bundle=await build({stdin:{contents:source,resolveDir:process.cwd(),loader:'tsx'},bundle:true,write:false,platform:'node',format:'cjs',packages:'external',jsx:'automatic'});
 const mod=new Module(`${process.cwd()}/.calc-audit.cjs`);mod.paths=Module._nodeModulePaths(process.cwd());mod._compile(bundle.outputFiles[0].text,mod.id);
-const {chapters,getCalculation,calculationRules,uniqueShots,reviewShots,getUniqueShot}=mod.exports;
+const {chapters,getCalculation,calculationRules,uniqueShots,reviewShots,getUniqueShot,levelStageIds}=mod.exports;
 const images=JSON.parse(readFileSync('src/content/calculations/equations.generated.json','utf8'));
 const stages=chapters.flatMap(c=>c.stages);
 let illustrated=0,authored=0,original=0;
@@ -24,7 +24,8 @@ for(const stage of stages){
     if(calculation){
       illustrated++;
       const rule=calculationRules.find(r=>r.headings.includes(step.heading));
-      if(rule){authored++;assert(calculation.lines.length>=2);}
+      // 初級・中級は「1枚1手」なので計算行が1行の場合がある。上級は従来どおり2行以上。
+      if(rule){authored++;assert(calculation.lines.length>=(levelStageIds.has(stage.id)?1:2),`calculation too short: ${stage.id}/${i}`);}
       for(const line of calculation.lines){
         const asset=images[line.tex];assert(asset,`unrendered formula ${stage.id}/${i}: ${line.tex}`);
         assert(asset.width>0 && asset.height>0);assert(existsSync(`public/${asset.src}`));
