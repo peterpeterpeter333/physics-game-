@@ -1323,7 +1323,7 @@ export const um_em: LevelChapter = {
           role: '固定',
           figure: 'ume-gauss-preview',
           body: '電荷が中心からずれた球や、いびつな面だ。$E$ がタイルごとに違い、外へ出せなくなる。',
-          formulaNote: '上級では右辺が $Q_{\\text{in}}/\\varepsilon_0$ になり、両辺を比べて $E$ を出す',
+          formulaNote: '上級では右辺が $Q_{\\text{内}}/\\varepsilon_0$ になり、両辺を比べて $E$ を出す',
         },
       ],
       preview: {

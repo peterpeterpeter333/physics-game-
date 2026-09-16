@@ -4,10 +4,13 @@ import equations from '../content/calculations/equations.generated.json';
 import { MathBlock } from './MathText';
 
 const images: Record<string, { src: string; width: number; height: number }> = equations;
+/** 生成した画像の中で日本語は <text> になり、表示が端末のフォント任せになる。
+ * 日本語を含む式だけは、アプリと同じフォントで描ける KaTeX に回す。 */
+const hasJapanese = (tex: string) => /[\u3040-\u30ff\u4e00-\u9fff]/.test(tex);
 export function EquationImage({tex}: {tex:string}) {
   const [failedTex, setFailedTex] = useState<string | null>(null);
   const asset = images[tex];
-  if (!asset || failedTex === tex) return <div className="equation-image-scroll" data-equation-fallback><MathBlock tex={tex}/></div>;
+  if (!asset || failedTex === tex || hasJapanese(tex)) return <div className="equation-image-scroll" data-equation-fallback><MathBlock tex={tex}/></div>;
   return <div className="equation-image-scroll"><img className="equation-image" src={`${import.meta.env.BASE_URL}${asset.src}`}
     onError={() => setFailedTex(tex)}
     alt={`数式: ${tex}`} width={asset.width} height={asset.height} draggable={false} /></div>;
