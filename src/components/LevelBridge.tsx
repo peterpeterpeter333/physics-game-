@@ -4,8 +4,11 @@ import { EquationImage } from './CalculationBoard';
 /** 上級ステージの入口。初級・中級で身につけた読み方と、対応するステージへのリンクを置く。
  * 初級・中級を終えていなくても上級は開ける。ここは案内であって条件ではない。 */
 export function AdvancedEntry({ stageId, onOpenStage }: { stageId: string; onOpenStage?: (id: string) => void }) {
-  const preparation = preparationFor[stageId] ?? [];
-  if (!preparation.length) return null;
+  const all = preparationFor[stageId] ?? [];
+  if (!all.length) return null;
+  // 3分で見返せる量に絞る。初級を先に、各段階から最大4件まで。
+  const pick = (level: string) => all.filter(entry => entry.level === level).slice(0, 4);
+  const preparation = [...pick('intro'), ...pick('middle')];
   return (
     <details className="study-overview level-bridge">
       <summary>この章で使う初級・中級の部品（3分の復習）</summary>
