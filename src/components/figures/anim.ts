@@ -1,14 +1,17 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 
 export const MotionContext = createContext({ paused: false, speed: 1 });
+/** Offline movie renderer supplies the exact media timestamp. Live lessons keep their own clock. */
+export const VideoTimeContext = createContext<number | null>(null);
 
 /** 経過秒数 (60fps更新)。図解アニメーションの共通時計。 */
 export function useT(): number {
+  const videoTime = useContext(VideoTimeContext);
   const [t, setT] = useState(0);
   const elapsed = useRef(0);
   const { paused, speed } = useContext(MotionContext);
   useEffect(() => {
-    if (paused) return;
+    if (paused || videoTime !== null) return;
     let raf: number;
     let previous = performance.now();
     const loop = (now: number) => {
@@ -19,8 +22,8 @@ export function useT(): number {
     };
     raf = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(raf);
-  }, [paused, speed]);
-  return t;
+  }, [paused, speed, videoTime]);
+  return videoTime ?? t;
 }
 
 /** Sweep a physical parameter, then keep the learner's manual setting until replay. */

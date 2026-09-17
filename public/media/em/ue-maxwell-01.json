@@ -1,0 +1,65 @@
+{
+  "id": "ue-maxwell-01",
+  "stageId": "ue-maxwell",
+  "stageTitle": "交流とマクスウェル方程式",
+  "level": "advanced",
+  "title": "四つの基本法則と変位電流の役割を整理する ／ 真空の平面波に絞り、積分形を場所の変化へ直す",
+  "sourceIndices": [
+    0,
+    1
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "コンデンサのすき間にもつながる電流",
+      "narration": "充電中のコンデンサの板間では、伝導電流がなくても電気束が変わります。変位電流の項が、その変化を導線の電流と整合させます。",
+      "equations": [
+        "\\oint\\vec B\\cdot d\\vec r=\\mu_0\\left(I+\\varepsilon_0\\frac{d\\Phi_E}{dt}\\right)",
+        "E=\\frac q{\\varepsilon_0 A}",
+        "\\Phi_E=EA=\\frac q{\\varepsilon_0}",
+        "\\varepsilon_0\\frac{d\\Phi_E}{dt}=\\varepsilon_0\\frac1{\\varepsilon_0}\\frac{dq}{dt}",
+        "\\varepsilon_0\\frac{d\\Phi_E}{dt}=I"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.506,
+          "text": "充電中のコンデンサの板間では、伝導電流がなくても電気束が変わります。"
+        },
+        {
+          "start": 5.656,
+          "end": 10.233999999999998,
+          "text": "変位電流の項が、その変化を導線の電流と整合させます。"
+        }
+      ],
+      "end": 11.584
+    },
+    {
+      "index": 1,
+      "heading": "4本の式は、なぜ「光」を予言できたのだろう?",
+      "narration": "時間と空間で変わる電場と磁場は、マクスウェル方程式で結ばれています。その方程式から求まる真空中の波の速さは、光の速さと一致します。",
+      "equations": [
+        "c = \\dfrac{1}{\\sqrt{\\varepsilon_0 \\mu_0}}",
+        "c = \\frac{1}{\\sqrt{\\varepsilon_0\\mu_0}} \\approx 3.0\\times10^8"
+      ],
+      "spatial": false,
+      "start": 11.584,
+      "captions": [
+        {
+          "start": 11.584,
+          "end": 16.72733333333333,
+          "text": "時間と空間で変わる電場と磁場は、マクスウェル方程式で結ばれています。"
+        },
+        {
+          "start": 16.877333333333333,
+          "end": 22.436666666666664,
+          "text": "その方程式から求まる真空中の波の速さは、光の速さと一致します。"
+        }
+      ],
+      "end": 23.786666666666665
+    }
+  ],
+  "duration": 23.786666666666665
+}

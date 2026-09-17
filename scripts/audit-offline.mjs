@@ -13,9 +13,9 @@ vm.runInNewContext(readFileSync('public/sw.js','utf8'),{
   open:async()=>({put:async(request,response)=>{writes++;stored.set(request.url,response);}})},
  fetch:async()=>{if(network instanceof Error)throw network;return network;},
 });
-async function get(path,mode='cors'){
+async function get(path,mode='cors',headers={}){
  const pending=[];let result;
- handlers.fetch({request:{url:scope+path,method:'GET',mode},respondWith:p=>result=p,waitUntil:p=>pending.push(p)});
+ handlers.fetch({request:{url:scope+path,method:'GET',mode,headers:new Headers(headers)},respondWith:p=>result=p,waitUntil:p=>pending.push(p)});
  const response=await result;await Promise.all(pending);return response;
 }
 network=new Response('<svg/>',{headers:{'Content-Type':'image/svg+xml'}});
@@ -27,6 +27,8 @@ stored.set(scope+'index.html',new Response('<html/>'));
 network=new Error('offline');
 assert.equal((await get('missing.svg')).type,'error');
 assert.equal(await (await get('lesson','navigate')).text(),'<html/>');
+assert.equal(await get('media/em/example.mp4'),undefined,'Browser handles video and offline errors directly');
+assert.equal(await get('asset.bin','cors',{Range:'bytes=0-99'}),undefined,'No partial-response cache writes');
 let activation;handlers.activate({waitUntil:p=>activation=p});await activation;
 assert.deepEqual(deleted,['physics-quest-v1']);
 console.log('PASS: SVG caching, 404 preservation, offline image failure, navigation fallback, scoped cache cleanup');

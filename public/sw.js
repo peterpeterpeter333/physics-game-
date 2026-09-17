@@ -17,6 +17,9 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
+  // Native video seeking uses 206 responses, which Cache.put cannot store.
+  // Do not fill the web offline cache with the entire movie library either.
+  if (e.request.headers.has("range") || url.pathname.endsWith(".mp4")) return;
   e.respondWith(
     fetch(e.request)
       .then(async (res) => {

@@ -1,0 +1,118 @@
+{
+  "id": "ue-potential-01",
+  "stageId": "ue-potential",
+  "stageTitle": "電位: 電気の地形図",
+  "level": "advanced",
+  "title": "微小移動の仕事から電場を電位の傾きへ結ぶ ／ 点電荷の電位を積分しエネルギーへ戻す",
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "微小移動なら掛け算1回に戻る",
+      "narration": "この計算の目標は、電位の分布から電場の横成分を求めることです。電位差を横の距離で割った値の極限が、横方向の偏微分です。",
+      "equations": [
+        "E_x=-\\frac{\\partial V}{\\partial x}",
+        "\\Delta V=V(x+\\Delta x,y,z)-V(x,y,z)=-\\int_x^{x+\\Delta x}E_x(s,y,z)\\,ds",
+        "\\frac{\\Delta V}{\\Delta x}=-\\frac1{\\Delta x}\\int_x^{x+\\Delta x}E_x(s,y,z)\\,ds",
+        "\\lim_{\\Delta x\\to0^+}\\frac{\\Delta V}{\\Delta x}=\\frac{\\partial V}{\\partial x}=-E_x(x,y,z)",
+        "dV=\\frac{\\partial V}{\\partial x}\\,dx=-E_x\\,dx",
+        "\\vec E=\\left(-\\frac{\\partial V}{\\partial x},-\\frac{\\partial V}{\\partial y},-\\frac{\\partial V}{\\partial z}\\right)=-\\nabla V"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.282,
+          "text": "この計算の目標は、電位の分布から電場の横成分を求めることです。"
+        },
+        {
+          "start": 5.4319999999999995,
+          "end": 10.201999999999998,
+          "text": "電位差を横の距離で割った値の極限が、横方向の偏微分です。"
+        }
+      ],
+      "end": 11.552
+    },
+    {
+      "index": 1,
+      "heading": "逆に、電位から電場はどう出るのだろう?",
+      "narration": "電場の横成分は、電位の横方向の傾きに負号を付けた値です。偏微分では、ほかの座標は固定されたままです。",
+      "equations": [
+        "E_x=-\\frac{\\partial V}{\\partial x}",
+        "E_x = -\\frac{\\partial V}{\\partial x}",
+        "E = V/d"
+      ],
+      "spatial": false,
+      "start": 11.552,
+      "captions": [
+        {
+          "start": 11.552,
+          "end": 16.546,
+          "text": "電場の横成分は、電位の横方向の傾きに負号を付けた値です。"
+        },
+        {
+          "start": 16.695999999999998,
+          "end": 20.484666666666666,
+          "text": "偏微分では、ほかの座標は固定されたままです。"
+        }
+      ],
+      "end": 21.834666666666664
+    },
+    {
+      "index": 2,
+      "heading": "等電位面と垂直になる理由",
+      "narration": "等電位面の中の移動では、電位差がゼロです。電場と面内の移動の内積がゼロになるため、電場は等電位面に垂直です。",
+      "equations": [],
+      "spatial": false,
+      "start": 21.834666666666664,
+      "captions": [
+        {
+          "start": 21.834666666666664,
+          "end": 25.49533333333333,
+          "text": "等電位面の中の移動では、電位差がゼロです。"
+        },
+        {
+          "start": 25.64533333333333,
+          "end": 31.18333333333333,
+          "text": "電場と面内の移動の内積がゼロになるため、電場は等電位面に垂直です。"
+        }
+      ],
+      "end": 32.53333333333333
+    },
+    {
+      "index": 3,
+      "heading": "点電荷の電位を無限遠から積分",
+      "narration": "点電荷の電位は、無限遠を基準にした電場の積分で求まります。距離のマイナス二乗の原始関数は、距離の逆数に負号を付けた関数です。",
+      "equations": [
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\left[-\\frac1s\\right]_{\\infty}^{r}=\\frac{Q}{4\\pi\\varepsilon_0r}",
+        "V(r)=-\\int_\\infty^r\\frac{Q}{4\\pi\\varepsilon_0s^2}ds",
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\int_\\infty^r s^{-2}ds",
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\left[-\\frac1s\\right]_\\infty^r",
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\left(-\\frac1r-0\\right)",
+        "V(r)=\\frac{Q}{4\\pi\\varepsilon_0r}"
+      ],
+      "spatial": false,
+      "start": 32.53333333333333,
+      "captions": [
+        {
+          "start": 32.53333333333333,
+          "end": 37.378,
+          "text": "点電荷の電位は、無限遠を基準にした電場の積分で求まります。"
+        },
+        {
+          "start": 37.528,
+          "end": 42.746,
+          "text": "距離のマイナス二乗の原始関数は、距離の逆数に負号を付けた関数です。"
+        }
+      ],
+      "end": 44.096000000000004
+    }
+  ],
+  "duration": 44.096000000000004
+}

@@ -1,0 +1,548 @@
+{
+  "id": "ue-gauss-06",
+  "stageId": "ue-gauss",
+  "stageTitle": "ガウスの法則を証明する",
+  "level": "advanced",
+  "title": "ガウスの法則と対称性を使い、点電荷・線電荷の電場を求める。",
+  "sourceIndices": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "scenes": [
+    {
+      "index": 20,
+      "heading": "法則と対称性から、電場の強さを求める",
+      "narration": "点電荷の電場は、同じ半径の球面では強さが一定で法線方向です。この対称性が、ガウスの法則の積分から電場の強さを取り出せる理由です。",
+      "equations": [
+        "E(4\\pi r^2)=Q/\\varepsilon_0",
+        "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0",
+        "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}",
+        "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}",
+        "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)",
+        "Q_{\\text{内}}=\\lambda L",
+        "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}",
+        "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}",
+        "Q_{\\text{内}}=\\sigma A",
+        "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA",
+        "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "法則だけでなく対称性も使ってEを積分の外へ出す。面の選び方が電場を変えるわけではない。",
+        "symbols": [
+          [
+            "r",
+            "点電荷または直線電荷からの距離 [m]"
+          ],
+          [
+            "λ",
+            "直線の長さ1 mあたりの電荷 [C/m]"
+          ],
+          [
+            "L",
+            "積分する円筒の長さ [m]"
+          ],
+          [
+            "2πrL",
+            "円筒の側面積 [m²]"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "できることと、できないことを区別する：電荷配置が非対称なら、ガウスの法則一つで各点のEは一般に決まりません。クーロンの積分など別の方法が必要です。対称性は積分を避ける口実でなく、証明後に使える追加情報です。",
+            "tex": "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0"
+          },
+          {
+            "note": "面と中身を別々に数える：電荷中心の球を選ぶと、左辺はE×4πr²。中に含む電荷はQなので、右辺はQ/ε₀です。",
+            "tex": "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}"
+          },
+          {
+            "note": "両辺を球面積で割る：求めたいEに掛かっている4πr²を、両辺で割ります。左は面積が約分されてEだけになります。",
+            "tex": "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}"
+          },
+          {
+            "note": "答えの距離依存を読む：クーロンの法則と同じ式になりました。距離が2倍なら4分の1。先ほどの基本法則との整合を確認したのであり、独立の新しい証明をしたわけではありません。",
+            "tex": "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)"
+          },
+          {
+            "note": "1mあたりの電荷を決める：線密度λ（ラムダ）は長さ1あたりの電荷、単位C/m。長さLだけ囲むなら、中の電荷はλLです。ここではλは正とします。",
+            "tex": "Q_{\\text{内}}=\\lambda L"
+          },
+          {
+            "note": "側面を開いて面積を求める：側面を切り開くと、横が円周2πr、縦がLの長方形。側面ではEが一定なので、電気束はE×2πrLです。",
+            "tex": "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}"
+          },
+          {
+            "note": "同じ長さLを約分する：両辺を2πrLで割ります。囲む長さを増やすと面積も電荷も同じ割合で増えるため、Lが消えます。",
+            "tex": "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}"
+          },
+          {
+            "note": "囲む電荷を数える：面密度σ（シグマ）は面積1あたりの電荷、単位C/m²。面積Aの部分を箱で挟むと、内側の電荷はσAです。σは正とします。",
+            "tex": "Q_{\\text{内}}=\\sigma A"
+          },
+          {
+            "note": "上と下の寄与を足す：対称性から電場は板に垂直で、両側で同じ強さ。上では上向き、下では下向きですが、どちらも箱から外向きなので両方プラスです。側面の寄与は0。",
+            "tex": "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA"
+          },
+          {
+            "note": "両辺を2Aで割る：ガウスの法則に入れて2Aで割ります。電荷に対応する面積はA、電気束が出る面積は2A。この違いが分母の2を生みます。",
+            "tex": "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.580666666666667,
+          "text": "点電荷の電場は、同じ半径の球面では強さが一定で法線方向です。"
+        },
+        {
+          "start": 5.730666666666666,
+          "end": 11.300666666666665,
+          "text": "この対称性が、ガウスの法則の積分から電場の強さを取り出せる理由です。"
+        }
+      ],
+      "end": 12.650666666666666
+    },
+    {
+      "index": 21,
+      "heading": "無限直線の電荷には、円筒を選ぶ",
+      "narration": "一様な無限直線電荷の電場は、線から真横へ向きます。線を囲む円筒では、側面だけが電気束に寄与し、二つのふたの寄与はゼロです。",
+      "equations": [
+        "E(2\\pi rL)=\\lambda L/\\varepsilon_0",
+        "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0",
+        "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}",
+        "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}",
+        "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)",
+        "Q_{\\text{内}}=\\lambda L",
+        "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}",
+        "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}",
+        "Q_{\\text{内}}=\\sigma A",
+        "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA",
+        "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "法則だけでなく対称性も使ってEを積分の外へ出す。面の選び方が電場を変えるわけではない。",
+        "symbols": [
+          [
+            "r",
+            "点電荷または直線電荷からの距離 [m]"
+          ],
+          [
+            "λ",
+            "直線の長さ1 mあたりの電荷 [C/m]"
+          ],
+          [
+            "L",
+            "積分する円筒の長さ [m]"
+          ],
+          [
+            "2πrL",
+            "円筒の側面積 [m²]"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "できることと、できないことを区別する：電荷配置が非対称なら、ガウスの法則一つで各点のEは一般に決まりません。クーロンの積分など別の方法が必要です。対称性は積分を避ける口実でなく、証明後に使える追加情報です。",
+            "tex": "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0"
+          },
+          {
+            "note": "面と中身を別々に数える：電荷中心の球を選ぶと、左辺はE×4πr²。中に含む電荷はQなので、右辺はQ/ε₀です。",
+            "tex": "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}"
+          },
+          {
+            "note": "両辺を球面積で割る：求めたいEに掛かっている4πr²を、両辺で割ります。左は面積が約分されてEだけになります。",
+            "tex": "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}"
+          },
+          {
+            "note": "答えの距離依存を読む：クーロンの法則と同じ式になりました。距離が2倍なら4分の1。先ほどの基本法則との整合を確認したのであり、独立の新しい証明をしたわけではありません。",
+            "tex": "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)"
+          },
+          {
+            "note": "1mあたりの電荷を決める：線密度λ（ラムダ）は長さ1あたりの電荷、単位C/m。長さLだけ囲むなら、中の電荷はλLです。ここではλは正とします。",
+            "tex": "Q_{\\text{内}}=\\lambda L"
+          },
+          {
+            "note": "側面を開いて面積を求める：側面を切り開くと、横が円周2πr、縦がLの長方形。側面ではEが一定なので、電気束はE×2πrLです。",
+            "tex": "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}"
+          },
+          {
+            "note": "同じ長さLを約分する：両辺を2πrLで割ります。囲む長さを増やすと面積も電荷も同じ割合で増えるため、Lが消えます。",
+            "tex": "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}"
+          },
+          {
+            "note": "囲む電荷を数える：面密度σ（シグマ）は面積1あたりの電荷、単位C/m²。面積Aの部分を箱で挟むと、内側の電荷はσAです。σは正とします。",
+            "tex": "Q_{\\text{内}}=\\sigma A"
+          },
+          {
+            "note": "上と下の寄与を足す：対称性から電場は板に垂直で、両側で同じ強さ。上では上向き、下では下向きですが、どちらも箱から外向きなので両方プラスです。側面の寄与は0。",
+            "tex": "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA"
+          },
+          {
+            "note": "両辺を2Aで割る：ガウスの法則に入れて2Aで割ります。電荷に対応する面積はA、電気束が出る面積は2A。この違いが分母の2を生みます。",
+            "tex": "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 12.650666666666666,
+      "captions": [
+        {
+          "start": 12.650666666666666,
+          "end": 17.100666666666665,
+          "text": "一様な無限直線電荷の電場は、線から真横へ向きます。"
+        },
+        {
+          "start": 17.250666666666667,
+          "end": 23.204666666666665,
+          "text": "線を囲む円筒では、側面だけが電気束に寄与し、二つのふたの寄与はゼロです。"
+        }
+      ],
+      "end": 24.554666666666666
+    },
+    {
+      "index": 22,
+      "heading": "円筒の束と内部電荷を等しく置く",
+      "narration": "円筒の側面の束は、電場と側面積の積です。内部電荷は線電荷密度と円筒の長さの積なので、ガウスの法則から長さが約分されます。",
+      "equations": [
+        "E=\\frac{\\lambda L}{\\varepsilon_0\\,2\\pi rL}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}",
+        "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0",
+        "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}",
+        "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}",
+        "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)",
+        "Q_{\\text{内}}=\\lambda L",
+        "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}",
+        "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}",
+        "Q_{\\text{内}}=\\sigma A",
+        "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA",
+        "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "法則だけでなく対称性も使ってEを積分の外へ出す。面の選び方が電場を変えるわけではない。",
+        "symbols": [
+          [
+            "r",
+            "点電荷または直線電荷からの距離 [m]"
+          ],
+          [
+            "λ",
+            "直線の長さ1 mあたりの電荷 [C/m]"
+          ],
+          [
+            "L",
+            "積分する円筒の長さ [m]"
+          ],
+          [
+            "2πrL",
+            "円筒の側面積 [m²]"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "できることと、できないことを区別する：電荷配置が非対称なら、ガウスの法則一つで各点のEは一般に決まりません。クーロンの積分など別の方法が必要です。対称性は積分を避ける口実でなく、証明後に使える追加情報です。",
+            "tex": "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0"
+          },
+          {
+            "note": "面と中身を別々に数える：電荷中心の球を選ぶと、左辺はE×4πr²。中に含む電荷はQなので、右辺はQ/ε₀です。",
+            "tex": "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}"
+          },
+          {
+            "note": "両辺を球面積で割る：求めたいEに掛かっている4πr²を、両辺で割ります。左は面積が約分されてEだけになります。",
+            "tex": "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}"
+          },
+          {
+            "note": "答えの距離依存を読む：クーロンの法則と同じ式になりました。距離が2倍なら4分の1。先ほどの基本法則との整合を確認したのであり、独立の新しい証明をしたわけではありません。",
+            "tex": "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)"
+          },
+          {
+            "note": "1mあたりの電荷を決める：線密度λ（ラムダ）は長さ1あたりの電荷、単位C/m。長さLだけ囲むなら、中の電荷はλLです。ここではλは正とします。",
+            "tex": "Q_{\\text{内}}=\\lambda L"
+          },
+          {
+            "note": "側面を開いて面積を求める：側面を切り開くと、横が円周2πr、縦がLの長方形。側面ではEが一定なので、電気束はE×2πrLです。",
+            "tex": "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}"
+          },
+          {
+            "note": "同じ長さLを約分する：両辺を2πrLで割ります。囲む長さを増やすと面積も電荷も同じ割合で増えるため、Lが消えます。",
+            "tex": "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}"
+          },
+          {
+            "note": "囲む電荷を数える：面密度σ（シグマ）は面積1あたりの電荷、単位C/m²。面積Aの部分を箱で挟むと、内側の電荷はσAです。σは正とします。",
+            "tex": "Q_{\\text{内}}=\\sigma A"
+          },
+          {
+            "note": "上と下の寄与を足す：対称性から電場は板に垂直で、両側で同じ強さ。上では上向き、下では下向きですが、どちらも箱から外向きなので両方プラスです。側面の寄与は0。",
+            "tex": "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA"
+          },
+          {
+            "note": "両辺を2Aで割る：ガウスの法則に入れて2Aで割ります。電荷に対応する面積はA、電気束が出る面積は2A。この違いが分母の2を生みます。",
+            "tex": "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 24.554666666666666,
+      "captions": [
+        {
+          "start": 24.554666666666666,
+          "end": 28.812666666666665,
+          "text": "円筒の側面の束は、電場と側面積の積です。"
+        },
+        {
+          "start": 28.962666666666664,
+          "end": 35.61,
+          "text": "内部電荷は線電荷密度と円筒の長さの積なので、ガウスの法則から長さが約分されます。"
+        }
+      ],
+      "end": 36.96
+    },
+    {
+      "index": 23,
+      "heading": "電場の減り方を、束の広がり方から説明できる",
+      "narration": "点電荷の電場は距離の二乗に反比例し、無限直線電荷の電場は距離に反比例します。この違いは、束が広がる球面と円筒側面の面積の増え方から生まれます。",
+      "equations": [
+        "E_{\\rm 線}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}",
+        "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0",
+        "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}",
+        "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}",
+        "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)",
+        "Q_{\\text{内}}=\\lambda L",
+        "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}",
+        "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}",
+        "Q_{\\text{内}}=\\sigma A",
+        "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA",
+        "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "法則だけでなく対称性も使ってEを積分の外へ出す。面の選び方が電場を変えるわけではない。",
+        "symbols": [
+          [
+            "r",
+            "点電荷または直線電荷からの距離 [m]"
+          ],
+          [
+            "λ",
+            "直線の長さ1 mあたりの電荷 [C/m]"
+          ],
+          [
+            "L",
+            "積分する円筒の長さ [m]"
+          ],
+          [
+            "2πrL",
+            "円筒の側面積 [m²]"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "できることと、できないことを区別する：電荷配置が非対称なら、ガウスの法則一つで各点のEは一般に決まりません。クーロンの積分など別の方法が必要です。対称性は積分を避ける口実でなく、証明後に使える追加情報です。",
+            "tex": "Q_{\\rm 内}=0\\Rightarrow\\Phi_E=0\\quad\\not\\Rightarrow\\quad\\vec E=\\vec0"
+          },
+          {
+            "note": "面と中身を別々に数える：電荷中心の球を選ぶと、左辺はE×4πr²。中に含む電荷はQなので、右辺はQ/ε₀です。",
+            "tex": "E\\underbrace{(4\\pi r^2)}_{\\text{球面積}}=\\frac{Q}{\\varepsilon_0}"
+          },
+          {
+            "note": "両辺を球面積で割る：求めたいEに掛かっている4πr²を、両辺で割ります。左は面積が約分されてEだけになります。",
+            "tex": "\\frac{E(4\\pi r^2)}{4\\pi r^2}=\\frac{Q/\\varepsilon_0}{4\\pi r^2}"
+          },
+          {
+            "note": "答えの距離依存を読む：クーロンの法則と同じ式になりました。距離が2倍なら4分の1。先ほどの基本法則との整合を確認したのであり、独立の新しい証明をしたわけではありません。",
+            "tex": "E=\\frac{Q}{4\\pi\\varepsilon_0r^2}\\quad(Q>0)"
+          },
+          {
+            "note": "1mあたりの電荷を決める：線密度λ（ラムダ）は長さ1あたりの電荷、単位C/m。長さLだけ囲むなら、中の電荷はλLです。ここではλは正とします。",
+            "tex": "Q_{\\text{内}}=\\lambda L"
+          },
+          {
+            "note": "側面を開いて面積を求める：側面を切り開くと、横が円周2πr、縦がLの長方形。側面ではEが一定なので、電気束はE×2πrLです。",
+            "tex": "A_{\\text{側}}=(2\\pi r)L,\\qquad E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}"
+          },
+          {
+            "note": "同じ長さLを約分する：両辺を2πrLで割ります。囲む長さを増やすと面積も電荷も同じ割合で増えるため、Lが消えます。",
+            "tex": "E=\\frac{\\lambda L}{\\varepsilon_0(2\\pi rL)}=\\frac{\\lambda}{2\\pi\\varepsilon_0r}"
+          },
+          {
+            "note": "囲む電荷を数える：面密度σ（シグマ）は面積1あたりの電荷、単位C/m²。面積Aの部分を箱で挟むと、内側の電荷はσAです。σは正とします。",
+            "tex": "Q_{\\text{内}}=\\sigma A"
+          },
+          {
+            "note": "上と下の寄与を足す：対称性から電場は板に垂直で、両側で同じ強さ。上では上向き、下では下向きですが、どちらも箱から外向きなので両方プラスです。側面の寄与は0。",
+            "tex": "\\Phi_E=\\underbrace{EA}_{\\text{上}}+\\underbrace{EA}_{\\text{下}}=2EA"
+          },
+          {
+            "note": "両辺を2Aで割る：ガウスの法則に入れて2Aで割ります。電荷に対応する面積はA、電気束が出る面積は2A。この違いが分母の2を生みます。",
+            "tex": "2EA=\\frac{\\sigma A}{\\varepsilon_0}\\quad\\Rightarrow\\quad E=\\frac{\\sigma A}{2\\varepsilon_0A}=\\frac{\\sigma}{2\\varepsilon_0}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 36.96,
+      "captions": [
+        {
+          "start": 36.96,
+          "end": 43.234,
+          "text": "点電荷の電場は距離の二乗に反比例し、無限直線電荷の電場は距離に反比例します。"
+        },
+        {
+          "start": 43.384,
+          "end": 49.03933333333334,
+          "text": "この違いは、束が広がる球面と円筒側面の面積の増え方から生まれます。"
+        }
+      ],
+      "end": 50.38933333333333
+    }
+  ],
+  "duration": 50.38933333333333
+}

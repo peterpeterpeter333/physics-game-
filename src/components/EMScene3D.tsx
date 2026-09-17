@@ -6,8 +6,9 @@ type Item={points:V3[];color:string;fill?:string;width?:number;label?:string;arr
 const circle=(r:number,z=0,c:V3=[0,0,0])=>Array.from({length:49},(_,i)=>add(c,[r*Math.cos(i*Math.PI/24),r*Math.sin(i*Math.PI/24),z] as V3));
 const titles:Record<Scene3D,string>={plane:'面・電場・法線を別々の方向から見る',square:'正方形の場所ごとに違う垂直成分', 'sphere-area':'球面の緯線・経線・小面積',sphere:'点電荷を囲む仮想の球',offset:'電場は電荷から、法線は球の中心から',outside:'外部電荷：入る束と出る束', 'solid-angle':'小片が電荷から見える方向の広がり',crossings:'閉曲面での出入りを、立体で数える',superposition:'内部電荷の寄与だけが正味の束に残る',wire:'無限直線電荷を囲む円筒',shell:'一様に帯電した球殻と内部のガウス面',conductor:'導体内部で、二つの電場が打ち消す'};
 
-export function EMScene3D({scene,phase}:{scene:Scene3D;phase:number}){
- const [yaw,setYaw]=useState(-.55),[pitch,setPitch]=useState(.4),[playing,setPlaying]=useState(()=>!window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+export function EMScene3D({scene,phase,videoTime}:{scene:Scene3D;phase:number;videoTime?:number}){
+ const [liveYaw,setYaw]=useState(-.55),[pitch,setPitch]=useState(.4),[playing,setPlaying]=useState(()=>typeof window!=='undefined'&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+ const yaw=videoTime===undefined?liveYaw:-.55+.22*Math.sin(videoTime*.25);
  const [parameter,setParameter]=useState(scene==='outside'?1.5:scene==='offset'?.5:scene==='sphere-area'?1:scene==='sphere'?1:scene==='solid-angle'?1.6:35);
  const [theta,setTheta]=useState(scene==='outside'?2.65:1.01),[phi,setPhi]=useState(.7),[torus,setTorus]=useState(phase===1||phase===2);
  const [angleChange,setAngleChange]=useState(.1);

@@ -3,8 +3,10 @@ import {useState} from 'react';
 export function pathStep(u:number,h:number){return {dx:h,dy:2*u*h+h*h,tangentY:2*u*h,error:h*h};}
 
 /** A chosen geometric path, not an electron's free trajectory. */
-export function PathMeaning({initialPart=0}:{initialPart?:number}){
- const [part,setPart]=useState(initialPart),[u,setU]=useState(.5),[h,setH]=useState(.2);
+export function PathMeaning({initialPart=0,videoTime}:{initialPart?:number;videoTime?:number}){
+ const [part,setPart]=useState(initialPart),[liveU,setU]=useState(.5),[liveH,setH]=useState(.2);
+ const u=videoTime===undefined?liveU:part===1?.4:.1+.7*(1-Math.cos(videoTime*.3))/2;
+ const h=videoTime===undefined?liveH:.02+.25*(1+Math.cos(videoTime*.3))/2;
  const p=pathStep(u,h),end=u+h;
  const x=(v:number)=>45+280*v,y=(v:number)=>270-220*v;
  const fmt=(v:number)=>Number(v.toFixed(4)).toString();

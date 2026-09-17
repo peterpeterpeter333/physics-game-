@@ -1,4 +1,5 @@
-import {useEffect,useState,type ReactNode} from 'react';
+import {useContext,useEffect,useState,type ReactNode} from 'react';
+import {VideoTimeContext} from './figures/anim';
 import {electronState,offsetDensity,midpointIntegral} from './rigorous-models';
 const C={e:'#57dff8',f:'#c3a2ff',p:'#ffd36a',muted:'#a7b5ce',ink:'#eef4ff',red:'#ff9bab',green:'#92e5bd'};
 const text=(x:number,y:number,t:string,color=C.muted,size=15)=><text x={x} y={y} textAnchor="middle" fill={color} fontSize={size}>{t}</text>;
@@ -11,7 +12,9 @@ const path=(pts:number[][],color=C.p,dash=false)=><polyline points={pts.map(v=>v
 const frame=(scene:string,beat:number,children:ReactNode,height=300)=><svg viewBox={`0 0 480 ${height}`} className="guided-scene rigorous-scene" role="img" aria-label={`${scene}：説明段階 ${beat+1}`} data-guided-scene={scene} data-beat={beat}>{children}</svg>;
 
 export function FieldLaboratory({scene,beat}:{scene:string;beat:number}){
- const [u,setU]=useState([.25,.5,1][Math.min(beat,2)]),[playing,setPlaying]=useState(false);
+ const videoTime=useContext(VideoTimeContext);
+ const [liveU,setU]=useState([.25,.5,1][Math.min(beat,2)]),[playing,setPlaying]=useState(false);
+ const u=videoTime===null?liveU:Math.min(1,videoTime/12);
  useEffect(()=>{setU([.25,.5,1][Math.min(beat,2)]);setPlaying(false);},[scene,beat]);
  useEffect(()=>{if(!playing)return;let id=0,last=0;const tick=(t:number)=>{if(last){const du=Math.min(t-last,80)/7000;setU(v=>Math.min(1,v+du));}last=t;id=requestAnimationFrame(tick);};id=requestAnimationFrame(tick);return()=>cancelAnimationFrame(id);},[playing]);
  useEffect(()=>{if(u>=1)setPlaying(false);},[u]);

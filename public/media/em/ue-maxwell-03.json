@@ -1,0 +1,117 @@
+{
+  "id": "ue-maxwell-03",
+  "stageId": "ue-maxwell",
+  "stageTitle": "交流とマクスウェル方程式",
+  "level": "advanced",
+  "title": "場を消去して波動方程式と光速を導く",
+  "sourceIndices": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "scenes": [
+    {
+      "index": 5,
+      "heading": "2本を微分してBを消す",
+      "narration": "二つの場の関係をそれぞれ微分すると、同じ磁場の混合微分が現れます。その項の消去が、電場だけを含む波動方程式を与えます。",
+      "equations": [
+        "\\frac{\\partial^2E_y}{\\partial x^2}=\\mu_0\\varepsilon_0\\frac{\\partial^2E_y}{\\partial t^2}",
+        "\\frac{\\partial^2E_y}{\\partial x^2}=-\\frac{\\partial^2B_z}{\\partial x\\partial t}",
+        "-\\frac{\\partial^2B_z}{\\partial t\\partial x}=\\mu_0\\varepsilon_0\\frac{\\partial^2E_y}{\\partial t^2}",
+        "\\frac{\\partial^2B_z}{\\partial x\\partial t}=\\frac{\\partial^2B_z}{\\partial t\\partial x}"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.378,
+          "text": "二つの場の関係をそれぞれ微分すると、同じ磁場の混合微分が現れます。"
+        },
+        {
+          "start": 5.528,
+          "end": 10.084666666666665,
+          "text": "その項の消去が、電場だけを含む波動方程式を与えます。"
+        }
+      ],
+      "end": 11.434666666666665
+    },
+    {
+      "index": 6,
+      "heading": "進む波を代入して速さを求める",
+      "narration": "進む波の式は、位置から速さと時間の積を引いた変数を持ちます。その式の二階微分を波動方程式へ代入すると、真空中の波の速さが求まります。",
+      "equations": [
+        "c=\\frac1{\\sqrt{\\mu_0\\varepsilon_0}}",
+        "E_y=f(x-ct)",
+        "\\frac{\\partial^2E_y}{\\partial x^2}=f''(x-ct)",
+        "\\frac{\\partial^2E_y}{\\partial t^2}=c^2f''(x-ct)",
+        "f''=\\mu_0\\varepsilon_0c^2f''",
+        "1=\\mu_0\\varepsilon_0c^2"
+      ],
+      "spatial": false,
+      "start": 11.434666666666665,
+      "captions": [
+        {
+          "start": 11.434666666666665,
+          "end": 16.492666666666665,
+          "text": "進む波の式は、位置から速さと時間の積を引いた変数を持ちます。"
+        },
+        {
+          "start": 16.642666666666663,
+          "end": 22.937999999999995,
+          "text": "その式の二階微分を波動方程式へ代入すると、真空中の波の速さが求まります。"
+        }
+      ],
+      "end": 24.287999999999997
+    },
+    {
+      "index": 7,
+      "heading": "ここまでの道のりで、何が変わったのだろう?",
+      "narration": "物理の導出は、定義と仮定と基本法則を出発点にしています。微分積分は、その出発点から運動や場の変化を具体的に計算する道具です。",
+      "equations": [],
+      "spatial": false,
+      "start": 24.287999999999997,
+      "captions": [
+        {
+          "start": 24.287999999999997,
+          "end": 29.185999999999996,
+          "text": "物理の導出は、定義と仮定と基本法則を出発点にしています。"
+        },
+        {
+          "start": 29.336,
+          "end": 35.11933333333334,
+          "text": "微分積分は、その出発点から運動や場の変化を具体的に計算する道具です。"
+        }
+      ],
+      "end": 36.46933333333333
+    },
+    {
+      "index": 8,
+      "heading": "EとBと進行方向の立体関係",
+      "narration": "真空中の平面波では、電場と磁場は同位相で互いに垂直です。二つの場の外積は波の進行方向で、図の波形は物体の変位ではなく場の値です。",
+      "equations": [
+        "E_y=E_0\\sin(kx-\\omega t),\\quad B_z=B_0\\sin(kx-\\omega t)",
+        "kE_0\\cos(kx-\\omega t)=\\omega B_0\\cos(kx-\\omega t)",
+        "kE_0=\\omega B_0",
+        "B_0=\\frac{k}{\\omega}E_0=\\frac{E_0}{c}"
+      ],
+      "spatial": false,
+      "start": 36.46933333333333,
+      "captions": [
+        {
+          "start": 36.46933333333333,
+          "end": 41.506,
+          "text": "真空中の平面波では、電場と磁場は同位相で互いに垂直です。"
+        },
+        {
+          "start": 41.656,
+          "end": 47.578,
+          "text": "二つの場の外積は波の進行方向で、図の波形は物体の変位ではなく場の値です。"
+        }
+      ],
+      "end": 48.928000000000004
+    }
+  ],
+  "duration": 48.928000000000004
+}

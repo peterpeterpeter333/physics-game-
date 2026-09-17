@@ -1,0 +1,68 @@
+{
+  "id": "ue-transient-02",
+  "stageId": "ue-transient",
+  "stageTitle": "RC・RL回路の過渡現象",
+  "level": "advanced",
+  "title": "LC回路の電荷の式を振動へ結ぶ",
+  "sourceIndices": [
+    3,
+    4
+  ],
+  "scenes": [
+    {
+      "index": 3,
+      "heading": "LとCだけにすると、なぜ振動するのだろう?",
+      "narration": "理想的なエルシー回路では、コンデンサとコイルがエネルギーを交換します。抵抗がないモデルでは、この交換が電荷と電流の振動を生みます。",
+      "equations": [
+        "\\omega = \\dfrac{1}{\\sqrt{LC}}",
+        "Lq''+\\frac qC=0",
+        "q''=-\\frac1{LC}q",
+        "\\omega^2=\\frac1{LC}",
+        "\\omega=\\frac1{\\sqrt{LC}},\\quad T=2\\pi\\sqrt{LC}"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.0793333333333335,
+          "text": "理想的なエルシー回路では、コンデンサとコイルがエネルギーを交換します。"
+        },
+        {
+          "start": 5.229333333333333,
+          "end": 10.084666666666665,
+          "text": "抵抗がないモデルでは、この交換が電荷と電流の振動を生みます。"
+        }
+      ],
+      "end": 11.434666666666665
+    },
+    {
+      "index": 4,
+      "heading": "LCの負号から振動へつなぐ",
+      "narration": "電荷の二階微分は、電荷に負の係数を掛けた値です。この方程式は単振動の形で、角振動数はエルシーの積の平方根の逆数になります。",
+      "equations": [
+        "\\omega=\\frac1{\\sqrt{LC}},\\qquad T=2\\pi\\sqrt{LC}",
+        "Lq''+\\frac qC=0",
+        "q''=-\\frac1{LC}q",
+        "\\omega^2=\\frac1{LC}",
+        "\\omega=\\frac1{\\sqrt{LC}},\\quad T=2\\pi\\sqrt{LC}"
+      ],
+      "spatial": false,
+      "start": 11.434666666666665,
+      "captions": [
+        {
+          "start": 11.434666666666665,
+          "end": 15.607333333333331,
+          "text": "電荷の二階微分は、電荷に負の係数を掛けた値です。"
+        },
+        {
+          "start": 15.757333333333332,
+          "end": 22.38333333333333,
+          "text": "この方程式は単振動の形で、角振動数はエルシーの積の平方根の逆数になります。"
+        }
+      ],
+      "end": 23.73333333333333
+    }
+  ],
+  "duration": 23.73333333333333
+}

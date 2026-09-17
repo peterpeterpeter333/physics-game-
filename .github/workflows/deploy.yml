@@ -34,6 +34,9 @@ jobs:
       - name: Check whole-curriculum study support and retry behavior
         run: npm run test:remediation
 
+      - name: Verify all electromagnetic movies and source coverage
+        run: npm run test:em-videos
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

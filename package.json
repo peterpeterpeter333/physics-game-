@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:em-videos": "node scripts/test-em-videos.mjs",
     "test:remediation": "node scripts/test-remediation.mjs",
     "test:curriculum": "node scripts/audit-university-curriculum.mjs",
     "test:ten-principles": "npm run equations && node scripts/test-ten-principles.mjs",
