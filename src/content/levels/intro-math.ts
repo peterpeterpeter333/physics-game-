@@ -107,7 +107,7 @@ export const ui_math: LevelChapter = {
           beat: '解決',
           role: '操作',
           figure: 'uix-h-general',
-          body: r`幅を $h$ と書くと、平均は $10+5h$ になる。$h$ は0ではないので、割り算で約分できた。`,
+          body: r`幅を $h$ と書く。$(1+h)^2$ を展開して $5$ を引くと、進んだ距離は $10h+5h^2$。これを $h$ で割ると $10+5h$ だ。`,
           formula: r`\bar v=\frac{10h+5h^2}{h}=10+5h`,
           formulaNote: 'h は0ではないので、h で約分できる',
           calculation: [
@@ -249,7 +249,7 @@ export const ui_math: LevelChapter = {
           beat: '基本事項',
           role: '操作',
           figure: 'uix-vt-multiply',
-          body: '1 sごとに3 mずつ進むので、4 sでは3×4で12。単位も掛けると (m/s)×s = mになる。',
+          body: r`1 sごとに3 mずつ進むので、4 sでは3×4で12。単位も掛けると (m/s)×s = m。式の $\Delta$ は「変化した分」の印だ。`,
           formula: r`\Delta x=v\,\Delta t=3\times4=12\,\mathrm{m}`,
           formulaNote: '速さが一定なら、掛け算1回で距離が出る',
           calculation: [

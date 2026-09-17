@@ -42,7 +42,7 @@ export function completeUniversityLevels(built:BuiltLevelChapter[]){
    const stage:Stage={
     id:placement.id,title,subtitle:placement.goal,
     enemy:{name:`${title}の確認`,emoji:topic.family==='umath'?'📐':topic.family==='umech'?'🚀':'🧲',maxHp:24},
-    lesson:{id:`lesson-${placement.id}`,title:placement.goal,intro:placement.goal,steps,
+    lesson:{id:`lesson-${placement.id}`,title,intro:placement.goal,steps,
      outro:`つながったこと：${placement.goal} 次は${level==='intro'?topic.middle.goal:topic.advanced}`},
     problems:[{id:`p-${placement.id}-check`,difficulty:level==='intro'?1:2,question:check.question,
      choices:check.choices,answerIndex:0,hint:'対象・正方向・成立条件を決めてから、図と式を対応させてみよう。',
