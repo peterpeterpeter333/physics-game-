@@ -23,7 +23,7 @@ const sourceSlides=stages.flatMap(s=>allLessonSteps(s.lesson).map(step=>({owner:
 let moved=0,retained=0;
 for(const topic of topics){
  const stage=byId[topic.id],source=original[topic.id];
- assert(stage);assert.deepEqual(stage.problems,source.problems,'Existing progress/problem IDs must survive');
+ assert(stage);assert.deepEqual(stage.problems.filter(p=>!p.id.startsWith('review-')),source.problems,'Existing progress/problem IDs must survive');
  assert.equal(stage.lesson.id,source.lesson.id);
  for(const level of ['intro','middle']){
   const p=topic[level],target=byId[p.id];assert(target,`${topic.id}/${level}`);

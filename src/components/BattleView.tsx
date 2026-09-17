@@ -2,6 +2,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Problem, Stage } from "../types";
 import { MathText } from "./MathText";
 import { ProblemMeaning } from './ProblemMeaning';
+import { StudyAid } from './StudyAid';
+import { LessonView } from './LessonView';
+import {allQuestionsSolved,questionsToRetry} from '../game/study-progress';
 import { hapticSuccess, hapticError } from "../native";
 
 const QUESTION_TIME = 30; // 秒
@@ -26,14 +29,16 @@ export function BattleView({
   onAnswer,
   onFinish,
   onExit,
+  nextStageTitle,
 }: {
   stage: Stage;
   starred: string[];
   firstClear: boolean;
   onToggleStar: (problemId: string) => void;
   onAnswer: (correct: boolean) => void;
-  onFinish: (xp: number, cleared: boolean, bestCombo: number) => void;
+  onFinish: (xp: number, cleared: boolean, bestCombo: number, continueNext?: boolean) => void;
   onExit: () => void;
+  nextStageTitle?:string;
 }) {
   const [queue, setQueue] = useState<Problem[]>(() => shuffle(stage.problems));
   const [qIndex, setQIndex] = useState(0);
@@ -51,18 +56,31 @@ export function BattleView({
   const [enemyHit, setEnemyHit] = useState(false);
   const [playerHit, setPlayerHit] = useState(false);
   const answeredRef = useRef(false);
+  const [timed, setTimed] = useState(false);
+  const [solved, setSolved] = useState<Set<string>>(() => new Set());
+  const remainingRef = useRef(QUESTION_TIME);
+  const [reviewing,setReviewing]=useState(false);
+  const [hasAnswered,setHasAnswered]=useState(false);
 
   const problem = queue[qIndex % queue.length];
   const isStarred = starred.includes(problem.id);
 
-  // タイマー
+  // Answer guard resets per question, independently of the optional timer.
   useEffect(() => {
     if (phase !== "question") return;
     answeredRef.current = false;
+    remainingRef.current = QUESTION_TIME;
     setTimeLeft(QUESTION_TIME);
+  }, [phase, qIndex]);
+
+  // Reading a hint pauses the remaining time; it does not refill it.
+  useEffect(() => {
+    if (phase !== 'question' || !timed || showHint || reviewing) return;
     const started = Date.now();
+    const remaining = remainingRef.current;
     const iv = setInterval(() => {
-      const remain = QUESTION_TIME - (Date.now() - started) / 1000;
+      const remain = Math.max(0, remaining - (Date.now() - started) / 1000);
+      remainingRef.current = remain;
       if (remain <= 0) {
         clearInterval(iv);
         if (!answeredRef.current) handleAnswer(-1);
@@ -72,19 +90,21 @@ export function BattleView({
     }, 100);
     return () => clearInterval(iv);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, qIndex]);
+  }, [phase, qIndex, timed, showHint, reviewing]);
 
   function handleAnswer(choiceIdx: number) {
     if (answeredRef.current || phase !== "question") return;
     answeredRef.current = true;
+    setHasAnswered(true);
     const correct = choiceIdx === problem.answerIndex;
     setSelected(choiceIdx);
     setWasCorrect(correct);
     onAnswer(correct);
 
     if (correct) {
+      setSolved(previous => new Set([...previous, problem.id]));
       const newCombo = combo + 1;
-      const timeBonus = timeLeft > 20 ? 6 : timeLeft > 10 ? 3 : 0;
+      const timeBonus = timed ? (timeLeft > 20 ? 6 : timeLeft > 10 ? 3 : 0) : 0;
       const damage =
         16 + 8 * problem.difficulty + Math.min(newCombo - 1, 5) * 4 + timeBonus;
       setCombo(newCombo);
@@ -97,7 +117,7 @@ export function BattleView({
       setTimeout(() => setEnemyHit(false), 500);
     } else {
       setCombo(0);
-      setHearts((h) => h - 1);
+      if (timed) setHearts((h) => h - 1);
       setPlayerHit(true);
       hapticError();
       setTimeout(() => setPlayerHit(false), 500);
@@ -108,18 +128,18 @@ export function BattleView({
   function next() {
     setSelected(null);
     setShowHint(false);
-    if (enemyHp <= 0) {
+    if (allQuestionsSolved(stage.problems,solved) && (!timed || enemyHp <= 0)) {
       setPhase("victory");
       return;
     }
-    if (hearts <= 0) {
+    if (timed && hearts <= 0) {
       setPhase("defeat");
       return;
     }
-    if ((qIndex + 1) % queue.length === 0) {
-      setQueue(shuffle(stage.problems));
-    }
-    setQIndex((i) => i + 1);
+    if (qIndex + 1 === queue.length) {
+      setQueue(shuffle(questionsToRetry(stage.problems,solved)));
+      setQIndex(0);
+    } else setQIndex(i=>i+1);
     setPhase("question");
   }
 
@@ -129,8 +149,10 @@ export function BattleView({
   );
   const defeatXp = correctCount * 4;
 
-  const hpRatio = enemyHp / stage.enemy.maxHp;
+  const hpRatio = timed ? enemyHp / stage.enemy.maxHp : solved.size / stage.problems.length;
   const timeRatio = timeLeft / QUESTION_TIME;
+
+  if(reviewing)return <div><button className="btn btn-primary" onClick={()=>setReviewing(false)}>確認中の問題に戻る（回答を保持）</button><LessonView stage={stage} alreadyFinished onExit={()=>setReviewing(false)} onComplete={()=>setReviewing(false)}/></div>;
 
   if (phase === "victory") {
     return (
@@ -140,7 +162,7 @@ export function BattleView({
           <div className="result-emoji">🏆</div>
           <h1 className="result-title victory-title">VICTORY!</h1>
           <p className="result-sub">
-            {stage.enemy.name}を倒した! 「{stage.title}」クリア!
+            {timed?`${stage.enemy.name}を倒した!`:'全問題で正解を確認しました。'} 「{stage.title}」クリア!
           </p>
           <div className="result-stats">
             <div className="result-stat">
@@ -161,6 +183,7 @@ export function BattleView({
           <button className="btn btn-primary btn-big" onClick={() => onFinish(victoryXp, true, bestCombo)}>
             マップへ戻る
           </button>
+          {nextStageTitle&&<button className="btn btn-primary btn-big" onClick={()=>onFinish(victoryXp,true,bestCombo,true)}>次の単元「{nextStageTitle}」へ</button>}
         </div>
       </div>
     );
@@ -216,10 +239,16 @@ export function BattleView({
         </div>
       </header>
 
+      <section className="study-mode" aria-label="練習モード">
+        <p>{timed ? '時間つきバトル' : 'じっくり練習：時間制限・失敗回数の制限なし'}</p>
+        <p>正解を確認した問題：{solved.size} / {stage.problems.length}。全問で一度正解してから完了します。</p>
+        {!hasAnswered && phase === 'question' && <label><input type="checkbox" checked={timed} onChange={e => setTimed(e.target.checked)}/>30秒のバトルに挑戦する（任意）</label>}
+      </section>
+
       <div className="enemy-area">
         <div className={`enemy ${enemyHit ? "enemy-shake" : ""}`}>
           <span className="enemy-emoji">{stage.enemy.emoji}</span>
-          {damageFloat && (
+          {timed && damageFloat && (
             <span key={damageFloat.key} className="damage-float">
               -{damageFloat.value}
             </span>
@@ -228,17 +257,17 @@ export function BattleView({
         <div className="enemy-name">{stage.enemy.name}</div>
         <div className="hp-bar">
           <div
-            className={`hp-bar-fill ${hpRatio < 0.3 ? "hp-low" : ""}`}
+            className={`hp-bar-fill ${timed && hpRatio < 0.3 ? "hp-low" : ""}`}
             style={{ width: `${hpRatio * 100}%` }}
           />
         </div>
         <div className="hp-label">
-          HP {enemyHp} / {stage.enemy.maxHp}
+          {timed?`HP ${enemyHp} / ${stage.enemy.maxHp}`:`理解の確認 ${solved.size} / ${stage.problems.length}`}
         </div>
         {combo > 1 && <div className="combo-badge pop-in">🔥 {combo} COMBO!</div>}
       </div>
 
-      {phase === "question" && (
+      {phase === "question" && timed && (
         <div className="timer-bar">
           <div
             className={`timer-bar-fill ${timeRatio < 0.3 ? "timer-low" : ""}`}
@@ -288,6 +317,7 @@ export function BattleView({
             ) : (
               <div className="hint-box pop-in">
                 💡 <MathText text={problem.hint} />
+                {timed && <button className="btn btn-ghost btn-sm" onClick={() => setShowHint(false)}>ヒントを閉じて計時を再開</button>}
               </div>
             )}
           </div>
@@ -302,9 +332,11 @@ export function BattleView({
               <div className="explanation-tag">なぜそうなるか</div>
               <MathText text={problem.explanation} />
               <ProblemMeaning problem={problem} stageId={stage.id}/>
+              {!wasCorrect&&<StudyAid stage={stage}/>}
+              <button className="btn btn-ghost" onClick={()=>setReviewing(true)}>この単元の説明を見返す（回答を保持）</button>
             </div>
             <button className="btn btn-primary btn-big" onClick={next}>
-              {enemyHp <= 0 ? "🏆 とどめ!" : hearts <= 0 ? "結果へ" : "次の問題へ →"}
+              {solved.size === stage.problems.length && (!timed || enemyHp <= 0) ? "🏆 確認を完了" : timed && hearts <= 0 ? "結果へ" : "次の問題へ →"}
             </button>
           </div>
         )}

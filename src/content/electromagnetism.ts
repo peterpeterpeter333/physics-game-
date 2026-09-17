@@ -401,7 +401,7 @@ export const electromagnetism: Chapter = {
         {
           id: "p-ef-5",
           difficulty: 2,
-          question: "強さ $100\\,\\mathrm{V/m}$ の一様な電場で、電場方向に $0.20\\,\\mathrm{m}$ 離れた2点間の電位差は?",
+          question: "強さ $100\\,\\mathrm{V/m}$ の一様な電場で、電場方向に $0.20\\,\\mathrm{m}$ 離れた2点間の電位差の大きさは?",
           choices: ["$5.0\\,\\mathrm{V}$", "$20\\,\\mathrm{V}$", "$50\\,\\mathrm{V}$", "$500\\,\\mathrm{V}$"],
           answerIndex: 1,
           hint: "V = Ed。",

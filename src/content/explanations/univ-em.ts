@@ -51,7 +51,7 @@ export const univEmPlans: Record<string, Plan> = {
   b(2,'仕事0だけでは円と決まらない','helix-3d',r`磁気力の仕事率はq(v×B)·v=0なので速さは一定。ただし円になるには**一様なBに初速度が垂直**という条件が必要。平行成分があればらせんになり、不均一な磁場では軌道はさらに変わる。`),
   b(2,'半径と周期を順に導く','helix-3d',r`垂直速度$v_\perp$で$|q|v_\perp B=\frac{mv_\perp^2}{r}$。$v_\perp$で割りrを移せば$r=\frac{mv_\perp}{|q|B}$。周期は円周÷速さなので$v_\perp$が消える。`,r`r=\frac{mv_\perp}{|q|B},\qquad T=\frac{2\pi m}{|q|B}`),
   b(3,'導線に含まれる粒子の力を足す','motor-force',r`長さl、断面Sの区間にキャリアがnSl個あり、1個の磁気力はq v×B。全体はnSlq v×B。電流I=nqSv（向きを整えて）を使えばI l×Bへまとまる。`,r`\vec F=I\vec l\times\vec B`),
-  b(4,'らせんの一巻きの長さを導く','helix-3d',r`磁場方向の速度$v_\parallel$には力がなく一定。垂直成分が1周するT秒に、平行方向へ$v_\parallel T$進む。これがらせんのピッチ。横と縦の運動を同じ時計で組み合わせる。`,r`p=v_\parallel T=\frac{2\pi m v_\parallel}{|q|B}`),
+  b(4,'らせんの一周で軸方向へ進む距離を導く','helix-3d',r`磁場方向の速度$v_\parallel$には力がなく一定。垂直成分が1周するT秒に、平行方向へ$v_\parallel T$進む。これがらせんのピッチ。横と縦の運動を同じ時計で組み合わせる。`,r`p=v_\parallel T=\frac{2\pi m v_\parallel}{|q|B}`),
   b(4,'オーロラは一様磁場モデルの応用と限界','helix-3d',r`らせん運動は磁力線に沿う粒子の運動の基本。実際の地磁気は不均一で、磁気ミラーや粒子の加速・衝突も関わる。極域に多いが、強い磁気嵐では低緯度でも見られ、「極でしか見えない」わけではない。`),
  ]},
  'ue-ampere': { figures:[], bridges:[

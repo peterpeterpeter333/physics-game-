@@ -426,7 +426,7 @@ export const mechanics: Chapter = {
         {
           id: "p-f-5",
           difficulty: 2,
-          question: "前問のボールが達する最高点の高さは? ($g = 10\\,\\mathrm{m/s^2}$)",
+          question: "地面から真上に初速20 m/sで投げたボールの最高点は地面から何m? 空気抵抗を無視し、$g = 10\\,\\mathrm{m/s^2}$とする。",
           choices: ["$10\\,\\mathrm{m}$", "$20\\,\\mathrm{m}$", "$40\\,\\mathrm{m}$", "$80\\,\\mathrm{m}$"],
           answerIndex: 1,
           hint: "第2式に $t = 2.0$ を入れる。または第3式で t を使わず一発。",
@@ -501,7 +501,7 @@ export const mechanics: Chapter = {
         {
           id: "p-pr-3",
           difficulty: 2,
-          question: "前問で、着地までに水平方向へ進む距離は?",
+          question: "高さ45 mから水平方向に20 m/sで投げた物体が、地面に着くまでに水平方向へ進む距離は? 空気抵抗を無視し、重力加速度は10 m/s²とする。",
           choices: ["$20\\,\\mathrm{m}$", "$45\\,\\mathrm{m}$", "$60\\,\\mathrm{m}$", "$90\\,\\mathrm{m}$"],
           answerIndex: 2,
           hint: "ヨコは等速。$x = v_0t$。",
@@ -1010,7 +1010,7 @@ export const mechanics: Chapter = {
         {
           id: "p-sh-3",
           difficulty: 1,
-          question: "振り子の周期を長くする方法はどれ?",
+          question: "小角近似が成り立つ単振り子で、重力加速度を変えずに周期を長くする方法はどれ?",
           choices: ["おもりを重くする", "振幅を大きくする", "糸を長くする", "糸を短くする"],
           answerIndex: 2,
           hint: "$T = 2\\pi\\sqrt{l/g}$。式に入っている量は?",
@@ -1020,12 +1020,12 @@ export const mechanics: Chapter = {
         {
           id: "p-sh-4",
           difficulty: 2,
-          question: "振り子の振幅を2倍にすると、周期は?",
+          question: "振り子の振幅を2倍にしても十分小さな角度のままとする。小角近似で周期はどうなる?",
           choices: ["2倍", "√2倍", "変わらない", "半分"],
           answerIndex: 2,
-          hint: "等時性。",
+          hint: "小角近似の周期T=2π√(l/g)には、振幅が入っていない。",
           explanation:
-            "**変わらない**(等時性)。大きく揺れると距離は伸びるが速さも上がり、ちょうど相殺する。この性質のおかげで、振り子は揺れが減衰しても正確な時計になれた。",
+            "小角近似では**変わらない**（近似的な等時性）。復元力が変位に比例するため、周期は振幅によらない。大きな角度まで振ればこの近似は崩れ、実際の周期は長くなる。",
         },
         {
           id: "p-sh-5",

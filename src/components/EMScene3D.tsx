@@ -11,6 +11,7 @@ export function EMScene3D({scene,phase}:{scene:Scene3D;phase:number}){
  const [parameter,setParameter]=useState(scene==='outside'?1.5:scene==='offset'?.5:scene==='sphere-area'?1:scene==='sphere'?1:scene==='solid-angle'?1.6:35);
  const [theta,setTheta]=useState(scene==='outside'?2.65:1.01),[phi,setPhi]=useState(.7),[torus,setTorus]=useState(phase===1||phase===2);
  const [angleChange,setAngleChange]=useState(.1);
+ const [triangleOnly,setTriangleOnly]=useState(false);
  const drag=useRef<{x:number;y:number}|null>(null);
  useEffect(()=>{if(!playing)return;let frame=0,last=0;const tick=(t:number)=>{if(last&&t-last>=35){setYaw(v=>v+.008);last=t;}else if(!last)last=t;frame=requestAnimationFrame(tick);};frame=requestAnimationFrame(tick);return()=>cancelAnimationFrame(frame);},[playing]);
  const items:Item[]=[];
@@ -109,9 +110,20 @@ export function EMScene3D({scene,phase}:{scene:Scene3D;phase:number}){
   caption='導体材料内部の模式図。自由電荷の再配置が作る場は、外の場と逆向きになります。';readout='静電平衡：E外 ＋ E再配置 = 0（材料内部）';legend='青：外の場　紫：再配置した電荷の場';
  }
  const offsetView=['offset','outside'].includes(scene);
+ if(scene==='sphere-area'&&triangleOnly){
+  items.length=0;
+  const t=parameter,p=spherePoint(t,phi),z:V3=[0,0,Math.cos(t)];
+  line([[0,0,0],z,p,[0,0,0]],C.normal,3);
+  mark(mul(p,.55),'R',C.field);mark(mul(add(p,z),.5),'R sinθ',C.normal);
+  line(Array.from({length:25},(_,i)=>spherePoint(t*i/24,phi,.25)),C.other,2);
+  mark(spherePoint(t/2,phi,.35),'θ',C.other);
+  caption='球を隠して同じ直角三角形だけを見る。斜辺はR、軸から表面までの横の辺はR sinθ。';
+ }
  const ordered=items.map((item,i)=>({item,i,points:item.points.map(p=>{const q=project(offsetView?add(p,[0,0,-parameter*.5]):p,yaw,pitch);return offsetView?[240+(q[0]-240)*.76,175+(q[1]-175)*.76,q[2]] as V3:q;})})).sort((a,b)=>a.points.reduce((s,p)=>s+p[2],0)/a.points.length-b.points.reduce((s,p)=>s+p[2],0)/b.points.length);
  return <div className="em3d" data-scene-3d={scene}>
   <h3>{scene==='sphere-area'?'球の表面に沿う長さと面積':titles[scene]}</h3><p className="em3d-caption">{caption}</p>
+  {offsetView&&<p className="em3d-readout" role="status">{Math.abs(parameter-1)<1e-8?'現在d/R=1：電荷が面上にあり、本文の通常の面積分の対象外です。':parameter<1?'現在は電荷が球内（d<R）。本文の内部電荷の証明と同じ条件です。':'現在は電荷が球外（d>R）。内部電荷の場合の計算式は使わず、外部電荷の証明と比較します。'} 面を操作しても、電荷が作る電場そのものを変更したわけではありません。</p>}
+  {scene==='sphere-area'&&<button className="btn btn-ghost" onClick={()=>{setPlaying(false);setTriangleOnly(v=>!v);}}>{triangleOnly?'同じ三角形を球の中へ戻す':'球を隠して三角形だけを見る'}</button>}
   <svg viewBox="0 0 480 350" role="img" aria-label={`回転できる3次元図：${scene==='sphere-area'?'球の表面に沿う長さと面積':titles[scene]}`} onPointerDown={e=>{setPlaying(false);drag.current={x:e.clientX,y:e.clientY};e.currentTarget.setPointerCapture(e.pointerId);}} onPointerMove={e=>{if(!drag.current)return;setYaw(v=>v+(e.clientX-drag.current!.x)*.01);setPitch(v=>Math.max(-1.3,Math.min(1.3,v+(e.clientY-drag.current!.y)*.008)));drag.current={x:e.clientX,y:e.clientY};}} onPointerUp={()=>{drag.current=null;}} onPointerCancel={()=>{drag.current=null;}}>
    {ordered.map(({item,points,i})=>{const p=points[0],end=points[points.length-1];if(points.length===1)return <g key={i}><circle cx={p[0]} cy={p[1]} r="5" fill={item.color}/><text x={p[0]+8} y={p[1]-7} fill={item.color} fontSize="12" paintOrder="stroke" stroke="#0e1729" strokeWidth="3">{item.label}</text></g>;
     const d=`M${points.map(p=>`${p[0]},${p[1]}`).join(' L')}`,a=Math.atan2(end[1]-p[1],end[0]-p[0]);

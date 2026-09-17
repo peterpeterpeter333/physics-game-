@@ -1,4 +1,6 @@
 import {useEffect,useRef,useState} from 'react';
+import {useLessonPosition} from '../game/useLessonPosition';
+import {StudyAid} from './StudyAid';
 import type {Stage} from '../types';
 import {spiralLessons,type SpiralCycle} from '../content/em-spiral';
 import {movedCycles} from '../content/university-curriculum';
@@ -37,9 +39,10 @@ function WorkPlot({kind,phase}:{kind:'constant'|'linear';phase:number}){
  </div>;
 }
 export function SpiralLesson({stage,alreadyFinished,onComplete,onExit,onOpenStage,cyclesOverride,embedded}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onOpenStage?:(id:string)=>void;cyclesOverride?:SpiralCycle[];embedded?:boolean}){
- const [page,setPage]=useState(0),[diagram,setDiagram]=useState(0);
+ const [diagram,setDiagram]=useState(0);
  const cycles=cyclesOverride??spiralLessons[stage.id].filter(c=>!movedCycles[stage.id]?.[c.id]);
  const pages=cycles.flatMap((cycle,level)=>cycle.cards.map((card,phase)=>({cycle,level,card,phase})));
+ const [page,setPage]=useLessonPosition(`${stage.id}:${embedded?'supplement':'spiral'}`,pages.length);
  const {level,phase,cycle,card}=pages[page];
  const start=cycles.slice(0,level).reduce((n,c)=>n+c.cards.length,0),last=phase===cycle.cards.length-1;
  const phases=cycle.cards.map((_,i)=>phaseLabel(i,cycle.cards.length));
@@ -53,11 +56,13 @@ export function SpiralLesson({stage,alreadyFinished,onComplete,onExit,onOpenStag
   {!embedded&&<><AdvancedEntry stageId={stage.id} onOpenStage={onOpenStage}/><TopicRoute stageId={stage.id} onOpenStage={onOpenStage}/></>}
   <div className="spiral-context"><p className="spiral-goal">この段で求めること：{cycle.goal}</p><span>{cycle.uses}</span><nav aria-label="この段の学び方">{phases.map((p,i)=><button key={p} aria-current={phase===i?'step':undefined} onClick={()=>setPage(start+i)}>{p}</button>)}</nav></div>
   <p className="question-progress">第{level+1}段 / {cycles.length} · {page+1}/{total}</p>
+  {level>0&&<p className="study-next">ここまでで確認したこと：{cycles[level-1].gain}</p>}
   <ChapterFoundation stageId={stage.id}/>
   <p className="question-answer">{card.text}</p>
   <section className="question-picture" aria-label="図で確かめる" key={`${cycle.id}/${phase}`}>
    {scene3D?<><EMScene3D scene={scene3D} phase={phase}/><details className="em3d-original"><summary>元の平面図と比較する</summary>{card.figure?<Figure id={card.figure}/>:card.scene?<GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>:null}</details></>:card.pathPart!==undefined?<PathMeaning initialPart={card.pathPart}/>:card.lab?<WorkPlot kind={card.lab} phase={card.beat??phase}/>:card.figure?<Figure id={card.figure}/>:card.scene?<><GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>{!['r-path','r-calculate','r-compare'].includes(card.scene)&&<label className="guided-camera">図を比較<input aria-label="図の段階を比較" type="range" min="0" max={(source?.beats.length??3)-1} step="1" value={diagram} onChange={e=>setDiagram(Number(e.target.value))}/></label>}</>:null}
   </section>
+  {!embedded&&<StudyAid stage={stage} onPractice={()=>onComplete(!alreadyFinished)}/>}
   {equationGuide?<EquationMeaning key={page} guide={equationGuide} tex={card.tex} openDerivation={cycle.id==='sphere-area'&&phase===0}/>:card.tex&&<div className="guided-equation"><EquationImage tex={card.tex}/></div>}
   {last&&<p className="spiral-gain">次に使えること：{cycle.gain}</p>}
   <nav className="question-navigation" aria-label="スライドを移動"><button className="btn btn-ghost" disabled={page===0} onClick={()=>setPage(p=>p-1)}>← 前へ</button><button className="btn btn-primary" onClick={()=>page===total-1?(embedded?setPage(0):onComplete(!alreadyFinished)):setPage(p=>p+1)}>{page===total-1?(embedded?'補足の先頭へ':'バトルへ'):last?'次の基本事項へ →':`${phaseLabel(phase+1,cycle.cards.length)}へ →`}</button></nav>

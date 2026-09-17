@@ -639,7 +639,7 @@ export const um_mech: LevelChapter = {
           beat: '疑問',
           role: '問い',
           figure: 'umm-wv-path',
-          body: '右向き $4\\,\\mathrm{N}$ の一定の力の中を、右へ $3\\,\\mathrm{m}$、上へ $2\\,\\mathrm{m}$、左へ $1\\,\\mathrm{m}$ と歩く。辺ごとに角度が変わるので、まとめて1回では計算できない。',
+          body: '右向き4 Nの一定力で、右3 m・上2 m・左1 mと進む。仕事は各辺で足す。全道のり6 mを掛けてはいけない。一定力なら、合変位の右向き成分3−1=2 mを使い、4×2=8 Jと一度に計算してもよい。',
         },
         {
           heading: '力と同じ向きに進む辺では、符号はどうなるのだろう?',
@@ -1284,14 +1284,14 @@ export const um_mech: LevelChapter = {
           beat: '解決',
           role: '操作',
           figure: 'umm-mc-ball',
-          body: '跳ね返る向きを正とすると、当たる前は $-20\\,\\mathrm{m/s}$、あとは $+20\\,\\mathrm{m/s}$。差は $40\\,\\mathrm{m/s}$。符号を落とすと半分になる。',
+          body: '質量は0.15 kg。跳ね返る向きを正とすると、当たる前は $-20\\,\\mathrm{m/s}$、あとは $+20\\,\\mathrm{m/s}$。速度の差は $20-(-20)=40\\,\\mathrm{m/s}$。速さだけで20−20とすると、向きの変化を見落とす。',
           calculation: [
             { note: '跳ね返る向きを正と決め、当たる前の速度に負号を付ける', tex: r`\Delta p=0.15\times\bigl(20-(-20)\bigr)` },
             { note: '差を計算して質量を掛ける', tex: r`\Delta p=6.0\,\mathrm{kg\cdot m/s}` },
           ],
         },
         {
-          heading: '固い壁で $0.010\\,\\mathrm{s}$ で止めると、力はどれくらいだろう?',
+          heading: '壁で $0.010\\,\\mathrm{s}$ かけて跳ね返ると、平均の力は?',
           beat: '解決',
           role: '操作',
           figure: 'umm-mc-hard',
@@ -1301,7 +1301,7 @@ export const um_mech: LevelChapter = {
           ],
         },
         {
-          heading: '受け止める時間を10倍に伸ばすと、力はどうなるのだろう?',
+          heading: '同じ速度まで跳ね返る時間を10倍にすると、平均の力は?',
           beat: '解決',
           role: '操作',
           figure: 'umm-mc-soft',
@@ -1315,7 +1315,7 @@ export const um_mech: LevelChapter = {
           beat: '解決',
           role: '解釈',
           figure: 'umm-mc-compare',
-          body: '変わるのは、長方形の縦と横の割り振りだけだ。幅を広げれば高さは下がる。エアバッグもグローブも、接触時間を伸ばして高さを下げるための装置である。',
+          body: '同じ運動量変化なら、接触時間を延ばすほど平均の力が下がる。ここまでは跳ね返りの比較。エアバッグなどの停止にも同じ考え方を使うが、この球を止める運動量変化は3.0 kg·m/s。跳ね返りの6.0とは別だ。',
         },
         {
           heading: '平均の力は、どの2つの量で決まるのだろう?',

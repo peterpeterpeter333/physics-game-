@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Diffraction } from './Diffraction';
 import { figureReadings } from '../../content/figure-readings';
 import { levelFigures } from './levels';
 import { PotentialGradient } from './PotentialGradient';
@@ -147,7 +148,7 @@ const ADVANCED_REGISTRY: Record<string, () => JSX.Element> = {
   'heat-engine': HeatEngine,
   'potential-gradient': PotentialGradient,
   'flux-3d': Flux3D, 'cross-3d': Cross3D, 'helix-3d': Helix3D, 'em-wave-3d': EmWave3D,
-  'longitudinal': Longitudinal, 'standing-wave': StandingWave, 'young-slits': YoungSlits,
+  'longitudinal': Longitudinal, 'standing-wave': StandingWave, 'young-slits': YoungSlits, 'single-slit': Diffraction,
   'charge-work': ChargeWork, 'nuclide': Nuclide, 'mass-energy': MassEnergy,
   "xt-slope": XtSlope,
   "strobe-accel": StrobeAccel,

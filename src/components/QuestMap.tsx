@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { universityCurriculum } from '../content/university-curriculum';
 import type { Chapter } from "../types";
 import { levelProgress, type Progress } from "../game/state";
@@ -62,6 +62,10 @@ export function QuestMap({
   const blocks = toBlocks(chapters);
   // 未クリアの分野があれば最初のそれを開いておく
   const [openId, setOpenId] = useState<string>(() => {
+    try {
+      const saved = localStorage.getItem('physics-quest:map-open');
+      if (saved !== null && (saved === '' || blocks.some(b => (b.kind === 'family' ? b.family.id : b.chapter.id) === saved))) return saved;
+    } catch { /* Storage is optional. */ }
     const firstUnfinished = chapters.find((c) =>
       c.stages.some((s) => !progress.clearedStages.includes(s.id))
     );
@@ -76,8 +80,20 @@ export function QuestMap({
       const started = block.levels.find(entry => entry.chapter.stages.some(s => progress.clearedStages.includes(s.id)));
       initial[block.family.id] = (started ?? block.levels[0])?.level ?? "intro";
     }
+    try {
+      const saved = JSON.parse(localStorage.getItem('physics-quest:map-levels') ?? '{}');
+      for (const id of Object.keys(initial)) {
+        if (['intro', 'middle', 'advanced'].includes(saved?.[id])) initial[id] = saved[id];
+      }
+    } catch { /* Ignore malformed or unavailable storage. */ }
     return initial;
   });
+  useEffect(() => {
+    try {
+      localStorage.setItem('physics-quest:map-open', openId);
+      localStorage.setItem('physics-quest:map-levels', JSON.stringify(levelOf));
+    } catch { /* Learning must remain available without storage. */ }
+  }, [openId, levelOf]);
 
   const stageList = (chapter: Chapter) => (
     <div className="stage-path pop-in">
@@ -125,6 +141,7 @@ export function QuestMap({
 
   return (
     <div className="screen quest-map">
+      <details className="study-aid"><summary>どこから始める？</summary><p>大学の数式に不安があれば数学の初級から。高校の授業の復習なら対応する高校単元へ。既習の説明は飛ばして確認問題から試せます。練習は時間無制限で、全単元を自由に開けます。</p><button className="btn btn-ghost" onClick={()=>onOpenLesson('ui-average-to-now')}>大学数学の初級から始める</button><p>「前提を確認・一問試す」はAPIキーも料金も不要です。AIへの自由質問は別機能で、設定が必要です。</p></details>
       <header className="hud">
         <div className="hud-level">
           <div className="level-badge">

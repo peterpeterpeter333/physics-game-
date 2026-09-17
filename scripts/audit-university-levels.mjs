@@ -168,13 +168,13 @@ for (const stage of stages) {
 
   // 問題
   // Migrated compact lessons have one authored application; no duplicate padding questions.
-  assert(stage.problems.length >= (newLevelStageIds.has(stage.id)?1:4), `確認問題が不足: ${where}`);
+  assert(stage.problems.length >= (newLevelStageIds.has(stage.id)?2:4), `確認問題が不足: ${where}`);
   for (const problem of stage.problems) {
     const at = `${where}/${problem.id}`;
-    assert(/^p-u[im]/.test(problem.id), `問題IDの接頭辞: ${at}`);
-    assert.equal(problem.choices.length, 4, `選択肢は4つ: ${at}`);
-    assert.equal(new Set(problem.choices).size, 4, `選択肢が重複: ${at}`);
-    assert(problem.answerIndex >= 0 && problem.answerIndex < 4, `正解番号が範囲外: ${at}`);
+    assert(/^p-u[im]/.test(problem.id)||problem.id===`review-${stage.id}`, `問題IDの接頭辞: ${at}`);
+    assert.equal(problem.choices.length, problem.id.startsWith('review-')?2:4, `通常は四択、前提の確認は二択: ${at}`);
+    assert.equal(new Set(problem.choices).size, problem.choices.length, `選択肢が重複: ${at}`);
+    assert(problem.answerIndex >= 0 && problem.answerIndex < problem.choices.length, `正解番号が範囲外: ${at}`);
     assert([1, 2, 3].includes(problem.difficulty), `難易度は1〜3: ${at}`);
     assert(problem.hint && problem.explanation.length >= 40, `解説が短い: ${at}`);
     assert(!/上の図|図のように|先ほどの図/.test(problem.question), `問題文が図を参照している: ${at}`);

@@ -33,6 +33,11 @@ function findStage(stageId: string): Stage {
   }
   throw new Error(`unknown stage: ${stageId}`);
 }
+function nextStage(stageId:string){
+ const chapter=chapters.find(c=>c.stages.some(s=>s.id===stageId));
+ if(!chapter)return undefined;
+ return chapter.stages[chapter.stages.findIndex(s=>s.id===stageId)+1];
+}
 
 export default function App() {
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
@@ -110,6 +115,8 @@ export default function App() {
         )}
         {view.type === "battle" && (
           <BattleView
+            key={view.stageId}
+            nextStageTitle={nextStage(view.stageId)?.title}
             stage={findStage(view.stageId)}
             starred={progress.starred}
             onToggleStar={(pid) =>
@@ -128,7 +135,7 @@ export default function App() {
               }))
             }
             firstClear={!progress.clearedStages.includes(view.stageId)}
-            onFinish={(xp, cleared, bestCombo) => {
+            onFinish={(xp, cleared, bestCombo, continueNext) => {
               if (cleared) analytics.battleVictory(view.stageId);
               else analytics.battleDefeat(view.stageId);
               update((p) => ({
@@ -140,7 +147,8 @@ export default function App() {
                     ? [...p.clearedStages, view.stageId]
                     : p.clearedStages,
               }));
-              setView({ type: "map" });
+              const next=continueNext&&cleared?nextStage(view.stageId):undefined;
+              setView(next?{type:'lesson',stageId:next.id}:{ type: "map" });
             }}
             onExit={() => setView({ type: "map" })}
           />

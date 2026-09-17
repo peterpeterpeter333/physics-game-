@@ -1722,7 +1722,7 @@ export function McBall() {
   );
 }
 
-/** 短時間で止めると力が大きい。 */
+/** 同じ運動量変化の跳ね返りで、接触時間を比較する。 */
 export function McHard() {
   const t = useT();
   const u = pingPong(t, 5);
@@ -1734,7 +1734,7 @@ export function McHard() {
       <line x1={FT_WIDE.x(0)} y1={FT_WIDE.y(600)} x2={FT_WIDE.x(0.01)} y2={FT_WIDE.y(600)} stroke={L.minus} strokeWidth={2.5} />
       <Lbl x={FT_WIDE.x(0.012) + 4} y={FT_WIDE.y(600) + 4} text="600 N" color={L.minus} size={11} />
       <Lbl x={FT_WIDE.x(0.012) + 4} y={FT_WIDE.y(280)} text="幅 0.010 s" color={L.path} size={10} />
-      <Lbl x={66} y={22} text="固い壁で受け止める" color={L.text} size={11.5} />
+      <Lbl x={66} y={22} text="0.010秒で跳ね返る" color={L.text} size={11.5} />
       <Lbl x={286} y={22} text={`面積 ${fmt(6 * u, 1)} / 6.0`} color={L.focus} size={10.5} anchor="end" />
       <Lbl x={66} y={156} text="6.0 ÷ 0.010 = 600 N" color={L.minus} size={11.5} />
       <Cap text="細くて高い長方形。同じ面積を短い幅で作る" />
@@ -1754,7 +1754,7 @@ export function McSoft() {
       <line x1={FT_WIDE.x(0)} y1={FT_WIDE.y(60)} x2={FT_WIDE.x(0.1)} y2={FT_WIDE.y(60)} stroke={L.plus} strokeWidth={2.5} />
       <Lbl x={FT_WIDE.x(0.1)} y={FT_WIDE.y(60) - 8} text="60 N" color={L.plus} size={11} anchor="middle" />
       <Lbl x={FT_WIDE.x(0.05)} y={FT_WIDE.y(60) - 26} text="幅 0.10 s" color={L.path} size={10} anchor="middle" />
-      <Lbl x={66} y={22} text="グローブで受け止める" color={L.text} size={11.5} />
+      <Lbl x={66} y={22} text="同じ速度まで0.10秒で跳ね返る" color={L.text} size={11.5} />
       <Lbl x={286} y={22} text={`面積 ${fmt(6 * u, 1)} / 6.0`} color={L.focus} size={10.5} anchor="end" />
       <Lbl x={66} y={156} text="6.0 ÷ 0.10 = 60 N" color={L.plus} size={11.5} />
       <Cap text="平たくて広い長方形。面積は同じ 6.0 のまま" />

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useLessonPosition } from '../game/useLessonPosition';
 import type { LessonStep, Stage } from '../types';
 import { MathText } from './MathText';
 import { EquationImage } from './CalculationBoard';
@@ -45,7 +46,7 @@ function Story({step,onNext,last}:{step:LessonStep;onNext:()=>void;last:boolean}
 }
 
 function LegacyGuidedLesson({stage,alreadyFinished,onComplete,onExit}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void}) {
- const [page,setPage]=useState(0);
+ const [page,setPage]=useLessonPosition(stage.id,stage.lesson.steps.length);
  const top=useRef<HTMLElement>(null);
  const first=useRef(true);
  const steps=stage.lesson.steps,step=steps[page];

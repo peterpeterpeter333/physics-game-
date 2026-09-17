@@ -31,6 +31,9 @@ jobs:
       - name: Audit lessons and animation coverage
         run: npm run test:lessons
 
+      - name: Check whole-curriculum study support and retry behavior
+        run: npm run test:remediation
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

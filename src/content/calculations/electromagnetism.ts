@@ -16,7 +16,7 @@ c('電子の流れを電流密度に変える',r`電子の電流密度 :: \vec j
 c('局所の式からV=RIへ',r`一様な断面 S :: I=jS`,r`j = σE、E = V/l :: I=\sigma\frac Vl S`,r`両辺に l/(σS) :: V=\frac l{\sigma S}I`,r`V = RI と比べる :: R=\frac l{\sigma S}`,r`抵抗率 ρ = 1/σ :: R=\rho\frac lS`),
 c('半径と周期を順に導く|なぜ荷電粒子は円を描くのだろう?',r`一様磁場に垂直な運動 :: |q|v_\perp B=\frac{mv_\perp^2}{r}`,r`r を掛け v⊥ > 0 で割る :: |q|Br=mv_\perp`,r`半径を求める :: r=\frac{mv_\perp}{|q|B}`,r`円周を速さで割って周期 :: T=\frac{2\pi r}{v_\perp}`,r`半径を代入し v⊥ を約分 :: T=\frac{2\pi m\cancel{v_\perp}}{|q|B\cancel{v_\perp}}=\frac{2\pi m}{|q|B}`),
 c('導線に含まれる粒子の力を足す',r`区間 l に含まれる粒子数 :: N=nSl`,r`1粒子の力を N 個分足す :: \vec F=nSlq(\vec v\times\vec B)`,r`電流 I = nqSv（向きをそろえる） :: \vec F=I\vec l\times\vec B`),
-c('らせんの一巻きの長さを導く',r`1周の間の平行移動 :: p=v_\parallel T`,r`周期を代入 :: p=v_\parallel\frac{2\pi m}{|q|B}`,r`分子をまとめる :: p=\frac{2\pi mv_\parallel}{|q|B}`),
+c('らせんの一周で軸方向へ進む距離を導く',r`1周の間の平行移動 :: p=v_\parallel T`,r`周期を代入 :: p=v_\parallel\frac{2\pi m}{|q|B}`,r`分子をまとめる :: p=\frac{2\pi mv_\parallel}{|q|B}`),
 c('円形コイル中心の磁場を積分',r`中心で r = R、sinθ = 1 :: dB=\frac{\mu_0I}{4\pi R^2}dl`,r`同じ向きの成分を一周足す :: B=\frac{\mu_0I}{4\pi R^2}\oint dl`,r`一周の長さを代入 :: B=\frac{\mu_0I}{4\pi R^2}(2\pi R)`,r`2πR を約分 :: B=\frac{\mu_0I}{2R}`),
 c('積分からBを外せる根拠|直線の式を半径について読む|直線電流の磁場は、なぜ1行で出るのだろう?',r`無限直線電流まわりで同心円を選ぶ :: \oint\vec B\cdot d\vec r=\mu_0I`,r`B は接線方向で大きさ一定 :: B\oint dl=\mu_0I`,r`円周を代入 :: B(2\pi r)=\mu_0I`,r`両辺を 2πr で割る :: B=\frac{\mu_0I}{2\pi r}`),
 c('ソレノイドの長方形の4辺を数える|長さLが消えて巻数密度だけ残る|ソレノイドの中は、なぜ一様な磁場なのだろう?',r`十分長いコイルの中央 :: \oint\vec B\cdot d\vec r=BL+0+0+0`,r`長さ L に nL 巻き :: BL=\mu_0(nL)I`,r`両辺の L を約分 :: B=\mu_0nI`,r`全巻数 N、コイル長 l :: B=\mu_0\frac Nl I`),

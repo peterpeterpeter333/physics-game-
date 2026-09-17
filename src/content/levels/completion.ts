@@ -4,6 +4,7 @@ import { universityCurriculum } from '../university-curriculum';
 import { universitySourceStages } from '../university-source';
 import { advancedFoundations } from '../chapter-foundations-base';
 import { completionChecks } from './completion-checks';
+import { completionHints } from './completion-hints';
 import { foregroundText } from '../lesson-text';
 
 /** Relocation is lossless. Existing lower-level lessons get optional supplements,
@@ -45,7 +46,7 @@ export function completeUniversityLevels(built:BuiltLevelChapter[]){
     lesson:{id:`lesson-${placement.id}`,title,intro:placement.goal,steps,
      outro:`つながったこと：${placement.goal} 次は${level==='intro'?topic.middle.goal:topic.advanced}`},
     problems:[{id:`p-${placement.id}-check`,difficulty:level==='intro'?1:2,question:check.question,
-     choices:check.choices,answerIndex:0,hint:'対象・正方向・成立条件を決めてから、図と式を対応させてみよう。',
+     choices:check.choices,answerIndex:0,hint:completionHints[placement.id],
      explanation:`$${check.tex}$。${check.reason}`}],
    };
    target.chapter.stages.push(stage);

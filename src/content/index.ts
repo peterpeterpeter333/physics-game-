@@ -8,6 +8,7 @@ import { universitySource } from './university-source';
 import { removedIndices, topicById } from './university-curriculum';
 import { enrichChapters } from './explanations';
 import { levelChapters } from './university-levels';
+import { studySupport } from './study-support';
 
 // 高校物理の5分野 + 大学編3分野。分野間は独立(学校の進度に合わせてどこからでも始められる)。
 // 全ステージを自由に選べる。説明は主題ごとの手書きの補足を組み込む。
@@ -26,4 +27,13 @@ export const chapters: Chapter[] = enrichChapters([
     .filter(step=>!removedIndices(stage.id).has(step.sourceSlideIndex)),
   },
  }),
-}))).concat(levelChapters);
+}))).concat(levelChapters).map(chapter=>({...chapter,stages:chapter.stages.map(stage=>{
+ const aid=studySupport[stage.id];
+ if(!aid)throw new Error(`Missing reviewed study support: ${stage.id}`);
+ const swap=stage.id.length%2===1;
+ return {...stage,problems:[...stage.problems,{
+  id:`review-${stage.id}`,difficulty:1 as const,question:aid.question,
+  choices:swap?[aid.choices[1],aid.choices[0]]:[...aid.choices],answerIndex:swap?1:0,
+  hint:aid.focus,explanation:`${aid.focus} ${aid.why}`,
+ }]};
+})}));

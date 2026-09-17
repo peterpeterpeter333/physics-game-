@@ -46,8 +46,10 @@ const prose=(text)=>{
 };
 for(const stage of stages){
  const original=originals.find(s=>s.id===stage.id),plan=explanationPlans[stage.id];
- assert.deepEqual(stage.problems,guidedProblems[stage.id] ?? original.problems,`problem change: ${stage.id}`);
- assert.deepEqual(stage.problems.map(p=>p.id).sort(),original.problems.map(p=>p.id).sort(),`problem IDs changed: ${stage.id}`);
+ const retained=stage.problems.filter(p=>!p.id.startsWith('review-'));
+ assert.deepEqual(retained,guidedProblems[stage.id] ?? original.problems,`problem change: ${stage.id}`);
+ assert.deepEqual(retained.map(p=>p.id).sort(),original.problems.map(p=>p.id).sort(),`problem IDs changed: ${stage.id}`);
+ assert.equal(stage.problems.filter(p=>p.id===`review-${stage.id}`).length,1,'One authored obstacle check per stage');
  assert.equal(stage.lesson.id,original.lesson.id);
  assert(stage.lesson.steps.length>=(universitySourceStages[stage.id]?2:10));
  if(!guidedLessons[stage.id]) assert.equal(stage.lesson.steps.length,original.lesson.steps.length+plan.bridges.length-removedIndices(stage.id).size,`lost bridge: ${stage.id}`);

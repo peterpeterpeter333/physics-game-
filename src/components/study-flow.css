@@ -16,3 +16,10 @@
 .figure-reading-details { font-size: .85rem; color: #b6c6df; text-align: left; margin: .6rem 0; }
 .figure-reading-details p { line-height: 1.6; }
 .chapter-foundation strong { color: #94e6dd; }
+.study-aid{border:1px solid #405575;border-radius:12px;padding:12px;margin:12px 0;color:#cfddf4;font-size:14px;line-height:1.7;overflow-wrap:anywhere}
+.study-aid summary{cursor:pointer;color:#9be2d7;min-height:32px}
+.study-aid fieldset{border:0;padding:8px 0;display:flex;gap:8px;flex-wrap:wrap}
+.study-aid fieldset button{white-space:normal;text-align:left;max-width:100%;min-height:44px}
+.study-mode{padding:12px 16px;font-size:14px;line-height:1.6}
+.study-mode input{margin-right:8px}
+@media(max-width:420px){.lesson .screen-header h1{font-size:20px}.lesson .spiral-context{font-size:13px}.lesson-step{padding:14px}.study-aid{padding:10px}}

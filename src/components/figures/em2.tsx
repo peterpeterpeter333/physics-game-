@@ -1,4 +1,5 @@
 import { useT, C } from "./anim";
+import {useState} from 'react';
 import { FigSvg, Caption } from "./mechanics";
 
 // 大学電磁気: 「全ステップに図解」体制のための追加図解 (26種)
@@ -239,7 +240,7 @@ export function Drift() {
       <rect x={sig} y={70} width={14} height={50} fill={C.gold} opacity={0.5} />
       <text x={24} y={50} fontSize={11} fill={C.cyan}>電子の平均の移動は遅い（電流密度などによる）</text>
       <text x={24} y={150} fontSize={11} fill={C.gold}>場の変化は有限の速さで伝わる（媒質・構造による）</text>
-      <Caption text="導線は電子で満水。蛇口をひねれば先端からすぐ水が出る" />
+      <Caption text="電子の平均移動と場の変化の伝搬は別。合図も有限の時間をかけて届く" />
     </FigSvg>
   );
 }
@@ -340,16 +341,19 @@ export function Helix() {
 /** ビオ・サバール: 電流の欠片ごとの磁場の寄与を足す */
 export function BiotSavart() {
   const t = useT();
-  const k = Math.floor(t / 0.6) % 6;
+  const [selected,setSelected]=useState<number|null>(null);
+  const k = selected??Math.floor(t / 0.6) % 6;
   const px = 220, py = 60;
+  const contributions=Array.from({length:6},(_,i)=>1/Math.pow(1+((40+i*20-py)/160)**2,1.5));
+  const value=selected===null?contributions.slice(0,k+1).reduce((s,v)=>s+v,0):contributions[k];
   return (
-    <FigSvg>
+    <div><FigSvg>
       <line x1={60} y1={150} x2={60} y2={30} stroke={C.red} strokeWidth={3} />
       <Arrow x={60} y={120} dx={0} dy={-40} color={C.red} w={3} />
       <text x={30} y={26} fontSize={11} fill={C.red}>電流 I</text>
       {[0, 1, 2, 3, 4, 5].map((i) => {
         const y = 40 + i * 20;
-        const on = i <= k;
+        const on = selected===null?i<=k:i===k;
         return (
           <g key={i} opacity={on ? 1 : 0.2}>
             <rect x={56} y={y - 6} width={8} height={12} fill={C.gold} />
@@ -359,11 +363,11 @@ export function BiotSavart() {
       })}
       <circle cx={px} cy={py} r={5} fill={C.cyan} />
       <text x={px + 10} y={py - 4} fontSize={11} fill={C.cyan}>点P</text>
-      <rect x={px - 6} y={py + 14} width={12} height={12 + 8 * k} fill={C.cyan} opacity={0.7} />
-      <text x={px - 40} y={py + 44 + 8 * k} fontSize={10.5} fill={C.cyan}>寄与 dB の合計</text>
+      <rect x={px - 6} y={py + 14} width={12} height={10*value} fill={C.cyan} opacity={0.7} />
+      <text x={px - 45} y={py + 36 + 10*value} fontSize={10.5} fill={C.cyan}>{selected===null?'合計':'一区間'}：{value.toFixed(2)}（相対値）</text>
       <text x={110} y={165} fontSize={10.5} fill={C.dim}>dB = (μ₀/4π)·I dl sinθ / r²  を全欠片で積分</text>
       <Caption text="" />
-    </FigSvg>
+    </FigSvg><label>まず一区間を見る<input aria-label="ビオ・サバールの導線区間" type="range" min="0" max="5" step="1" value={k} onChange={e=>setSelected(+e.target.value)}/></label><button className="btn btn-ghost" onClick={()=>setSelected(null)}>全区間を順に足す</button><p>金の線は導線区間から固定観測点Pへのr。電流は上向き、dBは紙面の奥向き。同じ長さの区間を点で近似し、sinθ/r²を比較しています。Pと同じ高さの区間の寄与を1とした相対値で、単位Tではありません。</p></div>
   );
 }
 

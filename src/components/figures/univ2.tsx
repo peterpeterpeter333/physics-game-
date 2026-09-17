@@ -243,22 +243,17 @@ export function LineIntegral() {
   const t = useT();
   const u = (t % 6) / 6;
   const px = (s: number) => 40 + 250 * s;
-  const py = (s: number) => 158 - 108 * s + 16 * Math.sin(2 * Math.PI * s);
+  const py = (s: number) => 158 - 108 * s*s;
   const X = px(u), Y = py(u);
-  const dx = 250, dy = -108 + 16 * 2 * Math.PI * Math.cos(2 * Math.PI * u);
+  const dx = 250, dy = -216*u;
   const dl = Math.hypot(dx, dy);
   const tx = dx / dl, ty = dy / dl;
-  const fAng = -0.32; // 場の向き (一定)
+  const fAng = 0; // E=(E₀,0), matching the accompanying worked example.
   const fx = Math.cos(fAng), fy = Math.sin(fAng);
   const dot = tx * fx + ty * fy;
   const path: string[] = [];
   for (let s = 0; s <= 1.001; s += 0.02) path.push(`${px(s).toFixed(1)},${py(s).toFixed(1)}`);
-  let acc = 0;
-  for (let s = 0; s <= u; s += 0.02) {
-    const ddx = 250, ddy = -108 + 16 * 2 * Math.PI * Math.cos(2 * Math.PI * s);
-    const dd = Math.hypot(ddx, ddy);
-    acc += (ddx / dd) * fx + (ddy / dd) * fy;
-  }
+  const acc = u; // W/(q E₀ L) = u, not an unweighted sum of cosines.
   const arrows: JSX.Element[] = [];
   for (let i = 0; i < 5; i++)
     for (let j = 0; j < 3; j++) {
@@ -278,8 +273,9 @@ export function LineIntegral() {
       <line x1={X} y1={Y} x2={X + 34 * fx} y2={Y + 34 * fy} stroke={C.cyan} strokeWidth={2.5} />
       <line x1={X} y1={Y} x2={X + 30 * tx} y2={Y + 30 * ty} stroke={C.dim} strokeWidth={2} />
       <line x1={X} y1={Y} x2={X + 34 * dot * tx} y2={Y + 34 * dot * ty} stroke={C.gold} strokeWidth={4.5} />
-      <rect x={250} y={26} width={Math.max(acc * 1.15, 2)} height={10} fill={C.green} opacity={0.9} rx={3} />
-      <text x={162} y={35} fontSize={10.5} fill={C.green}>集めた合計 →</text>
+      <rect x={250} y={26} width={acc * 55} height={10} fill={C.green} opacity={0.9} rx={3} />
+      <text x={22} y={20} fontSize={10.5} fill={C.cyan}>一様場 E=(E₀,0)、道 r=(Lu,Hu²)</text>
+      <text x={145} y={35} fontSize={10.5} fill={C.green}>W/(qE₀L)={acc.toFixed(2)}</text>
       <text x={44} y={177} fontSize={10.5} fill={C.dim}>水色=場の矢印 / 金=道の向きに「効く成分」</text>
       <Caption text="" />
     </FigSvg>

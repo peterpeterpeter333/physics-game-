@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import { useLessonPosition } from '../game/useLessonPosition';
+import { StudyAid } from './StudyAid';
 import type { Stage } from "../types";
 import { MathText } from "./MathText";
 import { Figure } from "./figures";
@@ -36,7 +38,7 @@ function StandardLessonView({
 }) {
   const lesson = stage.lesson;
   const slides = lesson.steps;
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useLessonPosition(stage.id, slides.length);
   const allRevealed = page === slides.length - 1;
   const step = slides[page];
   const calculation = getCalculation(step);
@@ -88,6 +90,7 @@ function StandardLessonView({
             ))}
             {summary!==step.body&&<details className="study-original"><summary>補足・元の詳しい説明</summary>{step.body.split(/\n\s*\n/).map((p,i)=><p key={i}><MathText text={p}/></p>)}</details>}
             {shot ? <UniqueFigure shot={shot} id={`${stage.id}/${page}`} /> : step.figure && <Figure id={step.figure} />}
+            <StudyAid stage={stage} onPractice={()=>onComplete(!alreadyFinished)}/>
             {expressions.length>0&&(isLevel
               ? <details className="level-symbols"><summary>この式の記号を確認</summary><QuantityGlossary key={`symbols-${page}`} stageId={stage.id} expressions={expressions}/></details>
               : <QuantityGlossary key={`symbols-${page}`} stageId={stage.id} expressions={expressions}/>)}
