@@ -3,7 +3,7 @@ Run with Pillow, numpy, imageio-ffmpeg and Nemo engine at localhost:50123.
 No browser recording, external voice service, or third-party visual assets.
 """
 from pathlib import Path
-import io, json, math, subprocess, urllib.request, urllib.parse, wave
+import io, json, math, subprocess, urllib.request, urllib.parse, wave, hashlib
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 import imageio_ffmpeg
@@ -15,13 +15,13 @@ CACHE = Path('/private/tmp/physics-nemo-pilot/render')
 CACHE.mkdir(parents=True, exist_ok=True)
 SPEAKER = 10001  # VOICEVOX Nemo 男声1
 SCENES = [
- (7, '曲がった道の「仕事」を求めたい', '曲がった道を進む電荷。電場がする仕事は、どう求めるのでしょう。', '道を、小さく分けて考える'),
- (8, '電場 → 電荷にはたらく力', '正の電荷に働く力は、電荷かける電場。ここでは、右ほど強い電場を考えます。', 'F = qE     力 = 電荷 × 電場'),
- (10, '一つの短い移動を見る', '短い区間なら、ほぼ直線です。仕事に効くのは、力のうち、移動と同じ向きの成分です。', 'ΔW ≈ F cos θ × Δs'),
- (8, '内積は「向きをそろえて掛ける」', '力と移動の内積なら、向きも含めて書けます。デルタ・アールは、短い移動のベクトルです。', 'ΔW ≈ F · Δr'),
- (9, '道全体の仕事は、小さな仕事の和', '区間ごとに力を調べて、仕事を足します。シグマは、すべての区間を足す記号です。', 'Wₙ = Σ Fᵢ · Δrᵢ'),
- (10, '細かく分けると、近似が正確になる', '分割を増やすと、折れ線が曲線に近づきます。この和の極限を、線積分と呼びます。', 'W = lim Wₙ = ∫C F · dr'),
- (8, 'これで、曲がった道の仕事を計算できる', '力を電荷かける電場に戻せば、この式。シーは進む道。小さな仕事を、道に沿って足しています。', 'W = q ∫C E · dr'),
+ (7, '今回の目標は、電気力がする仕事', 'この動画は、曲がった道で電気力がする仕事を解説します。', '道全体の仕事は、短い区間の仕事の合計'),
+ (8, '電荷が受ける力は、電荷の量と電場の積', '電荷が受ける力は、電荷の量と電場の積です。この例の電場は、右ほど強くなります。', 'F = qE     力 = 電荷 × 電場'),
+ (10, '曲がった道の短い一区間は、直線で近似できる', '曲がった道の短い一区間は、直線で近似できます。その区間の仕事には、移動方向の力の成分が効きます。', 'ΔW ≈ F cos θ × Δs'),
+ (8, '力と移動の内積は、一区間の仕事を近似する', '力と移動の内積は、この区間の仕事を近似します。デルタアールは、短い移動を表すベクトルです。', 'ΔW ≈ F · Δr'),
+ (9, '道全体の仕事は、各区間の仕事の合計', '道全体の仕事は、各区間の仕事を足して近似できます。シグマは、各区間の仕事を足す記号です。', 'Wₙ = Σ Fᵢ · Δrᵢ'),
+ (10, '道を表す折れ線は、分割を増やすと曲線に近づく', '道を表す折れ線は、分割を増やすほど元の曲線に近づきます。仕事の和の極限が、線積分です。', 'W = lim Wₙ = ∫C F · dr'),
+ (8, 'この線積分は、電気力が道全体でする仕事を表す', 'この線積分は、電気力が道全体でする仕事を表します。記号シーは、電荷が進む道を表します。', 'W = q ∫C E · dr'),
 ]
 BG='#0b1122'; WHITE='#eef3ff'; MUTED='#a7b7d3'; BLUE='#62d7ff'; GOLD='#ffce70'; GREEN='#8aebc1'; RED='#ee90b9'
 FONT='/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc'
@@ -40,9 +40,11 @@ def request(endpoint,params,payload=None):
 
 audio=[]; durations=[]
 for i,(duration,title,narration,formula) in enumerate(SCENES):
- wav=CACHE/f'nemo-slow-{i}.wav'
+ spoken=narration.replace('電場','でんば')
+ fingerprint=hashlib.sha256(f'{SPEAKER}|0.90|{spoken}'.encode()).hexdigest()[:16]
+ wav=CACHE/f'nemo-{fingerprint}.wav'
  if not wav.exists():
-  query=json.loads(request('audio_query',{'text':narration,'speaker':SPEAKER}))
+  query=json.loads(request('audio_query',{'text':spoken,'speaker':SPEAKER}))
   query.update(speedScale=.90,prePhonemeLength=.15,postPhonemeLength=.2)
   wav.write_bytes(request('synthesis',{'speaker':SPEAKER},query))
  with wave.open(str(wav)) as w:
@@ -92,7 +94,7 @@ def render(t):
  txt(d,(806,476),'x [m]',19,MUTED,mathfont=True)
  txt(d,(110,478),'0',18,MUTED);txt(d,(762,478),'2',18,MUTED)
  txt(d,(92,424),'A',22,GREEN);txt(d,(785,424),'B',22,GREEN)
- txt(d,(348,222),'進む道 C',22,GOLD)
+ txt(d,(310,222),'電荷が進む道 C',22,GOLD)
  # Sidebar holds only the quantities relevant to this shot.
  d.rounded_rectangle((898,153,1230,499),radius=20,fill='#111f34')
  if scene<2:
@@ -101,12 +103,13 @@ def render(t):
   d.ellipse((a[0]-10,a[1]-10,a[0]+10,a[1]+10),fill=GOLD)
   txt(d,(a[0]-7,a[1]-16),'+',20,BG,True)
   if scene==1 and u>.03:arrow(d,a,(a[0]+u*115,a[1]),BLUE,5,14)
-  txt(d,(920,177),'今回求める量',23,MUTED)
+  txt(d,(920,177),'この動画が求める量',23,MUTED)
   txt(d,(920,219),'電場がする仕事 W',25,WHITE,True)
-  txt(d,(920,277),'青：電場・電気力',23,BLUE)
-  txt(d,(920,320),'金：電荷の移動',23,GOLD)
-  txt(d,(920,399),'※道は外から指定',20,MUTED)
-  txt(d,(920,433),'自然な軌道とは限らない',18,MUTED)
+  txt(d,(920,271),'背景の青い矢印は電場 E',19,BLUE)
+  txt(d,(920,307),'電荷の青い矢印は力 F',19,BLUE)
+  txt(d,(920,343),'金の線は電荷が進んだ道',19,GOLD)
+  txt(d,(920,399),'外から加える力が道を指定',18,MUTED)
+  txt(d,(920,433),'この道は電気力だけの軌道とは別',16,MUTED)
  elif scene in (2,3):
   # Magnified local tangent; force projection onto the direction of motion.
   a=(330,385);theta=-math.atan(155*math.pi*math.cos(.27*math.pi)/660);b=(a[0]+195*math.cos(theta),a[1]+195*math.sin(theta))
@@ -123,9 +126,9 @@ def render(t):
   txt(d,(486,390),'F',28,BLUE,mathfont=True)
   txt(d,(485,257),'Δr',28,GOLD,mathfont=True)
   txt(d,(337,284),'F cos θ',25,GREEN,mathfont=True)
-  txt(d,(920,180),'一部分を拡大',24,WHITE,True)
-  txt(d,(920,235),'Δr：短い移動',23,GOLD,mathfont=True)
-  txt(d,(920,276),'Δs：移動の長さ',23,GOLD,mathfont=True)
+  txt(d,(920,180),'中央の図は一区間の拡大',20,WHITE,True)
+  txt(d,(920,235),'Δr：電荷の短い移動',22,GOLD,mathfont=True)
+  txt(d,(920,276),'Δs：電荷の移動の長さ',22,GOLD,mathfont=True)
   txt(d,(920,317),'θ：力と移動の角度',22,MUTED,mathfont=True)
   txt(d,(920,386),'内積 F · Δr',27,GREEN,mathfont=True)
   txt(d,(920,432),'= F cos θ × Δs',24,GREEN,mathfont=True)
@@ -140,22 +143,22 @@ def render(t):
   a=point(selected/n)
   if selected:arrow(d,a,(a[0]+selected/n*95,a[1]),BLUE,4,10)
   txt(d,(920,177),f'分割数 N = {n}',26,WHITE,True)
-  txt(d,(920,232),'左端の力で近似',21,MUTED)
+  txt(d,(920,232),'各区間の力は左端の値で近似',18,MUTED)
   txt(d,(920,277),f'仕事の和：{2*(1-1/n):.3f} J',23,GREEN)
   txt(d,(920,337),'数値例：q = 1 C',20,MUTED,mathfont=True)
   txt(d,(920,372),'E_x = kx / q',23,BLUE,mathfont=True)
   txt(d,(920,409),'k = 1 N/m',22,MUTED,mathfont=True)
-  txt(d,(920,448),'細かくすると 2 J へ',22,GREEN)
+  txt(d,(920,448),'仕事の和は 2 J に近づく',20,GREEN)
  else:
   u=smooth(p)
   d.line(curve,fill=GREEN,width=5)
   a=point(u);d.ellipse((a[0]-9,a[1]-9,a[0]+9,a[1]+9),fill=GOLD)
   if u>.03:arrow(d,a,(a[0]+u*80,a[1]),BLUE,4,10)
   txt(d,(920,178),'線積分の読み方',25,WHITE,True)
-  txt(d,(920,234),'C：向きのある道',23,GOLD)
-  txt(d,(920,281),'dr：ごく小さい移動',22,GOLD,mathfont=True)
-  txt(d,(920,328),'E：その場所の電場',22,BLUE)
-  txt(d,(920,409),'分ける → 内積 → 足す',22,GREEN)
+  txt(d,(920,234),'C：電荷が進む道',23,GOLD)
+  txt(d,(920,281),'dr：電荷の微小な移動',21,GOLD,mathfont=True)
+  txt(d,(920,328),'E：電荷の位置での電場',21,BLUE)
+  txt(d,(920,409),'線積分は小区間の仕事の集計',18,GREEN)
  d.rounded_rectangle((48,513,1232,584),radius=12,fill='#17283e')
  # Formulas are vector-like rendered graphics in the encoded video, not raw TeX.
  if scene:

@@ -23,7 +23,21 @@ imageio-ffmpeg, macOS Hiragino/Arial Unicode fonts, and repository Node dependen
 Run `node scripts/render-em-pilot-equations.mjs`, then
 `python scripts/render-em-pilot.py`. The engine and packages are NOT shipped in the app.
 The draft em-films.ts is not involved. Generated narration and formula cache lives in
-/private/tmp/physics-nemo-pilot/render; delete/rename a specific cache file to regenerate changed speech.
+/private/tmp/physics-nemo-pilot/render. Speech cache keys include the spoken text,
+speaker and speed, so edited narration cannot silently reuse old audio.
+
+## Subject clarity review
+
+Every sentence in all seven narration scenes was reviewed for an explicit subject
+or topic; captions use the same authored text. Headlines, diagram annotations and
+player explanatory paragraphs were also reviewed. Short symbol labels name their
+referents (for example, dr = the charge's infinitesimal displacement). Pronouns and
+unnamed actions such as 「短い区間なら、ほぼ直線」「力を戻せば、この式」
+were replaced with named paths, charges, forces and work. This review applies to
+this pilot and its player, not to all existing lessons in the application.
+「電場」 remains in display text but is supplied to Nemo as 「でんば」.
+Future explanations should identify what changes, what is calculated, and whose
+quantity each symbol denotes, without padding the text with meaningless subjects.
 
 ## Verification
 
