@@ -1,4 +1,5 @@
 import {useEffect,useRef,useState} from 'react';
+import {LessonNarration} from './LessonNarration';
 import {useLessonPosition} from '../game/useLessonPosition';
 import {StudyAid} from './StudyAid';
 import type {Stage} from '../types';
@@ -59,6 +60,7 @@ export function SpiralLesson({stage,alreadyFinished,onComplete,onExit,onOpenStag
   {level>0&&<p className="study-next">ここまでで確認したこと：{cycles[level-1].gain}</p>}
   <ChapterFoundation stageId={stage.id}/>
   <p className="question-answer">{card.text}</p>
+  <LessonNarration key={`${stage.id}:${page}`} text={`${card.title}。今回求めることは、${cycle.goal}。${card.text}`}/>
   <section className="question-picture" aria-label="図で確かめる" key={`${cycle.id}/${phase}`}>
    {scene3D?<><EMScene3D scene={scene3D} phase={phase}/><details className="em3d-original"><summary>元の平面図と比較する</summary>{card.figure?<Figure id={card.figure}/>:card.scene?<GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>:null}</details></>:card.pathPart!==undefined?<PathMeaning initialPart={card.pathPart}/>:card.lab?<WorkPlot kind={card.lab} phase={card.beat??phase}/>:card.figure?<Figure id={card.figure}/>:card.scene?<><GuidedScene scene={card.scene} beat={Math.min(diagram,(source?.beats.length??3)-1)}/>{!['r-path','r-calculate','r-compare'].includes(card.scene)&&<label className="guided-camera">図を比較<input aria-label="図の段階を比較" type="range" min="0" max={(source?.beats.length??3)-1} step="1" value={diagram} onChange={e=>setDiagram(Number(e.target.value))}/></label>}</>:null}
   </section>

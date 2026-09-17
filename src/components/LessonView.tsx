@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { LessonNarration } from './LessonNarration';
 import { useLessonPosition } from '../game/useLessonPosition';
 import { StudyAid } from './StudyAid';
 import type { Stage } from "../types";
@@ -88,6 +89,7 @@ function StandardLessonView({
             {summary.split(/\n\s*\n/).map((paragraph, index) => (
               <p key={index}><MathText text={paragraph} /></p>
             ))}
+            <LessonNarration key={`${stage.id}:${page}`} text={`${step.heading}。${summary}`}/>
             {summary!==step.body&&<details className="study-original"><summary>補足・元の詳しい説明</summary>{step.body.split(/\n\s*\n/).map((p,i)=><p key={i}><MathText text={p}/></p>)}</details>}
             {shot ? <UniqueFigure shot={shot} id={`${stage.id}/${page}`} /> : step.figure && <Figure id={step.figure} />}
             <StudyAid stage={stage} onPractice={()=>onComplete(!alreadyFinished)}/>

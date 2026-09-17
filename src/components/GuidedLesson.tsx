@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import {LessonNarration} from './LessonNarration';
 import { useLessonPosition } from '../game/useLessonPosition';
 import type { LessonStep, Stage } from '../types';
 import { MathText } from './MathText';
@@ -21,6 +22,7 @@ function Story({step,onNext,last}:{step:LessonStep;onNext:()=>void;last:boolean}
    {story.goal&&<div className="rigorous-purpose"><strong>今回、何を求めるか</strong><p>{story.goal}</p>{story.goalTex&&<div className="guided-equation"><EquationImage tex={story.goalTex}/></div>}<p className="rigorous-basis"><strong>出発点・使う前提</strong>{story.basis}</p></div>}
    <div className="guided-beat-head"><span>図と一緒に考える</span><span>{beat+1} / {story.beats.length}</span></div>
    <h3>{current.action}</h3>
+   <LessonNarration key={`${step.heading}:${beat}`} text={`${current.action}。見るところは、${current.focus}。${current.text}`}/>
    <GuidedScene scene={story.scene} beat={beat} yaw={yaw}/>
    <p className="guided-look"><span>見るところ</span><MathText text={current.focus}/></p>
    {story.scene==='tilt'&&<label className="guided-camera">視点を変える（面の角度・磁束は変わりません）<input aria-label="面を見る視点" type="range" min="-1.3" max="1.3" step=".05" value={yaw} onChange={e=>setYaw(Number(e.target.value))}/></label>}
