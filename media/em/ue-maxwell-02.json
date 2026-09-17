@@ -1,0 +1,91 @@
+{
+  "id": "ue-maxwell-02",
+  "stageId": "ue-maxwell",
+  "stageTitle": "交流とマクスウェル方程式",
+  "level": "advanced",
+  "title": "四つの基本法則と変位電流の役割を整理する ／ 真空の平面波に絞り、積分形を場所の変化へ直す",
+  "sourceIndices": [
+    2,
+    3,
+    4
+  ],
+  "scenes": [
+    {
+      "index": 2,
+      "heading": "真空の平面波を1方向へ絞る",
+      "narration": "この平面波はエックス方向へ進み、電場はワイ方向、磁場はゼット方向です。二つの周回の法則が、場の空間変化と時間変化を結びます。",
+      "equations": [
+        "\\frac{\\partial E_y}{\\partial x}=-\\frac{\\partial B_z}{\\partial t}",
+        "-\\frac{\\partial B_z}{\\partial x}=\\mu_0\\varepsilon_0\\frac{\\partial E_y}{\\partial t}"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.964666666666667,
+          "text": "この平面波はエックス方向へ進み、電場はワイ方向、磁場はゼット方向です。"
+        },
+        {
+          "start": 6.1146666666666665,
+          "end": 11.012666666666666,
+          "text": "二つの周回の法則が、場の空間変化と時間変化を結びます。"
+        }
+      ],
+      "end": 12.362666666666666
+    },
+    {
+      "index": 3,
+      "heading": "周回積分が、場の差になる理由",
+      "narration": "小長方形の左右の辺では、電場の寄与の差が周回積分に残ります。その差を面積で割った極限が、横方向の電場の変化率です。",
+      "equations": [
+        "\\oint\\vec E\\cdot d\\vec r=[E_y(x+dx)-E_y(x)]dy",
+        "[E_y(x+dx)-E_y(x)]dy=-\\frac{\\partial B_z}{\\partial t}dx\\,dy",
+        "\\frac{E_y(x+dx)-E_y(x)}{dx}=-\\frac{\\partial B_z}{\\partial t}",
+        "\\frac{\\partial E_y}{\\partial x}=-\\frac{\\partial B_z}{\\partial t}"
+      ],
+      "spatial": false,
+      "start": 12.362666666666666,
+      "captions": [
+        {
+          "start": 12.362666666666666,
+          "end": 17.84733333333333,
+          "text": "小長方形の左右の辺では、電場の寄与の差が周回積分に残ります。"
+        },
+        {
+          "start": 17.99733333333333,
+          "end": 22.820666666666664,
+          "text": "その差を面積で割った極限が、横方向の電場の変化率です。"
+        }
+      ],
+      "end": 24.170666666666662
+    },
+    {
+      "index": 4,
+      "heading": "小長方形の両辺を面積で割る",
+      "narration": "微小長方形を貫く磁束は、磁場成分と面積の積です。ファラデーの法則の両辺を面積で割ると、二つの場の変化率の関係が得られます。",
+      "equations": [
+        "\\oint\\vec E\\cdot d\\vec r=[E_y(x+dx)-E_y(x)]dy",
+        "[E_y(x+dx)-E_y(x)]dy=-\\frac{\\partial B_z}{\\partial t}dx\\,dy",
+        "\\frac{E_y(x+dx)-E_y(x)}{dx}=-\\frac{\\partial B_z}{\\partial t}",
+        "\\frac{\\partial E_y}{\\partial x}=-\\frac{\\partial B_z}{\\partial t}"
+      ],
+      "spatial": false,
+      "start": 24.170666666666662,
+      "captions": [
+        {
+          "start": 24.170666666666662,
+          "end": 29.06866666666666,
+          "text": "微小長方形を貫く磁束は、磁場成分と面積の積です。"
+        },
+        {
+          "start": 29.218666666666664,
+          "end": 35.002,
+          "text": "ファラデーの法則の両辺を面積で割ると、二つの場の変化率の関係が得られます。"
+        }
+      ],
+      "end": 36.352
+    }
+  ],
+  "duration": 36.352
+}

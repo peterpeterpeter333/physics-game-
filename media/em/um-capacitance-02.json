@@ -1,0 +1,94 @@
+{
+  "id": "um-capacitance-02",
+  "stageId": "um-capacitance",
+  "stageTitle": "コンデンサを導出する",
+  "level": "middle",
+  "title": "面密度から板間の電場と電圧を求め、平行板の容量を導く。",
+  "sourceIndices": [
+    2,
+    3,
+    4
+  ],
+  "scenes": [
+    {
+      "index": 2,
+      "heading": "2枚の板の電場を重ね合わせる",
+      "narration": "一枚の無限平面の電場は、両側へ半分ずつ広がります。正負二枚の板間では二つの場が同じ向きに加わり、外側では逆向きに打ち消し合います。",
+      "equations": [
+        "E_+=E_-=\\frac{\\sigma}{2\\varepsilon_0}",
+        "E_{\\rm 内}=\\frac{\\sigma}{2\\varepsilon_0}+\\frac{\\sigma}{2\\varepsilon_0}=\\frac{\\sigma}{\\varepsilon_0}",
+        "E_{\\rm 外}=\\frac{\\sigma}{2\\varepsilon_0}-\\frac{\\sigma}{2\\varepsilon_0}=0"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.61,
+          "text": "一枚の無限平面の電場は、両側へ半分ずつ広がります。"
+        },
+        {
+          "start": 4.76,
+          "end": 11.151333333333334,
+          "text": "正負二枚の板間では二つの場が同じ向きに加わり、外側では逆向きに打ち消し合います。"
+        }
+      ],
+      "end": 12.501333333333331
+    },
+    {
+      "index": 3,
+      "heading": "C = ε₀S/d は、どう導出できるのだろう?",
+      "narration": "一様な板間の電圧の大きさは、電場の強さと間隔の積です。容量の定義への代入が、誘電率と面積の積を間隔で割った容量の式を与えます。",
+      "equations": [
+        "C = \\dfrac{\\varepsilon_0 S}{d}",
+        "V = Ed = \\frac{Qd}{\\varepsilon_0S}",
+        "C = Q/V",
+        "C = \\frac{\\varepsilon_0 S}{d}"
+      ],
+      "spatial": false,
+      "start": 12.501333333333331,
+      "captions": [
+        {
+          "start": 12.501333333333331,
+          "end": 17.537999999999997,
+          "text": "一様な板間の電圧の大きさは、電場の強さと間隔の積です。"
+        },
+        {
+          "start": 17.688,
+          "end": 23.876666666666665,
+          "text": "容量の定義への代入が、誘電率と面積の積を間隔で割った容量の式を与えます。"
+        }
+      ],
+      "end": 25.226666666666663
+    },
+    {
+      "index": 4,
+      "heading": "容量の導出でQが消えるところ",
+      "narration": "容量の式では、電荷が分子と分母から約分されます。残る量は板の面積、間隔、媒質の誘電率なので、理想的な容量は形と媒質で決まります。",
+      "equations": [
+        "C=\\frac{\\varepsilon_0S}{d}",
+        "E=\\frac{Q}{\\varepsilon_0 S}",
+        "V=Ed=\\frac{Qd}{\\varepsilon_0 S}",
+        "C=\\frac QV=\\frac Q{Qd/(\\varepsilon_0 S)}",
+        "C=Q\\frac{\\varepsilon_0 S}{Qd}",
+        "C=\\frac{\\cancel Q\\varepsilon_0 S}{\\cancel Qd}=\\frac{\\varepsilon_0 S}{d}"
+      ],
+      "spatial": false,
+      "start": 25.226666666666663,
+      "captions": [
+        {
+          "start": 25.226666666666663,
+          "end": 29.409999999999997,
+          "text": "容量の式では、電荷が分子と分母から約分されます。"
+        },
+        {
+          "start": 29.559999999999995,
+          "end": 37.03933333333333,
+          "text": "残る量は板の面積、間隔、媒質の誘電率なので、理想的な容量は形と媒質で決まります。"
+        }
+      ],
+      "end": 38.38933333333333
+    }
+  ],
+  "duration": 38.38933333333333
+}

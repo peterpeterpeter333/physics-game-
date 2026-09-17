@@ -1,0 +1,96 @@
+{
+  "id": "um-induction-02",
+  "stageId": "um-induction",
+  "stageTitle": "ファラデーの法則を微分で",
+  "level": "middle",
+  "title": "ファラデーの法則から回転コイルと動く導線の起電力を計算する。",
+  "sourceIndices": [
+    3,
+    4,
+    5
+  ],
+  "scenes": [
+    {
+      "index": 3,
+      "heading": "発電機は、なぜ交流を出すのだろう?",
+      "narration": "一様磁場中を回転するコイルでは、面と磁場の角度が周期的に変わります。磁束のコサインの変化が、サインの形の交流起電力を生みます。",
+      "equations": [
+        "\\Phi=BA\\cos(\\omega t)",
+        "\\mathcal E=-N\\frac d{dt}[BA\\cos(\\omega t)]",
+        "\\mathcal E=-NBA\\frac d{dt}\\cos(\\omega t)",
+        "\\mathcal E=-NBA[-\\sin(\\omega t)]\\omega",
+        "\\mathcal E=NBA\\omega\\sin(\\omega t)"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.506,
+          "text": "一様磁場中を回転するコイルでは、面と磁場の角度が周期的に変わります。"
+        },
+        {
+          "start": 5.656,
+          "end": 10.468666666666666,
+          "text": "磁束のコサインの変化が、サインの形の交流起電力を生みます。"
+        }
+      ],
+      "end": 11.818666666666665
+    },
+    {
+      "index": 4,
+      "heading": "回転するコイルを微分する途中",
+      "narration": "回転コイルの磁束の微分には、コサインの微分の負号と角速度の係数が現れます。ファラデーの法則の負号が微分の負号と相殺し、起電力の式になります。",
+      "equations": [
+        "\\mathcal E=-N\\frac{d}{dt}(BA\\cos\\omega t)=NBA\\omega\\sin\\omega t",
+        "\\Phi=BA\\cos(\\omega t)",
+        "\\mathcal E=-N\\frac d{dt}[BA\\cos(\\omega t)]",
+        "\\mathcal E=-NBA\\frac d{dt}\\cos(\\omega t)",
+        "\\mathcal E=-NBA[-\\sin(\\omega t)]\\omega",
+        "\\mathcal E=NBA\\omega\\sin(\\omega t)"
+      ],
+      "spatial": false,
+      "start": 11.818666666666665,
+      "captions": [
+        {
+          "start": 11.818666666666665,
+          "end": 17.772666666666662,
+          "text": "回転コイルの磁束の微分には、コサインの微分の負号と角速度の係数が現れます。"
+        },
+        {
+          "start": 17.922666666666665,
+          "end": 23.236666666666665,
+          "text": "ファラデーの法則の負号が微分の負号と相殺し、起電力の式になります。"
+        }
+      ],
+      "end": 24.586666666666662
+    },
+    {
+      "index": 5,
+      "heading": "一定の磁場でも動く導線は起電力を生む",
+      "narration": "動く棒が作る回路の面積変化率は、棒の長さと速さの積です。一定磁場でも、この面積変化が磁束を変え、起電力を生みます。",
+      "equations": [
+        "A=lx",
+        "\\Phi=Blx",
+        "\\frac{d\\Phi}{dt}=Bl\\frac{dx}{dt}=Blv",
+        "|\\mathcal E|=Blv"
+      ],
+      "spatial": false,
+      "start": 24.586666666666662,
+      "captions": [
+        {
+          "start": 24.586666666666662,
+          "end": 29.815333333333328,
+          "text": "動く棒が作る回路の面積変化率は、棒の長さと速さの積です。"
+        },
+        {
+          "start": 29.96533333333333,
+          "end": 35.08733333333333,
+          "text": "一定磁場でも、この面積変化が磁束を変え、起電力を生みます。"
+        }
+      ],
+      "end": 36.437333333333335
+    }
+  ],
+  "duration": 36.437333333333335
+}

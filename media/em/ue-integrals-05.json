@@ -1,0 +1,338 @@
+{
+  "id": "ue-integrals-05",
+  "stageId": "ue-integrals",
+  "stageTitle": "線積分・面積分を計算する",
+  "level": "advanced",
+  "title": "球の小面積dAを組み立て、積分で球面積4πR²を導く。",
+  "sourceIndices": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "scenes": [
+    {
+      "index": 16,
+      "heading": "まず、球の表面に沿った長さを求める",
+      "narration": "ラジアンで表した角度は、円弧の長さを半径で割った値です。球の表面の円弧の長さは、半径と角度の変化の積になります。",
+      "equations": [
+        "\\Delta s=R\\,\\Delta\\theta",
+        "\\Delta\\theta=\\frac{\\Delta s}{R}",
+        "R\\,\\Delta\\theta=R\\frac{\\Delta s}{R}=\\Delta s",
+        "\\Delta s=(2\\,\\mathrm m)\\times0.1=0.2\\,\\mathrm m",
+        "\\frac{ds}{d\\theta}=\\lim_{\\Delta\\theta\\to0}\\frac{\\Delta s}{\\Delta\\theta}=R",
+        "ds=R\\,d\\theta",
+        "0\\le\\theta\\le\\pi,\\qquad0\\le\\varphi\\le2\\pi"
+      ],
+      "guide": {
+        "kind": "角度から長さへ",
+        "read": "Δは二点間の変化。まず普通の長さを計算し、その関係を微分で表す。",
+        "symbols": [
+          [
+            "R",
+            "青い円の半径 [m]。図の例は2 m"
+          ],
+          [
+            "Δθ",
+            "二本の半径の間の角度 [rad]。位置の角度θとは別"
+          ],
+          [
+            "Δs",
+            "二点間を円周に沿って進む長さ [m]。直線距離ではない"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。度数をそのまま代入しない"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "s・ds",
+            "円周に沿った長さ・その微小な変化 [m]"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "ラジアンの定義。弧が半径と同じ長さなら角度は1 rad。",
+            "tex": "\\Delta\\theta=\\frac{\\Delta s}{R}"
+          },
+          {
+            "note": "両辺に同じ半径Rを掛け、右辺のRを約分する。",
+            "tex": "R\\,\\Delta\\theta=R\\frac{\\Delta s}{R}=\\Delta s"
+          },
+          {
+            "note": "半径2 m、角度の変化0.1 radなら、表面に沿った長さは0.2 m。",
+            "tex": "\\Delta s=(2\\,\\mathrm m)\\times0.1=0.2\\,\\mathrm m"
+          },
+          {
+            "note": "半径は一定。角度あたりの長さの変化は、区間を縮めてもR。極限を微分と呼ぶ。",
+            "tex": "\\frac{ds}{d\\theta}=\\lim_{\\Delta\\theta\\to0}\\frac{\\Delta s}{\\Delta\\theta}=R"
+          },
+          {
+            "note": "微分の関係をds＝R dθと書く。dsは微小な長さ、dθは対応する角度の微小な変化。",
+            "tex": "ds=R\\,d\\theta"
+          },
+          {
+            "note": "θは北極から南極まで半周、φは軸の周りに一周。",
+            "tex": "0\\le\\theta\\le\\pi,\\qquad0\\le\\varphi\\le2\\pi"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.61,
+          "text": "ラジアンで表した角度は、円弧の長さを半径で割った値です。"
+        },
+        {
+          "start": 4.76,
+          "end": 9.732666666666667,
+          "text": "球の表面の円弧の長さは、半径と角度の変化の積になります。"
+        }
+      ],
+      "end": 11.082666666666665
+    },
+    {
+      "index": 17,
+      "heading": "横向きの輪の半径を、三角形で求める",
+      "narration": "同じ高さで球を一周する輪の半径は、球の半径とサインシータの積です。その輪の円弧の長さは、輪の半径と周方向の角度の変化の積です。",
+      "equations": [
+        "\\rho=R\\sin\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi",
+        "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta",
+        "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi",
+        "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi"
+      ],
+      "guide": {
+        "kind": "表面を区切った一つ分の面積",
+        "read": "縦と横の長さを掛ける前に、それぞれが通る円の半径を確かめる。",
+        "symbols": [
+          [
+            "ρ",
+            "同じ高さを一周する金色の輪の半径 [m]"
+          ],
+          [
+            "dsθ・dsφ",
+            "球の表面に沿う、縦・横の微小な長さ [m]"
+          ],
+          [
+            "R",
+            "球の半径 [m]"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。半周はπ、一周は2π"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "軸を含む断面の直角三角形で、sinθ＝輪の半径÷球の半径。",
+            "tex": "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta"
+          },
+          {
+            "note": "弧の長さ＝半径×角度を、縦と横それぞれに使う。",
+            "tex": "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi"
+          },
+          {
+            "note": "小さく区切るほど長方形に近づく。極限で縦×横が微小な面積dAになる。",
+            "tex": "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 11.082666666666665,
+      "captions": [
+        {
+          "start": 11.082666666666665,
+          "end": 16.652666666666665,
+          "text": "同じ高さで球を一周する輪の半径は、球の半径とサインシータの積です。"
+        },
+        {
+          "start": 16.802666666666664,
+          "end": 22.201999999999995,
+          "text": "その輪の円弧の長さは、輪の半径と周方向の角度の変化の積です。"
+        }
+      ],
+      "end": 23.551999999999996
+    },
+    {
+      "index": 18,
+      "heading": "縦と横の長さから、小さな面積を求める",
+      "narration": "球の表面の十分小さい区画は、長方形で近似できます。その区画の微小面積は、縦の円弧の長さと横の円弧の長さの積になります。",
+      "equations": [
+        "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi",
+        "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta",
+        "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi"
+      ],
+      "guide": {
+        "kind": "表面を区切った一つ分の面積",
+        "read": "縦と横の長さを掛ける前に、それぞれが通る円の半径を確かめる。",
+        "symbols": [
+          [
+            "ρ",
+            "同じ高さを一周する金色の輪の半径 [m]"
+          ],
+          [
+            "dsθ・dsφ",
+            "球の表面に沿う、縦・横の微小な長さ [m]"
+          ],
+          [
+            "R",
+            "球の半径 [m]"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。半周はπ、一周は2π"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "軸を含む断面の直角三角形で、sinθ＝輪の半径÷球の半径。",
+            "tex": "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta"
+          },
+          {
+            "note": "弧の長さ＝半径×角度を、縦と横それぞれに使う。",
+            "tex": "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi"
+          },
+          {
+            "note": "小さく区切るほど長方形に近づく。極限で縦×横が微小な面積dAになる。",
+            "tex": "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 23.551999999999996,
+      "captions": [
+        {
+          "start": 23.551999999999996,
+          "end": 28.26866666666666,
+          "text": "球の表面の十分小さい区画は、長方形で近似できます。"
+        },
+        {
+          "start": 28.418666666666663,
+          "end": 34.362,
+          "text": "その区画の微小面積は、縦の円弧の長さと横の円弧の長さの積になります。"
+        }
+      ],
+      "end": 35.711999999999996
+    },
+    {
+      "index": 19,
+      "heading": "小面積を球全体で足し、4πR²を得る",
+      "narration": "球の全面積は、微小面積を北から南と周方向に集計した値です。二つの角度の積分が、それぞれ二と二パイになるため、面積は四パイかける半径の二乗です。",
+      "equations": [
+        "A=R^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\sin\\theta\\,d\\theta=4\\pi R^2",
+        "A=R^2\\int_0^{2\\pi}\\int_0^\\pi\\sin\\theta\\,d\\theta\\,d\\varphi",
+        "\\int_0^\\pi\\sin\\theta\\,d\\theta=[-\\cos\\theta]_0^\\pi=1-(-1)=2",
+        "A=2R^2\\int_0^{2\\pi}d\\varphi=2R^2(2\\pi-0)=4\\pi R^2"
+      ],
+      "guide": {
+        "kind": "球面積を導く",
+        "read": "θ方向の積分は2、φ方向は2π。R²と掛けて4πR²。",
+        "symbols": [
+          [
+            "R",
+            "球の半径 [m]"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。半周はπ、一周は2π"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "小面積の式を、球全体の角度の範囲で積分する。",
+            "tex": "A=R^2\\int_0^{2\\pi}\\int_0^\\pi\\sin\\theta\\,d\\theta\\,d\\varphi"
+          },
+          {
+            "note": "−cosθを微分するとsinθ。cos0=1、cosπ=−1を使う。",
+            "tex": "\\int_0^\\pi\\sin\\theta\\,d\\theta=[-\\cos\\theta]_0^\\pi=1-(-1)=2"
+          },
+          {
+            "note": "残りは一定値の積分。0から2πまでの幅を掛ける。",
+            "tex": "A=2R^2\\int_0^{2\\pi}d\\varphi=2R^2(2\\pi-0)=4\\pi R^2"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 35.711999999999996,
+      "captions": [
+        {
+          "start": 35.711999999999996,
+          "end": 41.314,
+          "text": "球の全面積は、微小面積を北から南と周方向に集計した値です。"
+        },
+        {
+          "start": 41.464,
+          "end": 48.01533333333334,
+          "text": "二つの角度の積分が、それぞれ二と二パイになるため、面積は四パイかける半径の二乗です。"
+        }
+      ],
+      "end": 49.36533333333333
+    }
+  ],
+  "duration": 49.36533333333333
+}

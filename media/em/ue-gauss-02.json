@@ -1,0 +1,575 @@
+{
+  "id": "ue-gauss-02",
+  "stageId": "ue-gauss",
+  "stageTitle": "ガウスの法則を証明する",
+  "level": "advanced",
+  "title": "偏心球の面積分を、置換によってべき関数の積分へ直す。",
+  "sourceIndices": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "scenes": [
+    {
+      "index": 4,
+      "heading": "法線成分に球の小面積を掛ける",
+      "narration": "球全体の電気束は、電場の法線成分と微小面積の積の集計です。周方向の積分が二パイになるため、残りは縦方向の角度の積分です。",
+      "equations": [
+        "\\Phi_E=2\\pi kQR^2\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}\\,d\\theta",
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta",
+        "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}",
+        "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}",
+        "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}",
+        "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}",
+        "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}",
+        "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "同じ球面のまま変数をθからuへ替える。分子・微分・積分範囲をすべて一緒に変える。",
+        "symbols": [
+          [
+            "u",
+            "置換した距離の二乗r² [m²]。前章の道の目盛りとは別"
+          ],
+          [
+            "du",
+            "このuの微小な変化 [m²]"
+          ],
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          },
+          {
+            "note": "uとduを一緒に定義する：分母の中身をuと置きます。cosθの微分は−sinθなのでdu=−2Rd sinθ dθ。したがってsinθ dθ=−du/(2Rd)です。",
+            "tex": "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}"
+          },
+          {
+            "note": "分子と上下限も置き換える：cosθ=(u−R²−d²)/(2Rd)を分子に入れるとR＋d cosθ=(u＋R²−d²)/(2R)。θ=0でu=(R+d)²、θ=πでu=(R−d)²です。",
+            "tex": "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}"
+          },
+          {
+            "note": "負号で上下限を入れ替える：係数2πkQR²に1/(2R)と1/(2Rd)が掛かります。負号を上下限の反転に使い、分子を二項に分けるとuの−1/2乗と−3/2乗の積分になります。",
+            "tex": "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}"
+          },
+          {
+            "note": "平方根の差を有理化する：√(u+h)−√uをhで割り、分子分母に和を掛けると1/(√(u+h)＋√u)になります。極限は1/(2√u)です。",
+            "tex": "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}"
+          },
+          {
+            "note": "逆数の微分も求める：f×(1/f)=1を微分すればf′/f＋f(1/f)′=0。よって(1/f)′=−f′/f²。f=√uを入れるとuの−1/2乗の微分が−uの−3/2乗/2になります。",
+            "tex": "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}"
+          },
+          {
+            "note": "係数を含めて積分する：前ページの二項を積分し、共通の2を外へ出すと係数の1/2が消えます。残るG(u)を上下限で評価すれば答えが出ます。",
+            "tex": "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.591333333333334,
+          "text": "球全体の電気束は、電場の法線成分と微小面積の積の集計です。"
+        },
+        {
+          "start": 5.741333333333333,
+          "end": 11.215333333333334,
+          "text": "周方向の積分が二パイになるため、残りは縦方向の角度の積分です。"
+        }
+      ],
+      "end": 12.565333333333331
+    },
+    {
+      "index": 5,
+      "heading": "距離の二乗を、新しい積分変数uにする",
+      "narration": "新しい変数ユーは、電荷から球面上の点までの距離の二乗です。この置換は積分変数だけを変更し、集計する球面は変更しません。",
+      "equations": [
+        "u=R^2+d^2+2Rd\\cos\\theta,\\qquad du=-2Rd\\sin\\theta\\,d\\theta",
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta",
+        "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}",
+        "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}",
+        "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}",
+        "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}",
+        "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}",
+        "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "同じ球面のまま変数をθからuへ替える。分子・微分・積分範囲をすべて一緒に変える。",
+        "symbols": [
+          [
+            "u",
+            "置換した距離の二乗r² [m²]。前章の道の目盛りとは別"
+          ],
+          [
+            "du",
+            "このuの微小な変化 [m²]"
+          ],
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          },
+          {
+            "note": "uとduを一緒に定義する：分母の中身をuと置きます。cosθの微分は−sinθなのでdu=−2Rd sinθ dθ。したがってsinθ dθ=−du/(2Rd)です。",
+            "tex": "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}"
+          },
+          {
+            "note": "分子と上下限も置き換える：cosθ=(u−R²−d²)/(2Rd)を分子に入れるとR＋d cosθ=(u＋R²−d²)/(2R)。θ=0でu=(R+d)²、θ=πでu=(R−d)²です。",
+            "tex": "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}"
+          },
+          {
+            "note": "負号で上下限を入れ替える：係数2πkQR²に1/(2R)と1/(2Rd)が掛かります。負号を上下限の反転に使い、分子を二項に分けるとuの−1/2乗と−3/2乗の積分になります。",
+            "tex": "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}"
+          },
+          {
+            "note": "平方根の差を有理化する：√(u+h)−√uをhで割り、分子分母に和を掛けると1/(√(u+h)＋√u)になります。極限は1/(2√u)です。",
+            "tex": "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}"
+          },
+          {
+            "note": "逆数の微分も求める：f×(1/f)=1を微分すればf′/f＋f(1/f)′=0。よって(1/f)′=−f′/f²。f=√uを入れるとuの−1/2乗の微分が−uの−3/2乗/2になります。",
+            "tex": "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}"
+          },
+          {
+            "note": "係数を含めて積分する：前ページの二項を積分し、共通の2を外へ出すと係数の1/2が消えます。残るG(u)を上下限で評価すれば答えが出ます。",
+            "tex": "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 12.565333333333331,
+      "captions": [
+        {
+          "start": 12.565333333333331,
+          "end": 17.49533333333333,
+          "text": "新しい変数ユーは、電荷から球面上の点までの距離の二乗です。"
+        },
+        {
+          "start": 17.645333333333333,
+          "end": 23.012666666666664,
+          "text": "この置換は積分変数だけを変更し、集計する球面は変更しません。"
+        }
+      ],
+      "end": 24.362666666666666
+    },
+    {
+      "index": 6,
+      "heading": "分子と積分範囲も、同じ変数で書き換える",
+      "narration": "分子のコサインと積分の両端も、新しい変数ユーの式に変わります。微分に現れる負号は、積分の上端と下端の交換で処理できます。",
+      "equations": [
+        "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}",
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta",
+        "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}",
+        "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}",
+        "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}",
+        "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}",
+        "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "同じ球面のまま変数をθからuへ替える。分子・微分・積分範囲をすべて一緒に変える。",
+        "symbols": [
+          [
+            "u",
+            "置換した距離の二乗r² [m²]。前章の道の目盛りとは別"
+          ],
+          [
+            "du",
+            "このuの微小な変化 [m²]"
+          ],
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          },
+          {
+            "note": "uとduを一緒に定義する：分母の中身をuと置きます。cosθの微分は−sinθなのでdu=−2Rd sinθ dθ。したがってsinθ dθ=−du/(2Rd)です。",
+            "tex": "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}"
+          },
+          {
+            "note": "分子と上下限も置き換える：cosθ=(u−R²−d²)/(2Rd)を分子に入れるとR＋d cosθ=(u＋R²−d²)/(2R)。θ=0でu=(R+d)²、θ=πでu=(R−d)²です。",
+            "tex": "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}"
+          },
+          {
+            "note": "負号で上下限を入れ替える：係数2πkQR²に1/(2R)と1/(2Rd)が掛かります。負号を上下限の反転に使い、分子を二項に分けるとuの−1/2乗と−3/2乗の積分になります。",
+            "tex": "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}"
+          },
+          {
+            "note": "平方根の差を有理化する：√(u+h)−√uをhで割り、分子分母に和を掛けると1/(√(u+h)＋√u)になります。極限は1/(2√u)です。",
+            "tex": "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}"
+          },
+          {
+            "note": "逆数の微分も求める：f×(1/f)=1を微分すればf′/f＋f(1/f)′=0。よって(1/f)′=−f′/f²。f=√uを入れるとuの−1/2乗の微分が−uの−3/2乗/2になります。",
+            "tex": "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}"
+          },
+          {
+            "note": "係数を含めて積分する：前ページの二項を積分し、共通の2を外へ出すと係数の1/2が消えます。残るG(u)を上下限で評価すれば答えが出ます。",
+            "tex": "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 24.362666666666666,
+      "captions": [
+        {
+          "start": 24.362666666666666,
+          "end": 29.516666666666666,
+          "text": "分子のコサインと積分の両端も、新しい変数ユーの式に変わります。"
+        },
+        {
+          "start": 29.666666666666664,
+          "end": 34.73533333333334,
+          "text": "微分に現れる負号は、積分の上端と下端の交換で処理できます。"
+        }
+      ],
+      "end": 36.08533333333333
+    },
+    {
+      "index": 7,
+      "heading": "球面の計算を、べき関数の積分に直せた",
+      "narration": "置換後の積分は、ユーの二つのべき関数の和になります。球の半径と中心のずれは、この積分の間は一定です。",
+      "equations": [
+        "\\Phi_E=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}\\left(u^{-1/2}+(R^2-d^2)u^{-3/2}\\right)du",
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta",
+        "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}",
+        "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}",
+        "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}",
+        "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}",
+        "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}",
+        "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "同じ球面のまま変数をθからuへ替える。分子・微分・積分範囲をすべて一緒に変える。",
+        "symbols": [
+          [
+            "u",
+            "置換した距離の二乗r² [m²]。前章の道の目盛りとは別"
+          ],
+          [
+            "du",
+            "このuの微小な変化 [m²]"
+          ],
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          },
+          {
+            "note": "uとduを一緒に定義する：分母の中身をuと置きます。cosθの微分は−sinθなのでdu=−2Rd sinθ dθ。したがってsinθ dθ=−du/(2Rd)です。",
+            "tex": "u=R^2+d^2+2Rd\\cos\\theta,\\qquad\\sin\\theta d\\theta=-\\frac{du}{2Rd}"
+          },
+          {
+            "note": "分子と上下限も置き換える：cosθ=(u−R²−d²)/(2Rd)を分子に入れるとR＋d cosθ=(u＋R²−d²)/(2R)。θ=0でu=(R+d)²、θ=πでu=(R−d)²です。",
+            "tex": "R+d\\cos\\theta=\\frac{u+R^2-d^2}{2R}"
+          },
+          {
+            "note": "負号で上下限を入れ替える：係数2πkQR²に1/(2R)と1/(2Rd)が掛かります。負号を上下限の反転に使い、分子を二項に分けるとuの−1/2乗と−3/2乗の積分になります。",
+            "tex": "\\begin{aligned}\\Phi_E&=-\\frac{\\pi kQ}{2d}\\int_{(R+d)^2}^{(R-d)^2}\\frac{u+R^2-d^2}{u^{3/2}}du\\\\&=\\frac{\\pi kQ}{2d}\\int_{(R-d)^2}^{(R+d)^2}[u^{-1/2}+(R^2-d^2)u^{-3/2}]du\\end{aligned}"
+          },
+          {
+            "note": "平方根の差を有理化する：√(u+h)−√uをhで割り、分子分母に和を掛けると1/(√(u+h)＋√u)になります。極限は1/(2√u)です。",
+            "tex": "\\lim_{h\\to0}\\frac{\\sqrt{u+h}-\\sqrt u}{h}=\\lim_{h\\to0}\\frac1{\\sqrt{u+h}+\\sqrt u}=\\frac1{2\\sqrt u}"
+          },
+          {
+            "note": "逆数の微分も求める：f×(1/f)=1を微分すればf′/f＋f(1/f)′=0。よって(1/f)′=−f′/f²。f=√uを入れるとuの−1/2乗の微分が−uの−3/2乗/2になります。",
+            "tex": "\\int u^{-1/2}du=2\\sqrt u,\\qquad\\int u^{-3/2}du=-\\frac2{\\sqrt u}"
+          },
+          {
+            "note": "係数を含めて積分する：前ページの二項を積分し、共通の2を外へ出すと係数の1/2が消えます。残るG(u)を上下限で評価すれば答えが出ます。",
+            "tex": "\\Phi_E=\\frac{\\pi kQ}{d}\\left[\\sqrt u-\\frac{R^2-d^2}{\\sqrt u}\\right]_{(R-d)^2}^{(R+d)^2}"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 36.08533333333333,
+      "captions": [
+        {
+          "start": 36.08533333333333,
+          "end": 40.31133333333334,
+          "text": "置換後の積分は、ユーの二つのべき関数の和になります。"
+        },
+        {
+          "start": 40.46133333333333,
+          "end": 45.05,
+          "text": "球の半径と中心のずれは、この積分の間は一定です。"
+        }
+      ],
+      "end": 46.4
+    }
+  ],
+  "duration": 46.4
+}

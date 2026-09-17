@@ -1,0 +1,60 @@
+{
+  "id": "um-electrostatic-potential-path-03",
+  "stageId": "um-electrostatic-potential-path",
+  "stageTitle": "静電場の電位差",
+  "level": "middle",
+  "title": "位置エネルギーを経て、電位差の式を作る",
+  "sourceIndices": [
+    5,
+    6
+  ],
+  "scenes": [
+    {
+      "index": 5,
+      "heading": "静電場では、一周するとどうなるのだろう?",
+      "narration": "静電場では、閉じた道の一周の線積分はゼロです。この性質は静電場の性質で、一般の時間変化する場に無条件で使えるわけではありません。",
+      "equations": [
+        "\\oint_C\\vec E\\cdot d\\vec r=0"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.268666666666666,
+          "text": "静電場では、閉じた道の一周の線積分はゼロです。"
+        },
+        {
+          "start": 4.418666666666667,
+          "end": 10.916666666666666,
+          "text": "この性質は静電場の性質で、一般の時間変化する場に無条件で使えるわけではありません。"
+        }
+      ],
+      "end": 12.266666666666666
+    },
+    {
+      "index": 6,
+      "heading": "電場がする仕事は、どう書けるのだったろう?",
+      "narration": "始点から終点までに電場がする仕事は、電荷と電場の線積分の積です。移動ベクトルは、指定した道に沿った電荷の移動です。",
+      "equations": [
+        "W_{\\mathrm{AB}}=q\\int_{\\mathrm A}^{\\mathrm B}\\vec E\\cdot d\\vec r"
+      ],
+      "spatial": false,
+      "start": 12.266666666666666,
+      "captions": [
+        {
+          "start": 12.266666666666666,
+          "end": 17.68733333333333,
+          "text": "始点から終点までに電場がする仕事は、電荷と電場の線積分の積です。"
+        },
+        {
+          "start": 17.837333333333333,
+          "end": 21.818,
+          "text": "移動ベクトルは、指定した道に沿った電荷の移動です。"
+        }
+      ],
+      "end": 23.168
+    }
+  ],
+  "duration": 23.168
+}
