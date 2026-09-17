@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { LessonNarration } from './LessonNarration';
+import { EMVideoPilot } from './EMVideoPilot';
 import { useLessonPosition } from '../game/useLessonPosition';
 import { StudyAid } from './StudyAid';
 import type { Stage } from "../types";
@@ -72,6 +73,7 @@ function StandardLessonView({
       </details>
 
       <ChapterFoundation stageId={stage.id}/>
+      {stage.id==='um-line-integral-entry'&&<EMVideoPilot/>}
       <AdvancedEntry stageId={stage.id} onOpenStage={onOpenStage}/>
       <TopicRoute stageId={stage.id} onOpenStage={onOpenStage}/>
 
