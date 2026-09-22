@@ -43,6 +43,9 @@ jobs:
       - name: Verify reviewed narration and prerequisite playback order
         run: npm run test:reviewed-videos && npm run test:prerequisite-videos && npm run test:em-video-repairs
 
+      - name: Check reviewed pronunciation coverage and video revisions
+        run: npm run test:pronunciation
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

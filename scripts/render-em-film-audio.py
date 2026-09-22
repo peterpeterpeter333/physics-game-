@@ -1,7 +1,8 @@
 """Offline, cached Nemo speech. No TTS engine is shipped to app users."""
 from pathlib import Path
-import os, json, hashlib, urllib.request, urllib.parse, wave, io, sys
+import os, json, urllib.request, urllib.parse, wave, io, sys
 import numpy as np
+from narration_pronunciation import spoken_text, speech_key, validate_query, clip_fingerprint
 
 CACHE=Path(os.environ.get('EM_FILM_CACHE','/private/tmp/physics-em-films'))
 SPEAKER=10001
@@ -9,11 +10,12 @@ def request(endpoint, params, payload=None):
     req=urllib.request.Request(os.environ.get('NEMO_URL','http://127.0.0.1:50123')+'/'+endpoint+'?'+urllib.parse.urlencode(params),data=json.dumps(payload).encode() if payload is not None else b'',headers={'Content-Type':'application/json'})
     return urllib.request.urlopen(req,timeout=180).read()
 def speech(text):
-    spoken=text.replace('電場','でんば').replace('磁場','じば').replace('電気束','でんきそく')
-    key=hashlib.sha256(f'{SPEAKER}|.90|.15|.2|{spoken}'.encode()).hexdigest()[:24]
+    spoken=spoken_text(text)
+    key=speech_key(text,SPEAKER)
     file=CACHE/'speech'/f'{key}.wav'
     if not file.exists():
         query=json.loads(request('audio_query',{'text':spoken,'speaker':SPEAKER}))
+        validate_query(text,query)
         query.update(speedScale=.90,prePhonemeLength=.15,postPhonemeLength=.2)
         data=request('synthesis',{'speaker':SPEAKER},query)
         with wave.open(io.BytesIO(data)) as w:
@@ -29,6 +31,8 @@ for ci,clip in enumerate(plan):
     # same duration. Written Japanese remains unchanged in the subtitles.
     if any('電気束' in scene['narration'] for scene in clip['scenes']):
         clip['pronunciationOverrides']={'電気束':'でんきそく'}
+    fingerprint=clip_fingerprint(clip)
+    if fingerprint:clip['pronunciationFingerprint']=fingerprint
     start=0;segments=[]
     for scene in clip['scenes']:
         scene['start']=start;scene['captions']=[]

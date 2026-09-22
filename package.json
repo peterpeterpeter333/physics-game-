@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:pronunciation": "python3 scripts/test-narration-pronunciation.py",
     "test:reviewed-videos": "node scripts/test-reviewed-narration.mjs",
     "test:prerequisite-videos": "node scripts/test-prerequisite-films.mjs",
     "test:video-scripts": "node scripts/test-all-video-scripts.mjs",

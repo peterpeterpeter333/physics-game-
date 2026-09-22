@@ -392,16 +392,16 @@
       "captions": [
         {
           "start": 33.781333333333336,
-          "end": 40.49266666666667,
+          "end": 40.386,
           "text": "二つの波源からの道のりの差が波長の整数倍なら、同じタイミングで揺れる波は強め合います。"
         },
         {
-          "start": 40.64266666666667,
-          "end": 45.29533333333334,
+          "start": 40.536,
+          "end": 45.18866666666667,
           "text": "半波長だけ余分にずれると、山と谷が重なって弱め合います。"
         }
       ],
-      "end": 46.64533333333334
+      "end": 46.53866666666667
     }
   ],
   "stageId": "prerequisite",
@@ -409,7 +409,8 @@
   "topicId": "prep-superposition",
   "family": "prerequisites",
   "sourceScript": "prep-superposition",
-  "duration": 46.64533333333334,
+  "pronunciationFingerprint": "368757de22b7bb7acaa5e051a5f00746b814dab8d24d4f49be5ba2df725c07b1",
+  "duration": 46.53866666666667,
   "mediaDirectory": "lessons",
-  "renderKey": "39f3d985ef217c2a62f9d3daf9768d573628b5dca250353d8332eeed41dee736"
+  "renderKey": "56008f1a7dcc90b30ed503ab83c64a924233110b4e730cd6293d9553a6e13c68"
 }

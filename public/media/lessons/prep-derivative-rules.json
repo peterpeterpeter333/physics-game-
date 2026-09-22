@@ -125,16 +125,16 @@
       "captions": [
         {
           "start": 24.010666666666665,
-          "end": 28.386,
+          "end": 28.556666666666665,
           "text": "一つの入力の位置での微分の値を、微分係数と言います。"
         },
         {
-          "start": 28.535999999999998,
-          "end": 37.60466666666667,
+          "start": 28.706666666666663,
+          "end": 37.647333333333336,
           "text": "入力ごとにその値を返す関数を導関数と言い、「ディー、ディーエックス」という記号は、微分するという操作を表します。"
         }
       ],
-      "end": 38.95466666666667
+      "end": 38.99733333333333
     }
   ],
   "stageId": "prerequisite",
@@ -142,7 +142,8 @@
   "topicId": "prep-derivative-rules",
   "family": "prerequisites",
   "sourceScript": "prep-derivative-rules",
-  "duration": 38.95466666666667,
+  "pronunciationFingerprint": "c551f5e1ba106398a88ad03a9296d456965b9301da1ee962e6920f63b74887c2",
+  "duration": 38.99733333333333,
   "mediaDirectory": "lessons",
-  "renderKey": "20477b49b181882e9f24b859f617ddb6374d1bb598c719048c6d5c6808ec47b3"
+  "renderKey": "d9c2962110ae7faea449ef8e826d2d994609c546968904ece4c32649a1eb9c61"
 }

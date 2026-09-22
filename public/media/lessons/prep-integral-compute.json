@@ -186,16 +186,16 @@
       "captions": [
         {
           "start": 33.909333333333336,
-          "end": 40.08733333333334,
+          "end": 40.460666666666675,
           "text": "一から三までの積分は、原始関数に三を入れた値から、一を入れた値を引いて求めます。"
         },
         {
-          "start": 40.23733333333334,
-          "end": 44.64466666666667,
+          "start": 40.61066666666667,
+          "end": 45.018,
           "text": "区間の合計を求めるので、定数シーは引き算で消えます。"
         }
       ],
-      "end": 45.994666666666674
+      "end": 46.368
     }
   ],
   "stageId": "prerequisite",
@@ -203,7 +203,8 @@
   "topicId": "prep-integral-compute",
   "family": "prerequisites",
   "sourceScript": "prep-integral-compute",
-  "duration": 45.994666666666674,
+  "pronunciationFingerprint": "709748e33c2dde11584a5bfb42e3fdab42fd1de15a247363ac0bfd56bbedb43f",
+  "duration": 46.368,
   "mediaDirectory": "lessons",
-  "renderKey": "7b41880e48abd928e749276f8031b992b91f5dcc8c6497894f51bd66ca8a69c3"
+  "renderKey": "8013cb2a435885e6ebef3a83f24911e835fa4268799088362f7516a404ae1483"
 }
