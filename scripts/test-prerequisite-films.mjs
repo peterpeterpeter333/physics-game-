@@ -1,7 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync,statSync} from 'node:fs';
 import {build} from 'esbuild';
-import {prerequisites} from '../docs/video-scripts/prerequisite-order.mjs';
 import {prerequisiteDiagram} from './prerequisite-diagrams.mjs';
 const read=p=>JSON.parse(readFileSync(p));
 const prep=read('src/content/prerequisite-video-catalog.generated.json');
@@ -34,9 +33,7 @@ for(const target of original){
  assert.deepEqual(ids.slice(0,-1),routes[target.id].required);
  assert.equal(new Set(ids).size,ids.length);
  const reviewIds=prerequisiteReview([target],prep).map(p=>p.id);
- for(const id of reviewIds){
-  for(const dep of prerequisites[id.replace(/^prep-/,'')]??[])assert.ok(reviewIds.indexOf(`prep-${dep}`)>=0&&reviewIds.indexOf(`prep-${dep}`)<reviewIds.indexOf(id),`${target.id}: ${dep} available in optional review before ${id}`);
- }
+ assert.deepEqual(reviewIds,routes[target.id].required,`${target.id}: review must not add other units' prerequisites`);
 }
 assert.deepEqual(prerequisitePlaylist(em,prep),em,'Do not insert non-EM prerequisites into university EM playlists');
 for(const stage of new Set(original.map(m=>m.stageId)))for(const level of ['intro','middle','advanced']){

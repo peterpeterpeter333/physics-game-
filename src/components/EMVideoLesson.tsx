@@ -4,7 +4,7 @@ import catalog from '../content/em-video-catalog.generated.json';
 import lessonCatalog from '../content/lesson-video-catalog.generated.json';
 import prerequisiteCatalog from '../content/prerequisite-video-catalog.generated.json';
 import {prerequisitePlaylist,prerequisiteReview} from '../game/prerequisite-playlist';
-import {readWatchedVideos,markVideoWatched,restoredVideoId,legacyVideoId} from '../game/video-progress';
+import {restoredVideoId,legacyVideoId} from '../game/video-progress';
 import {claimNarration} from '../game/narration';
 import {spiralLessons} from '../content/em-spiral';
 import {movedCycles} from '../content/university-curriculum';
@@ -30,8 +30,8 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit}:{stage:S
  </div>;
 }
 function VideoPlayer({stage,alreadyFinished,onComplete,onExit,original,level}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;original:Movie[];level:string}){
- // Snapshot at entry: completing a film must not remove the playing item or shift Next.
- const [list]=useState(()=>prerequisitePlaylist(original,prerequisiteCatalog as unknown as Movie[],readWatchedVideos()));
+ // The unit's assigned videos do not depend on completion in other units.
+ const [list]=useState(()=>prerequisitePlaylist(original,prerequisiteCatalog as unknown as Movie[]));
  const review=prerequisiteReview(original,prerequisiteCatalog as unknown as Movie[]);
  const positionKey=`physics-quest:video-position:v3:${stage.id}:${level}`;
  const [selectedId,setSelectedId]=useState(()=>{
@@ -66,7 +66,6 @@ function VideoPlayer({stage,alreadyFinished,onComplete,onExit,original,level}:{s
   <section className="em-movie-main" aria-label="図と音声で学ぶ">
    <h2>{movie.title}</h2>
    <video key={movie.id} ref={player} controls playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${movie.title}の音声・字幕付き動画`}
-    onEnded={()=>markVideoWatched(movie.id)}
     onError={()=>setFailed(true)} onPlay={()=>{release.current?.();release.current=claimNarration(()=>player.current?.pause());}}
     onTimeUpdate={()=>{const t=player.current?.currentTime??0;const i=movie.scenes.findIndex(s=>t>=s.start&&t<s.end);if(i>=0)setActive(i);}}>
     <source src={`${base}.mp4${revision}`} type="video/mp4" onError={()=>setFailed(true)}/>
