@@ -1,0 +1,306 @@
+{
+  "id": "prep-graph-slope",
+  "title": "グラフの傾きは、何を割った値？",
+  "level": "middle",
+  "before": [
+    "m1-velocity-middle",
+    "m1-acceleration-middle",
+    "m1-velocity-advanced",
+    "um-derivative-intro",
+    "um-derivative-middle",
+    "uc-newton-middle",
+    "um-derivative-advanced",
+    "um-derivative-advanced-followups-4",
+    "m-shm-advanced",
+    "um-shm-ode-middle",
+    "uc-shm-middle",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1",
+    "uc-frontier-advanced-followups-3",
+    "um-taylor-middle",
+    "um-taylor-advanced",
+    "uc-potential-advanced",
+    "uc-frontier-intro",
+    "uc-frontier-middle",
+    "um-ode-intro",
+    "uc-drag-intro",
+    "uc-drag-middle",
+    "uc-drag-advanced",
+    "m-circular-intro",
+    "m-circular-middle",
+    "m-circular-advanced",
+    "uc-angular-intro",
+    "a-bohr-advanced",
+    "um-rules-intro",
+    "um-rules-middle",
+    "um-vector-advanced",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "um-ode-middle",
+    "a-nucleus-middle",
+    "um-ode-advanced",
+    "a-nucleus-advanced",
+    "um-rules-advanced",
+    "uc-potential-middle",
+    "um-integral-advanced",
+    "uc-newton-advanced",
+    "uc-rigid1-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid1-middle",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-advanced-followups-6",
+    "m1-acceleration-intro",
+    "m1-uniform-accel-intro",
+    "uc-newton-intro",
+    "m1-uniform-accel-advanced",
+    "m-freefall-middle",
+    "m-projectile-advanced",
+    "m-energy-intro",
+    "m-freefall-advanced",
+    "ui-energy-change-bridges-8",
+    "uc-work-intro",
+    "e-field-advanced",
+    "e-capacitor-middle",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced",
+    "m-energy-advanced",
+    "uc-potential-intro",
+    "m-force-intro",
+    "m-force-middle",
+    "m-freefall-intro",
+    "m-projectile-intro",
+    "ui-force-map-bridges-6",
+    "uc-rigid1-intro",
+    "m-shm-intro",
+    "uc-shm-intro",
+    "um-shm-ode-intro",
+    "m-force-advanced",
+    "m-momentum-intro",
+    "m-momentum-middle",
+    "m-momentum-advanced",
+    "uc-momentum-intro",
+    "uc-momentum-middle",
+    "uc-momentum-advanced",
+    "a-photon-middle",
+    "a-bohr-intro",
+    "a-bohr-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "このグラフは、横が時刻、縦が位置です。点の高さが物体の位置を表します。線の形は、物体が実際に通った道の形ではありません。",
+      "equation": "横軸：時刻；縦軸：位置",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "位置 [m]",
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "このグラフは、横が時刻、縦が位置です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.6286666666666667,
+          "text": "このグラフは、横が時刻、縦が位置です。"
+        },
+        {
+          "start": 3.7786666666666666,
+          "end": 6.767333333333334,
+          "text": "点の高さが物体の位置を表します。"
+        },
+        {
+          "start": 6.917333333333334,
+          "end": 11.591333333333333,
+          "text": "線の形は、物体が実際に通った道の形ではありません。"
+        }
+      ],
+      "end": 12.941333333333333
+    },
+    {
+      "narration": "時刻が一秒進む間に、位置は二メートル増えています。グラフの傾きは、縦の変化を横の変化で割って求めます。ここでは二割る一で、二です。",
+      "equation": "傾き = (7 − 1) m ÷ (3 − 0) s = 2 m/s",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "位置 [m]",
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "slope": true
+      },
+      "index": 1,
+      "heading": "時刻が一秒進む間に、位置は二メートル増えています。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 12.941333333333333,
+      "captions": [
+        {
+          "start": 12.941333333333333,
+          "end": 17.124666666666666,
+          "text": "時刻が一秒進む間に、位置は二メートル増えています。"
+        },
+        {
+          "start": 17.274666666666665,
+          "end": 21.788666666666664,
+          "text": "グラフの傾きは、縦の変化を横の変化で割って求めます。"
+        },
+        {
+          "start": 21.938666666666663,
+          "end": 24.78866666666666,
+          "text": "ここでは二割る一で、二です。"
+        }
+      ],
+      "end": 26.138666666666662
+    },
+    {
+      "narration": "位置のグラフが水平なら、時間がたっても位置は変わりません。物体は止まっていて、速度はゼロです。",
+      "equation": "位置の変化 = 0 → 速度 = 0",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "位置 [m]",
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "slope": true
+      },
+      "index": 2,
+      "heading": "位置のグラフが水平なら、時間がたっても位置は変わりません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 26.138666666666662,
+      "captions": [
+        {
+          "start": 26.138666666666662,
+          "end": 30.46066666666666,
+          "text": "位置のグラフが水平なら、時間がたっても位置は変わりません。"
+        },
+        {
+          "start": 30.61066666666666,
+          "end": 33.748666666666665,
+          "text": "物体は止まっていて、速度はゼロです。"
+        }
+      ],
+      "end": 35.09866666666666
+    },
+    {
+      "narration": "縦軸を速度に変えると、同じ「縦割る横」の計算でも、出てくるものが変わります。速度の変化を時間で割ったものが、加速度です。",
+      "equation": "加速度 = 速度の変化 ÷ 経過時間",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "slope": true
+      },
+      "index": 3,
+      "heading": "縦軸を速度に変えると、同じ「縦割る横」の計算でも、出てくるものが変わります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 35.09866666666666,
+      "captions": [
+        {
+          "start": 35.09866666666666,
+          "end": 42.01266666666666,
+          "text": "縦軸を速度に変えると、同じ「縦割る横」の計算でも、出てくるものが変わります。"
+        },
+        {
+          "start": 42.16266666666666,
+          "end": 45.897999999999996,
+          "text": "速度の変化を時間で割ったものが、加速度です。"
+        }
+      ],
+      "end": 47.248
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "グラフの傾きは、何を割った値？",
+  "topicId": "prep-graph-slope",
+  "family": "prerequisites",
+  "sourceScript": "prep-graph-slope",
+  "duration": 47.248,
+  "mediaDirectory": "lessons",
+  "renderKey": "21ac49a5b3a014513f1fc4a5191a604b1dc65fe0099523e1963e2558ccaf3dfe"
+}

@@ -1,0 +1,176 @@
+{
+  "id": "prep-field-flux",
+  "title": "電場・磁場と、面を通る量",
+  "level": "intro",
+  "before": [
+    "e-magnet-intro",
+    "e-magnet-middle",
+    "e-magnet-advanced",
+    "e-field-middle",
+    "e-field-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "電場は、プラスの電荷一クーロンをそこに置いたときに受ける力を表します。電場の矢印は力の向きで、マイナスの電荷が受ける力は逆向きです。",
+      "equation": "F = qE；Eの単位はN/C",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "電場 E"
+          ],
+          [
+            -2,
+            0,
+            "負電荷への力"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "電場は、プラスの電荷一クーロンをそこに置いたときに受ける力を表します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.154,
+          "text": "電場は、プラスの電荷一クーロンをそこに置いたときに受ける力を表します。"
+        },
+        {
+          "start": 5.303999999999999,
+          "end": 10.639333333333333,
+          "text": "電場の矢印は力の向きで、マイナスの電荷が受ける力は逆向きです。"
+        }
+      ],
+      "end": 11.989333333333331
+    },
+    {
+      "narration": "磁場は、電流や磁石が作るもので、動く電荷などに力を及ぼします。磁力線は磁場の向きを描いた線で、線の本数そのものは測った値ではありません。",
+      "equation": "磁場Bの単位：T；電場Eとは別の量",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            3,
+            "磁場 B"
+          ],
+          [
+            3,
+            0,
+            "電荷の速度 v"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "磁場は、電流や磁石が作るもので、動く電荷などに力を及ぼします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.989333333333331,
+      "captions": [
+        {
+          "start": 11.989333333333331,
+          "end": 17.537999999999997,
+          "text": "磁場は、電流や磁石が作るもので、動く電荷などに力を及ぼします。"
+        },
+        {
+          "start": 17.687999999999995,
+          "end": 23.311333333333327,
+          "text": "磁力線は磁場の向きを描いた線で、線の本数そのものは測った値ではありません。"
+        }
+      ],
+      "end": 24.661333333333328
+    },
+    {
+      "narration": "どこでも同じ磁場が面をまっすぐ貫くとき、磁束は「磁場の強さかける面積」です。面を傾けた場合は、面に垂直な磁場の分を使います。",
+      "equation": "磁束 Φ = BS cos θ；θはBと面の法線の角",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            2,
+            3,
+            "磁場 B"
+          ],
+          [
+            0,
+            3,
+            "面の法線"
+          ]
+        ],
+        "components": true
+      },
+      "index": 2,
+      "heading": "どこでも同じ磁場が面をまっすぐ貫くとき、磁束は「磁場の強さかける面積」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.661333333333328,
+      "captions": [
+        {
+          "start": 24.661333333333328,
+          "end": 31.24466666666666,
+          "text": "どこでも同じ磁場が面をまっすぐ貫くとき、磁束は「磁場の強さかける面積」です。"
+        },
+        {
+          "start": 31.394666666666662,
+          "end": 35.812666666666665,
+          "text": "面を傾けた場合は、面に垂直な磁場の分を使います。"
+        }
+      ],
+      "end": 37.16266666666667
+    },
+    {
+      "narration": "電磁誘導では、磁束の変化を、それにかかった時間で割ります。誘導の向きは、「磁束の変化を妨げる向き」という法則で決まります。",
+      "equation": "平均の誘導起電力の大きさ = |ΔΦ|/Δt",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "磁束 [Wb]",
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "slope": true
+      },
+      "index": 3,
+      "heading": "電磁誘導では、磁束の変化を、それにかかった時間で割ります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 37.16266666666667,
+      "captions": [
+        {
+          "start": 37.16266666666667,
+          "end": 41.954,
+          "text": "電磁誘導では、磁束の変化を、それにかかった時間で割ります。"
+        },
+        {
+          "start": 42.104,
+          "end": 47.55666666666667,
+          "text": "誘導の向きは、「磁束の変化を妨げる向き」という法則で決まります。"
+        }
+      ],
+      "end": 48.906666666666666
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "電場・磁場と、面を通る量",
+  "topicId": "prep-field-flux",
+  "family": "prerequisites",
+  "sourceScript": "prep-field-flux",
+  "duration": 48.906666666666666,
+  "mediaDirectory": "lessons",
+  "renderKey": "17aedc4dad7cbf7c2e1c21ef6e0003c97dca7f423ac581cd64e946f54483361b"
+}

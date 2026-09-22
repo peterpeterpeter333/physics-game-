@@ -92,5 +92,5 @@ for(const entry of plan){
 }
 // The app only references successfully encoded movies. Unfinished units retain their original lesson.
 const catalog=plan.filter(c=>existsSync(path.join(out,`${c.id}.mp4`))).map(c=>JSON.parse(readFileSync(path.join(out,`${c.id}.json`))));
-if(!process.env.EM_FILM_PREFLIGHT)writeFileSync('src/content/em-video-catalog.generated.json',JSON.stringify(catalog));
+if(!process.env.EM_FILM_PREFLIGHT&&!process.env.EM_FILM_NO_FINALIZE&&!selected.length)writeFileSync('src/content/em-video-catalog.generated.json',JSON.stringify(catalog));
 console.log(`Catalog: ${catalog.length}/${plan.length} movies`);

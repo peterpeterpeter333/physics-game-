@@ -1,0 +1,163 @@
+{
+  "id": "prep-chain",
+  "title": "二段階の変化率を掛ける",
+  "level": "intro",
+  "before": [
+    "um-rules-intro",
+    "um-rules-middle",
+    "um-vector-advanced",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1",
+    "um-shm-ode-middle",
+    "m-shm-advanced",
+    "uc-shm-middle",
+    "um-ode-middle",
+    "uc-drag-middle",
+    "a-nucleus-middle",
+    "um-ode-advanced",
+    "uc-drag-advanced",
+    "a-nucleus-advanced",
+    "um-rules-advanced",
+    "uc-potential-middle"
+  ],
+  "scenes": [
+    {
+      "narration": "円の面積は半径で決まり、半径は時刻で決まるとします。時刻が変わると半径が変わり、その結果として面積が変わります。",
+      "equation": "時刻 t → 半径 r → 面積 A",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "半径 r [m]",
+        "yLabel": "面積 A [m²]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            3.141592653589793
+          ],
+          [
+            2,
+            12.566370614359172
+          ],
+          [
+            3,
+            28.274333882308138
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "円の面積は半径で決まり、半径は時刻で決まるとします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.620666666666667,
+          "text": "円の面積は半径で決まり、半径は時刻で決まるとします。"
+        },
+        {
+          "start": 4.770666666666666,
+          "end": 9.604666666666667,
+          "text": "時刻が変わると半径が変わり、その結果として面積が変わります。"
+        }
+      ],
+      "end": 10.954666666666665
+    },
+    {
+      "narration": "短い時間の間の面積の変化を、いったん半径の変化で割って、また掛け直します。途中の「半径の変化」は、分子と分母で打ち消し合います。",
+      "equation": "ΔA/Δt = (ΔA/Δr)(Δr/Δt)",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "面積/半径",
+          "半径/時間"
+        ],
+        "values": [
+          4,
+          2
+        ],
+        "unit": "変化率の例"
+      },
+      "index": 1,
+      "heading": "短い時間の間の面積の変化を、いったん半径の変化で割って、また掛け直します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.954666666666665,
+      "captions": [
+        {
+          "start": 10.954666666666665,
+          "end": 17.17533333333333,
+          "text": "短い時間の間の面積の変化を、いったん半径の変化で割って、また掛け直します。"
+        },
+        {
+          "start": 17.325333333333333,
+          "end": 22.159333333333333,
+          "text": "途中の「半径の変化」は、分子と分母で打ち消し合います。"
+        }
+      ],
+      "end": 23.509333333333334
+    },
+    {
+      "narration": "時間の幅をゼロに近づけると、二つの変化率を掛ける式になります。半径二メートルの円で、半径が毎秒〇・一メートル増えるなら、面積が増える速さは、毎秒〇・四パイ平方メートルです。",
+      "equation": "dA/dt = (2πr)(dr/dt) = 0.4π m²/s",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "半径 [m]",
+        "yLabel": "dA/dr [m]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            6.283185307179586
+          ],
+          [
+            2,
+            12.566370614359172
+          ],
+          [
+            3,
+            18.84955592153876
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "時間の幅をゼロに近づけると、二つの変化率を掛ける式になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.509333333333334,
+      "captions": [
+        {
+          "start": 23.509333333333334,
+          "end": 28.49266666666667,
+          "text": "時間の幅をゼロに近づけると、二つの変化率を掛ける式になります。"
+        },
+        {
+          "start": 28.642666666666667,
+          "end": 37.53,
+          "text": "半径二メートルの円で、半径が毎秒〇・一メートル増えるなら、面積が増える速さは、毎秒〇・四パイ平方メートルです。"
+        }
+      ],
+      "end": 38.88
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "二段階の変化率を掛ける",
+  "topicId": "prep-chain",
+  "family": "prerequisites",
+  "sourceScript": "prep-chain",
+  "duration": 38.88,
+  "mediaDirectory": "lessons",
+  "renderKey": "5117a0786c5be08369642145b8aa976803a531f52fc8c2ae8f12ada13f3e96ef"
+}

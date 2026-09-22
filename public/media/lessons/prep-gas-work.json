@@ -1,0 +1,173 @@
+{
+  "id": "prep-gas-work",
+  "title": "気体が押す仕事と、内部のエネルギー",
+  "level": "middle",
+  "before": [
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "気体がゆっくりピストンを押す場合を考えます。「圧力かけるピストンの面積」が、ピストンを押す力です。",
+      "equation": "押す力 = pS",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "気体が押す力 pS"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "気体がゆっくりピストンを押す場合を考えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.266,
+          "text": "気体がゆっくりピストンを押す場合を考えます。"
+        },
+        {
+          "start": 3.416,
+          "end": 8.164666666666665,
+          "text": "「圧力かけるピストンの面積」が、ピストンを押す力です。"
+        }
+      ],
+      "end": 9.514666666666665
+    },
+    {
+      "narration": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。圧力が一定なら、気体の仕事は「圧力かける体積の増加」です。",
+      "equation": "W = (pS)Δx = pΔV",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積の増加 [m³]",
+        "yLabel": "圧力 [Pa]",
+        "points": [
+          [
+            0,
+            100
+          ],
+          [
+            2,
+            100
+          ]
+        ],
+        "area": true
+      },
+      "index": 1,
+      "heading": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.514666666666665,
+      "captions": [
+        {
+          "start": 9.514666666666665,
+          "end": 15.137999999999998,
+          "text": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。"
+        },
+        {
+          "start": 15.287999999999997,
+          "end": 20.825999999999997,
+          "text": "圧力が一定なら、気体の仕事は「圧力かける体積の増加」です。"
+        }
+      ],
+      "end": 22.175999999999995
+    },
+    {
+      "narration": "圧力が途中で変わるときは、区間ごとの仕事を足します。最初と最後の体積が同じでも、途中の圧力が違えば、仕事は変わります。",
+      "equation": "仕事 = p–Vグラフの面積",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積",
+        "yLabel": "圧力",
+        "points": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1.3333333333333333
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "area": true
+      },
+      "index": 2,
+      "heading": "圧力が途中で変わるときは、区間ごとの仕事を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.175999999999995,
+      "captions": [
+        {
+          "start": 22.175999999999995,
+          "end": 26.529999999999994,
+          "text": "圧力が途中で変わるときは、区間ごとの仕事を足します。"
+        },
+        {
+          "start": 26.679999999999993,
+          "end": 32.71933333333333,
+          "text": "最初と最後の体積が同じでも、途中の圧力が違えば、仕事は変わります。"
+        }
+      ],
+      "end": 34.069333333333326
+    },
+    {
+      "narration": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。ここでは、外へする仕事をプラスとする約束で書きます。",
+      "equation": "Q = ΔU + W（気体が外へする仕事を正）",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "受け取った熱",
+          "内部の増加",
+          "外への仕事"
+        ],
+        "values": [
+          100,
+          70,
+          30
+        ],
+        "unit": "J"
+      },
+      "index": 3,
+      "heading": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 34.069333333333326,
+      "captions": [
+        {
+          "start": 34.069333333333326,
+          "end": 39.62866666666666,
+          "text": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。"
+        },
+        {
+          "start": 39.77866666666666,
+          "end": 43.99399999999999,
+          "text": "ここでは、外へする仕事をプラスとする約束で書きます。"
+        }
+      ],
+      "end": 45.343999999999994
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "気体が押す仕事と、内部のエネルギー",
+  "topicId": "prep-gas-work",
+  "family": "prerequisites",
+  "sourceScript": "prep-gas-work",
+  "duration": 45.343999999999994,
+  "mediaDirectory": "lessons",
+  "renderKey": "6242c319d8c155247672a91b41293cbfcb949fa1b0b9a201e14c42247293f1f6"
+}

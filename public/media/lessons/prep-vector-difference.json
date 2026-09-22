@@ -1,0 +1,184 @@
+{
+  "id": "prep-vector-difference",
+  "title": "速度の矢印を引き算する",
+  "level": "advanced",
+  "before": [
+    "m1-acceleration-advanced",
+    "m-circular-middle",
+    "um-vector-intro",
+    "uc-frontier-intro",
+    "uc-frontier-middle",
+    "m-circular-intro",
+    "m-circular-advanced",
+    "uc-angular-intro",
+    "a-bohr-advanced",
+    "um-vector-middle",
+    "um-area-vector-bridges-4",
+    "um-path-pieces-bridges-3",
+    "uc-angular-middle",
+    "uc-angular-advanced",
+    "um-cross-middle",
+    "um-cross-advanced",
+    "uc-rigid2-middle",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3"
+  ],
+  "scenes": [
+    {
+      "narration": "大きさと向きの両方を持つ量を、ベクトルと言います。横に三、縦に二進む移動は、(三、二)と二つの数の組で表せます。",
+      "equation": "移動ベクトル = (3, 2)",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            2,
+            "移動 (3, 2)"
+          ]
+        ],
+        "components": true
+      },
+      "index": 0,
+      "heading": "大きさと向きの両方を持つ量を、ベクトルと言います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.9593333333333334,
+          "text": "大きさと向きの両方を持つ量を、ベクトルと言います。"
+        },
+        {
+          "start": 4.109333333333333,
+          "end": 10.255333333333333,
+          "text": "横に三、縦に二進む移動は、(三、二)と二つの数の組で表せます。"
+        }
+      ],
+      "end": 11.60533333333333
+    },
+    {
+      "narration": "二つのベクトルの差は、横どうし、縦どうしで引いて求めます。初めの速度が右向き三、後の速度が上向き三なら、変化は「左に三、上に三」です。",
+      "equation": "速度の変化 = (0, 3) − (3, 0) = (−3, 3)",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "前の速度"
+          ],
+          [
+            0,
+            3,
+            "後の速度"
+          ]
+        ],
+        "difference": true
+      },
+      "index": 1,
+      "heading": "二つのベクトルの差は、横どうし、縦どうしで引いて求めます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.60533333333333,
+      "captions": [
+        {
+          "start": 11.60533333333333,
+          "end": 16.34333333333333,
+          "text": "二つのベクトルの差は、横どうし、縦どうしで引いて求めます。"
+        },
+        {
+          "start": 16.493333333333332,
+          "end": 23.801999999999996,
+          "text": "初めの速度が右向き三、後の速度が上向き三なら、変化は「左に三、上に三」です。"
+        }
+      ],
+      "end": 25.151999999999997
+    },
+    {
+      "narration": "図では、二つの矢印の根元をそろえます。前の矢印の先から、後の矢印の先へ向かう矢印が、速度の変化です。",
+      "equation": "前の速度 + 速度の変化 = 後の速度",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "前"
+          ],
+          [
+            0,
+            3,
+            "後"
+          ]
+        ],
+        "difference": true
+      },
+      "index": 2,
+      "heading": "図では、二つの矢印の根元をそろえます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 25.151999999999997,
+      "captions": [
+        {
+          "start": 25.151999999999997,
+          "end": 28.63133333333333,
+          "text": "図では、二つの矢印の根元をそろえます。"
+        },
+        {
+          "start": 28.78133333333333,
+          "end": 34.724666666666664,
+          "text": "前の矢印の先から、後の矢印の先へ向かう矢印が、速度の変化です。"
+        }
+      ],
+      "end": 36.074666666666666
+    },
+    {
+      "narration": "平均加速度の矢印は、この速度の変化を、かかった時間で割ったものです。速さが同じでも向きが変われば、加速度はゼロではありません。",
+      "equation": "平均加速度 = 速度ベクトルの変化 ÷ 経過時間",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "前"
+          ],
+          [
+            0,
+            3,
+            "後"
+          ]
+        ],
+        "difference": true
+      },
+      "index": 3,
+      "heading": "平均加速度の矢印は、この速度の変化を、かかった時間で割ったものです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 36.074666666666666,
+      "captions": [
+        {
+          "start": 36.074666666666666,
+          "end": 41.730000000000004,
+          "text": "平均加速度の矢印は、この速度の変化を、かかった時間で割ったものです。"
+        },
+        {
+          "start": 41.879999999999995,
+          "end": 46.276666666666664,
+          "text": "速さが同じでも向きが変われば、加速度はゼロではありません。"
+        }
+      ],
+      "end": 47.626666666666665
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "速度の矢印を引き算する",
+  "topicId": "prep-vector-difference",
+  "family": "prerequisites",
+  "sourceScript": "prep-vector-difference",
+  "duration": 47.626666666666665,
+  "mediaDirectory": "lessons",
+  "renderKey": "fc325cb24c44f03efddea54f92de145c8df6f393a32ef9fb203f20a57f598ce6"
+}

@@ -1,0 +1,176 @@
+{
+  "id": "prep-torque",
+  "title": "回す力の効果と、角運動量",
+  "level": "middle",
+  "before": [
+    "uc-angular-middle",
+    "uc-angular-advanced",
+    "um-cross-middle",
+    "um-cross-advanced",
+    "uc-rigid2-middle",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3"
+  ],
+  "scenes": [
+    {
+      "narration": "ドアを回す効果は、力の大きさだけでなく、押す位置と向きでも変わります。力の矢印を両側に延ばした直線が、力の作用線です。回転軸からこの線までの垂直な距離を、力の腕と呼びます。",
+      "equation": "トルクの大きさ = 力 × 垂直な腕",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "軸から作用点へ r"
+          ],
+          [
+            0,
+            3,
+            "力 F"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "ドアを回す効果は、力の大きさだけでなく、押す位置と向きでも変わります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.4206666666666665,
+          "text": "ドアを回す効果は、力の大きさだけでなく、押す位置と向きでも変わります。"
+        },
+        {
+          "start": 5.570666666666666,
+          "end": 10.383333333333333,
+          "text": "力の矢印を両側に延ばした直線が、力の作用線です。"
+        },
+        {
+          "start": 10.533333333333331,
+          "end": 15.367333333333331,
+          "text": "回転軸からこの線までの垂直な距離を、力の腕と呼びます。"
+        }
+      ],
+      "end": 16.717333333333332
+    },
+    {
+      "narration": "位置の矢印と力の矢印が作る平行四辺形の面積は、同じ「力かける腕」になります。回転の向きを、面に垂直な矢印で表すために、外積を定義します。",
+      "equation": "|r×F| = rF sin θ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "r"
+          ],
+          [
+            1,
+            3,
+            "F"
+          ]
+        ],
+        "components": true
+      },
+      "index": 1,
+      "heading": "位置の矢印と力の矢印が作る平行四辺形の面積は、同じ「力かける腕」になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 16.717333333333332,
+      "captions": [
+        {
+          "start": 16.717333333333332,
+          "end": 24.154,
+          "text": "位置の矢印と力の矢印が作る平行四辺形の面積は、同じ「力かける腕」になります。"
+        },
+        {
+          "start": 24.304,
+          "end": 30.05533333333333,
+          "text": "回転の向きを、面に垂直な矢印で表すために、外積を定義します。"
+        }
+      ],
+      "end": 31.40533333333333
+    },
+    {
+      "narration": "右手の指を、最初の矢印から次の矢印へ曲げると、親指の向きが外積の向きです。掛ける順番を逆にすると、外積の向きも反対になります。",
+      "equation": "r×F = −F×r；成分の順序にも注意",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "x方向"
+          ],
+          [
+            0,
+            3,
+            "y方向"
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "右手の指を、最初の矢印から次の矢印へ曲げると、親指の向きが外積の向きです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 31.40533333333333,
+      "captions": [
+        {
+          "start": 31.40533333333333,
+          "end": 38.05266666666667,
+          "text": "右手の指を、最初の矢印から次の矢印へ曲げると、親指の向きが外積の向きです。"
+        },
+        {
+          "start": 38.202666666666666,
+          "end": 42.802,
+          "text": "掛ける順番を逆にすると、外積の向きも反対になります。"
+        }
+      ],
+      "end": 44.152
+    },
+    {
+      "narration": "質点の角運動量は、位置と運動量の外積です。同じ原点まわりで外からのトルクの合計がゼロなら、その原点まわりの角運動量は変わりません。",
+      "equation": "L=r×p；dL/dt=τ外部",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "外部トルク0：最初のL",
+          "後のL"
+        ],
+        "values": [
+          4,
+          4
+        ],
+        "unit": "kg·m²/s"
+      },
+      "index": 3,
+      "heading": "質点の角運動量は、位置と運動量の外積です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 44.152,
+      "captions": [
+        {
+          "start": 44.152,
+          "end": 48.239333333333335,
+          "text": "質点の角運動量は、位置と運動量の外積です。"
+        },
+        {
+          "start": 48.38933333333333,
+          "end": 55.10066666666667,
+          "text": "同じ原点まわりで外からのトルクの合計がゼロなら、その原点まわりの角運動量は変わりません。"
+        }
+      ],
+      "end": 56.45066666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "回す力の効果と、角運動量",
+  "topicId": "prep-torque",
+  "family": "prerequisites",
+  "sourceScript": "prep-torque",
+  "duration": 56.45066666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "d32d483da821afb661dc33a7aaaf87511f7a8e1e88230a7701d71c56102cf45b"
+}

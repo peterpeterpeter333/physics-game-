@@ -1,0 +1,176 @@
+{
+  "id": "prep-work-path",
+  "title": "変わる力と、曲がった道の仕事",
+  "level": "middle",
+  "before": [
+    "ui-work-changing-bridges-7",
+    "uc-work-advanced",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10"
+  ],
+  "scenes": [
+    {
+      "narration": "最初の一メートルで力が二ニュートン、次の一メートルで四ニュートンなら、それぞれの仕事、二と四を足します。力が変わるときは、一つの力を全距離に掛けることはできません。",
+      "equation": "W = 2×1+4×1 = 6 J",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "移動距離 [m]",
+        "yLabel": "力 [N]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "area": true
+      },
+      "index": 0,
+      "heading": "最初の一メートルで力が二ニュートン、次の一メートルで四ニュートンなら、それぞれの仕事、二と四を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 7.65,
+          "text": "最初の一メートルで力が二ニュートン、次の一メートルで四ニュートンなら、それぞれの仕事、二と四を足します。"
+        },
+        {
+          "start": 7.8,
+          "end": 12.644666666666666,
+          "text": "力が変わるときは、一つの力を全距離に掛けることはできません。"
+        }
+      ],
+      "end": 13.994666666666665
+    },
+    {
+      "narration": "道が曲がる場合は、短い移動ごとに向きも変わります。各区間で、その区間の力と移動の内積を求めてから、足します。",
+      "equation": "区間の仕事 ≈ FₓΔx+FᵧΔy",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            1,
+            "その場所の力"
+          ],
+          [
+            1,
+            2,
+            "短い移動"
+          ]
+        ],
+        "components": true
+      },
+      "index": 1,
+      "heading": "道が曲がる場合は、短い移動ごとに向きも変わります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 13.994666666666665,
+      "captions": [
+        {
+          "start": 13.994666666666665,
+          "end": 18.156666666666666,
+          "text": "道が曲がる場合は、短い移動ごとに向きも変わります。"
+        },
+        {
+          "start": 18.306666666666665,
+          "end": 23.50333333333333,
+          "text": "各区間で、その区間の力と移動の内積を求めてから、足します。"
+        }
+      ],
+      "end": 24.85333333333333
+    },
+    {
+      "narration": "面を通り抜ける流れを数えるときも、向きに沿った分を選びます。面に平行な流れは通り抜けないので、面に垂直な分に面積を掛けます。",
+      "equation": "通過する量 = 流れの垂直成分 × 面積",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            2,
+            3,
+            "流れ"
+          ],
+          [
+            0,
+            3,
+            "面の法線"
+          ]
+        ],
+        "components": true
+      },
+      "index": 2,
+      "heading": "面を通り抜ける流れを数えるときも、向きに沿った分を選びます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.85333333333333,
+      "captions": [
+        {
+          "start": 24.85333333333333,
+          "end": 29.601999999999997,
+          "text": "面を通り抜ける流れを数えるときも、向きに沿った分を選びます。"
+        },
+        {
+          "start": 29.752,
+          "end": 35.226,
+          "text": "面に平行な流れは通り抜けないので、面に垂直な分に面積を掛けます。"
+        }
+      ],
+      "end": 36.576
+    },
+    {
+      "narration": "運動の式でも、力を横と縦に分けてから、同じ方向どうしを足します。斜めの力の大きさを、そのまま横の力に足してはいけません。",
+      "equation": "maₓ = ΣFₓ；maᵧ = ΣFᵧ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            4,
+            "斜めの力"
+          ]
+        ],
+        "components": true
+      },
+      "index": 3,
+      "heading": "運動の式でも、力を横と縦に分けてから、同じ方向どうしを足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 36.576,
+      "captions": [
+        {
+          "start": 36.576,
+          "end": 42.263333333333335,
+          "text": "運動の式でも、力を横と縦に分けてから、同じ方向どうしを足します。"
+        },
+        {
+          "start": 42.413333333333334,
+          "end": 47.05533333333334,
+          "text": "斜めの力の大きさを、そのまま横の力に足してはいけません。"
+        }
+      ],
+      "end": 48.40533333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "変わる力と、曲がった道の仕事",
+  "topicId": "prep-work-path",
+  "family": "prerequisites",
+  "sourceScript": "prep-work-path",
+  "duration": 48.40533333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "b091e5abf4dcce9f2cab16786d65d3ba26657ebe488fa6e50bf2a12386eaa13b"
+}

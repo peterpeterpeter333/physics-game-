@@ -6,6 +6,7 @@ import {repairedDiagram,diagramClock} from './em-film-visuals.mjs';
 
 const read=p=>JSON.parse(readFileSync(p));
 const revisions=read('scripts/em-narration-revisions.json');
+const latest=read('docs/video-scripts/reviewed-narration-20260923.json').changes;
 const scope=read('scripts/em-video-repair-scope.json');
 const {stages,diagram}=await loadSource();
 const movies=read('src/content/em-video-catalog.generated.json');
@@ -13,7 +14,8 @@ let edited=0,checked=0;
 for(const [id,entries] of Object.entries(revisions)){
  const stage=stages.find(s=>s.id===id);assert.ok(stage,id);
  for(const [number,text] of Object.entries(entries)){
-  assert.equal(stage.steps[+number-1].narration,text,`${id}:${number} revision not applied`);
+  const current=latest.find(c=>c.stageId===id&&c.index===+number-1);
+  assert.equal(stage.steps[+number-1].narration,current?.after??text,`${id}:${number} revision not applied`);
   assert.ok(scope[id].includes(+number));edited++;
  }
 }

@@ -1,0 +1,148 @@
+{
+  "id": "prep-derivative-rules",
+  "title": "定数と一次式を、同じ定義で微分する",
+  "level": "middle",
+  "before": [
+    "um-derivative-middle",
+    "uc-newton-middle"
+  ],
+  "scenes": [
+    {
+      "narration": "微分は、入力の変化に対する出力の変化の比を、幅をゼロに近づけて求める操作です。出力がいつも三なら、出力の差はいつもゼロです。",
+      "equation": "定数の微分：(3−3)/h=0",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "入力 x",
+        "yLabel": "出力3",
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "slope": true
+      },
+      "index": 0,
+      "heading": "微分は、入力の変化に対する出力の変化の比を、幅をゼロに近づけて求める操作です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.615333333333334,
+          "text": "微分は、入力の変化に対する出力の変化の比を、幅をゼロに近づけて求める操作です。"
+        },
+        {
+          "start": 6.765333333333333,
+          "end": 10.799333333333333,
+          "text": "出力がいつも三なら、出力の差はいつもゼロです。"
+        }
+      ],
+      "end": 12.149333333333333
+    },
+    {
+      "narration": "出力が「入力の二倍足す三」なら、入力をエイチ増やすと、出力は二エイチ増えます。比を取ると二なので、どの位置でも微分は二です。",
+      "equation": "[2(x+h)+3−(2x+3)]/h=2",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "入力 x",
+        "yLabel": "出力2x+3",
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            7
+          ]
+        ],
+        "slope": true
+      },
+      "index": 1,
+      "heading": "出力が「入力の二倍足す三」なら、入力をエイチ増やすと、出力は二エイチ増えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 12.149333333333333,
+      "captions": [
+        {
+          "start": 12.149333333333333,
+          "end": 18.828666666666667,
+          "text": "出力が「入力の二倍足す三」なら、入力をエイチ増やすと、出力は二エイチ増えます。"
+        },
+        {
+          "start": 18.978666666666665,
+          "end": 22.660666666666664,
+          "text": "比を取ると二なので、どの位置でも微分は二です。"
+        }
+      ],
+      "end": 24.010666666666665
+    },
+    {
+      "narration": "一つの入力の位置での微分の値を、微分係数と言います。入力ごとにその値を返す関数を導関数と言い、「ディー、ディーエックス」という記号は、微分するという操作を表します。",
+      "equation": "f′(a)：aでの値；f′(x)：導関数；d/dx：微分する操作",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "入力 x",
+        "yLabel": "x²の導関数2x",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "一つの入力の位置での微分の値を、微分係数と言います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.010666666666665,
+      "captions": [
+        {
+          "start": 24.010666666666665,
+          "end": 28.386,
+          "text": "一つの入力の位置での微分の値を、微分係数と言います。"
+        },
+        {
+          "start": 28.535999999999998,
+          "end": 37.60466666666667,
+          "text": "入力ごとにその値を返す関数を導関数と言い、「ディー、ディーエックス」という記号は、微分するという操作を表します。"
+        }
+      ],
+      "end": 38.95466666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "定数と一次式を、同じ定義で微分する",
+  "topicId": "prep-derivative-rules",
+  "family": "prerequisites",
+  "sourceScript": "prep-derivative-rules",
+  "duration": 38.95466666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "20477b49b181882e9f24b859f617ddb6374d1bb598c719048c6d5c6808ec47b3"
+}

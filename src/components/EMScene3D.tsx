@@ -83,7 +83,7 @@ export function EMScene3D({scene,phase,videoTime}:{scene:Scene3D;phase:number;vi
   arrow(p,[.55,0,0],C.normal,'n');line([q,p],'#99aac4',1,undefined,true);
   caption='電荷から小片へ伸ばした方向を、単位球へ写します。紫の囲みは、その方向の広がりです。';
   readout=`小片の面積を固定して距離 r=${D.toFixed(2)} を変更 ／ 遠いほど見える広がりは小さい`;
-  legend='金：正面向きの小片　紫：単位球上の投影（頂点を結ぶ模式図）';slider={label:'電荷から小片までの距離（相対値）',min:1.15,max:2.4,step:.05};
+  legend='金：小さな面　紫：半径1の球に写した範囲（模式図）';slider={label:'電荷から小片までの距離（相対値）',min:1.15,max:2.4,step:.05};
  }else if(scene==='crossings'){
   if(torus){for(let j=0;j<18;j++){const a=j*Math.PI/9;line(Array.from({length:33},(_,i)=>{const b=i*Math.PI/16;return [(1+.36*Math.cos(b))*Math.cos(a),(1+.36*Math.cos(b))*Math.sin(a),.36*Math.sin(b)] as V3;}));}
    for(let j=0;j<10;j++){const b=j*Math.PI/5;line(Array.from({length:65},(_,i)=>{const a=i*Math.PI/32;return [(1+.36*Math.cos(b))*Math.cos(a),(1+.36*Math.cos(b))*Math.sin(a),.36*Math.sin(b)] as V3;}));}

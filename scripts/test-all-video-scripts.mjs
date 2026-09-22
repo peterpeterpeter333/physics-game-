@@ -5,6 +5,8 @@ import reviews from '../docs/video-scripts/review-notes.mjs';
 const plan=await makePlan(),ids=new Set(),stages=new Set(plan.sourceStages.map(s=>s.id));
 const old=JSON.parse(readFileSync('docs/video-scripts/editorial-revisions.json'));
 const round2=JSON.parse(readFileSync('docs/video-scripts/editorial-revisions-round2.json'));
+const latest=JSON.parse(readFileSync('docs/video-scripts/reviewed-narration-20260923.json')).changes;
+const superseded=after=>latest.some(c=>c.before.includes(after.split('。')[0])&&plan.records.some(v=>v.beats.some(b=>b.speech===c.after)));
 let sentences=0,formulas=0;
 const allSentences=new Set();
 for(const v of plan.records){
@@ -19,8 +21,9 @@ for(const v of plan.records){
   for(const s of b.speech.split('。').filter(Boolean)){
    sentences++;
    allSentences.add(s);
-   // Screening only: particles do not prove grammatical subjects or pedagogical clarity.
-   assert.ok(/[はがも]/.test(s),`${v.id}: subject review flag: ${s}`);
+   // A calculation instruction may inherit its subject from the same scene.
+   // Particle presence is only a screen; exact reviewed speech is checked below.
+   assert.ok(/[はがも]/.test(b.speech),`${v.id}: missing scene subject`);
   }
   if(b.equation){formulas++;assert.ok(b.symbols.trim().length>0,`${v.id}: missing definitions`);}
   assert.ok(!b.speech.includes('短い区間ならほぼ直線です'));
@@ -34,12 +37,12 @@ for(const v of plan.records){
 for(const [before,after] of old){
  assert.ok(!plan.records.some(v=>v.question===before),`Unrepaired question: ${before}`);
  assert.ok(!allSentences.has(before),`Unrepaired: ${before}`);
- assert.ok(plan.records.some(v=>v.question===after)||[...allSentences].some(s=>s.includes(after.split('。')[0])),`Revision missing: ${after}`);
+ assert.ok(superseded(after)||plan.records.some(v=>v.question===after)||[...allSentences].some(s=>s.includes(after.split('。')[0])),`Revision missing: ${after}`);
 }
 for(const [before,after] of round2){
  assert.ok(!plan.records.some(v=>v.question===before),`Unrepaired question: ${before}`);
  assert.ok(![...allSentences].some(s=>s.includes(before)),`Unrepaired: ${before}`);
- assert.ok(plan.records.some(v=>v.question===after)||[...allSentences].some(s=>s.includes(after.split('。')[0])),`Revision missing: ${after}`);
+ assert.ok(superseded(after)||plan.records.some(v=>v.question===after)||[...allSentences].some(s=>s.includes(after.split('。')[0])),`Revision missing: ${after}`);
 }
 for(const stage of plan.sourceStages)assert.ok(plan.records.some(v=>v.stageId===stage.id),`Unmapped ${stage.id}`);
 const core=plan.records.filter(v=>!['bridges','advanced-followups'].includes(v.family));

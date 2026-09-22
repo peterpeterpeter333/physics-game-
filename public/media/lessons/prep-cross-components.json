@@ -1,0 +1,167 @@
+{
+  "id": "prep-cross-components",
+  "title": "外積の成分は、基本の三方向から作る",
+  "level": "advanced",
+  "before": [
+    "um-cross-advanced",
+    "uc-angular-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "横、縦、奥行きの長さ一の矢印を、基本の三方向に選びます。右手系では、エックス方向とワイ方向の外積は、ゼット方向です。",
+      "equation": "eₓ×eᵧ=e_z；順を逆にすると負",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "eₓ"
+          ],
+          [
+            0,
+            3,
+            "eᵧ"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "横、縦、奥行きの長さ一の矢印を、基本の三方向に選びます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.815333333333333,
+          "text": "横、縦、奥行きの長さ一の矢印を、基本の三方向に選びます。"
+        },
+        {
+          "start": 5.965333333333333,
+          "end": 11.300666666666665,
+          "text": "右手系では、エックス方向とワイ方向の外積は、ゼット方向です。"
+        }
+      ],
+      "end": 12.650666666666666
+    },
+    {
+      "narration": "同じ方向どうしの外積はゼロです。成分の和どうしの外積は、分配して九個の組に分け、同じ方向の組をゼロとして整理します。",
+      "equation": "a×b=(aᵧb_z−a_zbᵧ, a_zbₓ−aₓb_z, aₓbᵧ−aᵧbₓ)",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "aの例"
+          ],
+          [
+            0,
+            2,
+            "bの例"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "同じ方向どうしの外積はゼロです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 12.650666666666666,
+      "captions": [
+        {
+          "start": 12.650666666666666,
+          "end": 15.564666666666666,
+          "text": "同じ方向どうしの外積はゼロです。"
+        },
+        {
+          "start": 15.714666666666666,
+          "end": 22.724666666666664,
+          "text": "成分の和どうしの外積は、分配して九個の組に分け、同じ方向の組をゼロとして整理します。"
+        }
+      ],
+      "end": 24.074666666666666
+    },
+    {
+      "narration": "角運動量を微分すると、位置を微分する項と、運動量を微分する項が出ます。質量が一定なら速度と運動量は平行なので、最初の外積はゼロです。",
+      "equation": "d(r×p)/dt = v×p+r×F = r×F",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "速度 v"
+          ],
+          [
+            4,
+            0,
+            "運動量 p"
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "角運動量を微分すると、位置を微分する項と、運動量を微分する項が出ます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.074666666666666,
+      "captions": [
+        {
+          "start": 24.074666666666666,
+          "end": 30.060666666666666,
+          "text": "角運動量を微分すると、位置を微分する項と、運動量を微分する項が出ます。"
+        },
+        {
+          "start": 30.210666666666665,
+          "end": 35.684666666666665,
+          "text": "質量が一定なら速度と運動量は平行なので、最初の外積はゼロです。"
+        }
+      ],
+      "end": 37.034666666666666
+    },
+    {
+      "narration": "短い時間に掃く面積は、位置の矢印と移動の矢印で作る三角形の面積です。時間で割ると、「角運動量の大きさ割る、質量の二倍」になります。",
+      "equation": "面積速度 = |r×v|/2 = |L|/(2m)",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "位置 r"
+          ],
+          [
+            0,
+            2,
+            "短い移動"
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "短い時間に掃く面積は、位置の矢印と移動の矢印で作る三角形の面積です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 37.034666666666666,
+      "captions": [
+        {
+          "start": 37.034666666666666,
+          "end": 43.287333333333336,
+          "text": "短い時間に掃く面積は、位置の矢印と移動の矢印で作る三角形の面積です。"
+        },
+        {
+          "start": 43.437333333333335,
+          "end": 48.80466666666667,
+          "text": "時間で割ると、「角運動量の大きさ割る、質量の二倍」になります。"
+        }
+      ],
+      "end": 50.15466666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "外積の成分は、基本の三方向から作る",
+  "topicId": "prep-cross-components",
+  "family": "prerequisites",
+  "sourceScript": "prep-cross-components",
+  "duration": 50.15466666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "623b8d2db0fbebe59da69605729b0acb391011af3767ffaffc0859c7faad53e8"
+}

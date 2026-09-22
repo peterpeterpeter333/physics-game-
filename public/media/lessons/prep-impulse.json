@@ -1,0 +1,177 @@
+{
+  "id": "prep-impulse",
+  "title": "力を加えた時間から、運動量へ",
+  "level": "intro",
+  "before": [
+    "m-momentum-intro",
+    "m-momentum-middle",
+    "m-momentum-advanced",
+    "uc-momentum-intro",
+    "uc-momentum-middle",
+    "uc-momentum-advanced",
+    "a-photon-middle",
+    "a-bohr-intro",
+    "a-bohr-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "質量が一定なら、運動の法則の加速度を「速度の変化割る時間」と書けます。式の左右に時間を掛けると、「力かける時間」が出てきます。",
+      "equation": "F=mΔv/Δt → FΔt=mΔv",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時間 [s]",
+        "yLabel": "一定の力 [N]",
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "area": true
+      },
+      "index": 0,
+      "heading": "質量が一定なら、運動の法則の加速度を「速度の変化割る時間」と書けます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.199333333333334,
+          "text": "質量が一定なら、運動の法則の加速度を「速度の変化割る時間」と書けます。"
+        },
+        {
+          "start": 6.349333333333333,
+          "end": 11.151333333333334,
+          "text": "式の左右に時間を掛けると、「力かける時間」が出てきます。"
+        }
+      ],
+      "end": 12.501333333333331
+    },
+    {
+      "narration": "「質量かける速度」を運動量、「力かける時間」を力積と呼びます。同じ力でも、長く加えるほど、運動量の変化は大きくなります。",
+      "equation": "p=mv；力積 = FΔt = Δp",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1秒",
+          "2秒",
+          "3秒"
+        ],
+        "values": [
+          3,
+          6,
+          9
+        ],
+        "unit": "N·s（力3 N）"
+      },
+      "index": 1,
+      "heading": "「質量かける速度」を運動量、「力かける時間」を力積と呼びます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 12.501333333333331,
+      "captions": [
+        {
+          "start": 12.501333333333331,
+          "end": 18.177999999999997,
+          "text": "「質量かける速度」を運動量、「力かける時間」を力積と呼びます。"
+        },
+        {
+          "start": 18.327999999999996,
+          "end": 23.567333333333327,
+          "text": "同じ力でも、長く加えるほど、運動量の変化は大きくなります。"
+        }
+      ],
+      "end": 24.91733333333333
+    },
+    {
+      "narration": "力が時間とともに変わる場合は、力のグラフの面積を足します。平均の力は、同じ面積になる長方形の高さのことで、最大の力とは違います。",
+      "equation": "力積 = 力–時間グラフの面積",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時間 [s]",
+        "yLabel": "力 [N]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "area": true
+      },
+      "index": 2,
+      "heading": "力が時間とともに変わる場合は、力のグラフの面積を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.91733333333333,
+      "captions": [
+        {
+          "start": 24.91733333333333,
+          "end": 29.857999999999993,
+          "text": "力が時間とともに変わる場合は、力のグラフの面積を足します。"
+        },
+        {
+          "start": 30.007999999999996,
+          "end": 36.65533333333333,
+          "text": "平均の力は、同じ面積になる長方形の高さのことで、最大の力とは違います。"
+        }
+      ],
+      "end": 38.00533333333333
+    },
+    {
+      "narration": "二つの物体をまとめて考えると、お互いに及ぼす力の力積は打ち消し合います。外からの力積がゼロなら、二つの運動量の合計は変わりません。",
+      "equation": "外力の力積0 → m₁v₁+m₂v₂ = 一定",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "衝突前の合計",
+          "衝突後の合計"
+        ],
+        "values": [
+          6,
+          6
+        ],
+        "unit": "kg·m/s"
+      },
+      "index": 3,
+      "heading": "二つの物体をまとめて考えると、お互いに及ぼす力の力積は打ち消し合います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 38.00533333333333,
+      "captions": [
+        {
+          "start": 38.00533333333333,
+          "end": 43.82066666666667,
+          "text": "二つの物体をまとめて考えると、お互いに及ぼす力の力積は打ち消し合います。"
+        },
+        {
+          "start": 43.970666666666666,
+          "end": 48.879333333333335,
+          "text": "外からの力積がゼロなら、二つの運動量の合計は変わりません。"
+        }
+      ],
+      "end": 50.22933333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "力を加えた時間から、運動量へ",
+  "topicId": "prep-impulse",
+  "family": "prerequisites",
+  "sourceScript": "prep-impulse",
+  "duration": 50.22933333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "2ef9591559965afe911ca126693dbe41b92183d8ab2ad8b0d4cac0add6fec750"
+}

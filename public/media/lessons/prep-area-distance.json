@@ -1,0 +1,209 @@
+{
+  "id": "prep-area-distance",
+  "title": "速度のグラフの面積が移動になる理由",
+  "level": "middle",
+  "before": [
+    "m1-uniform-accel-middle",
+    "um-integral-intro",
+    "ui-curve-tiles-bridges-1",
+    "um-integral-middle",
+    "um-work-sum-bridges-11",
+    "um-work-vector-bridges-12",
+    "ui-work-changing-bridges-7",
+    "uc-work-advanced",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-integral-advanced",
+    "uc-newton-middle",
+    "uc-newton-advanced",
+    "uc-work-middle",
+    "uc-rigid1-advanced",
+    "uc-potential-advanced",
+    "a-bohr-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid1-middle",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-advanced-followups-6"
+  ],
+  "scenes": [
+    {
+      "narration": "速度が毎秒二メートルで三秒進むと、位置の変化は二かける三で、六メートルです。グラフでは、高さ二、幅三の長方形にあたります。",
+      "equation": "位置の変化 = 2 m/s × 3 s = 6 m",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "area": true
+      },
+      "index": 0,
+      "heading": "速度が毎秒二メートルで三秒進むと、位置の変化は二かける三で、六メートルです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.188666666666667,
+          "text": "速度が毎秒二メートルで三秒進むと、位置の変化は二かける三で、六メートルです。"
+        },
+        {
+          "start": 6.338666666666667,
+          "end": 10.596666666666666,
+          "text": "グラフでは、高さ二、幅三の長方形にあたります。"
+        }
+      ],
+      "end": 11.946666666666665
+    },
+    {
+      "narration": "最初の一秒が毎秒二メートル、次の一秒が毎秒四メートルなら、それぞれの移動を別々に計算して足します。二つの長方形の面積の合計、二足す四で六メートルが、位置の変化です。",
+      "equation": "位置の変化 = 2 × 1 + 4 × 1 = 6 m",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "area": true
+      },
+      "index": 1,
+      "heading": "最初の一秒が毎秒二メートル、次の一秒が毎秒四メートルなら、それぞれの移動を別々に計算して足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.946666666666665,
+      "captions": [
+        {
+          "start": 11.946666666666665,
+          "end": 19.746,
+          "text": "最初の一秒が毎秒二メートル、次の一秒が毎秒四メートルなら、それぞれの移動を別々に計算して足します。"
+        },
+        {
+          "start": 19.895999999999997,
+          "end": 25.625999999999998,
+          "text": "二つの長方形の面積の合計、二足す四で六メートルが、位置の変化です。"
+        }
+      ],
+      "end": 26.975999999999996
+    },
+    {
+      "narration": "速度がなめらかに変わるときは、時間を細かく分けます。長方形を細くしていくと、合計は曲線の下の面積に近づきます。",
+      "equation": "各区間の移動 ≈ その区間の速度 × 短い時間",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "area": true,
+        "tiles": true
+      },
+      "index": 2,
+      "heading": "速度がなめらかに変わるときは、時間を細かく分けます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 26.975999999999996,
+      "captions": [
+        {
+          "start": 26.975999999999996,
+          "end": 31.201999999999995,
+          "text": "速度がなめらかに変わるときは、時間を細かく分けます。"
+        },
+        {
+          "start": 31.351999999999997,
+          "end": 36.602,
+          "text": "長方形を細くしていくと、合計は曲線の下の面積に近づきます。"
+        }
+      ],
+      "end": 37.952
+    },
+    {
+      "narration": "速度がマイナスの区間では、位置の変化もマイナスです。求めた位置の変化に最初の位置を足すと、最後の位置が分かります。",
+      "equation": "最後の位置 = 最初の位置 + 位置の変化",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            -2
+          ],
+          [
+            3,
+            -2
+          ]
+        ],
+        "area": true
+      },
+      "index": 3,
+      "heading": "速度がマイナスの区間では、位置の変化もマイナスです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 37.952,
+      "captions": [
+        {
+          "start": 37.952,
+          "end": 42.071333333333335,
+          "text": "速度がマイナスの区間では、位置の変化もマイナスです。"
+        },
+        {
+          "start": 42.221333333333334,
+          "end": 46.94866666666667,
+          "text": "求めた位置の変化に最初の位置を足すと、最後の位置が分かります。"
+        }
+      ],
+      "end": 48.29866666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "速度のグラフの面積が移動になる理由",
+  "topicId": "prep-area-distance",
+  "family": "prerequisites",
+  "sourceScript": "prep-area-distance",
+  "duration": 48.29866666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "2428c0aa24a74f54dd0a434ee37969e3bf0cec2d58680f8f8263cafb5acac1b8"
+}

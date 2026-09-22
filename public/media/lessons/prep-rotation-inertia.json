@@ -1,0 +1,187 @@
+{
+  "id": "prep-rotation-inertia",
+  "title": "回転する物体を、小さな質量に分ける",
+  "level": "middle",
+  "before": [
+    "uc-rigid1-middle",
+    "uc-rigid1-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-advanced-followups-6"
+  ],
+  "scenes": [
+    {
+      "narration": "剛体は、物体のどの部分の間隔も変わらない、と考える模型です。固定した軸のまわりでは、各点の角速度は同じですが、速さは軸からの距離に比例します。",
+      "equation": "v=rω；rは回転軸からの距離",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "軸からの距離 r",
+        "yLabel": "速さ v（ω一定）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "剛体は、物体のどの部分の間隔も変わらない、と考える模型です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.260666666666667,
+          "text": "剛体は、物体のどの部分の間隔も変わらない、と考える模型です。"
+        },
+        {
+          "start": 5.410666666666667,
+          "end": 12.079333333333333,
+          "text": "固定した軸のまわりでは、各点の角速度は同じですが、速さは軸からの距離に比例します。"
+        }
+      ],
+      "end": 13.429333333333332
+    },
+    {
+      "narration": "各部分の運動エネルギーを足すと、「質量かける、軸からの距離の二乗」を足し合わせた形が出てきます。この合計が、慣性モーメントです。",
+      "equation": "K=Σ mᵢ(rᵢω)²/2 = Iω²/2；I=Σ mᵢrᵢ²",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "距離1の寄与",
+          "距離2の寄与",
+          "距離3の寄与"
+        ],
+        "values": [
+          1,
+          4,
+          9
+        ],
+        "unit": "kg·m²（各質量1 kg）"
+      },
+      "index": 1,
+      "heading": "各部分の運動エネルギーを足すと、「質量かける、軸からの距離の二乗」を足し合わせた形が出てきます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 13.429333333333332,
+      "captions": [
+        {
+          "start": 13.429333333333332,
+          "end": 20.77,
+          "text": "各部分の運動エネルギーを足すと、「質量かける、軸からの距離の二乗」を足し合わせた形が出てきます。"
+        },
+        {
+          "start": 20.919999999999998,
+          "end": 23.897999999999996,
+          "text": "この合計が、慣性モーメントです。"
+        }
+      ],
+      "end": 25.247999999999998
+    },
+    {
+      "narration": "細い一様な棒では、長さ一あたりの質量は「全質量割る全長」です。短い長さディーエックスの質量は、これを掛けて求めます。",
+      "equation": "dm=(M/L)dx → I=∫x²(M/L)dx",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "軸からの位置 x",
+        "yLabel": "積分する x²",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "area": true
+      },
+      "index": 2,
+      "heading": "細い一様な棒では、長さ一あたりの質量は「全質量割る全長」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 25.247999999999998,
+      "captions": [
+        {
+          "start": 25.247999999999998,
+          "end": 31.148666666666664,
+          "text": "細い一様な棒では、長さ一あたりの質量は「全質量割る全長」です。"
+        },
+        {
+          "start": 31.298666666666662,
+          "end": 35.63133333333333,
+          "text": "短い長さディーエックスの質量は、これを掛けて求めます。"
+        }
+      ],
+      "end": 36.98133333333333
+    },
+    {
+      "narration": "平行軸の定理では、重心を通る軸と、それに平行な軸を比べます。重心から測った位置の重み付きの和はゼロなので、展開したときの交差する項が消えます。",
+      "equation": "I = I重心 + Md²；dは二つの平行な軸の距離",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "重心軸のI",
+          "Md²",
+          "ずらした軸のI"
+        ],
+        "values": [
+          2,
+          4,
+          6
+        ],
+        "unit": "kg·m²"
+      },
+      "index": 3,
+      "heading": "平行軸の定理では、重心を通る軸と、それに平行な軸を比べます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 36.98133333333333,
+      "captions": [
+        {
+          "start": 36.98133333333333,
+          "end": 42.647333333333336,
+          "text": "平行軸の定理では、重心を通る軸と、それに平行な軸を比べます。"
+        },
+        {
+          "start": 42.797333333333334,
+          "end": 48.751333333333335,
+          "text": "重心から測った位置の重み付きの和はゼロなので、展開したときの交差する項が消えます。"
+        }
+      ],
+      "end": 50.101333333333336
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "回転する物体を、小さな質量に分ける",
+  "topicId": "prep-rotation-inertia",
+  "family": "prerequisites",
+  "sourceScript": "prep-rotation-inertia",
+  "duration": 50.101333333333336,
+  "mediaDirectory": "lessons",
+  "renderKey": "98f45bc1b2f11d91ddc649bf58ea7f53a0e8797f709845d93fbed6b909edd9ee"
+}

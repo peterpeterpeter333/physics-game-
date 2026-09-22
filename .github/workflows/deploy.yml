@@ -40,6 +40,9 @@ jobs:
       - name: Verify every new lesson movie and difficulty level
         run: npm run test:video-scripts && npm run test:all-videos
 
+      - name: Verify reviewed narration and prerequisite playback order
+        run: npm run test:reviewed-videos && npm run test:prerequisite-videos && npm run test:em-video-repairs
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

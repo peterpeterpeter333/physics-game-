@@ -1,0 +1,20 @@
+import {lessons} from '../docs/video-scripts/prerequisite-lessons.mjs';
+import '../docs/video-scripts/prerequisite-math.mjs';
+import '../docs/video-scripts/prerequisite-high-school.mjs';
+import '../docs/video-scripts/prerequisite-mechanics.mjs';
+import '../docs/video-scripts/prerequisite-advanced.mjs';
+import '../docs/video-scripts/prerequisite-bridges.mjs';
+import '../docs/video-scripts/prerequisite-calculations.mjs';
+import {orderLessons} from '../docs/video-scripts/prerequisite-order.mjs';
+import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
+const catalog=JSON.parse(readFileSync('src/content/lesson-video-catalog.generated.json'));
+const cache=process.env.EM_FILM_CACHE??'/private/tmp/physics-prerequisite-films';
+const seen=new Set();
+const plan=orderLessons(lessons).map(l=>{
+ if(seen.has(l.id))throw Error(`Duplicate ${l.id}`);seen.add(l.id);
+ for(const id of l.before)if(!catalog.some(m=>m.id===id))throw Error(`Unknown target ${id}`);
+ if(l.scenes.some(s=>!s.narration||!s.diagram))throw Error(`Incomplete ${l.id}`);
+ return {...l,stageId:'prerequisite',stageTitle:l.title,topicId:l.id,family:'prerequisites',sourceScript:l.id,scenes:l.scenes.map((s,index)=>({...s,index,heading:s.narration.split('。')[0]+'。',symbols:'',visual:'Explicit diagram configuration'}))};
+});
+mkdirSync(cache,{recursive:true});writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
+console.log(`${plan.length} prerequisite films; ${plan.reduce((n,l)=>n+l.scenes.length,0)} scenes`);

@@ -24,7 +24,7 @@ const steps={
  'a-bohr-advanced':{1:['K = ke²/(2r)；U = −ke²/r','E = K+U = ke²/(2r)−2ke²/(2r)','E = −ke²/(2r)']},
  'um-derivative-middle':{0:['[(x+h)²−x²]/h','[x²+2xh+h²−x²]/h','(2xh+h²)/h = 2x+h（h ≠ 0）'],1:['h ≠ 0 のまま約分：2x+h','h → 0 とすると 2x+h → 2x','d(x²)/dx = 2x']},
  'um-integral-middle':{1:['S_N = (1/N²)Σ i；Σ i = N(N+1)/2','S_N = (N+1)/(2N) = 1/2 + 1/(2N)','N → ∞ のとき S_N → 1/2']},
- 'um-rules-middle':{1:['dA/dt = 2πr(dr/dt)','r = 2 m；dr/dt = 1 m/s','dA/dt = 4π m²/s']},
+ 'um-rules-middle':{1:['dA/dt = 2πr(dr/dt)','r = 2 cm；dr/dt = 1 cm/s','dA/dt = 4π cm²/s']},
  'um-rules-advanced':{1:['ΔA = yΔx+xΔy+ΔxΔy','ΔA/Δt = y(Δx/Δt)+x(Δy/Δt)+Δx(Δy/Δt)','Δt → 0：dA/dt = y dx/dt+x dy/dt']},
  'um-taylor-middle':{1:['√(1+h) ≈ 1+h/2','h = 0.02','√1.02 ≈ 1.01']},
  'um-taylor-advanced':{0:['c₂h² → 一階微分 2c₂h → 二階微分 2c₂'],1:['2c₂ = f″(a)','c₂ = f″(a)/2','f(a+h) ≈ f(a)+f′(a)h+f″(a)h²/2']},

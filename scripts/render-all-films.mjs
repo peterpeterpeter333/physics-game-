@@ -11,6 +11,7 @@ import {fieldDiagram} from './all-film-fields.mjs';
 import {collegeDiagram} from './all-film-college.mjs';
 import {equationAt} from './all-film-equations.mjs';
 import {detailDiagram} from './all-film-details.mjs';
+import {prerequisiteDiagram} from './prerequisite-diagrams.mjs';
 import {figureFor,forceExisting} from './all-film-scenes.mjs';
 const cache=process.env.EM_FILM_CACHE??'/private/tmp/physics-all-films',out='public/media/lessons';
 mkdirSync(out,{recursive:true});
@@ -25,7 +26,7 @@ export function wrap(s,max){const rows=[];let line='',width=0;for(const ch of s)
 function formulaText(s,x,y){const parts=s.split(/(_[A-Za-z0-9])/g);return `<text x="${x}" y="${y}" font-size="29" fill="${C.green}">${parts.map(part=>part.startsWith('_')?`<tspan baseline-shift="sub" font-size="20">${esc(part.slice(1))}</tspan>`:esc(part)).join('')}</text>`;}
 function frame(c,s,t){
  const local=Math.max(0,t-s.start),p=Math.min(1,local/Math.max(1,s.end-s.start-1.2));
- const custom=detailDiagram(c,s,p)??collegeDiagram(c,s,p)??(forceExisting(c)?null:fieldDiagram(c,s,p)??customDiagram(c,s,p));
+ const custom=prerequisiteDiagram(c,s,p)??detailDiagram(c,s,p)??collegeDiagram(c,s,p)??(forceExisting(c)?null:fieldDiagram(c,s,p)??customDiagram(c,s,p));
  let diagram;if(custom)diagram=`<svg x="40" y="100" width="1200" height="440" viewBox="0 0 1000 400">${custom}</svg>`;
  else {const id=figureFor(c,s);if(!id)throw Error(`Missing storyboard ${c.id}/${s.index}`);diagram=figure(id,local).replace(/<svg\b[^>]*>/,tag=>tag.replace(/\s(?:width|height|x|y)="[^"]*"/g,'').replace('<svg ','<svg x="40" y="100" width="1200" height="440" '));}
  const caption=s.captions.findLast(x=>x.start<=t)??s.captions[0];
@@ -35,7 +36,7 @@ function frame(c,s,t){
  const alpha=Math.min(1,local/1.2);
  const equation=eqRows.map((row,i)=>formulaText(row,55,570+i*34)).join('');
  const title=wrap(c.title,44);if(title.length>2)throw Error(`Title overflow: ${c.id}`);
- return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${title.map((v,i)=>text(v,40,38+34*i,29)).join('')}${diagram}<g opacity="${alpha}">${equation}</g><line x1="40" y1="626" x2="1240" y2="626" stroke="#2a3850"/>${captionLines.map((v,i)=>text(v,48,656+29*i,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',40,746,15,C.dim)}${text(`${{intro:'初級',middle:'中級',advanced:'上級'}[c.level]} ${s.index+1}/3`,1130,746,17,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${title.map((v,i)=>text(v,40,38+34*i,29)).join('')}${diagram}<g opacity="${alpha}">${equation}</g><line x1="40" y1="626" x2="1240" y2="626" stroke="#2a3850"/>${captionLines.map((v,i)=>text(v,48,656+29*i,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',40,746,15,C.dim)}${text(`${{intro:'初級',middle:'中級',advanced:'上級'}[c.level]} ${s.index+1}/${c.scenes.length}`,1130,746,17,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
 }
 for(const [i,entry] of plan.entries()){
  if(i%shards!==shard||selected.length&&!selected.includes(entry.id))continue;

@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:reviewed-videos": "node scripts/test-reviewed-narration.mjs",
+    "test:prerequisite-videos": "node scripts/test-prerequisite-films.mjs",
     "test:video-scripts": "node scripts/test-all-video-scripts.mjs",
     "test:all-videos": "node scripts/test-all-films.mjs",
     "test:em-videos": "node scripts/test-em-videos.mjs",

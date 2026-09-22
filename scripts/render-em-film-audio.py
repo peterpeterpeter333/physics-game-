@@ -6,10 +6,10 @@ import numpy as np
 CACHE=Path(os.environ.get('EM_FILM_CACHE','/private/tmp/physics-em-films'))
 SPEAKER=10001
 def request(endpoint, params, payload=None):
-    req=urllib.request.Request('http://127.0.0.1:50123/'+endpoint+'?'+urllib.parse.urlencode(params),data=json.dumps(payload).encode() if payload is not None else b'',headers={'Content-Type':'application/json'})
+    req=urllib.request.Request(os.environ.get('NEMO_URL','http://127.0.0.1:50123')+'/'+endpoint+'?'+urllib.parse.urlencode(params),data=json.dumps(payload).encode() if payload is not None else b'',headers={'Content-Type':'application/json'})
     return urllib.request.urlopen(req,timeout=180).read()
 def speech(text):
-    spoken=text.replace('電場','でんば').replace('磁場','じば')
+    spoken=text.replace('電場','でんば').replace('磁場','じば').replace('電気束','でんきそく')
     key=hashlib.sha256(f'{SPEAKER}|.90|.15|.2|{spoken}'.encode()).hexdigest()[:24]
     file=CACHE/'speech'/f'{key}.wav'
     if not file.exists():
@@ -25,6 +25,10 @@ def speech(text):
 plan=json.loads((CACHE/'plan.json').read_text())
 for ci,clip in enumerate(plan):
     if len(sys.argv)>1 and clip['id'] not in sys.argv[1:]:continue
+    # Included in the render fingerprint even if the corrected voice has the
+    # same duration. Written Japanese remains unchanged in the subtitles.
+    if any('電気束' in scene['narration'] for scene in clip['scenes']):
+        clip['pronunciationOverrides']={'電気束':'でんきそく'}
     start=0;segments=[]
     for scene in clip['scenes']:
         scene['start']=start;scene['captions']=[]

@@ -1,0 +1,175 @@
+{
+  "id": "prep-dot-work",
+  "title": "内積は、相手の向きに沿う部分を掛ける",
+  "level": "middle",
+  "before": [
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "箱を横に二メートル動かすとき、力の横向きの分が三ニュートンなら、仕事は三かける二で六ジュールです。力の縦向きの分は、この横移動の仕事には入りません。",
+      "equation": "仕事 = 横成分3 N × 横移動2 m = 6 J",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            4,
+            "力"
+          ],
+          [
+            2,
+            0,
+            "移動"
+          ]
+        ],
+        "components": true
+      },
+      "index": 0,
+      "heading": "箱を横に二メートル動かすとき、力の横向きの分が三ニュートンなら、仕事は三かける二で六ジュールです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 7.298,
+          "text": "箱を横に二メートル動かすとき、力の横向きの分が三ニュートンなら、仕事は三かける二で六ジュールです。"
+        },
+        {
+          "start": 7.4479999999999995,
+          "end": 11.898,
+          "text": "力の縦向きの分は、この横移動の仕事には入りません。"
+        }
+      ],
+      "end": 13.247999999999998
+    },
+    {
+      "narration": "内積は、片方の矢印を、もう片方の向きに影を落とすように投影して、掛ける計算です。矢印が垂直なら影はゼロ、逆向きなら内積はマイナスです。",
+      "equation": "a・b = |a||b|cos θ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            3,
+            "力"
+          ],
+          [
+            3,
+            0,
+            "移動"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "内積は、片方の矢印を、もう片方の向きに影を落とすように投影して、掛ける計算です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 13.247999999999998,
+      "captions": [
+        {
+          "start": 13.247999999999998,
+          "end": 20.289999999999996,
+          "text": "内積は、片方の矢印を、もう片方の向きに影を落とすように投影して、掛ける計算です。"
+        },
+        {
+          "start": 20.439999999999998,
+          "end": 25.241999999999997,
+          "text": "矢印が垂直なら影はゼロ、逆向きなら内積はマイナスです。"
+        }
+      ],
+      "end": 26.591999999999995
+    },
+    {
+      "narration": "直角に交わる座標軸では、横と縦の組み合わせは内積ゼロです。同じ方向の分どうしを掛けて足すので、成分の式になります。",
+      "equation": "a・b = aₓbₓ + aᵧbᵧ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            4,
+            "a = (3,4)"
+          ],
+          [
+            2,
+            1,
+            "b = (2,1)"
+          ]
+        ],
+        "components": true
+      },
+      "index": 2,
+      "heading": "直角に交わる座標軸では、横と縦の組み合わせは内積ゼロです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 26.591999999999995,
+      "captions": [
+        {
+          "start": 26.591999999999995,
+          "end": 31.713999999999995,
+          "text": "直角に交わる座標軸では、横と縦の組み合わせは内積ゼロです。"
+        },
+        {
+          "start": 31.863999999999994,
+          "end": 36.474,
+          "text": "同じ方向の分どうしを掛けて足すので、成分の式になります。"
+        }
+      ],
+      "end": 37.824
+    },
+    {
+      "narration": "この例では、横の掛け算が六、縦の掛け算が四なので、内積は六足す四で十です。曲がった道の仕事も、小さな移動ごとの内積を足して求めます。",
+      "equation": "(3,4)・(2,1) = 3×2 + 4×1 = 10",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "横の積",
+          "縦の積",
+          "内積"
+        ],
+        "values": [
+          6,
+          4,
+          10
+        ],
+        "unit": "積の値"
+      },
+      "index": 3,
+      "heading": "この例では、横の掛け算が六、縦の掛け算が四なので、内積は六足す四で十です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 37.824,
+      "captions": [
+        {
+          "start": 37.824,
+          "end": 44.492666666666665,
+          "text": "この例では、横の掛け算が六、縦の掛け算が四なので、内積は六足す四で十です。"
+        },
+        {
+          "start": 44.64266666666666,
+          "end": 49.41266666666667,
+          "text": "曲がった道の仕事も、小さな移動ごとの内積を足して求めます。"
+        }
+      ],
+      "end": 50.76266666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "内積は、相手の向きに沿う部分を掛ける",
+  "topicId": "prep-dot-work",
+  "family": "prerequisites",
+  "sourceScript": "prep-dot-work",
+  "duration": 50.76266666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "2a42222d6feee2cab5556296eadcbaa8a92d48a32c8012e1bbde2e8ee5837c3f"
+}
