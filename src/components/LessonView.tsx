@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import {EMVideoLesson,hasEMMovies} from './EMVideoLesson';
 import { LessonNarration } from './LessonNarration';
 import { EMVideoPilot } from './EMVideoPilot';
@@ -24,10 +24,9 @@ import './spiral-lesson.css';
 import './study-flow.css';
 
 export function LessonView(props: {stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onOpenStage?:(id:string)=>void}) {
-  const [original,setOriginal]=useState<string|null>(null);
-  if(original!==props.stage.id&&hasEMMovies(props.stage))return <EMVideoLesson key={props.stage.id} {...props} onOriginal={()=>setOriginal(props.stage.id)}/>;
+  if(hasEMMovies(props.stage))return <EMVideoLesson key={props.stage.id} stage={props.stage} onExit={props.onExit}/>;
   const originalView=props.stage.lesson.steps[0]?.story ? <GuidedLesson {...props}/> : <StandardLessonView {...props}/>;
-  return <>{hasEMMovies(props.stage)&&<button className="btn btn-ghost" onClick={()=>setOriginal(null)}>← 音声付き動画へ戻る</button>}{originalView}</>;
+  return originalView;
 }
 function StandardLessonView({
   stage,
