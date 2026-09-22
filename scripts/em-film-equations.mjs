@@ -1,0 +1,51 @@
+// A formula is selected by the spoken sentence, never by an unrelated looping clock.
+const r=String.raw;
+const beats={
+ 'ue-integrals:2': [r`u=0:\ A,\quad u=1:\ B`,r`x=Lu,\quad y=Hu^2`,r`\vec r(u)=(Lu,Hu^2)`],
+ 'ue-integrals:3': [r`\frac{\vec r(u+h)-\vec r(u)}h=(L,2Hu+Hh)`,r`\vec r'(u)=\lim_{h\to0}(L,2Hu+Hh)=(L,2Hu)`,r`d\vec r=\vec r'(u)\,du=(L,2Hu)\,du`],
+ 'ue-integrals:7': [r`W(u)=-e\alpha\int_0^u(L^2v+2H^2v^3)\,dv`],
+ 'ue-integrals:8': [r`W(u)=-\frac{e\alpha}{2}(L^2u^2+H^2u^4)`,r`W(1)=-\frac{e\alpha}{2}(L^2+H^2)`,r`W(1)<0\quad(e>0,\ \alpha>0)`],
+ 'ue-integrals:10': [r`W_{A\to B}=\frac{q\alpha}{2}[(x_B^2+y_B^2)-(x_A^2+y_A^2)]`,r`W_{A\to B}=\frac{q\alpha}{2}[(x_B^2+y_B^2)-(x_A^2+y_A^2)]`,r`U_B-U_A=-W_{A\to B}`],
+ 'ue-integrals:11':[r`V=U/q`,r`V_B-V_A=(U_B-U_A)/q=-W_{A\to B}/q`],
+ 'ue-integrals:12':[r`V_B-V_A=-\int_A^B\vec E\cdot d\vec r`,r`\oint_C\vec E\cdot d\vec r=0\quad\text{（静電場）}`],
+ 'ue-integrals:14':[r`\int_0^L\beta x\,dx=\frac{\beta L^2}{2}`,r`\sum_i\beta x_i\Delta x\ \longrightarrow\ \int_0^L\beta x\,dx`,r`d\Phi_E=\frac{\beta L^2}{2}\,dy`],
+ 'ue-integrals:15':[r`\int_0^L\beta x\,dx=\frac{\beta L^2}{2}`,r`\frac{\beta L^2}{2}\ \text{は }y\text{ によらない}`,r`\Phi_E=\int_0^L\frac{\beta L^2}{2}\,dy=\frac{\beta L^3}{2}`],
+ 'ue-integrals:16':[r`\Phi_E=\int_0^L\left(\int_0^L\beta x\,dx\right)dy=\frac{\beta L^3}{2}`],
+ 'ue-integrals:18':[r`\rho=R\sin\theta`,r`0\le\varphi\le2\pi`,r`ds_\varphi=\rho\,d\varphi=R\sin\theta\,d\varphi`],
+ 'ue-integrals:19':[r`ds_\theta=R\,d\theta,\quad ds_\varphi=R\sin\theta\,d\varphi`,r`dA=(R\,d\theta)(R\sin\theta\,d\varphi)`],
+ 'ue-integrals:20':[r`A=R^2\int_0^{2\pi}\int_0^\pi\sin\theta\,d\theta\,d\varphi`,r`\int_0^\pi\sin\theta\,d\theta=[-\cos\theta]_0^\pi=2`,r`A=R^2\times2\times\int_0^{2\pi}1\,d\varphi=4\pi R^2`],
+ 'ue-gauss:3':[r`\vec r\cdot\vec n=R\sin^2\theta+(d+R\cos\theta)\cos\theta`,r`\vec r\cdot\vec n=R(\sin^2\theta+\cos^2\theta)+d\cos\theta=R+d\cos\theta`,r`\vec E\cdot\vec n=\frac{kQ(R+d\cos\theta)}{r^3}`],
+ 'ue-gauss:4':[r`\vec E\cdot\vec n=\frac{kQ(R+d\cos\theta)}{(R^2+d^2+2Rd\cos\theta)^{3/2}}`,r`r^2=R^2+d^2+2Rd\cos\theta,\quad(r^2)^{3/2}=r^3`],
+ 'ue-gauss:5':[r`\Phi_E=\int_0^{2\pi}\int_0^\pi(\vec E\cdot\vec n)R^2\sin\theta\,d\theta\,d\varphi`,r`\int_0^{2\pi}1\,d\varphi=2\pi`,r`\Phi_E=2\pi kQR^2\int_0^\pi\frac{(R+d\cos\theta)\sin\theta}{(R^2+d^2+2Rd\cos\theta)^{3/2}}d\theta`],
+ 'ue-gauss:7':[r`\cos\theta=\frac{u-R^2-d^2}{2Rd}`,r`\theta=0:\ u=(R+d)^2,\quad\theta=\pi:\ u=(R-d)^2`,r`-\int_{(R+d)^2}^{(R-d)^2}f(u)\,du=\int_{(R-d)^2}^{(R+d)^2}f(u)\,du`],
+ 'ue-gauss:9':[r`G(u)=\sqrt u-\frac{R^2-d^2}{\sqrt u}`,r`G'(u)=\frac12[u^{-1/2}+(R^2-d^2)u^{-3/2}]`,r`\Phi_E=\frac{\pi kQ}{d}\{G((R+d)^2)-G((R-d)^2)\}`],
+ 'ue-gauss:10':[r`0<d<R:\quad G((R+d)^2)-G((R-d)^2)=2d-(-2d)=4d`,r`d=\text{電荷から球の中心までの距離}`,r`\Phi_E=\frac{\pi kQ}{d}\times4d=4\pi kQ`],
+ 'ue-gauss:11':[r`\Phi_E=\frac{\pi kQ}{d}\times4d=4\pi kQ=\frac Q{\varepsilon_0}`],
+ 'ue-gauss:12':[r`d>R`,r`\sqrt{(R-d)^2}=|R-d|=d-R`,r`G((R+d)^2)=G((R-d)^2)=2d,\quad\Phi_E=0`],
+ 'ue-gauss:15':[r`d\Phi_E=\frac{kQ}{r^2}dA_\perp`,r`d\Omega=\frac{dA_\perp}{r^2},\quad d\Phi_E=kQ\,d\Omega`],
+ 'ue-gauss:19':[r`\Phi_{\rm 内}=Q/\varepsilon_0`,r`\Phi_{\rm 外}=0`,r`Q\text{ は面上にない}`],
+ 'ue-gauss:20':[r`\vec E=\sum_j\vec E_j`,r`\oint_S\vec E\cdot\vec n\,dA=\frac{Q_{\rm 内}}{\varepsilon_0}`],
+ 'ue-gauss:21':[r`E\,(4\pi r^2)=Q/\varepsilon_0`,r`E=\frac{Q}{4\pi\varepsilon_0r^2}\quad(Q>0)`],
+ 'ue-gauss:24':[r`E_{\rm 点}=\frac{Q}{4\pi\varepsilon_0r^2},\quad E_{\rm 線}=\frac{\lambda}{2\pi\varepsilon_0r}`,r`A_{\rm 球}=4\pi r^2,\quad A_{\rm 円筒側面}=2\pi rL`],
+ 'ue-gauss:25':[r`Q_{\rm 内}=0\Rightarrow\Phi_E=0\quad\not\Rightarrow\quad\vec E=\vec0`],
+ 'ue-current:4':[r`I=jS`,r`E=V/l`,r`R=\rho l/S`],
+ 'ue-current:6':[r`V_{\rm 送}\ne V_{\rm 線}`,r`P_{\rm 損}=V_{\rm 線}^{\,2}/R_{\rm 線}`,r`P_{\rm 損}=I^2R_{\rm 線},\quad V_{\rm 線}=IR_{\rm 線}`],
+ 'ue-capacitor:3':[r`U=\frac12CV^2=\frac12\frac{\varepsilon_0S}{d}(Ed)^2`,r`U=\frac12\varepsilon_0E^2(Sd)`,r`u=U/(Sd)=\frac12\varepsilon_0E^2`],
+ 'ue-lorentz:3':[r`N=nSl,\quad\vec F=Nq(\vec v\times\vec B)`,r`I=nSqv,\quad\vec F=I\vec l\times\vec B`],
+ 'ue-faraday:2':[r`\Psi=LI`,r`V_L=L\frac{dI}{dt}`,r`\mathcal E=-L\frac{dI}{dt}=-V_L`],
+ 'ue-faraday:5':[r`\frac{|V_1|}{|V_2|}=\frac{N_1}{N_2}`,r`|V_1||I_1|=|V_2||I_2|`,r`\frac{|I_1|}{|I_2|}=\frac{N_2}{N_1}`],
+ 'ue-transient:5':[r`I=q',\quad I'=q''`,r`q''=-\frac{q}{LC}`,r`\omega^2=1/(LC),\quad\omega=1/\sqrt{LC}`],
+ 'ue-maxwell:3':[r`E_y(x,t),\quad B_z(x,t)`,r`\partial_xE_y=-\partial_tB_z,\quad-\partial_xB_z=\mu_0\varepsilon_0\partial_tE_y`],
+ 'ue-maxwell:4':[r`\oint\vec E\cdot d\vec r=[E_y(x+dx)-E_y(x)]\,dy`,r`E_y(x+dx)\,dy-E_y(x)\,dy`,r`\lim_{\Delta x\to0}\frac{[E_y(x+\Delta x)-E_y(x)]\Delta y}{\Delta x\Delta y}=\frac{\partial E_y}{\partial x}`],
+ 'ue-maxwell:5':[r`d\Phi_B=B_z\,dx\,dy`,r`\frac{[E_y(x+dx)-E_y(x)]dy}{dx\,dy}=-\frac{\partial B_z}{\partial t}\ \Rightarrow\ \frac{\partial E_y}{\partial x}=-\frac{\partial B_z}{\partial t}`],
+ 'ue-maxwell:6':[r`\partial_x^2E_y=-\partial_x\partial_tB_z,\quad-\partial_t\partial_xB_z=\mu_0\varepsilon_0\partial_t^2E_y`,r`\partial_x\partial_tB_z=\partial_t\partial_xB_z`,r`\partial_x^2E_y=\mu_0\varepsilon_0\partial_t^2E_y`],
+ 'ue-maxwell:7':[r`E_y=f(x-ct)`,r`x-ct=\text{一定}\quad\Rightarrow\quad x=ct+\text{一定}`,r`f''=\mu_0\varepsilon_0c^2f'',\quad c=1/\sqrt{\mu_0\varepsilon_0}`],
+ 'ui-capacitance:3':[r`V(q)=q/C`,r`dW=V(q)\,dq`,r`U=\int_0^Q\frac qC\,dq=\frac{Q^2}{2C}=\frac12QV`],
+ 'um-circuit-time:2':[r`V_0=RI+q/C`,r`I=dq/dt\quad\Rightarrow\quad R\frac{dq}{dt}+\frac qC=V_0`],
+ 'um-magnetic-force:4':[r`|q|vB=mv^2/r`,r`r=mv/(|q|B)`],
+ 'um-line-element:12':[r`W=|\vec F|\,|\Delta\vec r|\cos\theta`,r`\theta=0:\quad W=|\vec F|\,|\Delta\vec r|`,r`\theta=90^\circ:\quad W=0`]
+};
+export function spokenEquation(clip,scene,captionIndex){
+ const list=beats[`${clip.stageId}:${scene.index+1}`];
+ return list?list[Math.min(captionIndex,list.length-1)]:scene.equations[0]??'';
+}

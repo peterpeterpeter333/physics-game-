@@ -158,7 +158,7 @@ export function LoopIntegral() {
       <circle cx={cx} cy={cy} r={R} fill="none" stroke={C.dim} strokeWidth={2.5} />
       <circle cx={px} cy={py} r={7} fill={C.gold} />
       <line x1={px} y1={py} x2={px + 30 * Math.abs(dot) * tx * Math.sign(dot)} y2={py + 30 * Math.abs(dot) * ty * Math.sign(dot)} stroke={C.gold} strokeWidth={4} />
-      <text x={224} y={40} fontSize={11} fill="#fff">合計(いま):</text>
+      <text x={224} y={40} fontSize={11} fill="#fff">線積分（途中）:</text>
       <line x1={252} y1={92} x2={296} y2={92} stroke={C.dim} strokeWidth={1} />
       <rect
         x={264}

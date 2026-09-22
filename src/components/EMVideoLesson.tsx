@@ -15,17 +15,6 @@ export function hasEMMovies(stage:Stage){
  const indices=movies.filter(m=>m.stageId===stage.id).flatMap(m=>m.sourceIndices);
  return indices.length===count&&new Set(indices).size===count&&indices.every(i=>i>=0&&i<count);
 }
-function threadText(list:Movie[],page:number,scene:MovieScene){
- const current=list[page];
- const scenePosition=current.scenes.findIndex(candidate=>candidate.index===scene.index);
- const previousMovie=list[page-1];
- const previous=current.scenes[scenePosition-1]??previousMovie?.scenes[previousMovie.scenes.length-1];
- const next=current.scenes[scenePosition+1]??list[page+1]?.scenes[0];
- if(previous&&next)return `前の「${previous.heading}」を使って、今回は「${scene.heading}」を考えます。次は「${next.heading}」へ進みます。`;
- if(previous)return `前の「${previous.heading}」を使って、今回は「${scene.heading}」を考えます。`;
- if(next)return `この章では、まず「${scene.heading}」から始めます。次は「${next.heading}」へ進みます。`;
- return `この動画では「${scene.heading}」を考えます。`;
-}
 export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void}){
  const list=movies.filter(m=>m.stageId===stage.id);
  const [page,setPage]=useLessonPosition(`${stage.id}:nemo-movies-v1`,list.length);
@@ -47,8 +36,7 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit}:{stage:S
    {failed&&<p className="em-movie-error" role="alert">この端末では動画を読み込めませんでした。通信状態を確認して、もう一度開いてください。</p>}
   </section>
   <section className="em-movie-note" aria-label="動画の短い補足">
-   <p><strong>いまの問い</strong> {scene.heading}</p>
-   <p>{threadText(list,page,scene)}</p>
+   <p>{scene.heading}</p>
   </section>
   <div className="lesson-controls em-movie-controls"><button className="btn btn-ghost" disabled={page===0} onClick={()=>setPage(p=>p-1)}>← 前へ</button><nav className="lesson-dots" aria-label="動画を選ぶ">{list.map((m,i)=><button key={m.id} className={`lesson-dot ${i===page?'active':''}`} aria-label={`動画${i+1}: ${m.title}`} aria-current={page===i?'step':undefined} onClick={()=>setPage(i)}><span/></button>)}</nav><button className="btn btn-primary" disabled={page===list.length-1} onClick={()=>setPage(p=>p+1)}>次へ →</button></div>
   <button className="btn btn-battle em-movie-battle" onClick={()=>onComplete(!alreadyFinished)}>⚔️ {stage.enemy.name}に挑む</button>

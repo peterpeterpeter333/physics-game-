@@ -1,6 +1,6 @@
 """Offline, cached Nemo speech. No TTS engine is shipped to app users."""
 from pathlib import Path
-import os, json, hashlib, urllib.request, urllib.parse, wave, io
+import os, json, hashlib, urllib.request, urllib.parse, wave, io, sys
 import numpy as np
 
 CACHE=Path(os.environ.get('EM_FILM_CACHE','/private/tmp/physics-em-films'))
@@ -24,6 +24,7 @@ def speech(text):
 (CACHE/'speech').mkdir(exist_ok=True)
 plan=json.loads((CACHE/'plan.json').read_text())
 for ci,clip in enumerate(plan):
+    if len(sys.argv)>1 and clip['id'] not in sys.argv[1:]:continue
     start=0;segments=[]
     for scene in clip['scenes']:
         scene['start']=start;scene['captions']=[]

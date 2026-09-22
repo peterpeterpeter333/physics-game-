@@ -257,7 +257,7 @@ export function RepresentativePoint() {
       <Lbl x={16} y={24} text="代表点は、各辺の中点にとる" color={L.text} size={11.5} />
       <Lbl x={16} y={44} text={`r ${pick + 1} = (${e.mid[0]}, ${e.mid[1]}) m`} color={L.focus} size={11.5} />
       <Lbl x={16} y={62} text={`E(r ${pick + 1}) = (${e.E[0]}, ${e.E[1]}) N/C`} color={L.field} size={11} />
-      <Lbl x={16} y={158} text="辺の中では、この値を使い回す" color={L.dim} size={10.5} />
+      <Lbl x={16} y={158} text="辺の中では、区間内の電場を中点の値で近似する" color={L.dim} size={10.5} />
       <Cap text="金の点が「どこの場の値を使うか」を決めている" />
     </LevelFig>
   );
@@ -518,7 +518,7 @@ export function PieceWorkDot() {
       <Lbl x={210} y={110} text="ΔW i" color={L.focus} size={12} bold />
       <Lbl x={210} y={128} text="= F i · Δr i" color={L.focus} size={11} />
       <Lbl x={16} y={158} text="点線が、力を進む向きへ落とした投影" color={L.dim} size={10.5} />
-      <Cap text="黄緑が力、金の太い矢印が実際に効く成分" />
+      <Cap text="黄緑が力、金の太い矢印が移動方向の力の成分" />
     </LevelFig>
   );
 }
@@ -566,7 +566,7 @@ export function RefinePath() {
       <Lbl x={212} y={64} text={`W${n} ≈ ${riemann(n).toFixed(3)} J`} color={L.focus} size={11.5} bold />
       <Lbl x={212} y={86} text="N を増やすと" color={L.dim} size={10} />
       <Lbl x={212} y={100} text="桁がそろってくる" color={L.dim} size={10} />
-      <Lbl x={16} y={158} text="折れ線が曲線に近づき、代表点のずれも減る" color={L.dim} size={10.5} />
+      <Lbl x={16} y={158} text="折れ線が曲線に近づき、代表点の値で近似する誤差が減る" color={L.dim} size={10.5} />
       <Cap text="4 → 8 → 16 と分けるほど、値が安定する" />
     </LevelFig>
   );
@@ -586,7 +586,7 @@ export function LimitOfSum() {
       <Lbl x={212} y={62} text="lim" color={L.minus} size={13} />
       <Lbl x={212} y={76} text="N → ∞" color={L.minus} size={9.5} />
       <Lbl x={212} y={98} text={`≈ ${riemann(n).toFixed(4)} J`} color={L.focus} size={11.5} bold />
-      <Lbl x={16} y={158} text="もう近似ではなく、分け方によらない1つの数" color={L.dim} size={10.5} />
+      <Lbl x={16} y={158} text="図は有限分割の近似値。極限は分割を細かくし続けた値" color={L.dim} size={10.5} />
       <Cap text="小区間の矢印は限りなく短く、個数は限りなく多く" />
     </LevelFig>
   );
@@ -692,7 +692,7 @@ export function PathDependent() {
         <Lbl x={272} y={126} text="?" color={L.minus} size={18} anchor="end" bold />
       </g>
       <Lbl x={160} y={158} text="曲線の長さを足しているのではない" color={L.dim} size={10.5} anchor="middle" />
-      <Cap text="上の枠は確定、下の枠はまだ未確定" />
+      <Cap text="この道の仕事は計算できた。別の道なら？" />
     </LevelFig>
   );
 }
@@ -768,7 +768,7 @@ export function TwoPathsCompare() {
       <QEnds />
       <Lbl x={16} y={22} text={which === 0 ? '道1: 先に右、次に上' : '道2: 先に上、次に右'} color={L.focus} size={11.5} bold />
       <Lbl x={16} y={40} text="同じ A から、同じ B へ" color={L.dim} size={10.5} />
-      <Lbl x={16} y={158} text="どちらが得か、実際に計算してみる" color={L.text} size={10.5} />
+      <Lbl x={16} y={158} text="電気力の仕事は道によって変わる？" color={L.text} size={10.5} />
       <Cap text="金で強調されているほうが、いま見ている道" />
     </LevelFig>
   );
@@ -836,7 +836,7 @@ export function XDisplacementOnly() {
       <QEnds />
       <Lbl x={16} y={22} text={which === 0 ? '道1' : '道2'} color={L.focus} size={11.5} bold />
       <Lbl x={16} y={40} text="上下の移動は電場と直角" color={L.dim} size={10.5} />
-      <Lbl x={16} y={58} text="→ 仕事に入らない" color={L.dim} size={10.5} />
+      <Lbl x={16} y={58} text="→ この区間の仕事は0" color={L.dim} size={10.5} />
       <Cap text="道を切り替えても、下の黄緑の長さは変わらない" />
     </LevelFig>
   );
@@ -870,7 +870,7 @@ export function LoopZero() {
       <Lbl x={qx(3) + 8} y={qy(1)} text={shown >= 2 ? '0 J' : ''} color={L.dim} size={11} />
       <Lbl x={qx(1.5)} y={qy(2) - 8} text={shown >= 3 ? '−24 J' : ''} color={L.minus} size={11} anchor="middle" />
       <Lbl x={qx(0) - 8} y={qy(1)} text={shown >= 4 ? '0 J' : ''} color={L.dim} size={11} anchor="end" />
-      <Lbl x={16} y={22} text={`一周の合計 = ${total} J`} color={L.focus} size={12} bold />
+      <Lbl x={16} y={22} text={`${shown===4?'一周全体':'途中まで'}の仕事 = ${total} J`} color={L.focus} size={12} bold />
       <Lbl x={16} y={158} text="静電場（電荷配置が時間変化しない）のとき" color={L.dim} size={10} />
       <Cap text="行きで得た分を、帰りでちょうど返している" />
     </LevelFig>
@@ -915,7 +915,7 @@ export function EnergyChange() {
       <Lbl x={16} y={62} text="ΔU = −W AB" color={L.focus} size={12.5} bold />
       <Lbl x={116} y={152} text="位置エネルギー" color={L.minus} size={10} anchor="middle" />
       <Lbl x={216} y={152} text="電場がした仕事" color={L.plus} size={10} anchor="middle" />
-      <Cap text="紫が減った分、黄緑が出ていった分。大きさは等しい" />
+      <Cap text="紫：位置エネルギーの減少、緑：電気力の仕事大きさは等しい" />
     </LevelFig>
   );
 }
@@ -969,7 +969,7 @@ export function PotentialFormula() {
           <line x1={159} y1={68} x2={143} y2={84} stroke={L.minus} strokeWidth={2} />
         </g>
       )}
-      <Lbl x={160} y={158} text="静電場のときだけ、位置だけの差として使える" color={L.minus} size={10.5} anchor="middle" />
+      <Lbl x={160} y={158} text="静電場のときだけ、二点の電位差は経路によらない" color={L.minus} size={10.5} anchor="middle" />
       <Cap text="上から順に代入し、最後に q が消えることを見る" />
     </LevelFig>
   );
@@ -1123,7 +1123,7 @@ export function TileTwoFacts() {
       <rect x={196} y={84} width={96} height={30} rx={6} fill={L.normal} opacity={which === 1 ? 0.28 : 0.08} />
       <Lbl x={244} y={98} text="向き" color={L.text} size={10.5} anchor="middle" />
       <Lbl x={244} y={110} text="法線 n" color={L.normal} size={10.5} anchor="middle" />
-      <Lbl x={16} y={24} text="この2つだけで、1枚が決まる" color={L.text} size={11.5} />
+      <Lbl x={16} y={24} text="磁束の計算に使う面積と向きを表す" color={L.text} size={11.5} />
       <Lbl x={16} y={158} text="ΔA は向きを持たない正の数" color={L.dim} size={10.5} />
       <Cap text="右の2つの札が、交互に光ることを見てください" />
     </LevelFig>
@@ -1171,7 +1171,7 @@ export function TileDotNormal() {
         color={L.plus} w={4} head={8} />
       <path d={`M ${cx + 26} ${cy} A 26 26 0 0 0 ${cx + 26 * nx} ${cy + 26 * ny}`} fill="none" stroke={L.dim} strokeWidth={1.2} />
       <Lbl x={cx + 30} y={cy + 20} text={`θ = ${Math.round(th)}°`} color={L.dim} size={10.5} />
-      <Lbl x={16} y={24} text="面に沿う成分は、1本も貫かない" color={L.text} size={11} />
+      <Lbl x={16} y={24} text="面に平行な成分による磁束は0" color={L.text} size={11} />
       <Lbl x={16} y={152} text={`貫く成分 = 0.5 × cos θ = ${fmt(proj, 2)} T`} color={L.plus} size={11.5} bold />
       <Cap text="点線が投影。黄緑が実際に貫く成分" />
     </LevelFig>
@@ -1202,7 +1202,7 @@ export function UnitNormalWhy() {
       <Lbl x={16} y={62} text="B · n = |B| cos θ" color={L.plus} size={12} bold />
       <Lbl x={214} y={140} text="= 垂直成分そのもの" color={L.plus} size={10.5} anchor="middle" />
       <Lbl x={16} y={158} text="広さの情報は ΔA が別に持つ" color={L.dim} size={10.5} />
-      <Cap text="黄緑の矢印が B·n。法線の長さは掛からない" />
+      <Cap text="黄緑の矢印が B·n。法線の大きさ1を掛けても値は同じ" />
     </LevelFig>
   );
 }
@@ -1224,7 +1224,7 @@ export function CombineIntoArrow() {
       <Lbl x={214} y={56} text="灰: n（大きさ1）" color={L.dim} size={10} />
       <Lbl x={214} y={74} text="金: ΔA ベクトル" color={L.focus} size={10} />
       <Lbl x={16} y={158} text="矢印1本で、タイル1枚を表せる" color={L.dim} size={10.5} />
-      <Cap text="灰の矢印が伸びて、長さが面積になる" />
+      <Cap text="灰の矢印が伸びて、矢印の長さで面積を表す" />
     </LevelFig>
   );
 }
@@ -1725,7 +1725,7 @@ export function OintVsOiint() {
       })}
       <OiintGlyph x={240} y={44} size={20} color={L.field} />
       <Lbl x={240} y={136} text="閉じた面（輪2本）" color={L.dim} size={10} anchor="middle" />
-      <Lbl x={16} y={22} text="輪が1本か2本かで、道と面を区別する" color={L.text} size={10.5} />
+      <Lbl x={16} y={22} text="drは道の移動、dAは面積を表す" color={L.text} size={10.5} />
       <Cap text="左は一周する道、右は袋の表面ぜんぶ" />
     </LevelFig>
   );
@@ -1751,7 +1751,7 @@ export function OpenVsClosedSurface() {
       <Lbl x={240} y={128} text="ふちがない（閉じた面）" color={L.dim} size={10} anchor="middle" />
       <OiintGlyph x={240} y={48} size={18} color={L.plus} />
       <Lbl x={240} y={146} text="∮∮S と書ける" color={L.plus} size={11} anchor="middle" bold />
-      <Lbl x={16} y={22} text="記号は、外向き法線の約束まで持ち込む" color={L.text} size={10.5} />
+      <Lbl x={16} y={22} text="この教材では閉曲面の法線は外向き" color={L.text} size={10.5} />
       <Cap text="左の赤い点がふち。ふちがあると内外を決められない" />
     </LevelFig>
   );
@@ -1804,7 +1804,7 @@ export function ClosedOutwardNormals() {
       ))}
       <Lbl x={16} y={24} text="法線は、袋の外へ出る向きにそろえる" color={L.text} size={11} />
       <Lbl x={16} y={44} text="出る束が正、入る束が負" color={L.dim} size={10.5} />
-      <Lbl x={16} y={162} text="この約束込みの記号が ∮∮" color={L.focus} size={11} />
+      <Lbl x={16} y={162} text="閉曲面全体を積分する記号が ∮∮" color={L.focus} size={11} />
       <Cap text="4本の白い矢印が、すべて外を向いていることを見る" />
     </LevelFig>
   );
@@ -1957,7 +1957,7 @@ export function NetOutflowMeaning() {
       <Lbl x={16} y={24} text="入った分と出た分が、ちょうど相殺" color={L.text} size={11} />
       <Lbl x={160} y={144} text="合計0 = 正味の出入りが0" color={L.focus} size={12} anchor="middle" bold />
       <Lbl x={160} y={162} text="中の場の値については、何も言っていない" color={L.dim} size={10} anchor="middle" />
-      <Cap text="点が左から入り、右へ抜けていくことを見てください" />
+      <Cap text="動く点は電気束の向きを示す印。電子の流れではありません" />
     </LevelFig>
   );
 }
@@ -1983,7 +1983,7 @@ export function PointChargeRadial() {
           dx={ux * 24} dy={uy * 24} color={L.field} w={2.2} head={7} />;
       })}
       <Lbl x={16} y={22} text="どの向きにも、まっすぐ外へ出る" color={L.text} size={11} />
-      <Lbl x={16} y={162} text="向きは半径方向。大きさは距離だけで決まる" color={L.dim} size={10.5} />
+      <Lbl x={16} y={162} text="向きは半径方向。電荷を固定すると強さは距離で決まる" color={L.dim} size={10.5} />
       <Cap text="矢印がすべて中心から外を向いていることを見る" />
     </LevelFig>
   );
@@ -2102,7 +2102,7 @@ export function SphereAreaSum() {
       <Lbl x={16} y={22} text={`${shown} / ${n} 枚ぶんを合計`} color={L.dim} size={10.5} />
       <Lbl x={16} y={44} text="Σ ΔA i = 4πr²" color={L.focus} size={12.5} bold />
       <Lbl x={16} y={152} text="∮∮ E · dA = E (4πr²)" color={L.focus} size={13} bold />
-      <Cap text="タイルが1周そろうと、球の表面積になる" />
+      <Cap text="全区画が球の表面全体を覆う" />
     </LevelFig>
   );
 }
@@ -2291,7 +2291,7 @@ export const um_emReadings: Record<string, string> = {
   'ume-effective-force': '黄の直線が道の向きです。水色の力から点線を下ろした先の黄緑が、道方向の成分にあたります。',
   'ume-work-piece-cos': '縦が有効な力、横が小移動の長さです。塗られた面積が、その小区間でした仕事にあたります。',
   'ume-dot-definition': '上の式と下の式が交互に光ります。中身はまったく同じで、書き方だけが短くなっています。',
-  'ume-dot-one-edge': '点線は、力を進む向きへ落とした投影です。黄緑の太い線がその長さで、これが仕事に効く成分です。',
+  'ume-dot-one-edge': '点線は、力を進む向きへ落とした投影です。黄緑の太い線は、移動方向の力の成分を表します。',
   'ume-perpendicular-zero': '2つの区間が交互に選ばれます。直角の印が付いた区間では、内積が0になることを確かめてください。',
   'ume-negative-edge': '紫の矢印（力）と金の矢印（進む向き）が反対を向いています。このとき仕事に負号が付きます。',
   'ume-not-just-product': '上の灰の帯が大きさの積、下の金の帯が内積です。角度が90°に近づくほど、下の帯が短くなります。',

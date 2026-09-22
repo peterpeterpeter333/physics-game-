@@ -49,7 +49,7 @@ export function YoungSlits() {
 export function ChargeWork() {
  const t=useT(), fraction=(t/9)%1;
  return <FigSvg>
-  <text x={15} y={20} fill={C.dim} fontSize={12}>小さな電荷 × その時の電圧 = 仕事の短冊</text>
+  <text x={15} y={20} fill={C.dim} fontSize={12}>小さな電荷 × その時の電圧 = この分の仕事</text>
   <line x1={45} y1={145} x2={290} y2={145} stroke={C.dim}/><line x1={45} y1={145} x2={45} y2={35} stroke={C.dim}/>
   <text x={12} y={43} fill={C.cyan} fontSize={11}>電圧</text><text x={268} y={163} fill={C.gold} fontSize={11}>電荷q</text>
   {Array.from({length:24},(_,i)=>{const q=(i+.5)/24;return q<=fraction?<rect key={i} x={45+240*i/24} y={145-100*q} width={9} height={100*q} fill={C.gold} opacity={.6}/>:null;})}

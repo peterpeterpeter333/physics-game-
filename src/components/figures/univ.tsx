@@ -125,7 +125,7 @@ export function DotProduct() {
         <text x={fx + 6} y={fy - 4} fontSize={11} fill={C.purple}>力 F</text>
         <line x1={fx} y1={fy} x2={ox + proj} y2={oy} stroke={C.dim} strokeDasharray="4 3" />
         <line x1={ox} y1={oy} x2={ox + proj} y2={oy} stroke={C.gold} strokeWidth={5} />
-        <text x={ox + Math.max(proj - 55, 2)} y={oy - 8} fontSize={11} fill={C.gold}>Fcosθ (効く成分)</text>
+        <text x={ox + Math.max(proj - 55, 2)} y={oy - 8} fontSize={11} fill={C.gold}>Fcosθ (移動方向の成分)</text>
         <rect x={280} y={150 - 100 * Math.cos(th)} width={16} height={100 * Math.cos(th)} fill={C.gold} opacity={0.85} />
         <text x={268} y={165} fontSize={10} fill={C.gold}>仕事W</text>
         <text x={60} y={40} fontSize={12} fill="#fff">θ = {deg}°　W = Fd cosθ</text>

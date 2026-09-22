@@ -125,7 +125,7 @@ export function ContourMap() {
         return <Arrow key={k} x={cx + r0 * Math.cos(th)} y={cy + r0 * Math.sin(th)} dx={26 * Math.cos(th)} dy={26 * Math.sin(th)} color={C.cyan} w={2.5} />;
       })}
       <text x={20} y={26} fontSize={11} fill={C.purple}>紫 = 等電位線（平面上で電位が等しい線）</text>
-      <text x={20} y={42} fontSize={11} fill={C.cyan}>水色 = 電場 (等電位面に直角、混む所で強い)</text>
+      <text x={20} y={42} fontSize={11} fill={C.cyan}>水色：電場（等電位線に垂直）</text>
       <Caption text="静電場：電場は等電位線に垂直で、電位が下がる向き" />
     </FigSvg>
   );
@@ -190,8 +190,8 @@ export function FieldEnergy() {
       {[60, 95, 130].map((y) => (
         <Arrow key={y} x={104} y={y} dx={108} dy={0} color={C.gold} w={1 + 2 * q} />
       ))}
-      <text x={40} y={30} fontSize={11} fill="#fff">板の間の電場 E — 明るさ ∝ E² (エネルギー密度)</text>
-      <text x={20} y={172} fontSize={10.5} fill={C.dim}>u = ½ε₀E²: 式に残ったのはEだけ — エネルギーは空間の状態に宿る</text>
+      <text x={40} y={30} fontSize={11} fill="#fff">図の明るさ：電場のエネルギー密度 u</text>
+      <text x={20} y={172} fontSize={10.5} fill={C.dim}>u = ½ε₀E²：電場が強いほど密度は大きい</text>
       <Caption text="" />
     </FigSvg>
   );
@@ -266,8 +266,8 @@ export function DriftCollisions() {
       <polyline points={path.join(" ")} fill="none" stroke={C.cyan} strokeWidth={2} />
       {path.length > 0 && <circle cx={x - 20} cy={95 + 28 * Math.sin((path.length - 1) * 2.3)} r={5} fill={C.cyan} />}
       <Arrow x={260} y={160} dx={-220} dy={0} color={C.gold} w={2} />
-      <text x={16} y={175} fontSize={10.5} fill={C.gold}>金：電場は左向き。青：電子は平均して右へ</text>
-      <text x={20} y={30} fontSize={11} fill="#fff">青：電子の模式軌道。赤：散乱を起こす格子の目印</text>
+      <text x={16} y={175} fontSize={10.5} fill={C.gold}>金：電場は左。青：電子全体は少しずつ右へ</text>
+      <text x={20} y={30} fontSize={11} fill="#fff">青：電子の動き　赤：金属中の原子の位置</text>
       <Caption text="" />
     </FigSvg>
   );
@@ -364,8 +364,8 @@ export function BiotSavart() {
       <circle cx={px} cy={py} r={5} fill={C.cyan} />
       <text x={px + 10} y={py - 4} fontSize={11} fill={C.cyan}>点P</text>
       <rect x={px - 6} y={py + 14} width={12} height={10*value} fill={C.cyan} opacity={0.7} />
-      <text x={px - 45} y={py + 36 + 10*value} fontSize={10.5} fill={C.cyan}>{selected===null?'合計':'一区間'}：{value.toFixed(2)}（相対値）</text>
-      <text x={110} y={165} fontSize={10.5} fill={C.dim}>dB = (μ₀/4π)·I dl sinθ / r²  を全欠片で積分</text>
+      <text x={px - 60} y={py + 36 + 10*value} fontSize={10} fill={C.cyan}>P の磁場{selected===null?'（合計）':'（一区間）'}：{value.toFixed(2)}</text>
+      <text x={75} y={165} fontSize={9.5} fill={C.dim}>P と同じ高さの一区間が作る磁場を 1 とした比</text>
       <Caption text="" />
     </FigSvg><label>まず一区間を見る<input aria-label="ビオ・サバールの導線区間" type="range" min="0" max="5" step="1" value={k} onChange={e=>setSelected(+e.target.value)}/></label><button className="btn btn-ghost" onClick={()=>setSelected(null)}>全区間を順に足す</button><p>金の線は導線区間から固定観測点Pへのr。電流は上向き、dBは紙面の奥向き。同じ長さの区間を点で近似し、sinθ/r²を比較しています。Pと同じ高さの区間の寄与を1とした相対値で、単位Tではありません。</p></div>
   );
@@ -512,7 +512,7 @@ export function TimeConstant() {
       <polyline points={curve(110)} fill="none" stroke={C.purple} strokeWidth={2.5} />
       <text x={60} y={36} fontSize={11} fill={C.cyan}>RC 小: 速い (τ 短)</text>
       <text x={60} y={52} fontSize={11} fill={C.purple}>RC 大: のんびり (τ 長)</text>
-      <Caption text="τ = RC は回路の「反応時間」。RやCで自在に設計できる" />
+      <Caption text="τ = RC は変化の速さの目安となる時間。RやCで自在に設計できる" />
     </FigSvg>
   );
 }
@@ -540,7 +540,7 @@ export function RlRise() {
         </g>
       )}
       <text x={56} y={36} fontSize={11} fill={C.cyan}>ON: τ = L/R でゆっくり立ち上がる</text>
-      <Caption text="電流の慣性を急停止させる衝撃の電気版" />
+      <Caption text="コイルは電流の急な変化を妨げる" />
     </FigSvg>
   );
 }
@@ -606,18 +606,18 @@ export function MaxwellFour() {
   const k = Math.floor(t / 1.5) % 4;
   const panel = (i: number, x: number, title: string, sub: string, draw: JSX.Element) => (
     <g opacity={k === i ? 1 : 0.4}>
-      <rect x={x} y={34} width={68} height={112} rx={8} fill={k === i ? "rgba(78,225,255,0.1)" : "none"} stroke={k === i ? C.cyan : C.dim} strokeWidth={k === i ? 2 : 1} />
+      <rect x={x} y={34} width={68} height={132} rx={8} fill={k === i ? "rgba(78,225,255,0.1)" : "none"} stroke={k === i ? C.cyan : C.dim} strokeWidth={k === i ? 2 : 1} />
       {draw}
       <text x={x + 6} y={126} fontSize={9.5} fill={k === i ? C.cyan : C.dim}>{title}</text>
-      <text x={x + 6} y={140} fontSize={9.5} fill={C.dim}>{sub}</text>
+      {sub.split("|").map((part, j) => <text key={j} x={x + 3} y={140 + j * 11} fontSize={8} fill={C.dim}>{part}</text>)}
     </g>
   );
   return (
     <FigSvg>
-      {panel(0, 12, "①ガウス(E)", "袋の本数=電荷", <g><circle cx={46} cy={78} r={22} fill="none" stroke={C.gold} strokeDasharray="3 3" /><circle cx={46} cy={78} r={5} fill={C.red} />{[0, 1, 2, 3].map((j) => <line key={j} x1={46 + 7 * Math.cos(j * 1.57)} y1={78 + 7 * Math.sin(j * 1.57)} x2={46 + 30 * Math.cos(j * 1.57)} y2={78 + 30 * Math.sin(j * 1.57)} stroke={C.gold} strokeWidth={1.5} />)}</g>)}
-      {panel(1, 86, "②ガウス(B)", "磁力線は閉じる", <g><circle cx={120} cy={78} r={22} fill="none" stroke={C.gold} strokeDasharray="3 3" /><ellipse cx={120} cy={78} rx={30} ry={12} fill="none" stroke={C.purple} strokeWidth={1.5} /></g>)}
-      {panel(2, 160, "③ファラデー", "B変化→Eの渦", <g><ellipse cx={194} cy={78} rx={24} ry={10} fill="none" stroke={C.cyan} strokeWidth={2} /><line x1={194} y1={104} x2={194} y2={56} stroke={C.purple} strokeWidth={2} /><polygon points="194,50 189,60 199,60" fill={C.purple} /></g>)}
-      {panel(3, 234, "④アンペール+", "I・E変化→Bの渦", <g><ellipse cx={268} cy={78} rx={24} ry={10} fill="none" stroke={C.purple} strokeWidth={2} /><line x1={268} y1={104} x2={268} y2={56} stroke={C.gold} strokeWidth={2} /><polygon points="268,50 263,60 273,60" fill={C.gold} /></g>)}
+      {panel(0, 12, "①ガウス(E)", "閉じた面の電気束|は内部電荷に比例", <g><circle cx={46} cy={78} r={22} fill="none" stroke={C.gold} strokeDasharray="3 3" /><circle cx={46} cy={78} r={5} fill={C.red} />{[0, 1, 2, 3].map((j) => <line key={j} x1={46 + 7 * Math.cos(j * 1.57)} y1={78 + 7 * Math.sin(j * 1.57)} x2={46 + 30 * Math.cos(j * 1.57)} y2={78 + 30 * Math.sin(j * 1.57)} stroke={C.gold} strokeWidth={1.5} />)}</g>)}
+      {panel(1, 86, "②ガウス(B)", "磁場の湧き出し・|吸い込みはない", <g><circle cx={120} cy={78} r={22} fill="none" stroke={C.gold} strokeDasharray="3 3" /><ellipse cx={120} cy={78} rx={30} ry={12} fill="none" stroke={C.purple} strokeWidth={1.5} /></g>)}
+      {panel(2, 160, "③ファラデー", "磁場の変化|→電場が循環", <g><ellipse cx={194} cy={78} rx={24} ry={10} fill="none" stroke={C.cyan} strokeWidth={2} /><line x1={194} y1={104} x2={194} y2={56} stroke={C.purple} strokeWidth={2} /><polygon points="194,50 189,60 199,60" fill={C.purple} /></g>)}
+      {panel(3, 234, "④アンペール+", "電流・電場の変化|→磁場が循環", <g><ellipse cx={268} cy={78} rx={24} ry={10} fill="none" stroke={C.purple} strokeWidth={2} /><line x1={268} y1={104} x2={268} y2={56} stroke={C.gold} strokeWidth={2} /><polygon points="268,50 263,60 273,60" fill={C.gold} /></g>)}
       <Caption text="場の四つの法則。物体の運動にはローレンツ力なども必要" />
     </FigSvg>
   );

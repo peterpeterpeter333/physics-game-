@@ -130,6 +130,7 @@ export function EMScene3D({scene,phase,videoTime}:{scene:Scene3D;phase:number;vi
     const d=`M${points.map(p=>`${p[0]},${p[1]}`).join(' L')}`,a=Math.atan2(end[1]-p[1],end[0]-p[0]);
     return <g key={i}><path d={d} fill={item.fill??'none'} stroke={item.color} strokeWidth={item.width} strokeDasharray={item.dash?'4 4':undefined} opacity={item.color===C.surface?.48:1}/>{item.arrow&&<path d={`M${end[0]-9*Math.cos(a-.45)},${end[1]-9*Math.sin(a-.45)} L${end[0]},${end[1]} L${end[0]-9*Math.cos(a+.45)},${end[1]-9*Math.sin(a+.45)}`} fill="none" stroke={item.color} strokeWidth="2.5"/>}{item.label&&<text x={end[0]+5} y={end[1]-5} fill={item.color} fontSize="12" paintOrder="stroke" stroke="#0e1729" strokeWidth="3">{item.label}</text>}</g>;
    })}
+   {videoTime!==undefined&&<text x="15" y="338" fill={C.ink} fontSize="10">{legend}</text>}
   </svg>
   <p className="em3d-legend">{legend}</p><p className="em3d-readout" aria-live="polite">{readout}</p>
   <div className="em3d-buttons"><button onClick={()=>setPlaying(p=>!p)}>{playing?'Ⅱ 視点の回転を停止':'▶ 視点を自動回転'}</button><button onClick={()=>{setPlaying(false);setYaw(-.55);setPitch(.4);}}>視点を戻す</button></div>

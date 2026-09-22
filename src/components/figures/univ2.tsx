@@ -276,7 +276,7 @@ export function LineIntegral() {
       <rect x={250} y={26} width={acc * 55} height={10} fill={C.green} opacity={0.9} rx={3} />
       <text x={22} y={20} fontSize={10.5} fill={C.cyan}>一様場 E=(E₀,0)、道 r=(Lu,Hu²)</text>
       <text x={145} y={35} fontSize={10.5} fill={C.green}>W/(qE₀L)={acc.toFixed(2)}</text>
-      <text x={44} y={177} fontSize={10.5} fill={C.dim}>水色=場の矢印 / 金=道の向きに「効く成分」</text>
+      <text x={44} y={177} fontSize={10.5} fill={C.dim}>水色：電場 / 金：移動方向の電場成分</text>
       <Caption text="" />
     </FigSvg>
   );

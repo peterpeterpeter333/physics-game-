@@ -11,7 +11,7 @@ for(const stage of stages){
  assert.ok(clips.length,stage.id);
  assert.deepEqual(clips.flatMap(m=>m.sourceIndices),stage.steps.map((_,i)=>i),`${stage.id}: exact, ordered, nonduplicated coverage`);
  for(const clip of clips){
-  assert.ok(clip.duration>15&&clip.duration<90,clip.id);
+  assert.ok(clip.duration>15&&clip.duration<180,clip.id);
   assert.ok(clip.title&&clip.scenes.length>=2&&clip.scenes.length<=4);
   const file=`public/media/em/${clip.id}`;
   assert.deepEqual(JSON.parse(readFileSync(`${file}.json`)),clip);

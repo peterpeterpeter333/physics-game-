@@ -3,7 +3,7 @@
   "stageId": "ui-flux-many-tiles",
   "stageTitle": "タイルを並べて足す",
   "level": "intro",
-  "title": "タイル1枚の寄与を作り、同じ形で2枚目まで足す",
+  "title": "各面の磁束を計算し、二枚分を足す",
   "sourceIndices": [
     0,
     1,
@@ -104,5 +104,6 @@
       "end": 41.568000000000005
     }
   ],
-  "duration": 41.568000000000005
+  "duration": 41.568000000000005,
+  "renderKey": "3f10f7f4802acc30283a04f102ccdde82959a74ea7896adad0d4e86a45e659df"
 }

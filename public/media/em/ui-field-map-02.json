@@ -3,7 +3,7 @@
   "stageId": "ui-field-map",
   "stageTitle": "矢印の地図",
   "level": "intro",
-  "title": "地図から、置いた電荷が受ける力を作る",
+  "title": "電場の地図から、置いた電荷が受ける力を求める",
   "sourceIndices": [
     3,
     4,
@@ -79,5 +79,6 @@
       "end": 34.77333333333333
     }
   ],
-  "duration": 34.77333333333333
+  "duration": 34.77333333333333,
+  "renderKey": "b768a6bb372efec5210802d312b963431dd5439178b09091e899e06a76f6d0a7"
 }

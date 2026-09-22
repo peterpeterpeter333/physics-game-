@@ -326,7 +326,7 @@ export function DirQuestion() {
         <Lbl x={176} y={62} text="10 × 2 = 20 J ?" color={L.minus} size={13} bold />
         <Lbl x={176} y={82} text="向きがそろっていない" color={L.minus} size={10.5} />
       </g>
-      <Cap text="矢印の長さをそのまま掛けてよいのか、という問い" />
+      <Cap text="力10 N × 距離2 m でよい？" />
     </LevelFig>
   );
 }
@@ -456,7 +456,7 @@ export function DirSummary() {
         <Lbl x={286} y={126} text="5 × 2 = 10 J（正しい）" color={L.plus} size={11.5} anchor="end" bold />
       </Card>
       <Lbl x={160} y={26} text="同じ力・同じ距離でも、答えは変わる" color={L.text} size={11.5} anchor="middle" />
-      <Lbl x={160} y={158} text="中級ではこの取り出しを内積と呼ぶ" color={L.dim} size={10.5} anchor="middle" />
+      <Lbl x={160} y={158} text="中級では成分×移動距離を内積で表す" color={L.dim} size={10.5} anchor="middle" />
       <Cap text="矢印の長さではなく、道方向の成分を掛ける" />
     </LevelFig>
   );
@@ -564,9 +564,9 @@ export function BentDirections() {
           text={`前${i + 1}`} color={i === k ? L.focus : L.dim} size={11} anchor={B_LBL[i].anchor} />;
       })}
       <Lbl x={14} y={26} text="区間の中では、道はまっすぐ" color={L.text} size={11.5} />
-      <Lbl x={172} y={66} text="前1 = 右" color={L.path} size={11} />
-      <Lbl x={172} y={88} text="前2 = 上" color={L.path} size={11} />
-      <Lbl x={172} y={110} text="前3 = 左" color={L.path} size={11} />
+      <Lbl x={172} y={66} text="区間1：右向き" color={L.path} size={11} />
+      <Lbl x={172} y={88} text="区間2：上向き" color={L.path} size={11} />
+      <Lbl x={172} y={110} text="区間3：左向き" color={L.path} size={11} />
       <Cap text="区間ごとに前を決めれば、成分を取り出せる" />
     </LevelFig>
   );
@@ -694,7 +694,7 @@ export function BentRefine() {
 export function BentSummary() {
   const t = useT();
   const k = step(t, 3, 1.2);
-  const steps = ['道を、まっすぐな区間に切る', '区間ごとに「前」を決める', '前向き成分 × 長さ を足す'];
+  const steps = ['短い区間を直線で近似する', '区間ごとに「前」を決める', '前向き成分 × 長さ を足す'];
   return (
     <LevelFig label="曲がる道の仕事の作り方">
       {steps.map((s, i) => (
@@ -788,8 +788,8 @@ export function PathRecall() {
       <Arw x={130} y={82} dx={24} dy={0} color={L.field} w={2.6} />
       <Lbl x={160} y={78} text="道に沿う成分 3 N/C" color={L.field} size={10.5} />
       <Lbl x={130} y={130} text="Δr = 1 m" color={L.path} size={11} anchor="middle" />
-      <Lbl x={14} y={26} text="道がまっすぐなら、掛け算 1 回で済む" color={L.text} size={11.5} />
-      <Lbl x={14} y={50} text={`ΔW = 1 C × 3 N/C × 1 m = ${fmt(3 * u, 1)} J`} color={L.focus} size={12} />
+      <Lbl x={14} y={26} text="直線で電場成分が一定なら、掛け算で求まる" color={L.text} size={11} />
+      <Lbl x={14} y={50} text={`ΔW = 1 C × 3 N/C × ${fmt(u, 2)} m ≈ ${fmt(3 * u, 2)} J`} color={L.focus} size={11} />
       <Lbl x={14} y={158} text="単位は C × N/C × m = J" color={L.dim} size={10.5} />
       <Cap text="この形へ戻せるように、曲がった道を区間へ切る" />
     </LevelFig>
@@ -875,7 +875,7 @@ export function PathSeg1() {
 }
 export function PathSeg2() {
   return <SegFig i={1} label="区間2の寄与" title="区間2: 成分は小さいが、長さが 2 m"
-    value="ΔW₂ = 2 J" note="成分が小さくても、進んだ長さで寄与を稼げる" />;
+    value="ΔW₂ = 2 J" note="成分が小さくても、仕事は移動距離にも比例する" />;
 }
 export function PathSeg3() {
   return <SegFig i={2} label="区間3の寄与はゼロ" title="区間3: 電場は道と 90°、真横を向く"
@@ -995,7 +995,7 @@ export function TileIntro() {
       <Lbl x={196} y={80} text="タイル 1 枚" color={L.focus} size={11} />
       <Lbl x={196} y={98} text="面積 0.5 m²" color={L.focus} size={11} />
       <Lbl x={160} y={160} text="どれだけ通り抜けたか = 磁束" color={L.dim} size={11} anchor="middle" />
-      <Cap text="数えたいのは、このタイルを通り抜けた磁場の量" />
+      <Cap text="求める量は、この面の磁束" />
     </LevelFig>
   );
 }
@@ -1069,7 +1069,7 @@ export function TileTilt() {
       <TilePoly cx={150} cy={92} th={th} nLen={46} />
       <Lbl x={14} y={26} text={`法線が磁場から ${Math.round(th)}° 傾く`} color={L.text} size={11.5} />
       <Lbl x={14} y={46} text="点線は、正面を向けた場合のタイル" color={L.dim} size={10.5} />
-      <Lbl x={160} y={158} text="減るのは磁場でも面積でもなく、受け止められる分" color={L.dim} size={10.5} anchor="middle" />
+      <Lbl x={160} y={158} text="減るのは磁場でも面積でもなく、正面から見た面積" color={L.dim} size={10.5} anchor="middle" />
       <Cap text="正面を向けたときと比べると、受け止められる量が減る" />
     </LevelFig>
   );
@@ -1132,11 +1132,11 @@ export function TileLinesCaution() {
         </g>
       ))}
       <TilePoly cx={168} cy={92} th={0} la={64} ld={72} normal={false} />
-      <Lbl x={14} y={30} text="線を引いて本数を数えるのは、量を見せる工夫" color={L.text} size={10.5} />
+      <Lbl x={14} y={30} text="線を引いて本数を数えるのは、磁場を見やすく描く工夫" color={L.text} size={10.5} />
       <g opacity={blink}>
         <Lbl x={160} y={158} text="空間にひもが張ってあるわけではない" color={L.minus} size={11} anchor="middle" />
       </g>
-      <Cap text="定義は、磁場と面の向きから決まる量のほうにある" />
+      <Cap text="磁束は垂直な磁場成分×面積で計算する" />
     </LevelFig>
   );
 }
@@ -1154,7 +1154,7 @@ export function TileSummary() {
           <Lbl x={62 + i * 98} y={150} text={c.v} color={i === k ? L.focus : L.dim} size={12} anchor="middle" bold={i === k} />
         </g>
       ))}
-      <Lbl x={160} y={26} text="効くのは、磁場の法線方向の成分だけ" color={L.text} size={11.5} anchor="middle" />
+      <Lbl x={160} y={26} text="磁束の計算に使うのは法線方向の成分" color={L.text} size={11.5} anchor="middle" />
       <Cap text="仕事で道方向の成分だけが効いたのと、同じ読み方" />
     </LevelFig>
   );
@@ -1343,7 +1343,7 @@ export function TilesTotal() {
       ))}
       <Lbl x={14} y={30} text="1 + 1 + 0.5 + 0" color={L.text} size={12} />
       <Lbl x={160} y={140} text={`足した枚数 ${shown} / 4`} color={L.dim} size={10.5} anchor="middle" />
-      <Lbl x={160} y={160} text={`合計 ${fmt(partial, 1)} Wb`} color={L.focus} size={13} anchor="middle" bold />
+      <Lbl x={160} y={160} text={`${shown===4?'全体':'途中まで'}の磁束 ${fmt(partial, 1)} Wb`} color={L.focus} size={13} anchor="middle" bold />
       <Cap text="寄与 0 のタイルも「0 を足した」と数える" />
     </LevelFig>
   );
@@ -1367,7 +1367,7 @@ export function TilesAnalogy() {
         <Lbl x={236} y={118} text="を足す [Wb]" color={L.dim} size={10} anchor="middle" />
       </Card>
       <Lbl x={160} y={26} text="掛けて足す、という骨組みは同じ" color={L.text} size={11.5} anchor="middle" />
-      <Lbl x={160} y={150} text="変わったのは、小片が長さから面積になったことだけ" color={L.dim} size={10.5} anchor="middle" />
+      <Lbl x={160} y={150} text="道では各区間の仕事、面では各区画の磁束を足す" color={L.dim} size={10.5} anchor="middle" />
       <Cap text="道では小区間の仕事を足した。面では小タイルの磁束を足す" />
     </LevelFig>
   );
@@ -1519,7 +1519,7 @@ export function BagInOut() {
       <Lbl x={14} y={24} text="外向き法線と比べて数え分ける" color={L.text} size={11.5} />
       <Lbl x={pIn[0] - 28} y={cy - 26} text="入る = 負" color={L.minus} size={11} anchor="middle" />
       <Lbl x={pOut[0] + 28} y={cy - 26} text="出る = 正" color={L.plus} size={11} anchor="middle" />
-      <Lbl x={160} y={160} text="打ち消し合った残りが、袋の正味の量" color={L.dim} size={10.5} anchor="middle" />
+      <Lbl x={160} y={160} text="打ち消し合った残りが、閉じた面全体の電気束" color={L.dim} size={10.5} anchor="middle" />
       <Cap text="外へ抜ければ正、外から入れば負として数える" />
     </LevelFig>
   );
@@ -1693,7 +1693,7 @@ export function BagSummary() {
   return (
     <LevelFig label="閉じた面の合計が教えること">
       <Card x={16} y={32} w={288} h={46} color={L.plus} on={k === 0}>
-        <Lbl x={30} y={52} text="教えてくれること" color={L.plus} size={11.5} />
+        <Lbl x={30} y={52} text="面全体の電気束から分かること" color={L.plus} size={11.5} />
         <Lbl x={30} y={70} text="中にある電荷の、正味の符号と量" color={L.text} size={11} />
       </Card>
       <Card x={16} y={88} w={288} h={60} color={L.minus} on={k === 1}>
@@ -1769,7 +1769,7 @@ export function SphereOne() {
       <RadialCross cx={cx} cy={cy} r={r} n={8} sign={1} len={30} active={k} />
       <Charge x={cx} y={cy} sign={1} r={12} />
       <Lbl x={14} y={24} text="どこでも外へ抜ける。入る寄与は 0" color={L.text} size={11.5} />
-      <Lbl x={22} y={154} text={`数えた本数 ${k + 1} / 8`} color={L.dim} size={10.5} />
+      <Lbl x={22} y={154} text={`図で示した矢印の本数 ${k + 1} / 8`} color={L.dim} size={10.5} />
       <Lbl x={298} y={154} text="正味 +8" color={L.plus} size={12.5} anchor="end" bold />
       <Cap text="出る寄与を正と数えるので、正味の量は正になる" />
     </LevelFig>
@@ -1804,7 +1804,7 @@ export function SphereNegative() {
       <RadialCross cx={cx} cy={cy} r={r} n={8} sign={-1} len={30} active={k} />
       <Charge x={cx} y={cy} sign={-1} r={12} />
       <Lbl x={14} y={24} text="すべて外から内へ通り抜ける" color={L.text} size={11.5} />
-      <Lbl x={22} y={154} text={`数えた本数 ${k + 1} / 8`} color={L.dim} size={10.5} />
+      <Lbl x={22} y={154} text={`図で示した矢印の本数 ${k + 1} / 8`} color={L.dim} size={10.5} />
       <Lbl x={298} y={154} text="正味 −8" color={L.minus} size={12.5} anchor="end" bold />
       <Cap text="入る寄与は負。符号が中の電荷の符号を映している" />
     </LevelFig>
@@ -1851,7 +1851,7 @@ export function SphereBalance() {
         </Card>
       ))}
       <Lbl x={160} y={160} text="4 分の 1 と 4 倍が打ち消し合う" color={L.dim} size={10.5} anchor="middle" />
-      <Cap text="面をどう取っても、正味の量は変わらない" />
+      <Cap text="同心球の半径を変えても電気束は同じ" />
     </LevelFig>
   );
 }
@@ -1902,7 +1902,7 @@ export function SphereOutside() {
       <Lbl x={70} y={158} text="● 入る = 負" color={L.minus} size={10.5} />
       <Lbl x={170} y={158} text="● 出る = 正" color={L.plus} size={10.5} />
       <Lbl x={306} y={158} text="正味 0" color={L.focus} size={11.5} anchor="end" bold />
-      <Cap text="入った分がそのまま出ていく。中にない電荷は効かない" />
+      <Cap text="入った分がそのまま出ていく。外部電荷による電気束の合計は0" />
     </LevelFig>
   );
 }
@@ -1924,7 +1924,7 @@ export function SphereLinesCaution() {
         <Lbl x={247} y={106} text="値は変わらない" color={L.dim} size={10} anchor="middle" />
       </Card>
       <Lbl x={14} y={24} text="何本で描いても、磁束や電気束の値は同じ" color={L.text} size={11} />
-      <Cap text="定義は電場と面から決まる量。ひもを数えてはいない" />
+      <Cap text="電気束は電場と面から計算する量。ひもを数えてはいない" />
     </LevelFig>
   );
 }
