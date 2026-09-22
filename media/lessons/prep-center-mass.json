@@ -110,16 +110,16 @@
       "captions": [
         {
           "start": 22.399999999999995,
-          "end": 29.591333333333328,
+          "end": 29.505999999999993,
           "text": "一キログラムを位置ゼロ、三キログラムを位置四に置くと、三かける四割る四で、重心は位置三です。"
         },
         {
-          "start": 29.74133333333333,
-          "end": 35.18333333333333,
+          "start": 29.655999999999995,
+          "end": 35.098,
           "text": "重心から測った位置で足すと、「質量かける位置」の合計はゼロになります。"
         }
       ],
-      "end": 36.53333333333333
+      "end": 36.448
     }
   ],
   "stageId": "prerequisite",
@@ -127,7 +127,8 @@
   "topicId": "prep-center-mass",
   "family": "prerequisites",
   "sourceScript": "prep-center-mass",
-  "duration": 36.53333333333333,
+  "pronunciationFingerprint": "715b690434839eeccca63b7ce2319d5f24d5d028a08776d88ed0479bc4e5b3b6",
+  "duration": 36.448,
   "mediaDirectory": "lessons",
-  "renderKey": "a040d1ca6cb26b9222f8b4a41d1d3758ebee40f991faeedb9133a53e2041983b"
+  "renderKey": "07766e57a67addb3806fcb3eff9d20675cf43bd25fb8bdf04028469910f746c4"
 }

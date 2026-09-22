@@ -245,21 +245,21 @@
       "captions": [
         {
           "start": 35.65866666666667,
-          "end": 40.33266666666667,
+          "end": 40.514,
           "text": "加速度の符号は、速度の値がどちら向きに変わるかを表します。"
         },
         {
-          "start": 40.48266666666667,
-          "end": 44.97533333333334,
+          "start": 40.664,
+          "end": 45.15666666666667,
           "text": "速くなるか遅くなるかは、加速度の符号だけでは決まりません。"
         },
         {
-          "start": 45.12533333333333,
-          "end": 49.51133333333333,
+          "start": 45.306666666666665,
+          "end": 49.69266666666667,
           "text": "物体が今どちら向きに動いているかも、一緒に確かめます。"
         }
       ],
-      "end": 50.861333333333334
+      "end": 51.04266666666667
     }
   ],
   "stageId": "prerequisite",
@@ -267,7 +267,8 @@
   "topicId": "prep-acceleration",
   "family": "prerequisites",
   "sourceScript": "prep-acceleration",
-  "duration": 50.861333333333334,
+  "pronunciationFingerprint": "1b65a3faa11c7c9320a645778ff076201d86cd7ae0492203deba7f9d839809d0",
+  "duration": 51.04266666666667,
   "mediaDirectory": "lessons",
-  "renderKey": "d0da6ed64ac44bc081be89abe19ab28f2952d0db3c1f6f9a270e264fb838c94d"
+  "renderKey": "3aee647d77c9cb2163070b4e8fb16dd34a6316465bcdbe2984b3cd6f1073b036"
 }

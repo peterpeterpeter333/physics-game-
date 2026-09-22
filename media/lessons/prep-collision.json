@@ -71,11 +71,11 @@
         },
         {
           "start": 17.752,
-          "end": 23.21533333333333,
+          "end": 23.311333333333334,
           "text": "右向きを共通のプラスの向きとして、衝突前と後の引き算の順序を決めます。"
         }
       ],
-      "end": 24.56533333333333
+      "end": 24.66133333333333
     },
     {
       "narration": "同じ質量で、初速度が四とゼロ、反発係数が〇・五なら、速度の和が四、差が二です。この二つの式を足して、一つずつ速度を求めます。",
@@ -96,20 +96,20 @@
       "heading": "同じ質量で、初速度が四とゼロ、反発係数が〇・五なら、速度の和が四、差が二です。",
       "symbols": "",
       "visual": "Explicit diagram configuration",
-      "start": 24.56533333333333,
+      "start": 24.66133333333333,
       "captions": [
         {
-          "start": 24.56533333333333,
-          "end": 31.682,
+          "start": 24.66133333333333,
+          "end": 31.73533333333333,
           "text": "同じ質量で、初速度が四とゼロ、反発係数が〇・五なら、速度の和が四、差が二です。"
         },
         {
-          "start": 31.831999999999997,
-          "end": 35.71666666666667,
+          "start": 31.88533333333333,
+          "end": 35.77,
           "text": "この二つの式を足して、一つずつ速度を求めます。"
         }
       ],
-      "end": 37.06666666666666
+      "end": 37.120000000000005
     }
   ],
   "stageId": "prerequisite",
@@ -117,7 +117,8 @@
   "topicId": "prep-collision",
   "family": "prerequisites",
   "sourceScript": "prep-collision",
-  "duration": 37.06666666666666,
+  "pronunciationFingerprint": "24d4216fa35abda1c9d97c7af9fbc633d3cb25503361d1fed1e21337853c8690",
+  "duration": 37.120000000000005,
   "mediaDirectory": "lessons",
-  "renderKey": "6c3b4be998f88d71d42ef0dd778c3ff73b54160256ac72af02b812e18bb6b4eb"
+  "renderKey": "f6ff710ebd2bf3d169fbbe5a64fdcf31fff23c302e0dd03c8db37e64aa31c674"
 }
