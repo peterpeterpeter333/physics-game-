@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:video-scripts": "node scripts/test-all-video-scripts.mjs",
+    "test:all-videos": "node scripts/test-all-films.mjs",
     "test:em-videos": "node scripts/test-em-videos.mjs",
     "test:em-video-repairs": "node scripts/test-em-video-repairs.mjs",
     "test:remediation": "node scripts/test-remediation.mjs",

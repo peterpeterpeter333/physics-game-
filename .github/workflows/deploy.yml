@@ -37,6 +37,9 @@ jobs:
       - name: Verify all electromagnetic movies and source coverage
         run: npm run test:em-videos
 
+      - name: Verify every new lesson movie and difficulty level
+        run: npm run test:video-scripts && npm run test:all-videos
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

@@ -9,4 +9,8 @@
 .em-movie-note p{margin:.15rem 0;line-height:1.75}.em-movie-note strong{color:#9de4e5}
 .em-movie-controls{justify-content:space-between;align-items:center;gap:.75rem}.em-movie-controls .lesson-dots{flex:1;justify-content:center}
 .em-movie-battle{display:block;margin:1rem auto 0}
+.video-levels{display:flex;justify-content:center;gap:.5rem;margin:.5rem auto;max-width:1180px}
+.video-levels button{color:#c5d6ee;background:#132039;border:1px solid #34445e;border-radius:999px;padding:.55rem 1.15rem;cursor:pointer;font:inherit}
+.video-levels button[aria-pressed=true]{color:#061626;background:#71d9ee;border-color:#71d9ee}
+.video-levels button:focus-visible{outline:3px solid #ffcf67;outline-offset:3px}
 @media(max-width:600px){.em-movie-lesson{padding-inline:8px!important}.em-movie-main{border-radius:10px}.em-movie-main h2{margin:.65rem}.em-movie-main video{min-height:0}.em-movie-note{padding:.75rem}.em-movie-controls{gap:.4rem}.em-movie-controls .btn{padding-inline:.7rem}}
