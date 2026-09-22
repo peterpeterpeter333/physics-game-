@@ -26,7 +26,7 @@ function threadText(list:Movie[],page:number,scene:MovieScene){
  if(next)return `この章では、まず「${scene.heading}」から始めます。次は「${next.heading}」へ進みます。`;
  return `この動画では「${scene.heading}」を考えます。`;
 }
-export function EMVideoLesson({stage,onExit}:{stage:Stage;onExit:()=>void}){
+export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void}){
  const list=movies.filter(m=>m.stageId===stage.id);
  const [page,setPage]=useLessonPosition(`${stage.id}:nemo-movies-v1`,list.length);
  const movie=list[Math.min(page,list.length-1)];
@@ -51,5 +51,6 @@ export function EMVideoLesson({stage,onExit}:{stage:Stage;onExit:()=>void}){
    <p>{threadText(list,page,scene)}</p>
   </section>
   <div className="lesson-controls em-movie-controls"><button className="btn btn-ghost" disabled={page===0} onClick={()=>setPage(p=>p-1)}>← 前へ</button><nav className="lesson-dots" aria-label="動画を選ぶ">{list.map((m,i)=><button key={m.id} className={`lesson-dot ${i===page?'active':''}`} aria-label={`動画${i+1}: ${m.title}`} aria-current={page===i?'step':undefined} onClick={()=>setPage(i)}><span/></button>)}</nav><button className="btn btn-primary" disabled={page===list.length-1} onClick={()=>setPage(p=>p+1)}>次へ →</button></div>
+  <button className="btn btn-battle em-movie-battle" onClick={()=>onComplete(!alreadyFinished)}>⚔️ {stage.enemy.name}に挑む</button>
  </div>;
 }

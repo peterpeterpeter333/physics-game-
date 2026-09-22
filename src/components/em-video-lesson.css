@@ -8,4 +8,5 @@
 .em-movie-note{margin:0 0 1rem;padding:.85rem 1rem;border-left:3px solid #71d9ee;background:#111d30;color:#d9e6f8}
 .em-movie-note p{margin:.15rem 0;line-height:1.75}.em-movie-note strong{color:#9de4e5}
 .em-movie-controls{justify-content:space-between;align-items:center;gap:.75rem}.em-movie-controls .lesson-dots{flex:1;justify-content:center}
+.em-movie-battle{display:block;margin:1rem auto 0}
 @media(max-width:600px){.em-movie-lesson{padding-inline:8px!important}.em-movie-main{border-radius:10px}.em-movie-main h2{margin:.65rem}.em-movie-main video{min-height:0}.em-movie-note{padding:.75rem}.em-movie-controls{gap:.4rem}.em-movie-controls .btn{padding-inline:.7rem}}

@@ -24,7 +24,7 @@ import './spiral-lesson.css';
 import './study-flow.css';
 
 export function LessonView(props: {stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onOpenStage?:(id:string)=>void}) {
-  if(hasEMMovies(props.stage))return <EMVideoLesson key={props.stage.id} stage={props.stage} onExit={props.onExit}/>;
+  if(hasEMMovies(props.stage))return <EMVideoLesson key={props.stage.id} {...props}/>;
   const originalView=props.stage.lesson.steps[0]?.story ? <GuidedLesson {...props}/> : <StandardLessonView {...props}/>;
   return originalView;
 }
