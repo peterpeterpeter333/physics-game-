@@ -46,6 +46,9 @@ jobs:
       - name: Check reviewed pronunciation coverage and video revisions
         run: npm run test:pronunciation
 
+      - name: Check direct prerequisites and cross-chapter playback progress
+        run: npm run test:video-playlists
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

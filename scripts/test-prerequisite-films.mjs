@@ -1,13 +1,14 @@
 import assert from 'node:assert/strict';
 import {readFileSync,statSync} from 'node:fs';
-import {transform} from 'esbuild';
+import {build} from 'esbuild';
 import {prerequisites} from '../docs/video-scripts/prerequisite-order.mjs';
 import {prerequisiteDiagram} from './prerequisite-diagrams.mjs';
 const read=p=>JSON.parse(readFileSync(p));
 const prep=read('src/content/prerequisite-video-catalog.generated.json');
 const original=read('src/content/lesson-video-catalog.generated.json'),em=read('src/content/em-video-catalog.generated.json');
-const {code}=await transform(readFileSync('src/game/prerequisite-playlist.ts','utf8'),{loader:'ts',format:'esm'});
-const {prerequisitePlaylist}=await import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`);
+const bundle=await build({entryPoints:['src/game/prerequisite-playlist.ts'],bundle:true,write:false,platform:'node',format:'esm'});
+const {prerequisitePlaylist,prerequisiteReview}=await import(`data:text/javascript;base64,${Buffer.from(bundle.outputFiles[0].text).toString('base64')}`);
+const routes=read('src/content/prerequisite-routes.generated.json');
 assert.equal(prep.length,76);assert.equal(new Set(prep.map(p=>p.id)).size,prep.length);
 let bytes=0,seconds=0,scenes=0;
 for(const p of prep){
@@ -29,10 +30,12 @@ for(const p of prep){
 }
 for(const target of original){
  const list=prerequisitePlaylist([target],prep),ids=list.map(m=>m.id);
- assert.equal(ids.at(-1),target.id);assert.ok(list.length>1,target.id);
+ assert.equal(ids.at(-1),target.id);
+ assert.deepEqual(ids.slice(0,-1),routes[target.id].required);
  assert.equal(new Set(ids).size,ids.length);
- for(const m of list.filter(m=>m.id.startsWith('prep-'))){
-  for(const dep of prerequisites[m.id.replace(/^prep-/,'')]??[])assert.ok(ids.indexOf(`prep-${dep}`)>=0&&ids.indexOf(`prep-${dep}`)<ids.indexOf(m.id),`${target.id}: ${dep} before ${m.id}`);
+ const reviewIds=prerequisiteReview([target],prep).map(p=>p.id);
+ for(const id of reviewIds){
+  for(const dep of prerequisites[id.replace(/^prep-/,'')]??[])assert.ok(reviewIds.indexOf(`prep-${dep}`)>=0&&reviewIds.indexOf(`prep-${dep}`)<reviewIds.indexOf(id),`${target.id}: ${dep} available in optional review before ${id}`);
  }
 }
 assert.deepEqual(prerequisitePlaylist(em,prep),em,'Do not insert non-EM prerequisites into university EM playlists');

@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:video-playlists": "node scripts/build-prerequisite-routes.mjs --check && node scripts/test-video-playlists.mjs",
     "test:pronunciation": "python3 scripts/test-narration-pronunciation.py",
     "test:reviewed-videos": "node scripts/test-reviewed-narration.mjs",
     "test:prerequisite-videos": "node scripts/test-prerequisite-films.mjs",
