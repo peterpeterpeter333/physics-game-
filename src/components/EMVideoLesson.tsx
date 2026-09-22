@@ -35,7 +35,13 @@ function VideoPlayer({stage,alreadyFinished,onComplete,onExit,list,level}:{stage
  const base=`${import.meta.env.BASE_URL}media/${movie.mediaDirectory??'em'}/${movie.id}`;
  const scene=movie.scenes[active]??movie.scenes[0];
  const sentences=scene.narration.split('。').filter(Boolean);
- useEffect(()=>{setFailed(false);setActive(0);top.current?.scrollIntoView({block:'start'});return()=>{release.current?.();};},[movie.id]);
+ useEffect(()=>{
+  setFailed(false);setActive(0);
+  // Include the difficulty selector above the player when opening or switching videos.
+  const lessonTop=top.current?.closest('.video-lesson-shell')??top.current;
+  lessonTop?.scrollIntoView({block:'start'});
+  return()=>{release.current?.();};
+ },[movie.id]);
  return <div ref={top} className="screen lesson em-movie-lesson" data-stage-id={stage.id}>
   <header className="screen-header"><button className="btn-back" aria-label="章一覧へ戻る" onClick={onExit}>←</button><h1>{stage.title}</h1></header>
   <section className="em-movie-main" aria-label="図と音声で学ぶ">
