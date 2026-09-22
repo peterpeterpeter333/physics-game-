@@ -1,0 +1,166 @@
+{
+  "id": "prep-cosine-dot",
+  "title": "角度で書く内積と、成分で書く内積",
+  "level": "advanced",
+  "before": [
+    "um-dot-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "二つの矢印の根元をそろえると、先端どうしをつなぐ辺が、三角形の三つ目の辺です。差のベクトルの長さが、その辺の長さになります。",
+      "equation": "三つの辺：|a|、|b|、|a−b|",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "a"
+          ],
+          [
+            2,
+            3,
+            "b"
+          ]
+        ],
+        "difference": true
+      },
+      "index": 0,
+      "heading": "二つの矢印の根元をそろえると、先端どうしをつなぐ辺が、三角形の三つ目の辺です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.647333333333333,
+          "text": "二つの矢印の根元をそろえると、先端どうしをつなぐ辺が、三角形の三つ目の辺です。"
+        },
+        {
+          "start": 6.797333333333333,
+          "end": 10.788666666666664,
+          "text": "差のベクトルの長さが、その辺の長さになります。"
+        }
+      ],
+      "end": 12.138666666666666
+    },
+    {
+      "narration": "余弦定理は、この三角形の三辺と、間の角度を結ぶ式です。直角のときはコサインがゼロになって、三平方の定理に戻ります。",
+      "equation": "|a−b|² = |a|²+|b|²−2|a||b|cosθ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "a"
+          ],
+          [
+            2,
+            3,
+            "b"
+          ]
+        ],
+        "difference": true
+      },
+      "index": 1,
+      "heading": "余弦定理は、この三角形の三辺と、間の角度を結ぶ式です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 12.138666666666666,
+      "captions": [
+        {
+          "start": 12.138666666666666,
+          "end": 17.377999999999997,
+          "text": "余弦定理は、この三角形の三辺と、間の角度を結ぶ式です。"
+        },
+        {
+          "start": 17.528,
+          "end": 22.308666666666664,
+          "text": "直角のときはコサインがゼロになって、三平方の定理に戻ります。"
+        }
+      ],
+      "end": 23.658666666666665
+    },
+    {
+      "narration": "同じ差の長さを、今度は横と縦の分の二乗で計算します。二乗を展開すると、同じ方向の分どうしを掛けた項が出てきます。",
+      "equation": "|a−b|² = |a|²+|b|²−2(aₓbₓ+aᵧbᵧ)",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "a=(4,0)"
+          ],
+          [
+            2,
+            3,
+            "b=(2,3)"
+          ]
+        ],
+        "components": true
+      },
+      "index": 2,
+      "heading": "同じ差の長さを、今度は横と縦の分の二乗で計算します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.658666666666665,
+      "captions": [
+        {
+          "start": 23.658666666666665,
+          "end": 28.31133333333333,
+          "text": "同じ差の長さを、今度は横と縦の分の二乗で計算します。"
+        },
+        {
+          "start": 28.461333333333332,
+          "end": 33.370000000000005,
+          "text": "二乗を展開すると、同じ方向の分どうしを掛けた項が出てきます。"
+        }
+      ],
+      "end": 34.72
+    },
+    {
+      "narration": "同じ辺の長さを表す二つの式なので、共通の項を引いて比べられます。角度で書いた式と、成分で書いた式が、同じ内積を表すと分かります。",
+      "equation": "|a||b|cosθ = aₓbₓ+aᵧbᵧ",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "成分の積の和",
+          "角度による内積"
+        ],
+        "values": [
+          8,
+          8
+        ],
+        "unit": "値"
+      },
+      "index": 3,
+      "heading": "同じ辺の長さを表す二つの式なので、共通の項を引いて比べられます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 34.72,
+      "captions": [
+        {
+          "start": 34.72,
+          "end": 40.26866666666667,
+          "text": "同じ辺の長さを表す二つの式なので、共通の項を引いて比べられます。"
+        },
+        {
+          "start": 40.41866666666667,
+          "end": 45.93533333333333,
+          "text": "角度で書いた式と、成分で書いた式が、同じ内積を表すと分かります。"
+        }
+      ],
+      "end": 47.285333333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "角度で書く内積と、成分で書く内積",
+  "topicId": "prep-cosine-dot",
+  "family": "prerequisites",
+  "sourceScript": "prep-cosine-dot",
+  "duration": 47.285333333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "b839a3f7d6c0a395d2e0f3488a788724e3d8f88bc009e4f948ef02c3dbf9b5ba"
+}

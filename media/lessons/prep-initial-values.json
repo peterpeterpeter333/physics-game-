@@ -1,0 +1,222 @@
+{
+  "id": "prep-initial-values",
+  "title": "初めの値と、増えた分を分ける",
+  "level": "intro",
+  "before": [
+    "m1-uniform-accel-intro",
+    "m1-uniform-accel-advanced",
+    "m-freefall-middle",
+    "uc-newton-middle",
+    "m-projectile-advanced",
+    "m-energy-intro",
+    "m-freefall-advanced",
+    "ui-energy-change-bridges-8",
+    "uc-work-intro",
+    "e-field-advanced",
+    "e-capacitor-middle",
+    "a-bohr-advanced",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced",
+    "m-energy-advanced",
+    "uc-potential-intro",
+    "uc-potential-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "初速度とは、時計をゼロにした瞬間の速度です。速度の記号につく小さなゼロは、掛け算ではなく、「初めの値ですよ」という目印です。",
+      "equation": "v₀：初速度；t：初めからの経過時間",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "初速度とは、時計をゼロにした瞬間の速度です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.938,
+          "text": "初速度とは、時計をゼロにした瞬間の速度です。"
+        },
+        {
+          "start": 4.088,
+          "end": 10.521999999999998,
+          "text": "速度の記号につく小さなゼロは、掛け算ではなく、「初めの値ですよ」という目印です。"
+        }
+      ],
+      "end": 11.872
+    },
+    {
+      "narration": "加速度が一定なら、速度の増え方は「加速度かける時間」です。これを初速度に足すので、最初の速度がゼロとは限りません。",
+      "equation": "v = v₀+at；例：3+2×3 = 9 m/s",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "初速度",
+          "増加分",
+          "最後の速度"
+        ],
+        "values": [
+          3,
+          6,
+          9
+        ],
+        "unit": "m/s"
+      },
+      "index": 1,
+      "heading": "加速度が一定なら、速度の増え方は「加速度かける時間」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.872,
+      "captions": [
+        {
+          "start": 11.872,
+          "end": 17.036666666666665,
+          "text": "加速度が一定なら、速度の増え方は「加速度かける時間」です。"
+        },
+        {
+          "start": 17.186666666666667,
+          "end": 21.754,
+          "text": "これを初速度に足すので、最初の速度がゼロとは限りません。"
+        }
+      ],
+      "end": 23.104
+    },
+    {
+      "narration": "投げ上げでは、上をプラスとすると、加速度はマイナスの重力加速度です。最高点の条件は「速度がゼロ」であって、「加速度がゼロ」ではありません。",
+      "equation": "0 = 19.6−9.8t → 9.8t=19.6 → t=2 s",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "上向きを正とする速度 [m/s]",
+        "points": [
+          [
+            0,
+            19.6
+          ],
+          [
+            1,
+            9.8
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            -9.8
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "投げ上げでは、上をプラスとすると、加速度はマイナスの重力加速度です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.104,
+      "captions": [
+        {
+          "start": 23.104,
+          "end": 28.524666666666665,
+          "text": "投げ上げでは、上をプラスとすると、加速度はマイナスの重力加速度です。"
+        },
+        {
+          "start": 28.674666666666667,
+          "end": 34.73533333333334,
+          "text": "最高点の条件は「速度がゼロ」であって、「加速度がゼロ」ではありません。"
+        }
+      ],
+      "end": 36.08533333333334
+    },
+    {
+      "narration": "加速度が一定なら、速度のグラフは直線です。そのため平均速度は、最初と最後の速度を足して二で割った値になります。時間を消す計算では、二つの数の和と差を掛けると、二乗の差になる関係を使います。",
+      "equation": "(v+v₀)(v−v₀) = v²−v₀²",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻",
+        "yLabel": "速度",
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "area": true
+      },
+      "index": 3,
+      "heading": "加速度が一定なら、速度のグラフは直線です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 36.08533333333334,
+      "captions": [
+        {
+          "start": 36.08533333333334,
+          "end": 39.906000000000006,
+          "text": "加速度が一定なら、速度のグラフは直線です。"
+        },
+        {
+          "start": 40.056000000000004,
+          "end": 45.31666666666668,
+          "text": "そのため平均速度は、最初と最後の速度を足して二で割った値になります。"
+        },
+        {
+          "start": 45.46666666666667,
+          "end": 51.730000000000004,
+          "text": "時間を消す計算では、二つの数の和と差を掛けると、二乗の差になる関係を使います。"
+        }
+      ],
+      "end": 53.080000000000005
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "初めの値と、増えた分を分ける",
+  "topicId": "prep-initial-values",
+  "family": "prerequisites",
+  "sourceScript": "prep-initial-values",
+  "duration": 53.080000000000005,
+  "mediaDirectory": "lessons",
+  "renderKey": "596026117285e315c93f4e2db8b1a2d39e29fc38f75d6010eeea2f51a26fc4c7"
+}

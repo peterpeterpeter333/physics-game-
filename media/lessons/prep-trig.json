@@ -1,0 +1,205 @@
+{
+  "id": "prep-trig",
+  "title": "斜めの矢印を、横と縦に分ける",
+  "level": "middle",
+  "before": [
+    "m-projectile-middle",
+    "m-energy-middle",
+    "um-dot-intro",
+    "um-cross-intro",
+    "uc-shm-intro",
+    "uc-shm-middle",
+    "m-projectile-advanced",
+    "uc-angular-middle",
+    "uc-angular-advanced",
+    "um-cross-middle",
+    "um-cross-advanced",
+    "uc-rigid2-middle",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3",
+    "e-magnet-intro",
+    "e-magnet-middle",
+    "e-magnet-advanced",
+    "e-field-middle",
+    "e-field-advanced",
+    "w-light-intro",
+    "w-light-middle",
+    "w-light-advanced",
+    "w-interference-middle",
+    "w-interference-advanced",
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced",
+    "m-shm-advanced",
+    "w-basics-advanced",
+    "um-shm-ode-intro",
+    "um-shm-ode-middle",
+    "w-sound-advanced",
+    "um-derivative-advanced-followups-4",
+    "um-derivative-advanced",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1"
+  ],
+  "scenes": [
+    {
+      "narration": "斜めの移動は、横の移動と縦の移動に分けられます。横に四、縦に三の直角三角形では、斜めの長さは五です。",
+      "equation": "3² + 4² = 5²",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            3,
+            "長さ5"
+          ]
+        ],
+        "components": true
+      },
+      "index": 0,
+      "heading": "斜めの移動は、横の移動と縦の移動に分けられます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.1193333333333335,
+          "text": "斜めの移動は、横の移動と縦の移動に分けられます。"
+        },
+        {
+          "start": 4.269333333333333,
+          "end": 9.476666666666667,
+          "text": "横に四、縦に三の直角三角形では、斜めの長さは五です。"
+        }
+      ],
+      "end": 10.826666666666664
+    },
+    {
+      "narration": "角度は、横向きから測ります。コサインは「横の辺、割る、斜めの辺」、サインは「縦の辺、割る、斜めの辺」です。",
+      "equation": "cos θ = 4/5；sin θ = 3/5",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            3,
+            "θ は横からの角度"
+          ]
+        ],
+        "components": true
+      },
+      "index": 1,
+      "heading": "角度は、横向きから測ります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.826666666666664,
+      "captions": [
+        {
+          "start": 10.826666666666664,
+          "end": 13.697999999999997,
+          "text": "角度は、横向きから測ります。"
+        },
+        {
+          "start": 13.847999999999997,
+          "end": 22.041999999999998,
+          "text": "コサインは「横の辺、割る、斜めの辺」、サインは「縦の辺、割る、斜めの辺」です。"
+        }
+      ],
+      "end": 23.391999999999996
+    },
+    {
+      "narration": "斜めの矢印の長さに、この割り算の結果を掛けると、横と縦の分が求まります。同じ角度で長さ十の速度なら、横の速度は八、縦の速度は六です。",
+      "equation": "横 = 10 × 4/5 = 8；縦 = 10 × 3/5 = 6",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            8,
+            6,
+            "速度10 m/s"
+          ]
+        ],
+        "components": true
+      },
+      "index": 2,
+      "heading": "斜めの矢印の長さに、この割り算の結果を掛けると、横と縦の分が求まります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.391999999999996,
+      "captions": [
+        {
+          "start": 23.391999999999996,
+          "end": 29.548666666666662,
+          "text": "斜めの矢印の長さに、この割り算の結果を掛けると、横と縦の分が求まります。"
+        },
+        {
+          "start": 29.69866666666666,
+          "end": 35.50333333333333,
+          "text": "同じ角度で長さ十の速度なら、横の速度は八、縦の速度は六です。"
+        }
+      ],
+      "end": 36.85333333333333
+    },
+    {
+      "narration": "投げた物の運動では、横と縦の位置を同じ時刻で計算します。空気抵抗がなければ、重力は縦の速度だけを変え、横の速度は変えません。",
+      "equation": "横：速度一定；縦：下向きに加速",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "横の位置 [m]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            24
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "投げた物の運動では、横と縦の位置を同じ時刻で計算します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 36.85333333333333,
+      "captions": [
+        {
+          "start": 36.85333333333333,
+          "end": 41.708666666666666,
+          "text": "投げた物の運動では、横と縦の位置を同じ時刻で計算します。"
+        },
+        {
+          "start": 41.858666666666664,
+          "end": 47.65266666666667,
+          "text": "空気抵抗がなければ、重力は縦の速度だけを変え、横の速度は変えません。"
+        }
+      ],
+      "end": 49.00266666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "斜めの矢印を、横と縦に分ける",
+  "topicId": "prep-trig",
+  "family": "prerequisites",
+  "sourceScript": "prep-trig",
+  "duration": 49.00266666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "5aefdff22d4e957fc842d51b78662df62621c9b8e3f29288dbf48afda835b1a9"
+}

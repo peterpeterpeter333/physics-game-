@@ -1,0 +1,218 @@
+{
+  "id": "prep-force",
+  "title": "力・質量・合力を区別する",
+  "level": "intro",
+  "before": [
+    "m-force-intro",
+    "m-force-middle",
+    "m-freefall-intro",
+    "m-projectile-intro",
+    "ui-force-map-bridges-6",
+    "uc-rigid1-intro",
+    "uc-rigid1-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-advanced-followups-6",
+    "uc-rigid1-middle",
+    "uc-rigid1-advanced-followups-5",
+    "um-ode-intro",
+    "uc-drag-intro",
+    "uc-drag-middle",
+    "uc-drag-advanced",
+    "m-shm-intro",
+    "m-energy-advanced",
+    "uc-shm-intro",
+    "um-shm-ode-intro",
+    "uc-shm-middle",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1",
+    "um-shm-ode-middle",
+    "uc-frontier-advanced-followups-3",
+    "m-force-advanced",
+    "uc-newton-advanced",
+    "m-momentum-intro",
+    "m-momentum-middle",
+    "m-momentum-advanced",
+    "uc-momentum-intro",
+    "uc-momentum-middle",
+    "uc-momentum-advanced",
+    "a-photon-middle",
+    "a-bohr-intro",
+    "a-bohr-middle",
+    "t-ideal-advanced",
+    "m-energy-intro",
+    "m-freefall-advanced",
+    "ui-energy-change-bridges-8",
+    "uc-work-intro",
+    "e-field-advanced",
+    "e-capacitor-middle",
+    "a-bohr-advanced",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced",
+    "uc-potential-intro",
+    "uc-potential-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "力は、物体が別の物体から受ける押し引きです。力の矢印の向きは押す向き、矢印の長さは力の大きさを表します。",
+      "equation": "右向きの力 5 N；左向きの力 2 N",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            5,
+            0,
+            "押す力 5 N"
+          ],
+          [
+            -2,
+            0,
+            "摩擦力 2 N"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "力は、物体が別の物体から受ける押し引きです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.8633333333333337,
+          "text": "力は、物体が別の物体から受ける押し引きです。"
+        },
+        {
+          "start": 4.013333333333334,
+          "end": 9.498,
+          "text": "力の矢印の向きは押す向き、矢印の長さは力の大きさを表します。"
+        }
+      ],
+      "end": 10.847999999999999
+    },
+    {
+      "narration": "一つの物体に働く力を全部足したものが、合力です。右をプラスとすると、この物体の合力は右向き三ニュートンです。",
+      "equation": "合力 = 5 − 2 = 3 N",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "合力 3 N"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "一つの物体に働く力を全部足したものが、合力です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.847999999999999,
+      "captions": [
+        {
+          "start": 10.847999999999999,
+          "end": 15.276666666666666,
+          "text": "一つの物体に働く力を全部足したものが、合力です。"
+        },
+        {
+          "start": 15.426666666666666,
+          "end": 20.23933333333333,
+          "text": "右をプラスとすると、この物体の合力は右向き三ニュートンです。"
+        }
+      ],
+      "end": 21.589333333333332
+    },
+    {
+      "narration": "質量は、動きの変わりにくさを表す量で、単位はキログラムです。運動の法則では、合力を質量で割ったものが加速度になります。",
+      "equation": "加速度 = 合力 ÷ 質量 = 3 N ÷ 2 kg = 1.5 m/s²",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "質量1 kg",
+          "質量2 kg"
+        ],
+        "values": [
+          3,
+          1.5
+        ],
+        "unit": "m/s²"
+      },
+      "index": 2,
+      "heading": "質量は、動きの変わりにくさを表す量で、単位はキログラムです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 21.589333333333332,
+      "captions": [
+        {
+          "start": 21.589333333333332,
+          "end": 26.860666666666663,
+          "text": "質量は、動きの変わりにくさを表す量で、単位はキログラムです。"
+        },
+        {
+          "start": 27.010666666666665,
+          "end": 31.82333333333333,
+          "text": "運動の法則では、合力を質量で割ったものが加速度になります。"
+        }
+      ],
+      "end": 33.17333333333333
+    },
+    {
+      "narration": "合力がゼロなら、物体の速度は変わりません。地球が物体を引く力、重力は下向きの力で、質量とは別のものです。",
+      "equation": "重力の大きさ = 質量 × g；g ≈ 9.8 m/s²",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            -4,
+            "重力"
+          ],
+          [
+            0,
+            4,
+            "床からの力"
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "合力がゼロなら、物体の速度は変わりません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 33.17333333333333,
+      "captions": [
+        {
+          "start": 33.17333333333333,
+          "end": 36.88733333333334,
+          "text": "合力がゼロなら、物体の速度は変わりません。"
+        },
+        {
+          "start": 37.03733333333333,
+          "end": 42.81,
+          "text": "地球が物体を引く力、重力は下向きの力で、質量とは別のものです。"
+        }
+      ],
+      "end": 44.16
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "力・質量・合力を区別する",
+  "topicId": "prep-force",
+  "family": "prerequisites",
+  "sourceScript": "prep-force",
+  "duration": 44.16,
+  "mediaDirectory": "lessons",
+  "renderKey": "56763540a4db927cd0e5642e540baf8efe5d748abe5929b941706f29557167c8"
+}

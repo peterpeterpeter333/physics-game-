@@ -1,0 +1,140 @@
+{
+  "id": "prep-heat-cycle",
+  "title": "一周する熱機関の、仕事と熱",
+  "level": "advanced",
+  "before": [
+    "t-firstlaw-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "気体が膨らむと、気体が外へする仕事はプラスです。押し縮められるときは外から仕事をされるので、この約束では気体の仕事はマイナスです。",
+      "equation": "仕事の符号：膨張は正、圧縮は負",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積",
+        "yLabel": "圧力",
+        "points": [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "area": false
+      },
+      "index": 0,
+      "heading": "気体が膨らむと、気体が外へする仕事はプラスです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.13,
+          "text": "気体が膨らむと、気体が外へする仕事はプラスです。"
+        },
+        {
+          "start": 4.28,
+          "end": 10.329999999999998,
+          "text": "押し縮められるときは外から仕事をされるので、この約束では気体の仕事はマイナスです。"
+        }
+      ],
+      "end": 11.68
+    },
+    {
+      "narration": "一周して同じ状態に戻ると、内部エネルギーの変化はゼロです。受け取った熱から捨てた熱を引いたものが、一周の差し引きの仕事です。",
+      "equation": "W正味 = Q受取 − Q放出；効率 = W正味/Q受取",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "受け取る熱",
+          "捨てる熱",
+          "正味の仕事"
+        ],
+        "values": [
+          100,
+          60,
+          40
+        ],
+        "unit": "J"
+      },
+      "index": 1,
+      "heading": "一周して同じ状態に戻ると、内部エネルギーの変化はゼロです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.68,
+      "captions": [
+        {
+          "start": 11.68,
+          "end": 16.503333333333334,
+          "text": "一周して同じ状態に戻ると、内部エネルギーの変化はゼロです。"
+        },
+        {
+          "start": 16.653333333333332,
+          "end": 21.604666666666663,
+          "text": "受け取った熱から捨てた熱を引いたものが、一周の差し引きの仕事です。"
+        }
+      ],
+      "end": 22.954666666666665
+    },
+    {
+      "narration": "断熱とは、外との熱の出入りがない、という条件です。断熱でも仕事をすれば内部エネルギーは変わるので、温度が一定とは限りません。",
+      "equation": "断熱：Q=0；等温：温度一定（別の条件）",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "膨張前のU",
+          "外への仕事",
+          "膨張後のU"
+        ],
+        "values": [
+          100,
+          20,
+          80
+        ],
+        "unit": "J（断熱の例）"
+      },
+      "index": 2,
+      "heading": "断熱とは、外との熱の出入りがない、という条件です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.954666666666665,
+      "captions": [
+        {
+          "start": 22.954666666666665,
+          "end": 27.35133333333333,
+          "text": "断熱とは、外との熱の出入りがない、という条件です。"
+        },
+        {
+          "start": 27.50133333333333,
+          "end": 33.242000000000004,
+          "text": "断熱でも仕事をすれば内部エネルギーは変わるので、温度が一定とは限りません。"
+        }
+      ],
+      "end": 34.592
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "一周する熱機関の、仕事と熱",
+  "topicId": "prep-heat-cycle",
+  "family": "prerequisites",
+  "sourceScript": "prep-heat-cycle",
+  "duration": 34.592,
+  "mediaDirectory": "lessons",
+  "renderKey": "11e954f38b67d277d4f6fa7f539f757ae0fc40c36186f567e25668081aa49d0f"
+}

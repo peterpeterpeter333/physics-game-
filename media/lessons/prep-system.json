@@ -1,0 +1,127 @@
+{
+  "id": "prep-system",
+  "title": "つり合いと作用反作用を分ける",
+  "level": "advanced",
+  "before": [
+    "m-force-advanced",
+    "uc-newton-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "箱が床の上で止まっているとき、箱は重力と、床から押し返す力を受けます。この二つはどちらも箱に働く力なので、箱の運動の式に一緒に入れます。",
+      "equation": "箱への合力 = 床からの力 − 重力 = 0",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            -3,
+            "箱への重力"
+          ],
+          [
+            0,
+            3,
+            "箱への床の力"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "箱が床の上で止まっているとき、箱は重力と、床から押し返す力を受けます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.986,
+          "text": "箱が床の上で止まっているとき、箱は重力と、床から押し返す力を受けます。"
+        },
+        {
+          "start": 6.135999999999999,
+          "end": 11.663333333333332,
+          "text": "この二つはどちらも箱に働く力なので、箱の運動の式に一緒に入れます。"
+        }
+      ],
+      "end": 13.013333333333332
+    },
+    {
+      "narration": "作用と反作用の二つの力は、別々の物体に働きます。「床が箱を押す力」の相手は「箱が床を押す力」であって、箱の重力ではありません。",
+      "equation": "床→箱の力 と 箱→床の力",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            3,
+            "床から箱へ"
+          ],
+          [
+            0,
+            -3,
+            "箱から床へ"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "作用と反作用の二つの力は、別々の物体に働きます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 13.013333333333332,
+      "captions": [
+        {
+          "start": 13.013333333333332,
+          "end": 17.793999999999997,
+          "text": "作用と反作用の二つの力は、別々の物体に働きます。"
+        },
+        {
+          "start": 17.944,
+          "end": 24.91133333333333,
+          "text": "「床が箱を押す力」の相手は「箱が床を押す力」であって、箱の重力ではありません。"
+        }
+      ],
+      "end": 26.26133333333333
+    },
+    {
+      "narration": "二台の台車をまとめて一つのかたまりと見ると、台車どうしの力は内側の力です。一台ずつの運動の式を足すと、内側の力の項が打ち消し合います。",
+      "equation": "m₁a₁+m₂a₂ = 外力の合計",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "内力の大きさ1",
+          "内力の大きさ2"
+        ],
+        "values": [
+          4,
+          4
+        ],
+        "unit": "N（向きは逆）"
+      },
+      "index": 2,
+      "heading": "二台の台車をまとめて一つのかたまりと見ると、台車どうしの力は内側の力です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 26.26133333333333,
+      "captions": [
+        {
+          "start": 26.26133333333333,
+          "end": 32.257999999999996,
+          "text": "二台の台車をまとめて一つのかたまりと見ると、台車どうしの力は内側の力です。"
+        },
+        {
+          "start": 32.407999999999994,
+          "end": 37.434,
+          "text": "一台ずつの運動の式を足すと、内側の力の項が打ち消し合います。"
+        }
+      ],
+      "end": 38.784
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "つり合いと作用反作用を分ける",
+  "topicId": "prep-system",
+  "family": "prerequisites",
+  "sourceScript": "prep-system",
+  "duration": 38.784,
+  "mediaDirectory": "lessons",
+  "renderKey": "916bdd57d9c1c25cc7779cf9f1649322da878246aa2d6af9dc862193e932069d"
+}

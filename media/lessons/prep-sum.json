@@ -1,0 +1,203 @@
+{
+  "id": "prep-sum",
+  "title": "Σは、具体的な足し算の省略",
+  "level": "middle",
+  "before": [
+    "um-integral-middle",
+    "um-work-sum-bridges-11",
+    "um-work-vector-bridges-12",
+    "ui-work-changing-bridges-7",
+    "uc-work-advanced",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-integral-advanced",
+    "uc-newton-middle",
+    "uc-newton-advanced",
+    "uc-work-middle",
+    "uc-rigid1-advanced",
+    "uc-potential-advanced",
+    "a-bohr-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid1-middle",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-advanced-followups-6"
+  ],
+  "scenes": [
+    {
+      "narration": "長さ四の区間を、同じ幅の四つに分けます。一番目の区間の右端は一、二番目の右端は二です。",
+      "equation": "区間の幅 = L/N；右端の位置 = iL/N",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "区間1",
+          "区間2",
+          "区間3",
+          "区間4"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unit": "右端の位置"
+      },
+      "index": 0,
+      "heading": "長さ四の区間を、同じ幅の四つに分けます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.7033333333333336,
+          "text": "長さ四の区間を、同じ幅の四つに分けます。"
+        },
+        {
+          "start": 3.8533333333333335,
+          "end": 8.314,
+          "text": "一番目の区間の右端は一、二番目の右端は二です。"
+        }
+      ],
+      "end": 9.663999999999998
+    },
+    {
+      "narration": "力が位置と同じ数だけ増える例では、四つの長方形の面積は、一、二、三、四です。合計は一足す二足す三足す四で、十になります。",
+      "equation": "1×1 + 2×1 + 3×1 + 4×1 = 10",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "位置",
+        "yLabel": "力",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "tiles": true,
+        "tileCount": 4,
+        "right": true
+      },
+      "index": 1,
+      "heading": "力が位置と同じ数だけ増える例では、四つの長方形の面積は、一、二、三、四です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.663999999999998,
+      "captions": [
+        {
+          "start": 9.663999999999998,
+          "end": 17.196666666666662,
+          "text": "力が位置と同じ数だけ増える例では、四つの長方形の面積は、一、二、三、四です。"
+        },
+        {
+          "start": 17.346666666666664,
+          "end": 21.273999999999997,
+          "text": "合計は一足す二足す三足す四で、十になります。"
+        }
+      ],
+      "end": 22.623999999999995
+    },
+    {
+      "narration": "シグマという記号は、「番号を変えながら、同じ形の項を足しなさい」という指示です。下に書いた番号から、上に書いた番号まで、一つずつ入れていきます。",
+      "equation": "Σ（i=1から4）i = 1 + 2 + 3 + 4",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unit": "足す値"
+      },
+      "index": 2,
+      "heading": "シグマという記号は、「番号を変えながら、同じ形の項を足しなさい」という指示です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.623999999999995,
+      "captions": [
+        {
+          "start": 22.623999999999995,
+          "end": 28.919333333333327,
+          "text": "シグマという記号は、「番号を変えながら、同じ形の項を足しなさい」という指示です。"
+        },
+        {
+          "start": 29.06933333333333,
+          "end": 34.12733333333333,
+          "text": "下に書いた番号から、上に書いた番号まで、一つずつ入れていきます。"
+        }
+      ],
+      "end": 35.477333333333334
+    },
+    {
+      "narration": "一からエヌまでの足し算を、逆順の足し算と組にすると、どの組も「エヌ足す一」になります。組はエヌ個あるので、元の合計はその半分です。",
+      "equation": "2(1+…+N) = N(N+1) → 和 = N(N+1)/2",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1+4",
+          "2+3",
+          "3+2",
+          "4+1"
+        ],
+        "values": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "unit": "組の合計"
+      },
+      "index": 3,
+      "heading": "一からエヌまでの足し算を、逆順の足し算と組にすると、どの組も「エヌ足す一」になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 35.477333333333334,
+      "captions": [
+        {
+          "start": 35.477333333333334,
+          "end": 42.626000000000005,
+          "text": "一からエヌまでの足し算を、逆順の足し算と組にすると、どの組も「エヌ足す一」になります。"
+        },
+        {
+          "start": 42.776,
+          "end": 46.66066666666667,
+          "text": "組はエヌ個あるので、元の合計はその半分です。"
+        }
+      ],
+      "end": 48.01066666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "Σは、具体的な足し算の省略",
+  "topicId": "prep-sum",
+  "family": "prerequisites",
+  "sourceScript": "prep-sum",
+  "duration": 48.01066666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "0710c2e1fb082dd1290746ac288857c8237a2ac09470db4f8ee249c99f08c273"
+}

@@ -1,0 +1,273 @@
+{
+  "id": "prep-acceleration",
+  "title": "加速度は、速度が変わる割合",
+  "level": "intro",
+  "before": [
+    "m1-acceleration-intro",
+    "m1-uniform-accel-intro",
+    "uc-newton-intro",
+    "m1-uniform-accel-advanced",
+    "m-freefall-middle",
+    "uc-newton-middle",
+    "m-projectile-advanced",
+    "m-energy-intro",
+    "m-freefall-advanced",
+    "ui-energy-change-bridges-8",
+    "uc-work-intro",
+    "e-field-advanced",
+    "e-capacitor-middle",
+    "a-bohr-advanced",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced",
+    "m-energy-advanced",
+    "uc-potential-intro",
+    "uc-potential-advanced",
+    "m-force-intro",
+    "m-force-middle",
+    "m-freefall-intro",
+    "m-projectile-intro",
+    "ui-force-map-bridges-6",
+    "uc-rigid1-intro",
+    "uc-rigid1-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-advanced-followups-6",
+    "uc-rigid1-middle",
+    "uc-rigid1-advanced-followups-5",
+    "um-ode-intro",
+    "uc-drag-intro",
+    "uc-drag-middle",
+    "uc-drag-advanced",
+    "m-shm-intro",
+    "uc-shm-intro",
+    "um-shm-ode-intro",
+    "uc-shm-middle",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1",
+    "um-shm-ode-middle",
+    "uc-frontier-advanced-followups-3",
+    "m-force-advanced",
+    "uc-newton-advanced",
+    "m-momentum-intro",
+    "m-momentum-middle",
+    "m-momentum-advanced",
+    "uc-momentum-intro",
+    "uc-momentum-middle",
+    "uc-momentum-advanced",
+    "a-photon-middle",
+    "a-bohr-intro",
+    "a-bohr-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "車の速度が、一秒ごとに毎秒二メートルずつ増えていく場合を考えます。車の速度は、二、四、六、八と増えていきます。",
+      "equation": "速度：2 → 4 → 6 → 8 m/s",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "車の速度が、一秒ごとに毎秒二メートルずつ増えていく場合を考えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.271333333333334,
+          "text": "車の速度が、一秒ごとに毎秒二メートルずつ増えていく場合を考えます。"
+        },
+        {
+          "start": 5.421333333333333,
+          "end": 10.159333333333333,
+          "text": "車の速度は、二、四、六、八と増えていきます。"
+        }
+      ],
+      "end": 11.509333333333332
+    },
+    {
+      "narration": "加速度は、速度の変化を、それにかかった時間で割ったものです。この車の加速度は、「一秒あたり、速度が毎秒二メートルずつ増える」という割合です。",
+      "equation": "加速度 = (8 − 2) ÷ 3 = 2 m/s²",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "slope": true
+      },
+      "index": 1,
+      "heading": "加速度は、速度の変化を、それにかかった時間で割ったものです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.509333333333332,
+      "captions": [
+        {
+          "start": 11.509333333333332,
+          "end": 16.151333333333334,
+          "text": "加速度は、速度の変化を、それにかかった時間で割ったものです。"
+        },
+        {
+          "start": 16.301333333333332,
+          "end": 22.852666666666664,
+          "text": "この車の加速度は、「一秒あたり、速度が毎秒二メートルずつ増える」という割合です。"
+        }
+      ],
+      "end": 24.202666666666666
+    },
+    {
+      "narration": "車がまっすぐ同じ速度で進むと、速度の変化はゼロです。この運動を等速直線運動と言い、車が動いていても加速度はゼロです。",
+      "equation": "加速度 = (4 − 4) ÷ 3 = 0 m/s²",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "slope": true
+      },
+      "index": 2,
+      "heading": "車がまっすぐ同じ速度で進むと、速度の変化はゼロです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.202666666666666,
+      "captions": [
+        {
+          "start": 24.202666666666666,
+          "end": 28.77,
+          "text": "車がまっすぐ同じ速度で進むと、速度の変化はゼロです。"
+        },
+        {
+          "start": 28.919999999999998,
+          "end": 34.30866666666667,
+          "text": "この運動を等速直線運動と言い、車が動いていても加速度はゼロです。"
+        }
+      ],
+      "end": 35.65866666666667
+    },
+    {
+      "narration": "加速度の符号は、速度の値がどちら向きに変わるかを表します。速くなるか遅くなるかは、加速度の符号だけでは決まりません。物体が今どちら向きに動いているかも、一緒に確かめます。",
+      "equation": "速度の向きと、速度が変わる向きは別",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "slope": true
+      },
+      "index": 3,
+      "heading": "加速度の符号は、速度の値がどちら向きに変わるかを表します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 35.65866666666667,
+      "captions": [
+        {
+          "start": 35.65866666666667,
+          "end": 40.33266666666667,
+          "text": "加速度の符号は、速度の値がどちら向きに変わるかを表します。"
+        },
+        {
+          "start": 40.48266666666667,
+          "end": 44.97533333333334,
+          "text": "速くなるか遅くなるかは、加速度の符号だけでは決まりません。"
+        },
+        {
+          "start": 45.12533333333333,
+          "end": 49.51133333333333,
+          "text": "物体が今どちら向きに動いているかも、一緒に確かめます。"
+        }
+      ],
+      "end": 50.861333333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "加速度は、速度が変わる割合",
+  "topicId": "prep-acceleration",
+  "family": "prerequisites",
+  "sourceScript": "prep-acceleration",
+  "duration": 50.861333333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "d0da6ed64ac44bc081be89abe19ab28f2952d0db3c1f6f9a270e264fb838c94d"
+}

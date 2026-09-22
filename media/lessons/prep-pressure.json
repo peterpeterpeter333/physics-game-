@@ -1,0 +1,196 @@
+{
+  "id": "prep-pressure",
+  "title": "圧力は、面積一あたりの力",
+  "level": "intro",
+  "before": [
+    "t-gas-intro",
+    "t-gas-middle",
+    "t-ideal-intro",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "t-ideal-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "圧力は、面をまっすぐ押す力を、面積で割ったものです。同じ力でも、狭い面に集中するほど圧力は大きくなります。",
+      "equation": "圧力 p = 力 F ÷ 面積 S",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "面積1 m²",
+          "面積2 m²"
+        ],
+        "values": [
+          10,
+          5
+        ],
+        "unit": "Pa（力10 N）"
+      },
+      "index": 0,
+      "heading": "圧力は、面をまっすぐ押す力を、面積で割ったものです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.620666666666667,
+          "text": "圧力は、面をまっすぐ押す力を、面積で割ったものです。"
+        },
+        {
+          "start": 4.770666666666666,
+          "end": 9.497999999999998,
+          "text": "同じ力でも、狭い面に集中するほど圧力は大きくなります。"
+        }
+      ],
+      "end": 10.847999999999999
+    },
+    {
+      "narration": "一パスカルは、一平方メートルあたり一ニュートンの圧力です。気体では、たくさんの分子が壁にぶつかる効果が、平均の圧力として現れます。",
+      "equation": "1 Pa = 1 N/m²",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "面積 [m²]",
+        "yLabel": "同じ圧力での力 [N]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            20
+          ],
+          [
+            3,
+            30
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "一パスカルは、一平方メートルあたり一ニュートンの圧力です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.847999999999999,
+      "captions": [
+        {
+          "start": 10.847999999999999,
+          "end": 15.265999999999998,
+          "text": "一パスカルは、一平方メートルあたり一ニュートンの圧力です。"
+        },
+        {
+          "start": 15.415999999999999,
+          "end": 21.316666666666666,
+          "text": "気体では、たくさんの分子が壁にぶつかる効果が、平均の圧力として現れます。"
+        }
+      ],
+      "end": 22.666666666666664
+    },
+    {
+      "narration": "量と温度を変えない気体では、「圧力かける体積」が一定になります。体積を半分にすると圧力は二倍。このような関係を、反比例と言います。",
+      "equation": "pV = 一定；Vが1/2 → pは2倍",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積の比",
+        "yLabel": "圧力の比",
+        "points": [
+          [
+            0.5,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0.5
+          ],
+          [
+            4,
+            0.25
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "量と温度を変えない気体では、「圧力かける体積」が一定になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.666666666666664,
+      "captions": [
+        {
+          "start": 22.666666666666664,
+          "end": 28.033999999999995,
+          "text": "量と温度を変えない気体では、「圧力かける体積」が一定になります。"
+        },
+        {
+          "start": 28.183999999999997,
+          "end": 31.225999999999996,
+          "text": "体積を半分にすると圧力は二倍。"
+        },
+        {
+          "start": 31.375999999999998,
+          "end": 34.674,
+          "text": "このような関係を、反比例と言います。"
+        }
+      ],
+      "end": 36.024
+    },
+    {
+      "narration": "気体の温度の比例を考えるときは、絶対温度を使います。絶対温度は摂氏温度に約二百七十三を足したもので、一ケルビンの差は一度の差と同じ大きさです。",
+      "equation": "T [K] = t [℃] + 273.15",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "摂氏温度 [℃]",
+        "yLabel": "絶対温度 [K]",
+        "points": [
+          [
+            -273.15,
+            0
+          ],
+          [
+            0,
+            273.15
+          ],
+          [
+            100,
+            373.15
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "気体の温度の比例を考えるときは、絶対温度を使います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 36.024,
+      "captions": [
+        {
+          "start": 36.024,
+          "end": 40.42066666666667,
+          "text": "気体の温度の比例を考えるときは、絶対温度を使います。"
+        },
+        {
+          "start": 40.57066666666667,
+          "end": 47.52733333333334,
+          "text": "絶対温度は摂氏温度に約二百七十三を足したもので、一ケルビンの差は一度の差と同じ大きさです。"
+        }
+      ],
+      "end": 48.87733333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "圧力は、面積一あたりの力",
+  "topicId": "prep-pressure",
+  "family": "prerequisites",
+  "sourceScript": "prep-pressure",
+  "duration": 48.87733333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "b931bcd53cdbc6c8583b34df2b0760ff742c1ab3bd0d955aba6f154ee1f8eef5"
+}

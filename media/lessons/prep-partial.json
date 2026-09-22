@@ -1,0 +1,179 @@
+{
+  "id": "prep-partial",
+  "title": "一つだけ変える微分と、両方の変化",
+  "level": "advanced",
+  "before": [
+    "um-rules-advanced",
+    "uc-potential-middle"
+  ],
+  "scenes": [
+    {
+      "narration": "長方形の面積は、横かける縦です。縦を三に固定して横を増やすと、横が一増えるごとに、面積は三増えます。",
+      "equation": "A=xy；y=3を固定 → ∂A/∂x = 3",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "横 x",
+        "yLabel": "面積 A",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "長方形の面積は、横かける縦です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.4793333333333334,
+          "text": "長方形の面積は、横かける縦です。"
+        },
+        {
+          "start": 3.6293333333333333,
+          "end": 9.295333333333332,
+          "text": "縦を三に固定して横を増やすと、横が一増えるごとに、面積は三増えます。"
+        }
+      ],
+      "end": 10.645333333333333
+    },
+    {
+      "narration": "偏微分の記号は、「他の変数は固定して、一つだけ動かしたときの変化率」を表します。今度は横を二に固定すると、縦が一増えるごとに面積は二増えます。",
+      "equation": "∂A/∂y = x；x=2なら2",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "縦 y",
+        "yLabel": "面積 A",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "偏微分の記号は、「他の変数は固定して、一つだけ動かしたときの変化率」を表します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.645333333333333,
+      "captions": [
+        {
+          "start": 10.645333333333333,
+          "end": 17.335333333333335,
+          "text": "偏微分の記号は、「他の変数は固定して、一つだけ動かしたときの変化率」を表します。"
+        },
+        {
+          "start": 17.485333333333333,
+          "end": 22.575333333333333,
+          "text": "今度は横を二に固定すると、縦が一増えるごとに面積は二増えます。"
+        }
+      ],
+      "end": 23.92533333333333
+    },
+    {
+      "narration": "横と縦を同時に増やすと、面積には二本の帯と、角の小さな四角が増えます。角の四角は、横の増加かける縦の増加です。",
+      "equation": "ΔA = yΔx + xΔy + ΔxΔy",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "縦の帯",
+          "横の帯",
+          "角"
+        ],
+        "values": [
+          0.3,
+          0.2,
+          0.01
+        ],
+        "unit": "面積（Δx=Δy=0.1）"
+      },
+      "index": 2,
+      "heading": "横と縦を同時に増やすと、面積には二本の帯と、角の小さな四角が増えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.92533333333333,
+      "captions": [
+        {
+          "start": 23.92533333333333,
+          "end": 29.87933333333333,
+          "text": "横と縦を同時に増やすと、面積には二本の帯と、角の小さな四角が増えます。"
+        },
+        {
+          "start": 30.02933333333333,
+          "end": 33.818,
+          "text": "角の四角は、横の増加かける縦の増加です。"
+        }
+      ],
+      "end": 35.168
+    },
+    {
+      "narration": "両方の長さがなめらかに変わる場合、角の四角を時間で割ったものは、極限でゼロになります。残る二つの項が、積の微分の公式です。",
+      "equation": "d(xy)/dt = y dx/dt + x dy/dt",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "縦の帯の寄与",
+          "横の帯の寄与"
+        ],
+        "values": [
+          3,
+          2
+        ],
+        "unit": "単位時間の面積増加"
+      },
+      "index": 3,
+      "heading": "両方の長さがなめらかに変わる場合、角の四角を時間で割ったものは、極限でゼロになります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 35.168,
+      "captions": [
+        {
+          "start": 35.168,
+          "end": 41.794000000000004,
+          "text": "両方の長さがなめらかに変わる場合、角の四角を時間で割ったものは、極限でゼロになります。"
+        },
+        {
+          "start": 41.944,
+          "end": 45.50866666666667,
+          "text": "残る二つの項が、積の微分の公式です。"
+        }
+      ],
+      "end": 46.85866666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "一つだけ変える微分と、両方の変化",
+  "topicId": "prep-partial",
+  "family": "prerequisites",
+  "sourceScript": "prep-partial",
+  "duration": 46.85866666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "ab074f8e1eb92f1ba05bbf92528638b8b928dcfde7a0bb5cc520c77718240f96"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "prep-mole",
+  "title": "粒子の個数を、モルで数える",
+  "level": "middle",
+  "before": [
+    "t-ideal-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。この一モルあたりの個数を、アボガドロ定数と呼びます。",
+      "equation": "粒子数 N = 物質量 n × N_A",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1 mol",
+          "2 mol",
+          "3 mol"
+        ],
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "unit": "N_A個"
+      },
+      "index": 0,
+      "heading": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.73,
+          "text": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。"
+        },
+        {
+          "start": 5.88,
+          "end": 10.074,
+          "text": "この一モルあたりの個数を、アボガドロ定数と呼びます。"
+        }
+      ],
+      "end": 11.424
+    },
+    {
+      "narration": "モルは、質量そのものではありません。一モルの質量をモル質量と呼び、物質の種類によって値が違います。",
+      "equation": "物質量 = 質量 ÷ モル質量",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "水1 mol",
+          "酸素分子1 mol"
+        ],
+        "values": [
+          18,
+          32
+        ],
+        "unit": "g（概数）"
+      },
+      "index": 1,
+      "heading": "モルは、質量そのものではありません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.424,
+      "captions": [
+        {
+          "start": 11.424,
+          "end": 14.540666666666665,
+          "text": "モルは、質量そのものではありません。"
+        },
+        {
+          "start": 14.690666666666665,
+          "end": 19.716666666666665,
+          "text": "一モルの質量をモル質量と呼び、物質の種類によって値が違います。"
+        }
+      ],
+      "end": 21.066666666666663
+    },
+    {
+      "narration": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。粒子の個数で書くときは、気体定数をアボガドロ定数で割った定数を使います。",
+      "equation": "pV = nRT = Nk_B T；k_B = R/N_A",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "絶対温度 T",
+        "yLabel": "pV（n一定）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 21.066666666666663,
+      "captions": [
+        {
+          "start": 21.066666666666663,
+          "end": 27.14866666666666,
+          "text": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。"
+        },
+        {
+          "start": 27.298666666666662,
+          "end": 32.900666666666666,
+          "text": "粒子の個数で書くときは、気体定数をアボガドロ定数で割った定数を使います。"
+        }
+      ],
+      "end": 34.25066666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "粒子の個数を、モルで数える",
+  "topicId": "prep-mole",
+  "family": "prerequisites",
+  "sourceScript": "prep-mole",
+  "duration": 34.25066666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "2883d101e7edebfaaf8948862e4cf763ab85c938d7a7ea9ed5c34e66c90668a5"
+}

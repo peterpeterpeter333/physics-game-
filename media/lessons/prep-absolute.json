@@ -1,0 +1,162 @@
+{
+  "id": "prep-absolute",
+  "title": "負号と、絶対値の折れ曲がり",
+  "level": "advanced",
+  "before": [
+    "um-derivative-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "絶対値は、数直線でゼロからどれだけ離れているかです。三もマイナス三も、ゼロから三離れているので、絶対値は三です。",
+      "equation": "|3|=3；|−3|=3",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "|x|",
+        "points": [
+          [
+            -3,
+            3
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "絶対値は、数直線でゼロからどれだけ離れているかです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.343333333333334,
+          "text": "絶対値は、数直線でゼロからどれだけ離れているかです。"
+        },
+        {
+          "start": 4.493333333333333,
+          "end": 9.551333333333332,
+          "text": "三もマイナス三も、ゼロから三離れているので、絶対値は三です。"
+        }
+      ],
+      "end": 10.901333333333332
+    },
+    {
+      "narration": "プラスの側では絶対値はエックス、マイナスの側ではマイナスエックスです。グラフは途切れずにつながっていますが、ゼロで折れ曲がります。",
+      "equation": "x≥0：|x|=x；x<0：|x|=−x",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "|x|",
+        "points": [
+          [
+            -2,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "プラスの側では絶対値はエックス、マイナスの側ではマイナスエックスです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.901333333333332,
+      "captions": [
+        {
+          "start": 10.901333333333332,
+          "end": 16.076666666666664,
+          "text": "プラスの側では絶対値はエックス、マイナスの側ではマイナスエックスです。"
+        },
+        {
+          "start": 16.226666666666667,
+          "end": 20.474,
+          "text": "グラフは途切れずにつながっていますが、ゼロで折れ曲がります。"
+        }
+      ],
+      "end": 21.823999999999998
+    },
+    {
+      "narration": "ゼロから右へ取った区間の傾きは一、左へ取った区間の傾きはマイナス一です。左右で同じ値に近づかないので、ゼロでの微分は一つに決まりません。",
+      "equation": "h>0：|h|/h=1；h<0：|h|/h=−1",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "h",
+        "yLabel": "差の比 |h|/h",
+        "points": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -0.01,
+            -1
+          ],
+          [
+            0.01,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "breakAt": 2
+      },
+      "index": 2,
+      "heading": "ゼロから右へ取った区間の傾きは一、左へ取った区間の傾きはマイナス一です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 21.823999999999998,
+      "captions": [
+        {
+          "start": 21.823999999999998,
+          "end": 27.70333333333333,
+          "text": "ゼロから右へ取った区間の傾きは一、左へ取った区間の傾きはマイナス一です。"
+        },
+        {
+          "start": 27.85333333333333,
+          "end": 32.794000000000004,
+          "text": "左右で同じ値に近づかないので、ゼロでの微分は一つに決まりません。"
+        }
+      ],
+      "end": 34.144
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "負号と、絶対値の折れ曲がり",
+  "topicId": "prep-absolute",
+  "family": "prerequisites",
+  "sourceScript": "prep-absolute",
+  "duration": 34.144,
+  "mediaDirectory": "lessons",
+  "renderKey": "bf91a16be2949c969300043d278dc8eb3e4b1c8c0bc3e66ea3da9fa67d8461a4"
+}

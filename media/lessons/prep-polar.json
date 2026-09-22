@@ -1,0 +1,172 @@
+{
+  "id": "prep-polar",
+  "title": "中心からの距離と角度で、位置を書く",
+  "level": "advanced",
+  "before": [
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3"
+  ],
+  "scenes": [
+    {
+      "narration": "極座標では、位置を横と縦ではなく、中心からの距離と角度で表します。半径の向きの単位ベクトルも、角度が変わると向きが回ります。",
+      "equation": "位置ベクトル = r eᵣ；eᵣ=(cosφ,sinφ)",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            2,
+            "半径方向"
+          ]
+        ],
+        "components": true
+      },
+      "index": 0,
+      "heading": "極座標では、位置を横と縦ではなく、中心からの距離と角度で表します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.73,
+          "text": "極座標では、位置を横と縦ではなく、中心からの距離と角度で表します。"
+        },
+        {
+          "start": 5.88,
+          "end": 10.532666666666666,
+          "text": "半径の向きの単位ベクトルも、角度が変わると向きが回ります。"
+        }
+      ],
+      "end": 11.882666666666665
+    },
+    {
+      "narration": "この単位ベクトルを成分で微分すると、角度の向きの単位ベクトルが出てきます。半径の向きの変化と、角度の向きの変化を、両方残す必要があります。",
+      "equation": "deᵣ/dt=φ′eφ；deφ/dt=−φ′eᵣ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "eᵣ"
+          ],
+          [
+            0,
+            3,
+            "eφ"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "この単位ベクトルを成分で微分すると、角度の向きの単位ベクトルが出てきます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.882666666666665,
+      "captions": [
+        {
+          "start": 11.882666666666665,
+          "end": 17.313999999999997,
+          "text": "この単位ベクトルを成分で微分すると、角度の向きの単位ベクトルが出てきます。"
+        },
+        {
+          "start": 17.464,
+          "end": 23.11933333333333,
+          "text": "半径の向きの変化と、角度の向きの変化を、両方残す必要があります。"
+        }
+      ],
+      "end": 24.46933333333333
+    },
+    {
+      "narration": "位置を微分すると、「距離の変化」と「向きの変化」の二つの項になります。もう一度微分して整理すると、円運動でも残る、半径の向きの項が現れます。",
+      "equation": "v=r′eᵣ+rφ′eφ；aᵣ=r″−rφ′²",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "半径方向の速度"
+          ],
+          [
+            0,
+            2,
+            "角度方向の速度"
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "位置を微分すると、「距離の変化」と「向きの変化」の二つの項になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.46933333333333,
+      "captions": [
+        {
+          "start": 24.46933333333333,
+          "end": 30.220666666666663,
+          "text": "位置を微分すると、「距離の変化」と「向きの変化」の二つの項になります。"
+        },
+        {
+          "start": 30.370666666666665,
+          "end": 36.324666666666666,
+          "text": "もう一度微分して整理すると、円運動でも残る、半径の向きの項が現れます。"
+        }
+      ],
+      "end": 37.67466666666667
+    },
+    {
+      "narration": "中心に向かう力のトルクはゼロなので、質量一あたりの角運動量は一定です。時間の微分を角度の微分に変えるときは、この関係と連鎖律を使います。",
+      "equation": "h=r²φ′ = 一定；d/dt = φ′ d/dφ",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "半径 r",
+        "yLabel": "角速度 h/r²（h=1）",
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0.25
+          ],
+          [
+            3,
+            0.1111111111111111
+          ],
+          [
+            4,
+            0.0625
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "中心に向かう力のトルクはゼロなので、質量一あたりの角運動量は一定です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 37.67466666666667,
+      "captions": [
+        {
+          "start": 37.67466666666667,
+          "end": 43.554,
+          "text": "中心に向かう力のトルクはゼロなので、質量一あたりの角運動量は一定です。"
+        },
+        {
+          "start": 43.704,
+          "end": 49.03933333333334,
+          "text": "時間の微分を角度の微分に変えるときは、この関係と連鎖律を使います。"
+        }
+      ],
+      "end": 50.38933333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "中心からの距離と角度で、位置を書く",
+  "topicId": "prep-polar",
+  "family": "prerequisites",
+  "sourceScript": "prep-polar",
+  "duration": 50.38933333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "5d83f6db4ce942ec4c89217dce854beeec7c3d462468d54076f3b5255e662164"
+}

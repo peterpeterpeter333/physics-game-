@@ -1,0 +1,196 @@
+{
+  "id": "prep-log",
+  "title": "対数は、何乗かを求める道具",
+  "level": "advanced",
+  "before": [
+    "um-ode-advanced",
+    "uc-drag-advanced",
+    "a-nucleus-advanced",
+    "uc-drag-middle"
+  ],
+  "scenes": [
+    {
+      "narration": "「二を何乗すると八になるか」の答えは三です。対数は、このように、累乗の結果から「何乗か」を逆に求める計算です。",
+      "equation": "2³ = 8 ↔ log₂8 = 3",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "2¹",
+          "2²",
+          "2³"
+        ],
+        "values": [
+          2,
+          4,
+          8
+        ],
+        "unit": "累乗の値"
+      },
+      "index": 0,
+      "heading": "「二を何乗すると八になるか」の答えは三です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.7673333333333336,
+          "text": "「二を何乗すると八になるか」の答えは三です。"
+        },
+        {
+          "start": 3.9173333333333336,
+          "end": 10.148666666666667,
+          "text": "対数は、このように、累乗の結果から「何乗か」を逆に求める計算です。"
+        }
+      ],
+      "end": 11.498666666666665
+    },
+    {
+      "narration": "エルエヌは、底をイーにした対数です。指数関数と対数は逆の操作なので、「イーのエックス乗」にエルエヌを付けると、エックスに戻ります。",
+      "equation": "ln(e^x)=x；ln 1=0",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "正の数 x",
+        "yLabel": "ln x",
+        "points": [
+          [
+            0.25,
+            -1.3862943611198906
+          ],
+          [
+            0.5,
+            -0.6931471805599453
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0.6931471805599453
+          ],
+          [
+            4,
+            1.3862943611198906
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "エルエヌは、底をイーにした対数です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.498666666666665,
+      "captions": [
+        {
+          "start": 11.498666666666665,
+          "end": 14.508666666666665,
+          "text": "エルエヌは、底をイーにした対数です。"
+        },
+        {
+          "start": 14.658666666666665,
+          "end": 22.041999999999998,
+          "text": "指数関数と対数は逆の操作なので、「イーのエックス乗」にエルエヌを付けると、エックスに戻ります。"
+        }
+      ],
+      "end": 23.392
+    },
+    {
+      "narration": "対数の微分は、一割るエックスです。だから、プラスの量エヌで割ってから積分する「変数分離」では、エルエヌが出てきます。",
+      "equation": "d(ln N)/dt = (1/N)dN/dt",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "N（正）",
+        "yLabel": "1/N",
+        "points": [
+          [
+            0.5,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0.5
+          ],
+          [
+            4,
+            0.25
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "対数の微分は、一割るエックスです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.392,
+      "captions": [
+        {
+          "start": 23.392,
+          "end": 26.700666666666667,
+          "text": "対数の微分は、一割るエックスです。"
+        },
+        {
+          "start": 26.850666666666665,
+          "end": 33.47666666666667,
+          "text": "だから、プラスの量エヌで割ってから積分する「変数分離」では、エルエヌが出てきます。"
+        }
+      ],
+      "end": 34.82666666666667
+    },
+    {
+      "narration": "減少の方程式を積分すると、量の比の対数は時間に比例します。式の左右をイーの指数に戻すと、指数関数の解が求まります。",
+      "equation": "ln(N/N₀)=−λt → N=N₀e^(−λt)",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 t",
+        "yLabel": "ln(N/N₀)",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -2
+          ],
+          [
+            3,
+            -3
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "減少の方程式を積分すると、量の比の対数は時間に比例します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 34.82666666666667,
+      "captions": [
+        {
+          "start": 34.82666666666667,
+          "end": 40.05533333333334,
+          "text": "減少の方程式を積分すると、量の比の対数は時間に比例します。"
+        },
+        {
+          "start": 40.205333333333336,
+          "end": 44.99666666666667,
+          "text": "式の左右をイーの指数に戻すと、指数関数の解が求まります。"
+        }
+      ],
+      "end": 46.34666666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "対数は、何乗かを求める道具",
+  "topicId": "prep-log",
+  "family": "prerequisites",
+  "sourceScript": "prep-log",
+  "duration": 46.34666666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "044faac96ff0c756c6fec4e16bad378ebdade5af09388880245abaf327afa7e1"
+}

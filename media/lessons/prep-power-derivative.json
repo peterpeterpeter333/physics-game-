@@ -1,0 +1,192 @@
+{
+  "id": "prep-power-derivative",
+  "title": "二乗の微分から、三乗の微分へ",
+  "level": "advanced",
+  "before": [
+    "um-derivative-advanced",
+    "um-taylor-middle",
+    "um-taylor-advanced",
+    "uc-potential-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "二乗の差を展開して短い幅で割ると、「二エックス足す幅」になります。幅をゼロに近づけると、微分は二エックスです。",
+      "equation": "[(x+h)²−x²]/h = 2x+h → 2x",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "x²",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "二乗の差を展開して短い幅で割ると、「二エックス足す幅」になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.41,
+          "text": "二乗の差を展開して短い幅で割ると、「二エックス足す幅」になります。"
+        },
+        {
+          "start": 5.56,
+          "end": 9.241999999999999,
+          "text": "幅をゼロに近づけると、微分は二エックスです。"
+        }
+      ],
+      "end": 10.591999999999999
+    },
+    {
+      "narration": "三乗でも同じことをします。展開して残った三つの項を幅で割ると、幅を含む項だけが極限で消えます。",
+      "equation": "[(x+h)³−x³]/h = 3x²+3xh+h² → 3x²",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "x³",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            27
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "三乗でも同じことをします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.591999999999999,
+      "captions": [
+        {
+          "start": 10.591999999999999,
+          "end": 13.04733333333333,
+          "text": "三乗でも同じことをします。"
+        },
+        {
+          "start": 13.197333333333333,
+          "end": 18.65,
+          "text": "展開して残った三つの項を幅で割ると、幅を含む項だけが極限で消えます。"
+        }
+      ],
+      "end": 19.999999999999996
+    },
+    {
+      "narration": "正の整数乗では、幅を一個だけ含む項が、掛ける因子の数だけ出てきます。これが、係数エヌと「エヌ引く一乗」が現れる理由です。",
+      "equation": "d(xⁿ)/dx = nx^(n−1)（nは正の整数）",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "二乗の一次項の数",
+          "三乗",
+          "四乗"
+        ],
+        "values": [
+          2,
+          3,
+          4
+        ],
+        "unit": "個"
+      },
+      "index": 2,
+      "heading": "正の整数乗では、幅を一個だけ含む項が、掛ける因子の数だけ出てきます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 19.999999999999996,
+      "captions": [
+        {
+          "start": 19.999999999999996,
+          "end": 25.857999999999997,
+          "text": "正の整数乗では、幅を一個だけ含む項が、掛ける因子の数だけ出てきます。"
+        },
+        {
+          "start": 26.007999999999996,
+          "end": 30.95933333333333,
+          "text": "これが、係数エヌと「エヌ引く一乗」が現れる理由です。"
+        }
+      ],
+      "end": 32.30933333333333
+    },
+    {
+      "narration": "ルートの微分は、ルートをワイと置き、「ワイの二乗がエックス」という式を微分して求めます。エックスがプラスの範囲で、この操作をします。",
+      "equation": "y²=x → 2y dy/dx=1 → dy/dx=1/(2√x)",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x（正）",
+        "yLabel": "√x",
+        "points": [
+          [
+            0.25,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1.4142135623730951
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "ルートの微分は、ルートをワイと置き、「ワイの二乗がエックス」という式を微分して求めます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 32.30933333333333,
+      "captions": [
+        {
+          "start": 32.30933333333333,
+          "end": 38.60466666666667,
+          "text": "ルートの微分は、ルートをワイと置き、「ワイの二乗がエックス」という式を微分して求めます。"
+        },
+        {
+          "start": 38.75466666666666,
+          "end": 42.24466666666666,
+          "text": "エックスがプラスの範囲で、この操作をします。"
+        }
+      ],
+      "end": 43.59466666666666
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "二乗の微分から、三乗の微分へ",
+  "topicId": "prep-power-derivative",
+  "family": "prerequisites",
+  "sourceScript": "prep-power-derivative",
+  "duration": 43.59466666666666,
+  "mediaDirectory": "lessons",
+  "renderKey": "1bfd7407649f8e904986cfb8413345dac6882ed7bb847eb4dcce4bacd905c9a1"
+}

@@ -1,0 +1,206 @@
+{
+  "id": "prep-radian",
+  "title": "一周の角度と、回転の速さ",
+  "level": "middle",
+  "before": [
+    "m-shm-middle",
+    "um-taylor-intro",
+    "uc-rigid1-intro",
+    "uc-rigid2-intro",
+    "uc-angular-middle",
+    "uc-shm-intro",
+    "uc-shm-middle",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3",
+    "uc-rigid2-advanced",
+    "uc-rigid2-advanced-followups-6",
+    "uc-rigid1-middle",
+    "uc-rigid1-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid2-middle",
+    "m-shm-advanced",
+    "w-basics-advanced",
+    "um-shm-ode-intro",
+    "um-shm-ode-middle",
+    "w-sound-advanced",
+    "um-derivative-advanced-followups-4",
+    "um-derivative-advanced",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1"
+  ],
+  "scenes": [
+    {
+      "narration": "ラジアンは、円の弧の長さを半径で割った角度です。半径二メートルの円で弧が一メートルなら、一割る二で、〇・五ラジアンです。",
+      "equation": "角度 θ = 弧の長さ s ÷ 半径 r",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "半径",
+          "弧の長さ"
+        ],
+        "values": [
+          2,
+          1
+        ],
+        "unit": "m"
+      },
+      "index": 0,
+      "heading": "ラジアンは、円の弧の長さを半径で割った角度です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.098,
+          "text": "ラジアンは、円の弧の長さを半径で割った角度です。"
+        },
+        {
+          "start": 4.248,
+          "end": 9.967333333333332,
+          "text": "半径二メートルの円で弧が一メートルなら、一割る二で、〇・五ラジアンです。"
+        }
+      ],
+      "end": 11.317333333333332
+    },
+    {
+      "narration": "一周の弧の長さは、半径の二パイ倍です。これを半径で割ると、一周は二パイラジアン。百八十度はその半分で、パイラジアンです。",
+      "equation": "360° = 2π rad；180° = π rad",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "角度 [度]",
+        "yLabel": "角度 [rad]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            90,
+            1.5707963267948966
+          ],
+          [
+            180,
+            3.141592653589793
+          ],
+          [
+            360,
+            6.283185307179586
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "一周の弧の長さは、半径の二パイ倍です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.317333333333332,
+      "captions": [
+        {
+          "start": 11.317333333333332,
+          "end": 14.903333333333332,
+          "text": "一周の弧の長さは、半径の二パイ倍です。"
+        },
+        {
+          "start": 15.053333333333333,
+          "end": 18.607333333333333,
+          "text": "これを半径で割ると、一周は二パイラジアン。"
+        },
+        {
+          "start": 18.75733333333333,
+          "end": 22.40733333333333,
+          "text": "百八十度はその半分で、パイラジアンです。"
+        }
+      ],
+      "end": 23.75733333333333
+    },
+    {
+      "narration": "角速度は、角度が一秒あたりにどれだけ増えるかです。一周に四秒かかるなら、角速度は二パイ割る四です。",
+      "equation": "角速度 ω = 2π/T；Tは一周の時間",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "角度 [rad]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1.5707963267948966
+          ],
+          [
+            2,
+            3.141592653589793
+          ],
+          [
+            4,
+            6.283185307179586
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "角速度は、角度が一秒あたりにどれだけ増えるかです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.75733333333333,
+      "captions": [
+        {
+          "start": 23.75733333333333,
+          "end": 27.91933333333333,
+          "text": "角速度は、角度が一秒あたりにどれだけ増えるかです。"
+        },
+        {
+          "start": 28.069333333333333,
+          "end": 32.35933333333333,
+          "text": "一周に四秒かかるなら、角速度は二パイ割る四です。"
+        }
+      ],
+      "end": 33.70933333333333
+    },
+    {
+      "narration": "弧の長さは「半径かける角度」なので、円周上を進む速さは「半径かける角速度」です。同じ角速度でも、外側の点ほど速く進みます。",
+      "equation": "s = rθ → v = rω",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "半径1 m",
+          "半径2 m"
+        ],
+        "values": [
+          2,
+          4
+        ],
+        "unit": "m/s（ω=2 rad/s）"
+      },
+      "index": 3,
+      "heading": "弧の長さは「半径かける角度」なので、円周上を進む速さは「半径かける角速度」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 33.70933333333333,
+      "captions": [
+        {
+          "start": 33.70933333333333,
+          "end": 41.466,
+          "text": "弧の長さは「半径かける角度」なので、円周上を進む速さは「半径かける角速度」です。"
+        },
+        {
+          "start": 41.616,
+          "end": 45.746,
+          "text": "同じ角速度でも、外側の点ほど速く進みます。"
+        }
+      ],
+      "end": 47.096000000000004
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "一周の角度と、回転の速さ",
+  "topicId": "prep-radian",
+  "family": "prerequisites",
+  "sourceScript": "prep-radian",
+  "duration": 47.096000000000004,
+  "mediaDirectory": "lessons",
+  "renderKey": "4d54d659299260155d579ca6d6fbb68e4fbb984232bf21b2907832ff2f6bc8f3"
+}

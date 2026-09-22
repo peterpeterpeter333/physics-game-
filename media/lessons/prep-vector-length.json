@@ -1,0 +1,162 @@
+{
+  "id": "prep-vector-length",
+  "title": "ベクトルの長さと、長さ一の矢印",
+  "level": "middle",
+  "before": [
+    "um-vector-middle",
+    "um-area-vector-bridges-4",
+    "um-path-pieces-bridges-3",
+    "uc-angular-middle",
+    "uc-angular-advanced",
+    "um-cross-middle",
+    "um-cross-advanced",
+    "uc-rigid2-middle",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3"
+  ],
+  "scenes": [
+    {
+      "narration": "横が三、縦が四の矢印では、直角三角形の斜めの辺が矢印の長さです。三平方の定理から、長さは五です。",
+      "equation": "|a| = √(3²+4²) = 5",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            4,
+            "a = (3,4)"
+          ]
+        ],
+        "components": true
+      },
+      "index": 0,
+      "heading": "横が三、縦が四の矢印では、直角三角形の斜めの辺が矢印の長さです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.327333333333334,
+          "text": "横が三、縦が四の矢印では、直角三角形の斜めの辺が矢印の長さです。"
+        },
+        {
+          "start": 6.477333333333333,
+          "end": 9.743333333333332,
+          "text": "三平方の定理から、長さは五です。"
+        }
+      ],
+      "end": 11.093333333333332
+    },
+    {
+      "narration": "奥行きの分もある場合は、平面の中での長さと奥行きで、もう一つ直角三角形を作ります。三つの分の二乗を足して、ルートを取ります。",
+      "equation": "|a| = √(aₓ²+aᵧ²+a_z²)",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "横²",
+          "縦²",
+          "奥行き²"
+        ],
+        "values": [
+          9,
+          16,
+          144
+        ],
+        "unit": "長さ²"
+      },
+      "index": 1,
+      "heading": "奥行きの分もある場合は、平面の中での長さと奥行きで、もう一つ直角三角形を作ります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.093333333333332,
+      "captions": [
+        {
+          "start": 11.093333333333332,
+          "end": 17.857999999999997,
+          "text": "奥行きの分もある場合は、平面の中での長さと奥行きで、もう一つ直角三角形を作ります。"
+        },
+        {
+          "start": 18.008,
+          "end": 21.327333333333332,
+          "text": "三つの分の二乗を足して、ルートを取ります。"
+        }
+      ],
+      "end": 22.677333333333333
+    },
+    {
+      "narration": "ゼロでない矢印を、その長さで割ると、向きは同じで長さ一の矢印になります。これを単位ベクトルと言います。",
+      "equation": "(3,4)/5 = (0.6,0.8)；長さ = 1",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0.6,
+            0.8,
+            "長さ1"
+          ]
+        ],
+        "components": true
+      },
+      "index": 2,
+      "heading": "ゼロでない矢印を、その長さで割ると、向きは同じで長さ一の矢印になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.677333333333333,
+      "captions": [
+        {
+          "start": 22.677333333333333,
+          "end": 28.706,
+          "text": "ゼロでない矢印を、その長さで割ると、向きは同じで長さ一の矢印になります。"
+        },
+        {
+          "start": 28.856,
+          "end": 31.204666666666668,
+          "text": "これを単位ベクトルと言います。"
+        }
+      ],
+      "end": 32.55466666666667
+    },
+    {
+      "narration": "面の向きを表すときは、面に垂直な長さ一の矢印を使います。それに面積を掛けると、向きと面積を一本の矢印で表せます。",
+      "equation": "面積ベクトル = 面積 × 垂直な単位ベクトル",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            3,
+            "面積3 × 上向きの単位ベクトル"
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "面の向きを表すときは、面に垂直な長さ一の矢印を使います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 32.55466666666667,
+      "captions": [
+        {
+          "start": 32.55466666666667,
+          "end": 37.68733333333334,
+          "text": "面の向きを表すときは、面に垂直な長さ一の矢印を使います。"
+        },
+        {
+          "start": 37.83733333333333,
+          "end": 42.81,
+          "text": "それに面積を掛けると、向きと面積を一本の矢印で表せます。"
+        }
+      ],
+      "end": 44.160000000000004
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "ベクトルの長さと、長さ一の矢印",
+  "topicId": "prep-vector-length",
+  "family": "prerequisites",
+  "sourceScript": "prep-vector-length",
+  "duration": 44.160000000000004,
+  "mediaDirectory": "lessons",
+  "renderKey": "0e6a6cf46fa96377ae8b2d174e3e94fb63d593695486ce72c47cf3d45e0d18cb"
+}
