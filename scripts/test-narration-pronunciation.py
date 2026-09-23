@@ -7,7 +7,16 @@ root=Path(__file__).resolve().parent.parent
 clips=[c for family in ['lesson','prerequisite','em'] for c in json.loads((root/f'src/content/{family}-video-catalog.generated.json').read_text())]
 texts={cap['text'] for c in clips for s in c['scenes'] for cap in s['captions']}
 assert len(clips)==332 and len(texts)==2396
-assert len(OVERRIDES)==295 and set(OVERRIDES)<=texts
+assert len(set(OVERRIDES)&texts)==295
+paper_clips=[json.loads(p.read_text()) for p in (root/'public/media/paper-battles').glob('*.json')]
+assert len(paper_clips)==18
+paper_texts={cap['text'] for c in paper_clips for s in c['scenes'] for cap in s['captions']}
+assert set(OVERRIDES)<=texts|paper_texts
+for text in paper_texts:
+ if '負' in text:assert 'フ' in OVERRIDES[text]['expectedKana'] and 'マケ' not in OVERRIDES[text]['expectedKana']
+ if '上向き' in text:assert 'ウエムキ' in OVERRIDES[text]['expectedKana']
+ if '毎' in text:assert 'マイ' in OVERRIDES[text]['expectedKana']
+ if '積の和' in text:assert 'セキノワ' in OVERRIDES[text]['expectedKana']
 audit=json.loads((root/'docs/video-scripts/pronunciation-audit-20260923.json').read_text())
 assert sum(f['count'] for f in audit['findings'])==292
 assert len({f['name'] for f in audit['findings']})==41
@@ -36,7 +45,7 @@ for text,record in OVERRIDES.items():
 affected=[c for c in clips if clip_fingerprint(c)]
 assert len(affected)==188
 if '--source-only' not in sys.argv:
- for c in clips:
+ for c in clips+paper_clips:
   expected=clip_fingerprint(c)
   if expected:assert c.get('pronunciationFingerprint')==expected,f'{c["id"]}: stale video'
   prev=0
@@ -53,4 +62,4 @@ if '--engine' in sys.argv:
   q=json.loads(urllib.request.urlopen(urllib.request.Request(url,data=b''),timeout=120).read())
   validate_query(text,q)
  with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:list(pool.map(check,OVERRIDES.items()))
-print(f'PASS: 41 finding types / 292 occurrences covered; 295 sentence readings; {len(affected)} affected videos; unchanged subtitles; '+('live engine checked' if '--engine' in sys.argv else 'offline regression'))
+print(f'PASS: 41 legacy finding types / 292 occurrences; {len(OVERRIDES)} sentence readings; {len(affected)} legacy affected videos and 18 battle movies; unchanged subtitles; '+('live engine checked' if '--engine' in sys.argv else 'offline regression'))

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "paper-ui-field-1",
+    "choices": [
+      "右向きに $6\\,\\mathrm N$",
+      "左向きに $6\\,\\mathrm N$",
+      "左向きに $1.5\\,\\mathrm N$",
+      "右向きに $1.5\\,\\mathrm N$"
+    ],
+    "answerIndex": 1,
+    "question": {
+      "id": "paper-ui-field-1-question",
+      "duration": 23.82133333333333,
+      "renderKey": "99ce7a565f62367360c30f313ab604f0e3c815c9931952792d30868417fe0732"
+    },
+    "solution": {
+      "id": "paper-ui-field-1-solution",
+      "duration": 31.927999999999997,
+      "renderKey": "b50ad57fea9012aaa7dccb235f816c0f490a18d36b771a8293a479b030e120e5"
+    }
+  },
+  {
+    "id": "paper-ui-field-2",
+    "choices": [
+      "A：右へ $4\\,\\mathrm N$、B：上へ $4\\,\\mathrm N$",
+      "A：左へ $4\\,\\mathrm N$、B：下へ $8\\,\\mathrm N$",
+      "A：右へ $4\\,\\mathrm N$、B：上へ $8\\,\\mathrm N$",
+      "A：右へ $2\\,\\mathrm N$、B：上へ $4\\,\\mathrm N$"
+    ],
+    "answerIndex": 2,
+    "question": {
+      "id": "paper-ui-field-2-question",
+      "duration": 24.439999999999998,
+      "renderKey": "57dc787879d3eeaa140b5b9a3aff174473b2fa2c40ed014d0a6b2291b92d9f4f"
+    },
+    "solution": {
+      "id": "paper-ui-field-2-solution",
+      "duration": 30.66933333333333,
+      "renderKey": "2a235eb0b366733ca4a4e5b4c14daf0399ae1ed55326df26e99946d96c01c2fe"
+    }
+  },
+  {
+    "id": "paper-ui-field-3",
+    "choices": [
+      "電場は中心から外向き、負の電荷が受ける力は中心向き",
+      "電場も、負の電荷が受ける力も中心から外向き",
+      "電場は中心向き、負の電荷が受ける力は外向き",
+      "電場も、負の電荷が受ける力も中心向き"
+    ],
+    "answerIndex": 0,
+    "question": {
+      "id": "paper-ui-field-3-question",
+      "duration": 22.445333333333334,
+      "renderKey": "bca2d27d40075f484bebb06aed4aeee50171387780e79a6a55c67a08941b42dd"
+    },
+    "solution": {
+      "id": "paper-ui-field-3-solution",
+      "duration": 29.493333333333332,
+      "renderKey": "37fb41f7a9e0e31a64914c4cb45949b8ea2a0289228047b8cb368fc2cf700527"
+    }
+  },
+  {
+    "id": "paper-um-line-1",
+    "choices": [
+      "$2.0\\,\\mathrm J$",
+      "$-0.4\\,\\mathrm J$",
+      "$0.2\\,\\mathrm J$",
+      "$0.4\\,\\mathrm J$"
+    ],
+    "answerIndex": 3,
+    "question": {
+      "id": "paper-um-line-1-question",
+      "duration": 24.87733333333333,
+      "renderKey": "533e657ff7c523c67f9a91d62251e748fbf58ec537c01cad511f7df541e97448"
+    },
+    "solution": {
+      "id": "paper-um-line-1-solution",
+      "duration": 34.59466666666667,
+      "renderKey": "6bdfa6b1507b28ef09aeadcd751c9e164cd2202bc9485c199b8a308d887f7e42"
+    }
+  },
+  {
+    "id": "paper-um-line-2",
+    "choices": [
+      "$3\\,\\mathrm J$",
+      "$-1\\,\\mathrm J$",
+      "$1\\,\\mathrm J$",
+      "$0\\,\\mathrm J$"
+    ],
+    "answerIndex": 1,
+    "question": {
+      "id": "paper-um-line-2-question",
+      "duration": 23.959999999999997,
+      "renderKey": "e9d1046191665930b8db32585a59f4444102ebbb0ddbe64f159b6f2afc21b4fc"
+    },
+    "solution": {
+      "id": "paper-um-line-2-solution",
+      "duration": 30.99733333333333,
+      "renderKey": "9c915457dcea2db6c855dca82dc942167b42f65f8a15bd494e5d19ac527adfa9"
+    }
+  },
+  {
+    "id": "paper-um-line-3",
+    "choices": [
+      "$\\Delta W=q|\\vec E||\\Delta\\vec r|=\\sqrt5\\,\\mathrm J$",
+      "$\\Delta W=\\vec E\\cdot\\Delta\\vec r=1.1\\,\\mathrm J$",
+      "$\\Delta W=q\\vec E\\cdot\\Delta\\vec r=2.2\\,\\mathrm J$",
+      "$\\Delta W=q\\vec E\\cdot\\Delta\\vec r=1.4\\,\\mathrm J$"
+    ],
+    "answerIndex": 2,
+    "question": {
+      "id": "paper-um-line-3-question",
+      "duration": 26.33866666666666,
+      "renderKey": "4050699b08ac2c20cbd249d2a018f31f5e7ee5cde6610133f9a534f69115d6c2"
+    },
+    "solution": {
+      "id": "paper-um-line-3-solution",
+      "duration": 34.46666666666667,
+      "renderKey": "7e6ce35c7bb233953c4eac623616a480240debcb5429ec79e58bee110779b795"
+    }
+  },
+  {
+    "id": "paper-ue-integrals-1",
+    "choices": [
+      "$2\\,\\mathrm J$",
+      "$3\\,\\mathrm J$",
+      "$6\\,\\mathrm J$",
+      "$1\\,\\mathrm J$"
+    ],
+    "answerIndex": 0,
+    "question": {
+      "id": "paper-ue-integrals-1-question",
+      "duration": 30.224,
+      "renderKey": "264313414f89dd48fe16a5430a364ee360a92c5f494a3537464e1277ecbb026d"
+    },
+    "solution": {
+      "id": "paper-ue-integrals-1-solution",
+      "duration": 33.94133333333333,
+      "renderKey": "9f88f2f733982b78e03e7a8066d30afd4351e795e23b9f6ca8b520846ec2b198"
+    }
+  },
+  {
+    "id": "paper-ue-integrals-2",
+    "choices": [
+      "$0\\,\\mathrm{N\\,m^2/C}$",
+      "$12\\,\\mathrm{N\\,m^2/C}$",
+      "$-2\\,\\mathrm{N\\,m^2/C}$",
+      "$2\\,\\mathrm{N\\,m^2/C}$"
+    ],
+    "answerIndex": 3,
+    "question": {
+      "id": "paper-ue-integrals-2-question",
+      "duration": 30.415999999999997,
+      "renderKey": "b4c5135409ab1b2a02d27dd8b88b1a2980dc18dd1cae6b752a725405810b8bbc"
+    },
+    "solution": {
+      "id": "paper-ue-integrals-2-solution",
+      "duration": 32.949333333333335,
+      "renderKey": "4d81fdc3bd20beeff0ad23585c9f4428e049ca545af2c3d95978a8c758bfba49"
+    }
+  },
+  {
+    "id": "paper-ue-integrals-3",
+    "choices": [
+      "仕事 $8\\,\\mathrm J$、電位差 $+8\\,\\mathrm V$",
+      "仕事 $8\\,\\mathrm J$、電位差 $-8\\,\\mathrm V$",
+      "仕事 $12\\,\\mathrm J$、電位差 $-12\\,\\mathrm V$",
+      "仕事 $-8\\,\\mathrm J$、電位差 $+8\\,\\mathrm V$"
+    ],
+    "answerIndex": 1,
+    "question": {
+      "id": "paper-ue-integrals-3-question",
+      "duration": 22.730666666666664,
+      "renderKey": "d3ac26ac2fc8db5c92e2cb653e8b2f42854861f389a97408417b522d90530d4e"
+    },
+    "solution": {
+      "id": "paper-ue-integrals-3-solution",
+      "duration": 39.727999999999994,
+      "renderKey": "c3216cd53230a04fa5455bc5c72d870032bf5505a8c69543b64694a7518b5c5b"
+    }
+  }
+]

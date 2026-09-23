@@ -122,10 +122,10 @@ export default function App() {
             problems={emPaperProblems[view.stageId]!}
             nextStageTitle={nextStage(view.stageId)?.title}
             onExit={() => setView({ type: "map" })}
-            onFinish={(continueNext) => {
+            onFinish={(continueNext,bestCombo) => {
               const firstClear = !progress.clearedStages.includes(view.stageId);
               analytics.battleVictory(view.stageId);
-              update(p => ({...p,xp:p.xp+(firstClear?30:0),
+              update(p => ({...p,xp:p.xp+30+(firstClear?30:0),bestCombo:Math.max(p.bestCombo,bestCombo),
                 clearedStages:p.clearedStages.includes(view.stageId)?p.clearedStages:[...p.clearedStages,view.stageId]}));
               const next=continueNext?nextStage(view.stageId):undefined;
               setView(next?{type:'lesson',stageId:next.id}:{type:'map'});
