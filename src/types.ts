@@ -54,6 +54,15 @@ export type Problem = {
   hint: string;
 };
 
+/** Paper-first electromagnetic exercise with its own silent worked animation. */
+export type PaperProblem = {
+  id: string;
+  scene: 'field'|'path'|'surface';
+  labels: [string,string,string?];
+  question: string;
+  steps: [string,string,string];
+};
+
 export type Stage = {
   id: string;
   title: string;

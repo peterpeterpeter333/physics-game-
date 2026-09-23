@@ -56,11 +56,10 @@ export function BattleView({
   const [enemyHit, setEnemyHit] = useState(false);
   const [playerHit, setPlayerHit] = useState(false);
   const answeredRef = useRef(false);
-  const [timed, setTimed] = useState(false);
+  const [timed] = useState(false);
   const [solved, setSolved] = useState<Set<string>>(() => new Set());
   const remainingRef = useRef(QUESTION_TIME);
   const [reviewing,setReviewing]=useState(false);
-  const [hasAnswered,setHasAnswered]=useState(false);
 
   const problem = queue[qIndex % queue.length];
   const isStarred = starred.includes(problem.id);
@@ -95,7 +94,6 @@ export function BattleView({
   function handleAnswer(choiceIdx: number) {
     if (answeredRef.current || phase !== "question") return;
     answeredRef.current = true;
-    setHasAnswered(true);
     const correct = choiceIdx === problem.answerIndex;
     setSelected(choiceIdx);
     setWasCorrect(correct);
@@ -242,7 +240,6 @@ export function BattleView({
       <section className="study-mode" aria-label="練習モード">
         <p>{timed ? '時間つきバトル' : 'じっくり練習：時間制限・失敗回数の制限なし'}</p>
         <p>正解を確認した問題：{solved.size} / {stage.problems.length}。全問で一度正解してから完了します。</p>
-        {!hasAnswered && phase === 'question' && <label><input type="checkbox" checked={timed} onChange={e => setTimed(e.target.checked)}/>30秒のバトルに挑戦する（任意）</label>}
       </section>
 
       <div className="enemy-area">

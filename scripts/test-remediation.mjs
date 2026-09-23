@@ -5,6 +5,7 @@ import {readFileSync} from 'node:fs';
 const bundle=await build({stdin:{contents:`
 export {chapters} from './src/content';
 export {studySupport} from './src/content/study-support';
+export {emPaperProblems} from './src/content/em-paper-problems';
 export {completionHints} from './src/content/levels/completion-hints';
 export {studyExperiments} from './src/components/StudyExperiments';
 export {restoredPage,allQuestionsSolved,questionsToRetry} from './src/game/study-progress';
@@ -12,8 +13,14 @@ export {renderToStaticMarkup} from 'react-dom/server';
 export {createElement} from 'react';
 `,resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'cjs',jsx:'automatic'});
 const m=new Module(`${process.cwd()}/.remediation-test.cjs`);m._compile(bundle.outputFiles[0].text,m.id);
-const {chapters,studySupport,completionHints,studyExperiments,restoredPage,allQuestionsSolved,questionsToRetry,renderToStaticMarkup,createElement}=m.exports;
+const {chapters,studySupport,emPaperProblems,completionHints,studyExperiments,restoredPage,allQuestionsSolved,questionsToRetry,renderToStaticMarkup,createElement}=m.exports;
 const stages=chapters.flatMap(c=>c.stages),ids=new Set(stages.map(s=>s.id));
+assert.deepEqual(Object.keys(emPaperProblems).sort(),['ui-field-map','um-line-element','ue-integrals'].sort());
+for(const [stageId,problems] of Object.entries(emPaperProblems)){
+ assert(ids.has(stageId));assert.equal(problems.length,3,stageId);
+ assert.equal(new Set(problems.map(problem=>problem.id)).size,3,stageId);
+ for(const problem of problems)assert(problem.question.length>20&&problem.labels.length===3&&problem.steps.length===3,problem.id);
+}
 assert.equal(stages.length,136);
 assert.deepEqual(new Set(Object.keys(studySupport)),ids);
 for(const stage of stages){
@@ -47,5 +54,6 @@ assert(text.includes('小角'));
 assert(text.includes('磁気力'));
 assert(text.includes('連鎖律'));
 const battle=readFileSync('src/components/BattleView.tsx','utf8');
-for(const required of ['useState(false)','showHint || reviewing','remainingRef.current = remain','if (timed) setHearts','回答を保持','!hasAnswered','continueNext'])assert(battle.includes(required),required);
+for(const required of ['useState(false)','showHint || reviewing','remainingRef.current = remain','if (timed) setHearts','回答を保持','continueNext'])assert(battle.includes(required),required);
+assert(!battle.includes('30秒のバトルに挑戦する'),'Timed battle must not be offered');
 console.log(JSON.stringify({result:'PASS',supportedStages:stages.length,problems:627,newChecks:136,specificHints:39,interactiveBridgePlacements:Object.keys(studyExperiments).length,progressAndRetryCases:'all stages',scope:'Data/SSR/pure-logic tests; visual and learner tests are separate'},null,2));

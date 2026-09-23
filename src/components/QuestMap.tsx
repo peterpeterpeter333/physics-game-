@@ -55,10 +55,6 @@ export function QuestMap({
   onOpenBattle: (stageId: string) => void;
 }) {
   const lp = levelProgress(progress.xp);
-  const accuracy =
-    progress.totalAnswered > 0
-      ? Math.round((progress.totalCorrect / progress.totalAnswered) * 100)
-      : null;
   const blocks = toBlocks(chapters);
   // 未クリアの分野があれば最初のそれを開いておく
   const [openId, setOpenId] = useState<string>(() => {
@@ -157,7 +153,6 @@ export function QuestMap({
           </div>
         </div>
         <div className="hud-stats">
-          {accuracy !== null && <span className="hud-stat">正答率 {accuracy}%</span>}
           {progress.bestCombo > 1 && <span className="hud-stat">最大コンボ {progress.bestCombo}</span>}
           <span className="hud-stat">
             ⭐ {progress.clearedStages.length} / {chapters.reduce((n, c) => n + c.stages.length, 0)}
