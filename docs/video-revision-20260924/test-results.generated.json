@@ -1,0 +1,127 @@
+[
+  {
+    "name": "test-app-update",
+    "status": 0,
+    "output": "PASS: version ordering, same/newer installed release, malformed/offline data, app identity\n"
+  },
+  {
+    "name": "audit-lessons",
+    "status": 0,
+    "output": "{\n  \"stages\": 56,\n  \"slides\": 470,\n  \"authoredAdditions\": 461,\n  \"animationIds\": 98,\n  \"mathExpressions\": 638,\n  \"problemCount\": 322,\n  \"range\": [\n    2,\n    16\n  ],\n  \"result\": \"PASS\"\n}\n"
+  },
+  {
+    "name": "test-remediation",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"supportedStages\": 136,\n  \"problems\": 627,\n  \"newChecks\": 136,\n  \"specificHints\": 39,\n  \"interactiveBridgePlacements\": 15,\n  \"progressAndRetryCases\": \"all stages\",\n  \"scope\": \"Data/SSR/pure-logic tests; visual and learner tests are separate\"\n}\n"
+  },
+  {
+    "name": "test-em-videos",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"units\": 40,\n  \"movies\": 100,\n  \"slides\": 315,\n  \"minutes\": 77.8,\n  \"megabytes\": 96.2,\n  \"checks\": [\n    \"ordered coverage\",\n    \"current narration and captions\",\n    \"media and posters\",\n    \"duration and scene bounds\",\n    \"full equations preserved\",\n    \"all figure renderers\"\n  ],\n  \"limitations\": \"These are structural checks, not proof of pedagogical quality or a substitute for listening to the videos.\"\n}\n"
+  },
+  {
+    "name": "test-all-video-scripts",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"sourceUnits\": 96,\n  \"videos\": 156,\n  \"levels\": {\n    \"intro\": 53,\n    \"middle\": 51,\n    \"advanced\": 52\n  },\n  \"sentences\": 1008,\n  \"formulaBeats\": 164,\n  \"editorialRevisionEntries\": 118,\n  \"limits\": \"Structure and editorial flags only; no learner test, speech production, mathematical typesetting or app changes.\"\n}\n"
+  },
+  {
+    "name": "test-all-films",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"newVideos\": 156,\n  \"preservedEMVideos\": 100,\n  \"totalStages\": 136,\n  \"newVideoMiB\": 118.5,\n  \"newMinutes\": 97.9,\n  \"checks\": [\n    \"all draft recordings included\",\n    \"three difficulty levels\",\n    \"all chapter routes covered\",\n    \"original battle data retained\",\n    \"caption/audio timelines\",\n    \"media files and posters\"\n  ],\n  \"limits\": \"Not a learner test or a claim that every animation is pedagogically optimal.\"\n}\n"
+  },
+  {
+    "name": "test-reviewed-narration",
+    "status": 0,
+    "output": "PASS: 1068 reviewed scenes, 332 clips, 67 explicit corrections; source/caption/media consistency.\n"
+  },
+  {
+    "name": "test-prerequisite-films",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"prerequisiteVideos\": 76,\n  \"scenes\": 285,\n  \"existingVideosCovered\": 156,\n  \"stages\": 96,\n  \"universityEMPlaylistUnchanged\": true,\n  \"minutes\": 59.2,\n  \"MiB\": 57.9,\n  \"limits\": \"Technical coverage and ordering, not a learner-comprehension certification.\"\n}\n"
+  },
+  {
+    "name": "test-em-video-repairs",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"speechFindings\": 184,\n  \"rewrittenScenes\": 182,\n  \"repairedScenes\": 239,\n  \"movies\": 100,\n  \"limitations\": \"Structural and regression checks; not a claim that every narration was listened to or every pedagogical issue is impossible.\"\n}\n"
+  },
+  {
+    "name": "test-video-playlists",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"courses\": 190,\n  \"stages\": 136,\n  \"oldPlacements\": 836,\n  \"newPlacements\": 196,\n  \"reviewable\": 73,\n  \"surfaceMainSeconds\": 39.16,\n  \"checks\": [\n    \"direct unit assignments only\",\n    \"viewing-history independent\",\n    \"no ancestor expansion in review\",\n    \"legacy ID migration\",\n    \"main films preserved\"\n  ]\n}\n"
+  },
+  {
+    "name": "audit-math",
+    "status": 0,
+    "output": "{\n  \"proseFields\": 10286,\n  \"expressions\": 3354,\n  \"orientedStages\": 136,\n  \"orientedSlides\": 1034,\n  \"result\": \"PASS\"\n}\n"
+  },
+  {
+    "name": "audit-calculations",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"slidesWithEquationImages\": 680,\n  \"authoredCalculationSlides\": 373,\n  \"equationSvgCount\": 1858,\n  \"originalPhenomenonAnimations\": 55,\n  \"remainingOriginalAnimationSlides\": 979\n}\n"
+  },
+  {
+    "name": "audit-offline",
+    "status": 0,
+    "output": "PASS: SVG caching, 404 preservation, offline image failure, navigation fallback, scoped cache cleanup\n"
+  },
+  {
+    "name": "audit-university-levels",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"levelChapters\": 6,\n  \"levelStages\": 80,\n  \"slides\": 564,\n  \"learningUnits\": 165,\n  \"figures\": 458,\n  \"problems\": 305,\n  \"previews\": 41,\n  \"advancedStagesUnchanged\": 56\n}\n"
+  },
+  {
+    "name": "audit-university-curriculum",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"universityTopics\": 29,\n  \"newPreparatoryLessons\": 39,\n  \"lowerLessons\": 80,\n  \"relocatedStandardSlides\": 216,\n  \"retainedAdvancedStandardSlides\": 151,\n  \"relocatedSpiralCards\": 20,\n  \"oldProblemIdsPreserved\": true,\n  \"all29TopicsHaveBothLevels\": true\n}\n"
+  },
+  {
+    "name": "audit-study-flow",
+    "status": 0,
+    "output": "{\n  result: 'PASS',\n  standardLessons: 134,\n  authoredLearningUnits: 293,\n  slides: 1003,\n  authoredShortExplanations: 151,\n  reasoningStepCounts: [ 0, 1, 2, 3, 4 ]\n}\n"
+  },
+  {
+    "name": "test-potential-context",
+    "status": 0,
+    "output": "PASS: purpose, assumptions, finite-difference order, labels, numerical example\n"
+  },
+  {
+    "name": "audit-guided",
+    "status": 0,
+    "output": "{\n  \"result\": \"PASS\",\n  \"chapters\": 2,\n  \"scenes\": 31,\n  \"beats\": 96,\n  \"equations\": 79,\n  \"optionalChecks\": 1\n}\n"
+  },
+  {
+    "name": "audit-micro",
+    "status": 0,
+    "output": "{\n  \"slides\": 385,\n  \"faqs\": 31,\n  \"overlongFaqLines\": []\n}\n"
+  },
+  {
+    "name": "audit-questions",
+    "status": 0,
+    "output": "{\n  result: 'PASS',\n  counts: { 'ue-integrals': 12, 'ue-gauss': 15 },\n  characters: { min: 105, max: 134 }\n}\n"
+  },
+  {
+    "name": "audit-spiral",
+    "status": 0,
+    "output": "{ equationGuides: 36, derivationSteps: 113, pathApproximation: 'PASS' }\n{\n  result: 'PASS',\n  slides: { 'ue-integrals': 36, 'ue-gauss': 32 },\n  characters: { min: 92, max: 140 }\n}\n"
+  },
+  {
+    "name": "audit-em3d",
+    "status": 0,
+    "output": "{\n  result: 'PASS',\n  threeDimensionalSlides: 44,\n  scenes: 12,\n  signedCrossings: [ 1, -1, 1 ]\n}\n"
+  },
+  {
+    "name": "test-ten-principles",
+    "status": 0,
+    "output": "{\n  result: 'PASS',\n  standardLessons: 134,\n  authoredLearningUnits: 293,\n  slides: 1003,\n  authoredShortExplanations: 151,\n  reasoningStepCounts: [ 0, 1, 2, 3, 4 ]\n}\nPASS: purpose, assumptions, finite-difference order, labels, numerical example\n{\n  result: 'PASS',\n  threeDimensionalSlides: 44,\n  scenes: 12,\n  signedCrossings: [ 1, -1, 1 ]\n}\n{\n  \"result\": \"PASS\",\n  \"chapters\": 2,\n  \"scenes\": 31,\n  \"beats\": 96,\n  \"equations\": 79,\n  \"optionalChecks\": 1\n}\nPASS: SVG caching, 404 preservation, offline image failure, navigation fallback, scoped cache cleanup\n{\n  \"scope\": {\n    \"chapters\": 14,\n    \"stages\": 136,\n    \"sourceSlides\": 1095,\n    \"figureReadings\": 541\n  },\n  \"results\": [\n    {\n      \"number\": 1,\n      \"name\": \"知識のつながり\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 2,\n      \"name\": \"基本事項・可変ステップ・つながったこと\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 3,\n      \"name\": \"目的・既知と未知・今の話\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 4,\n      \"name\": \"短い本文と省略しない補足\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 5,\n      \"name\": \"式の意味・具体例・記号・計算\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 6,\n      \"name\": \"現象の図と式の併設・図の意味\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 7,\n      \"name\": \"意味のある3D・視点と物理量の区別\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 8,\n      \"name\": \"用語・記号の意味を確認できる\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 9,\n      \"name\": \"前提・定義・法則と結論の区別\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    },\n    {\n      \"number\": 10,\n      \"name\": \"自由な章移動・点のナビ・数式の耐障害性\",\n      \"automated\": \"PASS\",\n      \"pedagogicalReview\": \"not certified by automated tests\"\n    }\n  ],\n  \"remainingReview\": {\n    \"referenceOnlySlides\": 276,\n    \"note\": \"Definitions, laws and repeated formulas may legitimately be reference-only. A human must check each context; counts are not proof of complete derivations. All-slide visual and learner review are separate.\"\n  }\n}\n"
+  },
+  {
+    "name": "test-video-inserts",
+    "status": 0,
+    "output": "Video insert tests: boundaries, both modes, pause/resume coordinates, missing media, and full main coverage passed.\n"
+  },
+  {
+    "name": "test-video-mode-media",
+    "status": 0,
+    "output": "PASS: 1 revised main + 3 inserts; exact scripts, paired readings, captions, files, and route references.\n"
+  }
+]

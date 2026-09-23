@@ -52,6 +52,9 @@ jobs:
       - name: Check unit-scoped prerequisites and playback positions
         run: npm run test:video-playlists
 
+      - name: Check shared main videos and optional supplement routes
+        run: npm run test:video-modes
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

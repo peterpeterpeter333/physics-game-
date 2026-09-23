@@ -8,6 +8,7 @@ import sharp from 'sharp';
 import {createHash} from 'node:crypto';
 import {spokenEquation} from './em-film-equations.mjs';
 import {repairedDiagram,diagramClock} from './em-film-visuals.mjs';
+import {pilotDiagram,pilotEquation} from './video-mode-pilot-visuals.mjs';
 import {mathjax} from 'mathjax-full/js/mathjax.js';
 import {TeX} from 'mathjax-full/js/input/tex.js';
 import {AllPackages} from 'mathjax-full/js/input/tex/AllPackages.js';
@@ -15,7 +16,7 @@ import {SVG} from 'mathjax-full/js/output/svg.js';
 import {liteAdaptor} from 'mathjax-full/js/adaptors/liteAdaptor.js';
 import {RegisterHTMLHandler} from 'mathjax-full/js/handlers/html.js';
 const cache=process.env.EM_FILM_CACHE??'/private/tmp/physics-em-films';
-const out=path.resolve('public/media/em');mkdirSync(out,{recursive:true});
+const out=path.resolve(process.env.EM_FILM_OUTPUT??'public/media/em');mkdirSync(out,{recursive:true});
 const ffmpeg=process.env.FFMPEG;if(!ffmpeg)throw Error('Set FFMPEG to an ffmpeg executable');
 const {stages,diagram}=await loadSource();
 const plan=JSON.parse(readFileSync(path.join(cache,'plan.json')));
@@ -45,13 +46,14 @@ function frame(clip,scene,step,t){
  const active=scene.captions[captionIndex];
  let {svg}=diagram(step,diagramClock(step,local,captionIndex));
  svg=repairedDiagram(clip,scene,local,captionIndex)??svg;
+ if(clip.revision){svg=pilotDiagram(clip,scene,local,captionIndex)??svg;svg=svg.replaceAll('>小片<','>小さな面<');}
  // Preserve the entire diagram and its axis/quantity labels, including non-square 3D frames.
  svg=svg.replace(/<svg\b[^>]*>/,tag=>tag.replace(/\s(?:width|height|x|y)="[^"]*"/g,'').replace('<svg ', '<svg x="40" y="108" width="1200" height="430" '));
  const repair=repairScope[clip.stageId]?.includes(scene.index+1);
  const oldFormulae=scene.equations.length<=3?scene.equations:[scene.equations[0],scene.equations[Math.floor((scene.equations.length-1)/2)],scene.equations.at(-1)];
- const formula=repair?spokenEquation(clip,scene,captionIndex):oldFormulae[Math.min(oldFormulae.length-1,Math.floor(local/(scene.end-scene.start)*oldFormulae.length))];
+ const formula=pilotEquation(clip,scene,captionIndex)??(clip.id.startsWith('ue-why-')?scene.equations[0]:repair?spokenEquation(clip,scene,captionIndex):oldFormulae[Math.min(oldFormulae.length-1,Math.floor(local/(scene.end-scene.start)*oldFormulae.length))]);
  const eq=formula?equation(formula):'';
- const captionLines=lines(active.text,44);
+ const captionLines=lines(active.text,clip.revision?38:44);
  if(captionLines.length>3)throw Error(`Caption would be truncated: ${clip.id}/${scene.index}: ${active.text}`);
  const caption=captionLines.map((s,i)=>text(s,48,648+i*29,27)).join('');
  const level={intro:'初級',middle:'中級',advanced:'上級'}[clip.level];
@@ -63,7 +65,7 @@ for(const entry of plan){
  const json=path.join(cache,`${entry.id}.json`);
  if(!existsSync(json))throw Error(`Audio not ready: ${entry.id}`);
  const clip=JSON.parse(readFileSync(json));
- const scriptKey=c=>c.scenes.map(s=>s.narration).join('\n');
+ const scriptKey=c=>JSON.stringify(c.scenes.map(s=>[s.narration,s.utterances]));
  if(scriptKey(clip)!==scriptKey(entry))throw Error(`Updated audio not ready: ${entry.id}`);
  clip.title=entry.title;
  const file=path.join(out,`${clip.id}.mp4`);

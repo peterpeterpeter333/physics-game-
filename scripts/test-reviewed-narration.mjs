@@ -31,7 +31,8 @@ for(const [key,text]of Object.entries(corrections))assert.equal(changes.find(c=>
 const speech=changes.map(c=>c.after).join('\n');
 for(const bad of ['静電場、つまり時間で変わらない電場','動いた距離もマイナス','電気一つあたり','地面に触れる条件','一次の変化、つまりごく小さい変化','一割る、ルート、真空'])assert.ok(!speech.includes(bad),bad);
 const player=readFileSync('src/components/EMVideoLesson.tsx','utf8');
-assert.ok(player.includes('${base}.mp4${revision}'));assert.ok(player.includes('btn-battle'));
+const playback=readFileSync('src/components/SegmentedLessonVideo.tsx','utf8');
+assert.ok(playback.includes('${base}.mp4${revision}'));assert.ok(player.includes('btn-battle'));
 const audio=readFileSync('scripts/narration_pronunciation.py','utf8');
 assert.ok(audio.includes("replace('電場','でんば')"));
 assert.ok(audio.includes("replace('電気束','でんきそく')"));

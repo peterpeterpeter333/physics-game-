@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {EMVideoLesson,hasEMMovies} from './EMVideoLesson';
 import { LessonNarration } from './LessonNarration';
 import { EMVideoPilot } from './EMVideoPilot';
@@ -24,9 +24,10 @@ import './spiral-lesson.css';
 import './study-flow.css';
 
 export function LessonView(props: {stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onOpenStage?:(id:string)=>void}) {
-  if(hasEMMovies(props.stage))return <EMVideoLesson key={props.stage.id} {...props}/>;
+  const [textStage,setTextStage]=useState<string|null>(null);
+  if(hasEMMovies(props.stage)&&textStage!==props.stage.id)return <EMVideoLesson key={props.stage.id} {...props} onReadSlides={()=>setTextStage(props.stage.id)}/>;
   const originalView=props.stage.lesson.steps[0]?.story ? <GuidedLesson {...props}/> : <StandardLessonView {...props}/>;
-  return originalView;
+  return <>{textStage===props.stage.id&&<button className="btn btn-ghost" onClick={()=>setTextStage(null)}>動画に戻る</button>}{originalView}</>;
 }
 function StandardLessonView({
   stage,
