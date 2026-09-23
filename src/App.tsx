@@ -19,6 +19,7 @@ import { AIChat } from "./components/AIChat";
 import { FigureGallery } from "./components/figures";
 import { analytics } from "./analytics";
 import { SHOW_AI_CHAT } from "./config";
+import { AppUpdateNotice } from './components/AppUpdateNotice';
 
 type View =
   | { type: "map" }
@@ -79,6 +80,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="app-inner">
+        <AppUpdateNotice />
         {view.type === "map" && (
           <QuestMap
             chapters={chapters}

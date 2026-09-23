@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import ts from 'typescript';
+const source = fs.readFileSync('src/game/app-update.ts', 'utf8');
+const js = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText;
+const { isNewerVersion, availableStoreVersion, STORE_APP_ID, STORE_BUNDLE_ID } = await import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
+for (const [a,b,want] of [['1.5','1.4',true],['1.10','1.9',true],['1.5','1.5',false],['1.4','1.5',false],['1.5.0','1.5',false],['2.0','1.99',true],['1.5.1','1.5',true],['bad','1.5',false],['1.5','',false]]) assert.equal(isNewerVersion(a,b),want);
+const record = {trackId:STORE_APP_ID,bundleId:STORE_BUNDLE_ID,version:'1.6'};
+assert.equal(availableStoreVersion({results:[record]},'1.5'),'1.6');
+assert.equal(availableStoreVersion({results:[record]},'1.6'),null);
+for (const data of [null,{},'error',{results:[]},{results:null},{results:[null]},{results:[{...record,trackId:1}]},{results:[{...record,bundleId:'other'}]},{results:[{...record,version:'broken'}]}]) assert.equal(availableStoreVersion(data,'1.5'),null);
+console.log('PASS: version ordering, same/newer installed release, malformed/offline data, app identity');

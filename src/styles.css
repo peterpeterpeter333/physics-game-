@@ -49,8 +49,12 @@ body {
 
 .app-inner {
   flex: 1;
+  padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: 90px;
 }
+
+/* Keep scrollIntoView targets below the iPhone status bar / Dynamic Island. */
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
 
 .screen {
   padding: 18px 16px 24px;

@@ -1,0 +1,7 @@
+.app-update-notice { margin:0 0 16px; padding:16px; border:1px solid #57d8f4; border-radius:16px; background:#102337; color:#eef4ff; }
+.app-update-notice p { margin:6px 0 12px; font-size:14px; line-height:1.6; }
+.app-update-actions { display:flex; gap:12px; flex-wrap:wrap; }
+.app-update-actions a,.app-update-actions button { min-height:44px; padding:10px 16px; border-radius:10px; font:inherit; }
+.app-update-actions a { background:#7ae0f3; color:#081323; text-decoration:none; font-weight:700; }
+.app-update-actions button { border:1px solid #8d9bb5; background:transparent; color:inherit; cursor:pointer; }
+.app-update-actions :focus-visible { outline:3px solid #ffdb70; outline-offset:3px; }

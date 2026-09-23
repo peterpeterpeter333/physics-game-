@@ -28,6 +28,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check App Store update version comparisons
+        run: node scripts/test-app-update.mjs
+
       - name: Audit lessons and animation coverage
         run: npm run test:lessons
 
