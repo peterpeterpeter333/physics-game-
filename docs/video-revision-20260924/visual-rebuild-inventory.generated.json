@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 405,
-    "pendingNotYetActive": 115,
-    "registeredAuthoredRenders": 174,
+    "activeTeachingFilms": 406,
+    "pendingNotYetActive": 114,
+    "registeredAuthoredRenders": 176,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -911,14 +911,14 @@
     },
     {
       "id": "a-bohr-intro",
-      "title": "電子が一個ずつ来るのに、干渉縞ができる？",
+      "title": "電子が一個ずつ来るのに、干渉縞ができる?",
       "stageId": "a-bohr",
       "level": "intro",
       "family": "high-school-atomic",
       "active": true,
-      "media": "public/media/lessons/a-bohr-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/a-bohr-intro.mp4",
+      "storyboard": "matter-waves-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4771,10 +4771,10 @@
       "stageId": "a-bohr",
       "level": "intro",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/ha-why-04.mp4",
+      "storyboard": "matter-waves-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
