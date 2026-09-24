@@ -1,0 +1,84 @@
+{
+  "id": "hm-why-18",
+  "title": "手が外へ引かれるのに、球の力は内向き？",
+  "stageId": "m-circular",
+  "level": "intro",
+  "renderer": "insert",
+  "family": "high-school-mechanics",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "heading": "力を受ける物体を分ける",
+      "cues": [
+        {
+          "subtitle": "赤い矢印はひもが球を引く力、紫の矢印は球がひもを通じて手を引く力です。",
+          "reading": "あかいやじるしはひもがたまをひくちから、むらさきのやじるしはたまがひもをつうじててをひくちからです。",
+          "formula": [],
+          "operation": "球に働く力と、手に働く力を区別する",
+          "diagram": "reaction"
+        },
+        {
+          "subtitle": "二つの力は逆向きですが、別の物体に働くため、球の運動方程式の中では打ち消し合いません。",
+          "reading": "ふたつのちからはぎゃくむきですが、べつのぶったいにはたらくため、たまのうんどうほうていしきのなかではうちけしあいません。",
+          "formula": [
+            "F_{\\text{球}}",
+            "=",
+            "ma"
+          ],
+          "operation": "球だけに注目：中心向きの力が残る",
+          "diagram": "reaction"
+        }
+      ],
+      "utterances": [
+        {
+          "subtitle": "赤い矢印はひもが球を引く力、紫の矢印は球がひもを通じて手を引く力です。",
+          "reading": "あかいやじるしはひもがたまをひくちから、むらさきのやじるしはたまがひもをつうじててをひくちからです。"
+        },
+        {
+          "subtitle": "二つの力は逆向きですが、別の物体に働くため、球の運動方程式の中では打ち消し合いません。",
+          "reading": "ふたつのちからはぎゃくむきですが、べつのぶったいにはたらくため、たまのうんどうほうていしきのなかではうちけしあいません。"
+        }
+      ],
+      "narration": "赤い矢印はひもが球を引く力、紫の矢印は球がひもを通じて手を引く力です。二つの力は逆向きですが、別の物体に働くため、球の運動方程式の中では打ち消し合いません。",
+      "equation": "",
+      "symbols": "",
+      "visual": "circular-algebra-pilot",
+      "index": 0,
+      "sceneId": "hm-why-18-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 13.211333333333336,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.762666666666667,
+          "text": "赤い矢印はひもが球を引く力、紫の矢印は球がひもを通じて手を引く力です。"
+        },
+        {
+          "start": 5.802666666666667,
+          "end": 12.621333333333334,
+          "text": "二つの力は逆向きですが、別の物体に働くため、球の運動方程式の中では打ち消し合いません。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】hm-why-18 なぜ、中心向きの力が必要なの?(場面1の後)",
+    "context": "差し替え台本 第1弾 — 高校・力学(30本)\nm-circular-intro — 円を回る物体には、外向きの力が必要?\n【差し込み】hm-why-18 なぜ、中心向きの力が必要なの?(場面1の後)",
+    "source": {
+      "file": "差し替え台本_01_高校力学.md",
+      "line": 535
+    },
+    "parent": "m-circular-intro"
+  },
+  "visualPilot": "circular-algebra-v1",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 13.211333333333336,
+  "animationFPS": 30,
+  "renderKey": "a254881ec1643e2e53da69f1e904e42f7fdb3c1a15c1ee482767cbc22d526434"
+}
