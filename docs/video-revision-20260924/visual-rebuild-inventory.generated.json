@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 381,
     "pendingNotYetActive": 139,
-    "registeredAuthoredRenders": 112,
+    "registeredAuthoredRenders": 113,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -557,8 +557,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/revisions/w-sound-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "sound-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
