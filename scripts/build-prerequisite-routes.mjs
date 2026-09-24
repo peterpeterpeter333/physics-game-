@@ -8,6 +8,7 @@ import '../docs/video-scripts/prerequisite-mechanics.mjs';
 import '../docs/video-scripts/prerequisite-advanced.mjs';
 import '../docs/video-scripts/prerequisite-bridges.mjs';
 import '../docs/video-scripts/prerequisite-calculations.mjs';
+import {applyAdditionPrerequisiteRoutes} from '../docs/video-revision-20260924/addition-theorem.mjs';
 
 // Remove tangential sections of multi-topic prerequisites from the main sequence.
 const overrides={
@@ -55,6 +56,8 @@ for(const c of catalog){
  routes[c.id]={required:scoped,review:[...scoped]};
  assert.equal(routes[c.id].required.length,direct.length,c.id);
 }
+// A new prerequisite becomes active only after its verified media is registered.
+if(prepIds.has('prep-addition-theorem'))applyAdditionPrerequisiteRoutes(routes);
 const file='src/content/prerequisite-routes.generated.json',data=JSON.stringify(routes,null,2)+'\n';
 if(process.argv.includes('--check'))assert.equal(readFileSync(file,'utf8'),data,'Stale prerequisite routes');
 else writeFileSync(file,data);

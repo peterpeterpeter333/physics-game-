@@ -8,13 +8,14 @@ export function restoredVideoId(saved:string|null,list:readonly {id:string}[],or
  return list[0]?.id??'';
 }
 /** Convert the previous numeric position once; never interpret it in the shorter list. */
-export function legacyVideoId(saved:string|null,original:readonly {id:string}[],prep:readonly {id:string;before:string[]}[]):string|null{
+export function legacyVideoId(saved:string|null,original:readonly {id:string}[],prep:readonly {id:string;before:string[];legacyPositionExcluded?:boolean}[]):string|null{
  if(saved===null)return null;
  const index=Number(saved);
  if(!Number.isInteger(index)||index<0)return null;
  const seen=new Set<string>();
  const ids=original.flatMap(c=>{
-  const introductions=prep.filter(p=>p.before.includes(c.id)&&!seen.has(p.id));
+  // Videos added after numeric progress was retired must not shift old indexes.
+  const introductions=prep.filter(p=>!p.legacyPositionExcluded&&p.before.includes(c.id)&&!seen.has(p.id));
   introductions.forEach(p=>seen.add(p.id));
   return [...introductions.map(p=>p.id),c.id];
  });

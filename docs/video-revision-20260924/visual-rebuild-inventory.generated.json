@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 365,
-    "pendingNotYetActive": 155,
-    "registeredAuthoredRenders": 31,
+    "activeTeachingFilms": 367,
+    "pendingNotYetActive": 153,
+    "registeredAuthoredRenders": 36,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -167,26 +167,26 @@
     },
     {
       "id": "m-projectile-middle",
-      "title": "斜めの初速度を、なぜ成分へ分ける？",
+      "title": "斜めの初速度を、なぜ成分へ分ける?",
       "stageId": "m-projectile",
       "level": "middle",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-projectile-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-projectile-middle.mp4",
+      "storyboard": "projectile-middle-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
       "id": "m-projectile-advanced",
-      "title": "どの条件なら、四十五度の投射が最も遠くへ飛ぶ？",
+      "title": "どの条件なら、四十五度の投射が最も遠くへ飛ぶ?",
       "stageId": "m-projectile",
       "level": "advanced",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-projectile-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-projectile-advanced.mp4",
+      "storyboard": "projectile-advanced-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3540,9 +3540,9 @@
       "level": "advanced",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-algebra-projectile.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-algebra-projectile.mp4",
+      "storyboard": "projectile-advanced-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3891,6 +3891,17 @@
       "media": "public/media/lessons/prep-oscillation-coefficients.mp4",
       "storyboard": null,
       "status": "pending-individual-rebuild",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-addition-theorem",
+      "title": "サインの加法定理は、なぜ成り立つ？",
+      "stageId": "prep-addition-theorem",
+      "level": "advanced",
+      "active": true,
+      "media": "public/media/revisions/prep-addition-theorem.mp4",
+      "storyboard": "addition-theorem-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4287,23 +4298,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-11",
       "title": "四十五度を、代数と数字で確かめる",
       "stageId": "m-projectile",
       "level": "advanced",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-11.mp4",
+      "storyboard": "projectile-advanced-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
@@ -4400,17 +4411,6 @@
       "stageId": "m-shm",
       "level": "advanced",
       "family": "high-school-mechanics",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "prep-addition-theorem",
-      "title": "サインの加法定理は、なぜ成り立つ?(前提動画・両モード)",
-      "stageId": "prep-addition-theorem",
-      "level": "advanced",
       "active": false,
       "media": null,
       "storyboard": null,

@@ -101,7 +101,9 @@ const atoms=new Map();
 function atom(tex){
  if(atoms.has(tex))return atoms.get(tex);
  const colors={x:C.cyan,t:C.gold,v:C.purple,a:C.red,k:C.dim};
- const colored=tex.replace(/\\[a-zA-Z]+|[xtvak]/g,v=>v.startsWith('\\')?v:`{\\color{${colors[v]}}${v}}`);
+ // Preserve LaTeX environment names and upright text. A variable colour must
+ // never turn \begin{aligned} into an invalid environment name.
+ const colored=tex.replace(/\\(?:begin|end|text|mathrm|operatorname)\{[^{}]*\}|\\[a-zA-Z]+|[xtvak]/g,v=>v.startsWith('\\')?v:`{\\color{${colors[v]}}${v}}`);
  let svg=texBox(`\\color{${C.ink}}{${colored}}`,0,0,1800,90);
  if(svg.includes('data-mjx-error'))throw Error(`Invalid formula ${tex}`);
  const [,vy,w,h]=svg.match(/viewBox="([^"]+)"/)[1].split(' ').map(Number),unit=.065;

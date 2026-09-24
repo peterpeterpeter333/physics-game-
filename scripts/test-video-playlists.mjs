@@ -26,7 +26,7 @@ for(const main of courses){
  const old=new Set(prep.filter(p=>main.some(c=>p.before.includes(c.id))).map(p=>p.id));
  before+=old.size;after+=expected.length;
  // Every existing numeric position is migrated via the OLD IDs, not the shorter array.
- const oldSeen=new Set(),oldList=main.flatMap(c=>{const p=prep.filter(p=>p.before.includes(c.id)&&!oldSeen.has(p.id));p.forEach(p=>oldSeen.add(p.id));return [...p,c];});
+ const oldSeen=new Set(),oldList=main.flatMap(c=>{const p=prep.filter(p=>!p.legacyPositionExcluded&&p.before.includes(c.id)&&!oldSeen.has(p.id));p.forEach(p=>oldSeen.add(p.id));return [...p,c];});
  oldList.forEach((c,i)=>{
   assert.equal(legacyVideoId(String(i),main,prep),c.id);
   const id=restoredVideoId(c.id,completed,main,prep);
@@ -35,7 +35,15 @@ for(const main of courses){
  });
 }
 // Keeping an asset is not a reason to insert it into an unrelated unit.
-assert.equal(prep.length,76,'Media assets themselves are preserved');
+assert.ok(prep.length>=76,'Original media assets are preserved; reviewed new prerequisites may be added');
+if(prep.some(p=>p.id==='prep-addition-theorem')){
+ const main=originals.filter(c=>c.id==='m-projectile-advanced');
+ assert.deepEqual(playlist(main,[...prep].reverse()).map(p=>p.id),['prep-addition-theorem','prep-algebra-projectile','m-projectile-advanced']);
+ assert.deepEqual(review(main,[...prep].reverse()).map(p=>p.id),['prep-addition-theorem','prep-algebra-projectile']);
+ const oldPrep=prep.filter(p=>!p.legacyPositionExcluded),oldCount=oldPrep.filter(p=>p.before.includes(main[0].id)).length;
+ for(let i=0;i<=oldCount;i++)assert.equal(legacyVideoId(String(i),main,prep),legacyVideoId(String(i),main,oldPrep),'New prerequisite must not change any old saved numeric index');
+ assert.equal(legacyVideoId(String(oldCount),main,prep),'m-projectile-advanced');
+}
 const surface=originals.filter(c=>c.stageId==='ui-through-a-surface');
 assert.deepEqual(playlist(surface,prep),surface);
 assert.deepEqual(review(surface,prep),[],'Surface unit must not contain motion, force, or vector review');

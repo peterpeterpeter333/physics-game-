@@ -4,7 +4,20 @@ from pathlib import Path
 from narration_pronunciation import OVERRIDES,spoken_text,speech_key,validate_query,clip_fingerprint
 
 root=Path(__file__).resolve().parent.parent
-clips=[c for family in ['lesson','prerequisite','em'] for c in json.loads((root/f'src/content/{family}-video-catalog.generated.json').read_text())]
+all_clips=[c for family in ['lesson','prerequisite','em'] for c in json.loads((root/f'src/content/{family}-video-catalog.generated.json').read_text())]
+# The 20260923 audit is a fixed historical baseline. Newly authored prerequisites
+# have explicit paired readings and must not alter its 332-film accounting.
+clips=[c for c in all_clips if not c.get('legacyPositionExcluded')]
+new_clips=[c for c in all_clips if c.get('legacyPositionExcluded')]
+for c in new_clips:
+ assert c.get('kind')=='prerequisite' and c.get('visualPilot')
+ assert c.get('spacingVersion')=='20260924-furigana-spacing-v2'
+ for scene in c['scenes']:
+  assert len(scene['utterances'])==len(scene['captions'])==len(scene['cues'])
+  for pair,cue,caption in zip(scene['utterances'],scene['cues'],scene['captions']):
+   assert pair['subtitle']==cue['subtitle']==caption['text']
+   assert pair['reading']==cue['reading'] and pair['reading']
+   assert not re.search(r'\s|[一-龠]',pair['reading']),pair['reading']
 texts={cap['text'] for c in clips for s in c['scenes'] for cap in s['captions']}
 assert len(clips)==332 and len(texts)==2396
 assert len(set(OVERRIDES)&texts)==295
@@ -45,7 +58,7 @@ for text,record in OVERRIDES.items():
 affected=[c for c in clips if clip_fingerprint(c)]
 assert len(affected)==188
 if '--source-only' not in sys.argv:
- for c in clips+paper_clips:
+ for c in all_clips+paper_clips:
   expected=clip_fingerprint(c)
   if expected:assert c.get('pronunciationFingerprint')==expected,f'{c["id"]}: stale video'
   prev=0
