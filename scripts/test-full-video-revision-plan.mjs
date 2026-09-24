@@ -39,12 +39,17 @@ for(const [id,r]of Object.entries(routes.prerequisites)){
 for(const prefix of ['ht','hw'])for(let n=1;n<=9;n++)assert.ok(referenced.has(`${prefix}-why-${String(n).padStart(2,'0')}`));
 assert.equal(clips.get('t-firstlaw-intro').scenes.length,4);
 assert.equal(clips.get('t-firstlaw-intro').scenes[3].mode,'common');
-assert.ok(clips.get('t-firstlaw-intro').scenes[3].revisionEquations[0].includes('100-40=60'));
+const numericScene=clips.get('t-firstlaw-intro').scenes[3];
+const numericEquations=[...(numericScene.revisionEquations??[]),...(numericScene.cues??[]).flatMap(c=>c.formula??[])];
+assert.ok(numericEquations.some(f=>f.includes('100-40=60')),'Current numeric scene must retain the 60 J calculation');
+if(numericScene.cues)assert.ok(numericEquations.some(f=>f.includes('100-0=100')),'Current numeric scene must retain the rigid-vessel comparison');
 assert.deepEqual(routes.inserts['t-ideal-advanced'].find(r=>r.afterScene===2).inserts,['ht-why-06','ht-why-07']);
 assert.ok(report.visualTasks.some(t=>t.id==='t-heat-advanced'&&t.scene===2),'Visual-only g/J-per-g correction must not disappear');
 assert.ok(clips.get('t-heat-intro').title.endsWith('?'),'Unchanged narration still receives the supplied question title');
 for(const id of ['t-firstlaw-intro','m-projectile-middle','m-momentum-middle']){
- const clip=clips.get(id),scene=clip.scenes[3];
+ // Keep testing the legacy manuscript renderer against its source scene.
+ // Authored cue renderers have their own frame/MP4 checks, not this legacy API.
+ const clip=clips.get(id),scene=clip.manuscriptScenes?.[3]??clip.scenes[3];
  for(const p of [0,.25,.5,.75,1]){
   const svg=revisionSceneDiagram(clip,scene,p);
   assert.ok(svg&&!/NaN|undefined|Infinity/.test(svg),`${id}: invalid diagram`);
