@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const root='docs/video-revision-20260924/';
+const a=JSON.parse(readFileSync(root+'manuscript-rollout-audit.generated.json'));
+const plan=JSON.parse(readFileSync(root+'full-plan.generated.json'));
+assert.equal(a.clips.length,plan.length);
+assert.equal(new Set(a.clips.map(c=>c.id)).size,a.clips.length);
+assert.ok(a.sources.every(s=>s.hashMatches));
+const s=a.summary;
+assert.equal(s.remoteScriptMatches+s.localOnlyScriptMatches+s.replacementPending+s.additionPending,s.plannedClips);
+assert.equal(s.wordingNeedsReconciliation,a.requirements.filter(q=>!q.localWordingPresent).length);
+assert.ok(a.requirements.every(q=>q.source.file&&q.source.line>0&&q.requiredSubtitles.length));
+assert.ok(a.clips.every(c=>c.visualReview==='not-certified-by-this-audit'));
+assert.ok(a.clips.filter(c=>c.status==='local-only-script-match').every(c=>c.localScriptMatchesPlan&&!c.remoteScriptMatchesPlan));
+console.log('PASS: source hashes, exhaustive plan inventory, source lines, status accounting; no automatic visual certification');
