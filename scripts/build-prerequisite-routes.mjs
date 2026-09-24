@@ -58,6 +58,9 @@ for(const c of catalog){
 }
 // A new prerequisite becomes active only after its verified media is registered.
 if(prepIds.has('prep-addition-theorem'))applyAdditionPrerequisiteRoutes(routes);
+// Manuscript 04's electric-field-only prerequisite replaces the removed
+// mixed circuit compilation, but only after its verified media is registered.
+if(prepIds.has('prep-coulomb-field'))routes['e-field-middle']={required:['prep-coulomb-field'],review:['prep-coulomb-field']};
 const file='src/content/prerequisite-routes.generated.json',data=JSON.stringify(routes,null,2)+'\n';
 if(process.argv.includes('--check'))assert.equal(readFileSync(file,'utf8'),data,'Stale prerequisite routes');
 else writeFileSync(file,data);
