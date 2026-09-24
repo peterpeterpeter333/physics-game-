@@ -1,0 +1,174 @@
+{
+  "id": "prep-melting",
+  "title": "温度が変わらない加熱と、熱の収支",
+  "level": "advanced",
+  "before": [
+    "t-heat-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "氷が融ける温度、融点の氷に熱を加えると、氷は温度をほぼ保ったまま水になります。加えたエネルギーは、この「氷から水へ」の変化に使われます。",
+      "equation": "融点の氷 → 融点の水：温度差は0",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "加えた熱 [J]",
+        "yLabel": "温度 [℃]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            200,
+            0
+          ],
+          [
+            300,
+            0
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "氷が融ける温度、融点の氷に熱を加えると、氷は温度をほぼ保ったまま水になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.333333333333333,
+          "text": "氷が融ける温度、融点の氷に熱を加えると、氷は温度をほぼ保ったまま水になります。"
+        },
+        {
+          "start": 6.333333333333333,
+          "end": 11.416666666666666,
+          "text": "加えたエネルギーは、この「氷から水へ」の変化に使われます。"
+        }
+      ],
+      "end": 11.554333333333332,
+      "sceneId": "prep-melting-s1",
+      "mode": "common"
+    },
+    {
+      "narration": "融解熱は、質量一あたりの氷を融かすのに必要な熱量です。融かす熱と、融けた水を温める熱は、別々に計算して足します。",
+      "equation": "必要な熱 = mL + mcΔT",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "融かす熱",
+          "温める熱"
+        ],
+        "values": [
+          334,
+          42
+        ],
+        "unit": "J（氷1 gから水10℃）"
+      },
+      "index": 1,
+      "heading": "融解熱は、質量一あたりの氷を融かすのに必要な熱量です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.554333333333332,
+      "captions": [
+        {
+          "start": 11.554333333333332,
+          "end": 16.208333333333332,
+          "text": "融解熱は、質量一あたりの氷を融かすのに必要な熱量です。"
+        },
+        {
+          "start": 16.208333333333332,
+          "end": 21.208333333333332,
+          "text": "融かす熱と、融けた水を温める熱は、別々に計算して足します。"
+        }
+      ],
+      "end": 21.32833333333333,
+      "sceneId": "prep-melting-s2",
+      "mode": "common"
+    },
+    {
+      "narration": "外へ熱が逃げない容器では、熱い物体が失った熱量と、冷たい物体が受け取った熱量が等しくなります。両方が同じ温度になった状態を、熱平衡と言います。",
+      "equation": "外との熱の出入りなし → 失う熱量 = 受け取る熱量",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "高温の水",
+          "低温の水"
+        ],
+        "values": [
+          60,
+          20
+        ],
+        "unit": "℃"
+      },
+      "index": 2,
+      "heading": "外へ熱が逃げない容器では、熱い物体が失った熱量と、冷たい物体が受け取った熱量が等しくなります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 21.32833333333333,
+      "captions": [
+        {
+          "start": 21.32833333333333,
+          "end": 28.708333333333332,
+          "text": "外へ熱が逃げない容器では、熱い物体が失った熱量と、冷たい物体が受け取った熱量が等しくなります。"
+        },
+        {
+          "start": 28.708333333333332,
+          "end": 32.82333333333334,
+          "text": "両方が同じ温度になった状態を、熱平衡と言います。"
+        }
+      ],
+      "end": 34.17333333333333,
+      "sceneId": "prep-melting-s3",
+      "mode": "common"
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "温度が変わらない加熱と、熱の収支",
+  "topicId": "prep-melting",
+  "family": "prerequisites",
+  "sourceScript": "prep-melting",
+  "duration": 34.17333333333333,
+  "mediaDirectory": "revisions",
+  "renderKey": "ebb3f2237d060638454d7cc03797443f1c5ebd45b97935e5b890b88084aa6450",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 38.50666666666667,
+    "removedSeconds": 4.333333333333336,
+    "cuts": [
+      {
+        "start": 6.333333333333333,
+        "end": 6.916666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 12.0,
+        "end": 13.291666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 18.083333333333332,
+        "end": 18.666666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.666666666666668,
+        "end": 25.0,
+        "reason": "scene"
+      },
+      {
+        "start": 32.5,
+        "end": 33.041666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

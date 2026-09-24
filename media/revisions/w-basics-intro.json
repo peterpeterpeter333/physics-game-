@@ -1,0 +1,95 @@
+{
+  "id": "w-basics-intro",
+  "stageId": "w-basics",
+  "stageTitle": "振動が伝わる波",
+  "topicId": "w-basics",
+  "level": "intro",
+  "family": "high-school-waves",
+  "title": "波が右へ進むと、水やひもも右へ運ばれる?",
+  "condition": "一次元の波。媒質の動きと模様の移動を区別する。",
+  "sourceScript": "w-basics-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "ひもの波では、ひもの一点一点は上下に動くだけです。",
+      "narration": "ひもの波では、ひもの一点一点は上下に動くだけです。山の形は右へ進みますが、印を付けた点が山と一緒に右へ運ばれるわけではありません。",
+      "visual": "ひもの一点を赤く固定して追跡し、山を別の枠で追う。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.7786666666666666,
+          "text": "ひもの波では、ひもの一点一点は上下に動くだけです。"
+        },
+        {
+          "start": 3.8186666666666667,
+          "end": 9.901333333333332,
+          "text": "山の形は右へ進みますが、印を付けた点が山と一緒に右へ運ばれるわけではありません。"
+        }
+      ],
+      "end": 10.491333333333333,
+      "sceneId": "w-basics-intro-s1",
+      "mode": "common"
+    },
+    {
+      "index": 1,
+      "heading": "波は、一点の振動が隣へ、また隣へと伝わる現象です。",
+      "narration": "波は、一点の振動が隣へ、また隣へと伝わる現象です。物そのものが運ばれるのと、振動の形が伝わるのは、別のことです。",
+      "visual": "隣同士の点が少し遅れて同じ動きをする様子を順番に点灯。",
+      "equation": "",
+      "symbols": "",
+      "start": 10.491333333333333,
+      "captions": [
+        {
+          "start": 10.491333333333333,
+          "end": 14.952666666666666,
+          "text": "波は、一点の振動が隣へ、また隣へと伝わる現象です。"
+        },
+        {
+          "start": 14.992666666666667,
+          "end": 19.912666666666667,
+          "text": "物そのものが運ばれるのと、振動の形が伝わるのは、別のことです。"
+        }
+      ],
+      "end": 20.502666666666666,
+      "sceneId": "w-basics-intro-s2",
+      "mode": "common"
+    },
+    {
+      "index": 2,
+      "heading": "隣り合う山と山の間の距離を、波長と言います。",
+      "narration": "隣り合う山と山の間の距離を、波長と言います。同じ点が一回振動するのにかかる時間を、周期と言います。",
+      "visual": "波長は二つの山の間、周期は一点の時計で別々に測る。",
+      "equation": "",
+      "symbols": "",
+      "start": 20.502666666666666,
+      "captions": [
+        {
+          "start": 20.502666666666666,
+          "end": 23.801333333333336,
+          "text": "隣り合う山と山の間の距離を、波長と言います。"
+        },
+        {
+          "start": 23.84133333333333,
+          "end": 27.790666666666667,
+          "text": "同じ点が一回振動するのにかかる時間を、周期と言います。"
+        }
+      ],
+      "end": 28.380666666666666,
+      "sceneId": "w-basics-intro-s3",
+      "mode": "common"
+    }
+  ],
+  "duration": 28.380666666666666,
+  "mediaDirectory": "revisions",
+  "renderKey": "5493692c7f2dde20a4ea3c35095088937bf7ce70b5e9cb6c66e940fd87707f28",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2"
+}

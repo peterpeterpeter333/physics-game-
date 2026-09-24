@@ -1,0 +1,228 @@
+{
+  "id": "prep-gas-work",
+  "title": "気体が押す仕事と、内部のエネルギー",
+  "level": "middle",
+  "before": [
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "気体がゆっくりピストンを押す場合を考えます。「圧力かけるピストンの面積」が、ピストンを押す力です。",
+      "equation": "押す力 = pS",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "気体が押す力 pS"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "気体がゆっくりピストンを押す場合を考えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-gas-work-s1",
+      "mode": "common",
+      "start": 0,
+      "end": 7.5793333333333335,
+      "captions": [
+        {
+          "start": 0,
+          "end": 2.7333333333333334,
+          "text": "気体がゆっくりピストンを押す場合を考えます。"
+        },
+        {
+          "start": 2.7733333333333334,
+          "end": 6.989333333333334,
+          "text": "「圧力かけるピストンの面積」が、ピストンを押す力です。"
+        }
+      ]
+    },
+    {
+      "narration": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。圧力が一定なら、気体の仕事は「圧力かける体積の増加」です。画面の ΔV はデルタブイと読み、体積の増えた分です。",
+      "equation": "W = (pS)Δx = pΔV",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積の増加 [m³]",
+        "yLabel": "圧力 [Pa]",
+        "points": [
+          [
+            0,
+            100
+          ],
+          [
+            2,
+            100
+          ]
+        ],
+        "area": true
+      },
+      "index": 1,
+      "heading": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "utterances": [
+        {
+          "subtitle": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。",
+          "reading": "ピストンが すこし すすむと、めんせき かける うごいた きょり の ぶんだけ たいせきが ふえます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 360
+          }
+        },
+        {
+          "subtitle": "圧力が一定なら、気体の仕事は「圧力かける体積の増加」です。",
+          "reading": "あつりょくが いってい なら、きたいの しごとは、あつりょく かける たいせきの ぞうか です。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 361
+          }
+        },
+        {
+          "subtitle": "画面の ΔV はデルタブイと読み、体積の増えた分です。",
+          "reading": "がめんの きごうは デルタブイと よみ、たいせきの ふえた ぶんです。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 361
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面2 【字幕差し替え】(Δ の読み方)",
+        "場面1・3・4 【そのまま】"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 356
+      },
+      "revisionEquations": [],
+      "sceneId": "prep-gas-work-s2",
+      "mode": "common",
+      "start": 7.5793333333333335,
+      "end": 21.281333333333333,
+      "captions": [
+        {
+          "start": 7.5793333333333335,
+          "end": 12.254,
+          "text": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。"
+        },
+        {
+          "start": 12.294,
+          "end": 17.011333333333337,
+          "text": "圧力が一定なら、気体の仕事は「圧力かける体積の増加」です。"
+        },
+        {
+          "start": 17.051333333333332,
+          "end": 20.691333333333333,
+          "text": "画面の ΔV はデルタブイと読み、体積の増えた分です。"
+        }
+      ]
+    },
+    {
+      "narration": "圧力が途中で変わるときは、区間ごとの仕事を足します。最初と最後の体積が同じでも、途中の圧力が違えば、仕事は変わります。",
+      "equation": "仕事 = p–Vグラフの面積",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積",
+        "yLabel": "圧力",
+        "points": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1.3333333333333333
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "area": true
+      },
+      "index": 2,
+      "heading": "圧力が途中で変わるときは、区間ごとの仕事を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-gas-work-s3",
+      "mode": "common",
+      "start": 21.281333333333333,
+      "end": 31.239333333333335,
+      "captions": [
+        {
+          "start": 21.281333333333333,
+          "end": 25.102666666666668,
+          "text": "圧力が途中で変わるときは、区間ごとの仕事を足します。"
+        },
+        {
+          "start": 25.142666666666667,
+          "end": 30.649333333333335,
+          "text": "最初と最後の体積が同じでも、途中の圧力が違えば、仕事は変わります。"
+        }
+      ]
+    },
+    {
+      "narration": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。ここでは、外へする仕事をプラスとする約束で書きます。",
+      "equation": "Q = ΔU + W（気体が外へする仕事を正）",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "受け取った熱",
+          "内部の増加",
+          "外への仕事"
+        ],
+        "values": [
+          100,
+          70,
+          30
+        ],
+        "unit": "J"
+      },
+      "index": 3,
+      "heading": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-gas-work-s4",
+      "mode": "common",
+      "start": 31.239333333333335,
+      "end": 40.57866666666666,
+      "captions": [
+        {
+          "start": 31.239333333333335,
+          "end": 36.266,
+          "text": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。"
+        },
+        {
+          "start": 36.306,
+          "end": 39.98866666666666,
+          "text": "ここでは、外へする仕事をプラスとする約束で書きます。"
+        }
+      ]
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "気体が押す仕事と、内部のエネルギー",
+  "topicId": "prep-gas-work",
+  "family": "prerequisites",
+  "sourceScript": "prep-gas-work",
+  "mediaDirectory": "revisions",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 40.57866666666666,
+  "renderKey": "cdbd20d4f31c52f3169477d3a3e6517a824e24c18bec591e9ea6fee44266d60a"
+}

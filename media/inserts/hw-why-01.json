@@ -1,0 +1,92 @@
+{
+  "id": "hw-why-01",
+  "title": "数値で確かめる",
+  "stageId": "w-basics",
+  "level": "middle",
+  "renderer": "insert",
+  "family": "high-school-waves",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "数値で確かめる(場面2の後)",
+      "screen": "",
+      "equations": [
+        "T=0.5\\ \\mathrm s\\Rightarrow f=\\dfrac1{0.5}=2\\ \\mathrm{Hz},\\quad \\lambda=3\\ \\mathrm m\\Rightarrow v=2\\times3=6\\ \\mathrm{m/s}"
+      ],
+      "revisionDirections": [
+        "式: `T=0.5\\ \\mathrm s\\Rightarrow f=\\dfrac1{0.5}=2\\ \\mathrm{Hz},\\quad \\lambda=3\\ \\mathrm m\\Rightarrow v=2\\times3=6\\ \\mathrm{m/s}`",
+        "---"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 288
+      },
+      "utterances": [
+        {
+          "subtitle": "一回振動するのに〇・五秒かかるなら、一秒間には二回振動します。",
+          "reading": "いっかい しんどう するのに れいてんご びょう かかる なら、いちびょうかんには にかい しんどう します。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 293
+          }
+        },
+        {
+          "subtitle": "振動数は二ヘルツです。",
+          "reading": "しんどうすうは にヘルツです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 293
+          }
+        },
+        {
+          "subtitle": "波長が三メートルなら、一秒間に三メートルの波が二つ分進むので、速さは毎秒六メートルです。",
+          "reading": "はちょうが さんメートル なら、いちびょうかんに さんメートルの なみが ふたつぶん すすむので、はやさは まいびょう ろくメートルです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 294
+          }
+        }
+      ],
+      "narration": "一回振動するのに〇・五秒かかるなら、一秒間には二回振動します。振動数は二ヘルツです。波長が三メートルなら、一秒間に三メートルの波が二つ分進むので、速さは毎秒六メートルです。",
+      "sceneId": "hw-why-01-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 13.958000000000002,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.8773333333333335,
+          "text": "一回振動するのに〇・五秒かかるなら、一秒間には二回振動します。"
+        },
+        {
+          "start": 4.917333333333334,
+          "end": 6.701333333333333,
+          "text": "振動数は二ヘルツです。"
+        },
+        {
+          "start": 6.741333333333333,
+          "end": 13.368,
+          "text": "波長が三メートルなら、一秒間に三メートルの波が二つ分進むので、速さは毎秒六メートルです。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】hw-why-01 数値で確かめる(場面2の後)",
+    "context": "波動\nw-basics-middle — 波の速さは、なぜ振動数と波長の積になる?\n【差し込み】hw-why-01 数値で確かめる(場面2の後)",
+    "source": {
+      "file": "差し替え台本_02_高校熱力学・波動.md",
+      "line": 288
+    },
+    "parent": "w-basics-middle"
+  },
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 13.958000000000002,
+  "renderKey": "5d53a30598536f293e335e4240ccce72ffcb4fb9b8824368e178b2b03eca58fa"
+}

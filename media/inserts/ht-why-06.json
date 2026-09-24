@@ -1,0 +1,105 @@
+{
+  "id": "ht-why-06",
+  "title": "分子の衝突から、pV = Nm⟨v²⟩/3 を一段ずつ",
+  "stageId": "t-ideal",
+  "level": "advanced",
+  "renderer": "insert",
+  "family": "high-school-thermal",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "分子の衝突から、pV = Nm⟨v²⟩/3 を一段ずつ(場面2の後)",
+      "screen": "画面: 一辺Lの箱。一個の分子が右の壁に当たって跳ね返り、また戻ってくる。",
+      "equations": [
+        "\\Delta p=2mv_x,\\quad \\Delta t=\\dfrac{2L}{v_x},\\quad F=\\dfrac{2mv_x}{2L/v_x}=\\dfrac{mv_x^2}{L}"
+      ],
+      "revisionDirections": [
+        "画面: 一辺Lの箱。一個の分子が右の壁に当たって跳ね返り、また戻ってくる。",
+        "式: `\\Delta p=2mv_x,\\quad \\Delta t=\\dfrac{2L}{v_x},\\quad F=\\dfrac{2mv_x}{2L/v_x}=\\dfrac{mv_x^2}{L}`"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 176
+      },
+      "utterances": [
+        {
+          "subtitle": "一辺 L の箱で、横向きの速さ vx の分子が、右の壁に当たって跳ね返ります。",
+          "reading": "いっぺん エルの はこで、よこむきの はやさ ブイエックスの ぶんしが、みぎの かべに あたって はねかえります。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 182
+          }
+        },
+        {
+          "subtitle": "運動量は、マイナス m vx から プラス m vx に変わるので、変化は 2 m vx です。",
+          "reading": "うんどうりょうは、マイナス エムブイエックスから プラス エムブイエックスに かわるので、へんかは にエムブイエックス です。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 182
+          }
+        },
+        {
+          "subtitle": "同じ壁に戻ってくるまでの時間は、往復の距離 2L を vx で割ったものです。",
+          "reading": "おなじ かべに もどって くるまでの じかんは、おうふくの きょり にエルを ブイエックスで わった ものです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 183
+          }
+        },
+        {
+          "subtitle": "力積は運動量の変化なので、平均の力は、運動量の変化割る時間で、m vx 二乗割る L です。",
+          "reading": "りょくせきは うんどうりょうの へんか なので、へいきんの ちからは、うんどうりょうの へんか わる じかんで、エムブイエックス にじょう わる エルです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 184
+          }
+        }
+      ],
+      "narration": "一辺 L の箱で、横向きの速さ vx の分子が、右の壁に当たって跳ね返ります。運動量は、マイナス m vx から プラス m vx に変わるので、変化は 2 m vx です。同じ壁に戻ってくるまでの時間は、往復の距離 2L を vx で割ったものです。力積は運動量の変化なので、平均の力は、運動量の変化割る時間で、m vx 二乗割る L です。",
+      "sceneId": "ht-why-06-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 25.147333333333336,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.773333333333333,
+          "text": "一辺 L の箱で、横向きの速さ vx の分子が、右の壁に当たって跳ね返ります。"
+        },
+        {
+          "start": 5.8133333333333335,
+          "end": 12.088,
+          "text": "運動量は、マイナス m vx から プラス m vx に変わるので、変化は 2 m vx です。"
+        },
+        {
+          "start": 12.128,
+          "end": 17.101333333333333,
+          "text": "同じ壁に戻ってくるまでの時間は、往復の距離 2L を vx で割ったものです。"
+        },
+        {
+          "start": 17.141333333333336,
+          "end": 24.557333333333336,
+          "text": "力積は運動量の変化なので、平均の力は、運動量の変化割る時間で、m vx 二乗割る L です。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】ht-why-06 分子の衝突から、pV = Nm⟨v²⟩/3 を一段ずつ(場面2の後)",
+    "context": "熱力学\nt-ideal-advanced — 分子の動きと圧力は、式でどうつながる?\n【差し込み】ht-why-06 分子の衝突から、pV = Nm⟨v²⟩/3 を一段ずつ(場面2の後)",
+    "source": {
+      "file": "差し替え台本_02_高校熱力学・波動.md",
+      "line": 176
+    },
+    "parent": "t-ideal-advanced"
+  },
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 25.147333333333336,
+  "renderKey": "0b0417993cccf592291b578a0282204846de742453ae7cf140e583f7d0741d47"
+}

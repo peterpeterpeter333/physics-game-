@@ -1,0 +1,205 @@
+{
+  "id": "prep-heat-units",
+  "title": "温度と、加えた熱の量を分ける",
+  "level": "intro",
+  "before": [
+    "t-heat-intro",
+    "t-heat-middle",
+    "t-heat-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "温度は、物体がどれくらい熱いか冷たいかを表す量です。熱は、温度の差があるときに移動するエネルギーで、単位はジュールです。",
+      "equation": "温度：℃やK；移動したエネルギー：J",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "加熱前",
+          "加熱後"
+        ],
+        "values": [
+          20,
+          30
+        ],
+        "unit": "℃"
+      },
+      "index": 0,
+      "heading": "温度は、物体がどれくらい熱いか冷たいかを表す量です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-heat-units-s1",
+      "mode": "common",
+      "start": 0,
+      "end": 9.030000000000001,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.8533333333333335,
+          "text": "温度は、物体がどれくらい熱いか冷たいかを表す量です。"
+        },
+        {
+          "start": 3.8933333333333335,
+          "end": 8.44,
+          "text": "熱は、温度の差があるときに移動するエネルギーで、単位はジュールです。"
+        }
+      ]
+    },
+    {
+      "narration": "比熱は、質量一あたり、温度を一度上げるのに必要な熱量です。水一グラムなら約四・二ジュールなので、百グラムを十度上げる熱量は、百かける四・二かける十で四千二百ジュールです。",
+      "equation": "Q = mcΔT = 100 × 4.2 × 10 = 4200 J",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1 gを1度",
+          "100 gを1度",
+          "100 gを10度"
+        ],
+        "values": [
+          4.2,
+          420,
+          4200
+        ],
+        "unit": "J"
+      },
+      "index": 1,
+      "heading": "比熱は、質量一あたり、温度を一度上げるのに必要な熱量です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-heat-units-s2",
+      "mode": "common",
+      "start": 9.030000000000001,
+      "end": 22.433333333333334,
+      "captions": [
+        {
+          "start": 9.030000000000001,
+          "end": 13.832666666666666,
+          "text": "比熱は、質量一あたり、温度を一度上げるのに必要な熱量です。"
+        },
+        {
+          "start": 13.872666666666667,
+          "end": 21.843333333333334,
+          "text": "水一グラムなら約四・二ジュールなので、百グラムを十度上げる熱量は、百かける四・二かける十で四千二百ジュールです。"
+        }
+      ]
+    },
+    {
+      "narration": "質量の単位は、比熱の単位に合わせます。一グラムあたりの比熱を使うなら、質量もグラムにします。一キログラムは千グラムです。温度差は、最後の温度から最初の温度を引いて求めます。二十度から三十度なら、十度です。",
+      "equation": "ΔT = 30 − 20 = 10；1 kg = 1000 g",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "最初の温度",
+          "最後の温度",
+          "温度差"
+        ],
+        "values": [
+          20,
+          30,
+          10
+        ],
+        "unit": "℃"
+      },
+      "index": 2,
+      "heading": "質量の単位は、比熱の単位に合わせます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "utterances": [
+        {
+          "subtitle": "質量の単位は、比熱の単位に合わせます。",
+          "reading": "しつりょうの たんいは、ひねつの たんいに あわせます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 297
+          }
+        },
+        {
+          "subtitle": "一グラムあたりの比熱を使うなら、質量もグラムにします。",
+          "reading": "いちグラム あたりの ひねつを つかう なら、しつりょうも グラムに します。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 297
+          }
+        },
+        {
+          "subtitle": "一キログラムは千グラムです。",
+          "reading": "いちキログラムは せんグラムです。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 297
+          }
+        },
+        {
+          "subtitle": "温度差は、最後の温度から最初の温度を引いて求めます。",
+          "reading": "おんどさは、さいごの おんどから さいしょの おんどを ひいて もとめます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 298
+          }
+        },
+        {
+          "subtitle": "二十度から三十度なら、十度です。",
+          "reading": "にじゅうどから さんじゅうど なら、じゅうどです。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 298
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面3 【字幕差し替え】(画面の数字を声で言う)",
+        "場面1・2 【そのまま】"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 293
+      },
+      "revisionEquations": [],
+      "sceneId": "prep-heat-units-s3",
+      "mode": "common",
+      "start": 22.433333333333334,
+      "end": 38.18333333333334,
+      "captions": [
+        {
+          "start": 22.433333333333334,
+          "end": 25.412000000000003,
+          "text": "質量の単位は、比熱の単位に合わせます。"
+        },
+        {
+          "start": 25.452,
+          "end": 29.252000000000002,
+          "text": "一グラムあたりの比熱を使うなら、質量もグラムにします。"
+        },
+        {
+          "start": 29.292,
+          "end": 31.21466666666667,
+          "text": "一キログラムは千グラムです。"
+        },
+        {
+          "start": 31.25466666666667,
+          "end": 34.98,
+          "text": "温度差は、最後の温度から最初の温度を引いて求めます。"
+        },
+        {
+          "start": 35.02,
+          "end": 37.593333333333334,
+          "text": "二十度から三十度なら、十度です。"
+        }
+      ]
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "温度と、加えた熱の量を分ける",
+  "topicId": "prep-heat-units",
+  "family": "prerequisites",
+  "sourceScript": "prep-heat-units",
+  "mediaDirectory": "revisions",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 38.18333333333334,
+  "renderKey": "0ca6b3f8239fe9ddf1b8c0ea36a77d61ec5e4ee91f95f5834ad5824e5cd9d277"
+}

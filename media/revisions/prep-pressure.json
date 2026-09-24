@@ -1,0 +1,260 @@
+{
+  "id": "prep-pressure",
+  "title": "圧力は、面積一あたりの力",
+  "level": "intro",
+  "before": [
+    "t-gas-intro",
+    "t-gas-middle",
+    "t-ideal-intro",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "t-ideal-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "圧力は、面をまっすぐ押す力を、面積で割ったものです。同じ力でも、狭い面に集中するほど圧力は大きくなります。",
+      "equation": "圧力 p = 力 F ÷ 面積 S",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "面積1 m²",
+          "面積2 m²"
+        ],
+        "values": [
+          10,
+          5
+        ],
+        "unit": "Pa（力10 N）"
+      },
+      "index": 0,
+      "heading": "圧力は、面をまっすぐ押す力を、面積で割ったものです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-pressure-s1",
+      "mode": "common",
+      "start": 0,
+      "end": 9.030000000000001,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.088,
+          "text": "圧力は、面をまっすぐ押す力を、面積で割ったものです。"
+        },
+        {
+          "start": 4.128,
+          "end": 8.44,
+          "text": "同じ力でも、狭い面に集中するほど圧力は大きくなります。"
+        }
+      ]
+    },
+    {
+      "narration": "一パスカルは、一平方メートルあたり一ニュートンの圧力です。気体では、たくさんの分子が壁にぶつかる効果が、平均の圧力として現れます。",
+      "equation": "1 Pa = 1 N/m²",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "面積 [m²]",
+        "yLabel": "同じ圧力での力 [N]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            20
+          ],
+          [
+            3,
+            30
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "一パスカルは、一平方メートルあたり一ニュートンの圧力です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-pressure-s2",
+      "mode": "common",
+      "start": 9.030000000000001,
+      "end": 18.913333333333338,
+      "captions": [
+        {
+          "start": 9.030000000000001,
+          "end": 12.915333333333335,
+          "text": "一パスカルは、一平方メートルあたり一ニュートンの圧力です。"
+        },
+        {
+          "start": 12.955333333333336,
+          "end": 18.323333333333338,
+          "text": "気体では、たくさんの分子が壁にぶつかる効果が、平均の圧力として現れます。"
+        }
+      ]
+    },
+    {
+      "narration": "量と温度を変えない気体では、「圧力かける体積」が一定になります。これをボイルの法則と言い、実験で見つかった法則です。体積を半分にすると圧力は二倍。このような関係を、反比例と言います。",
+      "equation": "pV = 一定；Vが1/2 → pは2倍",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積の比",
+        "yLabel": "圧力の比",
+        "points": [
+          [
+            0.5,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0.5
+          ],
+          [
+            4,
+            0.25
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "量と温度を変えない気体では、「圧力かける体積」が一定になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "utterances": [
+        {
+          "subtitle": "量と温度を変えない気体では、「圧力かける体積」が一定になります。",
+          "reading": "りょうと おんどを かえない きたいでは、あつりょく かける たいせき が いっていに なります。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 311
+          }
+        },
+        {
+          "subtitle": "これをボイルの法則と言い、実験で見つかった法則です。",
+          "reading": "これを ボイルの ほうそく と いい、じっけんで みつかった ほうそくです。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 311
+          }
+        },
+        {
+          "subtitle": "体積を半分にすると圧力は二倍。",
+          "reading": "たいせきを はんぶんに すると あつりょくは にばい。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 312
+          }
+        },
+        {
+          "subtitle": "このような関係を、反比例と言います。",
+          "reading": "この ような かんけいを、はんぴれい と いいます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 312
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面3 【字幕差し替え】(ボイルの法則の名前)",
+        "場面1・2・4 【そのまま】"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 307
+      },
+      "revisionEquations": [],
+      "sceneId": "prep-pressure-s3",
+      "mode": "common",
+      "start": 18.913333333333338,
+      "end": 32.818,
+      "captions": [
+        {
+          "start": 18.913333333333338,
+          "end": 23.236000000000004,
+          "text": "量と温度を変えない気体では、「圧力かける体積」が一定になります。"
+        },
+        {
+          "start": 23.276000000000003,
+          "end": 26.948000000000004,
+          "text": "これをボイルの法則と言い、実験で見つかった法則です。"
+        },
+        {
+          "start": 26.988000000000003,
+          "end": 29.497333333333337,
+          "text": "体積を半分にすると圧力は二倍。"
+        },
+        {
+          "start": 29.537333333333336,
+          "end": 32.228,
+          "text": "このような関係を、反比例と言います。"
+        }
+      ]
+    },
+    {
+      "narration": "気体の温度の比例を考えるときは、絶対温度を使います。絶対温度は摂氏温度に約二百七十三を足したもので、一ケルビンの差は一度の差と同じ大きさです。",
+      "equation": "T [K] = t [℃] + 273.15",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "摂氏温度 [℃]",
+        "yLabel": "絶対温度 [K]",
+        "points": [
+          [
+            -273.15,
+            0
+          ],
+          [
+            0,
+            273.15
+          ],
+          [
+            100,
+            373.15
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "気体の温度の比例を考えるときは、絶対温度を使います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-pressure-s4",
+      "mode": "common",
+      "start": 32.818,
+      "end": 43.736,
+      "captions": [
+        {
+          "start": 32.818,
+          "end": 36.681999999999995,
+          "text": "気体の温度の比例を考えるときは、絶対温度を使います。"
+        },
+        {
+          "start": 36.722,
+          "end": 43.146,
+          "text": "絶対温度は摂氏温度に約二百七十三を足したもので、一ケルビンの差は一度の差と同じ大きさです。"
+        }
+      ]
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "圧力は、面積一あたりの力",
+  "topicId": "prep-pressure",
+  "family": "prerequisites",
+  "sourceScript": "prep-pressure",
+  "pronunciationFingerprint": "090b41285fda8e3a558c29ed1a3624ab4e5b4313c8b16dee0cf6158ab817981b",
+  "mediaDirectory": "revisions",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 43.736,
+  "renderKey": "3e107770c40c02af5d44c8502283f962dc1769d504e36a4a85bb7decd23a816c"
+}

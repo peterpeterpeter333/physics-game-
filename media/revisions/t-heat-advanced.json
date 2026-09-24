@@ -1,0 +1,149 @@
+{
+  "id": "t-heat-advanced",
+  "stageId": "t-heat",
+  "stageTitle": "温度と熱の移動",
+  "topicId": "t-heat",
+  "level": "advanced",
+  "family": "high-school-thermal",
+  "title": "熱を加えているのに、氷の温度が変わらないのはなぜ?",
+  "condition": "比熱は扱う温度範囲で一定。相変化と温度変化を分ける。",
+  "sourceScript": "t-heat-advanced-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "氷が融ける温度、つまり融点の氷に熱を加えると、そのエネルギーは主に、氷を水に変えるために使われます。",
+      "narration": "氷が融ける温度、つまり融点の氷に熱を加えると、そのエネルギーは主に、氷を水に変えるために使われます。温度は変わらなくても、エネルギーは受け取り続けています。",
+      "visual": "0℃の氷の割合を減らし、温度計は固定する。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 7.75,
+          "text": "氷が融ける温度、つまり融点の氷に熱を加えると、そのエネルギーは主に、氷を水に変えるために使われます。"
+        },
+        {
+          "start": 7.75,
+          "end": 11.708333333333334,
+          "text": "温度は変わらなくても、エネルギーは受け取り続けています。"
+        }
+      ],
+      "end": 11.810333333333332,
+      "sceneId": "t-heat-advanced-s1",
+      "mode": "common"
+    },
+    {
+      "index": 1,
+      "heading": "融かすのに必要な熱量は、融ける質量に「融解熱」を掛けたものです。",
+      "narration": "融かすのに必要な熱量は、融ける質量に「融解熱」を掛けたものです。融解熱は、一グラム融かすのに要る熱量です。温度を上げる熱量とは別に計算して足します。",
+      "visual": "加熱曲線の斜め部分と水平部分を別色で区切る。",
+      "equation": "Q融解 = mL",
+      "symbols": "mは融ける質量[g]、Lは一グラムあたりの融解熱[J/g]。",
+      "start": 11.810333333333332,
+      "captions": [
+        {
+          "start": 11.810333333333332,
+          "end": 17.25,
+          "text": "融かすのに必要な熱量は、融ける質量に「融解熱」を掛けたものです。"
+        },
+        {
+          "start": 17.25,
+          "end": 20.708333333333336,
+          "text": "融解熱は、一グラム融かすのに要る熱量です。"
+        },
+        {
+          "start": 20.708333333333336,
+          "end": 24.041666666666668,
+          "text": "温度を上げる熱量とは別に計算して足します。"
+        }
+      ],
+      "end": 24.171666666666663,
+      "sceneId": "t-heat-advanced-s2",
+      "mode": "common"
+    },
+    {
+      "index": 2,
+      "heading": "熱が外へ逃げない容器で混ぜる問題では、熱い方が失った熱量と、冷たい方が受け取った熱量を等しいとおきます。",
+      "narration": "熱が外へ逃げない容器で混ぜる問題では、熱い方が失った熱量と、冷たい方が受け取った熱量を等しいとおきます。途中で融けたり凍ったりするなら、その熱量も同じ式に入れます。",
+      "visual": "温水→氷の矢印へ、融解分と昇温分の二つの箱を置く。",
+      "equation": "",
+      "symbols": "",
+      "start": 24.171666666666663,
+      "captions": [
+        {
+          "start": 24.171666666666663,
+          "end": 32.0,
+          "text": "熱が外へ逃げない容器で混ぜる問題では、熱い方が失った熱量と、冷たい方が受け取った熱量を等しいとおきます。"
+        },
+        {
+          "start": 32.0,
+          "end": 36.53166666666666,
+          "text": "途中で融けたり凍ったりするなら、その熱量も同じ式に入れます。"
+        }
+      ],
+      "end": 37.88166666666666,
+      "sceneId": "t-heat-advanced-s3",
+      "mode": "common"
+    }
+  ],
+  "duration": 37.88166666666666,
+  "mediaDirectory": "revisions",
+  "renderKey": "3a1d09bd1d42f9176b23f61d3d0959653966cb604cb2c376932c351bfa262cc1",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "visualRevisionTasks": [
+    {
+      "id": "t-heat-advanced",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 39
+      },
+      "directions": [
+        "記号の説明の単位を、声と中級の動画にそろえる。「mは融ける質量[kg]、Lは…[J/kg]」→「mは融ける質量[g]、Lは一グラムあたりの融解熱[J/g]」。"
+      ],
+      "status": "pending-visual-verification"
+    }
+  ],
+  "wordReadingVersion": "20260924-v1",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 42.839999999999996,
+    "removedSeconds": 4.958333333333336,
+    "cuts": [
+      {
+        "start": 7.75,
+        "end": 8.291666666666666,
+        "reason": "sentence"
+      },
+      {
+        "start": 12.25,
+        "end": 13.583333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 19.125,
+        "end": 19.708333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.166666666666668,
+        "end": 23.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 27.083333333333332,
+        "end": 28.416666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 36.375,
+        "end": 36.958333333333336,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

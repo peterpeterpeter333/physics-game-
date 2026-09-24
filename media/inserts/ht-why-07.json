@@ -1,0 +1,157 @@
+{
+  "id": "ht-why-07",
+  "title": "全部の分子を足して、圧力にする",
+  "stageId": "t-ideal",
+  "level": "advanced",
+  "renderer": "insert",
+  "family": "high-school-thermal",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "全部の分子を足して、圧力にする(ht-why-06 の後)",
+      "screen": "",
+      "equations": [
+        "p=\\dfrac{Nm\\langle v_x^2\\rangle}{L\\cdot L^2}=\\dfrac{Nm\\langle v_x^2\\rangle}{V},\\quad \\langle v_x^2\\rangle=\\dfrac{\\langle v^2\\rangle}{3}\\Rightarrow pV=\\dfrac{Nm\\langle v^2\\rangle}{3}"
+      ],
+      "revisionDirections": [
+        "式: `p=\\dfrac{Nm\\langle v_x^2\\rangle}{L\\cdot L^2}=\\dfrac{Nm\\langle v_x^2\\rangle}{V},\\quad \\langle v_x^2\\rangle=\\dfrac{\\langle v^2\\rangle}{3}\\Rightarrow pV=\\dfrac{Nm\\langle v^2\\rangle}{3}`",
+        "---"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 186
+      },
+      "utterances": [
+        {
+          "subtitle": "分子が N 個あるので、力を全部足すと、N かける m かける vx 二乗の平均、割る L です。",
+          "reading": "ぶんしが エヌこ あるので、ちからを ぜんぶ たすと、エヌ かける エム かける ブイエックス にじょうの へいきん、わる エルです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 191
+          }
+        },
+        {
+          "subtitle": "圧力は力割る面積で、壁の面積は L の二乗です。",
+          "reading": "あつりょくは ちから わる めんせきで、かべの めんせきは エルの にじょうです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 192
+          }
+        },
+        {
+          "subtitle": "L の三乗は箱の体積 V なので、両辺に V を掛けた形にできます。",
+          "reading": "エルの さんじょうは はこの たいせき ブイ なので、りょうへんに ブイを かけた かたちに できます。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 192
+          }
+        },
+        {
+          "subtitle": "速さの二乗は、縦・横・奥行きの三つの二乗の和で、偏りがなければ三つは同じです。",
+          "reading": "はやさの にじょうは、たて よこ おくゆきの みっつの にじょうの わで、かたよりが なければ みっつは おなじです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 193
+          }
+        },
+        {
+          "subtitle": "だから横の分は全体の三分の一で、p V は N m ⟨v²⟩ 割る三になります。",
+          "reading": "だから よこの ぶんは ぜんたいの さんぶんの いちで、ピーブイは エヌ エム ブイにじょうの へいきん わる さんに なります。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 193
+          }
+        },
+        {
+          "subtitle": "単位も確かめます。",
+          "reading": "たんいも たしかめます。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 194
+          }
+        },
+        {
+          "subtitle": "キログラムかけるメートル毎秒の二乗は、ジュール。",
+          "reading": "キログラム かける メートル まい びょうの にじょうは、ジュール。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 194
+          }
+        },
+        {
+          "subtitle": "p V もパスカルかける立方メートルで、ジュールです。",
+          "reading": "ピーブイも パスカル かける りっぽうメートルで、ジュールです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 194
+          }
+        }
+      ],
+      "narration": "分子が N 個あるので、力を全部足すと、N かける m かける vx 二乗の平均、割る L です。圧力は力割る面積で、壁の面積は L の二乗です。L の三乗は箱の体積 V なので、両辺に V を掛けた形にできます。速さの二乗は、縦・横・奥行きの三つの二乗の和で、偏りがなければ三つは同じです。だから横の分は全体の三分の一で、p V は N m ⟨v²⟩ 割る三になります。単位も確かめます。キログラムかけるメートル毎秒の二乗は、ジュール。p V もパスカルかける立方メートルで、ジュールです。",
+      "sceneId": "ht-why-07-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 35.70733333333333,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.5200000000000005,
+          "text": "分子が N 個あるので、力を全部足すと、N かける m かける vx 二乗の平均、割る L です。"
+        },
+        {
+          "start": 6.5600000000000005,
+          "end": 10.584,
+          "text": "圧力は力割る面積で、壁の面積は L の二乗です。"
+        },
+        {
+          "start": 10.624,
+          "end": 15.405333333333333,
+          "text": "L の三乗は箱の体積 V なので、両辺に V を掛けた形にできます。"
+        },
+        {
+          "start": 15.445333333333334,
+          "end": 21.400000000000002,
+          "text": "速さの二乗は、縦・横・奥行きの三つの二乗の和で、偏りがなければ三つは同じです。"
+        },
+        {
+          "start": 21.44,
+          "end": 27.096,
+          "text": "だから横の分は全体の三分の一で、p V は N m ⟨v²⟩ 割る三になります。"
+        },
+        {
+          "start": 27.136000000000003,
+          "end": 28.557333333333336,
+          "text": "単位も確かめます。"
+        },
+        {
+          "start": 28.597333333333335,
+          "end": 31.789333333333335,
+          "text": "キログラムかけるメートル毎秒の二乗は、ジュール。"
+        },
+        {
+          "start": 31.829333333333334,
+          "end": 35.117333333333335,
+          "text": "p V もパスカルかける立方メートルで、ジュールです。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】ht-why-07 全部の分子を足して、圧力にする(ht-why-06 の後)",
+    "context": "熱力学\nt-ideal-advanced — 分子の動きと圧力は、式でどうつながる?\n【差し込み】ht-why-07 全部の分子を足して、圧力にする(ht-why-06 の後)",
+    "source": {
+      "file": "差し替え台本_02_高校熱力学・波動.md",
+      "line": 186
+    },
+    "parent": "t-ideal-advanced"
+  },
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 35.70733333333333,
+  "renderKey": "c8b1523f707e4be02ccc23f8a64ebd45770f48c14879190a4d5f4e02feac3d3e"
+}
