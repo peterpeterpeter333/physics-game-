@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 400,
     "pendingNotYetActive": 120,
-    "registeredAuthoredRenders": 163,
+    "registeredAuthoredRenders": 164,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -839,14 +839,14 @@
     },
     {
       "id": "e-capacitor-intro",
-      "title": "コンデンサは、何をどこへ蓄える？",
+      "title": "コンデンサは、何をどこへ蓄える?",
       "stageId": "e-capacitor",
       "level": "intro",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-capacitor-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-capacitor-intro.mp4",
+      "storyboard": "capacitor-intro-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
