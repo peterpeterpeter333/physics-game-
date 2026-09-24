@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 406,
-    "pendingNotYetActive": 114,
-    "registeredAuthoredRenders": 176,
+    "activeTeachingFilms": 407,
+    "pendingNotYetActive": 113,
+    "registeredAuthoredRenders": 178,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -923,14 +923,14 @@
     },
     {
       "id": "a-bohr-middle",
-      "title": "ボーア模型では、なぜ許される半径が限られる？",
+      "title": "ボーア模型では、なぜ許される半径が限られる?",
       "stageId": "a-bohr",
       "level": "middle",
       "family": "high-school-atomic",
       "active": true,
-      "media": "public/media/lessons/a-bohr-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/a-bohr-middle.mp4",
+      "storyboard": "bohr-radius-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4783,10 +4783,10 @@
       "stageId": "a-bohr",
       "level": "middle",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/ha-why-05.mp4",
+      "storyboard": "bohr-radius-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
