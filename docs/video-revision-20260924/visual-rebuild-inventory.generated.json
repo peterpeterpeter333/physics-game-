@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 403,
-    "pendingNotYetActive": 117,
-    "registeredAuthoredRenders": 170,
+    "activeTeachingFilms": 404,
+    "pendingNotYetActive": 116,
+    "registeredAuthoredRenders": 172,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -887,14 +887,14 @@
     },
     {
       "id": "a-photon-middle",
-      "title": "光子のエネルギーの残りは、どこへ行く？",
+      "title": "光子のエネルギーの残りは、どこへ行く?",
       "stageId": "a-photon",
       "level": "middle",
       "family": "high-school-atomic",
       "active": true,
-      "media": "public/media/lessons/a-photon-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/a-photon-middle.mp4",
+      "storyboard": "photoelectric-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4747,10 +4747,10 @@
       "stageId": "a-photon",
       "level": "middle",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/ha-why-02.mp4",
+      "storyboard": "photoelectric-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
