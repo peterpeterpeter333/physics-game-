@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 383,
     "pendingNotYetActive": 137,
-    "registeredAuthoredRenders": 124,
+    "registeredAuthoredRenders": 126,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -623,14 +623,14 @@
     },
     {
       "id": "w-light-intro",
-      "title": "水に入る光は、なぜ向きを変える？",
+      "title": "水に入る光は、なぜ向きを変える?",
       "stageId": "w-light",
       "level": "intro",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-light-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-light-intro.mp4",
+      "storyboard": "light-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3336,9 +3336,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-refraction.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-refraction.mp4",
+      "storyboard": "light-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
