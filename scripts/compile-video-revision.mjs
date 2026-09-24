@@ -24,6 +24,7 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applyCoulombField} from '../docs/video-revision-20260924/coulomb-field.mjs';
 import {applyElectricFieldIntro} from '../docs/video-revision-20260924/electric-field-intro.mjs';
 import {applyFaradayLenz} from '../docs/video-revision-20260924/faraday-lenz.mjs';
 import {applyMagneticFlux} from '../docs/video-revision-20260924/magnetic-flux.mjs';
@@ -261,6 +262,7 @@ applyMagneticFoundations(plan);
 applyMagneticFlux(plan);
 applyFaradayLenz(plan);
 applyElectricFieldIntro(plan);
+applyCoulombField(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));

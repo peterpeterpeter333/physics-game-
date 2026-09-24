@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 397,
-    "pendingNotYetActive": 123,
-    "registeredAuthoredRenders": 158,
+    "activeTeachingFilms": 398,
+    "pendingNotYetActive": 122,
+    "registeredAuthoredRenders": 160,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -815,14 +815,14 @@
     },
     {
       "id": "e-field-middle",
-      "title": "距離を二倍にすると、電気力はどうなる？",
+      "title": "距離を二倍にすると、電気力はどうなる?",
       "stageId": "e-field",
       "level": "middle",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-field-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-field-middle.mp4",
+      "storyboard": "coulomb-field-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4670,23 +4670,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "he-why-09",
       "title": "なぜ、距離の二乗なの?",
       "stageId": "e-field",
       "level": "middle",
       "family": "high-school-em",
+      "active": true,
+      "media": "public/media/inserts/he-why-09.mp4",
+      "storyboard": "coulomb-field-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
