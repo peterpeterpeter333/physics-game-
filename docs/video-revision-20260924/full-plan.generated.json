@@ -3392,7 +3392,7 @@
             "formula": [],
             "operation": "地球 M ≫ 衛星 m ／ 空気抵抗・他天体の影響を無視",
             "diagram": "gravity",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "地球と衛星を引き合わせる万有引力は、二つの質量に比例し、中心間距離の二乗に反比例します。",
@@ -3416,7 +3416,7 @@
             ],
             "operation": "r［m］：中心間距離　M・m［kg］：質量",
             "diagram": "gravity",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "衛星に働く万有引力が円運動に必要な力なので、中級で求めた力の式と等しく置きます。",
@@ -3566,7 +3566,7 @@
             ],
             "operation": "T［s］：一周の時間 ／ 時間 = 道のり ÷ 速さ",
             "diagram": "circumference",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "先ほど求めた速さの二乗を使いたいので、周期の式の両辺を二乗します。",
@@ -37402,7 +37402,7 @@
             "formula": [],
             "operation": "地面から見る・水平な台・摩擦なし",
             "diagram": "orbit",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "青い矢印は球の速度で、矢印の長さが速さ、矢印の向きが進む向きです。",
@@ -37412,7 +37412,7 @@
             ],
             "operation": "青：速度（接線方向）",
             "diagram": "orbit",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "球の速さは一定ですが、球の速度の向きは変わり続けます。",
@@ -37422,7 +37422,7 @@
             ],
             "operation": "長さは同じ・向きは変わる",
             "diagram": "orbit",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "加速度は、速度が変わる割合で、速さだけでなく向きの変化も表します。",
@@ -37472,7 +37472,7 @@
             ],
             "operation": "摩擦のない水平な台を、真上から見る",
             "diagram": "release",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "ひもは球を中心へ引くので、球の進む向きが変わり続けます。",
@@ -37484,7 +37484,7 @@
             ],
             "operation": "赤：球に働く中心向きの力",
             "diagram": "orbit",
-            "display": "equation"
+            "display": "diagram"
           }
         ],
         "utterances": [
@@ -37532,7 +37532,7 @@
             ],
             "operation": "この例では、張力が向心力の役割をする",
             "diagram": "orbit",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "次の中級では、速度の変化から加速度を求め、必要な力の大きさまで計算します。",
@@ -37545,7 +37545,7 @@
             ],
             "operation": "次へ：向きの変化 → 加速度 → 力",
             "diagram": "orbit",
-            "display": "equation"
+            "display": "diagram"
           }
         ],
         "utterances": [
@@ -45871,7 +45871,7 @@
             ],
             "operation": "長さ6を、長さ1.5ずつに区切る",
             "diagram": "division",
-            "display": "equation"
+            "display": "diagram"
           },
           {
             "subtitle": "割られる数と割る数に同じ二を掛けても比は変わらないので、十二割る三、つまり四になります。",

@@ -4,8 +4,17 @@ import {circularPilotIds} from '../docs/video-revision-20260924/circular-pilot.m
 import {circularPilotFrame} from './circular-pilot-visuals.mjs';
 const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));
 let frames=0;
+// Independent editorial expectation: a valid frame is not enough if it hides
+// the object that the narration is describing. Cover every cue, not just new ones.
+const expectedFocus={
+ 'm-circular-intro':['DDDD','DD','FDD'],
+ 'm-circular-middle':['DDDDD','DDDDDF','FFFF','DDFFFF','DDD','FFFD'],
+ 'm-circular-advanced':['DFDF','FFFFD','DFF','FFF','DDF'],
+ 'hm-why-18':['DDD'],'hm-why-19':['FFFD'],'hm-why-20':['DFFF']
+};
 for(const id of circularPilotIds){
  const c=structuredClone(plan.find(c=>c.id===id));assert.ok(c);let start=0;
+ assert.deepEqual(c.scenes.map(s=>s.cues.map(q=>q.display==='diagram'?'D':q.display==='equation'?'F':'?').join('')),expectedFocus[id],`Narration-to-visual contract: ${id}`);
  for(const s of c.scenes){
   assert.equal(s.cues.length,s.utterances.length);
   assert.equal(s.narration,s.utterances.map(u=>u.subtitle).join(''));
@@ -18,7 +27,11 @@ for(const id of circularPilotIds){
    const svg=circularPilotFrame(c,s,cap.start+p*5);assert.ok(svg);
    assert.ok(!/NaN|undefined|Infinity|data-mjx-error|data-mml-node="merror"/.test(svg));
    assert.equal((svg.match(/data-presentation=/g)??[]).length,1,'Exactly one visual focus per frame');
-   if(svg.includes('data-presentation="diagram"'))assert.ok(!svg.includes('data-mml-node'),'No formula panel on geometry frames');
+   if(svg.includes('data-presentation="diagram"')){
+    assert.ok(!svg.includes('data-mml-node'),'No formula panel on geometry frames');
+    const body=svg.split('data-presentation="diagram"')[1].split('</svg>')[0];
+    assert.match(body,/<(?:circle|path|line|rect)\b/,'Diagram must contain geometry, not only labels');
+   }
    assert.ok(svg.includes(cap.text.slice(0,8)));sampled.push(svg);frames++;
   }
   assert.notEqual(sampled[0],sampled[3],'Every spoken cue has a time-dependent animation');

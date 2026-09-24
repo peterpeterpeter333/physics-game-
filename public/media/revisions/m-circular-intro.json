@@ -18,7 +18,7 @@
           "formula": [],
           "operation": "地面から見る・水平な台・摩擦なし",
           "diagram": "orbit",
-          "display": "equation"
+          "display": "diagram"
         },
         {
           "subtitle": "青い矢印は球の速度で、矢印の長さが速さ、矢印の向きが進む向きです。",
@@ -28,7 +28,7 @@
           ],
           "operation": "青：速度（接線方向）",
           "diagram": "orbit",
-          "display": "equation"
+          "display": "diagram"
         },
         {
           "subtitle": "球の速さは一定ですが、球の速度の向きは変わり続けます。",
@@ -38,7 +38,7 @@
           ],
           "operation": "長さは同じ・向きは変わる",
           "diagram": "orbit",
-          "display": "equation"
+          "display": "diagram"
         },
         {
           "subtitle": "加速度は、速度が変わる割合で、速さだけでなく向きの変化も表します。",
@@ -112,7 +112,7 @@
           ],
           "operation": "摩擦のない水平な台を、真上から見る",
           "diagram": "release",
-          "display": "equation"
+          "display": "diagram"
         },
         {
           "subtitle": "ひもは球を中心へ引くので、球の進む向きが変わり続けます。",
@@ -124,7 +124,7 @@
           ],
           "operation": "赤：球に働く中心向きの力",
           "diagram": "orbit",
-          "display": "equation"
+          "display": "diagram"
         }
       ],
       "utterances": [
@@ -186,7 +186,7 @@
           ],
           "operation": "この例では、張力が向心力の役割をする",
           "diagram": "orbit",
-          "display": "equation"
+          "display": "diagram"
         },
         {
           "subtitle": "次の中級では、速度の変化から加速度を求め、必要な力の大きさまで計算します。",
@@ -199,7 +199,7 @@
           ],
           "operation": "次へ：向きの変化 → 加速度 → 力",
           "diagram": "orbit",
-          "display": "equation"
+          "display": "diagram"
         }
       ],
       "utterances": [
@@ -246,7 +246,7 @@
   ],
   "duration": 48.42333333333334,
   "mediaDirectory": "revisions",
-  "renderKey": "55d3d266b37dab9b56e9f027c615d69d5e88839ecb3aa2a8f06b0cd8c45768eb",
+  "renderKey": "ac6c2c1c54ec0951643b6ca8c9d4032e38063999d1f8805b8b1291456952d0ea",
   "fluencyRepairVersion": "20260924-fluent-v1",
   "fluencyRepair": {
     "method": "verified-silence-only; identical A/V frame cuts",

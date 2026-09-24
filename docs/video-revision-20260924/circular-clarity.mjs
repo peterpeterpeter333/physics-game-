@@ -74,12 +74,17 @@ export function improveCircularClips(clips,scene,cue){
  double.cues.push(d('同じ円を二倍の速さで回すには、中心へ引く力を四倍にする必要があります。','おなじえんをにばいのはやさでまわすには、ちゅうしんへひくちからをよんばいにするひつようがあります。','double','同じ半径・同じ質量で比較'));
  // Existing cues retain their previous single-focus presentation.
  const defaults={'m-circular-intro':['DDD','DD','FDD'],'m-circular-advanced':['DFDF','FFFF','DFF','FFF','DF'],'hm-why-19':['FFF'],'hm-why-20':['DFFF']};
- for(const c of Object.values(clips))for(const [i,s]of c.scenes.entries()){
-  for(const [j,q]of s.cues.entries())q.display??=defaults[c.id]?.[i]?.[j]==='D'?'diagram':'equation';
+ // These cues moved when the new conclusion was prepended.
+ advanced.scenes[4].cues[1].display='diagram';
+ advanced.scenes[4].cues[2].display='equation';
+ for(const [id,c] of Object.entries(clips))for(const [i,s]of c.scenes.entries()){
+  for(const [j,q]of s.cues.entries()){
+   if(q.display)continue;
+   const focus=defaults[id]?.[i]?.[j];
+   if(focus!=='D'&&focus!=='F')throw Error(`Missing visual focus: ${id}/${i}/${j}`);
+   q.display=focus==='D'?'diagram':'equation';
+  }
   s.utterances=s.cues.map(({subtitle,reading})=>({subtitle,reading}));
   s.narration=s.cues.map(q=>q.subtitle).join('');
  }
- // Inserting a new conclusion shifts the old cues, not their intended focus.
- advanced.scenes[4].cues[1].display='diagram';
- advanced.scenes[4].cues[2].display='equation';
 }
