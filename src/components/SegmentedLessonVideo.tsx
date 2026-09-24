@@ -20,7 +20,7 @@ export function SegmentedLessonVideo({main,start=0,end=main.duration,onError}:{m
   frame=requestAnimationFrame(check);return()=>cancelAnimationFrame(frame);
  },[start,end,clipped]);
  return <>
-  <video src={`${base}.mp4${revision}`} ref={player} controls={!clipped} playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${main.title}の音声・字幕付き動画`}
+  <video src={`${base}.mp4${revision}`} ref={player} controls={!clipped} playsInline preload="metadata" poster={start===0?`${base}.jpg${revision}`:undefined} aria-label={`${main.title}の音声・字幕付き動画`}
    onError={onError}
    onLoadedMetadata={event=>{event.currentTarget.currentTime=start;setTime(start);setReady(true);}}
    onPlay={()=>{setPlaying(true);release.current?.();release.current=claimNarration(()=>player.current?.pause());}}

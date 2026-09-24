@@ -71,7 +71,7 @@ for(const [i,entry] of plan.entries()){
  const hash=createHash('sha256').update(JSON.stringify(clip));
  // Mid-sentence samples alone cannot detect a changed transition occurring
  // near the start of speech. Include the pilot animator's actual source.
- if(clip.visualPilot)hash.update(readFileSync(new URL('./circular-pilot-visuals.mjs',import.meta.url)));
+ if(clip.visualPilot){hash.update(readFileSync(new URL('./circular-pilot-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./circular-clarity-visuals.mjs',import.meta.url)));}
  for(const s of clip.scenes)for(const cap of s.captions)hash.update(frame(clip,s,(cap.start+cap.end)/2));
  clip.renderKey=hash.digest('hex');
  if(process.env.FILM_STORYBOARD){

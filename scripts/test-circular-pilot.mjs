@@ -40,3 +40,22 @@ for(const needed of ['÷ m','× r','2乗','逆数','r² × r'])assert.ok(JSON.st
 const routes=JSON.parse(readFileSync('src/content/prerequisite-routes.generated.json'));
 for(const l of ['intro','middle','advanced'])assert.deepEqual(routes[`m-circular-${l}`],{required:[],review:[]});
 console.log(`PASS: six circular/gravity films, ${frames} cue frames, readings, algebra, geometry, and scoped prerequisite routing`);
+const middle=plan.find(c=>c.id==='m-circular-middle'),intro=plan.find(c=>c.id==='m-circular-intro');
+const spoken=c=>c.scenes.map(s=>s.narration).join('');
+assert.ok(!spoken(middle).includes('右へ平行移動'),'Narration must match upper/lower layout');
+for(const phrase of ['上の図','下の図','速さの差ではない','一秒あたり','球が実際に進んだ道のり','近づく先の値を極限','瞬間の加速度は中心向き'])assert.ok(spoken(middle).includes(phrase),phrase);
+assert.ok(spoken(intro).includes('速さだけでなく向きの変化'));
+assert.ok(spoken(advanced).includes('重い衛星も軽い衛星も'));
+assert.ok(spoken(advanced).includes('衛星の質量は約分で消えますが、地球の質量は残ります'));
+const kinds=middle.scenes.flatMap(s=>s.cues.map(q=>q.diagram));
+for(const kind of ['velocity-add','right-angle','similarity','correspondence','arc-chord','limit','direction'])assert.ok(kinds.includes(kind),kind);
+assert.deepEqual(middle.navigationBreaks,[2,4]);
+assert.deepEqual(advanced.navigationBreaks,[2,3]);
+// The average velocity-change arrow approaches the inward direction as dt shrinks.
+let previous=Infinity;
+for(const h of [1,.1,.01]){
+ const dv=[-Math.sin(h),1-Math.cos(h)];
+ const angle=Math.atan2(dv[1],-dv[0]);assert.ok(angle<previous);previous=angle;
+ assert.ok(Math.abs(angle-h/2)<1e-12);
+}
+console.log('PASS: all ten clarity points mapped to narration, geometry, interpretation, and manual breaks');

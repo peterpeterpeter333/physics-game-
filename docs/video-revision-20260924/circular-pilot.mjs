@@ -1,4 +1,5 @@
 // Original, sentence-synchronised storyboard. Never rewrite the supplied manuscripts.
+import {improveCircularClips} from './circular-clarity.mjs';
 const cue=(subtitle,reading,formula,operation,diagram='orbit')=>({subtitle,reading,formula,operation,diagram});
 const scene=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading})=>({subtitle,reading})),narration:cues.map(c=>c.subtitle).join(''),equation:'',symbols:'',visual:'circular-algebra-pilot'});
 const clips={
@@ -67,6 +68,7 @@ const clips={
   cue('六かける二を三で割る式は、六に三分の二を掛ける式と同じです。','ろくかけるにをさんでわるしきは、ろくにさんぶんのにをかけるしきとおなじです。',['6','\\div','\\frac{3}{2}','=','6','\\times','\\frac{2}{3}'],'分数をひっくり返したものが「逆数」','division'),
   cue('同じ理由で、ジー大文字エム割るアールで割る計算は、アール割るジー大文字エムを掛ける計算に直せます。','おなじりゆうで、ジーおおもじエムわるアールでわるけいさんは、アールわるジーおおもじエムをかけるけいさんになおせます。',['\\div','\\frac{GM}{r}','\\quad\\longrightarrow\\quad','\\times','\\frac{r}{GM}'],'本編へ戻る：分母にあった r が分子へ','division'))]}
 };
+improveCircularClips(clips,scene,cue);
 export const circularPilotIds=Object.keys(clips);
 export function applyCircularPilot(plan,routes){
  for(const [id,edit]of Object.entries(clips)){
@@ -78,6 +80,6 @@ export function applyCircularPilot(plan,routes){
  // unrelated shared prerequisite containing the old unexplained derivation.
  for(const level of ['intro','middle','advanced'])routes.prerequisites[`m-circular-${level}`]={required:[],review:[]};
  routes.inserts['m-circular-intro']=[{afterScene:2,inserts:['hm-why-18']}];
- routes.inserts['m-circular-middle']=[{afterScene:4,inserts:['hm-why-19']}];
+ routes.inserts['m-circular-middle']=[{afterScene:2,inserts:[]},{afterScene:4,inserts:[]},{afterScene:6,inserts:['hm-why-19']}];
  routes.inserts['m-circular-advanced']=[{afterScene:3,inserts:['hm-why-20']}];
 }

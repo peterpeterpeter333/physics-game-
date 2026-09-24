@@ -20,7 +20,8 @@
             "\\frac{m(2v)^2}{r}"
           ],
           "operation": "半径 r・質量 m は固定",
-          "diagram": "double"
+          "diagram": "double",
+          "display": "equation"
         },
         {
           "subtitle": "二ブイの二乗は、二ブイかける二ブイなので、四ブイ二乗です。",
@@ -33,7 +34,8 @@
             "4v^2"
           ],
           "operation": "2もvも、それぞれ2回掛ける",
-          "diagram": "double"
+          "diagram": "double",
+          "display": "equation"
         },
         {
           "subtitle": "四を前に出すと元の力の式が残るので、必要な力は四倍です。",
@@ -46,7 +48,16 @@
             "=4F_{\\text{元}}"
           ],
           "operation": "矢印の長さ：速さ2倍・力4倍",
-          "diagram": "double"
+          "diagram": "double",
+          "display": "equation"
+        },
+        {
+          "subtitle": "同じ円を二倍の速さで回すには、中心へ引く力を四倍にする必要があります。",
+          "reading": "おなじえんをにばいのはやさでまわすには、ちゅうしんへひくちからをよんばいにするひつようがあります。",
+          "formula": [],
+          "operation": "同じ半径・同じ質量で比較",
+          "diagram": "double",
+          "display": "diagram"
         }
       ],
       "utterances": [
@@ -61,9 +72,13 @@
         {
           "subtitle": "四を前に出すと元の力の式が残るので、必要な力は四倍です。",
           "reading": "よんをまえにだすともとのちからのしきがのこるので、ひつようなちからはよんばいです。"
+        },
+        {
+          "subtitle": "同じ円を二倍の速さで回すには、中心へ引く力を四倍にする必要があります。",
+          "reading": "おなじえんをにばいのはやさでまわすには、ちゅうしんへひくちからをよんばいにするひつようがあります。"
         }
       ],
-      "narration": "半径と質量を変えずに、速さだけを二倍にして、力の式のブイを二ブイに置き換えます。二ブイの二乗は、二ブイかける二ブイなので、四ブイ二乗です。四を前に出すと元の力の式が残るので、必要な力は四倍です。",
+      "narration": "半径と質量を変えずに、速さだけを二倍にして、力の式のブイを二ブイに置き換えます。二ブイの二乗は、二ブイかける二ブイなので、四ブイ二乗です。四を前に出すと元の力の式が残るので、必要な力は四倍です。同じ円を二倍の速さで回すには、中心へ引く力を四倍にする必要があります。",
       "equation": "",
       "symbols": "",
       "visual": "circular-algebra-pilot",
@@ -71,7 +86,7 @@
       "sceneId": "hm-why-19-s1",
       "mode": "thorough",
       "start": 0,
-      "end": 15.056666666666667,
+      "end": 20.39,
       "captions": [
         {
           "start": 0,
@@ -87,6 +102,11 @@
           "start": 9.717333333333332,
           "end": 14.466666666666665,
           "text": "四を前に出すと元の力の式が残るので、必要な力は四倍です。"
+        },
+        {
+          "start": 14.506666666666666,
+          "end": 19.8,
+          "text": "同じ円を二倍の速さで回すには、中心へ引く力を四倍にする必要があります。"
         }
       ]
     }
@@ -106,7 +126,7 @@
   "fluencyVersion": "20260924-fluent-v1",
   "readingMode": "furigana",
   "spacingVersion": "20260924-furigana-spacing-v2",
-  "duration": 15.056666666666667,
+  "duration": 20.39,
   "animationFPS": 30,
-  "renderKey": "2ffb3169bae00aa0cba4d13247c64934a21e97a4d8bcfcaa78d8755f248af033"
+  "renderKey": "928377b23f3b69fd81fce9de9734293c17632ff26b91e4388880cdeeda205c93"
 }

@@ -9,7 +9,9 @@ const movies=[...read('em-video-catalog'),...read('lesson-video-catalog'),...rea
 let count=0;
 for(const m of movies){
  const quick=manualVideoPlaylist([m],'quick',routes,inserts),deep=manualVideoPlaylist([m],'thorough',routes,inserts);
- assert.equal(quick.length,1);assert.equal(quick[0].id,m.id);
+ assert.equal(quick.length,(m.navigationBreaks?.length??0)+1);assert.equal(quick[0].id,m.id);
+ assert.ok(quick.every(p=>p.media.id===m.id),'Quick mode excludes supplements but retains authored chapter breaks');
+ assert.ok(Math.abs(quick.reduce((sum,p)=>sum+p.end-p.start,0)-m.duration)<1e-6);
  assert.equal(new Set(deep.map(p=>p.id)).size,deep.length);
  const main=deep.filter(p=>p.media.id===m.id);
  assert.equal(main[0].id,m.id,'Old saved IDs still select the main video');

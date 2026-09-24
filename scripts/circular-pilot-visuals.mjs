@@ -1,5 +1,6 @@
 import {text,line,circle,arrow,path,C,clamp,esc,rect} from './all-film-visuals.mjs';
 import {texBox} from './revision-tex.mjs';
+import {clarityDiagram} from './circular-clarity-visuals.mjs';
 const smooth=p=>{p=clamp(p);return p*p*(3-2*p);};
 const mix=(a,b,p)=>a+(b-a)*p;
 const ring=(x,y,r,color=C.dim)=>`<circle cx="${x}" cy="${y}" r="${r}" stroke="${color}" stroke-width="2" fill="none"/>`;
@@ -60,7 +61,7 @@ function orbit(t,kind,radialLabel='F'){
  const gravity=['gravity','circumference','compare'].includes(kind);
  let s=ring(cx,cy,R)+circle(cx,cy,gravity?36:7,gravity?'#315c9d':C.dim)+line(cx,cy,x,y,C.gold,2,gravity?'6 5':'')+text('r',cx+R/2*Math.cos(theta)+20*Math.sin(theta),cy-R/2*Math.sin(theta)+20*Math.cos(theta),24,C.gold)+circle(x,y,11,C.purple)+arrow(x,y,x-74*Math.sin(theta),y-74*Math.cos(theta),C.cyan,'v')+arrow(x,y,x-74*Math.cos(theta),y+74*Math.sin(theta),C.red);
  s+=text(`${radialLabel}：中心向きの${radialLabel==='a'?'加速度':'力'}`,55,kind==='circumference'?600:560,24,C.red);
- s+=text(gravity?'地球 M':'固定した中心',80,155,25,gravity?C.red:C.ink)+text(gravity?'衛星 m':'球 m',340,510,25,C.purple);
+ s+=text(gravity?'地球 M':kind==='reaction'?'ひもを持つ手':'固定した中心',80,155,25,gravity?C.red:C.ink)+text(gravity?'衛星 m':'球 m',340,510,25,C.purple);
  if(kind==='reaction')s+=arrow(cx,cy,cx+70*Math.cos(theta),cy-70*Math.sin(theta),C.purple,'手への力');
  if(kind==='circumference'){
   const p=(t%10)/10;
@@ -106,7 +107,7 @@ const focus={
  'm-circular-advanced':['DFDF','FFFF','DFF','FFF','DF'],
  'hm-why-18':['DD'],'hm-why-19':['FFF'],'hm-why-20':['DFFF']
 };
-export function circularFocus(c,s,k){const f=focus[c.id]?.[s.index]?.[k];if(!f)throw Error(`Missing visual focus ${c.id}/${s.index}/${k}`);return f==='D'?'diagram':'equation';}
+export function circularFocus(c,s,k){if(s.cues[k].display)return s.cues[k].display;const f=focus[c.id]?.[s.index]?.[k];if(!f)throw Error(`Missing visual focus ${c.id}/${s.index}/${k}`);return f==='D'?'diagram':'equation';}
 export function circularPilotFrame(c,s,t){
  if(c.visualPilot!=='circular-algebra-v1')return null;
  const k=Math.max(0,s.captions.findLastIndex(cap=>cap.start<=t)),cap=s.captions[k],cue=s.cues[k];
@@ -114,12 +115,14 @@ export function circularPilotFrame(c,s,t){
  const prior=k?s.cues[k-1]:c.scenes[s.index-1]?.cues.at(-1);
  const kind=cue.diagram;
  const geometryPhase=kind==='limit'?clamp((t-s.start)/(s.captions[0].end-s.start)):s.index===0?clamp((t-s.start)/Math.max(1,s.captions[1]?.end-s.start)):1;
- const diagram=['triangles','limit'].includes(kind)?triangles(t-s.start,kind,geometryPhase):kind==='compare'||kind==='double'?compare(t,kind==='double'):kind==='division'?division(t-s.start):orbit(t,kind,cue.formula[0]==='a'?'a':'F');
+ const custom=clarityDiagram(kind,phase,k,t);
+ const diagram=kind==='compare'||kind==='double'?compare(t,kind==='double'):kind==='division'?division(t-s.start):orbit(t,kind,kind==='acceleration'?'a':'F');
  const captions=wrap(cap.text,43);if(captions.length>3)throw Error(`Pilot caption overflow ${c.id}/${s.index}/${k}`);
  const mode=circularFocus(c,s,k);
  const ops=wrap(cue.operation,45);if(ops.length>2)throw Error('Pilot operation overflow');
- const content=mode==='diagram'?`<svg data-presentation="diagram" x="150" y="110" width="980" height="510" viewBox="0 90 525 525">${diagram}</svg>`:
- `<g data-presentation="equation">${ops.map((v,i)=>text(v,50,130+i*30,25,C.gold)).join('')}<g transform="translate(-735 -65) scale(1.55)">${equation(prior?.formula??[],cue.formula,phase)}</g></g>`;
+ const contextNote=c.id==='m-circular-intro'&&(s.index===0&&k===0||kind==='release')?text('摩擦のない水平な台を真上から見ています',50,114,23,C.gold):'';
+ const content=mode==='diagram'?`${contextNote}<svg data-presentation="diagram" x="40" y="125" width="1200" height="485" viewBox="${custom?'0 0 1180 500':'0 90 525 525'}">${custom??diagram}</svg>`:
+ `<g data-presentation="equation">${ops.map((v,i)=>text(v,50,130+i*30,25,C.gold)).join('')}<g transform="translate(-735 -65) scale(1.55)">${equation(cue.previousFormula??prior?.formula??[],cue.formula,phase)}</g></g>`;
  const title=mode==='diagram'&&c.id==='m-circular-middle'?'円運動の加速度を求める':c.title;
  return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${text(title,38,40,29)}${text(s.heading,38,80,23,C.dim)}${content}${line(35,626,1245,626,'#28364e')}${captions.map((v,i)=>text(v,40,659+i*29,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',38,745,15,C.dim)}${text(`${s.index+1} / ${c.scenes.length}`,1165,745,18,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
 }
