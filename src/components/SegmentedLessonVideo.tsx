@@ -16,7 +16,7 @@ export function SegmentedLessonVideo({main,start=0,end=main.duration,onError}:{m
  useEffect(()=>{
   const video=player.current;if(!video||!clipped)return;
   let frame=0;
-  const check=()=>{if(video.currentTime>=end){video.pause();if(video.currentTime>end)video.currentTime=end;}frame=requestAnimationFrame(check);};
+  const check=()=>{if(!video.paused&&video.currentTime>=end){video.pause();}frame=requestAnimationFrame(check);};
   frame=requestAnimationFrame(check);return()=>cancelAnimationFrame(frame);
  },[start,end,clipped]);
  return <>
@@ -25,7 +25,7 @@ export function SegmentedLessonVideo({main,start=0,end=main.duration,onError}:{m
    onLoadedMetadata={event=>{event.currentTarget.currentTime=start;setTime(start);setReady(true);}}
    onPlay={()=>{setPlaying(true);release.current?.();release.current=claimNarration(()=>player.current?.pause());}}
    onPause={()=>setPlaying(false)}
-   onSeeking={event=>{const v=event.currentTarget;if(clipped&&(v.currentTime<start||v.currentTime>end))v.currentTime=Math.max(start,Math.min(end,v.currentTime));}}
+   onSeeking={event=>{const v=event.currentTarget;if(clipped&&(v.currentTime<start-.05||v.currentTime>end+.05))v.currentTime=Math.max(start,Math.min(end,v.currentTime));}}
    onTimeUpdate={event=>{const v=event.currentTarget;setTime(Math.max(start,Math.min(end,v.currentTime)));if(clipped&&v.currentTime>=end)v.pause();}}
    onEnded={()=>setPlaying(false)}/>
   {clipped&&<div className="video-clip-controls">
