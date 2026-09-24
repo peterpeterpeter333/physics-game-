@@ -28,6 +28,7 @@ import {projectileFoundationFrame} from './projectile-foundation-visuals.mjs';
 import {projectileMiddleFrame} from './projectile-middle-visuals.mjs';
 import {additionTheoremFrame} from './addition-theorem-visuals.mjs';
 import {projectileAdvancedFrame} from './projectile-advanced-visuals.mjs';
+import {forceFrame} from './force-visuals.mjs';
 const cache=process.env.EM_FILM_CACHE??'/private/tmp/physics-all-films',out=process.env.FILM_OUTPUT??'public/media/lessons';
 mkdirSync(out,{recursive:true});
 const b=await build({entryPoints:['scripts/all-film-source.tsx'],bundle:true,write:false,platform:'node',format:'cjs',packages:'external',loader:{'.css':'empty'}});
@@ -40,7 +41,7 @@ const defaultFPS=12;
 export function wrap(s,max){const rows=[];let line='',width=0;for(const ch of s){let w=/[\u0020-\u007e]/.test(ch)?.58:1;if(width+w>max&&!/[。、）」]/.test(ch)){rows.push(line);line='';width=0;}line+=ch;width+=w;}if(line)rows.push(line);return rows;}
 function formulaText(s,x,y){const parts=s.split(/(_[A-Za-z0-9])/g);return `<text x="${x}" y="${y}" font-size="29" fill="${C.green}">${parts.map(part=>part.startsWith('_')?`<tspan baseline-shift="sub" font-size="20">${esc(part.slice(1))}</tspan>`:esc(part)).join('')}</text>`;}
 function frame(c,s,t){
- const pilot=projectileAdvancedFrame(c,s,t)??additionTheoremFrame(c,s,t)??projectileMiddleFrame(c,s,t)??projectileFoundationFrame(c,s,t)??freefallFrame(c,s,t)??uniformContinuationFrame(c,s,t)??uniformAccelerationFrame(c,s,t)??motionInsertFrame(c,s,t)??motionFoundationFrame(c,s,t)??circularPilotFrame(c,s,t);if(pilot)return pilot;
+ const pilot=forceFrame(c,s,t)??projectileAdvancedFrame(c,s,t)??additionTheoremFrame(c,s,t)??projectileMiddleFrame(c,s,t)??projectileFoundationFrame(c,s,t)??freefallFrame(c,s,t)??uniformContinuationFrame(c,s,t)??uniformAccelerationFrame(c,s,t)??motionInsertFrame(c,s,t)??motionFoundationFrame(c,s,t)??circularPilotFrame(c,s,t);if(pilot)return pilot;
  if(c.visualPilot)throw Error(`Unknown authored visual renderer: ${c.visualPilot}`);
  const local=Math.max(0,t-s.start),p=Math.min(1,local/Math.max(1,s.end-s.start-1.2));
  // The two first-law examples follow the spoken sentence, not an arbitrary
@@ -90,6 +91,7 @@ for(const [i,entry] of plan.entries()){
  if(clip.visualPilot==='projectile-middle-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./projectile-middle-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='addition-theorem-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./addition-theorem-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='projectile-advanced-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./projectile-advanced-visuals.mjs',import.meta.url)));}
+ if(clip.visualPilot==='force-storyboards-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./force-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='motion-inserts-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./motion-insert-visuals.mjs',import.meta.url)));}
  for(const s of clip.scenes)for(const cap of s.captions)hash.update(frame(clip,s,(cap.start+cap.end)/2));
  clip.renderKey=hash.digest('hex');

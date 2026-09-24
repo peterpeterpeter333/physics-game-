@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 367,
-    "pendingNotYetActive": 153,
-    "registeredAuthoredRenders": 36,
+    "activeTeachingFilms": 368,
+    "pendingNotYetActive": 152,
+    "registeredAuthoredRenders": 42,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -191,38 +191,38 @@
     },
     {
       "id": "m-force-intro",
-      "title": "物体が動いているなら、進む向きの力が必要？",
+      "title": "物体が動いているなら、進む向きの力が必要?",
       "stageId": "m-force",
       "level": "intro",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-force-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-force-intro.mp4",
+      "storyboard": "force-storyboards-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
       "id": "m-force-middle",
-      "title": "逆向きの力が二つあるとき、加速度はどう決まる？",
+      "title": "逆向きの力が二つあるとき、加速度はどう決まる?",
       "stageId": "m-force",
       "level": "middle",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-force-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-force-middle.mp4",
+      "storyboard": "force-storyboards-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
       "id": "m-force-advanced",
-      "title": "二つの物体が押し合うとき、反作用は打ち消せる？",
+      "title": "二つの物体が押し合うとき、反作用は打ち消せる?",
       "stageId": "m-force",
       "level": "advanced",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-force-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-force-advanced.mp4",
+      "storyboard": "force-storyboards-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3036,9 +3036,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-force.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-force.mp4",
+      "storyboard": "force-storyboards-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3432,9 +3432,9 @@
       "level": "advanced",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-system.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-system.mp4",
+      "storyboard": "force-storyboards-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4310,23 +4310,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-12",
       "title": "なぜ、一台だけ見ると反作用は消えないの?",
       "stageId": "m-force",
       "level": "advanced",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-12.mp4",
+      "storyboard": "force-storyboards-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,

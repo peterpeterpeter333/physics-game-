@@ -10,6 +10,7 @@ import {applyProjectileFoundations} from '../docs/video-revision-20260924/projec
 import {applyProjectileMiddle} from '../docs/video-revision-20260924/projectile-middle.mjs';
 import {applyAdditionTheorem,applyAdditionPrerequisiteRoutes} from '../docs/video-revision-20260924/addition-theorem.mjs';
 import {applyProjectileAdvanced} from '../docs/video-revision-20260924/projectile-advanced.mjs';
+import {applyForceStoryboards} from '../docs/video-revision-20260924/force-storyboards.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -157,6 +158,7 @@ applyProjectileMiddle(plan);
 applyAdditionTheorem(plan);
 applyAdditionPrerequisiteRoutes(prerequisiteRoutes);
 applyProjectileAdvanced(plan,routes);
+applyForceStoryboards(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
