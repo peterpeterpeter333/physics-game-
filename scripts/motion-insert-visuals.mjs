@@ -33,12 +33,13 @@ function oneSecond(kind,p){
  +path(Array.from({length:81},(_,i)=>{const t=2.1*i/80;return[gx(t),gy(t*t)];}),C.cyan,4)
  +[0,1,2].map(t=>text(String(t),gx(t)-7,398,23)).join('')+circle(gx(1),gy(1),10,C.cyan)+text('1秒の位置：1 m',195,105,26,C.cyan)+line(330,120,gx(1)-8,gy(1)-12,C.dim,1);
  if(kind==='one-second-position')return out+circle(gx(2*u),gy(4*u*u),9,C.gold)+text('時刻の数値を二乗 → 位置の数値',160,485,28);
- const h=kind==='one-second-tangent'?1-.999*u:[1,.1,.01][Math.min(2,Math.floor(u*3))],s=secantSample(h);
+ const h=kind==='one-second-tangent'?1-.999*u:{'one-second-secants-1':1,'one-second-secants-01':.1,'one-second-secants-001':.01}[kind],s=secantSample(h);
  const lo=.65,hi=2;
  out+=line(gx(lo),gy(1+s.average*(lo-1)),gx(hi),gy(1+s.average*(hi-1)),C.gold,4)+circle(gx(1+h),gy((1+h)**2),8,C.gold);
- if(kind==='one-second-secants'){
+ if(kind.startsWith('one-second-secants-')){
   out+=text('時間の幅',835,65,23)+text('[s]',875,95,23)+text('平均速度',1010,65,23)+text('[m/s]',1030,95,23);
   [1,.1,.01].forEach((v,i)=>{const color=v===h?C.gold:C.dim;out+=text(String(v),855,150+65*i,30,color)+text(String(2+v),1035,150+65*i,30,color);});
+  out+=circle(gx(1+h),gy((1+h)**2),10+6*Math.sin(Math.PI*u),C.gold,.25);
   out+=text('黄色い点を青い点へ近づける',815,380,22,C.gold);
  }else out+=text('平均速度 '+s.average.toFixed(3)+' m/s',820,140,27,C.gold)+text('近づく先：2 m/s',820,215,29,C.cyan);
  return out+text('二つの点を結ぶ直線の傾きを比べる',200,485,28);
@@ -74,6 +75,10 @@ function vectors(kind,p){
  }
  let out=arrow(...O,...A,C.cyan)+arrow(...O,...B,C.gold)+arrow(...A,...B,C.red)
  +text('前の速度',740,180,27,C.cyan)+text('後の速度',390,275,27,C.gold)+text('赤：速度の変化',780,80,28,C.red)+text('二本の速度の長さが等しい → 二等辺三角形',150,450,29);
+ if(kind==='triangle-angle-labels'){
+  out+=circle(...O,35+8*u,C.gold,.2)+text('頂角：根元の角',810,350,27,C.gold)+line(800,340,O[0]+40,O[1]-15,C.gold,2);
+  out+=circle(...A,30+8*u,C.purple,.2)+text('底角：赤と青の間の角',130,65,27,C.purple)+line(410,75,A[0]-35,A[1]+5,C.purple,2);
+ }
  if(kind==='triangle-limit'){
   // Enlarge direction only: the true delta vector shrinks to zero.
   const angle=h/2,len=Math.hypot(...delta);
@@ -83,7 +88,7 @@ function vectors(kind,p){
  }
  return out;
 }
-export const motionInsertDiagramKinds=['opposite-walkers','force-changes-direction','signed-walkers','signed-displacements','rise-run','physical-slope','one-second-position','one-second-secants','one-second-tangent','equal-speed-vectors','velocity-triangle','triangle-limit','inward-not-outward','instant-inward','tangent-change','perpendicular-acceleration'];
+export const motionInsertDiagramKinds=['opposite-walkers','force-changes-direction','signed-walkers','signed-displacements','rise-run','physical-slope','one-second-position','one-second-secants-1','one-second-secants-01','one-second-secants-001','one-second-tangent','equal-speed-vectors','velocity-triangle','triangle-angle-labels','triangle-limit','inward-not-outward','instant-inward','tangent-change','perpendicular-acceleration'];
 export function motionInsertDiagram(kind,p){
  if(motionInsertDiagramKinds.slice(0,4).includes(kind))return walkers(kind,p);
  if(['rise-run','physical-slope'].includes(kind))return slope(kind,p);

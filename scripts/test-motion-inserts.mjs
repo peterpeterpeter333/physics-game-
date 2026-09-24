@@ -5,7 +5,7 @@ import {motionInsertIds,applyMotionInserts,motionInsertRoutes} from '../docs/vid
 import {motionInsertFrame,motionInsertDiagram,motionInsertDiagramKinds,secantSample,vectorSample} from './motion-insert-visuals.mjs';
 const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));
 const copy=structuredClone(plan);applyMotionInserts(copy);assert.deepEqual(copy,plan,'Idempotent preparation');
-const expected={'hm-why-01':'DDDDDFD','hm-why-02':'DFDDFFF','hm-why-03':'DFDFFFFFFFFD','hm-why-04':'DDDDDDDD'};
+const expected={'hm-why-01':'DDDDDFD','hm-why-02':'DFDDFFF','hm-why-03':'DFDDDFFFFFFFFD','hm-why-04':'DDDFDDDDDD'};
 const used=new Set();let frames=0;
 for(const id of motionInsertIds){
  const c=structuredClone(plan.find(c=>c.id===id));let t=0;
@@ -47,4 +47,8 @@ for(const h of [.85,.1,.005]){
 }
 assert.equal(Object.keys(motionInsertRoutes).length,4);
 assert.ok(plan.find(c=>c.id==='hm-why-04').scenes[0].narration.includes('有限の時間'));
+const numerical=plan.find(c=>c.id==='hm-why-03').scenes[0].cues.filter(q=>q.diagram?.startsWith('one-second-secants-'));
+assert.deepEqual(numerical.map(q=>q.diagram),['one-second-secants-1','one-second-secants-01','one-second-secants-001']);
+for(const [i,words]of ['毎秒三メートル','毎秒二・一メートル','毎秒二・〇一メートル'].entries())assert.ok(numerical[i].subtitle.includes(words));
+assert.ok(plan.find(c=>c.id==='hm-why-04').scenes[0].cues.some(q=>q.display==='equation'&&q.subtitle.includes('内角の合計')));
 console.log('PASS: four manuscript supplements, '+frames+' frames, '+used.size+' diagrams, units, algebra, inward limit, source mapping.');

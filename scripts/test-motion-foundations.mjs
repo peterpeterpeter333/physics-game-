@@ -57,4 +57,6 @@ assert.ok(accelerationMiddle.scenes.some(s=>s.utterances.some(u=>u.subtitle.incl
 const mid=plan.find(c=>c.id==='m1-acceleration-middle').scenes.map(s=>s.narration).join('');
 assert.ok(mid.includes('二つの端の記録だけでは'));
 assert.ok(mid.includes('速度が一定なら'));
+assert.ok(mid.includes('加速度が一定の正の値なら'));
+assert.ok(plan.find(c=>c.id==='m1-velocity-intro').scenes[0].narration.includes('往復にかかった時間は、合計六秒'));
 console.log(`PASS: six motion films, ${frames} cue frames, ${used.size} dedicated diagram types, readings, math, focus and manual breaks`);
