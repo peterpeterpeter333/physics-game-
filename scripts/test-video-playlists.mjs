@@ -44,7 +44,7 @@ for(const route of Object.values(routes))assert.deepEqual(route.review,route.req
 assert.equal(legacyVideoId(null,surface,prep),null);assert.equal(legacyVideoId('NaN',surface,prep),null);
 assert.equal(restoredVideoId(null,surface,surface),surface[0].id);
 const component=readFileSync('src/components/EMVideoLesson.tsx','utf8');
-assert.ok(component.includes('const [list]=useState('),'Freeze the queue until chapter/level changes');
+assert.ok(component.includes('const [assigned]=useState('),'Freeze unit assignments until chapter/level changes; mode may expose supplement pages');
 assert.ok(!/readWatchedVideos|markVideoWatched/.test(component),'Viewing history must not control video membership');
 assert.ok(component.includes('必要なときだけ復習')&&component.includes('学習に戻る')&&component.includes('btn-battle'));
 console.log(JSON.stringify({result:'PASS',courses:courses.length,stages:new Set(originals.map(c=>c.stageId)).size,oldPlacements:before,newPlacements:after,reviewable:reviewable.size,surfaceMainSeconds:surface[0].duration,checks:['direct unit assignments only','viewing-history independent','no ancestor expansion in review','legacy ID migration','main films preserved']},null,2));

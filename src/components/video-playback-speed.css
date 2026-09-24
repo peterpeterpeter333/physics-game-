@@ -1,3 +1,6 @@
 .video-playback-speed{display:flex;align-items:center;justify-content:flex-end;gap:.5rem;margin:.6rem 1rem;color:#c5d6ee;font-size:.9rem}
 .video-playback-speed select{font:inherit;color:#edf4ff;background:#132039;border:1px solid #52617c;border-radius:8px;padding:.45rem .65rem;min-height:40px}
 .video-playback-speed select:focus-visible{outline:3px solid #ffcf67;outline-offset:2px}
+.video-clip-controls{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;padding:.6rem 1rem;color:#c5d6ee}
+.video-clip-controls input{flex:1;min-width:100px;accent-color:#67d9ed}
+.video-clip-controls span{font-variant-numeric:tabular-nums;font-size:.85rem}

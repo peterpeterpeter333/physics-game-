@@ -1,66 +1,38 @@
-import {useEffect,useMemo,useRef,useState} from 'react';
+import {useEffect,useRef,useState} from 'react';
 import {claimNarration} from '../game/narration';
 import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
-import {resumeSegment,videoSegments,type InsertRoute,type TimedMovie,type VideoMode} from '../game/video-inserts';
+import type {TimedMovie} from '../game/video-inserts';
 type Media=TimedMovie&{title:string;mediaDirectory?:string;renderKey?:string};
-export function SegmentedLessonVideo({main,mode,routes,inserts,onError,onMainTime}:{main:Media;mode:VideoMode;routes:InsertRoute[];inserts:Media[];onError:()=>void;onMainTime:(time:number)=>void}){
- const [cursor,setCursor]=useState({index:0,time:0,playing:false,generation:0,mode});
- const segments=useMemo(()=>videoSegments(main,cursor.mode,routes,inserts),[main,cursor.mode,routes,inserts]);
+const clock=(s:number)=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+/** One user-selected page. Playback events can never select another video. */
+export function SegmentedLessonVideo({main,start=0,end=main.duration,onError}:{main:Media;start?:number;end?:number;onError:()=>void}){
  const player=useRef<HTMLVideoElement>(null),release=useRef<()=>void>();
- const mainClock=useRef(0),wasPlaying=useRef(false),transitioning=useRef(false);
- const mainStarted=useRef(false);
- const segment=segments[Math.min(cursor.index,segments.length-1)];
- const media=segment.insert?inserts.find(m=>m.id===segment.movieId)!:main;
- const base=`${import.meta.env.BASE_URL}media/${media.mediaDirectory??'em'}/${media.id}`;
- const revision=media.renderKey?`?v=${media.renderKey.slice(0,16)}`:'';
- function positionAndResume(){
-  const video=player.current;if(!video||video.readyState<1)return;
-  video.currentTime=Math.max(segment.start,Math.min(cursor.time,segment.end));
-  transitioning.current=false;
-  if(cursor.playing)void video.play().catch(()=>{wasPlaying.current=false;});
- }
+ const [playing,setPlaying]=useState(false),[time,setTime]=useState(start);
+ const [ready,setReady]=useState(false);
+ const clipped=start>0||end<main.duration;
+ const base=`${import.meta.env.BASE_URL}media/${main.mediaDirectory??'em'}/${main.id}`;
+ const revision=main.renderKey?`?v=${main.renderKey.slice(0,16)}`:'';
  useEffect(()=>()=>release.current?.(),[]);
- // Preserve the user's activated media element across inserts. Replacing the
- // element made Safari stop at each boundary even while the user was watching.
- // A mode change within the same MP4 does not dispatch loadedmetadata again.
- useEffect(()=>{positionAndResume();},[cursor.generation,base,revision]);
  useEffect(()=>{
-  if(cursor.mode===mode)return;
-  mainClock.current=segment.insert?segment.mainTime:(player.current?.currentTime??mainClock.current);
-  const nextSegments=videoSegments(main,mode,routes,inserts);transitioning.current=true;
-  // WebKit may report a tiny positive seek position for the first decoded frame.
-  const index=!mainStarted.current||mainClock.current<0.1?0:resumeSegment(nextSegments,mainClock.current);
-  setCursor(c=>({index,time:nextSegments[index].insert?0:mainClock.current,playing:wasPlaying.current,generation:c.generation+1,mode}));
- },[mode,cursor.mode,main,routes,inserts]);
- function advance(){
-  if(transitioning.current||cursor.index>=segments.length-1)return;
-  transitioning.current=true;const next=segments[cursor.index+1];
-  mainClock.current=next.mainTime;
-  setCursor(c=>({...c,index:c.index+1,time:next.start,playing:wasPlaying.current,generation:c.generation+1}));
- }
+  const video=player.current;if(!video||!clipped)return;
+  let frame=0;
+  const check=()=>{if(video.currentTime>=end){video.pause();if(video.currentTime>end)video.currentTime=end;}frame=requestAnimationFrame(check);};
+  frame=requestAnimationFrame(check);return()=>cancelAnimationFrame(frame);
+ },[start,end,clipped]);
  return <>
-  {segment.insert&&<p className="em-movie-insert-label">とことん学ぶ：{media.title}</p>}
-  <video src={`${base}.mp4${revision}`} data-learning-mode={cursor.mode} data-main-time={mainClock.current} data-segment-index={cursor.index} ref={player} controls playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${media.title}の音声・字幕付き動画`}
+  <video src={`${base}.mp4${revision}`} ref={player} controls={!clipped} playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${main.title}の音声・字幕付き動画`}
    onError={onError}
-   onLoadedMetadata={positionAndResume}
-   onPlay={()=>{wasPlaying.current=true;if(!segment.insert)mainStarted.current=true;release.current?.();release.current=claimNarration(()=>player.current?.pause());}}
-   onSeeking={event=>{
-    if(segment.insert||transitioning.current)return;
-    const time=event.currentTarget.currentTime;
-    if(time>.1)mainStarted.current=true;
-    // Native controls expose the entire main MP4. Seeking across a boundary
-    // (including replay after reaching the end) must update its logical segment.
-    const index=resumeSegment(segments,time);
-    if(index!==cursor.index){
-     const playing=!event.currentTarget.paused;
-     transitioning.current=true;mainClock.current=time;
-     setCursor(c=>({...c,index,time,playing,generation:c.generation+1}));
-    }
-   }}
-   onPause={()=>{if(!transitioning.current&&player.current&&!player.current.ended)wasPlaying.current=false;}}
-   onTimeUpdate={event=>{const video=event.currentTarget;if(video!==player.current||transitioning.current)return;if(!segment.insert){mainClock.current=Math.min(video.currentTime,segment.end);onMainTime(mainClock.current);}if(video.currentTime>=segment.end)advance();}}
-   onEnded={advance}>
-  </video>
+   onLoadedMetadata={event=>{event.currentTarget.currentTime=start;setTime(start);setReady(true);}}
+   onPlay={()=>{setPlaying(true);release.current?.();release.current=claimNarration(()=>player.current?.pause());}}
+   onPause={()=>setPlaying(false)}
+   onSeeking={event=>{const v=event.currentTarget;if(clipped&&(v.currentTime<start||v.currentTime>end))v.currentTime=Math.max(start,Math.min(end,v.currentTime));}}
+   onTimeUpdate={event=>{const v=event.currentTarget;setTime(Math.max(start,Math.min(end,v.currentTime)));if(clipped&&v.currentTime>=end)v.pause();}}
+   onEnded={()=>setPlaying(false)}/>
+  {clipped&&<div className="video-clip-controls">
+   <button type="button" className="btn btn-ghost" disabled={!ready} onClick={()=>{const v=player.current;if(!v)return;if(!v.paused){v.pause();return;}if(v.currentTime>=end-.05)v.currentTime=start;void v.play().catch(onError);}}>{playing?'一時停止':time>=end-.05?'もう一度再生':'再生'}</button>
+   <input type="range" aria-label="この動画の再生位置" min={0} max={end-start} step={.01} value={time-start} disabled={!ready} onChange={event=>{const v=player.current;if(v){v.currentTime=start+Number(event.target.value);setTime(v.currentTime);}}}/>
+   <span>{clock(time-start)} / {clock(end-start)}</span>
+  </div>}
   <VideoPlaybackSpeed player={player} mediaKey={base+revision}/>
  </>;
 }

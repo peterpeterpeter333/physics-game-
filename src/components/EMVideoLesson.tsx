@@ -10,6 +10,7 @@ import type {InsertRoute,VideoMode} from '../game/video-inserts';
 import {SegmentedLessonVideo} from './SegmentedLessonVideo';
 import {prerequisitePlaylist,prerequisiteReview} from '../game/prerequisite-playlist';
 import {restoredVideoId,legacyVideoId} from '../game/video-progress';
+import {manualVideoPlaylist} from '../game/manual-video-playlist';
 import {spiralLessons} from '../content/em-spiral';
 import {movedCycles} from '../content/university-curriculum';
 import './em-video-lesson.css';
@@ -40,7 +41,8 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSli
 }
 function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,original,level,mode}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void;original:Movie[];level:string;mode:VideoMode}){
  // The unit's assigned videos do not depend on completion in other units.
- const [list]=useState(()=>prerequisitePlaylist(original,prerequisiteMovies as unknown as Movie[]));
+ const [assigned]=useState(()=>prerequisitePlaylist(original,prerequisiteMovies as unknown as Movie[]));
+ const list=manualVideoPlaylist(assigned,mode,insertRoutes as Record<string,InsertRoute[]>,insertCatalog as Movie[]);
  const review=prerequisiteReview(original,prerequisiteMovies as unknown as Movie[]);
  const positionKey=`physics-quest:video-position:v3:${stage.id}:${level}`;
  const [selectedId,setSelectedId]=useState(()=>{
@@ -52,24 +54,27 @@ function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,origi
   }catch{return list[0].id;}
  });
  const [reviewId,setReviewId]=useState<string|null>(null);
- const page=Math.max(0,list.findIndex(m=>m.id===selectedId));
- const movie=review.find(m=>m.id===reviewId)??list[page];
+ const parentId=assigned.find(m=>selectedId===m.id||selectedId.startsWith(m.id+':'))?.id;
+ const selectedPage=list.findIndex(m=>m.id===selectedId);
+ const page=selectedPage>=0?selectedPage:Math.max(0,list.findIndex(m=>m.parentId===parentId));
+ const reviewing=review.find(m=>m.id===reviewId);
+ const current=list[page];
+ const movie=reviewing??current.media;
  const selectPage=(index:number)=>{if(!list[index])return;setSelectedId(list[index].id);setReviewId(null);};
  useEffect(()=>{try{localStorage.setItem(positionKey,selectedId);}catch{/* Optional resume state. */}},[positionKey,selectedId]);
  const top=useRef<HTMLDivElement>(null);
  const [failed,setFailed]=useState(false);
- const routes=(insertRoutes as Record<string,InsertRoute[]>)[movie.id]??EMPTY_ROUTES;
  useEffect(()=>{
   setFailed(false);
   // Include the difficulty selector above the player when opening or switching videos.
   const lessonTop=top.current?.closest('.video-lesson-shell')??top.current;
   lessonTop?.scrollIntoView({block:'start'});
- },[movie.id]);
+ },[movie.id,current.id,mode]);
  return <div ref={top} className="screen lesson em-movie-lesson" data-stage-id={stage.id}>
   <header className="screen-header"><button className="btn-back" aria-label="章一覧へ戻る" onClick={onExit}>←</button><h1>{stage.title}</h1></header>
   <section className="em-movie-main" aria-label="図と音声で学ぶ">
-   <h2>{movie.title}</h2>
-   <SegmentedLessonVideo key={movie.id} main={movie} mode={mode} routes={routes} inserts={insertCatalog as Movie[]} onError={()=>setFailed(true)} onMainTime={()=>{}}/>
+   <h2>{reviewing?movie.title:current.title}</h2>
+   <SegmentedLessonVideo key={reviewing?movie.id:mode+current.id} main={movie} start={reviewing?0:current.start} end={reviewing?movie.duration:current.end} onError={()=>setFailed(true)}/>
    {failed&&<div className="em-movie-error" role="alert"><p>この端末では動画を再生できませんでした。文字とスライドで読めます。</p><button className="btn btn-ghost" onClick={onReadSlides}>文字とスライドで読む</button></div>}
   </section>
   {reviewId?<button className="btn btn-ghost" onClick={()=>setReviewId(null)}>学習に戻る</button>:<>
@@ -80,4 +85,3 @@ function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,origi
   <button className="btn btn-battle em-movie-battle" onClick={()=>onComplete(!alreadyFinished)}>⚔️ {stage.enemy.name}に挑む</button>
  </div>;
 }
-const EMPTY_ROUTES:InsertRoute[]=[];
