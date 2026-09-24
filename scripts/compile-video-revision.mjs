@@ -3,6 +3,7 @@ import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {applyCircularPilot} from '../docs/video-revision-20260924/circular-pilot.mjs';
 import {applyMotionFoundations} from '../docs/video-revision-20260924/motion-foundations.mjs';
 import {applyMotionInserts} from '../docs/video-revision-20260924/motion-inserts.mjs';
+import {applyUniformAcceleration} from '../docs/video-revision-20260924/uniform-acceleration.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -142,6 +143,7 @@ const cache='/private/tmp/physics-video-full-revision';mkdirSync(cache,{recursiv
 applyCircularPilot(plan,{inserts:routes,prerequisites:prerequisiteRoutes});
 applyMotionFoundations(plan);
 applyMotionInserts(plan);
+applyUniformAcceleration(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
