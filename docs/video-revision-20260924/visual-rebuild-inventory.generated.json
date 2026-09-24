@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 375,
     "pendingNotYetActive": 145,
-    "registeredAuthoredRenders": 62,
+    "registeredAuthoredRenders": 64,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -335,14 +335,14 @@
     },
     {
       "id": "m-shm-intro",
-      "title": "ばねにつないだ物体は、なぜ中央を通り過ぎる？",
+      "title": "ばねにつないだ物体は、なぜ中央を通り過ぎる?",
       "stageId": "m-shm",
       "level": "intro",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-shm-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-shm-intro.mp4",
+      "storyboard": "shm-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3157,8 +3157,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-sin-wave.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "shm-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

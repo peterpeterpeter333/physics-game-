@@ -20,6 +20,7 @@ import {applyMomentumMiddle} from '../docs/video-revision-20260924/momentum-midd
 import {applyMomentumAdvanced} from '../docs/video-revision-20260924/momentum-advanced.mjs';
 import {applyRadianFoundations} from '../docs/video-revision-20260924/radian-foundations.mjs';
 import {applyCircularFoundations} from '../docs/video-revision-20260924/circular-foundations.mjs';
+import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundations.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -177,6 +178,7 @@ applyMomentumMiddle(plan);
 applyMomentumAdvanced(plan);
 applyRadianFoundations(plan);
 applyCircularFoundations(plan);
+applyShmFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
