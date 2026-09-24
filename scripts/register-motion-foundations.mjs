@@ -18,12 +18,13 @@ import {momentumFoundationIds} from '../docs/video-revision-20260924/momentum-fo
 import {momentumMiddleIds} from '../docs/video-revision-20260924/momentum-middle.mjs';
 import {momentumAdvancedIds} from '../docs/video-revision-20260924/momentum-advanced.mjs';
 import {radianFoundationIds} from '../docs/video-revision-20260924/radian-foundations.mjs';
+import {circularFoundationIds} from '../docs/video-revision-20260924/circular-foundations.mjs';
 const read=f=>JSON.parse(readFileSync(f));
 const plan=read('docs/video-revision-20260924/full-plan.generated.json');
 const routes=read('src/content/insert-routes.generated.json'),ready=[];
 assert.ok(process.env.FFMPEG,'Set FFMPEG');
 const ids=process.argv.length>2?process.argv.slice(2):motionFoundationIds;
-assert.ok(ids.every(id=>[...radianFoundationIds,...momentumAdvancedIds.filter(id=>!/^hm-why-/.test(id)),...momentumMiddleIds,...motionFoundationIds,...uniformAccelerationIds,...projectileMiddleIds,...[...uniformContinuationIds,...freefallIds,...projectileFoundationIds,...forceIds,...workFoundationIds,...workComponentIds,...potentialEnergyIds,...springEnergyIds,...momentumFoundationIds].filter(id=>!/^h[mp]-why-/.test(id))].includes(id)),'Only authored films can be registered');
+assert.ok(ids.every(id=>[...circularFoundationIds,...radianFoundationIds,...momentumAdvancedIds.filter(id=>!/^hm-why-/.test(id)),...momentumMiddleIds,...motionFoundationIds,...uniformAccelerationIds,...projectileMiddleIds,...[...uniformContinuationIds,...freefallIds,...projectileFoundationIds,...forceIds,...workFoundationIds,...workComponentIds,...potentialEnergyIds,...springEnergyIds,...momentumFoundationIds].filter(id=>!/^h[mp]-why-/.test(id))].includes(id)),'Only authored films can be registered');
 for(const id of ids){
  const source=plan.find(c=>c.id===id),base=`public/media/revisions/${id}`;
  for(const ext of ['mp4','jpg','json'])assert.ok(existsSync(`${base}.${ext}`));
