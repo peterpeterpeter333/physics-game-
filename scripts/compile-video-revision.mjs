@@ -11,6 +11,7 @@ import {applyProjectileMiddle} from '../docs/video-revision-20260924/projectile-
 import {applyAdditionTheorem,applyAdditionPrerequisiteRoutes} from '../docs/video-revision-20260924/addition-theorem.mjs';
 import {applyProjectileAdvanced} from '../docs/video-revision-20260924/projectile-advanced.mjs';
 import {applyForceStoryboards} from '../docs/video-revision-20260924/force-storyboards.mjs';
+import {applyWorkFoundations} from '../docs/video-revision-20260924/work-foundations.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -159,6 +160,7 @@ applyAdditionTheorem(plan);
 applyAdditionPrerequisiteRoutes(prerequisiteRoutes);
 applyProjectileAdvanced(plan,routes);
 applyForceStoryboards(plan);
+applyWorkFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));

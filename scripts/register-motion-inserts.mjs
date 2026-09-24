@@ -7,19 +7,21 @@ import {uniformContinuationIds} from '../docs/video-revision-20260924/uniform-co
 import {freefallIds} from '../docs/video-revision-20260924/freefall-storyboards.mjs';
 import {projectileFoundationIds} from '../docs/video-revision-20260924/projectile-foundations.mjs';
 import {forceIds} from '../docs/video-revision-20260924/force-storyboards.mjs';
+import {workFoundationIds} from '../docs/video-revision-20260924/work-foundations.mjs';
 const read=f=>JSON.parse(readFileSync(f));
 const root='docs/video-revision-20260924',plan=read(root+'/full-plan.generated.json');
 const mains=read('src/content/revised-video-catalog.generated.json');
 const file='src/content/insert-video-catalog.generated.json',routeFile='src/content/insert-routes.generated.json';
 const routes=read(routeFile),fullRoutes=read(root+'/full-routes.generated.json'),ready=[];
-assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force'].includes(a)),'Unknown publication scope');
+assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force','--work-foundations'].includes(a)),'Unknown publication scope');
 const uniform=process.argv.includes('--uniform');
 const freefall=process.argv.includes('--freefall');
 const projectile=process.argv.includes('--projectile-foundations');
 const force=process.argv.includes('--force');
-const motionInsertIds=(force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>id.startsWith('hm-'));
-const parents=force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
-const motionInsertRoutes=uniform||freefall||projectile||force?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
+const work=process.argv.includes('--work-foundations');
+const motionInsertIds=(work?workFoundationIds:force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>id.startsWith('hm-'));
+const parents=work?['m-energy-intro']:force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
+const motionInsertRoutes=uniform||freefall||projectile||force||work?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
 assert.ok(process.env.FFMPEG,'Set FFMPEG');
 for(const id of motionInsertIds){
  const source=plan.find(c=>c.id===id),base='public/media/inserts/'+id;

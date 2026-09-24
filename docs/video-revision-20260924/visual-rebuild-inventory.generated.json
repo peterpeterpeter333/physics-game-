@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 368,
-    "pendingNotYetActive": 152,
-    "registeredAuthoredRenders": 42,
+    "activeTeachingFilms": 369,
+    "pendingNotYetActive": 151,
+    "registeredAuthoredRenders": 45,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -227,14 +227,14 @@
     },
     {
       "id": "m-energy-intro",
-      "title": "重い荷物を持って立つだけなら、仕事はゼロ？",
+      "title": "重い荷物を持って立つだけなら、仕事はゼロ?",
       "stageId": "m-energy",
       "level": "intro",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-energy-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-energy-intro.mp4",
+      "storyboard": "work-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3084,9 +3084,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-work-energy.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-work-energy.mp4",
+      "storyboard": "work-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4322,23 +4322,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-13",
       "title": "なぜ仕事を「力かける動いた距離」と決めるの?",
       "stageId": "m-energy",
       "level": "intro",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-13.mp4",
+      "storyboard": "work-foundations-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
