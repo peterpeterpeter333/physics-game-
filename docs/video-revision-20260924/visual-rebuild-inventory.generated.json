@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 381,
-    "pendingNotYetActive": 139,
-    "registeredAuthoredRenders": 118,
+    "activeTeachingFilms": 383,
+    "pendingNotYetActive": 137,
+    "registeredAuthoredRenders": 124,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -587,38 +587,38 @@
     },
     {
       "id": "w-doppler-intro",
-      "title": "近づく救急車の音は、なぜ高く聞こえる？",
+      "title": "近づく救急車の音は、なぜ高く聞こえる?",
       "stageId": "w-doppler",
       "level": "intro",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-doppler-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-doppler-intro.mp4",
+      "storyboard": "doppler-source-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
       "id": "w-doppler-middle",
-      "title": "動く音源は、波長をどれだけ縮める？",
+      "title": "動く音源は、波長をどれだけ縮める?",
       "stageId": "w-doppler",
       "level": "middle",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-doppler-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-doppler-middle.mp4",
+      "storyboard": "doppler-source-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
       "id": "w-doppler-advanced",
-      "title": "観測者が動く場合も、波長が変わる？",
+      "title": "観測者が動く場合も、波長が変わる?",
       "stageId": "w-doppler",
       "level": "advanced",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-doppler-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-doppler-advanced.mp4",
+      "storyboard": "doppler-observer-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3324,9 +3324,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-doppler.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-doppler.mp4",
+      "storyboard": "doppler-source-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4478,27 +4478,15 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hw-why-05",
       "title": "受け取る振動数の式を、最後まで解く",
       "stageId": "w-doppler",
       "level": "middle",
       "family": "high-school-waves",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/hw-why-05.mp4",
+      "storyboard": "doppler-source-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4507,6 +4495,18 @@
       "stageId": "w-doppler",
       "level": "advanced",
       "family": "high-school-waves",
+      "active": true,
+      "media": "public/media/inserts/hw-why-06.mp4",
+      "storyboard": "doppler-observer-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
