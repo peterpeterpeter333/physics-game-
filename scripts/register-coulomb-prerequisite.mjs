@@ -6,6 +6,7 @@ const child=spawnSync(process.execPath,['scripts/register-motion-foundations.mjs
 const read=f=>JSON.parse(readFileSync(f));
 const film=read('public/media/revisions/prep-coulomb-field.json');
 assert.deepEqual(film.before,['e-field-middle']);assert.equal(film.legacyPositionExcluded,true);
+assert.equal(film.kind,'prerequisite','New prerequisite must retain the catalog type used by pronunciation audits');
 const root='src/content/',catalogFile=root+'prerequisite-video-catalog.generated.json',routesFile=root+'prerequisite-routes.generated.json';
 const catalog=read(catalogFile),routes=read(routesFile),before=structuredClone(routes);
 routes['e-field-middle']={required:['prep-coulomb-field'],review:['prep-coulomb-field']};

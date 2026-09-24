@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 399,
-    "pendingNotYetActive": 121,
-    "registeredAuthoredRenders": 161,
+    "activeTeachingFilms": 400,
+    "pendingNotYetActive": 120,
+    "registeredAuthoredRenders": 163,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -827,14 +827,14 @@
     },
     {
       "id": "e-field-advanced",
-      "title": "電場がゼロの点でも、電位はゼロとは限らない？",
+      "title": "電場がゼロの点でも、電位はゼロとは限らない?",
       "stageId": "e-field",
       "level": "advanced",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-field-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-field-advanced.mp4",
+      "storyboard": "electric-potential-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4699,10 +4699,10 @@
       "stageId": "e-field",
       "level": "advanced",
       "family": "high-school-em",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/he-why-10.mp4",
+      "storyboard": "electric-potential-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

@@ -4,7 +4,7 @@ const S=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading
 export const coulombPrerequisiteIds=['prep-coulomb-field'];
 export function applyCoulombPrerequisite(plan){
  const c=plan.find(c=>c.id==='prep-coulomb-field');if(!c)throw Error('missing prep-coulomb-field');c.manuscriptScenes??=structuredClone(c.scenes);
- Object.assign(c,{before:['e-field-middle'],legacyPositionExcluded:true,topicId:'prep-coulomb-field',stageTitle:'電場の計算の前提',visualPilot:'coulomb-prerequisite-v1',navigationBreaks:[1],scenes:[
+ Object.assign(c,{kind:'prerequisite',before:['e-field-middle'],legacyPositionExcluded:true,topicId:'prep-coulomb-field',stageTitle:'電場の計算の前提',visualPilot:'coulomb-prerequisite-v1',navigationBreaks:[1],scenes:[
  S('距離を変える比較と、試験電荷を変える比較を分ける',
  D('ここでは、電場の計算で、何を変えて比べるかを整理します。同じ二つの点電荷なら、距離を二倍にすると、電気力は四分の一になるというクーロンの法則を使います。','ここでは、でんばのけいさんで、なにをかえてくらべるかをせいりします。おなじふたつのてんでんかなら、きょりをにばいにすると、でんきりょくはよんぶんのいちになるというクーロンのほうそくをつかいます。','cprep-distance'),
  F('比例定数はケーと読みます。電荷を同じにしたまま距離を二倍にすれば、分母が四倍になるので、力は四分の一です。','ひれいていすうはケーとよみます。でんかをおなじにしたままきょりをにばいにすれば、ぶんぼがよんばいになるので、ちからはよんぶんのいちです。',['F=k\\frac{|Qq|}{r^2},\\qquad (2r)^2=4r^2'],'Q,q：電荷[C]、r：距離[m]。真空中の静止した点電荷'),
