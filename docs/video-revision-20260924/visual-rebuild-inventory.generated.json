@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 369,
-    "pendingNotYetActive": 151,
-    "registeredAuthoredRenders": 45,
+    "activeTeachingFilms": 371,
+    "pendingNotYetActive": 149,
+    "registeredAuthoredRenders": 49,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -239,14 +239,14 @@
     },
     {
       "id": "m-energy-middle",
-      "title": "斜めの力の仕事は、どの成分で計算する？",
+      "title": "斜めの力の仕事は、どの成分で計算する?",
       "stageId": "m-energy",
       "level": "middle",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-energy-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-energy-middle.mp4",
+      "storyboard": "work-components-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3060,9 +3060,9 @@
       "level": "middle",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-trig.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-trig.mp4",
+      "storyboard": "work-components-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4334,23 +4334,35 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-14",
       "title": "なぜ、縦の分の力は仕事にならないの?",
       "stageId": "m-energy",
       "level": "middle",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-14.mp4",
+      "storyboard": "work-components-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "hp-why-01",
+      "title": "サイン二乗足すコサイン二乗は、なぜいつも一?",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
+      "active": true,
+      "media": "public/media/inserts/hp-why-01.mp4",
+      "storyboard": "work-components-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
@@ -4734,18 +4746,6 @@
       "title": "保存を、数値で確かめる",
       "stageId": "prerequisite",
       "level": "advanced",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hp-why-01",
-      "title": "サイン二乗足すコサイン二乗は、なぜいつも一?",
-      "stageId": "prerequisite",
-      "level": "middle",
       "family": "prerequisites",
       "active": false,
       "media": null,
