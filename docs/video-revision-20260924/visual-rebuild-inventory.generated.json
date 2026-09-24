@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 380,
-    "pendingNotYetActive": 140,
-    "registeredAuthoredRenders": 95,
+    "activeTeachingFilms": 381,
+    "pendingNotYetActive": 139,
+    "registeredAuthoredRenders": 97,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -3289,8 +3289,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-gas-work.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "gas-work-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4466,6 +4466,18 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
+      "id": "hp-why-08",
+      "title": "途中の圧力が違うと仕事が変わることを、数値で",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
+      "active": true,
+      "media": "public/media/inserts/hp-why-08.mp4",
+      "storyboard": "gas-work-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
       "id": "prep-coulomb-field",
       "title": "クーロンの法則から電場を求める",
       "stageId": "prerequisite",
@@ -4783,18 +4795,6 @@
       "stageId": "a-nucleus",
       "level": "advanced",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hp-why-08",
-      "title": "途中の圧力が違うと仕事が変わることを、数値で",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
