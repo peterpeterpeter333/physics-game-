@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 375,
     "pendingNotYetActive": 145,
-    "registeredAuthoredRenders": 60,
+    "registeredAuthoredRenders": 61,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -3144,9 +3144,9 @@
       "level": "middle",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-radian.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-radian.mp4",
+      "storyboard": "radian-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

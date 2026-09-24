@@ -18,6 +18,7 @@ import {applySpringEnergy} from '../docs/video-revision-20260924/spring-energy.m
 import {applyMomentumFoundations} from '../docs/video-revision-20260924/momentum-foundations.mjs';
 import {applyMomentumMiddle} from '../docs/video-revision-20260924/momentum-middle.mjs';
 import {applyMomentumAdvanced} from '../docs/video-revision-20260924/momentum-advanced.mjs';
+import {applyRadianFoundations} from '../docs/video-revision-20260924/radian-foundations.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -173,6 +174,7 @@ applySpringEnergy(plan);
 applyMomentumFoundations(plan);
 applyMomentumMiddle(plan);
 applyMomentumAdvanced(plan);
+applyRadianFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
