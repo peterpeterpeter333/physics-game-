@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 376,
-    "pendingNotYetActive": 144,
-    "registeredAuthoredRenders": 67,
+    "activeTeachingFilms": 378,
+    "pendingNotYetActive": 142,
+    "registeredAuthoredRenders": 71,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -359,14 +359,14 @@
     },
     {
       "id": "m-shm-advanced",
-      "title": "サインやコサインが、なぜ運動の答えになる？",
+      "title": "サインやコサインが、なぜ運動の答えになる?",
       "stageId": "m-shm",
       "level": "advanced",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-shm-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-shm-advanced.mp4",
+      "storyboard": "shm-advanced-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3612,9 +3612,9 @@
       "level": "advanced",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-sin-motion.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-sin-motion.mp4",
+      "storyboard": "sine-motion-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4418,15 +4418,15 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
+      "id": "hp-why-04",
+      "title": "オメガが一つ掛かることを、数値で確かめる",
       "stageId": "prerequisite",
-      "level": "middle",
+      "level": "advanced",
       "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/hp-why-04.mp4",
+      "storyboard": "sine-motion-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4435,6 +4435,18 @@
       "stageId": "m-shm",
       "level": "advanced",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-22.mp4",
+      "storyboard": "shm-advanced-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
@@ -4747,18 +4759,6 @@
       "stageId": "a-nucleus",
       "level": "advanced",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hp-why-04",
-      "title": "オメガが一つ掛かることを、数値で確かめる",
-      "stageId": "prerequisite",
-      "level": "advanced",
-      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,

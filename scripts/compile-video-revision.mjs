@@ -23,6 +23,8 @@ import {applyCircularFoundations} from '../docs/video-revision-20260924/circular
 import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundations.mjs';
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
+import {applyShmAdvanced} from '../docs/video-revision-20260924/shm-advanced.mjs';
+import {applySineMotion} from '../docs/video-revision-20260924/sine-motion.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -183,6 +185,8 @@ applyCircularFoundations(plan);
 applyShmFoundations(plan);
 applyShmMiddle(plan);
 applySineDerivative(plan);
+applySineMotion(plan);
+applyShmAdvanced(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
