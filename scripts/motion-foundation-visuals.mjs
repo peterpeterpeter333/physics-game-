@@ -130,6 +130,9 @@ function formula(q,p){
 }
 export function motionFoundationFrame(c,s,t){
  if(c.visualPilot!=='motion-foundations-v1')return null;
+ return authoredMotionFrame(c,s,t,motionDiagram);
+}
+export function authoredMotionFrame(c,s,t,motionDiagram){
  const k=Math.max(0,s.captions.findLastIndex(cap=>cap.start<=t)),cap=s.captions[k],q=s.cues[k];
  if(!q||!['diagram','equation'].includes(q.display))throw Error(`Missing display ${c.id}/${s.index}/${k}`);
  const p=clamp((t-cap.start)/Math.max(.05,cap.end-cap.start));

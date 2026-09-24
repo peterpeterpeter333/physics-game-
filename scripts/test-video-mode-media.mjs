@@ -17,7 +17,7 @@ for(const clip of [...main,...inserts]){
   if(s.utterances){assert.equal(s.utterances.map(p=>p.subtitle).join(''),s.narration);assert.equal(s.utterances.length,s.captions.length);}
   for(const [j,p]of (s.utterances??[]).entries()){
    const sentences=p.subtitle.split('。').filter(Boolean).length;
-   if(clip.visualPilot==='motion-foundations-v1'){
+   if(['motion-foundations-v1','motion-inserts-v1'].includes(clip.visualPilot)){
     // A deliberate visual cue may contain two short sentences with one focus.
     // Keep it synchronized as one synthesized utterance, never split by timer.
     assert.ok(sentences>=1&&sentences<=2);

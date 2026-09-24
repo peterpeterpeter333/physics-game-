@@ -23,6 +23,14 @@ for(const m of movies){
  count+=deep.length;
 }
 const circular=movies.find(m=>m.id==='m-circular-intro');
+for(const [id,insert,afterScene]of [['m1-velocity-intro','hm-why-01',2],['m1-velocity-middle','hm-why-02',2],['m1-velocity-advanced','hm-why-03',2],['m1-acceleration-advanced','hm-why-04',3]]){
+ const main=movies.find(m=>m.id===id),pages=manualVideoPlaylist([main],'thorough',routes,inserts);
+ const i=pages.findIndex(p=>p.media.id===insert);assert.ok(i>0,id+' insert reachable');
+ assert.equal(pages[i-1].end,main.scenes[afterScene-1].end);
+ if(afterScene<main.scenes.length)assert.equal(pages[i+1].start,main.scenes[afterScene-1].end);
+ assert.equal(pages.filter(p=>p.media.id===insert).length,1);
+ assert.ok(!manualVideoPlaylist([main],'quick',routes,inserts).some(p=>p.media.id===insert));
+}
 assert.deepEqual(manualVideoPlaylist([circular],'thorough',routes,inserts).map(p=>p.media.id),['m-circular-intro','hm-why-18','m-circular-intro']);
 const player=readFileSync('src/components/SegmentedLessonVideo.tsx','utf8');
 assert.doesNotMatch(player,/advance|setCursor|autoPlay|videoSegments/,'Player must not own source navigation');

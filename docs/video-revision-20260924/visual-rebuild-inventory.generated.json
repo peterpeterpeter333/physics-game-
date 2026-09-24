@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 353,
-    "pendingNotYetActive": 167,
-    "registeredAuthoredRenders": 12,
+    "activeTeachingFilms": 357,
+    "pendingNotYetActive": 163,
+    "registeredAuthoredRenders": 16,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -4143,27 +4143,15 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-01",
       "title": "なぜ物理では、速さと速度を分けるの?",
       "stageId": "m1-velocity",
       "level": "intro",
       "family": "high-school-mechanics",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/hm-why-01.mp4",
+      "storyboard": "motion-inserts-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4172,10 +4160,10 @@
       "stageId": "m1-velocity",
       "level": "middle",
       "family": "high-school-mechanics",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/hm-why-02.mp4",
+      "storyboard": "motion-inserts-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4184,10 +4172,10 @@
       "stageId": "m1-velocity",
       "level": "advanced",
       "family": "high-school-mechanics",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/hm-why-03.mp4",
+      "storyboard": "motion-inserts-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4196,6 +4184,18 @@
       "stageId": "m1-acceleration",
       "level": "advanced",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-04.mp4",
+      "storyboard": "motion-inserts-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,

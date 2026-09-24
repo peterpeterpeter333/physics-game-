@@ -5,12 +5,12 @@
     "sourceHashFailures": 0,
     "plannedClips": 422,
     "remoteScriptMatches": 94,
-    "localOnlyScriptMatches": 6,
+    "localOnlyScriptMatches": 10,
     "replacementPending": 155,
-    "additionPending": 167,
+    "additionPending": 163,
     "manuscriptRequirements": 254,
     "wordingNeedsReconciliation": 228,
-    "routeDifferences": 257
+    "routeDifferences": 253
   },
   "caveats": [
     "origin/main is the last fetched Git reference, not live deployment verification.",
@@ -2881,48 +2881,48 @@
       "id": "hm-why-01",
       "title": "なぜ物理では、速さと速度を分けるの?",
       "kind": "insert",
-      "localCatalog": false,
+      "localCatalog": true,
       "remoteCatalog": false,
-      "localScriptMatchesPlan": false,
+      "localScriptMatchesPlan": true,
       "remoteScriptMatchesPlan": false,
-      "localMediaPresent": false,
-      "status": "addition-pending",
+      "localMediaPresent": true,
+      "status": "local-only-script-match",
       "visualReview": "not-certified-by-this-audit"
     },
     {
       "id": "hm-why-02",
       "title": "傾きと速度は、なぜ同じものなの?",
       "kind": "insert",
-      "localCatalog": false,
+      "localCatalog": true,
       "remoteCatalog": false,
-      "localScriptMatchesPlan": false,
+      "localScriptMatchesPlan": true,
       "remoteScriptMatchesPlan": false,
-      "localMediaPresent": false,
-      "status": "addition-pending",
+      "localMediaPresent": true,
+      "status": "local-only-script-match",
       "visualReview": "not-certified-by-this-audit"
     },
     {
       "id": "hm-why-03",
       "title": "ゼロで割らずに、どうやって一つの値に決まるの?",
       "kind": "insert",
-      "localCatalog": false,
+      "localCatalog": true,
       "remoteCatalog": false,
-      "localScriptMatchesPlan": false,
+      "localScriptMatchesPlan": true,
       "remoteScriptMatchesPlan": false,
-      "localMediaPresent": false,
-      "status": "addition-pending",
+      "localMediaPresent": true,
+      "status": "local-only-script-match",
       "visualReview": "not-certified-by-this-audit"
     },
     {
       "id": "hm-why-04",
       "title": "なぜ、加速度は円の中心を向くの?",
       "kind": "insert",
-      "localCatalog": false,
+      "localCatalog": true,
       "remoteCatalog": false,
-      "localScriptMatchesPlan": false,
+      "localScriptMatchesPlan": true,
       "remoteScriptMatchesPlan": false,
-      "localMediaPresent": false,
-      "status": "addition-pending",
+      "localMediaPresent": true,
+      "status": "local-only-script-match",
       "visualReview": "not-certified-by-this-audit"
     },
     {
@@ -9235,58 +9235,6 @@
     }
   ],
   "routing": [
-    {
-      "type": "insert",
-      "id": "m1-velocity-intro",
-      "wanted": [
-        {
-          "afterScene": 2,
-          "inserts": [
-            "hm-why-01"
-          ]
-        }
-      ],
-      "current": []
-    },
-    {
-      "type": "insert",
-      "id": "m1-velocity-middle",
-      "wanted": [
-        {
-          "afterScene": 2,
-          "inserts": [
-            "hm-why-02"
-          ]
-        }
-      ],
-      "current": []
-    },
-    {
-      "type": "insert",
-      "id": "m1-velocity-advanced",
-      "wanted": [
-        {
-          "afterScene": 2,
-          "inserts": [
-            "hm-why-03"
-          ]
-        }
-      ],
-      "current": []
-    },
-    {
-      "type": "insert",
-      "id": "m1-acceleration-advanced",
-      "wanted": [
-        {
-          "afterScene": 3,
-          "inserts": [
-            "hm-why-04"
-          ]
-        }
-      ],
-      "current": []
-    },
     {
       "type": "insert",
       "id": "m1-uniform-accel-intro",

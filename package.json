@@ -7,6 +7,7 @@
     "test:video-speed": "node scripts/test-video-playback-speed.mjs",
     "test:circular-pilot": "node scripts/test-circular-pilot.mjs",
     "test:motion-foundations": "node scripts/test-motion-foundations.mjs",
+    "test:motion-inserts": "node scripts/test-motion-inserts.mjs",
     "test:video-modes": "node scripts/test-video-inserts.mjs && node scripts/test-video-mode-media.mjs && node scripts/test-manual-video-pages.mjs",
     "test:video-revision-plan": "node scripts/test-full-video-revision-plan.mjs",
     "test:thermal-inserts": "node scripts/test-thermal-inserts.mjs",
