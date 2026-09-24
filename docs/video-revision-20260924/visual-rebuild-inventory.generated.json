@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 404,
-    "pendingNotYetActive": 116,
-    "registeredAuthoredRenders": 172,
+    "activeTeachingFilms": 405,
+    "pendingNotYetActive": 115,
+    "registeredAuthoredRenders": 174,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -899,14 +899,14 @@
     },
     {
       "id": "a-photon-advanced",
-      "title": "原子から出る光が、特定の色に限られるのはなぜ？",
+      "title": "原子から出る光が、特定の色に限られるのはなぜ?",
       "stageId": "a-photon",
       "level": "advanced",
       "family": "high-school-atomic",
       "active": true,
-      "media": "public/media/lessons/a-photon-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/a-photon-advanced.mp4",
+      "storyboard": "atomic-spectra-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4759,10 +4759,10 @@
       "stageId": "a-photon",
       "level": "advanced",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/ha-why-03.mp4",
+      "storyboard": "atomic-spectra-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
