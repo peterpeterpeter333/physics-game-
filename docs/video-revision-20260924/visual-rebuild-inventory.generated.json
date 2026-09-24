@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 391,
-    "pendingNotYetActive": 129,
-    "registeredAuthoredRenders": 143,
+    "activeTeachingFilms": 392,
+    "pendingNotYetActive": 128,
+    "registeredAuthoredRenders": 146,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -731,14 +731,14 @@
     },
     {
       "id": "e-power-intro",
-      "title": "電圧も電流も、なぜ電力に関係する？",
+      "title": "電圧も電流も、なぜ電力に関係する?",
       "stageId": "e-power",
       "level": "intro",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-power-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-power-intro.mp4",
+      "storyboard": "power-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3360,9 +3360,9 @@
       "level": "middle",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-circuit-power.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-circuit-power.mp4",
+      "storyboard": "power-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4598,23 +4598,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "he-why-03",
       "title": "単位と数値で確かめる",
       "stageId": "e-power",
       "level": "intro",
       "family": "high-school-em",
+      "active": true,
+      "media": "public/media/inserts/he-why-03.mp4",
+      "storyboard": "power-foundations-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,

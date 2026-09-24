@@ -24,6 +24,7 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applyPowerFoundations} from '../docs/video-revision-20260924/power-foundations.mjs';
 import {applyResistorCircuits} from '../docs/video-revision-20260924/resistor-circuits.mjs';
 import {applyCurrentFoundations} from '../docs/video-revision-20260924/current-foundations.mjs';
 import {applySingleSlit} from '../docs/video-revision-20260924/single-slit.mjs';
@@ -247,6 +248,7 @@ applyDoubleSlit(plan);
 applySingleSlit(plan);
 applyCurrentFoundations(plan);
 applyResistorCircuits(plan);
+applyPowerFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
