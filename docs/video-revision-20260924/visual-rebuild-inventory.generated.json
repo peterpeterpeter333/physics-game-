@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 379,
-    "pendingNotYetActive": 141,
-    "registeredAuthoredRenders": 89,
+    "activeTeachingFilms": 380,
+    "pendingNotYetActive": 140,
+    "registeredAuthoredRenders": 91,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -3277,8 +3277,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-mole.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "mole-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4454,6 +4454,18 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
+      "id": "hp-why-06",
+      "title": "気体定数とボルツマン定数の関係を、数値で",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
+      "active": true,
+      "media": "public/media/inserts/hp-why-06.mp4",
+      "storyboard": "mole-foundations-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
       "id": "prep-coulomb-field",
       "title": "クーロンの法則から電場を求める",
       "stageId": "prerequisite",
@@ -4771,18 +4783,6 @@
       "stageId": "a-nucleus",
       "level": "advanced",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hp-why-06",
-      "title": "気体定数とボルツマン定数の関係を、数値で",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
