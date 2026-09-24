@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 402,
-    "pendingNotYetActive": 118,
-    "registeredAuthoredRenders": 168,
+    "activeTeachingFilms": 403,
+    "pendingNotYetActive": 117,
+    "registeredAuthoredRenders": 170,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -875,14 +875,14 @@
     },
     {
       "id": "a-photon-intro",
-      "title": "明るくしても、電子が出ない光があるのはなぜ？",
+      "title": "明るくしても、電子が出ない光があるのはなぜ?",
       "stageId": "a-photon",
       "level": "intro",
       "family": "high-school-atomic",
       "active": true,
-      "media": "public/media/lessons/a-photon-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/a-photon-intro.mp4",
+      "storyboard": "photon-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4735,10 +4735,10 @@
       "stageId": "a-photon",
       "level": "intro",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/ha-why-01.mp4",
+      "storyboard": "photon-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
