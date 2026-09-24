@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 375,
-    "pendingNotYetActive": 145,
-    "registeredAuthoredRenders": 64,
+    "activeTeachingFilms": 376,
+    "pendingNotYetActive": 144,
+    "registeredAuthoredRenders": 66,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -347,14 +347,14 @@
     },
     {
       "id": "m-shm-middle",
-      "title": "往復の周期は、重さとばねの硬さでどう変わる？",
+      "title": "往復の周期は、重さとばねの硬さでどう変わる?",
       "stageId": "m-shm",
       "level": "middle",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-shm-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-shm-middle.mp4",
+      "storyboard": "shm-middle-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4406,23 +4406,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-21",
       "title": "ω = √(k/m) を、微分を使わずに円の影から導く",
       "stageId": "m-shm",
       "level": "middle",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-21.mp4",
+      "storyboard": "shm-middle-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
