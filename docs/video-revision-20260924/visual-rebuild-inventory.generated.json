@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 374,
-    "pendingNotYetActive": 146,
-    "registeredAuthoredRenders": 58,
+    "activeTeachingFilms": 375,
+    "pendingNotYetActive": 145,
+    "registeredAuthoredRenders": 60,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -287,14 +287,14 @@
     },
     {
       "id": "m-momentum-advanced",
-      "title": "衝突でエネルギーが減っても、運動量は保存する？",
+      "title": "衝突で運動エネルギーが減っても、運動量は保存する？",
       "stageId": "m-momentum",
       "level": "advanced",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-momentum-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-momentum-advanced.mp4",
+      "storyboard": "momentum-advanced-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4394,23 +4394,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
+      "id": "hm-why-17",
+      "title": "なぜ運動量が保存しても、運動エネルギーは減るの？",
+      "stageId": "m-momentum",
+      "level": "advanced",
+      "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-17.mp4",
+      "storyboard": "momentum-advanced-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
       "id": "prep-coulomb-field",
       "title": "クーロンの法則から電場を求める",
       "stageId": "prerequisite",
       "level": "middle",
       "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hm-why-17",
-      "title": "なぜ運動量だけは守られて、エネルギーは減るの?",
-      "stageId": "m-momentum",
-      "level": "advanced",
-      "family": "high-school-mechanics",
       "active": false,
       "media": null,
       "storyboard": null,

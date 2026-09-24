@@ -12,12 +12,13 @@ import {workComponentIds} from '../docs/video-revision-20260924/work-components.
 import {potentialEnergyIds} from '../docs/video-revision-20260924/potential-energy.mjs';
 import {springEnergyIds} from '../docs/video-revision-20260924/spring-energy.mjs';
 import {momentumFoundationIds} from '../docs/video-revision-20260924/momentum-foundations.mjs';
+import {momentumAdvancedIds} from '../docs/video-revision-20260924/momentum-advanced.mjs';
 const read=f=>JSON.parse(readFileSync(f));
 const root='docs/video-revision-20260924',plan=read(root+'/full-plan.generated.json');
 const mains=read('src/content/revised-video-catalog.generated.json');
 const file='src/content/insert-video-catalog.generated.json',routeFile='src/content/insert-routes.generated.json';
 const routes=read(routeFile),fullRoutes=read(root+'/full-routes.generated.json'),ready=[];
-assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force','--work-foundations','--work-components','--potential-energy','--spring-energy','--momentum-foundations'].includes(a)),'Unknown publication scope');
+assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force','--work-foundations','--work-components','--potential-energy','--spring-energy','--momentum-foundations','--momentum-advanced'].includes(a)),'Unknown publication scope');
 const uniform=process.argv.includes('--uniform');
 const freefall=process.argv.includes('--freefall');
 const projectile=process.argv.includes('--projectile-foundations');
@@ -27,9 +28,10 @@ const components=process.argv.includes('--work-components');
 const potential=process.argv.includes('--potential-energy');
 const spring=process.argv.includes('--spring-energy');
 const momentum=process.argv.includes('--momentum-foundations');
-const motionInsertIds=(momentum?momentumFoundationIds:spring?springEnergyIds:potential?potentialEnergyIds:components?workComponentIds:work?workFoundationIds:force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>/^h[mp]-why-/.test(id));
-const parents=momentum?['m-momentum-intro']:spring?['m-energy-advanced']:potential?['prep-potential-conservation']:components?['m-energy-middle','prep-trig']:work?['m-energy-intro']:force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
-const motionInsertRoutes=uniform||freefall||projectile||force||work||components||potential||spring||momentum?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
+const collision=process.argv.includes('--momentum-advanced');
+const motionInsertIds=(collision?momentumAdvancedIds:momentum?momentumFoundationIds:spring?springEnergyIds:potential?potentialEnergyIds:components?workComponentIds:work?workFoundationIds:force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>/^h[mp]-why-/.test(id));
+const parents=collision?['m-momentum-advanced']:momentum?['m-momentum-intro']:spring?['m-energy-advanced']:potential?['prep-potential-conservation']:components?['m-energy-middle','prep-trig']:work?['m-energy-intro']:force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
+const motionInsertRoutes=collision||uniform||freefall||projectile||force||work||components||potential||spring||momentum?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
 assert.ok(process.env.FFMPEG,'Set FFMPEG');
 for(const id of motionInsertIds){
  const source=plan.find(c=>c.id===id),base='public/media/inserts/'+id;
