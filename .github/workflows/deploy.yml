@@ -55,6 +55,9 @@ jobs:
       - name: Check shared main videos and optional supplement routes
         run: npm run test:video-modes
 
+      - name: Check circular-motion pilot algebra and animation cues
+        run: npm run test:circular-pilot
+
       - name: Audit inline math and formula rendering
         run: npm run test:math
 

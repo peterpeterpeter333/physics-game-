@@ -47,7 +47,7 @@
   {
     "name": "test-video-playlists",
     "status": 0,
-    "output": "{\n  \"result\": \"PASS\",\n  \"courses\": 190,\n  \"stages\": 136,\n  \"oldPlacements\": 836,\n  \"newPlacements\": 196,\n  \"reviewable\": 73,\n  \"surfaceMainSeconds\": 34.32666666666666,\n  \"checks\": [\n    \"direct unit assignments only\",\n    \"viewing-history independent\",\n    \"no ancestor expansion in review\",\n    \"legacy ID migration\",\n    \"main films preserved\"\n  ]\n}\n"
+    "output": "{\n  \"result\": \"PASS\",\n  \"courses\": 190,\n  \"stages\": 136,\n  \"oldPlacements\": 836,\n  \"newPlacements\": 192,\n  \"reviewable\": 73,\n  \"surfaceMainSeconds\": 34.32666666666666,\n  \"checks\": [\n    \"direct unit assignments only\",\n    \"viewing-history independent\",\n    \"no ancestor expansion in review\",\n    \"legacy ID migration\",\n    \"main films preserved\"\n  ]\n}\n"
   },
   {
     "name": "audit-math",
@@ -122,6 +122,6 @@
   {
     "name": "test-video-mode-media",
     "status": 0,
-    "output": "PASS: 31 revised main + 18 inserts; exact scripts, paired readings, captions, files, and route references.\n"
+    "output": "PASS: 34 revised main + 21 inserts; exact scripts, paired readings, captions, files, and route references.\n"
   }
 ]

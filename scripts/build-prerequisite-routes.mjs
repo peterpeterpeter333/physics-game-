@@ -11,6 +11,10 @@ import '../docs/video-scripts/prerequisite-calculations.mjs';
 
 // Remove tangential sections of multi-topic prerequisites from the main sequence.
 const overrides={
+ // The circular-algebra pilot teaches these foundations inside its main films.
+ 'm-circular-intro':[],
+ 'm-circular-middle':[],
+ 'm-circular-advanced':[],
  'ui-through-a-surface-bridges-2':[],
  'ui-turning-motion-bridges-9':['circular'],
  'um-newton-components-bridges-10':['trig'],

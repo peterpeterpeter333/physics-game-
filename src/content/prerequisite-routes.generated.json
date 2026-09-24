@@ -598,30 +598,16 @@
     ]
   },
   "m-circular-intro": {
-    "required": [
-      "prep-circular"
-    ],
-    "review": [
-      "prep-circular"
-    ]
+    "required": [],
+    "review": []
   },
   "m-circular-middle": {
-    "required": [
-      "prep-vector-difference",
-      "prep-circular"
-    ],
-    "review": [
-      "prep-vector-difference",
-      "prep-circular"
-    ]
+    "required": [],
+    "review": []
   },
   "m-circular-advanced": {
-    "required": [
-      "prep-circular"
-    ],
-    "review": [
-      "prep-circular"
-    ]
+    "required": [],
+    "review": []
   },
   "m-shm-intro": {
     "required": [

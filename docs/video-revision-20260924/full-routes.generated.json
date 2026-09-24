@@ -150,7 +150,7 @@
     ],
     "m-circular-intro": [
       {
-        "afterScene": 1,
+        "afterScene": 2,
         "inserts": [
           "hm-why-18"
         ]
@@ -158,7 +158,7 @@
     ],
     "m-circular-middle": [
       {
-        "afterScene": 2,
+        "afterScene": 4,
         "inserts": [
           "hm-why-19"
         ]
@@ -166,7 +166,7 @@
     ],
     "m-circular-advanced": [
       {
-        "afterScene": 2,
+        "afterScene": 3,
         "inserts": [
           "hm-why-20"
         ]
@@ -2834,30 +2834,16 @@
       ]
     },
     "m-circular-intro": {
-      "required": [
-        "prep-circular"
-      ],
-      "review": [
-        "prep-circular"
-      ]
+      "required": [],
+      "review": []
     },
     "m-circular-middle": {
-      "required": [
-        "prep-vector-difference",
-        "prep-circular"
-      ],
-      "review": [
-        "prep-vector-difference",
-        "prep-circular"
-      ]
+      "required": [],
+      "review": []
     },
     "m-circular-advanced": {
-      "required": [
-        "prep-circular"
-      ],
-      "review": [
-        "prep-circular"
-      ]
+      "required": [],
+      "review": []
     },
     "m-shm-intro": {
       "required": [

@@ -29,6 +29,11 @@ for(const id of required){
  const base=`public/media/${source.mediaDirectory}/${id}`;
  for(const ext of ['mp4','jpg','json'])assert.ok(existsSync(`${base}.${ext}`),`Incomplete media ${base}.${ext}`);
  const c=read(`${base}.json`);
+ if(source.visualPilot){
+  assert.equal(c.visualPilot,source.visualPilot);
+  assert.equal(c.animationFPS,30);
+  assert.deepEqual(c.scenes.map(s=>s.cues),source.scenes.map(s=>s.cues),'Outdated visual cues');
+ }
  assert.equal(c.title,source.title);
  assert.equal(c.scenes.length,source.scenes.length);
  assert.equal(c.scenes.at(-1).end,c.duration);

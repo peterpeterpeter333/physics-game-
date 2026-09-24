@@ -1,0 +1,112 @@
+{
+  "id": "hm-why-19",
+  "title": "速さが2倍なら、なぜ力は4倍？",
+  "stageId": "m-circular",
+  "level": "middle",
+  "renderer": "insert",
+  "family": "high-school-mechanics",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "heading": "変える量以外を固定する",
+      "cues": [
+        {
+          "subtitle": "半径と質量を変えずに、速さだけを二倍にして、力の式のブイを二ブイに置き換えます。",
+          "reading": "はんけいとしつりょうをかえずに、はやさだけをにばいにして、ちからのしきのブイをにブイにおきかえます。",
+          "formula": [
+            "F_{\\text{新}}",
+            "=",
+            "\\frac{m(2v)^2}{r}"
+          ],
+          "operation": "半径 r・質量 m は固定",
+          "diagram": "double"
+        },
+        {
+          "subtitle": "二ブイの二乗は、二ブイかける二ブイなので、四ブイ二乗です。",
+          "reading": "にブイのにじょうは、にブイかけるにブイなので、よんブイにじょうです。",
+          "formula": [
+            "(2v)^2",
+            "=",
+            "(2v)(2v)",
+            "=",
+            "4v^2"
+          ],
+          "operation": "2もvも、それぞれ2回掛ける",
+          "diagram": "double"
+        },
+        {
+          "subtitle": "四を前に出すと元の力の式が残るので、必要な力は四倍です。",
+          "reading": "よんをまえにだすともとのちからのしきがのこるので、ひつようなちからはよんばいです。",
+          "formula": [
+            "F_{\\text{新}}",
+            "=",
+            "4",
+            "\\frac{mv^2}{r}",
+            "=4F_{\\text{元}}"
+          ],
+          "operation": "矢印の長さ：速さ2倍・力4倍",
+          "diagram": "double"
+        }
+      ],
+      "utterances": [
+        {
+          "subtitle": "半径と質量を変えずに、速さだけを二倍にして、力の式のブイを二ブイに置き換えます。",
+          "reading": "はんけいとしつりょうをかえずに、はやさだけをにばいにして、ちからのしきのブイをにブイにおきかえます。"
+        },
+        {
+          "subtitle": "二ブイの二乗は、二ブイかける二ブイなので、四ブイ二乗です。",
+          "reading": "にブイのにじょうは、にブイかけるにブイなので、よんブイにじょうです。"
+        },
+        {
+          "subtitle": "四を前に出すと元の力の式が残るので、必要な力は四倍です。",
+          "reading": "よんをまえにだすともとのちからのしきがのこるので、ひつようなちからはよんばいです。"
+        }
+      ],
+      "narration": "半径と質量を変えずに、速さだけを二倍にして、力の式のブイを二ブイに置き換えます。二ブイの二乗は、二ブイかける二ブイなので、四ブイ二乗です。四を前に出すと元の力の式が残るので、必要な力は四倍です。",
+      "equation": "",
+      "symbols": "",
+      "visual": "circular-algebra-pilot",
+      "index": 0,
+      "sceneId": "hm-why-19-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 15.056666666666667,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.570666666666667,
+          "text": "半径と質量を変えずに、速さだけを二倍にして、力の式のブイを二ブイに置き換えます。"
+        },
+        {
+          "start": 5.610666666666667,
+          "end": 9.677333333333333,
+          "text": "二ブイの二乗は、二ブイかける二ブイなので、四ブイ二乗です。"
+        },
+        {
+          "start": 9.717333333333332,
+          "end": 14.466666666666665,
+          "text": "四を前に出すと元の力の式が残るので、必要な力は四倍です。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】hm-why-19 なぜ v²/r になるの?(場面2の後)",
+    "context": "差し替え台本 第1弾 — 高校・力学(30本)\nm-circular-middle — 同じ円を速く回ると、必要な力はどれだけ増える?\n【差し込み】hm-why-19 なぜ v²/r になるの?(場面2の後)",
+    "source": {
+      "file": "差し替え台本_01_高校力学.md",
+      "line": 557
+    },
+    "parent": "m-circular-middle"
+  },
+  "visualPilot": "circular-algebra-v1",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 15.056666666666667,
+  "animationFPS": 30,
+  "renderKey": "c5e9537774832e95ce434e0ff4b820e6242b9a398f5a915eb6df42790af4f365"
+}
