@@ -24,6 +24,8 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applyTotalReflection} from '../docs/video-revision-20260924/total-reflection.mjs';
+import {applyLightRefraction} from '../docs/video-revision-20260924/light-refraction.mjs';
 import {applyLightFoundations} from '../docs/video-revision-20260924/light-foundations.mjs';
 import {applyDopplerObserver} from '../docs/video-revision-20260924/doppler-observer.mjs';
 import {applyDopplerSource} from '../docs/video-revision-20260924/doppler-source.mjs';
@@ -233,6 +235,8 @@ applySoundBeats(plan);
 applyDopplerSource(plan);
 applyDopplerObserver(plan);
 applyLightFoundations(plan);
+applyLightRefraction(plan);
+applyTotalReflection(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));

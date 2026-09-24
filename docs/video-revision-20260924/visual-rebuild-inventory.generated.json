@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 383,
-    "pendingNotYetActive": 137,
-    "registeredAuthoredRenders": 126,
+    "activeTeachingFilms": 386,
+    "pendingNotYetActive": 134,
+    "registeredAuthoredRenders": 131,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -635,26 +635,26 @@
     },
     {
       "id": "w-light-middle",
-      "title": "屈折率が大きい側で、光は法線へ近づく？",
+      "title": "屈折率が大きい側で、光は法線へ近づく?",
       "stageId": "w-light",
       "level": "middle",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-light-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-light-middle.mp4",
+      "storyboard": "light-refraction-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
       "id": "w-light-advanced",
-      "title": "全反射が、屈折率の大きい側から進む光だけで起こるのはなぜ？",
+      "title": "全反射が、屈折率の大きい側から進む光だけで起こるのはなぜ?",
       "stageId": "w-light",
       "level": "advanced",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-light-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-light-advanced.mp4",
+      "storyboard": "total-reflection-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4502,27 +4502,27 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hw-why-07",
       "title": "スネルの法則を、波面の図から導く",
       "stageId": "w-light",
       "level": "middle",
       "family": "high-school-waves",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/hw-why-07.mp4",
+      "storyboard": "light-refraction-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "hw-why-10",
+      "title": "なぜ境界で振動数は変わらないの?",
+      "stageId": "w-light",
+      "level": "middle",
+      "family": "high-school-waves",
+      "active": true,
+      "media": "public/media/inserts/hw-why-10.mp4",
+      "storyboard": "light-refraction-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4531,6 +4531,18 @@
       "stageId": "w-light",
       "level": "advanced",
       "family": "high-school-waves",
+      "active": true,
+      "media": "public/media/inserts/hw-why-08.mp4",
+      "storyboard": "total-reflection-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
@@ -6044,18 +6056,6 @@
       "title": "電場と磁場の大きさの比を、数値で",
       "stageId": "ue-maxwell",
       "level": "advanced",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hw-why-10",
-      "title": "なぜ境界で振動数は変わらないの?",
-      "stageId": "w-light",
-      "level": "middle",
-      "family": "high-school-waves",
       "active": false,
       "media": null,
       "storyboard": null,
