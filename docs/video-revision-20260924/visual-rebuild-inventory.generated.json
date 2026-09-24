@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 378,
-    "pendingNotYetActive": 142,
-    "registeredAuthoredRenders": 71,
+    "activeTeachingFilms": 379,
+    "pendingNotYetActive": 141,
+    "registeredAuthoredRenders": 76,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -377,8 +377,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/revisions/t-heat-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "heat-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -389,8 +389,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/revisions/t-heat-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "heat-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3241,8 +3241,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-heat-units.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "heat-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3981,8 +3981,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/inserts/ht-why-10.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "foundation-appendices-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4438,6 +4438,18 @@
       "active": true,
       "media": "public/media/inserts/hm-why-22.mp4",
       "storyboard": "shm-advanced-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "hm-why-25",
+      "title": "端と真ん中で、何が最大になる?",
+      "stageId": "m-shm",
+      "level": "intro",
+      "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-25.mp4",
+      "storyboard": "foundation-appendices-v1",
       "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
@@ -6032,18 +6044,6 @@
       "title": "電場と磁場の大きさの比を、数値で",
       "stageId": "ue-maxwell",
       "level": "advanced",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hm-why-25",
-      "title": "端と真ん中で、何が最大になる?",
-      "stageId": "m-shm",
-      "level": "intro",
-      "family": "high-school-mechanics",
       "active": false,
       "media": null,
       "storyboard": null,

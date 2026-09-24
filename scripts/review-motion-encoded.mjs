@@ -8,7 +8,7 @@ import {motionFoundationIds} from '../docs/video-revision-20260924/motion-founda
 const out=process.argv[2]??'/private/tmp/physics-motion-encoded';
 assert.ok(process.env.FFMPEG);mkdirSync(out,{recursive:true});
 for(const id of (process.argv.length>3?process.argv.slice(3):motionFoundationIds)){
- const base=`public/media/${/^h[mp]-why-/.test(id)?'inserts':'revisions'}/${id}`,c=JSON.parse(readFileSync(base+'.json')),images=[];
+ const base=`public/media/${/^h[mtwp]-why-/.test(id)?'inserts':'revisions'}/${id}`,c=JSON.parse(readFileSync(base+'.json')),images=[];
  for(const s of c.scenes)for(const cap of s.captions){
   const i=images.length;
   const png=execFileSync(process.env.FFMPEG,['-v','error','-ss',String(cap.start+(cap.end-cap.start)*.8),'-i',base+'.mp4','-frames:v','1','-f','image2pipe','-vcodec','png','pipe:1'],{maxBuffer:10e6});

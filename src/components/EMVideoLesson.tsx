@@ -81,7 +81,7 @@ function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,origi
    <SegmentedLessonVideo key={reviewing?movie.id:mode+current.id} main={movie} start={reviewing?0:current.start} end={reviewing?movie.duration:current.end} onError={()=>setFailed(true)}/>
    {failed&&<div className="em-movie-error" role="alert"><p>この端末では動画を再生できませんでした。文字とスライドで読めます。</p><button className="btn btn-ghost" onClick={onReadSlides}>文字とスライドで読む</button></div>}
   </section>
-  {reviewId?<button className="btn btn-ghost" onClick={()=>setReviewId(null)}>学習に戻る</button>:<>
+  {reviewing?<button className="btn btn-ghost" onClick={()=>setReviewId(null)}>学習に戻る</button>:<>
    {movie.id.startsWith('prep-')&&<button className="btn btn-ghost" onClick={()=>selectPage(list.findIndex((m,i)=>i>page&&!m.id.startsWith('prep-')))}>本編へ</button>}
    {list.length>1&&<div className="lesson-controls em-movie-controls"><button className="btn btn-ghost" disabled={page===0} onClick={()=>selectPage(page-1)}>← 前へ</button><nav className="lesson-dots" aria-label="動画を選ぶ">{list.map((m,i)=><button key={m.id} className={`lesson-dot ${i===page?'active':''}`} aria-label={`動画${i+1}: ${m.title}`} aria-current={page===i?'step':undefined} onClick={()=>selectPage(i)}><span/></button>)}</nav><button className="btn btn-primary" disabled={page===list.length-1} onClick={()=>selectPage(page+1)}>次へ →</button></div>}
   </>}

@@ -60,6 +60,7 @@ assert.deepEqual(thorough(surface,prep,'thorough'),surface,'Explicit sine proofs
 assert.equal(selectionParent('prep-sin-derivative:main:2',sine),'prep-sin-motion');
 assert.equal(selectionParent('prep-addition-theorem',sine),'prep-sin-motion');
 assert.equal(selectionParent('m-shm-advanced:main:1',sine),'m-shm-advanced');
+assert.ok(component.includes('{reviewing?<button'),'A proof removed by a mode change must not hide normal page navigation');
 assert.ok(component.includes('const [assigned]=useState('),'Freeze unit assignments until chapter/level changes; mode may expose supplement pages');
 assert.ok(!/readWatchedVideos|markVideoWatched/.test(component),'Viewing history must not control video membership');
 assert.ok(component.includes('必要なときだけ復習')&&component.includes('学習に戻る')&&component.includes('btn-battle'));
