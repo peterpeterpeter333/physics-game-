@@ -1,0 +1,134 @@
+{
+  "id": "w-basics-advanced",
+  "stageId": "w-basics",
+  "stageTitle": "振動が伝わる波",
+  "topicId": "w-basics",
+  "level": "advanced",
+  "family": "high-school-waves",
+  "title": "波の式に、位置と時刻が両方入るのはなぜ?",
+  "condition": "一次元の波。媒質の動きと模様の移動を区別する。",
+  "sourceScript": "w-basics-advanced-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "原点で起きた振動は、離れた場所に届くまで時間がかかります。",
+      "narration": "原点で起きた振動は、離れた場所に届くまで時間がかかります。右へ進む波では、離れた場所の点は、その距離のぶんだけ遅れて、原点と同じ動きをします。",
+      "visual": "原点と距離xの点に時計を置き、到着の遅れx/vを示す。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.237333333333334,
+          "text": "原点で起きた振動は、離れた場所に届くまで時間がかかります。"
+        },
+        {
+          "start": 4.277333333333334,
+          "end": 10.733333333333333,
+          "text": "右へ進む波では、離れた場所の点は、その距離のぶんだけ遅れて、原点と同じ動きをします。"
+        }
+      ],
+      "end": 11.323333333333334,
+      "sceneId": "w-basics-advanced-s1",
+      "mode": "common"
+    },
+    {
+      "index": 1,
+      "heading": "原点のサイン波の式で、時刻を「伝わるのにかかる時間」だけ引いたものに置き換えます。",
+      "narration": "原点のサイン波の式で、時刻を「伝わるのにかかる時間」だけ引いたものに置き換えます。画面の ω はオメガと読み、角振動数です。位置を固定して見れば振動、時刻を固定して見れば波の形になります。",
+      "visual": "tをt−x/vへ置換し、横断面と時間記録を切り替える。",
+      "equation": "y(x,t) = A sin[ω(t−x/v)]",
+      "symbols": "yは媒質の変位、Aは振幅、ωは角振動数、xは位置、tは時刻、vは波の速さ。",
+      "start": 11.323333333333334,
+      "captions": [
+        {
+          "start": 11.323333333333334,
+          "end": 16.904666666666667,
+          "text": "原点のサイン波の式で、時刻を「伝わるのにかかる時間」だけ引いたものに置き換えます。"
+        },
+        {
+          "start": 16.944666666666667,
+          "end": 20.158,
+          "text": "画面の ω はオメガと読み、角振動数です。"
+        },
+        {
+          "start": 20.198,
+          "end": 24.862000000000002,
+          "text": "位置を固定して見れば振動、時刻を固定して見れば波の形になります。"
+        }
+      ],
+      "end": 25.452,
+      "utterances": [
+        {
+          "subtitle": "原点のサイン波の式で、時刻を「伝わるのにかかる時間」だけ引いたものに置き換えます。",
+          "reading": "げんてんの サインはの しきで、じこくを、つたわるのに かかる じかん だけ ひいた ものに おきかえます。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 306
+          }
+        },
+        {
+          "subtitle": "画面の ω はオメガと読み、角振動数です。",
+          "reading": "がめんの きごうは オメガと よみ、かくしんどうすうです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 306
+          }
+        },
+        {
+          "subtitle": "位置を固定して見れば振動、時刻を固定して見れば波の形になります。",
+          "reading": "いちを こていして みれば しんどう、じこくを こていして みれば なみの かたちに なります。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 307
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面2 【字幕差し替え】(ω の読み方)"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 302
+      },
+      "revisionEquations": [],
+      "sceneId": "w-basics-advanced-s2",
+      "mode": "common"
+    },
+    {
+      "index": 2,
+      "heading": "式のマイナスは、右にある点ほど、同じ振動が遅れて届くことを表しています。",
+      "narration": "式のマイナスは、右にある点ほど、同じ振動が遅れて届くことを表しています。符号を読むときは、山が時間とともにどちらへ動くかを確かめます。",
+      "visual": "位相一定の点を追跡し、右向き進行を検算。",
+      "equation": "",
+      "symbols": "",
+      "start": 25.452,
+      "captions": [
+        {
+          "start": 25.452,
+          "end": 30.79866666666667,
+          "text": "式のマイナスは、右にある点ほど、同じ振動が遅れて届くことを表しています。"
+        },
+        {
+          "start": 30.83866666666667,
+          "end": 35.236,
+          "text": "符号を読むときは、山が時間とともにどちらへ動くかを確かめます。"
+        }
+      ],
+      "end": 35.826,
+      "sceneId": "w-basics-advanced-s3",
+      "mode": "common"
+    }
+  ],
+  "duration": 35.826,
+  "mediaDirectory": "revisions",
+  "renderKey": "8fefa2973fa951bdf2ac00368a337cb7b134fd66e073ed1d202538ab1c5192d9",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2"
+}

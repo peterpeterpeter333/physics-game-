@@ -17,6 +17,7 @@ import './em-video-lesson.css';
 type MovieScene={index:number;heading:string;narration:string;start:number;end:number;captions:{start:number;end:number;text:string}[]};
 type Movie={id:string;stageId:string;stageTitle:string;level:string;title:string;duration:number;sourceIndices?:number[];mediaDirectory?:string;renderKey?:string;scenes:MovieScene[]};
 const movies=([...catalog,...lessonCatalog] as unknown as Movie[]).map(m=>(revisedCatalog as Movie[]).find(r=>r.id===m.id)??m);
+const prerequisiteMovies=prerequisiteCatalog.map(m=>(revisedCatalog as unknown as typeof prerequisiteCatalog).find(r=>r.id===m.id)??m);
 export function hasEMMovies(stage:Stage){
  if(lessonCatalog.some((m:{stageId:string})=>m.stageId===stage.id))return true;
  const count=spiralLessons[stage.id]?.filter(c=>!movedCycles[stage.id]?.[c.id]).reduce((n,c)=>n+c.cards.length,0)??stage.lesson.steps.length;
@@ -39,8 +40,8 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSli
 }
 function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,original,level,mode}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void;original:Movie[];level:string;mode:VideoMode}){
  // The unit's assigned videos do not depend on completion in other units.
- const [list]=useState(()=>prerequisitePlaylist(original,prerequisiteCatalog as unknown as Movie[]));
- const review=prerequisiteReview(original,prerequisiteCatalog as unknown as Movie[]);
+ const [list]=useState(()=>prerequisitePlaylist(original,prerequisiteMovies as unknown as Movie[]));
+ const review=prerequisiteReview(original,prerequisiteMovies as unknown as Movie[]);
  const positionKey=`physics-quest:video-position:v3:${stage.id}:${level}`;
  const [selectedId,setSelectedId]=useState(()=>{
   try{

@@ -1,0 +1,105 @@
+{
+  "id": "hw-why-02",
+  "title": "x/v を、数値で確かめる",
+  "stageId": "w-basics",
+  "level": "advanced",
+  "renderer": "insert",
+  "family": "high-school-waves",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "x/v を、数値で確かめる(場面2の後)",
+      "screen": "",
+      "equations": [
+        "v=2\\ \\mathrm{m/s},\\ x=4\\ \\mathrm m\\ \\Rightarrow\\ \\dfrac xv=2\\ \\mathrm s\\ \\text{遅れ}"
+      ],
+      "revisionDirections": [
+        "式: `v=2\\ \\mathrm{m/s},\\ x=4\\ \\mathrm m\\ \\Rightarrow\\ \\dfrac xv=2\\ \\mathrm s\\ \\text{遅れ}`",
+        "---"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 311
+      },
+      "utterances": [
+        {
+          "subtitle": "波の速さが毎秒二メートルで、原点から四メートル離れた点を考えます。",
+          "reading": "なみの はやさが まいびょう にメートルで、げんてんから よんメートル はなれた てんを かんがえます。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 316
+          }
+        },
+        {
+          "subtitle": "原点の揺れがそこへ届くまで、四割る二で二秒かかります。",
+          "reading": "げんてんの ゆれが そこへ とどくまで、よん わる にで にびょう かかります。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 317
+          }
+        },
+        {
+          "subtitle": "だから、その点は、原点の二秒前と同じ揺れ方をしています。",
+          "reading": "だから、その てんは、げんてんの にびょう まえと おなじ ゆれかたを しています。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 317
+          }
+        },
+        {
+          "subtitle": "式の、ティー引くエックス割るブイは、まさにこの「二秒前」を表しています。",
+          "reading": "しきの、ティー ひく エックス わる ブイは、まさに この にびょう まえ を あらわして います。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 318
+          }
+        }
+      ],
+      "narration": "波の速さが毎秒二メートルで、原点から四メートル離れた点を考えます。原点の揺れがそこへ届くまで、四割る二で二秒かかります。だから、その点は、原点の二秒前と同じ揺れ方をしています。式の、ティー引くエックス割るブイは、まさにこの「二秒前」を表しています。",
+      "sceneId": "hw-why-02-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 18.875333333333337,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.666666666666667,
+          "text": "波の速さが毎秒二メートルで、原点から四メートル離れた点を考えます。"
+        },
+        {
+          "start": 5.706666666666667,
+          "end": 9.528,
+          "text": "原点の揺れがそこへ届くまで、四割る二で二秒かかります。"
+        },
+        {
+          "start": 9.568000000000001,
+          "end": 13.773333333333335,
+          "text": "だから、その点は、原点の二秒前と同じ揺れ方をしています。"
+        },
+        {
+          "start": 13.813333333333336,
+          "end": 18.285333333333337,
+          "text": "式の、ティー引くエックス割るブイは、まさにこの「二秒前」を表しています。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】hw-why-02 x/v を、数値で確かめる(場面2の後)",
+    "context": "波動\nw-basics-advanced — 波の式に、位置と時刻が両方入るのはなぜ?\n【差し込み】hw-why-02 x/v を、数値で確かめる(場面2の後)",
+    "source": {
+      "file": "差し替え台本_02_高校熱力学・波動.md",
+      "line": 311
+    },
+    "parent": "w-basics-advanced"
+  },
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 18.875333333333337,
+  "renderKey": "dcf16ecec7701c55efd889947b91053efdfcd20db3211c5497bb868364f311b6"
+}

@@ -1,0 +1,1224 @@
+{
+  "audited": 384,
+  "repaired": 202,
+  "unchanged": 182,
+  "removedSeconds": 1112.0416666666665,
+  "minimumAudioCorrelation": 0.9999242524654133,
+  "maximumCutPeak": 103.0,
+  "results": [
+    {
+      "file": "em/ue-ampere-01.mp4",
+      "removedSeconds": 5.333333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999595490509807
+    },
+    {
+      "file": "em/ue-ampere-02.mp4",
+      "removedSeconds": 5.958333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999640880806111
+    },
+    {
+      "file": "em/ue-capacitor-01.mp4",
+      "removedSeconds": 6.708333333333343,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999516844648051
+    },
+    {
+      "file": "em/ue-capacitor-02.mp4",
+      "removedSeconds": 4.708333333333329,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999615139931546
+    },
+    {
+      "file": "em/ue-current-01.mp4",
+      "removedSeconds": 8.416666666666657,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999953419360544
+    },
+    {
+      "file": "em/ue-current-02.mp4",
+      "removedSeconds": 3.0,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999627215709319
+    },
+    {
+      "file": "em/ue-faraday-01.mp4",
+      "removedSeconds": 5.916666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999644138207086
+    },
+    {
+      "file": "em/ue-faraday-02.mp4",
+      "removedSeconds": 6.083333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999517397829347
+    },
+    {
+      "file": "em/ue-gauss-01.mp4",
+      "removedSeconds": 7.999999999999986,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999646728111451
+    },
+    {
+      "file": "em/ue-gauss-02.mp4",
+      "removedSeconds": 7.875,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999958335037933
+    },
+    {
+      "file": "em/ue-gauss-03.mp4",
+      "removedSeconds": 7.916666666666657,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999622369537378
+    },
+    {
+      "file": "em/ue-gauss-04.mp4",
+      "removedSeconds": 7.333333333333343,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999568764391663
+    },
+    {
+      "file": "em/ue-gauss-05.mp4",
+      "removedSeconds": 7.9166666666666785,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999582971653168
+    },
+    {
+      "file": "em/ue-gauss-06.mp4",
+      "removedSeconds": 7.416666666666671,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999591616322312
+    },
+    {
+      "file": "em/ue-gauss-07.mp4",
+      "removedSeconds": 7.291666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999588320878219
+    },
+    {
+      "file": "em/ue-integrals-01.mp4",
+      "removedSeconds": 7.416666666666671,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999579641147358
+    },
+    {
+      "file": "em/ue-integrals-02.mp4",
+      "removedSeconds": 7.916666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999547999490461
+    },
+    {
+      "file": "em/ue-integrals-03.mp4",
+      "removedSeconds": 7.875000000000007,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999497187862565
+    },
+    {
+      "file": "em/ue-integrals-04.mp4",
+      "removedSeconds": 8.041666666666679,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999519118467763
+    },
+    {
+      "file": "em/ue-integrals-05.mp4",
+      "removedSeconds": 8.708333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999482110228692
+    },
+    {
+      "file": "em/ue-lorentz-01.mp4",
+      "removedSeconds": 5.458333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999502812995883
+    },
+    {
+      "file": "em/ue-lorentz-02.mp4",
+      "removedSeconds": 5.291666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999589011033613
+    },
+    {
+      "file": "em/ue-maxwell-01.mp4",
+      "removedSeconds": 3.5416666666666643,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999605368092404
+    },
+    {
+      "file": "em/ue-maxwell-02.mp4",
+      "removedSeconds": 5.624999999999986,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999615258289485
+    },
+    {
+      "file": "em/ue-maxwell-03.mp4",
+      "removedSeconds": 8.458333333333343,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999455272197745
+    },
+    {
+      "file": "em/ue-potential-01.mp4",
+      "removedSeconds": 8.5,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999586940510296
+    },
+    {
+      "file": "em/ue-potential-02.mp4",
+      "removedSeconds": 4.833333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999589821952687
+    },
+    {
+      "file": "em/ue-transient-01.mp4",
+      "removedSeconds": 6.041666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999647119018151
+    },
+    {
+      "file": "em/ue-transient-02.mp4",
+      "removedSeconds": 3.625,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999957842205961
+    },
+    {
+      "file": "em/ui-ac-waves-01.mp4",
+      "removedSeconds": 5.541666666666657,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999477152067087
+    },
+    {
+      "file": "em/ui-capacitance-01.mp4",
+      "removedSeconds": 5.458333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999590132606171
+    },
+    {
+      "file": "em/ui-charge-and-flux-preview-01.mp4",
+      "removedSeconds": 5.458333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999588508711488
+    },
+    {
+      "file": "em/ui-charge-and-flux-preview-02.mp4",
+      "removedSeconds": 4.333333333333332,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999703533962789
+    },
+    {
+      "file": "em/ui-charge-and-flux-preview-03.mp4",
+      "removedSeconds": 5.416666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999573158633577
+    },
+    {
+      "file": "em/ui-circuit-time-01.mp4",
+      "removedSeconds": 5.5,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999642666386105
+    },
+    {
+      "file": "em/ui-closed-bag-01.mp4",
+      "removedSeconds": 5.541666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999617135432488
+    },
+    {
+      "file": "em/ui-closed-bag-02.mp4",
+      "removedSeconds": 5.458333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999595366063183
+    },
+    {
+      "file": "em/ui-closed-bag-03.mp4",
+      "removedSeconds": 4.833333333333343,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999579759928563
+    },
+    {
+      "file": "em/ui-conduction-01.mp4",
+      "removedSeconds": 5.416666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999600572176309
+    },
+    {
+      "file": "em/ui-current-field-01.mp4",
+      "removedSeconds": 5.416666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999557593132686
+    },
+    {
+      "file": "em/ui-electric-potential-01.mp4",
+      "removedSeconds": 4.916666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999477993710074
+    },
+    {
+      "file": "em/ui-electric-work-path-01.mp4",
+      "removedSeconds": 4.916666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999531640066257
+    },
+    {
+      "file": "em/ui-electric-work-path-02.mp4",
+      "removedSeconds": 6.291666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999676240090847
+    },
+    {
+      "file": "em/ui-electric-work-path-03.mp4",
+      "removedSeconds": 3.625,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999363856220278
+    },
+    {
+      "file": "em/ui-field-map-01.mp4",
+      "removedSeconds": 4.833333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999585385256743
+    },
+    {
+      "file": "em/ui-field-map-02.mp4",
+      "removedSeconds": 4.333333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999953170081806
+    },
+    {
+      "file": "em/ui-field-map-03.mp4",
+      "removedSeconds": 5.958333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999509672400905
+    },
+    {
+      "file": "em/ui-flux-many-tiles-01.mp4",
+      "removedSeconds": 6.208333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999960930602579
+    },
+    {
+      "file": "em/ui-flux-many-tiles-02.mp4",
+      "removedSeconds": 6.916666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999583876113842
+    },
+    {
+      "file": "em/ui-flux-many-tiles-03.mp4",
+      "removedSeconds": 7.833333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999553761679465
+    },
+    {
+      "file": "em/ui-flux-one-tile-01.mp4",
+      "removedSeconds": 5.458333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999518043709567
+    },
+    {
+      "file": "em/ui-flux-one-tile-02.mp4",
+      "removedSeconds": 4.916666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999519173939745
+    },
+    {
+      "file": "em/ui-flux-one-tile-03.mp4",
+      "removedSeconds": 5.333333333333343,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999574436059414
+    },
+    {
+      "file": "em/ui-induction-01.mp4",
+      "removedSeconds": 6.666666666666657,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999584658337936
+    },
+    {
+      "file": "em/ui-magnetic-force-01.mp4",
+      "removedSeconds": 4.791666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999488799688266
+    },
+    {
+      "file": "em/ui-work-bent-path-01.mp4",
+      "removedSeconds": 4.3750000000000036,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999539550406855
+    },
+    {
+      "file": "em/ui-work-bent-path-02.mp4",
+      "removedSeconds": 6.291666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999525784228877
+    },
+    {
+      "file": "em/ui-work-bent-path-03.mp4",
+      "removedSeconds": 5.041666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999545595819928
+    },
+    {
+      "file": "em/ui-work-direction-01.mp4",
+      "removedSeconds": 4.958333333333329,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999538400577709
+    },
+    {
+      "file": "em/ui-work-direction-02.mp4",
+      "removedSeconds": 3.7916666666666643,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999608208629368
+    },
+    {
+      "file": "em/ui-work-direction-03.mp4",
+      "removedSeconds": 2.4583333333333357,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999547487779379
+    },
+    {
+      "file": "em/um-ac-maxwell-01.mp4",
+      "removedSeconds": 4.416666666666671,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999553697623444
+    },
+    {
+      "file": "em/um-ac-maxwell-02.mp4",
+      "removedSeconds": 5.499999999999993,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999957098611187
+    },
+    {
+      "file": "em/um-capacitance-01.mp4",
+      "removedSeconds": 3.0416666666666643,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999572106860695
+    },
+    {
+      "file": "em/um-capacitance-02.mp4",
+      "removedSeconds": 5.499999999999993,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999631967976118
+    },
+    {
+      "file": "em/um-circuit-time-01.mp4",
+      "removedSeconds": 5.374999999999993,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999548411215899
+    },
+    {
+      "file": "em/um-circuit-time-02.mp4",
+      "removedSeconds": 4.916666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999953401497344
+    },
+    {
+      "file": "em/um-closed-electric-flux-01.mp4",
+      "removedSeconds": 2.541666666666668,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999643165734776
+    },
+    {
+      "file": "em/um-closed-electric-flux-02.mp4",
+      "removedSeconds": 6.75,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999571909944581
+    },
+    {
+      "file": "em/um-closed-electric-flux-03.mp4",
+      "removedSeconds": 2.458333333333332,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999684759099182
+    },
+    {
+      "file": "em/um-conduction-01.mp4",
+      "removedSeconds": 3.5833333333333357,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999570381781747
+    },
+    {
+      "file": "em/um-conduction-02.mp4",
+      "removedSeconds": 5.458333333333329,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999569102684474
+    },
+    {
+      "file": "em/um-current-field-01.mp4",
+      "removedSeconds": 3.5833333333333357,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999616610467089
+    },
+    {
+      "file": "em/um-current-field-02.mp4",
+      "removedSeconds": 5.458333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999500300336125
+    },
+    {
+      "file": "em/um-electrostatic-potential-path-01.mp4",
+      "removedSeconds": 3.125,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999590606903952
+    },
+    {
+      "file": "em/um-electrostatic-potential-path-02.mp4",
+      "removedSeconds": 4.958333333333329,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999539544513644
+    },
+    {
+      "file": "em/um-electrostatic-potential-path-03.mp4",
+      "removedSeconds": 2.916666666666668,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999515552943669
+    },
+    {
+      "file": "em/um-electrostatic-potential-path-04.mp4",
+      "removedSeconds": 4.833333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999632198097141
+    },
+    {
+      "file": "em/um-electrostatic-potential-path-05.mp4",
+      "removedSeconds": 5.458333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999583109312047
+    },
+    {
+      "file": "em/um-em-area-vector-01.mp4",
+      "removedSeconds": 7.416666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999524956224334
+    },
+    {
+      "file": "em/um-em-area-vector-02.mp4",
+      "removedSeconds": 7.375,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999531679530783
+    },
+    {
+      "file": "em/um-em-area-vector-03.mp4",
+      "removedSeconds": 2.5,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999962944582371
+    },
+    {
+      "file": "em/um-gauss-sphere-preview-01.mp4",
+      "removedSeconds": 2.4999999999999964,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999683395115535
+    },
+    {
+      "file": "em/um-gauss-sphere-preview-02.mp4",
+      "removedSeconds": 6.875,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999569605646824
+    },
+    {
+      "file": "em/um-gauss-sphere-preview-03.mp4",
+      "removedSeconds": 7.375,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999500926346371
+    },
+    {
+      "file": "em/um-induction-01.mp4",
+      "removedSeconds": 5.500000000000007,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999598031396975
+    },
+    {
+      "file": "em/um-induction-02.mp4",
+      "removedSeconds": 4.791666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999549819361507
+    },
+    {
+      "file": "em/um-line-element-01.mp4",
+      "removedSeconds": 6.208333333333329,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999590595031962
+    },
+    {
+      "file": "em/um-line-element-02.mp4",
+      "removedSeconds": 5.458333333333329,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999573123384523
+    },
+    {
+      "file": "em/um-line-element-03.mp4",
+      "removedSeconds": 6.2083333333333215,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999537794563633
+    },
+    {
+      "file": "em/um-line-element-04.mp4",
+      "removedSeconds": 5.625,
+      "cutPeak": 9.0,
+      "audioCorrelation": 0.9999430822765345
+    },
+    {
+      "file": "em/um-line-integral-entry-01.mp4",
+      "removedSeconds": 6.666666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999393528254242
+    },
+    {
+      "file": "em/um-line-integral-entry-02.mp4",
+      "removedSeconds": 4.916666666666664,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999602983682574
+    },
+    {
+      "file": "em/um-line-integral-entry-03.mp4",
+      "removedSeconds": 6.000000000000007,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999522266148718
+    },
+    {
+      "file": "em/um-line-integral-entry-04.mp4",
+      "removedSeconds": 6.791666666666657,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.999953060558092
+    },
+    {
+      "file": "em/um-magnetic-force-01.mp4",
+      "removedSeconds": 3.0416666666666643,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999545902969458
+    },
+    {
+      "file": "em/um-magnetic-force-02.mp4",
+      "removedSeconds": 4.958333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999941644001917
+    },
+    {
+      "file": "em/um-surface-integral-entry-01.mp4",
+      "removedSeconds": 4.375,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.999949381610432
+    },
+    {
+      "file": "em/um-surface-integral-entry-02.mp4",
+      "removedSeconds": 4.333333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999539706003808
+    },
+    {
+      "file": "em/um-surface-integral-entry-03.mp4",
+      "removedSeconds": 7.7916666666666785,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.999958631579832
+    },
+    {
+      "file": "em-line-integral-nemo.mp4",
+      "removedSeconds": 10.083333333333329,
+      "cutPeak": 0,
+      "audioCorrelation": 0.9999478543827758
+    },
+    {
+      "file": "inserts/ht-why-01.mp4",
+      "removedSeconds": 10.666666666666679,
+      "cutPeak": 63.0,
+      "audioCorrelation": 0.9999554212967139
+    },
+    {
+      "file": "inserts/ht-why-02.mp4",
+      "removedSeconds": 4.583333333333332,
+      "cutPeak": 53.0,
+      "audioCorrelation": 0.9999579050387394
+    },
+    {
+      "file": "inserts/ht-why-03.mp4",
+      "removedSeconds": 6.291666666666661,
+      "cutPeak": 66.0,
+      "audioCorrelation": 0.9999525275963934
+    },
+    {
+      "file": "inserts/ht-why-04.mp4",
+      "removedSeconds": 11.583333333333329,
+      "cutPeak": 69.0,
+      "audioCorrelation": 0.9999408175178343
+    },
+    {
+      "file": "inserts/ht-why-05.mp4",
+      "removedSeconds": 7.5000000000000036,
+      "cutPeak": 90.0,
+      "audioCorrelation": 0.9999478741002338
+    },
+    {
+      "file": "inserts/ht-why-06.mp4",
+      "removedSeconds": 6.124999999999993,
+      "cutPeak": 103.0,
+      "audioCorrelation": 0.9999407189946256
+    },
+    {
+      "file": "inserts/ht-why-07.mp4",
+      "removedSeconds": 11.208333333333343,
+      "cutPeak": 61.0,
+      "audioCorrelation": 0.9999517381819616
+    },
+    {
+      "file": "inserts/ht-why-08.mp4",
+      "removedSeconds": 5.208333333333332,
+      "cutPeak": 73.0,
+      "audioCorrelation": 0.9999567868621132
+    },
+    {
+      "file": "inserts/ht-why-09.mp4",
+      "removedSeconds": 5.208333333333336,
+      "cutPeak": 72.0,
+      "audioCorrelation": 0.9999472091553896
+    },
+    {
+      "file": "inserts/ht-why-10.mp4",
+      "removedSeconds": 3.0416666666666643,
+      "cutPeak": 60.0,
+      "audioCorrelation": 0.9999499337460778
+    },
+    {
+      "file": "inserts/ue-why-08.mp4",
+      "removedSeconds": 6.0416666666666785,
+      "cutPeak": 80.0,
+      "audioCorrelation": 0.999959190205991
+    },
+    {
+      "file": "inserts/ue-why-09.mp4",
+      "removedSeconds": 5.208333333333339,
+      "cutPeak": 77.0,
+      "audioCorrelation": 0.9999518675553186
+    },
+    {
+      "file": "inserts/ue-why-10.mp4",
+      "removedSeconds": 7.875000000000007,
+      "cutPeak": 60.0,
+      "audioCorrelation": 0.9999557281676494
+    },
+    {
+      "file": "lessons/a-bohr-advanced.mp4",
+      "removedSeconds": 4.291666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999667685858126
+    },
+    {
+      "file": "lessons/a-bohr-intro.mp4",
+      "removedSeconds": 4.333333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999560178379936
+    },
+    {
+      "file": "lessons/a-bohr-middle.mp4",
+      "removedSeconds": 4.458333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999956986053705
+    },
+    {
+      "file": "lessons/a-nucleus-advanced.mp4",
+      "removedSeconds": 4.374999999999993,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999572649717956
+    },
+    {
+      "file": "lessons/a-nucleus-intro.mp4",
+      "removedSeconds": 4.291666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999961803715903
+    },
+    {
+      "file": "lessons/a-nucleus-middle.mp4",
+      "removedSeconds": 4.25,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999545448024543
+    },
+    {
+      "file": "lessons/a-photon-advanced.mp4",
+      "removedSeconds": 4.291666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999624423957666
+    },
+    {
+      "file": "lessons/a-photon-intro.mp4",
+      "removedSeconds": 4.375000000000007,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999489526741049
+    },
+    {
+      "file": "lessons/a-photon-middle.mp4",
+      "removedSeconds": 4.333333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999404956848931
+    },
+    {
+      "file": "lessons/e-capacitor-advanced.mp4",
+      "removedSeconds": 4.875,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999574608763555
+    },
+    {
+      "file": "lessons/e-capacitor-intro.mp4",
+      "removedSeconds": 4.166666666666668,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999966145539914
+    },
+    {
+      "file": "lessons/e-capacitor-middle.mp4",
+      "removedSeconds": 4.375,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999569065361764
+    },
+    {
+      "file": "lessons/e-current-advanced.mp4",
+      "removedSeconds": 4.375,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999560257356859
+    },
+    {
+      "file": "lessons/e-current-intro.mp4",
+      "removedSeconds": 4.708333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999598225002564
+    },
+    {
+      "file": "lessons/e-current-middle.mp4",
+      "removedSeconds": 4.166666666666668,
+      "cutPeak": 4.0,
+      "audioCorrelation": 0.9999565246151944
+    },
+    {
+      "file": "lessons/e-field-advanced.mp4",
+      "removedSeconds": 5.333333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999636430254505
+    },
+    {
+      "file": "lessons/e-field-intro.mp4",
+      "removedSeconds": 4.791666666666671,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999427978845328
+    },
+    {
+      "file": "lessons/e-field-middle.mp4",
+      "removedSeconds": 4.333333333333332,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999597468083841
+    },
+    {
+      "file": "lessons/e-magnet-advanced.mp4",
+      "removedSeconds": 4.375,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999602869255373
+    },
+    {
+      "file": "lessons/e-magnet-intro.mp4",
+      "removedSeconds": 4.25,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999470783480053
+    },
+    {
+      "file": "lessons/e-magnet-middle.mp4",
+      "removedSeconds": 4.125,
+      "cutPeak": 5.0,
+      "audioCorrelation": 0.999958152052147
+    },
+    {
+      "file": "lessons/e-power-advanced.mp4",
+      "removedSeconds": 4.333333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999572863825502
+    },
+    {
+      "file": "lessons/e-power-intro.mp4",
+      "removedSeconds": 4.291666666666668,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999574662466513
+    },
+    {
+      "file": "lessons/e-power-middle.mp4",
+      "removedSeconds": 4.291666666666664,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999650836729574
+    },
+    {
+      "file": "lessons/m-circular-advanced.mp4",
+      "removedSeconds": 5.541666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999564642893818
+    },
+    {
+      "file": "lessons/m-circular-intro.mp4",
+      "removedSeconds": 4.916666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999423125672153
+    },
+    {
+      "file": "lessons/m-circular-middle.mp4",
+      "removedSeconds": 4.375,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999496160766576
+    },
+    {
+      "file": "lessons/m-energy-advanced.mp4",
+      "removedSeconds": 4.291666666666671,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.999947748682584
+    },
+    {
+      "file": "lessons/m-energy-intro.mp4",
+      "removedSeconds": 4.874999999999993,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999522458329144
+    },
+    {
+      "file": "lessons/m-energy-middle.mp4",
+      "removedSeconds": 4.958333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.999947434802703
+    },
+    {
+      "file": "lessons/m-force-advanced.mp4",
+      "removedSeconds": 4.333333333333332,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999510310670134
+    },
+    {
+      "file": "lessons/m-force-intro.mp4",
+      "removedSeconds": 4.916666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999442916641516
+    },
+    {
+      "file": "lessons/m-force-middle.mp4",
+      "removedSeconds": 4.958333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999535896602247
+    },
+    {
+      "file": "lessons/m-freefall-advanced.mp4",
+      "removedSeconds": 5.541666666666668,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999949542731645
+    },
+    {
+      "file": "lessons/m-freefall-intro.mp4",
+      "removedSeconds": 4.8750000000000036,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999456839124077
+    },
+    {
+      "file": "lessons/m-freefall-middle.mp4",
+      "removedSeconds": 5.0,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999542729528558
+    },
+    {
+      "file": "lessons/m-momentum-advanced.mp4",
+      "removedSeconds": 3.7083333333333357,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999559203573384
+    },
+    {
+      "file": "lessons/m-momentum-intro.mp4",
+      "removedSeconds": 4.875,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999580326917303
+    },
+    {
+      "file": "lessons/m-momentum-middle.mp4",
+      "removedSeconds": 4.833333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999434716114748
+    },
+    {
+      "file": "lessons/m-projectile-advanced.mp4",
+      "removedSeconds": 5.0,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999242524654133
+    },
+    {
+      "file": "lessons/m-projectile-intro.mp4",
+      "removedSeconds": 4.8749999999999964,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999584460144966
+    },
+    {
+      "file": "lessons/m-projectile-middle.mp4",
+      "removedSeconds": 5.499999999999993,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.999936704720736
+    },
+    {
+      "file": "lessons/m-shm-advanced.mp4",
+      "removedSeconds": 5.541666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999599400552233
+    },
+    {
+      "file": "lessons/m-shm-intro.mp4",
+      "removedSeconds": 4.833333333333332,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999519361522002
+    },
+    {
+      "file": "lessons/m-shm-middle.mp4",
+      "removedSeconds": 5.375000000000007,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999422633629663
+    },
+    {
+      "file": "lessons/m1-acceleration-advanced.mp4",
+      "removedSeconds": 5.541666666666671,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999458318003116
+    },
+    {
+      "file": "lessons/m1-acceleration-intro.mp4",
+      "removedSeconds": 4.833333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999541429781145
+    },
+    {
+      "file": "lessons/m1-acceleration-middle.mp4",
+      "removedSeconds": 5.041666666666671,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999531706890493
+    },
+    {
+      "file": "lessons/m1-uniform-accel-advanced.mp4",
+      "removedSeconds": 4.958333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999336380493862
+    },
+    {
+      "file": "lessons/m1-uniform-accel-intro.mp4",
+      "removedSeconds": 4.416666666666671,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999386662360965
+    },
+    {
+      "file": "lessons/m1-uniform-accel-middle.mp4",
+      "removedSeconds": 4.833333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999485569585217
+    },
+    {
+      "file": "lessons/m1-velocity-advanced.mp4",
+      "removedSeconds": 4.958333333333336,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999606342059644
+    },
+    {
+      "file": "lessons/m1-velocity-intro.mp4",
+      "removedSeconds": 5.833333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999481666818993
+    },
+    {
+      "file": "lessons/m1-velocity-middle.mp4",
+      "removedSeconds": 6.041666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999462933679496
+    },
+    {
+      "file": "lessons/prep-absolute.mp4",
+      "removedSeconds": 4.416666666666664,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999413394581957
+    },
+    {
+      "file": "lessons/prep-acceleration.mp4",
+      "removedSeconds": 6.958333333333336,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999635646689463
+    },
+    {
+      "file": "lessons/prep-algebra-projectile.mp4",
+      "removedSeconds": 6.333333333333343,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999476556597269
+    },
+    {
+      "file": "lessons/prep-area-distance.mp4",
+      "removedSeconds": 6.291666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999425391365493
+    },
+    {
+      "file": "lessons/prep-bohr-energy.mp4",
+      "removedSeconds": 4.375,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999555912844404
+    },
+    {
+      "file": "lessons/prep-capacitor.mp4",
+      "removedSeconds": 6.166666666666657,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999534554573453
+    },
+    {
+      "file": "lessons/prep-center-mass.mp4",
+      "removedSeconds": 4.291666666666664,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999543738219524
+    },
+    {
+      "file": "lessons/prep-chain.mp4",
+      "removedSeconds": 4.374999999999993,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999410676564655
+    },
+    {
+      "file": "lessons/prep-charge-calculation.mp4",
+      "removedSeconds": 6.208333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999588060239871
+    },
+    {
+      "file": "lessons/prep-charge-current.mp4",
+      "removedSeconds": 6.708333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999579588652093
+    },
+    {
+      "file": "lessons/prep-circuit-power.mp4",
+      "removedSeconds": 6.083333333333343,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999652435834726
+    },
+    {
+      "file": "lessons/prep-circular.mp4",
+      "removedSeconds": 6.791666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999357343387829
+    },
+    {
+      "file": "lessons/prep-collision.mp4",
+      "removedSeconds": 4.375,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999512075475095
+    },
+    {
+      "file": "lessons/prep-cosine-dot.mp4",
+      "removedSeconds": 6.291666666666664,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999481523029642
+    },
+    {
+      "file": "lessons/prep-cross-components.mp4",
+      "removedSeconds": 6.291666666666657,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999660976144908
+    },
+    {
+      "file": "lessons/prep-derivative-rules.mp4",
+      "removedSeconds": 4.416666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999653520830831
+    },
+    {
+      "file": "lessons/prep-difference-limit.mp4",
+      "removedSeconds": 6.208333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999930011915503
+    },
+    {
+      "file": "lessons/prep-doppler.mp4",
+      "removedSeconds": 4.375000000000007,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999534710659822
+    },
+    {
+      "file": "lessons/prep-dot-work.mp4",
+      "removedSeconds": 6.208333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999574589832183
+    },
+    {
+      "file": "lessons/prep-drag-solve.mp4",
+      "removedSeconds": 6.333333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999541994474926
+    },
+    {
+      "file": "lessons/prep-electric-work.mp4",
+      "removedSeconds": 6.125,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999540579401712
+    },
+    {
+      "file": "lessons/prep-ellipse.mp4",
+      "removedSeconds": 7.916666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999532139470603
+    },
+    {
+      "file": "lessons/prep-energy-chain.mp4",
+      "removedSeconds": 4.833333333333329,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999652364952611
+    },
+    {
+      "file": "lessons/prep-exponential.mp4",
+      "removedSeconds": 6.708333333333329,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999467053122495
+    },
+    {
+      "file": "lessons/prep-field-flux.mp4",
+      "removedSeconds": 6.041666666666671,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.999953102241471
+    },
+    {
+      "file": "lessons/prep-force.mp4",
+      "removedSeconds": 6.291666666666657,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999536110423262
+    },
+    {
+      "file": "lessons/prep-gas-particles.mp4",
+      "removedSeconds": 6.208333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999584916369412
+    },
+    {
+      "file": "lessons/prep-gas-work.mp4",
+      "removedSeconds": 6.208333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999431999959071
+    },
+    {
+      "file": "lessons/prep-graph-slope.mp4",
+      "removedSeconds": 7.375,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999374931784699
+    },
+    {
+      "file": "lessons/prep-heat-cycle.mp4",
+      "removedSeconds": 4.2499999999999964,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999497083155415
+    },
+    {
+      "file": "lessons/prep-heat-units.mp4",
+      "removedSeconds": 4.916666666666664,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.9999582695781027
+    },
+    {
+      "file": "lessons/prep-impulse.mp4",
+      "removedSeconds": 6.375,
+      "cutPeak": 8.0,
+      "audioCorrelation": 0.9999511814579591
+    },
+    {
+      "file": "lessons/prep-initial-values.mp4",
+      "removedSeconds": 6.833333333333336,
+      "cutPeak": 7.0,
+      "audioCorrelation": 0.999948071824265
+    },
+    {
+      "file": "lessons/prep-integral-compute.mp4",
+      "removedSeconds": 6.375,
+      "cutPeak": 6.0,
+      "audioCorrelation": 0.9999519262579999
+    }
+  ],
+  "limitations": "Signal/synchronization checks, not a subjective listening review.",
+  "partial": true
+}

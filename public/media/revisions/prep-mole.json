@@ -1,0 +1,227 @@
+{
+  "id": "prep-mole",
+  "title": "粒子の個数を、モルで数える",
+  "level": "middle",
+  "before": [
+    "t-ideal-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。この一モルあたりの個数を、アボガドロ定数と呼びます。今は、この個数を決めた値として定義しています。",
+      "equation": "粒子数 N = 物質量 n × N_A",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1 mol",
+          "2 mol",
+          "3 mol"
+        ],
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "unit": "N_A個"
+      },
+      "index": 0,
+      "heading": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "utterances": [
+        {
+          "subtitle": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。",
+          "reading": "いちモルは、りゅうしを やく ろくてんれいに かける じゅうの にじゅうさんじょう こ、あつめた りょうです。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 322
+          }
+        },
+        {
+          "subtitle": "この一モルあたりの個数を、アボガドロ定数と呼びます。",
+          "reading": "この いちモル あたりの こすうを、アボガドロ ていすうと よびます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 323
+          }
+        },
+        {
+          "subtitle": "今は、この個数を決めた値として定義しています。",
+          "reading": "いまは、この こすうを きめた あたいとして ていぎ して います。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 323
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面1 【字幕差し替え】(アボガドロ定数の出どころ)"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 318
+      },
+      "revisionEquations": [],
+      "sceneId": "prep-mole-s1",
+      "mode": "common",
+      "start": 0,
+      "end": 12.624666666666666,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.037333333333334,
+          "text": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。"
+        },
+        {
+          "start": 5.077333333333334,
+          "end": 8.706666666666665,
+          "text": "この一モルあたりの個数を、アボガドロ定数と呼びます。"
+        },
+        {
+          "start": 8.746666666666666,
+          "end": 12.034666666666665,
+          "text": "今は、この個数を決めた値として定義しています。"
+        }
+      ]
+    },
+    {
+      "narration": "モルは、質量そのものではありません。一モルの質量をモル質量と呼び、物質の種類によって値が違います。",
+      "equation": "物質量 = 質量 ÷ モル質量",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "水1 mol",
+          "酸素分子1 mol"
+        ],
+        "values": [
+          18,
+          32
+        ],
+        "unit": "g（概数）"
+      },
+      "index": 1,
+      "heading": "モルは、質量そのものではありません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-mole-s2",
+      "mode": "common",
+      "start": 12.624666666666666,
+      "end": 20.502666666666666,
+      "captions": [
+        {
+          "start": 12.624666666666666,
+          "end": 15.208666666666666,
+          "text": "モルは、質量そのものではありません。"
+        },
+        {
+          "start": 15.248666666666667,
+          "end": 19.912666666666667,
+          "text": "一モルの質量をモル質量と呼び、物質の種類によって値が違います。"
+        }
+      ]
+    },
+    {
+      "narration": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。粒子の個数で書くときは、気体定数をアボガドロ定数で割った定数を使います。画面の k サブ B はボルツマン定数と読みます。",
+      "equation": "pV = nRT = Nk_B T；k_B = R/N_A",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "絶対温度 T",
+        "yLabel": "pV（n一定）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "utterances": [
+        {
+          "subtitle": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。",
+          "reading": "りそう きたいの しきは、あつりょく、たいせき、ぜったい おんど、ぶっしつりょうを むすびます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 329
+          }
+        },
+        {
+          "subtitle": "粒子の個数で書くときは、気体定数をアボガドロ定数で割った定数を使います。",
+          "reading": "りゅうしの こすうで かく ときは、きたい ていすうを アボガドロ ていすうで わった ていすうを つかいます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 330
+          }
+        },
+        {
+          "subtitle": "画面の k サブ B はボルツマン定数と読みます。",
+          "reading": "がめんの ケー ビーは ボルツマン ていすうと よみます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 330
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面3 【字幕差し替え】(k_B の読み方)",
+        "場面2 【そのまま】"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 325
+      },
+      "revisionEquations": [],
+      "sceneId": "prep-mole-s3",
+      "mode": "common",
+      "start": 20.502666666666666,
+      "end": 34.39666666666667,
+      "captions": [
+        {
+          "start": 20.502666666666666,
+          "end": 26.009333333333334,
+          "text": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。"
+        },
+        {
+          "start": 26.049333333333333,
+          "end": 31.054666666666666,
+          "text": "粒子の個数で書くときは、気体定数をアボガドロ定数で割った定数を使います。"
+        },
+        {
+          "start": 31.09466666666667,
+          "end": 33.806666666666665,
+          "text": "画面の k サブ B はボルツマン定数と読みます。"
+        }
+      ]
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "粒子の個数を、モルで数える",
+  "topicId": "prep-mole",
+  "family": "prerequisites",
+  "sourceScript": "prep-mole",
+  "pronunciationFingerprint": "99b82a27ba65b7d0ecc78fb977e2799e6d65cf6a0493d2d161b6a899507802c3",
+  "mediaDirectory": "revisions",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 34.39666666666667,
+  "renderKey": "bcb934564c2da438d228d26296c6a33a90738c6e233c0088192726377d3cad50"
+}

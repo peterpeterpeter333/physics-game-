@@ -1,0 +1,3971 @@
+{
+  "inserts": {
+    "m1-velocity-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-01"
+        ]
+      }
+    ],
+    "m1-velocity-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-02"
+        ]
+      }
+    ],
+    "m1-velocity-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-03"
+        ]
+      }
+    ],
+    "m1-acceleration-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hm-why-04"
+        ]
+      }
+    ],
+    "m1-uniform-accel-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-05"
+        ]
+      }
+    ],
+    "m1-uniform-accel-middle": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hm-why-06"
+        ]
+      }
+    ],
+    "m1-uniform-accel-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hm-why-07"
+        ]
+      },
+      {
+        "afterScene": 1,
+        "inserts": [
+          "hm-why-24"
+        ]
+      }
+    ],
+    "m-freefall-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-08"
+        ]
+      },
+      {
+        "afterScene": 1,
+        "inserts": [
+          "hm-why-23"
+        ]
+      }
+    ],
+    "m-freefall-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hm-why-09"
+        ]
+      }
+    ],
+    "m-projectile-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-10"
+        ]
+      }
+    ],
+    "m-projectile-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-11"
+        ]
+      }
+    ],
+    "m-force-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "hm-why-12"
+        ]
+      }
+    ],
+    "m-energy-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "hm-why-13"
+        ]
+      }
+    ],
+    "m-energy-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-14"
+        ]
+      }
+    ],
+    "m-energy-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-15"
+        ]
+      }
+    ],
+    "m-momentum-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "hm-why-16"
+        ]
+      }
+    ],
+    "m-momentum-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hm-why-17"
+        ]
+      }
+    ],
+    "m-circular-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "hm-why-18"
+        ]
+      }
+    ],
+    "m-circular-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-19"
+        ]
+      }
+    ],
+    "m-circular-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-20"
+        ]
+      }
+    ],
+    "m-shm-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hm-why-21"
+        ]
+      }
+    ],
+    "m-shm-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "hm-why-22"
+        ]
+      }
+    ],
+    "t-heat-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ht-why-01"
+        ]
+      }
+    ],
+    "t-gas-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ht-why-02"
+        ]
+      }
+    ],
+    "t-gas-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ht-why-03"
+        ]
+      }
+    ],
+    "t-gas-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ht-why-04"
+        ]
+      }
+    ],
+    "t-ideal-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ht-why-05"
+        ]
+      }
+    ],
+    "t-ideal-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ht-why-06",
+          "ht-why-07"
+        ]
+      }
+    ],
+    "t-firstlaw-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ht-why-08"
+        ]
+      }
+    ],
+    "t-firstlaw-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ht-why-09"
+        ]
+      }
+    ],
+    "w-basics-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-01"
+        ]
+      }
+    ],
+    "w-basics-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-02"
+        ]
+      }
+    ],
+    "w-sound-middle": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hw-why-03"
+        ]
+      }
+    ],
+    "w-sound-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-04"
+        ]
+      }
+    ],
+    "w-doppler-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-05"
+        ]
+      }
+    ],
+    "w-doppler-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hw-why-06"
+        ]
+      }
+    ],
+    "w-light-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-07"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hw-why-10"
+        ]
+      }
+    ],
+    "w-light-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hw-why-08"
+        ]
+      }
+    ],
+    "w-interference-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-09"
+        ]
+      }
+    ],
+    "e-current-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "he-why-01"
+        ]
+      }
+    ],
+    "e-current-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "he-why-02"
+        ]
+      }
+    ],
+    "e-power-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "he-why-03"
+        ]
+      }
+    ],
+    "e-power-middle": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "he-why-04"
+        ]
+      }
+    ],
+    "e-power-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "he-why-05"
+        ]
+      }
+    ],
+    "e-magnet-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "he-why-06"
+        ]
+      }
+    ],
+    "e-magnet-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "he-why-07"
+        ]
+      }
+    ],
+    "e-field-intro": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "he-why-08"
+        ]
+      }
+    ],
+    "e-field-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "he-why-09"
+        ]
+      }
+    ],
+    "e-field-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "he-why-10"
+        ]
+      }
+    ],
+    "e-capacitor-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "he-why-11"
+        ]
+      }
+    ],
+    "e-capacitor-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "he-why-12"
+        ]
+      }
+    ],
+    "a-photon-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ha-why-01"
+        ]
+      }
+    ],
+    "a-photon-middle": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ha-why-02"
+        ]
+      }
+    ],
+    "a-photon-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ha-why-03"
+        ]
+      }
+    ],
+    "a-bohr-intro": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ha-why-04"
+        ]
+      }
+    ],
+    "a-bohr-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ha-why-05"
+        ]
+      }
+    ],
+    "a-bohr-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ha-why-06"
+        ]
+      }
+    ],
+    "a-nucleus-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ha-why-07"
+        ]
+      }
+    ],
+    "a-nucleus-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ha-why-08"
+        ]
+      }
+    ],
+    "a-nucleus-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ha-why-09"
+        ]
+      }
+    ],
+    "prep-potential-conservation": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hp-why-07"
+        ]
+      }
+    ],
+    "prep-trig": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hp-why-01"
+        ]
+      }
+    ],
+    "prep-sin-motion": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hp-why-04"
+        ]
+      }
+    ],
+    "prep-mole": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hp-why-06"
+        ]
+      }
+    ],
+    "prep-gas-work": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hp-why-08"
+        ]
+      }
+    ],
+    "prep-electric-work": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hp-why-05"
+        ]
+      }
+    ],
+    "prep-inverse-potential": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hp-why-02"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hp-why-09"
+        ]
+      }
+    ],
+    "prep-exponential": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hp-why-03"
+        ]
+      }
+    ],
+    "ui-curve-tiles-bridges-1": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-01"
+        ]
+      }
+    ],
+    "um-vector-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-02"
+        ]
+      }
+    ],
+    "ui-through-a-surface-bridges-2": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mm-why-03"
+        ]
+      }
+    ],
+    "um-taylor-intro": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mm-why-04"
+        ]
+      }
+    ],
+    "um-cross-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-05"
+        ]
+      }
+    ],
+    "um-ode-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mm-why-06"
+        ]
+      }
+    ],
+    "um-integral-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-07",
+          "mm-why-08"
+        ]
+      }
+    ],
+    "um-path-pieces-bridges-3": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-09"
+        ]
+      }
+    ],
+    "um-cross-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-10"
+        ]
+      }
+    ],
+    "um-shm-ode-middle": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-11"
+        ]
+      }
+    ],
+    "um-derivative-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-12"
+        ]
+      }
+    ],
+    "um-integral-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mm-why-13"
+        ]
+      }
+    ],
+    "um-rules-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mm-why-14"
+        ]
+      }
+    ],
+    "um-taylor-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-15"
+        ]
+      }
+    ],
+    "um-vector-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-16"
+        ]
+      }
+    ],
+    "um-dot-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mm-why-17"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-18"
+        ]
+      }
+    ],
+    "um-cross-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-19"
+        ]
+      }
+    ],
+    "um-ode-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-20"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mm-why-21"
+        ]
+      }
+    ],
+    "um-shm-ode-advanced": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mm-why-22"
+        ]
+      }
+    ],
+    "uc-newton-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-01"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-01"
+        ]
+      }
+    ],
+    "uc-newton-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-01"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-03"
+        ]
+      }
+    ],
+    "uc-newton-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-01"
+        ]
+      }
+    ],
+    "ui-force-map-bridges-6": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-02"
+        ]
+      }
+    ],
+    "um-newton-components-bridges-10": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-04"
+        ]
+      }
+    ],
+    "uc-drag-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-02"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-05"
+        ]
+      }
+    ],
+    "uc-drag-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-02"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-06"
+        ]
+      }
+    ],
+    "uc-drag-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-02"
+        ]
+      }
+    ],
+    "uc-work-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-03"
+        ]
+      }
+    ],
+    "uc-work-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-03"
+        ]
+      }
+    ],
+    "uc-work-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-03"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-09"
+        ]
+      }
+    ],
+    "ui-energy-change-bridges-8": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-07"
+        ]
+      }
+    ],
+    "um-work-vector-bridges-12": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-08"
+        ]
+      }
+    ],
+    "uc-potential-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-04"
+        ]
+      }
+    ],
+    "uc-potential-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-04"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-10"
+        ]
+      }
+    ],
+    "uc-potential-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-04"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-11"
+        ]
+      }
+    ],
+    "uc-momentum-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-05"
+        ]
+      }
+    ],
+    "uc-momentum-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-05"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-12"
+        ]
+      }
+    ],
+    "uc-momentum-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-05"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-13"
+        ]
+      }
+    ],
+    "uc-angular-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-06"
+        ]
+      }
+    ],
+    "uc-angular-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-06",
+          "mc-why-14"
+        ]
+      }
+    ],
+    "uc-angular-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-06"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-15"
+        ]
+      }
+    ],
+    "uc-shm-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-07"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-16"
+        ]
+      }
+    ],
+    "uc-shm-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-07"
+        ]
+      }
+    ],
+    "uc-shm-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-07"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-17"
+        ]
+      }
+    ],
+    "uc-shm-advanced-followups-1": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-07"
+        ]
+      }
+    ],
+    "uc-rigid1-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-08"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-18"
+        ]
+      }
+    ],
+    "uc-rigid1-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-08"
+        ]
+      }
+    ],
+    "uc-rigid1-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-08",
+          "mc-why-19"
+        ]
+      }
+    ],
+    "uc-rigid1-advanced-followups-5": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-08",
+          "mc-why-20"
+        ]
+      }
+    ],
+    "uc-rigid2-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-09"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "mc-why-21"
+        ]
+      }
+    ],
+    "uc-rigid2-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-09"
+        ]
+      }
+    ],
+    "uc-rigid2-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-09"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-22"
+        ]
+      }
+    ],
+    "uc-rigid2-advanced-followups-6": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-09"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-23"
+        ]
+      }
+    ],
+    "uc-frontier-intro": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-10"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "mc-why-24"
+        ]
+      }
+    ],
+    "uc-frontier-middle": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-10"
+        ]
+      }
+    ],
+    "uc-frontier-advanced": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-10"
+        ]
+      }
+    ],
+    "uc-frontier-advanced-followups-2": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-10"
+        ]
+      }
+    ],
+    "uc-frontier-advanced-followups-3": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "mc-link-10"
+        ]
+      }
+    ],
+    "ui-field-map-03": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "me-why-01"
+        ]
+      }
+    ],
+    "ui-charge-and-flux-preview-02": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "me-why-02"
+        ]
+      }
+    ],
+    "ui-induction-01": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "me-why-03"
+        ]
+      }
+    ],
+    "ui-circuit-time-01": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "me-why-04"
+        ]
+      }
+    ],
+    "ui-ac-waves-01": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "me-why-05"
+        ]
+      }
+    ],
+    "um-conduction-01": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "me-why-06"
+        ]
+      }
+    ],
+    "um-magnetic-force-02": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "me-why-07"
+        ]
+      }
+    ],
+    "um-current-field-02": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "me-why-08"
+        ]
+      }
+    ],
+    "um-induction-02": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "me-why-09"
+        ]
+      }
+    ],
+    "um-circuit-time-02": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "me-why-10"
+        ]
+      }
+    ],
+    "um-ac-maxwell-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "me-why-11"
+        ]
+      }
+    ],
+    "ue-integrals-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-01"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ue-why-01",
+          "ue-why-02"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-03"
+        ]
+      }
+    ],
+    "ue-integrals-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-01"
+        ]
+      }
+    ],
+    "ue-integrals-03": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-01",
+          "ue-why-04"
+        ]
+      }
+    ],
+    "ue-integrals-04": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-01"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-05"
+        ]
+      }
+    ],
+    "ue-integrals-05": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-01"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-06",
+          "ue-why-07"
+        ]
+      }
+    ],
+    "ue-gauss-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-02"
+        ]
+      },
+      {
+        "afterScene": 0,
+        "inserts": [
+          "ue-why-08",
+          "ue-why-09",
+          "ue-why-10"
+        ]
+      }
+    ],
+    "ue-gauss-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-02"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-11"
+        ]
+      }
+    ],
+    "ue-gauss-03": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-02"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-12"
+        ]
+      }
+    ],
+    "ue-gauss-04": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-02",
+          "ue-why-13"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-14"
+        ]
+      }
+    ],
+    "ue-gauss-05": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-02"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-15"
+        ]
+      }
+    ],
+    "ue-gauss-06": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-02"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-16"
+        ]
+      }
+    ],
+    "ue-gauss-07": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-02",
+          "ue-why-17"
+        ]
+      }
+    ],
+    "ue-potential-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-03"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-18"
+        ]
+      }
+    ],
+    "ue-potential-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-03"
+        ]
+      }
+    ],
+    "ue-capacitor-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-04",
+          "ue-why-19"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ue-why-20"
+        ]
+      }
+    ],
+    "ue-capacitor-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-04"
+        ]
+      }
+    ],
+    "ue-current-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-05"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ue-why-21"
+        ]
+      }
+    ],
+    "ue-current-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-05"
+        ]
+      }
+    ],
+    "ue-lorentz-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-06"
+        ]
+      }
+    ],
+    "ue-lorentz-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-06"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ue-why-22"
+        ]
+      }
+    ],
+    "ue-ampere-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-07"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ue-why-23"
+        ]
+      }
+    ],
+    "ue-ampere-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-07"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ue-why-24"
+        ]
+      }
+    ],
+    "ue-faraday-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-08"
+        ]
+      },
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ue-why-25"
+        ]
+      }
+    ],
+    "ue-faraday-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-08"
+        ]
+      }
+    ],
+    "ue-transient-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-09"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ue-why-26"
+        ]
+      }
+    ],
+    "ue-transient-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-09"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ue-why-27"
+        ]
+      }
+    ],
+    "ue-maxwell-01": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-10"
+        ]
+      },
+      {
+        "afterScene": 2,
+        "inserts": [
+          "ue-why-28"
+        ]
+      }
+    ],
+    "ue-maxwell-02": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-10"
+        ]
+      }
+    ],
+    "ue-maxwell-03": [
+      {
+        "afterScene": 1,
+        "inserts": [
+          "ue-link-10"
+        ]
+      },
+      {
+        "afterScene": 4,
+        "inserts": [
+          "ue-why-29"
+        ]
+      }
+    ],
+    "m-shm-intro": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hm-why-25"
+        ]
+      }
+    ],
+    "t-heat-intro": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "ht-why-10"
+        ]
+      }
+    ],
+    "w-interference-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-11"
+        ]
+      }
+    ],
+    "w-interference-advanced": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hw-why-12"
+        ]
+      }
+    ],
+    "w-basics-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-13"
+        ]
+      }
+    ],
+    "w-doppler-intro": [
+      {
+        "afterScene": 2,
+        "inserts": [
+          "hw-why-05"
+        ]
+      }
+    ],
+    "w-light-intro": [
+      {
+        "afterScene": 3,
+        "inserts": [
+          "hw-why-07"
+        ]
+      }
+    ]
+  },
+  "prerequisites": {
+    "ue-integrals-01": {
+      "required": [
+        "prep-parameter"
+      ],
+      "review": [
+        "prep-parameter"
+      ]
+    },
+    "ue-integrals-02": {
+      "required": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-integrals-03": {
+      "required": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-integrals-04": {
+      "required": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-integrals-05": {
+      "required": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-parameter",
+        "prep-dot-work",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-gauss-01": {
+      "required": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ],
+      "review": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ]
+    },
+    "ue-gauss-02": {
+      "required": [
+        "prep-substitution"
+      ],
+      "review": [
+        "prep-substitution"
+      ]
+    },
+    "ue-gauss-03": {
+      "required": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ],
+      "review": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ]
+    },
+    "ue-gauss-04": {
+      "required": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ],
+      "review": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ]
+    },
+    "ue-gauss-05": {
+      "required": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ],
+      "review": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ]
+    },
+    "ue-gauss-06": {
+      "required": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ],
+      "review": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ]
+    },
+    "ue-gauss-07": {
+      "required": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ],
+      "review": [
+        "prep-coulomb-field",
+        "prep-trig",
+        "prep-radian",
+        "prep-substitution",
+        "prep-power-derivative"
+      ]
+    },
+    "ue-potential-01": {
+      "required": [
+        "prep-electric-work",
+        "prep-inverse-potential",
+        "prep-partial"
+      ],
+      "review": [
+        "prep-electric-work",
+        "prep-inverse-potential",
+        "prep-partial"
+      ]
+    },
+    "ue-potential-02": {
+      "required": [
+        "prep-electric-work",
+        "prep-inverse-potential",
+        "prep-partial"
+      ],
+      "review": [
+        "prep-electric-work",
+        "prep-inverse-potential",
+        "prep-partial"
+      ]
+    },
+    "ue-capacitor-01": {
+      "required": [
+        "prep-capacitor",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-capacitor",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-capacitor-02": {
+      "required": [
+        "prep-capacitor",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-capacitor",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-current-01": {
+      "required": [
+        "prep-charge-current",
+        "prep-drag-solve"
+      ],
+      "review": [
+        "prep-charge-current",
+        "prep-drag-solve"
+      ]
+    },
+    "ue-current-02": {
+      "required": [
+        "prep-charge-current",
+        "prep-drag-solve"
+      ],
+      "review": [
+        "prep-charge-current",
+        "prep-drag-solve"
+      ]
+    },
+    "ue-lorentz-01": {
+      "required": [
+        "prep-cross-components",
+        "prep-circular"
+      ],
+      "review": [
+        "prep-cross-components",
+        "prep-circular"
+      ]
+    },
+    "ue-lorentz-02": {
+      "required": [
+        "prep-cross-components",
+        "prep-circular"
+      ],
+      "review": [
+        "prep-cross-components",
+        "prep-circular"
+      ]
+    },
+    "ue-ampere-01": {
+      "required": [
+        "prep-cross-components",
+        "prep-radian"
+      ],
+      "review": [
+        "prep-cross-components",
+        "prep-radian"
+      ]
+    },
+    "ue-ampere-02": {
+      "required": [
+        "prep-cross-components",
+        "prep-radian"
+      ],
+      "review": [
+        "prep-cross-components",
+        "prep-radian"
+      ]
+    },
+    "ue-faraday-01": {
+      "required": [
+        "prep-field-flux",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-field-flux",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-faraday-02": {
+      "required": [
+        "prep-field-flux",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-field-flux",
+        "prep-integral-compute"
+      ]
+    },
+    "ue-transient-01": {
+      "required": [
+        "prep-exponential",
+        "prep-log",
+        "prep-oscillation-equation"
+      ],
+      "review": [
+        "prep-exponential",
+        "prep-log",
+        "prep-oscillation-equation"
+      ]
+    },
+    "ue-transient-02": {
+      "required": [
+        "prep-exponential",
+        "prep-log",
+        "prep-oscillation-equation"
+      ],
+      "review": [
+        "prep-exponential",
+        "prep-log",
+        "prep-oscillation-equation"
+      ]
+    },
+    "ue-maxwell-01": {
+      "required": [
+        "prep-partial",
+        "prep-traveling-wave"
+      ],
+      "review": [
+        "prep-partial",
+        "prep-traveling-wave"
+      ]
+    },
+    "ue-maxwell-02": {
+      "required": [
+        "prep-partial",
+        "prep-traveling-wave"
+      ],
+      "review": [
+        "prep-partial",
+        "prep-traveling-wave"
+      ]
+    },
+    "ue-maxwell-03": {
+      "required": [
+        "prep-partial",
+        "prep-traveling-wave"
+      ],
+      "review": [
+        "prep-partial",
+        "prep-traveling-wave"
+      ]
+    },
+    "ui-field-map-01": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-field-map-02": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-field-map-03": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-work-direction-01": {
+      "required": [
+        "prep-trig",
+        "prep-work-energy"
+      ],
+      "review": [
+        "prep-trig",
+        "prep-work-energy"
+      ]
+    },
+    "ui-work-direction-02": {
+      "required": [
+        "prep-trig",
+        "prep-work-energy"
+      ],
+      "review": [
+        "prep-trig",
+        "prep-work-energy"
+      ]
+    },
+    "ui-work-direction-03": {
+      "required": [
+        "prep-trig",
+        "prep-work-energy"
+      ],
+      "review": [
+        "prep-trig",
+        "prep-work-energy"
+      ]
+    },
+    "ui-work-bent-path-01": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "ui-work-bent-path-02": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "ui-work-bent-path-03": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "ui-electric-work-path-01": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-electric-work-path-02": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-electric-work-path-03": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-flux-one-tile-01": {
+      "required": [
+        "prep-trig",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-trig",
+        "prep-field-flux"
+      ]
+    },
+    "ui-flux-one-tile-02": {
+      "required": [
+        "prep-trig",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-trig",
+        "prep-field-flux"
+      ]
+    },
+    "ui-flux-one-tile-03": {
+      "required": [
+        "prep-trig",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-trig",
+        "prep-field-flux"
+      ]
+    },
+    "ui-flux-many-tiles-01": {
+      "required": [
+        "prep-sum"
+      ],
+      "review": [
+        "prep-sum"
+      ]
+    },
+    "ui-flux-many-tiles-02": {
+      "required": [
+        "prep-sum"
+      ],
+      "review": [
+        "prep-sum"
+      ]
+    },
+    "ui-flux-many-tiles-03": {
+      "required": [
+        "prep-sum"
+      ],
+      "review": [
+        "prep-sum"
+      ]
+    },
+    "ui-closed-bag-01": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-closed-bag-02": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-closed-bag-03": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-charge-and-flux-preview-01": {
+      "required": [
+        "prep-coulomb-field"
+      ],
+      "review": [
+        "prep-coulomb-field"
+      ]
+    },
+    "ui-charge-and-flux-preview-02": {
+      "required": [
+        "prep-coulomb-field"
+      ],
+      "review": [
+        "prep-coulomb-field"
+      ]
+    },
+    "ui-charge-and-flux-preview-03": {
+      "required": [
+        "prep-coulomb-field"
+      ],
+      "review": [
+        "prep-coulomb-field"
+      ]
+    },
+    "ui-electric-potential-01": {
+      "required": [
+        "prep-electric-work"
+      ],
+      "review": [
+        "prep-electric-work"
+      ]
+    },
+    "ui-capacitance-01": {
+      "required": [
+        "prep-capacitor"
+      ],
+      "review": [
+        "prep-capacitor"
+      ]
+    },
+    "ui-conduction-01": {
+      "required": [
+        "prep-charge-current"
+      ],
+      "review": [
+        "prep-charge-current"
+      ]
+    },
+    "ui-magnetic-force-01": {
+      "required": [
+        "prep-circular",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-circular",
+        "prep-field-flux"
+      ]
+    },
+    "ui-current-field-01": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-induction-01": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "ui-circuit-time-01": {
+      "required": [
+        "prep-capacitor",
+        "prep-exponential"
+      ],
+      "review": [
+        "prep-capacitor",
+        "prep-exponential"
+      ]
+    },
+    "ui-ac-waves-01": {
+      "required": [
+        "prep-sin-wave",
+        "prep-wave"
+      ],
+      "review": [
+        "prep-sin-wave",
+        "prep-wave"
+      ]
+    },
+    "um-line-element-01": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-line-element-02": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-line-element-03": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-line-element-04": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-line-integral-entry-01": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "um-line-integral-entry-02": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "um-line-integral-entry-03": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "um-line-integral-entry-04": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "um-electrostatic-potential-path-01": {
+      "required": [
+        "prep-electric-work"
+      ],
+      "review": [
+        "prep-electric-work"
+      ]
+    },
+    "um-electrostatic-potential-path-02": {
+      "required": [
+        "prep-electric-work"
+      ],
+      "review": [
+        "prep-electric-work"
+      ]
+    },
+    "um-electrostatic-potential-path-03": {
+      "required": [
+        "prep-electric-work"
+      ],
+      "review": [
+        "prep-electric-work"
+      ]
+    },
+    "um-electrostatic-potential-path-04": {
+      "required": [
+        "prep-electric-work"
+      ],
+      "review": [
+        "prep-electric-work"
+      ]
+    },
+    "um-electrostatic-potential-path-05": {
+      "required": [
+        "prep-electric-work"
+      ],
+      "review": [
+        "prep-electric-work"
+      ]
+    },
+    "um-em-area-vector-01": {
+      "required": [
+        "prep-vector-length",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-vector-length",
+        "prep-dot-work"
+      ]
+    },
+    "um-em-area-vector-02": {
+      "required": [
+        "prep-vector-length",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-vector-length",
+        "prep-dot-work"
+      ]
+    },
+    "um-em-area-vector-03": {
+      "required": [
+        "prep-vector-length",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-vector-length",
+        "prep-dot-work"
+      ]
+    },
+    "um-surface-integral-entry-01": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "um-surface-integral-entry-02": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "um-surface-integral-entry-03": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "um-closed-electric-flux-01": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-closed-electric-flux-02": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-closed-electric-flux-03": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-gauss-sphere-preview-01": {
+      "required": [
+        "prep-coulomb-field"
+      ],
+      "review": [
+        "prep-coulomb-field"
+      ]
+    },
+    "um-gauss-sphere-preview-02": {
+      "required": [
+        "prep-coulomb-field"
+      ],
+      "review": [
+        "prep-coulomb-field"
+      ]
+    },
+    "um-gauss-sphere-preview-03": {
+      "required": [
+        "prep-coulomb-field"
+      ],
+      "review": [
+        "prep-coulomb-field"
+      ]
+    },
+    "um-capacitance-01": {
+      "required": [
+        "prep-capacitor"
+      ],
+      "review": [
+        "prep-capacitor"
+      ]
+    },
+    "um-capacitance-02": {
+      "required": [
+        "prep-capacitor"
+      ],
+      "review": [
+        "prep-capacitor"
+      ]
+    },
+    "um-conduction-01": {
+      "required": [
+        "prep-charge-current",
+        "prep-circuit-power"
+      ],
+      "review": [
+        "prep-charge-current",
+        "prep-circuit-power"
+      ]
+    },
+    "um-conduction-02": {
+      "required": [
+        "prep-charge-current",
+        "prep-circuit-power"
+      ],
+      "review": [
+        "prep-charge-current",
+        "prep-circuit-power"
+      ]
+    },
+    "um-magnetic-force-01": {
+      "required": [
+        "prep-cross-components",
+        "prep-circular"
+      ],
+      "review": [
+        "prep-cross-components",
+        "prep-circular"
+      ]
+    },
+    "um-magnetic-force-02": {
+      "required": [
+        "prep-cross-components",
+        "prep-circular"
+      ],
+      "review": [
+        "prep-cross-components",
+        "prep-circular"
+      ]
+    },
+    "um-current-field-01": {
+      "required": [
+        "prep-radian",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-radian",
+        "prep-field-flux"
+      ]
+    },
+    "um-current-field-02": {
+      "required": [
+        "prep-radian",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-radian",
+        "prep-field-flux"
+      ]
+    },
+    "um-induction-01": {
+      "required": [
+        "prep-sin-motion",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-sin-motion",
+        "prep-field-flux"
+      ]
+    },
+    "um-induction-02": {
+      "required": [
+        "prep-sin-motion",
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-sin-motion",
+        "prep-field-flux"
+      ]
+    },
+    "um-circuit-time-01": {
+      "required": [
+        "prep-exponential",
+        "prep-log",
+        "prep-ode-initial"
+      ],
+      "review": [
+        "prep-exponential",
+        "prep-log",
+        "prep-ode-initial"
+      ]
+    },
+    "um-circuit-time-02": {
+      "required": [
+        "prep-exponential",
+        "prep-log",
+        "prep-ode-initial"
+      ],
+      "review": [
+        "prep-exponential",
+        "prep-log",
+        "prep-ode-initial"
+      ]
+    },
+    "um-ac-maxwell-01": {
+      "required": [
+        "prep-sin-motion",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-sin-motion",
+        "prep-integral-compute"
+      ]
+    },
+    "um-ac-maxwell-02": {
+      "required": [
+        "prep-sin-motion",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-sin-motion",
+        "prep-integral-compute"
+      ]
+    },
+    "m1-velocity-intro": {
+      "required": [
+        "prep-position"
+      ],
+      "review": [
+        "prep-position"
+      ]
+    },
+    "m1-velocity-middle": {
+      "required": [
+        "prep-graph-slope"
+      ],
+      "review": [
+        "prep-graph-slope"
+      ]
+    },
+    "m1-velocity-advanced": {
+      "required": [
+        "prep-difference-limit"
+      ],
+      "review": [
+        "prep-difference-limit"
+      ]
+    },
+    "m1-acceleration-intro": {
+      "required": [
+        "prep-acceleration"
+      ],
+      "review": [
+        "prep-acceleration"
+      ]
+    },
+    "m1-acceleration-middle": {
+      "required": [
+        "prep-graph-slope"
+      ],
+      "review": [
+        "prep-graph-slope"
+      ]
+    },
+    "m1-acceleration-advanced": {
+      "required": [
+        "prep-vector-difference"
+      ],
+      "review": [
+        "prep-vector-difference"
+      ]
+    },
+    "m1-uniform-accel-intro": {
+      "required": [
+        "prep-acceleration",
+        "prep-initial-values"
+      ],
+      "review": [
+        "prep-acceleration",
+        "prep-initial-values"
+      ]
+    },
+    "m1-uniform-accel-middle": {
+      "required": [
+        "prep-area-distance"
+      ],
+      "review": [
+        "prep-area-distance"
+      ]
+    },
+    "m1-uniform-accel-advanced": {
+      "required": [
+        "prep-initial-values"
+      ],
+      "review": [
+        "prep-initial-values"
+      ]
+    },
+    "m-freefall-intro": {
+      "required": [
+        "prep-force"
+      ],
+      "review": [
+        "prep-force"
+      ]
+    },
+    "m-freefall-middle": {
+      "required": [
+        "prep-initial-values"
+      ],
+      "review": [
+        "prep-initial-values"
+      ]
+    },
+    "m-freefall-advanced": {
+      "required": [
+        "prep-work-energy",
+        "prep-potential-conservation"
+      ],
+      "review": [
+        "prep-work-energy",
+        "prep-potential-conservation"
+      ]
+    },
+    "m-projectile-intro": {
+      "required": [
+        "prep-force"
+      ],
+      "review": [
+        "prep-force"
+      ]
+    },
+    "m-projectile-middle": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "m-projectile-advanced": {
+      "required": [
+        "prep-algebra-projectile"
+      ],
+      "review": [
+        "prep-algebra-projectile"
+      ]
+    },
+    "m-force-intro": {
+      "required": [
+        "prep-force"
+      ],
+      "review": [
+        "prep-force"
+      ]
+    },
+    "m-force-middle": {
+      "required": [
+        "prep-force"
+      ],
+      "review": [
+        "prep-force"
+      ]
+    },
+    "m-force-advanced": {
+      "required": [
+        "prep-system"
+      ],
+      "review": [
+        "prep-system"
+      ]
+    },
+    "m-energy-intro": {
+      "required": [
+        "prep-work-energy"
+      ],
+      "review": [
+        "prep-work-energy"
+      ]
+    },
+    "m-energy-middle": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "m-energy-advanced": {
+      "required": [
+        "prep-potential-conservation",
+        "prep-spring"
+      ],
+      "review": [
+        "prep-potential-conservation",
+        "prep-spring"
+      ]
+    },
+    "m-momentum-intro": {
+      "required": [
+        "prep-impulse"
+      ],
+      "review": [
+        "prep-impulse"
+      ]
+    },
+    "m-momentum-middle": {
+      "required": [
+        "prep-impulse"
+      ],
+      "review": [
+        "prep-impulse"
+      ]
+    },
+    "m-momentum-advanced": {
+      "required": [
+        "prep-impulse"
+      ],
+      "review": [
+        "prep-impulse"
+      ]
+    },
+    "m-circular-intro": {
+      "required": [
+        "prep-circular"
+      ],
+      "review": [
+        "prep-circular"
+      ]
+    },
+    "m-circular-middle": {
+      "required": [
+        "prep-vector-difference",
+        "prep-circular"
+      ],
+      "review": [
+        "prep-vector-difference",
+        "prep-circular"
+      ]
+    },
+    "m-circular-advanced": {
+      "required": [
+        "prep-circular"
+      ],
+      "review": [
+        "prep-circular"
+      ]
+    },
+    "m-shm-intro": {
+      "required": [
+        "prep-spring"
+      ],
+      "review": [
+        "prep-spring"
+      ]
+    },
+    "m-shm-middle": {
+      "required": [
+        "prep-radian"
+      ],
+      "review": [
+        "prep-radian"
+      ]
+    },
+    "m-shm-advanced": {
+      "required": [
+        "prep-sin-wave",
+        "prep-sin-motion"
+      ],
+      "review": [
+        "prep-sin-wave",
+        "prep-sin-motion"
+      ]
+    },
+    "t-heat-intro": {
+      "required": [
+        "prep-heat-units"
+      ],
+      "review": [
+        "prep-heat-units"
+      ]
+    },
+    "t-heat-middle": {
+      "required": [
+        "prep-heat-units"
+      ],
+      "review": [
+        "prep-heat-units"
+      ]
+    },
+    "t-heat-advanced": {
+      "required": [
+        "prep-melting"
+      ],
+      "review": [
+        "prep-melting"
+      ]
+    },
+    "t-gas-intro": {
+      "required": [
+        "prep-pressure"
+      ],
+      "review": [
+        "prep-pressure"
+      ]
+    },
+    "t-gas-middle": {
+      "required": [
+        "prep-pressure"
+      ],
+      "review": [
+        "prep-pressure"
+      ]
+    },
+    "t-gas-advanced": {
+      "required": [
+        "prep-pressure"
+      ],
+      "review": [
+        "prep-pressure"
+      ]
+    },
+    "t-ideal-intro": {
+      "required": [
+        "prep-pressure"
+      ],
+      "review": [
+        "prep-pressure"
+      ]
+    },
+    "t-ideal-middle": {
+      "required": [
+        "prep-mole"
+      ],
+      "review": [
+        "prep-mole"
+      ]
+    },
+    "t-ideal-advanced": {
+      "required": [
+        "prep-mole",
+        "prep-gas-particles"
+      ],
+      "review": [
+        "prep-mole",
+        "prep-gas-particles"
+      ]
+    },
+    "t-firstlaw-intro": {
+      "required": [
+        "prep-gas-work"
+      ],
+      "review": [
+        "prep-gas-work"
+      ]
+    },
+    "t-firstlaw-middle": {
+      "required": [
+        "prep-gas-work"
+      ],
+      "review": [
+        "prep-gas-work"
+      ]
+    },
+    "t-firstlaw-advanced": {
+      "required": [
+        "prep-gas-work",
+        "prep-heat-cycle"
+      ],
+      "review": [
+        "prep-gas-work",
+        "prep-heat-cycle"
+      ]
+    },
+    "w-basics-intro": {
+      "required": [
+        "prep-wave"
+      ],
+      "review": [
+        "prep-wave"
+      ]
+    },
+    "w-basics-middle": {
+      "required": [
+        "prep-wave"
+      ],
+      "review": [
+        "prep-wave"
+      ]
+    },
+    "w-basics-advanced": {
+      "required": [
+        "prep-sin-wave",
+        "prep-traveling-wave"
+      ],
+      "review": [
+        "prep-sin-wave",
+        "prep-traveling-wave"
+      ]
+    },
+    "w-sound-intro": {
+      "required": [
+        "prep-wave"
+      ],
+      "review": [
+        "prep-wave"
+      ]
+    },
+    "w-sound-middle": {
+      "required": [
+        "prep-superposition",
+        "prep-sound-boundary"
+      ],
+      "review": [
+        "prep-superposition",
+        "prep-sound-boundary"
+      ]
+    },
+    "w-sound-advanced": {
+      "required": [
+        "prep-superposition"
+      ],
+      "review": [
+        "prep-superposition"
+      ]
+    },
+    "w-doppler-intro": {
+      "required": [
+        "prep-doppler"
+      ],
+      "review": [
+        "prep-doppler"
+      ]
+    },
+    "w-doppler-middle": {
+      "required": [
+        "prep-doppler"
+      ],
+      "review": [
+        "prep-doppler"
+      ]
+    },
+    "w-doppler-advanced": {
+      "required": [
+        "prep-doppler"
+      ],
+      "review": [
+        "prep-doppler"
+      ]
+    },
+    "w-light-intro": {
+      "required": [
+        "prep-refraction"
+      ],
+      "review": [
+        "prep-refraction"
+      ]
+    },
+    "w-light-middle": {
+      "required": [
+        "prep-refraction"
+      ],
+      "review": [
+        "prep-refraction"
+      ]
+    },
+    "w-light-advanced": {
+      "required": [
+        "prep-refraction"
+      ],
+      "review": [
+        "prep-refraction"
+      ]
+    },
+    "w-interference-intro": {
+      "required": [
+        "prep-superposition"
+      ],
+      "review": [
+        "prep-superposition"
+      ]
+    },
+    "w-interference-middle": {
+      "required": [
+        "prep-superposition"
+      ],
+      "review": [
+        "prep-superposition"
+      ]
+    },
+    "w-interference-advanced": {
+      "required": [
+        "prep-superposition"
+      ],
+      "review": [
+        "prep-superposition"
+      ]
+    },
+    "e-current-intro": {
+      "required": [
+        "prep-charge-current"
+      ],
+      "review": [
+        "prep-charge-current"
+      ]
+    },
+    "e-current-middle": {
+      "required": [
+        "prep-charge-current"
+      ],
+      "review": [
+        "prep-charge-current"
+      ]
+    },
+    "e-current-advanced": {
+      "required": [
+        "prep-circuit-power"
+      ],
+      "review": [
+        "prep-circuit-power"
+      ]
+    },
+    "e-power-intro": {
+      "required": [
+        "prep-charge-current"
+      ],
+      "review": [
+        "prep-charge-current"
+      ]
+    },
+    "e-power-middle": {
+      "required": [
+        "prep-circuit-power"
+      ],
+      "review": [
+        "prep-circuit-power"
+      ]
+    },
+    "e-power-advanced": {
+      "required": [
+        "prep-circuit-power"
+      ],
+      "review": [
+        "prep-circuit-power"
+      ]
+    },
+    "e-magnet-intro": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "e-magnet-middle": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "e-magnet-advanced": {
+      "required": [
+        "prep-field-flux"
+      ],
+      "review": [
+        "prep-field-flux"
+      ]
+    },
+    "e-field-intro": {
+      "required": [],
+      "review": []
+    },
+    "e-field-middle": {
+      "required": [
+        "prep-coulomb-field"
+      ],
+      "review": [
+        "prep-coulomb-field"
+      ]
+    },
+    "e-field-advanced": {
+      "required": [],
+      "review": []
+    },
+    "e-capacitor-intro": {
+      "required": [
+        "prep-capacitor"
+      ],
+      "review": [
+        "prep-capacitor"
+      ]
+    },
+    "e-capacitor-middle": {
+      "required": [
+        "prep-capacitor",
+        "prep-electric-work"
+      ],
+      "review": [
+        "prep-capacitor",
+        "prep-electric-work"
+      ]
+    },
+    "e-capacitor-advanced": {
+      "required": [
+        "prep-capacitor"
+      ],
+      "review": [
+        "prep-capacitor"
+      ]
+    },
+    "a-photon-intro": {
+      "required": [
+        "prep-photon-atom"
+      ],
+      "review": [
+        "prep-photon-atom"
+      ]
+    },
+    "a-photon-middle": {
+      "required": [
+        "prep-photon-atom",
+        "prep-quantum-units"
+      ],
+      "review": [
+        "prep-photon-atom",
+        "prep-quantum-units"
+      ]
+    },
+    "a-photon-advanced": {
+      "required": [
+        "prep-photon-atom"
+      ],
+      "review": [
+        "prep-photon-atom"
+      ]
+    },
+    "a-bohr-intro": {
+      "required": [
+        "prep-photon-atom",
+        "prep-quantum-units"
+      ],
+      "review": [
+        "prep-photon-atom",
+        "prep-quantum-units"
+      ]
+    },
+    "a-bohr-middle": {
+      "required": [
+        "prep-photon-atom",
+        "prep-quantum-units"
+      ],
+      "review": [
+        "prep-photon-atom",
+        "prep-quantum-units"
+      ]
+    },
+    "a-bohr-advanced": {
+      "required": [
+        "prep-bohr-energy",
+        "prep-inverse-potential"
+      ],
+      "review": [
+        "prep-bohr-energy",
+        "prep-inverse-potential"
+      ]
+    },
+    "a-nucleus-intro": {
+      "required": [
+        "prep-nucleus"
+      ],
+      "review": [
+        "prep-nucleus"
+      ]
+    },
+    "a-nucleus-middle": {
+      "required": [
+        "prep-exponential",
+        "prep-nucleus"
+      ],
+      "review": [
+        "prep-exponential",
+        "prep-nucleus"
+      ]
+    },
+    "a-nucleus-advanced": {
+      "required": [
+        "prep-nucleus",
+        "prep-nuclear-energy"
+      ],
+      "review": [
+        "prep-nucleus",
+        "prep-nuclear-energy"
+      ]
+    },
+    "um-derivative-intro": {
+      "required": [
+        "prep-difference-limit"
+      ],
+      "review": [
+        "prep-difference-limit"
+      ]
+    },
+    "um-derivative-middle": {
+      "required": [
+        "prep-difference-limit",
+        "prep-derivative-rules"
+      ],
+      "review": [
+        "prep-difference-limit",
+        "prep-derivative-rules"
+      ]
+    },
+    "um-derivative-advanced": {
+      "required": [
+        "prep-absolute"
+      ],
+      "review": [
+        "prep-absolute"
+      ]
+    },
+    "um-integral-intro": {
+      "required": [
+        "prep-area-distance"
+      ],
+      "review": [
+        "prep-area-distance"
+      ]
+    },
+    "um-integral-middle": {
+      "required": [
+        "prep-sum"
+      ],
+      "review": [
+        "prep-sum"
+      ]
+    },
+    "um-integral-advanced": {
+      "required": [
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-integral-compute"
+      ]
+    },
+    "um-rules-intro": {
+      "required": [
+        "prep-chain"
+      ],
+      "review": [
+        "prep-chain"
+      ]
+    },
+    "um-rules-middle": {
+      "required": [
+        "prep-chain"
+      ],
+      "review": [
+        "prep-chain"
+      ]
+    },
+    "um-rules-advanced": {
+      "required": [
+        "prep-partial"
+      ],
+      "review": [
+        "prep-partial"
+      ]
+    },
+    "um-taylor-intro": {
+      "required": [
+        "prep-radian"
+      ],
+      "review": [
+        "prep-radian"
+      ]
+    },
+    "um-taylor-middle": {
+      "required": [
+        "prep-power-derivative",
+        "prep-taylor"
+      ],
+      "review": [
+        "prep-power-derivative",
+        "prep-taylor"
+      ]
+    },
+    "um-taylor-advanced": {
+      "required": [
+        "prep-power-derivative",
+        "prep-taylor"
+      ],
+      "review": [
+        "prep-power-derivative",
+        "prep-taylor"
+      ]
+    },
+    "um-vector-intro": {
+      "required": [
+        "prep-vector-difference"
+      ],
+      "review": [
+        "prep-vector-difference"
+      ]
+    },
+    "um-vector-middle": {
+      "required": [
+        "prep-vector-length"
+      ],
+      "review": [
+        "prep-vector-length"
+      ]
+    },
+    "um-vector-advanced": {
+      "required": [
+        "prep-chain"
+      ],
+      "review": [
+        "prep-chain"
+      ]
+    },
+    "um-dot-intro": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "um-dot-middle": {
+      "required": [
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-dot-work"
+      ]
+    },
+    "um-dot-advanced": {
+      "required": [
+        "prep-cosine-dot"
+      ],
+      "review": [
+        "prep-cosine-dot"
+      ]
+    },
+    "um-cross-intro": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "um-cross-middle": {
+      "required": [
+        "prep-torque"
+      ],
+      "review": [
+        "prep-torque"
+      ]
+    },
+    "um-cross-advanced": {
+      "required": [
+        "prep-torque",
+        "prep-cross-components"
+      ],
+      "review": [
+        "prep-torque",
+        "prep-cross-components"
+      ]
+    },
+    "um-ode-intro": {
+      "required": [
+        "prep-ode-initial"
+      ],
+      "review": [
+        "prep-ode-initial"
+      ]
+    },
+    "um-ode-middle": {
+      "required": [
+        "prep-exponential"
+      ],
+      "review": [
+        "prep-exponential"
+      ]
+    },
+    "um-ode-advanced": {
+      "required": [
+        "prep-log"
+      ],
+      "review": [
+        "prep-log"
+      ]
+    },
+    "um-shm-ode-intro": {
+      "required": [
+        "prep-sin-wave",
+        "prep-spring"
+      ],
+      "review": [
+        "prep-sin-wave",
+        "prep-spring"
+      ]
+    },
+    "um-shm-ode-middle": {
+      "required": [
+        "prep-sin-wave",
+        "prep-sin-motion",
+        "prep-oscillation-coefficients"
+      ],
+      "review": [
+        "prep-sin-wave",
+        "prep-sin-motion",
+        "prep-oscillation-coefficients"
+      ]
+    },
+    "um-shm-ode-advanced": {
+      "required": [
+        "prep-oscillation-equation"
+      ],
+      "review": [
+        "prep-oscillation-equation"
+      ]
+    },
+    "uc-newton-intro": {
+      "required": [
+        "prep-acceleration"
+      ],
+      "review": [
+        "prep-acceleration"
+      ]
+    },
+    "uc-newton-middle": {
+      "required": [
+        "prep-initial-values",
+        "prep-integral-compute",
+        "prep-derivative-rules"
+      ],
+      "review": [
+        "prep-initial-values",
+        "prep-integral-compute",
+        "prep-derivative-rules"
+      ]
+    },
+    "uc-newton-advanced": {
+      "required": [
+        "prep-initial-values",
+        "prep-integral-compute"
+      ],
+      "review": [
+        "prep-initial-values",
+        "prep-integral-compute"
+      ]
+    },
+    "uc-drag-intro": {
+      "required": [
+        "prep-ode-initial"
+      ],
+      "review": [
+        "prep-ode-initial"
+      ]
+    },
+    "uc-drag-middle": {
+      "required": [
+        "prep-exponential",
+        "prep-ode-initial",
+        "prep-drag-solve"
+      ],
+      "review": [
+        "prep-exponential",
+        "prep-ode-initial",
+        "prep-drag-solve"
+      ]
+    },
+    "uc-drag-advanced": {
+      "required": [
+        "prep-log",
+        "prep-ode-initial",
+        "prep-drag-solve"
+      ],
+      "review": [
+        "prep-log",
+        "prep-ode-initial",
+        "prep-drag-solve"
+      ]
+    },
+    "uc-work-intro": {
+      "required": [
+        "prep-work-energy"
+      ],
+      "review": [
+        "prep-work-energy"
+      ]
+    },
+    "uc-work-middle": {
+      "required": [
+        "prep-integral-compute",
+        "prep-dot-work",
+        "prep-energy-chain"
+      ],
+      "review": [
+        "prep-integral-compute",
+        "prep-dot-work",
+        "prep-energy-chain"
+      ]
+    },
+    "uc-work-advanced": {
+      "required": [
+        "prep-energy-chain"
+      ],
+      "review": [
+        "prep-energy-chain"
+      ]
+    },
+    "uc-potential-intro": {
+      "required": [
+        "prep-potential-conservation"
+      ],
+      "review": [
+        "prep-potential-conservation"
+      ]
+    },
+    "uc-potential-middle": {
+      "required": [
+        "prep-partial"
+      ],
+      "review": [
+        "prep-partial"
+      ]
+    },
+    "uc-potential-advanced": {
+      "required": [
+        "prep-inverse-potential"
+      ],
+      "review": [
+        "prep-inverse-potential"
+      ]
+    },
+    "uc-momentum-intro": {
+      "required": [
+        "prep-impulse"
+      ],
+      "review": [
+        "prep-impulse"
+      ]
+    },
+    "uc-momentum-middle": {
+      "required": [
+        "prep-impulse"
+      ],
+      "review": [
+        "prep-impulse"
+      ]
+    },
+    "uc-momentum-advanced": {
+      "required": [
+        "prep-impulse",
+        "prep-collision"
+      ],
+      "review": [
+        "prep-impulse",
+        "prep-collision"
+      ]
+    },
+    "uc-angular-intro": {
+      "required": [
+        "prep-torque"
+      ],
+      "review": [
+        "prep-torque"
+      ]
+    },
+    "uc-angular-middle": {
+      "required": [
+        "prep-radian",
+        "prep-torque"
+      ],
+      "review": [
+        "prep-radian",
+        "prep-torque"
+      ]
+    },
+    "uc-angular-advanced": {
+      "required": [
+        "prep-torque",
+        "prep-cross-components"
+      ],
+      "review": [
+        "prep-torque",
+        "prep-cross-components"
+      ]
+    },
+    "uc-shm-intro": {
+      "required": [
+        "prep-spring",
+        "prep-pendulum"
+      ],
+      "review": [
+        "prep-spring",
+        "prep-pendulum"
+      ]
+    },
+    "uc-shm-middle": {
+      "required": [
+        "prep-sin-wave",
+        "prep-sin-motion",
+        "prep-pendulum"
+      ],
+      "review": [
+        "prep-sin-wave",
+        "prep-sin-motion",
+        "prep-pendulum"
+      ]
+    },
+    "uc-shm-advanced": {
+      "required": [
+        "prep-oscillation-equation"
+      ],
+      "review": [
+        "prep-oscillation-equation"
+      ]
+    },
+    "uc-rigid1-intro": {
+      "required": [
+        "prep-radian",
+        "prep-center-mass"
+      ],
+      "review": [
+        "prep-radian",
+        "prep-center-mass"
+      ]
+    },
+    "uc-rigid1-middle": {
+      "required": [
+        "prep-rotation-inertia"
+      ],
+      "review": [
+        "prep-rotation-inertia"
+      ]
+    },
+    "uc-rigid1-advanced": {
+      "required": [
+        "prep-integral-compute",
+        "prep-center-mass",
+        "prep-rotation-inertia"
+      ],
+      "review": [
+        "prep-integral-compute",
+        "prep-center-mass",
+        "prep-rotation-inertia"
+      ]
+    },
+    "uc-rigid2-intro": {
+      "required": [
+        "prep-radian",
+        "prep-center-mass",
+        "prep-rolling"
+      ],
+      "review": [
+        "prep-radian",
+        "prep-center-mass",
+        "prep-rolling"
+      ]
+    },
+    "uc-rigid2-middle": {
+      "required": [
+        "prep-center-mass",
+        "prep-rotation-inertia",
+        "prep-torque"
+      ],
+      "review": [
+        "prep-center-mass",
+        "prep-rotation-inertia",
+        "prep-torque"
+      ]
+    },
+    "uc-rigid2-advanced": {
+      "required": [
+        "prep-rotation-inertia",
+        "prep-rolling"
+      ],
+      "review": [
+        "prep-rotation-inertia",
+        "prep-rolling"
+      ]
+    },
+    "uc-frontier-intro": {
+      "required": [
+        "prep-reference"
+      ],
+      "review": [
+        "prep-reference"
+      ]
+    },
+    "uc-frontier-middle": {
+      "required": [
+        "prep-reference"
+      ],
+      "review": [
+        "prep-reference"
+      ]
+    },
+    "uc-frontier-advanced": {
+      "required": [
+        "prep-polar"
+      ],
+      "review": [
+        "prep-polar"
+      ]
+    },
+    "ui-curve-tiles-bridges-1": {
+      "required": [
+        "prep-area-distance"
+      ],
+      "review": [
+        "prep-area-distance"
+      ]
+    },
+    "ui-through-a-surface-bridges-2": {
+      "required": [],
+      "review": []
+    },
+    "um-path-pieces-bridges-3": {
+      "required": [
+        "prep-vector-length"
+      ],
+      "review": [
+        "prep-vector-length"
+      ]
+    },
+    "um-area-vector-bridges-4": {
+      "required": [
+        "prep-vector-length"
+      ],
+      "review": [
+        "prep-vector-length"
+      ]
+    },
+    "ui-motion-record-bridges-5": {
+      "required": [
+        "prep-position"
+      ],
+      "review": [
+        "prep-position"
+      ]
+    },
+    "ui-force-map-bridges-6": {
+      "required": [
+        "prep-force"
+      ],
+      "review": [
+        "prep-force"
+      ]
+    },
+    "ui-work-changing-bridges-7": {
+      "required": [],
+      "review": []
+    },
+    "ui-energy-change-bridges-8": {
+      "required": [
+        "prep-work-energy"
+      ],
+      "review": [
+        "prep-work-energy"
+      ]
+    },
+    "ui-turning-motion-bridges-9": {
+      "required": [
+        "prep-circular"
+      ],
+      "review": [
+        "prep-circular"
+      ]
+    },
+    "um-newton-components-bridges-10": {
+      "required": [
+        "prep-trig"
+      ],
+      "review": [
+        "prep-trig"
+      ]
+    },
+    "um-work-sum-bridges-11": {
+      "required": [
+        "prep-sum"
+      ],
+      "review": [
+        "prep-sum"
+      ]
+    },
+    "um-work-vector-bridges-12": {
+      "required": [
+        "prep-sum",
+        "prep-dot-work"
+      ],
+      "review": [
+        "prep-sum",
+        "prep-dot-work"
+      ]
+    },
+    "uc-shm-advanced-followups-1": {
+      "required": [
+        "prep-oscillation-equation",
+        "prep-oscillation-coefficients"
+      ],
+      "review": [
+        "prep-oscillation-equation",
+        "prep-oscillation-coefficients"
+      ]
+    },
+    "uc-frontier-advanced-followups-2": {
+      "required": [
+        "prep-polar"
+      ],
+      "review": [
+        "prep-polar"
+      ]
+    },
+    "uc-frontier-advanced-followups-3": {
+      "required": [
+        "prep-polar",
+        "prep-ellipse"
+      ],
+      "review": [
+        "prep-polar",
+        "prep-ellipse"
+      ]
+    },
+    "um-derivative-advanced-followups-4": {
+      "required": [
+        "prep-sin-derivative"
+      ],
+      "review": [
+        "prep-sin-derivative"
+      ]
+    },
+    "uc-rigid1-advanced-followups-5": {
+      "required": [
+        "prep-rotation-inertia",
+        "prep-mass-integration"
+      ],
+      "review": [
+        "prep-rotation-inertia",
+        "prep-mass-integration"
+      ]
+    },
+    "uc-rigid2-advanced-followups-6": {
+      "required": [
+        "prep-rotation-inertia"
+      ],
+      "review": [
+        "prep-rotation-inertia"
+      ]
+    }
+  }
+}

@@ -7,6 +7,7 @@ import io, json, math, subprocess, urllib.request, urllib.parse, wave, hashlib
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 import imageio_ffmpeg
+from narration_fluency import VERSION, fluent_query
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'public/media'
@@ -41,11 +42,11 @@ def request(endpoint,params,payload=None):
 audio=[]; durations=[]
 for i,(duration,title,narration,formula) in enumerate(SCENES):
  spoken=narration.replace('電場','でんば')
- fingerprint=hashlib.sha256(f'{SPEAKER}|0.90|{spoken}'.encode()).hexdigest()[:16]
+ fingerprint=hashlib.sha256(f'{VERSION}|{SPEAKER}|0.90|{spoken}'.encode()).hexdigest()[:16]
  wav=CACHE/f'nemo-{fingerprint}.wav'
  if not wav.exists():
   query=json.loads(request('audio_query',{'text':spoken,'speaker':SPEAKER}))
-  query.update(speedScale=.90,prePhonemeLength=.15,postPhonemeLength=.2)
+  query=fluent_query(spoken,query)
   wav.write_bytes(request('synthesis',{'speaker':SPEAKER},query))
  with wave.open(str(wav)) as w:
   assert w.getframerate()==24000 and w.getnchannels()==1 and w.getsampwidth()==2

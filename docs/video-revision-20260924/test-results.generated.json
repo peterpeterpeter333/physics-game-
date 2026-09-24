@@ -17,7 +17,7 @@
   {
     "name": "test-em-videos",
     "status": 0,
-    "output": "{\n  \"result\": \"PASS\",\n  \"units\": 40,\n  \"movies\": 100,\n  \"slides\": 315,\n  \"minutes\": 77.8,\n  \"megabytes\": 96.2,\n  \"checks\": [\n    \"ordered coverage\",\n    \"current narration and captions\",\n    \"media and posters\",\n    \"duration and scene bounds\",\n    \"full equations preserved\",\n    \"all figure renderers\"\n  ],\n  \"limitations\": \"These are structural checks, not proof of pedagogical quality or a substitute for listening to the videos.\"\n}\n"
+    "output": "{\n  \"result\": \"PASS\",\n  \"units\": 40,\n  \"movies\": 100,\n  \"slides\": 315,\n  \"minutes\": 68.5,\n  \"megabytes\": 106.2,\n  \"checks\": [\n    \"ordered coverage\",\n    \"current narration and captions\",\n    \"media and posters\",\n    \"duration and scene bounds\",\n    \"full equations preserved\",\n    \"all figure renderers\"\n  ],\n  \"limitations\": \"These are structural checks, not proof of pedagogical quality or a substitute for listening to the videos.\"\n}\n"
   },
   {
     "name": "test-all-video-scripts",
@@ -27,7 +27,7 @@
   {
     "name": "test-all-films",
     "status": 0,
-    "output": "{\n  \"result\": \"PASS\",\n  \"newVideos\": 156,\n  \"preservedEMVideos\": 100,\n  \"totalStages\": 136,\n  \"newVideoMiB\": 118.5,\n  \"newMinutes\": 97.9,\n  \"checks\": [\n    \"all draft recordings included\",\n    \"three difficulty levels\",\n    \"all chapter routes covered\",\n    \"original battle data retained\",\n    \"caption/audio timelines\",\n    \"media files and posters\"\n  ],\n  \"limits\": \"Not a learner test or a claim that every animation is pedagogically optimal.\"\n}\n"
+    "output": "{\n  \"result\": \"PASS\",\n  \"newVideos\": 156,\n  \"preservedEMVideos\": 100,\n  \"totalStages\": 136,\n  \"newVideoMiB\": 136.7,\n  \"newMinutes\": 85.9,\n  \"checks\": [\n    \"all draft recordings included\",\n    \"three difficulty levels\",\n    \"all chapter routes covered\",\n    \"original battle data retained\",\n    \"caption/audio timelines\",\n    \"media files and posters\"\n  ],\n  \"limits\": \"Not a learner test or a claim that every animation is pedagogically optimal.\"\n}\n"
   },
   {
     "name": "test-reviewed-narration",
@@ -37,7 +37,7 @@
   {
     "name": "test-prerequisite-films",
     "status": 0,
-    "output": "{\n  \"result\": \"PASS\",\n  \"prerequisiteVideos\": 76,\n  \"scenes\": 285,\n  \"existingVideosCovered\": 156,\n  \"stages\": 96,\n  \"universityEMPlaylistUnchanged\": true,\n  \"minutes\": 59.2,\n  \"MiB\": 57.9,\n  \"limits\": \"Technical coverage and ordering, not a learner-comprehension certification.\"\n}\n"
+    "output": "{\n  \"result\": \"PASS\",\n  \"prerequisiteVideos\": 76,\n  \"scenes\": 285,\n  \"existingVideosCovered\": 156,\n  \"stages\": 96,\n  \"universityEMPlaylistUnchanged\": true,\n  \"minutes\": 51.6,\n  \"MiB\": 63.1,\n  \"limits\": \"Technical coverage and ordering, not a learner-comprehension certification.\"\n}\n"
   },
   {
     "name": "test-em-video-repairs",
@@ -47,7 +47,7 @@
   {
     "name": "test-video-playlists",
     "status": 0,
-    "output": "{\n  \"result\": \"PASS\",\n  \"courses\": 190,\n  \"stages\": 136,\n  \"oldPlacements\": 836,\n  \"newPlacements\": 196,\n  \"reviewable\": 73,\n  \"surfaceMainSeconds\": 39.16,\n  \"checks\": [\n    \"direct unit assignments only\",\n    \"viewing-history independent\",\n    \"no ancestor expansion in review\",\n    \"legacy ID migration\",\n    \"main films preserved\"\n  ]\n}\n"
+    "output": "{\n  \"result\": \"PASS\",\n  \"courses\": 190,\n  \"stages\": 136,\n  \"oldPlacements\": 836,\n  \"newPlacements\": 196,\n  \"reviewable\": 73,\n  \"surfaceMainSeconds\": 34.32666666666666,\n  \"checks\": [\n    \"direct unit assignments only\",\n    \"viewing-history independent\",\n    \"no ancestor expansion in review\",\n    \"legacy ID migration\",\n    \"main films preserved\"\n  ]\n}\n"
   },
   {
     "name": "audit-math",
@@ -122,6 +122,6 @@
   {
     "name": "test-video-mode-media",
     "status": 0,
-    "output": "PASS: 1 revised main + 3 inserts; exact scripts, paired readings, captions, files, and route references.\n"
+    "output": "PASS: 31 revised main + 18 inserts; exact scripts, paired readings, captions, files, and route references.\n"
   }
 ]

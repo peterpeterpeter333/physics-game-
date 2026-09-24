@@ -27,7 +27,7 @@ const documents=sources.map(file=>{
  return {file,sha256:createHash('sha256').update(raw).digest('hex'),sections};
 });
 const sections=documents.flatMap(d=>d.sections),pairs=sections.flatMap(s=>s.pairs);
-const report={missingSources:['差し替え台本_02_高校熱力学・波動.md'],documentCount:documents.length,subtitleReadingPairs:pairs.length,
+const report={missingSources:['差し替え台本_02_高校熱力学・波動.md'].filter(f=>!sources.includes(f)),documentCount:documents.length,subtitleReadingPairs:pairs.length,
  sentenceAlignmentWarnings:documents.flatMap(d=>d.sections.flatMap(s=>s.pairs.filter(p=>p.subtitle.split('。').filter(Boolean).length!==p.reading.split('。').filter(Boolean).length).map(p=>({file:d.file,...p})))),
  documents};
 writeFileSync(`${root}/import-ledger.generated.json`,JSON.stringify(report,null,2)+'\n');

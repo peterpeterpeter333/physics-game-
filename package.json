@@ -5,6 +5,10 @@
   "type": "module",
   "scripts": {
     "test:video-modes": "node scripts/test-video-inserts.mjs && node scripts/test-video-mode-media.mjs",
+    "test:video-revision-plan": "node scripts/test-full-video-revision-plan.mjs",
+    "test:thermal-inserts": "node scripts/test-thermal-inserts.mjs",
+    "test:wave-inserts": "node scripts/test-wave-inserts.mjs",
+    "test:narration-fluency": "python3 scripts/test-narration-fluency.py",
     "test:video-playlists": "node scripts/build-prerequisite-routes.mjs --check && node scripts/test-video-playlists.mjs",
     "test:pronunciation": "python3 scripts/test-narration-pronunciation.py",
     "test:reviewed-videos": "node scripts/test-reviewed-narration.mjs",

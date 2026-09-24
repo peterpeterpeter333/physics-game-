@@ -1,0 +1,149 @@
+{
+  "id": "t-firstlaw-middle",
+  "stageId": "t-firstlaw",
+  "stageTitle": "熱と仕事の収支",
+  "topicId": "t-firstlaw",
+  "level": "middle",
+  "family": "high-school-thermal",
+  "title": "気体の仕事が圧力かける体積変化になるのはなぜ?",
+  "condition": "Qは気体が受け取る熱、Wは気体が外へする仕事を正とする。",
+  "sourceScript": "t-firstlaw-middle-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "一定の圧力の気体が、面積の決まったピストンを押します。",
+      "narration": "一定の圧力の気体が、面積の決まったピストンを押します。ピストンにかかる力は、圧力かける面積です。",
+      "visual": "p、断面積S、移動Δxをピストン図へ付ける。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.125,
+          "text": "一定の圧力の気体が、面積の決まったピストンを押します。"
+        },
+        {
+          "start": 4.125,
+          "end": 7.708333333333333,
+          "text": "ピストンにかかる力は、圧力かける面積です。"
+        }
+      ],
+      "end": 7.801666666666667,
+      "sceneId": "t-firstlaw-middle-s1",
+      "mode": "common"
+    },
+    {
+      "index": 1,
+      "heading": "仕事は力かける動いた距離。",
+      "narration": "仕事は力かける動いた距離。力を「圧力かける面積」に置き換えると、面積かける距離が出てきて、これは体積の変化です。だから気体の仕事は、圧力かける体積変化になります。",
+      "visual": "pSΔxのSΔx部分をΔVへ囲み直す。",
+      "equation": "W = pSΔx = pΔV",
+      "symbols": "pは一定圧力、Sはピストン面積、Δxは移動、ΔVは体積の増加。ゆっくり動かして、気体の圧力がいつもそろっている変化を扱う。",
+      "start": 7.801666666666667,
+      "captions": [
+        {
+          "start": 7.801666666666667,
+          "end": 10.125,
+          "text": "仕事は力かける動いた距離。"
+        },
+        {
+          "start": 10.125,
+          "end": 17.041666666666668,
+          "text": "力を「圧力かける面積」に置き換えると、面積かける距離が出てきて、これは体積の変化です。"
+        },
+        {
+          "start": 17.041666666666668,
+          "end": 21.208333333333336,
+          "text": "だから気体の仕事は、圧力かける体積変化になります。"
+        }
+      ],
+      "end": 21.32466666666667,
+      "sceneId": "t-firstlaw-middle-s2",
+      "mode": "common"
+    },
+    {
+      "index": 2,
+      "heading": "押し縮めるときは体積の変化がマイナスなので、気体が外へする仕事もマイナスです。",
+      "narration": "押し縮めるときは体積の変化がマイナスなので、気体が外へする仕事もマイナスです。これは、外から気体に仕事をしている、というのと同じ意味です。",
+      "visual": "ピストンを逆へ動かし、Wの符号を反転する。",
+      "equation": "",
+      "symbols": "",
+      "start": 21.32466666666667,
+      "captions": [
+        {
+          "start": 21.32466666666667,
+          "end": 26.916666666666668,
+          "text": "押し縮めるときは体積の変化がマイナスなので、気体が外へする仕事もマイナスです。"
+        },
+        {
+          "start": 26.916666666666668,
+          "end": 31.402,
+          "text": "これは、外から気体に仕事をしている、というのと同じ意味です。"
+        }
+      ],
+      "end": 32.752,
+      "sceneId": "t-firstlaw-middle-s3",
+      "mode": "common"
+    }
+  ],
+  "duration": 32.752,
+  "mediaDirectory": "revisions",
+  "renderKey": "34d7c6801aa2bb86c61ca020f3f2627ba48b107cd73d9be7a2948782e4f2b04e",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "visualRevisionTasks": [
+    {
+      "id": "t-firstlaw-middle",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_01-02_追補と対照表.md",
+        "line": 74
+      },
+      "directions": [
+        "記号の説明「準静的な変化を扱う」→「ゆっくり動かして、気体の圧力がいつもそろっている変化を扱う」。"
+      ],
+      "status": "pending-visual-verification"
+    }
+  ],
+  "wordReadingVersion": "20260924-v1",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 37.752,
+    "removedSeconds": 5.0,
+    "cuts": [
+      {
+        "start": 4.125,
+        "end": 4.708333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.291666666666666,
+        "end": 9.666666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 12.083333333333334,
+        "end": 12.666666666666666,
+        "reason": "sentence"
+      },
+      {
+        "start": 19.583333333333332,
+        "end": 20.125,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.291666666666668,
+        "end": 25.625,
+        "reason": "scene"
+      },
+      {
+        "start": 31.333333333333332,
+        "end": 31.916666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

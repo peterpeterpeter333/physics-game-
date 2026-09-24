@@ -57,6 +57,8 @@ const stills=process.argv.includes('--stills'),selected=process.argv.slice(2).fi
 for(const entry of plan){
  if(selected.length&&!selected.includes(entry.id))continue;
  const clip=JSON.parse(readFileSync(`${cache}/${entry.id}.json`));
+ if(clip.fluencyVersion!=='20260924-fluent-v1')throw Error(`Regenerate fluent audio first: ${entry.id}`);
+ if(clip.spacingVersion!=='20260924-furigana-spacing-v2')throw Error(`Regenerate normalized-furigana audio: ${entry.id}`);
  if(clip.scenes.map(s=>s.narration).join()!==entry.scenes.map(s=>s.narration).join())throw Error(`Stale audio ${clip.id}`);
  if(stills){for(const scene of clip.scenes)await sharp(Buffer.from(frame(clip,scene,(scene.start+scene.end)/2))).png().toFile(`${cache}/${clip.id}-${scene.index}.png`);console.log(`Checked ${clip.id}`);continue;}
  const hash=createHash('sha256').update(readFileSync(import.meta.filename)).update(JSON.stringify(clip)).digest('hex');clip.renderKey=hash;

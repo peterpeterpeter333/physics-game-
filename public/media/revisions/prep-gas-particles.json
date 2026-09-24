@@ -1,0 +1,236 @@
+{
+  "id": "prep-gas-particles",
+  "title": "一個の分子の衝突から、圧力へ",
+  "level": "advanced",
+  "before": [
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "一辺エルの箱で、質量エムの分子が壁にまっすぐ当たって跳ね返るとします。速度が逆向きになるので、壁が受け取る運動量は、「エムかける速度」の二倍です。",
+      "equation": "壁への力積 = 2mvₓ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "衝突前の速度"
+          ],
+          [
+            -3,
+            0,
+            "衝突後の速度"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "一辺エルの箱で、質量エムの分子が壁にまっすぐ当たって跳ね返るとします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-gas-particles-s1",
+      "mode": "common",
+      "start": 0,
+      "end": 11.259333333333334,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.8133333333333335,
+          "text": "一辺エルの箱で、質量エムの分子が壁にまっすぐ当たって跳ね返るとします。"
+        },
+        {
+          "start": 4.8533333333333335,
+          "end": 10.669333333333332,
+          "text": "速度が逆向きになるので、壁が受け取る運動量は、「エムかける速度」の二倍です。"
+        }
+      ]
+    },
+    {
+      "narration": "同じ壁に次に戻ってくるまでの時間は、箱を往復する距離を速度で割ったものです。力積をこの時間で割ると、分子一個が壁に及ぼす平均の力になります。",
+      "equation": "平均の力 = 2mvₓ/(2L/vₓ) = mvₓ²/L",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "vₓ²",
+        "yLabel": "一分子の平均の力（m/L=1）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "同じ壁に次に戻ってくるまでの時間は、箱を往復する距離を速度で割ったものです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-gas-particles-s2",
+      "mode": "common",
+      "start": 11.259333333333334,
+      "end": 22.06,
+      "captions": [
+        {
+          "start": 11.259333333333334,
+          "end": 16.48866666666667,
+          "text": "同じ壁に次に戻ってくるまでの時間は、箱を往復する距離を速度で割ったものです。"
+        },
+        {
+          "start": 16.528666666666666,
+          "end": 21.470000000000002,
+          "text": "力積をこの時間で割ると、分子一個が壁に及ぼす平均の力になります。"
+        }
+      ]
+    },
+    {
+      "narration": "全部の分子の力を足して、壁の面積で割ると、圧力です。運動に特別な向きがなければ、速度の二乗の平均は、三方向に等しく分かれます。",
+      "equation": "pV = Nm〈vₓ²〉 = Nm〈v²〉/3",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "横方向の二乗平均",
+          "縦方向",
+          "奥行き方向"
+        ],
+        "values": [
+          1,
+          1,
+          1
+        ],
+        "unit": "等しい寄与"
+      },
+      "index": 2,
+      "heading": "全部の分子の力を足して、壁の面積で割ると、圧力です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "sceneId": "prep-gas-particles-s3",
+      "mode": "common",
+      "start": 22.06,
+      "end": 32.63666666666666,
+      "captions": [
+        {
+          "start": 22.06,
+          "end": 26.414666666666665,
+          "text": "全部の分子の力を足して、壁の面積で割ると、圧力です。"
+        },
+        {
+          "start": 26.454666666666665,
+          "end": 32.04666666666667,
+          "text": "運動に特別な向きがなければ、速度の二乗の平均は、三方向に等しく分かれます。"
+        }
+      ]
+    },
+    {
+      "narration": "単原子の理想気体では、内部エネルギーは、分子が飛び回る運動エネルギーの合計です。この式と状態方程式は、同じ気体の同じ p V を表しているので、等しいとおけます。すると、内部エネルギーは物質量と絶対温度に比例します。",
+      "equation": "U=Nm〈v²〉/2 = 3pV/2 = 3nRT/2",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "絶対温度 T",
+        "yLabel": "内部エネルギー U（n一定）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4.5
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "単原子の理想気体では、内部エネルギーは、分子が飛び回る運動エネルギーの合計です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "utterances": [
+        {
+          "subtitle": "単原子の理想気体では、内部エネルギーは、分子が飛び回る運動エネルギーの合計です。",
+          "reading": "たんげんしの りそう きたいでは、ないぶ エネルギーは、ぶんしが とびまわる うんどう エネルギーの ごうけいです。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 349
+          }
+        },
+        {
+          "subtitle": "この式と状態方程式は、同じ気体の同じ p V を表しているので、等しいとおけます。",
+          "reading": "この しきと じょうたい ほうていしきは、おなじ きたいの おなじ ピーブイを あらわして いるので、ひとしいと おけます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 350
+          }
+        },
+        {
+          "subtitle": "すると、内部エネルギーは物質量と絶対温度に比例します。",
+          "reading": "すると、ないぶ エネルギーは ぶっしつりょうと ぜったい おんどに ひれい します。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 350
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面4 【字幕差し替え】(比べる理由)",
+        "場面1〜3 【そのまま】"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 345
+      },
+      "revisionEquations": [],
+      "sceneId": "prep-gas-particles-s4",
+      "mode": "common",
+      "start": 32.63666666666666,
+      "end": 49.111999999999995,
+      "captions": [
+        {
+          "start": 32.63666666666666,
+          "end": 38.49533333333333,
+          "text": "単原子の理想気体では、内部エネルギーは、分子が飛び回る運動エネルギーの合計です。"
+        },
+        {
+          "start": 38.53533333333333,
+          "end": 44.425999999999995,
+          "text": "この式と状態方程式は、同じ気体の同じ p V を表しているので、等しいとおけます。"
+        },
+        {
+          "start": 44.465999999999994,
+          "end": 48.52199999999999,
+          "text": "すると、内部エネルギーは物質量と絶対温度に比例します。"
+        }
+      ]
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "一個の分子の衝突から、圧力へ",
+  "topicId": "prep-gas-particles",
+  "family": "prerequisites",
+  "sourceScript": "prep-gas-particles",
+  "mediaDirectory": "revisions",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 49.111999999999995,
+  "renderKey": "8966e6a42bba00f3d672eea98070b5faaef43e28d23382cb809cac5554351dec"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "w-sound-advanced",
+  "stageId": "w-sound",
+  "stageTitle": "空気の振動と共鳴",
+  "topicId": "w-sound",
+  "level": "advanced",
+  "family": "high-school-waves",
+  "title": "二つの音から、なぜゆっくりしたうなりが生まれる?",
+  "condition": "線形な音波。管の開口端補正は最初は無視する。",
+  "sourceScript": "w-sound-advanced-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "振動数が少しだけ違う二つの音は、同じ場所で、強め合ったり弱め合ったりを繰り返します。",
+      "narration": "振動数が少しだけ違う二つの音は、同じ場所で、強め合ったり弱め合ったりを繰り返します。二つの波のタイミングのずれは、時間とともに少しずつ変わっていきます。",
+      "visual": "周波数が近い二つのサイン波を同じ点で足す。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.2,
+          "text": "振動数が少しだけ違う二つの音は、同じ場所で、強め合ったり弱め合ったりを繰り返します。"
+        },
+        {
+          "start": 6.24,
+          "end": 10.648,
+          "text": "二つの波のタイミングのずれは、時間とともに少しずつ変わっていきます。"
+        }
+      ],
+      "end": 11.238000000000001,
+      "sceneId": "w-sound-advanced-s1",
+      "mode": "common"
+    },
+    {
+      "index": 1,
+      "heading": "片方の振動がもう片方より一回多く進むと、二つの波はまた元のタイミングの関係に戻ります。",
+      "narration": "片方の振動がもう片方より一回多く進むと、二つの波はまた元のタイミングの関係に戻ります。この「元に戻る回数」が一秒に何回あるかが、うなりの振動数です。",
+      "visual": "位相時計二つの差を一周させ、合成振幅の最大を刻む。",
+      "equation": "fうなり = |f₁−f₂|",
+      "symbols": "f₁・f₂は二つの音の振動数、fうなりは強さの繰り返し回数[Hz]。",
+      "start": 11.238000000000001,
+      "captions": [
+        {
+          "start": 11.238000000000001,
+          "end": 17.662000000000003,
+          "text": "片方の振動がもう片方より一回多く進むと、二つの波はまた元のタイミングの関係に戻ります。"
+        },
+        {
+          "start": 17.702,
+          "end": 22.92066666666667,
+          "text": "この「元に戻る回数」が一秒に何回あるかが、うなりの振動数です。"
+        }
+      ],
+      "end": 23.51066666666667,
+      "sceneId": "w-sound-advanced-s2",
+      "mode": "common"
+    },
+    {
+      "index": 2,
+      "heading": "二つの音が消えたのではなく、同じ場所での重なり方が変わっているだけです。",
+      "narration": "二つの音が消えたのではなく、同じ場所での重なり方が変わっているだけです。同じ考え方は、光の干渉、つまり光どうしの重なりにも使えます。",
+      "visual": "元の二波を消さず、合成波だけが強弱を変える様子を表示。",
+      "equation": "",
+      "symbols": "",
+      "start": 23.51066666666667,
+      "captions": [
+        {
+          "start": 23.51066666666667,
+          "end": 28.26,
+          "text": "二つの音が消えたのではなく、同じ場所での重なり方が変わっているだけです。"
+        },
+        {
+          "start": 28.300000000000004,
+          "end": 33.284,
+          "text": "同じ考え方は、光の干渉、つまり光どうしの重なりにも使えます。"
+        }
+      ],
+      "end": 33.874,
+      "sceneId": "w-sound-advanced-s3",
+      "mode": "common"
+    }
+  ],
+  "duration": 33.874,
+  "mediaDirectory": "revisions",
+  "renderKey": "ad07dd19a2b053e9c40409d449ccf3dbe957c5be8bc0ba1d95d024a70a1756a9",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2"
+}

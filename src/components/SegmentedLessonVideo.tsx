@@ -12,7 +12,17 @@ export function SegmentedLessonVideo({main,mode,routes,inserts,onError,onMainTim
  const media=segment.insert?inserts.find(m=>m.id===segment.movieId)!:main;
  const base=`${import.meta.env.BASE_URL}media/${media.mediaDirectory??'em'}/${media.id}`;
  const revision=media.renderKey?`?v=${media.renderKey.slice(0,16)}`:'';
+ function positionAndResume(){
+  const video=player.current;if(!video||video.readyState<1)return;
+  video.currentTime=Math.max(segment.start,Math.min(cursor.time,segment.end));
+  transitioning.current=false;
+  if(cursor.playing)void video.play().catch(()=>{wasPlaying.current=false;});
+ }
  useEffect(()=>()=>release.current?.(),[]);
+ // Preserve the user's activated media element across inserts. Replacing the
+ // element made Safari stop at each boundary even while the user was watching.
+ // A mode change within the same MP4 does not dispatch loadedmetadata again.
+ useEffect(()=>{positionAndResume();},[cursor.generation,base,revision]);
  useEffect(()=>{
   if(cursor.mode===mode)return;
   mainClock.current=segment.insert?segment.mainTime:(player.current?.currentTime??mainClock.current);
@@ -29,15 +39,26 @@ export function SegmentedLessonVideo({main,mode,routes,inserts,onError,onMainTim
  }
  return <>
   {segment.insert&&<p className="em-movie-insert-label">とことん学ぶ：{media.title}</p>}
-  <video key={`${segment.key}:${cursor.generation}`} data-learning-mode={cursor.mode} data-main-time={mainClock.current} data-segment-index={cursor.index} ref={player} controls playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${media.title}の音声・字幕付き動画`}
+  <video src={`${base}.mp4${revision}`} data-learning-mode={cursor.mode} data-main-time={mainClock.current} data-segment-index={cursor.index} ref={player} controls playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${media.title}の音声・字幕付き動画`}
    onError={onError}
-   onLoadedMetadata={()=>{const video=player.current;if(!video)return;video.currentTime=Math.max(segment.start,Math.min(cursor.time,segment.end));transitioning.current=false;if(cursor.playing)void video.play().catch(()=>{wasPlaying.current=false;});}}
+   onLoadedMetadata={positionAndResume}
    onPlay={()=>{wasPlaying.current=true;if(!segment.insert)mainStarted.current=true;release.current?.();release.current=claimNarration(()=>player.current?.pause());}}
-   onSeeking={event=>{if(!segment.insert&&!transitioning.current&&event.currentTarget.currentTime>.1)mainStarted.current=true;}}
+   onSeeking={event=>{
+    if(segment.insert||transitioning.current)return;
+    const time=event.currentTarget.currentTime;
+    if(time>.1)mainStarted.current=true;
+    // Native controls expose the entire main MP4. Seeking across a boundary
+    // (including replay after reaching the end) must update its logical segment.
+    const index=resumeSegment(segments,time);
+    if(index!==cursor.index){
+     const playing=!event.currentTarget.paused;
+     transitioning.current=true;mainClock.current=time;
+     setCursor(c=>({...c,index,time,playing,generation:c.generation+1}));
+    }
+   }}
    onPause={()=>{if(!transitioning.current&&player.current&&!player.current.ended)wasPlaying.current=false;}}
    onTimeUpdate={event=>{const video=event.currentTarget;if(video!==player.current||transitioning.current)return;if(!segment.insert){mainClock.current=Math.min(video.currentTime,segment.end);onMainTime(mainClock.current);}if(video.currentTime>=segment.end)advance();}}
    onEnded={advance}>
-   <source src={`${base}.mp4${revision}`} type="video/mp4" onError={onError}/>
   </video>
  </>;
 }

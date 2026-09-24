@@ -39,11 +39,21 @@ assert.ok(audio.includes("replace('電気束','でんきそく')"));
 if(!process.argv.includes('--source-only')){
  const {media}=JSON.parse(readFileSync('docs/video-scripts/reviewed-media-20260923.json'));
  assert.equal(media.length,332);assert.equal(new Set(media.map(m=>m.id)).size,332);
+ const fluency=JSON.parse(readFileSync('docs/video-fluency-20260924/verification.json'));
+ assert.equal(fluency.partial,false);
  for(const m of media){
   const clip=catalogs.find(c=>c.id===m.id),data=readFileSync(m.file);
-  assert.equal(data.length,m.bytes,`${m.id}: video bytes`);
-  assert.equal(createHash('sha256').update(data).digest('hex'),m.sha256,`${m.id}: video checksum`);
-  assert.equal(clip?.renderKey,m.renderKey,`${m.id}: catalog revision`);
+  const repair=clip?.fluencyRepairVersion?fluency.results.find(r=>`public/media/${r.file}`===m.file):null;
+  if(clip?.fluencyRepairVersion){
+   assert.ok(repair,`${m.id}: verified audio repair required`);
+   assert.equal(repair.originalBytes,m.bytes,`${m.id}: preserved reviewed original bytes`);
+   assert.equal(repair.originalSha256,m.sha256,`${m.id}: preserved reviewed original checksum`);
+   assert.equal(repair.originalRenderKey,m.renderKey,`${m.id}: original revision`);
+   assert.ok(repair.audioCorrelation>.98&&repair.cutPeak<=120,`${m.id}: speech and silence verification`);
+  }
+  assert.equal(data.length,repair?.bytes??m.bytes,`${m.id}: video bytes`);
+  assert.equal(createHash('sha256').update(data).digest('hex'),repair?.sha256??m.sha256,`${m.id}: video checksum`);
+  assert.equal(clip?.renderKey,repair?.renderKey??m.renderKey,`${m.id}: catalog revision`);
  }
 }
 console.log(`PASS: ${changes.length} reviewed scenes, 332 clips, ${Object.keys(corrections).length} explicit corrections; ${process.argv.includes('--source-only')?'source only':'source/caption/media consistency'}.`);

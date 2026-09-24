@@ -65,6 +65,8 @@ for(const entry of plan){
  const json=path.join(cache,`${entry.id}.json`);
  if(!existsSync(json))throw Error(`Audio not ready: ${entry.id}`);
  const clip=JSON.parse(readFileSync(json));
+ if(!process.env.EM_FILM_PREFLIGHT&&clip.fluencyVersion!=='20260924-fluent-v1')throw Error(`Regenerate fluent audio first: ${entry.id}`);
+ if(!process.env.EM_FILM_PREFLIGHT&&clip.spacingVersion!=='20260924-furigana-spacing-v2')throw Error(`Regenerate normalized-furigana audio: ${entry.id}`);
  const scriptKey=c=>JSON.stringify(c.scenes.map(s=>[s.narration,s.utterances]));
  if(scriptKey(clip)!==scriptKey(entry))throw Error(`Updated audio not ready: ${entry.id}`);
  clip.title=entry.title;

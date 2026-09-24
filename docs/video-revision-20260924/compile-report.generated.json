@@ -1,0 +1,267 @@
+{
+  "revised": 234,
+  "added": 188,
+  "issues": [],
+  "editorial": [
+    {
+      "source": {
+        "file": "差し替え台本_03_高校電磁気・原子.md",
+        "line": 168
+      },
+      "line": 173,
+      "before": {
+        "subtitle": "画面の ε はイプシロンと読み、起電力です。dΦ/dt はディーファイ・ディーティーと読み、一秒あたりの磁束の変化です。",
+        "reading": "がめんの きごうで、イプシロンと よむ ものは きでんりょく、ディーファイ ディーティーと よむ ものは、いちびょう あたりの じそくの へんかです。",
+        "line": 173
+      },
+      "after": {
+        "subtitle": "画面の ε はイプシロンと読み、起電力です。dΦ/dt はディーファイ・ディーティーと読み、一秒あたりの磁束の変化です。",
+        "reading": "がめんの イプシロンと よむ きごうは、きでんりょくです。ディーファイ ディーティーと よむ ものは、いちびょう あたりの じそくの へんかです。"
+      }
+    },
+    {
+      "source": {
+        "file": "差し替え台本_03_高校電磁気・原子.md",
+        "line": 357
+      },
+      "line": 362,
+      "before": {
+        "subtitle": "画面の ν はニューと読み、振動数です。h はプランク定数、W は引きはがすのに要る最小のエネルギーで、仕事関数と言います。",
+        "reading": "がめんの きごうで、ニューと よむ ものは しんどうすう、エイチは プランクていすう、ダブリューは ひきはがすのに いる さいしょうの エネルギーで、しごとかんすう と いいます。",
+        "line": 362
+      },
+      "after": {
+        "subtitle": "画面の ν はニューと読み、振動数です。h はプランク定数、W は引きはがすのに要る最小のエネルギーで、仕事関数と言います。",
+        "reading": "がめんの ニューと よむ きごうは、しんどうすうです。エイチは プランクていすう、ダブリューは ひきはがすのに いる さいしょうの エネルギーで、しごとかんすう と いいます。"
+      }
+    },
+    {
+      "source": {
+        "file": "差し替え台本_08_大学電磁気_上級.md",
+        "line": 392
+      },
+      "line": 396,
+      "before": {
+        "subtitle": "積分した関数を、ジーとします。ジーを微分すると、前の差し込みの二つの微分の半分ずつが出て、かっこの中の二つの項の和の半分に戻ります。",
+        "reading": "せきぶん した かんすうを、ジーと します。ジーを びぶん すると、まえの さしこみの ふたつの びぶんの はんぶんずつが でて、かっこの なかの ふたつの こうの わの はんぶんに もどります。",
+        "line": 396
+      },
+      "after": {
+        "subtitle": "積分した関数を、ジーとします。ジーを微分すると、二つのべき乗の微分の半分ずつが出て、かっこの中の二つの項の和の半分に戻ります。",
+        "reading": "せきぶん した かんすうを、ジーと します。ジーを びぶん すると、ふたつの べきじょうの びぶんの はんぶんずつが でて、かっこの なかの ふたつの こうの わの はんぶんに もどります。"
+      }
+    }
+  ],
+  "visualTasks": [
+    {
+      "id": "m-force-advanced",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_01-02_追補と対照表.md",
+        "line": 29
+      },
+      "directions": [
+        "記号の説明「外部は選んだ系の外側」→「外は、一つのかたまりと見た範囲の外側」。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m-momentum-intro",
+      "scene": null,
+      "source": {
+        "file": "差し替え台本_01-02_追補と対照表.md",
+        "line": 32
+      },
+      "directions": [
+        "条件文「衝突では対象の系と衝突時間を先に指定する」→「衝突では、どこまでを一つのかたまりと見るかと、ぶつかっている時間を先に決める」。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m-momentum-middle",
+      "scene": null,
+      "source": {
+        "file": "差し替え台本_01-02_追補と対照表.md",
+        "line": 32
+      },
+      "directions": [
+        "条件文「衝突では対象の系と衝突時間を先に指定する」→「衝突では、どこまでを一つのかたまりと見るかと、ぶつかっている時間を先に決める」。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m-momentum-advanced",
+      "scene": null,
+      "source": {
+        "file": "差し替え台本_01-02_追補と対照表.md",
+        "line": 32
+      },
+      "directions": [
+        "条件文「衝突では対象の系と衝突時間を先に指定する」→「衝突では、どこまでを一つのかたまりと見るかと、ぶつかっている時間を先に決める」。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "t-firstlaw-middle",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_01-02_追補と対照表.md",
+        "line": 74
+      },
+      "directions": [
+        "記号の説明「準静的な変化を扱う」→「ゆっくり動かして、気体の圧力がいつもそろっている変化を扱う」。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m1-velocity-middle",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_01_高校力学.md",
+        "line": 57
+      },
+      "directions": [
+        "映像修正: 式の「v平均」を「v̄」に変える。記号の説明を「v̄(ブイバー)は、区間の平均の速度」に変える。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m1-acceleration-middle",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_01_高校力学.md",
+        "line": 122
+      },
+      "directions": [
+        "映像修正: 式の「a平均」を「ā」に。記号の説明を「ā(エーバー)は平均の加速度、Δv は速度の差、Δt は時刻の差」に。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m1-acceleration-advanced",
+      "scene": null,
+      "source": {
+        "file": "差し替え台本_01_高校力学.md",
+        "line": 137
+      },
+      "directions": [
+        "「直線上の運動。正方向を途中で変更しない。」→「速さ一定の円運動。速度は向きを持つ矢印で表す。」"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m1-acceleration-advanced",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_01_高校力学.md",
+        "line": 142
+      },
+      "directions": [
+        "式を `\\bar{\\vec a}=\\dfrac{\\vec v_{\\text{後}}-\\vec v_{\\text{前}}}{\\Delta t}` に。記号の説明の「所要時間」を「かかった時間」に。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "m-circular-middle",
+      "scene": 1,
+      "source": {
+        "file": "差し替え台本_01_高校力学.md",
+        "line": 547
+      },
+      "directions": [
+        "映像修正: 空欄の式に `\\dfrac{\\Delta v}{v}=\\dfrac{\\Delta s}{r}` を表示。二つの二等辺三角形(半径二本と弧、速度二本と速度の変化)を並べて示す。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "t-heat-advanced",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 39
+      },
+      "directions": [
+        "記号の説明の単位を、声と中級の動画にそろえる。「mは融ける質量[kg]、Lは…[J/kg]」→「mは融ける質量[g]、Lは一グラムあたりの融解熱[J/g]」。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "w-interference-advanced",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 510
+      },
+      "directions": [
+        "映像修正: 記号の説明に「θ(シータ)は正面からの角度」を明記。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "a-photon-advanced",
+      "scene": null,
+      "source": {
+        "file": "差し替え台本_03_高校電磁気・原子.md",
+        "line": 379
+      },
+      "directions": [
+        "「通常の一光子光電効果。…金属の種類を固定。」→「原子のエネルギー準位と、一個の光子の放出。水素の例で数値を扱う。」"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "prep-heat-cycle",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 376
+      },
+      "directions": [
+        "画面の「W正味」を「W差し引き」に、「効率 = W正味/Q受取」を「効率 = W差し引き/Q受取」に。",
+        "場面1〜3 【そのまま】",
+        "---"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "prep-electric-work",
+      "scene": 3,
+      "source": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 493
+      },
+      "directions": [
+        "映像修正: 式「Eₓ=−∂V/∂x」を「Eₓ ≈ −ΔV/Δx」に。記号の説明に「ΔV は電位の差、Δx は位置の差」。"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "prep-photon-atom",
+      "scene": 1,
+      "source": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 526
+      },
+      "directions": [
+        "映像修正: 式の「E = hf」を「E = hν」に。場面3・4の「hf」も「hν」に。記号の説明「νは振動数(ニュー)」。",
+        "場面2〜4 【そのまま】(映像修正の記号のみ)"
+      ],
+      "status": "pending-visual-verification"
+    },
+    {
+      "id": "um-ode-advanced",
+      "scene": 2,
+      "source": {
+        "file": "差し替え台本_05_大学数学.md",
+        "line": 558
+      },
+      "directions": [
+        "映像修正: 記号の説明から、画面に出てこない「ξ と s」の説明を消す(式に出てくる場合は、その式の横に「積分の中だけで使う文字」と表示)。",
+        "さっとモード用の2行目(差し込みが再生されないため、こちらを使う):"
+      ],
+      "status": "pending-visual-verification"
+    }
+  ],
+  "publicationReady": false,
+  "note": "Compilation validates mappings, not rendered diagrams, playback, or pronunciation."
+}

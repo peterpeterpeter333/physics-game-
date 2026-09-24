@@ -1,0 +1,125 @@
+{
+  "id": "t-heat-intro",
+  "stageId": "t-heat",
+  "stageTitle": "温度と熱の移動",
+  "topicId": "t-heat",
+  "level": "intro",
+  "family": "high-school-thermal",
+  "title": "同じ温度の水槽とコップを一度温めるには、同じ熱量が必要?",
+  "condition": "比熱は扱う温度範囲で一定。相変化と温度変化を分ける。",
+  "sourceScript": "t-heat-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "温度は、物体がどれくらい熱いか冷たいかを表す数です。",
+      "narration": "温度は、物体がどれくらい熱いか冷たいかを表す数です。熱は、温度の差があるときに、熱い方から冷たい方へ移るエネルギーです。",
+      "visual": "同温のコップと水槽を並べ、温度計と水の量を別表示。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.083333333333333,
+          "text": "温度は、物体がどれくらい熱いか冷たいかを表す数です。"
+        },
+        {
+          "start": 4.083333333333333,
+          "end": 9.375,
+          "text": "熱は、温度の差があるときに、熱い方から冷たい方へ移るエネルギーです。"
+        }
+      ],
+      "end": 9.517,
+      "sceneId": "t-heat-intro-s1",
+      "mode": "common"
+    },
+    {
+      "index": 1,
+      "heading": "同じ温度の水でも、量が多いほど、一度上げるのに多くのエネルギーが要ります。",
+      "narration": "同じ温度の水でも、量が多いほど、一度上げるのに多くのエネルギーが要ります。温度が同じでも、必要なエネルギーは同じとは限りません。",
+      "visual": "同じ1℃上昇までのヒーター供給量を比較。",
+      "equation": "",
+      "symbols": "",
+      "start": 9.517,
+      "captions": [
+        {
+          "start": 9.517,
+          "end": 14.958333333333332,
+          "text": "同じ温度の水でも、量が多いほど、一度上げるのに多くのエネルギーが要ります。"
+        },
+        {
+          "start": 14.958333333333332,
+          "end": 19.25,
+          "text": "温度が同じでも、必要なエネルギーは同じとは限りません。"
+        }
+      ],
+      "end": 19.353999999999996,
+      "sceneId": "t-heat-intro-s2",
+      "mode": "common"
+    },
+    {
+      "index": 2,
+      "heading": "必要な熱量は、「何の物質か」「何グラムか」「何度上げるか」の三つで決まります。",
+      "narration": "必要な熱量は、「何の物質か」「何グラムか」「何度上げるか」の三つで決まります。水を増やすことと温度を上げることは、別の話です。",
+      "visual": "三つの条件を順番に固定し、質量だけの比較を残す。",
+      "equation": "",
+      "symbols": "",
+      "start": 19.353999999999996,
+      "captions": [
+        {
+          "start": 19.353999999999996,
+          "end": 25.458333333333332,
+          "text": "必要な熱量は、「何の物質か」「何グラムか」「何度上げるか」の三つで決まります。"
+        },
+        {
+          "start": 25.458333333333332,
+          "end": 29.409999999999997,
+          "text": "水を増やすことと温度を上げることは、別の話です。"
+        }
+      ],
+      "end": 30.759999999999998,
+      "sceneId": "t-heat-intro-s3",
+      "mode": "common"
+    }
+  ],
+  "duration": 30.759999999999998,
+  "mediaDirectory": "revisions",
+  "renderKey": "22d1d438681e7a3cbf02f8f70fed6fc28035c24cc7022cc1253435d1ebfc8659",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 35.093333333333334,
+    "removedSeconds": 4.333333333333336,
+    "cuts": [
+      {
+        "start": 4.083333333333333,
+        "end": 4.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.916666666666666,
+        "end": 11.25,
+        "reason": "scene"
+      },
+      {
+        "start": 16.833333333333332,
+        "end": 17.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.666666666666668,
+        "end": 23.0,
+        "reason": "scene"
+      },
+      {
+        "start": 29.208333333333332,
+        "end": 29.791666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

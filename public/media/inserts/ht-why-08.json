@@ -1,0 +1,105 @@
+{
+  "id": "ht-why-08",
+  "title": "数値と単位で確かめる",
+  "stageId": "t-firstlaw",
+  "level": "middle",
+  "renderer": "insert",
+  "family": "high-school-thermal",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "数値と単位で確かめる(場面2の後)",
+      "screen": "",
+      "equations": [
+        "W=p\\Delta V=1.0\\times10^5\\times1.0\\times10^{-3}=100\\ \\mathrm J,\\qquad \\mathrm{Pa\\cdot m^3}=\\mathrm{N/m^2\\cdot m^3}=\\mathrm{N\\cdot m}=\\mathrm J"
+      ],
+      "revisionDirections": [
+        "式: `W=p\\Delta V=1.0\\times10^5\\times1.0\\times10^{-3}=100\\ \\mathrm J,\\qquad \\mathrm{Pa\\cdot m^3}=\\mathrm{N/m^2\\cdot m^3}=\\mathrm{N\\cdot m}=\\mathrm J`",
+        "---"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_02_高校熱力学・波動.md",
+        "line": 226
+      },
+      "utterances": [
+        {
+          "subtitle": "大気の圧力、十の五乗パスカルで、気体が一リットル、つまり千分の一立方メートル膨らむと、仕事は百ジュールです。",
+          "reading": "たいきの あつりょく、じゅうの ごじょう パスカルで、きたいが いちリットル、つまり せんぶんの いち りっぽうメートル ふくらむと、しごとは ひゃくジュールです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 231
+          }
+        },
+        {
+          "subtitle": "単位を確かめます。",
+          "reading": "たんいを たしかめます。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 232
+          }
+        },
+        {
+          "subtitle": "パスカルはニュートン毎平方メートルなので、立方メートルを掛けると、ニュートンメートル、つまりジュールです。",
+          "reading": "パスカルは ニュートン まい へいほうメートル なので、りっぽうメートルを かけると、ニュートン メートル、つまり ジュールです。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 232
+          }
+        },
+        {
+          "subtitle": "圧力かける体積の変化が、ちゃんと仕事の単位になっていることが分かります。",
+          "reading": "あつりょく かける たいせきの へんかが、ちゃんと しごとの たんいに なって いる ことが わかります。",
+          "source": {
+            "file": "差し替え台本_02_高校熱力学・波動.md",
+            "line": 233
+          }
+        }
+      ],
+      "narration": "大気の圧力、十の五乗パスカルで、気体が一リットル、つまり千分の一立方メートル膨らむと、仕事は百ジュールです。単位を確かめます。パスカルはニュートン毎平方メートルなので、立方メートルを掛けると、ニュートンメートル、つまりジュールです。圧力かける体積の変化が、ちゃんと仕事の単位になっていることが分かります。",
+      "sceneId": "ht-why-08-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 22.544666666666668,
+      "captions": [
+        {
+          "start": 0,
+          "end": 9.229333333333333,
+          "text": "大気の圧力、十の五乗パスカルで、気体が一リットル、つまり千分の一立方メートル膨らむと、仕事は百ジュールです。"
+        },
+        {
+          "start": 9.269333333333334,
+          "end": 10.637333333333332,
+          "text": "単位を確かめます。"
+        },
+        {
+          "start": 10.677333333333333,
+          "end": 17.080000000000002,
+          "text": "パスカルはニュートン毎平方メートルなので、立方メートルを掛けると、ニュートンメートル、つまりジュールです。"
+        },
+        {
+          "start": 17.12,
+          "end": 21.954666666666668,
+          "text": "圧力かける体積の変化が、ちゃんと仕事の単位になっていることが分かります。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】ht-why-08 数値と単位で確かめる(場面2の後)",
+    "context": "熱力学\nt-firstlaw-middle — 気体の仕事が圧力かける体積変化になるのはなぜ?\n【差し込み】ht-why-08 数値と単位で確かめる(場面2の後)",
+    "source": {
+      "file": "差し替え台本_02_高校熱力学・波動.md",
+      "line": 226
+    },
+    "parent": "t-firstlaw-middle"
+  },
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 22.544666666666668,
+  "renderKey": "a796a1007345ad9ed00a0c41e71df624bb39d4e21b087719261543b49ed06c08"
+}

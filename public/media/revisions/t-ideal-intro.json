@@ -1,0 +1,125 @@
+{
+  "id": "t-ideal-intro",
+  "stageId": "t-ideal",
+  "stageTitle": "理想気体の状態方程式",
+  "topicId": "t-ideal",
+  "level": "intro",
+  "family": "high-school-thermal",
+  "title": "同じ温度と体積で、気体を増やすと何が変わる?",
+  "condition": "希薄な気体の近似。分子運動の導出は単原子・並進運動から始める。",
+  "sourceScript": "t-ideal-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "同じ容器に、同じ温度の気体を足すと、壁にぶつかる分子が増えます。",
+      "narration": "同じ容器に、同じ温度の気体を足すと、壁にぶつかる分子が増えます。理想気体では、圧力は気体の量に比例します。",
+      "visual": "容器の体積と温度を固定し、粒の数だけを二倍にする。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.958333333333333,
+          "text": "同じ容器に、同じ温度の気体を足すと、壁にぶつかる分子が増えます。"
+        },
+        {
+          "start": 4.958333333333333,
+          "end": 8.708333333333332,
+          "text": "理想気体では、圧力は気体の量に比例します。"
+        }
+      ],
+      "end": 8.812999999999999,
+      "sceneId": "t-ideal-intro-s1",
+      "mode": "common"
+    },
+    {
+      "index": 1,
+      "heading": "モルは、粒子の個数をまとめて数える単位です。",
+      "narration": "モルは、粒子の個数をまとめて数える単位です。一モルは、どの物質でも同じ個数です。",
+      "visual": "同数の粒をひと箱にまとめ、種類を替えても箱の個数を保つ。",
+      "equation": "",
+      "symbols": "",
+      "start": 8.812999999999999,
+      "captions": [
+        {
+          "start": 8.812999999999999,
+          "end": 12.166666666666664,
+          "text": "モルは、粒子の個数をまとめて数える単位です。"
+        },
+        {
+          "start": 12.166666666666664,
+          "end": 15.458333333333332,
+          "text": "一モルは、どの物質でも同じ個数です。"
+        }
+      ],
+      "end": 15.578,
+      "sceneId": "t-ideal-intro-s2",
+      "mode": "common"
+    },
+    {
+      "index": 2,
+      "heading": "モルの数、つまり物質量が分かれば、温度と体積から圧力が計算できます。",
+      "narration": "モルの数、つまり物質量が分かれば、温度と体積から圧力が計算できます。「何の粒か」と「粒が何個か」を、混同しないことが大切です。",
+      "visual": "粒子数→物質量→圧力の関係を一つずつ点灯。",
+      "equation": "",
+      "symbols": "",
+      "start": 15.578,
+      "captions": [
+        {
+          "start": 15.578,
+          "end": 21.166666666666668,
+          "text": "モルの数、つまり物質量が分かれば、温度と体積から圧力が計算できます。"
+        },
+        {
+          "start": 21.166666666666668,
+          "end": 26.423333333333332,
+          "text": "「何の粒か」と「粒が何個か」を、混同しないことが大切です。"
+        }
+      ],
+      "end": 27.773333333333337,
+      "sceneId": "t-ideal-intro-s3",
+      "mode": "common"
+    }
+  ],
+  "duration": 27.773333333333337,
+  "mediaDirectory": "revisions",
+  "renderKey": "d1fa650a14046160fc04c03fe5c888ae81518ef4f520017085122b9c977270bc",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 32.10666666666667,
+    "removedSeconds": 4.333333333333332,
+    "cuts": [
+      {
+        "start": 4.958333333333333,
+        "end": 5.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.25,
+        "end": 10.583333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 14.041666666666666,
+        "end": 14.583333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 17.875,
+        "end": 19.208333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 24.916666666666668,
+        "end": 25.5,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

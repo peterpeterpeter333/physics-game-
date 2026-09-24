@@ -1,0 +1,91 @@
+{
+  "id": "ht-why-10",
+  "title": "量で熱量がどれだけ変わるか、数値で",
+  "stageId": "t-heat",
+  "level": "intro",
+  "renderer": "insert",
+  "family": "high-school-thermal",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "量で熱量がどれだけ変わるか、数値で(場面3の後)",
+      "screen": "",
+      "equations": [
+        "100\\times4.2\\times1=420\\ \\mathrm J,\\qquad 1000\\times4.2\\times1=4200\\ \\mathrm J"
+      ],
+      "revisionDirections": [
+        "式: `100\\times4.2\\times1=420\\ \\mathrm J,\\qquad 1000\\times4.2\\times1=4200\\ \\mathrm J`"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_01-02_追補と対照表.md",
+        "line": 66
+      },
+      "utterances": [
+        {
+          "subtitle": "コップの水百グラムを一度温めるには、約四百二十ジュール。",
+          "reading": "コップの みず ひゃくグラムを いちど あたためるには、やく よんひゃくにじゅう ジュール。",
+          "source": {
+            "file": "差し替え台本_01-02_追補と対照表.md",
+            "line": 71
+          }
+        },
+        {
+          "subtitle": "水槽の水千グラムなら、約四千二百ジュールです。",
+          "reading": "すいそうの みず せんグラム なら、やく よんせんにひゃく ジュールです。",
+          "source": {
+            "file": "差し替え台本_01-02_追補と対照表.md",
+            "line": 71
+          }
+        },
+        {
+          "subtitle": "温度は同じでも、量が十倍なら、必要な熱量も十倍です。",
+          "reading": "おんどは おなじでも、りょうが じゅうばい なら、ひつような ねつりょうも じゅうばいです。",
+          "source": {
+            "file": "差し替え台本_01-02_追補と対照表.md",
+            "line": 72
+          }
+        }
+      ],
+      "narration": "コップの水百グラムを一度温めるには、約四百二十ジュール。水槽の水千グラムなら、約四千二百ジュールです。温度は同じでも、量が十倍なら、必要な熱量も十倍です。",
+      "sceneId": "ht-why-10-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 13.019333333333336,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.1626666666666665,
+          "text": "コップの水百グラムを一度温めるには、約四百二十ジュール。"
+        },
+        {
+          "start": 4.2026666666666666,
+          "end": 7.874666666666667,
+          "text": "水槽の水千グラムなら、約四千二百ジュールです。"
+        },
+        {
+          "start": 7.914666666666667,
+          "end": 12.429333333333334,
+          "text": "温度は同じでも、量が十倍なら、必要な熱量も十倍です。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "t-heat-intro 【差し込み】ht-why-10 量で熱量がどれだけ変わるか、数値で(場面3の後)",
+    "context": "追補 — 第1弾(高校力学)・第2弾(高校熱力学・波動)の見落とし分\nB. 高校熱力学・波動の追補\nt-heat-intro 【差し込み】ht-why-10 量で熱量がどれだけ変わるか、数値で(場面3の後)",
+    "source": {
+      "file": "差し替え台本_01-02_追補と対照表.md",
+      "line": 66
+    },
+    "parent": "t-heat-intro"
+  },
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 13.019333333333336,
+  "renderKey": "8afe8c40862c3d715e00fa67bde8d6d70aa41612b4561a5fd99f8c0d2718de05"
+}

@@ -13,7 +13,12 @@ import {equationAt} from './all-film-equations.mjs';
 import {detailDiagram} from './all-film-details.mjs';
 import {prerequisiteDiagram} from './prerequisite-diagrams.mjs';
 import {figureFor,forceExisting} from './all-film-scenes.mjs';
-const cache=process.env.EM_FILM_CACHE??'/private/tmp/physics-all-films',out='public/media/lessons';
+import {revisionSceneDiagram,revisionSceneEquation} from './revision-scene-visuals.mjs';
+import {thermalInsertVisual} from './thermal-insert-visuals.mjs';
+import {waveInsertVisual} from './wave-insert-visuals.mjs';
+import {waveRevisionDiagram} from './wave-revision-visuals.mjs';
+import {texBox} from './revision-tex.mjs';
+const cache=process.env.EM_FILM_CACHE??'/private/tmp/physics-all-films',out=process.env.FILM_OUTPUT??'public/media/lessons';
 mkdirSync(out,{recursive:true});
 const b=await build({entryPoints:['scripts/all-film-source.tsx'],bundle:true,write:false,platform:'node',format:'cjs',packages:'external',loader:{'.css':'empty'}});
 const m=new Module(path.resolve('.all-film-source.cjs'));m.paths=Module._nodeModulePaths(process.cwd());m._compile(b.outputFiles[0].text,m.id);
@@ -26,15 +31,21 @@ export function wrap(s,max){const rows=[];let line='',width=0;for(const ch of s)
 function formulaText(s,x,y){const parts=s.split(/(_[A-Za-z0-9])/g);return `<text x="${x}" y="${y}" font-size="29" fill="${C.green}">${parts.map(part=>part.startsWith('_')?`<tspan baseline-shift="sub" font-size="20">${esc(part.slice(1))}</tspan>`:esc(part)).join('')}</text>`;}
 function frame(c,s,t){
  const local=Math.max(0,t-s.start),p=Math.min(1,local/Math.max(1,s.end-s.start-1.2));
- const custom=prerequisiteDiagram(c,s,p)??detailDiagram(c,s,p)??collegeDiagram(c,s,p)??(forceExisting(c)?null:fieldDiagram(c,s,p)??customDiagram(c,s,p));
- let diagram;if(custom)diagram=`<svg x="40" y="100" width="1200" height="440" viewBox="0 0 1000 400">${custom}</svg>`;
+ // The two first-law examples follow the spoken sentence, not an arbitrary
+ // half-duration boundary (the spoken sentences need not have equal lengths).
+ const captionIndex=Math.max(0,s.captions.findLastIndex(x=>x.start<=t));
+ const revisionProgress=c.id==='t-firstlaw-intro'&&s.index===3?(captionIndex===0?Math.min(.49,p):Math.max(.5,p)):p;
+ const insert=thermalInsertVisual(c,s,t)??waveInsertVisual(c,s,t);
+ if(c.renderer==='insert'&&!insert)throw Error(`Insert needs a dedicated storyboard: ${c.id}`);
+ const custom=insert?.diagram??waveRevisionDiagram(c,s,p)??revisionSceneDiagram(c,s,revisionProgress)??prerequisiteDiagram(c,s,p)??detailDiagram(c,s,p)??collegeDiagram(c,s,p)??(forceExisting(c)?null:fieldDiagram(c,s,p)??customDiagram(c,s,p));
+ let diagram;if(custom)diagram=`<svg x="40" y="100" width="1200" height="440" viewBox="0 0 1000 ${insert?460:400}">${custom}</svg>`;
  else {const id=figureFor(c,s);if(!id)throw Error(`Missing storyboard ${c.id}/${s.index}`);diagram=figure(id,local).replace(/<svg\b[^>]*>/,tag=>tag.replace(/\s(?:width|height|x|y)="[^"]*"/g,'').replace('<svg ','<svg x="40" y="100" width="1200" height="440" '));}
  const caption=s.captions.findLast(x=>x.start<=t)??s.captions[0];
  const captionLines=wrap(caption.text,44);if(captionLines.length>3)throw Error(`Caption overflow ${c.id}/${s.index}`);
  // Unicode equations are rendered into the video, never sent as malformed LaTeX to a remote image service.
- const eqRows=wrap(equationAt(c,s,p),55);if(eqRows.length>2)throw Error(`Equation overflow ${c.id}/${s.index}`);
+ const eqRows=insert?[]:wrap(revisionSceneEquation(c,s,revisionProgress,captionIndex)??equationAt(c,s,p),55);if(eqRows.length>2)throw Error(`Equation overflow ${c.id}/${s.index}`);
  const alpha=Math.min(1,local/1.2);
- const equation=eqRows.map((row,i)=>formulaText(row,55,570+i*34)).join('');
+ const equation=insert?texBox(insert.equation,55,542,1170,70):eqRows.map((row,i)=>formulaText(row,55,570+i*34)).join('');
  const title=wrap(c.title,44);if(title.length>2)throw Error(`Title overflow: ${c.id}`);
  return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${title.map((v,i)=>text(v,40,38+34*i,29)).join('')}${diagram}<g opacity="${alpha}">${equation}</g><line x1="40" y1="626" x2="1240" y2="626" stroke="#2a3850"/>${captionLines.map((v,i)=>text(v,48,656+29*i,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',40,746,15,C.dim)}${text(`${{intro:'初級',middle:'中級',advanced:'上級'}[c.level]} ${s.index+1}/${c.scenes.length}`,1130,746,17,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
 }
@@ -43,10 +54,16 @@ for(const [i,entry] of plan.entries()){
  const audioJSON=`${cache}/${entry.id}.json`;
  let clip;
  if(existsSync(audioJSON))clip=JSON.parse(readFileSync(audioJSON));
- else if(process.env.FILM_PREFLIGHT){clip={...entry,duration:30,scenes:entry.scenes.map((s,j)=>({...s,start:j*10,end:(j+1)*10,captions:s.narration.split('。').filter(Boolean).map((v,k)=>({text:v+'。',start:j*10+k*4,end:j*10+k*4+4}))}))};}
+ else if(process.env.FILM_PREFLIGHT){let start=0;const scenes=entry.scenes.map(s=>{const captions=(s.utterances??s.narration.split('。').filter(Boolean).map(v=>({subtitle:v+'。'}))).map((u,k)=>({text:u.subtitle,start:start+k*5,end:start+k*5+5}));const result={...s,start,end:start+captions.length*5,captions};start=result.end;return result;});clip={...entry,duration:start,scenes};}
  else throw Error(`Audio not ready: ${entry.id}`);
- if(clip.scenes.map(s=>s.narration).join()!==entry.scenes.map(s=>s.narration).join())throw Error(`Stale audio: ${clip.id}`);
- clip.mediaDirectory='lessons';
+ if(!process.env.FILM_PREFLIGHT&&clip.fluencyVersion!=='20260924-fluent-v1')throw Error(`Regenerate audio with the fluency policy before rendering: ${entry.id}`);
+ if(!process.env.FILM_PREFLIGHT&&!clip.comparisonMode&&clip.spacingVersion!=='20260924-furigana-spacing-v2')throw Error(`Regenerate normalized-furigana audio: ${entry.id}`);
+ const scriptKey=c=>JSON.stringify(c.scenes.map(s=>[s.narration,s.utterances]));
+ if(scriptKey(clip)!==scriptKey(entry))throw Error(`Stale audio: ${clip.id}`);
+ if(Math.abs(clip.duration-clip.scenes.at(-1).end)>.01)throw Error(`Audio duration mismatch: ${clip.id}`);
+ // Current manuscript metadata may change without altering an audio track.
+ clip={...clip,...entry,duration:clip.duration,scenes:entry.scenes.map((s,j)=>({...s,start:clip.scenes[j].start,end:clip.scenes[j].end,captions:clip.scenes[j].captions}))};
+ clip.mediaDirectory=entry.mediaDirectory??'lessons';
  const hash=createHash('sha256').update(JSON.stringify(clip));
  for(const s of clip.scenes)for(const cap of s.captions)hash.update(frame(clip,s,(cap.start+cap.end)/2));
  clip.renderKey=hash.digest('hex');
