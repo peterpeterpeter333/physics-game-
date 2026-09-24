@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 392,
-    "pendingNotYetActive": 128,
-    "registeredAuthoredRenders": 146,
+    "activeTeachingFilms": 393,
+    "pendingNotYetActive": 127,
+    "registeredAuthoredRenders": 148,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -743,14 +743,14 @@
     },
     {
       "id": "e-power-middle",
-      "title": "抵抗が大きいと、発熱は増える？減る？",
+      "title": "抵抗が大きいと、発熱は増える?減る?",
       "stageId": "e-power",
       "level": "middle",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-power-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-power-middle.mp4",
+      "storyboard": "joule-heating-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4610,23 +4610,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "he-why-04",
       "title": "数値で比べる",
       "stageId": "e-power",
       "level": "middle",
       "family": "high-school-em",
+      "active": true,
+      "media": "public/media/inserts/he-why-04.mp4",
+      "storyboard": "joule-heating-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
