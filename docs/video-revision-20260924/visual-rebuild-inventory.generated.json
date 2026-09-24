@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 379,
     "pendingNotYetActive": 141,
-    "registeredAuthoredRenders": 82,
+    "registeredAuthoredRenders": 84,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -425,8 +425,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/revisions/t-gas-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "gas-temperature-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3957,8 +3957,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/inserts/ht-why-03.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "gas-temperature-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
