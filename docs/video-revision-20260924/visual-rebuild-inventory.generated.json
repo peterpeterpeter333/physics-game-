@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 371,
-    "pendingNotYetActive": 149,
-    "registeredAuthoredRenders": 49,
+    "activeTeachingFilms": 372,
+    "pendingNotYetActive": 148,
+    "registeredAuthoredRenders": 51,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -3096,9 +3096,9 @@
       "level": "advanced",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-potential-conservation.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-potential-conservation.mp4",
+      "storyboard": "potential-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4358,6 +4358,18 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
+      "id": "hp-why-07",
+      "title": "保存を、数値で確かめる",
+      "stageId": "prerequisite",
+      "level": "advanced",
+      "family": "prerequisites",
+      "active": true,
+      "media": "public/media/inserts/hp-why-07.mp4",
+      "storyboard": "potential-energy-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
       "id": "prep-coulomb-field",
       "title": "クーロンの法則から電場を求める",
       "stageId": "prerequisite",
@@ -4735,18 +4747,6 @@
       "stageId": "a-nucleus",
       "level": "advanced",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hp-why-07",
-      "title": "保存を、数値で確かめる",
-      "stageId": "prerequisite",
-      "level": "advanced",
-      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,

@@ -13,6 +13,7 @@ import {applyProjectileAdvanced} from '../docs/video-revision-20260924/projectil
 import {applyForceStoryboards} from '../docs/video-revision-20260924/force-storyboards.mjs';
 import {applyWorkFoundations} from '../docs/video-revision-20260924/work-foundations.mjs';
 import {applyWorkComponents} from '../docs/video-revision-20260924/work-components.mjs';
+import {applyPotentialEnergy} from '../docs/video-revision-20260924/potential-energy.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -163,6 +164,7 @@ applyProjectileAdvanced(plan,routes);
 applyForceStoryboards(plan);
 applyWorkFoundations(plan);
 applyWorkComponents(plan);
+applyPotentialEnergy(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
