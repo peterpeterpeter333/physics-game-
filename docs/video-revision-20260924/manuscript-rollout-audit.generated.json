@@ -9,7 +9,7 @@
     "replacementPending": 155,
     "additionPending": 167,
     "manuscriptRequirements": 254,
-    "wordingNeedsReconciliation": 229,
+    "wordingNeedsReconciliation": 228,
     "routeDifferences": 257
   },
   "caveats": [
@@ -5196,9 +5196,9 @@
         "line": 92
       },
       "operation": "replace",
-      "localWordingPresent": false,
+      "localWordingPresent": true,
       "remoteWordingPresent": false,
-      "status": "needs-reconciliation",
+      "status": "wording-found-needs-visual-review",
       "requiredSubtitles": [
         "瞬間の速度が分かれば、速度がどう変わるかも調べられます。",
         "その「速度の変わり方」を表すのが、加速度です。"

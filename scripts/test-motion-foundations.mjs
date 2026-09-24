@@ -6,10 +6,10 @@ import {motionFoundationFrame,motionDiagram,motionDiagramKinds} from './motion-f
 const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));
 const expected={
  'm1-velocity-intro':['DDDD','FF','DD'],
- 'm1-velocity-middle':['DD','DFF','DDD'],
+ 'm1-velocity-middle':['DD','FDFF','DDD'],
  'm1-velocity-advanced':['DFD','DF','FFFF','DF','FD'],
  'm1-acceleration-intro':['DDD','FF','DDD'],
- 'm1-acceleration-middle':['DF','FF','DDDD'],
+ 'm1-acceleration-middle':['DF','FFF','DDDD'],
  'm1-acceleration-advanced':['DD','DDFF','DD']
 };
 let frames=0;const used=new Set();
@@ -48,6 +48,12 @@ assert.deepEqual(advanced.navigationBreaks,[2,4]);
 const words=advanced.scenes.map(s=>s.narration).join('');
 assert.ok(words.indexOf('二秒ちょうど')<words.indexOf('微分'));
 assert.ok(words.includes('時間の幅はゼロではない'));
+assert.ok(words.includes('その「速度の変わり方」を表すのが、加速度です。'));
+assert.ok(!words.includes('次の加速度'));
+const velocityMiddle=plan.find(c=>c.id==='m1-velocity-middle');
+assert.ok(velocityMiddle.scenes.some(s=>s.utterances.some(u=>u.subtitle.includes('ブイバー')&&u.reading.includes('ブイバー'))));
+const accelerationMiddle=plan.find(c=>c.id==='m1-acceleration-middle');
+assert.ok(accelerationMiddle.scenes.some(s=>s.utterances.some(u=>u.subtitle.includes('エーバー')&&u.reading.includes('エーバー'))));
 const mid=plan.find(c=>c.id==='m1-acceleration-middle').scenes.map(s=>s.narration).join('');
 assert.ok(mid.includes('二つの端の記録だけでは'));
 assert.ok(mid.includes('速度が一定なら'));
