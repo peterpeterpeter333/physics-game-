@@ -8,7 +8,7 @@ import insertRoutes from '../content/insert-routes.generated.json';
 import revisedCatalog from '../content/revised-video-catalog.generated.json';
 import type {InsertRoute,VideoMode} from '../game/video-inserts';
 import {SegmentedLessonVideo} from './SegmentedLessonVideo';
-import {prerequisitePlaylist,prerequisiteReview} from '../game/prerequisite-playlist';
+import {prerequisitePlaylist,prerequisiteReview,thoroughPrerequisitePlaylist,prerequisiteSelectionParent} from '../game/prerequisite-playlist';
 import {restoredVideoId,legacyVideoId} from '../game/video-progress';
 import {manualVideoPlaylist} from '../game/manual-video-playlist';
 import {spiralLessons} from '../content/em-spiral';
@@ -30,20 +30,24 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSli
  const levels=['intro','middle','advanced'].filter(level=>all.some(m=>m.level===level));
  const [level,setLevel]=useState(()=>{try{const saved=localStorage.getItem(`physics-quest:video-level:${stage.id}`);return saved&&levels.includes(saved)?saved:levels[0];}catch{return levels[0];}});
  const [mode,setMode]=useState<VideoMode>(()=>{try{return localStorage.getItem(`physics-quest:video-mode:${stage.id}`)==='thorough'?'thorough':'quick';}catch{return 'quick';}});
+ const basePlaylist=prerequisitePlaylist(all.filter(m=>m.level===level),prerequisiteMovies as unknown as Movie[]);
+ const detailedPlaylist=thoroughPrerequisitePlaylist(basePlaylist,prerequisiteMovies as unknown as Movie[],'thorough');
+ const hasThorough=detailedPlaylist.length>basePlaylist.length||detailedPlaylist.some(m=>(insertRoutes as Record<string,InsertRoute[]>)[m.id]?.length);
  useEffect(()=>{try{localStorage.setItem(`physics-quest:video-mode:${stage.id}`,mode);}catch{/* Storage is optional. */}},[stage.id,mode]);
  useEffect(()=>{try{localStorage.setItem(`physics-quest:video-level:${stage.id}`,level);}catch{/* Playback does not require storage. */}},[stage.id,level]);
  return <div className="video-lesson-shell">
  {levels.length>1&&<nav className="video-levels" aria-label="動画の難易度">{levels.map(value=><button key={value} type="button" aria-pressed={level===value} onClick={()=>setLevel(value)}>{{intro:'初級',middle:'中級',advanced:'上級'}[value]}</button>)}</nav>}
  <nav className="video-levels" aria-label="学び方">{(['quick','thorough'] as const).map(value=><button key={value} type="button" aria-pressed={mode===value} onClick={()=>setMode(value)}>{value==='quick'?'さっと学ぶ':'とことん学ぶ'}</button>)}</nav>
- {mode==='thorough'&&!all.some(m=>m.level===level&&(insertRoutes as Record<string,InsertRoute[]>)[m.id]?.length)&&<p className="video-mode-pending">この単元の補足動画は準備中です。現在は共通の本編を再生します。</p>}
+ {mode==='thorough'&&!hasThorough&&<p className="video-mode-pending">この単元の補足動画は準備中です。現在は共通の本編を再生します。</p>}
  <VideoPlayer key={`${stage.id}:${level}`} stage={stage} alreadyFinished={alreadyFinished} onComplete={onComplete} onExit={onExit} onReadSlides={onReadSlides} original={all.filter(m=>m.level===level)} level={level} mode={mode}/>
  </div>;
 }
 function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,original,level,mode}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void;original:Movie[];level:string;mode:VideoMode}){
  // The unit's assigned videos do not depend on completion in other units.
  const [assigned]=useState(()=>prerequisitePlaylist(original,prerequisiteMovies as unknown as Movie[]));
- const list=manualVideoPlaylist(assigned,mode,insertRoutes as Record<string,InsertRoute[]>,insertCatalog as Movie[]);
- const review=prerequisiteReview(original,prerequisiteMovies as unknown as Movie[]);
+ const activeAssigned=thoroughPrerequisitePlaylist(assigned,prerequisiteMovies as unknown as Movie[],mode);
+ const list=manualVideoPlaylist(activeAssigned,mode,insertRoutes as Record<string,InsertRoute[]>,insertCatalog as Movie[]);
+ const review=thoroughPrerequisitePlaylist(prerequisiteReview(original,prerequisiteMovies as unknown as Movie[]),prerequisiteMovies as unknown as Movie[],mode);
  const positionKey=`physics-quest:video-position:v3:${stage.id}:${level}`;
  const [selectedId,setSelectedId]=useState(()=>{
   try{
@@ -54,7 +58,7 @@ function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,origi
   }catch{return list[0].id;}
  });
  const [reviewId,setReviewId]=useState<string|null>(null);
- const parentId=assigned.find(m=>selectedId===m.id||selectedId.startsWith(m.id+':'))?.id;
+ const parentId=prerequisiteSelectionParent(selectedId,activeAssigned);
  const selectedPage=list.findIndex(m=>m.id===selectedId);
  const page=selectedPage>=0?selectedPage:Math.max(0,list.findIndex(m=>m.parentId===parentId));
  const reviewing=review.find(m=>m.id===reviewId);

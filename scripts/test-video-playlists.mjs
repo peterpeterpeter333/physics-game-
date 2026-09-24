@@ -5,7 +5,7 @@ async function load(file){
  const bundle=await build({entryPoints:[file],bundle:true,write:false,platform:'node',format:'esm'});
  return import('data:text/javascript;base64,'+Buffer.from(bundle.outputFiles[0].text).toString('base64'));
 }
-const {prerequisitePlaylist:playlist,prerequisiteReview:review}=await load('src/game/prerequisite-playlist.ts');
+const {prerequisitePlaylist:playlist,prerequisiteReview:review,thoroughPrerequisitePlaylist:thorough,prerequisiteSelectionParent:selectionParent}=await load('src/game/prerequisite-playlist.ts');
 const {restoredVideoId,legacyVideoId}=await load('src/game/video-progress.ts');
 const read=f=>JSON.parse(readFileSync(f,'utf8'));
 const originals=['em','lesson'].flatMap(f=>read(`src/content/${f}-video-catalog.generated.json`));
@@ -52,6 +52,14 @@ for(const route of Object.values(routes))assert.deepEqual(route.review,route.req
 assert.equal(legacyVideoId(null,surface,prep),null);assert.equal(legacyVideoId('NaN',surface,prep),null);
 assert.equal(restoredVideoId(null,surface,surface),surface[0].id);
 const component=readFileSync('src/components/EMVideoLesson.tsx','utf8');
+const sine=[{id:'prep-sin-motion'},{id:'m-shm-advanced'}];
+assert.deepEqual(thorough(sine,prep,'quick'),sine);
+assert.deepEqual(thorough(sine,prep,'thorough').map(c=>c.id),['prep-addition-theorem','prep-sin-derivative','prep-sin-motion','m-shm-advanced']);
+assert.deepEqual(thorough([{id:'prep-addition-theorem'},...sine,{id:'prep-sin-derivative'}],prep,'thorough').map(c=>c.id),['prep-addition-theorem','prep-sin-derivative','prep-sin-motion','m-shm-advanced']);
+assert.deepEqual(thorough(surface,prep,'thorough'),surface,'Explicit sine proofs must not leak into unrelated units');
+assert.equal(selectionParent('prep-sin-derivative:main:2',sine),'prep-sin-motion');
+assert.equal(selectionParent('prep-addition-theorem',sine),'prep-sin-motion');
+assert.equal(selectionParent('m-shm-advanced:main:1',sine),'m-shm-advanced');
 assert.ok(component.includes('const [assigned]=useState('),'Freeze unit assignments until chapter/level changes; mode may expose supplement pages');
 assert.ok(!/readWatchedVideos|markVideoWatched/.test(component),'Viewing history must not control video membership');
 assert.ok(component.includes('必要なときだけ復習')&&component.includes('学習に戻る')&&component.includes('btn-battle'));
