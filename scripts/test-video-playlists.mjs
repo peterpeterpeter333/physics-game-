@@ -47,7 +47,10 @@ if(prep.some(p=>p.id==='prep-addition-theorem')){
 const surface=originals.filter(c=>c.stageId==='ui-through-a-surface');
 assert.deepEqual(playlist(surface,prep),surface);
 assert.deepEqual(review(surface,prep),[],'Surface unit must not contain motion, force, or vector review');
-for(const id of ['e-field-intro','e-field-middle','e-field-advanced'])assert.deepEqual(routes[id].required,[],'Do not attach circuit/magnetic-flux compilation videos to electric-field units');
+for(const id of ['e-field-intro','e-field-advanced'])assert.deepEqual(routes[id].required,[],'Do not attach circuit/magnetic-flux compilation videos to electric-field units');
+assert.deepEqual(routes['e-field-middle'].required,['prep-coulomb-field'],'Only the dedicated electric-field prerequisite belongs to this unit');
+assert.equal(prep.find(p=>p.id==='prep-coulomb-field')?.legacyPositionExcluded,true,'A new prerequisite must not shift legacy saved indices');
+assert.deepEqual(playlist(originals.filter(c=>c.id==='e-field-middle'),prep).map(c=>c.id),['prep-coulomb-field','e-field-middle']);
 for(const route of Object.values(routes))assert.deepEqual(route.review,route.required);
 assert.equal(legacyVideoId(null,surface,prep),null);assert.equal(legacyVideoId('NaN',surface,prep),null);
 assert.equal(restoredVideoId(null,surface,surface),surface[0].id);

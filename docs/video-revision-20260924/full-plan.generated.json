@@ -58474,12 +58474,127 @@
     "title": "クーロンの法則から電場を求める",
     "level": "middle",
     "before": [
-      "e-field-middle",
-      "e-current-advanced",
-      "e-power-middle",
-      "e-power-advanced"
+      "e-field-middle"
     ],
     "scenes": [
+      {
+        "heading": "距離を変える比較と、試験電荷を変える比較を分ける",
+        "cues": [
+          {
+            "subtitle": "ここでは、電場の計算で、何を変えて比べるかを整理します。同じ二つの点電荷なら、距離を二倍にすると、電気力は四分の一になるというクーロンの法則を使います。",
+            "reading": "ここでは、でんばのけいさんで、なにをかえてくらべるかをせいりします。おなじふたつのてんでんかなら、きょりをにばいにすると、でんきりょくはよんぶんのいちになるというクーロンのほうそくをつかいます。",
+            "display": "diagram",
+            "diagram": "cprep-distance",
+            "operation": "",
+            "formula": []
+          },
+          {
+            "subtitle": "比例定数はケーと読みます。電荷を同じにしたまま距離を二倍にすれば、分母が四倍になるので、力は四分の一です。",
+            "reading": "ひれいていすうはケーとよみます。でんかをおなじにしたままきょりをにばいにすれば、ぶんぼがよんばいになるので、ちからはよんぶんのいちです。",
+            "display": "equation",
+            "formula": [
+              "F=k\\frac{|Qq|}{r^2},\\qquad (2r)^2=4r^2"
+            ],
+            "operation": "Q,q：電荷[C]、r：距離[m]。真空中の静止した点電荷",
+            "previousFormula": []
+          },
+          {
+            "subtitle": "今度は、距離を変えず、試験電荷だけを二倍にします。力も二倍になりますが、力を試験電荷で割った電場は変わりません。",
+            "reading": "こんどは、きょりをかえず、しけんでんかだけをにばいにします。ちからもにばいになりますが、ちからをしけんでんかでわったでんばはかわりません。",
+            "display": "diagram",
+            "diagram": "cprep-testcharge",
+            "operation": "",
+            "formula": []
+          },
+          {
+            "subtitle": "例えば、試験電荷一に力三なら、一あたりの力は三です。試験電荷二に力六でも、六割る二で同じ三なので、電場を試験電荷によらない量として表せます。",
+            "reading": "たとえば、しけんでんかいちにちからさんなら、いちあたりのちからはさんです。しけんでんかににちからろくでも、ろくわるにでおなじさんなので、でんばをしけんでんかによらないりょうとしてあらわせます。",
+            "display": "equation",
+            "formula": [
+              "\\frac{3\\,\\mathrm N}{1\\,\\mathrm C}=\\frac{6\\,\\mathrm N}{2\\,\\mathrm C}=3\\,\\mathrm{N/C}"
+            ],
+            "operation": "比較用の数値。試験電荷による元の配置の変化を無視",
+            "previousFormula": []
+          }
+        ],
+        "utterances": [
+          {
+            "subtitle": "ここでは、電場の計算で、何を変えて比べるかを整理します。同じ二つの点電荷なら、距離を二倍にすると、電気力は四分の一になるというクーロンの法則を使います。",
+            "reading": "ここでは、でんばのけいさんで、なにをかえてくらべるかをせいりします。おなじふたつのてんでんかなら、きょりをにばいにすると、でんきりょくはよんぶんのいちになるというクーロンのほうそくをつかいます。"
+          },
+          {
+            "subtitle": "比例定数はケーと読みます。電荷を同じにしたまま距離を二倍にすれば、分母が四倍になるので、力は四分の一です。",
+            "reading": "ひれいていすうはケーとよみます。でんかをおなじにしたままきょりをにばいにすれば、ぶんぼがよんばいになるので、ちからはよんぶんのいちです。"
+          },
+          {
+            "subtitle": "今度は、距離を変えず、試験電荷だけを二倍にします。力も二倍になりますが、力を試験電荷で割った電場は変わりません。",
+            "reading": "こんどは、きょりをかえず、しけんでんかだけをにばいにします。ちからもにばいになりますが、ちからをしけんでんかでわったでんばはかわりません。"
+          },
+          {
+            "subtitle": "例えば、試験電荷一に力三なら、一あたりの力は三です。試験電荷二に力六でも、六割る二で同じ三なので、電場を試験電荷によらない量として表せます。",
+            "reading": "たとえば、しけんでんかいちにちからさんなら、いちあたりのちからはさんです。しけんでんかににちからろくでも、ろくわるにでおなじさんなので、でんばをしけんでんかによらないりょうとしてあらわせます。"
+          }
+        ],
+        "narration": "ここでは、電場の計算で、何を変えて比べるかを整理します。同じ二つの点電荷なら、距離を二倍にすると、電気力は四分の一になるというクーロンの法則を使います。比例定数はケーと読みます。電荷を同じにしたまま距離を二倍にすれば、分母が四倍になるので、力は四分の一です。今度は、距離を変えず、試験電荷だけを二倍にします。力も二倍になりますが、力を試験電荷で割った電場は変わりません。例えば、試験電荷一に力三なら、一あたりの力は三です。試験電荷二に力六でも、六割る二で同じ三なので、電場を試験電荷によらない量として表せます。",
+        "equation": "",
+        "symbols": "",
+        "visual": "coulomb-prerequisite",
+        "index": 0,
+        "sceneId": "prep-coulomb-field-s1",
+        "mode": "common"
+      },
+      {
+        "heading": "複数の電荷の電場は、同じ点で足す",
+        "cues": [
+          {
+            "subtitle": "電荷が二つあれば、各電荷が作る電場を、調べたい同じ点で求めます。その二本の矢印を、向きを含めて足したものが、合計の電場です。",
+            "reading": "でんかがふたつあれば、かくでんかがつくるでんばを、しらべたいおなじてんでもとめます。そのにほんのやじるしを、むきをふくめてたしたものが、ごうけいのでんばです。",
+            "display": "diagram",
+            "diagram": "cprep-add",
+            "operation": "",
+            "formula": []
+          },
+          {
+            "subtitle": "同じ大きさで逆向きの矢印なら、合計はゼロです。片方の矢印が大きければ、その差だけが、大きい矢印の向きに残ります。",
+            "reading": "おなじおおきさでぎゃくむきのやじるしなら、ごうけいはゼロです。かたほうのやじるしがおおきければ、そのさだけが、おおきいやじるしのむきにのこります。",
+            "display": "diagram",
+            "diagram": "cprep-cancel",
+            "operation": "",
+            "formula": []
+          }
+        ],
+        "utterances": [
+          {
+            "subtitle": "電荷が二つあれば、各電荷が作る電場を、調べたい同じ点で求めます。その二本の矢印を、向きを含めて足したものが、合計の電場です。",
+            "reading": "でんかがふたつあれば、かくでんかがつくるでんばを、しらべたいおなじてんでもとめます。そのにほんのやじるしを、むきをふくめてたしたものが、ごうけいのでんばです。"
+          },
+          {
+            "subtitle": "同じ大きさで逆向きの矢印なら、合計はゼロです。片方の矢印が大きければ、その差だけが、大きい矢印の向きに残ります。",
+            "reading": "おなじおおきさでぎゃくむきのやじるしなら、ごうけいはゼロです。かたほうのやじるしがおおきければ、そのさだけが、おおきいやじるしのむきにのこります。"
+          }
+        ],
+        "narration": "電荷が二つあれば、各電荷が作る電場を、調べたい同じ点で求めます。その二本の矢印を、向きを含めて足したものが、合計の電場です。同じ大きさで逆向きの矢印なら、合計はゼロです。片方の矢印が大きければ、その差だけが、大きい矢印の向きに残ります。",
+        "equation": "",
+        "symbols": "",
+        "visual": "coulomb-prerequisite",
+        "index": 1,
+        "sceneId": "prep-coulomb-field-s2",
+        "mode": "common"
+      }
+    ],
+    "stageId": "prerequisite",
+    "stageTitle": "電場の計算の前提",
+    "topicId": "prep-coulomb-field",
+    "family": "prerequisites",
+    "sourceScript": "prep-charge-calculation",
+    "pronunciationFingerprint": "c8770ab8178ffd1ad8aff9ea7324aeeadcdab609a74e1132d47a8a9a8ae3544e",
+    "duration": 56.245333333333335,
+    "mediaDirectory": "revisions",
+    "renderKey": "ce3709f02e4dee9ba4600e14c8e88c8c134530bee7b652c1c845d1d08685a378",
+    "renderer": "lesson",
+    "visualSourceId": "prep-charge-calculation",
+    "revision": "20260924-full",
+    "manuscriptScenes": [
       {
         "narration": "同じ二つの電荷どうしなら、距離が二倍になると、電気力は四分の一になります。画面の k はケーと読み、クーロンの法則の比例定数です。同じ場所で、試しに置く電荷を二倍にすると力も二倍なので、力を試しの電荷で割れば、その場所の電場が求まります。",
         "equation": "|F|=k|Qq|/r² → |E|=k|Q|/r²",
@@ -58593,18 +58708,11 @@
         "mode": "common"
       }
     ],
-    "stageId": "prerequisite",
-    "stageTitle": "電気力の大きさと、向きの計算",
-    "topicId": "prep-charge-calculation",
-    "family": "prerequisites",
-    "sourceScript": "prep-charge-calculation",
-    "pronunciationFingerprint": "c8770ab8178ffd1ad8aff9ea7324aeeadcdab609a74e1132d47a8a9a8ae3544e",
-    "duration": 56.245333333333335,
-    "mediaDirectory": "revisions",
-    "renderKey": "ce3709f02e4dee9ba4600e14c8e88c8c134530bee7b652c1c845d1d08685a378",
-    "renderer": "lesson",
-    "visualSourceId": "prep-charge-calculation",
-    "revision": "20260924-full"
+    "visualPilot": "coulomb-prerequisite-v1",
+    "navigationBreaks": [
+      1
+    ],
+    "legacyPositionExcluded": true
   },
   {
     "id": "hm-why-01",

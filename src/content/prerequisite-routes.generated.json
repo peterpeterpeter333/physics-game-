@@ -938,8 +938,12 @@
     "review": []
   },
   "e-field-middle": {
-    "required": [],
-    "review": []
+    "required": [
+      "prep-coulomb-field"
+    ],
+    "review": [
+      "prep-coulomb-field"
+    ]
   },
   "e-field-advanced": {
     "required": [],

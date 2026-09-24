@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 398,
-    "pendingNotYetActive": 122,
-    "registeredAuthoredRenders": 160,
+    "activeTeachingFilms": 399,
+    "pendingNotYetActive": 121,
+    "registeredAuthoredRenders": 161,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -3905,6 +3905,18 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
+      "active": true,
+      "media": "public/media/revisions/prep-coulomb-field.mp4",
+      "storyboard": "coulomb-prerequisite-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
       "id": "ue-why-08",
       "title": "ガウスの法則は、何がすごいの?",
       "stageId": "ue-gauss",
@@ -4679,18 +4691,6 @@
       "media": "public/media/inserts/he-why-09.mp4",
       "storyboard": "coulomb-field-v1",
       "status": "registered-authored-render",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

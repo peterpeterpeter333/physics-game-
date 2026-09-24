@@ -37,7 +37,7 @@
   {
     "name": "test-prerequisite-films",
     "status": 0,
-    "output": "{\n  \"result\": \"PASS\",\n  \"prerequisiteVideos\": 77,\n  \"scenes\": 292,\n  \"existingVideosCovered\": 156,\n  \"stages\": 96,\n  \"universityEMPlaylistUnchanged\": true,\n  \"minutes\": 55.2,\n  \"MiB\": 68.2,\n  \"limits\": \"Technical coverage and ordering, not a learner-comprehension certification.\"\n}\n"
+    "output": "{\n  \"result\": \"PASS\",\n  \"prerequisiteVideos\": 78,\n  \"scenes\": 294,\n  \"existingVideosCovered\": 156,\n  \"stages\": 96,\n  \"universityEMPlaylistUnchanged\": true,\n  \"minutes\": 56.1,\n  \"MiB\": 69.4,\n  \"limits\": \"Technical coverage and ordering, not a learner-comprehension certification.\"\n}\n"
   },
   {
     "name": "test-em-video-repairs",
@@ -47,7 +47,7 @@
   {
     "name": "test-video-playlists",
     "status": 0,
-    "output": "{\n  \"result\": \"PASS\",\n  \"courses\": 190,\n  \"stages\": 136,\n  \"oldPlacements\": 838,\n  \"newPlacements\": 194,\n  \"reviewable\": 74,\n  \"surfaceMainSeconds\": 34.32666666666666,\n  \"checks\": [\n    \"direct unit assignments only\",\n    \"viewing-history independent\",\n    \"no ancestor expansion in review\",\n    \"legacy ID migration\",\n    \"main films preserved\"\n  ]\n}\n"
+    "output": "{\n  \"result\": \"PASS\",\n  \"courses\": 190,\n  \"stages\": 136,\n  \"oldPlacements\": 839,\n  \"newPlacements\": 195,\n  \"reviewable\": 75,\n  \"surfaceMainSeconds\": 34.32666666666666,\n  \"checks\": [\n    \"direct unit assignments only\",\n    \"viewing-history independent\",\n    \"no ancestor expansion in review\",\n    \"legacy ID migration\",\n    \"main films preserved\"\n  ]\n}\n"
   },
   {
     "name": "audit-math",
@@ -122,6 +122,6 @@
   {
     "name": "test-video-mode-media",
     "status": 0,
-    "output": "PASS: 99 revised main + 65 inserts; exact scripts, paired readings, captions, files, and route references.\n"
+    "output": "PASS: 100 revised main + 65 inserts; exact scripts, paired readings, captions, files, and route references.\n"
   }
 ]

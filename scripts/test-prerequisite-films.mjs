@@ -3,6 +3,8 @@ import {readFileSync,statSync} from 'node:fs';
 import {build} from 'esbuild';
 import {prerequisiteDiagram} from './prerequisite-diagrams.mjs';
 import {additionTheoremFrame} from './addition-theorem-visuals.mjs';
+import {coulombPrerequisiteFrame} from './coulomb-prerequisite-visuals.mjs';
+const authored=(p,s,t)=>coulombPrerequisiteFrame(p,s,t)??additionTheoremFrame(p,s,t);
 const read=p=>JSON.parse(readFileSync(p));
 const prep=read('src/content/prerequisite-video-catalog.generated.json');
 const original=read('src/content/lesson-video-catalog.generated.json'),em=read('src/content/em-video-catalog.generated.json');
@@ -13,7 +15,8 @@ assert.ok(prep.length>=76);assert.equal(new Set(prep.map(p=>p.id)).size,prep.len
 let bytes=0,seconds=0,scenes=0;
 for(const p of prep){
  assert.ok(p.before.length);assert.ok(p.before.every(id=>original.some(m=>m.id===id)),p.id);
- assert.ok(p.scenes.length>=3&&(p.visualPilot||p.scenes.length<=6));
+ if(p.id==='prep-coulomb-field'){assert.equal(p.scenes.length,2);assert.equal(p.visualPilot,'coulomb-prerequisite-v1');}
+ else assert.ok(p.scenes.length>=3&&(p.visualPilot||p.scenes.length<=6));
  const directory=p.mediaDirectory??'lessons';
  assert.deepEqual(read(`public/media/${directory}/${p.id}.json`),p);
  bytes+=statSync(`public/media/${directory}/${p.id}.mp4`).size;seconds+=p.duration;
@@ -23,7 +26,7 @@ for(const p of prep){
   scenes++;assert.equal(s.start,end);assert.ok(s.end>s.start);end=s.end;
   assert.equal(s.narration,s.captions.map(c=>c.text).join(''));
   assert.ok(s.captions.every(c=>c.start>=s.start&&c.end<=s.end));
-  const first=p.visualPilot?additionTheoremFrame(p,s,s.start+.05):prerequisiteDiagram(p,s,0),last=p.visualPilot?additionTheoremFrame(p,s,s.end-.05):prerequisiteDiagram(p,s,1);
+  const first=p.visualPilot?authored(p,s,s.start+.05):prerequisiteDiagram(p,s,0),last=p.visualPilot?authored(p,s,s.end-.05):prerequisiteDiagram(p,s,1);
   assert.ok(first&&last,`Missing authored prerequisite renderer ${p.id}`);
   assert.notEqual(first,last,`No changing diagram ${p.id}/${s.index}`);
   assert.ok(!/NaN|undefined/.test(first+last),`${p.id}/${s.index}`);
