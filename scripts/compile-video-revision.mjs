@@ -1,6 +1,7 @@
 /** Compile reviewed manuscripts without modifying their originals. No media is published here. */
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {applyCircularPilot} from '../docs/video-revision-20260924/circular-pilot.mjs';
+import {applyMotionFoundations} from '../docs/video-revision-20260924/motion-foundations.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -138,6 +139,7 @@ for(const scene of cycle.scenes){
 }
 const cache='/private/tmp/physics-video-full-revision';mkdirSync(cache,{recursive:true});
 applyCircularPilot(plan,{inserts:routes,prerequisites:prerequisiteRoutes});
+applyMotionFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));

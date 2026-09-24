@@ -19,6 +19,7 @@ import {waveInsertVisual} from './wave-insert-visuals.mjs';
 import {waveRevisionDiagram} from './wave-revision-visuals.mjs';
 import {texBox} from './revision-tex.mjs';
 import {circularPilotFrame} from './circular-pilot-visuals.mjs';
+import {motionFoundationFrame} from './motion-foundation-visuals.mjs';
 const cache=process.env.EM_FILM_CACHE??'/private/tmp/physics-all-films',out=process.env.FILM_OUTPUT??'public/media/lessons';
 mkdirSync(out,{recursive:true});
 const b=await build({entryPoints:['scripts/all-film-source.tsx'],bundle:true,write:false,platform:'node',format:'cjs',packages:'external',loader:{'.css':'empty'}});
@@ -31,7 +32,8 @@ const defaultFPS=12;
 export function wrap(s,max){const rows=[];let line='',width=0;for(const ch of s){let w=/[\u0020-\u007e]/.test(ch)?.58:1;if(width+w>max&&!/[。、）」]/.test(ch)){rows.push(line);line='';width=0;}line+=ch;width+=w;}if(line)rows.push(line);return rows;}
 function formulaText(s,x,y){const parts=s.split(/(_[A-Za-z0-9])/g);return `<text x="${x}" y="${y}" font-size="29" fill="${C.green}">${parts.map(part=>part.startsWith('_')?`<tspan baseline-shift="sub" font-size="20">${esc(part.slice(1))}</tspan>`:esc(part)).join('')}</text>`;}
 function frame(c,s,t){
- const pilot=circularPilotFrame(c,s,t);if(pilot)return pilot;
+ const pilot=motionFoundationFrame(c,s,t)??circularPilotFrame(c,s,t);if(pilot)return pilot;
+ if(c.visualPilot)throw Error(`Unknown authored visual renderer: ${c.visualPilot}`);
  const local=Math.max(0,t-s.start),p=Math.min(1,local/Math.max(1,s.end-s.start-1.2));
  // The two first-law examples follow the spoken sentence, not an arbitrary
  // half-duration boundary (the spoken sentences need not have equal lengths).
@@ -66,12 +68,13 @@ for(const [i,entry] of plan.entries()){
  // Current manuscript metadata may change without altering an audio track.
  clip={...clip,...entry,duration:clip.duration,scenes:entry.scenes.map((s,j)=>({...s,start:clip.scenes[j].start,end:clip.scenes[j].end,captions:clip.scenes[j].captions}))};
  clip.mediaDirectory=entry.mediaDirectory??'lessons';
- const fps=clip.visualPilot==='circular-algebra-v1'?30:defaultFPS;
+ const fps=clip.visualPilot?30:defaultFPS;
  if(clip.visualPilot)clip.animationFPS=fps;
  const hash=createHash('sha256').update(JSON.stringify(clip));
  // Mid-sentence samples alone cannot detect a changed transition occurring
  // near the start of speech. Include the pilot animator's actual source.
- if(clip.visualPilot){hash.update(readFileSync(new URL('./circular-pilot-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./circular-clarity-visuals.mjs',import.meta.url)));}
+ if(clip.visualPilot==='circular-algebra-v1'){hash.update(readFileSync(new URL('./circular-pilot-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./circular-clarity-visuals.mjs',import.meta.url)));}
+ if(clip.visualPilot==='motion-foundations-v1')hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));
  for(const s of clip.scenes)for(const cap of s.captions)hash.update(frame(clip,s,(cap.start+cap.end)/2));
  clip.renderKey=hash.digest('hex');
  if(process.env.FILM_STORYBOARD){

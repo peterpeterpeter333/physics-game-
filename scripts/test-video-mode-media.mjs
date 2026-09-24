@@ -15,7 +15,17 @@ for(const clip of [...main,...inserts]){
   const s=clip.scenes[i];assert.equal(s.narration,source.scenes[i].narration);
   assert.equal(s.captions.map(c=>c.text).join(''),s.narration);
   if(s.utterances){assert.equal(s.utterances.map(p=>p.subtitle).join(''),s.narration);assert.equal(s.utterances.length,s.captions.length);}
-  for(const p of s.utterances??[]){assert.equal(p.subtitle.split('。').filter(Boolean).length,1);if(p.reading!=null){assert.equal(p.reading.split('。').filter(Boolean).length,1);assert.ok(!/電場|磁場|電気束|磁束|上向き|下向き|法線|一様|時定数|数密度/.test(p.reading),p.reading);}}
+  for(const [j,p]of (s.utterances??[]).entries()){
+   const sentences=p.subtitle.split('。').filter(Boolean).length;
+   if(clip.visualPilot==='motion-foundations-v1'){
+    // A deliberate visual cue may contain two short sentences with one focus.
+    // Keep it synchronized as one synthesized utterance, never split by timer.
+    assert.ok(sentences>=1&&sentences<=2);
+    assert.equal(s.cues[j].subtitle,p.subtitle);assert.equal(s.cues[j].reading,p.reading);
+    assert.ok(['diagram','equation'].includes(s.cues[j].display));
+   }else assert.equal(sentences,1);
+   if(p.reading!=null){assert.equal(p.reading.split('。').filter(Boolean).length,sentences);assert.ok(!/電場|磁場|電気束|磁束|上向き|下向き|法線|一様|時定数|数密度/.test(p.reading),p.reading);}
+  }
   // An unbraced math font command consumes one token, not everything up to
   // the next closing brace (which may belong to a valid Japanese \\text).
   for(const eq of s.equations??[]){assert.ok(!/\\(?:rm|mathrm)\s*(?:\{[^}]*[一-龠ぁ-んァ-ヶ]|[一-龠ぁ-んァ-ヶ])/.test(eq),eq);}

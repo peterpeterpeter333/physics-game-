@@ -57,6 +57,8 @@ jobs:
 
       - name: Check circular-motion pilot algebra and animation cues
         run: npm run test:circular-pilot && npm run test:video-speed
+      - name: Check motion-foundation storyboards and algebra
+        run: npm run test:motion-foundations
 
       - name: Audit inline math and formula rendering
         run: npm run test:math
