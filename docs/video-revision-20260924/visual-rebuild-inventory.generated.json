@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 374,
     "pendingNotYetActive": 146,
-    "registeredAuthoredRenders": 57,
+    "registeredAuthoredRenders": 58,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -275,14 +275,14 @@
     },
     {
       "id": "m-momentum-middle",
-      "title": "衝突時間を延ばすと、なぜ平均の力が小さくなる？",
+      "title": "衝突時間を延ばすと、なぜ平均の力が小さくなる?",
       "stageId": "m-momentum",
       "level": "middle",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-momentum-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-momentum-middle.mp4",
+      "storyboard": "momentum-middle-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
