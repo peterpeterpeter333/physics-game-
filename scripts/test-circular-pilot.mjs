@@ -17,6 +17,8 @@ for(const id of circularPilotIds){
   const sampled=[];for(const p of [.02,.2,.5,.98]){
    const svg=circularPilotFrame(c,s,cap.start+p*5);assert.ok(svg);
    assert.ok(!/NaN|undefined|Infinity|data-mjx-error|data-mml-node="merror"/.test(svg));
+   assert.equal((svg.match(/data-presentation=/g)??[]).length,1,'Exactly one visual focus per frame');
+   if(svg.includes('data-presentation="diagram"'))assert.ok(!svg.includes('data-mml-node'),'No formula panel on geometry frames');
    assert.ok(svg.includes(cap.text.slice(0,8)));sampled.push(svg);frames++;
   }
   assert.notEqual(sampled[0],sampled[3],'Every spoken cue has a time-dependent animation');

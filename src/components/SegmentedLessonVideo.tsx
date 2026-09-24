@@ -1,5 +1,6 @@
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {claimNarration} from '../game/narration';
+import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
 import {resumeSegment,videoSegments,type InsertRoute,type TimedMovie,type VideoMode} from '../game/video-inserts';
 type Media=TimedMovie&{title:string;mediaDirectory?:string;renderKey?:string};
 export function SegmentedLessonVideo({main,mode,routes,inserts,onError,onMainTime}:{main:Media;mode:VideoMode;routes:InsertRoute[];inserts:Media[];onError:()=>void;onMainTime:(time:number)=>void}){
@@ -60,5 +61,6 @@ export function SegmentedLessonVideo({main,mode,routes,inserts,onError,onMainTim
    onTimeUpdate={event=>{const video=event.currentTarget;if(video!==player.current||transitioning.current)return;if(!segment.insert){mainClock.current=Math.min(video.currentTime,segment.end);onMainTime(mainClock.current);}if(video.currentTime>=segment.end)advance();}}
    onEnded={advance}>
   </video>
+  <VideoPlaybackSpeed player={player} mediaKey={base+revision}/>
  </>;
 }

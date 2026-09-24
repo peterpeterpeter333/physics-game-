@@ -1,5 +1,6 @@
 import {useEffect,useRef} from 'react';
 import {claimNarration} from '../game/narration';
+import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
 import './em-video-pilot.css';
 
 /** Pre-rendered narration: the diagram and voice share one media timeline. */
@@ -15,6 +16,7 @@ export function EMVideoPilot(){
    <source src={movie} type="video/mp4"/>
    下の解説スライドも、この動画と同じ題材を説明しています。
   </video>
+  <VideoPlaybackSpeed player={player} mediaKey={movie}/>
   <a href={movie} target="_blank" rel="noreferrer">動画だけを開く（MP4）</a>
   <p className="video-credit">音声：VOICEVOX Nemo 男声1。この動画は字幕付きで、自動再生しません。図と音声は、同じ動画に収録されています。</p>
   <details><summary>この動画の前提と補足</summary>

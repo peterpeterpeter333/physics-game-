@@ -96,8 +96,17 @@ function compare(t,double=false){
 function division(t){
  const p=clamp(t/4);let s=text('長さ 6 の棒',60,200,26)+rect(60,235,420,65,C.cyan,.2);
  for(let i=0;i<4;i++)s+=`<g opacity="${clamp(p*4-i)}">${rect(60+i*105,235,105,65,i%2?C.gold:C.cyan,.4)}${text('1.5',85+i*105,278,23)}</g>`;
- return s+text('1.5 が 4 個入る',90,370,29,C.gold)+text('6 ÷ 1.5 = 4',90,440,28);
+ return s+text('1.5 が 4 個入る',90,370,29,C.gold);
 }
+// D = geometry only, F = algebra only. Match the spoken sentence rather than
+// flipping repeatedly on a timer; no frame may contain both presentations.
+const focus={
+ 'm-circular-intro':['DDD','DD','FDD'],
+ 'm-circular-middle':['DDDF','FFF','DFF','FFD'],
+ 'm-circular-advanced':['DFDF','FFFF','DFF','FFF','DF'],
+ 'hm-why-18':['DD'],'hm-why-19':['FFF'],'hm-why-20':['DFFF']
+};
+export function circularFocus(c,s,k){const f=focus[c.id]?.[s.index]?.[k];if(!f)throw Error(`Missing visual focus ${c.id}/${s.index}/${k}`);return f==='D'?'diagram':'equation';}
 export function circularPilotFrame(c,s,t){
  if(c.visualPilot!=='circular-algebra-v1')return null;
  const k=Math.max(0,s.captions.findLastIndex(cap=>cap.start<=t)),cap=s.captions[k],cue=s.cues[k];
@@ -107,6 +116,10 @@ export function circularPilotFrame(c,s,t){
  const geometryPhase=kind==='limit'?clamp((t-s.start)/(s.captions[0].end-s.start)):s.index===0?clamp((t-s.start)/Math.max(1,s.captions[1]?.end-s.start)):1;
  const diagram=['triangles','limit'].includes(kind)?triangles(t-s.start,kind,geometryPhase):kind==='compare'||kind==='double'?compare(t,kind==='double'):kind==='division'?division(t-s.start):orbit(t,kind,cue.formula[0]==='a'?'a':'F');
  const captions=wrap(cap.text,43);if(captions.length>3)throw Error(`Pilot caption overflow ${c.id}/${s.index}/${k}`);
- const ops=wrap(cue.operation,29);if(ops.length>3)throw Error('Pilot operation overflow');
- return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${text(c.title,38,40,29)}${text(s.heading,38,80,23,C.dim)}${line(525,115,525,610,'#28364e')}${diagram}${ops.map((v,i)=>text(v,555,120+i*30,24,C.gold)).join('')}${equation(prior?.formula??[],cue.formula,phase)}${text('同じ量は、図と式で同じ色',580,485,23,C.dim)}${text('v：速さ　r：半径　m：物体の質量',580,525,22,C.dim)}${line(35,626,1245,626,'#28364e')}${captions.map((v,i)=>text(v,40,659+i*29,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',38,745,15,C.dim)}${text(`${s.index+1} / ${c.scenes.length}`,1165,745,18,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
+ const mode=circularFocus(c,s,k);
+ const ops=wrap(cue.operation,45);if(ops.length>2)throw Error('Pilot operation overflow');
+ const content=mode==='diagram'?`<svg data-presentation="diagram" x="150" y="110" width="980" height="510" viewBox="0 90 525 525">${diagram}</svg>`:
+ `<g data-presentation="equation">${ops.map((v,i)=>text(v,50,130+i*30,25,C.gold)).join('')}<g transform="translate(-735 -65) scale(1.55)">${equation(prior?.formula??[],cue.formula,phase)}</g></g>`;
+ const title=mode==='diagram'&&c.id==='m-circular-middle'?'円運動の加速度を求める':c.title;
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${text(title,38,40,29)}${text(s.heading,38,80,23,C.dim)}${content}${line(35,626,1245,626,'#28364e')}${captions.map((v,i)=>text(v,40,659+i*29,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',38,745,15,C.dim)}${text(`${s.index+1} / ${c.scenes.length}`,1165,745,18,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
 }

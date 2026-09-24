@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:video-speed": "node scripts/test-video-playback-speed.mjs",
     "test:circular-pilot": "node scripts/test-circular-pilot.mjs",
     "test:video-modes": "node scripts/test-video-inserts.mjs && node scripts/test-video-mode-media.mjs",
     "test:video-revision-plan": "node scripts/test-full-video-revision-plan.mjs",

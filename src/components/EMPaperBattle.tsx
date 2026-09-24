@@ -4,6 +4,7 @@ import {MathText} from './MathText';
 import catalog from '../content/paper-battle-videos.generated.json';
 import {paperBattleAnswer} from '../game/paper-battle';
 import {claimNarration} from '../game/narration';
+import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
 import {hapticSuccess,hapticError} from '../native';
 import './em-paper-battle.css';
 
@@ -47,6 +48,7 @@ export function EMPaperBattle({stage,problems,onExit,onFinish,nextStageTitle}:{s
   <section className="em-paper-problem" aria-label={`問題 ${index+1}`}>
    <div className="paper-video-heading"><strong>{movieKind==='question'?'問題動画':'解説動画'}</strong>{selected!==null&&<button className="btn btn-ghost btn-sm" onClick={()=>{player.current?.pause();setMovieKind(k=>k==='question'?'solution':'question');}}>{movieKind==='question'?'解説動画へ':'問題を見返す'}</button>}</div>
    <video key={`${movie.id}-${retryMedia}`} ref={player} controls playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${movieKind==='question'?'問題':'解説'}の音声付き動画`} onPlay={()=>{release.current?.();release.current=claimNarration(()=>player.current?.pause());}} onError={()=>setFailed(true)}><source src={`${base}.mp4${revision}`} type="video/mp4" onError={()=>setFailed(true)}/></video>
+   <VideoPlaybackSpeed player={player} mediaKey={`${movie.id}-${retryMedia}`}/>
    {failed&&<div role="alert"><p>動画を読み込めませんでした。通信状態を確認してください。</p><button className="btn btn-ghost" onClick={()=>{setFailed(false);setRetryMedia(n=>n+1);}}>動画を再読み込み</button></div>}
    <p className="paper-instruction">{selected===null?'紙に図や途中式を書いてから、答えを選ぼう。':'▶ を押すと、音声付きの解説を再生できます。'}</p>
    <details className="paper-written-question"><summary>問題文を文字で確認</summary><MathText text={problem.question}/></details>
