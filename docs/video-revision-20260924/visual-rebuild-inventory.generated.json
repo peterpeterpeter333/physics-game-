@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 380,
     "pendingNotYetActive": 140,
-    "registeredAuthoredRenders": 91,
+    "registeredAuthoredRenders": 92,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -3685,8 +3685,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-gas-particles.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "gas-particles-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
