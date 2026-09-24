@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 386,
-    "pendingNotYetActive": 134,
-    "registeredAuthoredRenders": 131,
+    "activeTeachingFilms": 387,
+    "pendingNotYetActive": 133,
+    "registeredAuthoredRenders": 133,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -659,14 +659,14 @@
     },
     {
       "id": "w-interference-intro",
-      "title": "光を二つ重ねたのに、暗くなる場所がある？",
+      "title": "光を二つ重ねたのに、暗くなる場所がある?",
       "stageId": "w-interference",
       "level": "intro",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-interference-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-interference-intro.mp4",
+      "storyboard": "light-interference-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4538,6 +4538,18 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
+      "id": "hw-why-11",
+      "title": "暗い所の光は、どこへ行ったの?",
+      "stageId": "w-interference",
+      "level": "intro",
+      "family": "high-school-waves",
+      "active": true,
+      "media": "public/media/inserts/hw-why-11.mp4",
+      "storyboard": "light-interference-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
       "id": "prep-coulomb-field",
       "title": "クーロンの法則から電場を求める",
       "stageId": "prerequisite",
@@ -6056,18 +6068,6 @@
       "title": "電場と磁場の大きさの比を、数値で",
       "stageId": "ue-maxwell",
       "level": "advanced",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hw-why-11",
-      "title": "暗い所の光は、どこへ行ったの?",
-      "stageId": "w-interference",
-      "level": "intro",
-      "family": "high-school-waves",
       "active": false,
       "media": null,
       "storyboard": null,
