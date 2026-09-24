@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 389,
-    "pendingNotYetActive": 131,
-    "registeredAuthoredRenders": 137,
+    "activeTeachingFilms": 390,
+    "pendingNotYetActive": 130,
+    "registeredAuthoredRenders": 140,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -695,14 +695,14 @@
     },
     {
       "id": "e-current-intro",
-      "title": "電球を通ると、電流は使われて減る？",
+      "title": "電球を通ると、電流は使われて減る?",
       "stageId": "e-current",
       "level": "intro",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-current-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-current-intro.mp4",
+      "storyboard": "current-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3348,9 +3348,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-charge-current.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-charge-current.mp4",
+      "storyboard": "current-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4574,23 +4574,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "he-why-01",
       "title": "前と後ろで同じになることを、数で確かめる",
       "stageId": "e-current",
       "level": "intro",
       "family": "high-school-em",
+      "active": true,
+      "media": "public/media/inserts/he-why-01.mp4",
+      "storyboard": "current-foundations-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
