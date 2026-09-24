@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 400,
-    "pendingNotYetActive": 120,
-    "registeredAuthoredRenders": 164,
+    "activeTeachingFilms": 401,
+    "pendingNotYetActive": 119,
+    "registeredAuthoredRenders": 166,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -851,14 +851,14 @@
     },
     {
       "id": "e-capacitor-middle",
-      "title": "板を近づけると、なぜ容量が増える？",
+      "title": "板を近づけると、なぜ容量が増える?",
       "stageId": "e-capacitor",
       "level": "middle",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-capacitor-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-capacitor-middle.mp4",
+      "storyboard": "capacitor-geometry-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4711,10 +4711,10 @@
       "stageId": "e-capacitor",
       "level": "middle",
       "family": "high-school-em",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/he-why-11.mp4",
+      "storyboard": "capacitor-geometry-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
