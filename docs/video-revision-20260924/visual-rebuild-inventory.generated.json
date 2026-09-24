@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 387,
-    "pendingNotYetActive": 133,
-    "registeredAuthoredRenders": 133,
+    "activeTeachingFilms": 389,
+    "pendingNotYetActive": 131,
+    "registeredAuthoredRenders": 137,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -671,26 +671,26 @@
     },
     {
       "id": "w-interference-middle",
-      "title": "二重スリットの明るい縞は、どこにできる？",
+      "title": "二重スリットの明るい縞は、どこにできる?",
       "stageId": "w-interference",
       "level": "middle",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-interference-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-interference-middle.mp4",
+      "storyboard": "double-slit-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
       "id": "w-interference-advanced",
-      "title": "スリットが一つでも、なぜ暗い場所ができる？",
+      "title": "スリットが一つでも、なぜ暗い場所ができる?",
       "stageId": "w-interference",
       "level": "advanced",
       "family": "high-school-waves",
       "active": true,
-      "media": "public/media/lessons/w-interference-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/w-interference-advanced.mp4",
+      "storyboard": "single-slit-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4550,23 +4550,35 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hw-why-09",
       "title": "経路差が d sinθ になる理由と、縞の間隔の計算",
       "stageId": "w-interference",
       "level": "middle",
       "family": "high-school-waves",
+      "active": true,
+      "media": "public/media/inserts/hw-why-09.mp4",
+      "storyboard": "double-slit-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "hw-why-12",
+      "title": "一つのスリットの暗い方向を、数値で",
+      "stageId": "w-interference",
+      "level": "advanced",
+      "family": "high-school-waves",
+      "active": true,
+      "media": "public/media/inserts/hw-why-12.mp4",
+      "storyboard": "single-slit-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
@@ -6068,18 +6080,6 @@
       "title": "電場と磁場の大きさの比を、数値で",
       "stageId": "ue-maxwell",
       "level": "advanced",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
-      "id": "hw-why-12",
-      "title": "一つのスリットの暗い方向を、数値で",
-      "stageId": "w-interference",
-      "level": "advanced",
-      "family": "high-school-waves",
       "active": false,
       "media": null,
       "storyboard": null,

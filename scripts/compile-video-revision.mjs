@@ -24,6 +24,8 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applySingleSlit} from '../docs/video-revision-20260924/single-slit.mjs';
+import {applyDoubleSlit} from '../docs/video-revision-20260924/double-slit.mjs';
 import {applyLightInterference} from '../docs/video-revision-20260924/light-interference.mjs';
 import {applyTotalReflection} from '../docs/video-revision-20260924/total-reflection.mjs';
 import {applyLightRefraction} from '../docs/video-revision-20260924/light-refraction.mjs';
@@ -239,6 +241,8 @@ applyLightFoundations(plan);
 applyLightRefraction(plan);
 applyTotalReflection(plan);
 applyLightInterference(plan);
+applyDoubleSlit(plan);
+applySingleSlit(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
