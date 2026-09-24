@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 381,
     "pendingNotYetActive": 139,
-    "registeredAuthoredRenders": 113,
+    "registeredAuthoredRenders": 118,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -569,8 +569,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/revisions/w-sound-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "sound-boundaries-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -581,8 +581,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/revisions/w-sound-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "sound-beats-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3721,8 +3721,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-sound-boundary.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "sound-boundaries-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4101,8 +4101,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/inserts/hw-why-03.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "sound-boundaries-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4113,8 +4113,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/inserts/hw-why-04.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "sound-beats-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

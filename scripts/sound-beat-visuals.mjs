@@ -1,0 +1,17 @@
+import {C,text,line,circle,arrow,path,clamp} from './all-film-visuals.mjs';
+import {authoredMotionFrame} from './motion-foundation-visuals.mjs';
+const tau=2*Math.PI;
+const plot=(x,y,w,a,fn,c)=>path(Array.from({length:401},(_,i)=>{const t=i/400;return[x+w*t,y-a*fn(t)];}),c,3);
+const ring=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${C.dim}" stroke-width="2"/>`;
+const bracket=(a,b,y,label)=>line(a,y,b,y,C.gold,2)+line(a,y-7,a,y+7,C.gold,2)+line(b,y-7,b,y+7,C.gold,2)+text(label,(a+b)/2-40,y-15,27,C.gold);
+export const soundBeatKinds=['beats-two-records','beats-result-envelope','beats-relative-phase','beats-waves-continue','beatsinsert-relative-count','beatsinsert-two-cycles'];
+export function soundBeatDiagram(kind,p){
+ if(!soundBeatKinds.includes(kind))throw Error(kind);const u=clamp(p/.9);
+ if(kind==='beats-two-records')return text('同じ場所の二つの振動を、同じ時間幅で比べる',120,35,31)+[0,1].map(i=>{const y=195+i*205,f=i?6:5;return line(160,y,1100,y,C.dim,2)+plot(160,y,920,65,t=>Math.sin(tau*f*t),i?C.purple:C.cyan)+circle(160+920*u,y-65*Math.sin(tau*f*u),10,C.gold)+text(i?'少し回数が多い振動':'もとの振動',165,y-90,29,i?C.purple:C.cyan);}).join('')+text('横軸は時刻。動きが見えるように遅くした模型',255,505,27);
+ if(kind==='beats-result-envelope')return text('重ねた圧力変化は、強くなったり弱くなったりする',85,35,30)+line(150,295,1120,295,C.dim,2)+plot(150,295,950,65,t=>Math.sin(tau*5*t)+Math.sin(tau*6*t),C.gold)+plot(150,295,950,130,t=>Math.abs(Math.cos(Math.PI*t)),C.dim)+plot(150,295,950,130,t=>-Math.abs(Math.cos(Math.PI*t)),C.dim)+line(150+950*u,120,150+950*u,450,C.cyan,2)+text('縦：二つの音を重ねた圧力変化',200,100,29,C.gold)+text('横：時刻。灰色は振動の大きさの輪郭',280,490,28);
+ if(kind==='beats-relative-phase'){const x=590,y=285,a=tau*u;return text('一回ぶん追い越すと、二つのタイミングは元へ戻る',65,35,31)+ring(x,y,120)+arrow(x,y,x+120,y,C.cyan)+arrow(x,y,x+120*Math.cos(a),y-120*Math.sin(a),C.purple)+text('基準の振動',780,285,29,C.cyan)+text('相手の進み',385,105,29,C.purple)+text('一回ぶんの差：'+u.toFixed(2)+' 周',405,460,29,C.gold)+text('基準の針を固定して、相手が先へ進む分だけを表示',170,505,27);}
+ if(kind==='beats-waves-continue')return text('観測点で弱め合っても、二つの波は進み続ける',100,35,31)+[0,1].map(i=>{const y=205+i*205,f=i?4:3;return line(150,y,1100,y,C.dim,2)+plot(150,y,950,55,x=>Math.cos(tau*f*(x-2*u)),i?C.purple:C.cyan);}).join('')+line(630,110,630,480,C.gold,2,'7 6')+text('観測する場所',535,100,29,C.gold)+arrow(940,100,1110,100,C.cyan)+text('横軸は位置。比較する場所を一つに固定する',240,505,27);
+ if(kind==='beatsinsert-relative-count'){const x=355,y=285,a=tau*2*u;return text('442 Hzは、440 Hzより一秒あたり二回多く進む',125,35,31)+ring(x,y,110)+arrow(x,y,x+110,y,C.cyan)+arrow(x,y,x+110*Math.cos(a),y-110*Math.sin(a),C.purple)+text('基準に対する進み',190,115,29)+text('経過時間：'+u.toFixed(2)+' 秒',650,165,29,C.gold)+text('440 Hz：'+(440*u).toFixed(1)+' 回ぶん',650,245,29,C.cyan)+text('442 Hz：'+(442*u).toFixed(1)+' 回ぶん',650,315,29,C.purple)+text('差：'+(2*u).toFixed(2)+' 回ぶん',650,405,31,C.gold)+text('針は差だけを表示。元の440回の振動を遅く描いた針ではない',95,505,25);}
+ if(kind==='beatsinsert-two-cycles')return text('強い → 弱い → 強い、を一秒の中で二回繰り返す',100,35,31)+line(150,410,1120,410,C.dim,2)+plot(150,410,950,215,t=>Math.pow(Math.cos(2*Math.PI*t),2),C.gold)+[0,.5,1].map(t=>line(150+950*t,160,150+950*t,430,C.dim,2,'7 6')+text(t+' s',135+950*t,465,27)).join('')+bracket(150,625,125,'一回')+bracket(625,1100,125,'一回')+circle(150+950*u,410-215*Math.pow(Math.cos(tau*u),2),11,C.cyan)+text('縦：平均した音の強さ。横：時刻',290,505,27);
+}
+export function soundBeatFrame(c,s,t){return c.visualPilot==='sound-beats-v1'?authoredMotionFrame(c,s,t,soundBeatDiagram):null;}
