@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 395,
-    "pendingNotYetActive": 125,
-    "registeredAuthoredRenders": 154,
+    "activeTeachingFilms": 396,
+    "pendingNotYetActive": 124,
+    "registeredAuthoredRenders": 156,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -791,14 +791,14 @@
     },
     {
       "id": "e-magnet-advanced",
-      "title": "誘導電流は、なぜ磁束の変化を妨げる向きになる？",
+      "title": "誘導電流は、なぜ磁束の変化を妨げる向きになる?",
       "stageId": "e-magnet",
       "level": "advanced",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-magnet-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-magnet-advanced.mp4",
+      "storyboard": "faraday-lenz-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4646,23 +4646,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "he-why-07",
       "title": "起電力を数値で",
       "stageId": "e-magnet",
       "level": "advanced",
       "family": "high-school-em",
+      "active": true,
+      "media": "public/media/inserts/he-why-07.mp4",
+      "storyboard": "faraday-lenz-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
