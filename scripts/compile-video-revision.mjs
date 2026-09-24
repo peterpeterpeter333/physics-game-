@@ -24,6 +24,7 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applyWaveSuperposition} from '../docs/video-revision-20260924/wave-superposition.mjs';
 import {applyTravelingWave} from '../docs/video-revision-20260924/traveling-wave.mjs';
 import {applyWaveSpeed} from '../docs/video-revision-20260924/wave-speed.mjs';
 import {applyWaveFoundations} from '../docs/video-revision-20260924/wave-foundations.mjs';
@@ -219,6 +220,7 @@ applyHeatCycle(plan);
 applyWaveFoundations(plan);
 applyWaveSpeed(plan);
 applyTravelingWave(plan);
+applyWaveSuperposition(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
