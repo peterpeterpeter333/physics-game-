@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 381,
     "pendingNotYetActive": 139,
-    "registeredAuthoredRenders": 108,
+    "registeredAuthoredRenders": 111,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -545,8 +545,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/revisions/w-basics-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "traveling-wave-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3709,8 +3709,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-traveling-wave.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "traveling-wave-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4089,8 +4089,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/inserts/hw-why-02.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "traveling-wave-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
