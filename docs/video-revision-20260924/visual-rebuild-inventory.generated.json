@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 394,
-    "pendingNotYetActive": 126,
-    "registeredAuthoredRenders": 152,
+    "activeTeachingFilms": 395,
+    "pendingNotYetActive": 125,
+    "registeredAuthoredRenders": 154,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -779,14 +779,14 @@
     },
     {
       "id": "e-magnet-middle",
-      "title": "磁石が動かなくても、コイルを回すと電圧が生まれる？",
+      "title": "磁石が動かなくても、コイルを回すと電圧が生まれる?",
       "stageId": "e-magnet",
       "level": "middle",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-magnet-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-magnet-middle.mp4",
+      "storyboard": "magnetic-flux-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4634,23 +4634,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "he-why-06",
       "title": "角度で磁束がどう変わるか、数値で",
       "stageId": "e-magnet",
       "level": "middle",
       "family": "high-school-em",
+      "active": true,
+      "media": "public/media/inserts/he-why-06.mp4",
+      "storyboard": "magnetic-flux-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
