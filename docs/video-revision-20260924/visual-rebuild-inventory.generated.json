@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 381,
     "pendingNotYetActive": 139,
-    "registeredAuthoredRenders": 97,
+    "registeredAuthoredRenders": 100,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -485,8 +485,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/revisions/t-firstlaw-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "firstlaw-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -497,8 +497,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/revisions/t-firstlaw-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "firstlaw-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4041,8 +4041,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/inserts/ht-why-08.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "firstlaw-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

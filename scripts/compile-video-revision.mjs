@@ -24,6 +24,7 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applyFirstlawFoundations} from '../docs/video-revision-20260924/firstlaw-foundations.mjs';
 import {applyGasWork} from '../docs/video-revision-20260924/gas-work.mjs';
 import {applyIdealGasAdvanced} from '../docs/video-revision-20260924/ideal-gas-advanced.mjs';
 import {applyGasParticles} from '../docs/video-revision-20260924/gas-particles.mjs';
@@ -209,6 +210,7 @@ applyMoleFoundations(plan);
 applyGasParticles(plan);
 applyIdealGasAdvanced(plan);
 applyGasWork(plan);
+applyFirstlawFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
