@@ -6,12 +6,14 @@ import assert from 'node:assert/strict';
 import {motionFoundationIds} from '../docs/video-revision-20260924/motion-foundations.mjs';
 import {uniformAccelerationIds} from '../docs/video-revision-20260924/uniform-acceleration.mjs';
 import {uniformContinuationIds} from '../docs/video-revision-20260924/uniform-continuation.mjs';
+import {freefallIds} from '../docs/video-revision-20260924/freefall-storyboards.mjs';
+import {projectileFoundationIds} from '../docs/video-revision-20260924/projectile-foundations.mjs';
 const read=f=>JSON.parse(readFileSync(f));
 const plan=read('docs/video-revision-20260924/full-plan.generated.json');
 const routes=read('src/content/insert-routes.generated.json'),ready=[];
 assert.ok(process.env.FFMPEG,'Set FFMPEG');
 const ids=process.argv.length>2?process.argv.slice(2):motionFoundationIds;
-assert.ok(ids.every(id=>[...motionFoundationIds,...uniformAccelerationIds,...uniformContinuationIds.filter(id=>!id.startsWith('hm-'))].includes(id)),'Only authored films can be registered');
+assert.ok(ids.every(id=>[...motionFoundationIds,...uniformAccelerationIds,...[...uniformContinuationIds,...freefallIds,...projectileFoundationIds].filter(id=>!id.startsWith('hm-'))].includes(id)),'Only authored films can be registered');
 for(const id of ids){
  const source=plan.find(c=>c.id===id),base=`public/media/revisions/${id}`;
  for(const ext of ['mp4','jpg','json'])assert.ok(existsSync(`${base}.${ext}`));

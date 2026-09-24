@@ -5,6 +5,8 @@ import {applyMotionFoundations} from '../docs/video-revision-20260924/motion-fou
 import {applyMotionInserts} from '../docs/video-revision-20260924/motion-inserts.mjs';
 import {applyUniformAcceleration} from '../docs/video-revision-20260924/uniform-acceleration.mjs';
 import {applyUniformContinuation} from '../docs/video-revision-20260924/uniform-continuation.mjs';
+import {applyFreefall} from '../docs/video-revision-20260924/freefall-storyboards.mjs';
+import {applyProjectileFoundations} from '../docs/video-revision-20260924/projectile-foundations.mjs';
 const root='docs/video-revision-20260924';
 const ledger=JSON.parse(readFileSync(`${root}/import-ledger.generated.json`));
 const queue=JSON.parse(readFileSync(`${root}/revision-queue.generated.json`));
@@ -146,6 +148,8 @@ applyMotionFoundations(plan);
 applyMotionInserts(plan);
 applyUniformAcceleration(plan);
 applyUniformContinuation(plan);
+applyFreefall(plan);
+applyProjectileFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
