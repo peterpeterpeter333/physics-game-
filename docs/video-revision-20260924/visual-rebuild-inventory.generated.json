@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 373,
-    "pendingNotYetActive": 147,
-    "registeredAuthoredRenders": 54,
+    "activeTeachingFilms": 374,
+    "pendingNotYetActive": 146,
+    "registeredAuthoredRenders": 57,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -263,14 +263,14 @@
     },
     {
       "id": "m-momentum-intro",
-      "title": "同じ速さなら、重い台車も軽い台車も同じように止まる？",
+      "title": "同じ速さなら、重い台車も軽い台車も同じように止まる?",
       "stageId": "m-momentum",
       "level": "intro",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-momentum-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-momentum-intro.mp4",
+      "storyboard": "momentum-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3420,9 +3420,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-impulse.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-impulse.mp4",
+      "storyboard": "momentum-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4382,23 +4382,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-16",
       "title": "なぜ「質量かける速度」で、止めにくさを測るの?",
       "stageId": "m-momentum",
       "level": "intro",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-16.mp4",
+      "storyboard": "momentum-foundations-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
