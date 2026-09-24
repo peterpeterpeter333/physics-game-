@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 372,
-    "pendingNotYetActive": 148,
-    "registeredAuthoredRenders": 51,
+    "activeTeachingFilms": 373,
+    "pendingNotYetActive": 147,
+    "registeredAuthoredRenders": 54,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -251,14 +251,14 @@
     },
     {
       "id": "m-energy-advanced",
-      "title": "ばねの仕事を、なぜ力かける距離だけで求められない？",
+      "title": "ばねの仕事を、なぜ力かける距離だけで求められない?",
       "stageId": "m-energy",
       "level": "advanced",
       "family": "high-school-mechanics",
       "active": true,
-      "media": "public/media/lessons/m-energy-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/m-energy-advanced.mp4",
+      "storyboard": "spring-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3456,9 +3456,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-spring.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-spring.mp4",
+      "storyboard": "spring-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4370,23 +4370,23 @@
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
-      "id": "prep-coulomb-field",
-      "title": "クーロンの法則から電場を求める",
-      "stageId": "prerequisite",
-      "level": "middle",
-      "family": "prerequisites",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
-      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
-    },
-    {
       "id": "hm-why-15",
       "title": "二分の一 kx² を、数字で確かめる",
       "stageId": "m-energy",
       "level": "advanced",
       "family": "high-school-mechanics",
+      "active": true,
+      "media": "public/media/inserts/hm-why-15.mp4",
+      "storyboard": "spring-energy-v1",
+      "status": "registered-authored-render",
+      "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
+    },
+    {
+      "id": "prep-coulomb-field",
+      "title": "クーロンの法則から電場を求める",
+      "stageId": "prerequisite",
+      "level": "middle",
+      "family": "prerequisites",
       "active": false,
       "media": null,
       "storyboard": null,
