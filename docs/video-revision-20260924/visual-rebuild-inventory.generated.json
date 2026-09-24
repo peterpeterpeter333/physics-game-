@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 380,
     "pendingNotYetActive": 140,
-    "registeredAuthoredRenders": 92,
+    "registeredAuthoredRenders": 95,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -473,8 +473,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/revisions/t-ideal-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "ideal-gas-advanced-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4017,8 +4017,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/inserts/ht-why-06.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "ideal-gas-advanced-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4029,8 +4029,8 @@
       "family": "high-school-thermal",
       "active": true,
       "media": "public/media/inserts/ht-why-07.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "ideal-gas-advanced-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
