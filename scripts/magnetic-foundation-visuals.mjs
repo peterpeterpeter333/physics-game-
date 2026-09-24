@@ -1,0 +1,27 @@
+import {C,text,line,circle,arrow,path,clamp} from './all-film-visuals.mjs';
+import {authoredMotionFrame} from './motion-foundation-visuals.mjs';
+const tau=2*Math.PI;
+export const projectMagPoint=([x,y,z])=>[600+.85*x+.55*z,265-.9*y+.3*z];
+export function magneticPlaneDiagram(theta,{size=145,field=1,label=true,coil=false}={}){
+ const P=projectMagPoint,n=[Math.cos(theta),0,Math.sin(theta)],a=[-Math.sin(theta),0,Math.cos(theta)];
+ const plane=[[-1,-1],[1,-1],[1,1],[-1,1],[-1,-1]].map(([u,v])=>P([a[0]*size*u,size*v,a[2]*size*u]));
+ const fieldArrows=[-130,0,130].flatMap(y=>[-150,0,150].map(z=>{const s=P([-340,y,z]),e=P([340,y,z]);return arrow(...s,...e,C.cyan);})).join('');
+ const c=P([0,0,0]),tip=P(n.map(v=>v*230));
+ return fieldArrows+path(plane,coil?C.gold:C.purple,coil?7:3,'#b49bff33')+arrow(...c,...tip,C.gold)+circle(...c,5,C.ink)+(label?text('青：磁場の向き',90,90,29,C.cyan)+text('金：面に垂直な法線',760,90,28,C.gold):'')+text(`法線と磁場の角度 ${(theta*180/Math.PI).toFixed(0)}°`,380,470,28)+text('固定した視点から見る立体図。磁場の矢印は粒の流れではない',95,505,25);
+}
+function fieldLines(y,count,p){return Array.from({length:count},(_,i)=>{const yy=y+150*(i/(count-1)-.5);return arrow(250,yy,970,yy,C.cyan);}).join('')+circle(480, y, 8,C.gold)+arrow(480,y,580,y,C.gold)+text('測る磁場は同じ',460,y+120,28,C.gold);}
+export const magneticFoundationKinds=['magprep-electric-field','magprep-compass','magprep-line-tangent','magprep-normal-surface','magprep-projection','magprep-changing-flux','magintro-line-count','magintro-density-rule','magintro-measured-values','magintro-tilt','magintro-coil-turn'];
+export function magneticFoundationDiagram(kind,p){if(!magneticFoundationKinds.includes(kind))throw Error(kind);const u=clamp(p/.7);
+ if(kind==='magprep-electric-field')return text('同じ電場で、正と負の電荷が受ける力を比べる',90,40,31)+arrow(250,115,990,115,C.cyan)+text('電場の向き',500,85,30,C.cyan)+[0,1].map(i=>{const x=350+550*i,y=310;return circle(x,y,30,i?C.purple:C.cyan,.25)+text(i?'−':'+',x-15,y+12,34)+arrow(x,y,x+(i?-1:1)*(90+35*u),y,C.gold)+text(i?'負の電荷':'正の電荷',x-75,235,29)+text(i?'力は電場と逆向き':'力は電場と同じ向き',x-150,430,28,C.gold);}).join('')+text('正の電荷に働く力の向きが、電場の向きの基準',185,505,27);
+ if(kind==='magprep-compass'){const angle=-.6*(1-u);return text('方位磁針のN極側が向く向きで、磁場の向きを知る',65,40,30)+circle(600,270,150,C.dim,.12)+arrow(600,270,600+125*Math.cos(angle),270+125*Math.sin(angle),C.red)+arrow(600,270,600-125*Math.cos(angle),270-125*Math.sin(angle),C.cyan)+text('N極側',735,205,30,C.red)+text('方位磁針',520,465,30)+arrow(350,90,890,90,C.purple)+text('周囲の磁場に針が向きを合わせる',355,130,28,C.purple)+text('磁場の矢印を、動く電荷の力の矢印と混同しない',170,505,26);}
+ if(kind==='magprep-line-tangent'){const a=.2+1.7*u,r=160,cx=600,cy=285,x=cx+r*Math.cos(a),y=cy-r*Math.sin(a);return text('磁力線に沿う向きが、その場所の磁場の向き',120,40,31)+`<ellipse cx="600" cy="285" rx="160" ry="160" fill="none" stroke="${C.cyan}" stroke-width="3"/>`+circle(x,y,8,C.gold)+arrow(x,y,x-95*Math.sin(a),y-95*Math.cos(a),C.gold)+text('金の矢印：線の接線方向の磁場',360,100,27,C.gold)+text('線は向きをつなぐ図。実在するひもではない',255,490,28);}
+ if(kind==='magprep-normal-surface')return text('平らな面と、それに垂直な磁場を立体で見る',125,35,31)+magneticPlaneDiagram(0,{size:120+25*u});
+ if(kind==='magprep-projection'){const theta=.15+.8*u,x=380,y=400,L=290,bx=x+L*Math.sin(theta),by=y-L*Math.cos(theta);return text('磁場の矢印を、面に垂直な部分と平行な部分に分ける',40,35,30)+line(210,y,1020,y,C.purple,5)+arrow(x,y,x,80,C.gold)+text('法線',270,110,29,C.gold)+arrow(x,y,bx,by,C.cyan)+line(x,by,bx,by,C.dim,2,'7 6')+line(bx,by,bx,y,C.dim,2,'7 6')+arrow(x+15,y,x+15,by,C.gold)+text('垂直な成分',130,280,29,C.gold)+text('磁場 B',bx+35,by+5,30,C.cyan)+path([[x+25,by],[x+25,by+25],[x,by+25]],C.dim,2)+`<path d="M ${x} ${y-70} A 70 70 0 0 1 ${x+70*Math.sin(theta)} ${y-70*Math.cos(theta)}" fill="none" stroke="${C.ink}"/>`+text('θ',x+40,y-80,29)+text('面',1000,y+45,29,C.purple)+text('直角三角形の隣の辺の比がcos θ。垂直な成分はB cos θ',110,505,26);}
+ if(kind==='magprep-changing-flux')return text('コイルの向きを変えて、貫く磁束を変える',130,35,31)+magneticPlaneDiagram(Math.PI/2*u,{coil:true});
+ if(kind==='magintro-line-count'){const count=3+2*Math.floor(3*u);return text('同じ磁場に、描く線だけを追加する',235,40,32)+fieldLines(235,count,p)+text(`描く線は${count}本`,130,440,30,C.cyan)+text('測定値 0.5 Tのまま',690,440,30,C.gold)+text('磁石や電流源を変えていないので、磁場は変わらない',160,505,26);}
+ if(kind==='magintro-density-rule')return text('描くルールが違う図を、本数だけで比較しない',105,40,31)+[0,1].map(i=>{const x=80+i*600,count=i?7:3;return text(i?'細かく描いた図':'少なく描いた図',x+110,115,29)+Array.from({length:count},(_,j)=>arrow(x+40,170+170*j/(count-1),x+440,170+170*j/(count-1),C.cyan)).join('')+circle(x+200+80*u,255,9,C.gold)+text('測定値 0.5 T',x+145,420,30,C.gold);}).join('')+text('同じ磁場を、異なる本数で描いた例',310,505,28);
+ if(kind==='magintro-measured-values')return text('磁束を求めるために必要なのは、実際の三つの量',55,40,31)+['磁場の大きさ','面積','面の向き'].map((s,i)=>{const x=80+390*i;return `<rect x="${x}" y="160" width="320" height="235" rx="14" fill="#142235" stroke="${[C.cyan,C.purple,C.gold][i]}"/>`+text(s,x+35,225,31)+text(['テスラ [T]','平方メートル [m²]','法線との角度'][i],x+25,310,27)+circle(x+35+240*u,360,9,[C.cyan,C.purple,C.gold][i]);}).join('')+text('図の線の本数を、磁束の数値として数えるのではない',170,495,27);
+ if(kind==='magintro-tilt')return text('同じ面積でも、面の向きが変わると磁束が変わる',80,35,30)+magneticPlaneDiagram(Math.PI/2*u);
+ if(kind==='magintro-coil-turn')return text('コイルを回すと、固定した磁場に対する角度が変わる',35,35,30)+magneticPlaneDiagram(.2+1.0*u,{coil:true,size:120});
+}
+export function magneticFoundationFrame(c,s,t){return c.visualPilot==='magnetic-foundations-v1'?authoredMotionFrame(c,s,t,magneticFoundationDiagram):null;}

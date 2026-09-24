@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 394,
     "pendingNotYetActive": 126,
-    "registeredAuthoredRenders": 150,
+    "registeredAuthoredRenders": 152,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -767,14 +767,14 @@
     },
     {
       "id": "e-magnet-intro",
-      "title": "磁力線の本数が増えると、本当に磁場が強くなる？",
+      "title": "磁力線の本数が増えると、本当に磁場が強くなる?",
       "stageId": "e-magnet",
       "level": "intro",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-magnet-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-magnet-intro.mp4",
+      "storyboard": "magnetic-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3372,9 +3372,9 @@
       "level": "intro",
       "family": "prerequisites",
       "active": true,
-      "media": "public/media/lessons/prep-field-flux.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/prep-field-flux.mp4",
+      "storyboard": "magnetic-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

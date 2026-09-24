@@ -24,6 +24,7 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applyMagneticFoundations} from '../docs/video-revision-20260924/magnetic-foundations.mjs';
 import {applyPowerTransmission} from '../docs/video-revision-20260924/power-transmission.mjs';
 import {applyJouleHeating} from '../docs/video-revision-20260924/joule-heating.mjs';
 import {applyPowerFoundations} from '../docs/video-revision-20260924/power-foundations.mjs';
@@ -253,6 +254,7 @@ applyResistorCircuits(plan);
 applyPowerFoundations(plan);
 applyJouleHeating(plan);
 applyPowerTransmission(plan);
+applyMagneticFoundations(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));
