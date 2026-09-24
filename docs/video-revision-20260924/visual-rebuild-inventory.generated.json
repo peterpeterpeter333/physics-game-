@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 401,
-    "pendingNotYetActive": 119,
-    "registeredAuthoredRenders": 166,
+    "activeTeachingFilms": 402,
+    "pendingNotYetActive": 118,
+    "registeredAuthoredRenders": 168,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -863,14 +863,14 @@
     },
     {
       "id": "e-capacitor-advanced",
-      "title": "蓄えたエネルギーは、なぜ電荷かける電圧の半分？",
+      "title": "蓄えたエネルギーは、なぜ電荷かける電圧の半分?",
       "stageId": "e-capacitor",
       "level": "advanced",
       "family": "high-school-em",
       "active": true,
-      "media": "public/media/lessons/e-capacitor-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/e-capacitor-advanced.mp4",
+      "storyboard": "capacitor-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4723,10 +4723,10 @@
       "stageId": "e-capacitor",
       "level": "advanced",
       "family": "high-school-em",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/he-why-12.mp4",
+      "storyboard": "capacitor-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
