@@ -18,11 +18,21 @@ for(const m of movies){
  let position=0;
  for(const p of main){assert.equal(p.start,position);assert.ok(p.end>p.start);position=p.end;}
  assert.equal(position,m.duration,'Every main second appears exactly once, without gaps');
- const expected=(routes[m.id]??[]).flatMap(r=>r.inserts);
+ // Source files may append a new insert at an earlier boundary. Playback order
+ // follows the chapter timeline, not the order requirements were imported.
+ const expected=[...(routes[m.id]??[])].sort((a,b)=>a.afterScene-b.afterScene).flatMap(r=>r.inserts);
  assert.deepEqual(deep.filter(p=>p.media.id!==m.id).map(p=>p.media.id),expected);
  count+=deep.length;
 }
 const circular=movies.find(m=>m.id==='m-circular-intro');
+const uniform=movies.find(m=>m.id==='m1-uniform-accel-advanced');
+if(routes[uniform.id]?.some(r=>r.inserts.includes('hm-why-24'))){
+ const pages=manualVideoPlaylist([uniform],'thorough',routes,inserts);
+ const average=pages.findIndex(p=>p.media.id==='hm-why-24'),braking=pages.findIndex(p=>p.media.id==='hm-why-07');
+ assert.ok(average>0&&braking>average);
+ assert.equal(pages[average-1].end,uniform.scenes[0].end);
+ assert.equal(pages[braking-1].end,uniform.duration);
+}
 for(const [id,insert,afterScene]of [['m1-velocity-intro','hm-why-01',2],['m1-velocity-middle','hm-why-02',2],['m1-velocity-advanced','hm-why-03',2],['m1-acceleration-advanced','hm-why-04',3]]){
  const main=movies.find(m=>m.id===id),pages=manualVideoPlaylist([main],'thorough',routes,inserts);
  const i=pages.findIndex(p=>p.media.id===insert);assert.ok(i>0,id+' insert reachable');

@@ -2,12 +2,17 @@
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync,renameSync,existsSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
-import {motionInsertIds,motionInsertRoutes} from '../docs/video-revision-20260924/motion-inserts.mjs';
+import {motionInsertIds as defaultIds,motionInsertRoutes as defaultRoutes} from '../docs/video-revision-20260924/motion-inserts.mjs';
+import {uniformContinuationIds} from '../docs/video-revision-20260924/uniform-continuation.mjs';
 const read=f=>JSON.parse(readFileSync(f));
 const root='docs/video-revision-20260924',plan=read(root+'/full-plan.generated.json');
 const mains=read('src/content/revised-video-catalog.generated.json');
 const file='src/content/insert-video-catalog.generated.json',routeFile='src/content/insert-routes.generated.json';
 const routes=read(routeFile),fullRoutes=read(root+'/full-routes.generated.json'),ready=[];
+assert.ok(process.argv.slice(2).every(a=>a==='--uniform'),'Unknown publication scope');
+const uniform=process.argv.includes('--uniform');
+const motionInsertIds=uniform?uniformContinuationIds.filter(id=>id.startsWith('hm-')):defaultIds;
+const motionInsertRoutes=uniform?Object.fromEntries(['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'].map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
 assert.ok(process.env.FFMPEG,'Set FFMPEG');
 for(const id of motionInsertIds){
  const source=plan.find(c=>c.id===id),base='public/media/inserts/'+id;
@@ -45,4 +50,4 @@ const catalog=[...new Map([...read(file),...ready].map(c=>[c.id,c])).values()];
 // Validation finishes before either generated app file is changed.
 for(const [f,data]of [[file,catalog],[routeFile,routes]])writeFileSync(f+'.pending',JSON.stringify(data));
 for(const f of [file,routeFile])renameSync(f+'.pending',f);
-console.log('Registered four decoded supplements and four parent routes; prerequisites and other units unchanged.');
+console.log(`Registered ${ready.length} decoded supplements and ${Object.keys(motionInsertRoutes).length} parent routes; prerequisites and other units unchanged.`);
