@@ -2,7 +2,7 @@
   "counts": {
     "activeTeachingFilms": 381,
     "pendingNotYetActive": 139,
-    "registeredAuthoredRenders": 103,
+    "registeredAuthoredRenders": 108,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -521,8 +521,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/revisions/w-basics-intro.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "wave-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -533,8 +533,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/revisions/w-basics-middle.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "wave-speed-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -3301,8 +3301,8 @@
       "family": "prerequisites",
       "active": true,
       "media": "public/media/revisions/prep-wave.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "wave-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4065,8 +4065,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/inserts/hw-why-13.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "wave-foundations-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4077,8 +4077,8 @@
       "family": "high-school-waves",
       "active": true,
       "media": "public/media/inserts/hw-why-01.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "storyboard": "wave-speed-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
