@@ -13,6 +13,7 @@ import {potentialEnergyIds} from '../docs/video-revision-20260924/potential-ener
 import {springEnergyIds} from '../docs/video-revision-20260924/spring-energy.mjs';
 import {momentumFoundationIds} from '../docs/video-revision-20260924/momentum-foundations.mjs';
 import {momentumAdvancedIds} from '../docs/video-revision-20260924/momentum-advanced.mjs';
+import {idealGasFoundationIds} from '../docs/video-revision-20260924/ideal-gas-foundations.mjs';
 import {gasStateIds} from '../docs/video-revision-20260924/gas-states.mjs';
 import {gasTemperatureIds} from '../docs/video-revision-20260924/gas-temperature.mjs';
 import {gasFoundationIds} from '../docs/video-revision-20260924/gas-foundations.mjs';
@@ -26,7 +27,7 @@ const root='docs/video-revision-20260924',plan=read(root+'/full-plan.generated.j
 const mains=read('src/content/revised-video-catalog.generated.json');
 const file='src/content/insert-video-catalog.generated.json',routeFile='src/content/insert-routes.generated.json';
 const routes=read(routeFile),fullRoutes=read(root+'/full-routes.generated.json'),ready=[];
-assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force','--work-foundations','--work-components','--potential-energy','--spring-energy','--momentum-foundations','--momentum-advanced','--shm-middle','--sine-motion','--shm-advanced','--foundation-appendices','--heat-melting','--gas-foundations','--gas-temperature','--gas-states'].includes(a)),'Unknown publication scope');
+assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force','--work-foundations','--work-components','--potential-energy','--spring-energy','--momentum-foundations','--momentum-advanced','--shm-middle','--sine-motion','--shm-advanced','--foundation-appendices','--heat-melting','--gas-foundations','--gas-temperature','--gas-states','--ideal-gas-foundations'].includes(a)),'Unknown publication scope');
 const uniform=process.argv.includes('--uniform');
 const freefall=process.argv.includes('--freefall');
 const projectile=process.argv.includes('--projectile-foundations');
@@ -43,11 +44,12 @@ const advanced=process.argv.includes('--shm-advanced');
 const appendix=process.argv.includes('--foundation-appendices');
 const melting=process.argv.includes('--heat-melting');
 const gas=process.argv.includes('--gas-foundations');
+const ideal=process.argv.includes('--ideal-gas-foundations');
 const states=process.argv.includes('--gas-states');
 const temperature=process.argv.includes('--gas-temperature');
-const motionInsertIds=(states?gasStateIds:temperature?gasTemperatureIds:gas?gasFoundationIds:melting?heatMeltingIds:appendix?foundationAppendixIds:advanced?shmAdvancedIds:sine?sineMotionIds:shm?shmMiddleIds:collision?momentumAdvancedIds:momentum?momentumFoundationIds:spring?springEnergyIds:potential?potentialEnergyIds:components?workComponentIds:work?workFoundationIds:force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>/^h[mtp]-why-/.test(id));
-const parents=states?['t-gas-advanced']:temperature?['t-gas-middle']:gas?['t-gas-intro']:melting?['t-heat-advanced']:appendix?['m-shm-intro','t-heat-intro']:advanced?['m-shm-advanced']:sine?['prep-sin-motion']:shm?['m-shm-middle']:collision?['m-momentum-advanced']:momentum?['m-momentum-intro']:spring?['m-energy-advanced']:potential?['prep-potential-conservation']:components?['m-energy-middle','prep-trig']:work?['m-energy-intro']:force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
-const motionInsertRoutes=states||temperature||gas||melting||appendix||advanced||sine||shm||collision||uniform||freefall||projectile||force||work||components||potential||spring||momentum?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
+const motionInsertIds=(ideal?idealGasFoundationIds:states?gasStateIds:temperature?gasTemperatureIds:gas?gasFoundationIds:melting?heatMeltingIds:appendix?foundationAppendixIds:advanced?shmAdvancedIds:sine?sineMotionIds:shm?shmMiddleIds:collision?momentumAdvancedIds:momentum?momentumFoundationIds:spring?springEnergyIds:potential?potentialEnergyIds:components?workComponentIds:work?workFoundationIds:force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>/^h[mtp]-why-/.test(id));
+const parents=ideal?['t-ideal-middle']:states?['t-gas-advanced']:temperature?['t-gas-middle']:gas?['t-gas-intro']:melting?['t-heat-advanced']:appendix?['m-shm-intro','t-heat-intro']:advanced?['m-shm-advanced']:sine?['prep-sin-motion']:shm?['m-shm-middle']:collision?['m-momentum-advanced']:momentum?['m-momentum-intro']:spring?['m-energy-advanced']:potential?['prep-potential-conservation']:components?['m-energy-middle','prep-trig']:work?['m-energy-intro']:force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
+const motionInsertRoutes=ideal||states||temperature||gas||melting||appendix||advanced||sine||shm||collision||uniform||freefall||projectile||force||work||components||potential||spring||momentum?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
 assert.ok(process.env.FFMPEG,'Set FFMPEG');
 for(const id of motionInsertIds){
  const source=plan.find(c=>c.id===id),base='public/media/inserts/'+id;
