@@ -13,6 +13,7 @@ import {potentialEnergyIds} from '../docs/video-revision-20260924/potential-ener
 import {springEnergyIds} from '../docs/video-revision-20260924/spring-energy.mjs';
 import {momentumFoundationIds} from '../docs/video-revision-20260924/momentum-foundations.mjs';
 import {momentumAdvancedIds} from '../docs/video-revision-20260924/momentum-advanced.mjs';
+import {heatMeltingIds} from '../docs/video-revision-20260924/heat-melting.mjs';
 import {foundationAppendixIds} from '../docs/video-revision-20260924/foundation-appendices.mjs';
 import {shmAdvancedIds} from '../docs/video-revision-20260924/shm-advanced.mjs';
 import {sineMotionIds} from '../docs/video-revision-20260924/sine-motion.mjs';
@@ -22,7 +23,7 @@ const root='docs/video-revision-20260924',plan=read(root+'/full-plan.generated.j
 const mains=read('src/content/revised-video-catalog.generated.json');
 const file='src/content/insert-video-catalog.generated.json',routeFile='src/content/insert-routes.generated.json';
 const routes=read(routeFile),fullRoutes=read(root+'/full-routes.generated.json'),ready=[];
-assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force','--work-foundations','--work-components','--potential-energy','--spring-energy','--momentum-foundations','--momentum-advanced','--shm-middle','--sine-motion','--shm-advanced','--foundation-appendices'].includes(a)),'Unknown publication scope');
+assert.ok(process.argv.slice(2).length<=1&&process.argv.slice(2).every(a=>['--uniform','--freefall','--projectile-foundations','--force','--work-foundations','--work-components','--potential-energy','--spring-energy','--momentum-foundations','--momentum-advanced','--shm-middle','--sine-motion','--shm-advanced','--foundation-appendices','--heat-melting'].includes(a)),'Unknown publication scope');
 const uniform=process.argv.includes('--uniform');
 const freefall=process.argv.includes('--freefall');
 const projectile=process.argv.includes('--projectile-foundations');
@@ -37,9 +38,10 @@ const shm=process.argv.includes('--shm-middle');
 const sine=process.argv.includes('--sine-motion');
 const advanced=process.argv.includes('--shm-advanced');
 const appendix=process.argv.includes('--foundation-appendices');
-const motionInsertIds=(appendix?foundationAppendixIds:advanced?shmAdvancedIds:sine?sineMotionIds:shm?shmMiddleIds:collision?momentumAdvancedIds:momentum?momentumFoundationIds:spring?springEnergyIds:potential?potentialEnergyIds:components?workComponentIds:work?workFoundationIds:force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>/^h[mtp]-why-/.test(id));
-const parents=appendix?['m-shm-intro','t-heat-intro']:advanced?['m-shm-advanced']:sine?['prep-sin-motion']:shm?['m-shm-middle']:collision?['m-momentum-advanced']:momentum?['m-momentum-intro']:spring?['m-energy-advanced']:potential?['prep-potential-conservation']:components?['m-energy-middle','prep-trig']:work?['m-energy-intro']:force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
-const motionInsertRoutes=appendix||advanced||sine||shm||collision||uniform||freefall||projectile||force||work||components||potential||spring||momentum?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
+const melting=process.argv.includes('--heat-melting');
+const motionInsertIds=(melting?heatMeltingIds:appendix?foundationAppendixIds:advanced?shmAdvancedIds:sine?sineMotionIds:shm?shmMiddleIds:collision?momentumAdvancedIds:momentum?momentumFoundationIds:spring?springEnergyIds:potential?potentialEnergyIds:components?workComponentIds:work?workFoundationIds:force?forceIds:projectile?projectileFoundationIds:freefall?freefallIds:uniform?uniformContinuationIds:defaultIds).filter(id=>/^h[mtp]-why-/.test(id));
+const parents=melting?['t-heat-advanced']:appendix?['m-shm-intro','t-heat-intro']:advanced?['m-shm-advanced']:sine?['prep-sin-motion']:shm?['m-shm-middle']:collision?['m-momentum-advanced']:momentum?['m-momentum-intro']:spring?['m-energy-advanced']:potential?['prep-potential-conservation']:components?['m-energy-middle','prep-trig']:work?['m-energy-intro']:force?['m-force-advanced']:projectile?['m-projectile-intro']:freefall?['m-freefall-intro','m-freefall-advanced']:['m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced'];
+const motionInsertRoutes=melting||appendix||advanced||sine||shm||collision||uniform||freefall||projectile||force||work||components||potential||spring||momentum?Object.fromEntries(parents.map(id=>[id,fullRoutes.inserts[id]])):defaultRoutes;
 assert.ok(process.env.FFMPEG,'Set FFMPEG');
 for(const id of motionInsertIds){
  const source=plan.find(c=>c.id===id),base='public/media/inserts/'+id;

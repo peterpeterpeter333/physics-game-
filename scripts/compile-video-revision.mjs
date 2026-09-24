@@ -24,6 +24,7 @@ import {applyShmFoundations} from '../docs/video-revision-20260924/shm-foundatio
 import {applyShmMiddle} from '../docs/video-revision-20260924/shm-middle.mjs';
 import {applySineDerivative} from '../docs/video-revision-20260924/sine-derivative.mjs';
 import {applyFoundationAppendices} from '../docs/video-revision-20260924/foundation-appendices.mjs';
+import {applyHeatMelting} from '../docs/video-revision-20260924/heat-melting.mjs';
 import {applyHeatFoundations} from '../docs/video-revision-20260924/heat-foundations.mjs';
 import {applyShmAdvanced} from '../docs/video-revision-20260924/shm-advanced.mjs';
 import {applySineMotion} from '../docs/video-revision-20260924/sine-motion.mjs';
@@ -191,6 +192,7 @@ applySineMotion(plan);
 applyShmAdvanced(plan);
 applyHeatFoundations(plan);
 applyFoundationAppendices(plan);
+applyHeatMelting(plan);
 writeFileSync(`${cache}/plan.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-plan.generated.json`,JSON.stringify(plan,null,2));
 writeFileSync(`${root}/full-routes.generated.json`,JSON.stringify({inserts:routes,prerequisites:prerequisiteRoutes},null,2));

@@ -42,6 +42,7 @@ import {shmFoundationFrame} from './shm-foundation-visuals.mjs';
 import {shmMiddleFrame} from './shm-middle-visuals.mjs';
 import {sineDerivativeFrame} from './sine-derivative-visuals.mjs';
 import {foundationAppendixFrame} from './foundation-appendix-visuals.mjs';
+import {heatMeltingFrame} from './heat-melting-visuals.mjs';
 import {heatFoundationFrame} from './heat-foundation-visuals.mjs';
 import {shmAdvancedFrame} from './shm-advanced-visuals.mjs';
 import {sineMotionFrame} from './sine-motion-visuals.mjs';
@@ -57,7 +58,7 @@ const defaultFPS=12;
 export function wrap(s,max){const rows=[];let line='',width=0;for(const ch of s){let w=/[\u0020-\u007e]/.test(ch)?.58:1;if(width+w>max&&!/[。、）」]/.test(ch)){rows.push(line);line='';width=0;}line+=ch;width+=w;}if(line)rows.push(line);return rows;}
 function formulaText(s,x,y){const parts=s.split(/(_[A-Za-z0-9])/g);return `<text x="${x}" y="${y}" font-size="29" fill="${C.green}">${parts.map(part=>part.startsWith('_')?`<tspan baseline-shift="sub" font-size="20">${esc(part.slice(1))}</tspan>`:esc(part)).join('')}</text>`;}
 function frame(c,s,t){
- const work=foundationAppendixFrame(c,s,t)??heatFoundationFrame(c,s,t)??shmAdvancedFrame(c,s,t)??sineMotionFrame(c,s,t)??sineDerivativeFrame(c,s,t)??shmMiddleFrame(c,s,t)??shmFoundationFrame(c,s,t)??circularFoundationFrame(c,s,t)??radianFoundationFrame(c,s,t)??momentumAdvancedFrame(c,s,t)??momentumMiddleFrame(c,s,t)??momentumFoundationFrame(c,s,t)??springEnergyFrame(c,s,t)??potentialEnergyFrame(c,s,t)??workComponentFrame(c,s,t)??workFoundationFrame(c,s,t);if(work)return work;
+ const work=heatMeltingFrame(c,s,t)??foundationAppendixFrame(c,s,t)??heatFoundationFrame(c,s,t)??shmAdvancedFrame(c,s,t)??sineMotionFrame(c,s,t)??sineDerivativeFrame(c,s,t)??shmMiddleFrame(c,s,t)??shmFoundationFrame(c,s,t)??circularFoundationFrame(c,s,t)??radianFoundationFrame(c,s,t)??momentumAdvancedFrame(c,s,t)??momentumMiddleFrame(c,s,t)??momentumFoundationFrame(c,s,t)??springEnergyFrame(c,s,t)??potentialEnergyFrame(c,s,t)??workComponentFrame(c,s,t)??workFoundationFrame(c,s,t);if(work)return work;
  const pilot=forceFrame(c,s,t)??projectileAdvancedFrame(c,s,t)??additionTheoremFrame(c,s,t)??projectileMiddleFrame(c,s,t)??projectileFoundationFrame(c,s,t)??freefallFrame(c,s,t)??uniformContinuationFrame(c,s,t)??uniformAccelerationFrame(c,s,t)??motionInsertFrame(c,s,t)??motionFoundationFrame(c,s,t)??circularPilotFrame(c,s,t);if(pilot)return pilot;
  if(c.visualPilot)throw Error(`Unknown authored visual renderer: ${c.visualPilot}`);
  const local=Math.max(0,t-s.start),p=Math.min(1,local/Math.max(1,s.end-s.start-1.2));
@@ -122,6 +123,7 @@ for(const [i,entry] of plan.entries()){
  if(clip.visualPilot==='shm-middle-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./shm-middle-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='sine-derivative-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./sine-derivative-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='foundation-appendices-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./foundation-appendix-visuals.mjs',import.meta.url)));}
+ if(clip.visualPilot==='heat-melting-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./heat-melting-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='heat-foundations-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./heat-foundation-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='shm-advanced-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./shm-advanced-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='sine-motion-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./sine-motion-visuals.mjs',import.meta.url)));}
