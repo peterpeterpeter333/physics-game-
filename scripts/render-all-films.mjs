@@ -1,4 +1,4 @@
-import {readFileSync,writeFileSync,existsSync,mkdirSync,renameSync} from 'node:fs';
+import {readFileSync,writeFileSync,existsSync,mkdirSync,renameSync,readdirSync} from 'node:fs';
 import {build} from 'esbuild';
 import Module from 'node:module';
 import path from 'node:path';
@@ -18,6 +18,7 @@ import {thermalInsertVisual} from './thermal-insert-visuals.mjs';
 import {waveInsertVisual} from './wave-insert-visuals.mjs';
 import {waveRevisionDiagram} from './wave-revision-visuals.mjs';
 import {texBox} from './revision-tex.mjs';
+import {umechFrame} from './umech/frame.mjs';
 import {circularPilotFrame} from './circular-pilot-visuals.mjs';
 import {motionFoundationFrame} from './motion-foundation-visuals.mjs';
 import {motionInsertFrame} from './motion-insert-visuals.mjs';
@@ -105,6 +106,7 @@ export function wrap(s,max){const rows=[];let line='',width=0;for(const ch of s)
 function formulaText(s,x,y){const parts=s.split(/(_[A-Za-z0-9])/g);return `<text x="${x}" y="${y}" font-size="29" fill="${C.green}">${parts.map(part=>part.startsWith('_')?`<tspan baseline-shift="sub" font-size="20">${esc(part.slice(1))}</tspan>`:esc(part)).join('')}</text>`;}
 function frame(c,s,t){
  const work=bohrEnergyFrame(c,s,t)??bohrRadiusFrame(c,s,t)??matterWaveFrame(c,s,t)??atomicSpectraFrame(c,s,t)??photoelectricEnergyFrame(c,s,t)??photonFoundationFrame(c,s,t)??capacitorEnergyFrame(c,s,t)??capacitorGeometryFrame(c,s,t)??capacitorIntroFrame(c,s,t)??electricPotentialFrame(c,s,t)??coulombPrerequisiteFrame(c,s,t)??coulombFieldFrame(c,s,t)??electricFieldIntroFrame(c,s,t)??faradayLenzFrame(c,s,t)??magneticFluxFrame(c,s,t)??magneticFoundationFrame(c,s,t)??powerTransmissionFrame(c,s,t)??jouleHeatingFrame(c,s,t)??powerFoundationFrame(c,s,t)??resistorCircuitFrame(c,s,t)??currentFoundationFrame(c,s,t)??singleSlitFrame(c,s,t)??doubleSlitFrame(c,s,t)??lightInterferenceFrame(c,s,t)??totalReflectionFrame(c,s,t)??lightRefractionFrame(c,s,t)??lightFoundationFrame(c,s,t)??dopplerObserverFrame(c,s,t)??dopplerSourceFrame(c,s,t)??soundBeatFrame(c,s,t)??soundBoundaryFrame(c,s,t)??soundFoundationFrame(c,s,t)??waveSuperpositionFrame(c,s,t)??travelingWaveFrame(c,s,t)??waveSpeedFrame(c,s,t)??waveFoundationFrame(c,s,t)??heatCycleFrame(c,s,t)??firstlawFoundationFrame(c,s,t)??gasWorkFrame(c,s,t)??idealGasAdvancedFrame(c,s,t)??gasParticleFrame(c,s,t)??moleFoundationFrame(c,s,t)??idealGasFoundationFrame(c,s,t)??gasStateFrame(c,s,t)??gasTemperatureFrame(c,s,t)??gasFoundationFrame(c,s,t)??heatMeltingFrame(c,s,t)??foundationAppendixFrame(c,s,t)??heatFoundationFrame(c,s,t)??shmAdvancedFrame(c,s,t)??sineMotionFrame(c,s,t)??sineDerivativeFrame(c,s,t)??shmMiddleFrame(c,s,t)??shmFoundationFrame(c,s,t)??circularFoundationFrame(c,s,t)??radianFoundationFrame(c,s,t)??momentumAdvancedFrame(c,s,t)??momentumMiddleFrame(c,s,t)??momentumFoundationFrame(c,s,t)??springEnergyFrame(c,s,t)??potentialEnergyFrame(c,s,t)??workComponentFrame(c,s,t)??workFoundationFrame(c,s,t);if(work)return work;
+ const umech=umechFrame(c,s,t);if(umech)return umech;
  const pilot=forceFrame(c,s,t)??projectileAdvancedFrame(c,s,t)??additionTheoremFrame(c,s,t)??projectileMiddleFrame(c,s,t)??projectileFoundationFrame(c,s,t)??freefallFrame(c,s,t)??uniformContinuationFrame(c,s,t)??uniformAccelerationFrame(c,s,t)??motionInsertFrame(c,s,t)??motionFoundationFrame(c,s,t)??circularPilotFrame(c,s,t);if(pilot)return pilot;
  if(c.visualPilot)throw Error(`Unknown authored visual renderer: ${c.visualPilot}`);
  const local=Math.max(0,t-s.start),p=Math.min(1,local/Math.max(1,s.end-s.start-1.2));
@@ -220,6 +222,7 @@ for(const [i,entry] of plan.entries()){
  if(clip.visualPilot==='shm-advanced-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./shm-advanced-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='sine-motion-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./sine-motion-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='motion-inserts-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./motion-insert-visuals.mjs',import.meta.url)));}
+ if(clip.visualPilot==='umech-v1')for(const f of readdirSync(new URL('./umech/',import.meta.url)).sort())hash.update(readFileSync(new URL(`./umech/${f}`,import.meta.url)));
  for(const s of clip.scenes)for(const cap of s.captions)hash.update(frame(clip,s,(cap.start+cap.end)/2));
  clip.renderKey=hash.digest('hex');
  if(process.env.FILM_STORYBOARD){
