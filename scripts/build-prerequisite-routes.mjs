@@ -32,6 +32,15 @@ const overrides={
  // The intro itself defines heat versus temperature. Its old prelude teaches
  // the middle-level heat formula and worked answer before the initial question.
  't-heat-intro':[],
+ // The revised mains introduce these foundations themselves (see test-video-playlists):
+ // mole counting precedes t-ideal-middle; the first-law mains derive gas work;
+ // the wave and Doppler introductions define their quantities before using them.
+ 't-ideal-middle':[],
+ 't-firstlaw-intro':[],
+ 't-firstlaw-middle':[],
+ 'w-basics-intro':[],
+ 'w-basics-middle':[],
+ 'w-doppler-intro':[],
  // The circular-algebra pilot teaches these foundations inside its main films.
  'm-circular-intro':[],
  'm-circular-middle':[],
