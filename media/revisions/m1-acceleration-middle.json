@@ -78,7 +78,8 @@
             "\\bar a"
           ],
           "operation": "ā（エーバー）：平均加速度",
-          "previousFormula": []
+          "previousFormula": [],
+          "symbolFocus": true
         },
         {
           "subtitle": "平均加速度は、速度の変化を時間で割った値です。私たちは、二秒分の変化を二で割り、一秒あたりの変化を求めます。",
@@ -244,7 +245,7 @@
   "pronunciationFingerprint": "afb1a032bf15db8b2fe67d85a1095976b3a28deb0364362bb746a9d1c6982dfb",
   "duration": 70.85533333333333,
   "mediaDirectory": "revisions",
-  "renderKey": "8ae91e77508e8b2c3d7d4292398cfd69099ae8a1b57035efced37268179b0a00",
+  "renderKey": "9d78045f79efb900276842294dcaa17fb4cc5f7ab15c63036fec667c47407299",
   "renderer": "lesson",
   "sourceMediaDirectory": "lessons",
   "revision": "20260924-full",

@@ -113,6 +113,9 @@
             "(1-\\cos\\beta)^2",
             "=",
             "(1-\\cos\\beta)(1-\\cos\\beta)"
+          ],
+          "intermediateFormula": [
+            "1-\\cos\\beta-\\cos\\beta+\\cos^2\\beta"
           ]
         },
         {
@@ -231,11 +234,14 @@
             "=",
             "x_2^2-2x_1x_2+x_1^2"
           ],
-          "operation": "縦の差にも、同じ展開を使う",
+          "operation": "横の差の二乗を展開",
           "previousFormula": [
             "(x_2-x_1)^2",
             "=",
             "(x_2-x_1)(x_2-x_1)"
+          ],
+          "intermediateFormula": [
+            "x_2^2-x_2x_1-x_1x_2+x_1^2"
           ]
         },
         {
@@ -252,6 +258,9 @@
             "(y_2-y_1)^2",
             "=",
             "(y_2-y_1)(y_2-y_1)"
+          ],
+          "intermediateFormula": [
+            "y_2^2-y_2y_1-y_1y_2+y_1^2"
           ]
         }
       ],
@@ -894,5 +903,5 @@
   ],
   "legacyPositionExcluded": true,
   "animationFPS": 30,
-  "renderKey": "a935b5c64968d48ae7f484c8c4e3971413171e3cc04abb1abd2e2d84fb06b5b4"
+  "renderKey": "85ccc2e3b68d7bd1515db4e766409f4447305587aae700c0f26b58018bef9e27"
 }
