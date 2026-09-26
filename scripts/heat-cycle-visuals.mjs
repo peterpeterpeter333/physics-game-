@@ -5,7 +5,7 @@ const onPath=(pts,u)=>{const s=Math.min(pts.length-2,Math.floor(u*(pts.length-1)
 export const heatCycleKinds=['heatcycle-work-signs','heatcycle-return-state','heatcycle-adiabatic','heatcycle-engine-loop','heatcycle-heat-flow','heatcycle-second-law','heatcycle-state-ledger'];
 export function heatCycleDiagram(kind,p){
  if(!heatCycleKinds.includes(kind))throw Error(kind);const u=clamp(p/.85);
- if(kind==='heatcycle-work-signs')return text('膨張で取り出す仕事と、圧縮に必要な仕事を差し引く',90,35,30)+[0,1].map(i=>{const x=80+i*610,w=i?340-120*u:220+120*u,c=i?C.purple:C.gold;return box(x,185,w,200,C.cyan)+line(x+w,160,x+w,410,c,7)+arrow(x+w,145,x+w+80,145,C.gold)+arrow(x+200,445,x+200+(i?-100:100),445,c)+text(i?'圧縮：気体の仕事は負':'膨張：気体の仕事は正',x+10,100,28,c)+text('気体が押す力は右向き',x,500,26,C.gold);}).join('');
+ if(kind==='heatcycle-work-signs')return text('気体が押す力と、ピストンの移動を比べる',160,35,30)+[0,1].map(i=>{const x=80+i*610,w=i?340-120*u:220+120*u,c=i?C.purple:C.gold;return box(x,210,w,185,C.cyan)+line(x+w,200,x+w,410,c,7)+arrow(x+w,175,x+w+80,175,C.gold)+text('気体が押す力 →',x+55,145,26,C.gold)+arrow(x+200,445,x+200+(i?-100:100),445,c)+text(i?'圧縮：気体の仕事は負':'膨張：気体の仕事は正',x+10,90,28,c)+text(i?'ピストンの移動 ←':'ピストンの移動 →',x+45,495,26,c);}).join('');
  if(kind==='heatcycle-return-state'){
   const pts=[[360,180],[850,180],[850,365],[360,365],[360,180]];
   return text('同じ状態へ戻っても、一周の仕事は残りうる',170,35,31)+line(180,435,1080,435)+line(210,95,210,435)+path(pts,C.cyan,4)+circle(...onPath(pts,u),11,C.gold)+circle(360,180,6,C.gold)+text('最初と最後は同じ点',300,125,30,C.gold)+arrow(535,180,650,180,C.gold)+arrow(650,365,535,365,C.purple)+text('圧力 p',105,95,28)+text('体積 V',960,475,28)+text('内部エネルギーは元に戻る。途中の熱と仕事は別に数える',125,505,27);

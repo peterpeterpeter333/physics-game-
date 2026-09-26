@@ -5,7 +5,7 @@ const sine=(x,y,w,a,fn,c=C.cyan)=>path(Array.from({length:201},(_,i)=>{const z=i
 const point=(x,y,c=C.gold)=>circle(x,y,11,c);
 export const travelingWaveKinds=['travelprep-source-history','travelprep-delay-transport','travelprep-two-axes','traveladvanced-delayed-points','traveladvanced-snapshot-history','traveladvanced-follow-crest','travelinsert-two-seconds'];
 export function travelingWaveDiagram(kind,p){
- if(!travelingWaveKinds.includes(kind))throw Error(kind);const u=clamp(p/.9);
+ if(!travelingWaveKinds.includes(kind))throw Error(kind);const u=clamp(p);
  if(kind==='travelprep-source-history')return text('まず、一つの場所の振動だけを記録する',235,35,31)+line(130,280,1090,280,C.dim,2)+sine(130,280,960,105,t=>Math.sin(4*Math.PI*t))+[0,.5,1].map(t=>line(130+960*t,155,130+960*t,405,C.dim,2,'7 6')+text(t+' s',115+960*t,445,28)).join('')+point(130+960*u,280-105*Math.sin(4*Math.PI*u),C.red)+text('原点の上下のずれ',145,110,29,C.red)+text('横軸：時刻',880,110,28)+text('1秒で二回の振動。波の形のグラフではない',215,505,27);
  if(kind==='travelprep-delay-transport'){const x0=150,x1=790,Y=x=>285-90*Math.sin(tau*(u-(x-x0)/800));return text('形を変えずに進む波：右の点ほど遅れて揺れる',120,35,31)+line(120,285,1130,285,C.dim,2)+sine(x0,285,960,90,z=>Math.sin(tau*(u-960*z/800)))+point(x0,Y(x0),C.red)+point(x1,Y(x1),C.gold)+[x0,x1].map(x=>line(x,130,x,425,C.dim,2,'7 6')).join('')+text('原点の波源',x0-70,465,28,C.red)+text('離れた点',x1-65,465,28,C.gold)+arrow(430,130,740,130,C.gold)+text('揺れが伝わる向き',430,95,28,C.gold)+text('右の点の「今」は、原点の「少し前」に対応',250,505,27);}
  if(kind==='travelprep-two-axes'){

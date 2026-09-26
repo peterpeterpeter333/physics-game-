@@ -6,7 +6,8 @@ const bar=(x,y,w,c)=>`<rect x="${x}" y="${y}" width="${Math.max(0,w)}" height="4
 export const potentialEnergyKinds=['potential-lift','potential-ready-to-fall','potential-falling','potential-resistance','potential-two-metres','potential-numeric-transfer'];
 export function potentialEnergyDiagram(kind,p){
  if(!potentialEnergyKinds.includes(kind))throw Error('Unknown potential diagram '+kind);
- const u=ease(p);
+ // The lift is explicitly at constant speed: do not ease its position.
+ const u=kind==='potential-lift'?clamp(p/.8):ease(p);
  if(kind==='potential-lift'){
   const x=380,y=390-240*u;
   return line(100,440,600,440)+box(x,y)+arrow(x-80,y+35,x-80,y-65,C.gold)+arrow(x+80,y-35,x+80,y+65,C.red)+arrow(150,390,150,y,C.purple)+text('黄：手の力 10 N',685,100,31,C.gold)+text('赤：重力 10 N',685,180,31,C.red)+text('二つの力はつり合う',685,280,30)+text(`増えた高さ ${(2*u).toFixed(1)} m`,660,390,31,C.purple)+text('荷物は一定の速さで上がる',290,510,30);

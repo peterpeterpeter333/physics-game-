@@ -12,6 +12,26 @@ import {applyAdditionPrerequisiteRoutes} from '../docs/video-revision-20260924/a
 
 // Remove tangential sections of multi-topic prerequisites from the main sequence.
 const overrides={
+ // 2026-09-26: these authored main films teach the prerequisite themselves.
+ // Position/change/elapsed time are also introduced by the first two films.
+ // Do not precede velocity with acceleration or reveal limits before deriving.
+ 'm1-velocity-intro':[],
+ 'm1-velocity-middle':[],
+ 'm1-velocity-advanced':[],
+ 'm1-acceleration-intro':[],
+ 'm1-acceleration-middle':[],
+ 'm1-acceleration-advanced':[],
+ // These films introduce initial speed, graph area, and time elimination
+ // in sequence. The old mixed-topic prelude reveals projectile results early.
+ 'm1-uniform-accel-intro':[],
+ 'm1-uniform-accel-middle':[],
+ 'm1-uniform-accel-advanced':[],
+ // The revised middle film defines v₀, g, signs, and the apex condition itself.
+ // The old initial-values prelude gives this same example's answer in advance.
+ 'm-freefall-middle':[],
+ // The intro itself defines heat versus temperature. Its old prelude teaches
+ // the middle-level heat formula and worked answer before the initial question.
+ 't-heat-intro':[],
  // The circular-algebra pilot teaches these foundations inside its main films.
  'm-circular-intro':[],
  'm-circular-middle':[],

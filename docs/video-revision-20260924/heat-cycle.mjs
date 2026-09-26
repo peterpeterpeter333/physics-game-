@@ -3,7 +3,10 @@ const F=(subtitle,reading,formula,operation,previousFormula=[])=>({subtitle,read
 const S=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading})=>({subtitle,reading})),narration:cues.map(q=>q.subtitle).join(''),equation:'',symbols:'',visual:'heat-cycle'});
 export const heatCycleIds=['prep-heat-cycle','t-firstlaw-advanced','ht-why-09'];
 export function applyHeatCycle(plan){
- const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);Object.assign(c,{visualPilot:'heat-cycle-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('ht-')?'thorough':'common'}));};
+ const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);
+  // Derive cycle work and efficiency in the following main film, not twice.
+  if(id==='prep-heat-cycle')scenes[1]=S(scenes[1].heading,...scenes[1].cues.filter(q=>q.display==='diagram'));
+  Object.assign(c,{visualPilot:'heat-cycle-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('ht-')?'thorough':'common'}));};
  set('prep-heat-cycle',[
  S('膨張の仕事と、圧縮の仕事を符号つきで足す',
  D('気体が外へする仕事を正と決めると、膨張の仕事は正、圧縮の仕事は負です。一周する装置の仕事は、途中の正と負の仕事を、符号つきで足したものです。','きたいがそとへするしごとをせいときめると、ぼうちょうのしごとはせい、あっしゅくのしごとはふです。いっしゅうするそうちのしごとは、とちゅうのせいとふのしごとを、ふごうつきでたしたものです。','heatcycle-work-signs')),

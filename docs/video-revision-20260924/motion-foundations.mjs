@@ -85,6 +85,15 @@ const clips={
    D('二つの時刻を近づけると、速度の変化の向きは、最初の位置から円の中心へ向かう向きに近づきます。','ふたつのじこくをちかづけると、そくどのへんかのむきは、さいしょのいちからえんのちゅうしんへむかうむきにちかづきます。','vector-limit'),
    D('円運動では、速さが一定でも速度の向きが変わるため、加速度はゼロではありません。加速度の大きさの導出は、円運動の章へつながります。','えんうんどうでは、はやさがいっていでもそくどのむきがかわるため、かそくどはゼロではありません。かそくどのおおきさのどうしゅつは、えんうんどうのしょうへつながります。','orbit-inward'))]}
 };
+// 2026-09-26 sequence review: preserve the approved narration and its timing;
+// fix the visual claims rather than synthesising the same voice again.
+clips['m1-velocity-middle'].scenes[2].cues[2].diagram='secant-shrink';
+clips['m1-velocity-middle'].scenes[1].cues[0].symbolFocus=true;
+clips['m1-acceleration-middle'].scenes[1].cues[0].symbolFocus=true;
+Object.assign(clips['m1-velocity-advanced'].scenes[2].cues[1],{
+ previousFormula:['(t+\\Delta t)^2','=','(t+\\Delta t)(t+\\Delta t)'],
+ intermediateFormula:['t^2+t\\Delta t+t\\Delta t+(\\Delta t)^2'],
+});
 export const motionFoundationIds=Object.keys(clips);
 export function applyMotionFoundations(plan){
  for(const [id,edit]of Object.entries(clips)){

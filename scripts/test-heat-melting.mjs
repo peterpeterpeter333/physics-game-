@@ -13,6 +13,8 @@ assert.deepEqual([...seen].sort(),[...heatMeltingKinds].sort());
 for(const kind of heatMeltingKinds)assert.ok(new Set([0,.2,.4,.6,.8,1].map(p=>heatMeltingDiagram(kind,p))).size>1);
 assert.equal(new Set(heatMeltingKinds.map(kind=>heatMeltingDiagram(kind,.5))).size,heatMeltingKinds.length);
 assert.equal(100*334+100*4.2*20,41800);
+assert.ok(heatMeltingDiagram('meltinginsert-hot-cold',1).includes('熱平衡'));
+assert.ok(!heatMeltingDiagram('meltinginsert-hot-cold',.2).includes('熱平衡'));
 assert.equal(100*4.2*(80-50),100*4.2*(50-20));
 assert.match(plan.find(c=>c.id==='t-heat-advanced').scenes[1].cues[0].operation,/J\/g/);
 console.log('PASS heat melting:',heatMeltingIds.length,'films,',count,'frames,',seen.size,'diagrams');

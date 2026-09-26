@@ -1,8 +1,8 @@
 {
   "counts": {
-    "activeTeachingFilms": 407,
-    "pendingNotYetActive": 113,
-    "registeredAuthoredRenders": 178,
+    "activeTeachingFilms": 408,
+    "pendingNotYetActive": 112,
+    "registeredAuthoredRenders": 180,
     "totalTracked": 539,
     "paperBattleFilms": 18,
     "legacyFilms": 1
@@ -935,14 +935,14 @@
     },
     {
       "id": "a-bohr-advanced",
-      "title": "ボーア模型のエネルギーは、なぜ負になる？",
+      "title": "ボーア模型のエネルギーは、なぜ負になる?",
       "stageId": "a-bohr",
       "level": "advanced",
       "family": "high-school-atomic",
       "active": true,
-      "media": "public/media/lessons/a-bohr-advanced.mp4",
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "media": "public/media/revisions/a-bohr-advanced.mp4",
+      "storyboard": "bohr-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {
@@ -4795,10 +4795,10 @@
       "stageId": "a-bohr",
       "level": "advanced",
       "family": "high-school-atomic",
-      "active": false,
-      "media": null,
-      "storyboard": null,
-      "status": "pending-individual-rebuild",
+      "active": true,
+      "media": "public/media/inserts/ha-why-06.mp4",
+      "storyboard": "bohr-energy-v1",
+      "status": "registered-authored-render",
       "review": "Requires individual content/encoded-video QA; automated inventory is not certification"
     },
     {

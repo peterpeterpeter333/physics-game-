@@ -16,4 +16,9 @@ assert.equal((2*3+1*0)/(2+1),2);assert.equal(.5*2*3**2-.5*3*2**2,3);
 for(const id of momentumAdvancedIds)for(const s of plan.find(c=>c.id===id).scenes)for(const q of s.cues)for(const f of [...q.formula,...(q.previousFormula??[])])assert.ok(!f.includes(String.fromCharCode(92,92)+'frac'),'Doubled TeX escape renders letters instead of a fraction');
 assert.match(plan.find(c=>c.id==='m-momentum-advanced').scenes[0].narration,/水平方向の力積は無視/);
 assert.match(plan.find(c=>c.id==='hm-why-17').scenes[0].narration,/消えたのではなく/);
+// Equal screen-time intervals must show the stated 3:2 speed ratio.
+const cartX=p=>Number(momentumAdvancedDiagram('collision-numbers',p).match(/<rect x="([\d.]+)"/)[1])+50;
+const beforeDistance=cartX(.2)-cartX(.1),afterDistance=cartX(.7)-cartX(.6);
+assert.ok(Math.abs(beforeDistance/afterDistance-1.5)<1e-10,'Collision must slow from 3 m/s to 2 m/s');
+assert.ok(Math.abs(cartX(.3)-cartX(.2)-beforeDistance)<1e-10,'Uniform motion before collision');
 console.log(`PASS momentum advanced: ${momentumAdvancedIds.length} films, ${count} frames, ${seen.size} diagrams`);

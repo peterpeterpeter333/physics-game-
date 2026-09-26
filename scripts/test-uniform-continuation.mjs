@@ -4,7 +4,7 @@ import sharp from 'sharp';
 import {applyUniformContinuation,uniformContinuationIds} from '../docs/video-revision-20260924/uniform-continuation.mjs';
 import {uniformContinuationFrame,uniformContinuationKinds} from './uniform-continuation-visuals.mjs';
 const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));applyUniformContinuation(plan);
-const expected={'hm-why-05':['eeeeee'],'hm-why-06':['deeede'],'hm-why-07':['deeed'],'hm-why-24':['ddddee'],'m1-uniform-accel-middle':['ddddd','dede','ed'],'m1-uniform-accel-advanced':['de','eeeee','ed']};
+const expected={'hm-why-05':['eeeeee'],'hm-why-06':['deeede'],'hm-why-07':['deeed'],'hm-why-24':['ddddee'],'m1-uniform-accel-middle':['ddddd','dede','ed'],'m1-uniform-accel-advanced':['deeeee','eeeee','ed']};
 let count=0;const seen=new Set();
 for(const id of uniformContinuationIds){
  const c=plan.find(c=>c.id===id);assert.ok(c.manuscriptScenes);
@@ -23,4 +23,11 @@ assert.match(narration('m1-uniform-accel-advanced'),/同じ値を引いて足し
 assert.match(narration('hm-why-24'),/左の辺が最初/);
 assert.match(narration('hm-why-07'),/マイナス五メートル毎秒二乗/);
 assert.equal(20**2/(2*5),40);
+for(const [v0,a,t] of [[0,2,3],[20,-5,4],[-3,1,2],[4,0,5]]){
+ const v=v0+a*t,d=v0*t+a*t*t/2;
+ assert.equal(d,(v0+a*t/2)*t);
+ assert.equal(d,(2*v0+v-v0)*t/2);
+ assert.equal(d,(v0+v)*t/2);
+ assert.equal(2*a*d,v*v-v0*v0);
+}
 console.log(`PASS: six uniform continuation films, ${count} frames, ${seen.size} diagrams, algebra/units/purpose/manual boundaries`);

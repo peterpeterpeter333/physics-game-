@@ -15,4 +15,7 @@ assert.equal(new Set(forceDiagramKinds.map(kind=>forceDiagram(kind,.5))).size,fo
 assert.match(plan.find(c=>c.id==='m-force-intro').scenes[0].narration,/他の公式から導きません/);
 assert.match(plan.find(c=>c.id==='m-force-advanced').scenes[1].narration,/一台ずつの加速度がゼロになるわけではありません/);
 assert.equal((5-2)/2,1.5);
+// Equal elapsed times must produce equal displacements in the inertia demo.
+const cartLeft=p=>Number(forceDiagram('inertia-cart',p).match(/<rect x="([\d.]+)"/)[1]);
+assert.ok(Math.abs((cartLeft(.4)-cartLeft(.3))-(cartLeft(.3)-cartLeft(.2)))<1e-9);
 console.log(`PASS force: 6 films, ${count} frames, ${seen.size} diagrams, explicit receivers and empirical laws`);

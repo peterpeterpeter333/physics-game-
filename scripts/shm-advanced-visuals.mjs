@@ -5,7 +5,7 @@ export const shmAdvancedKinds=['shmadvanced-restoring-force','shmadvanced-initia
 export function shmAdvancedDiagram(kind,p){
  if(!shmAdvancedKinds.includes(kind))throw Error(kind);const u=ease(p);
  if(kind==='shmadvanced-restoring-force'){
-  const x=620+200*Math.cos(Math.PI*u),pts=Array.from({length:25},(_,i)=>[200+(x-225)*i/24,280+(i===0||i===24?0:i%2?22:-22)]);
+  const x=620+200*Math.cos(Math.PI*clamp(p/.8)),pts=Array.from({length:25},(_,i)=>[200+(x-225)*i/24,280+(i===0||i===24?0:i%2?22:-22)]);
   return text('摩擦のない水平面で、ばねにつながれた物体',185,35,31)+line(200,200,200,340,C.dim,7)+path(pts,C.cyan,4)+line(160,315,1120,315)+line(620,150,620,450,C.dim,2,'6 6')+`<rect x="${x-25}" y="250" width="50" height="65" rx="9" fill="${C.gold}"/>`+arrow(x,190,x-(x-620)*.8,190,C.red)+arrow(620,390,x,390,C.purple)+text('0',610,490,29)+text('右向きがプラス',850,460,27)+text('赤：ばねの力',160,110,29,C.red)+text('紫：中心からのずれ',750,110,29,C.purple);
  }
  if(kind==='shmadvanced-initial-states'){

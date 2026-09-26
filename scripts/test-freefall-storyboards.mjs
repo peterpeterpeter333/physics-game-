@@ -2,9 +2,9 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import sharp from 'sharp';
 import {applyFreefall,freefallIds} from '../docs/video-revision-20260924/freefall-storyboards.mjs';
-import {freefallFrame,freefallKinds} from './freefall-visuals.mjs';
+import {freefallFrame,freefallKinds,freefallDiagram} from './freefall-visuals.mjs';
 const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));applyFreefall(plan);
-const expected={'m-freefall-intro':['dd','dd','dd'],'m-freefall-middle':['dde','eeee','ee'],'m-freefall-advanced':['dee','deeee','dd'],'hm-why-08':['dddd'],'hm-why-09':['eeeeeee'],'hm-why-23':['dddd']};
+const expected={'m-freefall-intro':['dd','dd','dd'],'m-freefall-middle':['dde','eeee','eeee'],'m-freefall-advanced':['dee','deeee','dd'],'hm-why-08':['dddd'],'hm-why-09':['eeeeeee'],'hm-why-23':['dddd']};
 let count=0;const seen=new Set();
 for(const id of freefallIds){
  const c=plan.find(c=>c.id===id);assert.ok(c.manuscriptScenes);assert.deepEqual(c.scenes.map(s=>s.cues.map(q=>q.display[0]).join('')),expected[id]);
@@ -15,6 +15,12 @@ assert.deepEqual([...seen].sort(),[...freefallKinds].sort());
 const txt=id=>plan.find(c=>c.id===id).scenes.map(s=>s.narration).join('');
 assert.match(txt('hm-why-08'),/最高点から先.*ずっと働かなければ/);
 assert.match(txt('m-freefall-middle'),/正の数/);
+assert.match(txt('m-freefall-middle'),/上向きの速度が減った分/);
+assert.match(txt('m-freefall-middle'),/三十九・二から十九・六を引いた/);
+assert.match(txt('m-freefall-advanced'),/前提動画で導いたエネルギー/);
+// The highlighted point must pass the zero line, not merely stop on it.
+assert.match(freefallDiagram('apex-crossing',1),/cy="322.5"/);
+assert.match(freefallDiagram('apex-crossing',1),/この交点で速度が0/);
 assert.match(txt('m-freefall-advanced'),/球の質量が違っても/);
 assert.match(txt('hm-why-09'),/一定の力で一直線/);
 assert.ok(Math.abs(19.6**2/(2*9.8)-19.6)<1e-10);

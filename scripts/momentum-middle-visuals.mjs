@@ -8,7 +8,7 @@ export function momentumMiddleDiagram(kind,p){
  if(!momentumMiddleKinds.includes(kind))throw Error('Unknown diagram '+kind);
  const u=ease(p);
  if(kind==='cushion-stop'){
-  const t=.1*u;
+  const t=.1*clamp(p/.85);
   return text('同じ質量・同じ落下速度から、跳ね返らずに停止',190,35,30)+text(`接触後 ${t.toFixed(3)} s`,460,90,30,C.gold)+[.01,.1].map((T,i)=>{const ox=180+i*555,q=Math.min(t/T,1),depth=(i?120:12)*(2*q-q*q),y=210+depth;return rect(ox-60,252+depth,290,(i?150:27)-depth,i?C.purple:C.dim)+`<ellipse cx="${ox+80}" cy="${y}" rx="30" ry="42" fill="${C.ink}"/>`+arrow(ox+150,y,ox+150,y+90*(1-q),C.cyan)+text(i?'クッション':'硬い床',ox,435,31,i?C.purple:C.cyan)+text(`${T} s で停止`,ox,485,29,C.gold);}).join('');
  }
  if(kind==='cushion-equal-area'){

@@ -10,7 +10,7 @@ export function heatFoundationDiagram(kind,p){
   return text('水の量は違っても、温度計の値は同じ',255,35,31)+vessel(160,210,200,170,'20','少ない水')+vessel(620,150,420,230,'20','多い水')+[260,830].map(x=>line(x,400,x,465,C.gold,4)+circle(x,470,9+4*u,C.gold)).join('')+text('温度だけでは、水の量までは分からない',255,510,29);
  }
  if(kind==='heatintro-heater-transfer'){
-  return text('熱い物体から、水へエネルギーが移る',235,35,31)+box(140,200,230,160,C.red)+text('熱い物体',185,245,30,C.red)+text('80℃',205,305,36,C.red)+vessel(760,200,230,160,(20+u).toFixed(1),'水')+arrow(410,280,700,280,C.gold)+circle(420+270*u,280,10,C.gold)+text('矢印：熱の移動方向',420,380,28,C.gold)+text('ジュール[J]は、移ったエネルギーの量の単位',210,495,29);
+  return text('熱い物体から、水へエネルギーが移る',235,35,31)+box(140,200,230,160,C.red)+text('熱い物体',185,245,30,C.red)+text('80℃',205,305,36,C.red)+text('温度を一定に保つ熱源',110,400,25,C.red)+vessel(760,200,230,160,(20+u).toFixed(1),'水')+arrow(410,280,700,280,C.gold)+circle(420+270*u,280,10,C.gold)+text('矢印：熱の移動方向',420,380,28,C.gold)+text('ジュール[J]は、移ったエネルギーの量の単位',210,495,29);
  }
  if(kind==='heatintro-mass-energy'){
   return text('同じ水を20℃から21℃へ：水の質量だけを変える',100,35,30)+[100,1000].map((m,i)=>{const x=170+i*560;return vessel(x,150,250,150,(20+u).toFixed(1),`${m} g の水`)+text('水へ渡した熱量',x,365,28)+box(x,395,(i?400:40)*u,35,i?C.purple:C.cyan)+text(`${Math.round(m*4.2*u)} J`,x,475,31,C.gold);}).join('');

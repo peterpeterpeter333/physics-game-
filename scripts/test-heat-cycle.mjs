@@ -14,6 +14,9 @@ for(const kind of heatCycleKinds)assert.ok(new Set([0,.2,.4,.6,.8,1].map(p=>heat
 assert.equal(new Set(heatCycleKinds.map(kind=>heatCycleDiagram(kind,.5))).size,heatCycleKinds.length);
 assert.equal(1000-600,400);
 assert.equal(400/1000,.4);
+assert.equal(plan.find(c=>c.id==='prep-heat-cycle').scenes[1].cues.length,1,'Do not preteach efficiency before its main derivation');
+assert.match(heatCycleDiagram('heatcycle-work-signs',.5),/ピストンの移動 ←/);
+assert.match(heatCycleDiagram('heatcycle-work-signs',.5),/気体が押す力 →/);
 assert.match(plan.find(c=>c.id==='prep-heat-cycle').scenes[2].narration,/断熱/);
 assert.match(plan.find(c=>c.id==='t-firstlaw-advanced').scenes[2].narration,/第二法則/);
 console.log('PASS heat cycle:',heatCycleIds.length,'films,',count,'frames,',seen.size,'diagrams');

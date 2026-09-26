@@ -20,7 +20,7 @@ export function heatMeltingDiagram(kind,p){
   return text('同じ量の水が熱を受け渡し、同じ温度へ近づく',165,35,30)+line(160,440,1120,440)+line(180,100,180,440)+text('温度 [℃]',65,85,28)+[20,50,80].map(T=>text(String(T),130,Y(T)+8,26)+line(175,Y(T),185,Y(T))).join('')+path([[X(0),Y(80)],[X(Q),Y(80-Q/420)]],C.red,4)+path([[X(0),Y(20)],[X(Q),Y(20+Q/420)]],C.cyan,4)+circle(X(Q),Y(80-Q/420),9,C.red)+circle(X(Q),Y(20+Q/420),9,C.cyan)+text('熱い水から移った熱量 Q [J]',660,485,27)+text('熱い水',370,130,28,C.red)+text('冷たい水',370,400,28,C.cyan)+text('水は各100 g。外・容器との熱の出入りを無視',270,505,25);
  }
  if(kind==='meltinginsert-hot-cold'){
-  return text('同じ質量の水を混ぜ、外には熱を逃がさない',190,35,30)+box(180,160,300,230,C.red)+box(720,160,300,230,C.cyan)+text('水 100 g',255,120,30)+text('水 100 g',795,120,30)+text(`${(80-30*u).toFixed(0)}℃`,275,250,45,C.red)+text(`${(20+30*u).toFixed(0)}℃`,815,250,45,C.cyan)+arrow(495,300,700,300,C.gold)+text('失う分',280,445,28,C.red)+text('受け取る分',790,445,28,C.cyan)+text('二つの量が等しい：エネルギー保存を使う',265,510,29);
+  return text('同じ質量の水を混ぜ、外には熱を逃がさない',190,35,30)+box(180,160,300,230,C.red)+box(720,160,300,230,C.cyan)+text('水 100 g',255,120,30)+text('水 100 g',795,120,30)+text(`${(80-30*u).toFixed(0)}℃`,275,250,45,C.red)+text(`${(20+30*u).toFixed(0)}℃`,815,250,45,C.cyan)+(u<.999?arrow(495,300,700,300,C.gold):text('熱平衡',540,310,27,C.gold))+text('失った量',265,445,28,C.red)+text('受け取った量',765,445,28,C.cyan)+text('二つの量が等しい：エネルギー保存を使う',265,510,29);
  }
  if(kind==='meltinginsert-temperature-balance'){
   const X=T=>180+(T-20)*14.0,hot=80-30*u,cold=20+30*u;

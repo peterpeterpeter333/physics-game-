@@ -3,6 +3,18 @@ import {readFileSync} from 'node:fs';
 import {build} from 'esbuild';
 const b=await build({entryPoints:['src/game/manual-video-playlist.ts'],bundle:true,write:false,platform:'node',format:'esm'});
 const {manualVideoPlaylist}=await import('data:text/javascript;base64,'+Buffer.from(b.outputFiles[0].text).toString('base64'));
+const boundaryBundle=await build({entryPoints:['src/game/video-page-boundary.ts'],bundle:true,write:false,platform:'node',format:'esm'});
+const {holdVideoPage}=await import('data:text/javascript;base64,'+Buffer.from(boundaryBundle.outputFiles[0].text).toString('base64'));
+for(const [start,end]of [[0,10],[10,20],[2,2.01]]){
+ for(const offset of [0,.02,.3,2]){
+  let pauses=0;const video={currentTime:end+offset,pause:()=>pauses++};
+  assert.equal(holdVideoPage(video,start,end),true);
+  assert.equal(pauses,1);assert.ok(video.currentTime>=start&&video.currentTime<end);
+  assert.equal(holdVideoPage(video,start,end),false,'Hold must not loop through repeated seeks');
+ }
+ const video={currentTime:start,pause:()=>{throw Error('Premature pause');}};
+ assert.equal(holdVideoPage(video,start,end),false);
+}
 const read=name=>JSON.parse(readFileSync('src/content/'+name+'.generated.json'));
 const replacements=read('revised-video-catalog'),inserts=read('insert-video-catalog'),routes=read('insert-routes');
 const movies=[...read('em-video-catalog'),...read('lesson-video-catalog'),...read('prerequisite-video-catalog')].map(m=>replacements.find(r=>r.id===m.id)??m);
@@ -46,6 +58,7 @@ const player=readFileSync('src/components/SegmentedLessonVideo.tsx','utf8');
 assert.doesNotMatch(player,/advance|setCursor|autoPlay|videoSegments/,'Player must not own source navigation');
 assert.match(player,/onEnded=\{\(\)=>setPlaying\(false\)\}/);
 assert.match(player,/v\.pause\(\)/);
+assert.ok((player.match(/holdVideoPage\(/g)??[]).length>=3,'Guard animation frames, time updates and manual seeks');
 const ui=readFileSync('src/components/EMVideoLesson.tsx','utf8');
 assert.match(ui,/list\.map/);assert.match(ui,/selectPage\(page\+1\)/);assert.match(ui,/selectPage\(page-1\)/);
 console.log('PASS: '+movies.length+' movies, '+count+' manual pages; coverage, ordering, stable IDs, no autoplay transitions, dots/previous/next');

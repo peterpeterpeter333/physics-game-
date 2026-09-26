@@ -3,7 +3,7 @@ import {authoredMotionFrame} from './motion-foundation-visuals.mjs';
 const ease=p=>{p=clamp(p/.8);return p*p*(3-2*p);};
 export const sineMotionKinds=['sinemotion-cosine-slope','sinemotion-angle-clocks','sinemotion-center-acceleration','sinemotion-numeric-secant'];
 export function sineMotionDiagram(kind,p){
- if(!sineMotionKinds.includes(kind))throw Error(kind);const u=ease(p);
+ if(!sineMotionKinds.includes(kind))throw Error(kind);const u=['sinemotion-angle-clocks','sinemotion-center-acceleration'].includes(kind)?clamp(p/.8):ease(p);
  if(kind==='sinemotion-cosine-slope'){
   const X=t=>160+t*280,Y=v=>275-v*150,a=1.4*u,x=X(a),y=Y(Math.cos(a)),h=.3;
   return text('コサインの値の変化を、接線の傾きで見る',220,35,31)+line(140,275,1100,275)+line(160,100,160,455)+path(Array.from({length:81},(_,i)=>{const t=i*Math.PI/80;return[X(t),Y(Math.cos(t))];}),C.cyan,4)+line(X(a-h),Y(Math.cos(a)+Math.sin(a)*h),X(a+h),Y(Math.cos(a)-Math.sin(a)*h),C.gold,5)+circle(x,y,10,C.gold)+text('角度 θ [rad]',915,320,28)+text('cos θ',70,90,29,C.cyan)+text('0',135,310,26)+text('1',118,130,26)+text('−1',102,435,26)+text(`接線の傾き ${(-Math.sin(a)).toFixed(2)}`,650,110,29,C.gold)+text('角度0では水平。その後は右下がり',300,500,29);

@@ -16,5 +16,9 @@ assert.equal(Math.sqrt(4),2);assert.equal(Math.sqrt(4*3/12)/Math.sqrt(3/12),2);
 for(const theta of [0,.4,1.2,2.8]){const A=2,omega=3,x=A*Math.cos(theta);assert.ok(Math.abs(-A*omega**2*Math.cos(theta)+omega**2*x)<1e-10);}
 for(const id of shmMiddleIds)for(const s of plan.find(c=>c.id===id).scenes)for(const q of s.cues)for(const f of [...q.formula,...(q.previousFormula??[])])assert.ok(!f.includes(String.fromCharCode(92,92)+'frac'),'Doubled TeX escape renders letters instead of a fraction');
 assert.match(plan.find(c=>c.id==='m-shm-middle').scenes[0].narration,/つり合いの位置をゼロ/);
+assert.equal(plan.find(c=>c.id==='m-shm-middle').scenes[0].cues.length,3);
+assert.match(plan.find(c=>c.id==='m-shm-middle').scenes[0].narration,/左辺の質量が約分/);
+assert.doesNotMatch(plan.find(c=>c.id==='m-shm-middle').scenes[0].narration,/位置のマイナス.*倍/);
+for(const [p,label] of [[.2,'0.50'],[.4,'1.00'],[.6,'1.50']])assert.ok(shmMiddleDiagram('shm-phase-progress',p).includes(`角度 ${label}π rad`),'Equal video intervals must advance equal angles');
 assert.match(plan.find(c=>c.id==='hm-why-21').scenes[0].narration,/中心以外の位置/);
 console.log(`PASS shm middle: ${shmMiddleIds.length} films, ${count} frames, ${seen.size} diagrams`);

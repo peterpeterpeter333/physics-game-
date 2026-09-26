@@ -15,5 +15,8 @@ assert.equal(new Set(gasParticleKinds.map(kind=>gasParticleDiagram(kind,.5))).si
 assert.equal((-2*3)-(2*3),-12);
 assert.equal((2*2*3)/(2*4/3),2*3*3/4);
 assert.match(plan.find(c=>c.id==='prep-gas-particles').scenes[0].narration,/後の運動量から前の運動量/);
-assert.match(plan.find(c=>c.id==='prep-gas-particles').scenes[3].narration,/単原子/);
+const prerequisite=plan.find(c=>c.id==='prep-gas-particles');
+assert.equal(prerequisite.scenes.length,3);
+assert.doesNotMatch(prerequisite.scenes.map(s=>s.narration).join(''),/内部エネルギー/);
+assert.match(prerequisite.scenes[2].narration,/圧力と体積の積/);
 console.log('PASS gas particles:',gasParticleIds.length,'films,',count,'frames,',seen.size,'diagrams');

@@ -3,7 +3,7 @@ const F=(subtitle,reading,formula,operation,previousFormula=[])=>({subtitle,read
 const S=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading})=>({subtitle,reading})),narration:cues.map(q=>q.subtitle).join(''),equation:'',symbols:'',visual:'doppler-source'});
 export const dopplerSourceIds=['prep-doppler','w-doppler-intro','w-doppler-middle','hw-why-05'];
 export function applyDopplerSource(plan){
- const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);Object.assign(c,{visualPilot:'doppler-source-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hw-')?'thorough':'common'}));};
+ const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);if(id==='prep-doppler'){scenes=scenes.slice(0,1);breaks=[];c.title='止まった音源の周期と波長をつなぐ';}Object.assign(c,{visualPilot:'doppler-source-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hw-')?'thorough':'common'}));};
  set('w-doppler-intro',[
  S('音を出す場所が動くと、山の間隔が変わる',
  D('今回は、近づく救急車の音が高く聞こえる理由を考えます。空気は止まっていて、音を出す救急車だけが、音より遅い速さで聞く人へ近づく場合を見ます。','こんかいは、ちかづくきゅうきゅうしゃのおとがたかくきこえるりゆうをかんがえます。くうきはとまっていて、おとをだすきゅうきゅうしゃだけが、おとよりおそいはやさできくひとへちかづくばあいをみます。','dopplerintro-moving-source'),

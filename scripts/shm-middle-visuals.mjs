@@ -4,7 +4,7 @@ const ease=p=>{p=clamp(p/.8);return p*p*(3-2*p);};
 const ring=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${C.dim}" stroke-width="2"/>`;
 export const shmMiddleKinds=['shm-equilibrium-sign','shm-phase-progress','shm-amplitude-comparison','shm-horizontal-projection','shm-acceleration-projection'];
 export function shmMiddleDiagram(kind,p){
- if(!shmMiddleKinds.includes(kind))throw Error('Unknown '+kind);const u=ease(p);
+ if(!shmMiddleKinds.includes(kind))throw Error('Unknown '+kind);const u=clamp(p/.8);
  if(kind==='shm-equilibrium-sign'){
   const x=600+180*Math.cos(Math.PI*u),f=(600-x)*.7;
   return text('中心を0、右向きをプラスに決める',285,35,31)+line(120,330,1100,330)+line(600,160,600,400,C.dim,2,'7 7')+circle(x,300,28,C.gold)+arrow(x,220,x+f,220,C.red)+arrow(600,385,x,385,C.cyan)+text('0',585,445,30)+text('−',235,445,35)+text('+',950,445,35)+text('赤：ばねの力',180,115,29,C.red)+text('青：中心からのずれ x',690,115,29,C.cyan)+text('位置が右なら力は左。位置が左なら力は右',255,495,29);

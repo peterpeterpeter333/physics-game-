@@ -3,7 +3,11 @@ const F=(subtitle,reading,formula,operation,previousFormula=[])=>({subtitle,read
 const S=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading})=>({subtitle,reading})),narration:cues.map(q=>q.subtitle).join(''),equation:'',symbols:'',visual:'gas-work'});
 export const gasWorkIds=['prep-gas-work','hp-why-08'];
 export function applyGasWork(plan){
- const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);Object.assign(c,{visualPilot:'gas-work-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hp-')?'thorough':'common'}));};
+ const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);
+  // The first law is already taught in the introduction; this prerequisite
+  // now prepares only the variable-pressure work needed for a cycle.
+  if(id==='prep-gas-work'){scenes=scenes.slice(0,3);breaks=[1,2];c.title='気体が押す仕事を、圧力と体積から求める';}
+  Object.assign(c,{visualPilot:'gas-work-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hp-')?'thorough':'common'}));};
  set('prep-gas-work',[
  S('気体がピストンを押す力を、圧力から求める',
  D('今回は、気体が外へする仕事を計算します。気体の圧力がそろうように、ピストンがゆっくり動く場合を考えます。','こんかいは、きたいがそとへするしごとをけいさんします。きたいのあつりょくがそろうように、ピストンがゆっくりうごくばあいをかんがえます。','gaswork-pressure-face'),

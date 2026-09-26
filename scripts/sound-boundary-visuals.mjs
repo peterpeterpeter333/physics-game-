@@ -7,8 +7,17 @@ const air=(x,y,L,u,fn,c=C.cyan)=>Array.from({length:21},(_,i)=>{const z=i/20;ret
 const bracket=(a,b,y,label,c=C.gold)=>line(a,y,b,y,c,2)+line(a,y-7,a,y+7,c,2)+line(b,y-7,b,y+7,c,2)+text(label,(a+b)/2-55,y-15,25,c);
 export const soundBoundaryKinds=['soundprep-reflection','soundprep-closed-pressure','soundprep-open-pressure','soundprep-quarter-wave','soundprep-beat-count','soundmiddle-closed-end','soundmiddle-open-end','soundmiddle-wavelengths','soundmiddle-frequency-ratio','soundinsert-half-metre'];
 export function soundBoundaryDiagram(kind,p){
- if(!soundBoundaryKinds.includes(kind))throw Error(kind);const u=clamp(p/.9),a=Math.cos(tau*u);
- if(kind==='soundprep-reflection'){const q=u<.5?2*u:2-2*u,center=180+850*q;return text('管の端で反射した波が、入ってくる波と重なる',110,35,31)+pipe(110,180,940,190)+line(1050,180,1050,370,C.gold,7)+profile(110,290,940,70,z=>Math.exp(-Math.pow((110+940*z-center)/95,2)),C.cyan)+arrow(center-(u<.5?90:-90),120,center,120,C.cyan)+text('閉じた壁',990,425,28,C.gold)+text('圧力変化の波を線で描いた模式図',325,465,28)+text('曲線の上下は、空気が上下に動くことを表さない',210,505,26);}
+ if(!soundBoundaryKinds.includes(kind))throw Error(kind);const u=clamp(p),a=Math.cos(tau*u);
+ if(kind==='soundprep-reflection'){
+  const incoming=180+1740*u,returning=2100-incoming;
+  const pulse=(x,center)=>Math.exp(-Math.pow((x-center)/95,2));
+  return text('閉じた壁では、入る圧力の波と戻る波が重なる',105,35,31)+pipe(110,180,940,190)+line(1050,180,1050,370,C.gold,7)
+   +profile(110,300,940,45,z=>pulse(110+940*z,incoming),C.cyan)
+   +profile(110,300,940,45,z=>pulse(110+940*z,returning),C.purple)
+   +profile(110,300,940,45,z=>pulse(110+940*z,incoming)+pulse(110+940*z,returning),C.gold)
+   +arrow(300,120,410,120,C.cyan)+text('入る波',155,130,26,C.cyan)+arrow(900,120,790,120,C.purple)+text('戻る波',940,130,26,C.purple)
+   +text('閉じた壁',990,420,28,C.gold)+text('黄色：二つを足した圧力の変化',330,465,28,C.gold)+text('単発の波で反射を確認。繰り返す波では定常波を作れる',130,505,26);
+ }
  if(kind==='soundprep-closed-pressure')return text('閉じた端：空気の移動はゼロでも、圧力は変わる',80,35,31)+pipe(230,170,770,170,true)+air(230,255,770,u,z=>Math.sin(Math.PI*z/2))+circle(230,255,11,C.red)+text('壁',200,125,29)+text('変位の節',115,390,28,C.red)+line(470,420,890,420,C.dim,2)+arrow(680,420,680-140*a,420,C.gold)+text('低い',365,428,26,C.dim)+text('高い',915,428,26,C.gold)+text('壁の圧力：高い・低いを繰り返す',430,465,28,C.gold)+text('同じ場所でも、変位の節と圧力変化の腹は両立する',175,505,25);
  if(kind==='soundprep-open-pressure')return text('開いた端：圧力は外と同じでも、空気は動ける',100,35,31)+pipe(200,165,720,180,true)+air(200,255,720,u,z=>Math.sin(Math.PI*z/2))+line(920,120,920,410,C.gold,2,'7 6')+circle(920+18*a,255,12,C.gold)+text('開いた端',865,95,29,C.gold)+text('外の空気',985,255,27)+arrow(875,425,965,425,C.gold)+text('変位の腹：前後に大きく往復',650,475,27,C.gold)+text('圧力の変化は小さい → 圧力変化の節',300,505,26);
  if(kind==='soundprep-quarter-wave')return text('片閉じの基本振動：節から、最初の腹まで',160,35,31)+profile(180,270,900,90,z=>Math.sin(tau*z)*a,C.dim)+profile(180,270,225,90,z=>Math.sin(Math.PI*z/2)*a,C.gold)+line(180,145,180,395,C.red,3,'7 6')+line(405,145,405,395,C.gold,3,'7 6')+circle(180,270,10,C.red)+circle(405,270-90*a,10,C.gold)+bracket(180,1080,120,'一波長')+bracket(180,405,435,'管の長さ')+text('節',165,380,28,C.red)+text('腹',390,380,28,C.gold)+text('縦は横向きの変位。灰色は周期を読むための延長',190,505,27);

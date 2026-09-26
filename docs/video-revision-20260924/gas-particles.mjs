@@ -22,5 +22,9 @@ export function applyGasParticles(plan){
  S('単原子の理想気体の内部エネルギーへつなぐ',
  F('単原子の理想気体の内部エネルギーは、粒子が飛び回る運動エネルギーの合計です。圧力の式の三分の一を二分の一へ直すには、両辺に二分の三を掛けます。','たんげんしのりそうきたいのないぶエネルギーは、りゅうしがとびまわるうんどうエネルギーのごうけいです。あつりょくのしきのさんぶんのいちをにぶんのいちへなおすには、りょうへんににぶんのさんをかけます。',['\\frac32pV=\\frac12Nm\\langle v^2\\rangle=U'],'U：内部エネルギー[J]。単原子の理想気体、内部の励起を無視',['pV=\\frac13Nm\\langle v^2\\rangle']),
  F('同じ気体について、圧力かける体積を、状態方程式のエヌアールティーへ置き換えます。内部エネルギーは、物質量と絶対温度に比例すると分かりました。','おなじきたいについて、あつりょくかけるたいせきを、じょうたいほうていしきのエヌアールティーへおきかえます。ないぶエネルギーは、ぶっしつりょうとぜったいおんどにひれいするとわかりました。',['U','=','\\frac32','nRT'],'小文字n：物質量[mol]、R：気体定数、T：絶対温度[K]',['U','=','\\frac32','pV']))
- ];Object.assign(c,{visualPilot:'gas-particles-v1',navigationBreaks:[1,2,3],scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${c.id}-s${i+1}`,mode:'common'}));
+ ];
+ // The following main lesson derives internal energy. Keep this prerequisite
+ // focused on the collision-to-pressure calculation, not that later result.
+ scenes.splice(3);
+ Object.assign(c,{visualPilot:'gas-particles-v1',navigationBreaks:[1,2],scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${c.id}-s${i+1}`,mode:'common'}));
 }

@@ -165,7 +165,14 @@
             "t^2+2t\\Delta t+(\\Delta t)^2"
           ],
           "operation": "(t + Δt)(t + Δt) の各項を掛け合わせる",
-          "previousFormula": []
+          "previousFormula": [
+            "(t+\\Delta t)^2",
+            "=",
+            "(t+\\Delta t)(t+\\Delta t)"
+          ],
+          "intermediateFormula": [
+            "t^2+t\\Delta t+t\\Delta t+(\\Delta t)^2"
+          ]
         },
         {
           "subtitle": "分子では、最初の位置を表す項が引かれて消えます。残る二つの項には、どちらもデルタティーが含まれます。",
@@ -373,7 +380,7 @@
   ],
   "duration": 98.89933333333333,
   "mediaDirectory": "revisions",
-  "renderKey": "d1ac906aab2e747e0dce45ac16eca63560618c27a888520b792c4025787dcf47",
+  "renderKey": "be302b92ba6bfa4085ec84e8753c3f3114070be9d4e46fe625bdacea08247da0",
   "renderer": "lesson",
   "sourceMediaDirectory": "lessons",
   "revision": "20260924-full",

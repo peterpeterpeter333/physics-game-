@@ -5,7 +5,7 @@ const chart=(y,amp,cycles,t,c)=>path(Array.from({length:201},(_,i)=>{const z=i/2
 const air=(t,y=280)=>Array.from({length:47},(_,i)=>{const base=120+20*i,x=base+22*Math.sin(tau*(base/400-t));return [y-45,y,y+45].map(Y=>circle(x,Y,i===19?8:5,i===19?C.red:C.cyan)).join('');}).join('');
 export const soundFoundationKinds=['soundintro-air-motion','soundintro-compression','soundintro-pressure-graph','soundintro-displacement-graph','soundintro-loudness','soundintro-pitch'];
 export function soundFoundationDiagram(kind,p){
- if(!soundFoundationKinds.includes(kind))throw Error(kind);const u=clamp(p/.9);
+ if(!soundFoundationKinds.includes(kind))throw Error(kind);const u=clamp(p);
  if(kind==='soundintro-air-motion')return text('空気は前後へ往復し、密な場所が右へ伝わる',130,35,32)+air(u)+line(500,165,500,390,C.dim,2,'7 6')+arrow(465,420,535,420,C.red)+text('同じ空気の集まり',375,465,29,C.red)+arrow(760,125,1080,125,C.gold)+text('音が進む向き',785,95,29,C.gold)+text('点は空気の小さな集まりを表す模式図',275,505,26);
  if(kind==='soundintro-compression'){const center=200+400*u;return text('密な所と疎らな所が、右へ進む',270,35,32)+air(u)+line(center,180,center,380,C.gold,2)+line(center+200,180,center+200,380,C.purple,2)+text('密・圧力が高い',center-90,145,27,C.gold)+text('疎・圧力が低い',center+110,435,27,C.purple)+text('空気が上へ盛り上がっているわけではない',240,505,29);}
  if(kind==='soundintro-pressure-graph')return text('縦軸が圧力の変化なら、山は圧力の高い場所',100,35,32)+line(200,295,1090,295,C.dim,2)+line(200,155,200,430,C.dim,2)+chart(295,100,2,u+.25,C.gold)+text('普段からの圧力の変化 [Pa]',200,105,29,C.gold)+text('0',155,305,27)+text('普段より高い',215,150,27,C.gold)+text('普段より低い',215,455,27,C.purple)+text('横軸：位置',910,485,28)+circle(200+850*(.5+u)/2,195,10,C.gold);

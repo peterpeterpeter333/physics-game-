@@ -37,6 +37,11 @@ export function applyAdditionTheorem(plan){
  S('数値で確かめ、次の二倍角へつなぐ',
  F('アルファを三十度、ベータを六十度にして確かめます。左側はサイン九十度なので一、右側は四分の一と四分の三の和なので一です。','アルファをさんじゅうど、ベータをろくじゅうどにしてたしかめます。ひだりがわはサインきゅうじゅうどなのでいち、みぎがわはよんぶんのいちとよんぶんのさんのわなのでいちです。',['1','=','\\frac12\\cdot\\frac12+\\frac{\\sqrt3}{2}\\cdot\\frac{\\sqrt3}{2}','=','\\frac14+\\frac34'],'sin 30° = cos 60° = 1/2、sin 60° = cos 30° = √3/2'),
  F('次の動画では、二つの角度を同じシータにします。加法定理の右側に同じ積が二つ並ぶので、二倍角の公式につながります。','つぎのどうがでは、ふたつのかくどをおなじシータにします。かほうていりのみぎがわにおなじせきがふたつならぶので、にばいかくのこうしきにつながります。',['\\sin(2\\theta)','=','2\\sin\\theta\\cos\\theta'],'二倍角：角度を二倍にしたときの式',['\\sin(\\theta+\\theta)','=','\\sin\\theta\\cos\\theta+\\cos\\theta\\sin\\theta']))]});
+ // Show the four products mentioned by the narration before collecting terms.
+ c.scenes[1].cues[2].intermediateFormula=['1-\\cos\\beta-\\cos\\beta+\\cos^2\\beta'];
+ c.scenes[2].cues[2].operation='横の差の二乗を展開';
+ c.scenes[2].cues[2].intermediateFormula=['x_2^2-x_2x_1-x_1x_2+x_1^2'];
+ c.scenes[2].cues[3].intermediateFormula=['y_2^2-y_2y_1-y_1y_2+y_1^2'];
  c.scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${c.id}-s${i+1}`,mode:'common'}));
 }
 // Prose directions in manuscript 01 are not covered by prerequisite tables.

@@ -6,7 +6,7 @@ const ring=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${
 const bracket=(a,b,y,label)=>line(a,y,b,y,C.gold,2)+line(a,y-7,a,y+7,C.gold,2)+line(b,y-7,b,y+7,C.gold,2)+text(label,(a+b)/2-40,y-15,27,C.gold);
 export const soundBeatKinds=['beats-two-records','beats-result-envelope','beats-relative-phase','beats-waves-continue','beatsinsert-relative-count','beatsinsert-two-cycles'];
 export function soundBeatDiagram(kind,p){
- if(!soundBeatKinds.includes(kind))throw Error(kind);const u=clamp(p/.9);
+ if(!soundBeatKinds.includes(kind))throw Error(kind);const u=clamp(p);
  if(kind==='beats-two-records')return text('同じ場所の二つの振動を、同じ時間幅で比べる',120,35,31)+[0,1].map(i=>{const y=195+i*205,f=i?6:5;return line(160,y,1100,y,C.dim,2)+plot(160,y,920,65,t=>Math.sin(tau*f*t),i?C.purple:C.cyan)+circle(160+920*u,y-65*Math.sin(tau*f*u),10,C.gold)+text(i?'少し回数が多い振動':'もとの振動',165,y-90,29,i?C.purple:C.cyan);}).join('')+text('横軸は時刻。動きが見えるように遅くした模型',255,505,27);
  if(kind==='beats-result-envelope')return text('重ねた圧力変化は、強くなったり弱くなったりする',85,35,30)+line(150,295,1120,295,C.dim,2)+plot(150,295,950,65,t=>Math.sin(tau*5*t)+Math.sin(tau*6*t),C.gold)+plot(150,295,950,130,t=>Math.abs(Math.cos(Math.PI*t)),C.dim)+plot(150,295,950,130,t=>-Math.abs(Math.cos(Math.PI*t)),C.dim)+line(150+950*u,120,150+950*u,450,C.cyan,2)+text('縦：二つの音を重ねた圧力変化',200,100,29,C.gold)+text('横：時刻。灰色は振動の大きさの輪郭',280,490,28);
  if(kind==='beats-relative-phase'){const x=590,y=285,a=tau*u;return text('一回ぶん追い越すと、二つのタイミングは元へ戻る',65,35,31)+ring(x,y,120)+arrow(x,y,x+120,y,C.cyan)+arrow(x,y,x+120*Math.cos(a),y-120*Math.sin(a),C.purple)+text('基準の振動',780,285,29,C.cyan)+text('相手の進み',385,105,29,C.purple)+text('一回ぶんの差：'+u.toFixed(2)+' 周',405,460,29,C.gold)+text('基準の針を固定して、相手が先へ進む分だけを表示',170,505,27);}

@@ -5,12 +5,16 @@ const rect=(x,y,w,h,c,a=.5)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}"
 const cart=(x,y,c)=>rect(x-50,y-30,100,45,c)+circle(x-32,y+22,12,C.dim)+circle(x+32,y+22,12,C.dim);
 export const momentumAdvancedKinds=['collision-boundary','collision-exchange','collision-shared-speed','collision-energy-transfer','collision-work-distance','collision-numbers','collision-energy-numbers'];
 export function momentumAdvancedDiagram(kind,p){
- if(!momentumAdvancedKinds.includes(kind))throw Error('Unknown '+kind);const u=ease(p);
+ if(!momentumAdvancedKinds.includes(kind))throw Error('Unknown '+kind);
+ // Physical motion uses uniform time; only explanatory marks ease in.
+ const u=['collision-boundary','collision-shared-speed'].includes(kind)?clamp(p/.85):ease(p);
  if(kind==='collision-boundary')return text('対象は二台。外からの水平方向の力積は無視する',155,40,31)+`<rect x="145" y="135" width="905" height="260" rx="30" fill="none" stroke="${C.gold}" stroke-dasharray="12 8" stroke-width="3"/>`+line(100,335,1100,335)+cart(300+150*u,300,C.cyan)+cart(650,300,C.purple)+arrow(300+150*u,225,420+150*u,225,C.cyan)+text('動く台車',270,455,30,C.cyan)+text('止まった台車',650,455,30,C.purple);
  if(kind==='collision-exchange')return text('押し合う間、二台は運動量を受け渡す',265,35,31)+cart(495,220,C.cyan)+cart(595,220,C.purple)+arrow(495,145,495-140*u,145,C.red)+arrow(595,145,595+140*u,145,C.red)+text('台車1：減る',190,330,31,C.cyan)+text('台車2：同じだけ増える',670,330,31,C.purple)+rect(190,370,390-130*u,45,C.cyan)+rect(670,370,130*u,45,C.purple)+text('力は逆向きで同じ大きさ。押し合う時間も同じ',200,485,30);
  if(kind==='collision-shared-speed')return text('くっついた二台は、共通の速度 V で進む',240,35,32)+line(110,340,1100,340)+cart(290+360*u,305,C.cyan)+cart(390+360*u,305,C.purple)+arrow(290+360*u,205,420+360*u,205,C.cyan)+arrow(390+360*u,125,520+360*u,125,C.purple)+text('同じ長さの速度の矢印',350,445,31)+text('質量の合計：m₁ + m₂',375,495,29,C.gold);
  if(kind==='collision-numbers'){
-  const before=u<.5,q=before?u*2:(u-.5)*2,x=before?240+240*q:480+260*q,z=before?580:580+260*q;
+  const t=3.2*clamp(p/.85),before=t<1.6;
+  // 50 pixels per metre: 3 m/s before contact, 2 m/s after contact.
+  const x=before?240+150*t:480+100*(t-1.6),z=before?580:580+100*(t-1.6);
   return text('衝突前：2 kgが3 m/s、1 kgは静止',250,35,31)+line(100,325,1100,325)+cart(x,290,C.cyan)+cart(z,290,C.purple)+arrow(x,185,x+(before?150:100),185,C.cyan)+(before?'':arrow(z,125,z+100,125,C.purple))+text('2 kg',x-30,390,29,C.cyan)+text('1 kg',z-30,440,29,C.purple)+text(before?'右向きを正として、二台の運動量を足す':'衝突後：二台がくっついて2 m/s',230,495,30,C.gold);
  }
  if(kind==='collision-energy-transfer'||kind==='collision-energy-numbers'){

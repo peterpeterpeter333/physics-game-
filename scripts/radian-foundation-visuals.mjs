@@ -6,7 +6,7 @@ const arc=(x,y,r,a,c=C.gold)=>path(Array.from({length:81},(_,i)=>[x+r*Math.cos(a
 const radius=(x,y,r,a,c=C.cyan)=>line(x,y,x+r*Math.cos(a),y-r*Math.sin(a),c,3);
 export const radianFoundationKinds=['radian-arc','radian-ratio','radian-full-turn','radian-clock','radian-two-speeds'];
 export function radianFoundationDiagram(kind,p){
- if(!radianFoundationKinds.includes(kind))throw Error('Unknown '+kind);const u=ease(p);
+ if(!radianFoundationKinds.includes(kind))throw Error('Unknown '+kind);const u=['radian-clock','radian-two-speeds'].includes(kind)?clamp(p/.8):ease(p);
  if(kind==='radian-arc'){
   const x=445,y=265,r=180,a=.5*u;
   return text('円周に沿う長さが「弧の長さ」',305,35,32)+ring(x,y,r)+radius(x,y,r,0)+radius(x,y,r,a)+arc(x,y,r,a)+circle(x+r*Math.cos(a),y-r*Math.sin(a),10,C.gold)+arc(x,y,65,a,C.purple)+text('半径 2 m',290,315,29,C.cyan)+text(`弧の長さ ${(2*a).toFixed(2)} m`,695,220,31,C.gold)+text(`角度 ${a.toFixed(2)} rad`,695,290,31,C.purple)+text('始点から円周に沿って、黄色の部分だけ進む',250,490,29);

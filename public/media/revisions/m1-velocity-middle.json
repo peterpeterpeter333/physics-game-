@@ -72,7 +72,8 @@
             "\\bar v"
           ],
           "operation": "v̄（ブイバー）：平均の速度",
-          "previousFormula": []
+          "previousFormula": [],
+          "symbolFocus": true
         },
         {
           "subtitle": "二秒の位置は一メートル、四秒の位置は七メートルです。縦の差は六メートル、横の差は二秒です。",
@@ -186,7 +187,7 @@
           "subtitle": "次は、位置のグラフが曲線になる運動を考えます。二点の間隔を狭めると、一瞬の速度へ近づけます。",
           "reading": "つぎは、いちのグラフがきょくせんになるうんどうをかんがえます。にてんのかんかくをせばめると、いっしゅんのそくどへちかづけます。",
           "display": "diagram",
-          "diagram": "secant",
+          "diagram": "secant-shrink",
           "operation": "",
           "formula": []
         }
@@ -236,7 +237,7 @@
   "pronunciationFingerprint": "ba5057db681fbbeddb0a0cad3ab03c6d0b3236b4f4a3afb7cf48c3e688b92dc8",
   "duration": 65.426,
   "mediaDirectory": "revisions",
-  "renderKey": "42f61936e4703f612a0f794b79bf9483644594649c457e32edcf384a638c5a86",
+  "renderKey": "8c8aa37b9e3fa5eaf0a7137c81b8c51770324cab5ee00421e7c74db76f3b8648",
   "renderer": "lesson",
   "sourceMediaDirectory": "lessons",
   "revision": "20260924-full",

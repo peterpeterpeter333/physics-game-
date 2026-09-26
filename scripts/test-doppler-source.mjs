@@ -9,12 +9,14 @@ for(const id of dopplerSourceIds){const c=plan.find(c=>c.id===id);assert.ok(c.ma
  for(const s of c.scenes){s.start=t;s.captions=s.cues.map(q=>{assert.ok(q.reading&&!/\s/.test(q.reading));const n=q.subtitle.split('。').filter(Boolean).length;assert.ok(n>0&&n<=2);assert.equal(n,q.reading.split('。').filter(Boolean).length);if(q.diagram)seen.add(q.diagram);for(const f of q.formula)assert.ok(!f.includes(String.fromCharCode(92,92)+'frac'));const start=t;t+=5;return{text:q.subtitle,start,end:t};});s.end=t;}c.duration=t;
  for(const s of c.scenes)for(const cap of s.captions)for(const p of [.05,.35,.7,.95]){const svg=dopplerSourceFrame(c,s,cap.start+5*p);assert.ok(!/NaN|undefined|data-mjx-error/.test(svg));assert.equal((svg.match(/data-presentation=/g)||[]).length,1);await sharp(Buffer.from(svg)).png().toBuffer();count++;}
 }
-assert.deepEqual([...seen].sort(),[...dopplerSourceKinds].sort());
+assert.deepEqual([...seen].sort(),dopplerSourceKinds.filter(k=>!['dopplerprep-moving-distance','dopplerprep-moving-listener'].includes(k)).sort());
+assert.equal(plan.find(c=>c.id==='prep-doppler').scenes.length,1);
 for(const kind of dopplerSourceKinds)assert.ok(new Set([0,.2,.4,.6,.8,1].map(p=>dopplerSourceDiagram(kind,p))).size>1);
 assert.equal(new Set(dopplerSourceKinds.map(kind=>dopplerSourceDiagram(kind,.5))).size,dopplerSourceKinds.length);
 assert.ok(Math.abs(340/(340-34)-1.111111111)<1e-8);
 assert.equal(340/(340-0),1);
 const routes=JSON.parse(readFileSync('docs/video-revision-20260924/full-routes.generated.json'));
-for(const id of ['w-doppler-intro','w-doppler-middle'])assert.ok(routes.inserts[id].some(r=>r.afterScene===2&&r.inserts.includes('hw-why-05')));
+assert.deepEqual(routes.inserts['w-doppler-intro'],[]);
+assert.ok(routes.inserts['w-doppler-middle'].some(r=>r.afterScene===2&&r.inserts.includes('hw-why-05')));
 assert.match(plan.find(c=>c.id==='w-doppler-middle').scenes[1].narration,/距離が近いだけ/);
 console.log('PASS doppler source:',dopplerSourceIds.length,'films,',count,'frames,',seen.size,'diagrams');

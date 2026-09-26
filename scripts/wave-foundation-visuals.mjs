@@ -10,7 +10,7 @@ const tick=(x,y,label,c=C.gold)=>line(x,y-8,x,y+8,c,3)+text(label,x-8,y+38,25,c)
 const bracket=(a,b,y,label,c=C.gold)=>line(a,y,b,y,c,3)+line(a,y-10,a,y+10,c,3)+line(b,y-10,b,y+10,c,3)+text(label,(a+b)/2-70,y-18,29,c);
 export const waveFoundationKinds=['waveintro-marked-string','waveintro-crest-versus-point','waveintro-neighbour-delay','waveintro-wavelength','waveintro-period-clock','waveprep-local-motion','waveprep-amplitude','waveprep-crest-trough','waveprep-one-period','waveprep-longitudinal','waveinsert-fixed-position','waveinsert-moving-crest'];
 export function waveFoundationDiagram(kind,p){
- if(!waveFoundationKinds.includes(kind))throw Error(kind);const u=clamp(p/.9);
+ if(!waveFoundationKinds.includes(kind))throw Error(kind);const u=clamp(p);
  if(kind==='waveintro-marked-string')return text('ひもの点は上下へ。波の形は右へ',285,35,33)+line(95,285,1160,285,C.dim,2)+curve(u)+Array.from({length:25},(_,i)=>{const x=i*9/24;return circle(X(x),Y(height(x,u)),5,C.cyan);}).join('')+marker(3,u)+arrow(X(3)-45,195,X(3)-45,375,C.red)+text('ひもに付けた印',X(3)-105,455,30,C.red)+arrow(800,125,1030,125,C.gold)+text('波が進む向き',800,95,29,C.gold);
  if(kind==='waveintro-crest-versus-point'){const peak=1+4*u;return text('赤い印を、動いていく山と比べる',280,35,32)+curve(u)+marker(3,u)+circle(X(peak),Y(1),11,C.gold)+line(X(peak),Y(1)-18,X(peak),115,C.gold,2)+text('いまの山',X(peak)-60,100,28,C.gold)+text('印の横の位置は固定',310,440,30,C.red)+text('同じひもの点が、ずっと山になるわけではない',220,500,28);}
  if(kind==='waveintro-neighbour-delay'){const xs=[2,3,4],colors=[C.red,C.gold,C.purple];return text('少し右の点は、少し遅れて同じ揺れ方をする',160,35,31)+curve(u)+xs.map((x,i)=>marker(x,u,colors[i])+text(['A','B','C'][i],X(x)-12,460,29,colors[i])).join('')+arrow(X(2),110,X(4),110,C.gold)+text('A → B → C の順に、同じ山を迎える',315,500,28);}

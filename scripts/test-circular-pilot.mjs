@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {circularPilotIds} from '../docs/video-revision-20260924/circular-pilot.mjs';
 import {circularPilotFrame} from './circular-pilot-visuals.mjs';
+import {clarityDiagram} from './circular-clarity-visuals.mjs';
 const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));
 let frames=0;
 // Independent editorial expectation: a valid frame is not enough if it hides
@@ -72,3 +73,8 @@ for(const h of [1,.1,.01]){
  assert.ok(Math.abs(angle-h/2)<1e-12);
 }
 console.log('PASS: all ten clarity points mapped to narration, geometry, interpretation, and manual breaks');
+// The released ball must not loop/reset with global video time, or ease in/out.
+const releasedY=(p,t)=>Number(clarityDiagram('release',p,0,t).match(/<circle cx="[\d.]+" cy="([\d.]+)" r="14"/)[1]);
+assert.equal(releasedY(.4,8),releasedY(.4,10));
+assert.ok(Math.abs(releasedY(.6,1)-releasedY(.4,1)-(releasedY(.4,1)-releasedY(.2,1)))<1e-9);
+for(const p of [0,.5,1])assert.ok(releasedY(p,1)-65>0,'Velocity arrow stays inside the diagram');

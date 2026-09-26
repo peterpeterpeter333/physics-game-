@@ -13,5 +13,6 @@ assert.deepEqual([...seen].sort(),[...sineMotionKinds].sort());
 for(const kind of sineMotionKinds)assert.ok(new Set([0,.2,.4,.6,.8,1].map(p=>sineMotionDiagram(kind,p))).size>1);
 assert.equal(new Set(sineMotionKinds.map(kind=>sineMotionDiagram(kind,.5))).size,sineMotionKinds.length);
 assert.ok(Math.abs(Math.sin(.002)/.001-2)<.000002);
+for(const [p,t] of [[.2,'0.25'],[.4,'0.50'],[.6,'0.75']])assert.ok(sineMotionDiagram('sinemotion-angle-clocks',p).includes(`経過時間 ${t} s`),'Clock must advance uniformly');
 for(const t of [0,.3,1,2]){const dt=1e-4,A=2,w=3,phi=.4,x=t=>A*Math.cos(w*t+phi);assert.ok(Math.abs((x(t+dt)-x(t-dt))/(2*dt)+A*w*Math.sin(w*t+phi))<1e-6);assert.ok(Math.abs((x(t+dt)-2*x(t)+x(t-dt))/dt**2+w*w*x(t))<1e-5);}
 console.log(`PASS sine motion: ${sineMotionIds.length} films, ${count} frames, ${seen.size} diagrams`);

@@ -7,9 +7,9 @@ const graph=(ox,oy,w,h)=>line(ox,oy,ox+w,oy)+line(ox,oy,ox,oy-h)+text('時間 [s
 export const momentumFoundationKinds=['impulse-duration','impulse-double-time','impulse-area','impulse-average','impulse-internal-pair','momentum-two-carts','momentum-stop-times','momentum-equal-impulses','momentum-mass-bars'];
 export function momentumFoundationDiagram(kind,p){
  if(!momentumFoundationKinds.includes(kind))throw Error('Unknown momentum diagram '+kind);
- const u=ease(p);
+ const u=ease(p),time=clamp(p/.8);
  if(kind==='impulse-duration'){
-  const t=2*u,x=200+110*t*t;
+  const t=2*time,x=200+110*t*t;
   return text('質量 1 kg、右向きの合力 2 N、初速0',240,40,31)+line(120,335,1080,335)+cart(x,300)+arrow(x,230,x+90,230,C.red)+arrow(x,390,x+100*t,390,C.cyan)+text(`経過時間 ${t.toFixed(1)} s`,165,125,32,C.gold)+text(`速度 ${(2*t).toFixed(1)} m/s`,670,450,31,C.cyan)+text('赤：一定の合力　青：変わる速度',245,505,28);
  }
  if(kind==='impulse-double-time')return text('同じ 2 N の力を、長く加える',330,35,31)+[1,2].map((n,i)=>{const ox=150+i*535,oy=380;return graph(ox,oy,390,255)+rect(ox,oy-150,140*n*u,150,i?C.purple:C.cyan)+text('2',ox-40,oy-140,28)+text(`${n} s`,ox+140*n-25,oy+45,27)+text(i?'2秒：面積は2倍':'1秒：面積は1倍',ox+25,470,30,i?C.purple:C.cyan);}).join('');
@@ -24,7 +24,7 @@ export function momentumFoundationDiagram(kind,p){
   return cart(490,265,C.cyan)+cart(600,265,C.purple)+`<rect x="360" y="125" width="410" height="230" rx="22" fill="none" stroke="${C.dim}" stroke-width="3" stroke-dasharray="8 8"/>`+arrow(490,185,490-105*u,185,C.red)+arrow(600,185,600+105*u,185,C.red)+text('押し合う瞬間の力を整理した図',295,45,30)+text('同じ大きさ・逆向きの力を、同じ時間受ける',235,415,29)+arrow(505,475,505-130*u,475,C.cyan)+arrow(650,475,650+130*u,475,C.purple)+text('力積',570,484,27)+text('二つをまとめる',805,230,28,C.dim);
  }
  if(kind==='momentum-two-carts'||kind==='momentum-stop-times'){
-  const stopping=kind==='momentum-stop-times',t=stopping?4*u:2*u;
+  const stopping=kind==='momentum-stop-times',t=stopping?4*time:2*time;
   return text(stopping?'同じ左向きの合力 3 N で止める':'二台とも、同じ右向き 3 m/s',265,35,32)+text(`経過時間 ${t.toFixed(1)} s`,830,95,29,C.gold)+[2,4].map((m,i)=>{const y=170+i*220,T=m,tt=stopping?Math.min(t,T):t,v=stopping?3-3/m*tt:3,x=170+65*(3*tt-(stopping?.5*3/m*tt*tt:0)),c=i?C.purple:C.cyan;return line(120,y+40,1080,y+40)+cart(x,y,c)+arrow(x,y-65,x+50*v,y-65,c)+(stopping&&t<T?arrow(x-55,y,x-140,y,C.red):'')+text(`${m} kg`,125,y+85,29,c)+text(stopping?`速度 ${v.toFixed(1)} m/s${t>=T?'：停止':''}`:'速度 3 m/s',705,y+85,29,c)+(stopping&&t>=T?text(`${T} s で停止`,380,y+85,29,C.gold):'');}).join('');
  }
  if(kind==='momentum-equal-impulses')return text('同じ向きの力を加える二つの場合',300,35,31)+[0,1].map(i=>{const ox=155+i*540,oy=365,n=i?2:1,h=i?105:210,c=i?C.purple:C.cyan;return graph(ox,oy,390,255)+rect(ox,oy-h,140*n*u,h,c)+text(i?'3 N':'6 N',ox+140*n+15,oy-h+15,28,c)+text(`${n} s`,ox+140*n-20,oy+45,27)+text('面積は同じ',ox+90,475,31,c);}).join('');

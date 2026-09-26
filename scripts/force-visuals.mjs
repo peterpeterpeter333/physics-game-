@@ -6,7 +6,9 @@ const border=(x,y,w,h,color=C.gold)=>`<rect x="${x}" y="${y}" width="${w}" heigh
 export const forceDiagramKinds=['force-arrows','force-lengths','force-head-tail','mass-response','mass-versus-weight','inertia-cart','inertia-balanced','rest-and-uniform','force-changes-velocity','choose-cart','choose-hand','net-force-example','same-acceleration-opposite-velocities','initial-conditions','balance-box','box-floor-pair','box-earth-pair','system-boundary','two-carts-push','force-recipients','both-accelerate','system-boundary-advanced','isolate-b','isolate-a'];
 export function forceDiagram(kind,p){
  if(!forceDiagramKinds.includes(kind))throw Error('Unknown force diagram '+kind);
- const u=ease(p),t=2*u;
+ // Draw arrows smoothly, but advance physical time uniformly: easing a
+ // constant-velocity cart would falsely show acceleration and braking.
+ const u=ease(p),time=clamp(p/.75),t=2*time;
  if(['force-arrows','force-lengths','net-force-example'].includes(kind)){
   const scale=kind==='force-lengths'?1:u,x=570,y=275;
   return cart(x,y,C.cyan,kind==='net-force-example'?'2 kg':'台車')+line(150,320,1070,320)+arrow(x,y-90,x+250*scale,y-90,C.red)+arrow(x-62,y,x-62-100*scale,y,C.purple)+text('右向き 5 N',735,155,31,C.red)+text('左向き 2 N',250,245,31,C.purple)+text('力の矢印：同じ大きさなら同じ長さ',245,55,30)+text('右をプラスとする →',710,440,29,C.dim)+(kind==='force-lengths'?[0,1,2,3,4].map(i=>circle(585+50*i,185,5,C.ink,.2+.8*clamp(u*5-i))).join(''):'');
@@ -27,14 +29,14 @@ export function forceDiagram(kind,p){
   return out+text(kind==='balance-box'?'二つとも箱が受ける力。箱の加速度はゼロ':'質量の単位は kg ／ 重力の単位は N',200,455,30);
  }
  if(['inertia-cart','inertia-balanced','force-changes-velocity'].includes(kind)){
-  const changing=kind==='force-changes-velocity',x=190+(changing?180*u+350*u*u:660*u),y=280,v=changing?2+3*u:4;
+  const changing=kind==='force-changes-velocity',x=190+(changing?65*(2*t+.75*t*t):660*time),y=280,v=changing?2+1.5*t:4;
   let out=line(100,325,1110,325)+cart(x,y,C.cyan,'台車')+arrow(x,y-105,x+v*26,y-105,C.cyan)+text('青：速度',120,55,31,C.cyan)+text(changing?'赤：右向きの合力':'横方向の力はゼロ。摩擦なし',640,55,29,changing?C.red:C.dim);
   if(changing)out+=arrow(x,365,x+110,365,C.red)+text('速度の矢印が長くなる',360,460,31);
   else if(kind==='inertia-balanced')out+=arrow(x-30,y,x-30,y-85,C.gold)+arrow(x+35,y,x+35,y+85,C.red)+text('上下の力はつり合い、合力もゼロ',320,465,31);
   else out+=[0,1,2,3,4].map(i=>line(190+i*165,330,190+i*165,347,C.dim,2)).join('')+text('同じ時間ごとに、同じ距離だけ進む',315,445,31);
   return out;
  }
- if(kind==='rest-and-uniform')return [0,1].map(i=>{const y=160+i*220,x=240+(i?620*u:0);return line(120,y+45,1110,y+45)+cart(x,y,i?C.cyan:C.dim)+text(i?'一定の速度で進む':'止まり続ける',170,y-90,30)+text('加速度 0',900,y-75,29,C.gold)+(i?arrow(x,y-55,x+90,y-55,C.cyan):'');}).join('');
+ if(kind==='rest-and-uniform')return [0,1].map(i=>{const y=160+i*220,x=240+(i?620*time:0);return line(120,y+45,1110,y+45)+cart(x,y,i?C.cyan:C.dim)+text(i?'一定の速度で進む':'止まり続ける',170,y-90,30)+text('加速度 0',900,y-75,29,C.gold)+(i?arrow(x,y-55,x+90,y-55,C.cyan):'');}).join('');
  if(['choose-cart','choose-hand'].includes(kind)){
   const box=kind==='choose-cart';
   return cart(700,280,C.cyan,'台車')+`<rect x="255" y="225" width="140" height="85" rx="30" fill="${C.purple}" fill-opacity=".25"/>`+text('手',300,280,32,C.purple)+line(390,267,635,267,C.dim,4)+border(box?590:225,155,box?280:260,260)+arrow(box?700:325,355,(box?700:325)+(box?140:-140)*u,355,box?C.red:C.purple)+text(box?'手 → 台車：台車が受ける力':'台車 → 手：手が受ける力',245,75,34,box?C.red:C.purple)+text('点線の内側の物体だけを調べる',330,480,29,C.gold);

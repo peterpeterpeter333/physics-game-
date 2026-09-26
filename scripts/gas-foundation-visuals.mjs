@@ -21,7 +21,7 @@ export function gasFoundationDiagram(kind,p){
  }
  if(kind==='gasprep-collision-average'){
   const X=t=>170+t*85,end=10*u,pts=[[170,405]];for(let j=0;j<=300;j++){const t=end*j/300,h=t%1<.3?160:0;pts.push([X(t),405-h]);}
-  return text('一回ずつの衝突を、時間全体でならす',255,35,31)+line(150,405,1080,405)+line(170,135,170,430)+path(pts,C.cyan,3)+line(170,357,1020,357,C.gold,3,'8 6')+text('壁を押す力',70,105,28)+text('時間',1010,465,28)+text('青：個々の衝突',360,150,29,C.cyan)+text('黄：平均の力',750,315,29,C.gold)+text('衝突を見やすい短い山で表した模式図',280,505,28);
+  return text('一回ずつの衝突を、時間全体でならす',255,35,31)+line(150,405,1080,405)+line(170,135,170,430)+path(pts,C.cyan,3)+line(170,357,1020,357,C.gold,3,'8 6')+text('壁を押す力',70,105,28)+text('時間',1010,465,28)+text('青：個々の衝突',360,150,29,C.cyan)+text('黄：平均の力',750,150,29,C.gold)+text('衝突を見やすい短い山で表した模式図',280,505,28);
  }
  if(kind==='gasinsert-density'){
   const w=620*(1-.5*u);

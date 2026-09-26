@@ -5,6 +5,9 @@ import {applyAdditionTheorem,applyAdditionPrerequisiteRoutes} from '../docs/vide
 import {additionTheoremFrame,additionDiagramKinds} from './addition-theorem-visuals.mjs';
 const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));applyAdditionTheorem(plan);
 const c=plan.find(c=>c.id==='prep-addition-theorem');assert.ok(c.manuscriptScenes);
+assert.equal(c.scenes[2].cues[2].operation,'横の差の二乗を展開');
+assert.deepEqual(c.scenes[1].cues[2].intermediateFormula,['1-\\cos\\beta-\\cos\\beta+\\cos^2\\beta']);
+assert.ok(c.scenes[2].cues[2].intermediateFormula&&c.scenes[2].cues[3].intermediateFormula,'Show four products for both coordinate differences');
 assert.deepEqual(c.navigationBreaks,[1,2,3,4,5,6]);
 let t=0,count=0;const seen=new Set();
 for(const s of c.scenes){s.start=t;s.captions=s.cues.map(q=>{assert.ok(q.reading&&!/\s/.test(q.reading));const n=q.subtitle.split('。').filter(Boolean).length;assert.ok(n>0&&n<=2);assert.equal(n,q.reading.split('。').filter(Boolean).length);if(q.diagram)seen.add(q.diagram);const start=t;t+=5;return{text:q.subtitle,start,end:t};});s.end=t;}c.duration=t;

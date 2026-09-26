@@ -255,7 +255,7 @@
     ],
     "t-firstlaw-advanced": [
       {
-        "afterScene": 1,
+        "afterScene": 2,
         "inserts": [
           "ht-why-09"
         ]
@@ -1653,14 +1653,7 @@
         ]
       }
     ],
-    "w-doppler-intro": [
-      {
-        "afterScene": 2,
-        "inserts": [
-          "hw-why-05"
-        ]
-      }
-    ],
+    "w-doppler-intro": [],
     "w-light-intro": [
       {
         "afterScene": 3,
@@ -2644,78 +2637,40 @@
       ]
     },
     "m1-velocity-intro": {
-      "required": [
-        "prep-position"
-      ],
-      "review": [
-        "prep-position"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-velocity-middle": {
-      "required": [
-        "prep-graph-slope"
-      ],
-      "review": [
-        "prep-graph-slope"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-velocity-advanced": {
-      "required": [
-        "prep-difference-limit"
-      ],
-      "review": [
-        "prep-difference-limit"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-acceleration-intro": {
-      "required": [
-        "prep-acceleration"
-      ],
-      "review": [
-        "prep-acceleration"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-acceleration-middle": {
-      "required": [
-        "prep-graph-slope"
-      ],
-      "review": [
-        "prep-graph-slope"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-acceleration-advanced": {
-      "required": [
-        "prep-vector-difference"
-      ],
-      "review": [
-        "prep-vector-difference"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-uniform-accel-intro": {
-      "required": [
-        "prep-acceleration",
-        "prep-initial-values"
-      ],
-      "review": [
-        "prep-acceleration",
-        "prep-initial-values"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-uniform-accel-middle": {
-      "required": [
-        "prep-area-distance"
-      ],
-      "review": [
-        "prep-area-distance"
-      ]
+      "required": [],
+      "review": []
     },
     "m1-uniform-accel-advanced": {
-      "required": [
-        "prep-initial-values"
-      ],
-      "review": [
-        "prep-initial-values"
-      ]
+      "required": [],
+      "review": []
     },
     "m-freefall-intro": {
       "required": [
@@ -2726,12 +2681,8 @@
       ]
     },
     "m-freefall-middle": {
-      "required": [
-        "prep-initial-values"
-      ],
-      "review": [
-        "prep-initial-values"
-      ]
+      "required": [],
+      "review": []
     },
     "m-freefall-advanced": {
       "required": [
@@ -2882,12 +2833,8 @@
       ]
     },
     "t-heat-intro": {
-      "required": [
-        "prep-heat-units"
-      ],
-      "review": [
-        "prep-heat-units"
-      ]
+      "required": [],
+      "review": []
     },
     "t-heat-middle": {
       "required": [
@@ -2938,12 +2885,8 @@
       ]
     },
     "t-ideal-middle": {
-      "required": [
-        "prep-mole"
-      ],
-      "review": [
-        "prep-mole"
-      ]
+      "required": [],
+      "review": []
     },
     "t-ideal-advanced": {
       "required": [
@@ -2956,20 +2899,12 @@
       ]
     },
     "t-firstlaw-intro": {
-      "required": [
-        "prep-gas-work"
-      ],
-      "review": [
-        "prep-gas-work"
-      ]
+      "required": [],
+      "review": []
     },
     "t-firstlaw-middle": {
-      "required": [
-        "prep-gas-work"
-      ],
-      "review": [
-        "prep-gas-work"
-      ]
+      "required": [],
+      "review": []
     },
     "t-firstlaw-advanced": {
       "required": [
@@ -2982,20 +2917,12 @@
       ]
     },
     "w-basics-intro": {
-      "required": [
-        "prep-wave"
-      ],
-      "review": [
-        "prep-wave"
-      ]
+      "required": [],
+      "review": []
     },
     "w-basics-middle": {
-      "required": [
-        "prep-wave"
-      ],
-      "review": [
-        "prep-wave"
-      ]
+      "required": [],
+      "review": []
     },
     "w-basics-advanced": {
       "required": [
@@ -3034,12 +2961,8 @@
       ]
     },
     "w-doppler-intro": {
-      "required": [
-        "prep-doppler"
-      ],
-      "review": [
-        "prep-doppler"
-      ]
+      "required": [],
+      "review": []
     },
     "w-doppler-middle": {
       "required": [

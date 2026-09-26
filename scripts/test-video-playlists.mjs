@@ -11,6 +11,22 @@ const read=f=>JSON.parse(readFileSync(f,'utf8'));
 const originals=['em','lesson'].flatMap(f=>read(`src/content/${f}-video-catalog.generated.json`));
 const prep=read('src/content/prerequisite-video-catalog.generated.json');
 const routes=read('src/content/prerequisite-routes.generated.json');
+assert.deepEqual(routes['m-freefall-middle'].required,[]);
+assert.deepEqual(routes['t-heat-intro'].required,[],'Do not teach the middle-level calculation before the heat introduction');
+assert.deepEqual(routes['t-heat-middle'].required,['prep-heat-units'],'Keep the unit and temperature-difference introduction before calculations');
+assert.deepEqual(routes['t-ideal-middle'].required,[],'Mole counting is introduced in the preceding main; do not preteach particle-form state equations here');
+assert.deepEqual(routes['t-ideal-advanced'].required,['prep-mole','prep-gas-particles'],'Keep particle-count and collision derivations before microscopic energy');
+for(const id of ['t-firstlaw-intro','t-firstlaw-middle'])assert.deepEqual(routes[id].required,[],'Do not preteach the complete work derivation before the main introduction');
+assert.deepEqual(routes['t-firstlaw-advanced'].required,['prep-gas-work','prep-heat-cycle']);
+assert.equal(read('src/content/insert-routes.generated.json')['t-firstlaw-advanced'].find(r=>r.inserts.includes('ht-why-09')).afterScene,2,'Efficiency example must follow its definition');
+for(const id of ['w-basics-intro','w-basics-middle'])assert.deepEqual(routes[id].required,[],'Main films now introduce wave quantities before deriving speed');
+assert.deepEqual(routes['m-freefall-advanced'].required,['prep-work-energy','prep-potential-conservation'],'Keep the actual energy introductions before the comparison');
+// A prerequisite is removed only where its foundations are taught in the main.
+// Other courses retain their prerequisites; remove no source assets.
+for(const id of ['m1-velocity-intro','m1-velocity-middle','m1-velocity-advanced','m1-acceleration-intro','m1-acceleration-middle','m1-acceleration-advanced','m1-uniform-accel-intro','m1-uniform-accel-middle','m1-uniform-accel-advanced']){
+ assert.deepEqual(routes[id].required,[],`${id}: avoid duplicated or premature prerequisite conclusions`);
+ assert.deepEqual(playlist(originals.filter(c=>c.id===id),prep).map(c=>c.id),[id]);
+}
 const courses=[...new Set(originals.map(c=>c.stageId+'|'+c.level))].map(key=>originals.filter(c=>c.stageId+'|'+c.level===key));
 assert.equal(courses.length,190);assert.equal(Object.keys(routes).length,256);
 const reviewable=new Set();let before=0,after=0;

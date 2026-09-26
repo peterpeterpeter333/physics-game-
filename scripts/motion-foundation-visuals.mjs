@@ -7,10 +7,10 @@ const ring=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${
 const words=(s,n=43)=>{const rows=[];let row='',w=0;for(const ch of s){const k=/[\x20-\x7e]/.test(ch)?.55:1;if(w+k>n&&!/[。、）」]/.test(ch)){rows.push(row);row='';w=0;}row+=ch;w+=k;}if(row)rows.push(row);return rows;};
 const axes=(ylabel,xlabel='時刻 t [s]')=>line(120,365,960,365)+line(120,365,120,35)+text(ylabel,125,25,25)+text(xlabel,860,411,23);
 const person=(x,y,c=C.cyan)=>circle(x,y-44,13,c)+line(x,y-30,x,y,c,5)+line(x,y-20,x-19,y-6,c,4)+line(x,y-20,x+19,y-6,c,4)+line(x,y,x-16,y+25,c,4)+line(x,y,x+16,y+25,c,4);
-const road=(y=200)=>line(150,y,1050,y)+[0,1,2,3].map(i=>line(170+i*270,y-5,170+i*270,y+7)+text(`${i} m`,150+i*270,y+38,23)).join('')+text('右を正にする →',825,y+85,24,C.dim);
+const road=(y=200)=>line(150,y,1050,y)+[0,1,2,3].map(i=>line(170+i*270,y-5,170+i*270,y+7)+text(i===0?'0 m（出発点）':`${i} m`,150+i*270,y+38,23)).join('')+text('右を正にする →',825,y+85,24,C.dim);
 function trip(kind,p){
  const u=ease(p),t=6*u,x=t<=3?t:6-t,px=170+x*270;
- if(kind==='compare-rest')return text('どちらも、出発点へ戻った後の位置は同じ',130,40,29)+[0,1].map(i=>{const y=135+i*215,pos=i?px:170;return line(150,y+35,1050,y+35)+person(pos,y)+text(i?'往復した人':'止まった人',150,y+88,25,i?C.cyan:C.dim);}).join('');
+ if(kind==='compare-rest')return text(`同じ6秒間を比べる：いま ${fmt(t)} s`,130,40,29)+[0,1].map(i=>{const y=135+i*215,pos=i?px:170;return line(150,y+35,1050,y+35)+person(pos,y)+text(i?'往復した人':'止まった人',150,y+88,25,i?C.cyan:C.dim);}).join('');
  let out=road()+person(kind==='distance'||kind==='displacement'?170:px,174)+text(`時刻 ${fmt(kind==='distance'||kind==='displacement'?6:t)} s`,150,62,27);
  if(kind==='distance')out+=arrow(170,315,mix(170,980,clamp(u*2)),315,C.gold)+text('行き 3 m',480,300,26,C.gold)+arrow(980,400,mix(980,170,clamp(u*2-1)),400,C.purple)+text('帰り 3 m',480,440,26,C.purple);
  else if(kind==='displacement')out+=circle(170,200,20,C.gold,.2)+text('最初の位置：0 m',150,315,27,C.gold)+text('最後の位置：0 m',640,315,27,C.cyan)+text('位置の変化：0 m',380,420,32);
@@ -67,7 +67,7 @@ function accelerationGraph(kind,p){
  return out;
 }
 function vector(kind,p){
- const u=ease(p),h=kind==='vector-limit'?mix(.9,.025,u):.9,R=kind==='orbit-velocity'||kind==='orbit-inward'?180:135,V=110,ox=280,oy=255;
+ const u=ease(p),h=kind==='vector-limit'?mix(.9,.025,u):.9,R=kind==='orbit-velocity'||kind==='orbit-inward'?180:160,V=175,ox=280,oy=255;
  if(kind==='orbit-velocity'||kind==='orbit-inward'){
   const a=2*Math.PI*u,x=ox+R*Math.cos(a),y=oy-R*Math.sin(a);
   return ring(ox,oy,R)+circle(ox,oy,6,C.dim)+circle(x,y,12,C.purple)+arrow(x,y,x-V*Math.sin(a),y-V*Math.cos(a),C.cyan)+(kind==='orbit-inward'?arrow(x,y,x-80*Math.cos(a),y+80*Math.sin(a),C.red):'')+text('速さ：一定',620,150,32,C.cyan)+text('速度の向き：変わる',620,215,32,C.cyan)+text(kind==='orbit-inward'?'赤：瞬間の加速度':'青：その瞬間の速度',620,305,28,kind==='orbit-inward'?C.red:C.cyan);
@@ -110,15 +110,22 @@ function atom(tex){
  svg=svg.replace(/width="[^"]*"/,`width="${w*unit}"`).replace(/height="[^"]*"/,`height="${h*unit}"`).replace(/ x="[^"]*"/,' x="0"').replace(/ y="[^"]*"/,` y="${50+vy*unit}"`);
  const result={svg,w:w*unit,top:50+vy*unit,bottom:50+(vy+h)*unit};atoms.set(tex,result);return result;
 }
-function layout(tokens,maxHeight=190){
+function layout(tokens,maxHeight=190,maxScale=1){
  const occurrences={},items=tokens.map(tex=>({...atom(tex),tex,key:`${tex}:${occurrences[tex]=(occurrences[tex]??0)+1}`}));
  const width=items.reduce((n,t)=>n+t.w+18,0)-18;
  const height=items.length?Math.max(...items.map(a=>a.bottom))-Math.min(...items.map(a=>a.top)):1;
- const scale=Math.min(1,1130/Math.max(1,width),maxHeight/height);let x=640-width*scale/2;
+ const scale=Math.min(maxScale,1130/Math.max(1,width),maxHeight/height);let x=640-width*scale/2;
  return items.map(item=>{const result={...item,x,scale};x+=(item.w+18)*scale;return result;});
 }
-function formula(q,p){
- const before=layout(q.previousFormula??[],135),after=layout(q.formula),u=ease(p),hasBefore=before.length>0;
+function formula(q,p,seconds){
+ // One-token symbol introductions need to be legible on a phone, too.
+ // An optional four-product step makes a binomial expansion inspectable.
+ if(q.intermediateFormula){
+  const halfSeconds=seconds===undefined?undefined:seconds/2;
+  if(p<.5)return formula({...q,intermediateFormula:undefined,formula:q.intermediateFormula},p*2,halfSeconds);
+  return formula({...q,intermediateFormula:undefined,previousFormula:q.intermediateFormula},(p-.5)*2,halfSeconds);
+ }
+ const before=layout(q.previousFormula??[],135),after=layout(q.formula,190,q.symbolFocus?2.4:1),u=seconds===undefined?ease(p):ease(clamp(p*seconds/.8)*.7),hasBefore=before.length>0;
  const top=items=>items.length?Math.min(...items.map(a=>a.top*a.scale)):0;
  const bottom=items=>items.length?Math.max(...items.map(a=>a.bottom*a.scale)):0;
  const oldY=195-top(before),newY=(hasBefore?Math.max(365,oldY+bottom(before)+45):300)-top(after);
@@ -140,6 +147,8 @@ export function authoredMotionFrame(c,s,t,motionDiagram){
  const p=clamp((t-cap.start)/Math.max(.05,cap.end-cap.start));
  const lines=words(cap.text);if(lines.length>3)throw Error(`Caption overflow ${c.id}/${s.index}/${k}`);
  const op=words(q.operation,46);if(op.length>2)throw Error(`Operation overflow ${c.id}/${s.index}/${k}`);
- const content=q.display==='diagram'?`<svg data-presentation="diagram" x="40" y="114" width="1200" height="500" viewBox="0 0 1200 510">${motionDiagram(q.diagram,p)}</svg>`:`<g data-presentation="equation">${op.map((v,i)=>text(v,50,130+i*31,25,C.gold)).join('')}${formula(q,p)}</g>`;
+ const timedFormula=['motion-foundations-v1','motion-inserts-v1','uniform-acceleration-v1','uniform-continuation-v1','freefall-v1','projectile-foundations-v1','projectile-middle-v1','projectile-advanced-v1','force-storyboards-v1','work-foundations-v1','work-components-v1','potential-energy-v1','spring-energy-v1','momentum-foundations-v1','momentum-middle-v1','momentum-advanced-v1','shm-foundations-v1','shm-middle-v1','shm-advanced-v1','radian-foundations-v1','sine-motion-v1','sine-derivative-v1','heat-foundations-v1','heat-melting-v1','gas-foundations-v1','gas-temperature-v1','gas-states-v1'].includes(c.visualPilot)||['prep-addition-theorem','ht-why-10'].includes(c.id);
+ const idealTimed=['ideal-gas-foundations-v1','ideal-gas-advanced-v1','gas-particles-v1','mole-foundations-v1','firstlaw-foundations-v1','gas-work-v1','heat-cycle-v1','wave-foundations-v1','wave-speed-v1','traveling-wave-v1','wave-superposition-v1','sound-boundaries-v1','sound-beats-v1','doppler-source-v1','doppler-observer-v1'].includes(c.visualPilot);
+ const content=q.display==='diagram'?`<svg data-presentation="diagram" x="40" y="114" width="1200" height="500" viewBox="0 0 1200 510">${motionDiagram(q.diagram,p)}</svg>`:`<g data-presentation="equation">${op.map((v,i)=>text(v,50,130+i*31,25,C.gold)).join('')}${formula(q,p,(timedFormula||idealTimed)?cap.end-cap.start:undefined)}</g>`;
  return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${text(c.title,38,39,29)}${text(s.heading,38,80,23,C.dim)}${content}${line(35,626,1245,626,'#28364e')}${lines.map((v,i)=>text(v,40,659+i*29,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',38,745,15,C.dim)}${text(`${s.index+1} / ${c.scenes.length}`,1165,745,18,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
 }

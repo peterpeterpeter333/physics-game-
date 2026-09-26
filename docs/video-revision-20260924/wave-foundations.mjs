@@ -3,6 +3,7 @@ const F=(subtitle,reading,formula,operation,previousFormula=[])=>({subtitle,read
 const S=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading})=>({subtitle,reading})),narration:cues.map(q=>q.subtitle).join(''),equation:'',symbols:'',visual:'wave-foundations'});
 export const waveFoundationIds=['w-basics-intro','prep-wave','hw-why-13'];
 export function applyWaveFoundations(plan){
+ plan.find(c=>c.id==='w-basics-intro').title='波が右へ進むと、ひもも右へ運ばれる？';
  const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);Object.assign(c,{visualPilot:'wave-foundations-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hw-')?'thorough':'common'}));};
  set('w-basics-intro',[
  S('ひもの点の動きと、波の形の動きを見分ける',
@@ -10,7 +11,8 @@ export function applyWaveFoundations(plan){
  D('ひもに付けた赤い印は、同じ横の位置で上下します。一方、いちばん高い場所である山は右へ進み、赤い印を置き去りにします。','ひもにつけたあかいしるしは、おなじよこのいちでじょうげします。いっぽう、いちばんたかいばしょであるやまはみぎへすすみ、あかいしるしをおきざりにします。','waveintro-crest-versus-point')),
  S('隣の点へ、揺れが時間差で伝わる',
  D('ひものある点が動くと、隣の点も少し遅れて動きます。ひもの点が右へ流れるのではなく、揺れている状態が順番に伝わります。','ひものあるてんがうごくと、となりのてんもすこしおくれてうごきます。ひものてんがみぎへながれるのではなく、ゆれているじょうたいがじゅんばんにつたわります。','waveintro-neighbour-delay')),
- S('横の距離と、一点での時間を区別する',
+ S('揺れの大きさ・横の距離・時間を区別する',
+ D('ひもが揺れていないときの位置を、つり合いの位置と呼びます。ひもの点がそこから最も大きくずれる距離が振幅で、この図では一メートルです。','ひもがゆれていないときのいちを、つりあいのいちとよびます。ひものてんがそこからもっともおおきくずれるきょりがしんぷくで、このずではいちメートルです。','waveprep-amplitude'),
  D('同じ時刻に見た、隣り合う山と山の距離を、波長と呼びます。波長は、二つの場所の間の長さです。','おなじじこくにみた、となりあうやまとやまのきょりを、はちょうとよびます。はちょうは、ふたつのばしょのあいだのながさです。','waveintro-wavelength'),
  D('同じ点が一回振動して、同じ位置と動く向きへ戻るまでの時間を、周期と呼びます。次は、一周期で波の山がどれだけ進むかを使い、波の速さを求めます。','おなじてんがいっかいしんどうして、おなじいちとうごくむきへもどるまでのじかんを、しゅうきとよびます。つぎは、いっしゅうきでなみのやまがどれだけすすむかをつかい、なみのはやさをもとめます。','waveintro-period-clock'))
  ],[1,2]);

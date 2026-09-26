@@ -1,6 +1,7 @@
 import {useEffect,useRef,useState} from 'react';
 import {claimNarration} from '../game/narration';
 import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
+import {holdVideoPage} from '../game/video-page-boundary';
 import type {TimedMovie} from '../game/video-inserts';
 type Media=TimedMovie&{title:string;mediaDirectory?:string;renderKey?:string};
 const clock=(s:number)=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
@@ -16,7 +17,7 @@ export function SegmentedLessonVideo({main,start=0,end=main.duration,onError}:{m
  useEffect(()=>{
   const video=player.current;if(!video||!clipped)return;
   let frame=0;
-  const check=()=>{if(!video.paused&&video.currentTime>=end){video.pause();}frame=requestAnimationFrame(check);};
+  const check=()=>{if(!video.paused&&holdVideoPage(video,start,end))setTime(end);frame=requestAnimationFrame(check);};
   frame=requestAnimationFrame(check);return()=>cancelAnimationFrame(frame);
  },[start,end,clipped]);
  return <>
@@ -25,8 +26,8 @@ export function SegmentedLessonVideo({main,start=0,end=main.duration,onError}:{m
    onLoadedMetadata={event=>{event.currentTarget.currentTime=start;setTime(start);setReady(true);}}
    onPlay={()=>{setPlaying(true);release.current?.();release.current=claimNarration(()=>player.current?.pause());}}
    onPause={()=>setPlaying(false)}
-   onSeeking={event=>{const v=event.currentTarget;if(clipped&&(v.currentTime<start-.05||v.currentTime>end+.05))v.currentTime=Math.max(start,Math.min(end,v.currentTime));}}
-   onTimeUpdate={event=>{const v=event.currentTarget;setTime(Math.max(start,Math.min(end,v.currentTime)));if(clipped&&v.currentTime>=end)v.pause();}}
+   onSeeking={event=>{const v=event.currentTarget;if(!clipped)return;if(v.currentTime<start)v.currentTime=start;else if(holdVideoPage(v,start,end))setTime(end);}}
+   onTimeUpdate={event=>{const v=event.currentTarget;const stopped=clipped&&holdVideoPage(v,start,end);setTime(stopped?end:Math.max(start,Math.min(end,v.currentTime)));}}
    onEnded={()=>setPlaying(false)}/>
   {clipped&&<div className="video-clip-controls">
    <button type="button" className="btn btn-ghost" disabled={!ready} onClick={()=>{const v=player.current;if(!v)return;if(!v.paused){v.pause();return;}if(v.currentTime>=end-.05)v.currentTime=start;void v.play().catch(onError);}}>{playing?'一時停止':time>=end-.05?'もう一度再生':'再生'}</button>

@@ -28,8 +28,8 @@ function layout(formula){
  return raw.map(t=>{const a={...t,x,scale};x+=(t.w+13)*scale;return a;});
 }
 const token=(a,x,y,opacity=1)=>`<g opacity="${opacity}" transform="translate(${x} ${y}) scale(${a.scale})">${a.svg}</g>`;
-function equation(previous,current,p){
- const before=layout(previous),after=layout(current),u=smooth(p/.32);
+function equation(previous,current,p,duration){
+ const before=layout(previous),after=layout(current),u=smooth(p*duration/.8);
  const old=before.map(a=>{
   const cancelled=a.tex==='\\frac{m}{m}'&&!current.includes(a.tex);
   return token(cancelled?{...a,svg:atom('\\frac{\\cancel{m}}{\\cancel{m}}').svg}:a,a.x,220,.45);
@@ -122,7 +122,7 @@ export function circularPilotFrame(c,s,t){
  const ops=wrap(cue.operation,45);if(ops.length>2)throw Error('Pilot operation overflow');
  const contextNote=c.id==='m-circular-intro'&&(s.index===0&&k===0||kind==='release')?text('摩擦のない水平な台を真上から見ています',50,114,23,C.gold):'';
  const content=mode==='diagram'?`${contextNote}<svg data-presentation="diagram" x="40" y="125" width="1200" height="485" viewBox="${custom?'0 0 1180 500':'0 90 525 525'}">${custom??diagram}</svg>`:
- `<g data-presentation="equation">${ops.map((v,i)=>text(v,50,130+i*30,25,C.gold)).join('')}<g transform="translate(-735 -65) scale(1.55)">${equation(cue.previousFormula??prior?.formula??[],cue.formula,phase)}</g></g>`;
+ `<g data-presentation="equation">${ops.map((v,i)=>text(v,50,130+i*30,25,C.gold)).join('')}<g transform="translate(-735 -65) scale(1.55)">${equation(cue.previousFormula??prior?.formula??[],cue.formula,phase,cap.end-cap.start)}</g></g>`;
  const title=mode==='diagram'&&c.id==='m-circular-middle'?'円運動の加速度を求める':c.title;
  return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760"><style>text{font-family:'Hiragino Sans',sans-serif}</style><rect width="1280" height="760" fill="#0b1122"/>${text(title,38,40,29)}${text(s.heading,38,80,23,C.dim)}${content}${line(35,626,1245,626,'#28364e')}${captions.map((v,i)=>text(v,40,659+i*29,27)).join('')}${text('音声：VOICEVOX Nemo 男声1',38,745,15,C.dim)}${text(`${s.index+1} / ${c.scenes.length}`,1165,745,18,C.dim)}<rect x="0" y="755" width="${1280*t/c.duration}" height="5" fill="${C.cyan}"/></svg>`;
 }

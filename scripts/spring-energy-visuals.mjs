@@ -14,7 +14,8 @@ export function springEnergyDiagram(kind,p){
  const u=ease(p);
  if(kind==='spring-origin')return spring(origin,260)+zero(260)+circle(origin,260,60+8*u,C.cyan,.07)+text('伸ばしも縮めもしない長さを、自然長という',210,60,29)+text('水平な床。ばねの質量と摩擦・空気抵抗は無視',190,490,27);
  if(['spring-displacement','spring-restoring','spring-through-origin','spring-oscillation'].includes(kind)){
-  const a=kind==='spring-oscillation'?Math.PI+2*Math.PI*u:kind==='spring-through-origin'?.6*Math.PI*u:Math.PI*u,d=180*Math.cos(a),x=origin+d,y=260;
+  const clock=clamp(p/.8);
+  const a=kind==='spring-oscillation'?Math.PI+2*Math.PI*clock:kind==='spring-through-origin'?.6*Math.PI*clock:Math.PI*u,d=180*Math.cos(a),x=origin+d,y=260;
   let out=spring(x,y)+zero(y)+text('右向きを正にする →',725,55,29);
   if(kind==='spring-displacement')out+=arrow(origin,430,x,430,C.gold)+text(d>1?'右へずれた位置：正':d< -1?'左へずれた位置：負':'自然長の位置：0',350,95,31,C.gold);
   else {
@@ -30,7 +31,7 @@ export function springEnergyDiagram(kind,p){
   return spring(x,y)+zero(y)+arrow(x,y-95,x-120*u,y-95,C.red)+arrow(x+65,y,x+65+120*u,y,C.gold)+text('赤：ばねの戻す力',150,65,30,C.red)+text('黄：手が伸ばす力',680,65,30,C.gold)+text(kind==='spring-hand-work'?'ゆっくり伸ばす → 二つの力の大きさはほぼ同じ':'伸ばすほど、手に必要な力も大きくなる',200,485,29)+(kind==='spring-work-question'?text('一定の力 × 距離だけでは、どの力を使う？',260,125,28):rect(870,385,180*u*u,30,C.gold)+text('ばねのエネルギー',850,450,24,C.gold));
  }
  if(kind==='spring-energy-transfer'){
-  const a=Math.PI*u/2,d=180*Math.cos(a),x=origin+d,y=160,U=Math.cos(a)**2;
+  const a=Math.PI*clamp(p/.8)/2,d=180*Math.cos(a),x=origin+d,y=160,U=Math.cos(a)**2;
   return spring(x,y)+arrow(x,y-65,x-100*Math.sin(a),y-65,C.purple)+text('自然長へ戻るまでを追う',350,35,30)+text('ばねの位置エネルギー',185,300,28,C.gold)+rect(185,325,350*U,50,C.gold)+text('物体の運動エネルギー',680,300,28,C.purple)+rect(680,325,350*(1-U),50,C.purple)+text('二つの合計は一定。摩擦なし',345,465,30);
  }
  if(kind==='spring-area-to-curve'||kind==='spring-integral-preview'){

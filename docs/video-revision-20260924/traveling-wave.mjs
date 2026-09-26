@@ -3,7 +3,12 @@ const F=(subtitle,reading,formula,operation,previousFormula=[])=>({subtitle,read
 const S=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading})=>({subtitle,reading})),narration:cues.map(q=>q.subtitle).join(''),equation:'',symbols:'',visual:'traveling-wave'});
 export const travelingWaveIds=['prep-traveling-wave','w-basics-advanced','hw-why-02'];
 export function applyTravelingWave(plan){
- const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);Object.assign(c,{visualPilot:'traveling-wave-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hw-')?'thorough':'common'}));};
+ let waveNumberScene;
+ const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);
+  // One-point vibration is the prerequisite; derive propagation once in the main.
+  if(id==='prep-traveling-wave'){waveNumberScene=scenes[2];scenes=scenes.slice(0,1);breaks=[];c.title='原点の振動を、時刻の式で表す';}
+  if(id==='w-basics-advanced'){scenes.push(waveNumberScene);breaks=[1,2,3];}
+  Object.assign(c,{visualPilot:'traveling-wave-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hw-')?'thorough':'common'}));};
  set('prep-traveling-wave',[
  S('まず、波を起こす一点の振動を表す',
  D('今回は、波の各点の上下のずれを、位置と時刻から求める式を作ります。出発点では、原点にある波源が、サインの形で振動するとします。','こんかいは、なみのかくてんのじょうげのずれを、いちとじこくからもとめるしきをつくります。しゅっぱつてんでは、げんてんにあるはげんが、サインのかたちでしんどうするとします。','travelprep-source-history'),

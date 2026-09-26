@@ -3,9 +3,10 @@ import {authoredMotionFrame} from './motion-foundation-visuals.mjs';
 const box=(x,y,w,h,c)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${c}" fill-opacity=".09" stroke="${c}" stroke-width="3"/>`;
 const bounce=t=>{t=((t%2)+2)%2;return t<1?t:2-t;};
 const particles=(x,y,w,h,n,p,c)=>Array.from({length:n},(_,i)=>circle(x+12+(w-24)*bounce(i*.37+p*600/(w-24)),y+12+(h-24)*bounce(i*.63+p*400/(h-24)),5,c)).join('');
-export const idealGasFoundationKinds=['ideal-fixed-volume','ideal-collision-count','ideal-mole-groups','ideal-mole-mass','ideal-known-quantities','ideal-litre-cube','ideal-state-snapshot','ideal-amount-volume'];
+export const idealGasFoundationKinds=['ideal-model','ideal-fixed-volume','ideal-collision-count','ideal-mole-groups','ideal-mole-mass','ideal-known-quantities','ideal-litre-cube','ideal-state-snapshot','ideal-amount-volume'];
 export function idealGasFoundationDiagram(kind,p){
  if(!idealGasFoundationKinds.includes(kind))throw Error(kind);const u=clamp(p/.8);
+ if(kind==='ideal-model')return text('分子を、離れて動く小さな点として考える',230,35,32)+box(160,100,700,310,C.cyan)+particles(160,100,700,310,8,p,C.cyan)+text('図の点は、見えるように大きく描いている',190,455,28)+text('分子自体の体積は無視',875,190,25,C.gold)+text('引き合う力も無視',875,245,25,C.gold)+text('実際の気体を調べるための、単純化したモデル',175,505,28);
  if(kind==='ideal-fixed-volume')return text('同じ気体、同じ温度、同じ体積で比較',230,35,32)+[0,1].map(i=>{const x=120+i*610,n=i?24:12;return box(x,130,350,260,C.cyan)+particles(x,130,350,260,n,p,C.cyan)+text(i?'粒子数：2倍':'粒子数：基準',x+50,100,30)+text(i?'圧力：2倍':'圧力：基準',x+70,440,31,C.gold);}).join('')+text('粒の個数は模式図。温度が同じなので、速さの分布は同じ',135,500,27);
  if(kind==='ideal-collision-count'){
   return text('分子が増えると、壁が受ける衝突も増える',195,35,31)+[0,1].map(i=>{const y=180+i*190,n=i?8:4;return line(960,y-65,960,y+65,C.dim,6)+Array.from({length:n},(_,j)=>{const q=bounce(p*2+j/n);return circle(200+754*q,y+(j%4-1.5)*26,6,i?C.gold:C.cyan);}).join('')+text(i?'粒子数2倍':'基準の個数',25,y,28)+text(i?'衝突：平均2倍':'衝突：平均の基準',740,y+110,27,i?C.gold:C.cyan);}).join('');
@@ -17,7 +18,7 @@ export function idealGasFoundationDiagram(kind,p){
   return text('同じ個数でも、一個の質量が違えば全体の質量も違う',75,35,30)+[0,1].map(i=>{const x=120+i*600,c=i?C.gold:C.cyan;return box(x,125,350,235,c)+Array.from({length:12},(_,j)=>circle(x+55+j%4*80,170+Math.floor(j/4)*75+Math.sin(p*6+j)*3,i?13:8,c)).join('')+text(i?'粒子B：一個が重い':'粒子A：一個が軽い',x+10,105,27,c)+text('同じ1 mol（同じ個数）',x+15,405,28)+text(i?'全体の質量：大きい':'全体の質量：小さい',x+20,465,28,c);}).join('');
  }
  if(kind==='ideal-known-quantities'){
-  return text('分かっている三つの量から、圧力を求める',190,35,31)+['物質量 n','温度 T','体積 V'].map((s,i)=>box(120,110+i*125,300,90,C.cyan)+text(s,195,165+i*125,33,C.cyan)+arrow(450,155+i*125,770,280,C.gold)+circle(450+(770-450)*u,(155+i*125)*(1-u)+280*u,7,C.gold)).join('')+box(810,205,280,150,C.gold)+text('圧力 p',885,292,38,C.gold)+text('次は、三つの情報を計算で結ぶ',400,500,29);
+  return text('分かっている三つの量から、体積を求める',190,35,31)+['物質量 n','温度 T','圧力 p'].map((s,i)=>box(120,110+i*125,300,90,C.cyan)+text(s,195,165+i*125,33,C.cyan)+arrow(450,155+i*125,770,280,C.gold)+circle(450+(770-450)*u,(155+i*125)*(1-u)+280*u,7,C.gold)).join('')+box(810,205,280,150,C.gold)+text('体積 V',885,292,38,C.gold)+text('次は、三つの情報を計算で結ぶ',400,500,29);
  }
  if(kind==='ideal-litre-cube'){
   const X=(a,b,c)=>[290+a*34+c*18,425-b*25-c*12],pts=[[0,0,0],[10,0,0],[10,10,0],[0,10,0],[0,0,10],[10,0,10],[10,10,10],[0,10,10]],edges=[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];

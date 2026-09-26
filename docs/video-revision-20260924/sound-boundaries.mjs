@@ -3,7 +3,11 @@ const F=(subtitle,reading,formula,operation,previousFormula=[])=>({subtitle,read
 const S=(heading,...cues)=>({heading,cues,utterances:cues.map(({subtitle,reading})=>({subtitle,reading})),narration:cues.map(q=>q.subtitle).join(''),equation:'',symbols:'',visual:'sound-boundaries'});
 export const soundBoundaryIds=['prep-sound-boundary','w-sound-middle','hw-why-03'];
 export function applySoundBoundaries(plan){
- const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);Object.assign(c,{visualPilot:'sound-boundaries-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hw-')?'thorough':'common'}));};
+ const set=(id,scenes,breaks)=>{const c=plan.find(c=>c.id===id);if(!c)throw Error(id);c.manuscriptScenes??=structuredClone(c.scenes);
+  // Boundary conditions prepare the pipe lesson. Its wavelength calculation
+  // and the next level's beat frequency must not be taught here in advance.
+  if(id==='prep-sound-boundary'){scenes=[scenes[0],S('開いた端の空気と圧力を区別する',scenes[1].cues[0])];breaks=[1];}
+  Object.assign(c,{visualPilot:'sound-boundaries-v1',navigationBreaks:breaks,scenes});scenes.forEach((s,i)=>Object.assign(s,{index:i,sceneId:`${id}-s${i+1}`,mode:id.startsWith('hw-')?'thorough':'common'}));};
  set('prep-sound-boundary',[
  S('壁では、空気の動きと圧力の変化を区別する',
  D('今回は、管の端で空気がどう動けるかを使い、管にできる音の波を考えます。管を進む波と、端で反射して戻る波が重なると、節と腹の位置が決まる定常波ができます。','こんかいは、かんのはしでくうきがどううごけるかをつかい、かんにできるおとのなみをかんがえます。かんをすすむなみと、はしではんしゃしてもどるなみがかさなると、ふしとはらのいちがきまるていじょうはができます。','soundprep-reflection'),

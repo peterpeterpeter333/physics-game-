@@ -16,4 +16,8 @@ for(const V of [.5,1,2,4])assert.equal(2/V*V,2);
 assert.equal(20+273.15,293.15);
 assert.match(plan.find(c=>c.id==='t-gas-intro').scenes[1].narration,/実験則/);
 assert.match(plan.find(c=>c.id==='t-gas-intro').scenes[2].narration,/温度一定/);
+const pressure=plan.find(c=>c.id==='prep-pressure');
+assert.equal(pressure.scenes.length,2);
+assert.doesNotMatch(pressure.scenes.map(s=>s.narration).join(''),/ボイル|絶対温度/);
+assert.match(pressure.title,/面積によって/);
 console.log('PASS gas foundations:',gasFoundationIds.length,'films,',count,'frames,',seen.size,'diagrams');

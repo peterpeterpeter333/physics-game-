@@ -7,7 +7,7 @@ const rect=(x,y,w,h,c)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill
 export const workFoundationKinds=['work-distance','work-displacement','speed-energy-ratio','holding-package','body-energy','work-target','lifting-package','opposite-work','zero-work-not-zero-effort'];
 export function workFoundationDiagram(kind,p){
  if(!workFoundationKinds.includes(kind))throw Error('Unknown work diagram '+kind);
- const u=ease(p);
+ const u=kind==='opposite-work'||kind==='speed-energy-ratio'?clamp(p/.75):ease(p);
  if(kind==='work-distance'){
   const x=220+660*u,y=250;
   return line(140,300,1100,300)+box(x,y)+arrow(x,y-80,x+110,y-80,C.red)+text('赤：一定の力 2 N',650,70,32,C.red)+arrow(220,400,x,400,C.cyan)+text(`移動した距離 ${(3*u).toFixed(1)} m`,360,460,33,C.cyan)+[0,1,2,3].map(i=>line(220+220*i,300,220+220*i,315)+text(`${i} m`,200+220*i,350,25)).join('');
