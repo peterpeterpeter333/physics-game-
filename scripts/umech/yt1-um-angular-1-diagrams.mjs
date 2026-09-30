@@ -68,8 +68,8 @@ function resultRows(x,y,{g=[1,1,1],hl=-1}={}){
  const rows=[['O','2 N·m','out'],['O′','2 N·m','in'],['Q','0','zero']];
  let s='';
  rows.forEach(([n,v,k],i)=>{const yy=y+i*62;
-  s+=fade(g[i],(i===hl?rect(x-14,yy-36,330,52,{fill:C.hi,fo:.08,stroke:C.hi,sw:2,rx:10}):'')+label('基準点 '+n,x,yy,{size:26,color:C.ink})+label(v,x+200,yy,{size:28,color:CN,weight:700,anchor:'end'})
-   +(k==='out'?outSym(x+250,yy-9,17):k==='in'?inSym(x+250,yy-9,17):label('回らない',x+222,yy,{size:22,color:C.dim})));
+  s+=fade(g[i],(i===hl?rect(x-14,yy-36,330,52,{fill:C.hi,fo:.08,stroke:C.hi,sw:2,rx:10}):'')+label('基準点 '+n,x,yy,{size:26,color:C.ink})+label(v,x+240,yy,{size:28,color:CN,weight:700,anchor:'end'})
+   +(k==='out'?outSym(x+280,yy-9,17):k==='in'?inSym(x+280,yy-9,17):''));
  });
  return s;
 }
@@ -86,13 +86,13 @@ function oblique({rG=1,Fg=1,thG=1,rotG=0,tanG=0,splitG=0,noworkG=0,paraG=0,axisG
  if(rotG>0){const a=DT*rotG,qx=ox+R*Math.cos(a),qy=oy-R*Math.sin(a);
   s+=line(ox,oy,qx,qy,{color:CR,w:3,dash:'8 7',opacity:.8})+draw(circPts(ox,oy,R,0,a,20),1,{color:CT,w:7})+dot(qx,qy,7,C.dim);
   s+=fade(dthLbl*seg(rotG,.3,1),draw(circPts(ox,oy,110,0,a,12),1,{color:CT,w:3})+label('dθ',ox+118,oy-14,{size:26,color:CT,weight:700}));
-  s+=fade(rdLbl*seg(rotG,.5,1),label('r dθ',px-100,py-64,{size:26,color:CT,weight:700}));}
+  s+=fade(rdLbl*seg(rotG,.5,1),label('r dθ',px-14,py-46,{size:26,color:CT,weight:700,anchor:'end'}));}
  if(base){s+=ring(ox,oy,11,{color:C.ink,w:3,fill:C.bg})+label('O',ox-6,oy+44,{size:26,color:C.ink,anchor:'middle',weight:700});}
  if(rG>0)s+=fade(rG,arrow(ox,oy,px-6,py,{color:CR,w:6,head:16})+vl('r',(ox+px)/2,oy+46,{size:30,color:CR,anchor:'middle'})+label('0.5 m',(ox+px)/2+50,oy+40,{size:22,color:CR}));
  if(tanG>0)s+=fade(tanG,line(px,py+70,px,py-150,{color:C.dim,w:2,dash:'6 6'})+rightMark(px,py,-1,0,0,1,16)+label('円の接線',px+16,py-150,{size:22,color:C.dim}));
  if(splitG>0){
   s+=fade(splitG,arrow(px,py,px+L*ux,py,{color:CF,w:4,head:14,opacity:.7})+label('F cosθ',px+L*ux-6,py+36,{size:24,color:CF,anchor:'middle'}));
-  s+=fade(splitG,arrow(px,py,px,py+L*uy,{color:CQ,w:6,head:16})+label('F sinθ',px-14,py+L*uy/2+8,{size:26,color:CQ,weight:700,anchor:'end'}));
+  s+=fade(splitG,arrow(px,py,px,py+L*uy,{color:CQ,w:6,head:16})+label('F sinθ',px+14,py+L*uy+18,{size:26,color:CQ,weight:700}));
   s+=fade(splitG,line(px,py+L*uy,px+L*ux,py+L*uy,{color:C.faint,w:2,dash:'5 5'})+line(px+L*ux,py,px+L*ux,py+L*uy,{color:C.faint,w:2,dash:'5 5'}));
  }
  if(noworkG>0){const x=px+L*ux*.55;s+=fade(noworkG,label('仕事 0',x,py+70,{size:26,color:C.a,anchor:'middle',weight:700}));}
@@ -109,7 +109,7 @@ function bar(p){const cx=240,cy=330,L=300,a=.05*6*seg(p,.2,.7);
  s+=line(cx,cy,cx+L,cy,{color:WOOD,w:14,cap:'butt',opacity:.3});
  s+=line(cx,cy,cx+L*Math.cos(a),cy-L*Math.sin(a),{color:WOOD,w:14,cap:'butt'});
  s+=ring(cx,cy,12,{color:C.ink,w:3,fill:C.bg})+label('基準点',cx,cy+46,{size:22,color:C.dim,anchor:'middle'});
- s+=draw(circPts(cx,cy,120,0,a,20),1,{color:CT,w:4})+fade(seg(p,.5,.7),label('0.05 rad（小さく）',cx+130,cy-36,{size:24,color:CT,weight:700}));
+ s+=draw(circPts(cx,cy,120,0,a,20),1,{color:CT,w:4})+fade(seg(p,.5,.7),label('0.05 rad（小さく）',cx+140,cy+44,{size:24,color:CT,weight:700}));
  const [tx,ty]=[cx+L*Math.cos(a),cy-L*Math.sin(a)];
  s+=arrow(tx,ty,tx-Math.sin(a)*120-40,ty-Math.cos(a)*120,{color:CF,w:6})+vl('F',tx-50,ty-130,{size:28,color:CF});
  return s;
@@ -183,7 +183,7 @@ export const ytUmAngular1Diagrams={
  },
  [K+'O2']:(p)=>{
   let s=boardScene({bases:['O','O2'],sel:'O2',rG:seg(p,.05,.3),arcG:seg(p,.35,.6),symG:seg(p,.7,.85)});
-  s+=fade(seg(p,.1,.3),label('0.5 m',BASES.O2[0]-75,BASES.O2[1]-18,{size:24,color:CR,anchor:'middle'}));
+  s+=fade(seg(p,.1,.3),label('0.5 m',BASES.O2[0]-105,BASES.O2[1]-18,{size:24,color:CR,anchor:'middle'}));
   s+=card(830,100,340,300,label('基準点 O′',1000,160,{size:28,color:C.ink,anchor:'middle',weight:700})
    +fade(seg(p,.3,.45),label('𝐫 左 → 𝐅 上：時計回り',1000,220,{size:24,color:C.ink,anchor:'middle'}))
    +fade(seg(p,.6,.75),T(`2${NM}`,960,300,{size:38,color:CN})+inSym(1085,298,18)+label('奥向き',1000,360,{size:28,color:CN,anchor:'middle',weight:700})),seg(p,0,.12));
@@ -218,7 +218,7 @@ export const ytUmAngular1Diagrams={
  [K+'why']:(p)=>{
   let s=boardScene({bases:['O','O2'],sel:'O',rG:1});
   // second r from O' drawn too
-  const [bx,by]=BASES.O2;s+=fade(seg(p,.4,.6),arrow(bx,by+24,G.px+6,G.py+24,{color:CR,w:4,head:13,opacity:.75})+label('別の 𝐫',(bx+G.px)/2,by+62,{size:24,color:CR,anchor:'middle'}));
+  const [bx,by]=BASES.O2;s+=fade(seg(p,.4,.6),arrow(bx,by-28,G.px+8,G.py-28,{color:CR,w:4,head:13,opacity:.75})+label('O′ からの 𝐫',(bx+G.px)/2+8,by-46,{size:24,color:CR,anchor:'middle'}));
   s+=card(830,100,340,300,label('𝐫 ＝ 位置の矢印',1000,165,{size:28,color:CR,anchor:'middle',weight:700})
    +label('（基準点から測る）',1000,215,{size:24,color:C.dim,anchor:'middle'})
    +fade(seg(p,.45,.6),label('原点を変えると',1000,285,{size:26,color:C.ink,anchor:'middle'})+label('𝐫 もトルクも 変わる',1000,340,{size:28,color:C.hi,anchor:'middle',weight:700})),seg(p,0,.12));
@@ -360,7 +360,7 @@ export const ytUmAngular1Diagrams={
  },
  [K+'unit']:(p)=>{
   let s=card(160,70,880,370,label('単位',600,130,{size:28,color:C.dim,anchor:'middle'})
-   +T(`\\mathrm{N\\cdot m}`,440,220,{size:52,color:CN})
+   +T(`\\mathrm{N\\cdot m}`,520,220,{size:52,color:CN})
    +fade(seg(p,.3,.45),T(`=\\mathrm{J}/\\mathrm{rad}`,690,220,{size:52,color:CW}))
    +fade(seg(p,.3,.45),label('仕事 ÷ 角度',690,290,{size:24,color:C.dim,anchor:'middle'}))
    +fade(seg(p,.65,.8),label('トルクは エネルギーではない',600,380,{size:32,color:C.hi,anchor:'middle',weight:700})),seg(p,0,.12));
@@ -405,7 +405,7 @@ export const ytUmAngular1Diagrams={
   return s;
  },
  [K+'next2']:(p)=>{
-  const cx=280,cy=270,R=150,a=.3+2.4*seg(p,0,1),bx=cx+R*Math.cos(a),by=cy-R*Math.sin(a);
+  const cx=280,cy=270,R=150,a=-.4+1.3*seg(p,0,1),bx=cx+R*Math.cos(a),by=cy-R*Math.sin(a);
   let s=ring(cx,cy,R,{color:C.faint,w:2,dash:'6 7'})+ring(cx,cy,9,{color:C.ink,w:3,fill:C.bg});
   s+=arrow(cx,cy,bx,by,{color:CR,w:5,head:14});
   const tx=-Math.sin(a),ty=-Math.cos(a);
