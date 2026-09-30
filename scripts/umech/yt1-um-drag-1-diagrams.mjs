@@ -39,7 +39,7 @@ function cycle(p,{resolved=0}={}){
  s+=arrow(330,225,480,140,{color:CD,w:4,g:g[1]})+arrow(720,140,870,225,{color:CD,w:4,g:g[2]})+arrow(870,315,720,400,{color:CD,w:4,g:g[3]})+arrow(480,400,330,315,{color:CD,w:4,g:seg(p,.6,.72)});
  s+=fade(g[2],label('合力 mg − kv',850,160,{size:22,color:CF}));
  s+=fade(seg(p,.6,.72)*(1-resolved),label('まだ 分からない',250,350,{size:26,color:CA,anchor:'middle',weight:700})+label('？',250,215,{size:40,color:CA,anchor:'middle',weight:700}));
- s+=fade(resolved,label('今の v から 毎回 計算',250,350,{size:26,color:CH,anchor:'middle',weight:700}));
+ s+=fade(resolved,label('今の v から 毎回 計算',175,350,{size:26,color:CH,anchor:'middle',weight:700}));
  return s;
 }
 
@@ -76,7 +76,7 @@ function balance(g,L,R,gl,gr){
  let s=fade(g,line(bx,by,bx,430,{color:C.dim,w:5})+line(bx-60,430,bx+60,430,{color:C.dim,w:5})+line(bx-300,by,bx+300,by,{color:C.dim,w:5})+dot(bx,by,9,C.dim)
   +line(bx-300,by,bx-450,by+90,{color:C.dim,w:2})+line(bx-300,by,bx-150,by+90,{color:C.dim,w:2})+line(bx-460,by+90,bx-140,by+90,{color:C.dim,w:5})
   +line(bx+300,by,bx+150,by+90,{color:C.dim,w:2})+line(bx+300,by,bx+450,by+90,{color:C.dim,w:2})+line(bx+140,by+90,bx+460,by+90,{color:C.dim,w:5}));
- s+=fade(gl,L(bx-300,by+72))+fade(gr,R(bx+300,by+72));
+ s+=fade(gl,L(bx-300,by+55))+fade(gr,R(bx+300,by+55));
  return s;
 }
 
@@ -173,7 +173,7 @@ export const ytUmDrag1Diagrams={
  },
  [K+'unit3']:(p)=>{
   let s=label('kv の 単位を 確かめる',600,70,{size:28,color:CD,anchor:'middle'});
-  s+=balance(seg(p,0,.15),(x,y)=>tex('\\mathrm{kg/s}\\times\\mathrm{m/s}',x,y,{size:40,auto:false})+label('k × v',x,y+60,{size:24,color:CD,anchor:'middle'}),(x,y)=>tex('\\mathrm{N}',x,y,{size:46,auto:false,color:CF})+label('力',x,y+60,{size:24,color:CD,anchor:'middle'}),seg(p,.1,.3),seg(p,.25,.45));
+  s+=balance(seg(p,0,.15),(x,y)=>tex('\\mathrm{kg/s}\\times\\mathrm{m/s}',x,y,{size:40,auto:false})+label('k × v',x,y+80,{size:24,color:CD,anchor:'middle'}),(x,y)=>tex('\\mathrm{N}',x,y,{size:46,auto:false,color:CF})+label('力',x,y+80,{size:24,color:CD,anchor:'middle'}),seg(p,.1,.3),seg(p,.25,.45));
   s+=fade(seg(p,.5,.7),tex('\\mathrm{kg\\cdot m/s^2}=\\mathrm{N}',600,165,{size:44,auto:false,color:CH}));
   return s;
  },
@@ -210,8 +210,9 @@ export const ytUmDrag1Diagrams={
  [K+'rhs']:(p)=>{
   let s=label('一定の力',140,130,{size:26,color:CD})+tex('m\\dfrac{dv}{dt}=F',480,130,{size:48})+label('F は 定数',720,140,{size:26,color:CD});
   s+=fade(seg(p,.05,.2),label('今回',140,265,{size:26,color:C.ink,weight:700})+tex(EQ,480,265,{size:52}));
-  s+=fade(seg(p,.2,.35),ring(640,262,34,{color:CH,w:3})+label('求めたい v が 右の辺に',720,275,{size:28,color:CH,weight:700}));
-  s+=fade(seg(p,.55,.7),label('微分方程式の回',140,410,{size:26,color:CD})+tex('\\dfrac{d{\\color{'+CY+'}y}}{dt}=-k{\\color{'+CY+'}y}',480,410,{size:48})+ring(560,410,30,{color:CY,w:3})+label('今の量 y が 右の辺に',720,420,{size:28,color:CY}));
+  const e2=480+texWidth(EQ,52)/2,e3=480+texWidth('\\dfrac{dy}{dt}=-ky',48)/2;
+  s+=fade(seg(p,.2,.35),ring(e2-29,258,26,{color:CH,w:3})+label('求めたい v が 右の辺に',720,275,{size:28,color:CH,weight:700}));
+  s+=fade(seg(p,.55,.7),label('微分方程式の回',140,410,{size:26,color:CD})+tex('\\dfrac{d{\\color{'+CY+'}y}}{dt}=-k{\\color{'+CY+'}y}',480,410,{size:48})+ring(e3-26,404,26,{color:CY,w:3})+label('今の量 y が 右の辺に',720,420,{size:28,color:CY}));
   return s;
  },
  [K+'divm']:(p)=>{
@@ -225,15 +226,15 @@ export const ytUmDrag1Diagrams={
   const A=vsA();
   let s=A.svg+fade(.5,line(A.X(0),A.Y(5),A.X(1.6),A.Y(5),{color:CH,w:2,dash:'8 6'}))+A.plot(vex,{from:0,to:1.55,p:seg(p,.05,.3),color:CV,w:4,dash:'2 10'});
   s+=draw([[A.X(0),A.Y(0)],[A.X(.4),A.Y(4)]],seg(p,.3,.5),{color:CA,w:5})+fade(seg(p,.4,.55),label('傾き g',A.X(.4)+10,A.Y(4)+6,{size:26,color:CA,weight:700}));
-  s+=card(660,110,500,260,tex('v=0:',910,170,{size:40})
-   +fade(seg(p,.1,.25),tex('\\dfrac{dv}{dt}=g',910,245,{size:48,color:C.ink}))
-   +fade(seg(p,.55,.7),label('抵抗 0 → 自由落下と 同じ',910,330,{size:28,color:CH,anchor:'middle',weight:700})),seg(p,0,.12));
+  s+=card(660,100,500,300,label('落ち始め',860,160,{size:28,color:CD,anchor:'end'})+tex('v=0',950,150,{size:44})
+   +fade(seg(p,.1,.25),tex('\\dfrac{dv}{dt}=g',910,265,{size:48,color:C.ink}))
+   +fade(seg(p,.55,.7),label('抵抗 0 → 自由落下と 同じ',910,360,{size:28,color:CH,anchor:'middle',weight:700})),seg(p,0,.12));
   return s;
  },
  [K+'faster']:(p)=>{
   const A=vsA();
   let s=A.svg+fade(.5,line(A.X(0),A.Y(5),A.X(1.6),A.Y(5),{color:CH,w:2,dash:'8 6'}))+A.plot(vex,{from:0,to:1.55,color:CV,w:4,dash:'2 10'});
-  const tan=(t0,d,g)=>{const v0=vex(t0),a=10-2*v0;return fade(g,line(A.X(t0-d),A.Y(v0-a*d),A.X(t0+d),A.Y(v0+a*d),{color:CA,w:5})+dot(A.X(t0),A.Y(v0),6,CV));};
+  const tan=(t0,d,g)=>{const v0=vex(t0),a=10-2*v0,d0=t0<.01?0:d;return fade(g,line(A.X(t0-d0),A.Y(v0-a*d0),A.X(t0+d),A.Y(v0+a*d),{color:CA,w:5})+dot(A.X(t0),A.Y(v0),6,CV));};
   s+=tan(0.001,.2,1)+tan(.35,.2,seg(p,.1,.25))+tan(.8,.22,seg(p,.25,.4))+tan(1.3,.22,seg(p,.4,.55));
   s+=card(660,110,500,280,tex(EQM,910,185,{size:44})
    +fade(seg(p,.1,.3),label('速いほど (k/m)v が 大きい',910,275,{size:26,color:C.ink,anchor:'middle'}))
@@ -243,13 +244,13 @@ export const ytUmDrag1Diagrams={
  },
  // ===== S4 初級の表は一歩ずつ版 =====
  [K+'table']:(p)=>{
-  let s=card(80,90,480,300,label('初級の例',320,140,{size:26,color:CD,anchor:'middle'})+label('m ＝ 1 kg',320,205,{size:30,anchor:'middle'})+label('k ＝ 2 kg/s',320,260,{size:30,color:CF,anchor:'middle'})+label('g ＝ 10 m/s²',320,315,{size:30,anchor:'middle'}),seg(p,.1,.3));
+  let s=card(80,90,480,300,label('初級の例',320,140,{size:26,color:CD,anchor:'middle'})+label('m ＝ 1 kg',320,205,{size:30,anchor:'middle'})+label('g ＝ 10 m/s²',320,260,{size:30,anchor:'middle'})+label('k ＝ 2 kg/s',320,315,{size:30,color:CF,anchor:'middle'}),seg(p,.1,.3));
   s+=card(640,90,480,300,tex(EQM,880,200,{size:46}),seg(p,0,.12));
   return s;
  },
  [K+'arate']:(p)=>{
-  let s=card(80,90,480,300,label('初級の例',320,140,{size:26,color:CD,anchor:'middle'})+label('m ＝ 1 kg',320,205,{size:30,anchor:'middle'})+label('k ＝ 2 kg/s',320,260,{size:30,color:CF,anchor:'middle'})+label('g ＝ 10 m/s²',320,315,{size:30,anchor:'middle'}));
-  s+=card(640,90,480,300,tex(EQM,880,170,{size:40})+fade(seg(p,.05,.3),tex('\\dfrac{dv}{dt}=10-2v',880,270,{size:46,color:C.ink})));
+  let s=card(80,90,480,300,label('初級の例',320,140,{size:26,color:CD,anchor:'middle'})+label('m ＝ 1 kg',320,205,{size:30,anchor:'middle'})+label('g ＝ 10 m/s²',320,260,{size:30,anchor:'middle'})+label('k ＝ 2 kg/s',320,315,{size:30,color:CF,anchor:'middle'}));
+  s+=card(640,90,480,300,tex(EQM,880,165,{size:40})+fade(seg(p,.05,.3),tex('\\dfrac{dv}{dt}=10-2v',880,310,{size:46,color:C.ink}))+fade(seg(p,.05,.3),label('↓',880,240,{size:30,color:CD,anchor:'middle'})));
   s+=fade(seg(p,.5,.7),card(300,410,600,80,label('初級の表：a ＝ 10 − 2v と 同じ',600,462,{size:30,color:CH,anchor:'middle',weight:700}),1,CH));
   return s;
  },
@@ -297,8 +298,8 @@ export const ytUmDrag1Diagrams={
   const A=vtA();
   let s=A.svg+steps(A)+vinf(A,seg(p,.05,.2),'v∞');
   s+=card(660,110,500,280,label('加速が 止まる',910,165,{size:28,color:C.ink,anchor:'middle'})
-   +fade(seg(p,.3,.45),tex('\\dfrac{dv}{dt}=0',910,245,{size:48}))
-   +fade(seg(p,.6,.75),label('→ 右の辺 ＝ 0',910,335,{size:32,color:CH,anchor:'middle',weight:700})),seg(p,0,.12));
+   +fade(seg(p,.3,.45),tex('\\dfrac{dv}{dt}=0',910,265,{size:48}))
+   +fade(seg(p,.6,.75),label('→ 右の辺 ＝ 0',910,360,{size:32,color:CH,anchor:'middle',weight:700})),seg(p,0,.12));
   return s;
  },
  ...(()=>{
@@ -306,10 +307,10 @@ export const ytUmDrag1Diagrams={
   const r2=(g=1)=>fade(g,tex('kv=mg',330,280,{size:52}));
   const r3=(g=1)=>fade(g,tex('v_\\infty=\\dfrac{mg}{k}',330,420,{size:56}));
   const ops=(g1=1,g2=1)=>fade(g1,label('両辺に ＋kv',560,225,{size:26,color:CH}))+fade(g2,label('両辺を k で 割る',560,360,{size:26,color:CH}));
-  const box=(g=1)=>highlight(190,345,280,150,g);
+  const box=(g=1)=>highlight(190,325,280,170,g);
   return {
    [K+'term2']:(p)=>r1()+ops(seg(p,.1,.25),seg(p,.45,.6))+r2(seg(p,.2,.35))+r3(seg(p,.55,.7))+box(seg(p,.7,.8))+fade(seg(p,.75,.9),label('終端速度',700,430,{size:40,color:CH,weight:700})),
-   [K+'shortcut']:(p)=>r1()+ops()+r2()+r3()+box()+card(660,110,500,280,label('方程式を 解き切らなくても',910,180,{size:28,anchor:'middle'})+label('右の辺 ＝ 0 と 置くだけで',910,245,{size:30,color:CH,anchor:'middle',weight:700})+label('行き先の 速さが 分かる',910,310,{size:30,color:CV,anchor:'middle',weight:700}),seg(p,.05,.25),CH),
+   [K+'shortcut']:(p)=>r1()+fade(1-seg(p,0,.15),ops())+r2()+r3()+box()+card(660,110,500,280,label('方程式を 解き切らなくても',910,180,{size:28,anchor:'middle'})+label('右の辺 ＝ 0 と 置くだけで',910,245,{size:30,color:CH,anchor:'middle',weight:700})+label('行き先の 速さが 分かる',910,310,{size:30,color:CV,anchor:'middle',weight:700}),seg(p,.05,.25),CH),
   };
  })(),
  [K+'tunit']:(p)=>{
@@ -322,13 +323,13 @@ export const ytUmDrag1Diagrams={
  },
  [K+'num']:(p)=>{
   let s=card(80,80,440,300,label('ステージの例',300,130,{size:26,color:CD,anchor:'middle'})+label('m ＝ 2 kg',300,195,{size:30,anchor:'middle'})+label('g ＝ 10 m/s²',300,250,{size:30,anchor:'middle'})+label('k ＝ 4 kg/s',300,305,{size:30,color:CF,anchor:'middle'}),seg(p,0,.15));
-  s+=fade(seg(p,.25,.45),tex('v_\\infty=\\dfrac{mg}{k}',720,150,{size:52}));
-  s+=fade(seg(p,.45,.65),tex('=\\dfrac{2\\times 10}{4}',760,270,{size:52}));
-  s+=fade(seg(p,.7,.85),tex('=5\\ \\mathrm{m/s}',760,390,{size:58,color:CH}));
+  s+=fade(seg(p,.25,.45),tex('v_\\infty=\\dfrac{mg}{k}',620,150,{size:52,anchor:'start'}));
+  s+=fade(seg(p,.45,.65),tex('=\\dfrac{2\\times 10}{4}',620+texWidth('v_\\infty',52)+2,270,{size:52,anchor:'start'}));
+  s+=fade(seg(p,.7,.85),tex('=5\\ \\mathrm{m/s}',620+texWidth('v_\\infty',52)+2,390,{size:58,color:CH,anchor:'start'}));
   return s;
  },
  ...(()=>{
-  const two=(gA=0,gB=0)=>ball(260,250,{r:34})+label('2 kg',260,258,{size:22,anchor:'middle'})+velA(260,250,3,{text:'3 m/s',dx:-100})
+  const two=(gA=0,gB=0)=>ball(260,250,{r:34})+label('2 kg',306,215,{size:24,color:C.ink})+velA(260,250,3,{text:'3 m/s',dx:-100})
    +gravA(260,250,20,{r:34,px:8,text:'重力 20 N',g:gA})+resA(260,250,12,{r:34,px:8,text:'抵抗 12 N',g:gB});
   return {
    [K+'quiz']:(p)=>fade(seg(p,0,.2),two())+card(620,120,540,240,label('m ＝ 2 kg、k ＝ 4 kg/s',890,180,{size:28,anchor:'middle'})+label('3 m/s で 落ちているとき',890,240,{size:28,color:CV,anchor:'middle'})+label('加速度は？',890,310,{size:36,color:CH,anchor:'middle',weight:700}),seg(p,.15,.35),CH),
