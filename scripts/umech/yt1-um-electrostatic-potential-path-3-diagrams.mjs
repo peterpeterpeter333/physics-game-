@@ -2,7 +2,7 @@
 // E＝−dV/dx（一様：V＝−4x → E＝4 V/m）、点電荷 V＝kQ/r（差の商で傾き −1/r²）、Q＝1 nC の数値、U＝qV、使えない場合。
 // 部品は 1/3・2/3 から使う。色：電場 𝐄 水色、電位 V 紫、電荷 桃、位置エネルギー 橙、強調 黄、負 赤、傾き 金。
 import {C,clamp,mix,seg,fade,label,line,rect,dot,ring,draw,arrow,tex,texWidth,axes,highlight} from './anim.mjs';
-import {EC,VC,QP,WC,AL,NG,DC,FC,QC,cs,T,card,cross,L,vE,q,dr,Wt,Vt,IAB,charge,PL,P,plane,AB} from './yt1-um-electrostatic-potential-path-1-diagrams.mjs';
+import {EC,VC,QP,WC,AL,NG,DC,FC,QC,cs,T,card,cross,L,vE,q,dr,Wt,Vt,IAB,charge,PL,P,plane,AB,BL} from './yt1-um-electrostatic-potential-path-1-diagrams.mjs';
 
 const K='um-electrostatic-potential-path-3:';
 const VB=Vt('V_{\\mathrm{B}}'),VA=Vt('V_{\\mathrm{A}}'),INT=`${IAB}${vE}\\cdot${dr}`;
@@ -10,8 +10,8 @@ const V=Vt('V'),E=cs(EC,'E'),Qc=cs(QP,'Q'),kQ=`k${Qc}`;
 const kx=cs(C.x,'x'),dx=`d${cs(C.x,'x')}`;
 // V–x graph of the uniform example
 function vxGraph({g=1,tan=0,o={x:110,y:430,w:420,h:300}}={}){
- const A=axes({x:o.x,y:o.y-o.h*.0,w:o.w,h:o.h,xmin:0,xmax:3.4,ymin:-13,ymax:1.5,xticks:[1,2,3],yticks:[-4,-8,-12],xlabel:'x [m]',ylabel:'V [V]',g,xcolor:C.x,ycolor:VC});
- let s=A.svg+fade(g,A.plot(u=>-4*u,{from:0,to:3.2,color:VC,w:5}));
+ const A=axes({x:o.x,y:o.y-o.h*.0,w:o.w,h:o.h,xmin:0,xmax:3.4,ymin:-13,ymax:1.5,xticks:[1,2,3],yticks:[],xlabel:'x [m]',ylabel:'V [V]',g,xcolor:C.x,ycolor:VC});
+ let s=A.svg+fade(g,[-4,-8,-12].map(v=>line(A.X(0)-6,A.Y(v),A.X(0)+6,A.Y(v),{color:C.dim})+label(`−${-v}`,A.X(0)-14,A.Y(v)+8,{size:22,color:C.dim,anchor:'end'})).join(''))+fade(g,A.plot(u=>-4*u,{from:0,to:3.2,color:VC,w:5}));
  s+=fade(tan,draw([[A.X(1),A.Y(-4)],[A.X(2),A.Y(-4)],[A.X(2),A.Y(-8)]],1,{color:DC,w:3})+label('1 m',A.X(1.5),A.Y(-4)-10,{size:22,color:DC,anchor:'middle'})+label('−4 V',A.X(2)+10,A.Y(-6)+8,{size:22,color:DC}));
  return s;
 }
@@ -20,7 +20,7 @@ function pcharge(cx,cy,{g=1,E=1,rings=0,R=[70,130,190]}={}){
  let s='';
  s+=fade(rings,R.map(r=>ring(cx,cy,r,{color:VC,w:2,dash:'6 7'})).join(''));
  for(let k=0;k<12;k++){const a=k*Math.PI/6+.26;s+=fade(E,arrow(cx+Math.cos(a)*26,cy-Math.sin(a)*26,cx+Math.cos(a)*170,cy-Math.sin(a)*170,{color:EC,w:3,head:11,opacity:.6}));}
- s+=ring(cx,cy,20,{color:QC,w:3,fill:'#3a1d2a'})+label('+',cx,cy+9,{size:28,color:QC,anchor:'middle',weight:700})+label('Q',cx+26,cy-20,{size:26,color:QP,weight:700});
+ s+=ring(cx,cy,20,{color:QC,w:3,fill:'#3a1d2a'})+label('+',cx,cy+9,{size:28,color:QC,anchor:'middle',weight:700})+BL('Q',cx+26,cy-20,{size:26,color:QP,weight:700});
  return fade(g,s);
 }
 // V(r)=kQ/r (Q=1 nC → 8.99/r) and E(r)=8.99/r² graph
@@ -82,11 +82,11 @@ export const ytUmElectrostaticPotentialPath3Diagrams={
  },
  [K+'elem']:(p)=>{
   let s=card(60,90,500,330,L('初級：まっすぐな 坂',310,145,{size:26,color:C.dim})+draw([[120,190],[500,360]],1,{color:VC,w:5})+L('強さ ＝ 下がり幅 ÷ 距離',310,400,{size:26,color:C.ink,weight:700}),1,C.faint);
-  const f=u=>200+150/(u*1.6+.3);// a curved slope
+  const f=u=>180+200*(1-Math.exp(-3*u));// a curved slope (steep, then flatter)
   const pts=Array.from({length:60},(_,i)=>{const u=i/59;return [660+u*420,f(u)*1.0];});
   let cv=draw(pts,1,{color:VC,w:5});
   const u0=.3,x0=660+u0*420,y0=f(u0),h=.005,sl=(f(u0+h)-f(u0))/(h*420);
-  cv+=fade(seg(p,.5,.7),line(x0-80,y0-80*sl,x0+80,y0+80*sl,{color:DC,w:3})+dot(x0,y0,7,DC));
+  cv+=fade(seg(p,.5,.7),line(x0-70,y0-70*sl,x0+70,y0+70*sl,{color:DC,w:3})+dot(x0,y0,7,DC));
   s+=card(620,90,520,330,L('曲がった 坂',880,145,{size:26,color:C.dim})+cv+fade(seg(p,.6,.75),L('その点での 傾き',880,400,{size:26,color:DC,weight:700})),seg(p,.35,.5),C.faint);
   return s;
  },
@@ -123,8 +123,8 @@ export const ytUmElectrostaticPotentialPath3Diagrams={
   return s;
  },
  [K+'why']:(p)=>{
-  let s=card(80,90,500,300,T(`${E}\\;\\propto\\;\\dfrac{1}{r^2}`,330,190,{size:54})+fade(seg(p,.15,.35),L('↓ 足し上げる',330,280,{size:28,color:C.hi,weight:700}))+fade(seg(p,.25,.45),T(`${V}\\;\\propto\\;\\dfrac{1}{r}`,330,355,{size:46})),1,C.faint);
-  s+=card(620,90,500,300,L('次数が 1つ 上がる',870,170,{size:30,color:C.hi,weight:700})+fade(seg(p,.55,.7),L('万有引力の 位置エネルギー',870,260,{size:26})+L('も 1/r（同じ理由）',870,310,{size:26})),seg(p,.3,.45),C.faint);
+  let s=card(80,80,500,330,T(`${E}\\;\\propto\\;\\dfrac{1}{r^2}`,330,178,{size:54})+fade(seg(p,.15,.35),L('↓ 足し上げる',330,265,{size:28,color:C.hi,weight:700}))+fade(seg(p,.25,.45),T(`${V}\\;\\propto\\;\\dfrac{1}{r}`,330,355,{size:46})),1,C.faint);
+  s+=card(620,80,500,330,L('次数が 1つ 上がる',870,165,{size:30,color:C.hi,weight:700})+fade(seg(p,.55,.7),L('万有引力の 位置エネルギー',870,260,{size:26})+L('も 1/r（同じ理由）',870,310,{size:26})),seg(p,.3,.45),C.faint);
   return s;
  },
  [K+'verify']:(p)=>{
@@ -186,13 +186,13 @@ export const ytUmElectrostaticPotentialPath3Diagrams={
  [K+'avg']:(p)=>{
   const G=vrGraph({pts:1,sec:seg(p,.05,.3)});
   let s=G.svg;
-  s+=card(660,110,490,260,L('1 m → 2 m の 平均',905,165,{size:26,color:DC,weight:700})+T(`\\dfrac{8.99-4.50}{1\\ \\mathrm{m}}\\approx4.50\\ \\mathrm{V/m}`,905,255,{size:36})+fade(seg(p,.55,.7),L('平均の 電場 約 4.50 V/m',905,335,{size:26,color:EC,weight:700})),seg(p,.15,.3),C.faint);
+  s+=card(660,110,490,260,L('1 m → 2 m の 平均',905,165,{size:26,color:DC,weight:700})+T(`\\dfrac{8.99-4.495}{1\\ \\mathrm{m}}\\approx4.50\\ \\mathrm{V/m}`,905,255,{size:36})+fade(seg(p,.55,.7),L('平均の 電場 約 4.50 V/m',905,335,{size:26,color:EC,weight:700})),seg(p,.15,.3),C.faint);
   return s;
  },
  [K+'local']:(p)=>{
   const G=vrGraph({pts:1,sec:.5,Eg:seg(p,.05,.3)});
   let s=G.svg;const A=G.A;
-  s+=fade(seg(p,.2,.4),dot(A.X(1),A.Y(8.99),6,EC)+dot(A.X(2),A.Y(2.2475),7,EC)+label('2.25',A.X(2)+12,A.Y(2.2475)+26,{size:22,color:EC,weight:700}));
+  s+=fade(seg(p,.2,.4),dot(A.X(1),A.Y(8.99),6,EC)+dot(A.X(2),A.Y(2.2475),7,EC)+BL('2.25',A.X(2)-12,A.Y(2.2475)+30,{size:22,color:EC,anchor:'end',weight:700}));
   s+=card(660,90,490,300,T(`r=1\\ \\mathrm{m}:\\ ${cs(EC,'8.99\\ \\mathrm{V/m}')}`,905,160,{size:36})+T(`r=2\\ \\mathrm{m}:\\ ${cs(EC,'2.25\\ \\mathrm{V/m}')}`,905,230,{size:36})
    +fade(seg(p,.55,.7),L('2.25 ＜ 平均 4.50 ＜ 8.99',905,320,{size:28,color:C.hi,weight:700})),seg(p,.1,.25),C.faint);
   return s;
@@ -279,14 +279,14 @@ export const ytUmElectrostaticPotentialPath3Diagrams={
  },
  [K+'sum2']:(p)=>{
   let s=T(`${Wt('U')}=${q}${V}`,600,110,{size:62});
-  s+=card(200,240,800,170,L('電位が 使えるのは',600,300,{size:28})+T(`\\oint_C${vE}\\cdot${dr}=0`,600,370,{size:44}),seg(p,.3,.45),C.hi);
+  s+=card(200,215,800,235,L('電位が 使えるのは',600,268,{size:28})+T(`\\oint_C${vE}\\cdot${dr}=0`,600,370,{size:44}),seg(p,.3,.45),C.hi);
   s+=fade(seg(p,.55,.7),label('静電場',1015,380,{size:28,color:EC,weight:700}));
   return s;
  },
  [K+'next1']:(p)=>{
   let s=plane({})+AB({g:0});
   const a=P([.5,1]),b=P([3,1]);
-  s+=fade(seg(p,.1,.3),dot(...a,7,C.ink)+dot(...b,7,C.ink)+line(a[0],a[1]+40,b[0],b[1]+40,{color:C.ink,w:3})+label('d',(a[0]+b[0])/2,a[1]+70,{size:26,color:C.ink,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.1,.3),dot(...a,7,C.ink)+dot(...b,7,C.ink)+line(a[0],a[1]+40,b[0],b[1]+40,{color:C.ink,w:3})+BL('d',(a[0]+b[0])/2,a[1]+72,{size:26,color:C.ink,anchor:'middle',weight:700}));
   s+=card(680,120,470,240,T(`${V}=${E}d`,915,200,{size:60})+fade(seg(p,.45,.6),L('下がり幅 ＝ 強さ × 距離',915,300,{size:26,color:C.hi,weight:700})),seg(p,.2,.35),C.faint);
   return s;
  },

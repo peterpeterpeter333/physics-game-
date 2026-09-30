@@ -13,6 +13,8 @@ export const T=(s,x,y,o={})=>tex(s,x,y,{auto:false,color:C.ink,...o});
 export const card=(x,y,w,h,inner,g=1,stroke=C.faint)=>fade(g,rect(x,y,w,h,{fill:'#131f38',fo:.96,stroke,sw:2,rx:14})+inner);
 export const cross=(x,y,sz=16,color=C.a)=>line(x-sz,y-sz,x+sz,y+sz,{color,w:4})+line(x-sz,y+sz,x+sz,y-sz,{color,w:4});
 export const L=(s,x,y,o={})=>label(s,x,y,{size:26,color:C.ink,anchor:'middle',...o});
+// label with a dark backing so it stays readable over the field arrows
+export const BL=(t,x,y,o={})=>{const sz=o.size??24,w=[...t].reduce((a,c)=>a+(/[ -~]/.test(c)?.6:1),0)*sz,x0=o.anchor==='middle'?x-w/2:o.anchor==='end'?x-w:x;return rect(x0-8,y-sz*.95,w+16,sz*1.3,{fill:C.bg,fo:.92,stroke:C.bg,sw:0,rx:6})+label(t,x,y,o);};
 // TeX pieces
 export const vE=cs(EC,'\\mathbf{E}'),q=cs(QP,'q'),dr=cs(DC,'d\\mathbf{r}'),Dr=cs(DC,'\\Delta\\mathbf{r}');
 export const Wt=s=>cs(WC,s),Vt=s=>cs(VC,s);
@@ -40,9 +42,9 @@ export function plane({g=1,field=1,fop=.42,xmax=3.6,ymax=2.6,o=PL,grid=1,xt=[1,2
  let f='';for(let u=.35;u<xmax-.3;u+=1)for(const v of rows.filter(v=>v<ymax-.1)){const [x,y]=P([u,v],o);f+=arrow(x,y,x+o.S*.55,y,{color:EC,w:3,head:11,opacity:fop});}
  return s+fade(g*field,f);
 }
-export function AB({g=1,o=PL,lab=1}={}){
+export function AB({g=1,o=PL,lab=1,bdx=14,bdy=-12}={}){
  const a=P([0,0],o),b=P([3,2],o);
- return fade(g,dot(...a,7,C.ink)+dot(...b,7,C.ink)+fade(lab,label('A',a[0]-14,a[1]+30,{size:26,color:C.ink,anchor:'end',weight:700})+label('B',b[0]+14,b[1]-12,{size:26,color:C.ink,weight:700})));
+ return fade(g,dot(...a,7,C.ink)+dot(...b,7,C.ink)+fade(lab,label('A',a[0]-14,a[1]+30,{size:26,color:C.ink,anchor:'end',weight:700})+label('B',b[0]+bdx,b[1]+bdy,{size:26,color:C.ink,weight:700})));
 }
 const mid=(a,b,u=.55)=>[mix(a[0],b[0],u),mix(a[1],b[1],u)];
 export function polyPath(pts,{g=1,p=1,color=PA,w=5,heads=1,o=PL,rev=false}={}){
@@ -134,12 +136,12 @@ export const ytUmElectrostaticPotentialPath1Diagrams={
   let s=plane({})+AB({})+charge(...P([0,0]));
   s+=polyPath(PATH1,{p:seg(p,.2,.5),color:PA})+polyPath(PATH2,{p:seg(p,.45,.75),color:PB});
   s+=fade(seg(p,.35,.5),label('道1：先に 右',P([3,1])[0]+18,P([3,1])[1]+8,{size:24,color:PA,weight:700}));
-  s+=fade(seg(p,.6,.75),label('道2：先に 上',P([1.5,2])[0],P([1.5,2])[1]-32,{size:24,color:PB,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.6,.75),BL('道2：先に 上',P([1.5,2])[0],P([1.5,2])[1]-32,{size:24,color:PB,anchor:'middle',weight:700}));
   return s;
  },
  [K+'predict']:(p)=>{
   let s=plane({})+AB({})+charge(...P([0,0]))+polyPath(PATH1,{color:PA})+polyPath(PATH2,{color:PB});
-  s+=label('道1',P([3,1])[0]+18,P([3,1])[1]+8,{size:24,color:PA,weight:700})+label('道2',P([1.5,2])[0],P([1.5,2])[1]-32,{size:24,color:PB,anchor:'middle',weight:700});
+  s+=label('道1',P([3,1])[0]+18,P([3,1])[1]+8,{size:24,color:PA,weight:700})+BL('道2',P([1.5,2])[0],P([1.5,2])[1]-32,{size:24,color:PB,anchor:'middle',weight:700});
   s+=card(700,150,440,170,L('道が 違えば',920,215,{size:28})+L('仕事も 違う？',920,280,{size:36,color:C.hi,weight:700}),seg(p,.1,.25),C.hi);
   return s;
  },
@@ -166,7 +168,7 @@ export const ytUmElectrostaticPotentialPath1Diagrams={
   const k=seg(p,.05,.75);let s=plane({})+AB({})+polyPath(PATH1,{color:PA,g:.3})+polyPath(PATH2,{color:PB});
   s+=charge(...P(along(PATH2,k)),{text:k>.8?'':'2 C'});
   s+=fade(seg(p,.15,.3),label('0 J',P([0,1])[0]-16,P([0,1])[1]+8,{size:28,color:WC,anchor:'end',weight:700}));
-  s+=fade(seg(p,.45,.6),label('24 J',P([1.5,2])[0],P([1.5,2])[1]-32,{size:28,color:WC,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.45,.6),BL('24 J',P([1.5,2])[0],P([1.5,2])[1]-32,{size:28,color:WC,anchor:'middle',weight:700}));
   s+=card(700,90,450,290,L('道2：先に 上',925,145,{size:28,color:PB,weight:700})+L('上へ 2 m：直角 → 0',925,200,{size:26})+fade(seg(p,.4,.55),L('右へ 3 m：24 J',925,250,{size:26}))
    +fade(seg(p,.65,.8),T(`0+24=${Wt('24\\ \\mathrm{J}')}`,925,330,{size:44})),1,PB);
   return s;
@@ -251,7 +253,7 @@ export const ytUmElectrostaticPotentialPath1Diagrams={
   const Po=v=>P(v,o);
   s+=fade(seg(p,.05,.2),label('+40 J',Po([2.5,0])[0],Po([2.5,0])[1]-18,{size:26,color:WC,anchor:'middle',weight:700}));
   s+=fade(seg(p,.25,.4),label('0',Po([5,1])[0]+18,Po([5,1])[1]+8,{size:28,color:WC,weight:700}));
-  s+=fade(seg(p,.4,.55),label('−16 J',Po([4.45,2])[0],Po([4.2,2])[1]-18,{size:26,color:NG,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.4,.55),BL('−16 J',Po([4.45,2])[0],Po([4.2,2])[1]-18,{size:26,color:NG,anchor:'middle',weight:700}));
   s+=card(720,120,440,220,T(`40+0-16`,940,195,{size:44})+fade(seg(p,.6,.75),T(`=${Wt('24\\ \\mathrm{J}')}`,940,285,{size:48})),seg(p,.05,.2),C.faint);
   return s;
  },
@@ -267,14 +269,14 @@ export const ytUmElectrostaticPotentialPath1Diagrams={
   s+=polyPath(PATH1,{color:PA,p:seg(p,.05,.4)});
   s+=polyPath([[3,2],[0,2],[0,0]],{color:PB,p:seg(p,.45,.8)});
   s+=charge(...P(along([[0,0],[3,0],[3,2],[0,2],[0,0]],seg(p,.05,.8))));
-  s+=fade(seg(p,.5,.65),label('道2 を 逆向き',P([1.5,2])[0],P([1.5,2])[1]-32,{size:24,color:PB,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.5,.65),BL('道2 を 逆向き',P([1.5,2])[0],P([1.5,2])[1]-32,{size:24,color:PB,anchor:'middle',weight:700}));
   s+=card(760,150,390,200,L('A → B → A',955,215,{size:32,color:C.ink,weight:700})+L('一周の 道',955,285,{size:30,color:C.hi,weight:700}),seg(p,.7,.85),C.hi);
   return s;
  },
  [K+'loopval']:(p)=>{
   let s=plane({})+AB({})+polyPath(PATH1,{color:PA})+polyPath([[3,2],[0,2],[0,0]],{color:PB});
   s+=fade(seg(p,.05,.2),label('行き +24 J',P([3,1])[0]+18,P([3,1])[1]+8,{size:26,color:WC,weight:700}));
-  s+=fade(seg(p,.2,.35),label('帰り −24 J',P([1.5,2])[0],P([1.5,2])[1]-32,{size:26,color:NG,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.2,.35),BL('帰り −24 J',P([1.5,2])[0],P([1.5,2])[1]-32,{size:26,color:NG,anchor:'middle',weight:700}));
   s+=card(760,150,390,200,L('逆向き → 符号 反転',955,210,{size:24,color:C.dim})+fade(seg(p,.5,.65),T(`24-24=${Wt('0\\ \\mathrm{J}')}`,955,290,{size:44})),seg(p,.25,.4),C.faint);
   return s;
  },
@@ -316,8 +318,8 @@ export const ytUmElectrostaticPotentialPath1Diagrams={
   const a0=.75,r0=150,Px=cx+Math.cos(a0)*r0,Py=cy-Math.sin(a0)*r0,ur=[Math.cos(a0),-Math.sin(a0)],ut=[-Math.sin(a0),-Math.cos(a0)];
   const st=[Px+ur[0]*50+ut[0]*60,Py+ur[1]*50+ut[1]*60];
   s+=fade(seg(p,.05,.2),arrow(Px,Py,st[0],st[1],{color:DC,w:5,head:14})+dot(Px,Py,5,C.ink));
-  s+=fade(seg(p,.25,.45),arrow(Px,Py,Px+ut[0]*60,Py+ut[1]*60,{color:PP,w:5,head:13})+label('円周方向 → 0',Px+ut[0]*60-10,Py+ut[1]*60-14,{size:24,color:PP,anchor:'end',weight:700}));
-  s+=fade(seg(p,.5,.7),arrow(Px,Py,Px+ur[0]*50,Py+ur[1]*50,{color:AL,w:5,head:13})+label('半径方向',Px+ur[0]*50+14,Py+ur[1]*50+6,{size:24,color:AL,weight:700}));
+  s+=fade(seg(p,.25,.45),arrow(Px,Py,Px+ut[0]*60,Py+ut[1]*60,{color:PP,w:5,head:13})+BL('円周方向 → 0',Px+ut[0]*60-10,Py+ut[1]*60-14,{size:24,color:PP,anchor:'end',weight:700}));
+  s+=fade(seg(p,.5,.7),arrow(Px,Py,Px+ur[0]*50,Py+ur[1]*50,{color:AL,w:5,head:13})+BL('半径方向',Px+ur[0]*50+14,Py+ur[1]*50+6,{size:24,color:AL,weight:700}));
   s+=card(680,130,470,230,L('一歩 ＝ 半径方向 ＋ 円周方向',915,190,{size:26})+fade(seg(p,.3,.45),L('円周方向：𝐄 と 直角 → 0',915,250,{size:26,color:PP,weight:700}))+fade(seg(p,.6,.75),L('半径方向：距離の 変化 だけ',915,310,{size:26,color:AL,weight:700})),seg(p,.1,.25),C.faint);
   return s;
  },
@@ -340,8 +342,9 @@ export const ytUmElectrostaticPotentialPath1Diagrams={
   return s;
  },
  [K+'next1']:(p)=>{
-  let s=plane({})+AB({})+polyPath(PATH1,{color:PA,g:.5})+polyPath(PATH2,{color:PB,g:.5});
-  s+=fade(seg(p,.2,.4),ring(...P([0,0]),26,{color:C.hi,w:3})+ring(...P([3,2]),26,{color:C.hi,w:3}));
+  let s=plane({})+AB({lab:0})+polyPath(PATH1,{color:PA,g:.5})+polyPath(PATH2,{color:PB,g:.5});
+  s+=fade(seg(p,.2,.4),ring(...P([0,0]),22,{color:C.hi,w:3})+ring(...P([3,2]),22,{color:C.hi,w:3}));
+  s+=BL('A',P([0,0])[0]-24,P([0,0])[1]+34,{size:26,color:C.ink,anchor:'end',weight:700})+BL('B',P([3,2])[0]+28,P([3,2])[1]-18,{size:26,color:C.ink,weight:700});
   s+=card(700,130,450,220,L('A → B の 仕事は',925,195,{size:28})+L('位置 A と B だけで 決まる',925,265,{size:30,color:C.hi,weight:700}),seg(p,.35,.5),C.hi);
   return s;
  },

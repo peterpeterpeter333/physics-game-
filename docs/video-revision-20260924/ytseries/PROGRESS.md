@@ -111,7 +111,10 @@
 | 20 | 〃 | 2/2 | ys-um-line-integral-entry-2 | 5:01 | 検 読 静 復 | —（初級20-2 の q∫𝐄·d𝐫 予告を回収。𝐅＝(0,x) は説明用の力と明言。道 A 1 J・道 B 0 J・放物線 2/3 J を統括でも検算） |
 | 21 | ガウスの法則 um-gauss-sphere-preview | 1/2 | ys-um-gauss-sphere-preview-1 | 4:51 | 検 読 静 復 | —（面積分の前提をここで補う。4πr² は使うだけと明言） |
 | 21 | 〃 | 2/2 | ys-um-gauss-sphere-preview-2 | 4:58 | 検 読 静 復 | —（ε₀＝1/(4πk) は両替ではなく定義と明示。初級21 の比例係数を回収。任意の面の証明は上級） |
+| 22 | 電位 um-electrostatic-potential-path | 1/3 | ys-um-electrostatic-potential-path-1 | 5:10 | 検 読 静 復 | —（初級の「道によらない」の確かめを回収。一般の静電場は上級。コンテナ再起動後に仕上げ） |
+| 22 | 〃 | 2/3 | ys-um-electrostatic-potential-path-2 | 4:54 | 検 読 静 復 | —（標高の比喩：対応する／しないを明示） |
+| 22 | 〃 | 3/3 | ys-um-electrostatic-potential-path-3 | 5:30 | 検 読 静 復 | —（V＝kQ/r を差の商で確かめ。∮≠0 は電磁誘導へ） |
 
 - 色の約束（中級）：電流 I 緑、起電力 ℰ 紫（電圧と同じ）。
 - 04〜06 はクラウド（Linux 版 NEMO 0.24.0）で制作。mp4 は `ytseries/mp4/`。
-- 作業中：21 ガウスの法則、22 電位、23 コンデンサ。
+- 作業中：23 コンデンサ、24 電流。

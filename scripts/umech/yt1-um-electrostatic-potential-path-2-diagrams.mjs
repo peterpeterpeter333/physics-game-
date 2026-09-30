@@ -3,7 +3,7 @@
 // 部品は 1/3（yt1-um-electrostatic-potential-path-1-diagrams.mjs）から使う。
 // 色：電場 𝐄 水色、電位 V 紫、電荷 q 桃、仕事・位置エネルギー 橙、強調 黄、負・誤り 赤、d𝐫 金、力 F 緑。
 import {C,clamp,mix,seg,fade,label,line,rect,dot,ring,draw,arrow,tex,texWidth,highlight} from './anim.mjs';
-import {EC,VC,QP,WC,AL,NG,DC,FC,QC,PA,PB,cs,T,card,cross,L,vE,q,dr,Wt,Vt,IAB,charge,PL,P,plane,AB,polyPath,PATH1,PATH2} from './yt1-um-electrostatic-potential-path-1-diagrams.mjs';
+import {EC,VC,QP,WC,AL,NG,DC,FC,QC,PA,PB,cs,T,card,cross,L,vE,q,dr,Wt,Vt,IAB,charge,PL,P,plane,AB,polyPath,PATH1,PATH2,BL} from './yt1-um-electrostatic-potential-path-1-diagrams.mjs';
 
 const K='um-electrostatic-potential-path-2:';
 const WAB=Wt('W_{\\mathrm{AB}}'),dU=Wt('\\Delta U'),dV=Vt('\\Delta V'),VB=Vt('V_{\\mathrm{B}}'),VA=Vt('V_{\\mathrm{A}}');
@@ -22,10 +22,10 @@ function vmap({g=1,lines=1,vals=1,field=1,o=PL}={}){
 
 // ΔV = (−q∫𝐄·d𝐫)/q laid out by hand so the two q's can be marked. y: fraction bar.
 function qfrac(y,{size=58,x=640}={}){
- const num=`-${q}${INT}`,lhs=`${dV}=`,Wn=texWidth(num,size,false),Wl=texWidth(lhs,size,false);
+ const pre='-\\;',num=`${pre}${q}\\;\\;${INT}`,lhs=`${dV}=`,Wn=texWidth(num,size,false),Wl=texWidth(lhs,size,false);
  const cx=x+Wl/2,left=cx-Wn/2;
  let svg=T(lhs,cx-Wn/2-18,y+size*.02,{size,anchor:'end'})+T(num,cx,y-size*.78,{size})+line(left-6,y,left+Wn+6,y,{color:C.ink,w:3})+T(q,cx,y+size*.78,{size});
- const qn=[left+texWidth('-',size,false)+texWidth(q,size,false)*.5,y-size*.78-size*.12],qd=[cx,y+size*.78-size*.15];
+ const qn=[left+texWidth(pre,size,false)+texWidth(q,size,false)*.5+6,y-size*.78-size*.36],qd=[cx,y+size*.78-size*.15];
  return {svg,qn,qd};
 }
 
@@ -123,7 +123,7 @@ export const ytUmElectrostaticPotentialPath2Diagrams={
   s+=fade(seg(p,.1,.25),label(`W ＝ q∫𝐄·d𝐫 を 入れる`,890,110,{size:26,color:WC,weight:700}));
   const F=qfrac(330,{size:58});
   s+=fade(seg(p,.3,.5),F.svg);
-  s+=fade(seg(p,.6,.75),ring(F.qn[0],F.qn[1],30,{color:C.hi,w:3})+ring(F.qd[0],F.qd[1],30,{color:C.hi,w:3}));
+  s+=fade(seg(p,.6,.75),ring(F.qn[0],F.qn[1],24,{color:C.hi,w:3})+ring(F.qd[0],F.qd[1],24,{color:C.hi,w:3}));
   return s;
  },
  [K+'cancel']:(p)=>{
@@ -140,8 +140,8 @@ export const ytUmElectrostaticPotentialPath2Diagrams={
   return s;
  },
  [K+'base']:(p)=>{
-  let s=plane({})+AB({});
-  s+=fade(seg(p,.1,.3),ring(...P([0,0]),24,{color:VC,w:3})+label('V ＝ 0（基準）',P([0,0])[0]+30,P([0,0])[1]-30,{size:24,color:VC,weight:700}));
+  let s=plane({})+AB({lab:0})+BL('A',P([0,0])[0]-22,P([0,0])[1]+34,{size:26,color:C.ink,anchor:'end',weight:700})+BL('B',P([3,2])[0]+14,P([3,2])[1]-12,{size:26,color:C.ink,weight:700});
+  s+=fade(seg(p,.1,.3),ring(...P([0,0]),18,{color:VC,w:3})+BL('V ＝ 0（基準）',P([0,0])[0]+30,P([0,0])[1]-30,{size:24,color:VC,weight:700}));
   s+=card(680,120,470,240,L('決めたのは 差 だけ',915,180,{size:28})+fade(seg(p,.35,.5),L('V(A) ＝ 0 と 選べば',915,255,{size:28,color:VC}))+fade(seg(p,.6,.75),L('V(B) ＝ B の 電位',915,320,{size:32,color:VC,weight:700})),seg(p,.02,.15),C.faint);
   return s;
  },
@@ -172,13 +172,13 @@ export const ytUmElectrostaticPotentialPath2Diagrams={
   return s;
  },
  [K+'rev']:(p)=>{
-  let s=vmap({})+AB({});
+  let s=vmap({})+AB({bdx:16,bdy:34});
   s+=arrow(...P([2.9,1.9]),...P([.15,.1]),{color:DC,w:5,head:16,g:seg(p,.05,.35)});
   s+=card(680,120,470,230,L('B → A なら',915,185,{size:30,color:C.ink,weight:700})+T(`${VA}-${VB}=\\ ?`,915,270,{size:48}),seg(p,.2,.35),C.hi);
   return s;
  },
  [K+'revans']:(p)=>{
-  let s=vmap({})+AB({});
+  let s=vmap({})+AB({bdx:16,bdy:34});
   s+=arrow(...P([2.9,1.9]),...P([.15,.1]),{color:DC,w:5,head:16});
   s+=card(680,120,470,250,L('始点と 終点が 入れ替わる',915,180,{size:26})+fade(seg(p,.1,.3),T(`${VA}-${VB}=${Vt('+12\\ \\mathrm{V}')}`,915,260,{size:46}))+fade(seg(p,.5,.65),L('高い A へ 12 V 上る',915,335,{size:28,color:VC,weight:700})),1,C.faint);
   return s;
@@ -195,12 +195,12 @@ export const ytUmElectrostaticPotentialPath2Diagrams={
   return s;
  },
  [K+'map']:(p)=>{
-  let s=vmap({g:seg(p,.05,.3),lines:seg(p,.3,.5),vals:seg(p,.3,.5)})+AB({});
+  let s=vmap({g:seg(p,.05,.3),lines:seg(p,.3,.5),vals:seg(p,.3,.5)})+AB({bdx:16,bdy:34});
   s+=card(680,120,470,250,L('A を 基準（0 V）',915,175,{size:26,color:C.dim})+L('右へ 1 m ごとに 4 V 下がる',915,240,{size:28,color:VC,weight:700})+fade(seg(p,.6,.75),L('上下に 動いても 変わらない',915,305,{size:28})),seg(p,.1,.25),VC);
   return s;
  },
  [K+'contour']:(p)=>{
-  let s=vmap({})+AB({});
+  let s=vmap({})+AB({bdx:16,bdy:34});
   s+=fade(seg(p,.05,.2),highlight(P([1,0])[0]-12,P([1,2.2])[1],24,P([0,0])[1]-P([1,2.2])[1],1,VC));
   s+=card(680,120,470,250,L('同じ 電位の 線 ＝ 縦の 直線',915,180,{size:26,color:VC,weight:700})+fade(seg(p,.4,.55),L('𝐄 は この線と 直角',915,245,{size:28,color:EC,weight:700}))+fade(seg(p,.55,.7),L('高い 電位 → 低い 電位',915,305,{size:28,color:EC})),seg(p,.1,.25),C.faint);
   return s;
@@ -223,7 +223,7 @@ export const ytUmElectrostaticPotentialPath2Diagrams={
   const k=seg(p,.1,.9),u=1.8-1.2*Math.sin(Math.PI*k);// goes up then comes back
   const bx=X(u),by=Y(-4*u)-14;s+=ring(bx,by,13,{color:QC,w:3,fill:'#3a1d2a'})+label('+',bx,by+6,{size:20,color:QC,anchor:'middle',weight:700});
   s+=arrow(bx,by,bx+70,by+28,{color:FC,w:4,head:12});
-  s+=fade(seg(p,.05,.2)*(1-seg(p,.45,.55)),arrow(bx-10,by-20,bx-90,by-52,{color:C.v,w:4,head:12})+label('左向きの 速さ',bx-100,by-60,{size:24,color:C.v,anchor:'end',weight:700}));
+  s+=fade(seg(p,.05,.2)*(1-seg(p,.45,.55)),arrow(bx-10,by-20,bx-90,by-52,{color:C.v,w:4,head:12})+label('左向きの 速さ',bx-40,by-92,{size:24,color:C.v,anchor:'middle',weight:700}));
   s+=card(720,110,430,260,L('力の 向き：低い方',935,175,{size:26,color:FC,weight:700})+L('動く 向き：初速 しだい',935,240,{size:26,color:C.v,weight:700})+L('しばらく 高い方へ 上る',935,305,{size:26,color:C.ink}),seg(p,.3,.45),C.faint);
   return s;
  },
@@ -258,7 +258,7 @@ export const ytUmElectrostaticPotentialPath2Diagrams={
   return s;
  },
  [K+'next1']:(p)=>{
-  let s=vmap({})+AB({});
+  let s=vmap({})+AB({bdx:16,bdy:34});
   s+=card(680,120,470,250,L('電場 → 電位（今回）',915,185,{size:28})+fade(seg(p,.4,.55),L('電位の 地図 → 電場？',915,270,{size:34,color:C.hi,weight:700})),seg(p,.05,.2),C.hi);
   return s;
  },
