@@ -12,12 +12,16 @@ assert READING_MODE in ('furigana','kanji-guided')
 def request(endpoint, params, payload=None):
     req=urllib.request.Request(os.environ.get('NEMO_URL','http://127.0.0.1:50123')+'/'+endpoint+'?'+urllib.parse.urlencode(params),data=json.dumps(payload).encode() if payload is not None else b'',headers={'Content-Type':'application/json'})
     return urllib.request.urlopen(req,timeout=180).read()
-def speech(text, reading=None):
+def speech(text, reading=None, speed=None, kana=None):
     spoken=word_reading(reading) if reading is not None else spoken_text(text)
     key=hashlib.sha256(f'explicit-v1|{SPEAKER}|.90|.15|.2|{spoken}'.encode()).hexdigest()[:24] if reading is not None else speech_key(text,SPEAKER)
     key=hashlib.sha256(f'{VERSION}|{key}'.encode()).hexdigest()[:24]
     key=hashlib.sha256(f'{SPACING_VERSION}|{key}'.encode()).hexdigest()[:24]
     if READING_MODE=='kanji-guided':key=hashlib.sha256(f'{key}|kanji-guided|{spoken_text(text)}'.encode()).hexdigest()[:24]
+    # An optional slower speaking rate for dense (formula) sentences.
+    if speed is not None:key=hashlib.sha256(f'{key}|speed-{speed}'.encode()).hexdigest()[:24]
+    # Hand-set phrasing and accent (Nemo accent-kana). Its sounds must equal the furigana.
+    if kana is not None:key=hashlib.sha256(f'{key}|kana-{kana}'.encode()).hexdigest()[:24]
     file=CACHE/'speech'/f'{key}.wav'
     if not file.exists():
         query=json.loads(request('audio_query',{'text':spoken,'speaker':SPEAKER}))
@@ -28,12 +32,17 @@ def speech(text, reading=None):
             natural=spoken_text(text)
             candidate=json.loads(request('audio_query',{'text':natural,'speaker':SPEAKER}))
             query,status=guided_query(natural,candidate,spoken,reference)
+        elif kana is not None:
+            phrases=json.loads(request('accent_phrases',{'text':kana,'speaker':SPEAKER,'is_kana':'true'}))
+            query=dict(reference,accent_phrases=phrases,speedScale=.90,prePhonemeLength=.08,postPhonemeLength=.10)
+            status='accent-kana'
         else:
             compact=normalized_reading(spoken)
             candidate=json.loads(request('audio_query',{'text':compact,'speaker':SPEAKER})) if compact!=spoken else query
             query,status=spacing_query(spoken,reference,candidate)
         assert mora_signature(query)==mora_signature(reference)
         (CACHE/'speech'/f'{key}.query.json').write_text(json.dumps({'subtitle':text,'reading':spoken,'normalizedReading':normalized_reading(spoken),'spacingVersion':SPACING_VERSION,'pronunciationMatched':True,'readingMode':READING_MODE,'selection':status,'referenceKana':reference.get('kana'),'kana':query.get('kana'),'accent_phrases':query['accent_phrases']},ensure_ascii=False,indent=2))
+        if speed is not None:query['speedScale']=float(speed)
         data=request('synthesis',{'speaker':SPEAKER},query)
         with wave.open(io.BytesIO(data)) as w:
             assert w.getframerate()==24000 and w.getnchannels()==1 and w.getsampwidth()==2
@@ -81,10 +90,13 @@ for ci,clip in enumerate(plan):
         utterances=scene.get('utterances') or [{'subtitle':p+'。','reading':None} for p in scene['narration'].split('。') if p]
         for utterance in utterances:
             text=utterance['subtitle']
-            samples=speech(text,utterance.get('reading'))
+            samples=speech(text,utterance.get('reading'),utterance.get('speed'),utterance.get('kana'))
             duration=len(samples)/24000
-            scene['captions'].append({'start':start,'end':start+duration+.12,'text':text})
-            segments.append((start+.04,samples));start+=duration+.16
+            # Optional silence after a sentence so the learner can digest it; the
+            # caption (and its animation) stays on screen through the pause.
+            pause=float(utterance.get('pause') or 0)
+            scene['captions'].append({'start':start,'end':start+duration+.12+pause,'text':text})
+            segments.append((start+.04,samples));start+=duration+.16+pause
         # A short silent reading interval, not padding a thin explanation to a minute.
         start+=.55
         scene['end']=start

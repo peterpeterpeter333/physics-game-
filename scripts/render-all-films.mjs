@@ -222,7 +222,7 @@ for(const [i,entry] of plan.entries()){
  if(clip.visualPilot==='shm-advanced-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./shm-advanced-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='sine-motion-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./sine-motion-visuals.mjs',import.meta.url)));}
  if(clip.visualPilot==='motion-inserts-v1'){hash.update(readFileSync(new URL('./motion-foundation-visuals.mjs',import.meta.url)));hash.update(readFileSync(new URL('./motion-insert-visuals.mjs',import.meta.url)));}
- if(clip.visualPilot==='umech-v1')for(const f of readdirSync(new URL('./umech/',import.meta.url)).sort())hash.update(readFileSync(new URL(`./umech/${f}`,import.meta.url)));
+ if(clip.visualPilot==='umech-v1')for(const f of readdirSync(new URL('./umech/',import.meta.url)).filter(f=>f.endsWith('.mjs')).sort())hash.update(readFileSync(new URL(`./umech/${f}`,import.meta.url)));
  for(const s of clip.scenes)for(const cap of s.captions)hash.update(frame(clip,s,(cap.start+cap.end)/2));
  clip.renderKey=hash.digest('hex');
  if(process.env.FILM_STORYBOARD){
