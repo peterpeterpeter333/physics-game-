@@ -146,7 +146,7 @@ export const ytUmMomentumChange2Diagrams={
  [K+'avgcalc']:(p)=>avgScene(1,p,0),
  [K+'formula']:(p)=>avgScene(1,1,p),
  [K+'peak']:(p)=>{
-  const A=ftA();
+  const A=ftA({w:460});
   let s=A.svg+areaFill(A,.5)+box(A,0,T,600,{g:1,color:CH,fo:.06,stroke:CH,dash:'10 7'})+curve(A);
   s+=label('平均 600 N',A.X(T)+14,A.Y(600)+8,{size:24,color:CH,weight:700});
   s+=fade(seg(p,.05,.2),line(A.X(T/2),A.Y(900),A.X(T/2)+60,A.Y(900)-30,{color:CF,w:2})+label('頂上 900 N',A.X(T/2)+66,A.Y(900)-26,{size:26,color:CF,weight:700}));
@@ -239,7 +239,7 @@ function quiz1(p,q){
  return s;
 }
 function avgScene(p,q,r){
- const A=ftA();
+ const A=ftA({w:460});
  let s=A.svg+areaFill(A)+curve(A);
  s+=box(A,0,T,600,{g:seg(p,.15,.45),color:CH,fo:.12,stroke:CH,dash:'10 7'});
  s+=fade(seg(p,.4,.55),label('同じ 面積の 長方形',A.X(T)+14,A.Y(600)-10,{size:24,color:CH,weight:700}));
@@ -263,7 +263,7 @@ function wideScene(p,{hard=0,soft=0,q=0,ans=0,tenth=0,labels=0,same=0,swap=0,sho
   fade(ans,Favg(830,160,{size:36})+tex('=\\dfrac{6.0}{0.10}',920,150,{size:34,anchor:'start'})+tex(`=60${U('N')}`,980,225,{size:40}))
   +fade(tenth,label('Δp 同じ → 力は 1/10',980,295,{size:26,color:CH,anchor:'middle',weight:700}))
   +fade(same*(1-swap),label('面積：どちらも 6.0',980,295,{size:26,color:CP,anchor:'middle',weight:700}))
-  +fade(swap,label('幅 ↑ → 高さ ↓',980,295,{size:28,color:CH,anchor:'middle',weight:700})),Math.max(ans,q),CF);
+  +fade(swap,label('幅 ↑ → 高さ ↓',980,295,{size:28,color:CH,anchor:'middle',weight:700})),ans,CF);
  s+=fade(shokyu,card(800,360,360,120,label('初級：同じ面積の',980,405,{size:24,color:CD,anchor:'middle'})+label('長方形の 数値版',980,448,{size:26,color:C.ink,anchor:'middle',weight:700}),1));
  return s;
 }
@@ -275,7 +275,7 @@ function stopBall(p,q){
  if(p<.5)s+=vArrow(x+36,WY,-20,{sc:5,text:'−20 m/s'});
  else s+=fade(seg(p,.5,.65),label('止まる：v ＝ 0',HX+120,WY-50,{size:26,color:CV,weight:700}));
  s+=card(640,300,520,190,label('受け止めて 止める',900,345,{size:26,color:CD,anchor:'middle'})
-  +fade(seg(q,.05,.25),tex(cP(`\\Delta p=0-(-3.0)=3.0${PMS}`),900,410,{size:36,auto:false}))
+  +fade(1-seg(q,0,.1),label('Δp ＝ ？',900,415,{size:36,color:CP,anchor:'middle',weight:700}))+fade(seg(q,.05,.25),tex(cP(`\\Delta p=0-(-3.0)=3.0${PMS}`),900,410,{size:36,auto:false}))
   +fade(seg(q,.55,.7),label('跳ね返りの 6.0 とは 別',900,465,{size:26,color:CH,anchor:'middle',weight:700})),seg(p,.55,.7),CP);
  return s;
 }
