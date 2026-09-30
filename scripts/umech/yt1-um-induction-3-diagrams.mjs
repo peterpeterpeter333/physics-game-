@@ -7,7 +7,7 @@ import {CE,CB,CI,EMF,PHI,NC,DA,IND,NEG,SURF,RAD,cs,T,card,head,outSym,inSym,plus
 
 const K='um-induction-3:';
 const vv=cs(EMF,'\\mathbf{v}'),vB=cs(CB,'\\mathbf{B}'),Fc=C.F;
-const BLV=`${cs(CB,'B')}l${cs(EMF,'v')}`;
+const BLV=`${cs(CB,'B')}\\ell ${cs(EMF,'v')}`;
 function minus(x,y,r=15){return ring(x,y,r,{color:'#6f9dff',w:3,fill:'#1b2640'})+label('−',x,y+7,{size:22,color:'#6f9dff',anchor:'middle',weight:700});}
 
 // ---- rails ------------------------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ function rails({xr=380,g=1,bG=1,bN=1,res=1,rod=1,vG=0,lG=0,cur=0,loopG=0,rodCol=
   s+=draw(zz,1,{color:SURF,w:4})+label('R',x-26,(RL.yt+RL.yb)/2+10,{size:28,color:SURF,anchor:'end',weight:700});}
  if(rod)s+=line(xr,RL.yt-22,xr,RL.yb+22,{color:rodCol,w:9});
  if(vG>0)s+=fade(vG,arrow(xr+14,(RL.yt+RL.yb)/2,xr+104,(RL.yt+RL.yb)/2,{color:EMF,w:5,head:16})+label('v',xr+60,(RL.yt+RL.yb)/2-14,{size:30,color:EMF,anchor:'middle',weight:700}));
- if(lG>0)s+=fade(lG,line(xr+36,RL.yt,xr+36,RL.yb,{color:C.dim,w:2,dash:'6 5'})+label('l',xr+46,RL.yt+70,{size:30,color:C.ink,weight:700}));
+ if(lG>0)s+=fade(lG,line(xr+36,RL.yt,xr+36,RL.yb,{color:C.dim,w:2,dash:'6 5'})+label('ℓ',xr+46,RL.yb-40,{size:30,color:C.ink,weight:700}));
  if(cur>0){// counter-clockwise: rod up, top rail left, resistor down, bottom rail right
   const my=(RL.yt+RL.yb)/2;
   s+=fade(cur,head(xr,my-30,0,-1,{color:CI,L:24})+head((RL.x0+xr)/2-20,RL.yt,-1,0,{color:CI,L:22})+head(RL.x0,my+60,0,1,{color:CI,L:20})+head((RL.x0+xr)/2+20,RL.yb,1,0,{color:CI,L:22}));
@@ -64,7 +64,7 @@ export const ytUmInduction3Diagrams={
  // ===== S2 動く棒と磁束 =====
  [K+'setup']:(p)=>{
   let s=rails({bG:0,rod:seg(p,.45,.6)>0?1:0,lG:seg(p,.6,.8),g:seg(p,0,.2)});
-  s+=card(760,120,390,240,label('2本の 平行な レール',955,185,{size:26,color:C.ink,anchor:'middle'})+label('左端に 抵抗 R',955,235,{size:26,color:C.ink,anchor:'middle'})+fade(seg(p,.5,.65),label('長さ l の 棒',955,300,{size:30,color:C.ink,anchor:'middle',weight:700})),seg(p,.1,.25));
+  s+=card(760,120,390,240,label('2本の 平行な レール',955,185,{size:26,color:C.ink,anchor:'middle'})+label('左端に 抵抗 R',955,235,{size:26,color:C.ink,anchor:'middle'})+fade(seg(p,.5,.65),label('長さ ℓ の 棒',955,300,{size:30,color:C.ink,anchor:'middle',weight:700})),seg(p,.1,.25));
   return s;
  },
  [K+'field']:(p)=>{
@@ -90,13 +90,13 @@ export const ytUmInduction3Diagrams={
   s+=fade(seg(p,.1,.3),line(x1,RL.yt-22,x1,RL.yb+22,{color:SURF,w:4,dash:'8 6',opacity:.6})+label('t',x1,RL.yt-34,{size:24,color:C.t,anchor:'middle'}));
   s+=strip(x1,x2,seg(p,.35,.7));
   s+=fade(seg(p,.6,.75),label('t＋Δt',x2,RL.yt-34,{size:24,color:C.t,anchor:'middle'})+line(x1,RL.yb+44,x2,RL.yb+44,{color:DA,w:3})+label('vΔt',(x1+x2)/2,RL.yb+80,{size:28,color:DA,anchor:'middle',weight:700}));
-  s+=card(760,120,390,240,label('増える 面積',955,190,{size:28,color:C.ink,anchor:'middle'})+fade(seg(p,.75,.9),T(`l\\times ${cs(EMF,'v')}\\Delta ${tt}`,955,280,{size:48,color:DA})),seg(p,.05,.2));
+  s+=card(760,120,390,240,label('増える 面積',955,190,{size:28,color:C.ink,anchor:'middle'})+fade(seg(p,.75,.9),T(`\\ell\\times ${cs(EMF,'v')}\\Delta ${tt}`,955,280,{size:48,color:DA})),seg(p,.05,.2));
   return s;
  },
  [K+'flux']:(p)=>{
-  let s=T(`\\Delta${PH}=${cs(CB,'B')}\\times l${cs(EMF,'v')}\\Delta ${tt}`,600,150,{size:54});
-  s+=fade(seg(p,.4,.6),T(`\\dfrac{\\Delta${PH}}{\\Delta ${tt}}=${BLV}`,600,330,{size:58}));
-  s+=fade(seg(p,.1,.3),label('𝐁 は 面に 垂直',600,240,{size:26,color:C.dim,anchor:'middle'}));
+  let s=T(`\\Delta${PH}=${cs(CB,'B')}\\times \\ell ${cs(EMF,'v')}\\Delta ${tt}`,600,150,{size:54});
+  s+=fade(seg(p,.4,.6),T(`\\dfrac{\\Delta${PH}}{\\Delta ${tt}}=${BLV}`,600,380,{size:58}));
+  s+=fade(seg(p,.1,.3),label('𝐁 は 面に 垂直',600,235,{size:26,color:C.dim,anchor:'middle'}));
   return s;
  },
  [K+'emf']:(p)=>{
@@ -112,7 +112,7 @@ export const ytUmInduction3Diagrams={
  },
  [K+'dir']:(p)=>{
   let s=rails({xr:460,vG:1,bN:mix(1,1.4,seg(p,.05,.5))});
-  s+=fade(seg(p,.4,.6),outSym(275,260,34,IND)+label('誘導の磁場（⊙）',275,330,{size:24,color:IND,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.4,.6),outSym(275,260,34,IND)+rect(185,308,180,34,{fill:C.bg,fo:.85,stroke:'none',rx:6})+label('誘導の磁場（⊙）',275,332,{size:24,color:IND,anchor:'middle',weight:700}));
   s+=card(760,110,390,260,label('奥向きの 磁束が 増える',955,175,{size:26,color:CB,anchor:'middle',weight:700})+label('妨げる：',955,240,{size:26,color:C.ink,anchor:'middle'})+label('手前向き（⊙）の 磁場',955,295,{size:28,color:IND,anchor:'middle',weight:700}),seg(p,.1,.25));
   return s;
  },
@@ -134,7 +134,7 @@ export const ytUmInduction3Diagrams={
   const y=260;
   s+=arrow(RZ.x+40,y+30,RZ.x+140,y+30,{color:EMF,w:5,head:16})+label('𝐯 右',RZ.x+150,y+40,{size:26,color:EMF,weight:700});
   s+=fade(seg(p,.4,.55),label('𝐁 奥向き（⊗）',RZ.x+150,y+100,{size:26,color:CB,weight:700}));
-  s+=fade(seg(p,.6,.8),arrow(RZ.x,y-10,RZ.x,y-150,{color:Fc,w:8,head:22})+label('𝐯×𝐁：上',RZ.x+30,y-110,{size:28,color:Fc,weight:700}));
+  s+=fade(seg(p,.6,.8),arrow(RZ.x+50,y-10,RZ.x+50,y-150,{color:Fc,w:8,head:22})+label('𝐯×𝐁：上',RZ.x+70,y-110,{size:28,color:Fc,weight:700}));
   s+=card(700,120,450,240,T(`\\mathbf{F}=q\\,${vv}\\times${vB}`,925,210,{size:50,color:Fc})+label('ローレンツ力・中級',925,300,{size:24,color:C.dim,anchor:'middle'}),seg(p,.05,.2));
   return s;
  },
@@ -154,15 +154,15 @@ export const ytUmInduction3Diagrams={
  },
  [K+'work']:(p)=>{
   let s=bigRod({charges:0});
-  s+=line(RZ.x+50,RZ.yt,RZ.x+50,RZ.yb,{color:C.dim,w:2,dash:'6 5'})+label('l',RZ.x+62,(RZ.yt+RZ.yb)/2,{size:30,color:C.ink,weight:700});
+  s+=line(RZ.x+50,RZ.yt,RZ.x+50,RZ.yb,{color:C.dim,w:2,dash:'6 5'})+label('ℓ',RZ.x+62,(RZ.yt+RZ.yb)/2,{size:30,color:C.ink,weight:700});
   const y=mix(RZ.yb-30,RZ.yt+30,seg(p,.3,.9));s+=plusCharge(RZ.x,y,15)+arrow(RZ.x,y-20,RZ.x,y-80,{color:Fc,w:5,head:14});
-  s+=card(700,90,450,320,label('1 C あたりの 力',925,145,{size:26,color:C.dim,anchor:'middle'})+T(`${cs(EMF,'v')}${cs(CB,'B')}`,925,205,{size:44,color:Fc})+fade(seg(p,.4,.6),label('長さ l だけ 押す',925,270,{size:26,color:C.dim,anchor:'middle'})+T(`${cs(EMF,'v')}${cs(CB,'B')}\\times l`,925,340,{size:44})),seg(p,.05,.2));
+  s+=card(700,90,450,320,label('1 C あたりの 力',925,145,{size:26,color:C.dim,anchor:'middle'})+T(`${cs(EMF,'v')}${cs(CB,'B')}`,925,205,{size:44,color:Fc})+fade(seg(p,.4,.6),label('長さ ℓ だけ 押す',925,270,{size:26,color:C.dim,anchor:'middle'})+T(`${cs(EMF,'v')}${cs(CB,'B')}\\times \\ell`,925,340,{size:44})),seg(p,.05,.2));
   return s;
  },
  [K+'same']:(p)=>{
   let s=card(90,120,460,260,label('面積の 増え方',320,185,{size:28,color:PHI,anchor:'middle',weight:700})+T(`${DPHI}=${BLV}`,320,285,{size:40}),seg(p,.02,.15),PHI);
-  s+=card(650,120,460,260,label('動く電荷の 力',880,185,{size:28,color:Fc,anchor:'middle',weight:700})+T(`${cs(EMF,'v')}${cs(CB,'B')}\\times l`,880,285,{size:44}),seg(p,.02,.15),Fc);
-  s+=fade(seg(p,.3,.5),label('＝',600,265,{size:50,color:C.hi,anchor:'middle',weight:700})+label('同じ 起電力 Blv',600,450,{size:30,color:EMF,anchor:'middle',weight:700}));
+  s+=card(650,120,460,260,label('動く電荷の 力',880,185,{size:28,color:Fc,anchor:'middle',weight:700})+T(`${cs(EMF,'v')}${cs(CB,'B')}\\times \\ell`,880,285,{size:44}),seg(p,.02,.15),Fc);
+  s+=fade(seg(p,.3,.5),label('＝',600,265,{size:50,color:C.hi,anchor:'middle',weight:700})+label('同じ 起電力 Bℓv',600,450,{size:30,color:EMF,anchor:'middle',weight:700}));
   return s;
  },
  [K+'two']:(p)=>{
@@ -194,7 +194,7 @@ export const ytUmInduction3Diagrams={
  },
  [K+'drag']:(p)=>{
   let s=rails({xr:460,vG:1,cur:1});
-  s+=fade(seg(p,.3,.5),arrow(446,300,330,300,{color:Fc,w:8,head:22})+label('IlB',380,285,{size:30,color:Fc,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.3,.5),arrow(446,300,330,300,{color:Fc,w:8,head:22})+T(`I\\ell B`,380,280,{size:34,color:Fc}));
   s+=card(760,110,390,260,label('電流 上 × 𝐁 奥',955,180,{size:28,color:C.ink,anchor:'middle'})+fade(seg(p,.4,.6),label('力は 左',955,245,{size:32,color:Fc,anchor:'middle',weight:700})+label('＝ 動きと 逆',955,305,{size:30,color:NEG,anchor:'middle',weight:700})),seg(p,.05,.2));
   return s;
  },
@@ -216,12 +216,12 @@ export const ytUmInduction3Diagrams={
  },
  // ===== S5 数で確かめる =====
  [K+'num']:(p)=>{
-  const rows=[['磁場 B','0.5 T'],['棒の長さ l','0.2 m'],['速さ v','3 m/s']];
+  const rows=[['磁場 B','0.5 T'],['棒の長さ ℓ','0.2 m'],['速さ v','3 m/s']];
   let s='';rows.forEach(([a,b],i)=>{s+=fade(seg(p,.05+i*.2,.2+i*.2),label(a,520,170+i*90,{size:34,color:C.ink,anchor:'end'})+label(b,570,170+i*90,{size:36,color:C.hi,weight:700}));});
   return s;
  },
  [K+'num2']:(p)=>{
-  let s=T(`l${cs(EMF,'v')}=0.2\\times3=0.6\\,\\mathrm{m^2/s}`,600,110,{size:46});
+  let s=T(`\\ell ${cs(EMF,'v')}=0.2\\times3=0.6\\,\\mathrm{m^2/s}`,600,110,{size:46});
   s+=fade(seg(p,.3,.5),T(`${DPHI}=0.5\\times0.6=0.3\\,\\mathrm{Wb/s}`,600,240,{size:46}));
   s+=fade(seg(p,.6,.8),T(`|${EM}|=0.3\\,\\mathrm{V}`,600,380,{size:58}));
   return s;
@@ -241,14 +241,14 @@ export const ytUmInduction3Diagrams={
  },
  [K+'current']:(p)=>{
   let s=rails({xr:460,vG:1,cur:seg(p,.3,.5),bG:.6});
-  s+=label('0.6 Ω',RL.x0+20,(RL.yt+RL.yb)/2+10,{size:26,color:SURF,weight:700});
+  s+=label('R ＝ 0.6 Ω',RL.x0-20,RL.yb+95,{size:26,color:SURF,weight:700});
   s+=card(740,110,410,260,T(`I=\\dfrac{${EM}}{R}`,945,190,{size:44,color:CI})+fade(seg(p,.4,.6),T(`=\\dfrac{0.3}{0.6}=0.5\\,\\mathrm{A}`,945,300,{size:42})),seg(p,.05,.2),CI);
   return s;
  },
  [K+'dragnum']:(p)=>{
   let s=rails({xr:460,vG:1,cur:1,bG:.6});
   s+=arrow(446,300,330,300,{color:Fc,w:8,head:22});
-  s+=card(740,110,410,260,T(`IlB`,945,180,{size:44,color:Fc})+fade(seg(p,.3,.5),T(`=0.5\\times0.2\\times0.5`,945,250,{size:36})+T(`=0.05\\,\\mathrm{N}`,945,320,{size:40})),seg(p,.05,.2),Fc);
+  s+=card(740,110,410,260,T(`I\\ell B`,945,180,{size:44,color:Fc})+fade(seg(p,.3,.5),T(`=0.5\\times0.2\\times0.5`,945,250,{size:36})+T(`=0.05\\,\\mathrm{N}`,945,320,{size:40})),seg(p,.05,.2),Fc);
   return s;
  },
  [K+'power']:(p)=>{
@@ -276,8 +276,8 @@ export const ytUmInduction3Diagrams={
  // ===== S6 まとめと次の問い =====
  [K+'sum1']:(p)=>{
   let s=T(`|${EM}|=${BLV}`,600,110,{size:56});
-  s+=card(90,200,460,200,label('面積の 増え方',320,270,{size:28,color:PHI,anchor:'middle',weight:700})+T(`${cs(CB,'B')}\\times l${cs(EMF,'v')}`,320,345,{size:40}),seg(p,.15,.3),PHI);
-  s+=card(650,200,460,200,label('動く電荷への 磁気力',880,270,{size:28,color:Fc,anchor:'middle',weight:700})+T(`${cs(EMF,'v')}${cs(CB,'B')}\\times l`,880,345,{size:40}),seg(p,.4,.55),Fc);
+  s+=card(90,200,460,200,label('面積の 増え方',320,270,{size:28,color:PHI,anchor:'middle',weight:700})+T(`${cs(CB,'B')}\\times \\ell ${cs(EMF,'v')}`,320,345,{size:40}),seg(p,.15,.3),PHI);
+  s+=card(650,200,460,200,label('動く電荷への 磁気力',880,270,{size:28,color:Fc,anchor:'middle',weight:700})+T(`${cs(EMF,'v')}${cs(CB,'B')}\\times \\ell`,880,345,{size:40}),seg(p,.4,.55),Fc);
   return s;
  },
  [K+'sum2']:(p)=>{
