@@ -134,7 +134,7 @@ export const ytReferenceFrameM3Diagrams={
   let s=rect(cx-170,cy-90,340,180,{fill:'#141d33',fo:1,stroke:C.dim,sw:3,rx:20})+label('ステーション',cx,cy-110,{size:24,color:C.dim,anchor:'middle'});
   const bob=6*Math.sin(p*8);
   s+=person(cx-40,cy+40+bob,80,{color:C.hi});
-  s+=arrow(cx+200,cy-30,cx+200,cy+60,{color:C.a,w:5})+label('8.7 m/s²',cx+212,cy+30,{size:22,color:C.a});
+  s+=arrow(cx+230,cy-40,cx+230,cy+50,{color:C.a,w:5})+label('8.7 m/s²',cx+230,cy+85,{size:22,color:C.a,anchor:'middle'});
   s+=arrow(cx-40,cy+60+bob,cx-40,cy+140,{color:C.a,w:5})+label('8.7 m/s²',cx-28,cy+130,{size:22,color:C.a});
   s+=label('↓ 地球の向き',cx,490,{size:24,color:C.dim,anchor:'middle'});
   s+=card(620,90,540,330,label('人も ステーションも',890,150,{size:28,color:C.ink,anchor:'middle'})+label('同じ加速度で 一緒に落ちる',890,210,{size:30,color:C.a,anchor:'middle',weight:700})
@@ -182,7 +182,7 @@ function orbitZoom(p,k){
  if(k>=2){const d=300*(k===2?seg(p,.1,.5):1),th=Math.asin(d/R),yc=cy-R*Math.cos(th);
   s+=line(mx,my,mx+320,my,{color:C.v,w:2.5,dash:'7 6'});
   s+=dot(mx+d,yc,10,MOON);
-  s+=fade(k===2?seg(p,.5,.7):1,line(mx+300,my,mx+300,cy-Math.sqrt(R*R-300*300),{color:C.hi,w:4})+label('落ちる 約 1.4 mm',mx+312,my+40,{size:22,color:C.hi})+label('横へ 約 1 km',mx+150,my-16,{size:22,color:C.v,anchor:'middle'}));
+  s+=fade(k===2?seg(p,.5,.7):1,line(mx+300,my,mx+300,cy-Math.sqrt(R*R-300*300),{color:C.hi,w:4})+(k===2?label('落ちる 約 1.4 mm',mx+300,my+118,{size:22,color:C.hi,anchor:'middle'}):'')+label('横へ 約 1 km',mx+150,my-16,{size:22,color:C.v,anchor:'middle'}));
  }
  if(k===2)c=label('1秒あたり',925,150,{size:26,color:C.dim,anchor:'middle'})+label('横へ 約 1 km',925,210,{size:30,color:C.v,anchor:'middle'})+label('まっすぐな線から',925,270,{size:26,color:C.ink,anchor:'middle'})+label('約 1.4 mm 落ちる',925,325,{size:30,color:C.hi,anchor:'middle',weight:700})+fade(seg(p,.6,.8),T(`\\tfrac12\\times0.00271\\times1^2`,925,390,{size:30}));
  if(k===3){const n=Math.floor(6*seg(p,.1,.7));for(let i=1;i<=n;i++){const a=i*.1;s+=dot(cx+R*Math.sin(a),cy-R*Math.cos(a),8,MOON);}
