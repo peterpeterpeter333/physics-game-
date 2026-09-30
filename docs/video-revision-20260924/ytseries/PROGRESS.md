@@ -114,7 +114,9 @@
 | 22 | 電位 um-electrostatic-potential-path | 1/3 | ys-um-electrostatic-potential-path-1 | 5:10 | 検 読 静 復 | —（初級の「道によらない」の確かめを回収。一般の静電場は上級。コンテナ再起動後に仕上げ） |
 | 22 | 〃 | 2/3 | ys-um-electrostatic-potential-path-2 | 4:54 | 検 読 静 復 | —（標高の比喩：対応する／しないを明示） |
 | 22 | 〃 | 3/3 | ys-um-electrostatic-potential-path-3 | 5:30 | 検 読 静 復 | —（V＝kQ/r を差の商で確かめ。∮≠0 は電磁誘導へ） |
+| 23 | コンデンサ um-capacitance | 1/2 | ys-um-capacitance-1 | 5:43 | 検 読 静 復 | —（1枚の板 σ/(2ε₀) は結果として使うと明言。重ね合わせで外は 0。コンテナ再起動後に仕上げ） |
+| 23 | 〃 | 2/2 | ys-um-capacitance-2 | 5:24 | 検 読 静 復 | —（C＝ε₀S/d で Q が約分。電子の向きを統括でも確認。誘電体は上級と明言） |
 
 - 色の約束（中級）：電流 I 緑、起電力 ℰ 紫（電圧と同じ）。
 - 04〜06 はクラウド（Linux 版 NEMO 0.24.0）で制作。mp4 は `ytseries/mp4/`。
-- 作業中：23 コンデンサ、24 電流。
+- 作業中：24 電流、25 ローレンツ力、26 アンペールの法則。
