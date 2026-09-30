@@ -29,7 +29,7 @@ export function rightMark(x,y,dx,dy,sz=14,color=C.ink){// corner at (x,y), legs 
 // ---- the plane with the uniform field ------------------------------------------------------------------
 export const PL={x0:150,y0:430,S:115};
 export const P=([u,v],o=PL)=>[o.x0+o.S*u,o.y0-o.S*v];
-export function plane({g=1,field=1,fop=.42,xmax=3.6,ymax=2.6,o=PL,grid=1,xt=[1,2,3]}={}){
+export function plane({g=1,field=1,fop=.42,xmax=3.6,ymax=2.6,o=PL,grid=1,xt=[1,2,3],rows=[.5,1.5,2.35]}={}){
  let s='';
  s+=fade(g*grid,[...Array(Math.floor(xmax)+1).keys()].slice(1).map(u=>line(P([u,0],o)[0],o.y0,P([u,0],o)[0],P([0,ymax-.2],o)[1],{color:C.grid,w:1.5})).join('')
   +[1,2].filter(v=>v<ymax).map(v=>line(o.x0,P([0,v],o)[1],P([xmax-.1,0],o)[0],P([0,v],o)[1],{color:C.grid,w:1.5})).join(''));
@@ -37,7 +37,7 @@ export function plane({g=1,field=1,fop=.42,xmax=3.6,ymax=2.6,o=PL,grid=1,xt=[1,2
   +label('x [m]',P([xmax,0],o)[0]+26,o.y0+8,{size:22,color:C.dim})+label('y [m]',o.x0,P([0,ymax],o)[1]-10,{size:22,color:C.dim,anchor:'middle'})
   +xt.map(u=>label(String(u),P([u,0],o)[0],o.y0+30,{size:22,color:C.dim,anchor:'middle'})).join('')
   +[1,2].filter(v=>v<ymax).map(v=>label(String(v),o.x0-14,P([0,v],o)[1]+8,{size:22,color:C.dim,anchor:'end'})).join(''));
- let f='';for(let u=.35;u<xmax-.3;u+=1)for(const v of [.5,1.5,2.35].filter(v=>v<ymax-.1)){const [x,y]=P([u,v],o);f+=arrow(x,y,x+o.S*.55,y,{color:EC,w:3,head:11,opacity:fop});}
+ let f='';for(let u=.35;u<xmax-.3;u+=1)for(const v of rows.filter(v=>v<ymax-.1)){const [x,y]=P([u,v],o);f+=arrow(x,y,x+o.S*.55,y,{color:EC,w:3,head:11,opacity:fop});}
  return s+fade(g*field,f);
 }
 export function AB({g=1,o=PL,lab=1}={}){
