@@ -27,7 +27,7 @@ function pend(th,{cx=380,py=40,Lp=250,g=1,R=24,path=1,vert=1,grav=0,split=0,tens
   s+=fade(arcHi,draw(pts,1,{color:CL,w:7}));
  }
  s+=line(cx,py,bx,by,{color:lLab?CL:C.ink,w:3})+dot(cx,py,7,C.dim);
- if(lLab)s+=fade(lLab,label('l',cx+Lp*.55*sn-24,py+Lp*.55*cs,{size:34,color:CL,weight:700,anchor:'end'}));
+ if(lLab)s+=fade(lLab,T(LL,cx+Lp*.62*sn+22,py+Lp*.62*cs-4,34,{auto:false}));
  if(thPivot&&Math.abs(th)>.02){
   const r=70,n=20,pts=Array.from({length:n+1},(_,i)=>{const a=th*i/n;return [cx+r*Math.sin(a),py+r*Math.cos(a)];});
   s+=fade(thPivot,draw(pts,1,{color:CTH,w:4})+T(TH,cx+(r+26)*Math.sin(th/2),py+(r+26)*Math.cos(th/2)+10,30,{auto:false}));
@@ -68,13 +68,19 @@ const trueAt=t=>TRUE[clamp(Math.round(t/DT),0,NT)];
 const approxAt=t=>TH30*Math.cos(W0*t);
 
 // ---- sin θ vs θ graph ---------------------------------------------------------------------------------
-function sinGraph({g=1,lin=1,x=90,y=455,w=520,h=390,xmax=1.6,ymax=1.6}={}){
- const A=axes({x,y,w,h,xmin:0,xmax,ymin:0,ymax,xlabel:'θ [rad]',ylabel:'',xticks:[.5,1,1.5],yticks:[.5,1,1.5],grid:true,g,xcolor:CTH});
+function sinGraph({g=1,lin=1,x=90,y=455,w=520,h=390,xmax=1.6,ymax=1.6,ticks=[.5,1,1.5]}={}){
+ const A=axes({x,y,w,h,xmin:0,xmax,ymin:0,ymax,xlabel:'θ [rad]',ylabel:'',xticks:ticks,yticks:ticks,grid:true,g,xcolor:CTH});
  let s=A.svg+A.plot(Math.sin,{color:C.F,w:4.5});
  s+=fade(lin*g,A.plot(u=>u,{from:0,to:Math.min(xmax,ymax),color:C.hi,w:3.5,dash:'10 7'}));
  return {A,svg:s};
 }
 
+// a row of TeX pieces placed left to right, centred as a whole at cx; gs[i] = visibility of piece i
+const GAP=18;
+function chain(parts,cx,y,size,gs){
+ const ws=parts.map(q=>texWidth(q,size,false)),W=ws.reduce((a,b)=>a+b,0)+GAP*(parts.length-1);let x=cx-W/2,out='';
+ parts.forEach((q,i)=>{out+=fade(gs[i]??1,T(q,x,y,size,{auto:false,anchor:'start'}));x+=ws[i]+GAP;});return out;
+}
 // swinging helper: amplitude a, cycles over p
 const swing=(p,a=.45,cyc=1.3)=>a*Math.cos(TAU*cyc*p);
 
@@ -100,24 +106,26 @@ export const ytUmPendulum1Diagrams={
   s+=card(760,300,400,120,label('この向きの 式は？',960,372,{size:34,color:C.hi,anchor:'middle',weight:700}),seg(p,.65,.8),C.hi);
   return s;
  },
- [K+'promise']:(p)=>{
-  let s=card(80,40,1040,180,label('初級で 導かずに 使った式',600,88,{size:26,color:C.dim,anchor:'middle'})
-   +T(`${TT}\\approx2\\pi\\sqrt{\\dfrac{L}{g}}`,600,165,50,{auto:false}),seg(p,0,.15));
-  s+=card(80,260,1040,180,label('初級で 式に しなかったこと',600,308,{size:26,color:C.dim,anchor:'middle'})
-   +label('戻す力 は ずれに ほぼ 比例',600,390,{size:34,color:C.F,anchor:'middle',weight:700}),seg(p,.5,.65));
+  [K+'promise']:(p)=>{
+  let s=card(80,30,1040,215,label('初級で 導かずに 使った式',600,72,{size:26,color:C.dim,anchor:'middle'})
+   +T(`${TT}\\approx2\\pi\\sqrt{\\dfrac{L}{g}}`,600,190,44,{auto:false}),seg(p,0,.15));
+  s+=card(80,275,1040,175,label('初級で 式に しなかったこと',600,322,{size:26,color:C.dim,anchor:'middle'})
+   +label('戻す力 は ずれに ほぼ 比例',600,400,{size:34,color:C.F,anchor:'middle',weight:700}),seg(p,.5,.65));
   s+=fade(seg(p,.25,.4),label('→ 今回 導く',1000,190,{size:26,color:C.hi,weight:700,anchor:'middle'}));
-  s+=fade(seg(p,.75,.9),label('→ 今回 式に',1000,410,{size:26,color:C.hi,weight:700,anchor:'middle'}));
+  s+=fade(seg(p,.75,.9),label('→ 今回 式に',1000,420,{size:26,color:C.hi,weight:700,anchor:'middle'}));
   return s;
  },
- [K+'ask']:(p)=>{
+
+  [K+'ask']:(p)=>{
   const th=swing(p,.45,1.3);
   let s=pend(th,{cx:300,py:40,Lp:300,thMax:.5,mtext:''});
-  s+=card(610,90,540,300,label('振り子の 周期',880,150,{size:30,color:C.ink,anchor:'middle'})
-   +T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,880,235,50,{auto:false})
-   +fade(seg(p,.35,.5),label('どう 導かれ、',880,315,{size:32,color:C.hi,anchor:'middle',weight:700}))
-   +fade(seg(p,.55,.7),label('どこまで 正しい？',880,365,{size:32,color:C.hi,anchor:'middle',weight:700})),seg(p,0,.15),C.hi);
+  s+=card(610,60,540,380,label('振り子の 周期',880,110,{size:30,color:C.ink,anchor:'middle'})
+   +T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,880,245,48,{auto:false})
+   +fade(seg(p,.35,.5),label('どう 導かれ、',880,340,{size:32,color:C.hi,anchor:'middle',weight:700}))
+   +fade(seg(p,.55,.7),label('どこまで 正しい？',880,395,{size:32,color:C.hi,anchor:'middle',weight:700})),seg(p,0,.15),C.hi);
   return s;
  },
+
  [K+'plan']:(p)=>{
   let s='';
   const items=[['① 力を 成分に 分ける（内積の 影）',C.F],['② 接線方向に ma ＝ F',C.a],['③ 近似 sinθ ≈ θ（近似の 回）',C.hi]];
@@ -129,7 +137,7 @@ export const ytUmPendulum1Diagrams={
  [K+'setup']:(p)=>{
   const th=TH30*seg(p,.05,.3);
   let s=pend(th,{lLab:seg(p,.05,.2),thPivot:seg(p,.3,.45),plusDir:seg(p,.6,.75),path:1});
-  s+=card(720,70,440,300,label('l：糸の 長さ',760,140,{size:30,color:CL,weight:700})
+  s+=card(720,70,440,300,T(LL,775,132,36,{auto:false})+label('：糸の 長さ',790,140,{size:30,color:CL,weight:700})
    +label('m：おもりの 質量',760,200,{size:30,color:C.ink,weight:700})
    +fade(seg(p,.3,.45),label('θ：真下から 測った 振れ角',760,260,{size:28,color:CTH,weight:700}))
    +fade(seg(p,.6,.75),label('右へ 振れる 向きが ＋',760,320,{size:28,color:C.hi,weight:700})),seg(p,.05,.2));
@@ -143,7 +151,7 @@ export const ytUmPendulum1Diagrams={
   return s;
  },
  [K+'forces']:(p)=>{
-  let s=pend(TH30,{tens:seg(p,.15,.35),grav:seg(p,.5,.7),thPivot:.5});
+  let s=pend(TH30,{tens:seg(p,.15,.35),grav:seg(p,.5,.7)});
   s+=card(720,120,440,200,fade(seg(p,.15,.35),label('糸の力（支点の方へ）',760,190,{size:28,color:CR,weight:700}))
    +fade(seg(p,.5,.7),label('重力 mg（真下向き）',760,260,{size:28,color:C.F,weight:700})),seg(p,.1,.25));
   return s;
@@ -152,7 +160,7 @@ export const ytUmPendulum1Diagrams={
   let s=pend(TH30,{grav:1,split:seg(p,.35,.7),tanLab:'',radLab:''});
   s+=card(720,70,440,300,label('内積の 回の 影',940,130,{size:28,color:C.dim,anchor:'middle'})
    +fade(seg(p,.55,.75),label('糸の 方向 へ の 影',760,210,{size:28,color:CR,weight:700}))
-   +fade(seg(p,.65,.85),label('接線（円弧に 沿う）方向 へ の 影',760,280,{size:26,color:C.F,weight:700}))
+   +fade(seg(p,.65,.85),label('接線の 方向 へ の 影',760,280,{size:28,color:C.F,weight:700}))
    +fade(seg(p,.75,.9),label('二つを 足すと 元の mg',760,340,{size:24,color:C.dim})),seg(p,.05,.2));
   return s;
  },
@@ -180,7 +188,7 @@ export const ytUmPendulum1Diagrams={
   return s;
  },
  [K+'num']:(p)=>{
-  let s=pend(TH30,{grav:1,split:1,radHi:.3,mtext:'1 kg',R:30,thPivot:1,tanLab:seg(p,.6,.75)>0?'4.9 N':''});
+  let s=pend(TH30,{grav:1,split:1,radHi:.3,mtext:'',thPivot:1,tanLab:seg(p,.6,.75)>0?'4.9 N':''});
   s+=card(680,60,490,380,label('1 kg、θ ＝ 30°',925,115,{size:30,color:C.ink,anchor:'middle',weight:700})
    +fade(seg(p,.15,.3),T('mg=1\\times9.8=9.8\\ \\mathrm{N}',925,185,34,{auto:false,color:C.F}))
    +fade(seg(p,.3,.45),T('\\sin30^\\circ=0.5',925,255,34,{auto:false}))
@@ -254,14 +262,16 @@ export const ytUmPendulum1Diagrams={
   s+=fade(seg(p,.7,.85),label('両辺を m で 割る → 打ち消し合う',600,390,{size:30,color:C.hi,anchor:'middle',weight:700}));
   return s;
  },
- [K+'cancel2']:(p)=>{
-  let s=card(80,50,1040,400,'',1);
-  s+=T(`${DDTa}=-g\\,${SIN}`,600,150,50,{auto:false});
-  s+=fade(seg(p,.1,.3),label('両辺を l で 割る',600,245,{size:28,color:CL,anchor:'middle'}));
-  s+=fade(seg(p,.3,.5),T(`${DDT}=-\\dfrac{g}{${LL}}\\,${SIN}`,600,345,56,{auto:false}));
-  s+=fade(seg(p,.55,.7),highlight(330,285,540,120,1));
+  [K+'cancel2']:(p)=>{
+  let s=card(80,30,1040,430,'',1);
+  s+=T(`${DDTa}=-g\\,${SIN}`,600,140,48,{auto:false});
+  s+=fade(seg(p,.1,.3),label('両辺を l で 割る',600,235,{size:28,color:CL,anchor:'middle'}));
+  const f=`${DDT}=-\\dfrac{g}{${LL}}\\,${SIN}`,w=texWidth(f,54,false);
+  s+=fade(seg(p,.3,.5),T(f,600,370,54,{auto:false}));
+  s+=fade(seg(p,.55,.7),highlight(600-w/2-30,275,w+60,140,1));
   return s;
  },
+
  [K+'mass']:(p)=>{
   const th=swing(p,.4,1.4);
   let s=pend(th,{cx:230,py:40,Lp:260,mtext:'1 kg',R:26,thMax:.45});
@@ -271,13 +281,16 @@ export const ytUmPendulum1Diagrams={
    +label('式に m が ない',1015,340,{size:24,color:C.dim,anchor:'middle'}),seg(p,.1,.25),C.hi);
   return s;
  },
- [K+'problem']:(p)=>{
-  let s=card(60,60,520,300,label('振り子',320,110,{size:28,color:C.dim,anchor:'middle'})+T(`${DDT}=-\\dfrac{g}{${LL}}\\,${SIN}`,320,215,46,{auto:false}),1);
-  s+=card(620,60,520,300,label('振動の 方程式（ばね）',880,110,{size:28,color:C.dim,anchor:'middle'})+T(`\\dfrac{d^2x}{dt^2}=-${WW}^2x`,880,215,46,{auto:false}),seg(p,.25,.4));
-  s+=fade(seg(p,.45,.6),highlight(430,175,120,80,1,CD)+highlight(1020,175,70,80,1,CD));
+  [K+'problem']:(p)=>{
+  const f1=`${DDT}=-\\dfrac{g}{${LL}}\\,${SIN}`,f2=`\\dfrac{d^2x}{dt^2}=-${WW}^2x`,w1=texWidth(f1,46,false),w2=texWidth(f2,46,false);
+  const p1=texWidth(SIN,46,false),p2=texWidth('x',46,false);
+  let s=card(60,60,520,300,label('振り子',320,110,{size:28,color:C.dim,anchor:'middle'})+T(f1,320,235,46,{auto:false}),1);
+  s+=card(620,60,520,300,label('振動の 方程式（ばね）',880,110,{size:28,color:C.dim,anchor:'middle'})+T(f2,880,235,46,{auto:false}),seg(p,.25,.4));
+  s+=fade(seg(p,.45,.6),highlight(320+w1/2-p1-8,188,p1+16,66,1,CD)+highlight(880+w2/2-p2-6,188,p2+12,66,1,CD));
   s+=fade(seg(p,.6,.75),label('sinθ と x … 形が 違う',600,430,{size:32,color:CD,anchor:'middle',weight:700}));
   return s;
  },
+
 
  // ===== S4 小さな振れで近似する =====
  [K+'small']:(p)=>{
@@ -309,15 +322,15 @@ export const ytUmPendulum1Diagrams={
   s+=fade(seg(p,.75,.9),label('同じ 形',960,250,{size:32,color:C.hi,anchor:'middle',weight:700}));
   return s;
  },
- [K+'map']:(p)=>{
-  let s=card(80,40,1040,420,'',1);
-  s+=T(`${DDT}=-\\dfrac{g}{${LL}}\\,${TH}`,600,120,50,{auto:false});
-  s+=T(`\\dfrac{d^2x}{dt^2}=-${WW}^2x`,600,265,50,{auto:false});
-  s+=fade(seg(p,.05,.25),arrow(780,215,790,160,{color:C.x,w:3,head:12})+label('x → θ',820,200,{size:26,color:CTH,weight:700}));
-  s+=fade(seg(p,.3,.5),arrow(660,220,665,165,{color:CW,w:3,head:12})+label('ω² → g/l',470,200,{size:26,color:CW,weight:700}));
-  s+=fade(seg(p,.6,.8),T(`${WW}=\\sqrt{\\dfrac{g}{${LL}}}`,600,380,50,{auto:false}));
+  [K+'map']:(p)=>{
+  let s=card(60,40,520,250,label('振り子（小さな 振れ）',320,85,{size:26,color:C.dim,anchor:'middle'})+T(`${DDT}=-\\dfrac{g}{${LL}}\\,${TH}`,320,200,44,{auto:false}),1);
+  s+=card(620,40,520,250,label('振動の 方程式',880,85,{size:26,color:C.dim,anchor:'middle'})+T(`\\dfrac{d^2x}{dt^2}=-${WW}^2x`,880,200,44,{auto:false}),1);
+  s+=fade(seg(p,.05,.25),label('x → θ',600,345,{size:32,color:CTH,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.3,.5),label('ω² → g/l',600,395,{size:32,color:CW,anchor:'middle',weight:700}));
+  s+=card(760,320,380,150,T(`${WW}=\\sqrt{\\dfrac{g}{${LL}}}`,950,420,46,{auto:false}),seg(p,.6,.8),CW);
   return s;
  },
+
  [K+'units']:(p)=>{
   let s=card(120,60,960,380,label('単位の 確かめ',600,115,{size:28,color:C.dim,anchor:'middle'}),1);
   s+=fade(seg(p,.1,.3),T(`\\dfrac{g}{${LL}}`,340,235,54,{auto:false})+label('→',450,245,{size:36,color:C.dim,anchor:'middle'}));
@@ -327,15 +340,15 @@ export const ytUmPendulum1Diagrams={
   s+=ok(1000,250,seg(p,.7,.85));
   return s;
  },
- [K+'period']:(p)=>{
+  [K+'period']:(p)=>{
   let s=card(80,40,1040,420,'',1);
-  s+=T(`${TT}=\\dfrac{2\\pi}{${WW}}`,600,115,48,{auto:false});
-  s+=fade(seg(p,.15,.35),T(`=\\dfrac{2\\pi}{\\sqrt{g/${LL}}}`,600,225,46,{auto:false}));
-  s+=fade(seg(p,.4,.6),T(`=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,600,335,54,{auto:false}));
-  s+=fade(seg(p,.6,.75),highlight(420,280,360,110,1));
-  s+=fade(seg(p,.7,.85),label('初級の 約束 回収',950,340,{size:28,color:C.hi,weight:700,anchor:'middle'})+label('✓',950,395,{size:40,color:C.F,anchor:'middle',weight:700}));
+  s+=chain([`${TT}=\\dfrac{2\\pi}{${WW}}`,`=\\dfrac{2\\pi}{\\sqrt{g/${LL}}}`,`=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`],600,210,50,[1,seg(p,.15,.35),seg(p,.4,.6)]);
+  const f=`=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,w=texWidth(f,50,false),W=[`${TT}=\\dfrac{2\\pi}{${WW}}`,`=\\dfrac{2\\pi}{\\sqrt{g/${LL}}}`,f].reduce((a,q)=>a+texWidth(q,50,false),0)+2*GAP;
+  s+=fade(seg(p,.6,.75),highlight(600+W/2-w-6,95,w+24,170,1));
+  s+=fade(seg(p,.7,.85),label('初級で 先に 使った 式 を 導けた',600,380,{size:30,color:C.hi,weight:700,anchor:'middle'})+label('✓',880,385,{size:40,color:C.F,weight:700}));
   return s;
  },
+
  [K+'calc']:(p)=>{
   let s=card(80,40,1040,420,label('l ＝ 1.00 m、g ＝ 9.8 m/s²',600,95,{size:30,color:C.ink,anchor:'middle',weight:700}),1);
   s+=fade(seg(p,.15,.35),T(`\\sqrt{\\dfrac{1.00}{9.8}}\\approx0.319`,600,195,46,{auto:false}));
@@ -362,14 +375,15 @@ export const ytUmPendulum1Diagrams={
    +fade(seg(p,.55,.7),label('質量を 変えても',960,355,{size:26,color:C.ink,anchor:'middle'})+label('周期は 同じ',960,400,{size:28,color:C.hi,anchor:'middle',weight:700})),seg(p,.05,.2),CT);
   return s;
  },
- [K+'gmeas']:(p)=>{
-  let s=card(80,40,1040,420,'',1);
-  s+=T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,600,115,46,{auto:false});
-  s+=fade(seg(p,.1,.3),label('両辺を 2乗',880,120,{size:26,color:C.dim})+T(`${TT}^2=\\dfrac{4\\pi^2${LL}}{g}`,600,230,46,{auto:false}));
-  s+=fade(seg(p,.35,.55),label('g について 解く',880,235,{size:26,color:C.dim})+T(`g=\\dfrac{4\\pi^2${LL}}{${TT}^2}`,600,350,52,{auto:false}));
-  s+=fade(seg(p,.65,.8),label('周期と 長さを 測る → その場所の g',600,430,{size:28,color:C.hi,anchor:'middle',weight:700}));
+  [K+'gmeas']:(p)=>{
+  let s=card(80,20,1040,460,'',1);
+  s+=T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,480,125,42,{auto:false});
+  s+=fade(seg(p,.1,.3),label('↓ 両辺を 2乗',720,190,{size:26,color:C.dim})+T(`${TT}^2=\\dfrac{4\\pi^2${LL}}{g}`,480,270,42,{auto:false}));
+  s+=fade(seg(p,.35,.55),label('↓ g について 解く',720,330,{size:26,color:C.dim})+T(`g=\\dfrac{4\\pi^2${LL}}{${TT}^2}`,480,415,46,{auto:false}));
+  s+=fade(seg(p,.65,.8),label('周期と 長さ → その場所の g',720,420,{size:28,color:C.hi,weight:700}));
   return s;
  },
+
  [K+'gmeas2']:(p)=>{
   let s=card(80,40,1040,420,'',1);
   s+=T(`g=\\dfrac{4\\pi^2${LL}}{${TT}^2}`,600,120,46,{auto:false});
@@ -390,11 +404,11 @@ export const ytUmPendulum1Diagrams={
    +fade(seg(p,.5,.7),label('sinθ ≈ θ は まだ 使える？',940,310,{size:26,color:C.hi,anchor:'middle',weight:700})),seg(p,.05,.2),CTH);
   return s;
  },
- [K+'gap']:(p)=>{
-  const {A,svg}=sinGraph({xmax:.9,ymax:.9,w:520,h:390});
+  [K+'gap']:(p)=>{
+  const {A,svg}=sinGraph({xmax:.9,ymax:.9,w:520,h:390,ticks:[.5]});
   let s=svg;
   const x=TH30;
-  s+=fade(seg(p,.05,.2),line(A.X(x),A.Y(0),A.X(x),A.Y(x),{color:C.dim,w:2,dash:'4 6'})+label('0.52',A.X(x),A.Y(0)+58,{size:22,color:CTH,anchor:'middle'}));
+  s+=fade(seg(p,.05,.2),line(A.X(x),A.Y(0),A.X(x),A.Y(x),{color:C.dim,w:2,dash:'4 6'}));
   s+=fade(seg(p,.15,.3),dot(A.X(x),A.Y(Math.sin(x)),8,C.F)+label('sin ＝ 0.50',A.X(x)+16,A.Y(Math.sin(x))+30,{size:24,color:C.F,weight:700}));
   s+=fade(seg(p,.2,.35),dot(A.X(x),A.Y(x),8,C.hi)+label('θ ＝ 0.52',A.X(x)-16,A.Y(x)-14,{size:24,color:C.hi,weight:700,anchor:'end'}));
   s+=fade(seg(p,.4,.55),line(A.X(x)+2,A.Y(x),A.X(x)+2,A.Y(Math.sin(x)),{color:CD,w:6}));
@@ -403,33 +417,35 @@ export const ytUmPendulum1Diagrams={
    +fade(seg(p,.65,.8),label('θ の 約 4.5% 足りない',930,300,{size:30,color:CD,anchor:'middle',weight:700})),seg(p,.45,.6),CD);
   return s;
  },
- [K+'cubic']:(p)=>{
-  let s=card(80,40,1040,420,label('近似・中級 2/2 の 見積もり',600,95,{size:26,color:C.dim,anchor:'middle'}),1);
-  s+=T(`${TH}-${SIN}\\approx\\dfrac{${TH}^3}{6}`,600,185,50,{auto:false});
-  s+=fade(seg(p,.25,.45),T(`\\dfrac{0.524^3}{6}\\approx0.024`,600,300,46,{auto:false,color:CD}));
-  s+=fade(seg(p,.55,.7),label('実際の 差 0.024 と 合う',600,400,{size:30,color:C.hi,anchor:'middle',weight:700}));
-  s+=ok(840,405,seg(p,.6,.75));
+
+  [K+'cubic']:(p)=>{
+  let s=card(80,30,1040,440,label('近似・中級 2/2 の 見積もり',600,80,{size:26,color:C.dim,anchor:'middle'}),1);
+  s+=T(`${TH}-${SIN}\\approx\\dfrac{${TH}^3}{6}`,600,190,48,{auto:false});
+  s+=fade(seg(p,.25,.45),T(`\\dfrac{0.524^3}{6}\\approx0.024`,600,335,46,{auto:false,color:CD}));
+  s+=fade(seg(p,.55,.7),label('実際の 差 0.024 と 合う',600,425,{size:30,color:C.hi,anchor:'middle',weight:700}));
+  s+=ok(840,430,seg(p,.6,.75));
   return s;
  },
+
  [K+'weak']:(p)=>{
-  const G=axes({x:90,y:300,w:760,h:250,xmin:0,xmax:8.4,ymin:-.62,ymax:.62,xlabel:'t [s]',ylabel:'θ [rad]',xticks:[2,4,6,8],yticks:[.5,-.5],xcolor:CT,ycolor:CTH});
+  const G=axes({x:90,y:320,w:760,h:230,xmin:0,xmax:8.4,ymin:-.62,ymax:.62,xlabel:'t [s]',ylabel:'θ [rad]',xticks:[2,4,6,8],yticks:[.5,-.5],xcolor:CT,ycolor:CTH});
   let s=G.svg;
   const tEnd=8.4*seg(p,.1,.8);
   s+=G.plot(approxAt,{from:0,to:Math.max(.01,tEnd),color:C.hi,w:3,dash:'10 7'});
   s+=G.plot(trueAt,{from:0,to:Math.max(.01,tEnd),color:CTH,w:4.5});
-  s+=label('近似の 式',880,90,{size:24,color:C.hi,weight:700})+label('本当の 動き',880,130,{size:24,color:CTH,weight:700});
+  s+=label('- - 近似の 式',890,120,{size:24,color:C.hi,weight:700})+label('── 本当の 動き',890,160,{size:24,color:CTH,weight:700});
   s+=card(120,380,960,110,label('戻す力が 弱い → 戻るのが 遅れる → 周期が 長い',600,448,{size:30,color:C.ink,anchor:'middle',weight:700}),seg(p,.5,.65));
   return s;
  },
  [K+'numeric']:(p)=>{
-  const G=axes({x:90,y:300,w:760,h:250,xmin:0,xmax:8.4,ymin:-.62,ymax:.62,xlabel:'t [s]',ylabel:'θ [rad]',xticks:[2,4,6,8],yticks:[.5,-.5],xcolor:CT,ycolor:CTH});
+  const G=axes({x:90,y:320,w:760,h:230,xmin:0,xmax:8.4,ymin:-.62,ymax:.62,xlabel:'t [s]',ylabel:'θ [rad]',xticks:[2,4,6,8],yticks:[.5,-.5],xcolor:CT,ycolor:CTH});
   let s=G.svg+G.plot(approxAt,{color:C.hi,w:3,dash:'10 7'})+G.plot(trueAt,{color:CTH,w:4.5});
-  s+=label('近似の 式',880,90,{size:24,color:C.hi,weight:700})+label('本当の 動き',880,130,{size:24,color:CTH,weight:700});
-  // mark one period of each
+  s+=label('- - 近似の 式',890,120,{size:24,color:C.hi,weight:700})+label('── 本当の 動き',890,160,{size:24,color:CTH,weight:700});
+  // after 4 periods the true swing lags by 4 × 0.035 ≈ 0.14 s
   const T0=TAU/W0,T1=T0*1.01741;
-  s+=fade(seg(p,.2,.4),line(G.X(T0),G.Y(.62),G.X(T0),G.Y(-.62),{color:C.hi,w:2,dash:'4 5'})+line(G.X(T1),G.Y(.62),G.X(T1),G.Y(-.62),{color:CTH,w:2,dash:'4 5'}));
-  s+=card(120,370,960,130,label('近似の 式',200,452,{size:26,color:C.hi,weight:700})+T(`${TT}=2.01\\ \\mathrm{s}`,420,440,36,{auto:false})
-   +fade(seg(p,.45,.6),label('本当',590,452,{size:26,color:CTH,weight:700})+T(`${TT}\\approx2.04\\ \\mathrm{s}`,750,440,36,{auto:false})+label('約 1.7% 長い',990,452,{size:28,color:CD,weight:700,anchor:'middle'})),seg(p,.3,.45));
+  s+=fade(seg(p,.1,.3),dot(G.X(4*T0),G.Y(TH30),8,C.hi)+dot(G.X(4*T1),G.Y(TH30),8,CTH)+label('4周で 約0.14 s 遅れる',G.X(4*T0)-12,G.Y(TH30)-18,{size:24,color:CD,weight:700,anchor:'end'}));
+  s+=card(120,370,960,130,label('近似の 式',160,452,{size:26,color:C.hi,weight:700})+T(`${TT}=2.01\\ \\mathrm{s}`,370,440,36,{auto:false})
+   +fade(seg(p,.45,.6),label('本当',520,452,{size:26,color:CTH,weight:700})+T(`${TT}\\approx2.04\\ \\mathrm{s}`,680,440,36,{auto:false})+label('約 1.7% 長い',940,452,{size:28,color:CD,weight:700,anchor:'middle'})),seg(p,.3,.45));
   return s;
  },
  [K+'table']:(p)=>{
@@ -443,13 +459,14 @@ export const ytUmPendulum1Diagrams={
     +rect(620,y-28,Math.max(4,bw),36,{fill:CD,fo:.5,stroke:CD,rx:4})+label(r[2],620+Math.max(4,bw)+16,y,{size:28,color:CD,weight:700}));});
   return s;
  },
- [K+'cond']:(p)=>{
-  let s=card(120,60,960,380,'',1);
-  s+=T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,600,170,60,{auto:false});
-  s+=fade(seg(p,.35,.55),T(`(\\,|${TH}|\\ll1\\,)`,600,290,48,{auto:false,color:C.hi})+highlight(200,95,800,245,1));
-  s+=fade(seg(p,.6,.75),label('振幅に よらない ＝ 小さな 振れ での 結果',600,395,{size:30,color:C.hi,anchor:'middle',weight:700}));
+  [K+'cond']:(p)=>{
+  let s=card(120,30,960,440,'',1);
+  s+=T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,600,215,56,{auto:false});
+  s+=fade(seg(p,.35,.55),T(`(\\,|${TH}|\\ll1\\,)`,600,330,46,{auto:false,color:C.hi})+highlight(330,70,540,300,1));
+  s+=fade(seg(p,.6,.75),label('振幅に よらない ＝ 小さな 振れ での 結果',600,425,{size:30,color:C.hi,anchor:'middle',weight:700}));
   return s;
  },
+
 
  // ===== S6 まとめと次の問い =====
  [K+'sum1']:(p)=>{
@@ -460,14 +477,15 @@ export const ytUmPendulum1Diagrams={
   s+=fade(seg(p,.6,.8),T(`${DDT}=-\\dfrac{g}{${LL}}\\,${SIN}`,805,350,44,{auto:false}));
   return s;
  },
- [K+'sum2']:(p)=>{
-  let s=card(80,40,1040,420,'',1);
-  s+=T(`${SIN}\\approx${TH}\\ \\ (|${TH}|\\ll1)`,600,110,40,{auto:false});
-  s+=fade(seg(p,.15,.35),T(`${DDT}=-\\dfrac{g}{${LL}}\\,${TH}`,600,215,44,{auto:false}));
-  s+=fade(seg(p,.35,.55),T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,600,330,48,{auto:false}));
-  s+=fade(seg(p,.7,.85),label('大きく 振ると 少し 長い',600,425,{size:28,color:CD,anchor:'middle',weight:700}));
+  [K+'sum2']:(p)=>{
+  let s=card(80,20,1040,460,'',1);
+  s+=T(`${SIN}\\approx${TH}\\ \\ (|${TH}|\\ll1)`,600,85,36,{auto:false});
+  s+=fade(seg(p,.15,.35),T(`${DDT}=-\\dfrac{g}{${LL}}\\,${TH}`,600,215,42,{auto:false}));
+  s+=fade(seg(p,.35,.55),T(`${TT}=2\\pi\\sqrt{\\dfrac{${LL}}{g}}`,600,355,44,{auto:false}));
+  s+=fade(seg(p,.7,.85),label('大きく 振ると 少し 長い',600,450,{size:28,color:CD,anchor:'middle',weight:700}));
   return s;
  },
+
  [K+'next']:(p)=>{
   const th=.35*Math.cos(TAU*1.2*p);
   let s=pend(th,{cx:300,py:60,Lp:300,thMax:.45,mtext:'',g:1-seg(p,.45,.6)});
