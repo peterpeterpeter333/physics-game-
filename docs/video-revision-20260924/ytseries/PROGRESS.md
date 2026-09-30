@@ -70,9 +70,17 @@
 |---|---|---|---|---|---|---|
 | 01 | 微分 um-average-rate | 1/2 | ys-um-average-rate-1 | 4:52 | 検 読 静 復 | — |
 | 01 | 〃 | 2/2 | ys-um-average-rate-2 | 4:37 | 検 読 静 復 | — |
+| 02 | 積分 um-sum-to-integral | 1/3 | ys-um-sum-to-integral-1 | 4:56 | 検 読 静 復 | —（統括の静止画目視は未） |
+| 02 | 〃 | 2/3 | ys-um-sum-to-integral-2 | 4:54 | 検 読 静 復 | —（統括の静止画目視は未） |
+| 02 | 〃 | 3/3 | ys-um-sum-to-integral-3 | 4:47 | 検 読 静 復 | —（統括の静止画目視は未） |
 | 03 | 微分の法則 um-function-rules | 1/2 | ys-um-function-rules-1 | 5:10 | 検 読 静 復 | — |
 | 03 | 〃 | 2/2 | ys-um-function-rules-2 | 4:43 | 検 読 静 復 | 高さ h と刻み h が同じ文字だったので、刻みを Δx に（図のみ） |
+| 04 | 近似 um-approximation | 1/2 | ys-um-approximation-1 | 5:36 | 検 読 静 復 | —（クラウドで仕上げ） |
+| 04 | 〃 | 2/2 | ys-um-approximation-2 | 5:42 | 検 読 静 復 | —（係数は c₀…c₃。a（近似する場所）と区別） |
 | 05 | ベクトル um-vector-components | 1/1 | ys-um-vector-components-1 | 5:29 | 検 読 静 復 | —（クラウドで制作。z 成分は金） |
+| 06 | 内積 um-inner-product | 1/2 | ys-um-inner-product-1 | 5:00 | 検 読 静 復 | —（クラウドで仕上げ） |
+| 06 | 〃 | 2/2 | ys-um-inner-product-2 | 5:10 | 検 読 静 復 | —（半周の数値例は計画外の追加） |
 
 - 色の約束（中級）：電流 I 緑、起電力 ℰ 紫（電圧と同じ）。
-- 作業中：02 積分（3本）、04 近似、05 ベクトル、06 内積。
+- 04〜06 はクラウド（Linux 版 NEMO 0.24.0）で制作。mp4 は `ytseries/mp4/`。
+- 作業中：07 外積、08 微分方程式、09 振動の方程式。
