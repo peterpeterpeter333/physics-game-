@@ -72,6 +72,7 @@
 | 01 | 〃 | 2/2 | ys-um-average-rate-2 | 4:37 | 検 読 静 復 | — |
 | 03 | 微分の法則 um-function-rules | 1/2 | ys-um-function-rules-1 | 5:10 | 検 読 静 復 | — |
 | 03 | 〃 | 2/2 | ys-um-function-rules-2 | 4:43 | 検 読 静 復 | 高さ h と刻み h が同じ文字だったので、刻みを Δx に（図のみ） |
+| 05 | ベクトル um-vector-components | 1/1 | ys-um-vector-components-1 | 5:29 | 検 読 静 復 | —（クラウドで制作。z 成分は金） |
 
 - 色の約束（中級）：電流 I 緑、起電力 ℰ 紫（電圧と同じ）。
 - 作業中：02 積分（3本）、04 近似、05 ベクトル、06 内積。
