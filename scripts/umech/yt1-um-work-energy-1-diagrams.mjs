@@ -110,7 +110,7 @@ export const ytUmWorkEnergy1Diagrams={
   let s=ground(120,1080,330);
   s+=box(600,330,'箱');
   s+=fade(seg(p,.1,.25),arrow(650,290,850,290,{color:C.F,w:6,head:18})+label('押す力',860,298,{size:26,color:C.F}));
-  s+=fade(seg(p,.25,.4),arrow(550,320,450,320,{color:C.F,w:6,head:18})+label('摩擦',385,328,{size:26,color:C.F,anchor:'end'}));
+  s+=fade(seg(p,.25,.4),arrow(550,320,450,320,{color:C.F,w:6,head:18})+label('摩擦',440,300,{size:26,color:C.F,anchor:'end'}));
   s+=card(320,370,560,120,label('合力 F ＝ はたらく 力 すべての 和',600,420,{size:28,color:C.F,anchor:'middle',weight:700})+label('（向きを 考えて 足す）',600,462,{size:24,color:C.dim,anchor:'middle'}),seg(p,.5,.65),C.F);
   s+=fade(seg(p,.55,.7),arrow(600,160,700,160,{color:C.F,w:8,head:20})+label('F',712,168,{size:34,color:C.F,weight:700})+label('合力',560,168,{size:26,color:C.F,anchor:'end'}));
   return s;
@@ -312,9 +312,9 @@ export const ytUmWorkEnergy1Diagrams={
   return s;
  },
  [K+'same']:(p)=>{
-  let s=card(80,90,480,280,label('時間で 書く',320,150,{size:30,color:C.t,anchor:'middle',weight:700})+tex('a=\\dfrac{dv}{dt}',320,265,{size:64}),1,C.t);
+  let s=card(80,90,480,280,label('時間で 書く',320,150,{size:30,color:C.t,anchor:'middle',weight:700})+tex('a=\\dfrac{dv}{dt}',320,290,{size:64}),1,C.t);
   s+=fade(seg(p,.2,.35),label('＝',600,245,{size:60,color:C.ink,anchor:'middle',weight:700}));
-  s+=card(640,90,480,280,label('距離 と 速さ で 書く',880,150,{size:30,color:C.x,anchor:'middle',weight:700})+tex('a=\\dfrac{dv}{dx/v}',880,265,{size:64}),seg(p,.25,.4),C.x);
+  s+=card(640,90,480,280,label('距離 と 速さ で 書く',880,150,{size:30,color:C.x,anchor:'middle',weight:700})+tex('a=\\dfrac{dv}{dx/v}',880,290,{size:64}),seg(p,.25,.4),C.x);
   s+=fade(seg(p,.55,.7),label('同じ 加速度 の 書き直し',600,450,{size:32,color:C.hi,anchor:'middle',weight:700}));
   return s;
  },
