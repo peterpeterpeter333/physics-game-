@@ -133,6 +133,7 @@ export const ytUmLineIntegralEntry2Diagrams={
  [K+'gap']:(p)=>{
   let s=square({fop:.3})+parabola({})+chords(16,{mids:0,g:.6});
   s+=table(3+seg(p,.05,.25),{});
+  s+=fade(seg(p,.5,.7),label('N を 2倍 → 残りの差 × 1/4',900,55,{size:26,color:C.hi,anchor:'middle',weight:700}));
   return s;
  },
  [K+'exact']:(p)=>{
@@ -209,7 +210,7 @@ export const ytUmLineIntegralEntry2Diagrams={
  [K+'ans']:(p)=>{
   const V=view(130,440,100);
   let s=curveSvg(V,{color:C.dim,w:5})+eArrows(V,{g:seg(p,.1,.6),sc:18});
-  s+=card(620,110,520,280,T(`${vE}\\,${IC}\\cdots`,780,200,{size:48})+cross(900,190,20)
+  s+=card(620,110,520,280,T(`${vE}\\,${IC}\\cdots`,780,200,{size:48})+label('外へ 出せない',960,202,{size:26,color:NG,weight:700})
    +label('𝐄 は 場所ごとに 変わる',880,280,{size:28,color:EC,anchor:'middle',weight:700})+label('→ 各点で 一歩と 内積してから 足す',880,335,{size:24,color:C.ink,anchor:'middle'}),seg(p,.02,.15),NG);
   return s;
  },
@@ -315,7 +316,7 @@ export const ytUmLineIntegralEntry2Diagrams={
   let bag='';const pts=Array.from({length:120},(_,i)=>{const t=2*Math.PI*i/120,r=R*(1+.1*Math.sin(2*t+.6)+.07*Math.cos(3*t));return [cx+r*Math.cos(t),cy-r*Math.sin(t)];});
   bag+=poly(pts,{fill:'#9aabc7',fo:.07,stroke:C.dim,sw:4});
   for(let k=0;k<120;k+=10)bag+=line(pts[k][0],pts[k][1],pts[(k+10)%120][0],pts[(k+10)%120][1],{color:C.ink,w:2,opacity:.5})+dot(pts[k][0],pts[k][1],4,C.ink);
-  for(let k=0;k<5;k++){const y=cy-120+k*60;bag+=arrow(cx-260,y,cx-190,y,{color:EC,w:4,head:12})+arrow(cx+190,y,cx+260,y,{color:EC,w:4,head:12});}
+  for(let k=0;k<5;k++){const y=cy-120+k*60;bag+=arrow(cx-260,y,cx+270,y,{color:EC,w:3.5,head:12,opacity:.8});}
   s+=fade(seg(p,.35,.6),bag+label('初級：閉じた袋の 面を 小さく分ける',cx,480,{size:24,color:C.ink,anchor:'middle'}));
   return s;
  },

@@ -115,14 +115,14 @@ export const ytUmLineIntegralEntry1Diagrams={
   const V=view(O1.ox,O1.oy,O1.sc);
   let s=ov({curve:seg(p,.05,.45)})+vfield(V,{g:seg(p,.35,.9)});
   s+=fade(seg(p,.05,.25),label('前回の最後の問い',80,60,{size:26,color:C.dim}));
-  s+=card(780,110,380,170,label('道に沿って',970,175,{size:28,color:C.ink,anchor:'middle'})+label('仕事を 足す道具',970,230,{size:30,color:WC,anchor:'middle',weight:700}),seg(p,.5,.7),C.faint);
+  s+=card(780,110,380,170,label('道に沿って',970,175,{size:28,color:C.ink,anchor:'middle'})+label('小さな仕事を 足した',970,230,{size:30,color:WC,anchor:'middle',weight:700}),seg(p,.5,.7),C.faint);
   return s;
  },
  [K+'intro2']:(p)=>{
   const V=view(O1.ox,O1.oy,O1.sc);
   let s=ov({})+vfield(V,{g:1});
   s+=label('前回の最後の問い',80,60,{size:26,color:C.dim});
-  s+=card(780,110,380,170,label('道に沿って',970,175,{size:28,color:C.ink,anchor:'middle'})+label('仕事を 足す道具',970,230,{size:30,color:WC,anchor:'middle',weight:700}),1-seg(p,.05,.2),C.faint);
+  s+=card(780,110,380,170,label('道に沿って',970,175,{size:28,color:C.ink,anchor:'middle'})+label('小さな仕事を 足した',970,230,{size:30,color:WC,anchor:'middle',weight:700}),1-seg(p,.05,.2),C.faint);
   s+=card(780,110,380,250,T(`${cs(AL,'\\sum')}\\;\\longrightarrow\\;${cs(AL,'\\int')}`,970,200,{size:46})+label('正式に 書くと？',970,300,{size:32,color:C.hi,anchor:'middle',weight:700}),seg(p,.15,.35),C.hi);
   return s;
  },
