@@ -11,7 +11,7 @@ const card=(x,y,w,h,inner,g=1,stroke=C.faint)=>fade(g,rect(x,y,w,h,{fill:'#131f3
 const T=(s,x,y,o={})=>tex(s,x,y,{auto:false,...o});
 const L=(s,x,y,o={})=>label(s,x,y,{size:26,color:C.ink,anchor:'middle',...o});
 const col=(c,s)=>`{\\color{${c}}{${s}}}`;
-const WW=col(CW,'\\omega'),RR=col(CR,'r'),RI=col(CR,'r_i'),VV=col(CV,'v'),VI=col(CV,'v_i'),KK=col(CK,'K'),XG=col(CR,'x_G'),XI=col(CR,'x_i');
+const RI2=col(CR,'r_i^2'),VI2=col(CV,'v_i^2'),WW=col(CW,'\\omega'),RR=col(CR,'r'),RI=col(CR,'r_i'),VV=col(CV,'v'),VI=col(CV,'v_i'),KK=col(CK,'K'),XG=col(CR,'x_G'),XI=col(CR,'x_i');
 const U=s=>`\\,\\mathrm{${s}}`,KGM2=U('kg\\cdot m^2');
 // M𝐚_G＝𝐅外（「外」は tex に入れず label で添える）
 function MAF(x,y,size=40){const src=`M\\,${col(C.a,'\\mathbf a_G')}=${col(CF,'\\mathbf F')}`,w=texWidth(src,size,false),sub=size*.55,left=x-(w+sub)/2;
@@ -271,8 +271,8 @@ export const ytUmInertia1Diagrams={
   return s;
  },
  [K+'hammer']:(p)=>{
-  const u=seg(p,.05,.95),X=t=>120+900*t,Y=t=>430-1320*t*(1-t)*.3;
-  let s=line(60,460,1140,460,{color:CD,w:3});
+  const u=seg(p,.05,.95),X=t=>150+880*t,Y=t=>390-920*t*(1-t);
+  let s=line(60,500,1140,500,{color:CD,w:3});
   s+=draw(Array.from({length:61},(_,i)=>[X(i/60),Y(i/60)]),u,{color:CH,w:3,dash:'8 7'});
   for(const t0 of [0,.25,.5,.75])if(u>t0+.02)s+=fade(.3,dumbbell(X(t0),Y(t0),-8*t0));
   s+=dumbbell(X(u),Y(u),-8*u);
@@ -280,13 +280,13 @@ export const ytUmInertia1Diagrams={
   return s;
  },
  [K+'hammer2']:(p)=>{
-  const X=t=>120+900*t,Y=t=>430-1320*t*(1-t)*.3;
-  let s=line(60,460,1140,460,{color:CD,w:3})+draw(Array.from({length:61},(_,i)=>[X(i/60),Y(i/60)]),1,{color:CH,w:3,dash:'8 7'});
+  const X=t=>150+880*t,Y=t=>390-920*t*(1-t);
+  let s=line(60,500,1140,500,{color:CD,w:3})+draw(Array.from({length:61},(_,i)=>[X(i/60),Y(i/60)]),1,{color:CH,w:3,dash:'8 7'});
   s+=dumbbell(X(.55),Y(.55),-4.4-2*p);
-  s+=card(60,40,460,110,L('① 重心の 移動',290,105,{size:30,color:CH,weight:700}),seg(p,.05,.2),CH);
-  s+=card(680,40,460,110,L('② 重心まわりの 回転',910,105,{size:30,color:CW,weight:700}),seg(p,.3,.45),CW);
-  s+=fade(seg(p,.3,.45),turnArc(X(.55),Y(.55),120,.3,1.5,{color:CW}));
-  s+=fade(seg(p,.7,.85),label('次は ②',910,190,{size:28,color:CW,anchor:'middle',weight:700}));
+  s+=card(60,380,460,100,L('① 重心の 移動',290,440,{size:30,color:CH,weight:700}),seg(p,.05,.2),CH);
+  s+=card(680,380,460,100,L('② 重心まわりの 回転',910,440,{size:30,color:CW,weight:700}),seg(p,.3,.45),CW);
+  s+=fade(seg(p,.3,.45),turnArc(X(.55),Y(.55),125,.3,1.5,{color:CW}));
+  s+=fade(seg(p,.7,.85),label('次は ②',1080,300,{size:28,color:CW,anchor:'middle',weight:700}));
   return s;
  },
 
@@ -301,7 +301,6 @@ export const ytUmInertia1Diagrams={
  [K+'omega']:(p)=>{
   const a0=.1,ph=a0+.9*seg(p,.1,.7);
   let s=blob(ph,{ax:330,ay:300,ppm:120,hl:[[3,'',1],[21,'',1]]});
-  {const P=q=>[330+120*(q[0]*Math.cos(a0)-q[1]*Math.sin(a0)),300-120*(q[0]*Math.sin(a0)+q[1]*Math.cos(a0))];for(const i of [3,21]){const [x,y]=P(BODY[i]);s+=ring(x,y,9,{color:CH,w:2,dash:'4 4'});}}
   s+=turnArc(330,300,70,a0,ph,{color:CW,g:seg(p,.2,.35)});
   s+=card(760,70,400,190,L('1秒あたりに 回る 角度',960,125,{size:26})+L('角速度 ω',960,185,{size:34,color:CW,weight:700})+L('単位 rad/s',960,235,{size:24,color:CD}),seg(p,.05,.2),CW);
   s+=fade(seg(p,.6,.75),card(760,290,400,110,L('どの 点も 同じ ω',960,355,{size:30,color:CH,weight:700}),1,CH));
@@ -335,27 +334,26 @@ export const ytUmInertia1Diagrams={
   let s=kbars([[1,'1 m','1 J'],[4,'2 m','4 J']],{x:120,y:450,sc:80,gap:220,w:120});
   s+=fade(seg(p,.05,.2),L('距離 2倍 → K 4倍',850,70,{size:32,color:CH,weight:700}));
   s+=fade(seg(p,.3,.45),T(`${KK}=\\tfrac12 m(${RR}${WW})^2`,850,170,{size:40}));
-  s+=fade(seg(p,.5,.65),T(`=\\tfrac12 m\\,{\\color{${CH}}{${RR}^2}}\\,${WW}^2`,850,270,{size:44}));
+  s+=fade(seg(p,.5,.65),T(`=\\tfrac12 m\\,${col(CR,'r^2')}\\,${WW}^2`,850,270,{size:44}));
   s+=fade(seg(p,.7,.85),L('r が 2回 効く',850,370,{size:30,color:CH,weight:700}));
   return s;
  },
  [K+'each']:(p)=>{
-  let s=T(`\\tfrac12 m_i${VI}^{\\,2}=\\tfrac12 m_i${RI}^{\\,2}${WW}^2`,600,80,{size:44});
+  let s=T(`\\tfrac12 m_i${VI2}=\\tfrac12 m_i${RI2}${WW}^2`,600,80,{size:44});
   s+=fade(seg(p,.4,.55),L('全部の 質点について 足す',600,170,{size:28,color:CH,weight:700}));
-  s+=fade(seg(p,.5,.7),T(`${KK}=\\tfrac12 m_1${col(CR,'r_1')}^{\\,2}${WW}^2+\\tfrac12 m_2${col(CR,'r_2')}^{\\,2}${WW}^2+\\cdots`,600,260,{size:40}));
-  s+=fade(seg(p,.65,.8),T(`=\\sum_i\\tfrac12 m_i${RI}^{\\,2}${WW}^2`,600,380,{size:44}));
+  s+=fade(seg(p,.5,.7),T(`${KK}=\\tfrac12 m_1${col(CR,'r_1^2')}${WW}^2+\\tfrac12 m_2${col(CR,'r_2^2')}${WW}^2+\\cdots`,600,260,{size:40}));
+  s+=fade(seg(p,.65,.8),T(`=\\sum_i\\tfrac12 m_i${RI2}${WW}^2`,600,380,{size:44}));
   return s;
  },
  [K+'factor']:(p)=>{
-  let s=T(`${KK}=\\tfrac12 m_1${col(CR,'r_1')}^{\\,2}{\\color{${CH}}{\\omega^2}}+\\tfrac12 m_2${col(CR,'r_2')}^{\\,2}{\\color{${CH}}{\\omega^2}}+\\cdots`,600,90,{size:40});
+  let s=T(`${KK}=\\tfrac12 m_1${col(CR,'r_1^2')}{\\color{${CH}}{\\omega^2}}+\\tfrac12 m_2${col(CR,'r_2^2')}{\\color{${CH}}{\\omega^2}}+\\cdots`,600,90,{size:40});
   s+=fade(seg(p,.1,.25),L('ω は どの 質点も 同じ → 外へ',600,190,{size:28,color:CH,weight:700}));
-  s+=fade(seg(p,.4,.55),T(`${KK}=\\tfrac12\\Big(\\sum_i m_i${RI}^{\\,2}\\Big)${WW}^2`,600,320,{size:54}));
+  s+=fade(seg(p,.4,.55),T(`${KK}=\\tfrac12\\Big(\\sum_i m_i${RI2}\\Big)${WW}^2`,600,320,{size:54}));
   return s;
  },
  [K+'name']:(p)=>{
-  let s=T(`${KK}=\\tfrac12\\Big(\\sum_i m_i${RI}^{\\,2}\\Big)${WW}^2`,600,80,{size:44,color:CD});
-  s+=fade(seg(p,.05,.2),highlight(560,20,250,120,1));
-  s+=fade(seg(p,.1,.25),T(`I=\\sum_i m_i${RI}^{\\,2}`,380,230,{size:56})+L('慣性モーメント',380,320,{size:30,color:CH,weight:700}));
+  let s=T(`${KK}=\\tfrac12\\Big(${col(CH,'\\sum_i m_ir_i^2')}\\Big)${WW}^2`,600,80,{size:44});
+  s+=fade(seg(p,.1,.25),T(`I=\\sum_i m_i${RI2}`,380,230,{size:56})+L('慣性モーメント',380,320,{size:30,color:CH,weight:700}));
   s+=fade(seg(p,.4,.55),L('単位 kg·m²',380,380,{size:26,color:CD}));
   s+=fade(seg(p,.55,.7),card(700,180,420,150,T(`${KK}=\\tfrac12 I${WW}^2`,910,258,{size:56}),1,CK));
   return s;
@@ -387,7 +385,7 @@ export const ytUmInertia1Diagrams={
  [K+'quizA']:(p)=>{
   let s=rodBall(.5,{ax:120,ay:440,ppm:115,r:1.5,len:3,rTxt:'1.5 m',m:'2 kg'});
   s+=T(`I=2\\times${col(CR,'1.5')}^2=4.5${KGM2}`,860,90,{size:40});
-  s+=fade(seg(p,.35,.5),card(620,170,480,190,L('距離 半分',860,230,{size:28,color:CR})+T(`18\\times\\tfrac14=4.5`,860,300,{size:38})+L('I は 4分の1',860,345,{size:24,color:CH,weight:700}),1,CH));
+  s+=fade(seg(p,.35,.5),card(620,165,480,205,L('距離 半分',860,230,{size:28,color:CR})+T(`18\\times\\tfrac14=4.5`,860,300,{size:38})+L('I は 4分の1',860,345,{size:24,color:CH,weight:700}),1,CH));
   s+=fade(seg(p,.35,.5),ok(1110,105));
   return s;
  },
@@ -403,15 +401,15 @@ export const ytUmInertia1Diagrams={
   const ph=1.2*seg(p,.3,1);
   // same rod (two balls), axis at the centre vs at one end
   const drawRod=(ax,ay,off,a)=>{const c=Math.cos(a),s2=Math.sin(a),P=u=>[ax+(u-off)*c,ay-(u-off)*s2];const [x1,y1]=P(0),[x2,y2]=P(200);return line(x1,y1,x2,y2,{color:WOOD,w:5})+dot(x1,y1,14,'#8fa6cf')+dot(x2,y2,14,'#8fa6cf')+axisMark(ax,ay,0);};
-  s+=fade(seg(p,.3,.45),drawRod(760,260,100,ph)+drawRod(900,380,0,ph*.7)+label('軸を 変えると',890,190,{size:24,color:CD,anchor:'middle'})+label('I も 変わる',1040,300,{size:26,color:CH,anchor:'middle',weight:700}));
-  s+=fade(seg(p,.55,.7),L('軸と 質量の 並び方で 変わる',890,460,{size:24,color:CH}));
+  s+=fade(seg(p,.3,.45),drawRod(760,260,100,ph)+drawRod(900,380,0,ph*.7));
+  s+=fade(seg(p,.55,.7),L('軸の 位置と 質量の 並び方で 変わる',890,455,{size:26,color:CH,weight:700}));
   return s;
  },
  [K+'bat2']:(p)=>{
   let s=L('長く 持つ',300,480,{size:28,color:CD})+L('短く 持つ',880,480,{size:28,color:CH,weight:700});
   s+=bat(140,250,-.15,{hold:.06,len:420,braceR:seg(p,.1,.3),rTxt:'r'});
   s+=bat(740,250,-.15,{hold:.3,len:420,braceR:seg(p,.2,.4),rTxt:'r（短い）'});
-  s+=fade(seg(p,.45,.6),card(380,330,440,110,T(`I=\\sum_i m_i${RI}^{\\,2}\\ \\downarrow`,600,388,{size:40}),1,CH));
+  s+=fade(seg(p,.45,.6),card(380,330,440,110,T(`I=\\sum_i m_i${RI2}\\ \\downarrow`,600,388,{size:40}),1,CH));
   return s;
  },
 
@@ -424,7 +422,7 @@ export const ytUmInertia1Diagrams={
   let s=card(60,60,520,400,L('重心',320,115,{size:32,color:CH,weight:700})+T(`${col(CR,'\\mathbf r_G')}=\\dfrac{\\sum_i m_i${col(CR,'\\mathbf r_i')}}{\\sum_i m_i}`,320,215,{size:40})+L('質量で 重みを 付けた 平均',320,300,{size:24})+MAF(320,385,36),1,CH);
   s+=card(620,60,520,400,L('回しにくさ',880,115,{size:32,color:CW,weight:700})
    +T(`${VV}=${RR}${WW}`,880,185,{size:36})
-   +fade(seg(p,.35,.5),T(`I=\\sum_i m_i${RI}^{\\,2}`,880,275,{size:42}))
+   +fade(seg(p,.35,.5),T(`I=\\sum_i m_i${RI2}`,880,275,{size:42}))
    +fade(seg(p,.6,.75),T(`${KK}=\\tfrac12 I${WW}^2`,880,375,{size:42})),seg(p,.05,.2),CW);
   return s;
  },
@@ -441,7 +439,7 @@ export const ytUmInertia1Diagrams={
   let s=rect(200,150,800,34,{fill:WOOD,fo:.85,stroke:'#8a6f4c',rx:6})+axisMark(200,167,0);
   const n=Math.round(mix(4,24,seg(p,.1,.7)));
   for(let k=1;k<n;k++)s+=line(200+800*k/n,142,200+800*k/n,192,{color:C.bg,w:2});
-  s+=card(250,260,700,170,T(`I=\\sum_i m_i${RI}^{\\,2}\\ \\ \\to\\ \\ ?`,600,320,{size:44})+L('Σ を どう 書き直す？',600,395,{size:30,color:CH,weight:700}),seg(p,.1,.25),CH);
+  s+=card(250,260,700,170,T(`I=\\sum_i m_i${RI2}\\ \\ \\to\\ \\ ?`,600,335,{size:44})+L('Σ を どう 書き直す？',600,395,{size:30,color:CH,weight:700}),seg(p,.1,.25),CH);
   return s;
  },
 };
