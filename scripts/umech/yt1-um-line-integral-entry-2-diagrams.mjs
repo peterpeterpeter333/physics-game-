@@ -197,7 +197,6 @@ export const ytUmLineIntegralEntry2Diagrams={
  [K+'out']:(p)=>{
   const f=`W=${IC}${q}${vE}\\cdot${dr}`;let s=T(f,600,130,{size:64});
   const [l,w]=hb(f,`W=${IC}`,q,600,64);
-  s+=fade(seg(p,.05,.2),highlight(l-18,78,w+14,72,1,QP));
   s+=fade(seg(p,.1,.3),label('運ぶ電荷は 1つ → 道のどこでも 同じ 定数',600,230,{size:26,color:QP,anchor:'middle'}));
   s+=fade(seg(p,.4,.6),T(`W=${q}${IC}${vE}\\cdot${dr}`,600,360,{size:76}));
   return s;
@@ -236,7 +235,7 @@ export const ytUmLineIntegralEntry2Diagrams={
  },
  [K+'rev3']:(p)=>{
   let s=ovRev({vals:seg(p,.05,.3)});
-  s+=card(760,110,400,230,T(`3+2+0-2=3\\,\\mathrm{J}`,960,180,{size:38})+fade(seg(p,.4,.6),T(`${cs(NG,'-3')}${cs(NG,'-2')}-0${cs(WC,'+2')}=${cs(NG,'-3\\,\\mathrm{J}')}`,960,270,{size:38})),seg(p,.3,.45),C.faint);
+  s+=card(760,110,400,230,T(`3+2+0-2=3\\,\\mathrm{J}`,960,180,{size:38})+fade(seg(p,.4,.6),T(`${cs(NG,'-3')}${cs(NG,'-2')}+0${cs(WC,'+2')}=${cs(NG,'-3\\,\\mathrm{J}')}`,960,270,{size:38})),seg(p,.3,.45),C.faint);
   s+=fade(seg(p,.6,.75),label('大きさ 同じ・符号 だけ 反転',960,390,{size:26,color:C.hi,anchor:'middle',weight:700}));
   return s;
  },
