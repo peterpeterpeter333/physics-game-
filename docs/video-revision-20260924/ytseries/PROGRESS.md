@@ -80,8 +80,10 @@
 | 05 | ベクトル um-vector-components | 1/1 | ys-um-vector-components-1 | 5:29 | 検 読 静 復 | —（クラウドで制作。z 成分は金） |
 | 06 | 内積 um-inner-product | 1/2 | ys-um-inner-product-1 | 5:00 | 検 読 静 復 | —（クラウドで仕上げ） |
 | 06 | 〃 | 2/2 | ys-um-inner-product-2 | 5:10 | 検 読 静 復 | —（半周の数値例は計画外の追加） |
+| 07 | 外積 um-cross-product | 1/2 | ys-um-cross-product-1 | 5:18 | 検 読 静 復 | —（向きは成分で確認。⊙/⊗・右手系を統括でも確認） |
+| 07 | 〃 | 2/2 | ys-um-cross-product-2 | 5:37 | 検 読 静 復 | —（右側・奥から見た小図の向き、ドア・磁気力の符号を統括でも確認。F·v＝0 の1文は計画外） |
 | 09 | 振動の方程式 um-oscillation-equation | 1/1 | ys-um-oscillation-equation-1 | 5:23 | 検 読 静 復 | —（線形と x² の対比、「2段たどるので条件2つ」を補足） |
 
 - 色の約束（中級）：電流 I 緑、起電力 ℰ 紫（電圧と同じ）。
 - 04〜06 はクラウド（Linux 版 NEMO 0.24.0）で制作。mp4 は `ytseries/mp4/`。
-- 作業中：07 外積、08 微分方程式、09 振動の方程式。
+- 作業中：08 微分方程式、10 運動方程式。
