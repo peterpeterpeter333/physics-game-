@@ -439,7 +439,7 @@ export const ytUmInertia1Diagrams={
   let s=rect(200,150,800,34,{fill:WOOD,fo:.85,stroke:'#8a6f4c',rx:6})+axisMark(200,167,0);
   const n=Math.round(mix(4,24,seg(p,.1,.7)));
   for(let k=1;k<n;k++)s+=line(200+800*k/n,142,200+800*k/n,192,{color:C.bg,w:2});
-  s+=card(250,260,700,170,T(`I=\\sum_i m_i${RI2}\\ \\ \\to\\ \\ ?`,600,335,{size:44})+L('Σ を どう 書き直す？',600,395,{size:30,color:CH,weight:700}),seg(p,.1,.25),CH);
+  s+=card(250,240,700,210,T(`I=\\sum_i m_i${RI2}\\ \\ \\to\\ \\ ?`,600,315,{size:44})+L('Σ を どう 書き直す？',600,415,{size:30,color:CH,weight:700}),seg(p,.1,.25),CH);
   return s;
  },
 };
