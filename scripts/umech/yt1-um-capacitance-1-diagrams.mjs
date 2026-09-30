@@ -232,7 +232,7 @@ export const ytUmCapacitance1Diagrams={
   const g2=seg(p,.4,.6);
   s+=fade(g2,arrow(Px+e1[0],Py,Px+e1[0],Py+e1[1],{color:C.p,w:4,head:12})+arrow(Px+e2[0],Py,Px+e2[0],Py+e2[1],{color:C.p,w:4,head:12}));
   s+=fade(seg(p,.55,.7),label('面に沿う成分',Px+e1[0]+20,Py-50,{size:24,color:C.p,weight:700})+label('打ち消す',Px+e1[0]+20,Py+62,{size:26,color:NG,weight:700}));
-  s+=fade(seg(p,.7,.9),arrow(Px,Py,Px+2*e1[0],Py,{color:EC,w:6,head:18})+label('和',Px+2*e1[0]-20,Py-16,{size:26,color:EC,weight:700}));
+  s+=fade(seg(p,.7,.9),arrow(Px,Py,Px+2*e1[0],Py,{color:EC,w:6,head:18})+label('和',Px+2*e1[0]+14,Py+9,{size:28,color:EC,weight:700}));
   return s;
  },
  [K+'perp']:(p)=>{
@@ -242,9 +242,9 @@ export const ytUmCapacitance1Diagrams={
  },
  [K+'result']:(p)=>{
   let s=onePlate()+sideArrows();
-  s+=card(640,90,500,330,L('1枚の広い平面（結果）',890,140,{size:26,color:C.dim})
-   +T(`${Et}=${HALF}`,890,235,{size:64})
-   +fade(seg(p,.4,.6),L('導き方は 上級で',890,340,{size:26,color:C.dim})+L('ここでは 結果を使う',890,385,{size:26,color:C.hi,weight:700})),seg(p,.05,.25),EC);
+  s+=card(640,90,500,330,L('1枚の広い平面（結果）',890,125,{size:26,color:C.dim})
+   +T(`${Et}=${HALF}`,890,248,{size:60})
+   +fade(seg(p,.4,.6),L('導き方は 上級で',890,350,{size:26,color:C.dim})+L('ここでは 結果を使う',890,392,{size:26,color:C.hi,weight:700})),seg(p,.05,.25),EC);
   return s;
  },
  [K+'half']:(p)=>{
@@ -255,8 +255,8 @@ export const ytUmCapacitance1Diagrams={
   let f='';for(const y of [220,260,300])f+=arrow(bx2,y,bx2+120,y,{color:EC,w:4,head:13})+arrow(bx1,y,bx1-120,y,{color:EC,w:4,head:13});
   s+=fade(seg(p,.2,.45),f);
   s+=fade(seg(p,.45,.6),L('半分',bx2+70,y1-20,{size:28,color:C.hi,weight:700})+L('半分',bx1-70,y1-20,{size:28,color:C.hi,weight:700}));
-  s+=card(640,110,500,280,L('面から出る 電気束',890,170,{size:28,color:C.ink})+L('右へ 半分、左へ 半分',890,230,{size:30,color:C.hi,weight:700})
-   +fade(seg(p,.6,.8),T(`${Et}=\\dfrac{${sig}}{\\color{${C.hi}}{2}${eps}}`,890,320,{size:52})),seg(p,.3,.5));
+  s+=card(640,110,500,280,L('面から出る 電気束',890,158,{size:28,color:C.ink})+L('右へ 半分、左へ 半分',890,210,{size:30,color:C.hi,weight:700})
+   +fade(seg(p,.6,.8),T(`${Et}=\\dfrac{${sig}}{\\color{${C.hi}}{2}${eps}}`,890,318,{size:52})),seg(p,.3,.5));
   return s;
  },
  [K+'nodist']:(p)=>{
@@ -292,8 +292,8 @@ export const ytUmCapacitance1Diagrams={
  },
  [K+'neg']:(p)=>{
   let s=onePlate({sign:-1})+sideArrows({sign:-1,g:seg(p,.1,.35)});
-  s+=card(640,110,500,280,L('負の板',890,165,{size:28,color:NEG,weight:700})+L('強さは 同じ',800,255,{size:28,color:C.ink})+T(HALF,960,245,{size:46})
-   +fade(seg(p,.4,.6),L('向きは 逆：板へ入る',890,330,{size:30,color:EC,weight:700})),seg(p,.05,.25),NEG);
+  s+=card(640,110,500,280,L('負の板',890,148,{size:28,color:NEG,weight:700})+L('強さは 同じ',800,258,{size:28,color:C.ink})+T(HALF,960,250,{size:46})
+   +fade(seg(p,.4,.6),L('向きは 逆：板へ入る',890,345,{size:30,color:EC,weight:700})),seg(p,.05,.25),NEG);
   return s;
  },
  // ===== S4 2枚を重ね合わせる =====
@@ -305,7 +305,7 @@ export const ytUmCapacitance1Diagrams={
  },
  [K+'plusOnly']:(p)=>{
   let s=rows3({labels:[1,0,0]})+plusRow(seg(p,.1,.4));
-  s+=card(820,120,350,200,L('＋の板だけ',995,170,{size:26,color:POS,weight:700})+L('どこも',995,225,{size:26,color:C.ink})+T(HALF,995,285,{size:44}),seg(p,.4,.6),POS);
+  s+=card(820,120,350,200,L('＋の板だけ',995,170,{size:26,color:POS,weight:700})+L('どこも',925,268,{size:26,color:C.ink})+T(HALF,1040,262,{size:44}),seg(p,.4,.6),POS);
   return s;
  },
  [K+'minusOnly']:(p)=>{
@@ -324,8 +324,8 @@ export const ytUmCapacitance1Diagrams={
   const x0=REG[1]-R.A,y=R.Y[2],g1=seg(p,.05,.25),g2=seg(p,.2,.4);
   s+=fade(g1,arrow(x0,y,x0+R.A,y,{color:EC,w:5,head:15})+label('＋',x0+R.A/2,y-16,{size:22,color:POS,anchor:'middle',weight:700}));
   s+=fade(g2,arrow(x0+R.A,y,x0+2*R.A,y,{color:EC,w:5,head:15})+label('−',x0+1.5*R.A,y-16,{size:24,color:NEG,anchor:'middle',weight:700}));
-  s+=card(810,110,370,300,L('板の間：同じ向き',995,160,{size:26,color:EC,weight:700})
-   +T(`${HALF}+${HALF}`,995,240,{size:38})+fade(seg(p,.5,.7),T(`=${FULL}`,995,340,{size:52})),seg(p,.3,.5),EC);
+  s+=card(810,95,370,330,L('板の間：同じ向き',995,140,{size:26,color:EC,weight:700})
+   +T(`${HALF}+${HALF}`,995,225,{size:38})+fade(seg(p,.5,.7),T(`=${FULL}`,995,350,{size:52})),seg(p,.3,.5),EC);
   return s;
  },
  [K+'outside']:(p)=>{
@@ -395,7 +395,7 @@ export const ytUmCapacitance1Diagrams={
  },
  [K+'summary2']:(p)=>{
   let s=plates({qlab:1})+fieldIn({k:1})+zero(250,240)+zero(780,240);
-  s+=card(830,90,340,340,L('導いた結果',1000,140,{size:26,color:EC,weight:700})+T(`${Et}=${FULL}`,1000,220,{size:50})+L('間：一様',1000,290,{size:26,color:C.ink})+L('外：0',1000,330,{size:26,color:C.ink})
+  s+=card(830,90,340,340,L('導いた結果',1000,128,{size:26,color:EC,weight:700})+T(`${Et}=${FULL}`,1000,215,{size:50})+L('間：一様',1000,295,{size:26,color:C.ink})+L('外：0',1000,338,{size:26,color:C.ink})
    +fade(seg(p,.5,.7),L('仮定：端を無視',1000,395,{size:24,color:C.dim})),seg(p,0,.2),EC);
   return s;
  },
