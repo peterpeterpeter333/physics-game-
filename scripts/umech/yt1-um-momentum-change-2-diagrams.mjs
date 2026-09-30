@@ -186,10 +186,10 @@ export const ytUmMomentumChange2Diagrams={
   return s;
  },
  [K+'fix']:(p)=>{
-  let s=Favg(330,250,{size:70,anchor:'end'})+tex(`=\\dfrac{\\Delta ${cP('p')}}{\\Delta t}`,480,230,{size:80});
-  s+=fade(seg(p,.05,.25),highlight(470,120,120,100,1,CP)+label('変えられない（止まる以上 決まる）',620,110,{size:26,color:CP,weight:700}));
-  s+=fade(seg(p,.4,.55),highlight(470,250,120,100,1,CT)+label('変えられるのは ここだけ',620,380,{size:26,color:CT,weight:700}));
-  s+=arrow(620,420,900,420,{color:CT,w:6,head:18,g:seg(p,.55,.75)})+fade(seg(p,.6,.75),label('延ばす → 力が 小さい',920,428,{size:28,color:CF,weight:700}));
+  let s=Favg(120,260,{size:70})+tex(`=\\dfrac{\\Delta ${cP('p')}}{\\Delta t}`,260,245,{size:80,anchor:'start'});
+  s+=fade(seg(p,.05,.25),arrow(620,170,480,190,{color:CP,w:4,head:14})+label('Δp：変えられない',640,170,{size:30,color:CP,weight:700})+label('（止まる以上 決まる）',640,210,{size:24,color:CD}));
+  s+=fade(seg(p,.4,.55),arrow(620,320,480,300,{color:CT,w:4,head:14})+label('Δt：変えられるのは ここだけ',640,330,{size:30,color:CT,weight:700}));
+  s+=arrow(300,430,560,430,{color:CT,w:6,head:18,g:seg(p,.55,.75)})+fade(seg(p,.6,.75),label('Δt を 延ばす → 力が 小さい',580,438,{size:28,color:CF,weight:700}));
   return s;
  },
  [K+'quiz2']:(p)=>quiz2(p,0),
@@ -264,7 +264,7 @@ function wideScene(p,{hard=0,soft=0,q=0,ans=0,tenth=0,labels=0,same=0,swap=0,sho
   +fade(tenth,label('Δp 同じ → 力は 1/10',980,295,{size:26,color:CH,anchor:'middle',weight:700}))
   +fade(same*(1-swap),label('面積：どちらも 6.0',980,295,{size:26,color:CP,anchor:'middle',weight:700}))
   +fade(swap,label('幅 ↑ → 高さ ↓',980,295,{size:28,color:CH,anchor:'middle',weight:700})),ans,CF);
- s+=fade(shokyu,card(800,360,360,120,label('初級：同じ面積の',980,405,{size:24,color:CD,anchor:'middle'})+label('長方形の 数値版',980,448,{size:26,color:C.ink,anchor:'middle',weight:700}),1));
+ s+=fade(shokyu,card(830,360,330,120,label('初級：同じ面積の',995,405,{size:24,color:CD,anchor:'middle'})+label('長方形の 数値版',995,448,{size:26,color:C.ink,anchor:'middle',weight:700}),1));
  return s;
 }
 function stopBall(p,q){
