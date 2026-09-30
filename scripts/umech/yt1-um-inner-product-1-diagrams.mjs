@@ -127,7 +127,7 @@ export const ytUmInnerProduct1Diagrams={
   const {P,s:gs}=FR();
   let s=gs;
   // protractor
-  const g=seg(p,.35,.55),r=150;let pr=draw(Array.from({length:61},(_,i)=>{const a=rad(95*i/60);return [P.X(0)+r*Math.cos(a),P.Y(0)-r*Math.sin(a)];}),1,{color:C.dim,w:2});
+  const g=seg(p,.35,.55),r=112;let pr=draw(Array.from({length:61},(_,i)=>{const a=rad(95*i/60);return [P.X(0)+r*Math.cos(a),P.Y(0)-r*Math.sin(a)];}),1,{color:C.dim,w:2});
   for(let d=0;d<=90;d+=10)pr+=line(P.X(0)+(r-12)*Math.cos(rad(d)),P.Y(0)-(r-12)*Math.sin(rad(d)),P.X(0)+r*Math.cos(rad(d)),P.Y(0)-r*Math.sin(rad(d)),{color:C.dim,w:2});
   s+=fade(g*.8,pr);
   s+=arcAt(P.X(0),P.Y(0),0,53.13,56,{g:seg(p,.05,.2),text:'θ'});
@@ -155,14 +155,14 @@ export const ytUmInnerProduct1Diagrams={
  // ===== S2 基本の向きに分けて展開する =====
  [K+'hat']:(p)=>{
   const P=plane({ox:170,oy:430,u:140,x0:0,x1:2,y0:0,y1:2});let s=P.svg;
-  s+=vec(P,0,0,1,0,{color:HC,w:8,g:seg(p,.05,.3)})+fade(seg(p,.2,.35),T(hx,P.X(.5),P.Y(0)-24,{size:44}));
-  s+=vec(P,0,0,0,1,{color:HC,w:8,g:seg(p,.45,.7)})+fade(seg(p,.6,.75),T(hy,P.X(0)+36,P.Y(.5)+12,{size:44}));
+  s+=vec(P,0,0,1,0,{color:HC,w:8,g:seg(p,.05,.3)})+fade(seg(p,.2,.35),T(hx,P.X(.5),P.Y(0)+48,{size:44}));
+  s+=vec(P,0,0,0,1,{color:HC,w:8,g:seg(p,.45,.7)})+fade(seg(p,.6,.75),T(hy,P.X(0)-40,P.Y(.5)+12,{size:44}));
   s+=card(600,130,540,220,fade(seg(p,.1,.3),T(hx,680,205,{size:48})+label('長さ 1、右向き',740,215,{size:30,color:C.ink}))
    +fade(seg(p,.5,.7),T(hy,680,295,{size:48})+label('長さ 1、上向き',740,305,{size:30,color:C.ink})),seg(p,.05,.2));
   return s;
  },
  [K+'buildA']:(p)=>{
-  const P=plane(G);let s=P.svg;
+  const P=plane({...G,skip:[1,2]});let s=P.svg;
   for(let k=0;k<3;k++)s+=vec(P,k,0,k+1,0,{color:HC,w:6,head:16,g:seg(p,.1+.06*k,.2+.06*k)});
   for(let k=0;k<4;k++)s+=vec(P,3,k,3,k+1,{color:HC,w:6,head:16,g:seg(p,.3+.06*k,.4+.06*k)});
   s+=fade(seg(p,.25,.35),label('3 倍',P.X(1.5),P.Y(0)+30,{size:24,color:HC,anchor:'middle',weight:700}))+fade(seg(p,.5,.6),label('4 倍',P.X(3)+14,P.Y(2)+8,{size:24,color:HC,weight:700}));
@@ -191,27 +191,19 @@ export const ytUmInnerProduct1Diagrams={
   return s;
  },
  [K+'rulepic']:(p)=>{
-  const O=[110,440],b=25,u=[Math.cos(rad(b)),Math.sin(rad(b))],nrm=[Math.sin(rad(b)),-Math.cos(rad(b))];
-  const S=(q)=>[O[0]+q[0],O[1]-q[1]];
-  const p1=[270,0],p2=[270,180],s1=p1[0]*u[0]+p1[1]*u[1],s2=p2[0]*u[0]+p2[1]*u[1];
-  const onB=(t,off=0)=>S([t*u[0]+off*nrm[0],t*u[1]+off*nrm[1]]);
-  let s='';
-  // B's line and arrow
-  s+=line(...S([-30*u[0],-30*u[1]]),...onB(560),{color:C.faint,w:2,dash:'6 8'});
-  s+=arrow(...S([0,0]),...onB(200),{color:LC,w:6,head:20})+T(bB,...(([x,y])=>[x+10,y-30])(onB(200)),{size:34});
-  // pieces of A (tip to tail) and A
-  s+=arrow(...S([0,0]),...S(p1),{color:HC,w:6,head:18})+label('部品①',...(([x,y])=>[x-140,y+36])(S(p1)),{size:24,color:HC,weight:700});
-  s+=arrow(...S(p1),...S(p2),{color:PP,w:6,head:18})+label('部品②',...(([x,y])=>[x+14,y-80])(S(p1)),{size:24,color:PP,weight:700});
-  s+=fade(seg(p,.05,.2),arrow(...S([0,0]),...S(p2),{color:FC,w:7,head:20})+T(bA,...(([x,y])=>[x-10,y-24])(S(p2)),{size:36}));
-  // drop lines (perpendicular to B)
+  const ox=90,oy=330,p1=[230,-70],p2=[350,-230];
+  let s=line(ox-30,oy,ox+560,oy,{color:C.faint,w:2,dash:'6 8'});
+  s+=arrow(ox,oy,ox+200,oy,{color:LC,w:6,head:20})+T(bB,ox+150,oy+44,{size:34});
+  s+=arrow(ox,oy,ox+p1[0],oy+p1[1],{color:HC,w:6,head:18})+label('部品①',ox+p1[0]+8,oy+p1[1]+34,{size:24,color:HC,weight:700});
+  s+=arrow(ox+p1[0],oy+p1[1],ox+p2[0],oy+p2[1],{color:PP,w:6,head:18})+label('部品②',ox+p1[0]+80,oy+p1[1]-50,{size:24,color:PP,weight:700});
+  s+=fade(seg(p,.05,.2),arrow(ox,oy,ox+p2[0],oy+p2[1],{color:FC,w:7,head:20})+T(bA,ox+p2[0]-40,oy+p2[1]-10,{size:36}));
   const g1=seg(p,.15,.35),g2=seg(p,.3,.5),g3=seg(p,.55,.75);
-  s+=fade(g1,line(...S(p1),...onB(s1),{color:AL,w:2,dash:'6 6'})+rect(0,0,0,0));
-  s+=fade(g2,line(...S(p2),...onB(s2),{color:AL,w:2,dash:'6 6'}));
-  // shadows along B, slightly offset below the line
-  s+=fade(g1,line(...onB(0,16),...onB(s1,16),{color:HC,w:10,cap:'butt'}));
-  s+=fade(g2,line(...onB(s1,16),...onB(s2,16),{color:PP,w:10,cap:'butt'}));
-  s+=fade(g3,line(...onB(0,36),...onB(s2,36),{color:AL,w:10,cap:'butt'}));
-  s+=card(700,110,460,300,label('影の 足し算',930,160,{size:28,color:C.dim,anchor:'middle'})
+  s+=fade(g1,line(ox+p1[0],oy+p1[1],ox+p1[0],oy+150,{color:AL,w:2,dash:'6 6'}));
+  s+=fade(g2,line(ox+p2[0],oy+p2[1],ox+p2[0],oy+150,{color:AL,w:2,dash:'6 6'}));
+  s+=fade(g1,line(ox,oy+80,ox+p1[0],oy+80,{color:HC,w:12,cap:'butt'}));
+  s+=fade(g2,line(ox+p1[0],oy+80,ox+p2[0],oy+80,{color:PP,w:12,cap:'butt'}));
+  s+=fade(g3,line(ox,oy+130,ox+p2[0],oy+130,{color:AL,w:12,cap:'butt'}));
+  s+=card(700,110,460,300,label('𝐁 の向きへの 影の 足し算',930,160,{size:26,color:C.dim,anchor:'middle'})
    +fade(g1,label('部品① の影',760,220,{size:28,color:HC,weight:700}))
    +fade(g2,label('＋ 部品② の影',760,270,{size:28,color:PP,weight:700}))
    +fade(g3,label('＝ 𝐀 の影',760,330,{size:32,color:AL,weight:700}))
@@ -258,9 +250,19 @@ export const ytUmInnerProduct1Diagrams={
    +fade(seg(p,.5,.65),label('直角 → 0',990,430,{size:28,color:RC,anchor:'middle',weight:700})),seg(p,0,.15));
   return s;
  },
+ [K+'xyshadow']:(p)=>{
+  let s=table([[2,3],[3,2]]);
+  const ox=900,oy=320;
+  let pic=line(ox,oy+30,ox,120,{color:HC,w:2,dash:'6 8'})+arrow(ox,oy,ox,oy-150,{color:HC,w:6,head:18,opacity:.55})+T(hy,ox-34,oy-110,{size:38});
+  pic+=arrow(ox,oy,ox+150,oy,{color:HC,w:7,head:20})+T(hx,ox+90,oy-22,{size:40});
+  pic+=fade(seg(p,.3,.5),dot(ox,oy,11,AL)+label('影 ＝ 点',ox-50,oy+60,{size:28,color:AL,weight:700}));
+  pic+=fade(seg(p,.6,.8),label('長さ 0 → 掛けても 0',990,430,{size:26,color:RC,anchor:'middle',weight:700}));
+  s+=card(820,90,340,380,pic,seg(p,0,.12));
+  return s;
+ },
  [K+'result']:(p)=>{
   let s=table([[2,3],[3,2]]);
-  s+=fade(seg(p,.1,.3),T(`${bA}\\cdot${bB}=${Ax}${Bx}+${Ay}${By}`,TCX,440,{size:54})+highlight(TCX-260,395,520,80,1,AL));
+  {const rt=`${bA}\\cdot${bB}=${Ax}${Bx}+${Ay}${By}`,rw=texWidth(rt,54,false);s+=fade(seg(p,.1,.3),T(rt,TCX,440,{size:54})+highlight(TCX-rw/2-20,395,rw+40,80,1,AL));}
   s+=card(840,110,320,240,label('残るのは',1000,175,{size:28,color:C.dim,anchor:'middle'})+label('対角線の 2マス',1000,230,{size:32,color:AL,anchor:'middle',weight:700})
    +fade(seg(p,.5,.7),label('同じ軸どうし',1000,295,{size:28,color:C.ink,anchor:'middle'})),seg(p,.3,.45));
   return s;
@@ -291,6 +293,14 @@ export const ytUmInnerProduct1Diagrams={
    +fade(gd,label('対角線の 3つが残る',950,335,{size:28,color:AL,anchor:'middle',weight:700})),seg(p,0,.15));
   return s;
  },
+ [K+'3dex']:(p)=>{
+  let s=label('3次元の例（前回の矢印）',600,70,{size:26,color:C.dim,anchor:'middle'});
+  s+=card(140,110,920,300,T(`${cs(FC,'(1,\\,2,\\,2)')}\\cdot${cs(LC,'(2,\\,0,\\,1)')}`,600,185,{size:48})
+   +fade(seg(p,.15,.45),T(`=${cs(FC,'1')}\\times${cs(LC,'2')}+${cs(FC,'2')}\\times${cs(LC,'0')}+${cs(FC,'2')}\\times${cs(LC,'1')}`,600,275,{size:46}))
+   +fade(seg(p,.55,.75),T(`=2+0+2=${cs(AL,'4')}`,600,360,{size:48})),seg(p,0,.12));
+  s+=fade(seg(p,.8,.95),label('x・y・z それぞれ 同じ軸どうし',600,470,{size:28,color:AL,anchor:'middle',weight:700}));
+  return s;
+ },
  // ===== S3 2通りで確かめる =====
  [K+'comp']:(p)=>{
   const {s:gs}=FR();let s=gs;
@@ -301,8 +311,8 @@ export const ytUmInnerProduct1Diagrams={
   return s;
  },
  [K+'len']:(p)=>{
-  const {P,s:gs}=FR();let s=gs;
-  s+=fade(seg(p,.05,.2),line(P.X(3),P.Y(0),P.X(3),P.Y(4),{color:PP,w:4,dash:'8 6'})+label('4',P.X(3)+12,P.Y(2)+8,{size:26,color:PP,weight:700})+label('3',P.X(1.5)+30,P.Y(0)-12,{size:26,color:AL,weight:700}));
+  const {P,s:gs}=FR({skip:[1,2]});let s=gs;
+  s+=fade(seg(p,.05,.2),line(P.X(3),P.Y(0),P.X(3),P.Y(4),{color:PP,w:4,dash:'8 6'})+label('4',P.X(3)+12,P.Y(2)+8,{size:26,color:PP,weight:700})+label('3',P.X(1.5),P.Y(0)+32,{size:26,color:AL,anchor:'middle',weight:700}));
   s+=card(560,100,600,320,fade(seg(p,.1,.3),T(`${cs(FC,'F')}=\\sqrt{3^2+4^2}=\\sqrt{25}`,860,170,{size:42}))
    +fade(seg(p,.35,.5),T(`=${cs(FC,'5\\,\\mathrm{N}')}`,860,245,{size:46}))
    +fade(seg(p,.6,.78),T(`${cs(LC,'\\Delta r')}=${cs(LC,'2\\,\\mathrm{m}')}`,860,345,{size:46})),seg(p,0,.12));
@@ -321,10 +331,12 @@ export const ytUmInnerProduct1Diagrams={
  },
  [K+'both']:(p)=>{
   let s=label('同じ 𝐅 ＝ (3, 4) N，Δ𝐫 ＝ (2, 0) m',600,70,{size:28,color:C.dim,anchor:'middle'});
-  s+=card(120,110,960,140,label('成分で',200,190,{size:30,color:C.ink})+T(`${cs(FC,'3')}\\times${cs(LC,'2')}+${cs(FC,'4')}\\times${cs(LC,'0')}=${cs(WC,'6\\,\\mathrm{J}')}`,680,188,{size:48}));
-  s+=card(120,280,960,140,label('角度で',200,360,{size:30,color:C.ink})+T(`${cs(FC,'5')}\\times${cs(LC,'2')}\\times${cs(AL,'0.6')}=${cs(WC,'6\\,\\mathrm{J}')}`,680,358,{size:48}),seg(p,.05,.25));
-  s+=fade(seg(p,.5,.7),highlight(850,130,190,100,1,WC)+highlight(850,300,190,100,1,WC)+check(1110,265,22));
-  s+=fade(seg(p,.6,.8),label('一致',1110,320,{size:28,color:C.F,anchor:'middle',weight:700}));
+  const e1=`${cs(FC,'3')}\\times${cs(LC,'2')}+${cs(FC,'4')}\\times${cs(LC,'0')}=${cs(WC,'6\\,\\mathrm{J}')}`,e2=`${cs(FC,'5')}\\times${cs(LC,'2')}\\times${cs(AL,'0.6')}=${cs(WC,'6\\,\\mathrm{J}')}`;
+  const w1=texWidth(e1,48,false),w2=texWidth(e2,48,false),jw=texWidth(`${cs(WC,'6\\,\\mathrm{J}')}`,48,false);
+  s+=card(120,110,960,140,label('成分で',200,190,{size:30,color:C.ink})+T(e1,680,188,{size:48}));
+  s+=card(120,280,960,140,label('角度で',200,360,{size:30,color:C.ink})+T(e2,680,358,{size:48}),seg(p,.05,.25));
+  s+=fade(seg(p,.5,.7),highlight(680+w1/2-jw-4,140,jw+14,80,1,WC)+highlight(680+w2/2-jw-4,310,jw+14,80,1,WC)+check(1135,255,20));
+  s+=fade(seg(p,.6,.8),label('一致',1135,310,{size:28,color:C.F,anchor:'middle',weight:700}));
   return s;
  },
  [K+'map']:(p)=>{
@@ -337,6 +349,16 @@ export const ytUmInnerProduct1Diagrams={
   s+=card(560,110,600,280,label('移動が x 軸に沿う',860,170,{size:28,color:LC,anchor:'middle'})
    +fade(seg(p,.3,.5),label('影 ＝ x 成分',860,230,{size:32,color:AL,anchor:'middle',weight:700}))
    +fade(seg(p,.55,.75),T(`${cs(FC,'5')}\\times${cs(AL,'0.6')}=${cs(AL,'3')}=${cs(FC,'F_x')}`,860,320,{size:46})),seg(p,0,.15));
+  return s;
+ },
+ [K+'meaning']:(p)=>{
+  const {P,s:gs}=FR({labR:false,skip:[1,2]});let s=gs;
+  s+=line(P.X(0),P.Y(0)+1,P.X(3),P.Y(0)+1,{color:AL,w:12,cap:'butt'});
+  s+=fade(seg(p,.45,.6),arrow(P.X(3),P.Y(0),P.X(3),P.Y(4),{color:PP,w:5,head:16,opacity:.8})+label('4 N',P.X(3)+14,P.Y(2)+8,{size:26,color:PP,weight:700}));
+  s+=label('3 N',P.X(1.5),P.Y(0)+36,{size:26,color:AL,anchor:'middle',weight:700});
+  s+=card(560,100,600,320,label('5 N で 斜めに 引いても',860,165,{size:30,color:C.ink,anchor:'middle'})
+   +fade(seg(p,.1,.3),T(`${cs(WC,'W')}=${cs(AL,'3')}\\times${cs(LC,'2')}=${cs(WC,'6\\,\\mathrm{J}')}`,860,250,{size:48}))
+   +fade(seg(p,.5,.7),label('上向き 4 N：',640,345,{size:28,color:PP,weight:700})+label('右への移動に 効かない',800,345,{size:28,color:C.ink})),seg(p,0,.12));
   return s;
  },
  [K+'shokyu']:(p)=>{
@@ -361,7 +383,7 @@ export const ytUmInnerProduct1Diagrams={
  },
  [K+'quizangle']:(p)=>{
   const {P,s:gs}=FR({F:[2,5],R:[4,1]});let s=gs;
-  s+=arcAt(P.X(0),P.Y(0),14.04,68.2,60,{g:seg(p,.05,.25),text:'約 54°',tsize:24});
+  s+=arcAt(P.X(0),P.Y(0),14.04,68.2,110,{g:seg(p,.05,.25)})+fade(seg(p,.05,.25),label('約 54°',P.X(0)+190*Math.cos(rad(41)),P.Y(0)-190*Math.sin(rad(41))+9,{size:26,color:TC,anchor:'middle',weight:700}));
   s+=card(560,110,600,280,T(`${bF}\\cdot${bR}=${cs(WC,'13\\,\\mathrm{J}')}`,860,185,{size:46})
    +fade(seg(p,.3,.5),label('角度は 知らなくてよい',860,275,{size:32,color:AL,anchor:'middle',weight:700}))
    +fade(seg(p,.55,.75),label('成分だけで 計算できた',860,335,{size:28,color:C.ink,anchor:'middle'})),seg(p,0,.12));
@@ -369,9 +391,11 @@ export const ytUmInnerProduct1Diagrams={
  },
  // ===== S4 まとめと次の問い =====
  [K+'sum1']:(p)=>{
-  let s=T(`${bA}\\cdot${bB}`,250,200,{size:60});
-  s+=fade(seg(p,.1,.3),T(`=${cs(FC,'A')}\\,${cs(LC,'B')}\\cos\\theta`,560,200,{size:56})+label('角度で',560,280,{size:28,color:C.dim,anchor:'middle'}));
-  s+=fade(seg(p,.35,.55),T(`=${Ax}${Bx}+${Ay}${By}`,930,200,{size:56})+label('成分で',930,280,{size:28,color:C.dim,anchor:'middle'}));
+  const t0=`${bA}\\cdot${bB}`,t1=`=${cs(FC,'A')}\\,${cs(LC,'B')}\\cos\\theta`,t2=`=${Ax}${Bx}+${Ay}${By}`;
+  const w0=texWidth(t0,58,false),w1=texWidth(t1,58,false),w2=texWidth(t2,58,false),gap=24,x0=600-(w0+w1+w2+2*gap)/2;
+  let s=T(t0,x0,200,{size:58,anchor:'start'});
+  s+=fade(seg(p,.1,.3),T(t1,x0+w0+gap,200,{size:58,anchor:'start'})+label('角度で',x0+w0+gap+w1/2,280,{size:28,color:C.dim,anchor:'middle'}));
+  s+=fade(seg(p,.35,.55),T(t2,x0+w0+w1+2*gap,200,{size:58,anchor:'start'})+label('成分で',x0+w0+w1+2*gap+w2/2,280,{size:28,color:C.dim,anchor:'middle'}));
   s+=fade(seg(p,.65,.8),label('同じ 一つの数の、2通りの 書き方',600,400,{size:34,color:AL,anchor:'middle',weight:700}));
   return s;
  },

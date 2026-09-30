@@ -15,7 +15,7 @@ const sq=x=>x*x;
 
 // ---- y = x² near x = 3 ----------------------------------------------------------------------
 function gx2({x=110,y=470,w=500,h=400,xmin=0,xmax=4.3,ymin=0,ymax=18,g=1,curve=1,ticks=true}={}){
- const A=axes({x,y,w,h,xmin,xmax,ymin,ymax,xlabel:'x',ylabel:'y',xticks:ticks?[1,2,3,4]:[],yticks:ticks?[5,10,15]:[],grid:ticks,g,xcolor:CU,ycolor:C.dim});
+ const A=axes({x,y,w,h,xmin,xmax,ymin,ymax,xlabel:'x',ylabel:'y',xticks:ticks?[1,2,3,4].filter(v=>v>=xmin&&v<=xmax):[],yticks:ticks?[5,10,15].filter(v=>v>=ymin&&v<=ymax):[],grid:ticks,g,xcolor:CU,ycolor:C.dim});
  return {A,svg:A.svg+A.plot(sq,{from:Math.max(xmin,0),to:Math.min(xmax,Math.sqrt(ymax)),p:curve,color:CU,w:4})};
 }
 function lineThrough(A,x0,y0,k,a,b,{g=1,color=TA,w=4,dash='',ymin=-1e9,ymax=1e9}={}){
@@ -44,11 +44,11 @@ function zoomWindow(A,hw,g=1){
 const gf=x=>1+.3*x+.18*x*x,gd=x=>.3+.36*x,GA=1.5,GX=3.8;
 function ggen({g=1,tan=1,xpt=0,rise=0,gap=0,aLab=1}={}){
  const A=axes({x:90,y:470,w:520,h:400,xmax:4.6,ymax:5.6,xlabel:'x',ylabel:'y',g});
- let s=A.svg+A.plot(gf,{from:0,to:4.4,color:CU,w:4});
+ let s=A.svg+A.plot(gf,{from:0,to:3.95,color:CU,w:4});
  const ax=A.X(GA),ay=A.Y(gf(GA));
  s+=fade(aLab,line(ax,ay,ax,A.Y(0),{color:AA,w:2,dash:'6 5'})+label('a',ax,A.Y(0)+36,{size:28,color:AA,anchor:'middle',weight:700}));
  s+=fade(aLab,line(ax,A.Y(0),ax,ay,{color:CU,w:6})+label('f(a)',ax-12,(A.Y(0)+ay)/2+8,{size:26,color:CU,anchor:'end'}));
- s+=fade(tan,lineThrough(A,GA,gf(GA),gd(GA),.2,4.4,{color:TA,w:4}));
+ s+=fade(tan,lineThrough(A,GA,gf(GA),gd(GA),.2,4.0,{color:TA,w:4}));
  s+=dot(ax,ay,9,AA);
  if(xpt){
   const xx=A.X(GX),ty=A.Y(gf(GA)+gd(GA)*(GX-GA));
@@ -89,7 +89,7 @@ function grt({g=1,tan=0,x=90,y=460,w=540,h=380,xmin=-1,xmax=3,ymin=0,ymax=2.8,ma
 function gsin({g=1,tan=1}={}){
  const A=axes({x:90,y:440,w:520,h:360,xmin:-.1,xmax:1.6,ymin:-.1,ymax:1.6,xlabel:'θ',ylabel:'y',xticks:[.5,1,1.5],yticks:[.5,1,1.5],grid:true,g,xcolor:C.ink,ycolor:C.dim});
  let s=A.svg+A.plot(Math.sin,{from:0,to:1.6,color:CU,w:5})+fade(tan,A.plot(u=>u,{from:0,to:1.55,color:TA,w:3.5}));
- s+=fade(tan,label('y ＝ θ',A.X(1.2)+14,A.Y(1.35),{size:24,color:TA,weight:700}))+label('y ＝ sinθ',A.X(1.25),A.Y(Math.sin(1.25))+40,{size:24,color:CU,weight:700});
+ s+=fade(tan,label('y ＝ θ',A.X(1.15)-16,A.Y(1.15)-10,{size:24,color:TA,weight:700,anchor:'end'}))+label('y ＝ sinθ',A.X(1.25),A.Y(Math.sin(1.25))+40,{size:24,color:CU,weight:700});
  s+=dot(A.X(0),A.Y(0),9,AA);
  return {A,svg:s};
 }
@@ -123,7 +123,7 @@ export const ytUmApprox1Diagrams={
   const A=axes({x:110,y:450,w:460,h:360,xmin:.6,xmax:1.45,ymin:.6,ymax:4.2,xlabel:'x',ylabel:'高さ',xticks:[1],yticks:[2,4],grid:true,xcolor:CU});
   let s=A.svg+A.plot(u=>2*u*u,{from:.6,to:1.43,color:CU,w:4})+fade(seg(p,.1,.3),lineThrough(A,1,2,4,.62,1.45,{color:TA,w:3,dash:'9 7'}));
   s+=dot(A.X(1),A.Y(2),8,AA)+label('y ＝ 2x²',A.X(1.25),A.Y(2*1.25*1.25)+50,{size:24,color:CU});
-  s+=fade(seg(p,.1,.3),label('傾き 4',A.X(.7),A.Y(1.4)+10,{size:24,color:TA,weight:700}));
+  s+=fade(seg(p,.1,.3),label('傾き 4',A.X(.8)+10,A.Y(1.2)+34,{size:24,color:TA,weight:700}));
   s+=card(660,90,480,300,label('前回：0.01 先の高さ',900,140,{size:26,color:C.dim,anchor:'middle'})
    +fade(seg(p,.2,.4),label('予想',780,215,{size:28,color:TA,anchor:'middle'})+tex('2.04',780,275,{size:44,auto:false}))
    +fade(seg(p,.6,.8),label('実際',1020,215,{size:28,color:CU,anchor:'middle'})+tex('2.0402',1020,275,{size:44,auto:false})
@@ -190,7 +190,7 @@ export const ytUmApprox1Diagrams={
   s+=card(660,110,480,280,label('直線を決める 二つの数',900,165,{size:28,color:C.ink,anchor:'middle',weight:700})
    +label('① ある点での 高さ',900,245,{size:32,color:AA,anchor:'middle'})+ok(1090,250,seg(p,.1,.25))
    +label('② 傾き',900,320,{size:32,color:TA,anchor:'middle'})+fade(seg(p,.6,.75),label('？',1000,322,{size:32,color:TA,weight:700})),1);
-  s+=fade(seg(p,.7,.85),label('高さだけでは 何本も',A.X(3.3),A.Y(1.8),{size:26,color:C.dim,anchor:'middle',weight:700}));
+  s+=fade(seg(p,.7,.85),label('高さだけでは 何本も',A.X(3.75),A.Y(2.2),{size:26,color:C.dim,anchor:'middle',weight:700}));
   return s;
  },
  [K+'slope6']:(p)=>{
@@ -203,12 +203,12 @@ export const ytUmApprox1Diagrams={
   s+=card(660,110,480,280,label('x² の傾き',900,165,{size:28,color:C.ink,anchor:'middle',weight:700})
    +tex('2x',900,240,{size:48})
    +fade(seg(p,.2,.4),label('x ＝ 3 で 6',900,320,{size:34,color:TA,anchor:'middle',weight:700})),1);
-  s+=fade(seg(p,.7,.85),label('傾き 6',A.X(3.6)+10,A.Y(12.6)+10,{size:26,color:TA,weight:700}));
+  s+=fade(seg(p,.7,.85),label('傾き 6',A.X(3.7)+14,A.Y(10.2),{size:26,color:TA,weight:700}));
   return s;
  },
  [K+'tangent']:(p)=>{
   const {A,svg}=gx2({x:90,w:480,xmin:1.5,xmax:4.3});
-  let s=svg+lineThrough(A,3,9,6,1.7,4.25,{color:TA,w:5})+dot(A.X(3),A.Y(9),9,AA)+label('(3, 9)',A.X(3)+16,A.Y(9)+34,{size:24,color:AA})+label('傾き 6',A.X(3.6)+10,A.Y(12.6)+10,{size:26,color:TA,weight:700});
+  let s=svg+lineThrough(A,3,9,6,1.7,4.25,{color:TA,w:5})+dot(A.X(3),A.Y(9),9,AA)+label('(3, 9)',A.X(3)+16,A.Y(9)+34,{size:24,color:AA})+label('傾き 6',A.X(3.7)+14,A.Y(10.2),{size:26,color:TA,weight:700});
   s+=card(660,90,480,320,label('x ＝ 3 での 接線',900,150,{size:34,color:TA,anchor:'middle',weight:700})
    +fade(seg(p,.25,.45),label('高さも 傾きも 合わせた',900,225,{size:28,color:C.ink,anchor:'middle'})+label('ただ 1本の直線',900,275,{size:28,color:C.ink,anchor:'middle'}))
    +fade(seg(p,.6,.8),label('→ 最良の直線',900,355,{size:34,color:C.hi,anchor:'middle',weight:700})),seg(p,0,.15),TA);
@@ -281,7 +281,7 @@ export const ytUmApprox1Diagrams={
  [K+'predict']:(p)=>{
   const {A,svg}=gx2({x:90,w:480,xmin:1.5,xmax:4.3});
   let s=svg+dot(A.X(3),A.Y(9),9,AA)+lineThrough(A,3,9,6,1.7,4.25,{color:TA,w:4});
-  s+=fade(seg(p,.1,.3),line(A.X(3.1),A.Y(0)-8,A.X(3.1),A.Y(0)+8,{color:C.ink,w:3})+label('3.1',A.X(3.1)+6,A.Y(0)+36,{size:22,color:C.ink}));
+  s+=fade(seg(p,.1,.3),line(A.X(3.1),A.Y(0)-8,A.X(3.1),A.Y(0)+8,{color:C.ink,w:3})+label('3.1',A.X(3.1)+8,A.Y(0)-14,{size:22,color:C.ink}));
   s+=card(660,70,480,340,tex(`x^2\\approx${cs(CU,'9')}+${cs(TA,'6')}(x-3)`,900,135,{size:42,auto:false})
    +fade(seg(p,.1,.3),label('x ＝ 3.1 では？',900,240,{size:36,color:C.hi,anchor:'middle',weight:700}))
    +fade(seg(p,.4,.6),label('予想してみよう',900,320,{size:26,color:C.hi,anchor:'middle'})),1,C.hi);
@@ -289,7 +289,7 @@ export const ytUmApprox1Diagrams={
  },
  [K+'calc']:(p)=>{
   const {A,svg}=gx2({x:90,w:480,xmin:1.5,xmax:4.3});
-  let s=svg+dot(A.X(3),A.Y(9),9,AA)+lineThrough(A,3,9,6,1.7,4.25,{color:TA,w:4})+line(A.X(3.1),A.Y(0)-8,A.X(3.1),A.Y(0)+8,{color:C.ink,w:3})+label('3.1',A.X(3.1)+6,A.Y(0)+36,{size:22,color:C.ink});
+  let s=svg+dot(A.X(3),A.Y(9),9,AA)+lineThrough(A,3,9,6,1.7,4.25,{color:TA,w:4})+line(A.X(3.1),A.Y(0)-8,A.X(3.1),A.Y(0)+8,{color:C.ink,w:3})+label('3.1',A.X(3.1)+8,A.Y(0)-14,{size:22,color:C.ink});
   s+=card(660,70,480,340,tex(`x^2\\approx${cs(CU,'9')}+${cs(TA,'6')}(x-3)`,900,135,{size:42,auto:false})
    +fade(seg(p,.05,.25),label('幅 x − 3 ＝ 0.1',900,215,{size:28,color:C.ink,anchor:'middle'}))
    +fade(seg(p,.3,.5),tex(`${cs(CU,'9')}+${cs(TA,'6')}\\times0.1`,900,285,{size:42,auto:false}))
@@ -353,7 +353,7 @@ export const ytUmApprox1Diagrams={
  [K+'far1']:(p)=>{
   const A=axes({x:90,y:470,w:520,h:420,xmin:0,xmax:4.3,ymin:-4,ymax:18,xlabel:'x',ylabel:'y',xticks:[1,2,3,4],yticks:[5,10,15],grid:true,xcolor:CU});
   let s=A.svg+A.plot(sq,{from:0,to:4.2,color:CU,w:4})+lineThrough(A,3,9,6,.85,4.25,{color:TA,w:4})+dot(A.X(3),A.Y(9),9,AA);
-  s+=label('a ＝ 3',A.X(3)+14,A.Y(9)+32,{size:24,color:AA});
+  s+=label('a ＝ 3',A.X(3)-16,A.Y(9)-16,{size:24,color:AA,anchor:'end'});
   const g=seg(p,.35,.6);
   s+=fade(g,line(A.X(1.1),A.Y(1.21),A.X(1.1),A.Y(-2.4),{color:DF,w:5})+dot(A.X(1.1),A.Y(-2.4),8,TA)+dot(A.X(1.1),A.Y(1.21),8,CU));
   s+=card(660,70,480,340,label('a ＝ 3 の式を x ＝ 1.1 に',900,125,{size:28,color:C.ink,anchor:'middle'})
@@ -367,14 +367,14 @@ export const ytUmApprox1Diagrams={
  // ===== S5 √(1+x) =====
  [K+'rt1']:(p)=>{
   const {A,svg}=grt({g:seg(p,.05,.25)});
-  let s=svg+fade(seg(p,.1,.3),label('y ＝ √(1＋x)',A.X(1.8),A.Y(Math.sqrt(2.8))-18,{size:26,color:CU,weight:700,anchor:'middle'}));
+  let s=svg+fade(seg(p,.1,.3),label('y ＝ √(1＋x)',A.X(2.2),A.Y(Math.sqrt(3.2))+44,{size:26,color:CU,weight:700,anchor:'middle'}));
   s+=card(680,90,460,300,label('x ＝ 0 の近くで 直線に',910,145,{size:28,color:C.ink,anchor:'middle',weight:700})
    +fade(seg(p,.55,.75),label('x ＝ 0 での値',910,225,{size:28,color:AA,anchor:'middle'})+tex('\\sqrt{1}=1',910,295,{size:44,auto:false})),seg(p,.05,.2));
   return s;
  },
  [K+'rt2']:(p)=>{
   const {A,svg}=grt({});
-  let s=svg+label('y ＝ √(1＋x)',A.X(1.8),A.Y(Math.sqrt(2.8))-18,{size:26,color:CU,weight:700,anchor:'middle'});
+  let s=svg+label('y ＝ √(1＋x)',A.X(2.2),A.Y(Math.sqrt(3.2))+44,{size:26,color:CU,weight:700,anchor:'middle'});
   s+=card(680,60,460,380,label('√ の傾き：まだ 扱っていない',910,110,{size:26,color:C.dim,anchor:'middle'})
    +fade(seg(p,.3,.5),label('直線を',910,180,{size:28,color:C.ink,anchor:'middle'})+tex(cs(TA,'1+kx'),910,240,{size:48,auto:false})+label('と置く',910,300,{size:28,color:C.ink,anchor:'middle'}))
    +fade(seg(p,.6,.8),label('2乗して 1＋x に 合う k は？',910,385,{size:28,color:C.hi,anchor:'middle',weight:700})),1);
@@ -389,11 +389,14 @@ export const ytUmApprox1Diagrams={
  [K+'rt4']:(p)=>{
   const R='=1+2kx+k^2x^2',w=texWidth(R,56,false),x0=600-w/2;
   const w1=texWidth('=1+',56,false),w2=texWidth('2kx',56,false),w3=texWidth('+',56,false),w4=texWidth('k^2x^2',56,false);
+  const g1=seg(p,.05,.25),g2=seg(p,.45,.6);
   let s=label('2乗して 1＋x と比べる',600,70,{size:28,color:C.dim,anchor:'middle'});
-  s+=tex(`(${cs(TA,'1+kx')})^2`,600,160,{size:56,auto:false})+tex(R,600,270,{size:56,auto:false});
-  s+=fade(seg(p,.05,.25),rect(x0+w1+w2+w3-8,225,w4+16,80,{fill:C.dim,fo:.12,stroke:C.dim,sw:2,rx:10})+label('x² の項：ずっと小さい',x0+w1+w2+w3+w4/2,340,{size:24,color:C.dim,anchor:'middle'}));
-  s+=highlight(x0+w1-10,225,w2+20,80,seg(p,.45,.6));
-  s+=fade(seg(p,.45,.65),tex('1+x',600-w/2+w1+w2/2-40,420,{size:44,auto:false})+label('x の項をそろえる',330,425,{size:26,color:C.hi,anchor:'middle'}));
+  s+=tex(`(${cs(TA,'1+kx')})^2`,600,160,{size:56,auto:false});
+  s+=fade(1-g1,tex(R,600,270,{size:56,auto:false}));
+  s+=fade(g1*(1-g2),tex(`=1+2kx+${cs('#5d6b86','k^2x^2')}`,600,270,{size:56,auto:false}));
+  s+=fade(g2,tex(`=1+${cs(C.hi,'2kx')}+${cs('#5d6b86','k^2x^2')}`,600,270,{size:56,auto:false}));
+  s+=fade(g1,label('x² の項：ずっと小さい',x0+w1+w2+w3+w4/2+20,345,{size:24,color:C.dim,anchor:'middle'}));
+  s+=fade(g2,tex('1+x',600-w/2+w1+w2/2-40,420,{size:44,auto:false})+label('x の項をそろえる',330,425,{size:26,color:C.hi,anchor:'middle'}));
   s+=fade(seg(p,.7,.9),tex(cs(C.hi,'2k=1'),900,425,{size:48,auto:false}));
   return s;
  },
@@ -459,9 +462,9 @@ export const ytUmApprox1Diagrams={
   return s;
  },
  [K+'next']:(p)=>{
-  let s=card(150,70,900,340,label('次の問い',600,120,{size:26,color:C.dim,anchor:'middle'})
-   +label('2次式まで 使うと 係数は どう決まる？',600,200,{size:34,color:C.hi,anchor:'middle',weight:700})
-   +fade(seg(p,.4,.6),label('初級の sinθ の差',600,280,{size:28,color:C.ink,anchor:'middle'})+tex('\\dfrac{\\theta^3}{6}',600,345,{size:48,auto:false})+label('は どこから来る？',790,355,{size:30,color:C.hi,weight:700})),seg(p,.05,.2),C.hi);
+  let s=card(150,60,900,380,label('次の問い',600,110,{size:26,color:C.dim,anchor:'middle'})
+   +label('2次式まで 使うと 係数は どう決まる？',600,185,{size:34,color:C.hi,anchor:'middle',weight:700})
+   +fade(seg(p,.4,.6),label('初級で見た sinθ の差',600,255,{size:28,color:C.ink,anchor:'middle'})+tex('\\dfrac{\\theta^3}{6}',520,360,{size:48,auto:false})+label('は どこから来る？',575,372,{size:30,color:C.hi,weight:700})),seg(p,.05,.2),C.hi);
   return s;
  },
 };
