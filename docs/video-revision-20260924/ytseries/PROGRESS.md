@@ -85,7 +85,10 @@
 | 08 | 微分方程式 um-simple-derivative-equation | 1/2 | ys-um-simple-derivative-equation-1 | 5:25 | 検 読 静 復 | 「数学の道具の最後として」を削除（09 が続くため） |
 | 08 | 〃 | 2/2 | ys-um-simple-derivative-equation-2 | 5:24 | 検 読 静 復 | 最後の字幕が3行で下の表示に重なったので、振り返りの1文を削除 |
 | 09 | 振動の方程式 um-oscillation-equation | 1/1 | ys-um-oscillation-equation-1 | 5:23 | 検 読 静 復 | —（線形と x² の対比、「2段たどるので条件2つ」を補足） |
+| 10 | 運動方程式 um-constant-force-derive | 1/3 | ys-um-constant-force-derive-1 | 5:14 | 検 読 静 復 | —（初級 x＝t² での検算と 2.7 s の例は計画外） |
+| 10 | 〃 | 2/3 | ys-um-constant-force-derive-2 | 5:21 | 検 読 静 復 | — |
+| 10 | 〃 | 3/3 | ys-um-constant-force-derive-3 | 5:19 | 検 読 静 復 | —（初級の ½ の約束を回収） |
 
 - 色の約束（中級）：電流 I 緑、起電力 ℰ 紫（電圧と同じ）。
 - 04〜06 はクラウド（Linux 版 NEMO 0.24.0）で制作。mp4 は `ytseries/mp4/`。
-- 作業中：10 運動方程式、11 空気抵抗。
+- 作業中：11 空気抵抗、12 仕事、13 位置エネルギー。
