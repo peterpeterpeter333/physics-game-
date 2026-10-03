@@ -32,7 +32,7 @@
     "test:calculations": "npm run equations && node scripts/audit-calculations.mjs",
     "dev": "npm run equations && vite",
     "equations": "node scripts/build-equations.mjs",
-    "build": "npm run equations && tsc -b && vite build",
+    "build": "npm run equations && tsc -b && vite build && node scripts/prune-youtube-media.mjs",
     "preview": "vite preview",
     "sync": "npm run build && npx cap sync",
     "open:android": "npx cap open android",
