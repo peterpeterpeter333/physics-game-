@@ -7,6 +7,7 @@ import insertCatalog from '../content/insert-video-catalog.generated.json';
 import insertRoutes from '../content/insert-routes.generated.json';
 import revisedCatalog from '../content/revised-video-catalog.generated.json';
 import b2SeriesCatalog from '../content/b2-series.generated.json';
+import highSchoolSeriesCatalog from '../content/high-school-series.generated.json';
 import type {InsertRoute,VideoMode} from '../game/video-inserts';
 import {SegmentedLessonVideo} from './SegmentedLessonVideo';
 import {prerequisitePlaylist,prerequisiteReview,thoroughPrerequisitePlaylist,prerequisiteSelectionParent} from '../game/prerequisite-playlist';
@@ -23,13 +24,23 @@ const movies=([...catalog,...lessonCatalog] as unknown as Movie[]).map(m=>(revis
 const prerequisiteMovies=prerequisiteCatalog.map(m=>(revisedCatalog as unknown as typeof prerequisiteCatalog).find(r=>r.id===m.id)??m);
 export function hasEMMovies(stage:Stage){
  if(b2SeriesCatalog.some(m=>m.stageId===stage.id&&(b2SeriesEnabled()||youtubeIdFor(`b2-series/${m.id}`))))return true;
+ if(highSchoolSeriesCatalog.some(m=>m.stageId===stage.id&&youtubeIdFor(`hs-series/${m.id}`)))return true;
  if(lessonCatalog.some((m:{stageId:string})=>m.stageId===stage.id))return true;
  const count=spiralLessons[stage.id]?.filter(c=>!movedCycles[stage.id]?.[c.id]).reduce((n,c)=>n+c.cards.length,0)??stage.lesson.steps.length;
  const indices=movies.filter(m=>m.stageId===stage.id).flatMap(m=>m.sourceIndices??[]);
  return indices.length===count&&new Set(indices).size===count&&indices.every(i=>i>=0&&i<count);
 }
 export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSlides}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void}){
- const series=b2SeriesCatalog.filter(m=>m.stageId===stage.id&&(b2SeriesEnabled()||youtubeIdFor(`b2-series/${m.id}`))).map(m=>({...m,stageTitle:stage.title,mediaDirectory:'b2-series',scenes:[]} as Movie));
+ const universitySeries=b2SeriesCatalog.filter(m=>m.stageId===stage.id&&(b2SeriesEnabled()||youtubeIdFor(`b2-series/${m.id}`))).map(m=>({...m,stageTitle:stage.title,mediaDirectory:'b2-series',scenes:[]} as Movie));
+ const highSchoolEntries=highSchoolSeriesCatalog.filter(m=>m.stageId===stage.id&&youtubeIdFor(`hs-series/${m.id}`));
+ const deep=highSchoolEntries.filter(m=>m.kind==='deep').sort((a,b)=>a.part-b.part);
+ const middleCount=Math.floor(deep.length/2);
+ const highSchoolSeries=highSchoolEntries.map(m=>{
+  const level=m.kind==='summary'?'intro':m.part<=middleCount?'middle':'advanced';
+  const part=m.kind==='summary'?1:level==='middle'?m.part:m.part-middleCount;
+  return {...m,level,part,stageTitle:stage.title,mediaDirectory:'hs-series',scenes:[]} as Movie;
+ });
+ const series=[...universitySeries,...highSchoolSeries];
  // A newly hosted difficulty replaces only that difficulty. Other difficulties
  // continue to use their existing local lessons until their own uploads exist.
  const all=[...series,...movies.filter(m=>m.stageId===stage.id&&!series.some(s=>s.level===m.level))];
@@ -45,7 +56,7 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSli
  return <div className="video-lesson-shell">
  {levels.length>1&&<nav className="video-levels" aria-label="動画の難易度">{levels.map(value=><button key={value} type="button" aria-pressed={level===value} onClick={()=>setLevel(value)}>{{intro:'初級',middle:'中級',advanced:'上級'}[value]}</button>)}</nav>}
  <nav className="video-levels" aria-label="学び方">{(['quick','thorough'] as const).map(value=><button key={value} type="button" aria-pressed={mode===value} onClick={()=>setMode(value)}>{value==='quick'?'さっと学ぶ':'とことん学ぶ'}</button>)}</nav>
- {selectedSeries.length>1&&<p className="video-mode-pending">さっと学ぶ：この難易度の最初の1本。とことん学ぶ：公開済みの{selectedSeries.length}本を順番に見ます。</p>}
+ {selectedSeries.length>1&&<p className="video-mode-pending">さっと学ぶ：この難易度の最初の1本。とことん学ぶ：{selectedSeries.length}本を順番に見ます。</p>}
  {mode==='thorough'&&!hasThorough&&selectedSeries.length===0&&<p className="video-mode-pending">この単元の補足動画は準備中です。現在は共通の本編を再生します。</p>}
  <VideoPlayer key={`${stage.id}:${level}`} stage={stage} alreadyFinished={alreadyFinished} onComplete={onComplete} onExit={onExit} onReadSlides={onReadSlides} original={all.filter(m=>m.level===level&&(selectedSeries.length===0||mode==='thorough'||m.part===1))} level={level} mode={mode}/>
  </div>;

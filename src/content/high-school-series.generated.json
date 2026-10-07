@@ -1,0 +1,902 @@
+[
+  {
+    "id": "hs-m1-velocity-1",
+    "stageId": "m1-velocity",
+    "title": "速度・深く学ぶ 1｜どちらが速い",
+    "kind": "deep",
+    "part": 1,
+    "duration": 277.47,
+    "sourceFile": "0_高校_101_速度_深く_1_どちらが速い.mp4"
+  },
+  {
+    "id": "hs-m1-velocity-2",
+    "stageId": "m1-velocity",
+    "title": "速度・深く学ぶ 2｜マイナスは遅いか",
+    "kind": "deep",
+    "part": 2,
+    "duration": 282.74,
+    "sourceFile": "0_高校_101_速度_深く_2_マイナスは遅いか.mp4"
+  },
+  {
+    "id": "hs-m1-velocity-summary",
+    "stageId": "m1-velocity",
+    "title": "速度・要点｜1秒あたりと向き",
+    "kind": "summary",
+    "part": 0,
+    "duration": 131.34,
+    "sourceFile": "0_高校_101_速度_要点_1秒あたりと向き.mp4"
+  },
+  {
+    "id": "hs-m1-acceleration-1",
+    "stageId": "m1-acceleration",
+    "title": "加速度・深く学ぶ 1｜速いと速くなる",
+    "kind": "deep",
+    "part": 1,
+    "duration": 273.47,
+    "sourceFile": "0_高校_102_加速度_深く_1_速いと速くなる.mp4"
+  },
+  {
+    "id": "hs-m1-acceleration-2",
+    "stageId": "m1-acceleration",
+    "title": "加速度・深く学ぶ 2｜マイナスはいつも減速か",
+    "kind": "deep",
+    "part": 2,
+    "duration": 274.83,
+    "sourceFile": "0_高校_102_加速度_深く_2_マイナスはいつも減速か.mp4"
+  },
+  {
+    "id": "hs-m1-acceleration-summary",
+    "stageId": "m1-acceleration",
+    "title": "加速度・要点｜1秒あたりの速度の変化",
+    "kind": "summary",
+    "part": 0,
+    "duration": 134.38,
+    "sourceFile": "0_高校_102_加速度_要点_1秒あたりの速度の変化.mp4"
+  },
+  {
+    "id": "hs-m1-uniform-accel-1",
+    "stageId": "m1-uniform-accel",
+    "title": "等加速度運動・深く学ぶ 1｜面積が距離になる理由",
+    "kind": "deep",
+    "part": 1,
+    "duration": 312.13,
+    "sourceFile": "0_高校_103_等加速度運動_深く_1_面積が距離になる理由.mp4"
+  },
+  {
+    "id": "hs-m1-uniform-accel-2",
+    "stageId": "m1-uniform-accel",
+    "title": "等加速度運動・深く学ぶ 2｜台形を2つに分ける",
+    "kind": "deep",
+    "part": 2,
+    "duration": 278.57,
+    "sourceFile": "0_高校_103_等加速度運動_深く_2_台形を2つに分ける.mp4"
+  },
+  {
+    "id": "hs-m1-uniform-accel-3",
+    "stageId": "m1-uniform-accel",
+    "title": "等加速度運動・深く学ぶ 3｜tを先に消す",
+    "kind": "deep",
+    "part": 3,
+    "duration": 290.97,
+    "sourceFile": "0_高校_103_等加速度運動_深く_3_tを先に消す.mp4"
+  },
+  {
+    "id": "hs-m1-uniform-accel-summary",
+    "stageId": "m1-uniform-accel",
+    "title": "等加速度運動・要点｜定義と面積から作る",
+    "kind": "summary",
+    "part": 0,
+    "duration": 139.04,
+    "sourceFile": "0_高校_103_等加速度運動_要点_定義と面積から作る.mp4"
+  },
+  {
+    "id": "hs-m-freefall-1",
+    "stageId": "m-freefall",
+    "title": "落体の運動・深く学ぶ 1｜重い球と軽い球",
+    "kind": "deep",
+    "part": 1,
+    "duration": 294.7,
+    "sourceFile": "0_高校_104_落体の運動_深く_1_重い球と軽い球.mp4"
+  },
+  {
+    "id": "hs-m-freefall-2",
+    "stageId": "m-freefall",
+    "title": "落体の運動・深く学ぶ 2｜最高点で0になるのは",
+    "kind": "deep",
+    "part": 2,
+    "duration": 281.97,
+    "sourceFile": "0_高校_104_落体の運動_深く_2_最高点で0になるのは.mp4"
+  },
+  {
+    "id": "hs-m-freefall-summary",
+    "stageId": "m-freefall",
+    "title": "落体の運動・要点｜aはずっとg",
+    "kind": "summary",
+    "part": 0,
+    "duration": 144.27,
+    "sourceFile": "0_高校_104_落体の運動_要点_aはずっとg.mp4"
+  },
+  {
+    "id": "hs-m-projectile-1",
+    "stageId": "m-projectile",
+    "title": "放物運動・深く学ぶ 1｜横に速く投げると落ちる時間は",
+    "kind": "deep",
+    "part": 1,
+    "duration": 291.64,
+    "sourceFile": "0_高校_105_放物運動_深く_1_横に速く投げると落ちる時間は.mp4"
+  },
+  {
+    "id": "hs-m-projectile-2",
+    "stageId": "m-projectile",
+    "title": "放物運動・深く学ぶ 2｜斜めの初速度を分ける",
+    "kind": "deep",
+    "part": 2,
+    "duration": 279.97,
+    "sourceFile": "0_高校_105_放物運動_深く_2_斜めの初速度を分ける.mp4"
+  },
+  {
+    "id": "hs-m-projectile-3",
+    "stageId": "m-projectile",
+    "title": "放物運動・深く学ぶ 3｜放物線と45度",
+    "kind": "deep",
+    "part": 3,
+    "duration": 289.75,
+    "sourceFile": "0_高校_105_放物運動_深く_3_放物線と45度.mp4"
+  },
+  {
+    "id": "hs-m-projectile-summary",
+    "stageId": "m-projectile",
+    "title": "放物運動・要点｜横の等速と縦の落下",
+    "kind": "summary",
+    "part": 0,
+    "duration": 130.38,
+    "sourceFile": "0_高校_105_放物運動_要点_横の等速と縦の落下.mp4"
+  },
+  {
+    "id": "hs-m-force-1",
+    "stageId": "m-force",
+    "title": "力と運動方程式・深く学ぶ 1｜力がなければ止まるか",
+    "kind": "deep",
+    "part": 1,
+    "duration": 281.71,
+    "sourceFile": "0_高校_106_力と運動方程式_深く_1_力がなければ止まるか.mp4"
+  },
+  {
+    "id": "hs-m-force-2",
+    "stageId": "m-force",
+    "title": "力と運動方程式・深く学ぶ 2｜Fは合力",
+    "kind": "deep",
+    "part": 2,
+    "duration": 279.97,
+    "sourceFile": "0_高校_106_力と運動方程式_深く_2_Fは合力.mp4"
+  },
+  {
+    "id": "hs-m-force-3",
+    "stageId": "m-force",
+    "title": "力と運動方程式・深く学ぶ 3｜作用反作用は打ち消さない",
+    "kind": "deep",
+    "part": 3,
+    "duration": 282.23,
+    "sourceFile": "0_高校_106_力と運動方程式_深く_3_作用反作用は打ち消さない.mp4"
+  },
+  {
+    "id": "hs-m-force-summary",
+    "stageId": "m-force",
+    "title": "力と運動方程式・要点｜力は速度を変える原因",
+    "kind": "summary",
+    "part": 0,
+    "duration": 129.03,
+    "sourceFile": "0_高校_106_力と運動方程式_要点_力は速度を変える原因.mp4"
+  },
+  {
+    "id": "hs-m-energy-1",
+    "stageId": "m-energy",
+    "title": "仕事とエネルギー・深く学ぶ 1｜力×距離が増やすもの",
+    "kind": "deep",
+    "part": 1,
+    "duration": 324.83,
+    "sourceFile": "0_高校_107_仕事とエネルギー_深く_1_力×距離が増やすもの.mp4"
+  },
+  {
+    "id": "hs-m-energy-2",
+    "stageId": "m-energy",
+    "title": "仕事とエネルギー・深く学ぶ 2｜持ち上げた仕事の行き先",
+    "kind": "deep",
+    "part": 2,
+    "duration": 273.73,
+    "sourceFile": "0_高校_107_仕事とエネルギー_深く_2_持ち上げた仕事の行き先.mp4"
+  },
+  {
+    "id": "hs-m-energy-3",
+    "stageId": "m-energy",
+    "title": "仕事とエネルギー・深く学ぶ 3｜K＋Uが一定の条件",
+    "kind": "deep",
+    "part": 3,
+    "duration": 283.63,
+    "sourceFile": "0_高校_107_仕事とエネルギー_深く_3_K＋Uが一定の条件.mp4"
+  },
+  {
+    "id": "hs-m-energy-summary",
+    "stageId": "m-energy",
+    "title": "仕事とエネルギー・要点｜仕事がたくわえられたもの",
+    "kind": "summary",
+    "part": 0,
+    "duration": 128.67,
+    "sourceFile": "0_高校_107_仕事とエネルギー_要点_仕事がたくわえられたもの.mp4"
+  },
+  {
+    "id": "hs-m-momentum-1",
+    "stageId": "m-momentum",
+    "title": "運動量と力積・深く学ぶ 1｜時間をかけると力が小さい",
+    "kind": "deep",
+    "part": 1,
+    "duration": 344.78,
+    "sourceFile": "0_高校_108_運動量と力積_深く_1_時間をかけると力が小さい.mp4"
+  },
+  {
+    "id": "hs-m-momentum-2",
+    "stageId": "m-momentum",
+    "title": "運動量と力積・深く学ぶ 2｜合計が変わらない理由",
+    "kind": "deep",
+    "part": 2,
+    "duration": 306.53,
+    "sourceFile": "0_高校_108_運動量と力積_深く_2_合計が変わらない理由.mp4"
+  },
+  {
+    "id": "hs-m-momentum-summary",
+    "stageId": "m-momentum",
+    "title": "運動量と力積・要点｜ぶつかっても合計は同じ",
+    "kind": "summary",
+    "part": 0,
+    "duration": 138.03,
+    "sourceFile": "0_高校_108_運動量と力積_要点_ぶつかっても合計は同じ.mp4"
+  },
+  {
+    "id": "hs-m-circular-1",
+    "stageId": "m-circular",
+    "title": "円運動と万有引力・深く学ぶ 1｜速さ一定でも加速度",
+    "kind": "deep",
+    "part": 1,
+    "duration": 321.93,
+    "sourceFile": "0_高校_109_円運動と万有引力_深く_1_速さ一定でも加速度.mp4"
+  },
+  {
+    "id": "hs-m-circular-2",
+    "stageId": "m-circular",
+    "title": "円運動と万有引力・深く学ぶ 2｜月は落ち続けている",
+    "kind": "deep",
+    "part": 2,
+    "duration": 297.67,
+    "sourceFile": "0_高校_109_円運動と万有引力_深く_2_月は落ち続けている.mp4"
+  },
+  {
+    "id": "hs-m-circular-3",
+    "stageId": "m-circular",
+    "title": "円運動と万有引力・深く学ぶ 3｜衛星の速さと周期",
+    "kind": "deep",
+    "part": 3,
+    "duration": 279.93,
+    "sourceFile": "0_高校_109_円運動と万有引力_深く_3_衛星の速さと周期.mp4"
+  },
+  {
+    "id": "hs-m-circular-summary",
+    "stageId": "m-circular",
+    "title": "円運動と万有引力・要点｜中心向きの力",
+    "kind": "summary",
+    "part": 0,
+    "duration": 123.71,
+    "sourceFile": "0_高校_109_円運動と万有引力_要点_中心向きの力.mp4"
+  },
+  {
+    "id": "hs-m-shm-1",
+    "stageId": "m-shm",
+    "title": "単振動・深く学ぶ 1｜中心で止まらない",
+    "kind": "deep",
+    "part": 1,
+    "duration": 286.21,
+    "sourceFile": "0_高校_110_単振動_深く_1_中心で止まらない.mp4"
+  },
+  {
+    "id": "hs-m-shm-2",
+    "stageId": "m-shm",
+    "title": "単振動・深く学ぶ 2｜円運動の影",
+    "kind": "deep",
+    "part": 2,
+    "duration": 288.01,
+    "sourceFile": "0_高校_110_単振動_深く_2_円運動の影.mp4"
+  },
+  {
+    "id": "hs-m-shm-3",
+    "stageId": "m-shm",
+    "title": "単振動・深く学ぶ 3｜振り子に質量が入らない",
+    "kind": "deep",
+    "part": 3,
+    "duration": 273.27,
+    "sourceFile": "0_高校_110_単振動_深く_3_振り子に質量が入らない.mp4"
+  },
+  {
+    "id": "hs-m-shm-summary",
+    "stageId": "m-shm",
+    "title": "単振動・要点｜周期は振幅によらない",
+    "kind": "summary",
+    "part": 0,
+    "duration": 125.81,
+    "sourceFile": "0_高校_110_単振動_要点_周期は振幅によらない.mp4"
+  },
+  {
+    "id": "hs-t-heat-1",
+    "stageId": "t-heat",
+    "title": "熱と温度・深く学ぶ 1｜熱い・冷たいの正体",
+    "kind": "deep",
+    "part": 1,
+    "duration": 274.98,
+    "sourceFile": "0_高校_201_熱と温度_深く_1_熱い・冷たいの正体.mp4"
+  },
+  {
+    "id": "hs-t-heat-2",
+    "stageId": "t-heat",
+    "title": "熱と温度・深く学ぶ 2｜同じ熱で温まり方が違う理由",
+    "kind": "deep",
+    "part": 2,
+    "duration": 291.9,
+    "sourceFile": "0_高校_201_熱と温度_深く_2_同じ熱で温まり方が違う理由.mp4"
+  },
+  {
+    "id": "hs-t-heat-summary",
+    "stageId": "t-heat",
+    "title": "熱と温度・要点｜温度は分子の運動とQ＝mcΔT",
+    "kind": "summary",
+    "part": 0,
+    "duration": 126.73,
+    "sourceFile": "0_高校_201_熱と温度_要点_温度は分子の運動とQ＝mcΔT.mp4"
+  },
+  {
+    "id": "hs-t-gas-1",
+    "stageId": "t-gas",
+    "title": "気体の法則・深く学ぶ 1｜壁を叩く力と体積",
+    "kind": "deep",
+    "part": 1,
+    "duration": 308.1,
+    "sourceFile": "0_高校_202_気体の法則_深く_1_壁を叩く力と体積.mp4"
+  },
+  {
+    "id": "hs-t-gas-2",
+    "stageId": "t-gas",
+    "title": "気体の法則・深く学ぶ 2｜なぜ絶対温度で比べる",
+    "kind": "deep",
+    "part": 2,
+    "duration": 313.78,
+    "sourceFile": "0_高校_202_気体の法則_深く_2_なぜ絶対温度で比べる.mp4"
+  },
+  {
+    "id": "hs-t-gas-summary",
+    "stageId": "t-gas",
+    "title": "気体の法則・要点｜PV/Tは一定",
+    "kind": "summary",
+    "part": 0,
+    "duration": 139.57,
+    "sourceFile": "0_高校_202_気体の法則_要点_PVTは一定.mp4"
+  },
+  {
+    "id": "hs-t-ideal-1",
+    "stageId": "t-ideal",
+    "title": "状態方程式・深く学ぶ 1｜PV/Tの一定は何で決まる",
+    "kind": "deep",
+    "part": 1,
+    "duration": 277.03,
+    "sourceFile": "0_高校_203_状態方程式_深く_1_PVTの一定は何で決まる.mp4"
+  },
+  {
+    "id": "hs-t-ideal-2",
+    "stageId": "t-ideal",
+    "title": "状態方程式・深く学ぶ 2｜衝突から圧力を計算",
+    "kind": "deep",
+    "part": 2,
+    "duration": 293.52,
+    "sourceFile": "0_高校_203_状態方程式_深く_2_衝突から圧力を計算.mp4"
+  },
+  {
+    "id": "hs-t-ideal-3",
+    "stageId": "t-ideal",
+    "title": "状態方程式・深く学ぶ 3｜温度は分子1個の何か",
+    "kind": "deep",
+    "part": 3,
+    "duration": 279.4,
+    "sourceFile": "0_高校_203_状態方程式_深く_3_温度は分子1個の何か.mp4"
+  },
+  {
+    "id": "hs-t-ideal-summary",
+    "stageId": "t-ideal",
+    "title": "状態方程式・要点｜PV＝nRTと温度",
+    "kind": "summary",
+    "part": 0,
+    "duration": 132.6,
+    "sourceFile": "0_高校_203_状態方程式_要点_PV＝nRTと温度.mp4"
+  },
+  {
+    "id": "hs-t-firstlaw-1",
+    "stageId": "t-firstlaw",
+    "title": "熱力学第一法則・深く学ぶ 1｜温度を上げる方法は加熱だけ",
+    "kind": "deep",
+    "part": 1,
+    "duration": 278.83,
+    "sourceFile": "0_高校_204_熱力学第一法則_深く_1_温度を上げる方法は加熱だけ.mp4"
+  },
+  {
+    "id": "hs-t-firstlaw-2",
+    "stageId": "t-firstlaw",
+    "title": "熱力学第一法則・深く学ぶ 2｜ピストンの仕事とPVグラフ",
+    "kind": "deep",
+    "part": 2,
+    "duration": 280.67,
+    "sourceFile": "0_高校_204_熱力学第一法則_深く_2_ピストンの仕事とPVグラフ.mp4"
+  },
+  {
+    "id": "hs-t-firstlaw-3",
+    "stageId": "t-firstlaw",
+    "title": "熱力学第一法則・深く学ぶ 3｜熱は全部仕事にできるか",
+    "kind": "deep",
+    "part": 3,
+    "duration": 279.07,
+    "sourceFile": "0_高校_204_熱力学第一法則_深く_3_熱は全部仕事にできるか.mp4"
+  },
+  {
+    "id": "hs-t-firstlaw-summary",
+    "stageId": "t-firstlaw",
+    "title": "熱力学第一法則・要点｜ΔU＝Q＋W内部エネルギーの収支",
+    "kind": "summary",
+    "part": 0,
+    "duration": 128.27,
+    "sourceFile": "0_高校_204_熱力学第一法則_要点_ΔU＝Q＋W内部エネルギーの収支.mp4"
+  },
+  {
+    "id": "hs-w-basics-1",
+    "stageId": "w-basics",
+    "title": "波の基本・深く学ぶ 1｜進んでいるのは何",
+    "kind": "deep",
+    "part": 1,
+    "duration": 279.24,
+    "sourceFile": "0_高校_301_波の基本_深く_1_進んでいるのは何.mp4"
+  },
+  {
+    "id": "hs-w-basics-2",
+    "stageId": "w-basics",
+    "title": "波の基本・深く学ぶ 2｜1周期で1波長",
+    "kind": "deep",
+    "part": 2,
+    "duration": 301.63,
+    "sourceFile": "0_高校_301_波の基本_深く_2_1周期で1波長.mp4"
+  },
+  {
+    "id": "hs-w-basics-summary",
+    "stageId": "w-basics",
+    "title": "波の基本・要点｜振動のリレーとv＝fλ",
+    "kind": "summary",
+    "part": 0,
+    "duration": 129.5,
+    "sourceFile": "0_高校_301_波の基本_要点_振動のリレーとv＝fλ.mp4"
+  },
+  {
+    "id": "hs-w-sound-1",
+    "stageId": "w-sound",
+    "title": "音波・深く学ぶ 1｜高さは振動数、大きさは振幅",
+    "kind": "deep",
+    "part": 1,
+    "duration": 291.77,
+    "sourceFile": "0_高校_302_音波_深く_1_高さは振動数、大きさは振幅.mp4"
+  },
+  {
+    "id": "hs-w-sound-2",
+    "stageId": "w-sound",
+    "title": "音波・深く学ぶ 2｜うなりは振動数の差",
+    "kind": "deep",
+    "part": 2,
+    "duration": 280.88,
+    "sourceFile": "0_高校_302_音波_深く_2_うなりは振動数の差.mp4"
+  },
+  {
+    "id": "hs-w-sound-3",
+    "stageId": "w-sound",
+    "title": "音波・深く学ぶ 3｜やまびこと弦の定常波",
+    "kind": "deep",
+    "part": 3,
+    "duration": 283.71,
+    "sourceFile": "0_高校_302_音波_深く_3_やまびこと弦の定常波.mp4"
+  },
+  {
+    "id": "hs-w-sound-summary",
+    "stageId": "w-sound",
+    "title": "音波・要点｜高さは振動数、うなりは差",
+    "kind": "summary",
+    "part": 0,
+    "duration": 128.82,
+    "sourceFile": "0_高校_302_音波_要点_高さは振動数、うなりは差.mp4"
+  },
+  {
+    "id": "hs-w-doppler-1",
+    "stageId": "w-doppler",
+    "title": "ドップラー効果・深く学ぶ 1｜近づく音源の前で縮む波長",
+    "kind": "deep",
+    "part": 1,
+    "duration": 301.25,
+    "sourceFile": "0_高校_303_ドップラー効果_深く_1_近づく音源の前で縮む波長.mp4"
+  },
+  {
+    "id": "hs-w-doppler-2",
+    "stageId": "w-doppler",
+    "title": "ドップラー効果・深く学ぶ 2｜通り過ぎるとガクッと下がる",
+    "kind": "deep",
+    "part": 2,
+    "duration": 280.14,
+    "sourceFile": "0_高校_303_ドップラー効果_深く_2_通り過ぎるとガクッと下がる.mp4"
+  },
+  {
+    "id": "hs-w-doppler-3",
+    "stageId": "w-doppler",
+    "title": "ドップラー効果・深く学ぶ 3｜聞き手が動くと出会う速さ",
+    "kind": "deep",
+    "part": 3,
+    "duration": 281.37,
+    "sourceFile": "0_高校_303_ドップラー効果_深く_3_聞き手が動くと出会う速さ.mp4"
+  },
+  {
+    "id": "hs-w-doppler-summary",
+    "stageId": "w-doppler",
+    "title": "ドップラー効果・要点｜波長か出会う速さか",
+    "kind": "summary",
+    "part": 0,
+    "duration": 132.95,
+    "sourceFile": "0_高校_303_ドップラー効果_要点_波長か出会う速さか.mp4"
+  },
+  {
+    "id": "hs-w-light-1",
+    "stageId": "w-light",
+    "title": "光波・深く学ぶ 1｜水やガラスの中で何が変わる",
+    "kind": "deep",
+    "part": 1,
+    "duration": 326.73,
+    "sourceFile": "0_高校_304_光波_深く_1_水やガラスの中で何が変わる.mp4"
+  },
+  {
+    "id": "hs-w-light-2",
+    "stageId": "w-light",
+    "title": "光波・深く学ぶ 2｜速さが変わると向きが変わる理由",
+    "kind": "deep",
+    "part": 2,
+    "duration": 307.43,
+    "sourceFile": "0_高校_304_光波_深く_2_速さが変わると向きが変わる理由.mp4"
+  },
+  {
+    "id": "hs-w-light-3",
+    "stageId": "w-light",
+    "title": "光波・深く学ぶ 3｜全反射と虹の色",
+    "kind": "deep",
+    "part": 3,
+    "duration": 282.17,
+    "sourceFile": "0_高校_304_光波_深く_3_全反射と虹の色.mp4"
+  },
+  {
+    "id": "hs-w-light-summary",
+    "stageId": "w-light",
+    "title": "光波・要点｜屈折は速さの変化",
+    "kind": "summary",
+    "part": 0,
+    "duration": 145.97,
+    "sourceFile": "0_高校_304_光波_要点_屈折は速さの変化.mp4"
+  },
+  {
+    "id": "hs-w-interference-1",
+    "stageId": "w-interference",
+    "title": "干渉と回折・深く学ぶ 1｜どこで強め合う",
+    "kind": "deep",
+    "part": 1,
+    "duration": 333.87,
+    "sourceFile": "0_高校_305_干渉と回折_深く_1_どこで強め合う.mp4"
+  },
+  {
+    "id": "hs-w-interference-2",
+    "stageId": "w-interference",
+    "title": "干渉と回折・深く学ぶ 2｜光の縞の間隔",
+    "kind": "deep",
+    "part": 2,
+    "duration": 321.58,
+    "sourceFile": "0_高校_305_干渉と回折_深く_2_光の縞の間隔.mp4"
+  },
+  {
+    "id": "hs-w-interference-summary",
+    "stageId": "w-interference",
+    "title": "干渉と回折・要点｜経路差と強め合い",
+    "kind": "summary",
+    "part": 0,
+    "duration": 135.2,
+    "sourceFile": "0_高校_305_干渉と回折_要点_経路差と強め合い.mp4"
+  },
+  {
+    "id": "hs-e-current-1",
+    "stageId": "e-current",
+    "title": "電流とオームの法則・深く学ぶ 1｜何が動いているか",
+    "kind": "deep",
+    "part": 1,
+    "duration": 282.48,
+    "sourceFile": "0_高校_401_電流とオームの法則_深く_1_何が動いているか.mp4"
+  },
+  {
+    "id": "hs-e-current-2",
+    "stageId": "e-current",
+    "title": "電流とオームの法則・深く学ぶ 2｜電圧1Vの意味",
+    "kind": "deep",
+    "part": 2,
+    "duration": 277.21,
+    "sourceFile": "0_高校_401_電流とオームの法則_深く_2_電圧1Vの意味.mp4"
+  },
+  {
+    "id": "hs-e-current-3",
+    "stageId": "e-current",
+    "title": "電流とオームの法則・深く学ぶ 3｜抵抗は電圧と電流の比",
+    "kind": "deep",
+    "part": 3,
+    "duration": 274.8,
+    "sourceFile": "0_高校_401_電流とオームの法則_深く_3_抵抗は電圧と電流の比.mp4"
+  },
+  {
+    "id": "hs-e-current-4",
+    "stageId": "e-current",
+    "title": "電流とオームの法則・深く学ぶ 4｜直列と並列の足し方",
+    "kind": "deep",
+    "part": 4,
+    "duration": 278.4,
+    "sourceFile": "0_高校_401_電流とオームの法則_深く_4_直列と並列の足し方.mp4"
+  },
+  {
+    "id": "hs-e-current-summary",
+    "stageId": "e-current",
+    "title": "電流とオームの法則・要点｜1秒あたりの電荷と1Cあたりのエネルギー",
+    "kind": "summary",
+    "part": 0,
+    "duration": 130.57,
+    "sourceFile": "0_高校_401_電流とオームの法則_要点_1秒あたりの電荷と1Cあたりのエネルギー.mp4"
+  },
+  {
+    "id": "hs-e-power-1",
+    "stageId": "e-power",
+    "title": "電力とジュール熱・深く学ぶ 1｜P＝VIはなぜ掛け算",
+    "kind": "deep",
+    "part": 1,
+    "duration": 279.9,
+    "sourceFile": "0_高校_402_電力とジュール熱_深く_1_P＝VIはなぜ掛け算.mp4"
+  },
+  {
+    "id": "hs-e-power-2",
+    "stageId": "e-power",
+    "title": "電力とジュール熱・深く学ぶ 2｜電気代と高電圧送電",
+    "kind": "deep",
+    "part": 2,
+    "duration": 294.08,
+    "sourceFile": "0_高校_402_電力とジュール熱_深く_2_電気代と高電圧送電.mp4"
+  },
+  {
+    "id": "hs-e-power-summary",
+    "stageId": "e-power",
+    "title": "電力とジュール熱・要点｜電力は1秒あたりのエネルギー",
+    "kind": "summary",
+    "part": 0,
+    "duration": 134.38,
+    "sourceFile": "0_高校_402_電力とジュール熱_要点_電力は1秒あたりのエネルギー.mp4"
+  },
+  {
+    "id": "hs-e-magnet-1",
+    "stageId": "e-magnet",
+    "title": "磁場と電磁誘導・深く学ぶ 1｜電流のまわりの磁場の向き",
+    "kind": "deep",
+    "part": 1,
+    "duration": 283.44,
+    "sourceFile": "0_高校_403_磁場と電磁誘導_深く_1_電流のまわりの磁場の向き.mp4"
+  },
+  {
+    "id": "hs-e-magnet-2",
+    "stageId": "e-magnet",
+    "title": "磁場と電磁誘導・深く学ぶ 2｜磁場の中の電流が受ける力",
+    "kind": "deep",
+    "part": 2,
+    "duration": 289.94,
+    "sourceFile": "0_高校_403_磁場と電磁誘導_深く_2_磁場の中の電流が受ける力.mp4"
+  },
+  {
+    "id": "hs-e-magnet-3",
+    "stageId": "e-magnet",
+    "title": "磁場と電磁誘導・深く学ぶ 3｜磁束とその変化",
+    "kind": "deep",
+    "part": 3,
+    "duration": 294.74,
+    "sourceFile": "0_高校_403_磁場と電磁誘導_深く_3_磁束とその変化.mp4"
+  },
+  {
+    "id": "hs-e-magnet-4",
+    "stageId": "e-magnet",
+    "title": "磁場と電磁誘導・深く学ぶ 4｜起電力の大きさと発電機",
+    "kind": "deep",
+    "part": 4,
+    "duration": 310.91,
+    "sourceFile": "0_高校_403_磁場と電磁誘導_深く_4_起電力の大きさと発電機.mp4"
+  },
+  {
+    "id": "hs-e-magnet-summary",
+    "stageId": "e-magnet",
+    "title": "磁場と電磁誘導・要点｜電流が磁場、磁束の変化が起電力",
+    "kind": "summary",
+    "part": 0,
+    "duration": 136.93,
+    "sourceFile": "0_高校_403_磁場と電磁誘導_要点_電流が磁場、磁束の変化が起電力.mp4"
+  },
+  {
+    "id": "hs-e-field-1",
+    "stageId": "e-field",
+    "title": "電場とクーロンの法則・深く学ぶ 1｜距離でどう弱まる",
+    "kind": "deep",
+    "part": 1,
+    "duration": 276.41,
+    "sourceFile": "0_高校_404_電場とクーロンの法則_深く_1_距離でどう弱まる.mp4"
+  },
+  {
+    "id": "hs-e-field-2",
+    "stageId": "e-field",
+    "title": "電場とクーロンの法則・深く学ぶ 2｜力を1Cあたりの地図に",
+    "kind": "deep",
+    "part": 2,
+    "duration": 278.6,
+    "sourceFile": "0_高校_404_電場とクーロンの法則_深く_2_力を1Cあたりの地図に.mp4"
+  },
+  {
+    "id": "hs-e-field-3",
+    "stageId": "e-field",
+    "title": "電場とクーロンの法則・深く学ぶ 3｜電位とV＝Ed",
+    "kind": "deep",
+    "part": 3,
+    "duration": 293.14,
+    "sourceFile": "0_高校_404_電場とクーロンの法則_深く_3_電位とV＝Ed.mp4"
+  },
+  {
+    "id": "hs-e-field-summary",
+    "stageId": "e-field",
+    "title": "電場とクーロンの法則・要点｜1Cあたりの力とエネルギー",
+    "kind": "summary",
+    "part": 0,
+    "duration": 141.18,
+    "sourceFile": "0_高校_404_電場とクーロンの法則_要点_1Cあたりの力とエネルギー.mp4"
+  },
+  {
+    "id": "hs-e-capacitor-1",
+    "stageId": "e-capacitor",
+    "title": "コンデンサー・深く学ぶ 1｜1Vあたりためる電荷",
+    "kind": "deep",
+    "part": 1,
+    "duration": 324.7,
+    "sourceFile": "0_高校_405_コンデンサー_深く_1_1Vあたりためる電荷.mp4"
+  },
+  {
+    "id": "hs-e-capacitor-2",
+    "stageId": "e-capacitor",
+    "title": "コンデンサー・深く学ぶ 2｜なぜ½QVか",
+    "kind": "deep",
+    "part": 2,
+    "duration": 314.74,
+    "sourceFile": "0_高校_405_コンデンサー_深く_2_なぜ½QVか.mp4"
+  },
+  {
+    "id": "hs-e-capacitor-summary",
+    "stageId": "e-capacitor",
+    "title": "コンデンサー・要点｜Q＝CVと三角形の½QV",
+    "kind": "summary",
+    "part": 0,
+    "duration": 124.34,
+    "sourceFile": "0_高校_405_コンデンサー_要点_Q＝CVと三角形の½QV.mp4"
+  },
+  {
+    "id": "hs-a-photon-1",
+    "stageId": "a-photon",
+    "title": "光子と電子・深く学ぶ 1｜明るい赤では出ず弱い紫外線で出る",
+    "kind": "deep",
+    "part": 1,
+    "duration": 308.13,
+    "sourceFile": "0_高校_501_光子と電子_深く_1_明るい赤では出ず弱い紫外線で出る.mp4"
+  },
+  {
+    "id": "hs-a-photon-2",
+    "stageId": "a-photon",
+    "title": "光子と電子・深く学ぶ 2｜飛び出した電子のエネルギー",
+    "kind": "deep",
+    "part": 2,
+    "duration": 286.73,
+    "sourceFile": "0_高校_501_光子と電子_深く_2_飛び出した電子のエネルギー.mp4"
+  },
+  {
+    "id": "hs-a-photon-3",
+    "stageId": "a-photon",
+    "title": "光子と電子・深く学ぶ 3｜光は波か粒か原子の色",
+    "kind": "deep",
+    "part": 3,
+    "duration": 287.94,
+    "sourceFile": "0_高校_501_光子と電子_深く_3_光は波か粒か原子の色.mp4"
+  },
+  {
+    "id": "hs-a-photon-summary",
+    "stageId": "a-photon",
+    "title": "光子と電子・要点｜光子1個のエネルギーE＝hν",
+    "kind": "summary",
+    "part": 0,
+    "duration": 128.91,
+    "sourceFile": "0_高校_501_光子と電子_要点_光子1個のエネルギーE＝hν.mp4"
+  },
+  {
+    "id": "hs-a-bohr-1",
+    "stageId": "a-bohr",
+    "title": "物質波とボーア模型・深く学ぶ 1｜電子にも波長がある",
+    "kind": "deep",
+    "part": 1,
+    "duration": 291.37,
+    "sourceFile": "0_高校_502_物質波とボーア模型_深く_1_電子にも波長がある.mp4"
+  },
+  {
+    "id": "hs-a-bohr-2",
+    "stageId": "a-bohr",
+    "title": "物質波とボーア模型・深く学ぶ 2｜波が一周でつながる軌道",
+    "kind": "deep",
+    "part": 2,
+    "duration": 288.57,
+    "sourceFile": "0_高校_502_物質波とボーア模型_深く_2_波が一周でつながる軌道.mp4"
+  },
+  {
+    "id": "hs-a-bohr-3",
+    "stageId": "a-bohr",
+    "title": "物質波とボーア模型・深く学ぶ 3｜半径とエネルギー準位を計算",
+    "kind": "deep",
+    "part": 3,
+    "duration": 312.53,
+    "sourceFile": "0_高校_502_物質波とボーア模型_深く_3_半径とエネルギー準位を計算.mp4"
+  },
+  {
+    "id": "hs-a-bohr-summary",
+    "stageId": "a-bohr",
+    "title": "物質波とボーア模型・要点｜電子の波と飛び飛びの準位",
+    "kind": "summary",
+    "part": 0,
+    "duration": 130.63,
+    "sourceFile": "0_高校_502_物質波とボーア模型_要点_電子の波と飛び飛びの準位.mp4"
+  },
+  {
+    "id": "hs-a-nucleus-1",
+    "stageId": "a-nucleus",
+    "title": "原子核と放射線・深く学ぶ 1｜核の中身と崩壊",
+    "kind": "deep",
+    "part": 1,
+    "duration": 277.77,
+    "sourceFile": "0_高校_503_原子核と放射線_深く_1_核の中身と崩壊.mp4"
+  },
+  {
+    "id": "hs-a-nucleus-2",
+    "stageId": "a-nucleus",
+    "title": "原子核と放射線・深く学ぶ 2｜半分ずつ減る半減期",
+    "kind": "deep",
+    "part": 2,
+    "duration": 280.9,
+    "sourceFile": "0_高校_503_原子核と放射線_深く_2_半分ずつ減る半減期.mp4"
+  },
+  {
+    "id": "hs-a-nucleus-3",
+    "stageId": "a-nucleus",
+    "title": "原子核と放射線・深く学ぶ 3｜質量の差がエネルギー",
+    "kind": "deep",
+    "part": 3,
+    "duration": 279.27,
+    "sourceFile": "0_高校_503_原子核と放射線_深く_3_質量の差がエネルギー.mp4"
+  },
+  {
+    "id": "hs-a-nucleus-summary",
+    "stageId": "a-nucleus",
+    "title": "原子核と放射線・要点｜半減期とE＝mc²",
+    "kind": "summary",
+    "part": 0,
+    "duration": 128.01,
+    "sourceFile": "0_高校_503_原子核と放射線_要点_半減期とE＝mc².mp4"
+  }
+]

@@ -9,6 +9,7 @@
     "test:motion-foundations": "node scripts/test-motion-foundations.mjs",
     "test:motion-inserts": "node scripts/test-motion-inserts.mjs",
     "test:video-modes": "node scripts/test-video-inserts.mjs && node scripts/test-video-mode-media.mjs && node scripts/test-manual-video-pages.mjs",
+    "test:high-school-series": "node scripts/test-high-school-series.mjs",
     "test:video-revision-plan": "node scripts/test-full-video-revision-plan.mjs",
     "test:thermal-inserts": "node scripts/test-thermal-inserts.mjs",
     "test:wave-inserts": "node scripts/test-wave-inserts.mjs",
