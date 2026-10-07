@@ -3,10 +3,14 @@ import {readFileSync} from 'node:fs';
 
 const catalog=JSON.parse(readFileSync('src/content/high-school-series.generated.json','utf8'));
 const youtube=JSON.parse(readFileSync('src/content/high-school-youtube.generated.json','utf8'));
+const pending=JSON.parse(readFileSync('src/content/high-school-youtube-pending.json','utf8'));
 assert.equal(catalog.length,100);
 assert.equal(new Set(catalog.map(item=>item.id)).size,100);
-assert.equal(Object.keys(youtube).length,catalog.length,'every high-school video has one YouTube mapping');
-assert.equal(new Set(Object.values(youtube)).size,catalog.length,'no two lessons share a YouTube upload');
+assert.equal(Object.keys(youtube).length,catalog.length-pending.length,'only publicly available videos have YouTube mappings');
+assert.equal(new Set(Object.values(youtube)).size,Object.keys(youtube).length,'no two lessons share a YouTube upload');
+assert.equal(new Set(pending).size,pending.length,'pending review IDs are unique');
+assert.ok(pending.every(id=>!youtube[`hs-series/${id}`]),'pending review videos are not linked before publication');
+assert.equal(catalog.length-pending.length,96,'only publicly available high-school videos replace local lessons');
 const groups=Map.groupBy(catalog,item=>item.stageId);
 assert.equal(groups.size,27);
 for(const [stageId,items] of groups){
@@ -22,7 +26,7 @@ for(const [stageId,items] of groups){
  for(const item of items){
   assert.ok(item.duration>=100&&item.duration<=370,`${item.id}: plausible duration`);
   assert.match(item.sourceFile,/^0_高校_\d{3}_.+\.mp4$/);
-  assert.match(youtube[`hs-series/${item.id}`]??'',/^[A-Za-z0-9_-]{11}$/,`${item.id}: valid YouTube ID`);
+  if(!pending.includes(item.id))assert.match(youtube[`hs-series/${item.id}`]??'',/^[A-Za-z0-9_-]{11}$/,`${item.id}: valid YouTube ID`);
  }
 }
-console.log(`PASS: ${catalog.length} high-school YouTube videos map to ${groups.size} stages`);
+console.log(`PASS: ${youtube&&Object.keys(youtube).length} public YouTube videos in ${groups.size} high-school stages; ${pending.length} remain on local lessons`);
