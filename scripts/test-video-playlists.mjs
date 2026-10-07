@@ -80,7 +80,7 @@ assert.equal(selectionParent('prep-sin-derivative:main:2',sine),'prep-sin-motion
 assert.equal(selectionParent('prep-addition-theorem',sine),'prep-sin-motion');
 assert.equal(selectionParent('m-shm-advanced:main:1',sine),'m-shm-advanced');
 assert.ok(component.includes('{reviewing?<button'),'A proof removed by a mode change must not hide normal page navigation');
-assert.ok(component.includes('const assigned=prerequisitePlaylist(original,'),'Mode switching must update the assigned series without changing units');
+assert.ok(component.includes('simplePlaylist?original:prerequisitePlaylist(original,'),'High-school videos must keep their direct order while university prerequisites remain available');
 assert.ok(!/readWatchedVideos|markVideoWatched/.test(component),'Viewing history must not control video membership');
 assert.ok(component.includes('必要なときだけ復習')&&component.includes('学習に戻る')&&component.includes('btn-battle'));
 console.log(JSON.stringify({result:'PASS',courses:courses.length,stages:new Set(originals.map(c=>c.stageId)).size,oldPlacements:before,newPlacements:after,reviewable:reviewable.size,surfaceMainSeconds:surface[0].duration,checks:['direct unit assignments only','viewing-history independent','no ancestor expansion in review','legacy ID migration','main films preserved']},null,2));

@@ -32,44 +32,50 @@ export function hasEMMovies(stage:Stage){
 }
 export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSlides}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void}){
  const universitySeries=b2SeriesCatalog.filter(m=>m.stageId===stage.id&&(b2SeriesEnabled()||youtubeIdFor(`b2-series/${m.id}`))).map(m=>({...m,stageTitle:stage.title,mediaDirectory:'b2-series',scenes:[]} as Movie));
- const highSchoolEntries=highSchoolSeriesCatalog.filter(m=>m.stageId===stage.id&&youtubeIdFor(`hs-series/${m.id}`));
- const deep=highSchoolEntries.filter(m=>m.kind==='deep').sort((a,b)=>a.part-b.part);
- const middleCount=Math.floor(deep.length/2);
- const highSchoolSeries=highSchoolEntries.map(m=>{
-  const level=m.kind==='summary'?'intro':m.part<=middleCount?'middle':'advanced';
-  const part=m.kind==='summary'?1:level==='middle'?m.part:m.part-middleCount;
-  return {...m,level,part,stageTitle:stage.title,mediaDirectory:'hs-series',scenes:[]} as Movie;
+ const highSchoolEntries=highSchoolSeriesCatalog.filter(m=>m.stageId===stage.id);
+ const isHighSchoolStage=highSchoolEntries.length>0;
+ const deepCount=highSchoolEntries.filter(m=>m.kind==='deep').length;
+ const middleCount=Math.floor(deepCount/2);
+ const highSchoolSeries=highSchoolEntries.sort((a,b)=>a.kind===b.kind?a.part-b.part:a.kind==='summary'?-1:1).flatMap((m,index):Movie[]=>{
+  if(youtubeIdFor(`hs-series/${m.id}`))return [{...m,level:'intro',part:index+1,stageTitle:stage.title,mediaDirectory:'hs-series',scenes:[]} as Movie];
+  // YouTube's checks can take longer than the upload. Keep a relevant local
+  // lesson in the same slot until this exact new video can be published.
+  const fallbackLevel=m.kind==='summary'?'intro':m.part<=middleCount?'middle':'advanced';
+  const fallback=movies.find(candidate=>candidate.stageId===stage.id&&candidate.level===fallbackLevel);
+  return fallback?[{...fallback,level:'intro',part:index+1}]:[];
  });
- const series=[...universitySeries,...highSchoolSeries];
- // A newly hosted difficulty replaces only that difficulty. Other difficulties
- // continue to use their existing local lessons until their own uploads exist.
- const all=[...series,...movies.filter(m=>m.stageId===stage.id&&!series.some(s=>s.level===m.level))];
- const levels=['intro','middle','advanced'].filter(level=>all.some(m=>m.level===level));
+ const series=isHighSchoolStage?highSchoolSeries:universitySeries;
+ // University levels retain their own hosted/local replacement behavior.
+ const all=isHighSchoolStage?highSchoolSeries:[...series,...movies.filter(m=>m.stageId===stage.id&&!series.some(s=>s.level===m.level))];
+ const levels=isHighSchoolStage?['intro']:['intro','middle','advanced'].filter(level=>all.some(m=>m.level===level));
  const [level,setLevel]=useState(()=>{try{const saved=localStorage.getItem(`physics-quest:video-level:${stage.id}`);return saved&&levels.includes(saved)?saved:levels[0];}catch{return levels[0];}});
  const [mode,setMode]=useState<VideoMode>(()=>{try{return localStorage.getItem(`physics-quest:video-mode:${stage.id}`)==='thorough'?'thorough':'quick';}catch{return 'quick';}});
- const selectedSeries=series.filter(m=>m.level===level);
- const basePlaylist=prerequisitePlaylist(all.filter(m=>m.level===level),prerequisiteMovies as unknown as Movie[]);
+ const activeLevel=isHighSchoolStage?'intro':level;
+ const selectedSeries=series.filter(m=>m.level===activeLevel);
+ const basePlaylist=prerequisitePlaylist(all.filter(m=>m.level===activeLevel),prerequisiteMovies as unknown as Movie[]);
  const detailedPlaylist=thoroughPrerequisitePlaylist(basePlaylist,prerequisiteMovies as unknown as Movie[],'thorough');
  const hasThorough=selectedSeries.length>0?selectedSeries.length>1:detailedPlaylist.length>basePlaylist.length||detailedPlaylist.some(m=>(insertRoutes as Record<string,InsertRoute[]>)[m.id]?.length);
  useEffect(()=>{try{localStorage.setItem(`physics-quest:video-mode:${stage.id}`,mode);}catch{/* Storage is optional. */}},[stage.id,mode]);
  useEffect(()=>{try{localStorage.setItem(`physics-quest:video-level:${stage.id}`,level);}catch{/* Playback does not require storage. */}},[stage.id,level]);
  return <div className="video-lesson-shell">
- {levels.length>1&&<nav className="video-levels" aria-label="動画の難易度">{levels.map(value=><button key={value} type="button" aria-pressed={level===value} onClick={()=>setLevel(value)}>{{intro:'初級',middle:'中級',advanced:'上級'}[value]}</button>)}</nav>}
+ {!isHighSchoolStage&&levels.length>1&&<nav className="video-levels" aria-label="動画の難易度">{levels.map(value=><button key={value} type="button" aria-pressed={level===value} onClick={()=>setLevel(value)}>{{intro:'初級',middle:'中級',advanced:'上級'}[value]}</button>)}</nav>}
  <nav className="video-levels" aria-label="学び方">{(['quick','thorough'] as const).map(value=><button key={value} type="button" aria-pressed={mode===value} onClick={()=>setMode(value)}>{value==='quick'?'さっと学ぶ':'とことん学ぶ'}</button>)}</nav>
- {selectedSeries.length>1&&<p className="video-mode-pending">さっと学ぶ：この難易度の最初の1本。とことん学ぶ：{selectedSeries.length}本を順番に見ます。</p>}
+ {isHighSchoolStage&&<p className="video-mode-pending">さっと学ぶ：要点のみ。とことん学ぶ：要点から深く学ぶ動画まで。</p>}
+ {!isHighSchoolStage&&selectedSeries.length>1&&<p className="video-mode-pending">さっと学ぶ：この難易度の最初の1本。とことん学ぶ：{selectedSeries.length}本を順番に見ます。</p>}
  {mode==='thorough'&&!hasThorough&&selectedSeries.length===0&&<p className="video-mode-pending">この単元の補足動画は準備中です。現在は共通の本編を再生します。</p>}
- <VideoPlayer key={`${stage.id}:${level}`} stage={stage} alreadyFinished={alreadyFinished} onComplete={onComplete} onExit={onExit} onReadSlides={onReadSlides} original={all.filter(m=>m.level===level&&(selectedSeries.length===0||mode==='thorough'||m.part===1))} level={level} mode={mode}/>
+ <VideoPlayer key={`${stage.id}:${activeLevel}${isHighSchoolStage?`:${mode}`:''}`} stage={stage} alreadyFinished={alreadyFinished} onComplete={onComplete} onExit={onExit} onReadSlides={onReadSlides} original={all.filter(m=>m.level===activeLevel&&(selectedSeries.length===0||mode==='thorough'||m.part===1))} level={activeLevel} mode={mode} simplePlaylist={isHighSchoolStage}/>
  </div>;
 }
-function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,original,level,mode}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void;original:Movie[];level:string;mode:VideoMode}){
+function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,original,level,mode,simplePlaylist}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void;original:Movie[];level:string;mode:VideoMode;simplePlaylist:boolean}){
  // The unit's assigned videos do not depend on completion in other units.
- const assigned=prerequisitePlaylist(original,prerequisiteMovies as unknown as Movie[]);
- const activeAssigned=thoroughPrerequisitePlaylist(assigned,prerequisiteMovies as unknown as Movie[],mode);
- const list=manualVideoPlaylist(activeAssigned,mode,insertRoutes as Record<string,InsertRoute[]>,insertCatalog as Movie[]);
- const review=thoroughPrerequisitePlaylist(prerequisiteReview(original,prerequisiteMovies as unknown as Movie[]),prerequisiteMovies as unknown as Movie[],mode);
- const positionKey=`physics-quest:video-position:v3:${stage.id}:${level}`;
+ const assigned=simplePlaylist?original:prerequisitePlaylist(original,prerequisiteMovies as unknown as Movie[]);
+ const activeAssigned=simplePlaylist?assigned:thoroughPrerequisitePlaylist(assigned,prerequisiteMovies as unknown as Movie[],mode);
+ const list=simplePlaylist?activeAssigned.map(m=>({id:m.id,parentId:m.id,title:m.title,media:m,start:0,end:m.duration})):manualVideoPlaylist(activeAssigned,mode,insertRoutes as Record<string,InsertRoute[]>,insertCatalog as Movie[]);
+ const review=simplePlaylist?[]:thoroughPrerequisitePlaylist(prerequisiteReview(original,prerequisiteMovies as unknown as Movie[]),prerequisiteMovies as unknown as Movie[],mode);
+ const positionKey=simplePlaylist?`physics-quest:video-position:v4:${stage.id}:${mode}`:`physics-quest:video-position:v3:${stage.id}:${level}`;
  const [selectedId,setSelectedId]=useState(()=>{
   try{
+   if(simplePlaylist)return restoredVideoId(localStorage.getItem(positionKey),list,original);
    const hadPrep=prerequisiteCatalog.some(p=>original.some(c=>p.before.includes(c.id)));
    const legacyKey=`physics-quest:lesson-position:${stage.id}:${level}:${hadPrep?'nemo-prerequisites-v1':'nemo-movies-v2'}`;
    const saved=localStorage.getItem(positionKey)??legacyVideoId(localStorage.getItem(legacyKey),original,prerequisiteCatalog);
