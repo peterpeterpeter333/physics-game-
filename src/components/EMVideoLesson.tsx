@@ -13,13 +13,14 @@ import {SegmentedLessonVideo} from './SegmentedLessonVideo';
 import {prerequisitePlaylist,prerequisiteReview,thoroughPrerequisitePlaylist,prerequisiteSelectionParent} from '../game/prerequisite-playlist';
 import {restoredVideoId,legacyVideoId} from '../game/video-progress';
 import {manualVideoPlaylist} from '../game/manual-video-playlist';
+import {highSchoolVideoPlaylist} from '../game/high-school-video-mode';
 import {spiralLessons} from '../content/em-spiral';
 import {movedCycles} from '../content/university-curriculum';
 import {b2SeriesEnabled,youtubeIdFor} from '../game/video-delivery';
 import './em-video-lesson.css';
 
 type MovieScene={index:number;heading:string;narration:string;start:number;end:number;captions:{start:number;end:number;text:string}[]};
-type Movie={id:string;stageId:string;stageTitle:string;level:string;title:string;duration:number;sourceIndices?:number[];mediaDirectory?:string;renderKey?:string;objectKey?:string;part?:number;scenes:MovieScene[]};
+type Movie={id:string;stageId:string;stageTitle:string;level:string;title:string;duration:number;sourceIndices?:number[];mediaDirectory?:string;renderKey?:string;objectKey?:string;part?:number;kind?:string;scenes:MovieScene[]};
 const movies=([...catalog,...lessonCatalog] as unknown as Movie[]).map(m=>(revisedCatalog as Movie[]).find(r=>r.id===m.id)??m);
 const prerequisiteMovies=prerequisiteCatalog.map(m=>(revisedCatalog as unknown as typeof prerequisiteCatalog).find(r=>r.id===m.id)??m);
 export function hasEMMovies(stage:Stage){
@@ -42,7 +43,7 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSli
   // lesson in the same slot until this exact new video can be published.
   const fallbackLevel=m.kind==='summary'?'intro':m.part<=middleCount?'middle':'advanced';
   const fallback=movies.find(candidate=>candidate.stageId===stage.id&&candidate.level===fallbackLevel);
-  return fallback?[{...fallback,level:'intro',part:index+1}]:[];
+  return fallback?[{...fallback,level:'intro',part:index+1,kind:m.kind}]:[];
  });
  const series=isHighSchoolStage?highSchoolSeries:universitySeries;
  // University levels retain their own hosted/local replacement behavior.
@@ -55,15 +56,16 @@ export function EMVideoLesson({stage,alreadyFinished,onComplete,onExit,onReadSli
  const basePlaylist=prerequisitePlaylist(all.filter(m=>m.level===activeLevel),prerequisiteMovies as unknown as Movie[]);
  const detailedPlaylist=thoroughPrerequisitePlaylist(basePlaylist,prerequisiteMovies as unknown as Movie[],'thorough');
  const hasThorough=selectedSeries.length>0?selectedSeries.length>1:detailedPlaylist.length>basePlaylist.length||detailedPlaylist.some(m=>(insertRoutes as Record<string,InsertRoute[]>)[m.id]?.length);
+ const selectedMovies=isHighSchoolStage?highSchoolVideoPlaylist(all,mode):all.filter(m=>m.level===activeLevel&&(selectedSeries.length===0||mode==='thorough'||m.part===1));
  useEffect(()=>{try{localStorage.setItem(`physics-quest:video-mode:${stage.id}`,mode);}catch{/* Storage is optional. */}},[stage.id,mode]);
  useEffect(()=>{try{localStorage.setItem(`physics-quest:video-level:${stage.id}`,level);}catch{/* Playback does not require storage. */}},[stage.id,level]);
  return <div className="video-lesson-shell">
  {!isHighSchoolStage&&levels.length>1&&<nav className="video-levels" aria-label="動画の難易度">{levels.map(value=><button key={value} type="button" aria-pressed={level===value} onClick={()=>setLevel(value)}>{{intro:'初級',middle:'中級',advanced:'上級'}[value]}</button>)}</nav>}
  <nav className="video-levels" aria-label="学び方">{(['quick','thorough'] as const).map(value=><button key={value} type="button" aria-pressed={mode===value} onClick={()=>setMode(value)}>{value==='quick'?'さっと学ぶ':'とことん学ぶ'}</button>)}</nav>
- {isHighSchoolStage&&<p className="video-mode-pending">さっと学ぶ：要点のみ。とことん学ぶ：要点から深く学ぶ動画まで。</p>}
+ {isHighSchoolStage&&<p className="video-mode-pending">さっと学ぶ：要点のみ。とことん学ぶ：詳しい動画のみ（要点動画は含みません）。</p>}
  {!isHighSchoolStage&&selectedSeries.length>1&&<p className="video-mode-pending">さっと学ぶ：この難易度の最初の1本。とことん学ぶ：{selectedSeries.length}本を順番に見ます。</p>}
  {mode==='thorough'&&!hasThorough&&selectedSeries.length===0&&<p className="video-mode-pending">この単元の補足動画は準備中です。現在は共通の本編を再生します。</p>}
- <VideoPlayer key={`${stage.id}:${activeLevel}${isHighSchoolStage?`:${mode}`:''}`} stage={stage} alreadyFinished={alreadyFinished} onComplete={onComplete} onExit={onExit} onReadSlides={onReadSlides} original={all.filter(m=>m.level===activeLevel&&(selectedSeries.length===0||mode==='thorough'||m.part===1))} level={activeLevel} mode={mode} simplePlaylist={isHighSchoolStage}/>
+ {selectedMovies.length>0?<VideoPlayer key={`${stage.id}:${activeLevel}${isHighSchoolStage?`:${mode}`:''}`} stage={stage} alreadyFinished={alreadyFinished} onComplete={onComplete} onExit={onExit} onReadSlides={onReadSlides} original={selectedMovies} level={activeLevel} mode={mode} simplePlaylist={isHighSchoolStage}/>:<p role="status">この学び方の動画は準備中です。</p>}
  </div>;
 }
 function VideoPlayer({stage,alreadyFinished,onComplete,onExit,onReadSlides,original,level,mode,simplePlaylist}:{stage:Stage;alreadyFinished:boolean;onComplete:(firstTime:boolean)=>void;onExit:()=>void;onReadSlides:()=>void;original:Movie[];level:string;mode:VideoMode;simplePlaylist:boolean}){
