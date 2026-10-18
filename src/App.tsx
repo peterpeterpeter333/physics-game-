@@ -12,6 +12,8 @@ import { LessonView } from "./components/LessonView";
 import { BattleView } from "./components/BattleView";
 import { EMPaperBattle } from './components/EMPaperBattle';
 import { emPaperProblems } from './content/em-paper-problems';
+import { CurriculumBattle } from './components/CurriculumBattle';
+import { problemsByStage } from './content/problem-curriculum';
 import { FormulaBook } from "./components/FormulaBook";
 import { ReviewView } from "./components/ReviewView";
 import { SettingsView } from "./components/SettingsView";
@@ -118,7 +120,22 @@ export default function App() {
           />
         )}
         {view.type === "battle" && (
-          (emPaperProblems[view.stageId] ? <EMPaperBattle
+          (problemsByStage[view.stageId] ? <CurriculumBattle
+            key={view.stageId}
+            stage={findStage(view.stageId)}
+            exercises={problemsByStage[view.stageId]!}
+            nextStageTitle={nextStage(view.stageId)?.title}
+            onExit={() => setView({ type: "map" })}
+            onAnswer={correct => update(p => ({...p, totalAnswered: p.totalAnswered + 1, totalCorrect: p.totalCorrect + Number(correct)}))}
+            onFinish={(continueNext,bestCombo) => {
+              const firstClear = !progress.clearedStages.includes(view.stageId);
+              analytics.battleVictory(view.stageId);
+              update(p => ({...p,xp:p.xp+30+(firstClear?30:0),bestCombo:Math.max(p.bestCombo,bestCombo),
+                clearedStages:p.clearedStages.includes(view.stageId)?p.clearedStages:[...p.clearedStages,view.stageId]}));
+              const next=continueNext?nextStage(view.stageId):undefined;
+              setView(next?{type:'lesson',stageId:next.id}:{type:'map'});
+            }}
+          /> : emPaperProblems[view.stageId] ? <EMPaperBattle
             key={view.stageId}
             stage={findStage(view.stageId)}
             problems={emPaperProblems[view.stageId]!}
