@@ -18,7 +18,7 @@ assert.equal(Object.keys(youtube).length,catalog.length-pending.length,'only pub
 assert.equal(new Set(Object.values(youtube)).size,Object.keys(youtube).length,'no two lessons share a YouTube upload');
 assert.equal(new Set(pending).size,pending.length,'pending review IDs are unique');
 assert.ok(pending.every(id=>!youtube[`hs-series/${id}`]),'pending review videos are not linked before publication');
-assert.equal(catalog.length-pending.length,96,'only publicly available high-school videos replace local lessons');
+assert.equal(pending.length,0,'all high-school lessons must have public YouTube videos');
 const groups=Map.groupBy(catalog,item=>item.stageId);
 assert.equal(groups.size,27);
 for(const [stageId,items] of groups){
