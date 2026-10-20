@@ -13,6 +13,7 @@ const stageIds = new Set(bundled.exports.chapters.flatMap(chapter => chapter.sta
 const assert = (condition, message) => {if (!condition) throw new Error(message);};
 assert(problems.length === 160, `Expected 160 problems, got ${problems.length}`);
 assert(new Set(problems.map(problem => problem.id)).size === 160, 'Duplicate problem ID');
+assert(new Set(problems.map(problem => problem.solutionFilename)).size === 160, 'Duplicate solution filename');
 assert(new Set(problems.map(problem => problem.stageId)).size === 114, 'Expected 114 mapped stages');
 assert(problems.reduce((sum, problem) => sum + problem.subquestions.length, 0) === 478, 'Expected 478 subquestions');
 for (const problem of problems) {
@@ -26,6 +27,7 @@ for (const problem of problems) {
   const youtubeId = youtubeIds[problem.solutionFilename];
   assert(!youtubeId || /^[\w-]{11}$/.test(youtubeId), `Invalid YouTube ID: ${problem.solutionFilename}`);
 }
+assert(new Set(Object.values(youtubeIds)).size === Object.keys(youtubeIds).length, 'Duplicate YouTube video ID');
 if (process.argv.includes('--require-videos')) {
   const missing = problems.filter(problem => !youtubeIds[problem.solutionFilename]);
   assert(!missing.length, `${missing.length} solution videos do not have YouTube IDs`);
