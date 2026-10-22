@@ -1,0 +1,699 @@
+{
+  "schema": 1,
+  "channelId": "UCd6G6SRqpj1jDbyMy98b5Bg",
+  "excludedDuplicateYoutubeIds": [
+    "PuC6NjWbYxQ"
+  ],
+  "videos": [
+    {
+      "mediaId": "b2-series/b2-intro-ui-vector-map-3",
+      "stageId": "ui-vector-map",
+      "level": "intro",
+      "unitNumber": 5,
+      "part": 3,
+      "title": "電場の矢印",
+      "youtubeId": "QH4J7lWjP5I",
+      "youtubeTitle": "1 初級 05 ベクトル 3 電場の矢印"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-derivative-2",
+      "stageId": "um-derivative",
+      "level": "advanced",
+      "unitNumber": 1,
+      "part": 2,
+      "title": "sinの傾きはcos",
+      "youtubeId": "ruVkW5zVq6w",
+      "youtubeTitle": "3 上級 01 微分 2 sinの傾きはcos"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-derivative-3",
+      "stageId": "um-derivative",
+      "level": "advanced",
+      "unitNumber": 1,
+      "part": 3,
+      "title": "xvaの階段と尖った点",
+      "youtubeId": "vQ3YadK5Cn8",
+      "youtubeTitle": "3 上級 01 微分 3 xvaの階段と尖った点"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-integral-1",
+      "stageId": "um-integral",
+      "level": "advanced",
+      "unitNumber": 2,
+      "part": 1,
+      "title": "基本定理の証明",
+      "youtubeId": "-7fHcrsUVvU",
+      "youtubeTitle": "3 上級 02 積分 1 基本定理の証明"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-integral-2",
+      "stageId": "um-integral",
+      "level": "advanced",
+      "unitNumber": 2,
+      "part": 2,
+      "title": "tのn乗の積分と変わる加速度",
+      "youtubeId": "vtbSl12-PCM",
+      "youtubeTitle": "3 上級 02 積分 2 tのn乗の積分と変わる加速度"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-rules-1",
+      "stageId": "um-rules",
+      "level": "advanced",
+      "unitNumber": 3,
+      "part": 1,
+      "title": "法則の証明とlnの傾き",
+      "youtubeId": "T5ELGvLHbOs",
+      "youtubeTitle": "3 上級 03 微分の法則 1 法則の証明とlnの傾き"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-rules-2",
+      "stageId": "um-rules",
+      "level": "advanced",
+      "unitNumber": 3,
+      "part": 2,
+      "title": "全微分の連鎖律",
+      "youtubeId": "0sBXb8In9X4",
+      "youtubeTitle": "3 上級 03 微分の法則 2 全微分の連鎖律"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-taylor-1",
+      "stageId": "um-taylor",
+      "level": "advanced",
+      "unitNumber": 4,
+      "part": 1,
+      "title": "k次の係数とk階乗",
+      "youtubeId": "OIMR3ZX9T34",
+      "youtubeTitle": "3 上級 04 近似 1 k次の係数とk階乗"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-taylor-2",
+      "stageId": "um-taylor",
+      "level": "advanced",
+      "unitNumber": 4,
+      "part": 2,
+      "title": "谷底はばね",
+      "youtubeId": "Z0QIKxnynVk",
+      "youtubeTitle": "3 上級 04 近似 2 谷底はばね"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-vector-1",
+      "stageId": "um-vector",
+      "level": "advanced",
+      "unitNumber": 5,
+      "part": 1,
+      "title": "矢印の微分",
+      "youtubeId": "OWRtuP1LqVU",
+      "youtubeTitle": "3 上級 05 ベクトル 1 矢印の微分"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-dot-1",
+      "stageId": "um-dot",
+      "level": "advanced",
+      "unitNumber": 6,
+      "part": 1,
+      "title": "分配法則と仕事と磁束",
+      "youtubeId": "2AMV__RS6ZU",
+      "youtubeTitle": "3 上級 06 内積 1 分配法則と仕事と磁束"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-cross-1",
+      "stageId": "um-cross",
+      "level": "advanced",
+      "unitNumber": 7,
+      "part": 1,
+      "title": "分配法則と成分の式",
+      "youtubeId": "HpzYhuYoPVQ",
+      "youtubeTitle": "3 上級 07 外積 1 分配法則と成分の式"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-cross-2",
+      "stageId": "um-cross",
+      "level": "advanced",
+      "unitNumber": 7,
+      "part": 2,
+      "title": "斜めの力のトルクと負電荷の磁気力",
+      "youtubeId": "VCZJNEfIelc",
+      "youtubeTitle": "3 上級 07 外積 2 斜めの力のトルクと負電荷の磁気力"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-ode-1",
+      "stageId": "um-ode",
+      "level": "advanced",
+      "unitNumber": 8,
+      "part": 1,
+      "title": "変数分離で解く",
+      "youtubeId": "1CNM1d716sU",
+      "youtubeTitle": "3 上級 08 微分方程式 1 変数分離で解く"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-ode-2",
+      "stageId": "um-ode",
+      "level": "advanced",
+      "unitNumber": 8,
+      "part": 2,
+      "title": "代入の確かめと半減期",
+      "youtubeId": "YtYwOxIcoW8",
+      "youtubeTitle": "3 上級 08 微分方程式 2 代入の確かめと半減期"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-um-shm-ode-1",
+      "stageId": "um-shm-ode",
+      "level": "advanced",
+      "unitNumber": 9,
+      "part": 1,
+      "title": "谷底の振動とエネルギー",
+      "youtubeId": "wzbOC6Ybobk",
+      "youtubeTitle": "3 上級 09 振動の方程式 1 谷底の振動とエネルギー"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-newton-1",
+      "stageId": "uc-newton",
+      "level": "advanced",
+      "unitNumber": 10,
+      "part": 1,
+      "title": "放物運動を成分で解く",
+      "youtubeId": "RXJxvZTKvcY",
+      "youtubeTitle": "3 上級 10 運動方程式 1 放物運動を成分で解く"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-drag-1",
+      "stageId": "uc-drag",
+      "level": "advanced",
+      "unitNumber": 11,
+      "part": 1,
+      "title": "変数分離で最後まで解く",
+      "youtubeId": "OakTNDICp9c",
+      "youtubeTitle": "3 上級 11 空気抵抗 1 変数分離で最後まで解く"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-drag-2",
+      "stageId": "uc-drag",
+      "level": "advanced",
+      "unitNumber": 11,
+      "part": 2,
+      "title": "2乗の抵抗と終端速度",
+      "youtubeId": "o5GV1pN7I5A",
+      "youtubeTitle": "3 上級 11 空気抵抗 2 2乗の抵抗と終端速度"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-work-1",
+      "stageId": "uc-work",
+      "level": "advanced",
+      "unitNumber": 12,
+      "part": 1,
+      "title": "時間で書く仕事",
+      "youtubeId": "8erM6ye4ZUg",
+      "youtubeTitle": "3 上級 12 仕事 1 時間で書く仕事"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-work-2",
+      "stageId": "uc-work",
+      "level": "advanced",
+      "unitNumber": 12,
+      "part": 2,
+      "title": "曲がった道のW=ΔK",
+      "youtubeId": "P3lOl3EOv9g",
+      "youtubeTitle": "3 上級 12 仕事 2 曲がった道のW=ΔK"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-work-3",
+      "stageId": "uc-work",
+      "level": "advanced",
+      "unitNumber": 12,
+      "part": 3,
+      "title": "仕事率と直角な力",
+      "youtubeId": "FI24haMSJ5c",
+      "youtubeTitle": "3 上級 12 仕事 3 仕事率と直角な力"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-potential-1",
+      "stageId": "uc-potential",
+      "level": "advanced",
+      "unitNumber": 13,
+      "part": 1,
+      "title": "万有引力のUと保存則",
+      "youtubeId": "xS67GAlu8VI",
+      "youtubeTitle": "3 上級 13 位置エネルギー 1 万有引力のUと保存則"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-potential-2",
+      "stageId": "uc-potential",
+      "level": "advanced",
+      "unitNumber": 13,
+      "part": 2,
+      "title": "地形図で読む範囲と安定",
+      "youtubeId": "FYyBLQfOqpQ",
+      "youtubeTitle": "3 上級 13 位置エネルギー 2 地形図で読む範囲と安定"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-momentum-1",
+      "stageId": "uc-momentum",
+      "level": "advanced",
+      "unitNumber": 14,
+      "part": 1,
+      "title": "作用反作用から保存則と重心",
+      "youtubeId": "KqpUMGWFMM8",
+      "youtubeTitle": "3 上級 14 運動量 1 作用反作用から保存則と重心"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-momentum-2",
+      "stageId": "uc-momentum",
+      "level": "advanced",
+      "unitNumber": 14,
+      "part": 2,
+      "title": "反発係数との連立",
+      "youtubeId": "CfIeftUVdhk",
+      "youtubeTitle": "3 上級 14 運動量 2 反発係数との連立"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-angular-1",
+      "stageId": "uc-angular",
+      "level": "advanced",
+      "unitNumber": 15,
+      "part": 1,
+      "title": "外積の微分でトルク",
+      "youtubeId": "EY8EP3Y9TYc",
+      "youtubeTitle": "3 上級 15 角運動量 1 外積の微分でトルク"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-angular-2",
+      "stageId": "uc-angular",
+      "level": "advanced",
+      "unitNumber": 15,
+      "part": 2,
+      "title": "中心力と面積速度",
+      "youtubeId": "Ep1zTctsXuw",
+      "youtubeTitle": "3 上級 15 角運動量 2 中心力と面積速度"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-shm-1",
+      "stageId": "uc-shm",
+      "level": "advanced",
+      "unitNumber": 16,
+      "part": 1,
+      "title": "gの測定と糸の力",
+      "youtubeId": "GWSGYV9xnZU",
+      "youtubeTitle": "3 上級 16 単振動 1 gの測定と糸の力"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-shm-2",
+      "stageId": "uc-shm",
+      "level": "advanced",
+      "unitNumber": 16,
+      "part": 2,
+      "title": "減衰振動の解",
+      "youtubeId": "W0TKfJKONn0",
+      "youtubeTitle": "3 上級 16 単振動 2 減衰振動の解"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-shm-3",
+      "stageId": "uc-shm",
+      "level": "advanced",
+      "unitNumber": 16,
+      "part": 3,
+      "title": "定常解と共振の振幅",
+      "youtubeId": "4CSalzkaf5Q",
+      "youtubeTitle": "3 上級 16 単振動 3 定常解と共振の振幅"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-rigid1-1",
+      "stageId": "uc-rigid1",
+      "level": "advanced",
+      "unitNumber": 17,
+      "part": 1,
+      "title": "輪と円板と棒の積分",
+      "youtubeId": "1TMe8jyLCG0",
+      "youtubeTitle": "3 上級 17 慣性モーメント 1 輪と円板と棒の積分"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-rigid1-2",
+      "stageId": "uc-rigid1",
+      "level": "advanced",
+      "unitNumber": 17,
+      "part": 2,
+      "title": "球の5分の2",
+      "youtubeId": "mI_WbC2fYkg",
+      "youtubeTitle": "3 上級 17 慣性モーメント 2 球の5分の2"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-rigid1-3",
+      "stageId": "uc-rigid1",
+      "level": "advanced",
+      "unitNumber": 17,
+      "part": 3,
+      "title": "平行軸の定理",
+      "youtubeId": "Tx5n5Yz9_Kg",
+      "youtubeTitle": "3 上級 17 慣性モーメント 3 平行軸の定理"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-rigid2-1",
+      "stageId": "uc-rigid2",
+      "level": "advanced",
+      "unitNumber": 18,
+      "part": 1,
+      "title": "転がる速さとスケーターのL",
+      "youtubeId": "YwIaSPW1s4c",
+      "youtubeTitle": "3 上級 18 剛体の回転 1 転がる速さとスケーターのL"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-rigid2-2",
+      "stageId": "uc-rigid2",
+      "level": "advanced",
+      "unitNumber": 18,
+      "part": 2,
+      "title": "並進と回転に分ける理由",
+      "youtubeId": "fE0ZzyWcrwo",
+      "youtubeTitle": "3 上級 18 剛体の回転 2 並進と回転に分ける理由"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-frontier-1",
+      "stageId": "uc-frontier",
+      "level": "advanced",
+      "unitNumber": 19,
+      "part": 1,
+      "title": "遠心力とケプラー第3法則",
+      "youtubeId": "-FlPK5e8844",
+      "youtubeTitle": "3 上級 19 慣性力と軌道 1 遠心力とケプラー第3法則"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-frontier-2",
+      "stageId": "uc-frontier",
+      "level": "advanced",
+      "unitNumber": 19,
+      "part": 2,
+      "title": "極座標の加速度",
+      "youtubeId": "nRxoV_ATjW0",
+      "youtubeTitle": "3 上級 19 慣性力と軌道 2 極座標の加速度"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-frontier-3",
+      "stageId": "uc-frontier",
+      "level": "advanced",
+      "unitNumber": 19,
+      "part": 3,
+      "title": "逆数で振動の式へ",
+      "youtubeId": "4poc29ZLEK8",
+      "youtubeTitle": "3 上級 19 慣性力と軌道 3 逆数で振動の式へ"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-uc-frontier-4",
+      "stageId": "uc-frontier",
+      "level": "advanced",
+      "unitNumber": 19,
+      "part": 4,
+      "title": "楕円軌道と力学の締め",
+      "youtubeId": "i60xuZM52Jg",
+      "youtubeTitle": "3 上級 19 慣性力と軌道 4 楕円軌道と力学の締め"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-integrals-1",
+      "stageId": "ue-integrals",
+      "level": "advanced",
+      "unitNumber": 20,
+      "part": 1,
+      "title": "道に目盛りuを付ける",
+      "youtubeId": "hRBIPznGQg4",
+      "youtubeTitle": "3 上級 20 線積分と面積分 1 道に目盛りuを付ける"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-integrals-2",
+      "stageId": "ue-integrals",
+      "level": "advanced",
+      "unitNumber": 20,
+      "part": 2,
+      "title": "電子の仕事と別の道",
+      "youtubeId": "7nYPKUq1bv8",
+      "youtubeTitle": "3 上級 20 線積分と面積分 2 電子の仕事と別の道"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-integrals-3",
+      "stageId": "ue-integrals",
+      "level": "advanced",
+      "unitNumber": 20,
+      "part": 3,
+      "title": "電位で道によらない理由と電気束",
+      "youtubeId": "jhbmK8Y0D5M",
+      "youtubeTitle": "3 上級 20 線積分と面積分 3 電位で道によらない理由と電気束"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-integrals-4",
+      "stageId": "ue-integrals",
+      "level": "advanced",
+      "unitNumber": 20,
+      "part": 4,
+      "title": "面の2つの目盛りと球の面積",
+      "youtubeId": "_kNSjmNAaL4",
+      "youtubeTitle": "3 上級 20 線積分と面積分 4 面の2つの目盛りと球の面積"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-gauss-1",
+      "stageId": "ue-gauss",
+      "level": "advanced",
+      "unitNumber": 21,
+      "part": 1,
+      "title": "ずれた球の積分の式",
+      "youtubeId": "UYCmrWBiILw",
+      "youtubeTitle": "3 上級 21 ガウスの法則 1 ずれた球の積分の式"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-gauss-2",
+      "stageId": "ue-gauss",
+      "level": "advanced",
+      "unitNumber": 21,
+      "part": 2,
+      "title": "置換u＝距離の2乗",
+      "youtubeId": "96TQJu04ynU",
+      "youtubeTitle": "3 上級 21 ガウスの法則 2 置換u＝距離の2乗"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-gauss-3",
+      "stageId": "ue-gauss",
+      "level": "advanced",
+      "unitNumber": 21,
+      "part": 3,
+      "title": "dが消える外なら0",
+      "youtubeId": "JJmzKj2ah28",
+      "youtubeTitle": "3 上級 21 ガウスの法則 3 dが消える外なら0"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-gauss-4",
+      "stageId": "ue-gauss",
+      "level": "advanced",
+      "unitNumber": 21,
+      "part": 4,
+      "title": "立体角",
+      "youtubeId": "xCMum7WQjmA",
+      "youtubeTitle": "3 上級 21 ガウスの法則 4 立体角"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-gauss-5",
+      "stageId": "ue-gauss",
+      "level": "advanced",
+      "unitNumber": 21,
+      "part": 5,
+      "title": "重ね合わせと応用",
+      "youtubeId": "NMx-XSAzhc4",
+      "youtubeTitle": "3 上級 21 ガウスの法則 5 重ね合わせと応用"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-gauss-6",
+      "stageId": "ue-gauss",
+      "level": "advanced",
+      "unitNumber": 21,
+      "part": 6,
+      "title": "板・殻・導体",
+      "youtubeId": "o2DuXs_kJ4I",
+      "youtubeTitle": "3 上級 21 ガウスの法則 6 板・殻・導体"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-potential-1",
+      "stageId": "ue-potential",
+      "level": "advanced",
+      "unitNumber": 22,
+      "part": 1,
+      "title": "勾配と等電位面",
+      "youtubeId": "wrRdHqRas5s",
+      "youtubeTitle": "3 上級 22 電位 1 勾配と等電位面"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-potential-2",
+      "stageId": "ue-potential",
+      "level": "advanced",
+      "unitNumber": 22,
+      "part": 2,
+      "title": "積分と道によらない理由",
+      "youtubeId": "A8oD5hvlO4Q",
+      "youtubeTitle": "3 上級 22 電位 2 積分と道によらない理由"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-capacitor-1",
+      "stageId": "ue-capacitor",
+      "level": "advanced",
+      "unitNumber": 23,
+      "part": 1,
+      "title": "エネルギー密度",
+      "youtubeId": "c5X3dNFAI-4",
+      "youtubeTitle": "3 上級 23 コンデンサ 1 エネルギー密度"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-capacitor-2",
+      "stageId": "ue-capacitor",
+      "level": "advanced",
+      "unitNumber": 23,
+      "part": 2,
+      "title": "誘電体とQ一定V一定",
+      "youtubeId": "E0h4brNuAzs",
+      "youtubeTitle": "3 上級 23 コンデンサ 2 誘電体とQ一定V一定"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-current-1",
+      "stageId": "ue-current",
+      "level": "advanced",
+      "unitNumber": 24,
+      "part": 1,
+      "title": "衝突モデルとオームの法則",
+      "youtubeId": "uw4AhLo3SQE",
+      "youtubeTitle": "3 上級 24 電流 1 衝突モデルとオームの法則"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-current-2",
+      "stageId": "ue-current",
+      "level": "advanced",
+      "unitNumber": 24,
+      "part": 2,
+      "title": "送電はなぜ高電圧か",
+      "youtubeId": "1XSyhDPRhPk",
+      "youtubeTitle": "3 上級 24 電流 2 送電はなぜ高電圧か"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-lorentz-1",
+      "stageId": "ue-lorentz",
+      "level": "advanced",
+      "unitNumber": 25,
+      "part": 1,
+      "title": "らせんのピッチ",
+      "youtubeId": "KNtgHLDusk8",
+      "youtubeTitle": "3 上級 25 ローレンツ力 1 らせんのピッチ"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-lorentz-2",
+      "stageId": "ue-lorentz",
+      "level": "advanced",
+      "unitNumber": 25,
+      "part": 2,
+      "title": "導線の力IlxB",
+      "youtubeId": "YNoSG6nP6fk",
+      "youtubeTitle": "3 上級 25 ローレンツ力 2 導線の力IlxB"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-ampere-1",
+      "stageId": "ue-ampere",
+      "level": "advanced",
+      "unitNumber": 26,
+      "part": 1,
+      "title": "円形電流の中心",
+      "youtubeId": "iSyN2G7Xfg8",
+      "youtubeTitle": "3 上級 26 アンペールの法則 1 円形電流の中心"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-ampere-2",
+      "stageId": "ue-ampere",
+      "level": "advanced",
+      "unitNumber": 26,
+      "part": 2,
+      "title": "直線電流を足す",
+      "youtubeId": "6pPmSkxSrBw",
+      "youtubeTitle": "3 上級 26 アンペールの法則 2 直線電流を足す"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-ampere-3",
+      "stageId": "ue-ampere",
+      "level": "advanced",
+      "unitNumber": 26,
+      "part": 3,
+      "title": "長いコイルの磁場",
+      "youtubeId": "RjEFeG9aQec",
+      "youtubeTitle": "3 上級 26 アンペールの法則 3 長いコイルの磁場"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-faraday-1",
+      "stageId": "ue-faraday",
+      "level": "advanced",
+      "unitNumber": 27,
+      "part": 1,
+      "title": "自己インダクタンスと½LI²",
+      "youtubeId": "s-b-y-PjLT0",
+      "youtubeTitle": "3 上級 27 電磁誘導 1 自己インダクタンスと½LI²"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-faraday-2",
+      "stageId": "ue-faraday",
+      "level": "advanced",
+      "unitNumber": 27,
+      "part": 2,
+      "title": "相互誘導と変圧器",
+      "youtubeId": "aPzeiwO6Syg",
+      "youtubeTitle": "3 上級 27 電磁誘導 2 相互誘導と変圧器"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-transient-1",
+      "stageId": "ue-transient",
+      "level": "advanced",
+      "unitNumber": 28,
+      "part": 1,
+      "title": "RL回路の立ち上がり",
+      "youtubeId": "FpcA5hAcB-g",
+      "youtubeTitle": "3 上級 28 過渡現象 1 RL回路の立ち上がり"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-transient-2",
+      "stageId": "ue-transient",
+      "level": "advanced",
+      "unitNumber": 28,
+      "part": 2,
+      "title": "LC振動とラジオの選局",
+      "youtubeId": "d8Ccyln7FW0",
+      "youtubeTitle": "3 上級 28 過渡現象 2 LC振動とラジオの選局"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-maxwell-1",
+      "stageId": "ue-maxwell",
+      "level": "advanced",
+      "unitNumber": 29,
+      "part": 1,
+      "title": "変位電流と電荷保存",
+      "youtubeId": "_9MBXQJ_N4g",
+      "youtubeTitle": "3 上級 29 マクスウェル方程式 1 変位電流と電荷保存"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-maxwell-2",
+      "stageId": "ue-maxwell",
+      "level": "advanced",
+      "unitNumber": 29,
+      "part": 2,
+      "title": "小さな長方形と偏微分",
+      "youtubeId": "SqluMQtsteU",
+      "youtubeTitle": "3 上級 29 マクスウェル方程式 2 小さな長方形と偏微分"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-maxwell-3",
+      "stageId": "ue-maxwell",
+      "level": "advanced",
+      "unitNumber": 29,
+      "part": 3,
+      "title": "波動方程式と光速",
+      "youtubeId": "7-yVws-jsDg",
+      "youtubeTitle": "3 上級 29 マクスウェル方程式 3 波動方程式と光速"
+    },
+    {
+      "mediaId": "b2-series/b2-advanced-ue-maxwell-4",
+      "stageId": "ue-maxwell",
+      "level": "advanced",
+      "unitNumber": 29,
+      "part": 4,
+      "title": "電磁波とシリーズの地図",
+      "youtubeId": "zkJovpeYne0",
+      "youtubeTitle": "3 上級 29 マクスウェル方程式 4 電磁波とシリーズの地図"
+    }
+  ]
+}

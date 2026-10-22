@@ -28,6 +28,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify published YouTube videos match their lesson units
+        run: node scripts/test-youtube-series-mapping.mjs && npm run test:high-school-series
+
       - name: Check App Store update version comparisons
         run: node scripts/test-app-update.mjs
 
