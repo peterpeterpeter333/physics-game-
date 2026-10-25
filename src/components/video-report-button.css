@@ -1,0 +1,6 @@
+.video-report-actions{display:flex;justify-content:flex-end;padding:.45rem .75rem .65rem;min-width:0}
+.video-report-button{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;min-height:44px;max-width:100%;box-sizing:border-box;padding:.5rem .75rem;border:1px solid #465974;border-radius:10px;color:#c5d6ee;background:#101c30;font:inherit;font-size:.85rem;line-height:1.5;text-decoration:none;white-space:normal;overflow-wrap:anywhere}
+.video-report-button:hover{background:#1c2c45;color:#fff;border-color:#8edce9}
+.video-report-button:focus-visible{outline:3px solid #ffcf67;outline-offset:3px}
+.video-report-unavailable{color:#c5d6ee;font-size:.85rem;line-height:1.5}
+@media(max-width:480px){.video-report-actions{padding-inline:.35rem}.video-report-button{font-size:.82rem}}

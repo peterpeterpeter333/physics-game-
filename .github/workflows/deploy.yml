@@ -34,6 +34,9 @@ jobs:
       - name: Verify every reachable video uses its exact YouTube upload
         run: npm run test:video-delivery
 
+      - name: Verify report links beneath every video
+        run: npm run test:video-reporting
+
       - name: Check YouTube consent and seek regressions
         run: npm run test:youtube
 

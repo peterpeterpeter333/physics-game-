@@ -2,6 +2,7 @@ import {useEffect,useRef,useState} from 'react';
 import {claimNarration} from '../game/narration';
 import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
 import {YouTubeVideo} from './YouTubeVideo';
+import {VideoReportButton} from './VideoReportButton';
 import {youtubeIdFor} from '../game/video-delivery';
 import './em-video-pilot.css';
 
@@ -22,6 +23,7 @@ export function EMVideoPilot(){
    下の解説スライドも、この動画と同じ題材を説明しています。
   </video>
   <VideoPlaybackSpeed player={player} mediaKey={movie}/>
+  <VideoReportButton title="電気力が曲がった道でする仕事" mediaId={mediaKey} start={0}/>
   </>}
   {failed&&<div role="alert"><p>動画を読み込めませんでした。通信状態を確認してください。</p><button className="btn btn-ghost" onClick={()=>{setFailed(false);setRetryMedia(n=>n+1);}}>動画を再読み込み</button></div>}
   <a href={youtubeId?`https://www.youtube.com/watch?v=${youtubeId}`:movie} target="_blank" rel="noreferrer">{youtubeId?'YouTubeで動画を開く':'動画だけを開く（MP4）'}</a>

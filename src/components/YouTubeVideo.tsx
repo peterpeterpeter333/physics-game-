@@ -3,6 +3,7 @@ import {Capacitor} from '@capacitor/core';
 import {claimNarration} from '../game/narration';
 import {VIDEO_RATE_KEY,savedVideoRate} from '../game/video-playback';
 import {hasYouTubeConsent,setYouTubeConsent,subscribeYouTubeConsent} from '../game/youtube-consent';
+import {VideoReportButton} from './VideoReportButton';
 import './youtube-video.css';
 
 export type YouTubeVideoHandle={pause:()=>void};
@@ -24,6 +25,7 @@ export const YouTubeVideo=forwardRef<YouTubeVideoHandle,Props>(function YouTubeV
     <p>同意はこの端末に保存し、次の動画では確認を省きます。設定からいつでも解除できます。端末への保存が使えない場合は、アプリを開いている間だけ保持します。</p>
     <button type="button" className="btn btn-primary" onClick={()=>setYouTubeConsent(true)}>同意して動画を読み込む</button>
    </div>}
+  <VideoReportButton title={title} mediaId={mediaId} youtubeId={youtubeId} start={start}/>
  </div>;
 });
 

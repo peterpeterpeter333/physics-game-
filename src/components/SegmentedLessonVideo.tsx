@@ -4,6 +4,7 @@ import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
 import {holdVideoPage} from '../game/video-page-boundary';
 import {b2LegacyVideoUrlFor,b2VideoUrlFor,youtubeIdFor} from '../game/video-delivery';
 import {YouTubeVideo} from './YouTubeVideo';
+import {VideoReportButton} from './VideoReportButton';
 import type {TimedMovie} from '../game/video-inserts';
 type Media=TimedMovie&{title:string;mediaDirectory?:string;renderKey?:string;objectKey?:string};
 const clock=(s:number)=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
@@ -46,5 +47,6 @@ function LocalSegmentedLessonVideo({main,start,end,onError}:{main:Media;start:nu
    <span>{clock(time-start)} / {clock(end-start)}</span>
   </div>}
   <VideoPlaybackSpeed player={player} mediaKey={b2Url??base+revision}/>
+  <VideoReportButton title={main.title} mediaId={`${main.mediaDirectory??'em'}/${main.id}`} start={start}/>
  </>;
 }

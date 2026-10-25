@@ -178,7 +178,7 @@ module.exports={stageIds:stages.map(s=>s.stage.id),states,pages,optionalReviews,
 const compiled = await build({
   stdin:{contents:entry,resolveDir:app,sourcefile:'all-delivery-regression-entry.tsx',loader:'tsx'},
   bundle:true,platform:'node',format:'cjs',write:false,jsx:'automatic',loader:{'.css':'empty'},
-  define:{'import.meta.env.BASE_URL':JSON.stringify('/physics-game-/'),'import.meta.env.DEV':'false'},
+  define:{'import.meta.env.BASE_URL':JSON.stringify('/physics-game-/'),'import.meta.env.DEV':'false','import.meta.env.VITE_REPORT_FORM_URL':'undefined'},
   plugins:[{name:'read-only-route-instrumentation',setup(builder){
     builder.onLoad({filter:/[/\\]EMVideoLesson\.tsx$/}, ({path:sourcePath}) => {
       let source=readFileSync(sourcePath,'utf8');

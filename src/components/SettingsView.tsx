@@ -2,11 +2,13 @@ import { useState, useSyncExternalStore } from "react";
 import { loadApiKey, saveApiKey } from "../game/state";
 import { SHOW_AI_CHAT } from "../config";
 import { hasYouTubeConsent, setYouTubeConsent, subscribeYouTubeConsent } from "../game/youtube-consent";
+import { DEFAULT_REPORT_FORM_URL, reportFormUrl } from "../game/report-link";
 
 export function SettingsView({ onResetProgress }: { onResetProgress: () => void }) {
   const [key, setKey] = useState(loadApiKey());
   const [saved, setSaved] = useState(false);
   const youtubeAllowed = useSyncExternalStore(subscribeYouTubeConsent, hasYouTubeConsent, () => false);
+  const reportUrl = reportFormUrl(import.meta.env.VITE_REPORT_FORM_URL?.trim() || DEFAULT_REPORT_FORM_URL);
 
   return (
     <div className="screen settings">
@@ -73,6 +75,13 @@ export function SettingsView({ onResetProgress }: { onResetProgress: () => void 
           起動し直すと再確認が必要になったり、以前保存した選択に戻ったりする場合があります。
           {" "}<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Googleのプライバシーポリシー</a>
         </p>
+      </section>
+
+      <section className="settings-section">
+        <h2>📝 不具合・わかりにくい点の報告</h2>
+        <p className="screen-note">誤りや、説明が分かりにくい箇所をGoogleフォームでお知らせください。各動画の下からも報告できます。</p>
+        {reportUrl ? <a className="btn btn-ghost" href={reportUrl} target="_blank" rel="noopener noreferrer">報告フォームを開く ↗</a>
+          : <p className="screen-note small">報告フォームを開けません。設定をご確認ください。</p>}
       </section>
 
       <section className="settings-section">
