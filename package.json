@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "test:video-delivery": "node scripts/test-all-video-delivery.mjs && node scripts/test-legacy-youtube-pruning.mjs",
     "test:youtube": "node scripts/test-youtube-consent.mjs && node scripts/test-youtube-player.mjs && node scripts/test-youtube-seeking.mjs",
     "test:video-speed": "node scripts/test-video-playback-speed.mjs",
     "test:circular-pilot": "node scripts/test-circular-pilot.mjs",

@@ -1,12 +1,14 @@
 import manifest from '../content/video-delivery.json';
 import highSchoolYouTube from '../content/high-school-youtube.generated.json';
+import legacyYouTube from '../content/legacy-youtube.generated.json';
 import legacyCatalog from '../content/b2-legacy.generated.json';
 
 const youtubeIdPattern = /^[A-Za-z0-9_-]{11}$/;
 
-/** Only approved, uploaded video IDs belong here. Unlisted media stays local. */
+/** Only verified, uploaded video IDs belong here. Unmapped media stays local. */
 export function youtubeIdFor(mediaId: string): string | null {
   const id = (highSchoolYouTube as Record<string, unknown>)[mediaId]
+    ?? (legacyYouTube as Record<string, unknown>)[mediaId]
     ?? (manifest.videos as Record<string, unknown>)[mediaId];
   return typeof id === 'string' && youtubeIdPattern.test(id) ? id : null;
 }

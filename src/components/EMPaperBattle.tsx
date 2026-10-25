@@ -5,6 +5,8 @@ import catalog from '../content/paper-battle-videos.generated.json';
 import {paperBattleAnswer} from '../game/paper-battle';
 import {claimNarration} from '../game/narration';
 import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
+import {YouTubeVideo,type YouTubeVideoHandle} from './YouTubeVideo';
+import {youtubeIdFor} from '../game/video-delivery';
 import {hapticSuccess,hapticError} from '../native';
 import './em-paper-battle.css';
 
@@ -15,14 +17,17 @@ export function EMPaperBattle({stage,problems,onExit,onFinish,nextStageTitle}:{s
  const [victory,setVictory]=useState(false),[damage,setDamage]=useState(0),[hit,setHit]=useState(false);
  const [failed,setFailed]=useState(false),[retryMedia,setRetryMedia]=useState(0);
  const answered=useRef(false),finished=useRef(false),player=useRef<HTMLVideoElement>(null),release=useRef<()=>void>();
+ const youtubePlayer=useRef<YouTubeVideoHandle>(null);
  const problem=problems[index],entry=catalog.find(c=>c.id===problem.id)!;
  const correct=selected===entry.answerIndex,movie=entry[movieKind];
+ const mediaKey=`paper-battles/${movie.id}`,youtubeId=youtubeIdFor(mediaKey);
  const base=`${import.meta.env.BASE_URL}media/paper-battles/${movie.id}`,revision=`?v=${movie.renderKey.slice(0,16)}`;
  useEffect(()=>{window.scrollTo({top:0,behavior:'auto'});},[]);
  useEffect(()=>{setFailed(false);return()=>release.current?.();},[movie.id]);
  useEffect(()=>{if(!hit)return;const timer=window.setTimeout(()=>setHit(false),650);return()=>window.clearTimeout(timer);},[hit]);
+ function pauseMovie(){player.current?.pause();youtubePlayer.current?.pause();}
  function answer(choice:number){
-  if(answered.current)return;answered.current=true;player.current?.pause();
+  if(answered.current)return;answered.current=true;pauseMovie();
   window.scrollTo({top:0,behavior:'auto'});
   const isCorrect=choice===entry.answerIndex,next=paperBattleAnswer(battle,problem.id,isCorrect,stage.enemy.maxHp,problems.length);
   setSelected(choice);setBattle(next);setDamage(battle.hp-next.hp);
@@ -30,7 +35,7 @@ export function EMPaperBattle({stage,problems,onExit,onFinish,nextStageTitle}:{s
   setMovieKind('solution');
  }
  function next(){
-  player.current?.pause();
+  pauseMovie();
   if(!correct){answered.current=false;setSelected(null);setMovieKind('question');window.scrollTo({top:0,behavior:'auto'});return;}
   if(index===problems.length-1){setVictory(true);return;}
   answered.current=false;setIndex(i=>i+1);setSelected(null);setMovieKind('question');setDamage(0);
@@ -46,9 +51,11 @@ export function EMPaperBattle({stage,problems,onExit,onFinish,nextStageTitle}:{s
   </section>
   {selected!==null&&<div className={`paper-feedback ${correct?'is-correct':''}`} role="status">{correct?`正解！ ${damage} ダメージ${battle.hp===0?'！ 敵を倒した！':''}`:'惜しい！ 解説動画で確かめて、もう一度挑戦しよう。'}</div>}
   <section className="em-paper-problem" aria-label={`問題 ${index+1}`}>
-   <div className="paper-video-heading"><strong>{movieKind==='question'?'問題動画':'解説動画'}</strong>{selected!==null&&<button className="btn btn-ghost btn-sm" onClick={()=>{player.current?.pause();setMovieKind(k=>k==='question'?'solution':'question');}}>{movieKind==='question'?'解説動画へ':'問題を見返す'}</button>}</div>
-   <video key={`${movie.id}-${retryMedia}`} ref={player} controls playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${movieKind==='question'?'問題':'解説'}の音声付き動画`} onPlay={()=>{release.current?.();release.current=claimNarration(()=>player.current?.pause());}} onError={()=>setFailed(true)}><source src={`${base}.mp4${revision}`} type="video/mp4" onError={()=>setFailed(true)}/></video>
-   <VideoPlaybackSpeed player={player} mediaKey={`${movie.id}-${retryMedia}`}/>
+   <div className="paper-video-heading"><strong>{movieKind==='question'?'問題動画':'解説動画'}</strong>{selected!==null&&<button className="btn btn-ghost btn-sm" onClick={()=>{pauseMovie();setMovieKind(k=>k==='question'?'solution':'question');}}>{movieKind==='question'?'解説動画へ':'問題を見返す'}</button>}</div>
+   {youtubeId?<YouTubeVideo key={`${movie.id}-${retryMedia}`} ref={youtubePlayer} youtubeId={youtubeId} mediaId={mediaKey} title={`${stage.title}・問題${index+1}の${movieKind==='question'?'問題':'解説'}`} start={0} end={movie.duration} onError={()=>setFailed(true)}/>:<>
+    <video key={`${movie.id}-${retryMedia}`} ref={player} controls playsInline preload="metadata" poster={`${base}.jpg${revision}`} aria-label={`${movieKind==='question'?'問題':'解説'}の音声付き動画`} onPlay={()=>{release.current?.();release.current=claimNarration(()=>player.current?.pause());}} onError={()=>setFailed(true)}><source src={`${base}.mp4${revision}`} type="video/mp4" onError={()=>setFailed(true)}/></video>
+    <VideoPlaybackSpeed player={player} mediaKey={`${movie.id}-${retryMedia}`}/>
+   </>}
    {failed&&<div role="alert"><p>動画を読み込めませんでした。通信状態を確認してください。</p><button className="btn btn-ghost" onClick={()=>{setFailed(false);setRetryMedia(n=>n+1);}}>動画を再読み込み</button></div>}
    <p className="paper-instruction">{selected===null?'紙に図や途中式を書いてから、答えを選ぼう。':'▶ を押すと、音声付きの解説を再生できます。'}</p>
    <details className="paper-written-question"><summary>問題文を文字で確認</summary><MathText text={problem.question}/></details>

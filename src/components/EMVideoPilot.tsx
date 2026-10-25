@@ -1,23 +1,30 @@
-import {useEffect,useRef} from 'react';
+import {useEffect,useRef,useState} from 'react';
 import {claimNarration} from '../game/narration';
 import {VideoPlaybackSpeed} from './VideoPlaybackSpeed';
+import {YouTubeVideo} from './YouTubeVideo';
+import {youtubeIdFor} from '../game/video-delivery';
 import './em-video-pilot.css';
 
 /** Pre-rendered narration: the diagram and voice share one media timeline. */
 export function EMVideoPilot(){
  const base=import.meta.env.BASE_URL;
  const movie=`${base}media/em-line-integral-nemo.mp4?v=20260924-fluent-v1`;
+ const mediaKey='em-line-integral-nemo',youtubeId=youtubeIdFor(mediaKey);
  const player=useRef<HTMLVideoElement>(null),release=useRef<()=>void>();
+ const [failed,setFailed]=useState(false),[retryMedia,setRetryMedia]=useState(0);
  useEffect(()=>()=>{release.current?.();},[]);
  return <section className="em-video-pilot" aria-label="線積分の解説動画">
   <h2>この動画の目標：電気力が曲がった道でする仕事</h2>
   <p>中級「有限和から線積分へ」／ 力と移動の内積 → 小区間の和 → 線積分</p>
-  <video ref={player} onPlay={()=>{release.current?.();release.current=claimNarration(()=>player.current?.pause());}} controls playsInline preload="metadata" poster={`${base}media/em-line-integral-nemo.jpg`} aria-label="Nemo音声付き・線積分の解説動画">
-   <source src={movie} type="video/mp4"/>
+  {youtubeId?<YouTubeVideo key={`${mediaKey}-${retryMedia}`} youtubeId={youtubeId} mediaId={mediaKey} title="電気力が曲がった道でする仕事" start={0} end={49.91666666666667} onError={()=>setFailed(true)}/>:<>
+  <video key={retryMedia} ref={player} onPlay={()=>{release.current?.();release.current=claimNarration(()=>player.current?.pause());}} onError={()=>setFailed(true)} controls playsInline preload="metadata" poster={`${base}media/em-line-integral-nemo.jpg`} aria-label="Nemo音声付き・線積分の解説動画">
+   <source src={movie} type="video/mp4" onError={()=>setFailed(true)}/>
    下の解説スライドも、この動画と同じ題材を説明しています。
   </video>
   <VideoPlaybackSpeed player={player} mediaKey={movie}/>
-  <a href={movie} target="_blank" rel="noreferrer">動画だけを開く（MP4）</a>
+  </>}
+  {failed&&<div role="alert"><p>動画を読み込めませんでした。通信状態を確認してください。</p><button className="btn btn-ghost" onClick={()=>{setFailed(false);setRetryMedia(n=>n+1);}}>動画を再読み込み</button></div>}
+  <a href={youtubeId?`https://www.youtube.com/watch?v=${youtubeId}`:movie} target="_blank" rel="noreferrer">{youtubeId?'YouTubeで動画を開く':'動画だけを開く（MP4）'}</a>
   <p className="video-credit">音声：VOICEVOX Nemo 男声1。この動画は字幕付きで、自動再生しません。図と音声は、同じ動画に収録されています。</p>
   <details><summary>この動画の前提と補足</summary>
    <p>外からの操作が、正の電荷を指定した道に沿って動かします。描いた曲線は、電場だけで電荷が自由に動く場合の軌道ではありません。この動画が求める量は、電気力のする仕事です。</p>

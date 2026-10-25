@@ -31,6 +31,9 @@ jobs:
       - name: Verify published YouTube videos match their lesson units
         run: node scripts/test-youtube-series-mapping.mjs && npm run test:high-school-series
 
+      - name: Verify every reachable video uses its exact YouTube upload
+        run: npm run test:video-delivery
+
       - name: Check YouTube consent and seek regressions
         run: npm run test:youtube
 

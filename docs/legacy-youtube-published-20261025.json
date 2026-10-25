@@ -1,0 +1,805 @@
+{
+  "schema": 1,
+  "channelId": "UCd6G6SRqpj1jDbyMy98b5Bg",
+  "channelName": "ピーター",
+  "publishedDate": "2026-10-25",
+  "previousSourceMain": "1e530a5b18627377ff9c727a56b23a9519a73ff6",
+  "scope": "All 66 legacy videos reachable in the 2026-10-25 all-route audit; original source bytes unchanged. All existing 466 Studio rows were cross-matched before uploading; no exact existing upload found. 66 distinct new uploads published and checked by public oEmbed title/author.",
+  "publicMetadataCheckedAt": "2026-10-25T12:56:08.068Z",
+  "videos": [
+    {
+      "mediaKey": "lessons/prep-area-distance",
+      "youtubeId": "IN8gsiaMhzc",
+      "title": "【Physics Quest｜前提】速度のグラフの面積が移動になる理由 [prep-area-distance]",
+      "kind": "prerequisite",
+      "sourceSha256": "64e2f6b25245c442e0312c11563ca926a1bdc75d10daf79d2534743dab32412e",
+      "sourceBytes": 905874,
+      "relativeSource": "public/media/lessons/prep-area-distance.mp4",
+      "stageIds": [
+        "ui-curve-tiles"
+      ]
+    },
+    {
+      "mediaKey": "lessons/ui-curve-tiles-bridges-1",
+      "youtubeId": "hwD9AzaVKfE",
+      "title": "【Physics Quest｜補助教材】曲線の面積は、四角いタイルで測ってよい？ [ui-curve-tiles-bridges-1]",
+      "kind": "lesson-main",
+      "sourceSha256": "2135067cb11177442fd325e08341d210516e7d3f1ab238f9977c525e49fc1f8d",
+      "sourceBytes": 755820,
+      "relativeSource": "public/media/lessons/ui-curve-tiles-bridges-1.mp4",
+      "stageIds": [
+        "ui-curve-tiles"
+      ]
+    },
+    {
+      "mediaKey": "lessons/ui-through-a-surface-bridges-2",
+      "youtubeId": "qJKFQkOWYOk",
+      "title": "【Physics Quest｜補助教材】同じ面積でも、傾けると通り抜ける量が変わる？ [ui-through-a-surface-bridges-2]",
+      "kind": "lesson-main",
+      "sourceSha256": "e583c011ee59d7054e9c672018f67a2fc5b2b26381e9649f02f8d1f95db18912",
+      "sourceBytes": 1193412,
+      "relativeSource": "public/media/lessons/ui-through-a-surface-bridges-2.mp4",
+      "stageIds": [
+        "ui-through-a-surface"
+      ]
+    },
+    {
+      "mediaKey": "lessons/prep-vector-length",
+      "youtubeId": "ZPLJoUniCBM",
+      "title": "【Physics Quest｜前提】ベクトルの長さと、長さ一の矢印 [prep-vector-length]",
+      "kind": "prerequisite",
+      "sourceSha256": "da05526c1fa623b3a856df3366c0dbadbb8bfc4d5c421978d3894a0f9e665dee",
+      "sourceBytes": 766739,
+      "relativeSource": "public/media/lessons/prep-vector-length.mp4",
+      "stageIds": [
+        "um-path-pieces",
+        "um-area-vector"
+      ]
+    },
+    {
+      "mediaKey": "lessons/um-path-pieces-bridges-3",
+      "youtubeId": "MfVHd-NKbS8",
+      "title": "【Physics Quest｜補助教材】曲がった移動を、なぜ直線の矢印で表せる？ [um-path-pieces-bridges-3]",
+      "kind": "lesson-main",
+      "sourceSha256": "baf3777b070f6d26fea9ef5c3d1425f59e60bf829da8f3d7cbb475cb682c4d20",
+      "sourceBytes": 1012441,
+      "relativeSource": "public/media/lessons/um-path-pieces-bridges-3.mp4",
+      "stageIds": [
+        "um-path-pieces"
+      ]
+    },
+    {
+      "mediaKey": "lessons/um-area-vector-bridges-4",
+      "youtubeId": "PDTo-1cPL_E",
+      "title": "【Physics Quest｜補助教材】面積なのに、なぜ矢印で表す？ [um-area-vector-bridges-4]",
+      "kind": "lesson-main",
+      "sourceSha256": "3ab61b5d5a4c34d1ae3c7bd5ef521073d735de524ab9be0c5d7b128d53fcb067",
+      "sourceBytes": 1102581,
+      "relativeSource": "public/media/lessons/um-area-vector-bridges-4.mp4",
+      "stageIds": [
+        "um-area-vector"
+      ]
+    },
+    {
+      "mediaKey": "lessons/prep-position",
+      "youtubeId": "c9a8mrgncU4",
+      "title": "【Physics Quest｜前提】位置と時間を、数で表す [prep-position]",
+      "kind": "prerequisite",
+      "sourceSha256": "c36adae28eb0ce62987e91ba19422d1fac158c01f34f7f83b14c060d33f037b4",
+      "sourceBytes": 827483,
+      "relativeSource": "public/media/lessons/prep-position.mp4",
+      "stageIds": [
+        "ui-motion-record"
+      ]
+    },
+    {
+      "mediaKey": "revisions/ui-motion-record-bridges-5",
+      "youtubeId": "TeZ4CQEGdUk",
+      "title": "【Physics Quest｜補助教材】点の間隔が広いほど、速く動いている？ [ui-motion-record-bridges-5]",
+      "kind": "lesson-main",
+      "sourceSha256": "2e586985b4a8f64b15cbfca9e1148ed260c569dc7510df159de56d7c824726a6",
+      "sourceBytes": 1857411,
+      "relativeSource": "public/media/revisions/ui-motion-record-bridges-5.mp4",
+      "stageIds": [
+        "ui-motion-record"
+      ]
+    },
+    {
+      "mediaKey": "revisions/prep-force",
+      "youtubeId": "RTe5ZBWQcMY",
+      "title": "【Physics Quest｜前提】力・質量・合力を区別する [prep-force]",
+      "kind": "prerequisite",
+      "sourceSha256": "6cc046ff40a47e3fb3354ac9bf326a7fb146d1ceb066439c0810b2c550d005af",
+      "sourceBytes": 2030408,
+      "relativeSource": "public/media/revisions/prep-force.mp4",
+      "stageIds": [
+        "ui-force-map"
+      ]
+    },
+    {
+      "mediaKey": "revisions/ui-force-map-bridges-6",
+      "youtubeId": "O3u0t3PFtDA",
+      "title": "【Physics Quest｜補助教材】箱が床を押す力は、箱の図に描く？ [ui-force-map-bridges-6]",
+      "kind": "lesson-main",
+      "sourceSha256": "c55eafdc24e3a820f541f7cc241abeb8ad040569f97b0a76d93086da875d22eb",
+      "sourceBytes": 1915271,
+      "relativeSource": "public/media/revisions/ui-force-map-bridges-6.mp4",
+      "stageIds": [
+        "ui-force-map"
+      ]
+    },
+    {
+      "mediaKey": "revisions/ui-work-changing-bridges-7",
+      "youtubeId": "wujTNZA5bvA",
+      "title": "【Physics Quest｜補助教材】途中で力が変わったら、どの力を掛ける？ [ui-work-changing-bridges-7]",
+      "kind": "lesson-main",
+      "sourceSha256": "965a764b41f5c3f665c02cb87127096e961782d7a14913935e5c931c5fe178d0",
+      "sourceBytes": 1522602,
+      "relativeSource": "public/media/revisions/ui-work-changing-bridges-7.mp4",
+      "stageIds": [
+        "ui-work-changing"
+      ]
+    },
+    {
+      "mediaKey": "revisions/prep-work-energy",
+      "youtubeId": "JDD5JZbxcVg",
+      "title": "【Physics Quest｜前提】仕事から運動エネルギーへ [prep-work-energy]",
+      "kind": "prerequisite",
+      "sourceSha256": "fb859cfeb956630a3930f78e3973a28fdb2b68004c4ef66714cadb8d0a5921da",
+      "sourceBytes": 2128337,
+      "relativeSource": "public/media/revisions/prep-work-energy.mp4",
+      "stageIds": [
+        "ui-energy-change"
+      ]
+    },
+    {
+      "mediaKey": "revisions/ui-energy-change-bridges-8",
+      "youtubeId": "DVEshEM1g0Q",
+      "title": "【Physics Quest｜補助教材】同じ9ジュールを足しても、速い台車ほど速さが伸びない？ [ui-energy-change-bridges-8]",
+      "kind": "lesson-main",
+      "sourceSha256": "6a825e10c04931247d45db4e333bf0ae00155b6c42cb88ffee248e27441beaf7",
+      "sourceBytes": 1744668,
+      "relativeSource": "public/media/revisions/ui-energy-change-bridges-8.mp4",
+      "stageIds": [
+        "ui-energy-change"
+      ]
+    },
+    {
+      "mediaKey": "revisions/prep-circular",
+      "youtubeId": "9Nb5WBM3nus",
+      "title": "【Physics Quest｜前提】円運動では、進む向きが変わる [prep-circular]",
+      "kind": "prerequisite",
+      "sourceSha256": "5507175a7f5372eb6eb44cbbf3478a12aedfeb6973f1b73d9fb925b49f6ffb11",
+      "sourceBytes": 3038709,
+      "relativeSource": "public/media/revisions/prep-circular.mp4",
+      "stageIds": [
+        "ui-turning-motion"
+      ]
+    },
+    {
+      "mediaKey": "revisions/ui-turning-motion-bridges-9",
+      "youtubeId": "Zpv7TC3E8Xw",
+      "title": "【Physics Quest｜補助教材】速さが一定なら、力はいらない？ [ui-turning-motion-bridges-9]",
+      "kind": "lesson-main",
+      "sourceSha256": "505812e02580568eea52c54c813177a6ec28212c9bf397409ac231690c3ddc06",
+      "sourceBytes": 1811988,
+      "relativeSource": "public/media/revisions/ui-turning-motion-bridges-9.mp4",
+      "stageIds": [
+        "ui-turning-motion"
+      ]
+    },
+    {
+      "mediaKey": "revisions/prep-trig",
+      "youtubeId": "cK_fUhvC6FY",
+      "title": "【Physics Quest｜前提】斜めの矢印を、横と縦に分ける [prep-trig]",
+      "kind": "prerequisite",
+      "sourceSha256": "b28a712227cce45429503f111ec0026dc135fc05e58e9e6c60ccfe64ec60cdd2",
+      "sourceBytes": 2048796,
+      "relativeSource": "public/media/revisions/prep-trig.mp4",
+      "stageIds": [
+        "um-newton-components"
+      ]
+    },
+    {
+      "mediaKey": "revisions/um-newton-components-bridges-10",
+      "youtubeId": "EbW4tpLUzQY",
+      "title": "【Physics Quest｜補助教材】斜めに引いたそりは、横へどれだけ加速する？ [um-newton-components-bridges-10]",
+      "kind": "lesson-main",
+      "sourceSha256": "12aeae52bf8b6094f4fb814cef6777f0306fefa5337d04e218d87d302841f5f6",
+      "sourceBytes": 1818576,
+      "relativeSource": "public/media/revisions/um-newton-components-bridges-10.mp4",
+      "stageIds": [
+        "um-newton-components"
+      ]
+    },
+    {
+      "mediaKey": "inserts/hp-why-01",
+      "youtubeId": "s2dappGAE8Y",
+      "title": "【Physics Quest｜補足】サイン二乗足すコサイン二乗は、なぜいつも一? [hp-why-01]",
+      "kind": "insert",
+      "sourceSha256": "4e9c0344d8c1a48dac81d5d57d4cddcfd51bb6c2c0d2b274b70cfba314a0f747",
+      "sourceBytes": 821072,
+      "relativeSource": "public/media/inserts/hp-why-01.mp4",
+      "stageIds": [
+        "um-newton-components"
+      ]
+    },
+    {
+      "mediaKey": "lessons/prep-sum",
+      "youtubeId": "cNmQD-xWIrI",
+      "title": "【Physics Quest｜前提】Σは、具体的な足し算の省略 [prep-sum]",
+      "kind": "prerequisite",
+      "sourceSha256": "73f4d10b31d91a484381227746d26a4b7396dcaa60782e91077c270ce15caa1c",
+      "sourceBytes": 966803,
+      "relativeSource": "public/media/lessons/prep-sum.mp4",
+      "stageIds": [
+        "um-work-sum",
+        "um-work-vector"
+      ]
+    },
+    {
+      "mediaKey": "revisions/um-work-sum-bridges-11",
+      "youtubeId": "jSetlQNyZDg",
+      "title": "【Physics Quest｜補助教材】伸ばすほど重くなるばね、仕事は「力×距離」でいい？ [um-work-sum-bridges-11]",
+      "kind": "lesson-main",
+      "sourceSha256": "8c43ffdbf5165731f77360f95c27d736137032cca6242f28679d0a7a07777a91",
+      "sourceBytes": 2412815,
+      "relativeSource": "public/media/revisions/um-work-sum-bridges-11.mp4",
+      "stageIds": [
+        "um-work-sum"
+      ]
+    },
+    {
+      "mediaKey": "lessons/prep-dot-work",
+      "youtubeId": "i9PvLPCDArg",
+      "title": "【Physics Quest｜前提】内積は、相手の向きに沿う部分を掛ける [prep-dot-work]",
+      "kind": "prerequisite",
+      "sourceSha256": "6af679f89aa95670fc97ee0342e3d7db6b099a687deb83fa83aa82b3e3ff3691",
+      "sourceBytes": 959529,
+      "relativeSource": "public/media/lessons/prep-dot-work.mp4",
+      "stageIds": [
+        "um-work-vector"
+      ]
+    },
+    {
+      "mediaKey": "revisions/um-work-vector-bridges-12",
+      "youtubeId": "SaOAWgz7JTk",
+      "title": "【Physics Quest｜補助教材】曲がった道の「力×距離」、距離とは何？ [um-work-vector-bridges-12]",
+      "kind": "lesson-main",
+      "sourceSha256": "5d96fd79afbdefa5269c685c80860a75bd296415c80751538ca4f7530aa032e4",
+      "sourceBytes": 1504711,
+      "relativeSource": "public/media/revisions/um-work-vector-bridges-12.mp4",
+      "stageIds": [
+        "um-work-vector"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-field-map-01",
+      "youtubeId": "ttQdEU_i8WY",
+      "title": "【Physics Quest｜補助教材】場を、場所ごとに矢印が決まる地図として読む [ui-field-map-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "52baecffecca973ffb17cfa00ae0073830e12a8ae48dc2ce38e1dcf314c49449",
+      "sourceBytes": 827121,
+      "relativeSource": "public/media/em/ui-field-map-01.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-field-map-02",
+      "youtubeId": "4RCvmyHbbE8",
+      "title": "【Physics Quest｜補助教材】電場の地図から、置いた電荷が受ける力を求める [ui-field-map-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "7e60a28a91516f3166eaacfbfdb4164770e9c26d2a70075932612f49c16b0261",
+      "sourceBytes": 724557,
+      "relativeSource": "public/media/em/ui-field-map-02.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-field-map-03",
+      "youtubeId": "6nDSBZzU5oM",
+      "title": "【Physics Quest｜補助教材】地図の上に道と面を置き、この章の目的地を見る [ui-field-map-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "b8993393146857a26f1acb768aaab2b890927286bcea00084aa3b1c1bba8bd20",
+      "sourceBytes": 1094824,
+      "relativeSource": "public/media/em/ui-field-map-03.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-work-direction-01",
+      "youtubeId": "0bMcJ3HeaEo",
+      "title": "【Physics Quest｜補助教材】矢印の長さをそのまま掛けられない場面を見る [ui-work-direction-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "ab9d9fda4b114f8fd02e58d8556f6ae23ca9da6c7fc5bfb59e8bfecea579ecdf",
+      "sourceBytes": 764923,
+      "relativeSource": "public/media/em/ui-work-direction-01.mp4",
+      "stageIds": [
+        "ui-work-direction"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-work-direction-02",
+      "youtubeId": "RV2JBYIH91U",
+      "title": "【Physics Quest｜補助教材】力を2本に分け、道方向の成分だけを取り出す [ui-work-direction-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "81bf9d599e7a3fe50538fbea8825c43f48b3ee0efc2470d5b1689233dc10203f",
+      "sourceBytes": 693670,
+      "relativeSource": "public/media/em/ui-work-direction-02.mp4",
+      "stageIds": [
+        "ui-work-direction"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-work-direction-03",
+      "youtubeId": "2sSqe0sujZM",
+      "title": "【Physics Quest｜補助教材】成分に距離を掛けて、仕事を確定する [ui-work-direction-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "0ac94e1abd41d7c1ab04cf8ede9f8195870bac512f582fcd8b2eebbdd711a6be",
+      "sourceBytes": 513229,
+      "relativeSource": "public/media/em/ui-work-direction-03.mp4",
+      "stageIds": [
+        "ui-work-direction"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-work-bent-path-01",
+      "youtubeId": "DBRzQSCLN18",
+      "title": "【Physics Quest｜補助教材】曲がる道では「前」が1つに決まらないことを見る [ui-work-bent-path-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "6eb4ceef622cdd50a8dac77e9194052e523649e0637649a10268db3d9cf49629",
+      "sourceBytes": 749563,
+      "relativeSource": "public/media/em/ui-work-bent-path-01.mp4",
+      "stageIds": [
+        "ui-work-bent-path"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-work-bent-path-02",
+      "youtubeId": "DR5TIgdA-ok",
+      "title": "【Physics Quest｜補助教材】区間ごとの寄与を作って合計する [ui-work-bent-path-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "915dac24684d7fcdb31136431ed4e91c840c21ecad92cd95bfc33824745b7345",
+      "sourceBytes": 738037,
+      "relativeSource": "public/media/em/ui-work-bent-path-02.mp4",
+      "stageIds": [
+        "ui-work-bent-path"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-work-bent-path-03",
+      "youtubeId": "Ue__5FZoULY",
+      "title": "【Physics Quest｜補助教材】向きの意味と、細かく切った場合を確かめる [ui-work-bent-path-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "1211c7ede7fc78002ac6a439bb04d2e5d5b13f728b593d7a97ce1e589032c7dc",
+      "sourceBytes": 872368,
+      "relativeSource": "public/media/em/ui-work-bent-path-03.mp4",
+      "stageIds": [
+        "ui-work-bent-path"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-flux-one-tile-01",
+      "youtubeId": "t2G-LhrF19Y",
+      "title": "【Physics Quest｜補助教材】面の向きを法線で決め、垂直なときの磁束を作る [ui-flux-one-tile-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "894a91e1553edf4860fe1de1da9323cb400168d3c5f0fd5d7039619afed9ee3b",
+      "sourceBytes": 823882,
+      "relativeSource": "public/media/em/ui-flux-one-tile-01.mp4",
+      "stageIds": [
+        "ui-flux-one-tile"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-flux-one-tile-02",
+      "youtubeId": "2sLtbU8Goag",
+      "title": "【Physics Quest｜補助教材】平行・斜めのときに何が減るのかを見る [ui-flux-one-tile-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "bc3d7a45477ad13cfc7a9672b8631430bd4969a84ad308677154327cf0a5eab5",
+      "sourceBytes": 824610,
+      "relativeSource": "public/media/em/ui-flux-one-tile-02.mp4",
+      "stageIds": [
+        "ui-flux-one-tile"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-flux-one-tile-03",
+      "youtubeId": "tPLZSj1fSvE",
+      "title": "【Physics Quest｜補助教材】角度を連続で変え、本数という言い方を点検する [ui-flux-one-tile-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "c5ad59369cd80c62799b57dac74a7df600bd65b1d54ef1d195fb493f79366d98",
+      "sourceBytes": 932147,
+      "relativeSource": "public/media/em/ui-flux-one-tile-03.mp4",
+      "stageIds": [
+        "ui-flux-one-tile"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-flux-many-tiles-01",
+      "youtubeId": "WPUhIzXrrj8",
+      "title": "【Physics Quest｜補助教材】各面の磁束を計算し、二枚分を足す [ui-flux-many-tiles-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "3ab04fc8626f8e18ae0b8ec1ee650e1199d7a9ad4496e0ec914fc04e3da5df98",
+      "sourceBytes": 790267,
+      "relativeSource": "public/media/em/ui-flux-many-tiles-01.mp4",
+      "stageIds": [
+        "ui-flux-many-tiles"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-flux-many-tiles-02",
+      "youtubeId": "g_pVEqrwiUg",
+      "title": "【Physics Quest｜補助教材】磁場が場所ごとに違う場合も、1枚ずつ作って足す [ui-flux-many-tiles-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "2772539b0a9c52d65f7667065b376f7fd3d698c2e72c8531c990a395f13d08e3",
+      "sourceBytes": 951451,
+      "relativeSource": "public/media/em/ui-flux-many-tiles-02.mp4",
+      "stageIds": [
+        "ui-flux-many-tiles"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-flux-many-tiles-03",
+      "youtubeId": "1IQh-XH4JJQ",
+      "title": "【Physics Quest｜補助教材】仕事の和との対応と、法線の向きの効果を確かめる [ui-flux-many-tiles-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "069da97910cc4176971854ac3fd7d4574b62500c8b8f8d863bff19b95b08dc63",
+      "sourceBytes": 1402574,
+      "relativeSource": "public/media/em/ui-flux-many-tiles-03.mp4",
+      "stageIds": [
+        "ui-flux-many-tiles"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-charge-and-flux-preview-01",
+      "youtubeId": "8VkoSXzqBaM",
+      "title": "【Physics Quest｜補助教材】球面の向きを決め、中の電荷と正味の量を結ぶ [ui-charge-and-flux-preview-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "69fef44a49b5239829bd113e83904de738529364bbc2121e24f822d7d5c6d87e",
+      "sourceBytes": 853809,
+      "relativeSource": "public/media/em/ui-charge-and-flux-preview-01.mp4",
+      "stageIds": [
+        "ui-charge-and-flux-preview"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-charge-and-flux-preview-02",
+      "youtubeId": "bYf-A5bh8xQ",
+      "title": "【Physics Quest｜補助教材】電荷の符号・大きさ・球の半径を変えて確かめる [ui-charge-and-flux-preview-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "80d73bb54eda31d40972b00b8bf2472d6f45de4e35b53098a93d30ed2996beaa",
+      "sourceBytes": 804266,
+      "relativeSource": "public/media/em/ui-charge-and-flux-preview-02.mp4",
+      "stageIds": [
+        "ui-charge-and-flux-preview"
+      ]
+    },
+    {
+      "mediaKey": "em/ui-charge-and-flux-preview-03",
+      "youtubeId": "5Hpz0cZOedk",
+      "title": "【Physics Quest｜補助教材】「本数」の限界を確かめ、上級編の形を見通す [ui-charge-and-flux-preview-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "6e993ce230173ef78f12c66296b222e65d191daff6d8028d6f7255f4d5081781",
+      "sourceBytes": 1028590,
+      "relativeSource": "public/media/em/ui-charge-and-flux-preview-03.mp4",
+      "stageIds": [
+        "ui-charge-and-flux-preview"
+      ]
+    },
+    {
+      "mediaKey": "em/um-line-element-01",
+      "youtubeId": "NbHV2vmJsjQ",
+      "title": "【Physics Quest｜補助教材】場を成分で書き、道が曲がると困ることを見つける [um-line-element-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "520b038160564d29a03cbdb1a292f0a479aec405526f0e0a91ac491ac61a3ded",
+      "sourceBytes": 1067246,
+      "relativeSource": "public/media/em/um-line-element-01.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "em/um-line-element-02",
+      "youtubeId": "edtCcOK-RnM",
+      "title": "【Physics Quest｜補助教材】小移動の矢印と代表点、そして力を用意する [um-line-element-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "b08cd5e5188d84aaec841d010a0379ee41524d9a47bb4c34885ad8640ac88709",
+      "sourceBytes": 800996,
+      "relativeSource": "public/media/em/um-line-element-02.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "em/um-line-element-03",
+      "youtubeId": "YK1Gp0oSn6M",
+      "title": "【Physics Quest｜補助教材】移動方向の力の成分から、内積の式を導く [um-line-element-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "7bf41b40146a3d9b3706b34fbef987b76499fbcb93e8c5c8319225131c435490",
+      "sourceBytes": 1175323,
+      "relativeSource": "public/media/em/um-line-element-03.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "em/um-line-element-04",
+      "youtubeId": "6X1wLD9G_T8",
+      "title": "【Physics Quest｜補助教材】符号の3つの場合を確かめ、誤りの型を押さえる [um-line-element-04]",
+      "kind": "lesson-main",
+      "sourceSha256": "8bc5e68e5b8049a2704d22aa458ef6b678b074358c6274dc0331e3dcf452b12f",
+      "sourceBytes": 885336,
+      "relativeSource": "public/media/em/um-line-element-04.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "em/um-em-area-vector-01",
+      "youtubeId": "gVlT8GtAWMM",
+      "title": "【Physics Quest｜補助教材】タイルの広さと向きを、別々の記号で押さえる [um-em-area-vector-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "30b62d55cdb8747e03669b78c58a10b532cd13d3942110a71169649b8fd1b60a",
+      "sourceBytes": 1105912,
+      "relativeSource": "public/media/em/um-em-area-vector-01.mp4",
+      "stageIds": [
+        "um-em-area-vector"
+      ]
+    },
+    {
+      "mediaKey": "em/um-em-area-vector-02",
+      "youtubeId": "cLgI4WQ17lU",
+      "title": "【Physics Quest｜補助教材】向き付き面積を作り、寄与を内積で書く [um-em-area-vector-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "a525e2a228f7785a5a5bc7e63285a1846781ae852ee5a9d8c85948ec5cf9d0ab",
+      "sourceBytes": 1029904,
+      "relativeSource": "public/media/em/um-em-area-vector-02.mp4",
+      "stageIds": [
+        "um-em-area-vector"
+      ]
+    },
+    {
+      "mediaKey": "em/um-em-area-vector-03",
+      "youtubeId": "gwmYTprnVZ8",
+      "title": "【Physics Quest｜補助教材】符号の決まり方と、曲面での違いを確かめる [um-em-area-vector-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "a3c66af1350fd2082f78d98a01c62a9d305444d7a61569139b9fa257368f3a7c",
+      "sourceBytes": 347142,
+      "relativeSource": "public/media/em/um-em-area-vector-03.mp4",
+      "stageIds": [
+        "um-em-area-vector"
+      ]
+    },
+    {
+      "mediaKey": "em/um-surface-integral-entry-01",
+      "youtubeId": "V9MBn7a0Swk",
+      "title": "【Physics Quest｜補助教材】平面と曲面を比べ、有限和を作る [um-surface-integral-entry-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "1ef36755ec175f0b026fb92ffd15d749eb67122d22b0b728fec00aca23cfdc6a",
+      "sourceBytes": 702981,
+      "relativeSource": "public/media/em/um-surface-integral-entry-01.mp4",
+      "stageIds": [
+        "um-surface-integral-entry"
+      ]
+    },
+    {
+      "mediaKey": "em/um-surface-integral-entry-02",
+      "youtubeId": "dUC0bY1e6eA",
+      "title": "【Physics Quest｜補助教材】極限をとり、面積分の記号と S の意味を受け取る [um-surface-integral-entry-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "3a2a9c8b32ebaae5e16aa1f5ec967a4ceaf27b9b5a92dda6406b4e9f24340e38",
+      "sourceBytes": 906223,
+      "relativeSource": "public/media/em/um-surface-integral-entry-02.mp4",
+      "stageIds": [
+        "um-surface-integral-entry"
+      ]
+    },
+    {
+      "mediaKey": "em/um-surface-integral-entry-03",
+      "youtubeId": "RWRDojwzw5U",
+      "title": "【Physics Quest｜補助教材】記号の区別と、操作の中身を言い切る [um-surface-integral-entry-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "fc0aa34ca588657e2304788556265eb52c35d8e47ac892fbd2ca1d2073b0a02d",
+      "sourceBytes": 1269743,
+      "relativeSource": "public/media/em/um-surface-integral-entry-03.mp4",
+      "stageIds": [
+        "um-surface-integral-entry"
+      ]
+    },
+    {
+      "mediaKey": "em/um-closed-electric-flux-01",
+      "youtubeId": "UoByTKMR2Ro",
+      "title": "【Physics Quest｜補助教材】外向き法線の約束を決め、場の中に箱を置く [um-closed-electric-flux-01]",
+      "kind": "lesson-main",
+      "sourceSha256": "17cec99a8b8ec104f74e62311d14490a2f0c876671f6a5a2a1c435443dfa9efe",
+      "sourceBytes": 440944,
+      "relativeSource": "public/media/em/um-closed-electric-flux-01.mp4",
+      "stageIds": [
+        "um-closed-electric-flux"
+      ]
+    },
+    {
+      "mediaKey": "em/um-closed-electric-flux-02",
+      "youtubeId": "uZKAO9kKe1Q",
+      "title": "【Physics Quest｜補助教材】6面の寄与を1面ずつ計算して足す [um-closed-electric-flux-02]",
+      "kind": "lesson-main",
+      "sourceSha256": "9f9ea9e214d09ca3f82fd33b203df162519eac04dca4b0b34c87b6c1cc3aec4e",
+      "sourceBytes": 919662,
+      "relativeSource": "public/media/em/um-closed-electric-flux-02.mp4",
+      "stageIds": [
+        "um-closed-electric-flux"
+      ]
+    },
+    {
+      "mediaKey": "em/um-closed-electric-flux-03",
+      "youtubeId": "SD3oO3iKtW0",
+      "title": "【Physics Quest｜補助教材】合計0の意味を、場が0であることと区別する [um-closed-electric-flux-03]",
+      "kind": "lesson-main",
+      "sourceSha256": "17c3fcefbe3480898904877bd73a6fa80b01136be5fa97b11e2551cfc98244cf",
+      "sourceBytes": 511229,
+      "relativeSource": "public/media/em/um-closed-electric-flux-03.mp4",
+      "stageIds": [
+        "um-closed-electric-flux"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-ui-field-1-question",
+      "youtubeId": "uVDflRGtysg",
+      "title": "【Physics Quest｜問題】paper-ui-field-1 問題動画 [paper-ui-field-1-question]",
+      "kind": "paper-question",
+      "sourceSha256": "8558ab310b707ddf5adfe87e2fae68785a1eb5cd4c145d1e57c7010732f4795d",
+      "sourceBytes": 397055,
+      "relativeSource": "public/media/paper-battles/paper-ui-field-1-question.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-ui-field-1-solution",
+      "youtubeId": "qfOrCSX4-QA",
+      "title": "【Physics Quest｜解説】paper-ui-field-1 解説動画 [paper-ui-field-1-solution]",
+      "kind": "paper-solution",
+      "sourceSha256": "3b4700c4f095295daf94778b2b7d0296cf5f010089e328666e87d2753738a16f",
+      "sourceBytes": 509151,
+      "relativeSource": "public/media/paper-battles/paper-ui-field-1-solution.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-ui-field-2-question",
+      "youtubeId": "K9SteqU0j8k",
+      "title": "【Physics Quest｜問題】paper-ui-field-2 問題動画 [paper-ui-field-2-question]",
+      "kind": "paper-question",
+      "sourceSha256": "f9e8ca1a0fd0c0a15ca742574501174cb840985e32bfe7928d5bd924095a7e40",
+      "sourceBytes": 383843,
+      "relativeSource": "public/media/paper-battles/paper-ui-field-2-question.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-ui-field-2-solution",
+      "youtubeId": "ETlMpGVFBGk",
+      "title": "【Physics Quest｜解説】paper-ui-field-2 解説動画 [paper-ui-field-2-solution]",
+      "kind": "paper-solution",
+      "sourceSha256": "6347ffec051d482eba1b9a61503c66d94666cca64d2e85698e452de6d84d2535",
+      "sourceBytes": 472061,
+      "relativeSource": "public/media/paper-battles/paper-ui-field-2-solution.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-ui-field-3-question",
+      "youtubeId": "nMTbX6MaRuM",
+      "title": "【Physics Quest｜問題】paper-ui-field-3 問題動画 [paper-ui-field-3-question]",
+      "kind": "paper-question",
+      "sourceSha256": "4695b1f2bb5d20e520cf3b2b0a1665f6679ad8336bac5a422d7b2a9f41a8d5a0",
+      "sourceBytes": 311424,
+      "relativeSource": "public/media/paper-battles/paper-ui-field-3-question.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-ui-field-3-solution",
+      "youtubeId": "091VpCGEdbo",
+      "title": "【Physics Quest｜解説】paper-ui-field-3 解説動画 [paper-ui-field-3-solution]",
+      "kind": "paper-solution",
+      "sourceSha256": "a1a3f7cbe3cf4351a29ff9251928e70060459f2077178c71b4ffd8f9b132b395",
+      "sourceBytes": 434993,
+      "relativeSource": "public/media/paper-battles/paper-ui-field-3-solution.mp4",
+      "stageIds": [
+        "ui-field-map"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-um-line-1-question",
+      "youtubeId": "yA93Uj9zoH8",
+      "title": "【Physics Quest｜問題】paper-um-line-1 問題動画 [paper-um-line-1-question]",
+      "kind": "paper-question",
+      "sourceSha256": "9b4860d2b6c3e9f51edbce3411773c6176a1b7f9d46c77270a0d97293992cce5",
+      "sourceBytes": 402732,
+      "relativeSource": "public/media/paper-battles/paper-um-line-1-question.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-um-line-1-solution",
+      "youtubeId": "6YaCuNTARZ4",
+      "title": "【Physics Quest｜解説】paper-um-line-1 解説動画 [paper-um-line-1-solution]",
+      "kind": "paper-solution",
+      "sourceSha256": "0fff6e2f5374aaccd1aa4a5daf30b7bc5a39595ee7c5226a227e6ccd7385bb7b",
+      "sourceBytes": 543870,
+      "relativeSource": "public/media/paper-battles/paper-um-line-1-solution.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-um-line-2-question",
+      "youtubeId": "d4jdaJoBlYs",
+      "title": "【Physics Quest｜問題】paper-um-line-2 問題動画 [paper-um-line-2-question]",
+      "kind": "paper-question",
+      "sourceSha256": "8601d34a28e672b2ae51096e9ae6fed7205dd9ff20e5721a185bc495f8e19dd1",
+      "sourceBytes": 378161,
+      "relativeSource": "public/media/paper-battles/paper-um-line-2-question.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-um-line-2-solution",
+      "youtubeId": "BFUv1AeeYng",
+      "title": "【Physics Quest｜解説】paper-um-line-2 解説動画 [paper-um-line-2-solution]",
+      "kind": "paper-solution",
+      "sourceSha256": "f1e068a87ca455fc4f6b0deb80ebab6fae81caa342c58f7f6b0bcbbf8d822324",
+      "sourceBytes": 500341,
+      "relativeSource": "public/media/paper-battles/paper-um-line-2-solution.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-um-line-3-question",
+      "youtubeId": "C4V99jGfa3g",
+      "title": "【Physics Quest｜問題】paper-um-line-3 問題動画 [paper-um-line-3-question]",
+      "kind": "paper-question",
+      "sourceSha256": "fe882e22a71e79f5a34e4ab76ac2af4422ab57278b60188c2f9a8292452faf5d",
+      "sourceBytes": 427828,
+      "relativeSource": "public/media/paper-battles/paper-um-line-3-question.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "paper-battles/paper-um-line-3-solution",
+      "youtubeId": "t3RTu9DX9fg",
+      "title": "【Physics Quest｜解説】paper-um-line-3 解説動画 [paper-um-line-3-solution]",
+      "kind": "paper-solution",
+      "sourceSha256": "781cc1fdff3332888da9fb289500fa401501c6490f0b1355daa8827b81a7f280",
+      "sourceBytes": 550822,
+      "relativeSource": "public/media/paper-battles/paper-um-line-3-solution.mp4",
+      "stageIds": [
+        "um-line-element"
+      ]
+    },
+    {
+      "mediaKey": "em-line-integral-nemo",
+      "youtubeId": "SUjm_0G-1oo",
+      "title": "【Physics Quest｜補助教材】線積分の旧パイロット [em-line-integral-nemo]",
+      "kind": "conditional-pilot",
+      "sourceSha256": "37038dbecf83eea8881b852b48f0bac6515ff8d9205acb87a6f17ef1177043c7",
+      "sourceBytes": 1298624,
+      "relativeSource": "public/media/em-line-integral-nemo.mp4",
+      "stageIds": [
+        "um-line-integral-entry"
+      ]
+    }
+  ]
+}
