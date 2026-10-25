@@ -13,32 +13,73 @@
  (()=>{
   'use strict';
   const p=new URLSearchParams(location.search),id=p.get('v')||'',channel=p.get('channel')||'';
-  const numeric=(key,fallback)=>{const n=Number(p.get(key));return Number.isFinite(n)&&n>=0?n:fallback;};
-  const start=numeric('start',0),end=numeric('end',999999),wanted=numeric('rate',.9);
+  const numeric=(key,fallback)=>{const raw=p.get(key);if(raw===null||raw.trim()==='')return fallback;const n=Number(raw);return Number.isFinite(n)&&n>=0?n:fallback;};
+  // `start` remains the initial/resume position for older installed apps.
+  // It must never become a rewind floor. New clients pass the real segment
+  // boundary separately; legacy clients without it may rewind to zero.
+  const start=numeric('segmentStart',0),end=numeric('end',999999),wanted=numeric('rate',.9);
+  const initial=Math.max(start,Math.min(numeric('start',start),end-1/30));
   const send=(type,extra={})=>parent.postMessage({app:'physics-quest-player',channel,type,...extra},'*');
   if(!/^[\w-]{11}$/.test(id)||!channel||end<=start){document.getElementById('error').hidden=false;send('error',{code:'invalid-input'});return;}
-  let player,timer;
-  const report=type=>send(type,{time:player?.getCurrentTime?.()||0,rate:player?.getPlaybackRate?.()||1});
+  let player,timer,ready=false,pendingSeek=null,observedPosition=false;
+  const state=()=>player?.getPlayerState?.()??-1;
+  const limit=()=>{const duration=player?.getDuration?.();return Number.isFinite(duration)&&duration>0?Math.min(end,duration):end;};
+  const last=()=>Math.max(start,limit()-1/30);
+  const rawTime=()=>{const t=player?.getCurrentTime?.();return Number.isFinite(t)?t:start;};
+  const time=()=>{
+   const actual=rawTime();
+   if(pendingSeek){
+    if(Math.abs(actual-pendingSeek.time)<.5||Date.now()-pendingSeek.at>1500)pendingSeek=null;
+    else return pendingSeek.time;
+   }
+   // The ready/cued API may report zero although the embed was cued at60.
+   // Until it reports a real position, relative controls use that initial60.
+   if(!observedPosition&&actual===0&&initial>0)return initial;
+   if(actual>0)observedPosition=true;
+   return actual;
+  };
+  const report=(type,extra={})=>send(type,{time:time(),rate:player?.getPlaybackRate?.()||1,state:state(),end:limit(),...extra});
+  const seek=value=>{
+   const target=Math.max(start,Math.min(last(),value)),before=state();
+   observedPosition=true;
+   pendingSeek={time:target,at:Date.now()};
+   player.seekTo(target,true);
+   // seekTo on an ended/cued player may start playback. A position-only
+   // button must not silently start a paused or as-yet-unplayed video.
+   if(value>=limit()||(before!==1&&before!==3))player.pauseVideo();
+   report('seeked',{time:target});
+  };
   const fail=code=>{document.getElementById('error').hidden=false;send('error',{code});};
   window.addEventListener('message',event=>{
-   if(event.source!==parent||!player)return;
+   if(event.source!==parent||!player||!ready)return;
    const d=event.data;if(!d||d.app!=='physics-quest-player'||d.channel!==channel)return;
    if(d.type==='pause')player.pauseVideo();
    if(d.type==='rate'&&player.getAvailablePlaybackRates().includes(d.value))player.setPlaybackRate(d.value);
+   if(d.type==='seekBy'&&(d.value===5||d.value===-5))seek(time()+d.value);
+   if(d.type==='seekTo'&&typeof d.value==='number'&&Number.isFinite(d.value))seek(d.value);
+   if(d.type==='replay'){seek(start);player.playVideo();}
   });
   window.onYouTubeIframeAPIReady=()=>{
    const el=document.createElement('iframe');el.id='player';el.title='YouTube動画';
    el.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';el.allowFullscreen=true;el.referrerPolicy='strict-origin-when-cross-origin';
-   const params=new URLSearchParams({enablejsapi:'1',origin:location.origin,autoplay:'0',playsinline:'1',controls:'1',rel:'0',start:String(Math.floor(start)),end:String(Math.ceil(end))});
+   const params=new URLSearchParams({enablejsapi:'1',origin:location.origin,autoplay:'0',playsinline:'1',controls:'1',rel:'0',start:String(Math.floor(initial)),end:String(Math.ceil(end))});
    el.src=`https://www.youtube-nocookie.com/embed/${id}?${params}`;
    document.getElementById('player').replaceWith(el);
    player=new YT.Player(el,{events:{
     onReady:e=>{
+     ready=true;
      const rates=e.target.getAvailablePlaybackRates();if(rates.includes(wanted))e.target.setPlaybackRate(wanted);
-     send('ready',{rates:rates.length?rates:[1],rate:e.target.getPlaybackRate()});
-     timer=setInterval(()=>{const t=player.getCurrentTime();if(t>0&&t<start-.25)player.seekTo(start,false);if(t>=end-.15)player.pauseVideo();report('position');},1000);
+     send('ready',{rates:rates.length?rates:[1],rate:e.target.getPlaybackRate(),end:limit()});
+     timer=setInterval(()=>{
+      const t=time();
+      // Do not treat the API's pre-playback zero as a deliberate seek.
+      if(state()===-1||state()===5){report('position');return;}
+      if(t<start-.05)seek(start);
+      else if(t>=limit()-.01){seek(last());player.pauseVideo();report('ended');return;}
+      report('position');
+     },250);
     },
-    onStateChange:e=>report(e.data===1?'playing':e.data===0?'ended':'paused'),
+    onStateChange:e=>report(e.data===1?'playing':e.data===0?'ended':e.data===2?'paused':e.data===3?'buffering':'state'),
     onPlaybackRateChange:()=>report('rate'),onError:e=>fail(e.data)
    }});
   };

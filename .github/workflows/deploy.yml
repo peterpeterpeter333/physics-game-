@@ -31,6 +31,9 @@ jobs:
       - name: Verify published YouTube videos match their lesson units
         run: node scripts/test-youtube-series-mapping.mjs && npm run test:high-school-series
 
+      - name: Check YouTube consent and seek regressions
+        run: npm run test:youtube
+
       - name: Check App Store update version comparisons
         run: node scripts/test-app-update.mjs
 
@@ -97,3 +100,4 @@ jobs:
           publish_dir: ./dist
           # Open tabs can still reference a previous build's hashed equation images.
           keep_files: true
+

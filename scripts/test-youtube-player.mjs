@@ -10,7 +10,7 @@ function setup(search='?v=qW8fh2y4vXE&start=10&end=20&rate=0.5&channel=test'){
  const context={URLSearchParams,location:{search,origin:'https://peterpeterpeter333.github.io'},parent,
   document:{getElementById:id=>id==='error'?error:slot,createElement:tag=>({tag}),head:{append:e=>elements.push(e)}},
   window:{addEventListener:(name,fn)=>events[name]=fn},setInterval:fn=>(interval=fn,1),clearInterval:()=>{},
-  YT:{Player:function(el,options){player={time:10,rate:1,pauses:0,seekTo:t=>player.time=t,pauseVideo:()=>player.pauses++,getCurrentTime:()=>player.time,getPlaybackRate:()=>player.rate,getAvailablePlaybackRates:()=>[.5,1,1.5],setPlaybackRate:r=>player.rate=r,options,el};return player;}}};
+  YT:{Player:function(el,options){player={time:10,rate:1,state:1,pauses:0,seekTo:t=>player.time=t,pauseVideo:()=>{player.pauses++;player.state=2;},playVideo:()=>{player.state=1;},getPlayerState:()=>player.state,getDuration:()=>120,getCurrentTime:()=>player.time,getPlaybackRate:()=>player.rate,getAvailablePlaybackRates:()=>[.5,1,1.5],setPlaybackRate:r=>player.rate=r,options,el};return player;}}};
  vm.runInNewContext(source,context);
  return {context,events,sent,elements,error,get player(){return player},tick:()=>interval()};
 }
@@ -31,6 +31,6 @@ assert.ok(h.sent.every(m=>m.channel==='test'));
 h.player.options.events.onError({data:153});assert.equal(h.error.hidden,false);assert.equal(h.sent.at(-1).code,153);
 const bad=setup('?v=bad&start=0&end=20&channel=test');assert.equal(bad.error.hidden,false);assert.equal(bad.elements.length,0);
 const component=readFileSync('src/components/YouTubeVideo.tsx','utf8');
-assert.match(component,/loaded\?<iframe/);assert.match(component,/event\.source!==frame\.current\?\.contentWindow\|\|event\.origin!==origin/);
+assert.match(component,/loaded\?<YouTubeVideoSession/);assert.match(component,/event\.source!==frame\.current\?\.contentWindow\|\|event\.origin!==origin/);
 assert.match(component,/data\.channel!==channel/);assert.match(component,/Capacitor\.isNativePlatform\(\)\?publicPlayer/);
-console.log('PASS: HTTPS Referer document, privacy-enhanced embed, user load gate, message source/origin/channel isolation, playback rate and end boundary, invalid-input rejection.');
+console.log('PASS: HTTPS Referer document, privacy-enhanced embed, remembered-consent load gate, message source/origin/channel isolation, playback rate and end boundary, invalid-input rejection.');
