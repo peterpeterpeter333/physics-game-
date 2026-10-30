@@ -1,0 +1,423 @@
+{
+  "id": "ue-integrals-05",
+  "stageId": "ue-integrals",
+  "stageTitle": "線積分・面積分を計算する",
+  "level": "advanced",
+  "title": "球の小面積dAを組み立て、積分で球面積4πR²を導く。",
+  "sourceIndices": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "scenes": [
+    {
+      "index": 16,
+      "heading": "まず、球の表面に沿った長さを求める",
+      "narration": "ラジアンで表した角度は、円弧の長さを、その円の半径で割ったものです。球の中心を通る縦の円では、半径はアールです。この円に沿った長さは、「アールかける角度の変化」になります。",
+      "equations": [
+        "\\Delta s=R\\,\\Delta\\theta",
+        "\\Delta\\theta=\\frac{\\Delta s}{R}",
+        "R\\,\\Delta\\theta=R\\frac{\\Delta s}{R}=\\Delta s",
+        "\\Delta s=(2\\,\\mathrm m)\\times0.1=0.2\\,\\mathrm m",
+        "\\frac{ds}{d\\theta}=\\lim_{\\Delta\\theta\\to0}\\frac{\\Delta s}{\\Delta\\theta}=R",
+        "ds=R\\,d\\theta",
+        "0\\le\\theta\\le\\pi,\\qquad0\\le\\varphi\\le2\\pi"
+      ],
+      "guide": {
+        "kind": "角度から長さへ",
+        "read": "Δは二点間の変化。まず普通の長さを計算し、その関係を微分で表す。",
+        "symbols": [
+          [
+            "R",
+            "青い円の半径 [m]。図の例は2 m"
+          ],
+          [
+            "Δθ",
+            "二本の半径の間の角度 [rad]。位置の角度θとは別"
+          ],
+          [
+            "Δs",
+            "二点間を円周に沿って進む長さ [m]。直線距離ではない"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。度数をそのまま代入しない"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "s・ds",
+            "円周に沿った長さ・その微小な変化 [m]"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "ラジアンの定義。弧が半径と同じ長さなら角度は1 rad。",
+            "tex": "\\Delta\\theta=\\frac{\\Delta s}{R}"
+          },
+          {
+            "note": "両辺に同じ半径Rを掛け、右辺のRを約分する。",
+            "tex": "R\\,\\Delta\\theta=R\\frac{\\Delta s}{R}=\\Delta s"
+          },
+          {
+            "note": "半径2 m、角度の変化0.1 radなら、表面に沿った長さは0.2 m。",
+            "tex": "\\Delta s=(2\\,\\mathrm m)\\times0.1=0.2\\,\\mathrm m"
+          },
+          {
+            "note": "半径は一定。角度あたりの長さの変化は、区間を縮めてもR。極限を微分と呼ぶ。",
+            "tex": "\\frac{ds}{d\\theta}=\\lim_{\\Delta\\theta\\to0}\\frac{\\Delta s}{\\Delta\\theta}=R"
+          },
+          {
+            "note": "微分の関係をds＝R dθと書く。dsは微小な長さ、dθは対応する角度の微小な変化。",
+            "tex": "ds=R\\,d\\theta"
+          },
+          {
+            "note": "θは北極から南極まで半周、φは軸の周りに一周。",
+            "tex": "0\\le\\theta\\le\\pi,\\qquad0\\le\\varphi\\le2\\pi"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.125,
+          "text": "ラジアンで表した角度は、円弧の長さを、その円の半径で割ったものです。"
+        },
+        {
+          "start": 5.125,
+          "end": 8.791666666666668,
+          "text": "球の中心を通る縦の円では、半径はアールです。"
+        },
+        {
+          "start": 8.791666666666668,
+          "end": 13.25,
+          "text": "この円に沿った長さは、「アールかける角度の変化」になります。"
+        }
+      ],
+      "end": 13.363999999999997
+    },
+    {
+      "index": 17,
+      "heading": "横向きの輪の半径を、三角形で求める",
+      "narration": "球の同じ高さを一周する輪の半径は、「アールかけるサインシータ」です。球の軸のまわりを回る角度をファイとします。この輪に沿った短い長さは、「輪の半径かける、ファイの小さな変化」です。",
+      "equations": [
+        "\\rho=R\\sin\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi",
+        "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta",
+        "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi",
+        "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi"
+      ],
+      "guide": {
+        "kind": "表面を区切った一つ分の面積",
+        "read": "縦と横の長さを掛ける前に、それぞれが通る円の半径を確かめる。",
+        "symbols": [
+          [
+            "ρ",
+            "同じ高さを一周する金色の輪の半径 [m]"
+          ],
+          [
+            "dsθ・dsφ",
+            "球の表面に沿う、縦・横の微小な長さ [m]"
+          ],
+          [
+            "R",
+            "球の半径 [m]"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。半周はπ、一周は2π"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "軸を含む断面の直角三角形で、sinθ＝輪の半径÷球の半径。",
+            "tex": "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta"
+          },
+          {
+            "note": "弧の長さ＝半径×角度を、縦と横それぞれに使う。",
+            "tex": "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi"
+          },
+          {
+            "note": "小さく区切るほど長方形に近づく。極限で縦×横が微小な面積dAになる。",
+            "tex": "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 13.363999999999997,
+      "captions": [
+        {
+          "start": 13.363999999999997,
+          "end": 18.375,
+          "text": "球の同じ高さを一周する輪の半径は、「アールかけるサインシータ」です。"
+        },
+        {
+          "start": 18.375,
+          "end": 21.25,
+          "text": "球の軸のまわりを回る角度をファイとします。"
+        },
+        {
+          "start": 21.25,
+          "end": 26.708333333333332,
+          "text": "この輪に沿った短い長さは、「輪の半径かける、ファイの小さな変化」です。"
+        }
+      ],
+      "end": 26.83466666666666
+    },
+    {
+      "index": 18,
+      "heading": "縦と横の長さから、小さな面積を求める",
+      "narration": "球の表面の十分小さな区画は、長方形で近似できます。その区画のごく小さな面積は、「縦の円弧の長さかける横の円弧の長さ」です。",
+      "equations": [
+        "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi",
+        "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta",
+        "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi"
+      ],
+      "guide": {
+        "kind": "表面を区切った一つ分の面積",
+        "read": "縦と横の長さを掛ける前に、それぞれが通る円の半径を確かめる。",
+        "symbols": [
+          [
+            "ρ",
+            "同じ高さを一周する金色の輪の半径 [m]"
+          ],
+          [
+            "dsθ・dsφ",
+            "球の表面に沿う、縦・横の微小な長さ [m]"
+          ],
+          [
+            "R",
+            "球の半径 [m]"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。半周はπ、一周は2π"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "軸を含む断面の直角三角形で、sinθ＝輪の半径÷球の半径。",
+            "tex": "\\sin\\theta=\\frac\\rho R\\ \\Rightarrow\\ \\rho=R\\sin\\theta"
+          },
+          {
+            "note": "弧の長さ＝半径×角度を、縦と横それぞれに使う。",
+            "tex": "ds_\\theta=R\\,d\\theta,\\qquad ds_\\varphi=\\rho\\,d\\varphi=R\\sin\\theta\\,d\\varphi"
+          },
+          {
+            "note": "小さく区切るほど長方形に近づく。極限で縦×横が微小な面積dAになる。",
+            "tex": "dA=(R\\,d\\theta)(R\\sin\\theta\\,d\\varphi)=R^2\\sin\\theta\\,d\\theta\\,d\\varphi"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 26.83466666666666,
+      "captions": [
+        {
+          "start": 26.83466666666666,
+          "end": 31.25,
+          "text": "球の表面の十分小さな区画は、長方形で近似できます。"
+        },
+        {
+          "start": 31.25,
+          "end": 37.166666666666664,
+          "text": "その区画のごく小さな面積は、「縦の円弧の長さかける横の円弧の長さ」です。"
+        }
+      ],
+      "end": 37.269999999999996
+    },
+    {
+      "index": 19,
+      "heading": "小面積を球全体で足し、4πR²を得る",
+      "narration": "球の面積は、小さな区画の面積を、表面全体について足して求めます。シータについて、サインシータをゼロからパイまで積分すると二です。ファイについて、一をゼロから二パイまで積分すると二パイです。掛けて、面積は四パイアール二乗になります。",
+      "equations": [
+        "A=R^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\sin\\theta\\,d\\theta=4\\pi R^2",
+        "A=R^2\\int_0^{2\\pi}\\int_0^\\pi\\sin\\theta\\,d\\theta\\,d\\varphi",
+        "\\int_0^\\pi\\sin\\theta\\,d\\theta=[-\\cos\\theta]_0^\\pi=1-(-1)=2",
+        "A=2R^2\\int_0^{2\\pi}d\\varphi=2R^2(2\\pi-0)=4\\pi R^2"
+      ],
+      "guide": {
+        "kind": "球面積を導く",
+        "read": "θ方向の積分は2、φ方向は2π。R²と掛けて4πR²。",
+        "symbols": [
+          [
+            "R",
+            "球の半径 [m]"
+          ],
+          [
+            "θ",
+            "中心で測る、上向きの軸からの角度 [rad]"
+          ],
+          [
+            "φ",
+            "軸の周りを回る方向の角度 [rad]"
+          ],
+          [
+            "dθ・dφ",
+            "それぞれの角度の微小な変化。dという数との掛け算ではない"
+          ],
+          [
+            "A・dA",
+            "球面全体の面積・細かく区切った一つ分の微小な面積 [m²]"
+          ],
+          [
+            "rad（ラジアン）",
+            "弧の長さ÷半径で測る角度。半周はπ、一周は2π"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "小面積の式を、球全体の角度の範囲で積分する。",
+            "tex": "A=R^2\\int_0^{2\\pi}\\int_0^\\pi\\sin\\theta\\,d\\theta\\,d\\varphi"
+          },
+          {
+            "note": "−cosθを微分するとsinθ。cos0=1、cosπ=−1を使う。",
+            "tex": "\\int_0^\\pi\\sin\\theta\\,d\\theta=[-\\cos\\theta]_0^\\pi=1-(-1)=2"
+          },
+          {
+            "note": "残りは一定値の積分。0から2πまでの幅を掛ける。",
+            "tex": "A=2R^2\\int_0^{2\\pi}d\\varphi=2R^2(2\\pi-0)=4\\pi R^2"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 37.269999999999996,
+      "captions": [
+        {
+          "start": 37.269999999999996,
+          "end": 42.74999999999999,
+          "text": "球の面積は、小さな区画の面積を、表面全体について足して求めます。"
+        },
+        {
+          "start": 42.74999999999999,
+          "end": 46.91666666666666,
+          "text": "シータについて、サインシータをゼロからパイまで積分すると二です。"
+        },
+        {
+          "start": 46.91666666666666,
+          "end": 50.83333333333333,
+          "text": "ファイについて、一をゼロから二パイまで積分すると二パイです。"
+        },
+        {
+          "start": 50.83333333333333,
+          "end": 54.293666666666674,
+          "text": "掛けて、面積は四パイアール二乗になります。"
+        }
+      ],
+      "end": 55.64366666666667
+    }
+  ],
+  "pronunciationFingerprint": "fc009e4788b7eecaca8de6d504d9c72f9d9beeec617fd14c286e2710e54f1820",
+  "duration": 55.64366666666667,
+  "renderKey": "870b5e764a87afd7963f9b6cfa1be43c60eac9222f780df8be923b9a8327aeeb",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 64.352,
+    "removedSeconds": 8.708333333333336,
+    "cuts": [
+      {
+        "start": 5.125,
+        "end": 5.708333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.375,
+        "end": 9.958333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 14.416666666666666,
+        "end": 15.75,
+        "reason": "scene"
+      },
+      {
+        "start": 20.875,
+        "end": 21.458333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.333333333333332,
+        "end": 24.916666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 30.375,
+        "end": 31.708333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 36.25,
+        "end": 36.833333333333336,
+        "reason": "sentence"
+      },
+      {
+        "start": 42.75,
+        "end": 44.083333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 49.666666666666664,
+        "end": 50.25,
+        "reason": "sentence"
+      },
+      {
+        "start": 54.416666666666664,
+        "end": 55.041666666666664,
+        "reason": "sentence"
+      },
+      {
+        "start": 58.958333333333336,
+        "end": 59.541666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

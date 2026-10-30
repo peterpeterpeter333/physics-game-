@@ -1,0 +1,146 @@
+{
+  "id": "ue-maxwell-02",
+  "stageId": "ue-maxwell",
+  "stageTitle": "交流とマクスウェル方程式",
+  "level": "advanced",
+  "title": "四つの基本法則と変位電流の役割を整理する ／ 道全体の積分から、各点の電場と磁場の変化を表す式を導く",
+  "sourceIndices": [
+    2,
+    3,
+    4
+  ],
+  "scenes": [
+    {
+      "index": 2,
+      "heading": "真空の平面波を1方向へ絞る",
+      "narration": "この平面波、つまり平らな波面で進む波は、エックス方向へ進み、電場はワイ方向、磁場はゼット方向です。ファラデーの法則と、変位電流を含むアンペールの法則を使います。この二つで、場の「場所による変化」と「時間による変化」を結びます。",
+      "equations": [
+        "\\frac{\\partial E_y}{\\partial x}=-\\frac{\\partial B_z}{\\partial t}",
+        "-\\frac{\\partial B_z}{\\partial x}=\\mu_0\\varepsilon_0\\frac{\\partial E_y}{\\partial t}"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 8.0,
+          "text": "この平面波、つまり平らな波面で進む波は、エックス方向へ進み、電場はワイ方向、磁場はゼット方向です。"
+        },
+        {
+          "start": 8.0,
+          "end": 12.291666666666666,
+          "text": "ファラデーの法則と、変位電流を含むアンペールの法則を使います。"
+        },
+        {
+          "start": 12.291666666666666,
+          "end": 18.083333333333336,
+          "text": "この二つで、場の「場所による変化」と「時間による変化」を結びます。"
+        }
+      ],
+      "end": 18.18633333333333
+    },
+    {
+      "index": 3,
+      "heading": "周回積分が、場の差になる理由",
+      "narration": "小さな長方形の左右の辺では、電場のワイ成分に辺の長さを掛けて足します。二つの辺を回る向きが逆なので、二点の電場の差が残ります。この結果を面積で割り、幅をゼロに近づけると、電場のワイ成分が位置エックスでどう変わるかを表せます。",
+      "equations": [
+        "\\oint\\vec E\\cdot d\\vec r=[E_y(x+dx)-E_y(x)]dy",
+        "[E_y(x+dx)-E_y(x)]dy=-\\frac{\\partial B_z}{\\partial t}dx\\,dy",
+        "\\frac{E_y(x+dx)-E_y(x)}{dx}=-\\frac{\\partial B_z}{\\partial t}",
+        "\\frac{\\partial E_y}{\\partial x}=-\\frac{\\partial B_z}{\\partial t}"
+      ],
+      "spatial": false,
+      "start": 18.18633333333333,
+      "captions": [
+        {
+          "start": 18.18633333333333,
+          "end": 23.583333333333336,
+          "text": "小さな長方形の左右の辺では、電場のワイ成分に辺の長さを掛けて足します。"
+        },
+        {
+          "start": 23.583333333333336,
+          "end": 28.0,
+          "text": "二つの辺を回る向きが逆なので、二点の電場の差が残ります。"
+        },
+        {
+          "start": 28.0,
+          "end": 35.00000000000001,
+          "text": "この結果を面積で割り、幅をゼロに近づけると、電場のワイ成分が位置エックスでどう変わるかを表せます。"
+        }
+      ],
+      "end": 35.11300000000001
+    },
+    {
+      "index": 4,
+      "heading": "小長方形の両辺を面積で割る",
+      "narration": "小さな長方形を貫く磁束は、「磁場の分かける面積」です。ファラデーの法則の式の左右を面積で割ると、二つの場の変化率の関係が得られます。",
+      "equations": [
+        "\\oint\\vec E\\cdot d\\vec r=[E_y(x+dx)-E_y(x)]dy",
+        "[E_y(x+dx)-E_y(x)]dy=-\\frac{\\partial B_z}{\\partial t}dx\\,dy",
+        "\\frac{E_y(x+dx)-E_y(x)}{dx}=-\\frac{\\partial B_z}{\\partial t}",
+        "\\frac{\\partial E_y}{\\partial x}=-\\frac{\\partial B_z}{\\partial t}"
+      ],
+      "spatial": false,
+      "start": 35.11300000000001,
+      "captions": [
+        {
+          "start": 35.11300000000001,
+          "end": 40.29166666666668,
+          "text": "小さな長方形を貫く磁束は、「磁場の分かける面積」です。"
+        },
+        {
+          "start": 40.29166666666668,
+          "end": 46.161000000000016,
+          "text": "ファラデーの法則の式の左右を面積で割ると、二つの場の変化率の関係が得られます。"
+        }
+      ],
+      "end": 47.51100000000002
+    }
+  ],
+  "pronunciationFingerprint": "8701df16e6ef54f3687d4b1599746d62249cbe8ce23bd7d496f2044217516c91",
+  "duration": 47.51100000000002,
+  "renderKey": "f4d94e3bd0109dae7ec0bc1fbcd4bc5bedd0b471b05199a155ce36f6f41bbe7a",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 53.136,
+    "removedSeconds": 5.624999999999986,
+    "cuts": [
+      {
+        "start": 8.0,
+        "end": 8.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 12.916666666666666,
+        "end": 13.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 19.291666666666668,
+        "end": 20.625,
+        "reason": "scene"
+      },
+      {
+        "start": 26.125,
+        "end": 26.708333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 31.125,
+        "end": 31.708333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 38.708333333333336,
+        "end": 40.041666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 45.333333333333336,
+        "end": 45.916666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "schema": "D1-root-attributed-main12-and-problem2-visual-review/v1",
+  "episode": "D-1",
+  "scope": "Root personally displayed the 12 final actual-vs-reference composite pairs plus two final composed problem PNGs; serializer did not personally display these 14 files in this task.",
+  "actualViewer": "/root",
+  "reviewer": "/root",
+  "serializer": "/root/episode_e1",
+  "createdAtUtc": "2026-10-25 08:22:51 UTC",
+  "visualClaimSource": {
+    "sender": "/root",
+    "kind": "Direct trusted parent-agent personal-view report",
+    "claim": "All pair01–12 and 挑戦.png/答え.png were actually displayed; no newly confirmed defect. No ears or continuous playback claim."
+  },
+  "mp4": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/out/ys-chain-d1v1.mp4",
+  "mp4Sha256": "a75bb51396f4e90ab88a477e628aa4e42f8a5d1c7440f23f90b67c6e288f218f",
+  "coverage": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/required-coverage-and-reuse.json",
+  "coverageSha256": "b6a045848e89110b62aad5d86b9837fc45e4e80b497984bf70fbb30e967ccc33",
+  "main12": {
+    "count": 12,
+    "orientation": "LEFT = final MP4 actual decoded frame; RIGHT = reference frame",
+    "pairs": [
+      {
+        "n": 1,
+        "frameIndex": 120,
+        "time": 4,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-01.png",
+        "sha256": "5608d8bb69d19f0d278263a0551ca48cf8ded9e8b5aa8f27a1108f47ffbc3b5c",
+        "actualJpegSha256": "3e837c6bff762c34d69823d7ef92515a2ae71c0faeb5b38b7114f3a28658b62b",
+        "referenceTime": 7,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-01.jpg",
+        "referenceDecodedJpegSha256": "61d8cba6fe26f97c511dda7f95b571079b97cf7b78349d8014254e7e93f1b7d9",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 2,
+        "frameIndex": 735,
+        "time": 24.5,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-02.png",
+        "sha256": "13134cd56eed5d98aaa64da3feaa16e6bb76399394f266bf10fd8f0d001e0eeb",
+        "actualJpegSha256": "2b87f21924d6fdf239c380648a7bcfb7e580923e69dbbe6e6a77e6dc38dcd98b",
+        "referenceTime": 13,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-02.jpg",
+        "referenceDecodedJpegSha256": "1206a31ae2e0d224314519f6acd0b7561b2aa736558296edff729b25f0fd4919",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 3,
+        "frameIndex": 1644,
+        "time": 54.8,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-03.png",
+        "sha256": "eb4879f7346b2f83b484fc7faf04ef4c59be4a2fb3099c9eb552b2f99e4aa519",
+        "actualJpegSha256": "a9fb254b86dab0c5fca85e4826861e6d59c940f1f39c976915354b531b665e66",
+        "referenceTime": 25,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-04.jpg",
+        "referenceDecodedJpegSha256": "5a479a06515754a76c9ec96834e295034eeef9d4494d52898c3e16fcaea9006f",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 4,
+        "frameIndex": 2529,
+        "time": 84.3,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-04.png",
+        "sha256": "3228f803f28557879b28f5cf200f2108b9966d64a4be3af2df1e33dc33eeafdc",
+        "actualJpegSha256": "e294a22b86b727fbb53f7da531973f2f7713ca79a3772f5ad8b2caaa5a6791d3",
+        "referenceTime": 268,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-07.jpg",
+        "referenceDecodedJpegSha256": "bcb54f2cdd063b153786b0aa4f8ce633f4ee1f35ffa7ce3168b5d1c93d72d3de",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 5,
+        "frameIndex": 3135,
+        "time": 104.5,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-05.png",
+        "sha256": "268c1b9d83c9f4a7c0b7ed803c9e3befcd92ba14607c9c1a71a177069e456cc4",
+        "actualJpegSha256": "428ea2feaceb719c20cd13a1e1a0b6c78171d5d7319eaaae24889312003b9490",
+        "referenceTime": 20,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-03.jpg",
+        "referenceDecodedJpegSha256": "c19d3fb1470aabfedbbd727216d16321f3bb4247f9078d949c93769864db7c5b",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 6,
+        "frameIndex": 3785,
+        "time": 126.16666666666667,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-06.png",
+        "sha256": "3a4dbe8ed0d7dfd3a89a082df12b021cac605bd0da1bf25ae3dd16571e3ba9b9",
+        "actualJpegSha256": "67023f6b5e0f663ab3d8b0a858731482918f6a6ad9e80dde269a454f41465bf1",
+        "referenceTime": 94,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-05.jpg",
+        "referenceDecodedJpegSha256": "978262f9528c150920d7d361476dec59fd8dd4435957f0ad93f2cc7ef9fce055",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 7,
+        "frameIndex": 4215,
+        "time": 140.5,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-07.png",
+        "sha256": "baa38af5d377953ecc5584b6282614f580890572bf7374f9c098205cfbddceee",
+        "actualJpegSha256": "cef8bbbb173416dbdd28d825e6926823cf65dfb84e35390b63b02ee67ccc82a7",
+        "referenceTime": 95,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-06.jpg",
+        "referenceDecodedJpegSha256": "cda966d344fd5293e704fe6cdfdc79a37f274efc6bbab7e47cf629684f65d9b4",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 8,
+        "frameIndex": 6321,
+        "time": 210.7,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-08.png",
+        "sha256": "ecc6fdd2dbc93d9c9919e55e21149bcb7a27b5936ae9fd8d6c98fd3d462f98ff",
+        "actualJpegSha256": "10d305c718e5619669c58afc1f5b4bbe1063abcd11acab36a6a00fca79a5ae6c",
+        "referenceTime": 337,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-08.jpg",
+        "referenceDecodedJpegSha256": "110657c19341f9c11f571ba661c83eea191f7d18f0a37a7a622419dce06a8633",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 9,
+        "frameIndex": 7917,
+        "time": 263.9,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-09.png",
+        "sha256": "070a9dcc285f88d72dfa763d70795091fb2374f5b7c86c3f7afd16e0eaeea7d1",
+        "actualJpegSha256": "af31ec1ec31efb8557c47f30e916e37914fe9a684dc4cc0e94b53b75310c2fd2",
+        "referenceTime": 418,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-10.jpg",
+        "referenceDecodedJpegSha256": "1c7c737dc97926ea93d5759d4c1866d5e84ebcd21d3f54fc26ed4c0d2c2fd322",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 10,
+        "frameIndex": 9081,
+        "time": 302.7,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-10.png",
+        "sha256": "81e6a2d00e559353210c887e93fc242473b12d70ad9cc5f57d5877d7ea2e009e",
+        "actualJpegSha256": "5a9380343580f159c98ead43914174c34f184b61069579379c01e7323bd6337e",
+        "referenceTime": 364,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-09.jpg",
+        "referenceDecodedJpegSha256": "24965e7529745f16715d49d32892e8bba34ca09f6294f9dbf22b2cb2e03f15c8",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 11,
+        "frameIndex": 10248,
+        "time": 341.6,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-11.png",
+        "sha256": "07b1d93c9ed199f07f1414d8766c4de1144bc2af4ffa8c0513f4e8d4c9e58740",
+        "actualJpegSha256": "1267aa511755131fee9dcf7d07a5d29b4bad32e77575e1cac12dadd225c2f517",
+        "referenceTime": 431,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-11.jpg",
+        "referenceDecodedJpegSha256": "9991daea74c47221e0930ccef085f9fe8d654ffa3bf9e5f026b2fed4bf3edbaf",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      },
+      {
+        "n": 12,
+        "frameIndex": 12099,
+        "time": 403.3,
+        "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/main12/pair-12.png",
+        "sha256": "aa1cae480feebc4210d313ecb73e53a4fb2d3c6e9415c63e6e1175c8ed2f1796",
+        "actualJpegSha256": "f113461129a8d349beb84660f2e17393b17d4d7d7da80da316116d721707dad8",
+        "referenceTime": 488,
+        "referenceDecodedJpeg": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/reference-main12-fullsize/reference-12.jpg",
+        "referenceDecodedJpegSha256": "0793d113f5c389315eba82e8f182875f66b088e96c1c7dc988a5d3f3f9c933d6",
+        "referenceNativeReviewResolution": [
+          1080,
+          1920
+        ],
+        "serializerVerifiedPairAndReferenceSha256": true,
+        "rootReportedActuallyViewed": true,
+        "comparisonIsVisualNotPixelEquality": true
+      }
+    ],
+    "rootReportedObservations": [
+      "Same desk/model colour and atmosphere",
+      "Model grounding and labels/subtitles",
+      "Opening and closing use the same engine",
+      "22 palm areas, crushed can, steam-versus-air experiment and mechanical relationships are clear"
+    ]
+  },
+  "problem2": {
+    "count": 2,
+    "sourceKind": "Final composed PNGs including answer labelling; not final movie decoded JPEGs and not raw 3D-only PNGs",
+    "images": [
+      {
+        "path": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/problem/挑戦.png",
+        "sha256": "b7ed5283bbecd3a7ef817f702569966936c036a6189f8dd82ea135d09c7c633d",
+        "serializerVerifiedSha256": true,
+        "rootReportedActuallyViewed": true
+      },
+      {
+        "path": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/problem/答え.png",
+        "sha256": "501a350426bf16419f2882a7aa514f4d3d1fbc04d1b9f02b62f43c5abe50adf5",
+        "serializerVerifiedSha256": true,
+        "rootReportedActuallyViewed": true
+      }
+    ],
+    "canonicalJson": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/problem/problem.json",
+    "canonicalJsonSha256": "2d6d33cca0f5ca1d2b26f8ddd722ab080d052e347c3ff07a066198b7e188567d",
+    "composition": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/problem/composition-d1v1.json",
+    "compositionSha256": "eca11f2d31eafd72bae40e948e83ac5a1b6c836a1a84934f6b01b55d8dc47eb0",
+    "rootReportedObservations": [
+      "Mountain plus two engine copies form a readable group composition",
+      "Answer arrow approximately0.63 is visible",
+      "Repaired pier-to-axle contact is visible"
+    ]
+  },
+  "newlyConfirmedDefects": [],
+  "originalNGPreserved": true,
+  "originalValidatorPassClaim": false,
+  "pendingPhysicalReplay": {
+    "job": 146,
+    "status": "Failed frame810 anchors mismatch; under separate diagnosis; not waived"
+  },
+  "earListeningVerified": false,
+  "continuousPlaybackVerified": false,
+  "allMovieFramesViewedByRoot": false,
+  "serializerPersonallyViewedThese14": false,
+  "sourceCodeOrGeneratedManifestEdited": false,
+  "renderOrEncodePerformed": false,
+  "automaticApproval": false,
+  "finalAcceptance": false
+}
+

@@ -1,0 +1,59 @@
+{
+ "auditor": "D-1 agent",
+ "scope": "Lightweight read-only common sections 11/12/13 artifact readiness across B/C/D/E; paused for root-priority B4 camera repair preparation",
+ "commonInstructionReadCompletely": true,
+ "existingArtifactsEdited": false,
+ "heavyCpuOrGpuStarted": false,
+ "finalAcceptance": false,
+ "problems": {
+  "B-1": {"folder":"/private/tmp/ys/ys-chain-b1v1-final3-20261024/problem","challengeDimensions":[1080,1920],"answerDimensions":[1080,1920],"partsCount":4,"canonicalRequiredBodyPresentVerbatim":true,"jsonContainsOnlyCanonicalProblemBody":false,"note":"canonical includes the exact required problem section but also its heading and the following 点検で直した所 section. No Japanese is missing or changed. A new clean delivery JSON would avoid unrelated adjacent material; original JSON must be retained."},
+  "C-1": {"folder":"/private/tmp/ys/ys-chain-c1v1/problem","challengeDimensions":[1080,1920],"answerDimensions":[1080,1920],"partsCount":4,"canonicalRequiredBodyExact":true},
+  "D-1": {"folder":"/private/tmp/ys/ys-chain-d1v1-render/problem-final-d1v1","challengeDimensions":[1080,1920],"answerDimensions":[1080,1920],"partsCount":4,"canonicalRequiredBodyExact":true,"note":"The final derived-video merge helper currently does not link/copy this existing problem directory into its new cache. Existing images/JSON are ready but must be explicitly included in final delivery/checkpoint."},
+  "E-1": {"folder":"/private/tmp/ys/ys-chain-e1v1/problem","challengeDimensions":[1080,1920],"answerDimensions":[1080,1920],"partsCount":5,"canonicalRequiredBodyExact":true}
+ },
+ "gateA": {
+  "method":"Each actual data cue key was joined to its own Markdown heading and checked for camera P, numeric principal width, object, hand/motion, word/time, label and face fields. This is document coverage, not visual/timing approval.",
+  "B-1":{"expectedCues":50,"missingHeadingsOrFields":0},
+  "C-1":{"expectedCues":53,"missingHeadingsOrFields":0},
+  "D-1":{"expectedCues":57,"missingHeadingsOrFields":0},
+  "E-1":{"expectedCues":54,"missingHeadingsOrFields":0},
+  "latestDeliveredRevisionNotes":"C includes r16/r17 revision data. D shotplan stops at frozen r15; water v4 and camera606 are in separate new reports. B shotplan remains nominal and E includes r9 but not the new entry/local-fit maps. Final shotplan addenda should link exact delivered poses/maps; do not present nominal P as final measured P."
+ },
+ "catalogs": {
+  "B-1":{"source":"/private/tmp/ys/ys-chain-b1v1/blender/catalog","laterSourceOverrides":["/private/tmp/ys/ys-chain-b1v1/blender/catalog-globe-r6","/private/tmp/ys/ys-chain-b1v1/blender/catalog-affected-r7"],"bothViewImagesFound":true,"finalSourceSelectionNeedsRootConfirmation":true},
+  "C-1":{"source":"/private/tmp/ys/ys-chain-c1v1/blender/catalog-r10","expectedImages":20,"bothViewImagesFound":true,"ownCatalogMdExists":true},
+  "D-1":{"source":"/private/tmp/ys/ys-chain-d1v1-render/blender/catalog-d1v1-final-r15","expectedImages":26,"bothViewImagesFound":true,"ownCatalogMdExists":true,"canTwoUpdatedOthers24Retained":true},
+  "E-1":{"source":"/private/tmp/ys/ys-chain-e1v1/blender/gate-e1v1-r5/catalog","expectedImages":22,"bothViewImagesFound":true,"ownCatalogMdExists":true},
+  "sharedCatalogAppendStatus":"No B-1/C-1/D-1/E-1 or b1v1/c1v1/d1v1/e1v1 references currently found in 机の部品カタログ.md. Root's planned final append/publication remains outstanding, not a missing source render."
+ },
+ "mathEvidence": {
+  "allFourDataSourcesContainExplicitMathAsserts":true,
+  "sourceFiles":["scripts/umech/desk-b1v1-data.mjs","scripts/umech/desk-c1v1-data.mjs","scripts/umech/desk-d1v1-data.mjs","scripts/umech/desk-e1v1-data.mjs"],
+  "existingPassLogsFound":["/private/tmp/ys/ys-chain-b1v1/b1-r5-data.log","/private/tmp/ys/ys-chain-c1v1/c1-data-r8.log","/private/tmp/ys/ys-chain-e1v1/e1v1-r9-world-data-proof.json"],
+  "D1MathExecutionLogFound":false,
+  "note":"D data JSON has required numeric results and source asserts, but this partial audit has not located its original data-assert execution log. Do not rerun original data builders against existing caches: they also rewrite docs/textures. A new read-only assertion runner can provide independent current numeric proof."
+ },
+ "oldEpisodeRegression": {
+  "summary":"outputs/axes-20261023/immutable-inputs-and-regression.json",
+  "1-1":{"report":"/private/tmp/ys/axes-regression/ys-chain-1-1v6/mp4-after/cmp-report.json","cmpOriginal":true,"originalUnchanged":true,"reportedSha256":"ea0cef6700b81ee775b7c2b7452b2c9dc154dad78e898419c2e802e25d220978"},
+  "1-2":{"report":"/private/tmp/ys/axes-regression/ys-chain-1-2v2/mp4-after-matching-encoder/cmp-report.json","cmpOriginal":true,"originalUnchanged":true,"reportedSha256":"3c25ecbf0d2c6a836181853789ea112253487dbc9af04fa570945c63d1e89bf7"},
+  "heavyMp4ComparisonsRerunByThisAudit":false,
+  "note":"Both successful comparison artifacts exist. Preserve the earlier historical encoder mismatch as a separate failed attempt; do not substitute its report for the matching-encoder pass."
+ },
+ "originalInspectors": {
+  "filesPresent":["scripts/umech/desk-quality-gate.mjs","scripts/umech/desk-quality-gate-frames.py"],
+  "noEditsByThisAgent":true,
+  "baselineShaComparisonLocatedInThisPartialAudit":false,
+  "note":"These work files are untracked, so an empty git diff cannot prove unchanged. Root has independently reported protected-input/source SHA equality; locate/link that exact baseline manifest in final evidence rather than citing git diff."
+ },
+ "inputChecks": {"evidence":"outputs/axes-20261023/input-checks-20261024/results.json","all16LintReadingsProsodySpeakerExitCodesZero":true,"reportedAllProtectedInputsUnchanged":true,"finalMp4Approval":false},
+ "concreteRemainingNonMp4Items":[
+  "Root final shared catalog append and final image publication; all source pairs are available.",
+  "Ensure D existing final problem pair+JSON is included in its final derived delivery/checkpoint.",
+  "Prefer new B problem JSON restricted to the exact canonical section; current JSON also carries unrelated next section.",
+  "Append/link latest actual delivered camera/runtime derivative information to B/D/E shotplan addenda.",
+  "Link exact immutable original-inspector baseline SHA evidence; untracked git diff is not evidence.",
+  "Provide D read-only current math-assert proof/log if the original execution log is not recoverable."
+ ],
+ "notAssessedYet":["New final MP4 gates and complete actual final eye review","All catalog image pixels independently re-viewed by this readiness audit","Full final section13 report and final delivery paths/times","Actual ear listening"]
+}

@@ -1,0 +1,1128 @@
+{
+  "episode": "D-1",
+  "scope": "Personal visual review of the FIRST HALF (26 of 51 pending-containing contact pages), not whole-film approval",
+  "reviewer": "/root/episode_e1",
+  "actualViewer": "/root/episode_e1",
+  "createdAtUtc": "2026-10-25 08:20:07 UTC",
+  "mp4": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/out/ys-chain-d1v1.mp4",
+  "mp4Sha256": "a75bb51396f4e90ab88a477e628aa4e42f8a5d1c7440f23f90b67c6e288f218f",
+  "sourceFrames": 12163,
+  "actualEncodedFrames": 12162,
+  "unionManifest": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/d1-final-union-eye-contact-manifest.json",
+  "unionManifestSha256": "55f559aabff32b2609b68934a02545929a1918092c27a65523bfd83cf4a4ba61",
+  "sourceKind": "JPEGs decoded from the final encoded MP4; contact pages resize these exact actual JPEGs. Not raw Blender previews.",
+  "splitRule": "First 26 pending-containing pages, not first 26 of all 91 union pages. Root owns the remaining 25 pending-containing pages, main12 pairs and problem2.",
+  "personallyDisplayedAllAssignedContactPages": true,
+  "personallyInspectedEveryCellOfAssignedPages": true,
+  "assignedPageCount": 26,
+  "assignedContactCellCount": 260,
+  "newlyRequiredActualFramesPersonallyViewed": 225,
+  "previouslyAttributedFramesAlsoPersonallyDisplayed": 35,
+  "pageIds": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+  ],
+  "pages": [
+    {
+      "page": 8,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-008.jpg",
+      "sha256": "d4f3d2c6a4d8058887b7c8bf65a43aa1025b7f2b5d1f3095352610549b929b8a",
+      "cells": 10,
+      "frameIndices": [
+        945,
+        960,
+        975,
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        1005
+      ],
+      "pendingNewEyeFrames": [
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        1005
+      ],
+      "attributedOldEyeFrames": [
+        945,
+        960,
+        975
+      ],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 9,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-009.jpg",
+      "sha256": "4685b8087c5e7e378bd56751f29d8f83aaa74fd68459a9f5f1dd74ce27699d78",
+      "cells": 10,
+      "frameIndices": [
+        1010,
+        1020,
+        1024,
+        1027,
+        1035,
+        1050,
+        1057,
+        1058,
+        1065,
+        1076
+      ],
+      "pendingNewEyeFrames": [
+        1010,
+        1020,
+        1024,
+        1027,
+        1035,
+        1050,
+        1057,
+        1058,
+        1065,
+        1076
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 10,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-010.jpg",
+      "sha256": "fb6f4164483cea6fc39aa699dc4077da2c063737961c19012765078b006facc8",
+      "cells": 10,
+      "frameIndices": [
+        1077,
+        1078,
+        1080,
+        1090,
+        1095,
+        1110,
+        1140,
+        1170,
+        1200,
+        1230
+      ],
+      "pendingNewEyeFrames": [
+        1077,
+        1078
+      ],
+      "attributedOldEyeFrames": [
+        1080,
+        1090,
+        1095,
+        1110,
+        1140,
+        1170,
+        1200,
+        1230
+      ],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 11,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-011.jpg",
+      "sha256": "30f10a55d4649eb16d012677244e7b1c714be8142e2b1cd4e0bb9cf7e461b175",
+      "cells": 10,
+      "frameIndices": [
+        1242,
+        1260,
+        1277,
+        1290,
+        1316,
+        1317,
+        1320,
+        1350,
+        1380,
+        1410
+      ],
+      "pendingNewEyeFrames": [
+        1277,
+        1290,
+        1316,
+        1317,
+        1320,
+        1350,
+        1380,
+        1410
+      ],
+      "attributedOldEyeFrames": [
+        1242,
+        1260
+      ],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 12,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-012.jpg",
+      "sha256": "06afe2747ee1553c77b54196b6f2f6c4618507ad046831072fc01f99090d0966",
+      "cells": 10,
+      "frameIndices": [
+        1440,
+        1447,
+        1448,
+        1470,
+        1500,
+        1527,
+        1530,
+        1560,
+        1590,
+        1620
+      ],
+      "pendingNewEyeFrames": [
+        1440,
+        1447,
+        1448,
+        1470,
+        1500,
+        1527,
+        1530,
+        1560,
+        1590,
+        1620
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 13,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-013.jpg",
+      "sha256": "f9c096a9de209fd4beeedaefc998e31b3b82c99691c5fc7c22356d9ba21c2e83",
+      "cells": 10,
+      "frameIndices": [
+        1644,
+        1650,
+        1662,
+        1664,
+        1666,
+        1680,
+        1710,
+        1740,
+        1770,
+        1800
+      ],
+      "pendingNewEyeFrames": [
+        1644,
+        1650,
+        1662,
+        1664,
+        1666,
+        1680,
+        1710,
+        1740,
+        1770,
+        1800
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 14,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-014.jpg",
+      "sha256": "35b2b9f0c91d796c501e1dd7ffa157379ca018889507fd5820d94ab678f69f6b",
+      "cells": 10,
+      "frameIndices": [
+        1830,
+        1851,
+        1852,
+        1860,
+        1870,
+        1890,
+        1920,
+        1950,
+        1964,
+        1965
+      ],
+      "pendingNewEyeFrames": [
+        1851,
+        1852,
+        1860,
+        1870,
+        1890,
+        1920,
+        1950,
+        1964,
+        1965
+      ],
+      "attributedOldEyeFrames": [
+        1830
+      ],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 15,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-015.jpg",
+      "sha256": "6c6c8ce045bb36df3b533e6b0b27acb86426326fe4a71745294f0a3b854e4c99",
+      "cells": 10,
+      "frameIndices": [
+        1980,
+        2010,
+        2040,
+        2070,
+        2100,
+        2125,
+        2126,
+        2130,
+        2160,
+        2190
+      ],
+      "pendingNewEyeFrames": [
+        1980,
+        2010,
+        2040,
+        2070,
+        2100,
+        2125,
+        2126,
+        2130,
+        2160,
+        2190
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 16,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-016.jpg",
+      "sha256": "d13e9f0abbb5914de8021564c81226df6bb8ba7394dde6b41892804c088725a9",
+      "cells": 10,
+      "frameIndices": [
+        2220,
+        2250,
+        2280,
+        2310,
+        2340,
+        2370,
+        2380,
+        2381,
+        2400,
+        2430
+      ],
+      "pendingNewEyeFrames": [
+        2220,
+        2250,
+        2280,
+        2310,
+        2340,
+        2370,
+        2380,
+        2381,
+        2400,
+        2430
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 17,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-017.jpg",
+      "sha256": "e4f85964ca6d6647fedf828654691600e78fc9db08fcc3170bdebff7e0264bc9",
+      "cells": 10,
+      "frameIndices": [
+        2460,
+        2490,
+        2520,
+        2529,
+        2550,
+        2580,
+        2610,
+        2626,
+        2627,
+        2640
+      ],
+      "pendingNewEyeFrames": [
+        2460,
+        2490,
+        2520,
+        2529,
+        2550,
+        2580,
+        2610,
+        2626,
+        2627,
+        2640
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 18,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-018.jpg",
+      "sha256": "035622e6670864889dfc10e750555751dff2f4623e1b446eca1b9a448a3d2d15",
+      "cells": 10,
+      "frameIndices": [
+        2670,
+        2700,
+        2730,
+        2760,
+        2790,
+        2806,
+        2807,
+        2820,
+        2850,
+        2880
+      ],
+      "pendingNewEyeFrames": [
+        2670,
+        2700,
+        2730,
+        2760,
+        2790,
+        2806,
+        2807,
+        2820,
+        2850,
+        2880
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 19,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-019.jpg",
+      "sha256": "a3d0d3375176c945c926c8848e6f01c82ec4e021e3c16bda2053bc94ada3fe1f",
+      "cells": 10,
+      "frameIndices": [
+        2908,
+        2910,
+        2925,
+        2928,
+        2940,
+        2955,
+        2970,
+        2985,
+        3000,
+        3015
+      ],
+      "pendingNewEyeFrames": [
+        2908,
+        2910
+      ],
+      "attributedOldEyeFrames": [
+        2925,
+        2928,
+        2940,
+        2955,
+        2970,
+        2985,
+        3000,
+        3015
+      ],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 34,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-034.jpg",
+      "sha256": "decfbbdd478fa21620284b65e2c388b8ca4c110abcba7c43ce3e0af5bf0fbba1",
+      "cells": 10,
+      "frameIndices": [
+        4710,
+        4719,
+        4725,
+        4740,
+        4755,
+        4770,
+        4785,
+        4800,
+        4815,
+        4830
+      ],
+      "pendingNewEyeFrames": [
+        4830
+      ],
+      "attributedOldEyeFrames": [
+        4710,
+        4719,
+        4725,
+        4740,
+        4755,
+        4770,
+        4785,
+        4800,
+        4815
+      ],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 35,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-035.jpg",
+      "sha256": "223062e1c2216a28473ee6f1efb4ba1c35c0bd2b582eb206773e92d0d3cecdf9",
+      "cells": 10,
+      "frameIndices": [
+        4845,
+        4860,
+        4875,
+        4890,
+        4905,
+        4920,
+        4935,
+        4950,
+        4965,
+        4980
+      ],
+      "pendingNewEyeFrames": [
+        4845,
+        4860,
+        4875,
+        4890,
+        4905,
+        4920,
+        4935,
+        4950,
+        4965,
+        4980
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 36,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-036.jpg",
+      "sha256": "d6520253e051bd694047f4abea0018cc3945bb86be62b864f941851015a18801",
+      "cells": 10,
+      "frameIndices": [
+        4995,
+        5010,
+        5025,
+        5037,
+        5038,
+        5040,
+        5041,
+        5042,
+        5043,
+        5055
+      ],
+      "pendingNewEyeFrames": [
+        4995,
+        5010,
+        5025,
+        5037,
+        5038,
+        5040,
+        5041,
+        5042,
+        5043,
+        5055
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 37,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-037.jpg",
+      "sha256": "87c4178d612f9b25751cbaee99b424ba2a42caa9169954a09298e5dd6c984ec6",
+      "cells": 10,
+      "frameIndices": [
+        5065,
+        5070,
+        5085,
+        5094,
+        5100,
+        5115,
+        5130,
+        5145,
+        5147,
+        5148
+      ],
+      "pendingNewEyeFrames": [
+        5065,
+        5070,
+        5085,
+        5094,
+        5100,
+        5115,
+        5130,
+        5145,
+        5147,
+        5148
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 38,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-038.jpg",
+      "sha256": "dd787e69e9f9540b1d0e86a5bbec554637307794e47ea407fb280f686f58886e",
+      "cells": 10,
+      "frameIndices": [
+        5149,
+        5155,
+        5160,
+        5169,
+        5175,
+        5190,
+        5205,
+        5207,
+        5208,
+        5209
+      ],
+      "pendingNewEyeFrames": [
+        5149,
+        5155,
+        5160,
+        5169,
+        5175,
+        5190,
+        5205,
+        5207,
+        5208,
+        5209
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 39,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-039.jpg",
+      "sha256": "456772bc548a3b5892e24dc1762c6bab92fbde3713f76be61e4e437f6dd6121b",
+      "cells": 10,
+      "frameIndices": [
+        5220,
+        5221,
+        5232,
+        5235,
+        5250,
+        5265,
+        5280,
+        5295,
+        5310,
+        5325
+      ],
+      "pendingNewEyeFrames": [
+        5220,
+        5221,
+        5232,
+        5235,
+        5250,
+        5265,
+        5280,
+        5295,
+        5310,
+        5325
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 40,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-040.jpg",
+      "sha256": "7d939e15d332581b372fb8ea60fd610b50281ab1f148da90abc30fc02a53c305",
+      "cells": 10,
+      "frameIndices": [
+        5340,
+        5355,
+        5370,
+        5385,
+        5400,
+        5415,
+        5429,
+        5430,
+        5431,
+        5432
+      ],
+      "pendingNewEyeFrames": [
+        5340,
+        5355,
+        5370,
+        5385,
+        5400,
+        5415,
+        5429,
+        5430,
+        5431,
+        5432
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 41,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-041.jpg",
+      "sha256": "6efa9a19324d7bdeccde11b5d3633e254d6b656d690db4e01de6d994718512e8",
+      "cells": 10,
+      "frameIndices": [
+        5433,
+        5434,
+        5445,
+        5460,
+        5475,
+        5490,
+        5505,
+        5520,
+        5535,
+        5540
+      ],
+      "pendingNewEyeFrames": [
+        5433,
+        5434,
+        5445,
+        5460,
+        5475,
+        5490,
+        5505,
+        5520,
+        5535,
+        5540
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 49,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-049.jpg",
+      "sha256": "8c87510e4b2b2b3779e092d66342d587413b65c2cf63bc35192afb84fc19cf74",
+      "cells": 10,
+      "frameIndices": [
+        6450,
+        6453,
+        6454,
+        6465,
+        6480,
+        6492,
+        6510,
+        6540,
+        6565,
+        6566
+      ],
+      "pendingNewEyeFrames": [
+        6480,
+        6492,
+        6510,
+        6540,
+        6565,
+        6566
+      ],
+      "attributedOldEyeFrames": [
+        6450,
+        6453,
+        6454,
+        6465
+      ],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 50,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-050.jpg",
+      "sha256": "b4a0c21b0fe6197d3399b2e34cf8810593a7e88d5bbaf23bf675576124ba9ebb",
+      "cells": 10,
+      "frameIndices": [
+        6570,
+        6600,
+        6608,
+        6630,
+        6645,
+        6660,
+        6690,
+        6720,
+        6750,
+        6780
+      ],
+      "pendingNewEyeFrames": [
+        6570,
+        6600,
+        6608,
+        6630,
+        6645,
+        6660,
+        6690,
+        6720,
+        6750,
+        6780
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 51,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-051.jpg",
+      "sha256": "3f5413e92d516464eda8b0980c4a82f917c8806116808f25dc66feec0d97743a",
+      "cells": 10,
+      "frameIndices": [
+        6810,
+        6818,
+        6819,
+        6825,
+        6834,
+        6840,
+        6855,
+        6870,
+        6885,
+        6900
+      ],
+      "pendingNewEyeFrames": [
+        6810,
+        6818,
+        6819,
+        6825,
+        6834,
+        6840,
+        6855,
+        6870,
+        6885,
+        6900
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 52,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-052.jpg",
+      "sha256": "233cf82853e4594cc498254aac47fb960983ed2a0cc2995c98cf991e7933c9cd",
+      "cells": 10,
+      "frameIndices": [
+        6915,
+        6930,
+        6945,
+        6960,
+        6975,
+        6990,
+        7005,
+        7020,
+        7035,
+        7050
+      ],
+      "pendingNewEyeFrames": [
+        6915,
+        6930,
+        6945,
+        6960,
+        6975,
+        6990,
+        7005,
+        7020,
+        7035,
+        7050
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 53,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-053.jpg",
+      "sha256": "5c00ad7d7f17babcc1466e919d1cc7a136be78311a8196513eedb16d1cd2b062",
+      "cells": 10,
+      "frameIndices": [
+        7065,
+        7080,
+        7093,
+        7095,
+        7110,
+        7125,
+        7140,
+        7155,
+        7170,
+        7185
+      ],
+      "pendingNewEyeFrames": [
+        7065,
+        7080,
+        7093,
+        7095,
+        7110,
+        7125,
+        7140,
+        7155,
+        7170,
+        7185
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    },
+    {
+      "page": 54,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-union-eye-review-20261025/contacts/d1-final-union-054.jpg",
+      "sha256": "05c7afd1fb4007eb067e8bd05fdb353fc9f8519cc8045430b87445b62c2e1c8a",
+      "cells": 10,
+      "frameIndices": [
+        7200,
+        7215,
+        7230,
+        7245,
+        7260,
+        7275,
+        7290,
+        7305,
+        7320,
+        7335
+      ],
+      "pendingNewEyeFrames": [
+        7200,
+        7215,
+        7230,
+        7245,
+        7260,
+        7275,
+        7290,
+        7305,
+        7320,
+        7335
+      ],
+      "attributedOldEyeFrames": [],
+      "allContactAndActualJpegSha256RecomputedEqual": true,
+      "actuallyViewedByThisReviewer": true,
+      "allCellsInspected": true
+    }
+  ],
+  "nativeActualJpegExpansions": [
+    {
+      "frameIndex": 1065,
+      "time": 35.5,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/frames-d1v1/d1v1-frame-0089.jpg",
+      "sha256": "d6d5d19d788d6f198cc1fd6ccea9586d9020554b567d168ae713dfce4b42a88b",
+      "manifestSha256": "d6d5d19d788d6f198cc1fd6ccea9586d9020554b567d168ae713dfce4b42a88b",
+      "personallyDisplayedAtOriginalResolution": true
+    },
+    {
+      "frameIndex": 1527,
+      "time": 50.9,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/frames-d1v1/d1v1-frame-0116.jpg",
+      "sha256": "23b60647da9542ccae9a3bcd48916ae21975b51f820dd2806dc075a4a832a072",
+      "manifestSha256": "23b60647da9542ccae9a3bcd48916ae21975b51f820dd2806dc075a4a832a072",
+      "personallyDisplayedAtOriginalResolution": true
+    },
+    {
+      "frameIndex": 2730,
+      "time": 91,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/frames-d1v1/d1v1-frame-0173.jpg",
+      "sha256": "4371f61a978cd5885a5e0964f9e8a5b6af07030f417b3ffc2dc6ecf662ea20ad",
+      "manifestSha256": "4371f61a978cd5885a5e0964f9e8a5b6af07030f417b3ffc2dc6ecf662ea20ad",
+      "personallyDisplayedAtOriginalResolution": true
+    },
+    {
+      "frameIndex": 5055,
+      "time": 168.5,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/frames-d1v1/d1v1-frame-0360.jpg",
+      "sha256": "fa28e3fb7452747879110b3c96f3b40256b2a8835d34aa64374aba9823424c0d",
+      "manifestSha256": "fa28e3fb7452747879110b3c96f3b40256b2a8835d34aa64374aba9823424c0d",
+      "personallyDisplayedAtOriginalResolution": true
+    },
+    {
+      "frameIndex": 5145,
+      "time": 171.5,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/frames-d1v1/d1v1-frame-0368.jpg",
+      "sha256": "1c25921a4f66dae9be71a7d8556228c3755cde3233b3dae48e74a4c41944522c",
+      "manifestSha256": "1c25921a4f66dae9be71a7d8556228c3755cde3233b3dae48e74a4c41944522c",
+      "personallyDisplayedAtOriginalResolution": true
+    },
+    {
+      "frameIndex": 5220,
+      "time": 174,
+      "file": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/actual-final-review/frames-d1v1/d1v1-frame-0381.jpg",
+      "sha256": "4a910626444b2a40d13491afa696fc6806f64ef10351b62c7dcc47dec6fc8e4d",
+      "manifestSha256": "4a910626444b2a40d13491afa696fc6806f64ef10351b62c7dcc47dec6fc8e4d",
+      "personallyDisplayedAtOriginalResolution": true
+    }
+  ],
+  "nativeOriginalResolutionFrameCount": 6,
+  "concreteObservations": [
+    {
+      "frames": [
+        1065
+      ],
+      "time": 35.5,
+      "observation": "Horse head, torso silhouette and legs remain identifiable and in frame while the winch/post naturally occludes part of its middle/rear. No blank frame or new crop was found in the displayed turn sequence. This is an image observation, not an inferred dimension PASS."
+    },
+    {
+      "frames": [
+        1277,
+        1527
+      ],
+      "observation": "Assembly/full-engine views show the orange pier reaching the grey beam axle; in native frame1527 the piston paper is above/right, its leader reaches the piston, and the cylinder/piston front stays visible."
+    },
+    {
+      "frames": [
+        2730
+      ],
+      "time": 91,
+      "observation": "The relocated fact paper sits above the small Mio face with a visible gap. Left hypothesis/prediction cards overlap part of the upper rim/background but not the visible piston/condensate explanation area."
+    },
+    {
+      "frames": [
+        5042,
+        5055,
+        5145
+      ],
+      "observation": "The air-stack to one-square-centimetre view cuts to a visible whole square rather than wood-only. Native168.5 and171.5 show the square; the explanatory fingertip touches its right edge without hiding its whole surface."
+    },
+    {
+      "frames": [
+        5220
+      ],
+      "time": 174,
+      "observation": "The whole hand-shaped area is inside the image; the previous right-cut condition is not present in this decoded frame. Text does not cover its outline."
+    },
+    {
+      "frames": [
+        6480,
+        6570,
+        6600,
+        6608,
+        6630,
+        6645,
+        6660,
+        6690,
+        6720,
+        6750,
+        6780
+      ],
+      "observation": "Full mine/engine, bottom-pump point and subsequent cylinder point are present. The pointing sleeve covers some mine strata intentionally while its fingertip identifies the bottom pump; it does not erase the stated cylinder/piston target."
+    },
+    {
+      "frames": [
+        6990,
+        7005,
+        7020,
+        7035,
+        7050,
+        7065,
+        7080,
+        7093,
+        7095,
+        7110,
+        7125,
+        7140,
+        7155,
+        7170,
+        7185,
+        7200,
+        7215,
+        7230,
+        7245,
+        7260,
+        7275,
+        7290,
+        7305,
+        7320,
+        7335
+      ],
+      "observation": "The opposed blue pressure arrows are visible, then the piston rises with the beam motion in the shown source sequence. Cylinder/piston action is not hidden by subtitles."
+    }
+  ],
+  "newlyConfirmedDefects": [],
+  "residualOrLimitedObservations": [
+    "Some lower air particles are behind the fixed subtitle at times161–168; layer stack and density contrast remain readable. This is recorded, not claimed as zero overlap.",
+    "The 100kg explanation cards overlap a small part of the weight's upper/handle area; the 100kg number and body remain readable.",
+    "Close-cylinder shots intentionally crop unrelated beam/upper rod portions. This receipt does not independently redefine their semantic primary groups or override physical guards."
+  ],
+  "originalNGPreserved": true,
+  "originalValidatorPassClaim": false,
+  "originalFinalGateSummary": {
+    "originalGateNg": [
+      "7b"
+    ],
+    "medianSubjectProxy": 0.5037,
+    "smallProxyRatio": 0.2343,
+    "writtenStrictSparseLongestSeconds": 3,
+    "writtenStrictSparseLimit": "<2 seconds",
+    "writtenStrictSparsePass": false,
+    "gate7ReportsOkayUnderItsDifferent4SecondCriterion": true
+  },
+  "rootNemoRetryEvidence": {
+    "path": "/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025/root-nemo-three-retry-20261025/checks.json",
+    "sha256": "587cb97889e84b54497a7b0bf4b73b1bc77cb69968a22cee69132c4e8963d8e7",
+    "rootReportedAllThreeMechanicalExitZero": true,
+    "separateAgentPermissionFailureLogsPreserved": true,
+    "notAnEarListeningClaim": true
+  },
+  "verification": {
+    "unionManifestAndMp4Sha256Recomputed": true,
+    "all26ContactAnd260ActualJpegSha256RecomputedEqual": true,
+    "native6ManifestAndFileSha256Equal": true,
+    "sourceCodeEdited": false,
+    "generatedManifestEdited": false,
+    "renderPerformed": false,
+    "encodePerformed": false,
+    "decodePerformedByThisVisualReview": false
+  },
+  "unverified": [
+    "Other pending-containing contact pages owned by root",
+    "Other union pages not personally displayed in this scoped task",
+    "Root main12 reference pairs and problem2 composite checks",
+    "Final zero-render exact-geometry replay/supplement",
+    "Audio listening and continuous real-time playback",
+    "All 30fps frames not in the selected actual-review union"
+  ],
+  "earsVerified": false,
+  "continuousPlaybackVerified": false,
+  "allFilmFramesPersonallyViewed": false,
+  "wholeFilmFinalAcceptance": false,
+  "automaticApproval": false,
+  "conclusion": "All assigned 26 contact pages /260 cells and six native final MP4 JPEGs were actually displayed and inspected. No new blocking visual defect was confirmed in this scope. Original 7b/sparse NG remain; final-film acceptance is not granted by this receipt."
+}
+

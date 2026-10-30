@@ -1,0 +1,84 @@
+{
+  "id": "um-closed-electric-flux-03",
+  "stageId": "um-closed-electric-flux",
+  "stageTitle": "閉曲面の電気束",
+  "level": "middle",
+  "title": "合計0の意味を、場が0であることと区別する",
+  "sourceIndices": [
+    6,
+    7
+  ],
+  "scenes": [
+    {
+      "index": 6,
+      "heading": "合計が0なら、箱の中の電場も0なのだろうか?",
+      "narration": "箱の中の電場は、合計の電気束がゼロでも、五ニュートン毎クーロンのままです。電気束と各点の電場は、別のものです。",
+      "equations": [],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.541666666666667,
+          "text": "箱の中の電場は、合計の電気束がゼロでも、五ニュートン毎クーロンのままです。"
+        },
+        {
+          "start": 5.541666666666667,
+          "end": 8.833333333333334,
+          "text": "電気束と各点の電場は、別のものです。"
+        }
+      ],
+      "end": 8.940999999999999
+    },
+    {
+      "index": 7,
+      "heading": "閉曲面の合計は、結局なにを表しているのだろう?",
+      "narration": "箱全体の電気束は、各面の電気束をプラスマイナスも含めて足したものです。この例では、入る分と出る分の大きさが同じで符号が逆なので、合計がゼロになります。",
+      "equations": [],
+      "spatial": false,
+      "start": 8.940999999999999,
+      "captions": [
+        {
+          "start": 8.940999999999999,
+          "end": 14.291666666666668,
+          "text": "箱全体の電気束は、各面の電気束をプラスマイナスも含めて足したものです。"
+        },
+        {
+          "start": 14.291666666666668,
+          "end": 20.639666666666663,
+          "text": "この例では、入る分と出る分の大きさが同じで符号が逆なので、合計がゼロになります。"
+        }
+      ],
+      "end": 21.989666666666665
+    }
+  ],
+  "pronunciationOverrides": {
+    "電気束": "でんきそく"
+  },
+  "pronunciationFingerprint": "de1c43de2ec5341ed3e28849ddc1a58d19ade27818860cb7702c862c9f2b26e7",
+  "duration": 21.989666666666665,
+  "renderKey": "b5755e0886a6bf901d359e6d871d9e13ec8f5f9e1118a561ce4421d57105a1d0",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 24.447999999999997,
+    "removedSeconds": 2.458333333333332,
+    "cuts": [
+      {
+        "start": 5.541666666666667,
+        "end": 6.083333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.375,
+        "end": 10.708333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 16.166666666666668,
+        "end": 16.75,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+ "episode":"D-1",
+ "reviewer":"/root/episode_d1",
+ "scope":"Only actual final MP4 contact pages13–24, all120 cells personally displayed and visually inspected; one indicated JPEG additionally displayed at full resolution",
+ "mp4":"/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/out-final-d1v1/ys-chain-d1v1.mp4",
+ "mp4Sha256":"c0253209e9fa83a6a8b87e6afbf764bfec2b05211d8532dc1e6e176907a3c9ee",
+ "manifest":"/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/d1v1-review-manifest.json",
+ "manifestSha256":"a1792c20470c3840389727f5e84d917f87617757a30f1ff3a1a9c0378f32bd29",
+ "reviewDirectory":"/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025",
+ "pageFilenamePattern":"d1v1-sheet-NN.jpg",
+ "pagesPersonallyViewed":[
+  {"page":13,"sha256":"96241282e00907a8c279ddfa6ae41993f12d8c31160a0867807cf0b435287cb0","cells":10},
+  {"page":14,"sha256":"f68ce90cf4d60db565b9b9b75da84f8ae40e221151553828954408d89a1d0282","cells":10},
+  {"page":15,"sha256":"49fca21c6739a35f618f508f085e4e6e9a8834282fb6ecc3b5e7306d2184a821","cells":10},
+  {"page":16,"sha256":"6caa557eeda7d07212bb12cf0a8d47e97a5d751681c84269eb732cbbd24c0910","cells":10},
+  {"page":17,"sha256":"ad865c86ed5e6548c7ad50ac80263cb8a37617e46f5426d7f311d024318c4049","cells":10},
+  {"page":18,"sha256":"17a3cb56e23af75bf992e22adfee40067b5a34dbdf953c8a3b5fbafbe10558c2","cells":10},
+  {"page":19,"sha256":"36c46a5bdb37502cc070942b43e2635721a5901f1c074d05a7870d9a6396d312","cells":10},
+  {"page":20,"sha256":"f4ba9adceba3bcda1aca37fc57b91053e2464fbcb5e056a7cbd32c900aad16a1","cells":10},
+  {"page":21,"sha256":"505b1a0c5fc3c0687ec617f86ac8c1aa0db4434565bf03c89a8e63fd1a86b864","cells":10},
+  {"page":22,"sha256":"3eabd40e852f0f18a66d4d5ec95579b4bb5499380c034fead902aacb0f9489e7","cells":10},
+  {"page":23,"sha256":"b5e5603b5b230d52fbbd2e6aae444d4120e0437f4bcca94ad5176339db6a5966","cells":10},
+  {"page":24,"sha256":"b7e76b1a7a5c2c6a5e667904c351b5c4268aa5549e3564d918cfadb0a29f9915","cells":10}
+ ],
+ "selectedFrameCount":120,
+ "selectedTimeRangeSeconds":[61,124],
+ "frameIndices":[1830,1851,1852,1860,1870,1890,1920,1950,1964,1965,1980,2010,2040,2070,2100,2125,2126,2130,2160,2190,2220,2250,2280,2310,2340,2370,2380,2381,2400,2430,2460,2490,2520,2529,2550,2580,2610,2626,2627,2640,2670,2700,2730,2760,2790,2806,2807,2820,2850,2880,2908,2910,2925,2928,2940,2955,2970,2985,3000,3015,3024,3030,3045,3060,3075,3090,3105,3120,3135,3150,3165,3169,3170,3180,3195,3210,3225,3240,3255,3270,3285,3293,3294,3300,3315,3330,3345,3360,3375,3390,3405,3419,3420,3435,3450,3465,3480,3495,3501,3503,3510,3521,3525,3540,3555,3564,3570,3585,3600,3615,3618,3630,3645,3660,3669,3675,3678,3690,3709,3720],
+ "allCellsInThisScopePersonallyViewed":true,
+ "defects":[
+  {
+   "id":"D-final-myth-judge-face-covers-fact-card",
+   "kind":"Actual2D-to-2D learning-label occlusion, not a7/7b proxy failure",
+   "cue":"myth:judge",
+   "page":17,
+   "observedTimes":[91,92,93,93.53333333333333,93.56666666666666],
+   "observedFrames":[2730,2760,2790,2806,2807],
+   "finding":"The small Mio face covers the right half of the existing fact card『事実：毎回 冷たい水で冷やす』. The fact-card words are not fully readable while the face is visible. Cylinder/piston and subtitles remain visible.",
+   "fullResolutionImagePersonallyDisplayed":"frames-d1v1/d1v1-frame-0163.jpg",
+   "fullResolutionImageSha256":"c5a879dd1dd1cfebdff9d37ed1e9f5ffcc877c2d7159e1cb853a2ee64d18273b",
+   "requiresRootDecisionBeforeFinalAcceptance":true,
+   "correctionImplemented":false
+  }
+ ],
+ "otherScopedObservations":[
+  "No empty-wood-only cut, disappearance of the main subject, or unreadable subtitle was found in these120 selected cells.",
+  "The hypothesis/prediction/fact contrast, steam-to-water balloon example, printed can band, wood tongs and remote hand grip are visibly present. This is an image review, not an audio listening claim.",
+  "Original7/7b and sparse failures remain intact. This receipt does not certify physical supplementation or authorize a waiver."
+ ],
+ "notReviewedByThisReceipt":["pages01–12","pages25–86","the12 separate reference comparisons","problem2 images","all30fps frames","actual-ear audio listening"],
+ "allFinalSelectedFramesPersonallyViewed":false,
+ "earsVerified":false,
+ "originalInspectorNGPreserved":true,
+ "finalAcceptance":false
+}

@@ -1,0 +1,115 @@
+{
+  "id": "um-work-vector-bridges-12",
+  "stageId": "um-work-vector",
+  "stageTitle": "内積で仕事の和を作る",
+  "topicId": "um-work-vector",
+  "level": "middle",
+  "family": "bridges",
+  "title": "曲がった道では、何と何の内積を足す？",
+  "condition": "曲線を短い移動ベクトルへ分け、同じ区間の力を対応させる。",
+  "sourceScript": "um-work-vector-bridges-12",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "私たちは各区間の位置で力を調べ、その区間の移動ベクトルと組にします。",
+      "narration": "私たちは各区間の位置で力を調べ、その区間の移動ベクトルと組にします。位置ベクトルそのものを力へ掛けるわけではありません。",
+      "visual": "原点からのr、区間のΔr、代表点のFを三色にする。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.25,
+          "text": "私たちは各区間の位置で力を調べ、その区間の移動ベクトルと組にします。"
+        },
+        {
+          "start": 5.25,
+          "end": 8.75,
+          "text": "位置ベクトルそのものを力へ掛けるわけではありません。"
+        }
+      ],
+      "end": 8.844999999999999
+    },
+    {
+      "index": 1,
+      "heading": "一つの区間の仕事は、力と移動の内積で近似します。",
+      "narration": "一つの区間の仕事は、力と移動の内積で近似します。各区間で向きが違っても、計算結果は数なので足し合わせられます。",
+      "visual": "Fᵢ·Δrᵢを一区間ずつ計算し、Wの箱へ足す。",
+      "equation": "W ≈ Σ F(rᵢ)·Δrᵢ",
+      "symbols": "rᵢは力を調べる位置、F(rᵢ)はその位置の力、Δrᵢは短い移動。",
+      "start": 8.844999999999999,
+      "captions": [
+        {
+          "start": 8.844999999999999,
+          "end": 12.958333333333332,
+          "text": "一つの区間の仕事は、力と移動の内積で近似します。"
+        },
+        {
+          "start": 12.958333333333332,
+          "end": 17.833333333333336,
+          "text": "各区間で向きが違っても、計算結果は数なので足し合わせられます。"
+        }
+      ],
+      "end": 17.925666666666665
+    },
+    {
+      "index": 2,
+      "heading": "区間を細かくした極限が、力の線積分です。",
+      "narration": "区間を細かくした極限が、力の線積分です。大学電磁気では、力を電荷かける電場に置き換えて同じ手順を使います。",
+      "visual": "F=qEへ置換し、既存電磁気動画への接続を示す。",
+      "equation": "",
+      "symbols": "",
+      "start": 17.925666666666665,
+      "captions": [
+        {
+          "start": 17.925666666666665,
+          "end": 21.666666666666668,
+          "text": "区間を細かくした極限が、力の線積分です。"
+        },
+        {
+          "start": 21.666666666666668,
+          "end": 26.988666666666663,
+          "text": "大学電磁気では、力を電荷かける電場に置き換えて同じ手順を使います。"
+        }
+      ],
+      "end": 28.338666666666665
+    }
+  ],
+  "duration": 28.338666666666665,
+  "mediaDirectory": "lessons",
+  "renderKey": "f2dc0dfc37a3458a5e1074635ddabd1d7faf8a55d33c6cfb5e620f46e6201e0d",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 32.672,
+    "removedSeconds": 4.333333333333332,
+    "cuts": [
+      {
+        "start": 5.25,
+        "end": 5.791666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.291666666666666,
+        "end": 10.625,
+        "reason": "scene"
+      },
+      {
+        "start": 14.833333333333334,
+        "end": 15.416666666666666,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.291666666666668,
+        "end": 21.625,
+        "reason": "scene"
+      },
+      {
+        "start": 25.458333333333332,
+        "end": 26.0,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

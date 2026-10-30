@@ -1,0 +1,253 @@
+{
+  "id": "prep-charge-current",
+  "title": "電荷・電流・電圧は、別の量",
+  "level": "intro",
+  "before": [
+    "e-current-intro",
+    "e-current-middle",
+    "e-power-intro",
+    "e-field-intro",
+    "e-field-middle",
+    "e-current-advanced",
+    "e-power-middle",
+    "e-power-advanced",
+    "e-field-advanced",
+    "e-capacitor-middle",
+    "a-bohr-advanced",
+    "a-photon-intro",
+    "a-photon-middle",
+    "a-photon-advanced",
+    "a-bohr-intro",
+    "a-bohr-middle",
+    "e-capacitor-intro",
+    "e-capacitor-advanced",
+    "e-magnet-intro",
+    "e-magnet-middle",
+    "e-magnet-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "電荷は、電気の力に関わる物体の性質で、プラスとマイナスがあります。電子はマイナスの電荷を持ち、電荷の量はクーロンで表します。",
+      "equation": "同じ符号の電荷は反発；異なる符号は引き合う",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            -3,
+            0,
+            "正電荷が受ける力"
+          ],
+          [
+            3,
+            0,
+            "もう一つの正電荷が受ける力"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "電荷は、電気の力に関わる物体の性質で、プラスとマイナスがあります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.25,
+          "text": "電荷は、電気の力に関わる物体の性質で、プラスとマイナスがあります。"
+        },
+        {
+          "start": 5.25,
+          "end": 9.666666666666668,
+          "text": "電子はマイナスの電荷を持ち、電荷の量はクーロンで表します。"
+        }
+      ],
+      "end": 9.814666666666668
+    },
+    {
+      "narration": "電流は、一秒あたりに断面を通る電荷の量です。一秒に二クーロン通るなら二アンペアです。電流のプラスの向きは、プラスの電荷が進む向きと決めます。",
+      "equation": "I = Q/t；1 A = 1 C/s",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時間 [s]",
+        "yLabel": "通過した電荷 [C]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "電流は、一秒あたりに断面を通る電荷の量です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.814666666666668,
+      "captions": [
+        {
+          "start": 9.814666666666668,
+          "end": 13.5,
+          "text": "電流は、一秒あたりに断面を通る電荷の量です。"
+        },
+        {
+          "start": 13.5,
+          "end": 16.083333333333332,
+          "text": "一秒に二クーロン通るなら二アンペアです。"
+        },
+        {
+          "start": 16.083333333333332,
+          "end": 20.291666666666664,
+          "text": "電流のプラスの向きは、プラスの電荷が進む向きと決めます。"
+        }
+      ],
+      "end": 20.42466666666666
+    },
+    {
+      "narration": "電圧は、電荷一クーロンあたりのエネルギーの差です。一クーロンあたり三ジュール渡せる差を、三ボルトと呼びます。",
+      "equation": "1 V = 1 J/C；エネルギー = 電荷 × 電圧",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "電荷1 C",
+          "電荷2 C"
+        ],
+        "values": [
+          3,
+          6
+        ],
+        "unit": "J（電圧3 V）"
+      },
+      "index": 2,
+      "heading": "電圧は、電荷一クーロンあたりのエネルギーの差です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 20.42466666666666,
+      "captions": [
+        {
+          "start": 20.42466666666666,
+          "end": 24.041666666666664,
+          "text": "電圧は、電荷一クーロンあたりのエネルギーの差です。"
+        },
+        {
+          "start": 24.041666666666664,
+          "end": 28.083333333333332,
+          "text": "一クーロンあたり三ジュール渡せる差を、三ボルトと呼びます。"
+        }
+      ],
+      "end": 28.202999999999992
+    },
+    {
+      "narration": "オームの法則が成り立つ抵抗では、電圧に比例した電流が流れます。抵抗の値は「電圧割る電流」で、単位はオームです。",
+      "equation": "R = V/I；V = IR",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "電流 [A]",
+        "yLabel": "電圧 [V]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "オームの法則が成り立つ抵抗では、電圧に比例した電流が流れます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 28.202999999999992,
+      "captions": [
+        {
+          "start": 28.202999999999992,
+          "end": 33.0,
+          "text": "オームの法則が成り立つ抵抗では、電圧に比例した電流が流れます。"
+        },
+        {
+          "start": 33.0,
+          "end": 37.683,
+          "text": "抵抗の値は「電圧割る電流」で、単位はオームです。"
+        }
+      ],
+      "end": 39.032999999999994
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "電荷・電流・電圧は、別の量",
+  "topicId": "prep-charge-current",
+  "family": "prerequisites",
+  "sourceScript": "prep-charge-current",
+  "pronunciationFingerprint": "6f5859f3b52f41af6771d0d2e29e6fadb9b1819dedcd6c6845f4d696d0bf2c14",
+  "duration": 39.032999999999994,
+  "mediaDirectory": "lessons",
+  "renderKey": "7868ce51c2c7cb0b2de3f5d4108af52e0a7742c99be54ba57c7bb7e8fd0be070",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 45.74133333333333,
+    "removedSeconds": 6.708333333333336,
+    "cuts": [
+      {
+        "start": 5.25,
+        "end": 5.791666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.208333333333334,
+        "end": 11.5,
+        "reason": "scene"
+      },
+      {
+        "start": 15.333333333333334,
+        "end": 15.875,
+        "reason": "sentence"
+      },
+      {
+        "start": 18.458333333333332,
+        "end": 19.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.208333333333332,
+        "end": 24.541666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 28.291666666666668,
+        "end": 28.833333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 32.875,
+        "end": 34.208333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 39.125,
+        "end": 39.708333333333336,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

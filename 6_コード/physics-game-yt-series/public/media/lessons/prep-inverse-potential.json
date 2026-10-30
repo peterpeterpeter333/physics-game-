@@ -1,0 +1,236 @@
+{
+  "id": "prep-inverse-potential",
+  "title": "無限遠を基準に、引力のエネルギーを求める",
+  "level": "advanced",
+  "before": [
+    "uc-potential-advanced",
+    "a-bohr-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "保存力とは、出発点と終点が同じなら、途中の道を変えても仕事が同じになる力です。この性質があると、位置エネルギーの差を、仕事のマイナスとして定めることができます。",
+      "equation": "U後−U前 = −W保存力",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "道1の仕事",
+          "道2の仕事"
+        ],
+        "values": [
+          4,
+          4
+        ],
+        "unit": "J（同じ両端の保存力）"
+      },
+      "index": 0,
+      "heading": "保存力とは、出発点と終点が同じなら、途中の道を変えても仕事が同じになる力です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.333333333333333,
+          "text": "保存力とは、出発点と終点が同じなら、途中の道を変えても仕事が同じになる力です。"
+        },
+        {
+          "start": 6.333333333333333,
+          "end": 12.083333333333332,
+          "text": "この性質があると、位置エネルギーの差を、仕事のマイナスとして定めることができます。"
+        }
+      ],
+      "end": 12.205999999999998
+    },
+    {
+      "narration": "「一割る距離」を微分すると、「マイナス一割る、距離の二乗」です。この関係を逆に使えば、逆二乗の引力の積分ができます。",
+      "equation": "d(1/r)/dr=−1/r² → ∫r⁻²dr=−1/r+C",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "距離 r（正）",
+        "yLabel": "1/r",
+        "points": [
+          [
+            0.5,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0.5
+          ],
+          [
+            4,
+            0.25
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "「一割る距離」を微分すると、「マイナス一割る、距離の二乗」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 12.205999999999998,
+      "captions": [
+        {
+          "start": 12.205999999999998,
+          "end": 17.333333333333332,
+          "text": "「一割る距離」を微分すると、「マイナス一割る、距離の二乗」です。"
+        },
+        {
+          "start": 17.333333333333332,
+          "end": 21.874999999999996,
+          "text": "この関係を逆に使えば、逆二乗の引力の積分ができます。"
+        }
+      ],
+      "end": 22.000333333333327
+    },
+    {
+      "narration": "距離を限りなく大きくしたときの位置エネルギーをゼロにすると、積分の定数が決まります。重力の場合、近くにいるときの位置エネルギーはマイナスになります。",
+      "equation": "Fᵣ=−GMm/r² → U=−GMm/r",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "距離 r",
+        "yLabel": "U（GMm=1）",
+        "points": [
+          [
+            0.5,
+            -2
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -0.5
+          ],
+          [
+            4,
+            -0.25
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "距離を限りなく大きくしたときの位置エネルギーをゼロにすると、積分の定数が決まります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.000333333333327,
+      "captions": [
+        {
+          "start": 22.000333333333327,
+          "end": 27.624999999999996,
+          "text": "距離を限りなく大きくしたときの位置エネルギーをゼロにすると、積分の定数が決まります。"
+        },
+        {
+          "start": 27.624999999999996,
+          "end": 32.25,
+          "text": "重力の場合、近くにいるときの位置エネルギーはマイナスになります。"
+        }
+      ],
+      "end": 32.391
+    },
+    {
+      "narration": "全エネルギーから位置エネルギーを引いたものが、運動エネルギーです。運動エネルギーはマイナスになれないので、行ける位置の範囲が決まります。",
+      "equation": "K=E−U≥0 → 到達できる位置ではU≤E",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "位置",
+        "yLabel": "位置エネルギーの例",
+        "points": [
+          [
+            -2,
+            4
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "全エネルギーから位置エネルギーを引いたものが、運動エネルギーです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 32.391,
+      "captions": [
+        {
+          "start": 32.391,
+          "end": 36.833333333333336,
+          "text": "全エネルギーから位置エネルギーを引いたものが、運動エネルギーです。"
+        },
+        {
+          "start": 36.833333333333336,
+          "end": 41.62466666666667,
+          "text": "運動エネルギーはマイナスになれないので、行ける位置の範囲が決まります。"
+        }
+      ],
+      "end": 42.974666666666664
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "無限遠を基準に、引力のエネルギーを求める",
+  "topicId": "prep-inverse-potential",
+  "family": "prerequisites",
+  "sourceScript": "prep-inverse-potential",
+  "pronunciationFingerprint": "fbc7bafe7250eb88f5f857962ea2bef09bb2df7cb5210932de5639796feb2c89",
+  "duration": 42.974666666666664,
+  "mediaDirectory": "lessons",
+  "renderKey": "d937393bab8c14d95b08ccf1879451b35fe7bc0a6123c478d88b746812eb5a5f",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 49.14133333333333,
+    "removedSeconds": 6.166666666666664,
+    "cuts": [
+      {
+        "start": 6.333333333333333,
+        "end": 6.916666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 12.666666666666666,
+        "end": 14.0,
+        "reason": "scene"
+      },
+      {
+        "start": 19.25,
+        "end": 19.791666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.333333333333332,
+        "end": 25.666666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 31.416666666666668,
+        "end": 31.958333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 36.583333333333336,
+        "end": 37.875,
+        "reason": "scene"
+      },
+      {
+        "start": 42.458333333333336,
+        "end": 43.0,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

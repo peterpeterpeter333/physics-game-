@@ -1,0 +1,101 @@
+{
+  "id": "paper-um-line-2-solution",
+  "problemId": "paper-um-line-2",
+  "kind": "solution",
+  "title": "直角と逆向きの仕事",
+  "scenes": [
+    {
+      "narration": "最初の区間では、力と移動が直角です。力には上向きの成分がないので、この区間の仕事はゼロです。",
+      "equation": "W_1=(5,0)\\cdot(0,0.40)=0",
+      "index": 0,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.375,
+          "text": "最初の区間では、力と移動が直角です。"
+        },
+        {
+          "start": 3.375,
+          "end": 7.833333333333332,
+          "text": "力には上向きの成分がないので、この区間の仕事はゼロです。"
+        }
+      ],
+      "end": 7.918999999999999
+    },
+    {
+      "narration": "次の区間では、物体は力と逆の左向きに動きます。右向きを正に取ると、移動はマイナス零点二メートルです。",
+      "equation": "W_2=5\\times(-0.20)=-1\\,\\mathrm J",
+      "index": 1,
+      "start": 7.918999999999999,
+      "captions": [
+        {
+          "start": 7.918999999999999,
+          "end": 12.041666666666666,
+          "text": "次の区間では、物体は力と逆の左向きに動きます。"
+        },
+        {
+          "start": 12.041666666666666,
+          "end": 16.208333333333332,
+          "text": "右向きを正に取ると、移動はマイナス零点二メートルです。"
+        }
+      ],
+      "end": 16.33833333333333
+    },
+    {
+      "narration": "合計の仕事は、ゼロ足すマイナス一で、マイナス一ジュールです。仕事の計算には、移動の距離だけでなく向きも必要です。",
+      "equation": "W=W_1+W_2=-1\\,\\mathrm J",
+      "index": 2,
+      "start": 16.33833333333333,
+      "captions": [
+        {
+          "start": 16.33833333333333,
+          "end": 20.875,
+          "text": "合計の仕事は、ゼロ足すマイナス一で、マイナス一ジュールです。"
+        },
+        {
+          "start": 20.875,
+          "end": 25.189,
+          "text": "仕事の計算には、移動の距離だけでなく向きも必要です。"
+        }
+      ],
+      "end": 26.538999999999998
+    }
+  ],
+  "pronunciationFingerprint": "bfc03d0bfc9cbd9a1ad1be3c0c85b20609b4017c53ef80ec13b466da2c95dec3",
+  "duration": 26.538999999999998,
+  "renderKey": "0172c0beec9d2ed067a86175d33c306bde6b026ab00a1a475d2a22f7cf18f713",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 30.99733333333333,
+    "removedSeconds": 4.458333333333332,
+    "cuts": [
+      {
+        "start": 3.375,
+        "end": 3.9583333333333335,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.416666666666666,
+        "end": 9.791666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 14.0,
+        "end": 14.583333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 18.75,
+        "end": 20.083333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 24.75,
+        "end": 25.333333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

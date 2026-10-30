@@ -1,0 +1,196 @@
+{
+  "id": "prep-absolute",
+  "title": "負号と、絶対値の折れ曲がり",
+  "level": "advanced",
+  "before": [
+    "um-derivative-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "絶対値は、数直線でゼロからどれだけ離れているかです。三もマイナス三も、ゼロから三離れているので、絶対値は三です。",
+      "equation": "|3|=3；|−3|=3",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "|x|",
+        "points": [
+          [
+            -3,
+            3
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "絶対値は、数直線でゼロからどれだけ離れているかです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.9166666666666665,
+          "text": "絶対値は、数直線でゼロからどれだけ離れているかです。"
+        },
+        {
+          "start": 3.9166666666666665,
+          "end": 8.75,
+          "text": "三もマイナス三も、ゼロから三離れているので、絶対値は三です。"
+        }
+      ],
+      "end": 8.83633333333333
+    },
+    {
+      "narration": "プラスの側では絶対値はエックス、マイナスの側ではマイナスエックスです。グラフは途切れずにつながっていますが、ゼロで折れ曲がります。",
+      "equation": "x≥0：|x|=x；x<0：|x|=−x",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "|x|",
+        "points": [
+          [
+            -2,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "プラスの側では絶対値はエックス、マイナスの側ではマイナスエックスです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 8.83633333333333,
+      "captions": [
+        {
+          "start": 8.83633333333333,
+          "end": 13.708333333333332,
+          "text": "プラスの側では絶対値はエックス、マイナスの側ではマイナスエックスです。"
+        },
+        {
+          "start": 13.708333333333332,
+          "end": 17.75,
+          "text": "グラフは途切れずにつながっていますが、ゼロで折れ曲がります。"
+        }
+      ],
+      "end": 17.883999999999997
+    },
+    {
+      "narration": "ゼロから右へ取った区間の傾きは一、左へ取った区間の傾きはマイナス一です。左右で同じ値に近づかないので、ゼロでの微分は一つに決まりません。",
+      "equation": "h>0：|h|/h=1；h<0：|h|/h=−1",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "h",
+        "yLabel": "差の比 |h|/h",
+        "points": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -0.01,
+            -1
+          ],
+          [
+            0.01,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "breakAt": 2
+      },
+      "index": 2,
+      "heading": "ゼロから右へ取った区間の傾きは一、左へ取った区間の傾きはマイナス一です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 17.883999999999997,
+      "captions": [
+        {
+          "start": 17.883999999999997,
+          "end": 23.458333333333336,
+          "text": "ゼロから右へ取った区間の傾きは一、左へ取った区間の傾きはマイナス一です。"
+        },
+        {
+          "start": 23.458333333333336,
+          "end": 28.451999999999998,
+          "text": "左右で同じ値に近づかないので、ゼロでの微分は一つに決まりません。"
+        }
+      ],
+      "end": 29.802
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "負号と、絶対値の折れ曲がり",
+  "topicId": "prep-absolute",
+  "family": "prerequisites",
+  "sourceScript": "prep-absolute",
+  "pronunciationFingerprint": "3ba2a68431315a1b30dab9e79affc982d0072b3420ed094e75f30a3e8f43230c",
+  "duration": 29.802,
+  "mediaDirectory": "lessons",
+  "renderKey": "0ce54637815aa7975c459527ea716cc8a89a914b6e9171cc275316a8c5ce0bf9",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 34.218666666666664,
+    "removedSeconds": 4.416666666666664,
+    "cuts": [
+      {
+        "start": 3.9166666666666665,
+        "end": 4.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.333333333333334,
+        "end": 10.708333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 15.666666666666666,
+        "end": 16.208333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.25,
+        "end": 21.583333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 27.291666666666668,
+        "end": 27.875,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

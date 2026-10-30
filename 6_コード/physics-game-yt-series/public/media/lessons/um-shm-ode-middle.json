@@ -1,0 +1,116 @@
+{
+  "id": "um-shm-ode-middle",
+  "stageId": "um-oscillation-equation",
+  "stageTitle": "二階微分方程式と振動",
+  "topicId": "um-shm-ode",
+  "level": "middle",
+  "family": "university-math",
+  "title": "サインとコサインの二つが、なぜ必要？",
+  "condition": "安定なつり合い近傍。減衰なしの線形近似を基本とする。",
+  "sourceScript": "um-shm-ode-middle-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "サインもコサインも、二回微分するとマイナスの係数が付いて元の関数に戻ります。",
+      "narration": "サインもコサインも、二回微分するとマイナスの係数が付いて元の関数に戻ります。どちらも単振動の方程式を満たします。",
+      "visual": "sinとcosを別行で二回微分。",
+      "equation": "x″+ω²x = 0；x = A cosωt+B sinωt",
+      "symbols": "xは変位、二つのダッシュは時間の二階微分、ωは角振動数、A・Bは定数。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.458333333333333,
+          "text": "サインもコサインも、二回微分するとマイナスの係数が付いて元の関数に戻ります。"
+        },
+        {
+          "start": 5.458333333333333,
+          "end": 8.583333333333332,
+          "text": "どちらも単振動の方程式を満たします。"
+        }
+      ],
+      "end": 8.737333333333332
+    },
+    {
+      "index": 1,
+      "heading": "時刻ゼロでは、コサインの係数が最初の位置になります。",
+      "narration": "時刻ゼロでは、コサインの係数が最初の位置になります。初速度は「サインの係数かける角振動数」なので、二つの最初の条件を別々に合わせられます。",
+      "visual": "x(0)=A、x′(0)=Bωを計算する。",
+      "equation": "",
+      "symbols": "",
+      "start": 8.737333333333332,
+      "captions": [
+        {
+          "start": 8.737333333333332,
+          "end": 12.583333333333332,
+          "text": "時刻ゼロでは、コサインの係数が最初の位置になります。"
+        },
+        {
+          "start": 12.583333333333332,
+          "end": 19.666666666666664,
+          "text": "初速度は「サインの係数かける角振動数」なので、二つの最初の条件を別々に合わせられます。"
+        }
+      ],
+      "end": 19.78066666666666
+    },
+    {
+      "index": 2,
+      "heading": "振幅と位相で表した形も、この二つの係数を別の名前でまとめただけです。",
+      "narration": "振幅と位相で表した形も、この二つの係数を別の名前でまとめただけです。見た目が違う式が、同じ二つの最初の条件を持つことを確かめられます。",
+      "visual": "二つの係数の組と振幅・位相の組を同じ運動へ接続。",
+      "equation": "",
+      "symbols": "",
+      "start": 19.78066666666666,
+      "captions": [
+        {
+          "start": 19.78066666666666,
+          "end": 25.20833333333333,
+          "text": "振幅と位相で表した形も、この二つの係数を別の名前でまとめただけです。"
+        },
+        {
+          "start": 25.20833333333333,
+          "end": 30.44466666666666,
+          "text": "見た目が違う式が、同じ二つの最初の条件を持つことを確かめられます。"
+        }
+      ],
+      "end": 31.79466666666666
+    }
+  ],
+  "pronunciationFingerprint": "334c8b8566e665fbe62b954dca12604b959987466621f4d2eede1e449672f5d8",
+  "duration": 31.79466666666666,
+  "mediaDirectory": "lessons",
+  "renderKey": "d5d40bacc1f5b07b91e2b1a11cf70e28bda273ab918c1894f74beaaf1eda4cd8",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 36.128,
+    "removedSeconds": 4.333333333333339,
+    "cuts": [
+      {
+        "start": 5.458333333333333,
+        "end": 6.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.125,
+        "end": 10.416666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 14.416666666666666,
+        "end": 15.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 22.083333333333332,
+        "end": 23.416666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 28.958333333333332,
+        "end": 29.541666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2491 @@
+{
+  "baselineCommit": "cb6d9fc269fb2af5ad5d3625ca30e398f82007b1",
+  "types": 41,
+  "occurrences": 292,
+  "findings": [
+    {
+      "id": "m1-velocity-intro",
+      "scene": 2,
+      "text": "平均速度は、位置の変化ゼロメートル割る六秒で、ゼロ。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "m1-velocity-intro",
+      "scene": 2,
+      "text": "平均の速さは、道のり六メートル割る六秒で、毎秒一メートルです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "m1-velocity-middle",
+      "scene": 1,
+      "text": "二点の縦の差は、後の位置から前の位置を引いた値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "m1-velocity-middle",
+      "scene": 3,
+      "text": "右をプラスと決めたこの図では、グラフが右下がりなら物体は左へ進みます。",
+      "name": "右下がり",
+      "wrong": "みぎしたがり",
+      "right": "みぎさがり",
+      "count": 1
+    },
+    {
+      "id": "m1-acceleration-middle",
+      "scene": 2,
+      "text": "これは二秒間を平均した値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "m1-uniform-accel-middle",
+      "scene": 2,
+      "text": "長方形は、初速度かける時間。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "m1-uniform-accel-middle",
+      "scene": 2,
+      "text": "三角形は、高さが加速度かける時間で、三角形なので面積に二分の一が付きます。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "m1-uniform-accel-advanced",
+      "scene": 1,
+      "text": "加速度が一定なら、位置の変化は、最初と最後の速度を平均して、時間を掛けた値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "m-freefall-middle",
+      "scene": 1,
+      "text": "球の加速度はマイナスジーなので、速度は、初速度からジーかける時間を引いた値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "m-freefall-middle",
+      "scene": 1,
+      "text": "球の加速度はマイナスジーなので、速度は、初速度からジーかける時間を引いた値です。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "m-freefall-middle",
+      "scene": 2,
+      "text": "初速度が毎秒十九・六メートルなら、九・八で割って、二秒後にゼロになります。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "m-projectile-middle",
+      "scene": 1,
+      "text": "斜めの初速度は、横向きと縦向きの二本の矢印に分けられます。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "m-projectile-middle",
+      "scene": 2,
+      "text": "横の位置は、横の初速度かける時間。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "m-energy-middle",
+      "scene": 1,
+      "text": "床の上の台車を、斜め上に引きます。",
+      "name": "斜め上",
+      "wrong": "ななめじょう",
+      "right": "ななめうえ",
+      "count": 1
+    },
+    {
+      "id": "m-shm-middle",
+      "scene": 2,
+      "text": "ばねの角振動数は、ばね定数を質量で割った値の平方根です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "t-gas-advanced",
+      "scene": 1,
+      "text": "量が決まった理想気体では、「圧力かける体積、割る絶対温度」がいつも同じ値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "t-gas-advanced",
+      "scene": 1,
+      "text": "変化の前と後を、この値で結びます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "w-basics-middle",
+      "scene": 2,
+      "text": "振動数は「一割る周期」なので、波の速さは、波長かける振動数になります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "w-sound-middle",
+      "scene": 2,
+      "text": "片側が閉じた管でいちばん低い音を出すとき、管の長さに、波長の四分の一が入ります。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "w-sound-middle",
+      "scene": 2,
+      "text": "両端が開いた管では、波長の二分の一が入ります。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "w-doppler-intro",
+      "scene": 2,
+      "text": "聞く人には、音の山がより短い間隔で届きます。",
+      "name": "音の山",
+      "wrong": "おとのさん",
+      "right": "おとのやま",
+      "count": 1
+    },
+    {
+      "id": "w-doppler-middle",
+      "scene": 2,
+      "text": "止まっている観測者が受け取る振動数は、音速を前方の波長で割った値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "w-doppler-advanced",
+      "scene": 2,
+      "text": "聞く人と波面が出会う速さは、音速と、聞く人が近づく速さの和です。",
+      "name": "和",
+      "wrong": "やわ",
+      "right": "わ",
+      "count": 1
+    },
+    {
+      "id": "w-light-advanced",
+      "scene": 1,
+      "text": "屈折率が大きい側から小さい側へ進む光では、屈折角が入射角より大きくなります。",
+      "name": "小さい",
+      "wrong": "こさい",
+      "right": "ちいさい",
+      "count": 1
+    },
+    {
+      "id": "w-interference-middle",
+      "scene": 1,
+      "text": "スクリーンが遠ければ、この差はスリットの間隔と、見る角度から近似できます。",
+      "name": "遠ければ",
+      "wrong": "とおざければ",
+      "right": "とおければ",
+      "count": 1
+    },
+    {
+      "id": "e-current-middle",
+      "scene": 1,
+      "text": "電圧を電流で割った値はいつも同じで、それがこの部品の抵抗です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "e-current-middle",
+      "scene": 2,
+      "text": "三オームの抵抗に六ボルトをかけると、六割る三で、電流は二アンペアです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "e-current-middle",
+      "scene": 2,
+      "text": "同じ抵抗に十二ボルトをかけると、十二割る三で、四アンペアになります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "e-current-advanced",
+      "scene": 2,
+      "text": "各枝の電流を「電圧割る抵抗」の形にすると、「一割る抵抗」の和が出てきます。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "e-power-middle",
+      "scene": 2,
+      "text": "電力の式にオームの法則を入れると、「電流の二乗かける抵抗」と「電圧の二乗割る抵抗」の二つの書き方ができます。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "e-power-advanced",
+      "scene": 2,
+      "text": "電線の抵抗が同じなら、電流が半分になると、発熱は二乗で効くので四分の一です。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "e-field-middle",
+      "scene": 1,
+      "text": "距離が二倍になると、二の二乗で、力は四分の一です。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "e-field-advanced",
+      "scene": 2,
+      "text": "一方、電位は、電気的な位置エネルギーを電荷で割った値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "e-capacitor-advanced",
+      "scene": 1,
+      "text": "充電の途中では、板の間の電圧は、最終的な値よりまだ小さいです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "a-photon-middle",
+      "scene": 3,
+      "text": "電子を押し戻す向きの電圧をかけて、いちばん速い電子まで止めれば、その電圧から最大の運動エネルギーが測れます。",
+      "name": "止めれば",
+      "wrong": "やめれば",
+      "right": "とめれば",
+      "count": 1
+    },
+    {
+      "id": "a-photon-advanced",
+      "scene": 1,
+      "text": "原子の中の電子が持てるエネルギーは、連続ではなく、とびとびの値だけです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "a-bohr-middle",
+      "scene": 2,
+      "text": "すると半径は、一、四、九、と整数の二乗に比例する、とびとびの値になります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "a-bohr-advanced",
+      "scene": 3,
+      "text": "量子条件で求めた半径を入れると、水素のエネルギーの段は、「一割る整数の二乗」に比例します。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "a-nucleus-intro",
+      "scene": 2,
+      "text": "半減期が二回過ぎると、残りは半分の半分で、元の四分の一です。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "a-nucleus-middle",
+      "scene": 3,
+      "text": "原子核の変化を式で表すときは、電気の量と、核子、つまり陽子と中性子の数の合計が、前後で合っているかを確かめます。",
+      "name": "核子",
+      "wrong": "かくこ",
+      "right": "かくし",
+      "count": 1
+    },
+    {
+      "id": "um-derivative-intro",
+      "scene": 3,
+      "text": "瞬間の速度とは、この平均速度が近づいていく先の値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-derivative-intro",
+      "scene": 3,
+      "text": "ゼロで割っているのではなく、ゼロでない時間幅で求めた値が、どこへ向かうかを追っています。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-derivative-middle",
+      "scene": 1,
+      "text": "関数が「入力の二乗」なら、二つの関数の値の差を展開できます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-derivative-middle",
+      "scene": 3,
+      "text": "二乗の曲線なら、どこでも「入力を二倍した値」が接線の傾きになります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-derivative-advanced",
+      "scene": 2,
+      "text": "左右から近づいた値が一致しないので、原点の微分係数は存在しません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-derivative-advanced",
+      "scene": 3,
+      "text": "「接線が一本に決まる」という直感が成り立つには、左右から近づいた値が一致する、という条件が必要です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-integral-middle",
+      "scene": 1,
+      "text": "幅一の区間で、関数の値が入力そのものに等しい例を考えます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-integral-middle",
+      "scene": 1,
+      "text": "区間を等分して、各区間の右端の値と幅を掛けて足します。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-integral-middle",
+      "scene": 2,
+      "text": "一から整数までの和の公式を使うと、面積の合計は二分の一に近づく形になります。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "um-integral-middle",
+      "scene": 3,
+      "text": "この行き着く先の値を、ゼロから一までの定積分と書きます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-rules-advanced",
+      "scene": 1,
+      "text": "縦と横の増え方を両方半分にすると、帯は半分、角は四分の一になります。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "um-taylor-intro",
+      "scene": 3,
+      "text": "元の値とのずれを見ながら、どこまでの角度なら許せるかを決めます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-taylor-middle",
+      "scene": 1,
+      "text": "接線は、その点の値と傾きで決まります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-taylor-middle",
+      "scene": 2,
+      "text": "ルートエックスを一の近くで考えると、傾きは二分の一です。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "um-taylor-advanced",
+      "scene": 1,
+      "text": "二次式で関数を近似するには、基準の点で、値と一階微分と二階微分をそろえます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-dot-advanced",
+      "scene": 1,
+      "text": "二本のベクトルの根元をそろえると、先端どうしを結ぶ辺が、差のベクトルになります。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "um-dot-advanced",
+      "scene": 1,
+      "text": "ここでは、この辺の長さの二乗を、三辺と角度を結ぶ余弦定理で表します。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "um-ode-intro",
+      "scene": 3,
+      "text": "変化率の規則に加えて、最初の値も指定します。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-ode-intro",
+      "scene": 3,
+      "text": "規則と最初の値がそろって初めて、時間変化の曲線が一本に決まります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-ode-advanced",
+      "scene": 1,
+      "text": "量で割る前に、この答えを別に取っておきます。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "um-ode-advanced",
+      "scene": 2,
+      "text": "対数の差が出てきて、指数に戻すと、最初の値つきの減衰の式になります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-shm-ode-middle",
+      "scene": 2,
+      "text": "初速度は「サインの係数かける角振動数」なので、二つの最初の条件を別々に合わせられます。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "uc-newton-intro",
+      "scene": 1,
+      "text": "同じ力を受けても、最初の速度が違えば、動きは違います。",
+      "name": "同じ",
+      "wrong": "どうじ",
+      "right": "おなじ",
+      "count": 1
+    },
+    {
+      "id": "uc-newton-intro",
+      "scene": 1,
+      "text": "同じ力を受けても、最初の速度が違えば、動きは違います。",
+      "name": "力（単独）",
+      "wrong": "りょく",
+      "right": "ちから",
+      "count": 1
+    },
+    {
+      "id": "uc-newton-intro",
+      "scene": 3,
+      "text": "力、質量、最初の位置、初速度の四つを決めると、運動を計算する準備がそろいます。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "uc-newton-middle",
+      "scene": 1,
+      "text": "初速度を足せば、各時刻の速度です。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "uc-newton-advanced",
+      "scene": 2,
+      "text": "時刻ゼロを入れると、最初の位置と初速度も一致します。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "uc-drag-intro",
+      "scene": 3,
+      "text": "この模型で落下の速度が近づいていく一定の値を、終端速度と言います。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "uc-drag-advanced",
+      "scene": 2,
+      "text": "時刻ゼロでは初速度に、十分長い時間では終端速度に近づくので、両端の条件で検算できます。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "uc-drag-advanced",
+      "scene": 2,
+      "text": "初速度が終端速度より大きい場合は、速度は減っていきます。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "uc-work-middle",
+      "scene": 3,
+      "text": "運動エネルギーの二分の一は、この積分から出てきました。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "uc-work-advanced",
+      "scene": 2,
+      "text": "「速度と速度の内積」を微分すると、同じ項が二つ出ます。",
+      "name": "同じ",
+      "wrong": "どうじ",
+      "right": "おなじ",
+      "count": 1
+    },
+    {
+      "id": "uc-potential-intro",
+      "scene": 1,
+      "text": "位置エネルギーの値に同じ定数を足しても、差は変わりません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "uc-potential-middle",
+      "scene": 1,
+      "text": "短い移動での位置エネルギーの変化は、保存力、つまり道によらず仕事が決まる力の仕事にマイナスを付けたものです。",
+      "name": "道",
+      "wrong": "どう",
+      "right": "みち",
+      "count": 1
+    },
+    {
+      "id": "uc-potential-advanced",
+      "scene": 2,
+      "text": "「一割る距離の二乗」の原始関数は、「マイナス、一割る距離」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 2
+    },
+    {
+      "id": "uc-momentum-intro",
+      "scene": 2,
+      "text": "床や手から受ける力は、二台のかたまりにとっては外からの力です。",
+      "name": "床",
+      "wrong": "とこ",
+      "right": "ゆか",
+      "count": 1
+    },
+    {
+      "id": "uc-momentum-intro",
+      "scene": 2,
+      "text": "床や手から受ける力は、二台のかたまりにとっては外からの力です。",
+      "name": "手",
+      "wrong": "しゅ",
+      "right": "て",
+      "count": 1
+    },
+    {
+      "id": "uc-angular-intro",
+      "scene": 3,
+      "text": "同じ力でも、基準点が違えばトルクは変わります。",
+      "name": "同じ",
+      "wrong": "どうじ",
+      "right": "おなじ",
+      "count": 1
+    },
+    {
+      "id": "uc-angular-intro",
+      "scene": 3,
+      "text": "同じ力でも、基準点が違えばトルクは変わります。",
+      "name": "力（単独）",
+      "wrong": "りょく",
+      "right": "ちから",
+      "count": 1
+    },
+    {
+      "id": "uc-angular-advanced",
+      "scene": 3,
+      "text": "この面積の時間変化率は、「角運動量の大きさ、割る、質量の二倍」という一定の値になります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "uc-shm-intro",
+      "scene": 1,
+      "text": "振り子を円弧に沿って戻すのは、重力のうち、円に沿った向きの分です。",
+      "name": "向き",
+      "wrong": "むかいき",
+      "right": "むき",
+      "count": 1
+    },
+    {
+      "id": "uc-rigid1-middle",
+      "scene": 3,
+      "text": "次は、一様な棒の値を実際に積分します。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "uc-rigid2-intro",
+      "scene": 3,
+      "text": "いちばん上の点では、二つの速度が同じ向きに足されて、重心より速く進みます。",
+      "name": "いちばん上",
+      "wrong": "いちばんじょう",
+      "right": "いちばんうえ",
+      "count": 1
+    },
+    {
+      "id": "uc-frontier-middle",
+      "scene": 1,
+      "text": "物体の、地面から見た位置は、車の位置と、車の中での位置の和です。",
+      "name": "和",
+      "wrong": "やわ",
+      "right": "わ",
+      "count": 1
+    },
+    {
+      "id": "uc-frontier-advanced",
+      "scene": 2,
+      "text": "「一割る距離」を新しい変数にすると、万有引力の軌道の方程式は簡単な形になります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ui-curve-tiles-bridges-1",
+      "scene": 1,
+      "text": "曲線の下へ長方形を並べると、隙間やはみ出しが生じます。",
+      "name": "はみ出し",
+      "wrong": "わみだし",
+      "right": "はみだし",
+      "count": 1
+    },
+    {
+      "id": "ui-curve-tiles-bridges-1",
+      "scene": 3,
+      "text": "積分は、長方形で一回近似した値ではありません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-curve-tiles-bridges-1",
+      "scene": 3,
+      "text": "長方形を細かくし続けたときに、面積の合計が近づく値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-motion-record-bridges-5",
+      "scene": 3,
+      "text": "各区間の平均の速さは、その区間の移動距離を所要時間で割った値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-work-sum-bridges-11",
+      "scene": 2,
+      "text": "整数の和を計算すると、仕事の和は二分の一かける比例係数かける距離の二乗へ近づきます。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "uc-frontier-advanced-followups-3",
+      "scene": 3,
+      "text": "イーの値は、最初の位置と速度から決まります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-derivative-advanced-followups-4",
+      "scene": 1,
+      "text": "私たちはサインの差の比へ加法定理を使い、入力の値と小さい増分を分けます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "uc-rigid1-advanced-followups-5",
+      "scene": 2,
+      "text": "球を回転軸に垂直な薄い円板へ切ると、断面の半径の二乗は球の半径の二乗から高さの二乗を引いた値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "uc-rigid1-advanced-followups-5",
+      "scene": 2,
+      "text": "球を回転軸に垂直な薄い円板へ切ると、断面の半径の二乗は球の半径の二乗から高さの二乗を引いた値です。",
+      "name": "は球（語の境界）",
+      "wrong": "はっきゅう",
+      "right": "わ・きゅう（または、わ・たま）",
+      "count": 1
+    },
+    {
+      "id": "uc-rigid1-advanced-followups-5",
+      "scene": 3,
+      "text": "各円板の慣性モーメントを高さ方向で積分した値は、球の慣性モーメントです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "uc-rigid1-advanced-followups-5",
+      "scene": 3,
+      "text": "球の全質量を使って密度を消すと、五分の二という係数が残ります。",
+      "name": "五分の二",
+      "wrong": "ごふんのに",
+      "right": "ごぶんのに",
+      "count": 1
+    },
+    {
+      "id": "prep-graph-slope",
+      "scene": 2,
+      "text": "ここでは二割る一で、二です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-acceleration",
+      "scene": 4,
+      "text": "加速度の符号は、速度の値がどちら向きに変わるかを表します。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-area-distance",
+      "scene": 2,
+      "text": "二つの長方形の面積の合計、二足す四で六メートルが、位置の変化です。",
+      "name": "計算中の四",
+      "wrong": "よつ",
+      "right": "よん",
+      "count": 1
+    },
+    {
+      "id": "prep-trig",
+      "scene": 2,
+      "text": "コサインは「横の辺、割る、斜めの辺」、サインは「縦の辺、割る、斜めの辺」です。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 4
+    },
+    {
+      "id": "prep-initial-values",
+      "scene": 1,
+      "text": "初速度とは、時計をゼロにした瞬間の速度です。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "prep-initial-values",
+      "scene": 1,
+      "text": "速度の記号につく小さなゼロは、掛け算ではなく、「初めの値ですよ」という目印です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-initial-values",
+      "scene": 2,
+      "text": "これを初速度に足すので、最初の速度がゼロとは限りません。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "prep-initial-values",
+      "scene": 4,
+      "text": "そのため平均速度は、最初と最後の速度を足して二で割った値になります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-difference-limit",
+      "scene": 4,
+      "text": "この「近づいていく先の値」を極限と呼び、それを瞬間の速度と決めます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-sum",
+      "scene": 2,
+      "text": "合計は一足す二足す三足す四で、十になります。",
+      "name": "計算中の四",
+      "wrong": "よつ",
+      "right": "よん",
+      "count": 1
+    },
+    {
+      "id": "prep-integral-compute",
+      "scene": 4,
+      "text": "一から三までの積分は、原始関数に三を入れた値から、一を入れた値を引いて求めます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 2
+    },
+    {
+      "id": "prep-radian",
+      "scene": 1,
+      "text": "半径二メートルの円で弧が一メートルなら、一割る二で、〇・五ラジアンです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-radian",
+      "scene": 3,
+      "text": "一周に四秒かかるなら、角速度は二パイ割る四です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-vector-length",
+      "scene": 1,
+      "text": "横が三、縦が四の矢印では、直角三角形の斜めの辺が矢印の長さです。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "prep-dot-work",
+      "scene": 4,
+      "text": "この例では、横の掛け算が六、縦の掛け算が四なので、内積は六足す四で十です。",
+      "name": "計算中の四",
+      "wrong": "よつ",
+      "right": "よん",
+      "count": 1
+    },
+    {
+      "id": "prep-log",
+      "scene": 2,
+      "text": "エルエヌは、底をイーにした対数です。",
+      "name": "対数の底",
+      "wrong": "そこ",
+      "right": "てい",
+      "count": 1
+    },
+    {
+      "id": "prep-log",
+      "scene": 3,
+      "text": "対数の微分は、一割るエックスです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-pressure",
+      "scene": 1,
+      "text": "同じ力でも、狭い面に集中するほど圧力は大きくなります。",
+      "name": "同じ",
+      "wrong": "どうじ",
+      "right": "おなじ",
+      "count": 1
+    },
+    {
+      "id": "prep-pressure",
+      "scene": 1,
+      "text": "同じ力でも、狭い面に集中するほど圧力は大きくなります。",
+      "name": "力（単独）",
+      "wrong": "りょく",
+      "right": "ちから",
+      "count": 1
+    },
+    {
+      "id": "prep-mole",
+      "scene": 2,
+      "text": "一モルの質量をモル質量と呼び、物質の種類によって値が違います。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-superposition",
+      "scene": 4,
+      "text": "二つの波源からの道のりの差が波長の整数倍なら、同じタイミングで揺れる波は強め合います。",
+      "name": "波源",
+      "wrong": "なみげん",
+      "right": "はげん",
+      "count": 1
+    },
+    {
+      "id": "prep-doppler",
+      "scene": 1,
+      "text": "波を出すもの、波源は、一周期ごとに新しい山を作ります。",
+      "name": "波源",
+      "wrong": "なみげん",
+      "right": "はげん",
+      "count": 1
+    },
+    {
+      "id": "prep-doppler",
+      "scene": 1,
+      "text": "波源が止まっていれば、一周期の間に前の山が進む距離が、波長です。",
+      "name": "波源",
+      "wrong": "なみげん",
+      "right": "はげん",
+      "count": 1
+    },
+    {
+      "id": "prep-doppler",
+      "scene": 2,
+      "text": "波源が前へ動くと、次の山は、前の山に近い位置から出ます。",
+      "name": "波源",
+      "wrong": "なみげん",
+      "right": "はげん",
+      "count": 1
+    },
+    {
+      "id": "prep-doppler",
+      "scene": 2,
+      "text": "一周期に波源が進んだ距離のぶん短くなるので、前方の波長は縮みます。",
+      "name": "波源",
+      "wrong": "なみげん",
+      "right": "はげん",
+      "count": 1
+    },
+    {
+      "id": "prep-refraction",
+      "scene": 4,
+      "text": "全反射は、屈折率の大きい側から小さい側へ進むときに起こります。",
+      "name": "小さい",
+      "wrong": "こさい",
+      "right": "ちいさい",
+      "count": 1
+    },
+    {
+      "id": "prep-refraction",
+      "scene": 4,
+      "text": "全反射は、屈折率の大きい側から小さい側へ進むときに起こります。",
+      "name": "大きい",
+      "wrong": "だいきい",
+      "right": "おおきい",
+      "count": 1
+    },
+    {
+      "id": "prep-charge-current",
+      "scene": 4,
+      "text": "抵抗の値は「電圧割る電流」で、単位はオームです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-field-flux",
+      "scene": 2,
+      "text": "磁力線は磁場の向きを描いた線で、線の本数そのものは測った値ではありません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-impulse",
+      "scene": 1,
+      "text": "質量が一定なら、運動の法則の加速度を「速度の変化割る時間」と書けます。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-impulse",
+      "scene": 2,
+      "text": "同じ力でも、長く加えるほど、運動量の変化は大きくなります。",
+      "name": "同じ",
+      "wrong": "どうじ",
+      "right": "おなじ",
+      "count": 1
+    },
+    {
+      "id": "prep-impulse",
+      "scene": 2,
+      "text": "同じ力でも、長く加えるほど、運動量の変化は大きくなります。",
+      "name": "力（単独）",
+      "wrong": "りょく",
+      "right": "ちから",
+      "count": 1
+    },
+    {
+      "id": "prep-ode-initial",
+      "scene": 2,
+      "text": "同じ加速度でも、初速度が違えば別の運動になります。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "prep-center-mass",
+      "scene": 3,
+      "text": "一キログラムを位置ゼロ、三キログラムを位置四に置くと、三かける四割る四で、重心は位置三です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-center-mass",
+      "scene": 3,
+      "text": "一キログラムを位置ゼロ、三キログラムを位置四に置くと、三かける四割る四で、重心は位置三です。",
+      "name": "計算中の四",
+      "wrong": "よつ",
+      "right": "よん",
+      "count": 1
+    },
+    {
+      "id": "prep-reference",
+      "scene": 1,
+      "text": "地面から見た物体の位置は、車の位置と、車から見た物体の位置の和です。",
+      "name": "和",
+      "wrong": "やわ",
+      "right": "わ",
+      "count": 1
+    },
+    {
+      "id": "prep-taylor",
+      "scene": 1,
+      "text": "関数の値を、分かっている基準の点の近くで求めます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-taylor",
+      "scene": 1,
+      "text": "基準の値に、「傾きかける横のずれ」を足すと、接線の上の値になります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 2
+    },
+    {
+      "id": "prep-cosine-dot",
+      "scene": 1,
+      "text": "二つの矢印の根元をそろえると、先端どうしをつなぐ辺が、三角形の三つ目の辺です。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 2
+    },
+    {
+      "id": "prep-cosine-dot",
+      "scene": 1,
+      "text": "差のベクトルの長さが、その辺の長さになります。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "prep-cosine-dot",
+      "scene": 4,
+      "text": "同じ辺の長さを表す二つの式なので、共通の項を引いて比べられます。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "prep-sin-derivative",
+      "scene": 2,
+      "text": "両側が一に近づくので、挟まれた値も一に近づきます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-sin-motion",
+      "scene": 1,
+      "text": "コサインは、角度を四分の一周ずらしたサインなので、同じ考え方で微分できます。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "prep-oscillation-equation",
+      "scene": 2,
+      "text": "元の式に入れると、オメガの二乗は「ケー割るエム」と決まります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-oscillation-equation",
+      "scene": 3,
+      "text": "振幅と最初の位相は、最初の位置と初速度から決まります。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "prep-ellipse",
+      "scene": 4,
+      "text": "イーがゼロ以上一未満なら、横と縦をそれぞれの半径で割った値の二乗の和が一になります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-electric-work",
+      "scene": 3,
+      "text": "短い区間の電位の差を距離で割ると、電場のマイナスの値に近づきます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-traveling-wave",
+      "scene": 1,
+      "text": "波源の揺れが、サインの形で変わるとします。",
+      "name": "波源",
+      "wrong": "なみげん",
+      "right": "はげん",
+      "count": 1
+    },
+    {
+      "id": "prep-traveling-wave",
+      "scene": 2,
+      "text": "その場所の今の揺れは、波源の、その時間だけ前の揺れです。",
+      "name": "波源",
+      "wrong": "なみげん",
+      "right": "はげん",
+      "count": 1
+    },
+    {
+      "id": "prep-sound-boundary",
+      "scene": 2,
+      "text": "閉じた端から開いた端までの基本の振動は、四分の一波長です。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "prep-light-geometry",
+      "scene": 2,
+      "text": "波面と境界が作る二つの直角三角形では、共通の辺を斜めの辺にできます。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 2
+    },
+    {
+      "id": "prep-charge-calculation",
+      "scene": 1,
+      "text": "点電荷の電気力は、距離が二倍になると四分の一になります。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "prep-charge-calculation",
+      "scene": 3,
+      "text": "二オームと六オームに六ボルトをかけると、三アンペアと一アンペアで合計四アンペアなので、合成抵抗は六割る四で一・五オームです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "prep-charge-calculation",
+      "scene": 3,
+      "text": "二オームと六オームに六ボルトをかけると、三アンペアと一アンペアで合計四アンペアなので、合成抵抗は六割る四で一・五オームです。",
+      "name": "計算中の四",
+      "wrong": "よつ",
+      "right": "よん",
+      "count": 1
+    },
+    {
+      "id": "prep-charge-calculation",
+      "scene": 4,
+      "text": "電線で失う電力は「電流の二乗かける電線の抵抗」なので、電流が半分なら損失は四分の一です。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "prep-absolute",
+      "scene": 1,
+      "text": "絶対値は、数直線でゼロからどれだけ離れているかです。",
+      "name": "数直線",
+      "wrong": "かずちょくせん",
+      "right": "すうちょくせん",
+      "count": 1
+    },
+    {
+      "id": "prep-absolute",
+      "scene": 3,
+      "text": "左右で同じ値に近づかないので、ゼロでの微分は一つに決まりません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-pendulum",
+      "scene": 1,
+      "text": "円弧に沿った運動を変えるのは、重力のうち、円に沿った向きの分です。",
+      "name": "向き",
+      "wrong": "むかいき",
+      "right": "むき",
+      "count": 1
+    },
+    {
+      "id": "prep-collision",
+      "scene": 3,
+      "text": "同じ質量で、初速度が四とゼロ、反発係数が〇・五なら、速度の和が四、差が二です。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "prep-derivative-rules",
+      "scene": 3,
+      "text": "一つの入力の位置での微分の値を、微分係数と言います。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-derivative-rules",
+      "scene": 3,
+      "text": "入力ごとにその値を返す関数を導関数と言い、「ディー、ディーエックス」という記号は、微分するという操作を表します。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "prep-derivative-rules",
+      "scene": 3,
+      "text": "入力ごとにその値を返す関数を導関数と言い、「ディー、ディーエックス」という記号は、微分するという操作を表します。",
+      "name": "導関数",
+      "wrong": "みちびけかんすう",
+      "right": "どうかんすう",
+      "count": 1
+    },
+    {
+      "id": "prep-energy-chain",
+      "scene": 2,
+      "text": "速さの二乗は、速度の各成分の二乗の和です。",
+      "name": "和",
+      "wrong": "やわ",
+      "right": "わ",
+      "count": 1
+    },
+    {
+      "id": "prep-inverse-potential",
+      "scene": 2,
+      "text": "「一割る距離」を微分すると、「マイナス一割る、距離の二乗」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 2
+    },
+    {
+      "id": "prep-drag-solve",
+      "scene": 3,
+      "text": "指数に戻し、最初の差を初速度から決めます。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "prep-drag-solve",
+      "scene": 4,
+      "text": "時定数は、差の大きさが元の約〇・三七倍になるまでの時間です。",
+      "name": "時定数",
+      "wrong": "よりよりていすう／ときていすう",
+      "right": "じていすう",
+      "count": 1
+    },
+    {
+      "id": "prep-oscillation-coefficients",
+      "scene": 2,
+      "text": "速度に微分して時刻ゼロを入れると、初速度は「ディーかけるオメガ」です。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "prep-oscillation-coefficients",
+      "scene": 4,
+      "text": "振幅は、サインとコサインの係数を直角の二辺とする三角形の、斜めの辺です。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "ue-integrals-01",
+      "scene": 2,
+      "text": "ユーの値を決めると、横の位置は「エルかけるユー」、縦の位置は「エイチかける、ユーの二乗」と決まります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-integrals-04",
+      "scene": 3,
+      "text": "この値は、帯がどの高さにあっても同じです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-integrals-04",
+      "scene": 3,
+      "text": "だから、ワイ方向の積分は、この値に面の縦幅を掛けるだけになります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-integrals-04",
+      "scene": 4,
+      "text": "各方向では、値にその方向の小さな幅を掛けてから足しています。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-integrals-05",
+      "scene": 3,
+      "text": "球の表面の十分小さな区画は、長方形で近似できます。",
+      "name": "十分小さな",
+      "wrong": "じゅっぷんちいさな",
+      "right": "じゅうぶんちいさな",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-01",
+      "scene": 2,
+      "text": "法線の向きは球の中心から外向きなので、電場の向きとは一般に違います。",
+      "name": "は球（語の境界）",
+      "wrong": "はっきゅう",
+      "right": "わ・きゅう（または、わ・たま）",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-02",
+      "scene": 1,
+      "text": "球全体の電気束は、「電場の法線方向の分かける、ごく小さな面積」を、全部の区画について足したものです。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-02",
+      "scene": 3,
+      "text": "積分の端も、シータのゼロとパイにあたるユーの値に変えます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-02",
+      "scene": 4,
+      "text": "置き換えると、積分する式は、「ユーのマイナス二分の一乗」と「ユーのマイナス二分の三乗」を含む二つの項になります。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 2
+    },
+    {
+      "id": "ue-gauss-03",
+      "scene": 1,
+      "text": "係数の二分の一も含めて積分した関数を、ジーとします。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-03",
+      "scene": 3,
+      "text": "積分の係数と、端の値の差を掛けると、中心のずれディーは分子と分母で消えます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-03",
+      "scene": 3,
+      "text": "球の中の点電荷による電気束は、「電荷割る真空の誘電率」になります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-03",
+      "scene": 4,
+      "text": "この符号を使うとジーの両端の値が同じになり、電気束の合計はゼロです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-05",
+      "scene": 3,
+      "text": "内側の点電荷が作る電気束を、面全体で足すと、「その電荷割る誘電率」になります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-05",
+      "scene": 3,
+      "text": "外側の点電荷の場合は、入る分と出る分が打ち消し合ってゼロです。",
+      "name": "出る分",
+      "wrong": "でるふん",
+      "right": "でるぶん",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-07",
+      "scene": 2,
+      "text": "この、電荷のある表面を球殻と呼びます。",
+      "name": "球殻",
+      "wrong": "たまから",
+      "right": "きゅうかく",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-07",
+      "scene": 2,
+      "text": "球殻だけが作る電場は、中心から同じ距離なら、どの方向でも同じ、半径方向の分を持ちます。",
+      "name": "球殻",
+      "wrong": "たまから",
+      "right": "きゅうかく",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-07",
+      "scene": 3,
+      "text": "球殻の内側にある、同じ中心の球面は、電荷を囲んでいません。",
+      "name": "球殻",
+      "wrong": "たまから",
+      "right": "きゅうかく",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-07",
+      "scene": 3,
+      "text": "「電場の分かける球面積」がゼロになるので、球対称な内側の電場はゼロです。",
+      "name": "球対称",
+      "wrong": "たまたいしょう",
+      "right": "きゅうたいしょう",
+      "count": 1
+    },
+    {
+      "id": "ue-gauss-07",
+      "scene": 3,
+      "text": "「電場の分かける球面積」がゼロになるので、球対称な内側の電場はゼロです。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ue-potential-01",
+      "scene": 4,
+      "text": "「マイナス一割るアール」を微分すると、「一割るアール二乗」に戻ります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 2
+    },
+    {
+      "id": "ue-potential-02",
+      "scene": 2,
+      "text": "「電位の値がゼロ」と「電場がゼロ」は、別のことです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-capacitor-01",
+      "scene": 1,
+      "text": "途中の電圧は、その時点の電荷割る容量です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-capacitor-02",
+      "scene": 1,
+      "text": "電荷が同じなら電圧が下がるので、「電荷割る電圧」の容量は増えます。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-current-01",
+      "scene": 3,
+      "text": "数密度は、体積あたりの粒子の個数です。",
+      "name": "数密度",
+      "wrong": "かずみつど",
+      "right": "すうみつど",
+      "count": 1
+    },
+    {
+      "id": "ue-current-02",
+      "scene": 2,
+      "text": "発熱を「電圧の二乗割る抵抗」で計算するなら、その電圧には送電線での電圧の下がりを使います。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-lorentz-01",
+      "scene": 1,
+      "text": "周期は、「円周の長さ割る粒子の速さ」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-ampere-02",
+      "scene": 1,
+      "text": "どの辺で磁場と進む向きが重なるかを、次に調べます。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "ue-ampere-02",
+      "scene": 2,
+      "text": "この近似では、長方形のうち、コイルの内側にある辺だけが一周の積分に残ります。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "ue-ampere-02",
+      "scene": 2,
+      "text": "長方形が囲む面を、「一メートルあたりの巻数かける辺の長さ」本の導線が横切ります。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "ue-ampere-02",
+      "scene": 2,
+      "text": "長方形が囲む面を、「一メートルあたりの巻数かける辺の長さ」本の導線が横切ります。",
+      "name": "巻数",
+      "wrong": "かんすう",
+      "right": "まきすう",
+      "count": 1
+    },
+    {
+      "id": "ue-ampere-02",
+      "scene": 3,
+      "text": "アンペールの法則の式の左右に、長方形の辺の長さが出てくるので、消せます。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "ue-ampere-02",
+      "scene": 3,
+      "text": "残るのは、「透磁率かける、一メートルあたりの巻数かける電流」です。",
+      "name": "巻数",
+      "wrong": "かんすう",
+      "right": "まきすう",
+      "count": 1
+    },
+    {
+      "id": "ue-faraday-01",
+      "scene": 3,
+      "text": "電流ゼロから今の値まで積分すると、蓄えるエネルギーは「二分の一エルアイ二乗」です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-faraday-02",
+      "scene": 2,
+      "text": "理想的な変圧器では、一次と二次の電圧の比は、巻数の比に等しくなります。",
+      "name": "巻数",
+      "wrong": "かんすう",
+      "right": "まきすう",
+      "count": 1
+    },
+    {
+      "id": "ue-faraday-02",
+      "scene": 2,
+      "text": "だから、「一次の電流割る二次の電流」は、「二次の巻数割る一次の巻数」になります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 2
+    },
+    {
+      "id": "ue-faraday-02",
+      "scene": 2,
+      "text": "だから、「一次の電流割る二次の電流」は、「二次の巻数割る一次の巻数」になります。",
+      "name": "巻数",
+      "wrong": "かんすう",
+      "right": "まきすう",
+      "count": 2
+    },
+    {
+      "id": "ue-transient-01",
+      "scene": 1,
+      "text": "この差は、「アールかけるシー」を時定数として、指数関数の形で減ります。",
+      "name": "時定数",
+      "wrong": "よりよりていすう／ときていすう",
+      "right": "じていすう",
+      "count": 1
+    },
+    {
+      "id": "ue-transient-01",
+      "scene": 2,
+      "text": "「エル割るアール」秒後には、電流は最終値の約六十三パーセントです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-transient-02",
+      "scene": 2,
+      "text": "回路の式では、この二階微分が「電荷のマイナス、一割るエルシー倍」になります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-transient-02",
+      "scene": 2,
+      "text": "これは単振動と同じ形なので、角振動数は「一割る、ルートエルシー」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ue-maxwell-02",
+      "scene": 2,
+      "text": "小さな長方形の左右の辺では、電場のワイ成分に辺の長さを掛けて足します。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 2
+    },
+    {
+      "id": "ue-maxwell-02",
+      "scene": 2,
+      "text": "二つの辺を回る向きが逆なので、二点の電場の差が残ります。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 1
+    },
+    {
+      "id": "ue-maxwell-02",
+      "scene": 3,
+      "text": "小さな長方形を貫く磁束は、「磁場の分かける面積」です。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ue-maxwell-03",
+      "scene": 2,
+      "text": "進む波の式では、エックス引くシーティーが同じ場所で、波の値も同じです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-maxwell-03",
+      "scene": 2,
+      "text": "真空の透磁率と誘電率を掛け、その平方根で一を割った値が、波の速さです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ue-maxwell-03",
+      "scene": 4,
+      "text": "図の波形は、物体の上下の動きではなく、電場や磁場の値を表しています。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-work-direction-02",
+      "scene": 1,
+      "text": "力の矢印を斜めの辺にした直角三角形では、「横の辺割る斜めの辺」がコサイン六十度です。",
+      "name": "辺",
+      "wrong": "あたり",
+      "right": "へん",
+      "count": 3
+    },
+    {
+      "id": "ui-work-direction-02",
+      "scene": 1,
+      "text": "この値は二分の一なので、右向きの力は十ニュートンの半分、五ニュートンです。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-work-direction-02",
+      "scene": 1,
+      "text": "この値は二分の一なので、右向きの力は十ニュートンの半分、五ニュートンです。",
+      "name": "二分の…",
+      "wrong": "にふんの…",
+      "right": "にぶんの…",
+      "count": 1
+    },
+    {
+      "id": "ui-work-direction-03",
+      "scene": 2,
+      "text": "矢印の全長、つまり力の大きさをそのまま使えるのは、力と移動が同じ向きのときだけです。",
+      "name": "力（単独）",
+      "wrong": "りょく",
+      "right": "ちから",
+      "count": 1
+    },
+    {
+      "id": "ui-work-bent-path-03",
+      "scene": 2,
+      "text": "仕事は、どの分け方でも各区間の値を足して求めます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-work-bent-path-03",
+      "scene": 3,
+      "text": "区間をどんどん細かくしていったときに合計が近づく値を、線積分と呼びます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-electric-work-path-03",
+      "scene": 2,
+      "text": "その合計が近づく値が、曲線に沿った正確な仕事です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-flux-one-tile-01",
+      "scene": 1,
+      "text": "この一様な磁場では、「面に垂直な磁場の分かける面積」で求めます。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ui-flux-one-tile-02",
+      "scene": 3,
+      "text": "磁場と法線の角度が四十五度なら、投影面積は元の面積の約〇点七一倍です。",
+      "name": "〇点七一",
+      "wrong": "れいてんななじゅういち",
+      "right": "れいてんなないち",
+      "count": 1
+    },
+    {
+      "id": "ui-flux-one-tile-02",
+      "scene": 3,
+      "text": "だからこの例の磁束は、約〇点七一ウェーバです。",
+      "name": "〇点七一",
+      "wrong": "れいてんななじゅういち",
+      "right": "れいてんなないち",
+      "count": 1
+    },
+    {
+      "id": "ui-flux-one-tile-03",
+      "scene": 2,
+      "text": "磁束は線を数えて出すものではなく、「面に垂直な磁場の分かける面積」で計算します。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ui-flux-one-tile-03",
+      "scene": 3,
+      "text": "一様な磁場での平面の磁束は、「法線方向の磁場の分かける面積」です。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ui-flux-many-tiles-02",
+      "scene": 1,
+      "text": "各面の磁束は、「この分かける面積」です。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ui-flux-many-tiles-03",
+      "scene": 1,
+      "text": "どちらも、小さな部分の計算から全体の値を求める方法です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-closed-bag-02",
+      "scene": 1,
+      "text": "各面の値がすべてゼロとは限りません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-charge-and-flux-preview-01",
+      "scene": 2,
+      "text": "矢印の本数は、本当にある粒子の数ではなく、電気束の値そのものでもありません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-charge-and-flux-preview-02",
+      "scene": 3,
+      "text": "半径が二倍の球面では、点電荷の電場は四分の一、面積は四倍です。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "ui-charge-and-flux-preview-03",
+      "scene": 2,
+      "text": "電気束の計算では、小さな面ごとに、「電場の法線方向の分かける面積」を求めます。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ui-capacitance-01",
+      "scene": 3,
+      "text": "充電途中の電圧は、「その時点の電荷割る電気容量」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ui-conduction-01",
+      "scene": 1,
+      "text": "四秒間に八クーロンが通るなら、平均の電流は八割る四で二アンペアです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ui-conduction-01",
+      "scene": 1,
+      "text": "四秒間に八クーロンが通るなら、平均の電流は八割る四で二アンペアです。",
+      "name": "計算中の四",
+      "wrong": "よつ",
+      "right": "よん",
+      "count": 1
+    },
+    {
+      "id": "ui-conduction-01",
+      "scene": 3,
+      "text": "三オームの抵抗に六ボルトがかかると、六割る三で二アンペアです。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ui-magnetic-force-01",
+      "scene": 2,
+      "text": "同じ磁場の中で、同じ速度のプラスの電荷とマイナスの電荷を比べると、磁気力は逆向きになります。",
+      "name": "同じ",
+      "wrong": "どうじ",
+      "right": "おなじ",
+      "count": 1
+    },
+    {
+      "id": "ui-current-field-01",
+      "scene": 3,
+      "text": "巻数密度とは、コイルを一メートルあたり何回巻いたかです。",
+      "name": "巻数",
+      "wrong": "かんすう",
+      "right": "まきすう",
+      "count": 1
+    },
+    {
+      "id": "ui-current-field-01",
+      "scene": 3,
+      "text": "「全巻数割るコイルの長さ」で求めます。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "ui-current-field-01",
+      "scene": 3,
+      "text": "「全巻数割るコイルの長さ」で求めます。",
+      "name": "巻数",
+      "wrong": "かんすう",
+      "right": "まきすう",
+      "count": 1
+    },
+    {
+      "id": "ui-current-field-01",
+      "scene": 3,
+      "text": "長いコイルの中央の磁場を計算するとき、この値を使います。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "ui-induction-01",
+      "scene": 1,
+      "text": "平面を貫く磁束は、「法線方向の磁場の分かける面積」です。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "ui-ac-waves-01",
+      "scene": 2,
+      "text": "四分の一周期のずれは、二分のパイラジアンです。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "ui-ac-waves-01",
+      "scene": 3,
+      "text": "電磁波の図の波形は、物体の位置ではなく、電場や磁場の値を表しています。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-line-element-02",
+      "scene": 2,
+      "text": "短い区間で電場の変化が小さければ、区間全体の電場を一つの値で近似できます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-line-element-03",
+      "scene": 2,
+      "text": "一区間の仕事の近似値は、「進む向きの力の分かける、短い移動の長さ」です。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "um-line-integral-entry-01",
+      "scene": 1,
+      "text": "この合計が近づく値が、道全体の正確な仕事です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-line-integral-entry-01",
+      "scene": 2,
+      "text": "だから、道全体の長さに一つの力の値を掛けるだけでは、仕事は求まりません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-line-integral-entry-03",
+      "scene": 1,
+      "text": "仕事の近似値も、一定の値に近づきます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-line-integral-entry-03",
+      "scene": 2,
+      "text": "正確な仕事は、区間をさらに細かくし続けたときに、合計が近づく値です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-line-integral-entry-04",
+      "scene": 3,
+      "text": "同じ力の分布での線積分は、大きさが同じで、符号が逆になります。",
+      "name": "同じ",
+      "wrong": "どうじ",
+      "right": "おなじ",
+      "count": 1
+    },
+    {
+      "id": "um-line-integral-entry-04",
+      "scene": 3,
+      "text": "同じ力の分布での線積分は、大きさが同じで、符号が逆になります。",
+      "name": "力（単独）",
+      "wrong": "りょく",
+      "right": "ちから",
+      "count": 1
+    },
+    {
+      "id": "um-electrostatic-potential-path-04",
+      "scene": 3,
+      "text": "電位差の定義は、「位置エネルギーの変化割る電荷」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "um-electrostatic-potential-path-05",
+      "scene": 2,
+      "text": "この値は、空間の高さを表しているのではありません。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-em-area-vector-01",
+      "scene": 1,
+      "text": "このとき、平面の磁束は「面に垂直な磁場の分かける面積」です。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "um-em-area-vector-02",
+      "scene": 1,
+      "text": "一を掛けても値は変わらないので、この内積は、磁場の法線方向の分になります。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-surface-integral-entry-01",
+      "scene": 3,
+      "text": "面全体の磁束の近似値は、各区画で「磁場の法線方向の分かける面積」を求め、それを足したものです。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "um-surface-integral-entry-02",
+      "scene": 1,
+      "text": "面や磁場に急な変化がなければ、小さな区画の磁束を足したものは、分け方を細かくするにつれて、一定の値に近づきます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-surface-integral-entry-02",
+      "scene": 2,
+      "text": "磁束の面積分では、小さな面ごとの磁束を足し、分け方を細かくし続けたときの値を求めます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-surface-integral-entry-03",
+      "scene": 2,
+      "text": "磁束の面積分では、各点の「磁場の法線方向の分かける、ごく小さな面積」を足します。",
+      "name": "分かける",
+      "wrong": "わけかける",
+      "right": "ぶん かける",
+      "count": 1
+    },
+    {
+      "id": "um-surface-integral-entry-03",
+      "scene": 2,
+      "text": "法線方向の分が面の上でどこも同じなら、その値に全面積を掛けるだけで計算できます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-gauss-sphere-preview-03",
+      "scene": 4,
+      "text": "電場と面積を掛けると、この二つが打ち消し合って、電気束は「電荷割る真空の誘電率」になります。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "um-capacitance-01",
+      "scene": 2,
+      "text": "プラスとマイナスの向かい合った板の間の電場は、二枚の板が作る電場の和です。",
+      "name": "和",
+      "wrong": "やわ",
+      "right": "わ",
+      "count": 1
+    },
+    {
+      "id": "um-capacitance-02",
+      "scene": 2,
+      "text": "電気容量の定義は、「電荷割る電圧」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "um-conduction-01",
+      "scene": 2,
+      "text": "数密度と電子一個の電荷の大きさも掛けると、一秒あたりに通る電荷、つまり電流の大きさが分かります。",
+      "name": "数密度",
+      "wrong": "かずみつど",
+      "right": "すうみつど",
+      "count": 1
+    },
+    {
+      "id": "um-conduction-02",
+      "scene": 1,
+      "text": "数密度と電子一個の電荷の大きさを掛け、時間で割ると、電流の大きさになります。",
+      "name": "数密度",
+      "wrong": "かずみつど",
+      "right": "すうみつど",
+      "count": 1
+    },
+    {
+      "id": "um-magnetic-force-01",
+      "scene": 1,
+      "text": "ローレンツ力の法則とは、電荷が電場と磁場から受ける力を与える、実験に基づく法則です。",
+      "name": "ローレンツ力",
+      "wrong": "ろーれんつつとむ",
+      "right": "ろーれんつりょく",
+      "count": 1
+    },
+    {
+      "id": "um-magnetic-force-02",
+      "scene": 2,
+      "text": "一様な磁場に、初速度が垂直で電場がない場合、磁気力が円運動の向心力になります。",
+      "name": "初速度",
+      "wrong": "はつそくど",
+      "right": "しょそくど",
+      "count": 1
+    },
+    {
+      "id": "um-current-field-01",
+      "scene": 1,
+      "text": "磁場を道に沿って積分した値は、その面を貫く電流と結び付きます。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-induction-01",
+      "scene": 3,
+      "text": "一巻きごとの起電力を足すと、全体の起電力は、一巻きの値の巻数倍です。",
+      "name": "値",
+      "wrong": "ね",
+      "right": "あたい",
+      "count": 1
+    },
+    {
+      "id": "um-circuit-time-01",
+      "scene": 1,
+      "text": "充電途中のコンデンサの電圧は、「その時点の電荷割る電気容量」です。",
+      "name": "割る",
+      "wrong": "わりる／われる",
+      "right": "わる",
+      "count": 1
+    },
+    {
+      "id": "um-circuit-time-01",
+      "scene": 2,
+      "text": "電池の電圧は、抵抗の電圧とコンデンサの電圧の和です。",
+      "name": "和",
+      "wrong": "やわ",
+      "right": "わ",
+      "count": 1
+    },
+    {
+      "id": "um-circuit-time-02",
+      "scene": 1,
+      "text": "「アールかけるシー」という時間は、充電が進む速さの目安で、時定数と呼びます。",
+      "name": "時定数",
+      "wrong": "よりよりていすう／ときていすう",
+      "right": "じていすう",
+      "count": 1
+    },
+    {
+      "id": "um-circuit-time-02",
+      "scene": 1,
+      "text": "電荷ゼロから充電すると、時定数ぶんの時間がたったとき、電荷は最終値の約六十三パーセントになります。",
+      "name": "時定数",
+      "wrong": "よりよりていすう／ときていすう",
+      "right": "じていすう",
+      "count": 1
+    },
+    {
+      "id": "um-circuit-time-02",
+      "scene": 2,
+      "text": "充電量の式に、「時刻ティーが時定数と等しい」という条件を入れます。",
+      "name": "時定数",
+      "wrong": "よりよりていすう／ときていすう",
+      "right": "じていすう",
+      "count": 1
+    },
+    {
+      "id": "um-circuit-time-02",
+      "scene": 2,
+      "text": "電荷の割合は、「一引く、イーのマイナス一乗」で、約〇点六三二です。",
+      "name": "〇点六三二",
+      "wrong": "れいてんろっぴゃくさんじゅうに",
+      "right": "れいてんろくさんに",
+      "count": 1
+    },
+    {
+      "id": "um-ac-maxwell-01",
+      "scene": 3,
+      "text": "正弦電流を微分するとコサインなので、電圧は電流より四分の一周期、先に進みます。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "um-ac-maxwell-02",
+      "scene": 1,
+      "text": "この条件では、電圧が最大になる時刻は、電流より四分の一周期、遅れます。",
+      "name": "四分の…",
+      "wrong": "よんぷんの…",
+      "right": "よんぶんの…",
+      "count": 1
+    },
+    {
+      "id": "um-ac-maxwell-02",
+      "scene": 2,
+      "text": "粒子の動きを決めるには、ローレンツ力も必要です。",
+      "name": "ローレンツ力",
+      "wrong": "ろーれんつつとむ",
+      "right": "ろーれんつりょく",
+      "count": 1
+    }
+  ]
+}

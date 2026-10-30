@@ -1,0 +1,116 @@
+{
+  "id": "um-taylor-middle",
+  "stageId": "um-approximation",
+  "stageTitle": "近くの形から近似する",
+  "topicId": "um-taylor",
+  "level": "middle",
+  "family": "university-math",
+  "title": "接線を使えば、どんな関数も近くで計算しやすくなる？",
+  "condition": "展開する点と誤差を明示。三角関数の角度はラジアン。",
+  "sourceScript": "um-taylor-middle-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "なめらかな関数のある点の近くでは、接線が曲線にぴったり寄り添います。",
+      "narration": "なめらかな関数のある点の近くでは、接線が曲線にぴったり寄り添います。接線は、その点の値と傾きで決まります。",
+      "visual": "基準点aの曲線と接線を拡大し、近くと遠くを比較。",
+      "equation": "f(a+h) ≈ f(a)+f′(a)h",
+      "symbols": "aは基準の入力、hは小さい入力差、f′(a)は基準点の傾き。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.875,
+          "text": "なめらかな関数のある点の近くでは、接線が曲線にぴったり寄り添います。"
+        },
+        {
+          "start": 4.875,
+          "end": 8.458333333333332,
+          "text": "接線は、その点の値と傾きで決まります。"
+        }
+      ],
+      "end": 8.578333333333333
+    },
+    {
+      "index": 1,
+      "heading": "ルートエックスを一の近くで考えると、傾きは二分の一です。",
+      "narration": "ルートエックスを一の近くで考えると、傾きは二分の一です。だから一・〇二のルートは、一・〇一と近似できます。",
+      "visual": "√(1+h)≈1+h/2へh=0.02を入れる。",
+      "equation": "",
+      "symbols": "",
+      "start": 8.578333333333333,
+      "captions": [
+        {
+          "start": 8.578333333333333,
+          "end": 13.041666666666664,
+          "text": "ルートエックスを一の近くで考えると、傾きは二分の一です。"
+        },
+        {
+          "start": 13.041666666666664,
+          "end": 17.208333333333332,
+          "text": "だから一・〇二のルートは、一・〇一と近似できます。"
+        }
+      ],
+      "end": 17.307
+    },
+    {
+      "index": 2,
+      "heading": "傾きだけでは、曲がり方の違いは表せません。",
+      "narration": "傾きだけでは、曲がり方の違いは表せません。もっと広い範囲で近づけるには、二次の項を加えます。",
+      "visual": "接線と曲線の差を二次の曲線で埋める。",
+      "equation": "",
+      "symbols": "",
+      "start": 17.307,
+      "captions": [
+        {
+          "start": 17.307,
+          "end": 20.916666666666664,
+          "text": "傾きだけでは、曲がり方の違いは表せません。"
+        },
+        {
+          "start": 20.916666666666664,
+          "end": 24.897999999999996,
+          "text": "もっと広い範囲で近づけるには、二次の項を加えます。"
+        }
+      ],
+      "end": 26.247999999999998
+    }
+  ],
+  "pronunciationFingerprint": "a958d986979a83b0210c6dbd435c36eb2ffae3284b4185481856ec01be1cfffd",
+  "duration": 26.247999999999998,
+  "mediaDirectory": "lessons",
+  "renderKey": "1ab27df166257aede33c9159244dbc3bc119549e5c6abeab154680e3232769bb",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 30.581333333333333,
+    "removedSeconds": 4.333333333333336,
+    "cuts": [
+      {
+        "start": 4.875,
+        "end": 5.416666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.0,
+        "end": 10.333333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 14.916666666666666,
+        "end": 15.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 19.666666666666668,
+        "end": 21.0,
+        "reason": "scene"
+      },
+      {
+        "start": 24.708333333333332,
+        "end": 25.25,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

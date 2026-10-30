@@ -1,0 +1,42 @@
+{
+ "episode": "D-1",
+ "reviewer": "episode_d1, independent second view of episode_e1 findings",
+ "kind": "Actual production-r15 raw review, not a final decoded MP4 review",
+ "sourceSha256": "004521c4fbb3657c9c891dc1aa24846d82c393620f4a97902973cc9fd3def5a2",
+ "geometrySourceSha256": "742d96fcde56f4a2c0eb066600a6428c983a2f96d5b4907824cf4a39f31b7923",
+ "actualImagesViewed": 2,
+ "rows": [
+  {
+   "instructionRow": 16,
+   "time": 121.5,
+   "frame": 3645,
+   "image": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/03645.jpg",
+   "imageSha256": "baec074c5265c652f903b92da2e7ad8a7054728e8634201eaf3eec8a339d5855",
+   "actuallyViewedAtFullResolution": true,
+   "finding": "The mitten fingertips overlap the silver can/red printed band. The wooden tongs cannot be read as the tool grasping the hot can; the apparent direct grasp conflicts with the expressly required safe tongs operation.",
+   "sourceEvidence": "desk_d1v1.py244 rotates only the can root;252–254 translate tongs inX and position the original mitten. Their grasp transform is not coupled to the rotating can.",
+   "notSayingTongsObjectAbsent": true,
+   "proposedMinimalScope": "Make existing wooden tong tips track the can during its unchanged inversion, and keep mitten on the handle with visible clearance from metal. Preserve original timing/voice/camera unless actual bounds require a local correction.",
+   "needsRootApprovalAndNewActualProbes": true
+  },
+  {
+   "instructionRow": 40,
+   "time": 341.6,
+   "frame": 10248,
+   "image": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/10248.jpg",
+   "imageSha256": "010b328e4fea0dc2d2dfb51f652b368838561a9515317e0da24084f105ca02ff",
+   "actuallyViewedAtFullResolution": true,
+   "finding": "The valve/pipe remains floating above the central gap after both copper hemispheres have separated. It visibly does not remain attached to the released hemisphere.",
+   "sourceEvidence": "desk_d1v1.py283 transforms parts with release;285 adds only apart to valve and valvepipe, omitting release translation/rotation.",
+   "proposedMinimalScope": "Apply one released hemisphere's exact rigid transform to its existing valve and pipe. Do not add a new prop or change separation timing.",
+   "needsRootApprovalAndNewActualProbes": true
+  }
+ ],
+ "originalFilesUnchanged": true,
+ "GPUJobsSubmitted": 0,
+ "newRenderingDone": false,
+ "actualFinalMP4Reviewed": false,
+ "actualEarListeningDone": false,
+ "originalInspectorNGPreserved": true,
+ "finalAcceptance": false
+}

@@ -1,0 +1,217 @@
+{
+  "id": "prep-charge-calculation",
+  "title": "電気力の大きさと、向きの計算",
+  "level": "middle",
+  "before": [
+    "e-field-middle",
+    "e-current-advanced",
+    "e-power-middle",
+    "e-power-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "点電荷の電気力は、距離が二倍になると四分の一になります。同じ場所で試しに置く電荷を二倍にすると力も二倍なので、力を試しの電荷で割れば、その場所の電場が求まります。",
+      "equation": "|F|=k|Qq|/r² → |E|=k|Q|/r²",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "距離の比",
+        "yLabel": "電場の大きさの比",
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0.25
+          ],
+          [
+            3,
+            0.1111111111111111
+          ],
+          [
+            4,
+            0.0625
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "点電荷の電気力は、距離が二倍になると四分の一になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.333333333333333,
+          "text": "点電荷の電気力は、距離が二倍になると四分の一になります。"
+        },
+        {
+          "start": 4.333333333333333,
+          "end": 12.375,
+          "text": "同じ場所で試しに置く電荷を二倍にすると力も二倍なので、力を試しの電荷で割れば、その場所の電場が求まります。"
+        }
+      ],
+      "end": 12.534666666666663
+    },
+    {
+      "narration": "電荷が複数あるときは、それぞれが作る電場の矢印を足します。左右から同じ大きさで逆向きの電場が来る点では、合計はゼロです。",
+      "equation": "E合計 = E₁+E₂（向きも含めて足す）",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "E₁"
+          ],
+          [
+            -3,
+            0,
+            "E₂"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "電荷が複数あるときは、それぞれが作る電場の矢印を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 12.534666666666663,
+      "captions": [
+        {
+          "start": 12.534666666666663,
+          "end": 16.958333333333332,
+          "text": "電荷が複数あるときは、それぞれが作る電場の矢印を足します。"
+        },
+        {
+          "start": 16.958333333333332,
+          "end": 21.875,
+          "text": "左右から同じ大きさで逆向きの電場が来る点では、合計はゼロです。"
+        }
+      ],
+      "end": 21.957666666666665
+    },
+    {
+      "narration": "並列の抵抗では、同じ電圧を使って各枝の電流を足します。二オームと六オームに六ボルトをかけると、三アンペアと一アンペアで合計四アンペアなので、合成抵抗は六割る四で一・五オームです。",
+      "equation": "I=6/2+6/6=4 A → R合成=6/4=1.5 Ω",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "枝1",
+          "枝2",
+          "合計"
+        ],
+        "values": [
+          3,
+          1,
+          4
+        ],
+        "unit": "A"
+      },
+      "index": 2,
+      "heading": "並列の抵抗では、同じ電圧を使って各枝の電流を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 21.957666666666665,
+      "captions": [
+        {
+          "start": 21.957666666666665,
+          "end": 26.791666666666664,
+          "text": "並列の抵抗では、同じ電圧を使って各枝の電流を足します。"
+        },
+        {
+          "start": 26.791666666666664,
+          "end": 35.33333333333333,
+          "text": "二オームと六オームに六ボルトをかけると、三アンペアと一アンペアで合計四アンペアなので、合成抵抗は六割る四で一・五オームです。"
+        }
+      ],
+      "end": 35.44266666666666
+    },
+    {
+      "narration": "送電では、送る電力を同じにして電圧を上げると、電流を減らせます。電線で失う電力は「電流の二乗かける電線の抵抗」なので、電流が半分なら損失は四分の一です。",
+      "equation": "負荷へ送る電力≈VI；電線の損失=I²R線",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "元の損失",
+          "電流半分の損失"
+        ],
+        "values": [
+          4,
+          1
+        ],
+        "unit": "同じ電線抵抗での比"
+      },
+      "index": 3,
+      "heading": "送電では、送る電力を同じにして電圧を上げると、電流を減らせます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 35.44266666666666,
+      "captions": [
+        {
+          "start": 35.44266666666666,
+          "end": 40.666666666666664,
+          "text": "送電では、送る電力を同じにして電圧を上げると、電流を減らせます。"
+        },
+        {
+          "start": 40.666666666666664,
+          "end": 48.687,
+          "text": "電線で失う電力は「電流の二乗かける電線の抵抗」なので、電流が半分なら損失は四分の一です。"
+        }
+      ],
+      "end": 50.037
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "電気力の大きさと、向きの計算",
+  "topicId": "prep-charge-calculation",
+  "family": "prerequisites",
+  "sourceScript": "prep-charge-calculation",
+  "pronunciationFingerprint": "c8770ab8178ffd1ad8aff9ea7324aeeadcdab609a74e1132d47a8a9a8ae3544e",
+  "duration": 50.037,
+  "mediaDirectory": "lessons",
+  "renderKey": "8e7e7a6fb5d71b4f04cfc9acad097f4a6d7934a4d852d42b412829d22c6bcc70",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 56.245333333333335,
+    "removedSeconds": 6.208333333333336,
+    "cuts": [
+      {
+        "start": 4.333333333333333,
+        "end": 4.875,
+        "reason": "sentence"
+      },
+      {
+        "start": 12.916666666666666,
+        "end": 14.208333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 18.791666666666668,
+        "end": 19.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.291666666666668,
+        "end": 25.666666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 30.583333333333332,
+        "end": 31.125,
+        "reason": "sentence"
+      },
+      {
+        "start": 39.666666666666664,
+        "end": 41.0,
+        "reason": "scene"
+      },
+      {
+        "start": 46.333333333333336,
+        "end": 46.875,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

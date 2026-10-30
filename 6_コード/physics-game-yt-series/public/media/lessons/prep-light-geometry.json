@@ -1,0 +1,210 @@
+{
+  "id": "prep-light-geometry",
+  "title": "光の波面から、屈折と干渉の計算へ",
+  "level": "middle",
+  "before": [
+    "w-light-middle",
+    "w-interference-middle",
+    "w-interference-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "波面とは、同じ揺れの状態にある点をつないだ面です。同じ時間に二つの物質で進む距離は、それぞれの速さかける時間です。",
+      "equation": "距離1=v₁Δt；距離2=v₂Δt",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "物質1を進む距離",
+          "物質2を進む距離"
+        ],
+        "values": [
+          3,
+          2
+        ],
+        "unit": "同じ時間内の距離の比"
+      },
+      "index": 0,
+      "heading": "波面とは、同じ揺れの状態にある点をつないだ面です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.9583333333333335,
+          "text": "波面とは、同じ揺れの状態にある点をつないだ面です。"
+        },
+        {
+          "start": 3.9583333333333335,
+          "end": 8.958333333333334,
+          "text": "同じ時間に二つの物質で進む距離は、それぞれの速さかける時間です。"
+        }
+      ],
+      "end": 9.048666666666668
+    },
+    {
+      "narration": "波面と境界が作る二つの直角三角形では、共通の辺を斜めの辺にできます。サインの比は二つの距離の比なので、速さの比に置き換えられます。",
+      "equation": "sinθ₁/sinθ₂=v₁/v₂=n₂/n₁",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            3,
+            "三角形の辺"
+          ]
+        ],
+        "components": true
+      },
+      "index": 1,
+      "heading": "波面と境界が作る二つの直角三角形では、共通の辺を斜めの辺にできます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.048666666666668,
+      "captions": [
+        {
+          "start": 9.048666666666668,
+          "end": 14.708333333333334,
+          "text": "波面と境界が作る二つの直角三角形では、共通の辺を斜めの辺にできます。"
+        },
+        {
+          "start": 14.708333333333334,
+          "end": 19.0,
+          "text": "サインの比は二つの距離の比なので、速さの比に置き換えられます。"
+        }
+      ],
+      "end": 19.110666666666667
+    },
+    {
+      "narration": "二つの細いすき間を、スリットと言います。遠くの点までの二つの道のりの差は、スリットの間隔を進む向きに投影したもので近似できます。",
+      "equation": "経路差≈d sinθ；小角ではsinθ≈tanθ=y/L",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "角度 θ [rad]",
+        "yLabel": "sinθ（小角でθに近い）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0.05,
+            0.04997916927067833
+          ],
+          [
+            0.1,
+            0.09983341664682815
+          ],
+          [
+            0.15,
+            0.14943813247359922
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "二つの細いすき間を、スリットと言います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 19.110666666666667,
+      "captions": [
+        {
+          "start": 19.110666666666667,
+          "end": 21.958333333333336,
+          "text": "二つの細いすき間を、スリットと言います。"
+        },
+        {
+          "start": 21.958333333333336,
+          "end": 28.333333333333336,
+          "text": "遠くの点までの二つの道のりの差は、スリットの間隔を進む向きに投影したもので近似できます。"
+        }
+      ],
+      "end": 28.447333333333333
+    },
+    {
+      "narration": "一つのすき間でも、すき間の中の各点から出る波を足します。上半分と下半分を組にして半波長ずつずらすと、最初に暗くなる方向が求まります。",
+      "equation": "開口幅a：最初の暗線は a sinθ=λ",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "一つの対の道のり差",
+          "半波長"
+        ],
+        "values": [
+          0.5,
+          0.5
+        ],
+        "unit": "波長を1とした値"
+      },
+      "index": 3,
+      "heading": "一つのすき間でも、すき間の中の各点から出る波を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 28.447333333333333,
+      "captions": [
+        {
+          "start": 28.447333333333333,
+          "end": 32.666666666666664,
+          "text": "一つのすき間でも、すき間の中の各点から出る波を足します。"
+        },
+        {
+          "start": 32.666666666666664,
+          "end": 38.758333333333326,
+          "text": "上半分と下半分を組にして半波長ずつずらすと、最初に暗くなる方向が求まります。"
+        }
+      ],
+      "end": 40.10833333333333
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "光の波面から、屈折と干渉の計算へ",
+  "topicId": "prep-light-geometry",
+  "family": "prerequisites",
+  "sourceScript": "prep-light-geometry",
+  "pronunciationFingerprint": "fe2b584ab0891b57928e7b89795d6e8016edacb78b5a2d2081b88fab0b3b3804",
+  "duration": 40.10833333333333,
+  "mediaDirectory": "lessons",
+  "renderKey": "9876987567c006c7dd89b3fcaddd50c08541474d8be6d22d1d83b527a2e0bbee",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 46.4,
+    "removedSeconds": 6.291666666666671,
+    "cuts": [
+      {
+        "start": 3.9583333333333335,
+        "end": 4.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.5,
+        "end": 10.875,
+        "reason": "scene"
+      },
+      {
+        "start": 16.625,
+        "end": 17.208333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.5,
+        "end": 22.833333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 25.791666666666668,
+        "end": 26.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 32.75,
+        "end": 34.083333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 38.416666666666664,
+        "end": 38.958333333333336,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+ "episode": "B-1",
+ "reviewer": "D-1 peer",
+ "kind": "Add-only correction of earlier B5 interpretation",
+ "correctsRecord": "/private/tmp/ys/ys-chain-b1v1-final3-20261024/actual-mp4-review/d1-peer-b1-final3-first-half-20261024.json",
+ "correctsRecordSha256": "5c01babdddbd3d6b89d9656dd76bf86765fd06978f556e68dda4b39d52cb6ed3",
+ "originalRecordPreserved": true,
+ "originalStageSha256": "7b82aac06a606983b4faa00dbca898c8da07ab417bd7a21d0a0b48b6a3a58eb4",
+ "correction": "The original97.6s S/N after the table magnet rotates180 degrees is not intrinsically a magnetic-physics violation: individual§8 N2 explicitly calls for N/N approach,180-degree escape, then S/N attachment in the following pause. A persisting explanatory N/N card does not require every subsequent animation state to stay N/N. The earlier unqualified physics-error conclusion is withdrawn.",
+ "retainedFacts": [
+  "The97.5s actual B3 image physically shows S/N while the explanatory N/N repulsion caption/card remains.",
+  "The frozen source rotates B at96.10–96.35 and A at97.08–97.43.",
+  "V1 and V2 removed A’s specified180-degree escape and therefore were not adopted."
+ ],
+ "rootApprovedClarityDerivative": {
+  "voiceEnd": 97.5,
+  "cueEnd": 98.98933333333333,
+  "NNrecoil": [
+   97.08,
+   97.43
+  ],
+  "recoilMeters": 0.028,
+  "delayed180DegreeSpin": [
+   97.65,
+   98
+  ],
+  "SNAttachment": [
+   98.2,
+   98.6
+  ],
+  "originalHandExit": 98.15,
+  "unchanged": [
+   "voice",
+   "caption text and timing",
+   "canonical script",
+   "other-object retained source states"
+  ],
+  "reason": "Separate the narrated N/N stage from the normal post-spin S/N attraction, retaining the specified escape/click comic action rather than claiming post-spin S/N itself is wrong."
+ },
+ "newHelper": "scripts/blender/desk_axes_b1_repel_b5_v3_20261024.py",
+ "newHelperSha256": "b5284ff4c264a57153d2f4bc31480e37f6b7e4bea019b579bdd967b4bba6dc6d",
+ "actualV3AuditNotYetRun": true,
+ "actualV3ImagesNotYetRendered": true,
+ "finalAcceptance": false
+}

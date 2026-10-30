@@ -1,0 +1,65 @@
+import { levelLabels, levelPreviews, preparationFor } from '../content/university-levels';
+import { topicById } from '../content/university-curriculum';
+import { EquationImage } from './CalculationBoard';
+import { MathText } from './MathText';
+
+/** 上級ステージの入口。初級・中級で身につけた読み方と、対応するステージへのリンクを置く。
+ * 初級・中級を終えていなくても上級は開ける。ここは案内であって条件ではない。 */
+export function AdvancedEntry({ stageId, onOpenStage }: { stageId: string; onOpenStage?: (id: string) => void }) {
+  const all = preparationFor[stageId] ?? [];
+  if (!all.length) return null;
+  // 3分で見返せる量に絞る。初級を先に、各段階から最大4件まで。
+  const pick = (level: string) => all.filter(entry => entry.level === level).slice(0, 4);
+  const preparation = [...pick('intro'), ...pick('middle')];
+  return (
+    <details className="study-overview level-bridge">
+      <summary>この上級単元の前提を確認・復習へ戻る</summary>
+      <ul className="level-bridge-toolkit">
+        {[topicById[stageId]?.intro.goal,topicById[stageId]?.middle.goal].filter(Boolean).map(item => <li key={item}>{item}</li>)}
+      </ul>
+      <p className="level-bridge-note">先に見ておくと読みやすい段です。飛ばしてこのまま進んでも構いません。</p>
+      <ul className="level-bridge-links">
+        {preparation.map(entry => (
+          <li key={entry.id}>
+            <button onClick={() => onOpenStage?.(entry.id)}>
+              {levelLabels[entry.level]}・{entry.title}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+
+/** 初級・中級の到達点と、上級編の式の対応表。「分からなくてよい」で終わらせないための札。 */
+export function AdvancedPreviewCard({ stageId }: { stageId: string }) {
+  const preview = levelPreviews[stageId];
+  if (!preview) return null;
+  return (
+    <section className="advanced-preview" aria-label="上級編での到達点">
+      <h3>上級編での到達点</h3>
+      <EquationImage tex={preview.goal} />
+      <dl>
+        <div><dt>今できればよいこと</dt><dd><MathText text={preview.now}/></dd></div>
+        <div><dt>後で増えるもの</dt><dd><MathText text={preview.later}/></dd></div>
+      </dl>
+    </section>
+  );
+}
+
+/** 初級・中級のスライド見出し。
+ * 章テーマ・目標・段の説明を同じ強さで並べず、現在地は小さく一行だけ出す。 */
+export function LevelSlideHeader({ page, total, heading, beat, role }: {
+  page: number; total: number; heading: string; beat?: string; role?: string;
+}) {
+  return (
+    <section className="level-slide-head" aria-label="今やっていること">
+      <p className="level-now">
+        <span className="level-now-phase">{beat ?? 'いまの話'}</span>
+        {role && <span className={`level-role role-${['観察', '問い', '操作', '解釈', '固定'].indexOf(role)}`}>{role}</span>}
+        <span className="level-now-count" aria-live="polite">{page + 1} / {total}</span>
+      </p>
+      <h2><MathText text={heading.replace(/^(復習|橋渡し)：/,'')}/></h2>
+    </section>
+  );
+}

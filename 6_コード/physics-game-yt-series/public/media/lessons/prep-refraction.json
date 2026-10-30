@@ -1,0 +1,208 @@
+{
+  "id": "prep-refraction",
+  "title": "屈折の角度は、面ではなく法線から",
+  "level": "intro",
+  "before": [
+    "w-light-intro",
+    "w-light-middle",
+    "w-light-advanced",
+    "w-interference-middle",
+    "w-interference-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "境界に垂直な線を、法線と言います。光の入射角と屈折角は、どちらも「光の進む向き」と「法線」の間の角度です。",
+      "equation": "角度の基準：境界に垂直な法線",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            2,
+            -3,
+            "境界へ進む光"
+          ],
+          [
+            0,
+            3,
+            "法線"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "境界に垂直な線を、法線と言います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.125,
+          "text": "境界に垂直な線を、法線と言います。"
+        },
+        {
+          "start": 3.125,
+          "end": 10.25,
+          "text": "光の入射角と屈折角は、どちらも「光の進む向き」と「法線」の間の角度です。"
+        }
+      ],
+      "end": 10.340333333333332
+    },
+    {
+      "narration": "屈折率は、真空中の光の速さを、その物質の中での速さで割ったものです。屈折率が大きい物質の中では、光はゆっくり進みます。",
+      "equation": "屈折率 n = c/v",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "真空",
+          "屈折率1.5の物質"
+        ],
+        "values": [
+          3,
+          2
+        ],
+        "unit": "10⁸ m/s"
+      },
+      "index": 1,
+      "heading": "屈折率は、真空中の光の速さを、その物質の中での速さで割ったものです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.340333333333332,
+      "captions": [
+        {
+          "start": 10.340333333333332,
+          "end": 16.125,
+          "text": "屈折率は、真空中の光の速さを、その物質の中での速さで割ったものです。"
+        },
+        {
+          "start": 16.125,
+          "end": 20.583333333333332,
+          "text": "屈折率が大きい物質の中では、光はゆっくり進みます。"
+        }
+      ],
+      "end": 20.69033333333333
+    },
+    {
+      "narration": "光は境界を越えても振動数が変わらないので、速さが変わると波長が変わります。斜めに入った波面の片側が先に遅くなることで、進む向きも変わります。",
+      "equation": "振動数は同じ；v=fλ → 速さが小さい側で波長も小さい",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "速い側の波長",
+          "遅い側の波長"
+        ],
+        "values": [
+          3,
+          2
+        ],
+        "unit": "同じ振動数での長さの比"
+      },
+      "index": 2,
+      "heading": "光は境界を越えても振動数が変わらないので、速さが変わると波長が変わります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 20.69033333333333,
+      "captions": [
+        {
+          "start": 20.69033333333333,
+          "end": 26.25,
+          "text": "光は境界を越えても振動数が変わらないので、速さが変わると波長が変わります。"
+        },
+        {
+          "start": 26.25,
+          "end": 31.45833333333333,
+          "text": "斜めに入った波面の片側が先に遅くなることで、進む向きも変わります。"
+        }
+      ],
+      "end": 31.603666666666662
+    },
+    {
+      "narration": "全反射は、屈折率の大きい側から小さい側へ進むときに起こります。屈折角が九十度になる入射角を超えると、外へ出ていく屈折光はなくなります。",
+      "equation": "臨界角：sin θc = n₂/n₁（n₁>n₂）",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "臨界角での屈折方向"
+          ],
+          [
+            0,
+            3,
+            "法線"
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "全反射は、屈折率の大きい側から小さい側へ進むときに起こります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 31.603666666666662,
+      "captions": [
+        {
+          "start": 31.603666666666662,
+          "end": 36.58333333333333,
+          "text": "全反射は、屈折率の大きい側から小さい側へ進むときに起こります。"
+        },
+        {
+          "start": 36.58333333333333,
+          "end": 42.40633333333333,
+          "text": "屈折角が九十度になる入射角を超えると、外へ出ていく屈折光はなくなります。"
+        }
+      ],
+      "end": 43.75633333333333
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "屈折の角度は、面ではなく法線から",
+  "topicId": "prep-refraction",
+  "family": "prerequisites",
+  "sourceScript": "prep-refraction",
+  "pronunciationFingerprint": "f274c52692fdc923ddeec177504bf0446fc7b7f47beabc03ef18a83eed8978ae",
+  "duration": 43.75633333333333,
+  "mediaDirectory": "lessons",
+  "renderKey": "4cf4fe4a57b5dc7394ed24bdd8dabdea30b5ba45fb14d0b84ebafd7a56914fa8",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 50.048,
+    "removedSeconds": 6.291666666666671,
+    "cuts": [
+      {
+        "start": 3.125,
+        "end": 3.7083333333333335,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.833333333333334,
+        "end": 12.208333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 18.083333333333332,
+        "end": 18.666666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.125,
+        "end": 24.458333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 30.125,
+        "end": 30.666666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 35.875,
+        "end": 37.166666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 42.291666666666664,
+        "end": 42.875,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

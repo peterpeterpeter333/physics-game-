@@ -1,0 +1,25 @@
+{
+ "episode": "D-1",
+ "kind": "Add-only source wording discrepancy, not a new final-image verdict",
+ "relatedAudit": "D-1_全46行_源と時刻と実画対応_20261024.json",
+ "source": "scripts/blender/desk_d1v1.py",
+ "sourceSha256": "004521c4fbb3657c9c891dc1aa24846d82c393620f4a97902973cc9fd3def5a2",
+ "individualRequirement": "Section7 row46 camera: 冒頭と同じ姿勢に戻る（1.2秒）→ 止める。",
+ "samePhysicalMineGeometryAndWorldLocation": true,
+ "sameCameraPoseInFrozenSource": false,
+ "openingSettledPoseAfter1Point5Seconds": [-0.2,0.1,0.14,1.02,-12,28,40],
+ "openingFrame0Pose": [-0.2,0.1,0.14,1.1,-12,28,40],
+ "lastSettledPose": [-0.2,0.1,0.17,1.08,-8,27,40],
+ "sourceReferences": [
+  {"line":99,"role":"last:air hard-coded target"},
+  {"line":151,"role":"opening approach adds .08 distance at time0"},
+  {"line":426,"role":"settled mine pose"}
+ ],
+ "pendingCameraPatchBehavior": "desk_axes_d1_camera_patch_20261024.py preserves each original stopped target and changes only entry cut/approach. Therefore it does not by itself make the two stopped camera arrays equal.",
+ "interpretation": "The film returns to the same mine with lower water, but exact camera-array equality is not implemented. Both source arrays are reported instead of labelling exact camera matching PASS. Any visual/style acceptance is a root decision under the individual/common instructions, not a new inspector waiver.",
+ "actualFinalMP4NotYetAvailableForThisAudit": true,
+ "actualOriginalGateEndsCorrelationStillRequired": true,
+ "originalGateThresholdsUnchanged": true,
+ "noSourceOrModelChangeMade": true,
+ "finalAcceptance": false
+}

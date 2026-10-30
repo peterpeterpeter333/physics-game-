@@ -1,0 +1,495 @@
+{
+ "episode": "D-1",
+ "scope": "Only the seven failed old099 exact actual-encoded JPEGs, individually displayed at full1080x1920; not a new final movie or all855 personal claim",
+ "reviewer": "/root/episode_d1",
+ "physical": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/d1-complete-v4-delivered-physical-supplement-20261025.json",
+ "physicalSha256": "a4ad052f41ac11f7d3dc012f9715d3a69dfe0fdefef50402f1ba6e5e8f35a970",
+ "manifest": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/d1v1-review-manifest.json",
+ "manifestSha256": "a1792c20470c3840389727f5e84d917f87617757a30f1ff3a1a9c0378f32bd29",
+ "mp4": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/out-final-d1v1/ys-chain-d1v1.mp4",
+ "mp4Sha256": "c0253209e9fa83a6a8b87e6afbf764bfec2b05211d8532dc1e6e176907a3c9ee",
+ "rows": [
+  {
+   "time": 35.5,
+   "frameIndex": 1065,
+   "cue": "mine:mio",
+   "semanticPrincipal": "horse itself, not the surrounding mine",
+   "pose": [
+    -0.2909,
+    0.082,
+    0.351,
+    0.145,
+    -142,
+    35,
+    40
+   ],
+   "physicalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": true
+   },
+   "criticalChecks": null,
+   "actualSurface": {
+    "x0": 527.5972271239224,
+    "x1": 950.4293348433092,
+    "y0": 571.9744490483687,
+    "y1": 1338.498875365567,
+    "widthRatio": 0.3915112108512841,
+    "allVerticesInFrame": true,
+    "vertexCount": 2042,
+    "visibleObjectCount": 15
+   },
+   "criticalSurface": null,
+   "delivered": {
+    "frame": 1065,
+    "layer": "production",
+    "actualFrame": 1060,
+    "unchangedOtherObjectSourceFrame": 1060,
+    "semanticOperationTime": null,
+    "cameraOperationTime": 35.333333333333336,
+    "pose": [
+     -0.2909,
+     0.082,
+     0.351,
+     0.145,
+     -142,
+     35,
+     40
+    ],
+    "raw": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/01065.jpg"
+   },
+   "actual": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/frames-d1v1/d1v1-frame-0085.jpg",
+   "actualJpegSha256": "3cf8e55090cc90810f312f1b8aed9a55bcdc74335a5b3ff5f6c7f5a924294934",
+   "classification": "true-small-primary",
+   "personallyDisplayed": true,
+   "observation": "Horse body/head remain clearly visible. There is no face graphic masking it. The actual horse surface is39.1511%, not a bounding-corner proxy49.7989%; strict40% is genuinely unmet.",
+   "minimalCameraOnlyProposal": "Fit one stopped horse camera across its existing actual animation/held states, then use only its original1s introduction for the small approach.",
+   "faceException": false,
+   "semanticPrincipalMisdefinition": false,
+   "originalPhysicalFailurePreserved": true,
+   "caseSupplementApproved": false
+  },
+  {
+   "time": 168.5,
+   "frameIndex": 5055,
+   "cue": "air:1kg",
+   "semanticPrincipal": "1 cm square face itself, not a hand or distant second weight",
+   "pose": [
+    0.30488129185184865,
+    0.0370465340740703,
+    0.053310541555552995,
+    0.217321937777773,
+    0,
+    33.91737888888919,
+    132.74074044444754
+   ],
+   "physicalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": false
+   },
+   "criticalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": false
+   },
+   "actualSurface": {
+    "x0": -1620.3214743785015,
+    "x1": -1244.134101953288,
+    "y0": 3295.296283764182,
+    "y1": 3592.575981038349,
+    "widthRatio": 0.34832164113445685,
+    "allVerticesInFrame": false,
+    "vertexCount": 96,
+    "visibleObjectCount": 1
+   },
+   "criticalSurface": {
+    "x0": -1620.3214743785015,
+    "x1": -1244.134101953288,
+    "y0": 3295.296283764182,
+    "y1": 3592.575981038349,
+    "widthRatio": 0.34832164113445685,
+    "allVerticesInFrame": false,
+    "vertexCount": 96,
+    "visibleObjectCount": 1
+   },
+   "delivered": {
+    "frame": 5055,
+    "layer": "production",
+    "actualFrame": 5055,
+    "unchangedOtherObjectSourceFrame": 5055,
+    "semanticOperationTime": null,
+    "cameraOperationTime": 168.5,
+    "pose": [
+     0.30488129185184865,
+     0.0370465340740703,
+     0.053310541555552995,
+     0.217321937777773,
+     0,
+     33.91737888888919,
+     132.74074044444754
+    ],
+    "raw": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/05055.jpg"
+   },
+   "actual": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/frames-d1v1/d1v1-frame-0347.jpg",
+   "actualJpegSha256": "94a9814bb229a1c14dc58ed3173ca8c6264e4ade48ba431a03a364d794ca8873",
+   "classification": "true-blank-camera-transition",
+   "personallyDisplayed": true,
+   "observation": "Full1080x1920 actual JPEG shows tabletop and caption only; the1cm square is entirely outside frame. This is not face masking or a wrong semantic role.",
+   "minimalCameraOnlyProposal": "Cut to the safe fixed square pose at the existing cue entry and retain only a small approach in its original.8s move.",
+   "faceException": false,
+   "semanticPrincipalMisdefinition": false,
+   "originalPhysicalFailurePreserved": true,
+   "caseSupplementApproved": false
+  },
+  {
+   "time": 171.5,
+   "frameIndex": 5145,
+   "cue": "air:1kg",
+   "semanticPrincipal": "1 cm square face itself, not a hand or distant second weight",
+   "pose": [
+    0.24,
+    -0.04,
+    0.006919345768518618,
+    0.12,
+    0,
+    40,
+    114.82040088888753
+   ],
+   "physicalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": true
+   },
+   "criticalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": false
+   },
+   "actualSurface": {
+    "x0": 341.14024181366256,
+    "x1": 738.8597581863374,
+    "y0": 852.8565850908902,
+    "y1": 1135.6779374184712,
+    "widthRatio": 0.36825881145618045,
+    "allVerticesInFrame": true,
+    "vertexCount": 96,
+    "visibleObjectCount": 1
+   },
+   "criticalSurface": {
+    "x0": 341.14024181366256,
+    "x1": 738.8597581863374,
+    "y0": 852.8565850908902,
+    "y1": 1135.6779374184712,
+    "widthRatio": 0.36825881145618045,
+    "allVerticesInFrame": true,
+    "vertexCount": 96,
+    "visibleObjectCount": 1
+   },
+   "delivered": {
+    "frame": 5145,
+    "layer": "production",
+    "actualFrame": 5145,
+    "unchangedOtherObjectSourceFrame": 5145,
+    "semanticOperationTime": null,
+    "cameraOperationTime": 171.5,
+    "pose": [
+     0.24,
+     -0.04,
+     0.006919345768518618,
+     0.12,
+     0,
+     40,
+     114.82040088888753
+    ],
+    "raw": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/05145.jpg"
+   },
+   "actual": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/frames-d1v1/d1v1-frame-0355.jpg",
+   "actualJpegSha256": "bc8f12b610dc945a63e6fab8637c1419845e6101479416d98c7eff767124e463",
+   "classification": "true-small-primary-and-critical-margin",
+   "personallyDisplayed": true,
+   "observation": "Square and pointing fingertip are visible and readable, but the square is36.8259% and its bottom1135.68 exceeds the unchanged critical1100 limit. No face exception; not a severe physical-screen clip.",
+   "minimalCameraOnlyProposal": "Keep the fixed square pose until the unchanged1kg word, then fit the introduced1kg phase in the existing.4s object-introduction span.",
+   "faceException": false,
+   "semanticPrincipalMisdefinition": false,
+   "originalPhysicalFailurePreserved": true,
+   "caseSupplementApproved": false
+  },
+  {
+   "time": 174,
+   "frameIndex": 5220,
+   "cue": "air:1kg",
+   "semanticPrincipal": "palm-shaped 100 square-centimetre plate itself",
+   "pose": [
+    0.29012499988425916,
+    -0.04,
+    0.01150874999189814,
+    0.19017499983796282,
+    -4.009999990740732,
+    42.50624999421296,
+    74.93750005787042
+   ],
+   "physicalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": false
+   },
+   "criticalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": false
+   },
+   "actualSurface": {
+    "x0": 851.326685188732,
+    "x1": 2018.7208061240885,
+    "y0": 405.9143704531189,
+    "y1": 1171.4819099990696,
+    "widthRatio": 1.0809204823475524,
+    "allVerticesInFrame": false,
+    "vertexCount": 1152,
+    "visibleObjectCount": 12
+   },
+   "criticalSurface": {
+    "x0": 851.326685188732,
+    "x1": 2018.7208061240885,
+    "y0": 405.9143704531189,
+    "y1": 1171.4819099990696,
+    "widthRatio": 1.0809204823475524,
+    "allVerticesInFrame": false,
+    "vertexCount": 1152,
+    "visibleObjectCount": 12
+   },
+   "delivered": {
+    "frame": 5220,
+    "layer": "production",
+    "actualFrame": 5220,
+    "unchangedOtherObjectSourceFrame": 5220,
+    "semanticOperationTime": null,
+    "cameraOperationTime": 174,
+    "pose": [
+     0.29012499988425916,
+     -0.04,
+     0.01150874999189814,
+     0.19017499983796282,
+     -4.009999990740732,
+     42.50624999421296,
+     74.93750005787042
+    ],
+    "raw": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/05220.jpg"
+   },
+   "actual": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/frames-d1v1/d1v1-frame-0361.jpg",
+   "actualJpegSha256": "65d2cea9ebbee154344f00059885cb983e0d040a71e0503ea78ac133b9d0fa32",
+   "classification": "true-severe-primary-clip",
+   "personallyDisplayed": true,
+   "observation": "Most of the palm plate is beyond the right edge; the actual JPEG shows only its right-edge fragment as the caption says hand-palm. No face or primary-selection error.",
+   "minimalCameraOnlyProposal": "Use a fixed palm/100kg common composition from the original hand-palm word, with only the original.8s introduction approach.",
+   "faceException": false,
+   "semanticPrincipalMisdefinition": false,
+   "originalPhysicalFailurePreserved": true,
+   "caseSupplementApproved": false
+  },
+  {
+   "time": 310.5,
+   "frameIndex": 9315,
+   "cue": "size:2t",
+   "semanticPrincipal": "piston area face and its diameter/radius or 22 palm plates",
+   "pose": [
+    0.2214940918518634,
+    -0.08,
+    0.08198332207407114,
+    0.21153578666668557,
+    -3.4357191111123706,
+    56.41070222221907,
+    40
+   ],
+   "physicalChecks": {
+    "visible": true,
+    "size40to70": true,
+    "frameSafe": false
+   },
+   "criticalChecks": null,
+   "actualSurface": {
+    "x0": 39.20929486483864,
+    "x1": 535.3112527336889,
+    "y0": 643.7515201697955,
+    "y1": 1108.8342463276056,
+    "widthRatio": 0.45935366469337985,
+    "allVerticesInFrame": true,
+    "vertexCount": 30528,
+    "visibleObjectCount": 329
+   },
+   "criticalSurface": null,
+   "delivered": {
+    "frame": 9315,
+    "layer": "production",
+    "actualFrame": 9315,
+    "unchangedOtherObjectSourceFrame": 9315,
+    "semanticOperationTime": null,
+    "cameraOperationTime": 310.5,
+    "pose": [
+     0.2214940918518634,
+     -0.08,
+     0.08198332207407114,
+     0.21153578666668557,
+     -3.4357191111123706,
+     56.41070222221907,
+     40
+    ],
+    "raw": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/09315.jpg"
+   },
+   "actual": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/frames-d1v1/d1v1-frame-0649.jpg",
+   "actualJpegSha256": "de046d1ae9f57a396c6caff2d2d88c095fc422ac3ed2da8e927f0d39f33380b4",
+   "classification": "true-minor-safe-margin-failure",
+   "personallyDisplayed": true,
+   "observation": "The whole22-palm disc is visibly readable, not cut by the actual frame. Its evaluated left39.2093 is0.7907px below the required40 margin; retain that exact failure.",
+   "minimalCameraOnlyProposal": "Center the fixed area/disc phase with sufficient strict margin, then stop through the explanation.",
+   "faceException": false,
+   "semanticPrincipalMisdefinition": false,
+   "originalPhysicalFailurePreserved": true,
+   "caseSupplementApproved": false
+  },
+  {
+   "time": 311,
+   "frameIndex": 9330,
+   "cue": "size:2t",
+   "semanticPrincipal": "piston area face and its diameter/radius or 22 palm plates",
+   "pose": [
+    0.2935954251851915,
+    -0.08,
+    0.0636302554074058,
+    0.32951978666667703,
+    -11.3013191111118,
+    36.7467022222205,
+    40
+   ],
+   "physicalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": false
+   },
+   "criticalChecks": null,
+   "actualSurface": {
+    "x0": -203.4784787738971,
+    "x1": 159.41644054188322,
+    "y0": 712.293592579266,
+    "y1": 981.7326143823584,
+    "widthRatio": 0.33601381418127807,
+    "allVerticesInFrame": false,
+    "vertexCount": 30528,
+    "visibleObjectCount": 329
+   },
+   "criticalSurface": null,
+   "delivered": {
+    "frame": 9330,
+    "layer": "production",
+    "actualFrame": 9330,
+    "unchangedOtherObjectSourceFrame": 9330,
+    "semanticOperationTime": null,
+    "cameraOperationTime": 311,
+    "pose": [
+     0.2935954251851915,
+     -0.08,
+     0.0636302554074058,
+     0.32951978666667703,
+     -11.3013191111118,
+     36.7467022222205,
+     40
+    ],
+    "raw": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/09330.jpg"
+   },
+   "actual": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/frames-d1v1/d1v1-frame-0651.jpg",
+   "actualJpegSha256": "e81acbea6883a58e43ff3baa7f5294d2109393a8674edd74da5f5ab5052113b0",
+   "classification": "true-severe-primary-clip-before-weight-reveal",
+   "personallyDisplayed": true,
+   "observation": "The22-palm disc has almost left the frame while the2t weight is not yet introduced. This is a premature camera transfer, not an invalid plate role.",
+   "minimalCameraOnlyProposal": "Keep the area disc safe until the unchanged2t word311.15, then cut/approach the weight phase inside the existing.4s drop introduction.",
+   "faceException": false,
+   "semanticPrincipalMisdefinition": false,
+   "originalPhysicalFailurePreserved": true,
+   "caseSupplementApproved": false
+  },
+  {
+   "time": 320,
+   "frameIndex": 9600,
+   "cue": "size:horse",
+   "semanticPrincipal": "2 tonne weight and four comparison horses",
+   "pose": [
+    0.2798800006399994,
+    -0.08,
+    0.06602399987200011,
+    0.4506599964800032,
+    -12,
+    35,
+    40
+   ],
+   "physicalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": true
+   },
+   "criticalChecks": {
+    "visible": true,
+    "size40to70": false,
+    "frameSafe": true
+   },
+   "actualSurface": {
+    "x0": 40.37571112184504,
+    "x1": 854.2724490093323,
+    "y0": 637.4294700608297,
+    "y1": 1374.5168822818785,
+    "widthRatio": 0.7536080906365622,
+    "allVerticesInFrame": true,
+    "vertexCount": 6938,
+    "visibleObjectCount": 30
+   },
+   "criticalSurface": {
+    "x0": 597.651203403522,
+    "x1": 729.7329511366078,
+    "y0": 927.8642426722765,
+    "y1": 1025.874971296325,
+    "widthRatio": 0.122297914567672,
+    "allVerticesInFrame": true,
+    "vertexCount": 3016,
+    "visibleObjectCount": 1
+   },
+   "delivered": {
+    "frame": 9600,
+    "layer": "production",
+    "actualFrame": 9600,
+    "unchangedOtherObjectSourceFrame": 9600,
+    "semanticOperationTime": null,
+    "cameraOperationTime": 320,
+    "pose": [
+     0.2798800006399994,
+     -0.08,
+     0.06602399987200011,
+     0.4506599964800032,
+     -12,
+     35,
+     40
+    ],
+    "raw": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/09600.jpg"
+   },
+   "actual": "/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/actual-final-required-review-v4-endframe-20261025/frames-d1v1/d1v1-frame-0673.jpg",
+   "actualJpegSha256": "f89ad444fea52e84815eab5d735bd32c463f5b1bc1e65b4f72d8dcb6ed416aca",
+   "classification": "true-large-comparison-primary",
+   "personallyDisplayed": true,
+   "observation": "The actual image has a clear2t weight and one comparison horse during the original0.2s staggered four-horse introduction. The staged count is intentional, but their current evaluated union75.3608% genuinely exceeds70%.",
+   "minimalCameraOnlyProposal": "Fit one comparison composition for every actual staged horse state, maintaining the exact original horse order/times and the existing.6s introduction.",
+   "faceException": false,
+   "semanticPrincipalMisdefinition": false,
+   "originalPhysicalFailurePreserved": true,
+   "caseSupplementApproved": false
+  }
+ ],
+ "allSevenPersonallyDisplayed": true,
+ "faceExceptions": 0,
+ "principalMisdefinitions": 0,
+ "newCameraDerivativeRequired": true,
+ "old855AggregateNotEdited": true,
+ "noGpu": true,
+ "noEncode": true,
+ "earsVerified": false,
+ "automaticApproval": false,
+ "finalAcceptance": false
+}

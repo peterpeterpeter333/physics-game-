@@ -1,0 +1,1248 @@
+{
+  "reviewer": "episode_e1",
+  "episode": "C-1",
+  "candidate": "C20 complete-v2 actual-patch compositor",
+  "sourceType": "Rendered actual Blender JPEGs plus frozen captions/overlays composed into PNGs; NOT decoded MP4 frames",
+  "sourceIndex": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/actual-patch-index.json",
+  "sourceIndexSha256": "6100f4815e4678e8a979ae55632a8fdcfb50443a9eeaa9cf1070f9298f2d39d0",
+  "reviewedPageRange": [
+    129,
+    192
+  ],
+  "reviewedPages": 64,
+  "reviewedCells": 573,
+  "method": "Every page129..192 was actually displayed, in ascending order in four-page view_image batches. All64 page SHA256 values were independently recomputed and matched the fixed index. One suspicious frame9227 was separately displayed at1080x1920.",
+  "pages": [
+    {
+      "page": 129,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-129.jpg",
+      "sha256": "be06e69a5af04cfed0e90f376b771f94b20c3e5f9049965b0895accbf8fc8050",
+      "frames": [
+        8817,
+        8818,
+        8819,
+        8820,
+        8821,
+        8822,
+        8823,
+        8824,
+        8825
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 130,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-130.jpg",
+      "sha256": "96f250999d5c9d646367db2d6dca55d2ed8e73c338f67e41ed4739c0510c779f",
+      "frames": [
+        8826,
+        8827,
+        8828,
+        8829,
+        8830,
+        8831,
+        8832,
+        8833,
+        8834
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 131,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-131.jpg",
+      "sha256": "aea954d384030ac1b859d4e357bbf6384dec15ad4af23ff6c19b6cdbdf77cc1b",
+      "frames": [
+        8835,
+        8836,
+        8837,
+        8838,
+        8839,
+        8840,
+        8841,
+        8842,
+        8843
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 132,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-132.jpg",
+      "sha256": "d4b8d05ee12326282a2552a3002c26f60730d6c6b506eb0476f715a5ad40fb3b",
+      "frames": [
+        8844,
+        8845,
+        8846,
+        8847,
+        8848,
+        8849,
+        8850,
+        8851,
+        8852
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 133,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-133.jpg",
+      "sha256": "f824d50693b25c992cbcbbdf49d7b8191407c9f4831e26dae81de910db976b46",
+      "frames": [
+        8853,
+        8854,
+        8855,
+        8856,
+        8857,
+        8858,
+        8859,
+        8860,
+        8861
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 134,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-134.jpg",
+      "sha256": "aa6384a78825bf670d356e0e1fc5dc3982c85cb1fe15a8d2331f3abae6ac4ccc",
+      "frames": [
+        8862,
+        8863,
+        8864,
+        8865,
+        8866,
+        8867,
+        8868,
+        8869,
+        8870
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 135,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-135.jpg",
+      "sha256": "2a7a3727b59dc007ba450f330535fc92fc02e53f249ce54ac4facf9a311dc3aa",
+      "frames": [
+        8871,
+        8872,
+        8873,
+        8874,
+        8875,
+        8876,
+        8877,
+        8878,
+        8879
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 136,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-136.jpg",
+      "sha256": "aed10e81c5432dc7b4f35fd7520aa7a7bb6ba5d51bffb771d68823793d919b43",
+      "frames": [
+        8880,
+        8881,
+        8882,
+        8883,
+        8884,
+        8885,
+        8886,
+        8887,
+        8888
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 137,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-137.jpg",
+      "sha256": "82bd35781fdb68b0505e96ba525b273d6c13a3f857ad2089dd61d77883204237",
+      "frames": [
+        8889,
+        8890,
+        8891,
+        8892,
+        8893,
+        8894,
+        8895,
+        8896,
+        8897
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 138,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-138.jpg",
+      "sha256": "db0b4dccc672dc7f28e8ab7703a1d30f56dbd395e74d7659a4e31f18b6702cc2",
+      "frames": [
+        8898,
+        8899,
+        8900,
+        8901,
+        8902,
+        8903,
+        8904,
+        8905,
+        8906
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 139,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-139.jpg",
+      "sha256": "276f9db144d9e1a8986fc357a253a893b8357c4b396d6f58c9a7bf5f90cc3e21",
+      "frames": [
+        8907,
+        8908,
+        8909,
+        8910,
+        8911,
+        8912,
+        8913,
+        8914,
+        8915
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 140,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-140.jpg",
+      "sha256": "f1487382403ffee6288380ccd7c3e64c459c3b8cca6499f419cf90ca8e722c69",
+      "frames": [
+        8916,
+        8917,
+        8918,
+        8919,
+        8920,
+        8921,
+        8922,
+        8923,
+        8924
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 141,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-141.jpg",
+      "sha256": "62b331b4d166003f7c3061fc254c042a716a4867eb58a34200b28659dad1854c",
+      "frames": [
+        8925,
+        8926,
+        8927,
+        8928,
+        8929,
+        8930,
+        8931,
+        8932,
+        8933
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 142,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-142.jpg",
+      "sha256": "a47ff41d822683cd042823cfbea8bd41bbcdc909119a40f7e32810a6d3c48512",
+      "frames": [
+        8934,
+        8935,
+        8936,
+        8937,
+        8938,
+        8939,
+        8940,
+        8941,
+        8942
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 143,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-143.jpg",
+      "sha256": "b0f83665d17d1488c4f0e63501347b8690c300b0e8ad2fce091f908181c5a166",
+      "frames": [
+        8943,
+        8944,
+        8945,
+        8946,
+        8947,
+        8948,
+        8949,
+        8950,
+        8951
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 144,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-144.jpg",
+      "sha256": "18b3d5f9c5bc9e093cc4845d44e4a0048400ed118f121e35194d248399239716",
+      "frames": [
+        8952,
+        8953,
+        8954,
+        8955,
+        8956,
+        8957,
+        8958,
+        8959,
+        8960
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 145,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-145.jpg",
+      "sha256": "84417b9d621ace929e36198787f95f5e77a80468766ec5dbae5141ae3f939778",
+      "frames": [
+        8961,
+        8962,
+        8963,
+        8964,
+        8965,
+        8966,
+        8967,
+        8968,
+        8969
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 146,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-146.jpg",
+      "sha256": "fadc73ee20c17c65a035150ee08c9a33b61f78b85c2f3097b1a23f1e6bb6d77e",
+      "frames": [
+        8970,
+        8971,
+        8972,
+        8973,
+        9075,
+        9076,
+        9077,
+        9078,
+        9079
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 147,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-147.jpg",
+      "sha256": "5abef90dc99c00c95a9f20b434cdfce152f006b5074d187251340af6ffe401e3",
+      "frames": [
+        9080,
+        9081,
+        9082,
+        9083,
+        9084,
+        9085,
+        9086,
+        9087,
+        9088
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 148,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-148.jpg",
+      "sha256": "30517efd64bd8a10d0d16898db4507f61b4b9a96aaa4a0fdded9aa294849c606",
+      "frames": [
+        9089,
+        9090,
+        9091,
+        9092,
+        9093,
+        9094,
+        9095,
+        9096,
+        9097
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 149,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-149.jpg",
+      "sha256": "ca50c8dc067fe739f332211331c864d2030cc26630fb0b07170eac6d3b072d7c",
+      "frames": [
+        9098,
+        9099,
+        9100,
+        9101,
+        9102,
+        9103,
+        9104,
+        9105,
+        9106
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 150,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-150.jpg",
+      "sha256": "8335eb20b8b4dec129a0d2abfa27098e3f5436ca821ac267275bc39069a99cff",
+      "frames": [
+        9107,
+        9108,
+        9109,
+        9110,
+        9111,
+        9112,
+        9113,
+        9114,
+        9115
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 151,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-151.jpg",
+      "sha256": "c8d5aa1ec56912d520641b68521ff5d5e67e3286ea87908356e0ff51f6494334",
+      "frames": [
+        9116,
+        9117,
+        9118,
+        9119,
+        9120,
+        9121,
+        9122,
+        9123,
+        9124
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 152,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-152.jpg",
+      "sha256": "b2e81fe54fc7857ba68c976e5dee594f13a4d638708c74092b774b6bbc464566",
+      "frames": [
+        9125,
+        9126,
+        9127,
+        9128,
+        9129,
+        9130,
+        9131,
+        9132,
+        9133
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 153,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-153.jpg",
+      "sha256": "3fae5674961f90989aa96cc0d9007717925574620f8e36068455f142422929d7",
+      "frames": [
+        9134,
+        9135,
+        9136,
+        9137,
+        9138,
+        9139,
+        9140,
+        9141,
+        9142
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 154,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-154.jpg",
+      "sha256": "eab78996a22ae3eb948c5f09bc70886bfaed99f58f8364194239b85baa445a05",
+      "frames": [
+        9143,
+        9144,
+        9145,
+        9146,
+        9147,
+        9148,
+        9149,
+        9150,
+        9151
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 155,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-155.jpg",
+      "sha256": "1263f595165a04857a27f5617d87b764c5977ee38164f07fa395606f63a2aee7",
+      "frames": [
+        9152,
+        9153,
+        9154,
+        9155,
+        9156,
+        9157,
+        9158,
+        9159,
+        9160
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 156,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-156.jpg",
+      "sha256": "102bcb8d3119334907946b6e0f6e4816f308e48ae4e0859db12abb06e2c3a993",
+      "frames": [
+        9161,
+        9162,
+        9163,
+        9164,
+        9165,
+        9166,
+        9167,
+        9168,
+        9169
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 157,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-157.jpg",
+      "sha256": "8f066bf759f319ffcb8a954015b72cf375ee5d39c467402287e656055ea1317e",
+      "frames": [
+        9170,
+        9171,
+        9172,
+        9173,
+        9174,
+        9175,
+        9176,
+        9177,
+        9178
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 158,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-158.jpg",
+      "sha256": "b0bd018a4ca2bf2470e51911683b401599c241d782a99c70f26c248090839cc0",
+      "frames": [
+        9179,
+        9180,
+        9181,
+        9182,
+        9183,
+        9184,
+        9185,
+        9186,
+        9187
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 159,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-159.jpg",
+      "sha256": "407cd7b1de8d4650f477ee7bfa4aa4e1b2046342670f80ec3a26bc509f5ecb48",
+      "frames": [
+        9188,
+        9189,
+        9190,
+        9191,
+        9192,
+        9193,
+        9194,
+        9195,
+        9196
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 160,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-160.jpg",
+      "sha256": "0546dc405469c928da68e111b48853fcdecacacbdd1fc2842dfd882ca8d43d4a",
+      "frames": [
+        9197,
+        9198,
+        9199,
+        9200,
+        9201,
+        9202,
+        9203,
+        9204,
+        9205
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 161,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-161.jpg",
+      "sha256": "b939526e69777e75f5922f33be5e1dd83c01337fe27dd725f6807bf3e3ec8fe3",
+      "frames": [
+        9206,
+        9207,
+        9208,
+        9209,
+        9210,
+        9211,
+        9212,
+        9213,
+        9214
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 162,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-162.jpg",
+      "sha256": "c4704090fdb4881d22378353b0a47410a3703c4da4e1a322e7c61165d69d3ee4",
+      "frames": [
+        9215,
+        9216,
+        9217,
+        9218,
+        9219,
+        9220,
+        9221,
+        9222,
+        9223
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 163,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-163.jpg",
+      "sha256": "393c2e926f62706c0cea090cb10eec7b42d9107941e8741ce83ad7c3cb707b41",
+      "frames": [
+        9224,
+        9225,
+        9226,
+        9227,
+        9228,
+        9229,
+        9230,
+        9231,
+        9232
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 164,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-164.jpg",
+      "sha256": "9c732c21a50181ae4d92f4c377a9ba4c6ee84f73e4a9e15ece6c7f13e4817949",
+      "frames": [
+        9233,
+        9234,
+        9235,
+        9236,
+        9237,
+        9238,
+        9239,
+        9240,
+        9241
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 165,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-165.jpg",
+      "sha256": "ca283a38c924bbfec4df10f62cb2abd3c13d05ec0a8952d77cc9848e422a0f39",
+      "frames": [
+        9242,
+        9243,
+        9244,
+        9245,
+        9246,
+        9247,
+        9248,
+        9249,
+        9250
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 166,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-166.jpg",
+      "sha256": "b5e059de1c931af07f1046655e330037209ac1300a64399d2d1b1f255df99bd6",
+      "frames": [
+        9251,
+        9252,
+        9253,
+        9254,
+        9255,
+        9256,
+        9257,
+        9258,
+        9259
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 167,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-167.jpg",
+      "sha256": "f8572fdff68736f93844338eda0f5016be7fb342bb27af039f64c9bc44f7a74f",
+      "frames": [
+        9260,
+        9261,
+        9262,
+        9263,
+        9264,
+        9265,
+        9266,
+        9267,
+        9268
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 168,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-168.jpg",
+      "sha256": "bf277dde93beee62398204ff9240af5a346854edc7d0d6a934474de5729ef0a3",
+      "frames": [
+        9269,
+        9270,
+        9271,
+        9272,
+        9273,
+        9274,
+        9275,
+        9276,
+        9277
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 169,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-169.jpg",
+      "sha256": "88c3fa9cf79c4bfe2233460d2fa825d75df52e6ffda4d6fb074be1a2b113e146",
+      "frames": [
+        9278,
+        9279,
+        9280,
+        9281,
+        9282,
+        9283,
+        9284,
+        9285,
+        9286
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 170,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-170.jpg",
+      "sha256": "321a77a54e9023dc1acfb62440d66d6c517ef9cad25c85b9771b1683d2cbc7bf",
+      "frames": [
+        9287,
+        9288,
+        9289,
+        9290,
+        9291,
+        9292,
+        9293,
+        9294,
+        9295
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 171,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-171.jpg",
+      "sha256": "38d862494ae60ea798de081f41a0235ecaccbe72ab29fceea1840c1fef04a7d7",
+      "frames": [
+        9296,
+        9297,
+        9298,
+        9299,
+        9300,
+        9301,
+        9302,
+        9303,
+        9304
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 172,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-172.jpg",
+      "sha256": "9371e8ca0153e6c218c798cbee90ee5503a6b1b594c548d35c81a73ef1e3cd25",
+      "frames": [
+        9305,
+        9306,
+        9307,
+        9308,
+        9309,
+        9310,
+        9311,
+        9312,
+        9313
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 173,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-173.jpg",
+      "sha256": "2f66d66a86c10c2cc65a5e11708aefc348e7e6b8570f92cadaefb209f93bf83f",
+      "frames": [
+        9314,
+        9315,
+        9316,
+        9317,
+        9318,
+        9319,
+        9320,
+        9321,
+        9322
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 174,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-174.jpg",
+      "sha256": "e8081709f9f234ce949a94f97c02af632846266173644cf00a3bf5f6ad6978a5",
+      "frames": [
+        9323,
+        9324,
+        9325,
+        9326,
+        9327,
+        9328,
+        9329,
+        9330,
+        9331
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 175,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-175.jpg",
+      "sha256": "6d776ebb51317a61252918e9d250f56453f3b0544ecfef4e26e921676ac59b75",
+      "frames": [
+        9332,
+        9333,
+        9334,
+        9335,
+        9336,
+        9337,
+        9338,
+        9339,
+        9340
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 176,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-176.jpg",
+      "sha256": "36e92cfbd6dbb8f621eb0d2b7ecc332c14766ae13c547f1a870799de7b0a62f7",
+      "frames": [
+        9341,
+        9342,
+        9343,
+        9344,
+        9345,
+        9346,
+        9347,
+        9348,
+        9349
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 177,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-177.jpg",
+      "sha256": "6f47b6d2f45996309d25d4aac0cb7c4d3067549d72fe16df11c06f00ec9ed8d5",
+      "frames": [
+        9350,
+        9351,
+        9352,
+        9353,
+        9354,
+        9355,
+        9356,
+        9357,
+        9358
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 178,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-178.jpg",
+      "sha256": "6c74d6d3dc8beaaa75e797d8c90d7ca65abd0061c79c19e2c21ee48847a7f486",
+      "frames": [
+        9359,
+        9360,
+        9361,
+        9362,
+        9363,
+        9364,
+        9365,
+        9366,
+        9367
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 179,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-179.jpg",
+      "sha256": "e1e1a3d01517665593274a369ad0f171ca8347e3421c0389622d9c7dac10db44",
+      "frames": [
+        9368,
+        9369,
+        9370,
+        9371,
+        9372,
+        9373,
+        9374,
+        9375,
+        9376
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 180,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-180.jpg",
+      "sha256": "9c3875efba8a275efc5bd954272f551ec161bf3f759014ddfb3f3552c7cf7633",
+      "frames": [
+        9377,
+        9378,
+        9379,
+        9380,
+        9381,
+        9382,
+        9383,
+        9384,
+        9385
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 181,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-181.jpg",
+      "sha256": "ea20462e7fe2a5f1821f525117699afa9b2e0fe50c151137f76242ba0eacae71",
+      "frames": [
+        9386,
+        9387,
+        9388,
+        9389,
+        9390,
+        9391,
+        9392,
+        9393,
+        9394
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 182,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-182.jpg",
+      "sha256": "5ff922c71de2851fb68963bbaae93ff606322115132c3244c939958215f77b96",
+      "frames": [
+        9395,
+        9396,
+        9397,
+        9398,
+        9399,
+        9400,
+        9401,
+        9402,
+        9403
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 183,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-183.jpg",
+      "sha256": "f1397470334869738a5023c1c2615d1380b8af1b258d20694e254e6700c698c5",
+      "frames": [
+        9404,
+        9405,
+        9406,
+        9407,
+        9408,
+        9409,
+        9410,
+        9411,
+        9412
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 184,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-184.jpg",
+      "sha256": "96f8e61daf60f1ff92f2966ecc73272e333d6be0217afbc69b4ffa60d12486fb",
+      "frames": [
+        9413,
+        9414,
+        9415,
+        9416,
+        9417,
+        9418,
+        9419,
+        9420,
+        9421
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 185,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-185.jpg",
+      "sha256": "ac86b38331d9fb2b089ab2b8684a889b4ee607632837c9fe9be0e5a1c5041bac",
+      "frames": [
+        9422,
+        9423,
+        10174,
+        10175,
+        10176,
+        10177,
+        10178,
+        10179,
+        10180
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 186,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-186.jpg",
+      "sha256": "a8e0a7cabcae9c67e65a1a057696cb78a3ef2d29cde9d85cb08c7a622c2d845e",
+      "frames": [
+        10181,
+        10182,
+        10183,
+        10184,
+        10185,
+        10186,
+        10187,
+        10188,
+        10189
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 187,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-187.jpg",
+      "sha256": "3a9fe0b246087e3835b56124f881ea9346a42eb2c79afe274c48af5d8d6962ba",
+      "frames": [
+        10190,
+        10191,
+        10192,
+        10193,
+        10194,
+        10195,
+        10196,
+        10197,
+        10198
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 188,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-188.jpg",
+      "sha256": "bde7d8c37dd7d6c695f3750403d5931671cf6590c9ada2e7ae8e8a3d8753e51b",
+      "frames": [
+        10199,
+        10200,
+        10201,
+        10202,
+        10203,
+        10204,
+        10591,
+        10592,
+        10593
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 189,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-189.jpg",
+      "sha256": "efde7bead22b66ac4ed47c0dfaf141fa4462de10151b8eb716ca78d183d4a78d",
+      "frames": [
+        10594,
+        10595,
+        10596,
+        10597,
+        10598,
+        10599,
+        10600,
+        10601,
+        10602
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 190,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-190.jpg",
+      "sha256": "51e53afeffa4e86e537af88929fcc4362521d6de92550b7417a36264c83ef69b",
+      "frames": [
+        10603,
+        10604,
+        10605,
+        10606,
+        10607,
+        10608,
+        10609,
+        10610,
+        10611
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 191,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-191.jpg",
+      "sha256": "96e14319987e2083072e24e3950748b19a37a39c6360d10211e9e6608e12d11a",
+      "frames": [
+        10612,
+        10613,
+        10614,
+        10615,
+        10616,
+        10617,
+        10618,
+        10619,
+        10620
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    },
+    {
+      "page": 192,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/sheets/sheet-192.jpg",
+      "sha256": "d0409b342c320f05c436e33fe3c2d5abe9ffda3400b3dfaed83f916eda5617da",
+      "frames": [
+        10621,
+        10622,
+        10623,
+        10624,
+        10625,
+        10626
+      ],
+      "actuallyDisplayed": true,
+      "actualSha256Recomputed": true
+    }
+  ],
+  "additionalOriginalSizeFrames": [
+    {
+      "frame": 9227,
+      "time": 307.56666666666666,
+      "file": "/private/tmp/ys/ys-chain-c1v1-camera-semantic-final-r20/actual-patch-review/frames/09227.png",
+      "sha256": "5207af0d983d4f8e0435f3d39a50d97f51520a58ea4ea01ac11aaa69896c7c8d",
+      "actuallyDisplayed": true
+    }
+  ],
+  "defects": [
+    {
+      "id": "C20-v2-old-score-fade",
+      "status": "Confirmed actual compositor defect; episode_c1 also independently confirmed and is preparing add-only complete-v3 correction",
+      "framesObserved": [
+        9226,
+        9227,
+        9228,
+        9229
+      ],
+      "timeRangeObserved": [
+        307.53333333333336,
+        307.6333333333333
+      ],
+      "page": 163,
+      "observation": "A faint upper-right2D HUD reads 人の手0−1機械 while the same frame's physical scoreboard clearly reads0−2. Actual full-size frame9227 confirms the mismatch. It is not excused as a fade or a numerical heuristic.",
+      "changeNotPerformedByReviewer": true
+    }
+  ],
+  "otherObservations": [
+    {
+      "pages": [
+        129,
+        146
+      ],
+      "observation": "Rows of prototype models remain visible; the left-to-right lowering sequence is visible. No unintended principal clipping or caption obstruction was found in these cells."
+    },
+    {
+      "pages": [
+        146,
+        176
+      ],
+      "observation": "The10000 display, whole machine and physical0−2 scoreboard are readable. とても高い appears above without hiding digits. Apart from the explicitly reported old-score HUD fade, no additional concrete defect was found."
+    },
+    {
+      "pages": [
+        176,
+        184
+      ],
+      "observation": "The brief full-face Kai reaction and entry/exit dissolves are present. This is the separately approved specified reaction, not a claim that its proxy metrics automatically pass."
+    },
+    {
+      "pages": [
+        184,
+        185
+      ],
+      "observation": "Following the reaction the physical scoreboard is absent and2D HUD1−2 is visible; no conflicting physical number is shown in those cells."
+    },
+    {
+      "pages": [
+        185,
+        188
+      ],
+      "observation": "Challenge display00999, +/− labels and progressively opened visible gear assembly are inside the frame. The right hand does not cover the number display."
+    },
+    {
+      "pages": [
+        188,
+        192
+      ],
+      "observation": "The father-desk bookend shows paper, pen, candle and machine together. Principal items are not cut off; background books/plant are not counted as principal dimensions."
+    }
+  ],
+  "newConcreteDefectsOtherThanReportedScoreFade": 0,
+  "unverified": [
+    "Final complete-v3 corrected PNGs",
+    "Final encoded MP4/AAC",
+    "Audio listening",
+    "Frames outside this assigned573-cell set",
+    "Physical40–70 measurements and original gate status are separate owner evidence, not inferred or waived by this receipt"
+  ],
+  "originalQualityNGPreserved": true,
+  "finalAcceptance": false
+}

@@ -1,0 +1,93 @@
+{
+  "id": "um-magnetic-force-01",
+  "stageId": "um-magnetic-force",
+  "stageTitle": "ローレンツ力",
+  "level": "middle",
+  "title": "ローレンツ力を出発点に、電荷の符号と円運動が成り立つ条件を判断する。",
+  "sourceIndices": [
+    0,
+    1
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "磁場の力の法則と、導く結果を分ける",
+      "narration": "ローレンツ力の法則とは、電荷が電場と磁場から受ける力を与える、実験に基づく法則です。この法則が、円運動などを導く出発点です。",
+      "equations": [],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.416666666666667,
+          "text": "ローレンツ力の法則とは、電荷が電場と磁場から受ける力を与える、実験に基づく法則です。"
+        },
+        {
+          "start": 6.416666666666667,
+          "end": 10.291666666666668,
+          "text": "この法則が、円運動などを導く出発点です。"
+        }
+      ],
+      "end": 10.435333333333332
+    },
+    {
+      "index": 1,
+      "heading": "なぜ磁場の力は「外積」で書かれるのだろう?",
+      "narration": "磁気力は、まず「速度ベクトルと磁場ベクトルの外積」を求め、それに電荷を掛けて計算します。電荷はベクトルではなく、プラスマイナスを持つ数です。マイナスの電荷なら、外積と力の向きは逆になります。",
+      "equations": [
+        "\\vec{F} = q\\vec{v}\\times\\vec{B}"
+      ],
+      "spatial": false,
+      "start": 10.435333333333332,
+      "captions": [
+        {
+          "start": 10.435333333333332,
+          "end": 17.5,
+          "text": "磁気力は、まず「速度ベクトルと磁場ベクトルの外積」を求め、それに電荷を掛けて計算します。"
+        },
+        {
+          "start": 17.5,
+          "end": 21.041666666666668,
+          "text": "電荷はベクトルではなく、プラスマイナスを持つ数です。"
+        },
+        {
+          "start": 21.041666666666668,
+          "end": 25.253666666666664,
+          "text": "マイナスの電荷なら、外積と力の向きは逆になります。"
+        }
+      ],
+      "end": 26.603666666666665
+    }
+  ],
+  "pronunciationFingerprint": "e31497e0f991fa0ea3da03704201bac5da5fe6a34400bbc1cb0f5cb08496a16d",
+  "duration": 26.603666666666665,
+  "renderKey": "94d251d9046f691d37e456e425cf869e18f4aabc8798c66ea56ddcd9228baeea",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 29.64533333333333,
+    "removedSeconds": 3.0416666666666643,
+    "cuts": [
+      {
+        "start": 6.416666666666667,
+        "end": 7.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.875,
+        "end": 12.208333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 19.416666666666668,
+        "end": 19.958333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.5,
+        "end": 24.083333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

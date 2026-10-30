@@ -1,0 +1,17 @@
+{
+  "name": "Physics Quest — 高校物理RPG",
+  "short_name": "PhysicsQuest",
+  "description": "高校物理を理解して楽しく攻略するRPG風学習ゲーム",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b1026",
+  "theme_color": "#0b1026",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

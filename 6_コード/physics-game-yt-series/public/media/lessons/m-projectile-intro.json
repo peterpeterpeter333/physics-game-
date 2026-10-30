@@ -1,0 +1,125 @@
+{
+  "id": "m-projectile-intro",
+  "stageId": "m-projectile",
+  "stageTitle": "放物運動",
+  "topicId": "m-projectile",
+  "level": "intro",
+  "family": "high-school-mechanics",
+  "title": "投げた球は、なぜ横へ進みながら落ちる？",
+  "condition": "空気抵抗なし。水平をx、上向きをyとする。重力加速度一定。",
+  "sourceScript": "m-projectile-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "横に投げた球に働く力は、下向きの重力だけです。",
+      "narration": "横に投げた球に働く力は、下向きの重力だけです。横向きの力はないので、横方向の速度はずっと変わりません。",
+      "visual": "球の運動を横の影と縦の影へ分け、力は縦だけに描く。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.125,
+          "text": "横に投げた球に働く力は、下向きの重力だけです。"
+        },
+        {
+          "start": 4.125,
+          "end": 8.625,
+          "text": "横向きの力はないので、横方向の速度はずっと変わりません。"
+        }
+      ],
+      "end": 8.718
+    },
+    {
+      "index": 1,
+      "heading": "縦方向は、重力で速度が変わっていきます。",
+      "narration": "縦方向は、重力で速度が変わっていきます。横は等速、縦は落下。この二つが同時に起きるので、道筋が曲がります。",
+      "visual": "等間隔の横位置と、間隔が増える縦位置を合成。",
+      "equation": "",
+      "symbols": "",
+      "start": 8.718,
+      "captions": [
+        {
+          "start": 8.718,
+          "end": 12.166666666666668,
+          "text": "縦方向は、重力で速度が変わっていきます。"
+        },
+        {
+          "start": 12.166666666666668,
+          "end": 14.458333333333336,
+          "text": "横は等速、縦は落下。"
+        },
+        {
+          "start": 14.458333333333336,
+          "end": 18.083333333333336,
+          "text": "この二つが同時に起きるので、道筋が曲がります。"
+        }
+      ],
+      "end": 18.218666666666664
+    },
+    {
+      "index": 2,
+      "heading": "横の運動と縦の運動は、同じ時計で進みます。",
+      "narration": "横の運動と縦の運動は、同じ時計で進みます。同じ時刻の横位置と縦位置を組にすれば、その瞬間の球の場所が分かります。",
+      "visual": "共通の時計を中心に置き、二つの影から点を復元。",
+      "equation": "",
+      "symbols": "",
+      "start": 18.218666666666664,
+      "captions": [
+        {
+          "start": 18.218666666666664,
+          "end": 22.083333333333336,
+          "text": "横の運動と縦の運動は、同じ時計で進みます。"
+        },
+        {
+          "start": 22.083333333333336,
+          "end": 27.591000000000005,
+          "text": "同じ時刻の横位置と縦位置を組にすれば、その瞬間の球の場所が分かります。"
+        }
+      ],
+      "end": 28.941000000000006
+    }
+  ],
+  "duration": 28.941000000000006,
+  "mediaDirectory": "lessons",
+  "renderKey": "3c7ff18badc69023afda4d9bee31367f3628d00ebb6352286b7329b25a74c679",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 33.816,
+    "removedSeconds": 4.8749999999999964,
+    "cuts": [
+      {
+        "start": 4.125,
+        "end": 4.708333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.208333333333334,
+        "end": 10.541666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 14.083333333333334,
+        "end": 14.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 16.916666666666668,
+        "end": 17.458333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.083333333333332,
+        "end": 22.416666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 26.416666666666668,
+        "end": 26.958333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

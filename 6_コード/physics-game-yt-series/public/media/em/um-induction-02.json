@@ -1,0 +1,140 @@
+{
+  "id": "um-induction-02",
+  "stageId": "um-induction",
+  "stageTitle": "ファラデーの法則を微分で",
+  "level": "middle",
+  "title": "ファラデーの法則から回転コイルと動く導線の起電力を計算する。",
+  "sourceIndices": [
+    3,
+    4,
+    5
+  ],
+  "scenes": [
+    {
+      "index": 3,
+      "heading": "発電機は、なぜ交流を出すのだろう?",
+      "narration": "回転するコイルでは、面の法線と磁場の間の角度が、時間とともに変わります。磁束は、その角度のコサインに比例します。磁束を時間で微分すると、サインの形で変わる起電力が求まります。",
+      "equations": [
+        "\\Phi=BA\\cos(\\omega t)",
+        "\\mathcal E=-N\\frac d{dt}[BA\\cos(\\omega t)]",
+        "\\mathcal E=-NBA\\frac d{dt}\\cos(\\omega t)",
+        "\\mathcal E=-NBA[-\\sin(\\omega t)]\\omega",
+        "\\mathcal E=NBA\\omega\\sin(\\omega t)"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.583333333333333,
+          "text": "回転するコイルでは、面の法線と磁場の間の角度が、時間とともに変わります。"
+        },
+        {
+          "start": 5.583333333333333,
+          "end": 8.75,
+          "text": "磁束は、その角度のコサインに比例します。"
+        },
+        {
+          "start": 8.75,
+          "end": 13.708333333333334,
+          "text": "磁束を時間で微分すると、サインの形で変わる起電力が求まります。"
+        }
+      ],
+      "end": 13.798333333333334
+    },
+    {
+      "index": 4,
+      "heading": "回転するコイルを微分する途中",
+      "narration": "回転するコイルの磁束を微分すると、コサインの微分のマイナスと、角速度の係数が出てきます。ファラデーの法則のマイナスと微分のマイナスが打ち消し合って、起電力の式になります。",
+      "equations": [
+        "\\mathcal E=-N\\frac{d}{dt}(BA\\cos\\omega t)=NBA\\omega\\sin\\omega t",
+        "\\Phi=BA\\cos(\\omega t)",
+        "\\mathcal E=-N\\frac d{dt}[BA\\cos(\\omega t)]",
+        "\\mathcal E=-NBA\\frac d{dt}\\cos(\\omega t)",
+        "\\mathcal E=-NBA[-\\sin(\\omega t)]\\omega",
+        "\\mathcal E=NBA\\omega\\sin(\\omega t)"
+      ],
+      "spatial": false,
+      "start": 13.798333333333334,
+      "captions": [
+        {
+          "start": 13.798333333333334,
+          "end": 20.16666666666667,
+          "text": "回転するコイルの磁束を微分すると、コサインの微分のマイナスと、角速度の係数が出てきます。"
+        },
+        {
+          "start": 20.16666666666667,
+          "end": 25.625,
+          "text": "ファラデーの法則のマイナスと微分のマイナスが打ち消し合って、起電力の式になります。"
+        }
+      ],
+      "end": 25.76866666666666
+    },
+    {
+      "index": 5,
+      "heading": "一定の磁場でも動く導線は起電力を生む",
+      "narration": "動く棒が作る回路の面積が変わる速さは、「棒の長さかける速さ」です。磁場が一定でも、この面積の変化が磁束を変え、起電力を生みます。",
+      "equations": [
+        "A=lx",
+        "\\Phi=Blx",
+        "\\frac{d\\Phi}{dt}=Bl\\frac{dx}{dt}=Blv",
+        "|\\mathcal E|=Blv"
+      ],
+      "spatial": false,
+      "start": 25.76866666666666,
+      "captions": [
+        {
+          "start": 25.76866666666666,
+          "end": 31.125,
+          "text": "動く棒が作る回路の面積が変わる速さは、「棒の長さかける速さ」です。"
+        },
+        {
+          "start": 31.125,
+          "end": 36.37833333333334,
+          "text": "磁場が一定でも、この面積の変化が磁束を変え、起電力を生みます。"
+        }
+      ],
+      "end": 37.72833333333333
+    }
+  ],
+  "duration": 37.72833333333333,
+  "renderKey": "4fa92e68d4050dc0fc271119d3857a49225736ebc428d49d7785047da25dcf06",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 42.519999999999996,
+    "removedSeconds": 4.791666666666664,
+    "cuts": [
+      {
+        "start": 5.583333333333333,
+        "end": 6.083333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.25,
+        "end": 9.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 14.708333333333334,
+        "end": 16.083333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 22.541666666666668,
+        "end": 23.125,
+        "reason": "sentence"
+      },
+      {
+        "start": 28.583333333333332,
+        "end": 29.875,
+        "reason": "scene"
+      },
+      {
+        "start": 35.375,
+        "end": 35.916666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

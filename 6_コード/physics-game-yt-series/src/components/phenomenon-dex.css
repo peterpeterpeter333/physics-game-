@@ -1,0 +1,17 @@
+.dex-summary{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 24px}
+.dex-summary span{padding:12px 16px;background:var(--card);border:1px solid var(--card-border);border-radius:12px;color:var(--text-dim)}
+.dex-summary strong{color:var(--cyan);font-size:22px}
+.dex-chapter{margin:0 0 10px;padding:12px;background:var(--card);border:1px solid var(--card-border);border-radius:12px}
+.dex-chapter summary{font-size:17px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;list-style:none}
+.dex-chapter summary::before{content:'▸';color:var(--cyan)}
+.dex-chapter[open] summary::before{content:'▾'}
+.dex-chapter summary small{margin-left:auto;color:var(--text-dim)}
+.dex-chapter .dex-items{margin-top:12px}
+.dex-items{display:grid;gap:8px}
+.dex-item{display:flex;align-items:center;gap:12px;text-align:left;width:100%;padding:13px 15px;background:var(--card);border:1px solid var(--card-border);border-radius:12px;color:var(--text);font:inherit;cursor:pointer}
+.dex-item:focus-visible{outline:2px solid var(--cyan)}
+.dex-symbol{color:var(--text-dim);font-size:22px;min-width:26px}
+.dex-item.studied .dex-symbol{color:var(--cyan)}
+.dex-item.mastered .dex-symbol{color:var(--green)}
+.dex-info{display:grid;gap:3px;flex:1}.dex-info small{color:var(--text-dim)}
+.dex-arrow{font-size:24px;color:var(--text-dim)}

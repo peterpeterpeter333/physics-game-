@@ -1,0 +1,601 @@
+{
+  "createdAt": "2026-10-24T16:11:58.694Z",
+  "reviewer": "/root/episode_e1",
+  "episode": "B-1",
+  "kind": "Scoped actual Blender raw visual review, not final encoded video",
+  "report": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/report.json",
+  "reportSha256": "7f75ac76028decf00ae1f83f082af3013ec5a47b06b86fbcfc8557e0ac8eb42d",
+  "helperSha256": "bbcd5af4926fbccde672c6601b11362d6f18a72619fc1fd1daa628e25c218e61",
+  "actualImages": [
+    {
+      "frame": 2460,
+      "time": 82,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/02460.jpg",
+      "sha256": "1a2d4bde15c28e37d43fb909f88ca5608c63854c802a399a4700e7eb79f2acd7",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 2838,
+      "time": 94.6,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/02838.jpg",
+      "sha256": "3dd512aac31a6a6bfa7b3bbf894f6f363ae995a46d3855ba7dd37708137f6fe0",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 2928,
+      "time": 97.6,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/02928.jpg",
+      "sha256": "2579029e5a9da47256939ab340f2332ecd85b7a3307c4aa56caaf3a7002a59cf",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 2935,
+      "time": 97.83333333333333,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/02935.jpg",
+      "sha256": "c042fb422f0b4096b4c8ec213591baa2c2bc0c4537b35299bac85c8a0da311c7",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 2958,
+      "time": 98.6,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/02958.jpg",
+      "sha256": "62cd09dafcf2bda8c61238e5481770ba201a52a0704ced81498696ee16bc044c",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 3450,
+      "time": 115,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/03450.jpg",
+      "sha256": "2f4644557bd7c83f19c4003c3b3894af11ea095c1f424dc041ffdd04b5d4a43b",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 3648,
+      "time": 121.6,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/03648.jpg",
+      "sha256": "17f1a6177ec09dc118f42b1a0a216444a9021368e2ee504c3c6a303c40031f39",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 3660,
+      "time": 122,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/03660.jpg",
+      "sha256": "cabaeae6312b7e9015a16e2ec54d624912d75f637ae8feede94a6dee942b3975",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 3672,
+      "time": 122.4,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/03672.jpg",
+      "sha256": "065d5119e8c8bacc127d2972385c7c463267e19e664e0953224bad6a4a08c8c4",
+      "actuallyViewed": false
+    },
+    {
+      "frame": 10583,
+      "time": 352.76666666666665,
+      "path": "/private/tmp/ys/ys-chain-b1v1-integrated-b6-v6-20261024/probe/blender/patch/10583.jpg",
+      "sha256": "60293c420d5c1829be3365878826a7f4f52b76eeb6098247824a76d2c8024ad3",
+      "actuallyViewed": false
+    }
+  ],
+  "physical": [
+    {
+      "frame": 2460,
+      "time": 82,
+      "cue": "rule:first",
+      "unchangedOtherObjectSourceFrame": 2460,
+      "operationTime": 82,
+      "pose": [
+        0.00866049495274359,
+        0.04,
+        0.06079022764682712,
+        0.5900184987421108,
+        65,
+        40,
+        40
+      ],
+      "box": [
+        183.9317262494355,
+        723.1475973947447,
+        896.1065577316717,
+        986.8183007880048
+      ],
+      "widthRatio": 0.6594211402613298,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": [
+        944.2505295036046,
+        762.2856607023947,
+        1369.654308362587,
+        1033.8763538808719
+      ],
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        1
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 2838,
+      "time": 94.6,
+      "cue": "rule:pull",
+      "unchangedOtherObjectSourceFrame": 2838,
+      "operationTime": 94.6,
+      "pose": [
+        -0.02052035734600377,
+        0.04,
+        0.03123186932546859,
+        0.7109636237828775,
+        65,
+        40,
+        40
+      ],
+      "box": [
+        255.18639293101987,
+        755.9357450766252,
+        774.6113273429048,
+        956.3313782417661
+      ],
+      "widthRatio": 0.4809490133443379,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": [
+        926.0511141871748,
+        758.8857594982836,
+        1307.6200949675006,
+        997.286915839569
+      ],
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        0,
+        0,
+        0
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 2928,
+      "time": 97.6,
+      "cue": "rule:pull",
+      "unchangedOtherObjectSourceFrame": 2928,
+      "operationTime": 97.6,
+      "pose": [
+        -0.02052035734600377,
+        0.04,
+        0.03123186932546859,
+        0.7109636237828775,
+        65,
+        40,
+        40
+      ],
+      "box": [
+        189.97466868052638,
+        745.0585932451962,
+        812.0612094997405,
+        976.4466578449327
+      ],
+      "widthRatio": 0.5760060563140871,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": [
+        926.0511141871748,
+        758.8857594982836,
+        1307.6200949675006,
+        997.286915839569
+      ],
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        0.028,
+        0,
+        0
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 2935,
+      "time": 97.83333333333333,
+      "cue": "rule:pull",
+      "unchangedOtherObjectSourceFrame": 2935,
+      "operationTime": 97.83333333333333,
+      "pose": [
+        -0.02052035734600377,
+        0.04,
+        0.03123186932546859,
+        0.7109636237828775,
+        65,
+        40,
+        40
+      ],
+      "box": [
+        200.66507283123758,
+        746.2691619031029,
+        807.8937758627901,
+        998.4372126187077
+      ],
+      "widthRatio": 0.5622487991032894,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": [
+        926.0511141871748,
+        758.8857594982836,
+        1307.6200949675006,
+        997.286915839569
+      ],
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        0.028,
+        3.437310793818,
+        0
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 2958,
+      "time": 98.6,
+      "cue": "rule:pull",
+      "unchangedOtherObjectSourceFrame": 2950,
+      "operationTime": 98.6,
+      "pose": [
+        -0.02052035734600377,
+        0.04,
+        0.03123186932546859,
+        0.7109636237828775,
+        65,
+        40,
+        40
+      ],
+      "box": [
+        189.97465935424913,
+        770.912694855062,
+        723.0276591119814,
+        976.4466610298437
+      ],
+      "widthRatio": 0.4935675923682707,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": [
+        926.0511141871748,
+        758.8857594982836,
+        1307.6200949675006,
+        997.286915839569
+      ],
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        0.028,
+        3.14159265359,
+        1
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 3450,
+      "time": 115,
+      "cue": "rule:north",
+      "unchangedOtherObjectSourceFrame": 3450,
+      "operationTime": 115,
+      "pose": [
+        -0.0009974200152905884,
+        -0.18,
+        0.10817857937924687,
+        0.47782587578301383,
+        -10,
+        40,
+        40
+      ],
+      "box": [
+        253.23774989671566,
+        408.20051431811873,
+        825.8981251321009,
+        1299.5977261077242
+      ],
+      "widthRatio": 0.5302410881809122,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": null,
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 3648,
+      "time": 121.6,
+      "cue": "terella:idea",
+      "unchangedOtherObjectSourceFrame": 3648,
+      "operationTime": 121.6,
+      "pose": [
+        0.0028854883310199904,
+        0.09586782925973272,
+        0.13365779059097702,
+        0.46705999531150527,
+        65,
+        25,
+        40
+      ],
+      "box": [
+        198.56215534314143,
+        403.2968754475398,
+        881.5762608012338,
+        1120.4122076494734
+      ],
+      "widthRatio": 0.6324204680167522,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": null,
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        0.027551667824
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 3660,
+      "time": 122,
+      "cue": "terella:idea",
+      "unchangedOtherObjectSourceFrame": 3660,
+      "operationTime": 122,
+      "pose": [
+        0.0028854883310199904,
+        0.09586782925973272,
+        0.13365779059097702,
+        0.46234938609795184,
+        65,
+        25,
+        40
+      ],
+      "box": [
+        203.52669274999522,
+        499.56050960345885,
+        876.6550294692707,
+        1208.9992460871945
+      ],
+      "widthRatio": 0.6232669784437735,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": null,
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        0.646799584491
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 3672,
+      "time": 122.4,
+      "cue": "terella:idea",
+      "unchangedOtherObjectSourceFrame": 3672,
+      "operationTime": 122.4,
+      "pose": [
+        0.0028854883310199904,
+        0.09586782925973272,
+        0.13365779059097702,
+        0.45486412796208575,
+        65,
+        25,
+        40
+      ],
+      "box": [
+        201.79245428874685,
+        539.9221790120212,
+        878.373945958408,
+        1255.1099671039237
+      ],
+      "widthRatio": 0.6264643441385751,
+      "criticalBox": null,
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": null,
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [
+        1
+      ],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    },
+    {
+      "frame": 10583,
+      "time": 352.76666666666665,
+      "cue": "last:needle",
+      "unchangedOtherObjectSourceFrame": 10583,
+      "operationTime": 352.76666666666665,
+      "pose": [
+        0.03624863900642143,
+        -0.18639161307079335,
+        0.1002880289038193,
+        0.5062388754084736,
+        -10,
+        35,
+        40
+      ],
+      "box": [
+        156.6325478279903,
+        432.45197275335096,
+        688.4549478184304,
+        1267.5816629848446
+      ],
+      "widthRatio": 0.49242814813929636,
+      "criticalBox": [
+        361.9536528488852,
+        219.79265732691405,
+        739.2855770796049,
+        512.289965969487
+      ],
+      "criticalVerticalBounds": [
+        210,
+        1120
+      ],
+      "criticalRoleCriterion": "original upper-midframe separate helper criterion",
+      "retiringSecondaryPropsBox": null,
+      "retiringSecondaryNotCountedAsPrincipal": true,
+      "evaluatedGeometry": true,
+      "phaseValues": [],
+      "loreGarlicWaitingDerivativeSourceFrame": null,
+      "principalExcludesSecondaryPropsAndHands": true,
+      "pass": true
+    }
+  ],
+  "status": "Actual integrated probes pending eyes",
+  "allGuardedStatesPass": true,
+  "allPatchFramesActuallyRendered": false,
+  "originalGateNGPreserved": true,
+  "protectionChecks": {
+    "runtimeBindingsUnchanged": true,
+    "protectedInputsUnchanged": true,
+    "allB3RawInventoryUnchanged": true,
+    "selectedB3ActualSourceBytesUnchanged": true,
+    "allSceneFilepathsAndExistingFilesUnchanged": true,
+    "dataUnchanged": true,
+    "visibilityQueueClosed": true
+  },
+  "scope": {
+    "indicesZeroBased": [
+      10,
+      19
+    ],
+    "allTenRawIndividuallyDisplayedAndViewed": true,
+    "actualFrameCount": 10,
+    "viewedFrames": [
+      2460,
+      2838,
+      2928,
+      2935,
+      2958,
+      3450,
+      3648,
+      3660,
+      3672,
+      10583
+    ],
+    "firstTenViewedByThisReviewer": false,
+    "method": "Each of the ten full-frame actual JPEGs was personally displayed with view_image, all image SHA256 independently recalculated against the pinned report.",
+    "lastProbeProvenance": "Requested final355s probe resolves to delivered held actual source10583/30 =352.76666666666665s; this receipt records the actual source rather than pretending a new355s raw was rendered."
+  },
+  "observations": [
+    {
+      "frames": [
+        2460
+      ],
+      "note": "Both complete bars and N/S lettering are clear; garlic remains visible separately at right. Retired nails are not visible in this frame; retirement into background/off-frame is not counted as principal width. The numeric retiringSecondaryPropsBox extends right of frame and is preserved in physical, not silently relabelled all-props-safe."
+    },
+    {
+      "frames": [
+        2838
+      ],
+      "note": "N/S near poles face each other with a small attachment gap; complete pair and garlic remain legible."
+    },
+    {
+      "frames": [
+        2928
+      ],
+      "note": "The facing near poles are N/N with a visible separation after recoil. The pink hand remains on the right bar, but the two relevant N letters are visible."
+    },
+    {
+      "frames": [
+        2935
+      ],
+      "note": "Left bar is visibly in the comic rotation stage, distinct from the recoil and final attachment states; no principal edge clipping."
+    },
+    {
+      "frames": [
+        2958
+      ],
+      "note": "Final near poles are S/N and visibly attached. Original hand is still withdrawing above the right bar, not falsely described as already absent, and does not obscure the pole letters."
+    },
+    {
+      "frames": [
+        3450
+      ],
+      "note": "Complete open compass/lid and both red/white half-needle shapes are visible; no actual edge clipping."
+    },
+    {
+      "frames": [
+        3648,
+        3660,
+        3672
+      ],
+      "note": "The rough rock clearly descends relative to the unchanged background across these three images; complete rough rock and stand base remain in frame. The small blue cap behind it is only partially visible, but is not the active explanation target in this descent close-up."
+    },
+    {
+      "frames": [
+        10583
+      ],
+      "note": "Closing open compass/lid and the distant miniature ship are within frame. Both half-needles remain visible. This is the held actual source image for the requested ending probe."
+    }
+  ],
+  "newActionableVisualDefects": [],
+  "defectsInThisReviewedScope": 0,
+  "scopeApprovedForParentCombination": true,
+  "all20TeamReviewClaim": false,
+  "all20PersonallyViewed": false,
+  "subtitlesOr2DCompositeVerified": false,
+  "earsVerified": false,
+  "originalInspectorNGPreserved": true,
+  "finalAcceptance": false,
+  "unverified": [
+    "First ten probe raw images are delegated to a separate reviewer and are not personally certified here.",
+    "These ten are raw3D probes, not caption/2D composites, full803 replacement outputs or final encoded MP4.",
+    "Continuous motion/audio timing was not watched/listened; only these phase samples were visually inspected.",
+    "No original7/7b/sparse numerical NG is waived by this scoped receipt.",
+    "Full803 render authorization requires root's explicit combination of both scoped approvals. No GPU or encoder was launched by this reviewer."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "hm-why-18",
+  "title": "手が外へ引かれるのに、球の力は内向き？",
+  "stageId": "m-circular",
+  "level": "intro",
+  "renderer": "insert",
+  "family": "high-school-mechanics",
+  "mediaDirectory": "inserts",
+  "revision": "20260924-full",
+  "scenes": [
+    {
+      "heading": "力を受ける物体を分ける",
+      "cues": [
+        {
+          "subtitle": "赤い矢印は、ひもが球を中心へ引く力です。",
+          "reading": "あかいやじるしは、ひもがたまをちゅうしんへひくちからです。",
+          "formula": [],
+          "operation": "力を受ける物体：球",
+          "diagram": "reaction",
+          "display": "diagram"
+        },
+        {
+          "subtitle": "紫の矢印は、ひもが手を外へ引く力です、手が感じる力と球が受ける力を分けて考えます。",
+          "reading": "むらさきのやじるしは、ひもがてをそとへひくちからです、てがかんじるちからとたまがうけるちからをわけてかんがえます。",
+          "formula": [],
+          "operation": "力を受ける物体：手 ／ ひもの質量は無視",
+          "diagram": "reaction",
+          "display": "diagram"
+        },
+        {
+          "subtitle": "球の運動方程式には、球が受ける力だけを入れるので、手が受ける力で打ち消すことはできません。",
+          "reading": "たまのうんどうほうていしきには、たまがうけるちからだけをいれるので、てがうけるちからでうちけすことはできません。",
+          "formula": [],
+          "operation": "球だけに注目：中心へ引く力が残る",
+          "diagram": "reaction",
+          "display": "diagram"
+        }
+      ],
+      "utterances": [
+        {
+          "subtitle": "赤い矢印は、ひもが球を中心へ引く力です。",
+          "reading": "あかいやじるしは、ひもがたまをちゅうしんへひくちからです。"
+        },
+        {
+          "subtitle": "紫の矢印は、ひもが手を外へ引く力です、手が感じる力と球が受ける力を分けて考えます。",
+          "reading": "むらさきのやじるしは、ひもがてをそとへひくちからです、てがかんじるちからとたまがうけるちからをわけてかんがえます。"
+        },
+        {
+          "subtitle": "球の運動方程式には、球が受ける力だけを入れるので、手が受ける力で打ち消すことはできません。",
+          "reading": "たまのうんどうほうていしきには、たまがうけるちからだけをいれるので、てがうけるちからでうちけすことはできません。"
+        }
+      ],
+      "narration": "赤い矢印は、ひもが球を中心へ引く力です。紫の矢印は、ひもが手を外へ引く力です、手が感じる力と球が受ける力を分けて考えます。球の運動方程式には、球が受ける力だけを入れるので、手が受ける力で打ち消すことはできません。",
+      "equation": "",
+      "symbols": "",
+      "visual": "circular-algebra-pilot",
+      "index": 0,
+      "sceneId": "hm-why-18-s1",
+      "mode": "thorough",
+      "start": 0,
+      "end": 17.296666666666667,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.448,
+          "text": "赤い矢印は、ひもが球を中心へ引く力です。"
+        },
+        {
+          "start": 3.488,
+          "end": 10.285333333333332,
+          "text": "紫の矢印は、ひもが手を外へ引く力です、手が感じる力と球が受ける力を分けて考えます。"
+        },
+        {
+          "start": 10.325333333333333,
+          "end": 16.706666666666667,
+          "text": "球の運動方程式には、球が受ける力だけを入れるので、手が受ける力で打ち消すことはできません。"
+        }
+      ]
+    }
+  ],
+  "kind": "insert",
+  "sourceDefinition": {
+    "heading": "【差し込み】hm-why-18 なぜ、中心向きの力が必要なの?(場面1の後)",
+    "context": "差し替え台本 第1弾 — 高校・力学(30本)\nm-circular-intro — 円を回る物体には、外向きの力が必要?\n【差し込み】hm-why-18 なぜ、中心向きの力が必要なの?(場面1の後)",
+    "source": {
+      "file": "差し替え台本_01_高校力学.md",
+      "line": 535
+    },
+    "parent": "m-circular-intro"
+  },
+  "visualPilot": "circular-algebra-v1",
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "duration": 17.296666666666667,
+  "animationFPS": 30,
+  "renderKey": "df81c22e9e7f34b6be98ba04cd1999f60ab4f980add5c4a8e1b90e7f777a21b3"
+}

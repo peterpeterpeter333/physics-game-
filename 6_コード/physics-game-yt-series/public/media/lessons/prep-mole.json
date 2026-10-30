@@ -1,0 +1,168 @@
+{
+  "id": "prep-mole",
+  "title": "粒子の個数を、モルで数える",
+  "level": "middle",
+  "before": [
+    "t-ideal-middle",
+    "t-ideal-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。この一モルあたりの個数を、アボガドロ定数と呼びます。",
+      "equation": "粒子数 N = 物質量 n × N_A",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1 mol",
+          "2 mol",
+          "3 mol"
+        ],
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "unit": "N_A個"
+      },
+      "index": 0,
+      "heading": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.416666666666667,
+          "text": "一モルは、粒子を約六・〇二かける十の二十三乗個、集めた量です。"
+        },
+        {
+          "start": 5.416666666666667,
+          "end": 9.375,
+          "text": "この一モルあたりの個数を、アボガドロ定数と呼びます。"
+        }
+      ],
+      "end": 9.507333333333335
+    },
+    {
+      "narration": "モルは、質量そのものではありません。一モルの質量をモル質量と呼び、物質の種類によって値が違います。",
+      "equation": "物質量 = 質量 ÷ モル質量",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "水1 mol",
+          "酸素分子1 mol"
+        ],
+        "values": [
+          18,
+          32
+        ],
+        "unit": "g（概数）"
+      },
+      "index": 1,
+      "heading": "モルは、質量そのものではありません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.507333333333335,
+      "captions": [
+        {
+          "start": 9.507333333333335,
+          "end": 12.333333333333336,
+          "text": "モルは、質量そのものではありません。"
+        },
+        {
+          "start": 12.333333333333336,
+          "end": 17.375000000000004,
+          "text": "一モルの質量をモル質量と呼び、物質の種類によって値が違います。"
+        }
+      ],
+      "end": 17.487333333333336
+    },
+    {
+      "narration": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。粒子の個数で書くときは、気体定数をアボガドロ定数で割った定数を使います。",
+      "equation": "pV = nRT = Nk_B T；k_B = R/N_A",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "絶対温度 T",
+        "yLabel": "pV（n一定）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 17.487333333333336,
+      "captions": [
+        {
+          "start": 17.487333333333336,
+          "end": 23.250000000000004,
+          "text": "理想気体の式は、圧力、体積、絶対温度、物質量を結びます。"
+        },
+        {
+          "start": 23.250000000000004,
+          "end": 28.77966666666667,
+          "text": "粒子の個数で書くときは、気体定数をアボガドロ定数で割った定数を使います。"
+        }
+      ],
+      "end": 30.129666666666672
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "粒子の個数を、モルで数える",
+  "topicId": "prep-mole",
+  "family": "prerequisites",
+  "sourceScript": "prep-mole",
+  "pronunciationFingerprint": "99b82a27ba65b7d0ecc78fb977e2799e6d65cf6a0493d2d161b6a899507802c3",
+  "duration": 30.129666666666672,
+  "mediaDirectory": "lessons",
+  "renderKey": "f105c95fe953f414b41936a32e4174352bcbe32282f3e3c3f931df181c5e6a91",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 34.42133333333334,
+    "removedSeconds": 4.291666666666664,
+    "cuts": [
+      {
+        "start": 5.416666666666667,
+        "end": 6.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.958333333333334,
+        "end": 11.291666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 14.25,
+        "end": 14.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 19.791666666666668,
+        "end": 21.125,
+        "reason": "scene"
+      },
+      {
+        "start": 27.0,
+        "end": 27.541666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

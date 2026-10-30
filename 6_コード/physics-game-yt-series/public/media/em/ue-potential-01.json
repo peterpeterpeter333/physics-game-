@@ -1,0 +1,203 @@
+{
+  "id": "ue-potential-01",
+  "stageId": "ue-potential",
+  "stageTitle": "電位: 電気の地形図",
+  "level": "advanced",
+  "title": "微小移動の仕事から電場を電位の傾きへ結ぶ ／ 点電荷の電位を積分しエネルギーへ戻す",
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "微小移動なら掛け算1回に戻る",
+      "narration": "この計算の目標は、電位から電場のエックス成分を求めることです。エックス方向に離れた二点の電位差を、二点の間隔で割ります。その間隔をゼロに近づけたものが、電位のエックス方向の偏微分です。",
+      "equations": [
+        "E_x=-\\frac{\\partial V}{\\partial x}",
+        "\\Delta V=V(x+\\Delta x,y,z)-V(x,y,z)=-\\int_x^{x+\\Delta x}E_x(s,y,z)\\,ds",
+        "\\frac{\\Delta V}{\\Delta x}=-\\frac1{\\Delta x}\\int_x^{x+\\Delta x}E_x(s,y,z)\\,ds",
+        "\\lim_{\\Delta x\\to0^+}\\frac{\\Delta V}{\\Delta x}=\\frac{\\partial V}{\\partial x}=-E_x(x,y,z)",
+        "dV=\\frac{\\partial V}{\\partial x}\\,dx=-E_x\\,dx",
+        "\\vec E=\\left(-\\frac{\\partial V}{\\partial x},-\\frac{\\partial V}{\\partial y},-\\frac{\\partial V}{\\partial z}\\right)=-\\nabla V"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.75,
+          "text": "この計算の目標は、電位から電場のエックス成分を求めることです。"
+        },
+        {
+          "start": 4.75,
+          "end": 9.0,
+          "text": "エックス方向に離れた二点の電位差を、二点の間隔で割ります。"
+        },
+        {
+          "start": 9.0,
+          "end": 13.916666666666664,
+          "text": "その間隔をゼロに近づけたものが、電位のエックス方向の偏微分です。"
+        }
+      ],
+      "end": 14.045666666666662
+    },
+    {
+      "index": 1,
+      "heading": "逆に、電位から電場はどう出るのだろう?",
+      "narration": "電場のエックス成分は、電位のエックス方向の傾きにマイナスを付けたものです。偏微分では、エックスを変えて調べる間、ワイとゼットは動かしません。電場は、電位が下がる向きを向きます。",
+      "equations": [
+        "E_x=-\\frac{\\partial V}{\\partial x}",
+        "E_x = -\\frac{\\partial V}{\\partial x}",
+        "E = V/d"
+      ],
+      "spatial": false,
+      "start": 14.045666666666662,
+      "captions": [
+        {
+          "start": 14.045666666666662,
+          "end": 19.208333333333332,
+          "text": "電場のエックス成分は、電位のエックス方向の傾きにマイナスを付けたものです。"
+        },
+        {
+          "start": 19.208333333333332,
+          "end": 24.083333333333332,
+          "text": "偏微分では、エックスを変えて調べる間、ワイとゼットは動かしません。"
+        },
+        {
+          "start": 24.083333333333332,
+          "end": 27.041666666666664,
+          "text": "電場は、電位が下がる向きを向きます。"
+        }
+      ],
+      "end": 27.131333333333334
+    },
+    {
+      "index": 2,
+      "heading": "等電位面と垂直になる理由",
+      "narration": "等電位面、つまり電位が同じ点をつないだ面に沿って動くと、電位差はゼロです。面に沿うどの向きに少し動いても、電場との内積がゼロになります。だから電場には面に沿う分がなく、電場は面に垂直です。",
+      "equations": [],
+      "spatial": false,
+      "start": 27.131333333333334,
+      "captions": [
+        {
+          "start": 27.131333333333334,
+          "end": 32.5,
+          "text": "等電位面、つまり電位が同じ点をつないだ面に沿って動くと、電位差はゼロです。"
+        },
+        {
+          "start": 32.5,
+          "end": 37.041666666666664,
+          "text": "面に沿うどの向きに少し動いても、電場との内積がゼロになります。"
+        },
+        {
+          "start": 37.041666666666664,
+          "end": 41.25,
+          "text": "だから電場には面に沿う分がなく、電場は面に垂直です。"
+        }
+      ],
+      "end": 41.35733333333334
+    },
+    {
+      "index": 3,
+      "heading": "点電荷の電位を無限遠から積分",
+      "narration": "点電荷の電位は、無限に遠い場所をゼロとして、電場を積分して求めます。「マイナス一割るアール」を微分すると、「一割るアール二乗」に戻ります。この関係を使って積分し、距離アールでの電位を求めます。",
+      "equations": [
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\left[-\\frac1s\\right]_{\\infty}^{r}=\\frac{Q}{4\\pi\\varepsilon_0r}",
+        "V(r)=-\\int_\\infty^r\\frac{Q}{4\\pi\\varepsilon_0s^2}ds",
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\int_\\infty^r s^{-2}ds",
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\left[-\\frac1s\\right]_\\infty^r",
+        "V(r)=-\\frac{Q}{4\\pi\\varepsilon_0}\\left(-\\frac1r-0\\right)",
+        "V(r)=\\frac{Q}{4\\pi\\varepsilon_0r}"
+      ],
+      "spatial": false,
+      "start": 41.35733333333334,
+      "captions": [
+        {
+          "start": 41.35733333333334,
+          "end": 46.5,
+          "text": "点電荷の電位は、無限に遠い場所をゼロとして、電場を積分して求めます。"
+        },
+        {
+          "start": 46.5,
+          "end": 51.54166666666667,
+          "text": "「マイナス一割るアール」を微分すると、「一割るアール二乗」に戻ります。"
+        },
+        {
+          "start": 51.54166666666667,
+          "end": 55.80333333333333,
+          "text": "この関係を使って積分し、距離アールでの電位を求めます。"
+        }
+      ],
+      "end": 57.153333333333336
+    }
+  ],
+  "pronunciationFingerprint": "65fe60120fe36058ea04bf4c984608dbb6b4e326067af7bc75c71324d9aaab93",
+  "duration": 57.153333333333336,
+  "renderKey": "87f7b87afbb10b988e09b09dd2278fc914bd3647a674b5e77a64a42767049ea3",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 65.65333333333334,
+    "removedSeconds": 8.5,
+    "cuts": [
+      {
+        "start": 4.75,
+        "end": 5.291666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.541666666666666,
+        "end": 10.125,
+        "reason": "sentence"
+      },
+      {
+        "start": 15.041666666666666,
+        "end": 16.375,
+        "reason": "scene"
+      },
+      {
+        "start": 21.666666666666668,
+        "end": 22.25,
+        "reason": "sentence"
+      },
+      {
+        "start": 27.125,
+        "end": 27.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 30.583333333333332,
+        "end": 31.958333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 37.416666666666664,
+        "end": 37.958333333333336,
+        "reason": "sentence"
+      },
+      {
+        "start": 42.5,
+        "end": 43.041666666666664,
+        "reason": "sentence"
+      },
+      {
+        "start": 47.25,
+        "end": 48.583333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 53.833333333333336,
+        "end": 54.416666666666664,
+        "reason": "sentence"
+      },
+      {
+        "start": 59.458333333333336,
+        "end": 60.041666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

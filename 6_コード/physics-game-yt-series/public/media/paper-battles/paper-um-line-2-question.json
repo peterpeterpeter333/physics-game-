@@ -1,0 +1,81 @@
+{
+  "id": "paper-um-line-2-question",
+  "problemId": "paper-um-line-2",
+  "kind": "question",
+  "title": "直角と逆向きの仕事",
+  "scenes": [
+    {
+      "narration": "物体には、右向きに五ニュートンの一定の力が働きます。物体は、まず上へ零点四メートル進みます。次に、物体は左へ零点二メートル進みます。",
+      "equation": "",
+      "index": 0,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.208333333333333,
+          "text": "物体には、右向きに五ニュートンの一定の力が働きます。"
+        },
+        {
+          "start": 4.208333333333333,
+          "end": 7.375,
+          "text": "物体は、まず上へ零点四メートル進みます。"
+        },
+        {
+          "start": 7.375,
+          "end": 11.041666666666666,
+          "text": "次に、物体は左へ零点二メートル進みます。"
+        }
+      ],
+      "end": 11.134666666666664
+    },
+    {
+      "narration": "この力が物体にした仕事の合計を求めてください。あなたは二つの区間の仕事を別々に計算してから、足し合わせます。",
+      "equation": "\\vec F=(5,0)\\,\\mathrm N",
+      "index": 1,
+      "start": 11.134666666666664,
+      "captions": [
+        {
+          "start": 11.134666666666664,
+          "end": 14.75,
+          "text": "この力が物体にした仕事の合計を求めてください。"
+        },
+        {
+          "start": 14.75,
+          "end": 19.568333333333328,
+          "text": "あなたは二つの区間の仕事を別々に計算してから、足し合わせます。"
+        }
+      ],
+      "end": 20.91833333333333
+    }
+  ],
+  "duration": 20.91833333333333,
+  "renderKey": "9c93ec08680e8fee6ae5e1efd63a7fc2fbfafefa7ffd7b65a88bc3bf9ce9882e",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 23.959999999999997,
+    "removedSeconds": 3.041666666666668,
+    "cuts": [
+      {
+        "start": 4.208333333333333,
+        "end": 4.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 7.916666666666667,
+        "end": 8.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 12.166666666666666,
+        "end": 13.541666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 17.25,
+        "end": 17.791666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

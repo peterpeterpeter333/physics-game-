@@ -1,0 +1,116 @@
+{
+  "id": "uc-shm-intro",
+  "stageId": "ui-pendulum",
+  "stageTitle": "振り子と振動の広がり",
+  "topicId": "uc-shm",
+  "level": "intro",
+  "family": "university-mechanics",
+  "title": "振り子を戻すのは、糸の張力？重力？",
+  "condition": "小振幅の振り子から始める。減衰と外力は必要に応じて別の項として加える。",
+  "sourceScript": "uc-shm-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "振り子の糸の張力は、糸に沿って支点へ向きます。",
+      "narration": "振り子の糸の張力は、糸に沿って支点へ向きます。振り子を円弧に沿って戻すのは、重力のうち、円に沿った向きの分です。",
+      "visual": "糸方向と接線方向の二軸へ重力を分ける。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.6666666666666665,
+          "text": "振り子の糸の張力は、糸に沿って支点へ向きます。"
+        },
+        {
+          "start": 3.6666666666666665,
+          "end": 8.833333333333334,
+          "text": "振り子を円弧に沿って戻すのは、重力のうち、円に沿った向きの分です。"
+        }
+      ],
+      "end": 8.953666666666667
+    },
+    {
+      "index": 1,
+      "heading": "いちばん下の点では、円に沿った向きの重力はゼロですが、おもりは速度を持っています。",
+      "narration": "いちばん下の点では、円に沿った向きの重力はゼロですが、おもりは速度を持っています。だからおもりは通り過ぎて、反対側へ上がります。",
+      "visual": "最下点で接線力0・速度最大を同時表示。",
+      "equation": "",
+      "symbols": "",
+      "start": 8.953666666666667,
+      "captions": [
+        {
+          "start": 8.953666666666667,
+          "end": 14.875,
+          "text": "いちばん下の点では、円に沿った向きの重力はゼロですが、おもりは速度を持っています。"
+        },
+        {
+          "start": 14.875,
+          "end": 18.541666666666668,
+          "text": "だからおもりは通り過ぎて、反対側へ上がります。"
+        }
+      ],
+      "end": 18.662666666666667
+    },
+    {
+      "index": 2,
+      "heading": "角度を小さくすると、戻す力の分は角度にほぼ比例します。",
+      "narration": "角度を小さくすると、戻す力の分は角度にほぼ比例します。この近似が、振り子とばねの振動をつなぎます。",
+      "visual": "sinθとθの違いを角度とともに拡大する。",
+      "equation": "",
+      "symbols": "",
+      "start": 18.662666666666667,
+      "captions": [
+        {
+          "start": 18.662666666666667,
+          "end": 23.041666666666668,
+          "text": "角度を小さくすると、戻す力の分は角度にほぼ比例します。"
+        },
+        {
+          "start": 23.041666666666668,
+          "end": 26.58533333333333,
+          "text": "この近似が、振り子とばねの振動をつなぎます。"
+        }
+      ],
+      "end": 27.935333333333332
+    }
+  ],
+  "pronunciationFingerprint": "63ff916ebb588af9003e55eb3ba8676643e807830c6d0bbf75130720e9a8bbb5",
+  "duration": 27.935333333333332,
+  "mediaDirectory": "lessons",
+  "renderKey": "5da7d179d9640dab4798b2163ac686ac2b74eb622ec8e5a6e3b286ec3c943920",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 32.352,
+    "removedSeconds": 4.416666666666664,
+    "cuts": [
+      {
+        "start": 3.6666666666666665,
+        "end": 4.291666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.458333333333334,
+        "end": 10.791666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 16.833333333333332,
+        "end": 17.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.041666666666668,
+        "end": 22.375,
+        "reason": "scene"
+      },
+      {
+        "start": 26.875,
+        "end": 27.458333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

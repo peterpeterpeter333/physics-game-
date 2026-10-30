@@ -1,0 +1,261 @@
+{
+  "id": "prep-force",
+  "title": "力・質量・合力を区別する",
+  "level": "intro",
+  "before": [
+    "m-force-intro",
+    "m-force-middle",
+    "m-freefall-intro",
+    "m-projectile-intro",
+    "ui-force-map-bridges-6",
+    "uc-rigid1-intro",
+    "uc-rigid1-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-advanced-followups-6",
+    "uc-rigid1-middle",
+    "uc-rigid1-advanced-followups-5",
+    "um-ode-intro",
+    "uc-drag-intro",
+    "uc-drag-middle",
+    "uc-drag-advanced",
+    "m-shm-intro",
+    "m-energy-advanced",
+    "uc-shm-intro",
+    "um-shm-ode-intro",
+    "uc-shm-middle",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1",
+    "um-shm-ode-middle",
+    "uc-frontier-advanced-followups-3",
+    "m-force-advanced",
+    "uc-newton-advanced",
+    "m-momentum-intro",
+    "m-momentum-middle",
+    "m-momentum-advanced",
+    "uc-momentum-intro",
+    "uc-momentum-middle",
+    "uc-momentum-advanced",
+    "a-photon-middle",
+    "a-bohr-intro",
+    "a-bohr-middle",
+    "t-ideal-advanced",
+    "m-energy-intro",
+    "m-freefall-advanced",
+    "ui-energy-change-bridges-8",
+    "uc-work-intro",
+    "e-field-advanced",
+    "e-capacitor-middle",
+    "a-bohr-advanced",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced",
+    "uc-potential-intro",
+    "uc-potential-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "力は、物体が別の物体から受ける押し引きです。力の矢印の向きは押す向き、矢印の長さは力の大きさを表します。",
+      "equation": "右向きの力 5 N；左向きの力 2 N",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            5,
+            0,
+            "押す力 5 N"
+          ],
+          [
+            -2,
+            0,
+            "摩擦力 2 N"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "力は、物体が別の物体から受ける押し引きです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.5416666666666665,
+          "text": "力は、物体が別の物体から受ける押し引きです。"
+        },
+        {
+          "start": 3.5416666666666665,
+          "end": 8.833333333333332,
+          "text": "力の矢印の向きは押す向き、矢印の長さは力の大きさを表します。"
+        }
+      ],
+      "end": 8.931333333333331
+    },
+    {
+      "narration": "一つの物体に働く力を全部足したものが、合力です。右をプラスとすると、この物体の合力は右向き三ニュートンです。",
+      "equation": "合力 = 5 − 2 = 3 N",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "合力 3 N"
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "一つの物体に働く力を全部足したものが、合力です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 8.931333333333331,
+      "captions": [
+        {
+          "start": 8.931333333333331,
+          "end": 13.041666666666666,
+          "text": "一つの物体に働く力を全部足したものが、合力です。"
+        },
+        {
+          "start": 13.041666666666666,
+          "end": 17.625,
+          "text": "右をプラスとすると、この物体の合力は右向き三ニュートンです。"
+        }
+      ],
+      "end": 17.756
+    },
+    {
+      "narration": "質量は、動きの変わりにくさを表す量で、単位はキログラムです。運動の法則では、合力を質量で割ったものが加速度になります。",
+      "equation": "加速度 = 合力 ÷ 質量 = 3 N ÷ 2 kg = 1.5 m/s²",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "質量1 kg",
+          "質量2 kg"
+        ],
+        "values": [
+          3,
+          1.5
+        ],
+        "unit": "m/s²"
+      },
+      "index": 2,
+      "heading": "質量は、動きの変わりにくさを表す量で、単位はキログラムです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 17.756,
+      "captions": [
+        {
+          "start": 17.756,
+          "end": 22.708333333333336,
+          "text": "質量は、動きの変わりにくさを表す量で、単位はキログラムです。"
+        },
+        {
+          "start": 22.708333333333336,
+          "end": 27.333333333333336,
+          "text": "運動の法則では、合力を質量で割ったものが加速度になります。"
+        }
+      ],
+      "end": 27.465000000000003
+    },
+    {
+      "narration": "合力がゼロなら、物体の速度は変わりません。地球が物体を引く力、重力は下向きの力で、質量とは別のものです。",
+      "equation": "重力の大きさ = 質量 × g；g ≈ 9.8 m/s²",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            -4,
+            "重力"
+          ],
+          [
+            0,
+            4,
+            "床からの力"
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "合力がゼロなら、物体の速度は変わりません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 27.465000000000003,
+      "captions": [
+        {
+          "start": 27.465000000000003,
+          "end": 30.875000000000007,
+          "text": "合力がゼロなら、物体の速度は変わりません。"
+        },
+        {
+          "start": 30.875000000000007,
+          "end": 36.518333333333345,
+          "text": "地球が物体を引く力、重力は下向きの力で、質量とは別のものです。"
+        }
+      ],
+      "end": 37.86833333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "力・質量・合力を区別する",
+  "topicId": "prep-force",
+  "family": "prerequisites",
+  "sourceScript": "prep-force",
+  "duration": 37.86833333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "207b9b992a4ca418733dcf45d987b2fafb8aa9384465a0c1b2050b54d2c701bb",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 44.16,
+    "removedSeconds": 6.291666666666657,
+    "cuts": [
+      {
+        "start": 3.5416666666666665,
+        "end": 4.125,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.416666666666666,
+        "end": 10.75,
+        "reason": "scene"
+      },
+      {
+        "start": 14.958333333333334,
+        "end": 15.541666666666666,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.125,
+        "end": 21.458333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 26.541666666666668,
+        "end": 27.083333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 31.708333333333332,
+        "end": 33.041666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 36.583333333333336,
+        "end": 37.166666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

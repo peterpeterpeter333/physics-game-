@@ -1,0 +1,249 @@
+{
+  "id": "prep-work-energy",
+  "title": "仕事から運動エネルギーへ",
+  "level": "intro",
+  "before": [
+    "m-energy-intro",
+    "m-freefall-advanced",
+    "ui-energy-change-bridges-8",
+    "uc-work-intro",
+    "e-field-advanced",
+    "e-capacitor-middle",
+    "a-bohr-advanced",
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced",
+    "um-dot-middle",
+    "ui-turning-motion-bridges-9",
+    "um-work-vector-bridges-12",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "ui-work-changing-bridges-7",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-dot-advanced",
+    "m-energy-advanced",
+    "uc-potential-intro",
+    "uc-potential-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "同じ向きに一定の力で物体を動かすと、仕事は「力かける動いた距離」です。二ニュートンで三メートル動かす仕事は、二かける三で六ジュールです。",
+      "equation": "仕事 W = Fd = 2 N × 3 m = 6 J",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "移動距離 [m]",
+        "yLabel": "力 [N]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "area": true
+      },
+      "index": 0,
+      "heading": "同じ向きに一定の力で物体を動かすと、仕事は「力かける動いた距離」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.041666666666667,
+          "text": "同じ向きに一定の力で物体を動かすと、仕事は「力かける動いた距離」です。"
+        },
+        {
+          "start": 6.041666666666667,
+          "end": 10.666666666666666,
+          "text": "二ニュートンで三メートル動かす仕事は、二かける三で六ジュールです。"
+        }
+      ],
+      "end": 10.826999999999998
+    },
+    {
+      "narration": "物体の合力をエフ、質量をエムとします。ここでは合力が一定の直線運動です。等加速度の式は、最後の速度の二乗引く最初の速度の二乗が、加速度かける変位の二倍に等しい、という関係です。",
+      "equation": "v² − v₀² = 2ad；a = F/m",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "移動距離 [m]",
+        "yLabel": "合力 [N]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "area": true
+      },
+      "index": 1,
+      "heading": "物体の合力をエフ、質量をエムとします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.826999999999998,
+      "captions": [
+        {
+          "start": 10.826999999999998,
+          "end": 14.041666666666666,
+          "text": "物体の合力をエフ、質量をエムとします。"
+        },
+        {
+          "start": 14.041666666666666,
+          "end": 16.875,
+          "text": "ここでは合力が一定の直線運動です。"
+        },
+        {
+          "start": 16.875,
+          "end": 25.125,
+          "text": "等加速度の式は、最後の速度の二乗引く最初の速度の二乗が、加速度かける変位の二倍に等しい、という関係です。"
+        }
+      ],
+      "end": 25.205333333333336
+    },
+    {
+      "narration": "この式の両辺に質量の半分を掛けます。質量かける加速度を合力に置き換えると、右辺は合力かける変位、つまり合力の仕事になります。左辺に出た、質量かける速さの二乗の半分を、運動エネルギーと呼びます。",
+      "equation": "Fd = mv²/2 − mv₀²/2；K = mv²/2",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "最初のK",
+          "合力の仕事",
+          "最後のK"
+        ],
+        "values": [
+          2,
+          6,
+          8
+        ],
+        "unit": "J"
+      },
+      "index": 2,
+      "heading": "この式の両辺に質量の半分を掛けます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 25.205333333333336,
+      "captions": [
+        {
+          "start": 25.205333333333336,
+          "end": 28.166666666666664,
+          "text": "この式の両辺に質量の半分を掛けます。"
+        },
+        {
+          "start": 28.166666666666664,
+          "end": 34.70833333333333,
+          "text": "質量かける加速度を合力に置き換えると、右辺は合力かける変位、つまり合力の仕事になります。"
+        },
+        {
+          "start": 34.70833333333333,
+          "end": 40.16666666666666,
+          "text": "左辺に出た、質量かける速さの二乗の半分を、運動エネルギーと呼びます。"
+        }
+      ],
+      "end": 40.30699999999999
+    },
+    {
+      "narration": "合力がした仕事は、運動エネルギーがどれだけ増えたかに等しくなります。速さが二倍になると、二の二乗で、運動エネルギーは四倍です。",
+      "equation": "W合力 = K後 − K前",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "速さ1",
+          "速さ2"
+        ],
+        "values": [
+          1,
+          4
+        ],
+        "unit": "Kの比"
+      },
+      "index": 3,
+      "heading": "合力がした仕事は、運動エネルギーがどれだけ増えたかに等しくなります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 40.30699999999999,
+      "captions": [
+        {
+          "start": 40.30699999999999,
+          "end": 45.16666666666666,
+          "text": "合力がした仕事は、運動エネルギーがどれだけ増えたかに等しくなります。"
+        },
+        {
+          "start": 45.16666666666666,
+          "end": 50.202999999999996,
+          "text": "速さが二倍になると、二の二乗で、運動エネルギーは四倍です。"
+        }
+      ],
+      "end": 51.553
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "仕事から運動エネルギーへ",
+  "topicId": "prep-work-energy",
+  "family": "prerequisites",
+  "sourceScript": "prep-work-energy",
+  "duration": 51.553,
+  "mediaDirectory": "lessons",
+  "renderKey": "274019348675b8f3707cada896545aef03c68a7b15e8def70d1fff38292a5cc9",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 58.928000000000004,
+    "removedSeconds": 7.375000000000007,
+    "cuts": [
+      {
+        "start": 6.041666666666667,
+        "end": 6.541666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 11.166666666666666,
+        "end": 12.458333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 15.833333333333334,
+        "end": 16.416666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 19.25,
+        "end": 19.833333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 28.083333333333332,
+        "end": 29.458333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 32.5,
+        "end": 33.083333333333336,
+        "reason": "sentence"
+      },
+      {
+        "start": 39.625,
+        "end": 40.208333333333336,
+        "reason": "sentence"
+      },
+      {
+        "start": 45.666666666666664,
+        "end": 46.958333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 51.958333333333336,
+        "end": 52.541666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "um-ode-intro",
+  "stageId": "ui-rate-equation",
+  "stageTitle": "変化の規則から時間の関数へ",
+  "topicId": "um-ode",
+  "level": "intro",
+  "family": "university-math",
+  "title": "微分方程式で、答えは数字ではなく何になる？",
+  "condition": "減衰率は一定。初期値と、ゼロ解の扱いを明示する。",
+  "sourceScript": "um-ode-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "残っている量が多いほど、一秒あたりに減る量も多い、という現象を考えます。",
+      "narration": "残っている量が多いほど、一秒あたりに減る量も多い、という現象を考えます。この規則が決めるのは、「その瞬間の減り方」だけです。",
+      "visual": "水量の比喩に依存せず、残量Nと減少率の比例を棒で表示。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.541666666666667,
+          "text": "残っている量が多いほど、一秒あたりに減る量も多い、という現象を考えます。"
+        },
+        {
+          "start": 5.541666666666667,
+          "end": 9.75,
+          "text": "この規則が決めるのは、「その瞬間の減り方」だけです。"
+        }
+      ],
+      "end": 9.902
+    },
+    {
+      "index": 1,
+      "heading": "微分方程式の答えは、数ではなく、「時刻ごとの量を返す関数」です。",
+      "narration": "微分方程式の答えは、数ではなく、「時刻ごとの量を返す関数」です。最初の量が違えば、同じ規則でも別の変化になります。",
+      "visual": "同じ比例率で初期値が二つ違う曲線を描く。",
+      "equation": "",
+      "symbols": "",
+      "start": 9.902,
+      "captions": [
+        {
+          "start": 9.902,
+          "end": 15.250000000000002,
+          "text": "微分方程式の答えは、数ではなく、「時刻ごとの量を返す関数」です。"
+        },
+        {
+          "start": 15.250000000000002,
+          "end": 19.583333333333336,
+          "text": "最初の量が違えば、同じ規則でも別の変化になります。"
+        }
+      ],
+      "end": 19.697333333333333
+    },
+    {
+      "index": 2,
+      "heading": "変化率の規則に加えて、最初の値も指定します。",
+      "narration": "変化率の規則に加えて、最初の値も指定します。規則と最初の値がそろって初めて、時間変化の曲線が一本に決まります。",
+      "visual": "規則と初期値の二枚の札を一つの曲線へ結ぶ。",
+      "equation": "",
+      "symbols": "",
+      "start": 19.697333333333333,
+      "captions": [
+        {
+          "start": 19.697333333333333,
+          "end": 23.5,
+          "text": "変化率の規則に加えて、最初の値も指定します。"
+        },
+        {
+          "start": 23.5,
+          "end": 28.942666666666668,
+          "text": "規則と最初の値がそろって初めて、時間変化の曲線が一本に決まります。"
+        }
+      ],
+      "end": 30.292666666666662
+    }
+  ],
+  "pronunciationFingerprint": "1e0c0e0ed58c5ab43deb55d9bbeeb628422af670b56e91fc63f32166b9599aff",
+  "duration": 30.292666666666662,
+  "mediaDirectory": "lessons",
+  "renderKey": "c3b9569d478163eba11246331532cbc1e63664fdad2f5f79716222216007aae3",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 34.70933333333333,
+    "removedSeconds": 4.416666666666671,
+    "cuts": [
+      {
+        "start": 5.541666666666667,
+        "end": 6.166666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.375,
+        "end": 11.666666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 17.166666666666668,
+        "end": 17.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 22.083333333333332,
+        "end": 23.416666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 27.333333333333332,
+        "end": 27.916666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

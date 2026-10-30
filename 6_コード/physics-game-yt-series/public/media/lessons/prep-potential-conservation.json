@@ -1,0 +1,215 @@
+{
+  "id": "prep-potential-conservation",
+  "title": "位置エネルギーと保存の条件",
+  "level": "advanced",
+  "before": [
+    "m-freefall-advanced",
+    "m-energy-advanced",
+    "uc-potential-intro",
+    "uc-potential-advanced",
+    "a-bohr-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "物体をゆっくり持ち上げるとき、持ち上げる力は重力とつり合っています。高さが二メートル増え、重力が十ニュートンなら、持ち上げる仕事は十かける二で二十ジュールです。",
+      "equation": "持ち上げる仕事 = mgΔh = 10 × 2 = 20 J",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "高さの増加 [m]",
+        "yLabel": "持ち上げる力 [N]",
+        "points": [
+          [
+            0,
+            10
+          ],
+          [
+            2,
+            10
+          ]
+        ],
+        "area": true
+      },
+      "index": 0,
+      "heading": "物体をゆっくり持ち上げるとき、持ち上げる力は重力とつり合っています。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.791666666666667,
+          "text": "物体をゆっくり持ち上げるとき、持ち上げる力は重力とつり合っています。"
+        },
+        {
+          "start": 4.791666666666667,
+          "end": 11.041666666666668,
+          "text": "高さが二メートル増え、重力が十ニュートンなら、持ち上げる仕事は十かける二で二十ジュールです。"
+        }
+      ],
+      "end": 11.140333333333334
+    },
+    {
+      "narration": "この仕事のぶんを、重力の位置エネルギーの増加とします。高さの基準をゼロと決めると、位置エネルギーは「質量かける重力加速度かける高さ」です。",
+      "equation": "ΔU = mgΔh；基準で U = 0 → U = mgh",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "高さ [m]",
+        "yLabel": "位置エネルギー [J]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            20
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "この仕事のぶんを、重力の位置エネルギーの増加とします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.140333333333334,
+      "captions": [
+        {
+          "start": 11.140333333333334,
+          "end": 15.083333333333336,
+          "text": "この仕事のぶんを、重力の位置エネルギーの増加とします。"
+        },
+        {
+          "start": 15.083333333333336,
+          "end": 21.708333333333336,
+          "text": "高さの基準をゼロと決めると、位置エネルギーは「質量かける重力加速度かける高さ」です。"
+        }
+      ],
+      "end": 21.821
+    },
+    {
+      "narration": "落ちている間は、重力がプラスの仕事をして、運動エネルギーを増やします。そのぶん位置エネルギーが減るので、二つの合計は変わりません。",
+      "equation": "重力だけの仕事なら ΔK = −ΔU → K + U = 一定",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "位置エネルギー",
+          "運動エネルギー"
+        ],
+        "values": [
+          20,
+          0
+        ],
+        "unit": "J",
+        "transfer": true
+      },
+      "index": 2,
+      "heading": "落ちている間は、重力がプラスの仕事をして、運動エネルギーを増やします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 21.821,
+      "captions": [
+        {
+          "start": 21.821,
+          "end": 27.083333333333336,
+          "text": "落ちている間は、重力がプラスの仕事をして、運動エネルギーを増やします。"
+        },
+        {
+          "start": 27.083333333333336,
+          "end": 31.416666666666668,
+          "text": "そのぶん位置エネルギーが減るので、二つの合計は変わりません。"
+        }
+      ],
+      "end": 31.54066666666667
+    },
+    {
+      "narration": "摩擦や空気抵抗が仕事をすると、運動エネルギーと位置エネルギーの合計は保たれません。問題では、どの力が仕事をしているかを先に確かめます。",
+      "equation": "保存を使う前に、摩擦・空気抵抗の有無を確認",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "最初のK+U",
+          "最後のK+U",
+          "熱などへ"
+        ],
+        "values": [
+          20,
+          15,
+          5
+        ],
+        "unit": "J"
+      },
+      "index": 3,
+      "heading": "摩擦や空気抵抗が仕事をすると、運動エネルギーと位置エネルギーの合計は保たれません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 31.54066666666667,
+      "captions": [
+        {
+          "start": 31.54066666666667,
+          "end": 37.5,
+          "text": "摩擦や空気抵抗が仕事をすると、運動エネルギーと位置エネルギーの合計は保たれません。"
+        },
+        {
+          "start": 37.5,
+          "end": 41.83033333333334,
+          "text": "問題では、どの力が仕事をしているかを先に確かめます。"
+        }
+      ],
+      "end": 43.180333333333344
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "位置エネルギーと保存の条件",
+  "topicId": "prep-potential-conservation",
+  "family": "prerequisites",
+  "sourceScript": "prep-potential-conservation",
+  "duration": 43.180333333333344,
+  "mediaDirectory": "lessons",
+  "renderKey": "485b2950ee43bf6e61e48e8cc35d7f2fd0006b009734dbe159d91c8fa74b698f",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 49.47200000000001,
+    "removedSeconds": 6.291666666666664,
+    "cuts": [
+      {
+        "start": 4.791666666666667,
+        "end": 5.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 11.625,
+        "end": 13.0,
+        "reason": "scene"
+      },
+      {
+        "start": 17.041666666666668,
+        "end": 17.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.25,
+        "end": 25.583333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 30.958333333333332,
+        "end": 31.541666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 35.875,
+        "end": 37.166666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 43.25,
+        "end": 43.791666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

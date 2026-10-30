@@ -1,0 +1,2661 @@
+{
+  "videos": 332,
+  "media": [
+    {
+      "id": "m1-velocity-intro",
+      "file": "public/media/lessons/m1-velocity-intro.mp4",
+      "sha256": "ae37190d175ad679061538dcf03954640401d5d83b4d48cd2c93da043b9f4870",
+      "bytes": 774782,
+      "duration": 40.42400000000001,
+      "renderKey": "b74f01abbcbfe888308e804e0c5e1904056b07bdad27fd0d25d3f360324869b1"
+    },
+    {
+      "id": "m1-velocity-middle",
+      "file": "public/media/lessons/m1-velocity-middle.mp4",
+      "sha256": "288dc20c6e15e41b66d9915f599fd056e0e7a45d153a2caaefb64a9bde5ada43",
+      "bytes": 659557,
+      "duration": 42.728,
+      "renderKey": "28922a6ab6c55a9c86cd93d214be32a49b5283b4efd4d4b4f7a668e91f2dc8b5"
+    },
+    {
+      "id": "m1-velocity-advanced",
+      "file": "public/media/lessons/m1-velocity-advanced.mp4",
+      "sha256": "67688889e436ba0a9e5596b304bedee39e46f833f74e9081fcdc91a67899389e",
+      "bytes": 724852,
+      "duration": 37.592,
+      "renderKey": "0ae70c1bb528cda815f7780afb971b054db1fcff000730bd5eb2fbde3f58cb94"
+    },
+    {
+      "id": "m1-acceleration-intro",
+      "file": "public/media/lessons/m1-acceleration-intro.mp4",
+      "sha256": "93673ec4aa9b2db4460e565f06732bb8dc8c996d139c5d1a32b355c5d556f912",
+      "bytes": 625907,
+      "duration": 40.41866666666666,
+      "renderKey": "0593c00a768ed7d09d26bc5845760da6b6ab372668ff6bd1110dcc2dbacf4ae7"
+    },
+    {
+      "id": "m1-acceleration-middle",
+      "file": "public/media/lessons/m1-acceleration-middle.mp4",
+      "sha256": "0500db4ee45fcb47d00f6d72ab8642b3da883cc138d93870ca4056390df46f77",
+      "bytes": 660145,
+      "duration": 37.272,
+      "renderKey": "b4e81483d5c96e30944eddbc5466c9175365425a32b00eb81e9eed62f9a9120b"
+    },
+    {
+      "id": "m1-acceleration-advanced",
+      "file": "public/media/lessons/m1-acceleration-advanced.mp4",
+      "sha256": "bbc84ca921e72b69200461d50b871c38a998d24855588d68ac08ada1c3d28d3b",
+      "bytes": 806190,
+      "duration": 40.496,
+      "renderKey": "9560cf81cf67330ac144d25dbc6427eace79bda9e973e4e1ac5d8a2c1aa8e1e8"
+    },
+    {
+      "id": "m1-uniform-accel-intro",
+      "file": "public/media/lessons/m1-uniform-accel-intro.mp4",
+      "sha256": "496a6e959e6d4aa344b67b4acd076d5c578b65f9cc23599b393878663234928f",
+      "bytes": 624227,
+      "duration": 32.416,
+      "renderKey": "76edfde4b3b3e59e34f8493aaed6588e3ef51b38e237d7c47e6079d3864f59fd"
+    },
+    {
+      "id": "m1-uniform-accel-middle",
+      "file": "public/media/lessons/m1-uniform-accel-middle.mp4",
+      "sha256": "b247ab1831b8122ebb42a7ce507a9e6f7e443203c70c60349ced44f9af4559d6",
+      "bytes": 730431,
+      "duration": 38.94666666666666,
+      "renderKey": "e864663e5341a8a11693faeec06d3f6ec75915e34b7d72854d57e3619917b686"
+    },
+    {
+      "id": "m1-uniform-accel-advanced",
+      "file": "public/media/lessons/m1-uniform-accel-advanced.mp4",
+      "sha256": "37af857b1e50a12e695f717053765c80a2cca9400fbfa9f80be2dd5e360a801f",
+      "bytes": 872901,
+      "duration": 43.04266666666667,
+      "renderKey": "7ca3ca7c27c15c40d32089125dc3a667dfc8631b0c3ed503d20f88903487ec1a"
+    },
+    {
+      "id": "m-freefall-intro",
+      "file": "public/media/lessons/m-freefall-intro.mp4",
+      "sha256": "587f883e727033114ebee72caeeba6fb02ec01f406037430bbeaf2329bc3aea9",
+      "bytes": 643390,
+      "duration": 32.216,
+      "renderKey": "f71a5533da595946bc7ac2c046a9326012ad269b0cc4be4a1e354e74e229487c"
+    },
+    {
+      "id": "m-freefall-middle",
+      "file": "public/media/lessons/m-freefall-middle.mp4",
+      "sha256": "71892b30e5b2c287637733f04f349e10b6bf7fc10f0046225bf0aedbaca24d55",
+      "bytes": 811800,
+      "duration": 35.181333333333335,
+      "renderKey": "a5f2db0f11e5aea1696923db66064a657e962b8a192d029827a2ef6ad7a9845d"
+    },
+    {
+      "id": "m-freefall-advanced",
+      "file": "public/media/lessons/m-freefall-advanced.mp4",
+      "sha256": "d8dee3f71775b54ac6cc98cbf17b36ceb4d6b1f2fc2c25fcb0220858a4ae37dc",
+      "bytes": 847986,
+      "duration": 36.92266666666667,
+      "renderKey": "4f2725ceda47d205c13a69f78fed2739f7a6e32a2f8caef01fb7189269383de5"
+    },
+    {
+      "id": "m-projectile-intro",
+      "file": "public/media/lessons/m-projectile-intro.mp4",
+      "sha256": "873715d42f130fc958f62f28f42f17b49538cebe51a7f9d31e6f07a92a5d80b7",
+      "bytes": 849257,
+      "duration": 33.816,
+      "renderKey": "4d48b890d3c56ed486502648d766572e7a8d7bf9bff4dd8490005af35c7cedda"
+    },
+    {
+      "id": "m-projectile-middle",
+      "file": "public/media/lessons/m-projectile-middle.mp4",
+      "sha256": "f4b6ccaebedce66fa02be4c2baa77e5f0f95ae66d43ad043f432684a19e6f9de",
+      "bytes": 1012458,
+      "duration": 41.04,
+      "renderKey": "3d45f06c6c7c77f114355c0c9d63c5dcf0ab8f7f1f1e670b061d80d5158e64b9"
+    },
+    {
+      "id": "m-projectile-advanced",
+      "file": "public/media/lessons/m-projectile-advanced.mp4",
+      "sha256": "c070948001c36a97053894c5b87066e8243950bc405f028fa3355c7faabea2f2",
+      "bytes": 1026317,
+      "duration": 39.394666666666666,
+      "renderKey": "a566591d8e7500e9c539e1768a7cd92d51fdda11225f93543ad7effef3842917"
+    },
+    {
+      "id": "m-force-intro",
+      "file": "public/media/lessons/m-force-intro.mp4",
+      "sha256": "1a37791ee42701971c633e4c2659c5c33c6aba8a85ab3a069ee47dfdf0a29798",
+      "bytes": 638135,
+      "duration": 34.093333333333334,
+      "renderKey": "0120181962cb88baf713c3ffac5e22bcc0df3f6ac541b97715f2bd9c0340e8f7"
+    },
+    {
+      "id": "m-force-middle",
+      "file": "public/media/lessons/m-force-middle.mp4",
+      "sha256": "dad6ef6309e2fc830bb3e770f7dbe456cba8b92764e7fecfc95a2c1a1ae9191e",
+      "bytes": 797808,
+      "duration": 40.61066666666666,
+      "renderKey": "341e24d6b8ab21728901bda35fbf3381d56eed496a620e55b5808da036072103"
+    },
+    {
+      "id": "m-force-advanced",
+      "file": "public/media/lessons/m-force-advanced.mp4",
+      "sha256": "e6bbf39c8acd20ab356cad8cc4954c11434686259c0f5ea29630e3c6a62ca876",
+      "bytes": 579778,
+      "duration": 35.669333333333334,
+      "renderKey": "e9aa65b31ffec065becbd62c8cce2cd9f855e576cb823cb6bc12e1706dd55651"
+    },
+    {
+      "id": "m-energy-intro",
+      "file": "public/media/lessons/m-energy-intro.mp4",
+      "sha256": "95bf8038e5d560bd14b83781889e9b8be060c3eb9f80bdf7d28c47ce368822ed",
+      "bytes": 650464,
+      "duration": 35.32,
+      "renderKey": "2c975385aaae0d6ca30eb14809a01b4737767aac2f63e5de025922e82bc6e8e7"
+    },
+    {
+      "id": "m-energy-middle",
+      "file": "public/media/lessons/m-energy-middle.mp4",
+      "sha256": "148b05a244850790bed3358122d1721338b509a8ec7fd6f849fcb9c281236b32",
+      "bytes": 732281,
+      "duration": 37.656000000000006,
+      "renderKey": "c2993b0c86ae696f03770a1c82694de386c8499a1b8442a8c09d9108f8661e61"
+    },
+    {
+      "id": "m-energy-advanced",
+      "file": "public/media/lessons/m-energy-advanced.mp4",
+      "sha256": "f2a7fd86cdc07c40b4c9bcc0c6f99e02977579db00dd39d9aab152a076d71c41",
+      "bytes": 603016,
+      "duration": 34.656000000000006,
+      "renderKey": "f97da064b45a402286881758f8f6c45fe2eb71200626a640524c7bcbb468798d"
+    },
+    {
+      "id": "m-momentum-intro",
+      "file": "public/media/lessons/m-momentum-intro.mp4",
+      "sha256": "83ebafb1ffdcf7d09ea8811b00e3a7dc21c7de7f56dd784985443c1a727ff6c6",
+      "bytes": 640275,
+      "duration": 35.629333333333335,
+      "renderKey": "222aa26d7d897273c336468495950f43a61d33fa2a9dae333bb9d5ddc015afb3"
+    },
+    {
+      "id": "m-momentum-middle",
+      "file": "public/media/lessons/m-momentum-middle.mp4",
+      "sha256": "8136ec49eb205683589465c16f4fc4b318b5695499d037cd01b77585d2fd2324",
+      "bytes": 606307,
+      "duration": 36.57866666666666,
+      "renderKey": "8dd1f3286fb61f7ae1255afa2d1f3c8174992d9fd0165d1093f165bfd48d75bf"
+    },
+    {
+      "id": "m-momentum-advanced",
+      "file": "public/media/lessons/m-momentum-advanced.mp4",
+      "sha256": "4411a587d314b4ef90ba209fda4e020de30ed1a9654735f248434bafec1060ba",
+      "bytes": 637797,
+      "duration": 32.488,
+      "renderKey": "91155c58a80d16ecf7499c6e2bbe7309a6b81e85bc161b2e050e5280f9ee1fa8"
+    },
+    {
+      "id": "m-circular-intro",
+      "file": "public/media/lessons/m-circular-intro.mp4",
+      "sha256": "780007d3812bac648ab3298ee3ae8ce3840f6df71b977a06ccaee5b01f88d2ab",
+      "bytes": 775259,
+      "duration": 35.55466666666667,
+      "renderKey": "025f8bde76de8e19689a62378c95754d8964782520c8919bf0362f830c267580"
+    },
+    {
+      "id": "m-circular-middle",
+      "file": "public/media/lessons/m-circular-middle.mp4",
+      "sha256": "16a4b4fa906e717819dd7f44b6a9bb2d37e05fb6219de14a9b9a4acea154cc36",
+      "bytes": 830687,
+      "duration": 36.757333333333335,
+      "renderKey": "5631adef78d29d8b0a51fe097c2983b45096bd49e2446a485b17f630da80e04a"
+    },
+    {
+      "id": "m-circular-advanced",
+      "file": "public/media/lessons/m-circular-advanced.mp4",
+      "sha256": "3fd3f5797a4d17fb59a660e7d001e30def35291849da45c1fde8a7199d602dd3",
+      "bytes": 788569,
+      "duration": 41.59466666666667,
+      "renderKey": "4e4d2d65cff831859c173a9e8316f6532f9c829792f5e3e826d629aa8ad2d9cc"
+    },
+    {
+      "id": "m-shm-intro",
+      "file": "public/media/lessons/m-shm-intro.mp4",
+      "sha256": "26feeb443844c38f72b50facfa392d3722333a41fdd5eccb928b0e3aba49dccd",
+      "bytes": 736687,
+      "duration": 30.701333333333334,
+      "renderKey": "33d914e4bdec7df3db4546cc55a0fd8c90725edc2082ab8e5a4a73c5a1fcf5c2"
+    },
+    {
+      "id": "m-shm-middle",
+      "file": "public/media/lessons/m-shm-middle.mp4",
+      "sha256": "404345a10859b59c863625666fe2ef9d81f82fcfa94f642c6aae68719ec7ff88",
+      "bytes": 1098774,
+      "duration": 43.482666666666674,
+      "renderKey": "9ff46c4dcfe7e2f317cbb29b2e17fb76935cf99baa0dac80a01ab0230e279c8d"
+    },
+    {
+      "id": "m-shm-advanced",
+      "file": "public/media/lessons/m-shm-advanced.mp4",
+      "sha256": "1fcbf5d12b6c7b0a70d5f867d3a7a074832fa9ee4333d030e2a78c5d007e0458",
+      "bytes": 1150122,
+      "duration": 45.36000000000001,
+      "renderKey": "9a45e4252e5f2bb1ec280b798cb5b6a984a24ebe916766dceeef947077e21288"
+    },
+    {
+      "id": "t-heat-intro",
+      "file": "public/media/lessons/t-heat-intro.mp4",
+      "sha256": "6baee33eca02ae782c209143d65c675b8a8eb76b36468392175f6f1e88aa5851",
+      "bytes": 557635,
+      "duration": 35.093333333333334,
+      "renderKey": "595df668a978560aa0edce96040d1531ee11483347cf7241e19b47733a1ad2f2"
+    },
+    {
+      "id": "t-heat-middle",
+      "file": "public/media/lessons/t-heat-middle.mp4",
+      "sha256": "64eca95ed6ec19429aedcc6204dc3a683c913a9270c545789b9431ff143bb619",
+      "bytes": 574283,
+      "duration": 37.218666666666664,
+      "renderKey": "6e01aa6fd64ae59047ec6a7deb7c2db643874a4d5717fec5d727d1218b968932"
+    },
+    {
+      "id": "t-heat-advanced",
+      "file": "public/media/lessons/t-heat-advanced.mp4",
+      "sha256": "6cc2bfb23b77b9d568521c6b5037aeb6c7112397712db8a0c93b9df3facab172",
+      "bytes": 776008,
+      "duration": 42.839999999999996,
+      "renderKey": "fd3c82e16ff8c265f4bd188861b0fb5611f1f4e056be6be6ac501a6fcd6ac9b9"
+    },
+    {
+      "id": "t-gas-intro",
+      "file": "public/media/lessons/t-gas-intro.mp4",
+      "sha256": "c779d034160373e0232224bd99e948f8c7e464176b7fdf3443640b0aa043c98d",
+      "bytes": 861728,
+      "duration": 34.080000000000005,
+      "renderKey": "6eb60ded00816cbf7e6a9accfecb8a5be6982abe6f78b0a7a6b4a9f0ad7d53f3"
+    },
+    {
+      "id": "t-gas-middle",
+      "file": "public/media/lessons/t-gas-middle.mp4",
+      "sha256": "fd162038c57ddf6f05e97dc06e1e6ae968a405fe96ff6290c8f2e2cd0b4a7246",
+      "bytes": 630984,
+      "duration": 38.66933333333334,
+      "renderKey": "9a8b053fac41943e1efb9abf23f23462cd5365b3de2caed1b0a5cba5bb9e9d1a"
+    },
+    {
+      "id": "t-gas-advanced",
+      "file": "public/media/lessons/t-gas-advanced.mp4",
+      "sha256": "01d844f3ee689df0d9a8c93085ae82d610e2bfde3ae08c2d98074c2e7642129a",
+      "bytes": 944128,
+      "duration": 38.602666666666664,
+      "renderKey": "64a53536f94e3b487f8ac2d7aefbe621ef7d7d04daa7aa17c9d661b0f742d0be"
+    },
+    {
+      "id": "t-ideal-intro",
+      "file": "public/media/lessons/t-ideal-intro.mp4",
+      "sha256": "780236c5205ab8893b6093d9b588892ac5e5b8058459e21dbf8fa726a23d636a",
+      "bytes": 652670,
+      "duration": 32.10666666666667,
+      "renderKey": "ad9b9d54c1682ee93efd861d590f7452df3ec794997f40f1f032370a24255e5f"
+    },
+    {
+      "id": "t-ideal-middle",
+      "file": "public/media/lessons/t-ideal-middle.mp4",
+      "sha256": "6ee529fe62a6b7a466c625916b58c417167dfc751e892863cdbf01c3eef620e0",
+      "bytes": 976702,
+      "duration": 39.285333333333334,
+      "renderKey": "674d1ee9b35639b93827ff42de62ea78704a35657b39a875079df3b2b68f9e6f"
+    },
+    {
+      "id": "t-ideal-advanced",
+      "file": "public/media/lessons/t-ideal-advanced.mp4",
+      "sha256": "4cb1cd6f8b386a604029ef9a4f448fff73edd30a843c7faf1993be58eeeee82d",
+      "bytes": 1098903,
+      "duration": 42.70933333333333,
+      "renderKey": "fb3aeb3ca82472a458f3cd73b75f6bd1e9d5fb748069509a5ce30f8d112374b2"
+    },
+    {
+      "id": "t-firstlaw-intro",
+      "file": "public/media/lessons/t-firstlaw-intro.mp4",
+      "sha256": "0813b64c2ccfc1db975b3212b1869de7ed321b27882327d748ed7c1811111b1e",
+      "bytes": 606824,
+      "duration": 36.842666666666666,
+      "renderKey": "39938c22685d7b76d73db0c0de0e5f36750faed81fa70bac51002d649bc67938"
+    },
+    {
+      "id": "t-firstlaw-middle",
+      "file": "public/media/lessons/t-firstlaw-middle.mp4",
+      "sha256": "d29bda470f0c1ae2b1d655234d6970e6bdbf9f460b9633be82973bd12763d74e",
+      "bytes": 711012,
+      "duration": 37.752,
+      "renderKey": "7b567d49592dc4ba8a9f580cd007c24aa48c23911cb7d1a9203da1242a345a80"
+    },
+    {
+      "id": "t-firstlaw-advanced",
+      "file": "public/media/lessons/t-firstlaw-advanced.mp4",
+      "sha256": "b100e253f3d0cd5e7aa366ce8f4fec4a043c3f9417180a0d0199931adb7f5763",
+      "bytes": 611235,
+      "duration": 37.013333333333335,
+      "renderKey": "46c1bf5808dca2e46b27313b97cb019891a54a073350418ce87b63784a40b972"
+    },
+    {
+      "id": "w-basics-intro",
+      "file": "public/media/lessons/w-basics-intro.mp4",
+      "sha256": "756dcb351f34b3c7a67cea6161ad2456c2858dd81ae4365b31e3d4b6b376d9a8",
+      "bytes": 769048,
+      "duration": 34.18666666666667,
+      "renderKey": "2b71fa9bb76ec4b35ad8d18203dffaf1dd7a129e6d2aa2bea12e84f23edcf20c"
+    },
+    {
+      "id": "w-basics-middle",
+      "file": "public/media/lessons/w-basics-middle.mp4",
+      "sha256": "7470f51316a7789845c1051d144b76ccb187856b5dd9f86355e9b3fafcb6b193",
+      "bytes": 804533,
+      "duration": 35.072,
+      "renderKey": "1cb6eb9702f8d00f6d868e4c5bff4adba4fa14a283cb9b322ca6183549d6d698"
+    },
+    {
+      "id": "w-basics-advanced",
+      "file": "public/media/lessons/w-basics-advanced.mp4",
+      "sha256": "d3f78e992997053286777eeb7d8fcd26469b396a9776d724a1c266c52ab4923e",
+      "bytes": 885969,
+      "duration": 38.74133333333333,
+      "renderKey": "41756cc4024d5d17c23f6da150d100cca9d933048a4b2109e3e481dec996a0f8"
+    },
+    {
+      "id": "w-sound-intro",
+      "file": "public/media/lessons/w-sound-intro.mp4",
+      "sha256": "179fd4c753b161b423630c6cf3e3e9d135e12b44dd13e82db6ed676718a1e3b5",
+      "bytes": 1004937,
+      "duration": 38.76266666666666,
+      "renderKey": "137d122d16adf969a6bda78f6fef35f4ef517ad7a26bdecbd83da78230965c7e"
+    },
+    {
+      "id": "w-sound-middle",
+      "file": "public/media/lessons/w-sound-middle.mp4",
+      "sha256": "d7f03806f2714a8bf37f76d290c4cfc18fbf25153c19567573fb3501a82373bb",
+      "bytes": 700506,
+      "duration": 34.00533333333333,
+      "renderKey": "60b421324dd9e069054f54489712d99e9c1876d646f9ed36bab9293fcc2c3ea6"
+    },
+    {
+      "id": "w-sound-advanced",
+      "file": "public/media/lessons/w-sound-advanced.mp4",
+      "sha256": "73546f43089c264a150cf61409628bdf95945c7fffcc22f4e77394617caffa57",
+      "bytes": 1813351,
+      "duration": 39.68,
+      "renderKey": "ca093cd72968ce1631c07066d390291111dfd84e379915514fa81606bbe50494"
+    },
+    {
+      "id": "w-doppler-intro",
+      "file": "public/media/lessons/w-doppler-intro.mp4",
+      "sha256": "53bf6987e78de6bdb1a6c05d241e64f116a2e8990fa774cfb739d4a28c9558a7",
+      "bytes": 1535058,
+      "duration": 34.15466666666667,
+      "renderKey": "cc0d11dcec218c06cb57155d2499876f315c5411387a50dcf4b8c924befb05cc"
+    },
+    {
+      "id": "w-doppler-middle",
+      "file": "public/media/lessons/w-doppler-middle.mp4",
+      "sha256": "49d449ac9e91797ff4a7bf288803c3d5e55346c36abbc93cf3f79753fd260032",
+      "bytes": 2054358,
+      "duration": 46.288000000000004,
+      "renderKey": "c18bae34a06d2af710de414d863c6f05739b9497a104e47c2924a77a46f0ce6b"
+    },
+    {
+      "id": "w-doppler-advanced",
+      "file": "public/media/lessons/w-doppler-advanced.mp4",
+      "sha256": "765e7db0c0a2db75cd5e626b6289297a6da706f22c43fb572888fe8661def092",
+      "bytes": 1606411,
+      "duration": 35.14666666666667,
+      "renderKey": "691f0f5095ac18cdd7e71201cf31677bcc0e96c4c586c7744a5b817d1c0d4196"
+    },
+    {
+      "id": "w-light-intro",
+      "file": "public/media/lessons/w-light-intro.mp4",
+      "sha256": "27614378d1bff334d66ec07e34cea59a4a52dd567c499119e07460c5b3cc20c0",
+      "bytes": 703848,
+      "duration": 35.70133333333333,
+      "renderKey": "10fd805e76447739e6320ce4e75ec56c787f4c651358f5212fb9f94864c16a83"
+    },
+    {
+      "id": "w-light-middle",
+      "file": "public/media/lessons/w-light-middle.mp4",
+      "sha256": "09967a0b34ecaddd1af10fc9289227ba1fa843ae7325791ad1555d858aae62e0",
+      "bytes": 801361,
+      "duration": 39.477333333333334,
+      "renderKey": "a948a91419a298714f390caa11c363b122f8197fe93e429566d6614e456a8454"
+    },
+    {
+      "id": "w-light-advanced",
+      "file": "public/media/lessons/w-light-advanced.mp4",
+      "sha256": "b61ad5a956b12c154d813d10c9b311df28929f73dc68d6b2a80b850585be95e1",
+      "bytes": 846875,
+      "duration": 41.496,
+      "renderKey": "30833e09922313c4a256805c329ac5a68727ca0f75d39def7a63f862683c07d0"
+    },
+    {
+      "id": "w-interference-intro",
+      "file": "public/media/lessons/w-interference-intro.mp4",
+      "sha256": "f372bd52be08194c7dc1eeb44c01a700e691e7d8beab91da0e1759fa9514cf48",
+      "bytes": 680052,
+      "duration": 33.99466666666667,
+      "renderKey": "43c74f024aa1204f06a12b55604da2f86d1b2c12d193b93ab66569dc880571da"
+    },
+    {
+      "id": "w-interference-middle",
+      "file": "public/media/lessons/w-interference-middle.mp4",
+      "sha256": "56f5771ccb6acdaff8051778e0c81bca72dde45651427ada0b36584df08b9066",
+      "bytes": 793695,
+      "duration": 39.72266666666667,
+      "renderKey": "4ffd34c076bb2fbcec61a7773bd18aaeec6a1557596ef9e685622c46df3e461a"
+    },
+    {
+      "id": "w-interference-advanced",
+      "file": "public/media/lessons/w-interference-advanced.mp4",
+      "sha256": "4bab5eaaba0f34b50fe5ed17992d920e7e34c15b692b7d3da5e0167ffeee5693",
+      "bytes": 743460,
+      "duration": 38.090666666666664,
+      "renderKey": "67c025162a2297bdece62132dffd7b221394a62b0ed069adc2837f74812bed34"
+    },
+    {
+      "id": "e-current-intro",
+      "file": "public/media/lessons/e-current-intro.mp4",
+      "sha256": "91f62e304aa1976f3ca7c2e251da2e846008e12858b88977ff1b41776af497f7",
+      "bytes": 849123,
+      "duration": 43.61866666666666,
+      "renderKey": "122fdac8b458cc65f9a81fe6e612ba9ab946279977e9549926f884fcf6c2d018"
+    },
+    {
+      "id": "e-current-middle",
+      "file": "public/media/lessons/e-current-middle.mp4",
+      "sha256": "e65009c30233c8f1556c915a30ca43c080751e35119192cbcf24d7d2f8da4a19",
+      "bytes": 580774,
+      "duration": 35.08266666666667,
+      "renderKey": "71c4bf17cfad4e8224d83683eec7cf43b66f4ff154d2a46d96d2345fca3eabe1"
+    },
+    {
+      "id": "e-current-advanced",
+      "file": "public/media/lessons/e-current-advanced.mp4",
+      "sha256": "2467a8025cf53a5b275fd214f512551b5ae5837d7857689570f2963700a9036c",
+      "bytes": 720559,
+      "duration": 43.263999999999996,
+      "renderKey": "ad380b55862a8a495d4f72e4237c61fd6411dee9a9d1741225d39fec1509d4ad"
+    },
+    {
+      "id": "e-power-intro",
+      "file": "public/media/lessons/e-power-intro.mp4",
+      "sha256": "28c7094a2ee6ebcdeb90e58fb696d2aece2a3479c6b2106b7c71f7138fd51214",
+      "bytes": 603146,
+      "duration": 32.032,
+      "renderKey": "d0f73d6e134f73596730edae3564696eb6f9d3ae32aa6c5232cda5ed0f183413"
+    },
+    {
+      "id": "e-power-middle",
+      "file": "public/media/lessons/e-power-middle.mp4",
+      "sha256": "80b198dbf5bd6b44dcc2c3562ae62ac50d008319ed9dbef206b6c1595d204dba",
+      "bytes": 807562,
+      "duration": 38.624,
+      "renderKey": "94167059dd47fa548cc7eb81952c8905a7391039d517d223420b7393b0978e35"
+    },
+    {
+      "id": "e-power-advanced",
+      "file": "public/media/lessons/e-power-advanced.mp4",
+      "sha256": "2a7226cc2b662d498e8c260a7e2ea75bd5412c8e91f5b9f2b279136f1c02afcc",
+      "bytes": 753449,
+      "duration": 36.832,
+      "renderKey": "6fec9f00b52e54fd5e2609376a25a996db4bf55ee2d9b0c6144f47ec3ffb1d5f"
+    },
+    {
+      "id": "e-magnet-intro",
+      "file": "public/media/lessons/e-magnet-intro.mp4",
+      "sha256": "9d780c06c470946ab37ce5c75ed02562b7bc2f7e91d2860fe9028d66c8c6f2da",
+      "bytes": 752691,
+      "duration": 34.218666666666664,
+      "renderKey": "4ce9b41a3437e8f1863829b74f74f836949058a4263f98e891d8962334370a82"
+    },
+    {
+      "id": "e-magnet-middle",
+      "file": "public/media/lessons/e-magnet-middle.mp4",
+      "sha256": "7067acf3484f1a39d28ac22b574f803510917a21a63c7f6a608c7a05f927275a",
+      "bytes": 908161,
+      "duration": 33.28,
+      "renderKey": "60f3d259c3914abeb4374069ea73f397d7b8fa04d161157cc8df7e53e19f0a5c"
+    },
+    {
+      "id": "e-magnet-advanced",
+      "file": "public/media/lessons/e-magnet-advanced.mp4",
+      "sha256": "46e68454c56428819d0b6c0b27d66d16c039e2cbe4f70564d2222903e631420d",
+      "bytes": 978389,
+      "duration": 36.032000000000004,
+      "renderKey": "73234f32e75c6a9a98ad9ca6d79cc70b154910231874681df72446d15d62b861"
+    },
+    {
+      "id": "e-field-intro",
+      "file": "public/media/lessons/e-field-intro.mp4",
+      "sha256": "4c6c58e0736494da6c9d44cac0d3dd25a835171e68472d0282014dbc74433cb6",
+      "bytes": 685329,
+      "duration": 39.704,
+      "renderKey": "a06acfeac041070cae0eaa2e5f590995bb42c55c738be455d398cafef735cf16"
+    },
+    {
+      "id": "e-field-middle",
+      "file": "public/media/lessons/e-field-middle.mp4",
+      "sha256": "e587f93f0f76a00f127fb3e9a1c3e20f368c8b14d44d5fc9fbf76f25cf53784a",
+      "bytes": 623473,
+      "duration": 35.584,
+      "renderKey": "81e78fcef655c81c0f0939a43194599e5b94c2b6410ca96a14ab5fb63d3a8e4e"
+    },
+    {
+      "id": "e-field-advanced",
+      "file": "public/media/lessons/e-field-advanced.mp4",
+      "sha256": "f8e58b4d0d6497eae62b4b9c64084089b8601d5e764dbd5d2ae70873f4777ea9",
+      "bytes": 626634,
+      "duration": 40.794666666666664,
+      "renderKey": "caa6f989a1b1936aea1f9ed696cff195478368deabd1fe6f06fabc43cf18209e"
+    },
+    {
+      "id": "e-capacitor-intro",
+      "file": "public/media/lessons/e-capacitor-intro.mp4",
+      "sha256": "42d9f16b5c475bf90156f6268a8ad5f62fda0f955afc701e9f09cb7cc8cbb90a",
+      "bytes": 533642,
+      "duration": 35.626666666666665,
+      "renderKey": "b4d69713a21a300b3586109fdbbd27ac1f9c2891231e40b2238f18e0e0644241"
+    },
+    {
+      "id": "e-capacitor-middle",
+      "file": "public/media/lessons/e-capacitor-middle.mp4",
+      "sha256": "20acd86f11b2eb93d7b596fc8c2f6ec40a05bc9859af2598c1b7d85a4670dd29",
+      "bytes": 632376,
+      "duration": 36.29866666666666,
+      "renderKey": "04f4fcf10467c3a084d58193a171995c18d877d08b9c4b46878a4faf823c899a"
+    },
+    {
+      "id": "e-capacitor-advanced",
+      "file": "public/media/lessons/e-capacitor-advanced.mp4",
+      "sha256": "7e4b9757afdb9e15d74e9340a360d369535c73e9e6b1f404f93d5f5e01393031",
+      "bytes": 684238,
+      "duration": 40.73866666666666,
+      "renderKey": "d3d737f314c7e4dddcd254074496606325be732fad2ca3a086744d608b72affe"
+    },
+    {
+      "id": "a-photon-intro",
+      "file": "public/media/lessons/a-photon-intro.mp4",
+      "sha256": "ce8a6a5b37e1893ece7ecefa044c9d876c3d0cc0ea06ced87ec82102942f2b1b",
+      "bytes": 652823,
+      "duration": 39.12533333333333,
+      "renderKey": "4d3eb7611853a6c101b9c58fcb6bbb04a1a7259539225d139ca107c3f84f1954"
+    },
+    {
+      "id": "a-photon-middle",
+      "file": "public/media/lessons/a-photon-middle.mp4",
+      "sha256": "1cdc5f6905d8b321fb3b8f4acdcbf5a6c282495e85677e8e8b070b1308e5cfa0",
+      "bytes": 666598,
+      "duration": 39.583999999999996,
+      "renderKey": "fae4c7aa82b273b032d3c4a579ffdde07d6777079822da6e0ab28b2498350cfa"
+    },
+    {
+      "id": "a-photon-advanced",
+      "file": "public/media/lessons/a-photon-advanced.mp4",
+      "sha256": "a7d3093a550f03710a3551dc23d7121f6918cd76b941ebbcde4af17bb41f83b1",
+      "bytes": 708069,
+      "duration": 38.18666666666666,
+      "renderKey": "5971057d6245503198af17f246eda1e3a156c720f792b321a0f4302e8d4746bd"
+    },
+    {
+      "id": "a-bohr-intro",
+      "file": "public/media/lessons/a-bohr-intro.mp4",
+      "sha256": "9bcb66d6f183689f9bea564ff15a5d40208c08d034299dabf2c71f5006308679",
+      "bytes": 635326,
+      "duration": 38.70933333333333,
+      "renderKey": "b60b5b80e3fc766375bd5089c97befeb30ef75ffa12e503938e2336b75a41f9e"
+    },
+    {
+      "id": "a-bohr-middle",
+      "file": "public/media/lessons/a-bohr-middle.mp4",
+      "sha256": "a13c3e071478786681ee079d5298e9e96b0b0bd444e89aa1a451defa55e723ce",
+      "bytes": 836332,
+      "duration": 40.832,
+      "renderKey": "9831002e5c3359e09ad106a1efa917c4a770528168a969d4a15ebf3079a31d22"
+    },
+    {
+      "id": "a-bohr-advanced",
+      "file": "public/media/lessons/a-bohr-advanced.mp4",
+      "sha256": "cf44d8c5e641b282774ad14adf6043a3acb2140771fb2931d35a1f814191eb56",
+      "bytes": 777589,
+      "duration": 41.44,
+      "renderKey": "62ff570a1ed45f9b46d22199e123a9ec87980ba720be61fcaecd580b5ce4c77d"
+    },
+    {
+      "id": "a-nucleus-intro",
+      "file": "public/media/lessons/a-nucleus-intro.mp4",
+      "sha256": "cb7699a9833e78fca253ee95a0f48e87ce3edb7569eca1e7b080f8c2ba223807",
+      "bytes": 628745,
+      "duration": 38.101333333333336,
+      "renderKey": "eaf00b403096b7d2477161c95cd8d3329d745ace4b9d673fbc5472aba62138ef"
+    },
+    {
+      "id": "a-nucleus-middle",
+      "file": "public/media/lessons/a-nucleus-middle.mp4",
+      "sha256": "a12d4f2aec19cf5c14f6b084735e5da3da81c41570dd3f2eecffdd696dd613ee",
+      "bytes": 764047,
+      "duration": 41.984,
+      "renderKey": "aeebb40197cef530fba737c5ead0d7660b4e2641a405938c4ebcbaa6b8a734dd"
+    },
+    {
+      "id": "a-nucleus-advanced",
+      "file": "public/media/lessons/a-nucleus-advanced.mp4",
+      "sha256": "5889565cb6737f1a3059d19682709a4ba2cf3af613af02040e6c676723bbd61c",
+      "bytes": 601596,
+      "duration": 38.165333333333336,
+      "renderKey": "302eda9ea5d98284518dfb08ce2e9cad22b94a4e730d031bd994dfb54c0d8269"
+    },
+    {
+      "id": "um-derivative-intro",
+      "file": "public/media/lessons/um-derivative-intro.mp4",
+      "sha256": "734c392e1ff6ac3ee183de0775ed76e8fa77e137ec793581c70ab0adb978cc62",
+      "bytes": 725203,
+      "duration": 36.85333333333334,
+      "renderKey": "178103af71e635426e0b9352f20fe8c8507ef7d0d3324a85df9474b96858c88f"
+    },
+    {
+      "id": "um-derivative-middle",
+      "file": "public/media/lessons/um-derivative-middle.mp4",
+      "sha256": "cb4529f1907d178b6a3771c3e1b2958fd74d8bf5a395aba22d03f8216fbbd5a5",
+      "bytes": 774481,
+      "duration": 38.26133333333333,
+      "renderKey": "4f9aa8bfc4b9be99a8fdfada038a3991b8dc51a586fc0c66c72478ee295415b3"
+    },
+    {
+      "id": "um-derivative-advanced",
+      "file": "public/media/lessons/um-derivative-advanced.mp4",
+      "sha256": "465b5cee2b1878374a350cad54f42309d229fbd5aa182e4728266f0bd9f6daa0",
+      "bytes": 658403,
+      "duration": 39.18933333333333,
+      "renderKey": "1d0791a968623a54fc114c6b837e4e1ad08ee133f2505a91a379620e6e16168d"
+    },
+    {
+      "id": "um-integral-intro",
+      "file": "public/media/lessons/um-integral-intro.mp4",
+      "sha256": "41f22689cfa8470b380bab54a36db1614691025b516b794ea9183296b24b05ff",
+      "bytes": 601183,
+      "duration": 38.02933333333333,
+      "renderKey": "e06f2a4dbcdc1883f7e10b57732ca5c7cbbfaae8b9c9eac8a7dc637c4418b767"
+    },
+    {
+      "id": "um-integral-middle",
+      "file": "public/media/lessons/um-integral-middle.mp4",
+      "sha256": "4263d86ec322a3e98ac688fc0faa45245f223e9c1f436defcdbd239ff8ffd6c1",
+      "bytes": 633655,
+      "duration": 36.04266666666667,
+      "renderKey": "9ad094a4517dd3e5de8c322fa63edcdafa622fac1c6cbd08ff036acde4039586"
+    },
+    {
+      "id": "um-integral-advanced",
+      "file": "public/media/lessons/um-integral-advanced.mp4",
+      "sha256": "e0ffba8e76743b0bcc4de5bb2cf0b5238f90773278b0c454738f3903775e3456",
+      "bytes": 700152,
+      "duration": 38.645333333333326,
+      "renderKey": "d279f7246dbc66e696f9f6b2b899d34b5ab6281eeb39ce7a32b4153494d5dc41"
+    },
+    {
+      "id": "um-rules-intro",
+      "file": "public/media/lessons/um-rules-intro.mp4",
+      "sha256": "30d152e0c12299be4c09d383b97543def575563427457baf6e9f475cc0e4b30c",
+      "bytes": 784251,
+      "duration": 36.34133333333334,
+      "renderKey": "0853eaaa84978876f70e1d89d8245f49f3c71d4ce2f00372f6b16c8691f42162"
+    },
+    {
+      "id": "um-rules-middle",
+      "file": "public/media/lessons/um-rules-middle.mp4",
+      "sha256": "41755700a3d940d17acd9190ccd72b19459ca368864756b434b4c8581946c051",
+      "bytes": 805965,
+      "duration": 35.76266666666667,
+      "renderKey": "b42b08eea30e283c2ec4036bf58508f83f5b029d6ea0ef795a7142afbfdd9cc7"
+    },
+    {
+      "id": "um-rules-advanced",
+      "file": "public/media/lessons/um-rules-advanced.mp4",
+      "sha256": "3e0698f231cc42aca018139303c4ac6f87897e69b6dcb5d137a7d31fb0be6dbe",
+      "bytes": 784491,
+      "duration": 46.31733333333334,
+      "renderKey": "4468eba44aa3ffe2f53670b29158c51efa3a6317236c81f15259580f98f56598"
+    },
+    {
+      "id": "um-taylor-intro",
+      "file": "public/media/lessons/um-taylor-intro.mp4",
+      "sha256": "a904d671df85be4cb2cd2bd4c0c450e74199b678726f0d1181aa15f25027c671",
+      "bytes": 734606,
+      "duration": 33.088,
+      "renderKey": "3a2d422c191690bac90cac01c084f55e570790dac6c37b376d2f83e1e134851c"
+    },
+    {
+      "id": "um-taylor-middle",
+      "file": "public/media/lessons/um-taylor-middle.mp4",
+      "sha256": "6e9362015fe7b72022fcc865d73c2c441aef9b687df53fe3f73b8a6308f71387",
+      "bytes": 546876,
+      "duration": 30.581333333333333,
+      "renderKey": "a97ad4d7584fbd8c86e7966f8de8d47744a57aebe6273de2ea3bbf2d704a1e94"
+    },
+    {
+      "id": "um-taylor-advanced",
+      "file": "public/media/lessons/um-taylor-advanced.mp4",
+      "sha256": "8be59f0b295d34aec5421db96cdfdfe151210e265bbea4dec39f2e5757dd584b",
+      "bytes": 1060146,
+      "duration": 41.79466666666667,
+      "renderKey": "5f9950e3133d65d2107d7e89fe9b8f82b6c1c2d3c7d8f2941f4a0713c6a12590"
+    },
+    {
+      "id": "um-vector-intro",
+      "file": "public/media/lessons/um-vector-intro.mp4",
+      "sha256": "da4ca767a8d2b59c82ebeb44bd2fee809ecf576257e5bdeee1cfe56663d0ebb4",
+      "bytes": 590188,
+      "duration": 32.27733333333333,
+      "renderKey": "d24d134d82d3cab2632568b18e8fd5af271e6d236d80999a08b18e2683eadac3"
+    },
+    {
+      "id": "um-vector-middle",
+      "file": "public/media/lessons/um-vector-middle.mp4",
+      "sha256": "ce66e74bdf57456199f25e3588814a47a7ed90bf855f21f501d01e7b59d7d8b2",
+      "bytes": 753642,
+      "duration": 42.57333333333334,
+      "renderKey": "4a948cc4e3499efd8052823e12aa65844493ca418da58ea68d87de441dce9f97"
+    },
+    {
+      "id": "um-vector-advanced",
+      "file": "public/media/lessons/um-vector-advanced.mp4",
+      "sha256": "aeb3c62c63df01c75f5832fb15df8f1b49485c4b7e0de5b71a02f83f9ac22170",
+      "bytes": 808665,
+      "duration": 34.35733333333334,
+      "renderKey": "131e7ce51e74bcc597c9b42cda6dea633bc7dc5e4d9132e593c8c91ac3f8b472"
+    },
+    {
+      "id": "um-dot-intro",
+      "file": "public/media/lessons/um-dot-intro.mp4",
+      "sha256": "02a12f9e68776007b358dd066f91021fb003d321469fc06a465c39bb6df34cbb",
+      "bytes": 740640,
+      "duration": 32.46933333333333,
+      "renderKey": "cf501a473f0a132310820565a3fdcf2f39e31f23865c95ab29d292b7e6a2225f"
+    },
+    {
+      "id": "um-dot-middle",
+      "file": "public/media/lessons/um-dot-middle.mp4",
+      "sha256": "2aa6d8e879ef25bf0ebd481fd6bae289e5dc0a34ccaa7c6201ba95f458ef9f72",
+      "bytes": 713232,
+      "duration": 34.63466666666667,
+      "renderKey": "bd9a510e050523233819d5f00095c6fc68851a7f117f017ec68016118098fee9"
+    },
+    {
+      "id": "um-dot-advanced",
+      "file": "public/media/lessons/um-dot-advanced.mp4",
+      "sha256": "66649398b47990059bdc0cbd871f9026fc74f3a95ce41594426494857103daee",
+      "bytes": 1079729,
+      "duration": 46.488,
+      "renderKey": "08334b405eb5ba38d3f8dcf262cf16168652ce4ac583b97c4a39d6f56c07e1cd"
+    },
+    {
+      "id": "um-cross-intro",
+      "file": "public/media/lessons/um-cross-intro.mp4",
+      "sha256": "260f3e81b7a9e6c0918765016cf347e2a01274518200da0fb637e87ca22fab42",
+      "bytes": 707138,
+      "duration": 36.17066666666667,
+      "renderKey": "0c9a606940870708627ca93018a79da7ed52c98a6abe3757c2562596a21b42c6"
+    },
+    {
+      "id": "um-cross-middle",
+      "file": "public/media/lessons/um-cross-middle.mp4",
+      "sha256": "9ebfbb1963b25fbab0ba986fc6bb863f0d0be638f48602a2ef0ba6b9bd9f1f9f",
+      "bytes": 730991,
+      "duration": 36.501333333333335,
+      "renderKey": "198afe4fafafb3077ac3d383ea58d008bc36aa5ee72a662922b5433ed2f0d3e1"
+    },
+    {
+      "id": "um-cross-advanced",
+      "file": "public/media/lessons/um-cross-advanced.mp4",
+      "sha256": "3007550dc7489929f5ccfc22d03ceed28c0305b7091363a0b3431e05dcc8bfe5",
+      "bytes": 794605,
+      "duration": 39.488,
+      "renderKey": "bdf2948ee4a244d5de251751ce6305cd21d3fab326284d9ec77d635b803422a3"
+    },
+    {
+      "id": "um-ode-intro",
+      "file": "public/media/lessons/um-ode-intro.mp4",
+      "sha256": "4768605112c16dce299b0fd583cf96b5c65261bf2af27b7bbf009168eabda2e3",
+      "bytes": 640773,
+      "duration": 34.70933333333333,
+      "renderKey": "19306fcc987e34a4bc5202863228db7dc2c97b7318a5d98b3aea567d79a49771"
+    },
+    {
+      "id": "um-ode-middle",
+      "file": "public/media/lessons/um-ode-middle.mp4",
+      "sha256": "2ac5e56c65e42097a0656f3789d9a1bd1ee8b1b0cc3f5f7251b24751bae7a5a4",
+      "bytes": 675623,
+      "duration": 35.583999999999996,
+      "renderKey": "c3c5d0d591d6cbeab14b68c57b335a8815bfa0f6aeb50314fafac47385f9b1f0"
+    },
+    {
+      "id": "um-ode-advanced",
+      "file": "public/media/lessons/um-ode-advanced.mp4",
+      "sha256": "cfd4ba34ee57750960119e6e295c6c83cb57af1cf9d3e6711af62f5596b92d06",
+      "bytes": 684235,
+      "duration": 36.096,
+      "renderKey": "71521c1e179ef781fbef66468395c8281939dd24cb383787e70aca081f79aadf"
+    },
+    {
+      "id": "um-shm-ode-intro",
+      "file": "public/media/lessons/um-shm-ode-intro.mp4",
+      "sha256": "b612aa4c120f87481e165c213bc5d827448b707c9bcf3b02d1b5637771eb5c96",
+      "bytes": 899607,
+      "duration": 36.38666666666667,
+      "renderKey": "d0d24c01a31f16ef94a7e96ac477c172f3c332d83843d1204041019920cdfc55"
+    },
+    {
+      "id": "um-shm-ode-middle",
+      "file": "public/media/lessons/um-shm-ode-middle.mp4",
+      "sha256": "6e2082cb18f6bc39c02f2591c0aa927c0b6e09fb16aab4641549fae25e61ffa5",
+      "bytes": 925168,
+      "duration": 36.128,
+      "renderKey": "da5a5653335884f370d5b36292a3ccb797955cfe652102ee849138d11ebf1f48"
+    },
+    {
+      "id": "um-shm-ode-advanced",
+      "file": "public/media/lessons/um-shm-ode-advanced.mp4",
+      "sha256": "c1ba2cae9c850af6207c07e8193a397eae0aff91b4102967d34ea41c957bb347",
+      "bytes": 1008261,
+      "duration": 40.13066666666667,
+      "renderKey": "01e085047c0ec7408a9923e88366420c0afe6d5ab5f2b4ca7d8267bff8333425"
+    },
+    {
+      "id": "uc-newton-intro",
+      "file": "public/media/lessons/uc-newton-intro.mp4",
+      "sha256": "22ca3f1a2b3b2f804c3bbeafdf23d86e3dffb7818296020b00e534cb36a5b148",
+      "bytes": 710108,
+      "duration": 33.55733333333334,
+      "renderKey": "24abf2d491a08c20faf49c02f9abec653cc7d072c3d0a48bebb51081c7760ca1"
+    },
+    {
+      "id": "uc-newton-middle",
+      "file": "public/media/lessons/uc-newton-middle.mp4",
+      "sha256": "5f9571f1926dfde40c0f0b42abd55327bb167d3a70b5a9d47f55765db22b6d26",
+      "bytes": 737319,
+      "duration": 39.138666666666666,
+      "renderKey": "36b912dec649b9296ccaff78fbc3b180ca5d03dfb4fa7fee3e971157be43c78a"
+    },
+    {
+      "id": "uc-newton-advanced",
+      "file": "public/media/lessons/uc-newton-advanced.mp4",
+      "sha256": "093df9ffc78333697a1f50e04d2b4b0702238a9b3469f6dee642e2346128bf90",
+      "bytes": 949146,
+      "duration": 35.89333333333333,
+      "renderKey": "2dd398a49b4950bd28f493726eba36ffe24d5b01af8a8385e4196911d10c2378"
+    },
+    {
+      "id": "uc-drag-intro",
+      "file": "public/media/lessons/uc-drag-intro.mp4",
+      "sha256": "f353111fdcbaf2a7ed98bf84c2c04621c97913690612d857cdeac9ff503a3f8c",
+      "bytes": 566032,
+      "duration": 29.96266666666666,
+      "renderKey": "5b99867b220e8888511c9f8664228037562d2fc7a2108b9b56dac0e14346d5ae"
+    },
+    {
+      "id": "uc-drag-middle",
+      "file": "public/media/lessons/uc-drag-middle.mp4",
+      "sha256": "c872bd42c530c70cddbf4e3abded3073c42b06f3142da924baf35754875e6974",
+      "bytes": 881868,
+      "duration": 40.92,
+      "renderKey": "ed2226fce78d867aef344d444c37840560e44c89809bb7f1de0594fbfad81053"
+    },
+    {
+      "id": "uc-drag-advanced",
+      "file": "public/media/lessons/uc-drag-advanced.mp4",
+      "sha256": "35ebf1163f6e652b158e5dabedf7ff8a64dd613115767c3a45443975d29d739d",
+      "bytes": 703549,
+      "duration": 37.312,
+      "renderKey": "d0cfa92669bf2ccaacf5c411e9f12f2ebdfaa7b3503cdff25ddebfcbde8d8c6a"
+    },
+    {
+      "id": "uc-work-intro",
+      "file": "public/media/lessons/uc-work-intro.mp4",
+      "sha256": "a8b10156d61901131b27bdc62a91f42f57faca1fabe35b8c79523ae3071beb7f",
+      "bytes": 603498,
+      "duration": 37.26933333333333,
+      "renderKey": "44d93cdde20a1bdf3b562f93aec6539d6f6d8fa5ef0aa7f65cddf3cd70374c20"
+    },
+    {
+      "id": "uc-work-middle",
+      "file": "public/media/lessons/uc-work-middle.mp4",
+      "sha256": "9715acfc3779e561bd646710dff30e7c5503fcd98a9263991240eba268ea8704",
+      "bytes": 577361,
+      "duration": 34.218666666666664,
+      "renderKey": "54727c612c018fd2bab9b5896fabe8889566891052f7c1252e7de1952637bb87"
+    },
+    {
+      "id": "uc-work-advanced",
+      "file": "public/media/lessons/uc-work-advanced.mp4",
+      "sha256": "f1b71bddf8ed1558bc5291309919368a1d9ff1ca7e98da68a9bbe04b0896d38d",
+      "bytes": 1152816,
+      "duration": 47.06666666666667,
+      "renderKey": "3b368ef9db6fa20aeab1c63b0e73f3ad9c656f1e510f4941de48a65fc91397ea"
+    },
+    {
+      "id": "uc-potential-intro",
+      "file": "public/media/lessons/uc-potential-intro.mp4",
+      "sha256": "31f1a65c14f02b0015a6a36f304f50035a228dc6b4301e63d996648b04ba5c4f",
+      "bytes": 603503,
+      "duration": 33.343999999999994,
+      "renderKey": "c89563835e8cb2c66a4e23ff5d22925fc0c98197fc9f0032230f4b76d18b972a"
+    },
+    {
+      "id": "uc-potential-middle",
+      "file": "public/media/lessons/uc-potential-middle.mp4",
+      "sha256": "8761d83a6116e013d5712a5bd50f39d42a18fd0734ec8442347ced87680342d1",
+      "bytes": 673394,
+      "duration": 39.168,
+      "renderKey": "c70641f8e3f023317dd6e79bbe374863cc93b6a044d847683d2b93085ee9031c"
+    },
+    {
+      "id": "uc-potential-advanced",
+      "file": "public/media/lessons/uc-potential-advanced.mp4",
+      "sha256": "7d31ec19f7a39c78051ae67da6ea5f8a8bbcd496839516fdef59aff74dc380a0",
+      "bytes": 694182,
+      "duration": 41.31466666666666,
+      "renderKey": "fb995aee40ae9e4f97c630eb1e0634b2deff58b0e892d25bfb1a62ca722466c5"
+    },
+    {
+      "id": "uc-momentum-intro",
+      "file": "public/media/lessons/uc-momentum-intro.mp4",
+      "sha256": "780a794ee21c3094cd71fed22f7c084df35f765545740f8e6821c988f793f90a",
+      "bytes": 739849,
+      "duration": 39.17866666666667,
+      "renderKey": "33123dee29186cc4598fa93b951fffe3c9868014b94db9f7a8028a7084d5825e"
+    },
+    {
+      "id": "uc-momentum-middle",
+      "file": "public/media/lessons/uc-momentum-middle.mp4",
+      "sha256": "60c60377d2d66e5fcfb696e4ec4ab0df7b478d31170363089dc42983e05e828d",
+      "bytes": 581979,
+      "duration": 34.76266666666667,
+      "renderKey": "6ed3870d799b21643f19af35e059b5fa10674f19de11c908b3c6132f8a1468d1"
+    },
+    {
+      "id": "uc-momentum-advanced",
+      "file": "public/media/lessons/uc-momentum-advanced.mp4",
+      "sha256": "bcfc5d75e94a31b65f46df2cd25fbdb2de9268ed3178fd314dafac58fa3b052e",
+      "bytes": 745445,
+      "duration": 38.19733333333333,
+      "renderKey": "f04cc02f1d2998b5c196ae694342058cd74d3acbf67b1993a6947b461483b101"
+    },
+    {
+      "id": "uc-angular-intro",
+      "file": "public/media/lessons/uc-angular-intro.mp4",
+      "sha256": "42c68445a4a15d3b725f7884d798571f7541ae4306a6e545bf98f6bfed178a25",
+      "bytes": 937341,
+      "duration": 41.57333333333334,
+      "renderKey": "f455bc5efc87a5dd6dd82106afaa66a3965b6bddb7149140792442b27b4131fc"
+    },
+    {
+      "id": "uc-angular-middle",
+      "file": "public/media/lessons/uc-angular-middle.mp4",
+      "sha256": "ad19f9d4cfb36f3ed1ff3eef02118dcbfd290fd00aa6d9fcc69ca1bb766b0f4d",
+      "bytes": 849448,
+      "duration": 33.824,
+      "renderKey": "99d56f08238f6b2f71e25374a95763076067ea8ca2da76d43063c281c62e6552"
+    },
+    {
+      "id": "uc-angular-advanced",
+      "file": "public/media/lessons/uc-angular-advanced.mp4",
+      "sha256": "bcc0050d7992571602a602762de48af46e27c4e772628c6ffb635779c4567587",
+      "bytes": 814837,
+      "duration": 36.78933333333333,
+      "renderKey": "fd4221d7d82ea913c56df7bb715ca7bd6d1a6421c906a2e2ded9ab9780575b65"
+    },
+    {
+      "id": "uc-shm-intro",
+      "file": "public/media/lessons/uc-shm-intro.mp4",
+      "sha256": "b8758d158906524814b68c361108c25de246dae2cc2ae559fce1e11e3fd03ecd",
+      "bytes": 803009,
+      "duration": 32.352,
+      "renderKey": "652446ce8217b68b4d20e47a6a7d965f4ecf4848175e13aefca9c1212bbd5df8"
+    },
+    {
+      "id": "uc-shm-middle",
+      "file": "public/media/lessons/uc-shm-middle.mp4",
+      "sha256": "f883a7d22a3d9726ec1fb54f239a7dcc4e9a13f0143f278938942f54d9756e03",
+      "bytes": 1126449,
+      "duration": 44.62133333333333,
+      "renderKey": "95c6436ed50b6f1292d3d0781aec48cb96a71c67fb1912d52c181a2d38fd7dec"
+    },
+    {
+      "id": "uc-shm-advanced",
+      "file": "public/media/lessons/uc-shm-advanced.mp4",
+      "sha256": "85db81796f8196e07629d9947b2b5a81ee9e7d29877a70cff1584d05297d0c55",
+      "bytes": 808196,
+      "duration": 41.792,
+      "renderKey": "a524406bb0b87928b30685a471d2c6a996093e13875517e533db2460b9d271e9"
+    },
+    {
+      "id": "uc-rigid1-intro",
+      "file": "public/media/lessons/uc-rigid1-intro.mp4",
+      "sha256": "4397053ff559c87ee2b80b9c1b2f468b2b17ed09738d1bfa08014b2aa10d727b",
+      "bytes": 1166299,
+      "duration": 35.488,
+      "renderKey": "79340d2133de6e6605d9c554966241101a9ff3bf3f8d234c4d1306b057802a39"
+    },
+    {
+      "id": "uc-rigid1-middle",
+      "file": "public/media/lessons/uc-rigid1-middle.mp4",
+      "sha256": "a9058f44311ed8590545cc8a39833af36610627c81a86dcc61187e5bbdfd248a",
+      "bytes": 819313,
+      "duration": 34.88,
+      "renderKey": "89e7d282d803544db6347926521955e05f438b40eb105c8828ece26a206c1de9"
+    },
+    {
+      "id": "uc-rigid1-advanced",
+      "file": "public/media/lessons/uc-rigid1-advanced.mp4",
+      "sha256": "5beec1e5c0f780141a8956c950bab6d7c6c829a9873b7f86439decdd2a6125eb",
+      "bytes": 983188,
+      "duration": 38.858666666666664,
+      "renderKey": "85e92439818730a5fd60289dd51e3c96071568970d12ec1c0bd4e7c3c9094dd8"
+    },
+    {
+      "id": "uc-rigid2-intro",
+      "file": "public/media/lessons/uc-rigid2-intro.mp4",
+      "sha256": "bed05a79276f39a3033e6b2b5897dad1fd05e0570685239d61406fa91c262fb9",
+      "bytes": 1115810,
+      "duration": 33.696,
+      "renderKey": "0dbe7cfb9ccdb494cba13559808c6d6c113a46ad02262a218d0a7c9ab5b1b4c9"
+    },
+    {
+      "id": "uc-rigid2-middle",
+      "file": "public/media/lessons/uc-rigid2-middle.mp4",
+      "sha256": "5dc3512f07cf1ac5abdd3ea465238afb2a5c7afe97e0aae30cb6f923f7beec73",
+      "bytes": 1033622,
+      "duration": 37.62133333333333,
+      "renderKey": "e9eb5b21520d0f8bf9f46cf8e4360d913cd9a5ed8ffed81e17f820694e001f62"
+    },
+    {
+      "id": "uc-rigid2-advanced",
+      "file": "public/media/lessons/uc-rigid2-advanced.mp4",
+      "sha256": "14de2e256c59e56e34e249ea6bf3ded65601285d7b7bc11c661e49dfe46a47cd",
+      "bytes": 1714377,
+      "duration": 45.848,
+      "renderKey": "dbb5a0fb569ffc3d6cd8d5a4f1437a26cdf12bf181eda2bb723e35fe3caf8437"
+    },
+    {
+      "id": "uc-frontier-intro",
+      "file": "public/media/lessons/uc-frontier-intro.mp4",
+      "sha256": "c43b418c758c45afd87178527842666a67f10e7257f38382993faeec1a1fc357",
+      "bytes": 595704,
+      "duration": 36.053333333333335,
+      "renderKey": "8b2df15f04582cb0bff16528e180f05a2de48dc1e86acdbc9c6d693d3425e65f"
+    },
+    {
+      "id": "uc-frontier-middle",
+      "file": "public/media/lessons/uc-frontier-middle.mp4",
+      "sha256": "d033cb98e95d13f3cab14ed4278a4536d562e10d71787858ab1be675df3b0bb4",
+      "bytes": 609023,
+      "duration": 37.13066666666667,
+      "renderKey": "9f78f62f50bd7613e1273eae7821667a7c86e19b45dad61ac971275341961523"
+    },
+    {
+      "id": "uc-frontier-advanced",
+      "file": "public/media/lessons/uc-frontier-advanced.mp4",
+      "sha256": "4d78218f5779d912ad2286f66db34e31270126d637cc779c8f41a854fb1c5d99",
+      "bytes": 770633,
+      "duration": 39.04,
+      "renderKey": "cbb74c6a8f2d59b85778720927777bc650c5d17742330832d487b806bc050656"
+    },
+    {
+      "id": "ui-curve-tiles-bridges-1",
+      "file": "public/media/lessons/ui-curve-tiles-bridges-1.mp4",
+      "sha256": "1cb3a382c568065280f7dfdcceb3c5c4b78145b0cba001add47e3fc31215ac49",
+      "bytes": 682403,
+      "duration": 41.25066666666667,
+      "renderKey": "47b78b3f8699400e3bed07dd9c3afdf7e22fec51384f50913bfd977cfba6a0d2"
+    },
+    {
+      "id": "ui-through-a-surface-bridges-2",
+      "file": "public/media/lessons/ui-through-a-surface-bridges-2.mp4",
+      "sha256": "b947ee413ed6a9340b665c6390034cb3b20e051454b5198c65750f3e37772f18",
+      "bytes": 987515,
+      "duration": 39.16,
+      "renderKey": "f39087a21478dcea0ebaaf67e7a218828aa0cc364834556caa4d6ed3fae270ac"
+    },
+    {
+      "id": "um-path-pieces-bridges-3",
+      "file": "public/media/lessons/um-path-pieces-bridges-3.mp4",
+      "sha256": "e7c10caca16fae7e16798c9175c1569e7da19ab95a996145a847f376fe91e607",
+      "bytes": 850264,
+      "duration": 36.23466666666667,
+      "renderKey": "27960d772f7bf27455a24db6c5e71a9d0619a944830483cebbd038f8b2a49b56"
+    },
+    {
+      "id": "um-area-vector-bridges-4",
+      "file": "public/media/lessons/um-area-vector-bridges-4.mp4",
+      "sha256": "8dee849c725e558b0131465518c10a7f9e34a877f2b80f5a8fa07292fc139804",
+      "bytes": 952434,
+      "duration": 39.512,
+      "renderKey": "1f3c6a88b2931852051f81830f882e0e32ba39978a0ae0d0d49d49011a69f293"
+    },
+    {
+      "id": "ui-motion-record-bridges-5",
+      "file": "public/media/lessons/ui-motion-record-bridges-5.mp4",
+      "sha256": "c0145dae1d6ac04ce6d927e236e5f2886aeecf9d4bf5ecaf0f8d1fd0788a6c63",
+      "bytes": 575345,
+      "duration": 34.751999999999995,
+      "renderKey": "1ad4b9d18505f3aa64ee66053d58d8b338c90ceb1fa07ab7ee6f80c3f221f30a"
+    },
+    {
+      "id": "ui-force-map-bridges-6",
+      "file": "public/media/lessons/ui-force-map-bridges-6.mp4",
+      "sha256": "f94d4409d636d87246c53597fae7dd74349e43f79496b935c3537c815fa791b7",
+      "bytes": 741014,
+      "duration": 37.666666666666664,
+      "renderKey": "4f35551bcd762e6e95b43ae20a329650815ca2afa7be753111f65e9c3b63032b"
+    },
+    {
+      "id": "ui-work-changing-bridges-7",
+      "file": "public/media/lessons/ui-work-changing-bridges-7.mp4",
+      "sha256": "2fcdd5f7750352d1f805b9e3bb89df3db52066cef6484e1025871c7a64334e54",
+      "bytes": 643112,
+      "duration": 39.714666666666666,
+      "renderKey": "e75e3b06dd63e1ba8a52adfc4dfb666ef3bec70547a85859fe8287e95d0e93e2"
+    },
+    {
+      "id": "ui-energy-change-bridges-8",
+      "file": "public/media/lessons/ui-energy-change-bridges-8.mp4",
+      "sha256": "142cdf85280b53fd2d6d8f1460ed979bd9668f189faafde300e6a83647eb8b95",
+      "bytes": 566979,
+      "duration": 34.602666666666664,
+      "renderKey": "046ab6043c7639644b89f9e07a13f54370e9c147562e29f1b1be7c1347d80c79"
+    },
+    {
+      "id": "ui-turning-motion-bridges-9",
+      "file": "public/media/lessons/ui-turning-motion-bridges-9.mp4",
+      "sha256": "337d23c8af983154ba7a9e9ea826a535906d8b7197b69e02912fe34ef4c7cdb2",
+      "bytes": 723784,
+      "duration": 30.058666666666664,
+      "renderKey": "a068b554a9d0190a3930f190ecbaf7c14c774937b3d68b719d6c59e5082c3b8c"
+    },
+    {
+      "id": "um-newton-components-bridges-10",
+      "file": "public/media/lessons/um-newton-components-bridges-10.mp4",
+      "sha256": "86570ae14d9d25f173ac9009b79f748cf4fa3c17f18acc0f84d428b1cd72027a",
+      "bytes": 551229,
+      "duration": 30.762666666666664,
+      "renderKey": "4853e7783f74c5454b2daa439fa5d90213db7661857652c7150c3a7c4610a00e"
+    },
+    {
+      "id": "um-work-sum-bridges-11",
+      "file": "public/media/lessons/um-work-sum-bridges-11.mp4",
+      "sha256": "b902a20f77ac18bff5a0e79b9d4cbaab3ed29cb66af35f62d6fac8c8a54566cb",
+      "bytes": 626682,
+      "duration": 36.117333333333335,
+      "renderKey": "9b9b199a909666994413d261b2c49d538386151f6924b01abef36d75a866d8bd"
+    },
+    {
+      "id": "um-work-vector-bridges-12",
+      "file": "public/media/lessons/um-work-vector-bridges-12.mp4",
+      "sha256": "6fce27e6831cf20640b10f4f61e23b6166782b0ec0eccc2391289e919ab31776",
+      "bytes": 783684,
+      "duration": 32.672,
+      "renderKey": "c986f9e63da624df3c803255add6e1f90145a73618cef5f6637e05d63b29e958"
+    },
+    {
+      "id": "uc-shm-advanced-followups-1",
+      "file": "public/media/lessons/uc-shm-advanced-followups-1.mp4",
+      "sha256": "64ed7bce4b65d85ba716bc8f6641598a9a8091fb6d601ce21fbe4c0b1ae9570f",
+      "bytes": 767002,
+      "duration": 41.57066666666667,
+      "renderKey": "168ceeaf7007a5862bd44c1ab159b33868f953fce3b2bbbc40f663b899adf7a4"
+    },
+    {
+      "id": "uc-frontier-advanced-followups-2",
+      "file": "public/media/lessons/uc-frontier-advanced-followups-2.mp4",
+      "sha256": "166a45b11dcdee22a3f2bd13ef514eb3e3aa36016549f6da7c0acc9b95ee552e",
+      "bytes": 941628,
+      "duration": 43.57599999999999,
+      "renderKey": "35a0f67839d4de483c939ccff06a6c2fd2564e1346c2598ee291ca8f3129f0dd"
+    },
+    {
+      "id": "uc-frontier-advanced-followups-3",
+      "file": "public/media/lessons/uc-frontier-advanced-followups-3.mp4",
+      "sha256": "8c5b9ae7ea8b0925d8f7d5ad9b0a45c7e43b44eaebbe4015e8b067ec608fcde0",
+      "bytes": 808112,
+      "duration": 39.824000000000005,
+      "renderKey": "3ce19fbf81c6449a43e040ec85c5fd6faad78ddf59234964f19f10865d7b6f8f"
+    },
+    {
+      "id": "um-derivative-advanced-followups-4",
+      "file": "public/media/lessons/um-derivative-advanced-followups-4.mp4",
+      "sha256": "8a0b2ed79ffe9dc8d8f35a67f066346c67f5fc1be46fd89770291b1a8e3cd735",
+      "bytes": 799185,
+      "duration": 33.952,
+      "renderKey": "4f5dd25015ecb7b903ab0c8c040817ea79c95137a24ccdeecf8382baa4dad902"
+    },
+    {
+      "id": "uc-rigid1-advanced-followups-5",
+      "file": "public/media/lessons/uc-rigid1-advanced-followups-5.mp4",
+      "sha256": "308fafe48200c88e409f7da5f44ed122635bbd8c7336d3678ab770d246fb9bff",
+      "bytes": 1010118,
+      "duration": 42.95733333333333,
+      "renderKey": "ac7960e6b885d26bffab404e725d15aedff965179a34fdb3002833c54b4a10da"
+    },
+    {
+      "id": "uc-rigid2-advanced-followups-6",
+      "file": "public/media/lessons/uc-rigid2-advanced-followups-6.mp4",
+      "sha256": "f0d2719f3dd42014ca73d01c75f17cf33edd7a53d1d730f8d90cb91bdb8c2085",
+      "bytes": 926193,
+      "duration": 41.602666666666664,
+      "renderKey": "614901696a810dd79a89bdcc8b4f7af3fb1560885d6e41614e43297e07adc13d"
+    },
+    {
+      "id": "prep-position",
+      "file": "public/media/lessons/prep-position.mp4",
+      "sha256": "4761ac2ae539cf35d6c22a7837fb2bd1974ee6b3e21fda38ce28360ced1ca38f",
+      "bytes": 770331,
+      "duration": 44.117333333333335,
+      "renderKey": "4796fca66828c0e97d92e75a35b52d0bad284b480e059036eacd5913a53d1e49"
+    },
+    {
+      "id": "prep-graph-slope",
+      "file": "public/media/lessons/prep-graph-slope.mp4",
+      "sha256": "d0dee9baef3c4a70cef5e6bae1df18ff1ad20204e42c79c742d81076282c82cf",
+      "bytes": 755855,
+      "duration": 47.162666666666674,
+      "renderKey": "b3d753b95c116366d3c8800d99001476c0ac938039e3ea58be6176f71204bf15"
+    },
+    {
+      "id": "prep-acceleration",
+      "file": "public/media/lessons/prep-acceleration.mp4",
+      "sha256": "7795f9d87885eef8559dcf6fb8d260ca56bc916fcfa7cfd5af0b90940dd201a2",
+      "bytes": 828513,
+      "duration": 51.04266666666667,
+      "renderKey": "3aee647d77c9cb2163070b4e8fb16dd34a6316465bcdbe2984b3cd6f1073b036"
+    },
+    {
+      "id": "prep-area-distance",
+      "file": "public/media/lessons/prep-area-distance.mp4",
+      "sha256": "b3d537af104c1c799817d642adac1a0eed60666f27ac6fedaca5375d4d3e57c0",
+      "bytes": 808789,
+      "duration": 48.288000000000004,
+      "renderKey": "fa5155ad263e9ca017117572366c31cd3371575078385551d4a9b967e4590bef"
+    },
+    {
+      "id": "prep-force",
+      "file": "public/media/lessons/prep-force.mp4",
+      "sha256": "170cf6060fa3e2472b08703be32dad5e5a07b54af776480407350eb0333e2cd1",
+      "bytes": 722187,
+      "duration": 44.16,
+      "renderKey": "56763540a4db927cd0e5642e540baf8efe5d748abe5929b941706f29557167c8"
+    },
+    {
+      "id": "prep-vector-difference",
+      "file": "public/media/lessons/prep-vector-difference.mp4",
+      "sha256": "aa3282733f9e06befebfec5da6867a03987b35c421e2b4db92b8b5722b4acab4",
+      "bytes": 767785,
+      "duration": 47.626666666666665,
+      "renderKey": "fc325cb24c44f03efddea54f92de145c8df6f393a32ef9fb203f20a57f598ce6"
+    },
+    {
+      "id": "prep-trig",
+      "file": "public/media/lessons/prep-trig.mp4",
+      "sha256": "4b717e0d4fd6d807fc7dda103781f1d37dc99beceed455c8ead46221dc26182e",
+      "bytes": 772738,
+      "duration": 48.23466666666667,
+      "renderKey": "feea31e45c40033e0b00e66b24cd6c68b43bb5b9794f7e6e95a029ace5964353"
+    },
+    {
+      "id": "prep-initial-values",
+      "file": "public/media/lessons/prep-initial-values.mp4",
+      "sha256": "7676da538ddaad4bab96842758496f311e5f408f9d1b1aa1682864e83b6fd4f5",
+      "bytes": 929115,
+      "duration": 53.272000000000006,
+      "renderKey": "f39017d0567f3c5230f36f90c5e1600fe1d1493cf098aebbda41f63b3fcd3fd4"
+    },
+    {
+      "id": "prep-work-energy",
+      "file": "public/media/lessons/prep-work-energy.mp4",
+      "sha256": "f14ca8ff2077d0f2ae139de0766ebdc94c98ba0c23ea0dae06b61d46abe036da",
+      "bytes": 987189,
+      "duration": 58.928000000000004,
+      "renderKey": "f53f0796cecdf53835955c0406bbb6a69fe6532da04f450f73225870f9892959"
+    },
+    {
+      "id": "prep-potential-conservation",
+      "file": "public/media/lessons/prep-potential-conservation.mp4",
+      "sha256": "9a29e6fe243ec7e55ec1d6f16b58b209bd828e2ef2e93140d954bc47872d072d",
+      "bytes": 896555,
+      "duration": 49.47200000000001,
+      "renderKey": "ffffc30388b776c7e643868894c85f75d50978122e3ff9e7fe658a13f832a4b2"
+    },
+    {
+      "id": "prep-difference-limit",
+      "file": "public/media/lessons/prep-difference-limit.mp4",
+      "sha256": "c8379fdc52e427ffb12a2b0c64e3af80f4463b6bc3d6f543656ac2ee5d00eb47",
+      "bytes": 890651,
+      "duration": 50.47466666666667,
+      "renderKey": "0c4678edff507719a6ba1db7a74d8c260c7fff93d7bd6a9efa99b92981546098"
+    },
+    {
+      "id": "prep-sum",
+      "file": "public/media/lessons/prep-sum.mp4",
+      "sha256": "732a24a50b199476ac8def0775cf7efeb8906c4e6f6167280f79f5e8d7cd4215",
+      "bytes": 864983,
+      "duration": 48.02133333333334,
+      "renderKey": "878716be8608c6ddf07504c40d2a936707ceb8d2d197011e9e72a41972fbd554"
+    },
+    {
+      "id": "prep-integral-compute",
+      "file": "public/media/lessons/prep-integral-compute.mp4",
+      "sha256": "2f92c2368c9c1e125f8ab58ffdea0e5d3f27d4c4e46179d31cae739b405ce488",
+      "bytes": 767454,
+      "duration": 46.368,
+      "renderKey": "8013cb2a435885e6ebef3a83f24911e835fa4268799088362f7516a404ae1483"
+    },
+    {
+      "id": "prep-radian",
+      "file": "public/media/lessons/prep-radian.mp4",
+      "sha256": "031e4ad65f694d769bb021ffbb001ba88ea2b9bb2f8fde7d9f324a222bed94ad",
+      "bytes": 778582,
+      "duration": 46.90400000000001,
+      "renderKey": "620ef37bbcec8a8d503283a0f345b95ad33df460f800f45107c646cc49b3a400"
+    },
+    {
+      "id": "prep-sin-wave",
+      "file": "public/media/lessons/prep-sin-wave.mp4",
+      "sha256": "73934e0d60f5f7ca40f3419dba45a86168988561688a87ddad3db86717161f96",
+      "bytes": 855709,
+      "duration": 49.354666666666674,
+      "renderKey": "8f8881a7edcde58da0e7be83f66e320f0684428b6c20184cd65e76ac740d0cc7"
+    },
+    {
+      "id": "prep-vector-length",
+      "file": "public/media/lessons/prep-vector-length.mp4",
+      "sha256": "b886f7b8d8ee8a0ba6e86cfc7e92e1061ea282c2c1242fc2569d1c0843316be7",
+      "bytes": 727862,
+      "duration": 44.074666666666666,
+      "renderKey": "1729471a2ef30ef8c4f7ee5b9475dc79a2b6ad7f488cf6a344acb94f8e00d1a2"
+    },
+    {
+      "id": "prep-dot-work",
+      "file": "public/media/lessons/prep-dot-work.mp4",
+      "sha256": "15b58d12de2711ac183a2eee3647f5768661f04127799857435c05fefa75fa6b",
+      "bytes": 858134,
+      "duration": 50.73066666666667,
+      "renderKey": "086fc7e2e778411179d54898102ee543f788c449563999ee5e0b1bde21008831"
+    },
+    {
+      "id": "prep-chain",
+      "file": "public/media/lessons/prep-chain.mp4",
+      "sha256": "c75f4fe56bfacf283d35647f84dd443049e947ab14576c9be5799a1f1c565283",
+      "bytes": 667494,
+      "duration": 38.88,
+      "renderKey": "5117a0786c5be08369642145b8aa976803a531f52fc8c2ae8f12ada13f3e96ef"
+    },
+    {
+      "id": "prep-partial",
+      "file": "public/media/lessons/prep-partial.mp4",
+      "sha256": "60e0a32494f0f87704c2af63a728b60dbe7c8543585a5630a3280e8af999efcb",
+      "bytes": 795745,
+      "duration": 46.85866666666667,
+      "renderKey": "ab074f8e1eb92f1ba05bbf92528638b8b928dcfde7a0bb5cc520c77718240f96"
+    },
+    {
+      "id": "prep-exponential",
+      "file": "public/media/lessons/prep-exponential.mp4",
+      "sha256": "d2a4f13a5f6f23b9a642d7bee552f2dd041aac1adf105c4018d0516aa1f83788",
+      "bytes": 900139,
+      "duration": 54.104,
+      "renderKey": "d96305e9fc5403228ec5e733c811559a2d16773ebf7ca4a800dc6855a165353e"
+    },
+    {
+      "id": "prep-log",
+      "file": "public/media/lessons/prep-log.mp4",
+      "sha256": "138269837e08876c5a67603ef52ee6103e880e8ea1472ad51df02fcd7233fb61",
+      "bytes": 770614,
+      "duration": 46.26133333333333,
+      "renderKey": "c093456b2a741f6cf905574775ae46fb1853ab6c122396d23f326adcb42a2e47"
+    },
+    {
+      "id": "prep-heat-units",
+      "file": "public/media/lessons/prep-heat-units.mp4",
+      "sha256": "14c30bf727a535b41087ec0a969d5ee6e103653ea14fb2c0cfc1b7e8f7b18b7b",
+      "bytes": 781266,
+      "duration": 39.70399999999999,
+      "renderKey": "e94d4bb3dbe65a4d99f86b4c5f8471f6489662bd2ebe004e73c19b05afdb0804"
+    },
+    {
+      "id": "prep-melting",
+      "file": "public/media/lessons/prep-melting.mp4",
+      "sha256": "b1de497961453a63a64c562033af033a0620144aa5329856bdcc4025f359be52",
+      "bytes": 701701,
+      "duration": 38.50666666666667,
+      "renderKey": "67fc47ed06a721827e4824ac1693f63e4d5827ccaa95c5e89453c13bf4fd857d"
+    },
+    {
+      "id": "prep-pressure",
+      "file": "public/media/lessons/prep-pressure.mp4",
+      "sha256": "5a31a665be390669a6e0c3a1a5a909d0fcb7ced0592767a538366431c7aca7ca",
+      "bytes": 803993,
+      "duration": 48.99466666666667,
+      "renderKey": "b7758928706dde7d9b753200e8cd9eeeb98a103be165df51dda50618bfd80749"
+    },
+    {
+      "id": "prep-mole",
+      "file": "public/media/lessons/prep-mole.mp4",
+      "sha256": "5ab77b422dff88012661dbc714a3d20c95303c7b1439f448509f57791950a49f",
+      "bytes": 605519,
+      "duration": 34.42133333333334,
+      "renderKey": "7c75696030bb470d0da052218e3e99179d413ffdf6280b66ee8e86bb90116fe5"
+    },
+    {
+      "id": "prep-gas-work",
+      "file": "public/media/lessons/prep-gas-work.mp4",
+      "sha256": "1173f4dd44ab0ee284831c3619e8a648c97633fa856ac89b18df9843df1ed91f",
+      "bytes": 757150,
+      "duration": 45.343999999999994,
+      "renderKey": "6242c319d8c155247672a91b41293cbfcb949fa1b0b9a201e14c42247293f1f6"
+    },
+    {
+      "id": "prep-wave",
+      "file": "public/media/lessons/prep-wave.mp4",
+      "sha256": "c38b4d5cbbe7f02be359e6ac8d958ed12a17e2dc618ecd37056b631f361e043e",
+      "bytes": 828080,
+      "duration": 48.03466666666667,
+      "renderKey": "5f52f78ed86c6a06edbcbf3521cddd03c4ca3273813bb778d9a3ec9e312f4be7"
+    },
+    {
+      "id": "prep-superposition",
+      "file": "public/media/lessons/prep-superposition.mp4",
+      "sha256": "89a60c4ece4bbd90fd5a267754eb690a70c5283988d5019f11e124ad3f6a152c",
+      "bytes": 817076,
+      "duration": 46.53866666666667,
+      "renderKey": "56008f1a7dcc90b30ed503ab83c64a924233110b4e730cd6293d9553a6e13c68"
+    },
+    {
+      "id": "prep-doppler",
+      "file": "public/media/lessons/prep-doppler.mp4",
+      "sha256": "37f0c6a6f084f1b0f7f0ef92ad70812d5f4d39172b9b5b73cf953643db977f3a",
+      "bytes": 651789,
+      "duration": 36.416,
+      "renderKey": "2bc8c993fb1b78cf68ea4fe7236306ee02624d0cf48dd404f0cc3ea130da979d"
+    },
+    {
+      "id": "prep-refraction",
+      "file": "public/media/lessons/prep-refraction.mp4",
+      "sha256": "21850810e7129ce2c8cdc92cb9f9865944058abe950b7fb047134eeb7b7ab511",
+      "bytes": 862283,
+      "duration": 50.048,
+      "renderKey": "5d1e8dc6d1946b28d25f6ca8c058e1a208aecf29f54d2df6a5098fe89af96969"
+    },
+    {
+      "id": "prep-charge-current",
+      "file": "public/media/lessons/prep-charge-current.mp4",
+      "sha256": "0b948564ed5a9bb7cb5e143fffe22d5b82bb15a2ba0e54eb7b86f521956a9b39",
+      "bytes": 757415,
+      "duration": 45.74133333333333,
+      "renderKey": "a27996b6c21a682cee2e50f26f51a6dbb2b8091edaf799c4499e25066dc03637"
+    },
+    {
+      "id": "prep-circuit-power",
+      "file": "public/media/lessons/prep-circuit-power.mp4",
+      "sha256": "ff1f6abbb55b554c0c57d4a7460f46a6db9438b2d5dd911b97e119a390f231e2",
+      "bytes": 896954,
+      "duration": 49.866666666666674,
+      "renderKey": "bd049088d0032e905b246a0f4d6d4af23e25f7579e61a5191af8ec833484b361"
+    },
+    {
+      "id": "prep-field-flux",
+      "file": "public/media/lessons/prep-field-flux.mp4",
+      "sha256": "598414a5c7ec08cdc8aba7e8e43a1f4486c314f8a2bfaa1de8dda435fddd547e",
+      "bytes": 819116,
+      "duration": 49.06666666666666,
+      "renderKey": "16640905bbd95b1603ec719ea916e70209e69eddbec73e520b99be4875279168"
+    },
+    {
+      "id": "prep-capacitor",
+      "file": "public/media/lessons/prep-capacitor.mp4",
+      "sha256": "e55e52e61bdb6a5e485e4e340692b7cec16ef5cd708959ba2edfd17ad6ab3059",
+      "bytes": 834597,
+      "duration": 50.336000000000006,
+      "renderKey": "55e26b1d4ebf31c8963a50d55be69d068ceccf24d520cf315f130ff445cd3410"
+    },
+    {
+      "id": "prep-photon-atom",
+      "file": "public/media/lessons/prep-photon-atom.mp4",
+      "sha256": "cbb1415c13d1d43528a6bf22ef4c17b91a504a6fbd3e741feae0451770a2968c",
+      "bytes": 921977,
+      "duration": 49.504,
+      "renderKey": "42708885830fb713cead150e06a6600a54ed3c96646660d7991d87ac7e5d036f"
+    },
+    {
+      "id": "prep-nucleus",
+      "file": "public/media/lessons/prep-nucleus.mp4",
+      "sha256": "72d8f0af72d54943d82a26af292bda3169e3f0b00151f989dcc781290ec170a7",
+      "bytes": 799453,
+      "duration": 45.165333333333336,
+      "renderKey": "50242d51fe99b2a6ce87b86439d93f06a6d2ea0de5dd15c30c61c7bb11fd8240"
+    },
+    {
+      "id": "prep-impulse",
+      "file": "public/media/lessons/prep-impulse.mp4",
+      "sha256": "745a50b1ffe3d7b9a144d709ec0aa9c1910168c26fee8fcfd062b92da73f41e6",
+      "bytes": 860890,
+      "duration": 50.272000000000006,
+      "renderKey": "dffe76a1f5e7fab531b543a870415691d1a25ae6fe8f5b056b35dd1b138022e8"
+    },
+    {
+      "id": "prep-system",
+      "file": "public/media/lessons/prep-system.mp4",
+      "sha256": "0344793c868324ec776576de9ec06ce7934982d04c12c2e678b0f2307d6f8b66",
+      "bytes": 652938,
+      "duration": 38.784,
+      "renderKey": "916bdd57d9c1c25cc7779cf9f1649322da878246aa2d6af9dc862193e932069d"
+    },
+    {
+      "id": "prep-circular",
+      "file": "public/media/lessons/prep-circular.mp4",
+      "sha256": "9713cc90b54582a1027f86fa21002754bc7988d2b381ce8c0ae69728b4e874b9",
+      "bytes": 948671,
+      "duration": 55.87466666666667,
+      "renderKey": "2fc9f1c820c240e20644ffee77649c93af77cfd34bd750f387b813f1c958365e"
+    },
+    {
+      "id": "prep-spring",
+      "file": "public/media/lessons/prep-spring.mp4",
+      "sha256": "afbd4e8ecb26a6596382de8c7071f291a1d0594a7f435dd8355eeeeef2a79c64",
+      "bytes": 743954,
+      "duration": 45.632,
+      "renderKey": "6ba52630a628da599f6247a70e3f1eadc8113ef2dcd7cf1b27b26be1844cca1b"
+    },
+    {
+      "id": "prep-ode-initial",
+      "file": "public/media/lessons/prep-ode-initial.mp4",
+      "sha256": "c8fa5132ee5834a85fd4b985ae5697711136b1cbd89c573a3e26ac8267c6be62",
+      "bytes": 751772,
+      "duration": 44.8,
+      "renderKey": "554d3f9b5ebb65290940fd7896842413f7422aee9d11deb33026e73cef9a6e6d"
+    },
+    {
+      "id": "prep-center-mass",
+      "file": "public/media/lessons/prep-center-mass.mp4",
+      "sha256": "eb7cab6227a6970390cc6da81ca7bc1eed653989bc4454b1d76018bf9b5b0ea9",
+      "bytes": 624693,
+      "duration": 36.448,
+      "renderKey": "07766e57a67addb3806fcb3eff9d20675cf43bd25fb8bdf04028469910f746c4"
+    },
+    {
+      "id": "prep-rotation-inertia",
+      "file": "public/media/lessons/prep-rotation-inertia.mp4",
+      "sha256": "7186159fb57e0e44b909681fa2aa38d043fb9d7d594f1405041e45a58c1b9226",
+      "bytes": 912656,
+      "duration": 50.101333333333336,
+      "renderKey": "98f45bc1b2f11d91ddc649bf58ea7f53a0e8797f709845d93fbed6b909edd9ee"
+    },
+    {
+      "id": "prep-torque",
+      "file": "public/media/lessons/prep-torque.mp4",
+      "sha256": "ed52156b00d62984e2475ddfab90063c57d6f19062c822bbaf7e96632b17e44c",
+      "bytes": 929088,
+      "duration": 56.45066666666667,
+      "renderKey": "d32d483da821afb661dc33a7aaaf87511f7a8e1e88230a7701d71c56102cf45b"
+    },
+    {
+      "id": "prep-rolling",
+      "file": "public/media/lessons/prep-rolling.mp4",
+      "sha256": "e51f146d13e59db7ea22b26660945e9d44a9fd66fd7008e6c941f75681185997",
+      "bytes": 845755,
+      "duration": 50.42133333333333,
+      "renderKey": "058e9dd79cef23e4cf302333b81722666e98ce4d80bb93d8d76e02ded8270019"
+    },
+    {
+      "id": "prep-reference",
+      "file": "public/media/lessons/prep-reference.mp4",
+      "sha256": "180700416805859658566dba683bf866e03702998b3b2a831b10f1f8e32223b0",
+      "bytes": 687931,
+      "duration": 40.394666666666666,
+      "renderKey": "0250fab8373ed70f8531fd01f2a5d5bc743b6fbd56fb2892c1bdc70c3d8169ef"
+    },
+    {
+      "id": "prep-algebra-projectile",
+      "file": "public/media/lessons/prep-algebra-projectile.mp4",
+      "sha256": "b46a97360546b96532e579e3dcddc9ffc187e88774ac9bac3594cb7ce2de6265",
+      "bytes": 842302,
+      "duration": 49.66400000000001,
+      "renderKey": "d866e3511cb231ae301990e873edef560e9848d6fa31e5ac5c671a5f53bac0ac"
+    },
+    {
+      "id": "prep-power-derivative",
+      "file": "public/media/lessons/prep-power-derivative.mp4",
+      "sha256": "2df2d4cfa9a5214e2cc1110324d60f6d0fb7050cf7c3fda86a97a6b8a9df249d",
+      "bytes": 724251,
+      "duration": 43.59466666666666,
+      "renderKey": "1bfd7407649f8e904986cfb8413345dac6882ed7bb847eb4dcce4bacd905c9a1"
+    },
+    {
+      "id": "prep-taylor",
+      "file": "public/media/lessons/prep-taylor.mp4",
+      "sha256": "16e84e4c96eb929f325f0756fa0ac6d636a0a3279a139166d80c30bb74fbbd89",
+      "bytes": 936402,
+      "duration": 54.10399999999999,
+      "renderKey": "81d0fba460a0c7e976a65bc7e7ebdc2e26931fb2b23631e777a604c7e7064bae"
+    },
+    {
+      "id": "prep-cosine-dot",
+      "file": "public/media/lessons/prep-cosine-dot.mp4",
+      "sha256": "296456e4a7137ce290f4070b4a5f5e8195255726b3eb79c8f2b2d906d15a833d",
+      "bytes": 782678,
+      "duration": 46.90133333333333,
+      "renderKey": "7a8c626b2cf92099fc7a37dca282ecf921e9d42aaa0c5ed32e12ae125f2569ad"
+    },
+    {
+      "id": "prep-work-path",
+      "file": "public/media/lessons/prep-work-path.mp4",
+      "sha256": "1dd79c466977360d5062c1b5b501f5a6c69cb13a6b798079d0d5474feb31a342",
+      "bytes": 790350,
+      "duration": 48.40533333333334,
+      "renderKey": "b091e5abf4dcce9f2cab16786d65d3ba26657ebe488fa6e50bf2a12386eaa13b"
+    },
+    {
+      "id": "prep-sin-derivative",
+      "file": "public/media/lessons/prep-sin-derivative.mp4",
+      "sha256": "6ded1bdcc32f43800122b29c9108cd833420403e127f4c87070643647009bd20",
+      "bytes": 789936,
+      "duration": 46.336000000000006,
+      "renderKey": "3a734b3251b72e7c928d8a987d6e380447108eae3245f97e8895a7dcf9bd03ee"
+    },
+    {
+      "id": "prep-sin-motion",
+      "file": "public/media/lessons/prep-sin-motion.mp4",
+      "sha256": "716c43b048f993e25292016776f7c9a739fe1d9cdea7a62c428357d0722af620",
+      "bytes": 590395,
+      "duration": 33.99466666666667,
+      "renderKey": "f88d02fb793f220ca53716b245e62cbd88b0efad8e45a5b3cdc106b2fd9aa935"
+    },
+    {
+      "id": "prep-oscillation-equation",
+      "file": "public/media/lessons/prep-oscillation-equation.mp4",
+      "sha256": "674824cc16bde6cbc334a6436d6cbcba6ce0fcd0720992000f762700be0e9b2e",
+      "bytes": 970482,
+      "duration": 54.03733333333333,
+      "renderKey": "8500c765692545b3e2e3a1502876b687d3a04bf811c808b5f973aec731b169a9"
+    },
+    {
+      "id": "prep-polar",
+      "file": "public/media/lessons/prep-polar.mp4",
+      "sha256": "07a320acafbfd9b6a931ed2b41cba3f4323d8f7915676a7d1b2f5034d3b4a406",
+      "bytes": 818868,
+      "duration": 50.38933333333334,
+      "renderKey": "5d83f6db4ce942ec4c89217dce854beeec7c3d462468d54076f3b5255e662164"
+    },
+    {
+      "id": "prep-ellipse",
+      "file": "public/media/lessons/prep-ellipse.mp4",
+      "sha256": "ce41c91cf2d9af078b9ca2223e0e35e9b811279ba1816d5df57a1638c2f3dcea",
+      "bytes": 1015640,
+      "duration": 61.394666666666666,
+      "renderKey": "7233dfa83fbf84e3d03355196f45e03db9442f61bd35ce5302a0ac0290c8252f"
+    },
+    {
+      "id": "prep-electric-work",
+      "file": "public/media/lessons/prep-electric-work.mp4",
+      "sha256": "2a162f6889451951e9ce00a489f5c8a912210b0d455e187ef7e891c280649959",
+      "bytes": 887104,
+      "duration": 52.42666666666667,
+      "renderKey": "41dad99e758d66d13ddfcdf72b6769dc658e7b37e3fdfe504342e972f20691cb"
+    },
+    {
+      "id": "prep-bohr-energy",
+      "file": "public/media/lessons/prep-bohr-energy.mp4",
+      "sha256": "7c17819a2c92d2d80fe9ebe2b0e0cb7fc40da971b8ee26f4b8b448318a661075",
+      "bytes": 675804,
+      "duration": 39.31733333333332,
+      "renderKey": "eaeb5d90a833959bd5e71be280758b90f54fdec03eec83f628609a427ff63e2e"
+    },
+    {
+      "id": "prep-gas-particles",
+      "file": "public/media/lessons/prep-gas-particles.mp4",
+      "sha256": "523ef14d265f6cf74fcea000ad539032e35f62e6a3d00d4848ee67db201ba477",
+      "bytes": 903093,
+      "duration": 52.17066666666667,
+      "renderKey": "09216a2a1ef9a4d47a96d176b00a0b4a54cb24e4f925bc24a5a2146833473095"
+    },
+    {
+      "id": "prep-heat-cycle",
+      "file": "public/media/lessons/prep-heat-cycle.mp4",
+      "sha256": "f5225a3e63033d5f0c6615a2b7ca30cbd2c5ca085af103eb2c549a96e4beb537",
+      "bytes": 676079,
+      "duration": 34.592,
+      "renderKey": "11e954f38b67d277d4f6fa7f539f757ae0fc40c36186f567e25668081aa49d0f"
+    },
+    {
+      "id": "prep-traveling-wave",
+      "file": "public/media/lessons/prep-traveling-wave.mp4",
+      "sha256": "17cb000077eb16bcd1a30d6f40b218db1ff161e4c7bd304446c095f7abced6e6",
+      "bytes": 654701,
+      "duration": 37.653333333333336,
+      "renderKey": "837374872621c7ed3c1d27d732bd67259bfab753cee7d3ec85d7a70b61a8f64a"
+    },
+    {
+      "id": "prep-sound-boundary",
+      "file": "public/media/lessons/prep-sound-boundary.mp4",
+      "sha256": "a9c135bdc4c7c9924e3a8b5aead404ef610a209882c306d5400d448e453fafb1",
+      "bytes": 776025,
+      "duration": 44.22666666666667,
+      "renderKey": "e35223f394c8d8ce46f93b80b0f773553b6b84bf0ee3c712f0f9cd923e20f34b"
+    },
+    {
+      "id": "prep-light-geometry",
+      "file": "public/media/lessons/prep-light-geometry.mp4",
+      "sha256": "cd4ff9c4f63f569bb00e901172799410cc888cb0022a751159bc440f8e0ce482",
+      "bytes": 817126,
+      "duration": 46.4,
+      "renderKey": "4085297ddff9eda3cae0a3f6cd4c3f3be89dca5f682abca43e2d3f737d5f3187"
+    },
+    {
+      "id": "prep-charge-calculation",
+      "file": "public/media/lessons/prep-charge-calculation.mp4",
+      "sha256": "43971e842548b24288931629e35ab82e19066ec997b31fc90434e999442552bd",
+      "bytes": 1001568,
+      "duration": 56.245333333333335,
+      "renderKey": "ce3709f02e4dee9ba4600e14c8e88c8c134530bee7b652c1c845d1d08685a378"
+    },
+    {
+      "id": "prep-quantum-units",
+      "file": "public/media/lessons/prep-quantum-units.mp4",
+      "sha256": "4c411c211dc685d2db9138bcfaed0a53efb362784323bd4264faf54f8c7aa9e7",
+      "bytes": 755843,
+      "duration": 43.192,
+      "renderKey": "cf95e722c594a018e0dec3e145737d2b873787e23bad13abbc7aedc84fd0a44a"
+    },
+    {
+      "id": "prep-nuclear-energy",
+      "file": "public/media/lessons/prep-nuclear-energy.mp4",
+      "sha256": "f8bb32800173d0157d10c602eea228aa0f83f751767d46c3b048ba94a7f518f2",
+      "bytes": 884912,
+      "duration": 50.122666666666674,
+      "renderKey": "b9e56ed0e84cfb2c16966ead4c5cf090b6fcd50728c61011549c83c5b9046205"
+    },
+    {
+      "id": "prep-absolute",
+      "file": "public/media/lessons/prep-absolute.mp4",
+      "sha256": "ee53ad22fa866cca3bc515605cdecb4ee3be4db4b2b08ef52a634fb0264cefac",
+      "bytes": 540941,
+      "duration": 34.218666666666664,
+      "renderKey": "884441e0c204f48c0e339027ed704d3cefc5a10f94ba71ef58d74cdfd82096c8"
+    },
+    {
+      "id": "prep-pendulum",
+      "file": "public/media/lessons/prep-pendulum.mp4",
+      "sha256": "cd299311ba53c42e49677348e440e3a0b91840ed4e8a430bcf1e4e09cf0d30f9",
+      "bytes": 623427,
+      "duration": 38.08,
+      "renderKey": "bd84fca744e6c0ff5e03e6c10ceaaa7997a3d15b4e1468b79ca9817896747f2e"
+    },
+    {
+      "id": "prep-collision",
+      "file": "public/media/lessons/prep-collision.mp4",
+      "sha256": "bfd8771b721ef1792a6c0c6c21dd6b527f4322b323c9238c9510de321722bb58",
+      "bytes": 631545,
+      "duration": 37.120000000000005,
+      "renderKey": "f6ff710ebd2bf3d169fbbe5a64fdcf31fff23c302e0dd03c8db37e64aa31c674"
+    },
+    {
+      "id": "prep-mass-integration",
+      "file": "public/media/lessons/prep-mass-integration.mp4",
+      "sha256": "0d5e13c71d2685a747cce26c21e255ce059d17e76d9cf991e5b89f94e453891f",
+      "bytes": 959285,
+      "duration": 52.38400000000001,
+      "renderKey": "9b4b14d46042628882e08d9b590e3011c2104d2ca234c781adfef9bdde361651"
+    },
+    {
+      "id": "prep-derivative-rules",
+      "file": "public/media/lessons/prep-derivative-rules.mp4",
+      "sha256": "cf8f2edf2f241df066904e51f77482f5d7e1e0fe3bcc7d638b1b5328935c6ec2",
+      "bytes": 648045,
+      "duration": 38.99733333333333,
+      "renderKey": "d9c2962110ae7faea449ef8e826d2d994609c546968904ece4c32649a1eb9c61"
+    },
+    {
+      "id": "prep-energy-chain",
+      "file": "public/media/lessons/prep-energy-chain.mp4",
+      "sha256": "d0ff439d2722690b848365b629f4d25181a8b12b08a029df91d702f6afa66cb9",
+      "bytes": 715319,
+      "duration": 42.27466666666667,
+      "renderKey": "5a6ee0d10297a0f52a52e5160245b7a70a10741c3ee4ece9fbe0a51ef866b984"
+    },
+    {
+      "id": "prep-inverse-potential",
+      "file": "public/media/lessons/prep-inverse-potential.mp4",
+      "sha256": "a7828a36026149df7bd11e028cd9612ef5049c2544d2344be0f5631edcaaa56a",
+      "bytes": 839945,
+      "duration": 49.14133333333333,
+      "renderKey": "6553a2e88c3b67db7edc19ecf3521f70652741ca562b535c5c3d772e1cb9ee80"
+    },
+    {
+      "id": "prep-cross-components",
+      "file": "public/media/lessons/prep-cross-components.mp4",
+      "sha256": "b154531a03d5fc8bde9a3ad23afba57996510eb7b14d62b3772b3ccee42e4bd7",
+      "bytes": 795793,
+      "duration": 50.15466666666667,
+      "renderKey": "623b8d2db0fbebe59da69605729b0acb391011af3767ffaffc0859c7faad53e8"
+    },
+    {
+      "id": "prep-drag-solve",
+      "file": "public/media/lessons/prep-drag-solve.mp4",
+      "sha256": "a3cfa3a64944687cbf42bf0ee2a0400cabb870d7c981ec6e11fa3f5a297e3e7a",
+      "bytes": 844308,
+      "duration": 48,
+      "renderKey": "86f09da62ed5196633926ed8ea75caa4004ca830af4981227a5d10af0a8af3b9"
+    },
+    {
+      "id": "prep-oscillation-coefficients",
+      "file": "public/media/lessons/prep-oscillation-coefficients.mp4",
+      "sha256": "3aa6018214eab02ec4dea37e31c7cdf31a98a05c7cddd4a11e293af77dee9004",
+      "bytes": 937191,
+      "duration": 53.93333333333333,
+      "renderKey": "73ba6d27692c60cc591f66819916beb04a4db40a4eeca7c2d45aeef476f8541e"
+    },
+    {
+      "id": "ue-integrals-01",
+      "file": "public/media/em/ue-integrals-01.mp4",
+      "sha256": "55f4dede3a96d99ca7ce8a35c0e23bd29f471599918f8a25b1605944b5da0b80",
+      "bytes": 1339016,
+      "duration": 59.77066666666667,
+      "renderKey": "01d83a1f928a311e17f228e9fa54c989be321477c8997bf68ed4de07d7237560"
+    },
+    {
+      "id": "ue-integrals-02",
+      "file": "public/media/em/ue-integrals-02.mp4",
+      "sha256": "41989e3a041b8acb985652e7e7e2cf10b5bbb0b76b1b476ef9587fb35e28c393",
+      "bytes": 1361042,
+      "duration": 62.74933333333334,
+      "renderKey": "9affa47d10cf95101d69be0eec7873aa32d472e6d6dc2aeb431113cce91a6352"
+    },
+    {
+      "id": "ue-integrals-03",
+      "file": "public/media/em/ue-integrals-03.mp4",
+      "sha256": "bdc8e297388353d67d406ad979662cb20bb6dc320acd7123731c1dc576b14477",
+      "bytes": 1216286,
+      "duration": 59.42133333333334,
+      "renderKey": "66966acc4140cad1c3e0005a2cde5a6e3f5335a6efc5f39571bf50483ae0f763"
+    },
+    {
+      "id": "ue-integrals-04",
+      "file": "public/media/em/ue-integrals-04.mp4",
+      "sha256": "ce9f660714cfe5ea9dc55e72906fdb14ce5ef1861ad4f2b3cbc5630c2e636bc6",
+      "bytes": 1599284,
+      "duration": 63.954666666666675,
+      "renderKey": "8f0251a85d04cca4bf0e82c6904f02cca0b7dcb80267cf5c2d88d4c4324c7b4e"
+    },
+    {
+      "id": "ue-integrals-05",
+      "file": "public/media/em/ue-integrals-05.mp4",
+      "sha256": "36d400112d4252409fc70b79417b4f7c806f075a23ef6e94f3d94cbb4fac9f23",
+      "bytes": 1981511,
+      "duration": 64.352,
+      "renderKey": "a4b01606eed3c1a79e57efda42b6ef35070f6ba43306a19a0f31e61b8773367f"
+    },
+    {
+      "id": "ue-gauss-01",
+      "file": "public/media/em/ue-gauss-01.mp4",
+      "sha256": "de4fd3593d15b9156e6e9ca5e745277a74bf9c3665f497d746917968f7aaa535",
+      "bytes": 1985856,
+      "duration": 66.64266666666667,
+      "renderKey": "7c3e4ae211b1951a4a422ee5ebc34140474db89580cb19b3a683eace4dc8be1a"
+    },
+    {
+      "id": "ue-gauss-02",
+      "file": "public/media/em/ue-gauss-02.mp4",
+      "sha256": "4e95cd41bcc26cdf0e0c6611583cc3c4512b98660c62296f720c563eed27d6a8",
+      "bytes": 1923403,
+      "duration": 65.544,
+      "renderKey": "6f3dcf94ff57de1f1c85fffe70ba3801970e63caf3c6a59ec92acfa7b917d47f"
+    },
+    {
+      "id": "ue-gauss-03",
+      "file": "public/media/em/ue-gauss-03.mp4",
+      "sha256": "e6d37756d4f8c8f5e21de53d632990fd5f17654980ae7e8b0574540ef7894cb4",
+      "bytes": 1939782,
+      "duration": 66.10933333333334,
+      "renderKey": "0d3289d8e01026438870b7fd5d6fa291d36e6bffb315241d64ddb53e963412c2"
+    },
+    {
+      "id": "ue-gauss-04",
+      "file": "public/media/em/ue-gauss-04.mp4",
+      "sha256": "dc3bc6d1b6d87efe32898c226ac7c9856226404b72a8e65e48a4b60f4a9453cd",
+      "bytes": 2241420,
+      "duration": 61.413333333333334,
+      "renderKey": "257101ea31b81f17b271bec36d5d1b742eb726b7f2c8ef20213812c2e5f73c61"
+    },
+    {
+      "id": "ue-gauss-05",
+      "file": "public/media/em/ue-gauss-05.mp4",
+      "sha256": "11cb8c8706ad054dd3981253c9b8a28f51fd4c45f7f23c9fa75b29130f284a91",
+      "bytes": 2451234,
+      "duration": 69.52266666666668,
+      "renderKey": "6951aef95c4003eb587a2568b5a06d408169c9a22e83a9a4ac44d9e2da24b0f8"
+    },
+    {
+      "id": "ue-gauss-06",
+      "file": "public/media/em/ue-gauss-06.mp4",
+      "sha256": "212617e8bdc853338a7517d8086771558737b861182bff6f13bc9bbd51dcbb16",
+      "bytes": 2154732,
+      "duration": 67.41866666666667,
+      "renderKey": "7d978558184c97b88b0a7715987fed13c42e1cc793df3cc078d491375526d5e2"
+    },
+    {
+      "id": "ue-gauss-07",
+      "file": "public/media/em/ue-gauss-07.mp4",
+      "sha256": "14f06340bc50cbbe7b5e08511df8499e8a676185c39f9a804837779721b36ec5",
+      "bytes": 2492727,
+      "duration": 59.04533333333334,
+      "renderKey": "ada8a051b76168c2d9291e296bb8d434e509d1248884f86e5a704877ad74833f"
+    },
+    {
+      "id": "ue-potential-01",
+      "file": "public/media/em/ue-potential-01.mp4",
+      "sha256": "e3acacae7b488f851cd1618983c2eda97d61183cdcf2afef3e137d9e47cad67e",
+      "bytes": 1460438,
+      "duration": 65.65333333333334,
+      "renderKey": "c13d08004120a858a7a16106e0b9b14ed83337d6b30c938284bb9744a60beb1e"
+    },
+    {
+      "id": "ue-potential-02",
+      "file": "public/media/em/ue-potential-02.mp4",
+      "sha256": "ce49723d27c677d641102365f10c0de60f9d73e62a6e6d3910ab3af9a587d855",
+      "bytes": 702281,
+      "duration": 39.74666666666666,
+      "renderKey": "f82a1bf0abdfcf0c8c35b6afbfa442c8aedbbdefb78fbe97c7cc13527c4d10bd"
+    },
+    {
+      "id": "ue-capacitor-01",
+      "file": "public/media/em/ue-capacitor-01.mp4",
+      "sha256": "ed9b02f48e789cd20622cd9a913518f4be605d53891021f5615fce6f30b255a6",
+      "bytes": 1088226,
+      "duration": 55.349333333333334,
+      "renderKey": "eba60f7905dfe141c8fbae5de16ecc91a7b4ea44a759c502eb1a8f75034a474b"
+    },
+    {
+      "id": "ue-capacitor-02",
+      "file": "public/media/em/ue-capacitor-02.mp4",
+      "sha256": "abe489f37136da7a127669f04ec7f5dc24ba1b8fe7fdc9d045ffe5332586c40f",
+      "bytes": 1054291,
+      "duration": 47.138666666666666,
+      "renderKey": "ace6c3761e770ac19af4caab7c72f0db6665ade77fcbc868a54995589a5f5006"
+    },
+    {
+      "id": "ue-current-01",
+      "file": "public/media/em/ue-current-01.mp4",
+      "sha256": "66c3722913da23f34af87d94d1479f3970cb96933a6f529822d94763b4e6a574",
+      "bytes": 1477844,
+      "duration": 73.94133333333333,
+      "renderKey": "8318aeab00e61215a9554a35b70619ebd601dcc8026537247e28f14432210c80"
+    },
+    {
+      "id": "ue-current-02",
+      "file": "public/media/em/ue-current-02.mp4",
+      "sha256": "b3fa3f0af00b1abf6b4ed4c5377c524b5629fc5a8d4698dca530ef6eea3677b0",
+      "bytes": 727020,
+      "duration": 34.349333333333334,
+      "renderKey": "85f7580b40c114c37b5a85f94c64fb23de2599859bbfa2d8171945668a75207b"
+    },
+    {
+      "id": "ue-lorentz-01",
+      "file": "public/media/em/ue-lorentz-01.mp4",
+      "sha256": "55b085915a2171c1922604f8fbeaca80d84ca53d1868ad1d89d176a5bd85e6b5",
+      "bytes": 1090936,
+      "duration": 52.48533333333333,
+      "renderKey": "66f1b2931dcb4af944e47cc10b80c976e928af0107bfe54f3c29ec375d1a6078"
+    },
+    {
+      "id": "ue-lorentz-02",
+      "file": "public/media/em/ue-lorentz-02.mp4",
+      "sha256": "f5204b27c31e0522d541864279ee594658821bb0c740c086df2ba67098cee59a",
+      "bytes": 911862,
+      "duration": 46.74666666666667,
+      "renderKey": "329091834b82a368e1221511b53971019110765d5ea2ef2f5caf785925710901"
+    },
+    {
+      "id": "ue-ampere-01",
+      "file": "public/media/em/ue-ampere-01.mp4",
+      "sha256": "ee2211d203389ab0329b8c0d33847881c8c57aa8717fa72f562951748d8feb72",
+      "bytes": 1047622,
+      "duration": 49.92533333333333,
+      "renderKey": "9e7619b51160d027fe1291ca3ea45db4fcfc483774e22d855cd9c0b6b31d2b22"
+    },
+    {
+      "id": "ue-ampere-02",
+      "file": "public/media/em/ue-ampere-02.mp4",
+      "sha256": "4505b812f3bf891e090df7f0884f058242026fd4d8b5f613d2d272a0f282febb",
+      "bytes": 1122443,
+      "duration": 58.632000000000005,
+      "renderKey": "3a34edcc104f3ff43c07909066f21ad58e5d66d47de7776deb665cfdae88664e"
+    },
+    {
+      "id": "ue-faraday-01",
+      "file": "public/media/em/ue-faraday-01.mp4",
+      "sha256": "54194f561a2e0f1c419e59747e7fc2e243f515ec1691c26ea247be2f7170442c",
+      "bytes": 969243,
+      "duration": 56.53066666666666,
+      "renderKey": "05e9fe631e684d771fcd59803a12ae174186601bca3ef25973993e0fb8fb423f"
+    },
+    {
+      "id": "ue-faraday-02",
+      "file": "public/media/em/ue-faraday-02.mp4",
+      "sha256": "d4e9b898b278cb38dfd85c40ba44122800f0c8dfdb9f9c80956d0bae2e27cc47",
+      "bytes": 1120503,
+      "duration": 54.97333333333334,
+      "renderKey": "7e040556f2411bf79f132a82f8d0a0dfb8bca44844280ff34929679c10441dd1"
+    },
+    {
+      "id": "ue-transient-01",
+      "file": "public/media/em/ue-transient-01.mp4",
+      "sha256": "72a132570d8702f0a131e0e0f3b604f80c8f47095fcaaeebf52ec3e6da8a935e",
+      "bytes": 1040826,
+      "duration": 53.224,
+      "renderKey": "e1d0b27ca12f095ebf7ba6d46e37f3062cd569f4aa0f73cd6fb569e0116c8b73"
+    },
+    {
+      "id": "ue-transient-02",
+      "file": "public/media/em/ue-transient-02.mp4",
+      "sha256": "ff3febf123765b3cdbed74ea8f99cfe57847429ec0ce8a86ebe35c82dd4cd968",
+      "bytes": 729603,
+      "duration": 39.792,
+      "renderKey": "b565d06a546ee8f5250360cf65e4c2547e47b70930c62d077299940b2549e36c"
+    },
+    {
+      "id": "ue-maxwell-01",
+      "file": "public/media/em/ue-maxwell-01.mp4",
+      "sha256": "59b2640a6c91462bbee8711eda858f244731d85d1e9e5ffd3e19e04608ac1ba6",
+      "bytes": 930603,
+      "duration": 36.42133333333334,
+      "renderKey": "09d9dbc0a516bae94cec08ecbe6c2d6f5af413af600658e21f590ea4cadd4646"
+    },
+    {
+      "id": "ue-maxwell-02",
+      "file": "public/media/em/ue-maxwell-02.mp4",
+      "sha256": "46a3e5759c5a0a05e836be2d92d63a60a9acb1df538489937ca2860ea8a1e6d9",
+      "bytes": 1379786,
+      "duration": 53.136,
+      "renderKey": "0826ff9246aff34428e66c903479210e1a18038144008c7bf7a64a7c26a46937"
+    },
+    {
+      "id": "ue-maxwell-03",
+      "file": "public/media/em/ue-maxwell-03.mp4",
+      "sha256": "38623096bd0ece901d20a4be082b2cd3860b3b0fca8121d18853baba2a21dbee",
+      "bytes": 2467814,
+      "duration": 74.21866666666668,
+      "renderKey": "5b9230e412bc99ca25f54a98085492647d18ac8c3ef13926d446e964d3506e08"
+    },
+    {
+      "id": "ui-field-map-01",
+      "file": "public/media/em/ui-field-map-01.mp4",
+      "sha256": "a3713357f743fc4a1f9f485b3d80ade60c752f771be7bcedd29be43e2f722c38",
+      "bytes": 790167,
+      "duration": 37.976,
+      "renderKey": "e3243ca8077ed1bd569035c99f1f5197ab1be0663460950c2b691e228734ff86"
+    },
+    {
+      "id": "ui-field-map-02",
+      "file": "public/media/em/ui-field-map-02.mp4",
+      "sha256": "39a4549b160421e1bd28f7b51853c9d0678cfe77b99195f9a20a19a42e2fe6c3",
+      "bytes": 662436,
+      "duration": 36.27733333333333,
+      "renderKey": "6f932d19754387d44985285422d202e5ce80489629820f6125de92b11551dc87"
+    },
+    {
+      "id": "ui-field-map-03",
+      "file": "public/media/em/ui-field-map-03.mp4",
+      "sha256": "888ca33d80ad681303069293bb3ef4ce513e6bd64dde1f3d8332f80fc6217020",
+      "bytes": 994602,
+      "duration": 51.496,
+      "renderKey": "29301a1c6f93120415a97839a84dbd70cd9cf57d77ecfb99a40841580f969ccc"
+    },
+    {
+      "id": "ui-work-direction-01",
+      "file": "public/media/em/ui-work-direction-01.mp4",
+      "sha256": "e6c807309d75614097313b40e6e612acfc2b2cef9b5b14296897d0cc76a15496",
+      "bytes": 708436,
+      "duration": 36.568,
+      "renderKey": "2210e3a4112bb41e8880bfdc42a5a1dcd7d0a39542471f702742b642153ec8c7"
+    },
+    {
+      "id": "ui-work-direction-02",
+      "file": "public/media/em/ui-work-direction-02.mp4",
+      "sha256": "a0ea160181a15b218b677c3d316aaead6021fc9a1d01683d615813d8ffd53e1f",
+      "bytes": 662079,
+      "duration": 33.032,
+      "renderKey": "0a2538970f42d66722951a8f36d950d4720373a872eb5d211bb7179996ed0f11"
+    },
+    {
+      "id": "ui-work-direction-03",
+      "file": "public/media/em/ui-work-direction-03.mp4",
+      "sha256": "01e41c597f69766c093afe383d975646da78c4aea56bc23882b02cf36a6ddf22",
+      "bytes": 484854,
+      "duration": 25.055999999999997,
+      "renderKey": "e34a9abcf4687d48ccd60982815d975a7c683668e3b96156b39318f3abe3c902"
+    },
+    {
+      "id": "ui-work-bent-path-01",
+      "file": "public/media/em/ui-work-bent-path-01.mp4",
+      "sha256": "6c37a0e815020e3d69f4b0d8c00d854400b07db73306650e05d7216e003d54fc",
+      "bytes": 701714,
+      "duration": 35.31733333333333,
+      "renderKey": "4956242e39d34adbe471701b0e18114ab173f3591eb021db1ef99d333910fa89"
+    },
+    {
+      "id": "ui-work-bent-path-02",
+      "file": "public/media/em/ui-work-bent-path-02.mp4",
+      "sha256": "b70d39913718ff9a4f410095b9bdc17a07f14f487f60dbf2995da41e4c114d2b",
+      "bytes": 715892,
+      "duration": 42.44266666666667,
+      "renderKey": "894b0db211d2d159b5b2fc31390ab2e9da219b6750250bc072939df1c754913a"
+    },
+    {
+      "id": "ui-work-bent-path-03",
+      "file": "public/media/em/ui-work-bent-path-03.mp4",
+      "sha256": "0cae18f3e64ba7492e7dc9d31aa1d9261bea94bbcbb74fe5b2d3c4d763e014b7",
+      "bytes": 802504,
+      "duration": 43.448,
+      "renderKey": "5c514420e9b280ee289690e6cd77060ceecc08145736f6d9e59e2f10c71d393f"
+    },
+    {
+      "id": "ui-electric-work-path-01",
+      "file": "public/media/em/ui-electric-work-path-01.mp4",
+      "sha256": "fa28d98727c4cf269c18e36a109cf50e7a211bf4dfcfb304cb95c6b95c788b19",
+      "bytes": 749715,
+      "duration": 38.46666666666667,
+      "renderKey": "d1b2cc6c0b770d4259751939dbdf11a3f9fc1fc3a8b61e357710464428566a5d"
+    },
+    {
+      "id": "ui-electric-work-path-02",
+      "file": "public/media/em/ui-electric-work-path-02.mp4",
+      "sha256": "999959cb35121670f7fa1506f9be8d92e3323f6710521e7bb1941436ed864bdf",
+      "bytes": 790072,
+      "duration": 44.81066666666666,
+      "renderKey": "1acd53eb89852c3d46e0761e35a198e1850dcab83c32f624c33cf6d42ffe2d1e"
+    },
+    {
+      "id": "ui-electric-work-path-03",
+      "file": "public/media/em/ui-electric-work-path-03.mp4",
+      "sha256": "137d860a3cbd9eb3318213205186f298029f1e41615996834cfd627078a12546",
+      "bytes": 535737,
+      "duration": 30.746666666666663,
+      "renderKey": "eb8e2c69b8d0c5ff84807bd07e5c97ea290cb7e33281086edeea784acbcf444e"
+    },
+    {
+      "id": "ui-flux-one-tile-01",
+      "file": "public/media/em/ui-flux-one-tile-01.mp4",
+      "sha256": "064216057ff0d1f547027e0ecddc5e6d071c7d2329cdc13947a8753a064f4ef9",
+      "bytes": 782939,
+      "duration": 43.19466666666666,
+      "renderKey": "056231ad9854a0498103695c6581f8dd834418d43816093c3d05c9c117a30845"
+    },
+    {
+      "id": "ui-flux-one-tile-02",
+      "file": "public/media/em/ui-flux-one-tile-02.mp4",
+      "sha256": "24e9b5239f4865ccf06c5cb7c01e1c7cceb1fa0fdc2fef99753842ba8043909a",
+      "bytes": 786918,
+      "duration": 37.42133333333334,
+      "renderKey": "ca9b8c11d6683168a1433232c625b0747b28eac2c4f2bd3fd5dcf79fe5ac9051"
+    },
+    {
+      "id": "ui-flux-one-tile-03",
+      "file": "public/media/em/ui-flux-one-tile-03.mp4",
+      "sha256": "2b20b1ba5e1dee1d3c9a0f0773090d849781f27b9bdd4a6beaf9f0c6585fa530",
+      "bytes": 873524,
+      "duration": 43.41866666666666,
+      "renderKey": "cc25410a3c1087f4a4b9e5fa71c5afde5e46698b6d9af47923d35c9b43022e26"
+    },
+    {
+      "id": "ui-flux-many-tiles-01",
+      "file": "public/media/em/ui-flux-many-tiles-01.mp4",
+      "sha256": "4653b0c8dc1121ec2556c1fdc4611005c1ddb3177611dda49cf36b0d9ab531d9",
+      "bytes": 768893,
+      "duration": 40.512,
+      "renderKey": "57b1215f9ad465a213116a814e2446d2eec9c177b429a733e97a17ec097208cf"
+    },
+    {
+      "id": "ui-flux-many-tiles-02",
+      "file": "public/media/em/ui-flux-many-tiles-02.mp4",
+      "sha256": "5d9be137524fb4276aad9b49ca61ccc228e37686bf021f79cc2f650606d8fc80",
+      "bytes": 912885,
+      "duration": 45.954666666666675,
+      "renderKey": "4ac770b586c83d390494bbb28fee464784319a1719fc4094a9d2fc7383333731"
+    },
+    {
+      "id": "ui-flux-many-tiles-03",
+      "file": "public/media/em/ui-flux-many-tiles-03.mp4",
+      "sha256": "3c2c0b25ae447171228b15f5ebb5c0149151d5b39a6d20a926867548c3e64c31",
+      "bytes": 1308735,
+      "duration": 63.24000000000001,
+      "renderKey": "c288cf8a62083442fc30c3dd6371c519b5f77142fc9fa3fee968c1378dd28855"
+    },
+    {
+      "id": "ui-closed-bag-01",
+      "file": "public/media/em/ui-closed-bag-01.mp4",
+      "sha256": "abdf6b5ebfa83d79d1a83be312db0bd56d9b8a90415f15c2427adc11c2dd8447",
+      "bytes": 788535,
+      "duration": 43.45066666666666,
+      "renderKey": "181d971a8f510087f2220892bcc80287333e3ba4ef5f9256698efb00ab5e495a"
+    },
+    {
+      "id": "ui-closed-bag-02",
+      "file": "public/media/em/ui-closed-bag-02.mp4",
+      "sha256": "4d39dd3b097c598676bb8bbfbef18d3f3fd47c3197bab611feb8105f02c31b90",
+      "bytes": 875135,
+      "duration": 41.872,
+      "renderKey": "28c3d5b0d333bb4dbee27480f17b8485ead187e21ade6e8cf0fce6aa228c70fc"
+    },
+    {
+      "id": "ui-closed-bag-03",
+      "file": "public/media/em/ui-closed-bag-03.mp4",
+      "sha256": "9e89da58df7f8e43e3eb5e96b5f6a7cdeeedbbb41627e518182defea7a178484",
+      "bytes": 823268,
+      "duration": 42.53066666666666,
+      "renderKey": "ce721b14d58bd5119ccd2b57dfda3d3565674188f83cd9eaa6183ee814897557"
+    },
+    {
+      "id": "ui-charge-and-flux-preview-01",
+      "file": "public/media/em/ui-charge-and-flux-preview-01.mp4",
+      "sha256": "3f1afe40e923af2a04c8ba80a921e767565be8ad6279ff1f5a3860144c691786",
+      "bytes": 816042,
+      "duration": 43.184000000000005,
+      "renderKey": "c9baf95740ff649adc65942451d1267efa218c0a2183e6f203ec4f6bc049b130"
+    },
+    {
+      "id": "ui-charge-and-flux-preview-02",
+      "file": "public/media/em/ui-charge-and-flux-preview-02.mp4",
+      "sha256": "77788b7ec0e8c30fff4c20fc2b539d15f3eea58aeefcf9ac0935ab029f221f1d",
+      "bytes": 753007,
+      "duration": 35.91466666666666,
+      "renderKey": "d91362d01c77a058943e2cbbbdb2ce2833135cd90a601ad5ea41f2449ed8647b"
+    },
+    {
+      "id": "ui-charge-and-flux-preview-03",
+      "file": "public/media/em/ui-charge-and-flux-preview-03.mp4",
+      "sha256": "bba5d8fc31cd4aa730ef03eb13ab6aab1e16bed4c87a6b9db58d60f78b8afe81",
+      "bytes": 944177,
+      "duration": 46.96000000000001,
+      "renderKey": "fb138698f58f2d04a2bf1c30de3301a05214a65e48366edb576663fd081057c2"
+    },
+    {
+      "id": "ui-electric-potential-01",
+      "file": "public/media/em/ui-electric-potential-01.mp4",
+      "sha256": "4c57494f38c29d261d5ee6f627dbbeaa9bf609567efe16f0a180fa5133728dda",
+      "bytes": 752157,
+      "duration": 41.29333333333333,
+      "renderKey": "b17fdc0cbe5534d7de3c7758f6902a3a2a9075d4596750e9aba99aa944df0f89"
+    },
+    {
+      "id": "ui-capacitance-01",
+      "file": "public/media/em/ui-capacitance-01.mp4",
+      "sha256": "ab2c465d4ee3449b975f4b019f31633836fae58c1e4e292d8321d8b04d017351",
+      "bytes": 852034,
+      "duration": 48.218666666666664,
+      "renderKey": "e5587f3f7e7fb9f7e6f1e5686cc5be5fd5f412ae8f866d8a9c5554793575a678"
+    },
+    {
+      "id": "ui-conduction-01",
+      "file": "public/media/em/ui-conduction-01.mp4",
+      "sha256": "b5913df109789c50d85e33c4693e0e7ba1f6a50bcbda0b043143df92898bf95a",
+      "bytes": 842800,
+      "duration": 44.592,
+      "renderKey": "c506d23b1bb61aa97742ecf551507524f98dd3884802d9c3d43f403b8c67863f"
+    },
+    {
+      "id": "ui-magnetic-force-01",
+      "file": "public/media/em/ui-magnetic-force-01.mp4",
+      "sha256": "eee8cd12a0ed31087f3820cbd4f81c1c18e6656bb8882646f876fe6caf455da1",
+      "bytes": 711025,
+      "duration": 40.74933333333333,
+      "renderKey": "f53046d4aecd502d8757d4a64be5147bb6bdd527754264c443624abd87a5b613"
+    },
+    {
+      "id": "ui-current-field-01",
+      "file": "public/media/em/ui-current-field-01.mp4",
+      "sha256": "df5b68117c2d42a32b3a55a4823fdaaa877d442f053f23821eba427d7bd5acb0",
+      "bytes": 1031849,
+      "duration": 44.76266666666667,
+      "renderKey": "1c068149ef867430d235d0029f10f37d7f390dd880a4c26e943beabf84fdf72f"
+    },
+    {
+      "id": "ui-induction-01",
+      "file": "public/media/em/ui-induction-01.mp4",
+      "sha256": "d8f6e1db482b6b14bdd5152e40fe682a2fb7eb1d4c2474aa5a26a30274454dbb",
+      "bytes": 995211,
+      "duration": 53.888,
+      "renderKey": "33aadc950d2a4ecc15a10ef587c858cb3149b277395aa2db4c19cd6241f134ce"
+    },
+    {
+      "id": "ui-circuit-time-01",
+      "file": "public/media/em/ui-circuit-time-01.mp4",
+      "sha256": "32c924990c640d5b68c5a011b0518636eceb6bb3fb98ea0fb4c2eab32c6287e8",
+      "bytes": 820551,
+      "duration": 47.57866666666667,
+      "renderKey": "610db681d00e554b212d41f8e3084e97e387fa32007daf88732c3e38d42ad88b"
+    },
+    {
+      "id": "ui-ac-waves-01",
+      "file": "public/media/em/ui-ac-waves-01.mp4",
+      "sha256": "af2749e727c62c707e42874698ee63007be830dd3ce507938ee9524c134612d0",
+      "bytes": 800760,
+      "duration": 41.38133333333333,
+      "renderKey": "3266eba0c1e4661dd0e71b9e813b8f2d18a85caaea6539ee0daadcf34df432ec"
+    },
+    {
+      "id": "um-line-element-01",
+      "file": "public/media/em/um-line-element-01.mp4",
+      "sha256": "9c46b6313670f188adbf39f29fdc9bea7acea708789df6196cbe378e8c820f68",
+      "bytes": 992269,
+      "duration": 47.264,
+      "renderKey": "5b8bc791b27270a4d20890f10b2085451da7502fca171c0ad2d10a419bf2dac2"
+    },
+    {
+      "id": "um-line-element-02",
+      "file": "public/media/em/um-line-element-02.mp4",
+      "sha256": "56d3e8e6b5a2ba3ea04d7f5d6462b0f2e19ba3655558f311a9a5687190bbc88b",
+      "bytes": 748573,
+      "duration": 42.074666666666666,
+      "renderKey": "1b43cf3038f55f03f98a8a861b5cd47d778fa814a653f15e3bea29e8ff3bfb30"
+    },
+    {
+      "id": "um-line-element-03",
+      "file": "public/media/em/um-line-element-03.mp4",
+      "sha256": "4178022e0a13942568198c761c48becad7835a3c37702ef188debeb1835309be",
+      "bytes": 1086355,
+      "duration": 51.99999999999999,
+      "renderKey": "0ab2cb5b179f3c4680abf37fbc6f4f20607e9792ddaf1b31cfe9deb23e124dfc"
+    },
+    {
+      "id": "um-line-element-04",
+      "file": "public/media/em/um-line-element-04.mp4",
+      "sha256": "e5d3b2f2739ecc2cf683f808b0d7bd6b849fd6387814f7d26796c20591c194cb",
+      "bytes": 820172,
+      "duration": 44.06933333333333,
+      "renderKey": "44f7745d707c7baad9850512a5be7d9e81f7b8404c856f2cffa892e2570d6fa8"
+    },
+    {
+      "id": "um-line-integral-entry-01",
+      "file": "public/media/em/um-line-integral-entry-01.mp4",
+      "sha256": "b9dcc46e05b73f6d069faeccfb02a5a7748e0b1e6c6cb31ddbe4df46b0c29238",
+      "bytes": 1125366,
+      "duration": 52.973333333333336,
+      "renderKey": "1c370180703dc5f61e038eba6f1c27d0b5f2f22487225734ab79f48be187b6fd"
+    },
+    {
+      "id": "um-line-integral-entry-02",
+      "file": "public/media/em/um-line-integral-entry-02.mp4",
+      "sha256": "70c11ca88166c6006cd49a96604ac93c60d3c40ccdb556ac62476304f398f69f",
+      "bytes": 670961,
+      "duration": 38.114666666666665,
+      "renderKey": "7f02a1119a6b161670b051ba10da195d63882f4547f8a6b8fab675578f6c21fc"
+    },
+    {
+      "id": "um-line-integral-entry-03",
+      "file": "public/media/em/um-line-integral-entry-03.mp4",
+      "sha256": "b76df2958324b6cc0f6bf263f4fc4c5146098ae7894e4f484abb50f428440a72",
+      "bytes": 934356,
+      "duration": 49.43733333333334,
+      "renderKey": "4ce34099a378c5d03006c2cc0b8216153b46b8a28e5c78113a0c325408844660"
+    },
+    {
+      "id": "um-line-integral-entry-04",
+      "file": "public/media/em/um-line-integral-entry-04.mp4",
+      "sha256": "3597db9a453df4ec30f5cd2801f7ee654e6c59c838d9054fe3ed0bdb2d380f87",
+      "bytes": 1023424,
+      "duration": 54.86133333333333,
+      "renderKey": "5668ef0ba0e93a92505fc05a8e1a4313584dc8510143f7253178d2abb7e4010f"
+    },
+    {
+      "id": "um-electrostatic-potential-path-01",
+      "file": "public/media/em/um-electrostatic-potential-path-01.mp4",
+      "sha256": "5b87282c78b62b153cc6949ecbf4ef2a07b1e8ce95942f0b7c8ef453394d6eea",
+      "bytes": 508497,
+      "duration": 27.75733333333333,
+      "renderKey": "0252429b16fccbb3b81369b709ce39af8657df8a5fe6f9971fdc9eef9cfe05a2"
+    },
+    {
+      "id": "um-electrostatic-potential-path-02",
+      "file": "public/media/em/um-electrostatic-potential-path-02.mp4",
+      "sha256": "3ba9ea20fa7f21e9f619eecfd671dc6e3c50784d1387d8df5e211f704612c491",
+      "bytes": 674356,
+      "duration": 37.037333333333336,
+      "renderKey": "5c47a998aad2300524d93cded0de8d279f6ec26f7a806530f2d4e8194d9e6d95"
+    },
+    {
+      "id": "um-electrostatic-potential-path-03",
+      "file": "public/media/em/um-electrostatic-potential-path-03.mp4",
+      "sha256": "fa0c1ac7b2b8131219a9970070011e1ad3091f8a42d82175fbdf4f6b79b4a1a7",
+      "bytes": 490079,
+      "duration": 28.023999999999994,
+      "renderKey": "f06dadf44a2aa00f7a435dd9fd3cce41fcab8f589e6e0c19c4741b02cb1667b1"
+    },
+    {
+      "id": "um-electrostatic-potential-path-04",
+      "file": "public/media/em/um-electrostatic-potential-path-04.mp4",
+      "sha256": "801166ca605907a65578d4f358df37197ed5596c9b657b5534c7d257b975743b",
+      "bytes": 739092,
+      "duration": 39.576,
+      "renderKey": "6708a5b6327746439fcbda07678380d36b468954e692cabd5388b2c287398a30"
+    },
+    {
+      "id": "um-electrostatic-potential-path-05",
+      "file": "public/media/em/um-electrostatic-potential-path-05.mp4",
+      "sha256": "192ffadd0d4de9777f103e8303fc8a648d0f2f1d6494a769407e2991fb411c89",
+      "bytes": 820885,
+      "duration": 40.464,
+      "renderKey": "4802ec1a28ee239941066c92fcba7fe6336a110c7d69ca9e0e1c2cd5f3d94e33"
+    },
+    {
+      "id": "um-em-area-vector-01",
+      "file": "public/media/em/um-em-area-vector-01.mp4",
+      "sha256": "f0ade1562e4ec679e4f3deefc0708793462af3960833cfc44973c29263bc588a",
+      "bytes": 1023523,
+      "duration": 52.57066666666667,
+      "renderKey": "40243a880c59d249a46f6da4d5e00de7d2180619d58d97a01036cd919a0c58df"
+    },
+    {
+      "id": "um-em-area-vector-02",
+      "file": "public/media/em/um-em-area-vector-02.mp4",
+      "sha256": "f3bfa333eb29213747bf0eadc1f18fac79165de9417fb6eb38f392cd010952a4",
+      "bytes": 975708,
+      "duration": 53.30666666666668,
+      "renderKey": "54a3121fa490008faa7509db797ae2570bd1b8ba43ea4c44c66d16920a09e189"
+    },
+    {
+      "id": "um-em-area-vector-03",
+      "file": "public/media/em/um-em-area-vector-03.mp4",
+      "sha256": "1cab73e4fdc963be30f5dd9845c94ff5933c21cc82a929fea300e65972b47ba2",
+      "bytes": 343939,
+      "duration": 20.522666666666666,
+      "renderKey": "393198266b2cd86cbfc4ac95647dcbf9d43bf9dcd74e90750ee9b829abb0c9df"
+    },
+    {
+      "id": "um-surface-integral-entry-01",
+      "file": "public/media/em/um-surface-integral-entry-01.mp4",
+      "sha256": "5dbcc566a62b385506e47fa5145005eac995321d71948f511194a39c407a9112",
+      "bytes": 692345,
+      "duration": 37.19466666666667,
+      "renderKey": "362ae0946343e0f2d32841cb57554d17f2f966db00181381944b4d69237234d3"
+    },
+    {
+      "id": "um-surface-integral-entry-02",
+      "file": "public/media/em/um-surface-integral-entry-02.mp4",
+      "sha256": "9bfe16debab58db33bfd2eeba003d087e68538c1187dd66915bf5dcede18e4c1",
+      "bytes": 847721,
+      "duration": 41.87733333333333,
+      "renderKey": "4043bee6de95911c2feb2af2e86bbe27ab4c021c50b3bc2014f3564a3dd3ca08"
+    },
+    {
+      "id": "um-surface-integral-entry-03",
+      "file": "public/media/em/um-surface-integral-entry-03.mp4",
+      "sha256": "ec793be251ca65601e70b8806a5afee86dfc45678ba698f33c626e6c538b1c6c",
+      "bytes": 1224624,
+      "duration": 63.93333333333334,
+      "renderKey": "d886d83229edc98cecdecd60431d6a269ae674dffe0dfdbbd383f7645b7ef7c8"
+    },
+    {
+      "id": "um-closed-electric-flux-01",
+      "file": "public/media/em/um-closed-electric-flux-01.mp4",
+      "sha256": "588b49058a6318550da4486626d943f37380a6e8709fc68c47831b8d0b033d6d",
+      "bytes": 421866,
+      "duration": 23.082666666666665,
+      "renderKey": "6e4997851ca50762372554c5c4a3d6343974ae76a752e4941b6f5bbe77899fdc"
+    },
+    {
+      "id": "um-closed-electric-flux-02",
+      "file": "public/media/em/um-closed-electric-flux-02.mp4",
+      "sha256": "b0945d39094da099f6d858cf2bd82f7f877c12a1edda4a33a3dedbba7a87f072",
+      "bytes": 877688,
+      "duration": 49.64533333333333,
+      "renderKey": "cb118a6ca53f4e250753d0981e6a9890ded463c48b40a590b2123f5cfdedb04b"
+    },
+    {
+      "id": "um-closed-electric-flux-03",
+      "file": "public/media/em/um-closed-electric-flux-03.mp4",
+      "sha256": "ad1dd493d4e8047570230bd48af0c56085140e03a1037fa09e5b8b463abea26d",
+      "bytes": 487962,
+      "duration": 24.447999999999997,
+      "renderKey": "81c95a5b6045d27bf35dcea259bfcb4d3e2da88e0d2f60e600d8e2ae1927fd27"
+    },
+    {
+      "id": "um-gauss-sphere-preview-01",
+      "file": "public/media/em/um-gauss-sphere-preview-01.mp4",
+      "sha256": "eaf846b0002b9f8d3f5565270ef4f6883d7442b178af292336f4766bdc6bc8f0",
+      "bytes": 461286,
+      "duration": 23.829333333333334,
+      "renderKey": "106363040e163fc43cac386dedc84984d15db11512007fd03efebaa9bf5d7474"
+    },
+    {
+      "id": "um-gauss-sphere-preview-02",
+      "file": "public/media/em/um-gauss-sphere-preview-02.mp4",
+      "sha256": "7e371fbb2b4f3660e589e969522037adb0ff27208b97c0d90718f8a6359f2d4a",
+      "bytes": 1141376,
+      "duration": 53.80533333333333,
+      "renderKey": "496765991e9547dbf6f7993ab0b471f19d25ef39aa3eee260e1dbc6d8aaff25c"
+    },
+    {
+      "id": "um-gauss-sphere-preview-03",
+      "file": "public/media/em/um-gauss-sphere-preview-03.mp4",
+      "sha256": "d70e35cf072ea7f1db2fcdf49cbf122bba7140aad6f34a1363e29c4bb9bdf746",
+      "bytes": 1387091,
+      "duration": 63.39733333333333,
+      "renderKey": "25dc427ce2e79341a2740790549a43631a4408b2fee669858f00497b4090d7c7"
+    },
+    {
+      "id": "um-capacitance-01",
+      "file": "public/media/em/um-capacitance-01.mp4",
+      "sha256": "f3751fd8b3fd06c176d194da00ce81dbad9f0041bd30bc87f61ee2ad2a8cb361",
+      "bytes": 576544,
+      "duration": 31.693333333333328,
+      "renderKey": "310cfcf66dba720d7101be8706625280958345fa3e4f1e1c503480d010973d08"
+    },
+    {
+      "id": "um-capacitance-02",
+      "file": "public/media/em/um-capacitance-02.mp4",
+      "sha256": "07df3e3e4f7de869b417a06bbf5c5997c06ed9c1097d590ab74d3c7de2888695",
+      "bytes": 923325,
+      "duration": 49.808,
+      "renderKey": "5e265290df739adbdfa4d6ef8e5c57686a9e00d3511e329f56af681da5260c73"
+    },
+    {
+      "id": "um-conduction-01",
+      "file": "public/media/em/um-conduction-01.mp4",
+      "sha256": "4109631f44cf9010de47131988ceb9743d1de5dadff0be71e3a7d4b6359f3789",
+      "bytes": 860498,
+      "duration": 37.114666666666665,
+      "renderKey": "c8b1245a989be2ac0e458fa281f1d24a7bf43bf271d30197e486ef0a4e766738"
+    },
+    {
+      "id": "um-conduction-02",
+      "file": "public/media/em/um-conduction-02.mp4",
+      "sha256": "1d09fe47942a4074d39b6bef6af1b7dacd4171657c8453a452f345921f98d428",
+      "bytes": 894751,
+      "duration": 51.39733333333334,
+      "renderKey": "eb860645a830c35a5944ab169ac037958a0b5458d6f73479f9e875421efe9e1d"
+    },
+    {
+      "id": "um-magnetic-force-01",
+      "file": "public/media/em/um-magnetic-force-01.mp4",
+      "sha256": "63f6df6e33e40587e1aa495204690e1738ca6d2f3e6cde7bb874dcb4b707bf20",
+      "bytes": 606715,
+      "duration": 29.64533333333333,
+      "renderKey": "bd36654a7236e175ca1e4ff0664106b6c90df37a979643a4d6e166df3c7fe87e"
+    },
+    {
+      "id": "um-magnetic-force-02",
+      "file": "public/media/em/um-magnetic-force-02.mp4",
+      "sha256": "0736a3f92da848b0fc14feb842312154ad6695385b6de5bea0ab7906c4782d1c",
+      "bytes": 979090,
+      "duration": 46.008,
+      "renderKey": "459d223b7fe90b788f45993796fd3b64dd1a7b54da16cd0bda1dc2440aff6510"
+    },
+    {
+      "id": "um-current-field-01",
+      "file": "public/media/em/um-current-field-01.mp4",
+      "sha256": "d4775c04cf33051014177bf194b382ad15f24a57654a3c62815dc35193602bec",
+      "bytes": 802679,
+      "duration": 31.461333333333332,
+      "renderKey": "3e18a297bca5c842e2042e550c2dd3fb9ad4fd4489cba17736404314e0ec8a6d"
+    },
+    {
+      "id": "um-current-field-02",
+      "file": "public/media/em/um-current-field-02.mp4",
+      "sha256": "89be66a839b14aca72ab2d48a3fa3477b769b97b7d09f00b1be49f827116aa77",
+      "bytes": 1055046,
+      "duration": 47.54666666666667,
+      "renderKey": "a9363444ad8f86d68f56d7da64b08b4f82debe554cf478f048ef7afdb97d2e9d"
+    },
+    {
+      "id": "um-induction-01",
+      "file": "public/media/em/um-induction-01.mp4",
+      "sha256": "95c1118ec23a4b1cff371312fccdc3e620736182282887625b85aa9d415a486e",
+      "bytes": 958119,
+      "duration": 49.43466666666667,
+      "renderKey": "2cb6b14a186c79bf39c005f7d4d10726822e8afbc8a118d33f46275532abb503"
+    },
+    {
+      "id": "um-induction-02",
+      "file": "public/media/em/um-induction-02.mp4",
+      "sha256": "a22c94d652c144955a33c8883d9b2992417bf68f4c88684a1e31016b1cfd7ac7",
+      "bytes": 1164400,
+      "duration": 42.519999999999996,
+      "renderKey": "c8c9bb2e868467ab5db524946702d4931dd16526fa63c1b34fbbf0ff6688d8d2"
+    },
+    {
+      "id": "um-circuit-time-01",
+      "file": "public/media/em/um-circuit-time-01.mp4",
+      "sha256": "ec5afcd8799f9d816c1b2077f6824cd679bdf4fe10abd60c42e7832ddd04346f",
+      "bytes": 849190,
+      "duration": 47.504,
+      "renderKey": "bea1c05fec372f813159625b98a01eb5f58c62bd549d1555eccefbf94188ca09"
+    },
+    {
+      "id": "um-circuit-time-02",
+      "file": "public/media/em/um-circuit-time-02.mp4",
+      "sha256": "0b9605817f0245a76e655bf2df294b71cda4b32bf6b658297e49068234817ec1",
+      "bytes": 843327,
+      "duration": 45.037333333333336,
+      "renderKey": "8cd46567dc2603ba1e0563f0775eef9e95bb9f4e1afb631f8d68edd2e3eb1eaf"
+    },
+    {
+      "id": "um-ac-maxwell-01",
+      "file": "public/media/em/um-ac-maxwell-01.mp4",
+      "sha256": "1e4371103ead10a238aa429d7dd0adc34ec9d31ea5bcebbb582529cc1eabf249",
+      "bytes": 932037,
+      "duration": 44.373333333333335,
+      "renderKey": "d83e8019d995b9b01cdcdc363f45d23a528079ffad7074b29851365468dff804"
+    },
+    {
+      "id": "um-ac-maxwell-02",
+      "file": "public/media/em/um-ac-maxwell-02.mp4",
+      "sha256": "ab16da91514d5babad0eba66a8b95c1410f217c5c29fe4efad0a96bb66665245",
+      "bytes": 1111079,
+      "duration": 49.424,
+      "renderKey": "803279088ccb68e142eade12e28cf2307f9dc933ac66bfe437bb943d575a572f"
+    }
+  ]
+}

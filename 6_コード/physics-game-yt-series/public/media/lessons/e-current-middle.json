@@ -1,0 +1,116 @@
+{
+  "id": "e-current-middle",
+  "stageId": "e-current",
+  "stageTitle": "電流・電圧・抵抗",
+  "topicId": "e-current",
+  "level": "middle",
+  "family": "high-school-em",
+  "title": "同じ抵抗に二倍の電圧をかけると、電流はどうなる？",
+  "condition": "直流の定常状態。オームの法則を使う抵抗は温度一定。",
+  "sourceScript": "e-current-middle-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "温度を一定に保った普通の抵抗では、電流は電圧に比例します。",
+      "narration": "温度を一定に保った普通の抵抗では、電流は電圧に比例します。電圧を電流で割った値はいつも同じで、それがこの部品の抵抗です。",
+      "visual": "原点を通るI–V直線で二点を比べる。",
+      "equation": "V = RI",
+      "symbols": "Vは抵抗両端の電圧[V]、Iは電流[A]、Rは抵抗[Ω]。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.708333333333333,
+          "text": "温度を一定に保った普通の抵抗では、電流は電圧に比例します。"
+        },
+        {
+          "start": 4.708333333333333,
+          "end": 9.583333333333334,
+          "text": "電圧を電流で割った値はいつも同じで、それがこの部品の抵抗です。"
+        }
+      ],
+      "end": 9.697333333333333
+    },
+    {
+      "index": 1,
+      "heading": "三オームの抵抗に六ボルトをかけると、六割る三で、電流は二アンペアです。",
+      "narration": "三オームの抵抗に六ボルトをかけると、六割る三で、電流は二アンペアです。同じ抵抗に十二ボルトをかけると、十二割る三で、四アンペアになります。",
+      "visual": "I=V/Rへ単位付き数値を一つずつ代入。",
+      "equation": "",
+      "symbols": "",
+      "start": 9.697333333333333,
+      "captions": [
+        {
+          "start": 9.697333333333333,
+          "end": 15.041666666666668,
+          "text": "三オームの抵抗に六ボルトをかけると、六割る三で、電流は二アンペアです。"
+        },
+        {
+          "start": 15.041666666666668,
+          "end": 20.25,
+          "text": "同じ抵抗に十二ボルトをかけると、十二割る三で、四アンペアになります。"
+        }
+      ],
+      "end": 20.418666666666663
+    },
+    {
+      "index": 2,
+      "heading": "電球のように温度で抵抗が変わる部品では、この比例がそのまま成り立つとは限りません。",
+      "narration": "電球のように温度で抵抗が変わる部品では、この比例がそのまま成り立つとは限りません。部品の性質と条件を確かめてから使います。",
+      "visual": "直線の抵抗特性と曲がる電球特性を別枠で比較。",
+      "equation": "",
+      "symbols": "",
+      "start": 20.418666666666663,
+      "captions": [
+        {
+          "start": 20.418666666666663,
+          "end": 26.125,
+          "text": "電球のように温度で抵抗が変わる部品では、この比例がそのまま成り立つとは限りません。"
+        },
+        {
+          "start": 26.125,
+          "end": 29.566,
+          "text": "部品の性質と条件を確かめてから使います。"
+        }
+      ],
+      "end": 30.916
+    }
+  ],
+  "pronunciationFingerprint": "1c90bfecca0a04e34c1c00e5b2bb368833dabc843c89a3f463eec332f12ff42e",
+  "duration": 30.916,
+  "mediaDirectory": "lessons",
+  "renderKey": "61cf62fffdfaf2592dc297973b5d1e32f8df8cd4a3bdab021573300fb6f8e4f5",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 35.08266666666667,
+    "removedSeconds": 4.166666666666668,
+    "cuts": [
+      {
+        "start": 4.708333333333333,
+        "end": 5.208333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.083333333333334,
+        "end": 11.416666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 16.875,
+        "end": 17.416666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 22.625,
+        "end": 23.916666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 29.791666666666668,
+        "end": 30.291666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

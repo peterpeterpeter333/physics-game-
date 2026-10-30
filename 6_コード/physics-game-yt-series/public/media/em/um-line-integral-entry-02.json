@@ -1,0 +1,126 @@
+{
+  "id": "um-line-integral-entry-02",
+  "stageId": "um-line-integral-entry",
+  "stageTitle": "有限和から線積分へ",
+  "level": "middle",
+  "title": "有限和を作り、添字と範囲を読む",
+  "sourceIndices": [
+    4,
+    5,
+    6
+  ],
+  "scenes": [
+    {
+      "index": 4,
+      "heading": "道全体の仕事は、どう足し上げるのだろう?",
+      "narration": "道全体の仕事の近似値は、各区間の内積の合計です。シグマの記号は、この「区間ごとの足し算」をまとめて表します。",
+      "equations": [
+        "W_N=\\sum_{i=1}^{N}\\vec F(\\vec r_i)\\cdot\\Delta\\vec r_i"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.375,
+          "text": "道全体の仕事の近似値は、各区間の内積の合計です。"
+        },
+        {
+          "start": 4.375,
+          "end": 9.416666666666668,
+          "text": "シグマの記号は、この「区間ごとの足し算」をまとめて表します。"
+        }
+      ],
+      "end": 9.528666666666663
+    },
+    {
+      "index": 5,
+      "heading": "Σの添字 i は、何を数えているのだろう?",
+      "narration": "右下のアイは区間の番号、エヌは区間の数です。シグマの下の一と上のエヌは、「一番目からエヌ番目までの仕事を足す」という指定です。図の四区間の例では、エヌは四です。",
+      "equations": [],
+      "spatial": false,
+      "start": 9.528666666666663,
+      "captions": [
+        {
+          "start": 9.528666666666663,
+          "end": 13.208333333333332,
+          "text": "右下のアイは区間の番号、エヌは区間の数です。"
+        },
+        {
+          "start": 13.208333333333332,
+          "end": 18.875,
+          "text": "シグマの下の一と上のエヌは、「一番目からエヌ番目までの仕事を足す」という指定です。"
+        },
+        {
+          "start": 18.875,
+          "end": 22.0,
+          "text": "図の四区間の例では、エヌは四です。"
+        }
+      ],
+      "end": 22.112999999999996
+    },
+    {
+      "index": 6,
+      "heading": "数値で足すと、どんな計算になるのだろう?",
+      "narration": "四区間の仕事が三、二、ゼロ、マイナス二ジュールなら、合計は三ジュールです。ゼロやマイナスの仕事も、同じ足し算の一部です。",
+      "equations": [
+        "W_4=3+2+0-2=3\\,\\mathrm J"
+      ],
+      "spatial": false,
+      "start": 22.112999999999996,
+      "captions": [
+        {
+          "start": 22.112999999999996,
+          "end": 28.0,
+          "text": "四区間の仕事が三、二、ゼロ、マイナス二ジュールなら、合計は三ジュールです。"
+        },
+        {
+          "start": 28.0,
+          "end": 31.848000000000006,
+          "text": "ゼロやマイナスの仕事も、同じ足し算の一部です。"
+        }
+      ],
+      "end": 33.198
+    }
+  ],
+  "duration": 33.198,
+  "renderKey": "fb4cb6bb94512aa40f378faf3066b54480a8accf588c5ad0e9197f0e0dcc4460",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 38.114666666666665,
+    "removedSeconds": 4.916666666666664,
+    "cuts": [
+      {
+        "start": 4.375,
+        "end": 4.958333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.0,
+        "end": 11.333333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 15.125,
+        "end": 15.708333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.375,
+        "end": 21.916666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 25.041666666666668,
+        "end": 26.375,
+        "reason": "scene"
+      },
+      {
+        "start": 32.375,
+        "end": 32.916666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

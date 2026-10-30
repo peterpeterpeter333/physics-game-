@@ -1,0 +1,116 @@
+{
+  "id": "uc-newton-intro",
+  "stageId": "ui-newton-small-step",
+  "stageTitle": "運動方程式から位置まで求める",
+  "topicId": "uc-newton",
+  "level": "intro",
+  "family": "university-mechanics",
+  "title": "力が分かれば、物体の位置もすぐ決まる？",
+  "condition": "質量一定。固定した慣性座標系。重力の例では空気抵抗を無視。",
+  "sourceScript": "uc-newton-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "合力と質量から直接分かるのは、物体の加速度です。",
+      "narration": "合力と質量から直接分かるのは、物体の加速度です。同じ力を受けても、最初の速度が違えば、動きは違います。",
+      "visual": "同質量・同じ力の二台へ異なる初速度を与える。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.041666666666667,
+          "text": "合力と質量から直接分かるのは、物体の加速度です。"
+        },
+        {
+          "start": 4.041666666666667,
+          "end": 8.875,
+          "text": "同じ力を受けても、最初の速度が違えば、動きは違います。"
+        }
+      ],
+      "end": 9.004999999999999
+    },
+    {
+      "index": 1,
+      "heading": "短い時間での速度の変化は、「加速度かける時間」で近似できます。",
+      "narration": "短い時間での速度の変化は、「加速度かける時間」で近似できます。今の速度にその変化を足して、次の速度を求めます。",
+      "visual": "速度矢印へaΔtの矢印を加える。",
+      "equation": "Δv ≈ aΔt",
+      "symbols": "Δvは短時間の速度変化、aはその間の代表的な加速度、Δtは時間幅。",
+      "start": 9.004999999999999,
+      "captions": [
+        {
+          "start": 9.004999999999999,
+          "end": 13.958333333333334,
+          "text": "短い時間での速度の変化は、「加速度かける時間」で近似できます。"
+        },
+        {
+          "start": 13.958333333333334,
+          "end": 17.916666666666664,
+          "text": "今の速度にその変化を足して、次の速度を求めます。"
+        }
+      ],
+      "end": 18.052666666666667
+    },
+    {
+      "index": 2,
+      "heading": "位置を追うには、最初の位置も必要です。",
+      "narration": "位置を追うには、最初の位置も必要です。力、質量、最初の位置、初速度の四つを決めると、運動を計算する準備がそろいます。",
+      "visual": "四つの既知量を並べ、時刻ごとの位置の計算へ送る。",
+      "equation": "",
+      "symbols": "",
+      "start": 18.052666666666667,
+      "captions": [
+        {
+          "start": 18.052666666666667,
+          "end": 21.0,
+          "text": "位置を追うには、最初の位置も必要です。"
+        },
+        {
+          "start": 21.0,
+          "end": 27.874000000000002,
+          "text": "力、質量、最初の位置、初速度の四つを決めると、運動を計算する準備がそろいます。"
+        }
+      ],
+      "end": 29.224000000000004
+    }
+  ],
+  "pronunciationFingerprint": "87286c6bb18420a234e267607654fb4f9c1b72a05130a0e7ab9e178c65e42331",
+  "duration": 29.224000000000004,
+  "mediaDirectory": "lessons",
+  "renderKey": "a136d9cc7c16111dc4a39b818aea4e3379fc6bc08a8a3ff2142ff7aeb02793a1",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 33.55733333333334,
+    "removedSeconds": 4.333333333333336,
+    "cuts": [
+      {
+        "start": 4.041666666666667,
+        "end": 4.583333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.416666666666666,
+        "end": 10.75,
+        "reason": "scene"
+      },
+      {
+        "start": 15.833333333333334,
+        "end": 16.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.333333333333332,
+        "end": 21.666666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 24.75,
+        "end": 25.333333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

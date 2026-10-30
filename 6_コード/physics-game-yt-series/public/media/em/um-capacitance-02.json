@@ -1,0 +1,149 @@
+{
+  "id": "um-capacitance-02",
+  "stageId": "um-capacitance",
+  "stageTitle": "コンデンサを導出する",
+  "level": "middle",
+  "title": "面電荷密度から、平行板コンデンサの電場・電圧・容量を求める。",
+  "sourceIndices": [
+    2,
+    3,
+    4
+  ],
+  "scenes": [
+    {
+      "index": 2,
+      "heading": "2枚の板の電場を重ね合わせる",
+      "narration": "一枚の一様な無限に広い平面が作る電場の強さは、「面電荷密度割る、真空の誘電率の二倍」です。プラスとマイナスの二枚の板の間では、それぞれの電場が同じ向きなので足します。板の外側では、二つの電場が逆向きなので打ち消し合います。",
+      "equations": [
+        "E_+=E_-=\\frac{\\sigma}{2\\varepsilon_0}",
+        "E_{\\rm 内}=\\frac{\\sigma}{2\\varepsilon_0}+\\frac{\\sigma}{2\\varepsilon_0}=\\frac{\\sigma}{\\varepsilon_0}",
+        "E_{\\rm 外}=\\frac{\\sigma}{2\\varepsilon_0}-\\frac{\\sigma}{2\\varepsilon_0}=0"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 7.541666666666667,
+          "text": "一枚の一様な無限に広い平面が作る電場の強さは、「面電荷密度割る、真空の誘電率の二倍」です。"
+        },
+        {
+          "start": 7.541666666666667,
+          "end": 12.541666666666668,
+          "text": "プラスとマイナスの二枚の板の間では、それぞれの電場が同じ向きなので足します。"
+        },
+        {
+          "start": 12.541666666666668,
+          "end": 17.0,
+          "text": "板の外側では、二つの電場が逆向きなので打ち消し合います。"
+        }
+      ],
+      "end": 17.12833333333333
+    },
+    {
+      "index": 3,
+      "heading": "C = ε₀S/d は、どう導出できるのだろう?",
+      "narration": "電気容量の定義は、「電荷割る電圧」です。板の間の電圧を、「電場かける間隔」に置き換えます。さらに電場の式を入れると、容量は「誘電率かける板の面積、割る間隔」になります。",
+      "equations": [
+        "C = \\dfrac{\\varepsilon_0 S}{d}",
+        "V = Ed = \\frac{Qd}{\\varepsilon_0S}",
+        "C = Q/V",
+        "C = \\frac{\\varepsilon_0 S}{d}"
+      ],
+      "spatial": false,
+      "start": 17.12833333333333,
+      "captions": [
+        {
+          "start": 17.12833333333333,
+          "end": 20.625,
+          "text": "電気容量の定義は、「電荷割る電圧」です。"
+        },
+        {
+          "start": 20.625,
+          "end": 24.625,
+          "text": "板の間の電圧を、「電場かける間隔」に置き換えます。"
+        },
+        {
+          "start": 24.625,
+          "end": 31.458333333333332,
+          "text": "さらに電場の式を入れると、容量は「誘電率かける板の面積、割る間隔」になります。"
+        }
+      ],
+      "end": 31.579333333333327
+    },
+    {
+      "index": 4,
+      "heading": "容量の導出でQが消えるところ",
+      "narration": "容量の式では、電荷が分子と分母で消えます。残るのは板の面積、間隔、間の物質の誘電率なので、理想的な容量は、形と物質で決まります。",
+      "equations": [
+        "C=\\frac{\\varepsilon_0S}{d}",
+        "E=\\frac{Q}{\\varepsilon_0 S}",
+        "V=Ed=\\frac{Qd}{\\varepsilon_0 S}",
+        "C=\\frac QV=\\frac Q{Qd/(\\varepsilon_0 S)}",
+        "C=Q\\frac{\\varepsilon_0 S}{Qd}",
+        "C=\\frac{\\cancel Q\\varepsilon_0 S}{\\cancel Qd}=\\frac{\\varepsilon_0 S}{d}"
+      ],
+      "spatial": false,
+      "start": 31.579333333333327,
+      "captions": [
+        {
+          "start": 31.579333333333327,
+          "end": 34.91666666666667,
+          "text": "容量の式では、電荷が分子と分母で消えます。"
+        },
+        {
+          "start": 34.91666666666667,
+          "end": 42.958000000000006,
+          "text": "残るのは板の面積、間隔、間の物質の誘電率なので、理想的な容量は、形と物質で決まります。"
+        }
+      ],
+      "end": 44.30800000000001
+    }
+  ],
+  "pronunciationFingerprint": "81a09a2e61b8af9b46b7306d8d03a7b8ff18a04e97583dfe3d32b2dd47b22964",
+  "duration": 44.30800000000001,
+  "renderKey": "7e57180570e47735238628dca102fe66ebb03979b0a5dfa91140c56633a6cbdb",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 49.808,
+    "removedSeconds": 5.499999999999993,
+    "cuts": [
+      {
+        "start": 7.541666666666667,
+        "end": 8.125,
+        "reason": "sentence"
+      },
+      {
+        "start": 13.125,
+        "end": 13.666666666666666,
+        "reason": "sentence"
+      },
+      {
+        "start": 18.125,
+        "end": 19.458333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 23.083333333333332,
+        "end": 23.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 27.625,
+        "end": 28.208333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 35.041666666666664,
+        "end": 36.375,
+        "reason": "scene"
+      },
+      {
+        "start": 39.833333333333336,
+        "end": 40.416666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

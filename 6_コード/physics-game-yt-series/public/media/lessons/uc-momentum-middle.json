@@ -1,0 +1,115 @@
+{
+  "id": "uc-momentum-middle",
+  "stageId": "um-momentum-change",
+  "stageTitle": "運動量保存を内部の力から導く",
+  "topicId": "uc-momentum",
+  "level": "middle",
+  "family": "university-mechanics",
+  "title": "短い衝撃と長い力は、どう同じ式で扱える？",
+  "condition": "質量一定。系の外力の力積を評価。一次元衝突の符号を固定。",
+  "sourceScript": "uc-momentum-middle-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "運動方程式は、「運動量の時間変化率が力に等しい」とも書けます。",
+      "narration": "運動方程式は、「運動量の時間変化率が力に等しい」とも書けます。力が時間で変わる場合にも、この形は使えます。",
+      "visual": "一定質量のmaをd(mv)/dtへ書き換える。",
+      "equation": "dp/dt = F",
+      "symbols": "pは運動量ベクトル、Fは合力、tは時刻。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.375,
+          "text": "運動方程式は、「運動量の時間変化率が力に等しい」とも書けます。"
+        },
+        {
+          "start": 5.375,
+          "end": 9.208333333333332,
+          "text": "力が時間で変わる場合にも、この形は使えます。"
+        }
+      ],
+      "end": 9.315333333333331
+    },
+    {
+      "index": 1,
+      "heading": "力を時間で積分したものは、運動量の差に等しくなります。",
+      "narration": "力を時間で積分したものは、運動量の差に等しくなります。グラフでは、力の曲線の下の、プラスマイナス付きの面積が力積です。",
+      "visual": "F–t曲線を短冊に分け、面積をΔpの矢印へまとめる。",
+      "equation": "p後−p前 = ∫[t前→t後] F dt",
+      "symbols": "p前・p後は前後の運動量、積分範囲は力を受ける時間。",
+      "start": 9.315333333333331,
+      "captions": [
+        {
+          "start": 9.315333333333331,
+          "end": 13.625,
+          "text": "力を時間で積分したものは、運動量の差に等しくなります。"
+        },
+        {
+          "start": 13.625,
+          "end": 19.0,
+          "text": "グラフでは、力の曲線の下の、プラスマイナス付きの面積が力積です。"
+        }
+      ],
+      "end": 19.109666666666662
+    },
+    {
+      "index": 2,
+      "heading": "平均の力が同じでも、働く時間が違えば、運動量の変化は違います。",
+      "narration": "平均の力が同じでも、働く時間が違えば、運動量の変化は違います。衝突の影響は、力の最大値だけでは比べられません。",
+      "visual": "同じピークで幅が違う二波形を比較。",
+      "equation": "",
+      "symbols": "",
+      "start": 19.109666666666662,
+      "captions": [
+        {
+          "start": 19.109666666666662,
+          "end": 24.666666666666664,
+          "text": "平均の力が同じでも、働く時間が違えば、運動量の変化は違います。"
+        },
+        {
+          "start": 24.666666666666664,
+          "end": 29.037666666666663,
+          "text": "衝突の影響は、力の最大値だけでは比べられません。"
+        }
+      ],
+      "end": 30.387666666666664
+    }
+  ],
+  "duration": 30.387666666666664,
+  "mediaDirectory": "lessons",
+  "renderKey": "337c49dff592ceae3faafff744c6dbe7d68782b399709a2bd1c9ac0ddda856d8",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 34.76266666666667,
+    "removedSeconds": 4.3750000000000036,
+    "cuts": [
+      {
+        "start": 5.375,
+        "end": 5.958333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.791666666666666,
+        "end": 11.125,
+        "reason": "scene"
+      },
+      {
+        "start": 15.541666666666666,
+        "end": 16.083333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.458333333333332,
+        "end": 22.791666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 28.458333333333332,
+        "end": 29.041666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

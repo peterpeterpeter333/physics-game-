@@ -1,0 +1,103 @@
+{
+  "id": "um-current-field-01",
+  "stageId": "um-current-field",
+  "stageTitle": "アンペールの法則",
+  "level": "middle",
+  "title": "定常電流の周回積分と対称性を使い、直線電流の磁場を求める。",
+  "sourceIndices": [
+    0,
+    1
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "アンペールの法則は、何を主張しているのだろう?",
+      "narration": "アンペールの法則では、まず閉じた道と、その道を縁に持つ面を選びます。磁場を道に沿って積分した値は、その面を貫く電流と結び付きます。ここでは、時間で変わらない電流を扱います。",
+      "equations": [
+        "\\oint \\vec{B}\\cdot d\\vec{r} = \\mu_0 I_{\\text{貫}}"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.208333333333333,
+          "text": "アンペールの法則では、まず閉じた道と、その道を縁に持つ面を選びます。"
+        },
+        {
+          "start": 5.208333333333333,
+          "end": 10.125,
+          "text": "磁場を道に沿って積分した値は、その面を貫く電流と結び付きます。"
+        },
+        {
+          "start": 10.125,
+          "end": 13.541666666666664,
+          "text": "ここでは、時間で変わらない電流を扱います。"
+        }
+      ],
+      "end": 13.681999999999999
+    },
+    {
+      "index": 1,
+      "heading": "閉路と面の正の向きをそろえる",
+      "narration": "道を回るプラスの向きに、右手の四本の指を曲げます。そのとき伸ばした親指の向きを、面を貫く電流のプラスの向きに選びます。これは、計算の符号をそろえるための約束です。",
+      "equations": [],
+      "spatial": false,
+      "start": 13.681999999999999,
+      "captions": [
+        {
+          "start": 13.681999999999999,
+          "end": 17.75,
+          "text": "道を回るプラスの向きに、右手の四本の指を曲げます。"
+        },
+        {
+          "start": 17.75,
+          "end": 22.833333333333332,
+          "text": "そのとき伸ばした親指の向きを、面を貫く電流のプラスの向きに選びます。"
+        },
+        {
+          "start": 22.833333333333332,
+          "end": 26.527999999999995,
+          "text": "これは、計算の符号をそろえるための約束です。"
+        }
+      ],
+      "end": 27.877999999999997
+    }
+  ],
+  "pronunciationFingerprint": "2143de6d5d80c3dab602d6b33ded115d3d2dffc187fe91598bc607603bf567bf",
+  "duration": 27.877999999999997,
+  "renderKey": "3f26028a9e9d3464db0e98fd639eee1b35d4325ab977aa78cd974bd612cc7672",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 31.461333333333332,
+    "removedSeconds": 3.5833333333333357,
+    "cuts": [
+      {
+        "start": 5.208333333333333,
+        "end": 5.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.666666666666666,
+        "end": 11.25,
+        "reason": "sentence"
+      },
+      {
+        "start": 14.666666666666666,
+        "end": 15.958333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 20.166666666666668,
+        "end": 20.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 25.833333333333332,
+        "end": 26.416666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "id": "prep-integral-compute",
+  "title": "積分は、微分で確かめながら計算する",
+  "level": "advanced",
+  "before": [
+    "um-integral-advanced",
+    "uc-newton-middle",
+    "uc-newton-advanced",
+    "uc-work-middle",
+    "uc-rigid1-advanced",
+    "uc-potential-advanced",
+    "a-bohr-advanced",
+    "uc-work-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid1-middle",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-advanced-followups-6"
+  ],
+  "scenes": [
+    {
+      "narration": "左から積み上げた面積をエーとします。横幅を少しだけ増やすと、面積の増えるぶんは、その場所の高さかける横幅にほぼ等しくなります。",
+      "equation": "ΔA ≈ f(x)Δx → dA/dx = f(x)",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "高さ f(x)",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "area": true
+      },
+      "index": 0,
+      "heading": "左から積み上げた面積をエーとします。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 2.75,
+          "text": "左から積み上げた面積をエーとします。"
+        },
+        {
+          "start": 2.75,
+          "end": 9.583333333333332,
+          "text": "横幅を少しだけ増やすと、面積の増えるぶんは、その場所の高さかける横幅にほぼ等しくなります。"
+        }
+      ],
+      "end": 9.73033333333333
+    },
+    {
+      "narration": "「エックスの二乗の半分」を微分すると、エックスに戻ります。このように、微分すると元の関数になる関数を、原始関数と呼びます。",
+      "equation": "d(x²/2)/dx = x → ∫x dx = x²/2 + C",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "原始関数 x²/2",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            4.5
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "「エックスの二乗の半分」を微分すると、エックスに戻ります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.73033333333333,
+      "captions": [
+        {
+          "start": 9.73033333333333,
+          "end": 14.124999999999998,
+          "text": "「エックスの二乗の半分」を微分すると、エックスに戻ります。"
+        },
+        {
+          "start": 14.124999999999998,
+          "end": 19.375,
+          "text": "このように、微分すると元の関数になる関数を、原始関数と呼びます。"
+        }
+      ],
+      "end": 19.473333333333333
+    },
+    {
+      "narration": "定数を足しても、グラフの傾きは変わりません。この自由に選べる定数をシーと書き、最初の位置などの条件から決めます。",
+      "equation": "x(t) = t² + C；x(0)=3 → C=3",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 t",
+        "yLabel": "位置 x",
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            12
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "定数を足しても、グラフの傾きは変わりません。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 19.473333333333333,
+      "captions": [
+        {
+          "start": 19.473333333333333,
+          "end": 23.0,
+          "text": "定数を足しても、グラフの傾きは変わりません。"
+        },
+        {
+          "start": 23.0,
+          "end": 28.041666666666664,
+          "text": "この自由に選べる定数をシーと書き、最初の位置などの条件から決めます。"
+        }
+      ],
+      "end": 28.159333333333336
+    },
+    {
+      "narration": "一から三までの積分は、原始関数に三を入れた値から、一を入れた値を引いて求めます。区間の合計を求めるので、定数シーは引き算で消えます。",
+      "equation": "∫（1→3）x dx = 3²/2 − 1²/2 = 4",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "高さ x",
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "area": true
+      },
+      "index": 3,
+      "heading": "一から三までの積分は、原始関数に三を入れた値から、一を入れた値を引いて求めます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 28.159333333333336,
+      "captions": [
+        {
+          "start": 28.159333333333336,
+          "end": 34.375,
+          "text": "一から三までの積分は、原始関数に三を入れた値から、一を入れた値を引いて求めます。"
+        },
+        {
+          "start": 34.375,
+          "end": 38.643,
+          "text": "区間の合計を求めるので、定数シーは引き算で消えます。"
+        }
+      ],
+      "end": 39.993
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "積分は、微分で確かめながら計算する",
+  "topicId": "prep-integral-compute",
+  "family": "prerequisites",
+  "sourceScript": "prep-integral-compute",
+  "pronunciationFingerprint": "709748e33c2dde11584a5bfb42e3fdab42fd1de15a247363ac0bfd56bbedb43f",
+  "duration": 39.993,
+  "mediaDirectory": "lessons",
+  "renderKey": "75b2c7518f0766f0c623feef5f65151d7e35a06d59d7d51e9ace70acf7f4bc61",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 46.368,
+    "removedSeconds": 6.375,
+    "cuts": [
+      {
+        "start": 2.75,
+        "end": 3.3333333333333335,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.166666666666666,
+        "end": 11.458333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 16.0,
+        "end": 16.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.875,
+        "end": 23.208333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 26.833333333333332,
+        "end": 27.416666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 32.458333333333336,
+        "end": 33.791666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 40.125,
+        "end": 40.75,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

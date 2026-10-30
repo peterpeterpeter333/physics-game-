@@ -1,0 +1,62 @@
+{
+  "reviewer": "episode_e1",
+  "scope": "Independent actual RAW JPEG review of all four root job089 B4v4 probes; not final composite or MP4 acceptance",
+  "helper": "scripts/blender/desk_axes_b1_camera_size_b4_v4_20261024.py",
+  "helperSha256": "d0a04b5b7a933e609a6a26b869d16decd0ff0bf6e493a4384e7bc918d8a28dc2",
+  "report": "/private/tmp/ys/ys-chain-b1v1-camera-size-b4-v4-20261024/probe/report.json",
+  "reportSha256ActuallyRecomputed": "5bae5a0335fbe6b14555560e386315764b58eba42e24d85e5bd08bdcc81d9c53",
+  "method": "Each of the four 1080x1920 rendered JPEG files was actually displayed individually, and its SHA256 was independently recomputed. Bounds/width values below are the unchanged numerical report, not measurements inferred from the screenshot.",
+  "images": [
+    {
+      "frame": 1179,
+      "time": 39.3,
+      "path": "/private/tmp/ys/ys-chain-b1v1-camera-size-b4-v4-20261024/probe/blender/patch/01179.jpg",
+      "sha256": "0054472623940eea109d36896da988a2328b0d3873714da12f24fc914e9cb546",
+      "actuallyViewed": true,
+      "principal": "Sailor body/head/clothing alone, not garlic",
+      "reportedPrincipalWidthRatio": 0.4265116781361682,
+      "observation": "Front-facing striped sailor and red cap are fully visible. The pale segmented garlic bulb is visibly in front of the lower body, rather than hidden behind the head as in v3. Garlic is softer than the face from depth of field but recognizably a separate bulb with stalk. No raw-image edge clipping was seen."
+    },
+    {
+      "frame": 1395,
+      "time": 46.5,
+      "path": "/private/tmp/ys/ys-chain-b1v1-camera-size-b4-v4-20261024/probe/blender/patch/01395.jpg",
+      "sha256": "0c21aa2849ee9bbe686a3d940cb7d1af656e56aa00e1d0b4c7f45c126a9a08ce",
+      "actuallyViewed": true,
+      "principal": "Sailor body/head/clothing alone, not garlic",
+      "reportedPrincipalWidthRatio": 0.4299849660399531,
+      "observation": "Garlic bulb and stalk are clearly visible in front of the sailor's face at the sniff position. This is not the prior back-of-head view. Cap, body and garlic are inside the raw frame; no new obstructing prop was seen. The helper reports zero waiting-endpoint derivative weight at this time, preserving the original nose endpoint."
+    },
+    {
+      "frame": 2445,
+      "time": 81.5,
+      "path": "/private/tmp/ys/ys-chain-b1v1-camera-size-b4-v4-20261024/probe/blender/patch/02445.jpg",
+      "sha256": "e22b29e448bfdf14c0315c38fffd5c4335709e85b3ecbac0169c150ed91982ca",
+      "actuallyViewed": true,
+      "principal": "Both complete bar magnets together",
+      "reportedPrincipalWidthRatio": 0.6419313979772991,
+      "observation": "Both complete red/blue bars and their N/S marks are visible, separated and unclipped. Other distant book geometry is background, not part of the principal width."
+    },
+    {
+      "frame": 3450,
+      "time": 115.0,
+      "path": "/private/tmp/ys/ys-chain-b1v1-camera-size-b4-v4-20261024/probe/blender/patch/03450.jpg",
+      "sha256": "ce3e8ec24e77637d301f765d5c8fc29c07829d54fb3d7835cb6448ddf6e34c22",
+      "actuallyViewed": true,
+      "principal": "Whole compass including open lid, case and needle",
+      "reportedPrincipalWidthRatio": 0.5302410881809122,
+      "observation": "The entire open lid and case are visible. Both red/white half-needles, pivot and direction marks are discernible. No edge clipping or hand obstruction was seen."
+    }
+  ],
+  "allFourActualRawImagesViewed": true,
+  "localRawReadabilityApproved": true,
+  "newRepairRequiredFromTheseFourRawImages": false,
+  "reportedAllGuardedStatesPass": true,
+  "reportedProtectionChecksAllTrue": true,
+  "reportedProjectionMaxDifferencePixels": 0.05001758331309247,
+  "oldV2NumericalFailureAndV3OcclusionPreserved": true,
+  "explicitModelTransformDerivative": "Only lore garlic's original waiting endpoint changes from (0,-.12,.018) to (.035,-.047,.018), with delta*(1-u(ref/30,43.5,2)); other geometry and original nose/sniff endpoints remain source-derived.",
+  "unverified": ["Final caption/overlay composition", "Continuous motion between these four probe states", "Final encoded MP4 and AAC", "Integrated B6 camera solver/physical guards/probe images", "Final original quality gates and exact actual-image review"],
+  "originalGateNGPreserved": true,
+  "finalAcceptance": false
+}

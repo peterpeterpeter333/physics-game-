@@ -1,0 +1,5 @@
+.lesson-narration{border:1px solid #405274;border-radius:14px;padding:14px;margin:16px 0;background:#111e30;color:#e7efff;min-width:0}
+.narration-controls,.narration-settings{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.narration-settings{margin-top:10px}.narration-settings label{display:flex;gap:8px;align-items:center;max-width:100%;min-width:0}.narration-settings select{max-width:100%;min-width:0;background:#17263b;color:#e7efff;border:1px solid #65799a;border-radius:8px;padding:8px;font-size:16px}
+.narration-caption{border-left:3px solid #67dbe1;padding:10px;background:#1a3045;line-height:1.8;overflow-wrap:anywhere}.narration-caption>span:first-child{color:#87e3e6;font-size:.85em}.narration-status,.lesson-narration details{font-size:.85rem;color:#bccde5}.lesson-narration details p{line-height:1.7}
+@media(max-width:480px){.narration-settings label:first-child{width:100%}.narration-settings label:first-child select{flex:1;width:0}.narration-controls .btn{font-size:.85rem;padding:8px}}

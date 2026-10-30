@@ -1,0 +1,538 @@
+{
+  "id": "ue-gauss-01",
+  "stageId": "ue-gauss",
+  "stageTitle": "ガウスの法則を証明する",
+  "level": "advanced",
+  "title": "中心のずれた球で、各点の電場の法線成分E·nを求める。",
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "ずれた球の各点を、位置ベクトルで表す",
+      "narration": "この計算では、電荷は原点にあり、球の中心は原点からずれています。位置ベクトルは、球の中心からではなく、電荷から球面上の点へ向かうものです。",
+      "equations": [
+        "\\vec r=(R\\sin\\theta\\cos\\varphi,R\\sin\\theta\\sin\\varphi,d+R\\cos\\theta)",
+        "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)",
+        "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta",
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "rは電荷から、nは球中心から。異なる二方向の内積を計算し、場の法線成分を取り出す。",
+        "symbols": [
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "球の位置と外向き法線を書く：同心球の座標のz成分にdを足すと、ずれた球の位置です。外向き法線はCから表面への単位ベクトルなので、n=(sinθ cosφ,sinθ sinφ,cosθ)になります。",
+            "tex": "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)"
+          },
+          {
+            "note": "電荷からの距離を計算する：三成分を二乗して足します。sin²θ＋cos²θ=1を使うとr²=R²＋d²＋2Rd cosθ。θによって変化するので、Eを一定として積分の外には出しません。",
+            "tex": "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta"
+          },
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.291666666666667,
+          "text": "この計算では、電荷は原点にあり、球の中心は原点からずれています。"
+        },
+        {
+          "start": 5.291666666666667,
+          "end": 10.958333333333334,
+          "text": "位置ベクトルは、球の中心からではなく、電荷から球面上の点へ向かうものです。"
+        }
+      ],
+      "end": 11.084999999999999
+    },
+    {
+      "index": 1,
+      "heading": "電場の方向と法線の方向を区別する",
+      "narration": "電場の矢印は、プラスの電荷から球面上の点へ向きます。単位法線は、その点に立てた、大きさ一の矢印です。法線の向きは球の中心から外向きなので、電場の向きとは一般に違います。",
+      "equations": [
+        "r^2=R^2+d^2+2Rd\\cos\\theta",
+        "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)",
+        "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta",
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "rは電荷から、nは球中心から。異なる二方向の内積を計算し、場の法線成分を取り出す。",
+        "symbols": [
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "球の位置と外向き法線を書く：同心球の座標のz成分にdを足すと、ずれた球の位置です。外向き法線はCから表面への単位ベクトルなので、n=(sinθ cosφ,sinθ sinφ,cosθ)になります。",
+            "tex": "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)"
+          },
+          {
+            "note": "電荷からの距離を計算する：三成分を二乗して足します。sin²θ＋cos²θ=1を使うとr²=R²＋d²＋2Rd cosθ。θによって変化するので、Eを一定として積分の外には出しません。",
+            "tex": "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta"
+          },
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 11.084999999999999,
+      "captions": [
+        {
+          "start": 11.084999999999999,
+          "end": 15.291666666666668,
+          "text": "電場の矢印は、プラスの電荷から球面上の点へ向きます。"
+        },
+        {
+          "start": 15.291666666666668,
+          "end": 19.416666666666668,
+          "text": "単位法線は、その点に立てた、大きさ一の矢印です。"
+        },
+        {
+          "start": 19.416666666666668,
+          "end": 25.250000000000004,
+          "text": "法線の向きは球の中心から外向きなので、電場の向きとは一般に違います。"
+        }
+      ],
+      "end": 25.377000000000002
+    },
+    {
+      "index": 2,
+      "heading": "位置ベクトルと法線の内積を計算する",
+      "narration": "位置ベクトルと単位法線の内積は、三つの成分をそれぞれ掛けて足します。「サイン二乗足すコサイン二乗」を一にまとめると、半径アールと、「ずれディーかけるコサインシータ」が残ります。これが、電場の法線方向の分を計算するための分子です。",
+      "equations": [
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)",
+        "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "rは電荷から、nは球中心から。異なる二方向の内積を計算し、場の法線成分を取り出す。",
+        "symbols": [
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "球の位置と外向き法線を書く：同心球の座標のz成分にdを足すと、ずれた球の位置です。外向き法線はCから表面への単位ベクトルなので、n=(sinθ cosφ,sinθ sinφ,cosθ)になります。",
+            "tex": "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)"
+          },
+          {
+            "note": "電荷からの距離を計算する：三成分を二乗して足します。sin²θ＋cos²θ=1を使うとr²=R²＋d²＋2Rd cosθ。θによって変化するので、Eを一定として積分の外には出しません。",
+            "tex": "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta"
+          },
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 25.377000000000002,
+      "captions": [
+        {
+          "start": 25.377000000000002,
+          "end": 30.33333333333334,
+          "text": "位置ベクトルと単位法線の内積は、三つの成分をそれぞれ掛けて足します。"
+        },
+        {
+          "start": 30.33333333333334,
+          "end": 37.500000000000014,
+          "text": "「サイン二乗足すコサイン二乗」を一にまとめると、半径アールと、「ずれディーかけるコサインシータ」が残ります。"
+        },
+        {
+          "start": 37.500000000000014,
+          "end": 41.83333333333334,
+          "text": "これが、電場の法線方向の分を計算するための分子です。"
+        }
+      ],
+      "end": 41.98266666666669
+    },
+    {
+      "index": 3,
+      "heading": "面積分に使う法線成分が求まった",
+      "narration": "電場の法線方向の分には、電荷から球面上の点までの距離と、電場の向きが入ります。かっこの中は距離の二乗なので、その二分の三乗は距離の三乗です。球面の場所ごとに距離が違うので、この分母も場所で変わります。",
+      "equations": [
+        "\\vec E\\cdot\\vec n=\\frac{kQ(R+d\\cos\\theta)}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)",
+        "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta",
+        "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta",
+        "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}",
+        "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+      ],
+      "guide": {
+        "kind": "この段の式と前提",
+        "read": "rは電荷から、nは球中心から。異なる二方向の内積を計算し、場の法線成分を取り出す。",
+        "symbols": [
+          [
+            "R",
+            "積分する球の半径 [m]"
+          ],
+          [
+            "d",
+            "電荷から球中心までのずれ [m]。微分のdとは別"
+          ],
+          [
+            "r・r（矢印付き）",
+            "電荷から面の点までの距離・位置ベクトル [m]"
+          ],
+          [
+            "θ・φ",
+            "球中心から測る極角・周方向の角度 [rad]"
+          ],
+          [
+            "C",
+            "球の中心の座標。電気容量ではない"
+          ],
+          [
+            "n",
+            "外向きの単位法線。長さ1で無次元"
+          ],
+          [
+            "dA",
+            "細かく区切った微小な面積 [m²]"
+          ],
+          [
+            "S・∮S",
+            "集計する閉曲面・その全面での積分"
+          ],
+          [
+            "·",
+            "対応する成分同士を掛けて足す内積"
+          ],
+          [
+            "Q",
+            "場を作る点電荷 [C]。正負を含む"
+          ],
+          [
+            "k",
+            "クーロンの定数1/(4πε₀) [N·m²/C²]"
+          ],
+          [
+            "ε₀",
+            "真空の誘電率 [F/m]"
+          ],
+          [
+            "E・E（矢印付き）",
+            "電場の大きさ・電場ベクトル [N/C]"
+          ],
+          [
+            "ΦE",
+            "閉曲面を外向きに貫く電気束 [N·m²/C]"
+          ]
+        ],
+        "steps": [
+          {
+            "note": "球の位置と外向き法線を書く：同心球の座標のz成分にdを足すと、ずれた球の位置です。外向き法線はCから表面への単位ベクトルなので、n=(sinθ cosφ,sinθ sinφ,cosθ)になります。",
+            "tex": "\\vec n=(\\sin\\theta\\cos\\varphi,\\sin\\theta\\sin\\varphi,\\cos\\theta)"
+          },
+          {
+            "note": "電荷からの距離を計算する：三成分を二乗して足します。sin²θ＋cos²θ=1を使うとr²=R²＋d²＋2Rd cosθ。θによって変化するので、Eを一定として積分の外には出しません。",
+            "tex": "r^2=R^2\\sin^2\\theta+(d+R\\cos\\theta)^2=R^2+d^2+2Rd\\cos\\theta"
+          },
+          {
+            "note": "rとnの内積を成分で計算する：水平成分の積はR sin²θ、鉛直成分の積は(d＋R cosθ)cosθ。足すとR＋d cosθです。Eとnを平行だと仮定していません。",
+            "tex": "\\vec r\\cdot\\vec n=R\\sin^2\\theta+(d+R\\cos\\theta)\\cos\\theta=R+d\\cos\\theta"
+          },
+          {
+            "note": "電場の分母も代入する：E·n=kQ(r·n)/r³へ、さきほどの距離と内積を代入します。強さが変化することと法線との角度が変化することの両方が入っています。",
+            "tex": "\\vec E\\cdot\\vec n=kQ\\frac{R+d\\cos\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}"
+          },
+          {
+            "note": "面積要素を掛け、φを積分する：dA=R² sinθ dθ dφを掛けます。軸の周りの角度φには依存しないので、φの0〜2πの積分だけ先に行えます。θの積分は省略せず次へ進めます。",
+            "tex": "\\Phi_E=kQR^2\\int_0^{2\\pi}d\\varphi\\int_0^\\pi\\frac{(R+d\\cos\\theta)\\sin\\theta}{(R^2+d^2+2Rd\\cos\\theta)^{3/2}}d\\theta"
+          }
+        ]
+      },
+      "spatial": true,
+      "start": 41.98266666666669,
+      "captions": [
+        {
+          "start": 41.98266666666669,
+          "end": 48.20833333333334,
+          "text": "電場の法線方向の分には、電荷から球面上の点までの距離と、電場の向きが入ります。"
+        },
+        {
+          "start": 48.20833333333334,
+          "end": 52.750000000000014,
+          "text": "かっこの中は距離の二乗なので、その二分の三乗は距離の三乗です。"
+        },
+        {
+          "start": 52.750000000000014,
+          "end": 57.29266666666669,
+          "text": "球面の場所ごとに距離が違うので、この分母も場所で変わります。"
+        }
+      ],
+      "end": 58.642666666666685
+    }
+  ],
+  "pronunciationFingerprint": "9f5ec1c1a7b2481c97aef14d5badbcde7b82f8236cb08f255b7af27c35fbe190",
+  "duration": 58.642666666666685,
+  "renderKey": "a5d78ff75de1f04c57c07050bfb54f43cd5b9265f0aa5e8423f69524494a7792",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 66.64266666666667,
+    "removedSeconds": 7.999999999999986,
+    "cuts": [
+      {
+        "start": 5.291666666666667,
+        "end": 5.833333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 11.5,
+        "end": 12.833333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 17.166666666666668,
+        "end": 17.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.875,
+        "end": 22.458333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 28.291666666666668,
+        "end": 29.625,
+        "reason": "scene"
+      },
+      {
+        "start": 34.708333333333336,
+        "end": 35.291666666666664,
+        "reason": "sentence"
+      },
+      {
+        "start": 42.458333333333336,
+        "end": 43.041666666666664,
+        "reason": "sentence"
+      },
+      {
+        "start": 47.375,
+        "end": 48.666666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 55.041666666666664,
+        "end": 55.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 60.166666666666664,
+        "end": 60.75,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "um-circuit-time-02",
+  "stageId": "um-circuit-time",
+  "stageTitle": "RC・RL回路の過渡現象",
+  "level": "middle",
+  "title": "回路の収支を微分方程式に直し、RCの時定数と充放電の行き先を求める。",
+  "sourceIndices": [
+    3,
+    4,
+    5
+  ],
+  "scenes": [
+    {
+      "index": 3,
+      "heading": "時定数 τ = RC は、何を決めているのだろう?",
+      "narration": "「アールかけるシー」という時間は、充電が進む速さの目安で、時定数と呼びます。電荷ゼロから充電すると、時定数ぶんの時間がたったとき、電荷は最終値の約六十三パーセントになります。",
+      "equations": [
+        "\\tau = RC"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.875,
+          "text": "「アールかけるシー」という時間は、充電が進む速さの目安で、時定数と呼びます。"
+        },
+        {
+          "start": 5.875,
+          "end": 13.25,
+          "text": "電荷ゼロから充電すると、時定数ぶんの時間がたったとき、電荷は最終値の約六十三パーセントになります。"
+        }
+      ],
+      "end": 13.387999999999998
+    },
+    {
+      "index": 4,
+      "heading": "時定数1回で63%になる計算",
+      "narration": "充電量の式に、「時刻ティーが時定数と等しい」という条件を入れます。電荷の割合は、「一引く、イーのマイナス一乗」で、約〇点六三二です。この理想的な式では、有限の時間で完全に百パーセントにはなりません。",
+      "equations": [
+        "\\frac q{q_\\infty}=1-e^{-t/(RC)}",
+        "\\frac q{q_\\infty}=1-e^{-1}\\simeq0.632",
+        "\\frac q{q_\\infty}=1-e^{-5}\\simeq0.993"
+      ],
+      "spatial": false,
+      "start": 13.387999999999998,
+      "captions": [
+        {
+          "start": 13.387999999999998,
+          "end": 18.375,
+          "text": "充電量の式に、「時刻ティーが時定数と等しい」という条件を入れます。"
+        },
+        {
+          "start": 18.375,
+          "end": 24.08333333333333,
+          "text": "電荷の割合は、「一引く、イーのマイナス一乗」で、約〇点六三二です。"
+        },
+        {
+          "start": 24.08333333333333,
+          "end": 29.125,
+          "text": "この理想的な式では、有限の時間で完全に百パーセントにはなりません。"
+        }
+      ],
+      "end": 29.193666666666672
+    },
+    {
+      "index": 5,
+      "heading": "放電は目標が0になる",
+      "narration": "抵抗を通した放電では、電荷が近づいていく目標はゼロです。放電中の電荷は、「最初の電荷かける、指数減衰の係数」です。",
+      "equations": [
+        "Rq'=-\\frac qC",
+        "\\frac{q'}q=-\\frac1{RC}",
+        "\\ln\\frac q{Q_0}=-\\frac t{RC}",
+        "q=Q_0e^{-t/(RC)}"
+      ],
+      "spatial": false,
+      "start": 29.193666666666672,
+      "captions": [
+        {
+          "start": 29.193666666666672,
+          "end": 33.583333333333336,
+          "text": "抵抗を通した放電では、電荷が近づいていく目標はゼロです。"
+        },
+        {
+          "start": 33.583333333333336,
+          "end": 38.77066666666668,
+          "text": "放電中の電荷は、「最初の電荷かける、指数減衰の係数」です。"
+        }
+      ],
+      "end": 40.12066666666667
+    }
+  ],
+  "pronunciationFingerprint": "000c88925854e38268a93fa7394ccefcec6221cfbeee6157fdc11ed1f3b50ab4",
+  "duration": 40.12066666666667,
+  "renderKey": "696e9b0234d9c603cd9256469683b171eea862b1cf67f57bc2ab9bca416ba424",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 45.037333333333336,
+    "removedSeconds": 4.916666666666664,
+    "cuts": [
+      {
+        "start": 5.875,
+        "end": 6.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 13.75,
+        "end": 15.083333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 20.208333333333332,
+        "end": 20.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 26.458333333333332,
+        "end": 27.041666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 32.083333333333336,
+        "end": 33.416666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 37.875,
+        "end": 38.5,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

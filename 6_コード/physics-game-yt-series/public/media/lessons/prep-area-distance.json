@@ -1,0 +1,253 @@
+{
+  "id": "prep-area-distance",
+  "title": "速度のグラフの面積が移動になる理由",
+  "level": "middle",
+  "before": [
+    "m1-uniform-accel-middle",
+    "um-integral-intro",
+    "ui-curve-tiles-bridges-1",
+    "um-integral-middle",
+    "um-work-sum-bridges-11",
+    "um-work-vector-bridges-12",
+    "ui-work-changing-bridges-7",
+    "uc-work-advanced",
+    "ui-through-a-surface-bridges-2",
+    "um-newton-components-bridges-10",
+    "um-integral-advanced",
+    "uc-newton-middle",
+    "uc-newton-advanced",
+    "uc-work-middle",
+    "uc-rigid1-advanced",
+    "uc-potential-advanced",
+    "a-bohr-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid1-middle",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-advanced-followups-6"
+  ],
+  "scenes": [
+    {
+      "narration": "速度が毎秒二メートルで三秒進むと、位置の変化は二かける三で、六メートルです。グラフでは、高さ二、幅三の長方形にあたります。",
+      "equation": "位置の変化 = 2 m/s × 3 s = 6 m",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "area": true
+      },
+      "index": 0,
+      "heading": "速度が毎秒二メートルで三秒進むと、位置の変化は二かける三で、六メートルです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.875,
+          "text": "速度が毎秒二メートルで三秒進むと、位置の変化は二かける三で、六メートルです。"
+        },
+        {
+          "start": 5.875,
+          "end": 9.958333333333332,
+          "text": "グラフでは、高さ二、幅三の長方形にあたります。"
+        }
+      ],
+      "end": 10.071666666666665
+    },
+    {
+      "narration": "最初の一秒が毎秒二メートル、次の一秒が毎秒四メートルなら、それぞれの移動を別々に計算して足します。二つの長方形の面積の合計、二足す四で六メートルが、位置の変化です。",
+      "equation": "位置の変化 = 2 × 1 + 4 × 1 = 6 m",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "area": true
+      },
+      "index": 1,
+      "heading": "最初の一秒が毎秒二メートル、次の一秒が毎秒四メートルなら、それぞれの移動を別々に計算して足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.071666666666665,
+      "captions": [
+        {
+          "start": 10.071666666666665,
+          "end": 17.541666666666668,
+          "text": "最初の一秒が毎秒二メートル、次の一秒が毎秒四メートルなら、それぞれの移動を別々に計算して足します。"
+        },
+        {
+          "start": 17.541666666666668,
+          "end": 23.041666666666668,
+          "text": "二つの長方形の面積の合計、二足す四で六メートルが、位置の変化です。"
+        }
+      ],
+      "end": 23.131999999999998
+    },
+    {
+      "narration": "速度がなめらかに変わるときは、時間を細かく分けます。長方形を細くしていくと、合計は曲線の下の面積に近づきます。",
+      "equation": "各区間の移動 ≈ その区間の速度 × 短い時間",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "area": true,
+        "tiles": true
+      },
+      "index": 2,
+      "heading": "速度がなめらかに変わるときは、時間を細かく分けます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 23.131999999999998,
+      "captions": [
+        {
+          "start": 23.131999999999998,
+          "end": 27.041666666666668,
+          "text": "速度がなめらかに変わるときは、時間を細かく分けます。"
+        },
+        {
+          "start": 27.041666666666668,
+          "end": 32.083333333333336,
+          "text": "長方形を細くしていくと、合計は曲線の下の面積に近づきます。"
+        }
+      ],
+      "end": 32.19133333333333
+    },
+    {
+      "narration": "速度がマイナスの区間では、位置の変化もマイナスです。求めた位置の変化に最初の位置を足すと、最後の位置が分かります。",
+      "equation": "最後の位置 = 最初の位置 + 位置の変化",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "速度 [m/s]",
+        "points": [
+          [
+            0,
+            -2
+          ],
+          [
+            3,
+            -2
+          ]
+        ],
+        "area": true
+      },
+      "index": 3,
+      "heading": "速度がマイナスの区間では、位置の変化もマイナスです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 32.19133333333333,
+      "captions": [
+        {
+          "start": 32.19133333333333,
+          "end": 36.0,
+          "text": "速度がマイナスの区間では、位置の変化もマイナスです。"
+        },
+        {
+          "start": 36.0,
+          "end": 40.64633333333334,
+          "text": "求めた位置の変化に最初の位置を足すと、最後の位置が分かります。"
+        }
+      ],
+      "end": 41.99633333333334
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "速度のグラフの面積が移動になる理由",
+  "topicId": "prep-area-distance",
+  "family": "prerequisites",
+  "sourceScript": "prep-area-distance",
+  "pronunciationFingerprint": "0f19a1a549754f2aee9c7f5cd1b5bd4bfeda53bf4b8801d9158e7753d620b355",
+  "duration": 41.99633333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "c3822e56ed4ec0f08a666a33cfed23dd5c6871b1021c9da39223d488ddbf4ded",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 48.288000000000004,
+    "removedSeconds": 6.291666666666664,
+    "cuts": [
+      {
+        "start": 5.875,
+        "end": 6.416666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.5,
+        "end": 11.833333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 19.416666666666668,
+        "end": 20.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 25.5,
+        "end": 26.875,
+        "reason": "scene"
+      },
+      {
+        "start": 30.875,
+        "end": 31.458333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 36.5,
+        "end": 37.833333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 41.75,
+        "end": 42.291666666666664,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

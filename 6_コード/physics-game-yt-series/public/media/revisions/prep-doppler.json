@@ -1,0 +1,250 @@
+{
+  "id": "prep-doppler",
+  "title": "止まった音源の周期と波長をつなぐ",
+  "level": "intro",
+  "before": [
+    "w-doppler-intro",
+    "w-doppler-middle",
+    "w-doppler-advanced"
+  ],
+  "scenes": [
+    {
+      "heading": "止まった波源が、一周期ごとに山を出す",
+      "cues": [
+        {
+          "subtitle": "波を出すものを、波源と呼びます。波源が止まっていれば、一周期の間に前の山が進んだ距離が、次の山との間隔、つまり波長です。",
+          "reading": "なみをだすものを、はげんとよびます。はげんがとまっていれば、いっしゅうきのあいだにまえのやまがすすんだきょりが、つぎのやまとのかんかく、つまりはちょうです。",
+          "display": "diagram",
+          "diagram": "dopplerprep-stationary",
+          "operation": "",
+          "formula": []
+        },
+        {
+          "subtitle": "山が進む距離は、波の速さかける周期で求まります。止まった波源の場合、この距離がそのまま波長になります。",
+          "reading": "やまがすすむきょりは、なみのはやさかけるしゅうきでもとまります。とまったはげんのばあい、このきょりがそのままはちょうになります。",
+          "display": "equation",
+          "formula": [
+            "\\lambda=vT"
+          ],
+          "operation": "λ：波長[m]、v：空気に対する音速[m/s]、T：波源の周期[s]",
+          "previousFormula": []
+        }
+      ],
+      "utterances": [
+        {
+          "subtitle": "波を出すものを、波源と呼びます。波源が止まっていれば、一周期の間に前の山が進んだ距離が、次の山との間隔、つまり波長です。",
+          "reading": "なみをだすものを、はげんとよびます。はげんがとまっていれば、いっしゅうきのあいだにまえのやまがすすんだきょりが、つぎのやまとのかんかく、つまりはちょうです。"
+        },
+        {
+          "subtitle": "山が進む距離は、波の速さかける周期で求まります。止まった波源の場合、この距離がそのまま波長になります。",
+          "reading": "やまがすすむきょりは、なみのはやさかけるしゅうきでもとまります。とまったはげんのばあい、このきょりがそのままはちょうになります。"
+        }
+      ],
+      "narration": "波を出すものを、波源と呼びます。波源が止まっていれば、一周期の間に前の山が進んだ距離が、次の山との間隔、つまり波長です。山が進む距離は、波の速さかける周期で求まります。止まった波源の場合、この距離がそのまま波長になります。",
+      "equation": "",
+      "symbols": "",
+      "visual": "doppler-source",
+      "index": 0,
+      "sceneId": "prep-doppler-s1",
+      "mode": "common",
+      "start": 0,
+      "end": 17.307333333333336,
+      "captions": [
+        {
+          "start": 0,
+          "end": 9.218666666666666,
+          "text": "波を出すものを、波源と呼びます。波源が止まっていれば、一周期の間に前の山が進んだ距離が、次の山との間隔、つまり波長です。"
+        },
+        {
+          "start": 9.258666666666667,
+          "end": 16.717333333333332,
+          "text": "山が進む距離は、波の速さかける周期で求まります。止まった波源の場合、この距離がそのまま波長になります。"
+        }
+      ]
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "波源が動くと、山の間隔が変わる",
+  "topicId": "prep-doppler",
+  "family": "prerequisites",
+  "sourceScript": "prep-doppler",
+  "pronunciationFingerprint": "585e59cbab87f4f92a90c8919087008f1953596b91c3a0f6db610a29ac9916c1",
+  "duration": 17.307333333333336,
+  "mediaDirectory": "revisions",
+  "renderKey": "45e441c1dac69dadd52345d9225636102577bb0b69983f6b58a5d0e4c76b6d7a",
+  "renderer": "lesson",
+  "sourceMediaDirectory": "lessons",
+  "revision": "20260924-full",
+  "manuscriptScenes": [
+    {
+      "narration": "波を出すもの、波源は、一周期ごとに新しい山を作ります。波源が止まっていれば、一周期の間に前の山が進む距離が、波長です。",
+      "equation": "波源が静止：λ = vT",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "先の山の位置 [m]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            8
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "波を出すもの、波源は、一周期ごとに新しい山を作ります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.983333333333333,
+          "text": "波を出すもの、波源は、一周期ごとに新しい山を作ります。"
+        },
+        {
+          "start": 5.133333333333333,
+          "end": 10.628666666666666,
+          "text": "波源が止まっていれば、一周期の間に前の山が進む距離が、波長です。"
+        }
+      ],
+      "end": 11.978666666666665,
+      "sceneId": "prep-doppler-s1",
+      "mode": "common"
+    },
+    {
+      "narration": "波源が前へ動くと、次の山は、前の山に近い位置から出ます。一周期に波源が進んだ距離のぶん短くなるので、前方の波長は縮みます。画面の u エスは、波源の速さです。",
+      "equation": "前方の波長 = vT − uₛT = (v−uₛ)T",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "波の進み",
+          "波源の進み",
+          "山の間隔"
+        ],
+        "values": [
+          4,
+          1,
+          3
+        ],
+        "unit": "m"
+      },
+      "index": 1,
+      "heading": "波源が前へ動くと、次の山は、前の山に近い位置から出ます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 11.978666666666665,
+      "captions": [
+        {
+          "start": 11.978666666666665,
+          "end": 17.036666666666665,
+          "text": "波源が前へ動くと、次の山は、前の山に近い位置から出ます。"
+        },
+        {
+          "start": 17.186666666666664,
+          "end": 22.682,
+          "text": "一周期に波源が進んだ距離のぶん短くなるので、前方の波長は縮みます。"
+        }
+      ],
+      "end": 24.031999999999996,
+      "utterances": [
+        {
+          "subtitle": "波源が前へ動くと、次の山は、前の山に近い位置から出ます。",
+          "reading": "はげんが まえへ うごくと、つぎの やまは、まえの やまに ちかい いちから でます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 428
+          }
+        },
+        {
+          "subtitle": "一周期に波源が進んだ距離のぶん短くなるので、前方の波長は縮みます。",
+          "reading": "いっしゅうきに はげんが すすんだ きょりの ぶん みじかく なるので、ぜんぽうの はちょうは ちぢみます。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 429
+          }
+        },
+        {
+          "subtitle": "画面の u エスは、波源の速さです。",
+          "reading": "がめんの ユーエスは、はげんの はやさです。",
+          "source": {
+            "file": "差し替え台本_04_高校向け前提動画.md",
+            "line": 429
+          }
+        }
+      ],
+      "revisionDirections": [
+        "場面2 【字幕差し替え】(uₛ の読み方)",
+        "場面1・3 【そのまま】"
+      ],
+      "revisionSource": {
+        "file": "差し替え台本_04_高校向け前提動画.md",
+        "line": 424
+      },
+      "revisionEquations": [],
+      "sceneId": "prep-doppler-s2",
+      "mode": "common"
+    },
+    {
+      "narration": "聞く人が受け取る振動数は、一秒間に通り過ぎる山の数です。聞く人も動くなら、空気に対する聞く人の速度も、山に近づく速さに足します。",
+      "equation": "受け取る振動数 = 山との相対速度 ÷ 波長",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "山との相対速度",
+        "yLabel": "同じ波長で受け取る振動数",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "聞く人が受け取る振動数は、一秒間に通り過ぎる山の数です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 24.031999999999996,
+      "captions": [
+        {
+          "start": 24.031999999999996,
+          "end": 28.90866666666666,
+          "text": "聞く人が受け取る振動数は、一秒間に通り過ぎる山の数です。"
+        },
+        {
+          "start": 29.058666666666664,
+          "end": 35.066,
+          "text": "聞く人も動くなら、空気に対する聞く人の速度も、山に近づく速さに足します。"
+        }
+      ],
+      "end": 36.416,
+      "sceneId": "prep-doppler-s3",
+      "mode": "common"
+    }
+  ],
+  "visualPilot": "doppler-source-v1",
+  "navigationBreaks": [],
+  "wordReadingVersion": "20260924-v1",
+  "fluencyVersion": "20260924-fluent-v1",
+  "readingMode": "furigana",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "animationFPS": 30
+}

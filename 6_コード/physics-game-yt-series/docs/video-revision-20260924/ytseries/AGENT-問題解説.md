@@ -1,0 +1,28 @@
+# 問題編の解説動画を作る担当への注意（AGENT.md の読み替え）
+
+- 作業ディレクトリ：/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series（ここで全コマンドを実行。コミット・push しない）
+- まず読む：`AGENT.md`（手順・道具・kana の書き方）、`NOTES.md`、`yt1min/STANDARD.md`、見本 `hs-a-nucleus-3.mjs` と `scripts/umech/yt1-hs-a-nucleus-3-diagrams.mjs`。
+- 役割分担：問題（図・短いアニメーション＋静止した問題文と4択）はアプリ側で表示する。ここで作るのは**解説動画だけ**。
+- 台本の元：`~/Downloads/physics-quest-問題編_修正版/<高校編|大学編>/<ファイル>.md` の担当の問題。
+  - 「### 解説動画の台本」の各項目を1 cue にし、字幕はその文をそのまま使う（1項目は2文まで）。
+  - 「画面：」の指示、「### 画面」の「小問n 解答後」「解説動画」の指示に従って図を描く。
+  - 問題文・選択肢・正解・誤答理由・検算も読み、画面の数値・式と一致させる。
+  - **問題の .md は編集しない。** 字幕を変える必要があれば、最小限で変え、報告に書く（変更前→変更後）。
+- 解説動画の作り
+  - 最初の cue は、問題の設定の図（「出題中」と同じ図）から始める。視聴者は問題を解いた直後なので、問題文全体を読み直さない。
+  - 各小問の答え合わせでは、正解の選択肢を画面に示す（例「小問1 の答え：B」）。代表的な誤答を説明する所では、その誤答の数値と、どこで間違えたかを並べる。
+  - 式変形は一操作ずつ。色・記号は STANDARD.md と問題の .md の色の約束に従う。同じ文字を二つの量に使わない。
+- ID・ファイル
+  - ID：`ys-qx-<問題IDから q- を除いたもの>`（例 `ys-qx-hs-m-projectile-1`、`ys-qx-ui-average-to-now`）
+  - 台本：`docs/video-revision-20260924/ytseries/qx-<同じ>.mjs`
+  - 図：`scripts/umech/yt1-qx-<同じ>-diagrams.mjs`。元の単元動画の図の関数は import して再利用してよい（そのファイルは編集しない）。
+  - タイトル：「問題編 解説 ｜ <問題の短い題>」。見出し：「<単元>・<レベル> 問題解説 ｜ <場面名（小問1 など）>」。
+- **キャッシュ（厳守）**：すべてのコマンドで `EM_FILM_CACHE=/private/tmp/ys/ys-qx-<同じ>` を指定する。共有の `/private/tmp/ys/` 直下に書かない。道具は `/private/tmp/ys/tools-qx-<同じ>`。
+- 手順：build → check-readings 0 → prosody 終了0 → 音声 → ミックス → mxr-review の全ページを Read → 動く図の途中のコマを shots.mjs で確認 → 書き出し → ffmpeg -xerror。
+- 出力
+  - 動画：`~/Downloads/physics-quest-youtube/問題編_解説/<高校|大学>_<単元番号>_<単元名>_<高校は n／大学は 初級・中級・上級>_解説.mp4`（例 `高校_105_放物運動_1_解説.mp4`、`大学_16_単振動_中級_解説.mp4`）
+  - ChatGPT 確認用：`node scripts/umech/export-script-md.mjs ~/Downloads/physics-quest-問題編_解説台本 docs/video-revision-20260924/ytseries/qx-<同じ>.mjs`
+- 長さの目安：2:00〜4:00。
+- 音声エンジン Nemo（127.0.0.1:50123）は共有。応答しないときだけ起動する。長いコマンドは前面で実行する。
+- Python の文字列経由で JS を書くと、TeX のバックスラッシュが半分になる。TeX が表示されることを必ず確かめる。
+- 報告（短く）：ID・長さ・出力パス、字幕を変えた所、確認したこと／していないこと。

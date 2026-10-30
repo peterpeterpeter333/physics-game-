@@ -1,0 +1,210 @@
+{
+ "kind": "Pure AST reproduction of B5v3 end-time versus duration bug; not a GUI result",
+ "inputs": [
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_axes_b1_repel_b5_v3_20261024.py",
+   "sha256": "b5284ff4c264a57153d2f4bc31480e37f6b7e4bea019b579bdd967b4bba6dc6d"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_axes_b1_repel_b5_v4_20261024.py",
+   "sha256": "02c64b5916c754b08b67c5a46330d11a0ca58323ca2f67844a70d4175a9b65d3"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_b1v1.py",
+   "sha256": "7b82aac06a606983b4faa00dbca898c8da07ab417bd7a21d0a0b48b6a3a58eb4"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_lib.py",
+   "sha256": "5c919a1f2336a7320736e153a0604f652422c26dc9c05ad134a50cae6e82e4d2"
+  }
+ ],
+ "uDefinition": "def u(t, a, duration=1):\n    return d.seg(t, a, a + duration)",
+ "segDefinition": "def seg(t, a, b):\n    return sm((t - a) / max(1e-09, b - a))",
+ "oldAttachmentExpression": "u(t,98.20,98.60)",
+ "newAttachmentExpression": "u(t,98.20,98.60-98.20)",
+ "oldDurationSeconds": 98.6,
+ "newDurationSeconds": 0.3999999999999915,
+ "samples": [
+  {
+   "time": 94.6,
+   "oldStages": [
+    0,
+    0,
+    0
+   ],
+   "newStages": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "time": 96.8,
+   "oldStages": [
+    0,
+    0,
+    0
+   ],
+   "newStages": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "time": 97.08,
+   "oldStages": [
+    6.217248937900877e-18,
+    0,
+    0
+   ],
+   "newStages": [
+    6.217248937900877e-18,
+    0,
+    0
+   ]
+  },
+  {
+   "time": 97.43,
+   "oldStages": [
+    0.028,
+    0,
+    0
+   ],
+   "newStages": [
+    0.028,
+    0,
+    0
+   ]
+  },
+  {
+   "time": 97.6,
+   "oldStages": [
+    0.028,
+    0,
+    0
+   ],
+   "newStages": [
+    0.028,
+    0,
+    0
+   ]
+  },
+  {
+   "time": 97.65,
+   "oldStages": [
+    0.028,
+    6.975736996017264e-16,
+    0
+   ],
+   "newStages": [
+    0.028,
+    6.975736996017264e-16,
+    0
+   ]
+  },
+  {
+   "time": 97.83333333333333,
+   "oldStages": [
+    0.028,
+    3.4373107938181615,
+    0
+   ],
+   "newStages": [
+    0.028,
+    3.4373107938181615,
+    0
+   ]
+  },
+  {
+   "time": 98,
+   "oldStages": [
+    0.028,
+    3.141592653589793,
+    0
+   ],
+   "newStages": [
+    0.028,
+    3.141592653589793,
+    0
+   ]
+  },
+  {
+   "time": 98.2,
+   "oldStages": [
+    0.028,
+    3.141592653589793,
+    0
+   ],
+   "newStages": [
+    0.028,
+    3.141592653589793,
+    0
+   ]
+  },
+  {
+   "time": 98.4,
+   "oldStages": [
+    0.028,
+    3.141592653589793,
+    0.000012326498791882455
+   ],
+   "newStages": [
+    0.028,
+    3.141592653589793,
+    0.5000000000000266
+   ]
+  },
+  {
+   "time": 98.6,
+   "oldStages": [
+    0.028,
+    3.141592653589793,
+    0.00004923923010975039
+   ],
+   "newStages": [
+    0.028,
+    3.141592653589793,
+    1
+   ]
+  },
+  {
+   "time": 98.66666666666667,
+   "oldStages": [
+    0.028,
+    3.141592653589793,
+    0.0000669897716509505
+   ],
+   "newStages": [
+    0.028,
+    3.141592653589793,
+    1
+   ]
+  }
+ ],
+ "oldAttachmentProgressAtFailedFinalCheck": 0.0000669897716509505,
+ "newAttachmentProgressAtSameFinalCheck": 1,
+ "recoilAndSpinNumericallyUnchangedAtAllSamples": true,
+ "matrixPlacementGeometryFunctionsASTUnchanged": [
+  "tree",
+  "principal",
+  "poles",
+  "nearest_poles",
+  "world_points",
+  "project",
+  "place",
+  "measure",
+  "corrected_pose",
+  "state"
+ ],
+ "strictGapAssertionTestASTUnchanged": "abs(actual_gap - 0.001) < 1e-06",
+ "strictGapToleranceMeters": 0.000001,
+ "cause": "Frozen episode u takes a duration; the prior helper accidentally supplied an absolute end time. This alone prevents end-stage closure. No matrix/depsgraph workaround or tolerance relaxation is used.",
+ "oldFailedRuntimeRecord": "/private/tmp/ys/ys-chain-b1v1-repel-b5-v3-20261024/probe/report.json",
+ "actualRuntimeGapValueNotRecordedInOldFailure": true,
+ "newGUIPhysicalGuardSuccess": false,
+ "noGPUCalls": true,
+ "noFileWritesByThisScript": true,
+ "noOriginalSourceOrEvidenceEdited": true,
+ "finalAcceptance": false
+}

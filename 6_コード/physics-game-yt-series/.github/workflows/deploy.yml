@@ -1,0 +1,96 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Check App Store update version comparisons
+        run: node scripts/test-app-update.mjs
+
+      - name: Audit lessons and animation coverage
+        run: npm run test:lessons
+
+      - name: Check whole-curriculum study support and retry behavior
+        run: npm run test:remediation
+
+      - name: Verify all electromagnetic movies and source coverage
+        run: npm run test:em-videos
+
+      - name: Verify every new lesson movie and difficulty level
+        run: npm run test:video-scripts && npm run test:all-videos
+
+      - name: Verify reviewed narration and prerequisite playback order
+        run: npm run test:reviewed-videos && npm run test:prerequisite-videos && npm run test:em-video-repairs
+
+      - name: Check reviewed pronunciation coverage and video revisions
+        run: npm run test:pronunciation
+
+      - name: Check unit-scoped prerequisites and playback positions
+        run: npm run test:video-playlists
+
+      - name: Check shared main videos and optional supplement routes
+        run: npm run test:video-modes
+
+      - name: Check circular-motion pilot algebra and animation cues
+        run: npm run test:circular-pilot && npm run test:video-speed
+      - name: Check motion-foundation storyboards and algebra
+        run: npm run test:motion-foundations && npm run test:motion-inserts && node scripts/test-uniform-acceleration.mjs && node scripts/test-uniform-continuation.mjs && node scripts/test-freefall-storyboards.mjs && node scripts/test-projectile-foundations.mjs && node scripts/test-projectile-middle.mjs && node scripts/test-addition-theorem.mjs && node scripts/test-projectile-advanced.mjs && node scripts/test-force-storyboards.mjs && node scripts/test-work-foundations.mjs && node scripts/test-work-components.mjs && node scripts/test-potential-energy.mjs && node scripts/test-spring-energy.mjs && node scripts/test-momentum-foundations.mjs && node scripts/test-momentum-middle.mjs && node scripts/test-momentum-advanced.mjs && node scripts/test-radian-foundations.mjs && node scripts/test-circular-foundations.mjs && node scripts/test-shm-foundations.mjs && node scripts/test-shm-middle.mjs && node scripts/test-sine-derivative.mjs && node scripts/test-sine-motion.mjs && node scripts/test-shm-advanced.mjs && node scripts/test-heat-foundations.mjs && node scripts/test-foundation-appendices.mjs && node scripts/test-heat-melting.mjs && node scripts/test-gas-foundations.mjs && node scripts/test-gas-temperature.mjs && node scripts/test-gas-states.mjs && node scripts/test-ideal-gas-foundations.mjs && node scripts/test-mole-foundations.mjs && node scripts/test-gas-particles.mjs && node scripts/test-ideal-gas-advanced.mjs && node scripts/test-gas-work.mjs && node scripts/test-firstlaw-foundations.mjs && node scripts/test-heat-cycle.mjs && node scripts/test-wave-foundations.mjs && node scripts/test-wave-speed.mjs && node scripts/test-traveling-wave.mjs && node scripts/test-wave-superposition.mjs && node scripts/test-sound-foundations.mjs && node scripts/test-sound-boundaries.mjs && node scripts/test-sound-beats.mjs && node scripts/test-doppler-source.mjs && node scripts/test-doppler-observer.mjs && node scripts/test-light-foundations.mjs && node scripts/test-light-refraction.mjs && node scripts/test-total-reflection.mjs && node scripts/test-light-interference.mjs && node scripts/test-double-slit.mjs && node scripts/test-single-slit.mjs && node scripts/test-current-foundations.mjs && node scripts/test-resistor-circuits.mjs && node scripts/test-power-foundations.mjs && node scripts/test-joule-heating.mjs && node scripts/test-power-transmission.mjs && node scripts/test-magnetic-foundations.mjs && node scripts/test-magnetic-flux.mjs && node scripts/test-faraday-lenz.mjs && node scripts/test-electric-field-intro.mjs && node scripts/test-coulomb-field.mjs && node scripts/test-coulomb-prerequisite.mjs && node scripts/test-electric-potential.mjs && node scripts/test-capacitor-intro.mjs && node scripts/test-capacitor-geometry.mjs && node scripts/test-capacitor-energy.mjs && node scripts/test-photon-foundations.mjs && node scripts/test-photoelectric-energy.mjs && node scripts/test-atomic-spectra.mjs && node scripts/test-matter-waves.mjs && node scripts/test-bohr-radius.mjs && node scripts/test-bohr-energy.mjs
+
+      - name: Audit inline math and formula rendering
+        run: npm run test:math
+
+      - name: Audit equation images and original storyboards
+        run: npm run test:calculations
+
+      - name: Audit offline image handling
+        run: node scripts/audit-offline.mjs
+
+      - name: Audit university intro and middle levels
+        run: node scripts/audit-university-levels.mjs
+
+      - name: Audit all 29 topics and lossless level relocation
+        run: node scripts/audit-university-curriculum.mjs
+
+      - name: Audit chapter-wide learning progression
+        run: node scripts/audit-study-flow.mjs
+
+      - name: Check potential and field explanation regressions
+        run: node scripts/test-potential-context.mjs
+
+      - name: Audit synchronized electromagnetic lessons
+        run: npm run test:guided
+
+      - name: Check all ten teaching principles (regression checks)
+        run: npm run test:ten-principles
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # Open tabs can still reference a previous build's hashed equation images.
+          keep_files: true

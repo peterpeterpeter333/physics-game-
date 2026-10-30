@@ -1,0 +1,253 @@
+{
+  "id": "prep-taylor",
+  "title": "接線の近似から、曲がりの補正へ",
+  "level": "middle",
+  "before": [
+    "um-taylor-middle",
+    "um-taylor-advanced",
+    "uc-potential-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "関数の値を、分かっている基準の点の近くで求めます。基準の値に、「傾きかける横のずれ」を足すと、接線の上の値になります。",
+      "equation": "f(a+h) ≈ f(a)+f′(a)h",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "x",
+        "yLabel": "√x",
+        "points": [
+          [
+            0.8,
+            0.8944271909999159
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1.2,
+            1.0954451150103321
+          ],
+          [
+            1.4,
+            1.1832159566199232
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "関数の値を、分かっている基準の点の近くで求めます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.083333333333333,
+          "text": "関数の値を、分かっている基準の点の近くで求めます。"
+        },
+        {
+          "start": 4.083333333333333,
+          "end": 9.791666666666666,
+          "text": "基準の値に、「傾きかける横のずれ」を足すと、接線の上の値になります。"
+        }
+      ],
+      "end": 9.870999999999997
+    },
+    {
+      "narration": "傾きそのものの変化率が、二階微分です。二乗の補正を二回微分すると係数が二倍になるので、補正の係数はあらかじめ二で割っておきます。",
+      "equation": "f(a+h) ≈ f(a)+f′(a)h+f″(a)h²/2",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "ずれ h",
+        "yLabel": "二乗の補正の例",
+        "points": [
+          [
+            -0.4,
+            0.08
+          ],
+          [
+            -0.2,
+            0.02
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            0.02
+          ],
+          [
+            0.4,
+            0.08
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "傾きそのものの変化率が、二階微分です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.870999999999997,
+      "captions": [
+        {
+          "start": 9.870999999999997,
+          "end": 13.208333333333332,
+          "text": "傾きそのものの変化率が、二階微分です。"
+        },
+        {
+          "start": 13.208333333333332,
+          "end": 19.583333333333332,
+          "text": "二乗の補正を二回微分すると係数が二倍になるので、補正の係数はあらかじめ二で割っておきます。"
+        }
+      ],
+      "end": 19.66733333333333
+    },
+    {
+      "narration": "さらに高い次数でも、繰り返し微分したときに出る掛け算を、係数から取り除きます。一からエヌまでを掛けたものを階乗と言い、ビックリマークで書きます。",
+      "equation": "3! = 3×2×1 = 6；三次の項 = f‴(a)h³/6",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "1!",
+          "2!",
+          "3!"
+        ],
+        "values": [
+          1,
+          2,
+          6
+        ],
+        "unit": "値"
+      },
+      "index": 2,
+      "heading": "さらに高い次数でも、繰り返し微分したときに出る掛け算を、係数から取り除きます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 19.66733333333333,
+      "captions": [
+        {
+          "start": 19.66733333333333,
+          "end": 25.541666666666664,
+          "text": "さらに高い次数でも、繰り返し微分したときに出る掛け算を、係数から取り除きます。"
+        },
+        {
+          "start": 25.541666666666664,
+          "end": 30.0,
+          "text": "一からエヌまでを掛けたものを階乗と言い、ビックリマークで書きます。"
+        }
+      ],
+      "end": 30.133666666666663
+    },
+    {
+      "narration": "位置エネルギーの谷底では、グラフの傾きはゼロです。さらに二階微分がプラスなら、十分近くの形は二次式で近似でき、ばねの位置エネルギーと同じ形になります。二階微分もゼロの場合には、さらに高い次数の項を調べます。",
+      "equation": "谷底：U′=0、U″>0 → U≈U₀+U″h²/2",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "谷底からのずれ",
+        "yLabel": "位置エネルギー",
+        "points": [
+          [
+            -2,
+            4
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "位置エネルギーの谷底では、グラフの傾きはゼロです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 30.133666666666663,
+      "captions": [
+        {
+          "start": 30.133666666666663,
+          "end": 34.0,
+          "text": "位置エネルギーの谷底では、グラフの傾きはゼロです。"
+        },
+        {
+          "start": 34.0,
+          "end": 41.416666666666664,
+          "text": "さらに二階微分がプラスなら、十分近くの形は二次式で近似でき、ばねの位置エネルギーと同じ形になります。"
+        },
+        {
+          "start": 41.416666666666664,
+          "end": 45.83733333333332,
+          "text": "二階微分もゼロの場合には、さらに高い次数の項を調べます。"
+        }
+      ],
+      "end": 47.18733333333332
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "接線の近似から、曲がりの補正へ",
+  "topicId": "prep-taylor",
+  "family": "prerequisites",
+  "sourceScript": "prep-taylor",
+  "pronunciationFingerprint": "bb93ca920b859c4230a16c982e3f04ef0192fb4ba9901b54b126a0ff56665c67",
+  "duration": 47.18733333333332,
+  "mediaDirectory": "lessons",
+  "renderKey": "bd9820e4c98c4a2d1446eab59170a4dc5726d93fb91de4378f0584958b84847a",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 54.10399999999999,
+    "removedSeconds": 6.916666666666671,
+    "cuts": [
+      {
+        "start": 4.083333333333333,
+        "end": 4.666666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.375,
+        "end": 11.75,
+        "reason": "scene"
+      },
+      {
+        "start": 15.166666666666666,
+        "end": 15.75,
+        "reason": "sentence"
+      },
+      {
+        "start": 22.125,
+        "end": 23.5,
+        "reason": "scene"
+      },
+      {
+        "start": 29.458333333333332,
+        "end": 30.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 34.458333333333336,
+        "end": 35.791666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 39.791666666666664,
+        "end": 40.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 47.791666666666664,
+        "end": 48.333333333333336,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "id": "prep-center-mass",
+  "title": "重心は、質量で重みを付けた平均",
+  "level": "intro",
+  "before": [
+    "uc-rigid1-intro",
+    "uc-rigid1-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-advanced-followups-6",
+    "uc-rigid1-middle",
+    "uc-rigid1-advanced-followups-5"
+  ],
+  "scenes": [
+    {
+      "narration": "軽い物体と重い物体を棒でつなぐと、つり合う支点は重い側に寄ります。二つの重力の回す効果が等しくなる位置が、重心です。",
+      "equation": "m₁g(x重心−x₁)=m₂g(x₂−x重心)",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "左の質量",
+          "右の質量"
+        ],
+        "values": [
+          1,
+          3
+        ],
+        "unit": "kg"
+      },
+      "index": 0,
+      "heading": "軽い物体と重い物体を棒でつなぐと、つり合う支点は重い側に寄ります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.833333333333333,
+          "text": "軽い物体と重い物体を棒でつなぐと、つり合う支点は重い側に寄ります。"
+        },
+        {
+          "start": 4.833333333333333,
+          "end": 9.125,
+          "text": "二つの重力の回す効果が等しくなる位置が、重心です。"
+        }
+      ],
+      "end": 9.229999999999999
+    },
+    {
+      "narration": "支点の位置について式を解くと、「質量かける位置」を足して全質量で割った形になります。単純に二つの位置を平均するのではありません。",
+      "equation": "x重心=(m₁x₁+m₂x₂)/(m₁+m₂)",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "位置 [m]",
+        "yLabel": "その位置にある質量 [kg]",
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "支点の位置について式を解くと、「質量かける位置」を足して全質量で割った形になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.229999999999999,
+      "captions": [
+        {
+          "start": 9.229999999999999,
+          "end": 15.208333333333334,
+          "text": "支点の位置について式を解くと、「質量かける位置」を足して全質量で割った形になります。"
+        },
+        {
+          "start": 15.208333333333334,
+          "end": 18.458333333333336,
+          "text": "単純に二つの位置を平均するのではありません。"
+        }
+      ],
+      "end": 18.608333333333327
+    },
+    {
+      "narration": "一キログラムを位置ゼロ、三キログラムを位置四に置くと、三かける四割る四で、重心は位置三です。重心から測った位置で足すと、「質量かける位置」の合計はゼロになります。",
+      "equation": "x重心=(1×0+3×4)/4=3 m；1×(−3)+3×1=0",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            -3,
+            0,
+            "重心から軽い側"
+          ],
+          [
+            1,
+            0,
+            "重心から重い側"
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "一キログラムを位置ゼロ、三キログラムを位置四に置くと、三かける四割る四で、重心は位置三です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 18.608333333333327,
+      "captions": [
+        {
+          "start": 18.608333333333327,
+          "end": 25.416666666666664,
+          "text": "一キログラムを位置ゼロ、三キログラムを位置四に置くと、三かける四割る四で、重心は位置三です。"
+        },
+        {
+          "start": 25.416666666666664,
+          "end": 30.806333333333335,
+          "text": "重心から測った位置で足すと、「質量かける位置」の合計はゼロになります。"
+        }
+      ],
+      "end": 32.156333333333336
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "重心は、質量で重みを付けた平均",
+  "topicId": "prep-center-mass",
+  "family": "prerequisites",
+  "sourceScript": "prep-center-mass",
+  "pronunciationFingerprint": "715b690434839eeccca63b7ce2319d5f24d5d028a08776d88ed0479bc4e5b3b6",
+  "duration": 32.156333333333336,
+  "mediaDirectory": "lessons",
+  "renderKey": "a78b58e82a3786d48a44190827920c5d4e074be3557ef53d9c670eccf7128181",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 36.448,
+    "removedSeconds": 4.291666666666664,
+    "cuts": [
+      {
+        "start": 4.833333333333333,
+        "end": 5.416666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.708333333333334,
+        "end": 11.041666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 17.125,
+        "end": 17.708333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.958333333333332,
+        "end": 22.25,
+        "reason": "scene"
+      },
+      {
+        "start": 29.208333333333332,
+        "end": 29.708333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "paper-ui-field-1-question",
+  "problemId": "paper-ui-field-1",
+  "kind": "question",
+  "title": "負の電荷に働く力",
+  "scenes": [
+    {
+      "narration": "この問題では、負の電荷が受ける力の大きさと向きを求めます。青い矢印は、右向きの電場を表します。",
+      "equation": "",
+      "index": 0,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.375,
+          "text": "この問題では、負の電荷が受ける力の大きさと向きを求めます。"
+        },
+        {
+          "start": 4.375,
+          "end": 7.874999999999999,
+          "text": "青い矢印は、右向きの電場を表します。"
+        }
+      ],
+      "end": 8.011999999999997
+    },
+    {
+      "narration": "電場の強さは三ニュートン毎クーロンです。この場所に、マイナス二クーロンの電荷を置きます。あなたは紙に力の矢印を描き、四つの選択肢から答えを選んでください。",
+      "equation": "E=3\\,\\mathrm{N/C},\\qquad q=-2\\,\\mathrm C",
+      "index": 1,
+      "start": 8.011999999999997,
+      "captions": [
+        {
+          "start": 8.011999999999997,
+          "end": 10.791666666666664,
+          "text": "電場の強さは三ニュートン毎クーロンです。"
+        },
+        {
+          "start": 10.791666666666664,
+          "end": 13.958333333333332,
+          "text": "この場所に、マイナス二クーロンの電荷を置きます。"
+        },
+        {
+          "start": 13.958333333333332,
+          "end": 19.512999999999998,
+          "text": "あなたは紙に力の矢印を描き、四つの選択肢から答えを選んでください。"
+        }
+      ],
+      "end": 20.862999999999996
+    }
+  ],
+  "pronunciationFingerprint": "a274d735dd4fe2434ada7a7af8e07b92a0764219181ccf19dfb4ed79902380fd",
+  "duration": 20.862999999999996,
+  "renderKey": "aa2395a9fbd648c66e629195d3c8b767525800bde22584291f2613f41fae0f02",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 23.82133333333333,
+    "removedSeconds": 2.9583333333333357,
+    "cuts": [
+      {
+        "start": 4.375,
+        "end": 4.916666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.416666666666666,
+        "end": 9.708333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 12.625,
+        "end": 13.208333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 16.375,
+        "end": 16.916666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

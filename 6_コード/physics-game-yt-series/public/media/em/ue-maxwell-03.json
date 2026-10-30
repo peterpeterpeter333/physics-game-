@@ -1,0 +1,202 @@
+{
+  "id": "ue-maxwell-03",
+  "stageId": "ue-maxwell",
+  "stageTitle": "交流とマクスウェル方程式",
+  "level": "advanced",
+  "title": "場を消去して波動方程式と光速を導く",
+  "sourceIndices": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "scenes": [
+    {
+      "index": 5,
+      "heading": "2本を微分してBを消す",
+      "narration": "「電場の位置微分」を含む式を位置で微分し、「磁場の位置微分」を含む式を時間で微分します。すると両方に、同じ「磁場を位置と時間で一回ずつ微分したもの」が現れます。一方の式をもう一方に入れてその項を置き換えると、電場だけの波動方程式になります。",
+      "equations": [
+        "\\frac{\\partial^2E_y}{\\partial x^2}=\\mu_0\\varepsilon_0\\frac{\\partial^2E_y}{\\partial t^2}",
+        "\\frac{\\partial^2E_y}{\\partial x^2}=-\\frac{\\partial^2B_z}{\\partial x\\partial t}",
+        "-\\frac{\\partial^2B_z}{\\partial t\\partial x}=\\mu_0\\varepsilon_0\\frac{\\partial^2E_y}{\\partial t^2}",
+        "\\frac{\\partial^2B_z}{\\partial x\\partial t}=\\frac{\\partial^2B_z}{\\partial t\\partial x}"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.583333333333333,
+          "text": "「電場の位置微分」を含む式を位置で微分し、「磁場の位置微分」を含む式を時間で微分します。"
+        },
+        {
+          "start": 6.583333333333333,
+          "end": 12.375,
+          "text": "すると両方に、同じ「磁場を位置と時間で一回ずつ微分したもの」が現れます。"
+        },
+        {
+          "start": 12.375,
+          "end": 18.166666666666664,
+          "text": "一方の式をもう一方に入れてその項を置き換えると、電場だけの波動方程式になります。"
+        }
+      ],
+      "end": 18.29
+    },
+    {
+      "index": 6,
+      "heading": "進む波を代入して速さを求める",
+      "narration": "進む波の式では、エックス引くシーティーが同じ場所で、波の値も同じです。その場所を追うと、波の山が速さシーで進みます。この式を波動方程式に代入すると、シーが求まります。真空の透磁率と誘電率を掛け、その平方根で一を割った値が、波の速さです。",
+      "equations": [
+        "c=\\frac1{\\sqrt{\\mu_0\\varepsilon_0}}",
+        "E_y=f(x-ct)",
+        "\\frac{\\partial^2E_y}{\\partial x^2}=f''(x-ct)",
+        "\\frac{\\partial^2E_y}{\\partial t^2}=c^2f''(x-ct)",
+        "f''=\\mu_0\\varepsilon_0c^2f''",
+        "1=\\mu_0\\varepsilon_0c^2"
+      ],
+      "spatial": false,
+      "start": 18.29,
+      "captions": [
+        {
+          "start": 18.29,
+          "end": 23.708333333333332,
+          "text": "進む波の式では、エックス引くシーティーが同じ場所で、波の値も同じです。"
+        },
+        {
+          "start": 23.708333333333332,
+          "end": 27.333333333333332,
+          "text": "その場所を追うと、波の山が速さシーで進みます。"
+        },
+        {
+          "start": 27.333333333333332,
+          "end": 31.20833333333333,
+          "text": "この式を波動方程式に代入すると、シーが求まります。"
+        },
+        {
+          "start": 31.20833333333333,
+          "end": 37.20833333333333,
+          "text": "真空の透磁率と誘電率を掛け、その平方根で一を割った値が、波の速さです。"
+        }
+      ],
+      "end": 37.36566666666667
+    },
+    {
+      "index": 7,
+      "heading": "ここまでの道のりで、何が変わったのだろう?",
+      "narration": "物理の導出は、定義と仮定と基本法則を出発点にしています。微分積分は、その出発点から、運動や場の変化を具体的に計算するための道具です。",
+      "equations": [],
+      "spatial": false,
+      "start": 37.36566666666667,
+      "captions": [
+        {
+          "start": 37.36566666666667,
+          "end": 41.95833333333333,
+          "text": "物理の導出は、定義と仮定と基本法則を出発点にしています。"
+        },
+        {
+          "start": 41.95833333333333,
+          "end": 48.33333333333333,
+          "text": "微分積分は、その出発点から、運動や場の変化を具体的に計算するための道具です。"
+        }
+      ],
+      "end": 48.440000000000005
+    },
+    {
+      "index": 8,
+      "heading": "EとBと進行方向の立体関係",
+      "narration": "真空中の平面波では、電場と磁場はお互いに垂直で、同じ場所では同じ時刻に最大になります。波は、電場と磁場の外積が向く方向へ進みます。図の波形は、物体の上下の動きではなく、電場や磁場の値を表しています。",
+      "equations": [
+        "E_y=E_0\\sin(kx-\\omega t),\\quad B_z=B_0\\sin(kx-\\omega t)",
+        "kE_0\\cos(kx-\\omega t)=\\omega B_0\\cos(kx-\\omega t)",
+        "kE_0=\\omega B_0",
+        "B_0=\\frac{k}{\\omega}E_0=\\frac{E_0}{c}"
+      ],
+      "spatial": false,
+      "start": 48.440000000000005,
+      "captions": [
+        {
+          "start": 48.440000000000005,
+          "end": 55.33333333333333,
+          "text": "真空中の平面波では、電場と磁場はお互いに垂直で、同じ場所では同じ時刻に最大になります。"
+        },
+        {
+          "start": 55.33333333333333,
+          "end": 59.04166666666666,
+          "text": "波は、電場と磁場の外積が向く方向へ進みます。"
+        },
+        {
+          "start": 59.04166666666666,
+          "end": 64.41033333333334,
+          "text": "図の波形は、物体の上下の動きではなく、電場や磁場の値を表しています。"
+        }
+      ],
+      "end": 65.76033333333334
+    }
+  ],
+  "pronunciationFingerprint": "23e6ec251366c1a97759565486b53669c9afcef065b7e6a110b3bbbef163dd21",
+  "duration": 65.76033333333334,
+  "renderKey": "57c6884fde39313ecd5819cbcacbd62f8b8628429e317621aa389825ebd7835e",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 74.21866666666668,
+    "removedSeconds": 8.458333333333343,
+    "cuts": [
+      {
+        "start": 6.583333333333333,
+        "end": 7.125,
+        "reason": "sentence"
+      },
+      {
+        "start": 12.916666666666666,
+        "end": 13.458333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 19.25,
+        "end": 20.583333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 26.125,
+        "end": 26.708333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 30.333333333333332,
+        "end": 30.916666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 34.791666666666664,
+        "end": 35.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 41.375,
+        "end": 42.666666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 47.416666666666664,
+        "end": 47.958333333333336,
+        "reason": "sentence"
+      },
+      {
+        "start": 54.333333333333336,
+        "end": 55.666666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 62.666666666666664,
+        "end": 63.25,
+        "reason": "sentence"
+      },
+      {
+        "start": 66.95833333333333,
+        "end": 67.5,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

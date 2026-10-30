@@ -1,0 +1,90 @@
+{
+  "id": "um-electrostatic-potential-path-01",
+  "stageId": "um-electrostatic-potential-path",
+  "stageTitle": "静電場の電位差",
+  "level": "middle",
+  "title": "2本の道で仕事を計算し、値を見比べる",
+  "sourceIndices": [
+    0,
+    1
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "同じ2点を結ぶ道は、1本だけだろうか?",
+      "narration": "この例では、右向きの一様な電場の中で、プラス二クーロンの電荷を運びます。始点と終点は固定します。この二点を結ぶ二つの道について、電気力の仕事を比べます。",
+      "equations": [],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.416666666666667,
+          "text": "この例では、右向きの一様な電場の中で、プラス二クーロンの電荷を運びます。"
+        },
+        {
+          "start": 5.416666666666667,
+          "end": 7.458333333333333,
+          "text": "始点と終点は固定します。"
+        },
+        {
+          "start": 7.458333333333333,
+          "end": 12.041666666666668,
+          "text": "この二点を結ぶ二つの道について、電気力の仕事を比べます。"
+        }
+      ],
+      "end": 12.127666666666663
+    },
+    {
+      "index": 1,
+      "heading": "道が違えば、仕事も違ってしまうのだろうか?",
+      "narration": "比べる二つの道は、右へ進む区間と上へ進む区間の順番が違います。計算の目的は、順番の違いで電気力の仕事が変わるかどうかを確かめることです。",
+      "equations": [],
+      "spatial": false,
+      "start": 12.127666666666663,
+      "captions": [
+        {
+          "start": 12.127666666666663,
+          "end": 17.333333333333332,
+          "text": "比べる二つの道は、右へ進む区間と上へ進む区間の順番が違います。"
+        },
+        {
+          "start": 17.333333333333332,
+          "end": 23.28233333333333,
+          "text": "計算の目的は、順番の違いで電気力の仕事が変わるかどうかを確かめることです。"
+        }
+      ],
+      "end": 24.63233333333333
+    }
+  ],
+  "duration": 24.63233333333333,
+  "renderKey": "afe3cee07861cf8cc845837aedc259559a8b4abb62dc559a204105a13c53d5a4",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 27.75733333333333,
+    "removedSeconds": 3.125,
+    "cuts": [
+      {
+        "start": 5.416666666666667,
+        "end": 6.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.041666666666666,
+        "end": 8.625,
+        "reason": "sentence"
+      },
+      {
+        "start": 13.208333333333334,
+        "end": 14.583333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 19.875,
+        "end": 20.458333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2187 @@
+{
+ "episode": "D-1",
+ "reviewer": "independent E-1 agent",
+ "recordedAt": "2026-10-24T14:05:01.841Z",
+ "kind": "Read-only all46 required-prop/action/word correspondence and nine actually viewed images; not final acceptance",
+ "inputs": [
+  {
+   "path": "/Users/ken/Downloads/physics-quest-ChatGPT引き継ぎ_技術の疑問の鎖_2026-10-22/D-1/D-1_制作指示書.md",
+   "sha256": "21d732c5646fa887113ae2fc2baf0d59b3f156649ec21c4286b550d096781dd1"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_d1v1.py",
+   "sha256": "004521c4fbb3657c9c891dc1aa24846d82c393620f4a97902973cc9fd3def5a2"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_lib_d1.py",
+   "sha256": "742d96fcde56f4a2c0eb066600a6428c983a2f96d5b4907824cf4a39f31b7923"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-d1v1-data.mjs",
+   "sha256": "a1471978be1b13d751b6d8774a8d17412fe80fea3a77dd83a7d38a338c8376a6"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-d1v1-overlay.mjs",
+   "sha256": "9e1105b7a0c4a077b9f4a9067a31760882398304460132ecb22b78ab50ad4a2f"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/mix-chain-desk-audio-d1v1.py",
+   "sha256": "9968e91a4b805f22d78cc35a2f82615474e0d91c232dec5afddbad238f1f8fb4"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/deep/D-1_cue時刻一覧.md",
+   "sha256": "16cdb9416a42d68664b7fc98e66d2cbed5fa61130414005561f7d39ce887a50c"
+  },
+  {
+   "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/deep/技術の疑問の鎖_D-1_第1版_ナレーション.md",
+   "sha256": "f5cac81feab8b357dcc92698ed2577deccf26ab6f897104a2677604270001a3b"
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/blender/data.json",
+   "sha256": "eb0404efd07b5d4cad1edbef66af7961c8fef4bb3524760baf0aa9dbaf2dda44"
+  }
+ ],
+ "all46SourceAndInstructionRead": true,
+ "all57CueTimingCorrespondenceChecked": true,
+ "rows": [
+  {
+   "row": 1,
+   "cues": [
+    {
+     "key": "mine:open",
+     "start": 0,
+     "end": 7.1386666666666665,
+     "wordEvents": [
+      {
+       "word": "掘れば",
+       "time": 0.13
+      },
+      {
+       "word": "水が湧いて",
+       "time": 1.25
+      },
+      {
+       "word": "1700年ごろ",
+       "time": 2.37
+      },
+      {
+       "word": "イギリス",
+       "time": 3.57
+      },
+      {
+       "word": "炭鉱",
+       "time": 4.05
+      },
+      {
+       "word": "水との戦い",
+       "time": 4.91
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Mine cutaway, water rise, seep particles and title/year are implemented; v4 water-height derivative is separate existing evidence, not rerun here.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 2,
+   "cues": [
+    {
+     "key": "mine:water",
+     "start": 7.1786666666666665,
+     "end": 17.557333333333336,
+     "wordEvents": [
+      {
+       "word": "石炭",
+       "time": 7.31
+      },
+      {
+       "word": "地面の深い所",
+       "time": 8.18
+      },
+      {
+       "word": "深く掘る",
+       "time": 9.99
+      },
+      {
+       "word": "しみ出す水",
+       "time": 11.91
+      },
+      {
+       "word": "坑道",
+       "time": 13.04
+      },
+      {
+       "word": "地下の通り道",
+       "time": 14.12
+      },
+      {
+       "word": "底に",
+       "time": 15.05
+      },
+      {
+       "word": "たまります",
+       "time": 15.76
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Additional seep particles begin at the supplied seep-water word; gallery emission is tied to the gallery word.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 3,
+   "cues": [
+    {
+     "key": "mine:horse",
+     "start": 17.59733333333333,
+     "end": 26.824,
+     "wordEvents": [
+      {
+       "word": "人や馬",
+       "time": 17.73
+      },
+      {
+       "word": "くみ上げ機",
+       "time": 18.67
+      },
+      {
+       "word": "何時間も",
+       "time": 19.33
+      },
+      {
+       "word": "回して",
+       "time": 19.91
+      },
+      {
+       "word": "外へ出しました",
+       "time": 20.95
+      },
+      {
+       "word": "追いつかず",
+       "time": 23.26
+      },
+      {
+       "word": "閉じて（得点板 水 1−0 人）",
+       "time": 24
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Horse body circles, winch rotates and bucket moves. Physical-board rise is a separately recorded difference; canonical 2D score exists.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 4,
+   "cues": [
+    {
+     "key": "mine:rule",
+     "start": 26.863999999999997,
+     "end": 33.09333333333333,
+     "wordEvents": [
+      {
+       "word": "勝負の札",
+       "time": 27.21
+      },
+      {
+       "word": "水に負けたら",
+       "time": 28.67
+      },
+      {
+       "word": "水に1点",
+       "time": 29.1
+      },
+      {
+       "word": "くみ出せたら",
+       "time": 30.39
+      },
+      {
+       "word": "人に1点",
+       "time": 31.01
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Score camera and both literal rule cards are implemented.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 5,
+   "cues": [
+    {
+     "key": "mine:mio",
+     "start": 33.13333333333333,
+     "end": 35.3,
+     "wordEvents": [
+      {
+       "word": "馬",
+       "time": 33.26
+      },
+      {
+       "word": "かわいそう",
+       "time": 33.62
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Horse sweat and canonical small troubled face are implemented.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 6,
+   "cues": [
+    {
+     "key": "nc:install",
+     "start": 35.88999999999999,
+     "end": 43.932666666666655,
+     "wordEvents": [
+      {
+       "word": "1712年",
+       "time": 36.02
+      },
+      {
+       "word": "金物屋",
+       "time": 37.47
+      },
+      {
+       "word": "トーマス・ニューコメン",
+       "time": 38.18
+      },
+      {
+       "word": "蒸気で水をくみ出す",
+       "time": 39.54
+      },
+      {
+       "word": "機械",
+       "time": 40.72
+      },
+      {
+       "word": "据えつけました",
+       "time": 41.95
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Four assembly stages are ordered at .3 s intervals. Slight hop is absent from the monotonic vertical settling expression.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 7,
+   "cues": [
+    {
+     "key": "nc:boiler",
+     "start": 43.97266666666666,
+     "end": 48.28466666666666,
+     "wordEvents": [
+      {
+       "word": "湯をわかす",
+       "time": 44.1
+      },
+      {
+       "word": "釜",
+       "time": 44.67
+      },
+      {
+       "word": "ボイラー",
+       "time": 45.22
+      },
+      {
+       "word": "その上に",
+       "time": 45.84
+      },
+      {
+       "word": "太い筒",
+       "time": 46.71
+      }
+     ]
+    },
+    {
+     "key": "nc:piston",
+     "start": 48.32466666666666,
+     "end": 55.53533333333332,
+     "wordEvents": [
+      {
+       "word": "筒の中",
+       "time": 48.45
+      },
+      {
+       "word": "上下に動く",
+       "time": 49.55
+      },
+      {
+       "word": "ふた",
+       "time": 50.28
+      },
+      {
+       "word": "ピストン",
+       "time": 50.79
+      },
+      {
+       "word": "シーソー",
+       "time": 52.5
+      },
+      {
+       "word": "木の腕",
+       "time": 53.63
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Four part highlights and anchored boiler/cylinder/piston/beam labels are tied to existing word times.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 8,
+   "cues": [
+    {
+     "key": "myth:mio",
+     "start": 56.12533333333332,
+     "end": 61.74799999999998,
+     "wordEvents": [
+      {
+       "word": "蒸気で動かす",
+       "time": 56.25
+      },
+      {
+       "word": "湯気",
+       "time": 57.91
+      },
+      {
+       "word": "ピストン",
+       "time": 58.33
+      },
+      {
+       "word": "ぐいっと",
+       "time": 59.23
+      },
+      {
+       "word": "押し上げる",
+       "time": 59.72
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Supplied full-frame confident face remains unchanged; no new actual face review claimed.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 9,
+   "cues": [
+    {
+     "key": "myth:side",
+     "start": 61.78799999999999,
+     "end": 65.53333333333333,
+     "wordEvents": [
+      {
+       "word": "そう考えます",
+       "time": 61.92
+      },
+      {
+       "word": "確かめる側から（見方の札）",
+       "time": 63.28
+      }
+     ]
+    },
+    {
+     "key": "myth:hyp",
+     "start": 65.57333333333332,
+     "end": 70.88133333333333,
+     "wordEvents": [
+      {
+       "word": "仮説",
+       "time": 66.25
+      },
+      {
+       "word": "蒸気がピストンを押して",
+       "time": 67.17
+      },
+      {
+       "word": "機械を動かしている",
+       "time": 68.69
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Cylinder is an open-front cutaway rather than a separate glass-window mesh; required hypothesis/view card exists.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 10,
+   "cues": [
+    {
+     "key": "myth:if",
+     "start": 70.92133333333332,
+     "end": 79.39066666666666,
+     "wordEvents": [
+      {
+       "word": "もし正しいなら",
+       "time": 71.05
+      },
+      {
+       "word": "冷やす必要",
+       "time": 74.11
+      },
+      {
+       "word": "ないはず",
+       "time": 74.95
+      },
+      {
+       "word": "冷やせば",
+       "time": 75.87
+      },
+      {
+       "word": "押す力",
+       "time": 76.69
+      },
+      {
+       "word": "弱まる",
+       "time": 77.29
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "If/prediction cards use the supplied literal Japanese.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 11,
+   "cues": [
+    {
+     "key": "myth:fact",
+     "start": 79.43066666666665,
+     "end": 87.58399999999999,
+     "wordEvents": [
+      {
+       "word": "事実",
+       "time": 79.56
+      },
+      {
+       "word": "ニューコメンの機械",
+       "time": 80.26
+      },
+      {
+       "word": "毎回",
+       "time": 81.66
+      },
+      {
+       "word": "筒の中に",
+       "time": 82.44
+      },
+      {
+       "word": "冷たい水",
+       "time": 83.42
+      },
+      {
+       "word": "吹きこんで",
+       "time": 84.17
+      },
+      {
+       "word": "冷やしていました",
+       "time": 85.44
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Blue inlet spray lasts .8 s and steam shrinks; timing is the existing cold-water phrase.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 12,
+   "cues": [
+    {
+     "key": "myth:judge",
+     "start": 87.62399999999998,
+     "end": 93.58399999999999,
+     "wordEvents": [
+      {
+       "word": "予言と事実",
+       "time": 87.75
+      },
+      {
+       "word": "合いません（判定 ×）",
+       "time": 88.65
+      },
+      {
+       "word": "力仕事",
+       "time": 89.33
+      },
+      {
+       "word": "蒸気ではなさそう",
+       "time": 90.96
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Judgement X and canonical small face exist.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 13,
+   "cues": [
+    {
+     "key": "shrink:mio",
+     "start": 94.17399999999998,
+     "end": 97.00199999999998,
+     "wordEvents": [
+      {
+       "word": "なんで",
+       "time": 95
+      },
+      {
+       "word": "冷やす",
+       "time": 95.34
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Canonical thinking face exists; not newly inspected as actual final.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 14,
+   "cues": [
+    {
+     "key": "shrink:spoon",
+     "start": 97.04199999999997,
+     "end": 105.67933333333332,
+     "wordEvents": [
+      {
+       "word": "具体例（見方の札）",
+       "time": 97.17
+      },
+      {
+       "word": "大さじ1杯",
+       "time": 98.36
+      },
+      {
+       "word": "温めて",
+       "time": 99.53
+      },
+      {
+       "word": "蒸気にすると",
+       "time": 100.02
+      },
+      {
+       "word": "25リットル",
+       "time": 101.46
+      },
+      {
+       "word": "風船",
+       "time": 102.93
+      },
+      {
+       "word": "ふくらみます",
+       "time": 103.62
+      }
+     ]
+    },
+    {
+     "key": "shrink:1700",
+     "start": 105.71933333333331,
+     "end": 109.82599999999998,
+     "wordEvents": [
+      {
+       "word": "体積",
+       "time": 105.85
+      },
+      {
+       "word": "1700倍",
+       "time": 107.12
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Spoon water, rising steam, radius .02 to .12 in1.5 s and numerical card exist.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 15,
+   "cues": [
+    {
+     "key": "shrink:back",
+     "start": 109.86599999999997,
+     "end": 116.76866666666665,
+     "wordEvents": [
+      {
+       "word": "逆に",
+       "time": 109.99
+      },
+      {
+       "word": "冷やして",
+       "time": 111.09
+      },
+      {
+       "word": "水に戻す",
+       "time": 111.51
+      },
+      {
+       "word": "体積",
+       "time": 112.57
+      },
+      {
+       "word": "1700分の1",
+       "time": 113.41
+      },
+      {
+       "word": "縮みます",
+       "time": 114.68
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Radius falls in1 s and spoon water returns; deformation is only axis scale/4 percent Z oscillation, not wrinkles.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 16,
+   "cues": [
+    {
+     "key": "can:heat",
+     "start": 116.80866666666664,
+     "end": 124.38199999999998,
+     "wordEvents": [
+      {
+       "word": "空き缶",
+       "time": 116.94
+      },
+      {
+       "word": "少しの水",
+       "time": 117.4
+      },
+      {
+       "word": "温め",
+       "time": 118.43
+      },
+      {
+       "word": "蒸気で満たします",
+       "time": 119.91
+      },
+      {
+       "word": "逆さ",
+       "time": 120.98
+      },
+      {
+       "word": "冷たい水",
+       "time": 121.96
+      },
+      {
+       "word": "つけると",
+       "time": 122.73
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Can rotates pi in1 s, moves into dish and has wood-tong objects. Actual selected production raw does not make the tongs legible and appears to show direct mitten contact.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 17,
+   "cues": [
+    {
+     "key": "can:crush",
+     "start": 124.42199999999997,
+     "end": 128.47666666666663,
+     "wordEvents": [
+      {
+       "word": "缶は",
+       "time": 124.55
+      },
+      {
+       "word": "一瞬",
+       "time": 125.25
+      },
+      {
+       "word": "ぐしゃっと",
+       "time": 126.01
+      },
+      {
+       "word": "つぶれます",
+       "time": 126.42
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Four-sided crease shape key crushes in .15 s and fixed camera is used; its influence is monotonic, with no specified small rebound.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 18,
+   "cues": [
+    {
+     "key": "can:mio",
+     "start": 128.51666666666662,
+     "end": 131.82866666666663,
+     "wordEvents": [
+      {
+       "word": "誰も",
+       "time": 128.65
+      },
+      {
+       "word": "つぶれました",
+       "time": 130.19
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Supplied full-frame surprise face remains unchanged.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 19,
+   "cues": [
+    {
+     "key": "air:who",
+     "start": 132.41866666666664,
+     "end": 135.14399999999998,
+     "wordEvents": [
+      {
+       "word": "押したのは",
+       "time": 132.55
+      },
+      {
+       "word": "まわりの空気",
+       "time": 133.32
+      }
+     ]
+    },
+    {
+     "key": "air:empty",
+     "start": 135.18399999999997,
+     "end": 144.0093333333333,
+     "wordEvents": [
+      {
+       "word": "中の蒸気",
+       "time": 135.31
+      },
+      {
+       "word": "水に戻って",
+       "time": 136.09
+      },
+      {
+       "word": "縮み",
+       "time": 136.8
+      },
+      {
+       "word": "缶の中",
+       "time": 137.52
+      },
+      {
+       "word": "空っぽ",
+       "time": 138.92
+      },
+      {
+       "word": "外の空気",
+       "time": 140.81
+      },
+      {
+       "word": "押しつぶされた",
+       "time": 141.62
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Twelve same-length outer can arrows reveal at the outside-air word; empty and pressure cards exist.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 20,
+   "cues": [
+    {
+     "key": "straw:drink",
+     "start": 144.0493333333333,
+     "end": 151.3373333333333,
+     "wordEvents": [
+      {
+       "word": "たとえ話（見方の札）",
+       "time": 144.18
+      },
+      {
+       "word": "ストローで",
+       "time": 145.35
+      },
+      {
+       "word": "ジュース",
+       "time": 145.83
+      },
+      {
+       "word": "飲む",
+       "time": 146.26
+      },
+      {
+       "word": "ストローの中の空気",
+       "time": 148.07
+      },
+      {
+       "word": "減らして",
+       "time": 149.27
+      }
+     ]
+    },
+    {
+     "key": "straw:push",
+     "start": 151.3773333333333,
+     "end": 156.6973333333333,
+     "wordEvents": [
+      {
+       "word": "押し上げて",
+       "time": 151.89
+      },
+      {
+       "word": "コップの表面",
+       "time": 153.05
+      },
+      {
+       "word": "外の空気",
+       "time": 154.34
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Ten bubbles, rising juice and three downward cup arrows exist. Fixed-bottom dimensions-getter risk is already known and pending root GUI diagnostic.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 21,
+   "cues": [
+    {
+     "key": "air:weight",
+     "start": 156.7373333333333,
+     "end": 168.0093333333333,
+     "wordEvents": [
+      {
+       "word": "頭の上",
+       "time": 158.67
+      },
+      {
+       "word": "何十キロメートル",
+       "time": 159.68
+      },
+      {
+       "word": "積もった",
+       "time": 160.82
+      },
+      {
+       "word": "重さ",
+       "time": 161.99
+      },
+      {
+       "word": "上へ行くほど",
+       "time": 163.42
+      },
+      {
+       "word": "少なく",
+       "time": 165.16
+      },
+      {
+       "word": "うすく",
+       "time": 165.88
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Ten layers stack at .1 s intervals; top opacity and 40-to4 particle counts encode thinner air.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 22,
+   "cues": [
+    {
+     "key": "air:1kg",
+     "start": 168.04933333333332,
+     "end": 181.04266666666666,
+     "wordEvents": [
+      {
+       "word": "1平方センチメートル",
+       "time": 169.27
+      },
+      {
+       "word": "1キログラム",
+       "time": 171.6
+      },
+      {
+       "word": "重さ",
+       "time": 172.72
+      },
+      {
+       "word": "手のひら",
+       "time": 173.6
+      },
+      {
+       "word": "100平方センチメートル",
+       "time": 174.91
+      },
+      {
+       "word": "100キログラム分",
+       "time": 178.35
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "One and100 kg masses descend at their supplied words, beside the square/palm teaching plates.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 23,
+   "cues": [
+    {
+     "key": "air:mio",
+     "start": 181.08266666666665,
+     "end": 184.74266666666665,
+     "wordEvents": [
+      {
+       "word": "押されてたら",
+       "time": 181.75
+      },
+      {
+       "word": "つぶれちゃいます",
+       "time": 182.89
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Canonical small face exists; no new actual final review.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 24,
+   "cues": [
+    {
+     "key": "air:inside",
+     "start": 184.78266666666664,
+     "end": 195.88399999999996,
+     "wordEvents": [
+      {
+       "word": "体の内側",
+       "time": 185.66
+      },
+      {
+       "word": "同じ強さ",
+       "time": 187.14
+      },
+      {
+       "word": "押し返して",
+       "time": 187.92
+      },
+      {
+       "word": "缶がつぶれた",
+       "time": 190.38
+      },
+      {
+       "word": "内側から押し返すもの",
+       "time": 191.67
+      },
+      {
+       "word": "なくなった",
+       "time": 193.45
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Palm inward/outward arrows are both .06 m, and inner arrow disappears at the existing absence word; crushed can has exterior arrows.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 25,
+   "cues": [
+    {
+     "key": "why:mio",
+     "start": 196.474,
+     "end": 203.97799999999998,
+     "wordEvents": [
+      {
+       "word": "空っぽ",
+       "time": 197.68
+      },
+      {
+       "word": "蒸気じゃなくて",
+       "time": 199.26
+      },
+      {
+       "word": "空気を入れて",
+       "time": 200.55
+      },
+      {
+       "word": "冷やしても",
+       "time": 201.39
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Canonical thinking face exists.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 26,
+   "cues": [
+    {
+     "key": "why:air",
+     "start": 204.018,
+     "end": 212.154,
+     "wordEvents": [
+      {
+       "word": "空気は",
+       "time": 204.15
+      },
+      {
+       "word": "少し縮む",
+       "time": 205.42
+      },
+      {
+       "word": "消えません",
+       "time": 206.81
+      },
+      {
+       "word": "蒸気なら",
+       "time": 207.6
+      },
+      {
+       "word": "水に戻って",
+       "time": 208.84
+      },
+      {
+       "word": "ほとんど消えます",
+       "time": 209.89
+      }
+     ]
+    },
+    {
+     "key": "why:steam",
+     "start": 212.194,
+     "end": 215.15533333333335,
+     "wordEvents": [
+      {
+       "word": "蒸気を使う",
+       "time": 212.97
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Left particles remain with modest contraction; right particles descend/change blue/vanish and can dents. Rain is modeled above both.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 27,
+   "cues": [
+    {
+     "key": "eng:apply",
+     "start": 215.74533333333332,
+     "end": 218.8973333333333,
+     "wordEvents": [
+      {
+       "word": "炭鉱の機械",
+       "time": 216.5
+      },
+      {
+       "word": "当てはめます",
+       "time": 217.47
+      }
+     ]
+    },
+    {
+     "key": "eng:arm",
+     "start": 218.93733333333333,
+     "end": 227.32533333333333,
+     "wordEvents": [
+      {
+       "word": "腕の片側",
+       "time": 219.07
+      },
+      {
+       "word": "炭鉱の底",
+       "time": 220.26
+      },
+      {
+       "word": "ポンプ",
+       "time": 221.11
+      },
+      {
+       "word": "下りる",
+       "time": 221.59
+      },
+      {
+       "word": "長い棒",
+       "time": 222.17
+      },
+      {
+       "word": "もう片側",
+       "time": 222.98
+      },
+      {
+       "word": "ピストン",
+       "time": 224.76
+      },
+      {
+       "word": "つながって",
+       "time": 225.23
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Long-rod trace and highlights are implemented; fixed-top dimensions-getter risk is already known, not a new proposal.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 28,
+   "cues": [
+    {
+     "key": "eng:steam",
+     "start": 227.36533333333333,
+     "end": 236.50933333333333,
+     "wordEvents": [
+      {
+       "word": "筒に蒸気を入れます",
+       "time": 228.09
+      },
+      {
+       "word": "中から",
+       "time": 230.3
+      },
+      {
+       "word": "外の空気",
+       "time": 230.99
+      },
+      {
+       "word": "同じくらいの強さ",
+       "time": 231.76
+      },
+      {
+       "word": "押し返す",
+       "time": 232.88
+      },
+      {
+       "word": "ピストン",
+       "time": 233.96
+      },
+      {
+       "word": "押さえつけられません",
+       "time": 234.43
+      }
+     ]
+    },
+    {
+     "key": "eng:up",
+     "start": 236.54933333333332,
+     "end": 244.70000000000002,
+     "wordEvents": [
+      {
+       "word": "炭鉱側の重い棒",
+       "time": 237.41
+      },
+      {
+       "word": "シーソー",
+       "time": 238.98
+      },
+      {
+       "word": "下がり",
+       "time": 239.82
+      },
+      {
+       "word": "反対側のピストン",
+       "time": 240.46
+      },
+      {
+       "word": "上へ",
+       "time": 242.14
+      },
+      {
+       "word": "引き上げられます",
+       "time": 242.34
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Steam entry and one coupled stroke drive piston/beam/mine rod. Opposing force arrows are .048/.046 m, not exactly equal as instructed.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 29,
+   "cues": [
+    {
+     "key": "eng:cool",
+     "start": 244.73999999999998,
+     "end": 252.88666666666663,
+     "wordEvents": [
+      {
+       "word": "次に",
+       "time": 244.87
+      },
+      {
+       "word": "冷たい水",
+       "time": 245.6
+      },
+      {
+       "word": "吹きこみます",
+       "time": 246.35
+      },
+      {
+       "word": "水に戻って",
+       "time": 247.74
+      },
+      {
+       "word": "縮み",
+       "time": 248.45
+      },
+      {
+       "word": "筒の中",
+       "time": 249.21
+      },
+      {
+       "word": "空っぽ",
+       "time": 250.57
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Blue spray, steam disappearance and bottom condensate are implemented.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 30,
+   "cues": [
+    {
+     "key": "eng:mio",
+     "start": 252.92666666666665,
+     "end": 254.688,
+     "wordEvents": [
+      {
+       "word": "缶と同じ",
+       "time": 253.06
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Canonical small insight face exists.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 31,
+   "cues": [
+    {
+     "key": "eng:down",
+     "start": 254.72799999999998,
+     "end": 265.82,
+     "wordEvents": [
+      {
+       "word": "外の空気",
+       "time": 255.53
+      },
+      {
+       "word": "ピストン",
+       "time": 256.71
+      },
+      {
+       "word": "上から",
+       "time": 257.26
+      },
+      {
+       "word": "押し下げます",
+       "time": 257.54
+      },
+      {
+       "word": "シーソーの反対側の棒",
+       "time": 258.39
+      },
+      {
+       "word": "引き上げられ",
+       "time": 259.94
+      },
+      {
+       "word": "底のポンプ",
+       "time": 260.81
+      },
+      {
+       "word": "水をひとくみ",
+       "time": 262.24
+      },
+      {
+       "word": "地上へ",
+       "time": 263
+      },
+      {
+       "word": "持ち上げます",
+       "time": 263.41
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Piston down/mine rod up and outlet water occur at supplied words. Selected old actual shows blue water at upper spout; whole path motion was not independently viewed.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 32,
+   "cues": [
+    {
+     "key": "eng:repeat",
+     "start": 265.85999999999996,
+     "end": 270.7226666666666,
+     "wordEvents": [
+      {
+       "word": "1分間に",
+       "time": 266.69
+      },
+      {
+       "word": "十数回",
+       "time": 267.31
+      },
+      {
+       "word": "くり返しました（得点板 水 1−1 人）",
+       "time": 268.14
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Known fixed-voice conflict:4.862667 s cue cannot contain two4 s periods. Not proposed again as a new fix.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 33,
+   "cues": [
+    {
+     "key": "eng:mio2",
+     "start": 270.76266666666663,
+     "end": 276.80266666666665,
+     "wordEvents": [
+      {
+       "word": "押す係",
+       "time": 271.37
+      },
+      {
+       "word": "筒の中を",
+       "time": 272.84
+      },
+      {
+       "word": "空っぽにする係",
+       "time": 273.65
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Mathematical stroke continues; missing continuous render span/full-face masking is an already recorded candidate, not newly established final failure.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 34,
+   "cues": [
+    {
+     "key": "size:wide",
+     "start": 277.3926666666666,
+     "end": 284.2513333333333,
+     "wordEvents": [
+      {
+       "word": "作る側から（見方の札）",
+       "time": 277.52
+      },
+      {
+       "word": "筒が太い",
+       "time": 278.95
+      },
+      {
+       "word": "空気の押す広さ",
+       "time": 280.66
+      },
+      {
+       "word": "増えて",
+       "time": 281.13
+      },
+      {
+       "word": "力も大きく",
+       "time": 281.76
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Two/eighteen arrows and radius/area ratio1:9 are data-asserted.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 35,
+   "cues": [
+    {
+     "key": "size:53",
+     "start": 284.2913333333333,
+     "end": 294.09399999999994,
+     "wordEvents": [
+      {
+       "word": "1712年",
+       "time": 284.42
+      },
+      {
+       "word": "筒は",
+       "time": 286.11
+      },
+      {
+       "word": "直径",
+       "time": 286.71
+      },
+      {
+       "word": "53センチメートル",
+       "time": 287.44
+      },
+      {
+       "word": "半径",
+       "time": 288.92
+      },
+      {
+       "word": "半分",
+       "time": 289.98
+      },
+      {
+       "word": "26.5センチメートル",
+       "time": 291.11
+      }
+     ]
+    },
+    {
+     "key": "size:area",
+     "start": 294.13399999999996,
+     "end": 303.7286666666666,
+     "wordEvents": [
+      {
+       "word": "円の広さ",
+       "time": 294.26
+      },
+      {
+       "word": "半径（1つ目）",
+       "time": 295.35
+      },
+      {
+       "word": "かける",
+       "time": 295.76
+      },
+      {
+       "word": "半径（2つ目）",
+       "time": 296.06
+      },
+      {
+       "word": "3.14",
+       "time": 296.75
+      },
+      {
+       "word": "2200平方センチメートル",
+       "time": 298.57
+      },
+      {
+       "word": "手のひら",
+       "time": 300.62
+      },
+      {
+       "word": "22枚分",
+       "time": 301.08
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Diameter/radius/formula cards and22 actual3D palm plates at .06 s intervals exist; original source data checks nonoverlap.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 36,
+   "cues": [
+    {
+     "key": "size:2t",
+     "start": 303.7686666666666,
+     "end": 315.3646666666666,
+     "wordEvents": [
+      {
+       "word": "手のひら1枚",
+       "time": 304.38
+      },
+      {
+       "word": "100キログラム",
+       "time": 304.82
+      },
+      {
+       "word": "22枚",
+       "time": 306.15
+      },
+      {
+       "word": "2200キログラム",
+       "time": 307.6
+      },
+      {
+       "word": "完全に",
+       "time": 309.43
+      },
+      {
+       "word": "空っぽ",
+       "time": 309.89
+      },
+      {
+       "word": "2トン分",
+       "time": 311.15
+      },
+      {
+       "word": "ピストンを押す",
+       "time": 312.86
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Palms glow, marked2t mass drops, desk shakes .002 m, and approximation/real-vacuum note exists.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 37,
+   "cues": [
+    {
+     "key": "size:mio",
+     "start": 315.4046666666666,
+     "end": 318.44599999999997,
+     "wordEvents": [
+      {
+       "word": "2トン",
+       "time": 315.53
+      },
+      {
+       "word": "馬何頭分",
+       "time": 316.43
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Canonical small surprise face exists.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 38,
+   "cues": [
+    {
+     "key": "size:horse",
+     "start": 318.486,
+     "end": 322.62199999999996,
+     "wordEvents": [
+      {
+       "word": "重さで比べる",
+       "time": 318.62
+      },
+      {
+       "word": "馬",
+       "time": 319.9
+      },
+      {
+       "word": "4頭分",
+       "time": 320.43
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Four horse figures appear/hop at .2 s spacing beside the2t comparison; weight-only note exists.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 39,
+   "cues": [
+    {
+     "key": "size:guericke",
+     "start": 322.662,
+     "end": 335.6753333333333,
+     "wordEvents": [
+      {
+       "word": "実は",
+       "time": 322.79
+      },
+      {
+       "word": "ニューコメンより",
+       "time": 323.49
+      },
+      {
+       "word": "半世紀",
+       "time": 324.21
+      },
+      {
+       "word": "空気の力",
+       "time": 325.67
+      },
+      {
+       "word": "実験",
+       "time": 327.29
+      },
+      {
+       "word": "1650年代",
+       "time": 328.5
+      },
+      {
+       "word": "ドイツ",
+       "time": 330.16
+      },
+      {
+       "word": "ゲーリケ",
+       "time": 330.58
+      },
+      {
+       "word": "銅の半球",
+       "time": 331.47
+      },
+      {
+       "word": "2つ合わせ",
+       "time": 332.26
+      },
+      {
+       "word": "空気を抜きました",
+       "time": 333.91
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Valve/gas and1650s card exist. Outward gas duration1.767 s vs .8 s is already recorded separately by D.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 40,
+   "cues": [
+    {
+     "key": "size:pull",
+     "start": 335.7153333333333,
+     "end": 343.6206666666667,
+     "wordEvents": [
+      {
+       "word": "両側から",
+       "time": 335.84
+      },
+      {
+       "word": "馬に引かせ",
+       "time": 336.49
+      },
+      {
+       "word": "離れません",
+       "time": 338.26
+      },
+      {
+       "word": "空気を入れる",
+       "time": 339.48
+      },
+      {
+       "word": "手で簡単に",
+       "time": 340.6
+      },
+      {
+       "word": "外れた",
+       "time": 341.3
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Eight horses, taut ropes, opening valve hand, part separation/roll and stumble exist. Valve/pipe follows join apart but not release displacement, leaving it floating in an old actual image.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 41,
+   "cues": [
+    {
+     "key": "next:spread",
+     "start": 344.21066666666667,
+     "end": 354.7146666666667,
+     "wordEvents": [
+      {
+       "word": "ニューコメンの機械",
+       "time": 344.34
+      },
+      {
+       "word": "数十年",
+       "time": 346.14
+      },
+      {
+       "word": "イギリス",
+       "time": 347.16
+      },
+      {
+       "word": "ヨーロッパ",
+       "time": 347.71
+      },
+      {
+       "word": "たくさんの炭鉱",
+       "time": 348.6
+      },
+      {
+       "word": "広がり",
+       "time": 349.59
+      },
+      {
+       "word": "多くの炭鉱",
+       "time": 350.36
+      },
+      {
+       "word": "くみ出せる（得点板 水 1−2 人・カイ得意顔）",
+       "time": 351.95
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Thirty real small-machine stamps appear at .05 s spacing from the UK area; canonical score1-2 and small Kai face exist.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 42,
+   "cues": [
+    {
+     "key": "next:mio",
+     "start": 354.75466666666665,
+     "end": 361.2733333333333,
+     "wordEvents": [
+      {
+       "word": "毎回",
+       "time": 355.54
+      },
+      {
+       "word": "冷たい水",
+       "time": 356.82
+      },
+      {
+       "word": "かけて",
+       "time": 357.72
+      },
+      {
+       "word": "蒸気で温める",
+       "time": 359.26
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Blue water and shell cold color are active on even integer seconds; hot/cold alternation already begins in this cue rather than only at row43 heating-again word.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 43,
+   "cues": [
+    {
+     "key": "next:waste",
+     "start": 361.31333333333333,
+     "end": 370.02000000000004,
+     "wordEvents": [
+      {
+       "word": "冷やした筒",
+       "time": 362.21
+      },
+      {
+       "word": "毎回",
+       "time": 363.33
+      },
+      {
+       "word": "温め直す",
+       "time": 364.06
+      },
+      {
+       "word": "石炭の熱",
+       "time": 365.32
+      },
+      {
+       "word": "多く",
+       "time": 366.2
+      },
+      {
+       "word": "温め直すこと",
+       "time": 367.24
+      },
+      {
+       "word": "使われました",
+       "time": 368.25
+      }
+     ]
+    },
+    {
+     "key": "next:100",
+     "start": 370.06,
+     "end": 376.26933333333335,
+     "wordEvents": [
+      {
+       "word": "くみ上げる仕事",
+       "time": 370.54
+      },
+      {
+       "word": "石炭の熱",
+       "time": 372.2
+      },
+      {
+       "word": "100分の1",
+       "time": 373.7
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Cylinder alternates at absolute integer seconds; coal removal occurs at integer offsets from364.064 s, hence changes are offset by .064 s. Coal top-down ordering is already D-recorded.100-cell card is correct.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 44,
+   "cues": [
+    {
+     "key": "next:who",
+     "start": 376.3093333333333,
+     "end": 381.80266666666665,
+     "wordEvents": [
+      {
+       "word": "無駄",
+       "time": 376.71
+      },
+      {
+       "word": "気づいた人",
+       "time": 377.08
+      },
+      {
+       "word": "熱と動力",
+       "time": 379.42
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Question mark and reduced coal mountain are implemented.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 45,
+   "cues": [
+    {
+     "key": "ch:fuji",
+     "start": 382.3926666666667,
+     "end": 393.3366666666667,
+     "wordEvents": [
+      {
+       "word": "挑戦",
+       "time": 383.1
+      },
+      {
+       "word": "この機械",
+       "time": 384.36
+      },
+      {
+       "word": "富士山の頂上",
+       "time": 385.44
+      },
+      {
+       "word": "動かす",
+       "time": 386.75
+      },
+      {
+       "word": "ピストンを押す力",
+       "time": 387.71
+      },
+      {
+       "word": "強くなる",
+       "time": 389.39
+      },
+      {
+       "word": "弱くなる",
+       "time": 390.9
+      }
+     ]
+    },
+    {
+     "key": "ch:later",
+     "start": 393.37666666666667,
+     "end": 396.19533333333334,
+     "wordEvents": [
+      {
+       "word": "答え",
+       "time": 393.51
+      },
+      {
+       "word": "その回",
+       "time": 394.42
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Static base/summit air layers and two miniature machines exist; answer arrows hidden in film; separate problem ratio about .63.",
+   "finalActualAcceptance": false
+  },
+  {
+   "row": 46,
+   "cues": [
+    {
+     "key": "last:air",
+     "start": 396.78533333333337,
+     "end": 404.8146666666667,
+     "wordEvents": [
+      {
+       "word": "炭鉱の水",
+       "time": 396.91
+      },
+      {
+       "word": "くみ出した",
+       "time": 397.77
+      },
+      {
+       "word": "蒸気そのもの",
+       "time": 398.8
+      },
+      {
+       "word": "まわりの",
+       "time": 400.92
+      },
+      {
+       "word": "空気",
+       "time": 401.69
+      }
+     ]
+    }
+   ],
+   "independentSourceCheck": "Slow single cycle and lower water are implemented. Exact camera-array/bookend discrepancy is already D-recorded and requires delivered actual comparison.",
+   "finalActualAcceptance": false
+  }
+ ],
+ "selectedActualImages": [
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r14/d1v1-04.png",
+   "sha256": "013f0a8cca9ff6529066a542f6a471fdbee37ce0d5f276fa7b3f34d3b1703f28",
+   "revision": "historical-r14",
+   "time": 121.48366666666664,
+   "actuallyViewedByE1": true,
+   "observation": "The mitten visually overlaps the hot can; wooden tongs are not independently legible. Older raised red band is not the final printed band."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r14/d1v1-05.png",
+   "sha256": "59db83ed7f2bdf1f580677fb7821a26c879f15ba1da174050691b01d207d8f1d",
+   "revision": "historical-r14",
+   "time": 122.58366666666663,
+   "actuallyViewedByE1": true,
+   "observation": "Inverted can is in the dish. This is an old composite, not a final MP4 frame."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-production-r15/blender/desk/03645.jpg",
+   "sha256": "baec074c5265c652f903b92da2e7ad8a7054728e8634201eaf3eec8a339d5855",
+   "revision": "current-D071-production-raw",
+   "time": 121.5,
+   "actuallyViewedByE1": true,
+   "observation": "Directly viewed actual production raw: the mitten overlaps the silver/red can, and wooden tongs cannot be distinguished. No captions in this raw; it is not the final delivered MP4."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r12/d1v1-37.png",
+   "sha256": "c61e6634ae13267230a0084ee785b79e95c77bab7800c257c30db5a68f99a503",
+   "revision": "historical-r12",
+   "time": 234.223333,
+   "actuallyViewedByE1": true,
+   "observation": "Both opposing cylinder arrows and cutaway are visible. Perspective strongly changes apparent size; the 2 mm source difference is not claimed to explain all apparent inequality."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r12/d1v1-21.png",
+   "sha256": "60b8b40a0b0f1d5573892ed6ea5d3ea97006aafdbf038f7386f9c637dcb1d6b3",
+   "revision": "historical-r12",
+   "time": 115.5,
+   "actuallyViewedByE1": true,
+   "observation": "Reduced balloon remains smooth/rounded; spoon water is visible. Not current final acceptance."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r15-viewfix-final/d1v1-02.png",
+   "sha256": "95cc6bafb5557a4425a5ccadc33792267bb992394143e42885d2d061f7371e3b",
+   "revision": "historical-r15-viewfix-final",
+   "time": 126.08399999999997,
+   "actuallyViewedByE1": true,
+   "observation": "Actual crush has a following printed red band and clear side creases. A still cannot establish or disprove a final rebound."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r12/d1v1-48.png",
+   "sha256": "bebc2cf492fe004e9cb2c569e86ff7a3ef31241087665d57a63c11596daabd3f",
+   "revision": "historical-r12",
+   "time": 339.7,
+   "actuallyViewedByE1": true,
+   "observation": "Eight horses, splitting hemispheres and valve hand are visible; not current final delivery."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r12/d1v1-49.png",
+   "sha256": "1677d940c76c8cc20c3738efac6e4a0179d3737cd5a6a0ab1e1e05839d88c345",
+   "revision": "historical-r12",
+   "time": 341.6,
+   "actuallyViewedByE1": true,
+   "observation": "After the halves separate, the valve/pipe remains suspended between them. This is direct old-image evidence plus unchanged-source analysis, not a newly viewed D071 frame."
+  },
+  {
+   "path": "/private/tmp/ys/ys-chain-d1v1-render/gate-c-d1v1-r12/d1v1-40.png",
+   "sha256": "0e2655077892ee5c9cb4ea7f56cd7b7c301a460fb519deea6e4f4b5339d33286",
+   "revision": "historical-r12",
+   "time": 263.9,
+   "actuallyViewedByE1": true,
+   "observation": "Mine rod, piston, outlet and blue water at the upper spout are visible. No claim of reviewing the whole water path in motion."
+  }
+ ],
+ "actuallyViewedImages": 9,
+ "currentProductionRawImagesViewed": 1,
+ "historicalPreviewImagesViewed": 8,
+ "newFindings": [
+  {
+   "id": "D16-hot-can-tongs-not-legible",
+   "rows": [
+    16
+   ],
+   "priority": "safety/explicit primary hand prop",
+   "status": "selected-current-production-raw-observed; final MP4 pending",
+   "source": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_d1v1.py",
+    "lines": [
+     244,
+     252,
+     253,
+     254
+    ]
+   },
+   "detail": "Can rotates about Y, while tong root only translates X. Two wood bars exist but do not visibly separate mitten from hot can in the inspected current raw.",
+   "evidenceIndices": [
+    0,
+    1,
+    2
+   ],
+   "proposedScope": "Root/D decide one local hand/tong placement correction only; no original edit or whole-film regeneration requested."
+  },
+  {
+   "id": "D40-valve-not-following-released-half",
+   "rows": [
+    40
+   ],
+   "priority": "required attached prop continuity",
+   "status": "source-confirmed with historical actual image; current production portion not viewed",
+   "source": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_d1v1.py",
+    "lines": [
+     281,
+     282,
+     283,
+     284,
+     285
+    ]
+   },
+   "detail": "Released halves gain +/- .08*release and rotation; valve/pipe gain only apart (zero after join). They consequently stay at center after separation.",
+   "evidenceIndices": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "D28-equal-force-arrow-lengths",
+   "rows": [
+    28
+   ],
+   "priority": "explicit quantitative encoding",
+   "status": "source-exact difference, final semantic severity unconfirmed",
+   "source": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_lib_d1.py",
+    "lines": [
+     94,
+     95
+    ]
+   },
+   "worldLengthsMetres": [
+    0.048,
+    0.046
+   ],
+   "differenceMetres": 0.002,
+   "ratio": 1.0434782608695652,
+   "detail": "Do not confuse this 4.35 percent world-length difference with the additional perspective difference in a close shot.",
+   "evidenceIndices": [
+    3
+   ]
+  },
+  {
+   "id": "D43-color-coal-phase",
+   "rows": [
+    42,
+    43
+   ],
+   "priority": "explicit word/action timing",
+   "status": "source-only; not a newly viewed final failure",
+   "source": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_d1v1.py",
+    "lines": [
+     202,
+     209,
+     210,
+     211,
+     331,
+     332,
+     333
+    ]
+   },
+   "detail": "Hot/cold starts at next:mio, not the row43 heating-again word. Color changes at absolute integer seconds, coal removal one second after the relative word offset; exact offset about .064 s. This is small timing evidence, not a request for arbitrary extra animation."
+  },
+  {
+   "id": "D6-assembly-hop",
+   "rows": [
+    6
+   ],
+   "priority": "lower-priority literal animation detail",
+   "status": "source-only",
+   "source": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_d1v1.py",
+    "lines": [
+     224,
+     225,
+     226,
+     227,
+     228,
+     229
+    ]
+   },
+   "detail": "Parts settle monotonically from+40 mm; no specified slight hop/bounce."
+  },
+  {
+   "id": "D15-balloon-wrinkles",
+   "rows": [
+    15
+   ],
+   "priority": "lower-priority literal appearance detail",
+   "status": "source-confirmed; old selected actual image smooth",
+   "source": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_d1v1.py",
+    "lines": [
+     255,
+     256,
+     257
+    ]
+   },
+   "detail": "Uniform sphere scaling and4 percent Z-axis oscillation do not create wrinkles.",
+   "evidenceIndices": [
+    4
+   ]
+  },
+  {
+   "id": "D17-can-rebound",
+   "rows": [
+    17
+   ],
+   "priority": "lower-priority literal animation detail",
+   "status": "source-only; still image cannot establish temporal rebound",
+   "source": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_d1v1.py",
+    "lines": [
+     244,
+     245,
+     246
+    ]
+   },
+   "detail": "The crush influence increases monotonically from0 to1; no final small return is encoded.",
+   "evidenceIndices": [
+    5
+   ]
+  }
+ ],
+ "knownNotNew": [
+  "row32 fixed-voice/two4second cycles conflict",
+  "straw fixed-bottom getter awaiting GUI079a",
+  "trace fixed-top getter awaiting GUI079a",
+  "row33 continuous rendering vs full-face coverage",
+  "coal creation-index vs top-down removal",
+  "hemi gas duration",
+  "physical-board rise absent with permitted2D scoring interpretation pending",
+  "bookend exact camera array"
+ ],
+ "constructionStyleDifferencesNotNewRepairRequests": [
+  "Open-front brass cylinder instead of an independently modeled glass panel",
+  "Straight metal piston connecting rod instead of chain links"
+ ],
+ "reviewedAudioRecipeOnly": true,
+ "actualEarListeningDone": false,
+ "finalMP4Reviewed": false,
+ "originalSourcesEdited": false,
+ "originalCaptionVoiceModified": false,
+ "modelReloaded": false,
+ "newGPUJobsSubmitted": 0,
+ "encodeOrHeavyCPUStarted": false,
+ "E1PreparedHelpersKeptFrozen": true,
+ "originalInspectorNGPreserved": true,
+ "blanketWaiver": false,
+ "finalAcceptance": false,
+ "unverified": [
+  "No final delivered D MP4 yet reviewed by this receipt",
+  "Only one selected ongoing production raw viewed; other production output not reclassified as reviewed",
+  "Final timing/occlusion after camera patch and any root-approved local correction",
+  "No ears-on audition of final AAC",
+  "New candidate fixes have not been rendered/approved in this review"
+ ]
+}

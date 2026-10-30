@@ -1,0 +1,53 @@
+{
+ "episode":"D-1",
+ "reviewer":"/root/episode_d1",
+ "scope":"Nine full-resolution unchanged-actual-raw composites with the new D-only paper-label translations; not a new encoded MP4",
+ "adapter":"scripts/umech/desk-d1v1-final-layout-frame-20261025.mjs",
+ "adapterSha256":"c22ac5086b713141b13a1c9c53c8d412727d8711f32b9556bfe55baeec9012d3",
+ "proofHelper":"scripts/umech/desk-d1v1-final-layout-proof-20261025.mjs",
+ "proofHelperSha256":"5a668fde0f4fdb99580f4a542cc1a0eb5b7cc685a0670f83fdc0dd8aaa529a71",
+ "proof":"/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/final-layout-preview-20261025/layout-proof.json",
+ "proofSha256":"9446f0dd93895e97f00869e69f8bf6e9cbcf0d9307b5444e49d5dee7e8e77ede",
+ "previewDirectory":"/private/tmp/ys/ys-chain-d1v1-final-complete-v4-resumed-20261025/final-layout-preview-20261025/frames",
+ "allNineIndividuallyDisplayedAtFullResolution":true,
+ "previewsPersonallyViewed":[
+  {"frame":1527,"time":50.9,"filename":"01527.png","sha256":"220f089502fa0719af7d8fabfa71fe051cea1dc91844b6fea4c1ab0191c9ee74"},
+  {"frame":1620,"time":54,"filename":"01620.png","sha256":"5242d3f30d2d3127709d786c0a071cefc45c2f786f4939854fbd965b90223097"},
+  {"frame":1662,"time":55.4,"filename":"01662.png","sha256":"5242d3f30d2d3127709d786c0a071cefc45c2f786f4939854fbd965b90223097"},
+  {"frame":2529,"time":84.3,"filename":"02529.png","sha256":"18d1cd9789c8f8b134613c6e21414bc26bb2f1e94474bec798dfcd62e2f596bc"},
+  {"frame":2730,"time":91,"filename":"02730.png","sha256":"6237cc93a38d7ad546d3de5a76d553bf75bffe24de38e33f349d274883ee2143"},
+  {"frame":2807,"time":93.56666666666666,"filename":"02807.png","sha256":"6c27400d3660f8beb904ea94b750866307996b54eea2dab24ccaa1d5172d9b93"},
+  {"frame":4860,"time":162,"filename":"04860.png","sha256":"1f4cf3d4e77669fa360e4a5142025c27e957adf5719f496adc21b64081f51d95"},
+  {"frame":4980,"time":166,"filename":"04980.png","sha256":"8587d8fa4c77fa3b4c4ea6c9c4b5098d7c9caf0b235af7d42e2dbf5aa36fe74a"},
+  {"frame":5037,"time":167.9,"filename":"05037.png","sha256":"26453bff821b74ecd80a8e72bd4144d7e5de982da315570409cc62903259020f"}
+ ],
+ "sourceProofFacts":{
+  "allPlannedFramesCompared":12163,
+  "changedSvgFrames":699,
+  "outsideScopeByteIdenticalFrames":11464,
+  "changedFramesByOperation":{"piston-card":159,"piston-leader-start":159,"fact-card":323,"air-weight-card":217,"air-thin-card":65},
+  "everyChangedSvgInverseByteIdenticalToOriginal":true,
+  "allTextAndActualImageLayersByteIdentical":true,
+  "captionFacePlanVoiceAndTimingUnchanged":true,
+  "minimumTranslatedRectangleTop":112.8,
+  "minimumFactShadowToMaximumSmallFaceGapPixels":7.8,
+  "fontSizesUnchanged":[40,42],
+  "otherEpisodeIdsUnchanged":true
+ },
+ "visualFindings":[
+  "The piston card is above-right; the full horizontal wood beam and its central axle are no longer hidden by that paper. The unchanged leader still ends at the piston.",
+  "The complete two-line fact card remains readable above the unchanged small Mio face, with an actual visible gap and no change to the face expression or timing.",
+  "Both air-weight cards occupy the upper paper row. The sparse top-layer particles and the principal front layer edges are visible; the density gradient remains understandable."
+ ],
+ "residualsAndUnverified":[
+  "The old actual3D raw still has the independently confirmed28mm engine-pier/axle gap. A separate new3D repair is being prepared; this receipt does not approve that old support geometry.",
+  "The unchanged subtitle/speaker layer still overlaps a limited part of the dense bottom particle layer. No caption was moved, and the density gradient remains visible.",
+  "Only these9 new source composites were personally reviewed here. The new layout has not been encoded or reviewed in a final MP4.",
+  "Root preview approval, the remaining original86-page team review, the3D repair, final original inspectors and exact physical supplements remain separate requirements."
+ ],
+ "noEncode":true,
+ "noGpu":true,
+ "originalSourceAndDiagnosticsPreserved":true,
+ "earsVerified":false,
+ "finalAcceptance":false
+}

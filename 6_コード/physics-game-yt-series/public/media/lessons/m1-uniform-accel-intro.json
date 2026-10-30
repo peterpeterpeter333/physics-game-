@@ -1,0 +1,115 @@
+{
+  "id": "m1-uniform-accel-intro",
+  "stageId": "m1-uniform-accel",
+  "stageTitle": "等加速度の公式をつなぐ",
+  "topicId": "m1-uniform-accel",
+  "level": "intro",
+  "family": "high-school-mechanics",
+  "title": "最初から動いていた物体の速度は、どう求める？",
+  "condition": "加速度が一定の直線運動。時刻0の位置と速度を指定する。",
+  "sourceScript": "m1-uniform-accel-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "台車が、最初から毎秒二メートルで動いているとします。",
+      "narration": "台車が、最初から毎秒二メートルで動いているとします。そこから一秒ごとに毎秒三メートルずつ速くなるなら、二秒後は毎秒八メートルです。",
+      "visual": "台車の速度2へ3を二回足す。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.875,
+          "text": "台車が、最初から毎秒二メートルで動いているとします。"
+        },
+        {
+          "start": 3.875,
+          "end": 9.708333333333332,
+          "text": "そこから一秒ごとに毎秒三メートルずつ速くなるなら、二秒後は毎秒八メートルです。"
+        }
+      ],
+      "end": 9.816666666666666
+    },
+    {
+      "index": 1,
+      "heading": "つまり「最初の速度」に「増えた分」を足せば、あとの速度が出ます。",
+      "narration": "つまり「最初の速度」に「増えた分」を足せば、あとの速度が出ます。加速度だけ分かっても、最初の速度は分かりません。",
+      "visual": "初速度の長方形と増加分の長方形を色分け。",
+      "equation": "v = v₀ + at",
+      "symbols": "vは時刻tの速度、v₀は初速度、aは一定加速度、tは経過時間。",
+      "start": 9.816666666666666,
+      "captions": [
+        {
+          "start": 9.816666666666666,
+          "end": 15.5,
+          "text": "つまり「最初の速度」に「増えた分」を足せば、あとの速度が出ます。"
+        },
+        {
+          "start": 15.5,
+          "end": 19.208333333333332,
+          "text": "加速度だけ分かっても、最初の速度は分かりません。"
+        }
+      ],
+      "end": 19.323999999999995
+    },
+    {
+      "index": 2,
+      "heading": "速度が変わっていくと、進む距離の増え方も変わります。",
+      "narration": "速度が変わっていくと、進む距離の増え方も変わります。次は、速度の記録から位置を求めてみます。",
+      "visual": "速度の数値を速度–時間グラフへ置く。",
+      "equation": "",
+      "symbols": "",
+      "start": 19.323999999999995,
+      "captions": [
+        {
+          "start": 19.323999999999995,
+          "end": 23.124999999999996,
+          "text": "速度が変わっていくと、進む距離の増え方も変わります。"
+        },
+        {
+          "start": 23.124999999999996,
+          "end": 26.649333333333324,
+          "text": "次は、速度の記録から位置を求めてみます。"
+        }
+      ],
+      "end": 27.999333333333325
+    }
+  ],
+  "duration": 27.999333333333325,
+  "mediaDirectory": "lessons",
+  "renderKey": "578817170c2e149fd4cd0ecac8905a4091ed4d7479775d472ae66081807f2015",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 32.416,
+    "removedSeconds": 4.416666666666671,
+    "cuts": [
+      {
+        "start": 3.875,
+        "end": 4.458333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.291666666666666,
+        "end": 11.625,
+        "reason": "scene"
+      },
+      {
+        "start": 17.416666666666668,
+        "end": 18.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.708333333333332,
+        "end": 23.041666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 26.958333333333332,
+        "end": 27.541666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

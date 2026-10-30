@@ -1,0 +1,206 @@
+{
+  "id": "prep-vector-length",
+  "title": "ベクトルの長さと、長さ一の矢印",
+  "level": "middle",
+  "before": [
+    "um-vector-middle",
+    "um-area-vector-bridges-4",
+    "um-path-pieces-bridges-3",
+    "uc-angular-middle",
+    "uc-angular-advanced",
+    "um-cross-middle",
+    "um-cross-advanced",
+    "uc-rigid2-middle",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3"
+  ],
+  "scenes": [
+    {
+      "narration": "横が三、縦が四の矢印では、直角三角形の斜めの辺が矢印の長さです。三平方の定理から、長さは五です。",
+      "equation": "|a| = √(3²+4²) = 5",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            4,
+            "a = (3,4)"
+          ]
+        ],
+        "components": true
+      },
+      "index": 0,
+      "heading": "横が三、縦が四の矢印では、直角三角形の斜めの辺が矢印の長さです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.916666666666667,
+          "text": "横が三、縦が四の矢印では、直角三角形の斜めの辺が矢印の長さです。"
+        },
+        {
+          "start": 5.916666666666667,
+          "end": 8.958333333333332,
+          "text": "三平方の定理から、長さは五です。"
+        }
+      ],
+      "end": 9.091333333333331
+    },
+    {
+      "narration": "奥行きの分もある場合は、平面の中での長さと奥行きで、もう一つ直角三角形を作ります。三つの分の二乗を足して、ルートを取ります。",
+      "equation": "|a| = √(aₓ²+aᵧ²+a_z²)",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "横²",
+          "縦²",
+          "奥行き²"
+        ],
+        "values": [
+          9,
+          16,
+          144
+        ],
+        "unit": "長さ²"
+      },
+      "index": 1,
+      "heading": "奥行きの分もある場合は、平面の中での長さと奥行きで、もう一つ直角三角形を作ります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.091333333333331,
+      "captions": [
+        {
+          "start": 9.091333333333331,
+          "end": 15.541666666666664,
+          "text": "奥行きの分もある場合は、平面の中での長さと奥行きで、もう一つ直角三角形を作ります。"
+        },
+        {
+          "start": 15.541666666666664,
+          "end": 18.666666666666664,
+          "text": "三つの分の二乗を足して、ルートを取ります。"
+        }
+      ],
+      "end": 18.80033333333333
+    },
+    {
+      "narration": "ゼロでない矢印を、その長さで割ると、向きは同じで長さ一の矢印になります。これを単位ベクトルと言います。",
+      "equation": "(3,4)/5 = (0.6,0.8)；長さ = 1",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0.6,
+            0.8,
+            "長さ1"
+          ]
+        ],
+        "components": true
+      },
+      "index": 2,
+      "heading": "ゼロでない矢印を、その長さで割ると、向きは同じで長さ一の矢印になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 18.80033333333333,
+      "captions": [
+        {
+          "start": 18.80033333333333,
+          "end": 24.5,
+          "text": "ゼロでない矢印を、その長さで割ると、向きは同じで長さ一の矢印になります。"
+        },
+        {
+          "start": 24.5,
+          "end": 26.666666666666668,
+          "text": "これを単位ベクトルと言います。"
+        }
+      ],
+      "end": 26.802666666666664
+    },
+    {
+      "narration": "面の向きを表すときは、面に垂直な長さ一の矢印を使います。それに面積を掛けると、向きと面積を一本の矢印で表せます。",
+      "equation": "面積ベクトル = 面積 × 垂直な単位ベクトル",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            3,
+            "面積3 × 上向きの単位ベクトル"
+          ]
+        ]
+      },
+      "index": 3,
+      "heading": "面の向きを表すときは、面に垂直な長さ一の矢印を使います。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 26.802666666666664,
+      "captions": [
+        {
+          "start": 26.802666666666664,
+          "end": 31.624999999999996,
+          "text": "面の向きを表すときは、面に垂直な長さ一の矢印を使います。"
+        },
+        {
+          "start": 31.624999999999996,
+          "end": 36.474666666666664,
+          "text": "それに面積を掛けると、向きと面積を一本の矢印で表せます。"
+        }
+      ],
+      "end": 37.824666666666666
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "ベクトルの長さと、長さ一の矢印",
+  "topicId": "prep-vector-length",
+  "family": "prerequisites",
+  "sourceScript": "prep-vector-length",
+  "pronunciationFingerprint": "a4658197f0b1716ae9b5ef3987ebb04094f1d12454c939dfee5be34455e45445",
+  "duration": 37.824666666666666,
+  "mediaDirectory": "lessons",
+  "renderKey": "a47bd84169a0040645b8c50d4ccfd5de2d0d0f3d314f453e298dfaec6eebf407",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 44.074666666666666,
+    "removedSeconds": 6.25,
+    "cuts": [
+      {
+        "start": 5.916666666666667,
+        "end": 6.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.541666666666666,
+        "end": 10.875,
+        "reason": "scene"
+      },
+      {
+        "start": 17.458333333333332,
+        "end": 18.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 21.125,
+        "end": 22.458333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 28.291666666666668,
+        "end": 28.875,
+        "reason": "sentence"
+      },
+      {
+        "start": 31.041666666666668,
+        "end": 32.333333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 37.291666666666664,
+        "end": 37.875,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

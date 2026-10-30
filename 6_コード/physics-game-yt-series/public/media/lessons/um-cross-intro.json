@@ -1,0 +1,115 @@
+{
+  "id": "um-cross-intro",
+  "stageId": "ui-cross-product",
+  "stageTitle": "外積の大きさと向き",
+  "topicId": "um-cross",
+  "level": "intro",
+  "family": "university-math",
+  "title": "ドアは、どの向きへ押すとよく回る？",
+  "condition": "右手系の直交座標。平面内の回転と三次元の向きを区別。",
+  "sourceScript": "um-cross-intro-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "ドアの回りやすさは、力の大きさだけでは決まりません。",
+      "narration": "ドアの回りやすさは、力の大きさだけでは決まりません。軸から押す場所までの距離と、力の向きも関係します。",
+      "visual": "同じ力で蝶番近くと遠くを押す二つの操作を比較。",
+      "equation": "",
+      "symbols": "",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.875,
+          "text": "ドアの回りやすさは、力の大きさだけでは決まりません。"
+        },
+        {
+          "start": 3.875,
+          "end": 8.0,
+          "text": "軸から押す場所までの距離と、力の向きも関係します。"
+        }
+      ],
+      "end": 8.129333333333332
+    },
+    {
+      "index": 1,
+      "heading": "軸へ向かう力では回りにくく、軸からの矢印に直角な力がいちばんよく回ります。",
+      "narration": "軸へ向かう力では回りにくく、軸からの矢印に直角な力がいちばんよく回ります。力が回転に効く大きさは、位置の矢印と力の矢印が作る平行四辺形の面積で表せます。",
+      "visual": "半径方向の矢印と力で平行四辺形を作り、高さを変える。",
+      "equation": "",
+      "symbols": "",
+      "start": 8.129333333333332,
+      "captions": [
+        {
+          "start": 8.129333333333332,
+          "end": 14.041666666666666,
+          "text": "軸へ向かう力では回りにくく、軸からの矢印に直角な力がいちばんよく回ります。"
+        },
+        {
+          "start": 14.041666666666666,
+          "end": 21.0,
+          "text": "力が回転に効く大きさは、位置の矢印と力の矢印が作る平行四辺形の面積で表せます。"
+        }
+      ],
+      "end": 21.135333333333335
+    },
+    {
+      "index": 2,
+      "heading": "外積は、この面積の大きさと、面に垂直な向きを持つベクトルです。",
+      "narration": "外積は、この面積の大きさと、面に垂直な向きを持つベクトルです。回転がどちら回りかを、この垂直な向きで区別します。",
+      "visual": "3Dで平行四辺形から垂直矢印を出す。",
+      "equation": "",
+      "symbols": "",
+      "start": 21.135333333333335,
+      "captions": [
+        {
+          "start": 21.135333333333335,
+          "end": 26.25,
+          "text": "外積は、この面積の大きさと、面に垂直な向きを持つベクトルです。"
+        },
+        {
+          "start": 26.25,
+          "end": 30.48733333333334,
+          "text": "回転がどちら回りかを、この垂直な向きで区別します。"
+        }
+      ],
+      "end": 31.83733333333334
+    }
+  ],
+  "duration": 31.83733333333334,
+  "mediaDirectory": "lessons",
+  "renderKey": "02145e608eca3972372c5ec76f2c2ebfc511ffb11f37c96c8bd05d9be5ca0ffd",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 36.17066666666667,
+    "removedSeconds": 4.333333333333329,
+    "cuts": [
+      {
+        "start": 3.875,
+        "end": 4.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.5,
+        "end": 9.833333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 15.875,
+        "end": 16.458333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.416666666666668,
+        "end": 24.75,
+        "reason": "scene"
+      },
+      {
+        "start": 30.0,
+        "end": 30.583333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

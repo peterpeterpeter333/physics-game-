@@ -1,0 +1,276 @@
+{
+  "id": "prep-difference-limit",
+  "title": "小さな時間で、平均を取り直す",
+  "level": "advanced",
+  "before": [
+    "m1-velocity-advanced",
+    "um-derivative-intro",
+    "um-derivative-middle",
+    "uc-newton-middle",
+    "um-derivative-advanced",
+    "um-derivative-advanced-followups-4",
+    "m-shm-advanced",
+    "um-shm-ode-middle",
+    "uc-shm-middle",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1",
+    "uc-frontier-advanced-followups-3",
+    "um-taylor-middle",
+    "um-taylor-advanced",
+    "uc-potential-advanced",
+    "uc-frontier-intro",
+    "uc-frontier-middle",
+    "um-ode-intro",
+    "uc-drag-intro",
+    "uc-drag-middle",
+    "uc-drag-advanced",
+    "m-circular-intro",
+    "m-circular-middle",
+    "m-circular-advanced",
+    "uc-angular-intro",
+    "a-bohr-advanced",
+    "um-rules-intro",
+    "um-rules-middle",
+    "um-vector-advanced",
+    "uc-work-middle",
+    "uc-work-advanced",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "um-ode-middle",
+    "a-nucleus-middle",
+    "um-ode-advanced",
+    "a-nucleus-advanced",
+    "um-rules-advanced",
+    "uc-potential-middle",
+    "um-integral-advanced",
+    "uc-newton-advanced",
+    "uc-rigid1-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid1-middle",
+    "uc-rigid2-middle",
+    "uc-rigid2-advanced",
+    "uc-rigid2-intro",
+    "uc-rigid2-advanced-followups-6"
+  ],
+  "scenes": [
+    {
+      "narration": "位置が「時刻の二乗」で決まる運動を考えます。この例では、一秒後に位置一メートル、二秒後に位置四メートルです。",
+      "equation": "x(t) = t²；tを入れると位置xが決まる",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "位置 [m]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0.5,
+            0.25
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1.5,
+            2.25
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "位置が「時刻の二乗」で決まる運動を考えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.7083333333333335,
+          "text": "位置が「時刻の二乗」で決まる運動を考えます。"
+        },
+        {
+          "start": 3.7083333333333335,
+          "end": 8.541666666666666,
+          "text": "この例では、一秒後に位置一メートル、二秒後に位置四メートルです。"
+        }
+      ],
+      "end": 8.695666666666664
+    },
+    {
+      "narration": "一秒から二秒までの平均速度は、四引く一を一で割って、毎秒三メートルです。一秒から一・一秒までなら、位置の差は〇・二一メートルなので、〇・一で割って平均速度は二・一です。",
+      "equation": "(4 − 1)/1 = 3；(1.21 − 1)/0.1 = 2.1",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "幅1秒",
+          "幅0.1秒",
+          "幅0.01秒"
+        ],
+        "values": [
+          3,
+          2.1,
+          2.01
+        ],
+        "unit": "m/s"
+      },
+      "index": 1,
+      "heading": "一秒から二秒までの平均速度は、四引く一を一で割って、毎秒三メートルです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 8.695666666666664,
+      "captions": [
+        {
+          "start": 8.695666666666664,
+          "end": 14.5,
+          "text": "一秒から二秒までの平均速度は、四引く一を一で割って、毎秒三メートルです。"
+        },
+        {
+          "start": 14.5,
+          "end": 22.083333333333332,
+          "text": "一秒から一・一秒までなら、位置の差は〇・二一メートルなので、〇・一で割って平均速度は二・一です。"
+        }
+      ],
+      "end": 22.21266666666666
+    },
+    {
+      "narration": "時間の幅をエイチと書くと、平均速度は「二足すエイチ」になります。エイチをゼロに近づけると、平均速度は二に近づきます。",
+      "equation": "[(1+h)² − 1]/h = (2h+h²)/h = 2+h",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時間の幅 h [s]",
+        "yLabel": "平均速度 [m/s]",
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            0.1,
+            2.1
+          ],
+          [
+            0.5,
+            2.5
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "時間の幅をエイチと書くと、平均速度は「二足すエイチ」になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.21266666666666,
+      "captions": [
+        {
+          "start": 22.21266666666666,
+          "end": 27.291666666666668,
+          "text": "時間の幅をエイチと書くと、平均速度は「二足すエイチ」になります。"
+        },
+        {
+          "start": 27.291666666666668,
+          "end": 31.333333333333336,
+          "text": "エイチをゼロに近づけると、平均速度は二に近づきます。"
+        }
+      ],
+      "end": 31.432000000000002
+    },
+    {
+      "narration": "この「近づいていく先の値」を極限と呼び、それを瞬間の速度と決めます。ゼロで割るのではなく、ゼロでない幅で割ってから、幅をゼロに近づけるのがポイントです。",
+      "equation": "瞬間の速度 = lim（h→0）平均速度 = 2 m/s",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "幅0.1秒",
+          "幅0.01秒",
+          "極限"
+        ],
+        "values": [
+          2.1,
+          2.01,
+          2
+        ],
+        "unit": "m/s"
+      },
+      "index": 3,
+      "heading": "この「近づいていく先の値」を極限と呼び、それを瞬間の速度と決めます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 31.432000000000002,
+      "captions": [
+        {
+          "start": 31.432000000000002,
+          "end": 37.125,
+          "text": "この「近づいていく先の値」を極限と呼び、それを瞬間の速度と決めます。"
+        },
+        {
+          "start": 37.125,
+          "end": 42.916333333333334,
+          "text": "ゼロで割るのではなく、ゼロでない幅で割ってから、幅をゼロに近づけるのがポイントです。"
+        }
+      ],
+      "end": 44.266333333333336
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "小さな時間で、平均を取り直す",
+  "topicId": "prep-difference-limit",
+  "family": "prerequisites",
+  "sourceScript": "prep-difference-limit",
+  "pronunciationFingerprint": "c4a35edc18557707625262b78ae2c185bf494008e98a6260e0e98d041013f4d7",
+  "duration": 44.266333333333336,
+  "mediaDirectory": "lessons",
+  "renderKey": "cd4255ea1a43d59a02507da94935b8cae4ce53931350d2af00ed01321377e036",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 50.47466666666667,
+    "removedSeconds": 6.208333333333336,
+    "cuts": [
+      {
+        "start": 3.7083333333333335,
+        "end": 4.291666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.125,
+        "end": 10.416666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 16.375,
+        "end": 16.916666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.5,
+        "end": 25.833333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 31.041666666666668,
+        "end": 31.583333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 35.625,
+        "end": 37.0,
+        "reason": "scene"
+      },
+      {
+        "start": 42.791666666666664,
+        "end": 43.333333333333336,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

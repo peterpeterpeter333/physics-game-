@@ -1,0 +1,116 @@
+{
+  "id": "t-gas-advanced",
+  "stageId": "t-gas",
+  "stageTitle": "気体の圧力・体積・温度",
+  "topicId": "t-gas",
+  "level": "advanced",
+  "family": "high-school-thermal",
+  "title": "圧力も体積も変わるとき、二つの状態をどう結ぶ？",
+  "condition": "一定量の希薄な気体を理想気体として近似。温度は絶対温度を使う。",
+  "sourceScript": "t-gas-advanced-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "量が決まった理想気体では、「圧力かける体積、割る絶対温度」がいつも同じ値です。",
+      "narration": "量が決まった理想気体では、「圧力かける体積、割る絶対温度」がいつも同じ値です。変化の前と後を、この値で結びます。",
+      "visual": "圧力・体積・温度の三つのメーターを同時に表示。",
+      "equation": "p₁V₁/T₁ = p₂V₂/T₂",
+      "symbols": "pは圧力、Vは体積、Tは絶対温度。添字は状態の区別。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.5,
+          "text": "量が決まった理想気体では、「圧力かける体積、割る絶対温度」がいつも同じ値です。"
+        },
+        {
+          "start": 6.5,
+          "end": 9.666666666666668,
+          "text": "変化の前と後を、この値で結びます。"
+        }
+      ],
+      "end": 9.753666666666668
+    },
+    {
+      "index": 1,
+      "heading": "途中で圧力が変わる場合、気体がした仕事は「最後の圧力かける体積の変化」では求まりません。",
+      "narration": "途中で圧力が変わる場合、気体がした仕事は「最後の圧力かける体積の変化」では求まりません。どういう順序で変化したかによって、仕事は変わります。",
+      "visual": "同じ始点終点を結ぶ異なるp–V経路と面積を比較。",
+      "equation": "",
+      "symbols": "",
+      "start": 9.753666666666668,
+      "captions": [
+        {
+          "start": 9.753666666666668,
+          "end": 16.875,
+          "text": "途中で圧力が変わる場合、気体がした仕事は「最後の圧力かける体積の変化」では求まりません。"
+        },
+        {
+          "start": 16.875,
+          "end": 20.791666666666668,
+          "text": "どういう順序で変化したかによって、仕事は変わります。"
+        }
+      ],
+      "end": 20.924
+    },
+    {
+      "index": 2,
+      "heading": "「前後の状態の関係」と「途中でやり取りしたエネルギー」は、別の情報です。",
+      "narration": "「前後の状態の関係」と「途中でやり取りしたエネルギー」は、別の情報です。熱力学第一法則では、熱と仕事の両方を数えて、収支を調べます。",
+      "visual": "状態の二点を残し、熱・仕事の矢印を別枠で追加。",
+      "equation": "",
+      "symbols": "",
+      "start": 20.924,
+      "captions": [
+        {
+          "start": 20.924,
+          "end": 27.0,
+          "text": "「前後の状態の関係」と「途中でやり取りしたエネルギー」は、別の情報です。"
+        },
+        {
+          "start": 27.0,
+          "end": 32.836,
+          "text": "熱力学第一法則では、熱と仕事の両方を数えて、収支を調べます。"
+        }
+      ],
+      "end": 34.18599999999999
+    }
+  ],
+  "pronunciationFingerprint": "a08ce57ff7377d931ca0cc4a5ca3165bad539435e66f564e03d2503b7e27757c",
+  "duration": 34.18599999999999,
+  "mediaDirectory": "lessons",
+  "renderKey": "49df7d1d37835a118cad6c64f9d693bab6def07a47848086166d54a906891287",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 38.602666666666664,
+    "removedSeconds": 4.416666666666671,
+    "cuts": [
+      {
+        "start": 6.5,
+        "end": 7.083333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.25,
+        "end": 11.625,
+        "reason": "scene"
+      },
+      {
+        "start": 18.833333333333332,
+        "end": 19.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.291666666666668,
+        "end": 24.625,
+        "reason": "scene"
+      },
+      {
+        "start": 30.833333333333332,
+        "end": 31.416666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "um-gauss-sphere-preview-01",
+  "stageId": "um-gauss-sphere-preview",
+  "stageTitle": "中心の点電荷と球面",
+  "level": "middle",
+  "title": "点電荷の場を読み、閉じた面として球面を選ぶ",
+  "sourceIndices": [
+    0,
+    1
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "点電荷のまわりの電場は、どんな形をしているだろう?",
+      "narration": "プラスの点電荷が作る電場は、点電荷を中心に、外向きに放射状に広がります。電場の強さは、点電荷からの距離で決まります。",
+      "equations": [],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.791666666666667,
+          "text": "プラスの点電荷が作る電場は、点電荷を中心に、外向きに放射状に広がります。"
+        },
+        {
+          "start": 5.791666666666667,
+          "end": 9.416666666666668,
+          "text": "電場の強さは、点電荷からの距離で決まります。"
+        }
+      ],
+      "end": 9.517000000000001
+    },
+    {
+      "index": 1,
+      "heading": "閉じた面として、どんな形を選ぶとよいだろう?",
+      "narration": "点電荷を中心に選んだ球面では、外向きの法線も半径の向きです。この球面は計算用に頭の中で描いた面で、電場を変える物体ではありません。",
+      "equations": [],
+      "spatial": false,
+      "start": 9.517000000000001,
+      "captions": [
+        {
+          "start": 9.517000000000001,
+          "end": 14.375000000000002,
+          "text": "点電荷を中心に選んだ球面では、外向きの法線も半径の向きです。"
+        },
+        {
+          "start": 14.375000000000002,
+          "end": 19.979333333333336,
+          "text": "この球面は計算用に頭の中で描いた面で、電場を変える物体ではありません。"
+        }
+      ],
+      "end": 21.329333333333338
+    }
+  ],
+  "duration": 21.329333333333338,
+  "renderKey": "639a42542066ef28e35bba15b16e015bb1e77fe5a80a5f0b59d8ebd514248dca",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 23.829333333333334,
+    "removedSeconds": 2.4999999999999964,
+    "cuts": [
+      {
+        "start": 5.791666666666667,
+        "end": 6.333333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.958333333333334,
+        "end": 11.291666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 16.25,
+        "end": 16.875,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

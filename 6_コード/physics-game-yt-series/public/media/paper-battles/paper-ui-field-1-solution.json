@@ -1,0 +1,111 @@
+{
+  "id": "paper-ui-field-1-solution",
+  "problemId": "paper-ui-field-1",
+  "kind": "solution",
+  "title": "負の電荷に働く力",
+  "scenes": [
+    {
+      "narration": "電場の矢印は、正の電荷が受ける力の向きを表します。負の電荷が受ける力は、その矢印と逆向きです。",
+      "equation": "\\vec F=q\\vec E",
+      "index": 0,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.291666666666667,
+          "text": "電場の矢印は、正の電荷が受ける力の向きを表します。"
+        },
+        {
+          "start": 4.291666666666667,
+          "end": 8.125,
+          "text": "負の電荷が受ける力は、その矢印と逆向きです。"
+        }
+      ],
+      "end": 8.217666666666666
+    },
+    {
+      "narration": "力の大きさは、電荷の大きさと電場の強さの積です。二かける三で、六ニュートンになります。",
+      "equation": "|\\vec F|=|q|E=2\\times3=6\\,\\mathrm N",
+      "index": 1,
+      "start": 8.217666666666666,
+      "captions": [
+        {
+          "start": 8.217666666666666,
+          "end": 12.291666666666668,
+          "text": "力の大きさは、電荷の大きさと電場の強さの積です。"
+        },
+        {
+          "start": 12.291666666666668,
+          "end": 15.125,
+          "text": "二かける三で、六ニュートンになります。"
+        }
+      ],
+      "end": 15.269666666666662
+    },
+    {
+      "narration": "電場は右向きなので、負の電荷が受ける力は左向きです。答えは、左向きに六ニュートンです。黄色の矢印が、この力を表します。",
+      "equation": "F_x=(-2)\\times3=-6\\,\\mathrm N",
+      "index": 2,
+      "start": 15.269666666666662,
+      "captions": [
+        {
+          "start": 15.269666666666662,
+          "end": 19.458333333333332,
+          "text": "電場は右向きなので、負の電荷が受ける力は左向きです。"
+        },
+        {
+          "start": 19.458333333333332,
+          "end": 22.208333333333332,
+          "text": "答えは、左向きに六ニュートンです。"
+        },
+        {
+          "start": 22.208333333333332,
+          "end": 25.66133333333333,
+          "text": "黄色の矢印が、この力を表します。"
+        }
+      ],
+      "end": 27.01133333333333
+    }
+  ],
+  "pronunciationFingerprint": "69e48578166fe8e641c4f25a973d2a59a0aef4b3556bcb0841f61029d57c55ac",
+  "duration": 27.01133333333333,
+  "renderKey": "dc1337250975e41bbac0caf28dd3ad6a0f654994f81a1e4ea21aa1a2ca38ccf6",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 31.927999999999997,
+    "removedSeconds": 4.916666666666668,
+    "cuts": [
+      {
+        "start": 4.291666666666667,
+        "end": 4.875,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.708333333333334,
+        "end": 10.083333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 14.25,
+        "end": 14.791666666666666,
+        "reason": "sentence"
+      },
+      {
+        "start": 17.625,
+        "end": 18.916666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 23.25,
+        "end": 23.833333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 26.583333333333332,
+        "end": 27.125,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "paper-ue-integrals-3-question",
+  "problemId": "paper-ue-integrals-3",
+  "kind": "question",
+  "title": "仕事の積分から電位差へ",
+  "scenes": [
+    {
+      "narration": "静電場はエックス方向だけにあり、その強さは位置エックスの二乗に比例します。電場の式は画面の通りです。",
+      "equation": "E_x=\\left(3\\,\\mathrm{N/(C\\,m^2)}\\right)x^2",
+      "index": 0,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.291666666666667,
+          "text": "静電場はエックス方向だけにあり、その強さは位置エックスの二乗に比例します。"
+        },
+        {
+          "start": 5.291666666666667,
+          "end": 7.625,
+          "text": "電場の式は画面の通りです。"
+        }
+      ],
+      "end": 7.704666666666666
+    },
+    {
+      "narration": "プラス一クーロンの電荷を、原点エーから、エックスが二メートルの点ビーへ動かします。あなたは電場がする仕事と、ビーの電位からエーの電位を引いた電位差を求めてください。",
+      "equation": "q=1\\,\\mathrm C,\\quad x_A=0,\\quad x_B=2\\,\\mathrm m",
+      "index": 1,
+      "start": 7.704666666666666,
+      "captions": [
+        {
+          "start": 7.704666666666666,
+          "end": 13.291666666666668,
+          "text": "プラス一クーロンの電荷を、原点エーから、エックスが二メートルの点ビーへ動かします。"
+        },
+        {
+          "start": 13.291666666666668,
+          "end": 18.92233333333333,
+          "text": "あなたは電場がする仕事と、ビーの電位からエーの電位を引いた電位差を求めてください。"
+        }
+      ],
+      "end": 20.272333333333332
+    }
+  ],
+  "duration": 20.272333333333332,
+  "renderKey": "0b5fa694674e4fd24b9e80c068ca1b9579f731fc3a983743f46160ea06112bfe",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 22.730666666666664,
+    "removedSeconds": 2.458333333333332,
+    "cuts": [
+      {
+        "start": 5.291666666666667,
+        "end": 5.833333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.166666666666666,
+        "end": 9.541666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 15.208333333333334,
+        "end": 15.75,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

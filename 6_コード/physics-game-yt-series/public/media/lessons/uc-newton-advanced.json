@@ -1,0 +1,116 @@
+{
+  "id": "uc-newton-advanced",
+  "stageId": "uc-newton",
+  "stageTitle": "運動方程式から位置まで求める",
+  "topicId": "uc-newton",
+  "level": "advanced",
+  "family": "university-mechanics",
+  "title": "斜めの運動を解いた式は、どう検算する？",
+  "condition": "質量一定。固定した慣性座標系。重力の例では空気抵抗を無視。",
+  "sourceScript": "uc-newton-advanced-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "投げた物の運動では、横の加速度はゼロ、縦の加速度は下向きの重力加速度です。",
+      "narration": "投げた物の運動では、横の加速度はゼロ、縦の加速度は下向きの重力加速度です。同じ時刻を使って、横と縦の二つの成分を積分します。",
+      "visual": "xとyの二本の運動方程式を同じ時計の下へ並べる。",
+      "equation": "x=x₀+v₀x t；y=y₀+v₀y t−gt²/2",
+      "symbols": "x・yは位置、添字0は初期値、gは重力加速度の大きさ。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.083333333333333,
+          "text": "投げた物の運動では、横の加速度はゼロ、縦の加速度は下向きの重力加速度です。"
+        },
+        {
+          "start": 6.083333333333333,
+          "end": 10.541666666666666,
+          "text": "同じ時刻を使って、横と縦の二つの成分を積分します。"
+        }
+      ],
+      "end": 10.669999999999998
+    },
+    {
+      "index": 1,
+      "heading": "求めた位置を二回微分すると、横はゼロ、縦はマイナス重力加速度に戻ります。",
+      "narration": "求めた位置を二回微分すると、横はゼロ、縦はマイナス重力加速度に戻ります。時刻ゼロを入れると、最初の位置と初速度も一致します。",
+      "visual": "微分の検算と初期条件の検算を別々に点灯する。",
+      "equation": "",
+      "symbols": "",
+      "start": 10.669999999999998,
+      "captions": [
+        {
+          "start": 10.669999999999998,
+          "end": 16.541666666666664,
+          "text": "求めた位置を二回微分すると、横はゼロ、縦はマイナス重力加速度に戻ります。"
+        },
+        {
+          "start": 16.541666666666664,
+          "end": 20.583333333333332,
+          "text": "時刻ゼロを入れると、最初の位置と初速度も一致します。"
+        }
+      ],
+      "end": 20.677666666666664
+    },
+    {
+      "index": 2,
+      "heading": "力が速度で変わる場合は、この等加速度の答えは使えません。",
+      "narration": "力が速度で変わる場合は、この等加速度の答えは使えません。空気抵抗の章では、力を速度の関数として方程式に戻します。",
+      "visual": "一定のaの札を外し、F(v)の札へ替える。",
+      "equation": "",
+      "symbols": "",
+      "start": 20.677666666666664,
+      "captions": [
+        {
+          "start": 20.677666666666664,
+          "end": 25.083333333333332,
+          "text": "力が速度で変わる場合は、この等加速度の答えは使えません。"
+        },
+        {
+          "start": 25.083333333333332,
+          "end": 30.168333333333337,
+          "text": "空気抵抗の章では、力を速度の関数として方程式に戻します。"
+        }
+      ],
+      "end": 31.51833333333333
+    }
+  ],
+  "pronunciationFingerprint": "6849628a548e6bd345f514157f5cf22b30cc89bff5ac5e17da8a842f596fe2b9",
+  "duration": 31.51833333333333,
+  "mediaDirectory": "lessons",
+  "renderKey": "ed38b678037c5b8dfff6f0e982fb42fbce1fdb158717cb522be4dd78b632a6ed",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 35.89333333333333,
+    "removedSeconds": 4.375,
+    "cuts": [
+      {
+        "start": 6.083333333333333,
+        "end": 6.666666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 11.125,
+        "end": 12.458333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 18.458333333333332,
+        "end": 19.0,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.041666666666668,
+        "end": 24.375,
+        "reason": "scene"
+      },
+      {
+        "start": 28.875,
+        "end": 29.458333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

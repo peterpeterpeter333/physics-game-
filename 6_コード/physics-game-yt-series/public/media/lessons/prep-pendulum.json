@@ -1,0 +1,180 @@
+{
+  "id": "prep-pendulum",
+  "title": "振り子の位置を、弧の長さで測る",
+  "level": "intro",
+  "before": [
+    "uc-shm-intro",
+    "uc-shm-middle"
+  ],
+  "scenes": [
+    {
+      "narration": "振り子では、糸の張力は糸の向き、重力はまっすぐ下向きです。円弧に沿った運動を変えるのは、重力のうち、円に沿った向きの分です。",
+      "equation": "接線方向の力 = −mg sinθ",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            0,
+            -4,
+            "重力"
+          ],
+          [
+            -2,
+            -1,
+            "戻す接線成分"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "振り子では、糸の張力は糸の向き、重力はまっすぐ下向きです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.833333333333333,
+          "text": "振り子では、糸の張力は糸の向き、重力はまっすぐ下向きです。"
+        },
+        {
+          "start": 4.833333333333333,
+          "end": 10.0,
+          "text": "円弧に沿った運動を変えるのは、重力のうち、円に沿った向きの分です。"
+        }
+      ],
+      "end": 10.114333333333331
+    },
+    {
+      "narration": "角度をラジアンで測ると、いちばん下の点から測った弧の長さは、「糸の長さかける角度」です。糸の長さは一定なので、弧の長さを二回微分しても、同じ係数が付きます。",
+      "equation": "s=ℓθ → s″=ℓθ″",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "角度 θ [rad]",
+        "yLabel": "弧の長さ s [m]（ℓ=2 m）",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.2,
+            0.4
+          ],
+          [
+            0.3,
+            0.6
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "角度をラジアンで測ると、いちばん下の点から測った弧の長さは、「糸の長さかける角度」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 10.114333333333331,
+      "captions": [
+        {
+          "start": 10.114333333333331,
+          "end": 16.666666666666668,
+          "text": "角度をラジアンで測ると、いちばん下の点から測った弧の長さは、「糸の長さかける角度」です。"
+        },
+        {
+          "start": 16.666666666666668,
+          "end": 22.333333333333336,
+          "text": "糸の長さは一定なので、弧の長さを二回微分しても、同じ係数が付きます。"
+        }
+      ],
+      "end": 22.447333333333333
+    },
+    {
+      "narration": "角度が小さいときは、サインシータをシータで近似できます。すると運動の式は単振動と同じ形になり、角振動数から周期が求まります。",
+      "equation": "θ″≈−(g/ℓ)θ → ω=√(g/ℓ) → T=2π√(ℓ/g)",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "小さな角度 θ",
+        "yLabel": "sinθ",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.09983341664682815
+          ],
+          [
+            0.2,
+            0.19866933079506122
+          ],
+          [
+            0.3,
+            0.29552020666133955
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "角度が小さいときは、サインシータをシータで近似できます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 22.447333333333333,
+      "captions": [
+        {
+          "start": 22.447333333333333,
+          "end": 26.41666666666667,
+          "text": "角度が小さいときは、サインシータをシータで近似できます。"
+        },
+        {
+          "start": 26.41666666666667,
+          "end": 32.39666666666667,
+          "text": "すると運動の式は単振動と同じ形になり、角振動数から周期が求まります。"
+        }
+      ],
+      "end": 33.74666666666667
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "振り子の位置を、弧の長さで測る",
+  "topicId": "prep-pendulum",
+  "family": "prerequisites",
+  "sourceScript": "prep-pendulum",
+  "pronunciationFingerprint": "e4d2d1d0d182ac7fbf54e72b9b7544da99418b822501a173018126f18a2ad6de",
+  "duration": 33.74666666666667,
+  "mediaDirectory": "lessons",
+  "renderKey": "dda53e49155f53537f5750c7d9ca3f5c1b0105a2bc2b0b27e523ab2cc51f1bd6",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 38.08,
+    "removedSeconds": 4.333333333333329,
+    "cuts": [
+      {
+        "start": 4.833333333333333,
+        "end": 5.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.541666666666666,
+        "end": 11.875,
+        "reason": "scene"
+      },
+      {
+        "start": 18.541666666666668,
+        "end": 19.083333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.75,
+        "end": 26.083333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 30.166666666666668,
+        "end": 30.75,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

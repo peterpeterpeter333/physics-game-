@@ -1,0 +1,163 @@
+{
+  "id": "prep-reference",
+  "title": "観測者を変えると、どの値が変わる？",
+  "level": "intro",
+  "before": [
+    "uc-frontier-intro",
+    "uc-frontier-middle"
+  ],
+  "scenes": [
+    {
+      "narration": "地面から見た物体の位置は、車の位置と、車から見た物体の位置の和です。まず、回転しない一直線の座標で比べます。",
+      "equation": "x地面 = X車 + x相対",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "車まで"
+          ],
+          [
+            2,
+            0,
+            "車から物体へ"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "地面から見た物体の位置は、車の位置と、車から見た物体の位置の和です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.375,
+          "text": "地面から見た物体の位置は、車の位置と、車から見た物体の位置の和です。"
+        },
+        {
+          "start": 5.375,
+          "end": 8.833333333333332,
+          "text": "まず、回転しない一直線の座標で比べます。"
+        }
+      ],
+      "end": 8.963333333333331
+    },
+    {
+      "narration": "位置の式を時間で微分すると速度の式、もう一度微分すると加速度の式になります。「相対位置」という名前と、微分を表すダッシュを、混同しないようにします。",
+      "equation": "a地面 = A車 + a相対",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "車の加速度",
+          "相対加速度",
+          "地面からの加速度"
+        ],
+        "values": [
+          2,
+          1,
+          3
+        ],
+        "unit": "m/s²"
+      },
+      "index": 1,
+      "heading": "位置の式を時間で微分すると速度の式、もう一度微分すると加速度の式になります。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 8.963333333333331,
+      "captions": [
+        {
+          "start": 8.963333333333331,
+          "end": 14.583333333333332,
+          "text": "位置の式を時間で微分すると速度の式、もう一度微分すると加速度の式になります。"
+        },
+        {
+          "start": 14.583333333333332,
+          "end": 20.208333333333332,
+          "text": "「相対位置」という名前と、微分を表すダッシュを、混同しないようにします。"
+        }
+      ],
+      "end": 20.347999999999995
+    },
+    {
+      "narration": "地面が慣性系、つまり見かけの力がない立場なら、本当の力は「質量かける、地面から見た加速度」です。車から見た加速度について解くと、車の加速度と逆向きの見かけの力が現れます。",
+      "equation": "ma相対 = F実際 − mA車",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            3,
+            0,
+            "車の加速度"
+          ],
+          [
+            -3,
+            0,
+            "見かけの力の向き"
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "地面が慣性系、つまり見かけの力がない立場なら、本当の力は「質量かける、地面から見た加速度」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 20.347999999999995,
+      "captions": [
+        {
+          "start": 20.347999999999995,
+          "end": 28.5,
+          "text": "地面が慣性系、つまり見かけの力がない立場なら、本当の力は「質量かける、地面から見た加速度」です。"
+        },
+        {
+          "start": 28.5,
+          "end": 34.669666666666664,
+          "text": "車から見た加速度について解くと、車の加速度と逆向きの見かけの力が現れます。"
+        }
+      ],
+      "end": 36.019666666666666
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "観測者を変えると、どの値が変わる？",
+  "topicId": "prep-reference",
+  "family": "prerequisites",
+  "sourceScript": "prep-reference",
+  "pronunciationFingerprint": "b261d3e300b94f5daaec19aa2c45149487776174ecc8bedba6daad6154ed7574",
+  "duration": 36.019666666666666,
+  "mediaDirectory": "lessons",
+  "renderKey": "c391996a74031838b586c03fec4d811c818e3eaf29c2754d1cf70ab74605d920",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 40.394666666666666,
+    "removedSeconds": 4.375,
+    "cuts": [
+      {
+        "start": 5.375,
+        "end": 5.958333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.416666666666666,
+        "end": 10.75,
+        "reason": "scene"
+      },
+      {
+        "start": 16.5,
+        "end": 17.083333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 22.708333333333332,
+        "end": 24.041666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 32.333333333333336,
+        "end": 32.875,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

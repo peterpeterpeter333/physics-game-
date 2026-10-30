@@ -1,0 +1,216 @@
+{
+  "id": "prep-gas-work",
+  "title": "気体が押す仕事と、内部のエネルギー",
+  "level": "middle",
+  "before": [
+    "t-gas-advanced",
+    "t-firstlaw-intro",
+    "t-firstlaw-middle",
+    "t-firstlaw-advanced"
+  ],
+  "scenes": [
+    {
+      "narration": "気体がゆっくりピストンを押す場合を考えます。「圧力かけるピストンの面積」が、ピストンを押す力です。",
+      "equation": "押す力 = pS",
+      "diagram": {
+        "kind": "vectors",
+        "vectors": [
+          [
+            4,
+            0,
+            "気体が押す力 pS"
+          ]
+        ]
+      },
+      "index": 0,
+      "heading": "気体がゆっくりピストンを押す場合を考えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 2.9583333333333335,
+          "text": "気体がゆっくりピストンを押す場合を考えます。"
+        },
+        {
+          "start": 2.9583333333333335,
+          "end": 7.541666666666668,
+          "text": "「圧力かけるピストンの面積」が、ピストンを押す力です。"
+        }
+      ],
+      "end": 7.639666666666667
+    },
+    {
+      "narration": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。圧力が一定なら、気体の仕事は「圧力かける体積の増加」です。",
+      "equation": "W = (pS)Δx = pΔV",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積の増加 [m³]",
+        "yLabel": "圧力 [Pa]",
+        "points": [
+          [
+            0,
+            100
+          ],
+          [
+            2,
+            100
+          ]
+        ],
+        "area": true
+      },
+      "index": 1,
+      "heading": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 7.639666666666667,
+      "captions": [
+        {
+          "start": 7.639666666666667,
+          "end": 12.958333333333336,
+          "text": "ピストンが少し進むと、「面積かける動いた距離」のぶんだけ体積が増えます。"
+        },
+        {
+          "start": 12.958333333333336,
+          "end": 18.291666666666668,
+          "text": "圧力が一定なら、気体の仕事は「圧力かける体積の増加」です。"
+        }
+      ],
+      "end": 18.425999999999995
+    },
+    {
+      "narration": "圧力が途中で変わるときは、区間ごとの仕事を足します。最初と最後の体積が同じでも、途中の圧力が違えば、仕事は変わります。",
+      "equation": "仕事 = p–Vグラフの面積",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "体積",
+        "yLabel": "圧力",
+        "points": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1.3333333333333333
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "area": true
+      },
+      "index": 2,
+      "heading": "圧力が途中で変わるときは、区間ごとの仕事を足します。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 18.425999999999995,
+      "captions": [
+        {
+          "start": 18.425999999999995,
+          "end": 22.458333333333332,
+          "text": "圧力が途中で変わるときは、区間ごとの仕事を足します。"
+        },
+        {
+          "start": 22.458333333333332,
+          "end": 28.291666666666664,
+          "text": "最初と最後の体積が同じでも、途中の圧力が違えば、仕事は変わります。"
+        }
+      ],
+      "end": 28.402666666666654
+    },
+    {
+      "narration": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。ここでは、外へする仕事をプラスとする約束で書きます。",
+      "equation": "Q = ΔU + W（気体が外へする仕事を正）",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "受け取った熱",
+          "内部の増加",
+          "外への仕事"
+        ],
+        "values": [
+          100,
+          70,
+          30
+        ],
+        "unit": "J"
+      },
+      "index": 3,
+      "heading": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 28.402666666666654,
+      "captions": [
+        {
+          "start": 28.402666666666654,
+          "end": 33.666666666666664,
+          "text": "気体が受け取った熱は、内部エネルギーの増加と、外へする仕事に分かれます。"
+        },
+        {
+          "start": 33.666666666666664,
+          "end": 37.78566666666666,
+          "text": "ここでは、外へする仕事をプラスとする約束で書きます。"
+        }
+      ],
+      "end": 39.13566666666666
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "気体が押す仕事と、内部のエネルギー",
+  "topicId": "prep-gas-work",
+  "family": "prerequisites",
+  "sourceScript": "prep-gas-work",
+  "duration": 39.13566666666666,
+  "mediaDirectory": "lessons",
+  "renderKey": "8e020772cd273fe29e6e52ea98fc33426b7e197f031e414b978e6896936f12dc",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 45.343999999999994,
+    "removedSeconds": 6.208333333333336,
+    "cuts": [
+      {
+        "start": 2.9583333333333335,
+        "end": 3.5,
+        "reason": "sentence"
+      },
+      {
+        "start": 8.083333333333334,
+        "end": 9.416666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 14.833333333333334,
+        "end": 15.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.708333333333332,
+        "end": 22.041666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 26.208333333333332,
+        "end": 26.791666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 32.625,
+        "end": 33.958333333333336,
+        "reason": "scene"
+      },
+      {
+        "start": 39.333333333333336,
+        "end": 39.875,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

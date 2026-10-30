@@ -1,0 +1,255 @@
+{
+  "id": "prep-radian",
+  "title": "一周の角度と、回転の速さ",
+  "level": "middle",
+  "before": [
+    "m-shm-middle",
+    "um-taylor-intro",
+    "uc-rigid1-intro",
+    "uc-rigid2-intro",
+    "uc-angular-middle",
+    "uc-shm-intro",
+    "uc-shm-middle",
+    "uc-frontier-advanced",
+    "uc-frontier-advanced-followups-2",
+    "uc-frontier-advanced-followups-3",
+    "uc-rigid2-advanced",
+    "uc-rigid2-advanced-followups-6",
+    "uc-rigid1-middle",
+    "uc-rigid1-advanced",
+    "uc-rigid1-advanced-followups-5",
+    "uc-rigid2-middle",
+    "m-shm-advanced",
+    "w-basics-advanced",
+    "um-shm-ode-intro",
+    "um-shm-ode-middle",
+    "w-sound-advanced",
+    "um-derivative-advanced-followups-4",
+    "um-derivative-advanced",
+    "um-shm-ode-advanced",
+    "uc-shm-advanced",
+    "uc-shm-advanced-followups-1"
+  ],
+  "scenes": [
+    {
+      "narration": "ラジアンは、円の弧の長さを半径で割った角度です。半径二メートルの円で弧が一メートルなら、一割る二で、〇・五ラジアンです。",
+      "equation": "角度 θ = 弧の長さ s ÷ 半径 r",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "半径",
+          "弧の長さ"
+        ],
+        "values": [
+          2,
+          1
+        ],
+        "unit": "m"
+      },
+      "index": 0,
+      "heading": "ラジアンは、円の弧の長さを半径で割った角度です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.7916666666666665,
+          "text": "ラジアンは、円の弧の長さを半径で割った角度です。"
+        },
+        {
+          "start": 3.7916666666666665,
+          "end": 9.208333333333332,
+          "text": "半径二メートルの円で弧が一メートルなら、一割る二で、〇・五ラジアンです。"
+        }
+      ],
+      "end": 9.356999999999998
+    },
+    {
+      "narration": "一周の弧の長さは、半径の二パイ倍です。これを半径で割ると、一周は二パイラジアン。百八十度はその半分で、パイラジアンです。",
+      "equation": "360° = 2π rad；180° = π rad",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "角度 [度]",
+        "yLabel": "角度 [rad]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            90,
+            1.5707963267948966
+          ],
+          [
+            180,
+            3.141592653589793
+          ],
+          [
+            360,
+            6.283185307179586
+          ]
+        ]
+      },
+      "index": 1,
+      "heading": "一周の弧の長さは、半径の二パイ倍です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 9.356999999999998,
+      "captions": [
+        {
+          "start": 9.356999999999998,
+          "end": 12.624999999999998,
+          "text": "一周の弧の長さは、半径の二パイ倍です。"
+        },
+        {
+          "start": 12.624999999999998,
+          "end": 15.791666666666664,
+          "text": "これを半径で割ると、一周は二パイラジアン。"
+        },
+        {
+          "start": 15.791666666666664,
+          "end": 19.20833333333333,
+          "text": "百八十度はその半分で、パイラジアンです。"
+        }
+      ],
+      "end": 19.296999999999997
+    },
+    {
+      "narration": "角速度は、角度が一秒あたりにどれだけ増えるかです。一周に四秒かかるなら、角速度は二パイ割る四です。",
+      "equation": "角速度 ω = 2π/T；Tは一周の時間",
+      "diagram": {
+        "kind": "plot",
+        "xLabel": "時刻 [s]",
+        "yLabel": "角度 [rad]",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1.5707963267948966
+          ],
+          [
+            2,
+            3.141592653589793
+          ],
+          [
+            4,
+            6.283185307179586
+          ]
+        ]
+      },
+      "index": 2,
+      "heading": "角速度は、角度が一秒あたりにどれだけ増えるかです。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 19.296999999999997,
+      "captions": [
+        {
+          "start": 19.296999999999997,
+          "end": 23.124999999999996,
+          "text": "角速度は、角度が一秒あたりにどれだけ増えるかです。"
+        },
+        {
+          "start": 23.124999999999996,
+          "end": 27.166666666666664,
+          "text": "一周に四秒かかるなら、角速度は二パイ割る四です。"
+        }
+      ],
+      "end": 27.26733333333334
+    },
+    {
+      "narration": "弧の長さは「半径かける角度」なので、円周上を進む速さは「半径かける角速度」です。同じ角速度でも、外側の点ほど速く進みます。",
+      "equation": "s = rθ → v = rω",
+      "diagram": {
+        "kind": "bars",
+        "labels": [
+          "半径1 m",
+          "半径2 m"
+        ],
+        "values": [
+          2,
+          4
+        ],
+        "unit": "m/s（ω=2 rad/s）"
+      },
+      "index": 3,
+      "heading": "弧の長さは「半径かける角度」なので、円周上を進む速さは「半径かける角速度」です。",
+      "symbols": "",
+      "visual": "Explicit diagram configuration",
+      "start": 27.26733333333334,
+      "captions": [
+        {
+          "start": 27.26733333333334,
+          "end": 34.708333333333336,
+          "text": "弧の長さは「半径かける角度」なので、円周上を進む速さは「半径かける角速度」です。"
+        },
+        {
+          "start": 34.708333333333336,
+          "end": 38.762333333333345,
+          "text": "同じ角速度でも、外側の点ほど速く進みます。"
+        }
+      ],
+      "end": 40.112333333333346
+    }
+  ],
+  "stageId": "prerequisite",
+  "stageTitle": "一周の角度と、回転の速さ",
+  "topicId": "prep-radian",
+  "family": "prerequisites",
+  "sourceScript": "prep-radian",
+  "pronunciationFingerprint": "6022db92574acacf5c072b619c646baf802b1387f476f6efe12bf8a4a286e85f",
+  "duration": 40.112333333333346,
+  "mediaDirectory": "lessons",
+  "renderKey": "fed3af48f81c3270f069ac4a14d66c7145cf4c0ddfa3273af89a03a3333e73e5",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 46.90400000000001,
+    "removedSeconds": 6.791666666666664,
+    "cuts": [
+      {
+        "start": 3.7916666666666665,
+        "end": 4.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.791666666666666,
+        "end": 11.083333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 14.5,
+        "end": 15.083333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 18.25,
+        "end": 18.791666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 22.208333333333332,
+        "end": 23.583333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 27.5,
+        "end": 28.041666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 32.083333333333336,
+        "end": 33.416666666666664,
+        "reason": "scene"
+      },
+      {
+        "start": 40.958333333333336,
+        "end": 41.5,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

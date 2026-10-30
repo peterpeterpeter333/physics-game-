@@ -1,0 +1,130 @@
+{
+  "id": "um-electrostatic-potential-path-04",
+  "stageId": "um-electrostatic-potential-path",
+  "stageTitle": "静電場の電位差",
+  "level": "middle",
+  "title": "位置エネルギーを経て、電位差の式を作る",
+  "sourceIndices": [
+    7,
+    8,
+    9
+  ],
+  "scenes": [
+    {
+      "index": 7,
+      "heading": "位置エネルギーは、どれだけ変わるのだろう?",
+      "narration": "電気的な位置エネルギーの変化は、電気力の仕事にマイナスを付けたものです。電気力がプラスの仕事をすると、位置エネルギーは減ります。",
+      "equations": [
+        "\\Delta U=-W_{\\mathrm{AB}}",
+        "\\Delta U=U_{\\mathrm B}-U_{\\mathrm A}=-W_{\\mathrm{AB}}"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.125,
+          "text": "電気的な位置エネルギーの変化は、電気力の仕事にマイナスを付けたものです。"
+        },
+        {
+          "start": 5.125,
+          "end": 9.333333333333332,
+          "text": "電気力がプラスの仕事をすると、位置エネルギーは減ります。"
+        }
+      ],
+      "end": 9.483999999999998
+    },
+    {
+      "index": 8,
+      "heading": "電荷によらない量に、どうすれば直せるだろう?",
+      "narration": "電位差とは、位置エネルギーの変化を電荷で割ったものです。その単位ジュール毎クーロンは、ボルトと同じです。",
+      "equations": [
+        "\\Delta V=\\frac{\\Delta U}{q}"
+      ],
+      "spatial": false,
+      "start": 9.483999999999998,
+      "captions": [
+        {
+          "start": 9.483999999999998,
+          "end": 13.291666666666668,
+          "text": "電位差とは、位置エネルギーの変化を電荷で割ったものです。"
+        },
+        {
+          "start": 13.291666666666668,
+          "end": 16.791666666666664,
+          "text": "その単位ジュール毎クーロンは、ボルトと同じです。"
+        }
+      ],
+      "end": 16.952999999999996
+    },
+    {
+      "index": 9,
+      "heading": "電位差は、線積分でどう書けるのだろう?",
+      "narration": "電位差の定義は、「位置エネルギーの変化割る電荷」です。位置エネルギーの変化を、「電気力の仕事のマイナス」に置き換えます。さらに仕事を線積分で書くと、電荷が分子と分母で消えて、電位差は「電場の線積分のマイナス」になります。",
+      "equations": [
+        "V_{\\mathrm B}-V_{\\mathrm A}=-\\int_{\\mathrm A}^{\\mathrm B}\\vec E\\cdot d\\vec r"
+      ],
+      "spatial": false,
+      "start": 16.952999999999996,
+      "captions": [
+        {
+          "start": 16.952999999999996,
+          "end": 20.958333333333332,
+          "text": "電位差の定義は、「位置エネルギーの変化割る電荷」です。"
+        },
+        {
+          "start": 20.958333333333332,
+          "end": 25.458333333333332,
+          "text": "位置エネルギーの変化を、「電気力の仕事のマイナス」に置き換えます。"
+        },
+        {
+          "start": 25.458333333333332,
+          "end": 33.39266666666666,
+          "text": "さらに仕事を線積分で書くと、電荷が分子と分母で消えて、電位差は「電場の線積分のマイナス」になります。"
+        }
+      ],
+      "end": 34.742666666666665
+    }
+  ],
+  "pronunciationFingerprint": "2655bfa282d902261ec9caf51542ed27d631f6974123300c49649a89e114372b",
+  "duration": 34.742666666666665,
+  "renderKey": "4c4e6d4734bf56ae303e654084c3a90c25be3d413128b75d8535d6acbfbda6e7",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 39.576,
+    "removedSeconds": 4.833333333333336,
+    "cuts": [
+      {
+        "start": 5.125,
+        "end": 5.666666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.875,
+        "end": 11.166666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 15.125,
+        "end": 15.708333333333334,
+        "reason": "sentence"
+      },
+      {
+        "start": 19.208333333333332,
+        "end": 20.5,
+        "reason": "scene"
+      },
+      {
+        "start": 24.666666666666668,
+        "end": 25.208333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 29.708333333333332,
+        "end": 30.291666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

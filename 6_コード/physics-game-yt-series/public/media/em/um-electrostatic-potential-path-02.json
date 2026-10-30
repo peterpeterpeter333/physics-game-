@@ -1,0 +1,126 @@
+{
+  "id": "um-electrostatic-potential-path-02",
+  "stageId": "um-electrostatic-potential-path",
+  "stageTitle": "静電場の電位差",
+  "level": "middle",
+  "title": "2本の道で仕事を計算し、値を見比べる",
+  "sourceIndices": [
+    2,
+    3,
+    4
+  ],
+  "scenes": [
+    {
+      "index": 2,
+      "heading": "先に右へ行く道の仕事は、いくらになるだろう?",
+      "narration": "先に右へ進む道では、右向きの移動の仕事が二十四ジュールです。続く上向きの移動は電場と垂直なので、仕事はゼロです。",
+      "equations": [
+        "W_{\\text{path1}}=2\\times(4\\times3)+2\\times(4\\times0)=24\\,\\mathrm J"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.833333333333333,
+          "text": "先に右へ進む道では、右向きの移動の仕事が二十四ジュールです。"
+        },
+        {
+          "start": 4.833333333333333,
+          "end": 9.166666666666666,
+          "text": "続く上向きの移動は電場と垂直なので、仕事はゼロです。"
+        }
+      ],
+      "end": 9.272666666666664
+    },
+    {
+      "index": 3,
+      "heading": "先に上がる道では、答えはどうなるだろう?",
+      "narration": "先に上へ進む道では、最初の移動の仕事がゼロです。次の右向きの移動の仕事が二十四ジュールなので、合計は同じです。",
+      "equations": [
+        "W_{\\text{path2}}=2\\times(4\\times0)+2\\times(4\\times3)=24\\,\\mathrm J"
+      ],
+      "spatial": false,
+      "start": 9.272666666666664,
+      "captions": [
+        {
+          "start": 9.272666666666664,
+          "end": 13.291666666666666,
+          "text": "先に上へ進む道では、最初の移動の仕事がゼロです。"
+        },
+        {
+          "start": 13.291666666666666,
+          "end": 18.25,
+          "text": "次の右向きの移動の仕事が二十四ジュールなので、合計は同じです。"
+        }
+      ],
+      "end": 18.35333333333333
+    },
+    {
+      "index": 4,
+      "heading": "なぜ2本の道で、同じ値になったのだろう?",
+      "narration": "この一様な電場では、「右へ進んだ距離引く左へ進んだ距離」で仕事が決まります。二つの道では、どちらもその差が三メートルです。だから、電気力の仕事も同じです。",
+      "equations": [],
+      "spatial": false,
+      "start": 18.35333333333333,
+      "captions": [
+        {
+          "start": 18.35333333333333,
+          "end": 24.25,
+          "text": "この一様な電場では、「右へ進んだ距離引く左へ進んだ距離」で仕事が決まります。"
+        },
+        {
+          "start": 24.25,
+          "end": 27.666666666666668,
+          "text": "二つの道では、どちらもその差が三メートルです。"
+        },
+        {
+          "start": 27.666666666666668,
+          "end": 30.729000000000003,
+          "text": "だから、電気力の仕事も同じです。"
+        }
+      ],
+      "end": 32.07900000000001
+    }
+  ],
+  "duration": 32.07900000000001,
+  "renderKey": "f95b94dd6191ac0299afbd147a9a93a31c6af65102fe6c4f2e4dd0c47bf4411c",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 37.037333333333336,
+    "removedSeconds": 4.958333333333329,
+    "cuts": [
+      {
+        "start": 4.833333333333333,
+        "end": 5.416666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.75,
+        "end": 11.083333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 15.208333333333334,
+        "end": 15.791666666666666,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.75,
+        "end": 22.083333333333332,
+        "reason": "scene"
+      },
+      {
+        "start": 28.083333333333332,
+        "end": 28.666666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 32.083333333333336,
+        "end": 32.625,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

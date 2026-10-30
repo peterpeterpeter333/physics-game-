@@ -1,0 +1,84 @@
+{
+  "id": "um-closed-electric-flux-01",
+  "stageId": "um-closed-electric-flux",
+  "stageTitle": "閉曲面の電気束",
+  "level": "middle",
+  "title": "外向き法線の約束を決め、場の中に箱を置く",
+  "sourceIndices": [
+    0,
+    1
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "閉じた面では、法線をどちら向きにとるのだろう?",
+      "narration": "閉曲面の法線は、外向きをプラスと決めます。この約束では、外へ出る電気束はプラス、内へ入る電気束はマイナスです。",
+      "equations": [],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 3.4583333333333335,
+          "text": "閉曲面の法線は、外向きをプラスと決めます。"
+        },
+        {
+          "start": 3.4583333333333335,
+          "end": 9.0,
+          "text": "この約束では、外へ出る電気束はプラス、内へ入る電気束はマイナスです。"
+        }
+      ],
+      "end": 9.071
+    },
+    {
+      "index": 1,
+      "heading": "一様な電場の中に、箱を1つ置いてみよう",
+      "narration": "この箱のまわりの電場は、どの点でも右向きに五ニュートン毎クーロンです。箱の左の面と右の面の面積は、どちらも〇点四平方メートルです。",
+      "equations": [],
+      "spatial": false,
+      "start": 9.071,
+      "captions": [
+        {
+          "start": 9.071,
+          "end": 13.875,
+          "text": "この箱のまわりの電場は、どの点でも右向きに五ニュートン毎クーロンです。"
+        },
+        {
+          "start": 13.875,
+          "end": 19.191,
+          "text": "箱の左の面と右の面の面積は、どちらも〇点四平方メートルです。"
+        }
+      ],
+      "end": 20.540999999999997
+    }
+  ],
+  "pronunciationOverrides": {
+    "電気束": "でんきそく"
+  },
+  "pronunciationFingerprint": "ffaa89eca060c7cf310586adf0f8ceb5416d9ed41d235980f1a1a8f7f7ad616a",
+  "duration": 20.540999999999997,
+  "renderKey": "ab0062d18394a3b345e18ed135a28ca2b98ee8e0091e150709019e7fae16b7d2",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 23.082666666666665,
+    "removedSeconds": 2.541666666666668,
+    "cuts": [
+      {
+        "start": 3.4583333333333335,
+        "end": 4.041666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 9.583333333333334,
+        "end": 10.958333333333334,
+        "reason": "scene"
+      },
+      {
+        "start": 15.833333333333334,
+        "end": 16.416666666666668,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

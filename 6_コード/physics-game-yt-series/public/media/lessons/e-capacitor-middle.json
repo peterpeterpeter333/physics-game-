@@ -1,0 +1,116 @@
+{
+  "id": "e-capacitor-middle",
+  "stageId": "e-capacitor",
+  "stageTitle": "電荷とエネルギーを蓄える",
+  "topicId": "e-capacitor",
+  "level": "middle",
+  "family": "high-school-em",
+  "title": "板を近づけると、なぜ容量が増える？",
+  "condition": "理想的な平行板。端の影響を無視。誘電体では線形な応答を仮定。",
+  "sourceScript": "e-capacitor-middle-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "向かい合った二枚の板の間の電場は、板の電気を面積で割ったものに比例します。",
+      "narration": "向かい合った二枚の板の間の電場は、板の電気を面積で割ったものに比例します。電場がどこでも同じなら、板の間の電圧は、電場かける間隔です。",
+      "visual": "電荷Qと面積Sを固定し、間隔dだけを縮める。",
+      "equation": "E = Q/(εS)；V = Ed",
+      "symbols": "Eは電場、Qは片側の電荷量、Sは板面積、dは間隔、εは間を満たす物質の誘電率。電場の結果はガウスの法則から得る。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 5.375,
+          "text": "向かい合った二枚の板の間の電場は、板の電気を面積で割ったものに比例します。"
+        },
+        {
+          "start": 5.375,
+          "end": 10.5,
+          "text": "電場がどこでも同じなら、板の間の電圧は、電場かける間隔です。"
+        }
+      ],
+      "end": 10.626333333333331
+    },
+    {
+      "index": 1,
+      "heading": "電気の量が同じでも、板を近づけると電圧は小さくなります。",
+      "narration": "電気の量が同じでも、板を近づけると電圧は小さくなります。これを容量の定義に入れると、容量は間隔に反比例する、つまり近いほど大きいと分かります。",
+      "visual": "Q/[Qd/(εS)]でQを約分。",
+      "equation": "C = εS/d",
+      "symbols": "Cは容量。板面積や誘電率を変える比較とは分けて操作する。",
+      "start": 10.626333333333331,
+      "captions": [
+        {
+          "start": 10.626333333333331,
+          "end": 15.125,
+          "text": "電気の量が同じでも、板を近づけると電圧は小さくなります。"
+        },
+        {
+          "start": 15.125,
+          "end": 21.625,
+          "text": "これを容量の定義に入れると、容量は間隔に反比例する、つまり近いほど大きいと分かります。"
+        }
+      ],
+      "end": 21.754999999999995
+    },
+    {
+      "index": 2,
+      "heading": "板を近づけるとき、電池につないだままかどうかも大事です。",
+      "narration": "板を近づけるとき、電池につないだままかどうかも大事です。つないだままなら電圧が保たれるので、電気が追加で流れ込みます。",
+      "visual": "電池なしのQ一定と電池ありのV一定を左右で比較。",
+      "equation": "",
+      "symbols": "",
+      "start": 21.754999999999995,
+      "captions": [
+        {
+          "start": 21.754999999999995,
+          "end": 25.75,
+          "text": "板を近づけるとき、電池につないだままかどうかも大事です。"
+        },
+        {
+          "start": 25.75,
+          "end": 30.573666666666668,
+          "text": "つないだままなら電圧が保たれるので、電気が追加で流れ込みます。"
+        }
+      ],
+      "end": 31.923666666666662
+    }
+  ],
+  "pronunciationFingerprint": "cfe74732fd16b1b18742feeeead916d1cb40f8f7bd9ff38822f5e55abcf64c8d",
+  "duration": 31.923666666666662,
+  "mediaDirectory": "lessons",
+  "renderKey": "d57820bb91e9355d5c547b487b24ee414cf31665935b9ea76c59b1e8a41f2a4c",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 36.29866666666666,
+    "removedSeconds": 4.375,
+    "cuts": [
+      {
+        "start": 5.375,
+        "end": 5.916666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 11.041666666666666,
+        "end": 12.375,
+        "reason": "scene"
+      },
+      {
+        "start": 17.0,
+        "end": 17.583333333333332,
+        "reason": "sentence"
+      },
+      {
+        "start": 24.083333333333332,
+        "end": 25.416666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 29.541666666666668,
+        "end": 30.125,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

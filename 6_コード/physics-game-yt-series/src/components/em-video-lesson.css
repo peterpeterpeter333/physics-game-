@@ -1,0 +1,22 @@
+.app:has(.em-movie-lesson){max-width:1180px}
+.em-movie-lesson{max-width:1180px!important;margin-inline:auto}
+.em-movie-main{margin:1rem 0;background:#0b1122;border:1px solid #34445e;border-radius:18px;overflow:hidden}
+.em-movie-main h2{font-size:clamp(1rem,2vw,1.4rem);line-height:1.6;margin:1rem 1.2rem}
+.em-movie-main video{display:block;width:100%;height:auto;aspect-ratio:1280/760;background:#0b1122}
+.em-movie-main video:fullscreen{object-fit:contain;background:#000}
+.em-movie-error{margin:0;padding:.8rem 1rem;color:#ffd6d6;font-size:.9rem}
+.em-movie-note{margin:0 0 1rem;padding:.85rem 1rem;border-left:3px solid #71d9ee;background:#111d30;color:#d9e6f8}
+.em-movie-note p{margin:.15rem 0;line-height:1.75}.em-movie-note strong{color:#9de4e5}
+.em-movie-controls{justify-content:space-between;align-items:center;gap:.75rem}.em-movie-controls .lesson-dots{flex:1;justify-content:center}
+.em-movie-battle{display:block;margin:1rem auto 0}
+.em-movie-review{margin:1rem 0;color:#c5d6ee}
+.em-movie-review summary{cursor:pointer;padding:.5rem 0}
+.em-movie-review>div{display:flex;flex-direction:column;align-items:flex-start;gap:.4rem;padding:.5rem 0}
+.em-movie-review button{text-align:left;white-space:normal}
+.video-levels{display:flex;justify-content:center;gap:.5rem;margin:.5rem auto;max-width:1180px}
+.video-levels button{color:#c5d6ee;background:#132039;border:1px solid #34445e;border-radius:999px;padding:.55rem 1.15rem;cursor:pointer;font:inherit}
+.video-levels button[aria-pressed=true]{color:#061626;background:#71d9ee;border-color:#71d9ee}
+.video-levels button:focus-visible{outline:3px solid #ffcf67;outline-offset:3px}
+.video-mode-pending{color:#c5d6ee;text-align:center;font-size:.9rem;padding:0 .8rem}
+.em-movie-insert-label{color:#9ae8b5;margin:.5rem 1rem;font-size:.9rem}
+@media(max-width:600px){.em-movie-lesson{padding-inline:8px!important}.em-movie-main{border-radius:10px}.em-movie-main h2{margin:.65rem}.em-movie-main video{min-height:0}.em-movie-note{padding:.75rem}.em-movie-controls{gap:.4rem}.em-movie-controls .btn{padding-inline:.7rem}}

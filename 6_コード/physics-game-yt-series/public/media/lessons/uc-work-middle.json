@@ -1,0 +1,116 @@
+{
+  "id": "uc-work-middle",
+  "stageId": "um-work-energy",
+  "stageTitle": "仕事から運動エネルギーを導く",
+  "topicId": "uc-work",
+  "level": "middle",
+  "family": "university-mechanics",
+  "title": "仕事と運動エネルギーは、どう式でつながる？",
+  "condition": "質量一定の質点。慣性系。仕事は全ての力の寄与を合計する。",
+  "sourceScript": "uc-work-middle-draft",
+  "scenes": [
+    {
+      "index": 0,
+      "heading": "一次元では、仕事の小さな増えぶんは「力かける移動」です。",
+      "narration": "一次元では、仕事の小さな増えぶんは「力かける移動」です。運動方程式を使って、力を「質量かける加速度」に置き換えます。",
+      "visual": "dW=F dxへF=m dv/dtとdx=vdtを順に代入。",
+      "equation": "dW = mv dv",
+      "symbols": "Wは全力の仕事、mは一定質量、vは速度。",
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 4.791666666666667,
+          "text": "一次元では、仕事の小さな増えぶんは「力かける移動」です。"
+        },
+        {
+          "start": 4.791666666666667,
+          "end": 10.208333333333334,
+          "text": "運動方程式を使って、力を「質量かける加速度」に置き換えます。"
+        }
+      ],
+      "end": 10.296666666666665
+    },
+    {
+      "index": 1,
+      "heading": "速度について積分すると、「速度の二乗の半分」が出てきます。",
+      "narration": "速度について積分すると、「速度の二乗の半分」が出てきます。始めと終わりの差が、合計の仕事です。",
+      "visual": "∫mv dvを上下限v初、v終で評価。",
+      "equation": "W = mv終²/2−mv初²/2",
+      "symbols": "v初・v終は初めと終わりの速度。mv²/2を運動エネルギーと呼ぶ。",
+      "start": 10.296666666666665,
+      "captions": [
+        {
+          "start": 10.296666666666665,
+          "end": 14.916666666666666,
+          "text": "速度について積分すると、「速度の二乗の半分」が出てきます。"
+        },
+        {
+          "start": 14.916666666666666,
+          "end": 18.125,
+          "text": "始めと終わりの差が、合計の仕事です。"
+        }
+      ],
+      "end": 18.266999999999996
+    },
+    {
+      "index": 2,
+      "heading": "運動エネルギーの二分の一は、この積分から出てきました。",
+      "narration": "運動エネルギーの二分の一は、この積分から出てきました。力を使う計算とエネルギーを使う計算が、同じ法則から来ていることが確かめられます。",
+      "visual": "F=maからW=ΔKまでの導出の流れを一列に残す。",
+      "equation": "",
+      "symbols": "",
+      "start": 18.266999999999996,
+      "captions": [
+        {
+          "start": 18.266999999999996,
+          "end": 22.33333333333333,
+          "text": "運動エネルギーの二分の一は、この積分から出てきました。"
+        },
+        {
+          "start": 22.33333333333333,
+          "end": 28.493666666666662,
+          "text": "力を使う計算とエネルギーを使う計算が、同じ法則から来ていることが確かめられます。"
+        }
+      ],
+      "end": 29.843666666666664
+    }
+  ],
+  "pronunciationFingerprint": "2b5394bd7800ca814ab2176116beb8bc7c9f5c2bca45c38dac5249d21c0dfb54",
+  "duration": 29.843666666666664,
+  "mediaDirectory": "lessons",
+  "renderKey": "2447766dbd534847b035fa8b5a260777678c00667e6e4bbd489b317d2035a30c",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 34.218666666666664,
+    "removedSeconds": 4.375,
+    "cuts": [
+      {
+        "start": 4.791666666666667,
+        "end": 5.333333333333333,
+        "reason": "sentence"
+      },
+      {
+        "start": 10.75,
+        "end": 12.125,
+        "reason": "scene"
+      },
+      {
+        "start": 16.833333333333332,
+        "end": 17.416666666666668,
+        "reason": "sentence"
+      },
+      {
+        "start": 20.625,
+        "end": 21.916666666666668,
+        "reason": "scene"
+      },
+      {
+        "start": 26.125,
+        "end": 26.708333333333332,
+        "reason": "sentence"
+      }
+    ]
+  }
+}

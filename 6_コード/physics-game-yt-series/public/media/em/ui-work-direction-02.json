@@ -1,0 +1,111 @@
+{
+  "id": "ui-work-direction-02",
+  "stageId": "ui-work-direction",
+  "stageTitle": "斜めの力を分ける",
+  "level": "intro",
+  "title": "力を2本に分け、道方向の成分だけを取り出す",
+  "sourceIndices": [
+    3,
+    4,
+    5
+  ],
+  "scenes": [
+    {
+      "index": 3,
+      "heading": "右向きの成分は、いくつになるのだろう?",
+      "narration": "力の矢印を斜めの辺にした直角三角形では、「横の辺割る斜めの辺」がコサイン六十度です。この値は二分の一なので、右向きの力は十ニュートンの半分、五ニュートンです。",
+      "equations": [
+        "F_{\\parallel}=10\\cos 60^\\circ=5\\,\\mathrm{N}",
+        "10\\cos 60^\\circ=5"
+      ],
+      "spatial": false,
+      "start": 0,
+      "captions": [
+        {
+          "start": 0,
+          "end": 6.833333333333333,
+          "text": "力の矢印を斜めの辺にした直角三角形では、「横の辺割る斜めの辺」がコサイン六十度です。"
+        },
+        {
+          "start": 6.833333333333333,
+          "end": 12.541666666666666,
+          "text": "この値は二分の一なので、右向きの力は十ニュートンの半分、五ニュートンです。"
+        }
+      ],
+      "end": 12.684999999999999
+    },
+    {
+      "index": 4,
+      "heading": "上向きの成分は、右へ進めるのだろうか?",
+      "narration": "上向きの力の成分は、右向きの移動には仕事をしません。この図の箱は床に支えられていて、上下には動かないからです。",
+      "equations": [],
+      "spatial": false,
+      "start": 12.684999999999999,
+      "captions": [
+        {
+          "start": 12.684999999999999,
+          "end": 16.916666666666668,
+          "text": "上向きの力の成分は、右向きの移動には仕事をしません。"
+        },
+        {
+          "start": 16.916666666666668,
+          "end": 21.291666666666668,
+          "text": "この図の箱は床に支えられていて、上下には動かないからです。"
+        }
+      ],
+      "end": 21.392333333333333
+    },
+    {
+      "index": 5,
+      "heading": "仕事には、どの数字を掛ければよいのだろう?",
+      "narration": "箱を引く力の仕事は、「右向きの五ニュートンかける移動距離二メートル」で、十ジュールです。",
+      "equations": [
+        "W=5\\times2=10\\,\\mathrm{J}",
+        "W=F_{\\parallel}\\,L",
+        "W=5\\,\\mathrm{N}\\times2\\,\\mathrm{m}",
+        "W=10\\,\\mathrm{J}"
+      ],
+      "spatial": false,
+      "start": 21.392333333333333,
+      "captions": [
+        {
+          "start": 21.392333333333333,
+          "end": 27.890333333333334,
+          "text": "箱を引く力の仕事は、「右向きの五ニュートンかける移動距離二メートル」で、十ジュールです。"
+        }
+      ],
+      "end": 29.240333333333332
+    }
+  ],
+  "pronunciationFingerprint": "c707687add38a95c1ddd4f93efb9249352c3e3fc492c9910fb1fceced22a11f3",
+  "duration": 29.240333333333332,
+  "renderKey": "573f33ace5471c3248123c3ea23c2a99c70ecc55bc2bbf83b01d5e792b8e18f1",
+  "fluencyRepairVersion": "20260924-fluent-v1",
+  "fluencyRepair": {
+    "method": "verified-silence-only; identical A/V frame cuts",
+    "originalDuration": 33.032,
+    "removedSeconds": 3.7916666666666643,
+    "cuts": [
+      {
+        "start": 6.833333333333333,
+        "end": 7.416666666666667,
+        "reason": "sentence"
+      },
+      {
+        "start": 13.125,
+        "end": 14.416666666666666,
+        "reason": "scene"
+      },
+      {
+        "start": 18.791666666666668,
+        "end": 19.375,
+        "reason": "sentence"
+      },
+      {
+        "start": 23.75,
+        "end": 25.083333333333332,
+        "reason": "scene"
+      }
+    ]
+  }
+}
