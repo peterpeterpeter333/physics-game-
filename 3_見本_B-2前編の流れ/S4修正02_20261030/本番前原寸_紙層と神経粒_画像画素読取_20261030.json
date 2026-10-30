@@ -1,0 +1,132 @@
+{
+  "paper": {
+    "frame": 14172,
+    "resolution": [
+      540,
+      960
+    ],
+    "source": "preflight-raw/desk/14172.jpg",
+    "columns": [
+      220,
+      230,
+      300,
+      310
+    ],
+    "columnMedianWidthPx": 5,
+    "criterionPx": 19.2,
+    "completeLayers": 9,
+    "partialLayers": 1,
+    "completeRangePx": [
+      38,
+      45
+    ],
+    "completeRangePercentH": [
+      3.958,
+      4.688
+    ],
+    "partialRangePx": [
+      28,
+      31
+    ],
+    "partialRangePercentH": [
+      2.917,
+      3.229
+    ],
+    "mask": "R>230,G>190,G-B>25,R-G<65; contiguous runs>=10px",
+    "yRunsAtX230": [
+      [
+        27,
+        71,
+        45
+      ],
+      [
+        139,
+        181,
+        43
+      ],
+      [
+        247,
+        287,
+        41
+      ],
+      [
+        353,
+        393,
+        41
+      ],
+      [
+        455,
+        494,
+        40
+      ],
+      [
+        555,
+        593,
+        39
+      ],
+      [
+        652,
+        690,
+        39
+      ],
+      [
+        747,
+        785,
+        39
+      ],
+      [
+        840,
+        877,
+        38
+      ],
+      [
+        931,
+        959,
+        29
+      ]
+    ],
+    "coordinateConvention": "0-based; inclusive y0/y1; width=y1-y0+1. Bottom run cropped by frame edge.",
+    "interpretation": "このフレームには完全に見える厚紙帯9層と下端の部分帯1層があり、指定2%高さ・中央8〜10組の視覚目安に余裕がある。三色1組の端は画外で切れている。"
+  },
+  "particles": {
+    "frames": [
+      12022,
+      12112,
+      12208
+    ],
+    "resolution": [
+      540,
+      960
+    ],
+    "ROI": {
+      "x": [
+        40,
+        180
+      ],
+      "y": [
+        290,
+        390
+      ]
+    },
+    "mask": "R>245,G>235,B<180; connected components >=100 bright core pixels",
+    "completeCoresPerSample": [
+      4,
+      4,
+      4
+    ],
+    "minWidthPx": 20,
+    "minWidthPercentW": 3.704,
+    "criterionPx": 10.8,
+    "interpretation": "3フレームの各画像に4個の大きな黄色コアがあり、観測した最小コア幅20pxが横2%の10.8pxを上回る。全時刻の個数保証ではない。"
+  },
+  "limitations": "原寸preflight画像の画素計算のみ。全時刻・本番MP4・既存自動検査の代用ではない。画像や既存QAコードの変更なし。",
+  "title": "本番前 原寸画像の厚紙層と神経粒の画素読取",
+  "created": "2026-10-30",
+  "mainInputRoot": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番前の生コマ保存/desk",
+  "changes": {
+    "images": false,
+    "existingQaCode": false,
+    "sourceCode": false,
+    "thresholds": false
+  }
+}

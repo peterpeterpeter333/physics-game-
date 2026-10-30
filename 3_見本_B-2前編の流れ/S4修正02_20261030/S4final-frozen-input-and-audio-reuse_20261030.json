@@ -1,0 +1,400 @@
+{
+  "completedUtc": "2026-10-29T15:57:13.362037+00:00",
+  "id": "ys-chain-b2a_gpt_20261029",
+  "cache": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030",
+  "instruction": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4_20261030/B-2前編_S4前_Claudeの直しの指示_20261030.md",
+  "priorReceipt": {
+    "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4_20261030/S4-frozen-input-and-audio-reuse_20261030.json",
+    "sha256": "6466756002d28ba61a6fa3028c4c1978eec74b035b31b861d8f39f7b8ffd0e2a",
+    "readOnlyVerification": {
+      "mode": "read-only verify",
+      "individualSourceAndCriticalCopyChecks": 47,
+      "aggregateTreesChecked": 3,
+      "mismatches": [],
+      "pass": true
+    }
+  },
+  "protectedSources": [
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/anim.mjs",
+      "bytes": 10600,
+      "sha256": "a752ea218d13d2871702549842d0c67a5851571f490d6dbf40ea0f0efb1b1031"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/chain-00bx-phrase-times.py",
+      "bytes": 5368,
+      "sha256": "0c150525237d524b2eae2e4e6333fa5ff2a72b25d85ef1ce9108cc67c6412c68"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/chain-desk-lint.mjs",
+      "bytes": 5265,
+      "sha256": "add779ba362c76ae9c58ec6059c896f68d00dc5f336a178623bd93c84f2f756e"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/chain-score.mjs",
+      "bytes": 2290,
+      "sha256": "9c91800a8b96a655a21144225c2ecf05278537109758dc084e64bcb22069336e"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/check-readings.py",
+      "bytes": 3594,
+      "sha256": "9c222ddb61e4f29d4b4a2cb647770748eb4b0a0af2c6d11b08d1ef2538210b59"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-b2a-s3-overlay_gpt_20261029.mjs",
+      "bytes": 22664,
+      "sha256": "37763cf107de69da2fccb8d456ac2501bfd522dbca79389e7dd959d69200de41"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-b2a-s3-stage_gpt_20261029.mjs",
+      "bytes": 24909,
+      "sha256": "832587994cfc2f2a41f7aacff80dcc167684f5d43a04ecc718fe0a1aed7cb147"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-faces.mjs",
+      "bytes": 7108,
+      "sha256": "b6fadf280e72c5d2f2aeb77d2285a08d9bdd0cd4554a13a2a9a1a55114eefd3f"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-frame.mjs",
+      "bytes": 10569,
+      "sha256": "1174d49f123e2dcf614143f617c2483d3086be4b38ff51bfe8d0be721447022f"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-overlay-lib.mjs",
+      "bytes": 8399,
+      "sha256": "ef96b153dbded4ed12646d10a4725554460679e68cebfb45be8fa99e142c61eb"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-quality-gate-frames.py",
+      "bytes": 11769,
+      "sha256": "545c7f442c9b7feb1bbfed86543def04d6e6f1cf2638d31bc640a39bd1a4e1bb"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-quality-gate.mjs",
+      "bytes": 39814,
+      "sha256": "0546d01987cb9bcb715acae3d5c09fe66d8e6ac1f0a9449a6f852c2900a7b2a7"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk_audio_lib.py",
+      "bytes": 6577,
+      "sha256": "4dcc81474d3e4cb58fe29a9e404a8ed258433e84240307e79857fd6d7b7ace9a"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/frame-vert.mjs",
+      "bytes": 7387,
+      "sha256": "2cbe39378af7e18bbffa2ceae8e57e90a725fdbc8c24c36ae98800640d4d5a77"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/mix-audio.py",
+      "bytes": 6872,
+      "sha256": "39395bc27519fab5669230b86ad58e5fa4dfc5242411f3b1d615f9890222a067"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/mix-chain-desk-audio-b2a_s3_gpt_20261029.py",
+      "bytes": 14213,
+      "sha256": "8ff4d7bbed3b5952888ae81438af2af0521df4b1164e2e43ac15db971e15c8b3"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/prosody-speaker.py",
+      "bytes": 1589,
+      "sha256": "47e0123cfc5f50a5c411bc0f66516a66aa659b349b4aca3aae74c9bdf3157cf9"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/prosody.py",
+      "bytes": 3133,
+      "sha256": "58450df0655f6beb8a2ee4fb65f9b8e12af3c55655b277f8c395e917b4f0ce44"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/qx-verify.mjs",
+      "bytes": 6790,
+      "sha256": "85f8da47ca5ed39fe2676198873fa1dbbf1b0aebdffe1f63b4b2b11d2a8ccb8e"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/yt1-chain-00bx-common.mjs",
+      "bytes": 21450,
+      "sha256": "0bb9b91aeb294edb19f3ef4ffc686186a4df2768be0090e1dd4713c630aaeb4d"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_b2a_s3_gpt_20261029.py",
+      "bytes": 53244,
+      "sha256": "28f29685658e041ad43e203942c485d454e9539bb7b0dcc3fe38ecf4f9b75523"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_lib.py",
+      "bytes": 132448,
+      "sha256": "5c919a1f2336a7320736e153a0604f652422c26dc9c05ad134a50cae6e82e4d2"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_lib_b2a_gpt_20261029.py",
+      "bytes": 40911,
+      "sha256": "76b38aa21ad775b73deba32d48d27b8d9ec8ff7ca3fc86d3a6099bf8b54684c8"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_lib_b2a_s3_gpt_20261029.py",
+      "bytes": 49490,
+      "sha256": "ca4e85f820fa06b7ceef190417c285d0d2e7987532536a6b2439ff2e726f7e64"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/deep/技術の疑問の鎖_B-2_前編_第1版_ナレーション.md",
+      "bytes": 32968,
+      "sha256": "a9900445f07735abeb46f39618f5878a161ddb8e3ecc4ad3d7c231e1b322437e"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/ytseries/chain-b-2a_gpt_20261029.mjs",
+      "bytes": 81543,
+      "sha256": "b10a8c1d85cc01d2f6fba8238fc979e68e1bce5fed8efd3f6be28ab6b2b58760"
+    },
+    {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/AUDIO_AND_TIMING_FROZEN.json",
+      "bytes": 4283,
+      "sha256": "ab5aebbbd41deff290499245118e0cc39653f49098aa529ae0922b4ced0f66e3"
+    },
+    {
+      "path": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.voice.wav",
+      "bytes": 23753548,
+      "sha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41"
+    },
+    {
+      "path": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.wav",
+      "bytes": 23753548,
+      "sha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41"
+    },
+    {
+      "path": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.json",
+      "bytes": 168611,
+      "sha256": "8ef35c89d9a1e49927106f3f21e34ebe4a00577071ee870f521c603e7ab7a75f"
+    },
+    {
+      "path": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/phrase-times.json",
+      "bytes": 53198,
+      "sha256": "14547a566813eabd9b4590285e16b35e06633257e174bfdd66c37e573bf95612"
+    },
+    {
+      "path": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/plan.json",
+      "bytes": 157540,
+      "sha256": "810104ded94d21ad9c006ab743947a63aa1a9ffe222f9874e24fbe2c3cc3d078"
+    },
+    {
+      "path": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/timed-selection.json",
+      "bytes": 175981,
+      "sha256": "4a01b874c7ce391ace10772ab9750594b4e4e8f5ac9f5f2e651d6136db4264d5"
+    }
+  ],
+  "criticalCopies": [
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/plan.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/plan.json",
+      "sha256": "810104ded94d21ad9c006ab743947a63aa1a9ffe222f9874e24fbe2c3cc3d078",
+      "bytes": 157540,
+      "role": "immutable speech/subtitle timing",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/ys-chain-b2a_gpt_20261029.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/ys-chain-b2a_gpt_20261029.json",
+      "sha256": "8ef35c89d9a1e49927106f3f21e34ebe4a00577071ee870f521c603e7ab7a75f",
+      "bytes": 168611,
+      "role": "immutable speech/subtitle timing",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/timed-selection.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/timed-selection.json",
+      "sha256": "4a01b874c7ce391ace10772ab9750594b4e4e8f5ac9f5f2e651d6136db4264d5",
+      "bytes": 175981,
+      "role": "immutable speech/subtitle timing",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/phrase-times.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/phrase-times.json",
+      "sha256": "14547a566813eabd9b4590285e16b35e06633257e174bfdd66c37e573bf95612",
+      "bytes": 53198,
+      "role": "immutable speech/subtitle timing",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/ys-chain-b2a_gpt_20261029.voice.wav",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/ys-chain-b2a_gpt_20261029.voice.wav",
+      "sha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+      "bytes": 23753548,
+      "role": "immutable speech/subtitle timing",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/ys-chain-b2a_gpt_20261029.wav",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/ys-chain-b2a_gpt_20261029.wav",
+      "sha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+      "bytes": 23753548,
+      "role": "immutable speech/subtitle timing",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/silent-intro-record.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/silent-intro-record.json",
+      "sha256": "a1d9dae26362d080afa1a20825e31d870f867fe05ed13ae1600454e3c1e16b07",
+      "bytes": 376,
+      "role": "immutable speech/subtitle timing",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.bgmonly.wav",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.bgmonly.wav",
+      "sha256": "ae3885a981730b3ba0baa65b08919812d59a9b77d561b0f5314d0386843234bb",
+      "bytes": 23753548,
+      "role": "unchanged accepted audio-v4",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.levels.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.levels.json",
+      "sha256": "c32de52b7b1aae45162969400a71d1ff86b5ad95d7fc4af7a806a5e20b58808b",
+      "bytes": 7501,
+      "role": "unchanged accepted audio-v4",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mix.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mix.json",
+      "sha256": "9be8ceefbc624bd4dd8bd3717dfd48127a93dafba75c90f0bd7d57bc90c733f6",
+      "bytes": 1655,
+      "role": "unchanged accepted audio-v4",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+      "sha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+      "bytes": 23753548,
+      "role": "unchanged accepted audio-v4",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.sfxonly.wav",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.sfxonly.wav",
+      "sha256": "81e831833e47abae7c6a9ef1844c98c735548e975327e65ee38e7b8cc108f78b",
+      "bytes": 23753548,
+      "role": "unchanged accepted audio-v4",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-bgm-windows.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-bgm-windows.json",
+      "sha256": "13d69dc755ec1e76c1268e1fdff79b1ce4a0b894e2af8642026ffc46b592bd48",
+      "bytes": 79619,
+      "role": "unchanged accepted audio-v4",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-contribution.wav",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-contribution.wav",
+      "sha256": "79921ca97b255c4e3409da5882169706197786b34694c9edf52b7104963f3668",
+      "bytes": 23753548,
+      "role": "unchanged accepted audio-v4",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/row-to-time.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/source-reference-s4/row-to-time.json",
+      "sha256": "5063288838c530e4c61d6b43076629cbaee679fd458f06c3629727c95ed8f9eb",
+      "bytes": 5079,
+      "role": "inactive prior visual-planning reference",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/shot-plan.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/source-reference-s4/shot-plan.json",
+      "sha256": "122b09706e43ce6a63c18ee5a74d214a685d6c35e4ae94b18ad83ef0c9ea3804",
+      "bytes": 5901,
+      "role": "inactive prior visual-planning reference",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/b2a-scene-data.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/source-reference-s4/blender/b2a-scene-data.json",
+      "sha256": "2ff61f74456d348251df628ce778b31ce53ffe8c8836c307db5e5c89df2e4a03",
+      "bytes": 157221,
+      "role": "inactive prior visual-planning reference",
+      "status": "real-file-exclusive-copy"
+    },
+    {
+      "source": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/storyboard-plan.json",
+      "target": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/source-reference-s4/blender/storyboard-plan.json",
+      "sha256": "5ce3a6c5e1f7ffc80dd93cad5f01a6c313cbfcf7ed6ecd3acd6d5a60ad2febf8",
+      "bytes": 73263,
+      "role": "inactive prior visual-planning reference",
+      "status": "real-file-exclusive-copy"
+    }
+  ],
+  "speechCopySummary": {
+    "source": {
+      "root": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/speech",
+      "count": 142,
+      "bytes": 21187604,
+      "sha256": "33b26dd6567cd2007c1cd5b814709fb7804a20a68f642f922ce3571d6b96f12d",
+      "method": "SHA256 of sorted relative-path/size/content-SHA records calculated in memory; individual file/frame hashes are not saved."
+    },
+    "target": {
+      "root": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/speech",
+      "count": 142,
+      "bytes": 21187604,
+      "sha256": "33b26dd6567cd2007c1cd5b814709fb7804a20a68f642f922ce3571d6b96f12d",
+      "method": "SHA256 of sorted relative-path/size/content-SHA records calculated in memory; individual file/frame hashes are not saved."
+    }
+  },
+  "counts": {
+    "allRealCopies": 160,
+    "voicedCues": 70,
+    "captionChunks": 317,
+    "speechFiles": 142,
+    "protectedCoreSources": 24
+  },
+  "mix": {
+    "file": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+    "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mix.json",
+    "sha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+    "voiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+    "voiceBgmDifferenceMedianDb": 22.398616534108726,
+    "voiceBgmDifferenceP10Db": 10.102094715491893,
+    "recordByteIdentical": true,
+    "recordOriginalPathsStillPointToS3": true
+  },
+  "priorVisualPlanningReferences": "source-reference-s4/ only; not active Blender or production metadata",
+  "notCopied": [
+    "old image frames",
+    "primary boxes",
+    "camera poses",
+    "anchors",
+    "GUI logs/state",
+    "render meta",
+    "old videos",
+    "gate outputs"
+  ],
+  "audioRegenerated": false,
+  "remixed": false,
+  "earsPerformed": false,
+  "sourcesUnchanged": true,
+  "scope": "Immutable byte-copy and mechanical source protection only. No final S4 quality or ear-listening claim.",
+  "laterAudioQa": {
+    "auditor": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/audit-final-mp4-audio_20261029.py",
+    "argv": [
+      "/Users/ken/Library/Application Support/physics-quest-tools/pyenv/bin/python",
+      "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/audit-final-mp4-audio_20261029.py",
+      "--mp4",
+      "<completed-S4-MP4>",
+      "--out",
+      "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/audio/完成MP4検査"
+    ],
+    "checks": [
+      "strict AAC decode",
+      "sample-count duration",
+      "LUFS",
+      "true peak",
+      "silence",
+      "waveform lag",
+      "frozen mix SHA"
+    ],
+    "referenceNote": "Auditor references the same SHA-identical original audio-v4; current C5 copy is bound above."
+  }
+}

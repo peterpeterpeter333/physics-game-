@@ -1,0 +1,5007 @@
+{
+  "scope": "Real Blender scene geometry, transformations and explicit Claude S2 numerical conditions; no render/audio playback",
+  "elapsedSeconds": 26.344345092773438,
+  "checks": [
+    {
+      "test": "row_1_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 166.0,
+        "y0": 674.6,
+        "x1": 892.6,
+        "y1": 1130.6,
+        "width": 0.6727777777777778,
+        "height": 0.23749999999999993,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_1_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 166.0,
+        "y0": 674.6,
+        "x1": 892.6,
+        "y1": 1130.6,
+        "width": 0.6727777777777778,
+        "height": 0.23749999999999993,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_1_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 166.0,
+        "y0": 674.6,
+        "x1": 892.6,
+        "y1": 1130.6,
+        "width": 0.6727777777777778,
+        "height": 0.23749999999999993,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_2_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_2_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_2_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_3_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_3_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_3_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_4_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 226.8,
+        "y0": 422.2,
+        "x1": 853.2,
+        "y1": 1097.8,
+        "width": 0.5800000000000001,
+        "height": 0.35187499999999994,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_4_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 226.8,
+        "y0": 422.2,
+        "x1": 853.2,
+        "y1": 1097.8,
+        "width": 0.5800000000000001,
+        "height": 0.35187499999999994,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_4_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 226.8,
+        "y0": 422.2,
+        "x1": 853.2,
+        "y1": 1097.8,
+        "width": 0.5800000000000001,
+        "height": 0.35187499999999994,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_5_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 237.6,
+        "y0": 431.8,
+        "x1": 842.4,
+        "y1": 1088.2,
+        "width": 0.5599999999999999,
+        "height": 0.34187500000000004,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_5_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 237.6,
+        "y0": 431.8,
+        "x1": 842.4,
+        "y1": 1088.2,
+        "width": 0.5599999999999999,
+        "height": 0.34187500000000004,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_5_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 237.6,
+        "y0": 431.8,
+        "x1": 842.4,
+        "y1": 1088.2,
+        "width": 0.5599999999999999,
+        "height": 0.34187500000000004,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_6_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 151.2,
+        "y0": 539.2,
+        "x1": 928.8,
+        "y1": 980.9,
+        "width": 0.7199999999999999,
+        "height": 0.2300520833333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_6_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 151.2,
+        "y0": 539.2,
+        "x1": 928.8,
+        "y1": 980.9,
+        "width": 0.7199999999999999,
+        "height": 0.2300520833333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_6_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 151.2,
+        "y0": 477.3,
+        "x1": 928.8,
+        "y1": 980.9,
+        "width": 0.7199999999999999,
+        "height": 0.26229166666666665,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_7_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 151.2,
+        "y0": 509.4,
+        "x1": 928.8,
+        "y1": 1010.6,
+        "width": 0.7199999999999999,
+        "height": 0.26104166666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_7_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 151.2,
+        "y0": 509.4,
+        "x1": 928.8,
+        "y1": 1010.6,
+        "width": 0.7199999999999999,
+        "height": 0.26104166666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_7_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 151.2,
+        "y0": 509.4,
+        "x1": 928.8,
+        "y1": 1010.6,
+        "width": 0.7199999999999999,
+        "height": 0.26104166666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_8_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 43.2,
+        "y0": 540.7,
+        "x1": 1036.8,
+        "y1": 979.3,
+        "width": 0.9199999999999999,
+        "height": 0.22843749999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_8_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 43.2,
+        "y0": 540.7,
+        "x1": 1036.8,
+        "y1": 979.3,
+        "width": 0.9199999999999999,
+        "height": 0.22843749999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_8_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 43.2,
+        "y0": 540.7,
+        "x1": 1036.8,
+        "y1": 979.3,
+        "width": 0.9199999999999999,
+        "height": 0.22843749999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_9_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_9_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_9_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_10_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_10_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_10_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_10_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_10_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_11_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_11_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 255.4,
+        "y0": 702.5,
+        "x1": 824.6,
+        "y1": 817.6,
+        "width": 0.5270370370370371,
+        "height": 0.05994791666666668,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_11_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_11_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_11_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_12_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 68.5,
+        "y0": 444.9,
+        "x1": 1051.3,
+        "y1": 1075.1,
+        "width": 0.9099999999999999,
+        "height": 0.3282291666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_12_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 68.5,
+        "y0": 444.9,
+        "x1": 1051.3,
+        "y1": 1075.1,
+        "width": 0.9099999999999999,
+        "height": 0.3282291666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_12_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 68.5,
+        "y0": 444.9,
+        "x1": 1051.3,
+        "y1": 1075.1,
+        "width": 0.9099999999999999,
+        "height": 0.3282291666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_13_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.7,
+        "y0": 701.7,
+        "x1": 938.1,
+        "y1": 821.0,
+        "width": 0.6762962962962964,
+        "height": 0.062135416666666644,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_13_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.7,
+        "y0": 700.8,
+        "x1": 909.7,
+        "y1": 819.2,
+        "width": 0.65,
+        "height": 0.06166666666666672,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_13_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.7,
+        "y0": 690.9,
+        "x1": 909.7,
+        "y1": 819.2,
+        "width": 0.65,
+        "height": 0.0668229166666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_14_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_14_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_14_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_15_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_15_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_15_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_16_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 36.7,
+        "y0": 328.3,
+        "x1": 1000.5,
+        "y1": 1191.7,
+        "width": 0.8924074074074073,
+        "height": 0.4496875000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_16_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 36.7,
+        "y0": 328.3,
+        "x1": 1008.7,
+        "y1": 1191.7,
+        "width": 0.9,
+        "height": 0.4496875000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_16_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 36.7,
+        "y0": 328.3,
+        "x1": 1000.5,
+        "y1": 1191.7,
+        "width": 0.8924074074074073,
+        "height": 0.4496875000000001,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_17_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 43.0,
+        "y0": 501.8,
+        "x1": 1015.0,
+        "y1": 1018.2,
+        "width": 0.9,
+        "height": 0.26895833333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_17_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 43.0,
+        "y0": 501.8,
+        "x1": 1015.0,
+        "y1": 1018.2,
+        "width": 0.9,
+        "height": 0.26895833333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_17_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 43.0,
+        "y0": 501.8,
+        "x1": 1015.0,
+        "y1": 1018.2,
+        "width": 0.9,
+        "height": 0.26895833333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_18_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 170.6,
+        "y0": 464.0,
+        "x1": 872.6,
+        "y1": 1056.0,
+        "width": 0.65,
+        "height": 0.30833333333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_18_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 170.6,
+        "y0": 464.0,
+        "x1": 872.6,
+        "y1": 1056.0,
+        "width": 0.65,
+        "height": 0.30833333333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_18_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 188.6,
+        "y0": 522.0,
+        "x1": 872.6,
+        "y1": 1056.0,
+        "width": 0.6333333333333333,
+        "height": 0.278125,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_19_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_19_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_19_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_19_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 243.8,
+        "y0": 718.4,
+        "x1": 837.8,
+        "y1": 801.6,
+        "width": 0.55,
+        "height": 0.043333333333333356,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_19_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_20_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_20_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_20_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_21_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_21_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_21_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_22_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_22_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_22_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 167.8,
+        "y0": 578.6,
+        "x1": 869.9,
+        "y1": 941.4,
+        "width": 0.6500925925925926,
+        "height": 0.1889583333333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_23_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_23_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_23_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_24_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 142.2,
+        "y0": 347.1,
+        "x1": 931.7,
+        "y1": 1164.5,
+        "width": 0.7310185185185185,
+        "height": 0.42572916666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_24_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_24_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_25_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_25_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_25_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_25_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_25_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_26_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_26_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_26_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_27_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 213.1,
+        "y0": 320.4,
+        "x1": 915.1,
+        "y1": 1199.6,
+        "width": 0.65,
+        "height": 0.45791666666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_27_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 213.1,
+        "y0": 320.4,
+        "x1": 915.1,
+        "y1": 1199.6,
+        "width": 0.65,
+        "height": 0.45791666666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_27_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 213.1,
+        "y0": 320.4,
+        "x1": 915.1,
+        "y1": 1199.6,
+        "width": 0.65,
+        "height": 0.45791666666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_28_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_28_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_28_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": -961.2,
+        "y0": 689.1,
+        "x1": -268.4,
+        "y1": 830.9,
+        "width": 0.6414814814814815,
+        "height": 0.07385416666666664,
+        "allInCamera": false
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_29_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 191.0,
+        "y0": 357.3,
+        "x1": 889.0,
+        "y1": 967.2,
+        "width": 0.6462962962962963,
+        "height": 0.31765625000000003,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_29_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.8,
+        "y0": 552.7,
+        "x1": 880.1,
+        "y1": 967.2,
+        "width": 0.6299074074074074,
+        "height": 0.21588541666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_29_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 75.0,
+        "y0": 582.0,
+        "x1": 1025.5,
+        "y1": 938.0,
+        "width": 0.8800925925925925,
+        "height": 0.18541666666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_30_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 579.6,
+        "x1": 880.1,
+        "y1": 940.4,
+        "width": 0.6300000000000001,
+        "height": 0.18791666666666665,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_30_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 579.6,
+        "x1": 880.1,
+        "y1": 940.4,
+        "width": 0.6300000000000001,
+        "height": 0.18791666666666665,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_30_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 579.6,
+        "x1": 880.1,
+        "y1": 940.4,
+        "width": 0.6300000000000001,
+        "height": 0.18791666666666665,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_31_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 751.0,
+        "y1": 1201.6,
+        "width": 0.41120370370370374,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_31_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 751.0,
+        "y1": 1201.6,
+        "width": 0.41120370370370374,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_31_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_32_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_32_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_32_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_32_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_32_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_33_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 204.7,
+        "y0": 511.6,
+        "x1": 906.7,
+        "y1": 1008.4,
+        "width": 0.65,
+        "height": 0.25875,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_33_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 204.7,
+        "y0": 511.6,
+        "x1": 906.7,
+        "y1": 1008.4,
+        "width": 0.65,
+        "height": 0.25875,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_33_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 204.7,
+        "y0": 511.6,
+        "x1": 906.7,
+        "y1": 1008.4,
+        "width": 0.65,
+        "height": 0.25875,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_33_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 454.9,
+        "y0": 487.0,
+        "x1": 625.1,
+        "y1": 1029.6,
+        "width": 0.15759259259259265,
+        "height": 0.2826041666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_33_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 344.9,
+        "y0": 484.5,
+        "x1": 733.7,
+        "y1": 1035.5,
+        "width": 0.36000000000000004,
+        "height": 0.2869791666666667,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_34_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_34_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_34_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_35_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_35_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_35_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_36_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 201.8,
+        "y0": 631.7,
+        "x1": 882.2,
+        "y1": 888.3,
+        "width": 0.6300000000000001,
+        "height": 0.1336458333333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_36_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 201.8,
+        "y0": 631.7,
+        "x1": 882.2,
+        "y1": 888.3,
+        "width": 0.6300000000000001,
+        "height": 0.1336458333333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_36_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 201.8,
+        "y0": 631.7,
+        "x1": 882.2,
+        "y1": 888.3,
+        "width": 0.6300000000000001,
+        "height": 0.1336458333333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_37_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_37_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_37_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_38_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 166.6,
+        "y0": 500.3,
+        "x1": 868.6,
+        "y1": 1019.8,
+        "width": 0.65,
+        "height": 0.27057291666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_38_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 166.6,
+        "y0": 500.3,
+        "x1": 868.6,
+        "y1": 1019.8,
+        "width": 0.65,
+        "height": 0.27057291666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_38_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 166.6,
+        "y0": 500.3,
+        "x1": 868.6,
+        "y1": 1019.8,
+        "width": 0.65,
+        "height": 0.27057291666666666,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_39_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_39_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_39_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_39_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_39_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_40_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_40_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_40_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_41_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_41_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_41_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_42_at_0.08_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_42_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_42_at_0.92_finite",
+      "pass": true,
+      "actual": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_43_at_0.03_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_43_at_0.25_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_43_at_0.50_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_43_at_0.75_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row_43_at_0.97_finite",
+      "pass": true,
+      "actual": {
+        "x0": 207.4,
+        "y0": 663.3,
+        "x1": 863.6,
+        "y1": 808.7,
+        "width": 0.6075925925925927,
+        "height": 0.07572916666666671,
+        "allInCamera": true
+      },
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_one_thigh",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_one_knee_hinge",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_one_shin",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_one_foot",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_one_white_nerve",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_no_body_head_torso",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "frog_nerve_radius",
+      "pass": true,
+      "actual": 0.006000000052154064,
+      "expected": 0.006,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_one_thigh",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_one_knee_hinge",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_one_shin",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_one_foot",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_one_white_nerve",
+      "pass": true,
+      "actual": 1,
+      "expected": 1,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_no_body_head_torso",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_nerve_radius",
+      "pass": true,
+      "actual": 0.006000000052154064,
+      "expected": 0.006,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_knee_peak_degrees",
+      "pass": true,
+      "actual": 30.000000834826057,
+      "expected": 30,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_knee_rest_degrees",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_knee_peak_degrees",
+      "pass": true,
+      "actual": 4.99999985454646,
+      "expected": 5,
+      "priority": "P1"
+    },
+    {
+      "test": "frog_same_knee_rest_degrees",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_distance_0",
+      "pass": true,
+      "actual": 0.03999999512918264,
+      "expected": 0.04,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_mesh_tip_0_0",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_tissue_fixed_0_0",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_mesh_tip_0_1",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_tissue_fixed_0_1",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_distance_0.5",
+      "pass": true,
+      "actual": 0.019999996109399565,
+      "expected": 0.02,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_mesh_tip_0.5_0",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_tissue_fixed_0.5_0",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_mesh_tip_0.5_1",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_tissue_fixed_0.5_1",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_distance_1",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0.0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_mesh_tip_1_0",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_tissue_fixed_1_0",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_mesh_tip_1_1",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "contact_tissue_fixed_1_1",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "terrella_North_redtip_mesh_anchor",
+      "pass": true,
+      "actual": 4.899854376154358e-08,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "terrella_North_redtip_dip_sign",
+      "pass": true,
+      "actual": -0.031075874343514442,
+      "expected": "negative north / positive south",
+      "priority": "P1"
+    },
+    {
+      "test": "terrella_South_redtip_mesh_anchor",
+      "pass": true,
+      "actual": 3.725290298461914e-08,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "terrella_South_redtip_dip_sign",
+      "pass": true,
+      "actual": 0.03169390931725502,
+      "expected": "negative north / positive south",
+      "priority": "P1"
+    },
+    {
+      "test": "comparison_North_redtip_mesh_anchor",
+      "pass": true,
+      "actual": 1.0536712127723509e-08,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "comparison_North_redtip_dip_sign",
+      "pass": true,
+      "actual": -0.031075850129127502,
+      "expected": "negative north / positive south",
+      "priority": "P1"
+    },
+    {
+      "test": "comparison_South_redtip_mesh_anchor",
+      "pass": true,
+      "actual": 2.1073424255447017e-08,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "comparison_South_redtip_dip_sign",
+      "pass": true,
+      "actual": 0.03169386833906174,
+      "expected": "negative north / positive south",
+      "priority": "P1"
+    },
+    {
+      "test": "field_loop_count",
+      "pass": true,
+      "actual": 6,
+      "expected": "4..6",
+      "priority": "P1"
+    },
+    {
+      "test": "field_left_right_symmetry_0_1",
+      "pass": true,
+      "actual": 1.9167541633944908e-17,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "field_left_right_symmetry_2_3",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "field_left_right_symmetry_4_5",
+      "pass": true,
+      "actual": 0.0,
+      "expected": 0,
+      "priority": "P1"
+    },
+    {
+      "test": "field_south_to_north_0",
+      "pass": true,
+      "actual": [
+        -0.08385051786899567,
+        0.08385051786899567
+      ],
+      "expected": "south negative Z → north positive Z",
+      "priority": "P1"
+    },
+    {
+      "test": "field_south_to_north_1",
+      "pass": true,
+      "actual": [
+        -0.08385051786899567,
+        0.08385051786899567
+      ],
+      "expected": "south negative Z → north positive Z",
+      "priority": "P1"
+    },
+    {
+      "test": "field_south_to_north_2",
+      "pass": true,
+      "actual": [
+        -0.08385051786899567,
+        0.08385051786899567
+      ],
+      "expected": "south negative Z → north positive Z",
+      "priority": "P1"
+    },
+    {
+      "test": "field_south_to_north_3",
+      "pass": true,
+      "actual": [
+        -0.08385051786899567,
+        0.08385051786899567
+      ],
+      "expected": "south negative Z → north positive Z",
+      "priority": "P1"
+    },
+    {
+      "test": "field_south_to_north_4",
+      "pass": true,
+      "actual": [
+        -0.08385051786899567,
+        0.08385051786899567
+      ],
+      "expected": "south negative Z → north positive Z",
+      "priority": "P1"
+    },
+    {
+      "test": "field_south_to_north_5",
+      "pass": true,
+      "actual": [
+        -0.08385051786899567,
+        0.08385051786899567
+      ],
+      "expected": "south negative Z → north positive Z",
+      "priority": "P1"
+    },
+    {
+      "test": "earth_continents_exist",
+      "pass": true,
+      "actual": 7,
+      "expected": ">=5",
+      "priority": "P1"
+    },
+    {
+      "test": "row6_south_red_tip_above_white_horizontal",
+      "pass": true,
+      "actual": {
+        "redTip": [
+          589.4,
+          477.3,
+          1
+        ],
+        "horizontalCenter": [
+          540.0,
+          645.6,
+          1
+        ]
+      },
+      "expected": "redTipY < horizonY - 3px",
+      "priority": "P1"
+    },
+    {
+      "test": "row7_south_red_tip_above_white_horizontal",
+      "pass": true,
+      "actual": {
+        "redTip": [
+          589.4,
+          509.4,
+          1
+        ],
+        "horizontalCenter": [
+          540.0,
+          677.0,
+          1
+        ]
+      },
+      "expected": "redTipY < horizonY - 3px",
+      "priority": "P1"
+    },
+    {
+      "test": "pile_count",
+      "pass": true,
+      "actual": 30,
+      "expected": 30,
+      "priority": "P1"
+    },
+    {
+      "test": "pile_layer_order_0",
+      "pass": true,
+      "actual": {
+        "zinc": 0.02500000037252903,
+        "paper": 0.027300000190734863,
+        "copper": 0.029600000008940697
+      },
+      "expected": "zinc < wet paper < copper",
+      "priority": "P1"
+    },
+    {
+      "test": "paper_wet_drops_0",
+      "pass": true,
+      "actual": [
+        true,
+        true,
+        true
+      ],
+      "expected": true,
+      "priority": "P1"
+    },
+    {
+      "test": "pile_layer_order_14",
+      "pass": true,
+      "actual": {
+        "zinc": 0.11739999800920486,
+        "paper": 0.11969999969005585,
+        "copper": 0.12200000137090683
+      },
+      "expected": "zinc < wet paper < copper",
+      "priority": "P1"
+    },
+    {
+      "test": "paper_wet_drops_14",
+      "pass": true,
+      "actual": [
+        true,
+        true,
+        true
+      ],
+      "expected": true,
+      "priority": "P1"
+    },
+    {
+      "test": "pile_layer_order_29",
+      "pass": true,
+      "actual": {
+        "zinc": 0.21639999747276306,
+        "paper": 0.21870000660419464,
+        "copper": 0.22100000083446503
+      },
+      "expected": "zinc < wet paper < copper",
+      "priority": "P1"
+    },
+    {
+      "test": "paper_wet_drops_29",
+      "pass": true,
+      "actual": [
+        true,
+        true,
+        true
+      ],
+      "expected": true,
+      "priority": "P1"
+    },
+    {
+      "test": "dry_paper_no_waterdrops",
+      "pass": true,
+      "actual": null,
+      "expected": true,
+      "priority": "P1"
+    },
+    {
+      "test": "row32_kai_finger_terminal_distance",
+      "pass": true,
+      "actual": 0.0014999993444115979,
+      "expected": "<=.008 m",
+      "priority": "P1"
+    },
+    {
+      "test": "row32_mio_finger_terminal_distance",
+      "pass": true,
+      "actual": 0.001500010485685188,
+      "expected": "<=.008 m",
+      "priority": "P1"
+    },
+    {
+      "test": "row_9_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_9_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_10_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_10_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_11_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_11_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_20_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_20_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_21_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_21_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_23_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_23_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_26_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_26_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_28_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_28_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row_43_actual_leg_width",
+      "pass": true,
+      "actual": 0.6100000000000001,
+      "expected": ">=.55; desired .55..65",
+      "priority": "P1"
+    },
+    {
+      "test": "row_43_nerve_projected_diameter",
+      "pass": true,
+      "actual": 0.024351851851851836,
+      "expected": ">=.02",
+      "priority": "P1"
+    },
+    {
+      "test": "row25_frog_same_leg_width",
+      "pass": true,
+      "actual": 0.4386111111111111,
+      "expected": ">=.35",
+      "priority": "P1"
+    },
+    {
+      "test": "row25_frog_leg_width",
+      "pass": true,
+      "actual": 0.4318518518518518,
+      "expected": ">=.35",
+      "priority": "P1"
+    },
+    {
+      "test": "row5_earth_stone_width",
+      "pass": true,
+      "actual": 0.45851851851851844,
+      "expected": ">=.45 from real mesh vertices, not enclosing cube",
+      "priority": "P1"
+    },
+    {
+      "test": "row12_cell_width",
+      "pass": true,
+      "actual": 0.2774074074074073,
+      "expected": ">=.25",
+      "priority": "P1"
+    },
+    {
+      "test": "row29_cutaway_water_in_frame",
+      "pass": true,
+      "actual": [
+        776.1,
+        723.2,
+        1
+      ],
+      "expected": "visible within x40..1040 / y110..1600",
+      "priority": "P1"
+    },
+    {
+      "test": "row29_cutaway_model_in_frame",
+      "pass": true,
+      "actual": {
+        "x0": 666.5,
+        "y0": 697.0,
+        "x1": 1025.5,
+        "y1": 779.0,
+        "width": 0.33240740740740743,
+        "height": 0.042708333333333334,
+        "allInCamera": true
+      },
+      "expected": "entire inset inside frame",
+      "priority": "P1"
+    },
+    {
+      "test": "row33_goldleaf_pair_width",
+      "pass": true,
+      "actual": 0.36000000000000004,
+      "expected": ">=.30",
+      "priority": "P1"
+    },
+    {
+      "test": "leaf_dark_background_exists",
+      "pass": true,
+      "actual": null,
+      "expected": null,
+      "priority": "P1"
+    },
+    {
+      "test": "row1_row43_identical_camera",
+      "pass": true,
+      "actual": {
+        "opening": {
+          "loc": [
+            0.16432498395442963,
+            -0.8407180309295654,
+            0.39949560165405273
+          ],
+          "rot": [
+            1.1344640254974365,
+            -0.0,
+            0.0
+          ],
+          "shift": -0.10796874761581421,
+          "lens": 32.7599983215332
+        },
+        "ending": {
+          "loc": [
+            0.16432498395442963,
+            -0.8407180309295654,
+            0.39949560165405273
+          ],
+          "rot": [
+            1.1344640254974365,
+            -0.0,
+            0.0
+          ],
+          "shift": -0.10796874761581421,
+          "lens": 32.7599983215332
+        }
+      },
+      "expected": "exactly identical",
+      "priority": "P1"
+    },
+    {
+      "test": "complete_object_inventory_frog",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "complete_object_inventory_frog_same",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "complete_object_inventory_terrella",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "complete_object_inventory_comparison",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "complete_object_inventory_pile",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "complete_object_inventory_electroscope",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    },
+    {
+      "test": "complete_object_inventory_cutaway",
+      "pass": true,
+      "actual": [],
+      "expected": [],
+      "priority": "P1"
+    }
+  ],
+  "samples": [
+    {
+      "row": 1,
+      "seconds": 0.16,
+      "primary": "b2a_cover",
+      "measurement": {
+        "x0": 166.0,
+        "y0": 674.6,
+        "x1": 892.6,
+        "y1": 1130.6,
+        "width": 0.6727777777777778,
+        "height": 0.23749999999999993,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 1,
+      "seconds": 1.0,
+      "primary": "b2a_cover",
+      "measurement": {
+        "x0": 166.0,
+        "y0": 674.6,
+        "x1": 892.6,
+        "y1": 1130.6,
+        "width": 0.6727777777777778,
+        "height": 0.23749999999999993,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 1,
+      "seconds": 1.84,
+      "primary": "b2a_cover",
+      "measurement": {
+        "x0": 166.0,
+        "y0": 674.6,
+        "x1": 892.6,
+        "y1": 1130.6,
+        "width": 0.6727777777777778,
+        "height": 0.23749999999999993,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 2,
+      "seconds": 2.7869866666666665,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 2,
+      "seconds": 6.918666666666667,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 2,
+      "seconds": 11.050346666666668,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 3,
+      "seconds": 12.465493333333335,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 3,
+      "seconds": 15.553333333333335,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 3,
+      "seconds": 18.641173333333334,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 255.0,
+        "y0": 507.0,
+        "x1": 741.0,
+        "y1": 1013.0,
+        "width": 0.45,
+        "height": 0.2635416666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 4,
+      "seconds": 20.157013333333335,
+      "primary": "b2a_terrella",
+      "measurement": {
+        "x0": 226.8,
+        "y0": 422.2,
+        "x1": 853.2,
+        "y1": 1097.8,
+        "width": 0.5800000000000001,
+        "height": 0.35187499999999994,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 4,
+      "seconds": 24.817333333333337,
+      "primary": "b2a_terrella",
+      "measurement": {
+        "x0": 226.8,
+        "y0": 422.2,
+        "x1": 853.2,
+        "y1": 1097.8,
+        "width": 0.5800000000000001,
+        "height": 0.35187499999999994,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 4,
+      "seconds": 29.47765333333334,
+      "primary": "b2a_terrella",
+      "measurement": {
+        "x0": 226.8,
+        "y0": 422.2,
+        "x1": 853.2,
+        "y1": 1097.8,
+        "width": 0.5800000000000001,
+        "height": 0.35187499999999994,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 5,
+      "seconds": 31.261440000000004,
+      "primary": "b2a_terrella",
+      "measurement": {
+        "x0": 237.6,
+        "y0": 431.8,
+        "x1": 842.4,
+        "y1": 1088.2,
+        "width": 0.5599999999999999,
+        "height": 0.34187500000000004,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 5,
+      "seconds": 35.756,
+      "primary": "b2a_terrella",
+      "measurement": {
+        "x0": 237.6,
+        "y0": 431.8,
+        "x1": 842.4,
+        "y1": 1088.2,
+        "width": 0.5599999999999999,
+        "height": 0.34187500000000004,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 5,
+      "seconds": 40.25056000000001,
+      "primary": "b2a_terrella",
+      "measurement": {
+        "x0": 237.6,
+        "y0": 431.8,
+        "x1": 842.4,
+        "y1": 1088.2,
+        "width": 0.5599999999999999,
+        "height": 0.34187500000000004,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 6,
+      "seconds": 42.09834666666667,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 151.2,
+        "y0": 539.2,
+        "x1": 928.8,
+        "y1": 980.9,
+        "width": 0.7199999999999999,
+        "height": 0.2300520833333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 6,
+      "seconds": 47.09466666666667,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 151.2,
+        "y0": 539.2,
+        "x1": 928.8,
+        "y1": 980.9,
+        "width": 0.7199999999999999,
+        "height": 0.2300520833333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 6,
+      "seconds": 52.090986666666666,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 151.2,
+        "y0": 477.3,
+        "x1": 928.8,
+        "y1": 980.9,
+        "width": 0.7199999999999999,
+        "height": 0.26229166666666665,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 7,
+      "seconds": 53.75189333333334,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 151.2,
+        "y0": 509.4,
+        "x1": 928.8,
+        "y1": 1010.6,
+        "width": 0.7199999999999999,
+        "height": 0.26104166666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 7,
+      "seconds": 57.26533333333334,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 151.2,
+        "y0": 509.4,
+        "x1": 928.8,
+        "y1": 1010.6,
+        "width": 0.7199999999999999,
+        "height": 0.26104166666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 7,
+      "seconds": 60.77877333333333,
+      "primary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 151.2,
+        "y0": 509.4,
+        "x1": 928.8,
+        "y1": 1010.6,
+        "width": 0.7199999999999999,
+        "height": 0.26104166666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 8,
+      "seconds": 62.45333333333334,
+      "primary": "b2a_compass_comparison",
+      "measurement": {
+        "x0": 43.2,
+        "y0": 540.7,
+        "x1": 1036.8,
+        "y1": 979.3,
+        "width": 0.9199999999999999,
+        "height": 0.22843749999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 8,
+      "seconds": 67.52133333333335,
+      "primary": "b2a_compass_comparison",
+      "measurement": {
+        "x0": 43.2,
+        "y0": 540.7,
+        "x1": 1036.8,
+        "y1": 979.3,
+        "width": 0.9199999999999999,
+        "height": 0.22843749999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 8,
+      "seconds": 72.58933333333334,
+      "primary": "b2a_compass_comparison",
+      "measurement": {
+        "x0": 43.2,
+        "y0": 540.7,
+        "x1": 1036.8,
+        "y1": 979.3,
+        "width": 0.9199999999999999,
+        "height": 0.22843749999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 9,
+      "seconds": 74.80194666666668,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 9,
+      "seconds": 78.25266666666668,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 9,
+      "seconds": 81.70338666666669,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 10,
+      "seconds": 82.87722666666669,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 10,
+      "seconds": 86.37200000000001,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 10,
+      "seconds": 90.34333333333335,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 10,
+      "seconds": 94.31466666666668,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 10,
+      "seconds": 97.80944000000001,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 11,
+      "seconds": 98.60000000000001,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 11,
+      "seconds": 100.60933333333334,
+      "primary": "b2a_frog_rod_contact",
+      "measurement": {
+        "x0": 255.4,
+        "y0": 702.5,
+        "x1": 824.6,
+        "y1": 817.6,
+        "width": 0.5270370370370371,
+        "height": 0.05994791666666668,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 11,
+      "seconds": 102.89266666666668,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 11,
+      "seconds": 105.17600000000002,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 11,
+      "seconds": 107.18533333333335,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 12,
+      "seconds": 108.64346666666667,
+      "primary": "b2a_frog,b2a_cell",
+      "measurement": {
+        "x0": 68.5,
+        "y0": 444.9,
+        "x1": 1051.3,
+        "y1": 1075.1,
+        "width": 0.9099999999999999,
+        "height": 0.3282291666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 12,
+      "seconds": 111.76266666666666,
+      "primary": "b2a_frog,b2a_cell",
+      "measurement": {
+        "x0": 68.5,
+        "y0": 444.9,
+        "x1": 1051.3,
+        "y1": 1075.1,
+        "width": 0.9099999999999999,
+        "height": 0.3282291666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 12,
+      "seconds": 114.88186666666667,
+      "primary": "b2a_frog,b2a_cell",
+      "measurement": {
+        "x0": 68.5,
+        "y0": 444.9,
+        "x1": 1051.3,
+        "y1": 1075.1,
+        "width": 0.9099999999999999,
+        "height": 0.3282291666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 13,
+      "seconds": 116.87005333333333,
+      "primary": "b2a_glass",
+      "measurement": {
+        "x0": 207.7,
+        "y0": 701.7,
+        "x1": 938.1,
+        "y1": 821.0,
+        "width": 0.6762962962962964,
+        "height": 0.062135416666666644,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 13,
+      "seconds": 121.09133333333334,
+      "primary": "b2a_glass",
+      "measurement": {
+        "x0": 207.7,
+        "y0": 700.8,
+        "x1": 909.7,
+        "y1": 819.2,
+        "width": 0.65,
+        "height": 0.06166666666666672,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 13,
+      "seconds": 125.31261333333335,
+      "primary": "b2a_glass",
+      "measurement": {
+        "x0": 207.7,
+        "y0": 690.9,
+        "x1": 909.7,
+        "y1": 819.2,
+        "width": 0.65,
+        "height": 0.0668229166666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 14,
+      "seconds": 127.57557333333334,
+      "primary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 14,
+      "seconds": 132.13733333333334,
+      "primary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 14,
+      "seconds": 136.69909333333334,
+      "primary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 15,
+      "seconds": 138.40949333333333,
+      "primary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 15,
+      "seconds": 142.61733333333336,
+      "primary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 15,
+      "seconds": 146.82517333333337,
+      "primary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 16,
+      "seconds": 148.65418666666667,
+      "primary": "b2a_cell,b2a_door,b2a_voltage_low,b2a_voltage_high",
+      "measurement": {
+        "x0": 36.7,
+        "y0": 328.3,
+        "x1": 1000.5,
+        "y1": 1191.7,
+        "width": 0.8924074074074073,
+        "height": 0.4496875000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 16,
+      "seconds": 153.8386666666667,
+      "primary": "b2a_cell,b2a_door,b2a_voltage_low,b2a_voltage_high",
+      "measurement": {
+        "x0": 36.7,
+        "y0": 328.3,
+        "x1": 1008.7,
+        "y1": 1191.7,
+        "width": 0.9,
+        "height": 0.4496875000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 16,
+      "seconds": 159.02314666666672,
+      "primary": "b2a_cell,b2a_door,b2a_voltage_low,b2a_voltage_high",
+      "measurement": {
+        "x0": 36.7,
+        "y0": 328.3,
+        "x1": 1000.5,
+        "y1": 1191.7,
+        "width": 0.8924074074074073,
+        "height": 0.4496875000000001,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 17,
+      "seconds": 160.47157333333337,
+      "primary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 43.0,
+        "y0": 501.8,
+        "x1": 1015.0,
+        "y1": 1018.2,
+        "width": 0.9,
+        "height": 0.26895833333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 17,
+      "seconds": 162.68133333333338,
+      "primary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 43.0,
+        "y0": 501.8,
+        "x1": 1015.0,
+        "y1": 1018.2,
+        "width": 0.9,
+        "height": 0.26895833333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 17,
+      "seconds": 164.89109333333337,
+      "primary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 43.0,
+        "y0": 501.8,
+        "x1": 1015.0,
+        "y1": 1018.2,
+        "width": 0.9,
+        "height": 0.26895833333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 18,
+      "seconds": 166.7149866666667,
+      "primary": "b2a_water,b2a_cup",
+      "measurement": {
+        "x0": 170.6,
+        "y0": 464.0,
+        "x1": 872.6,
+        "y1": 1056.0,
+        "width": 0.65,
+        "height": 0.30833333333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 18,
+      "seconds": 173.8706666666667,
+      "primary": "b2a_water,b2a_cup",
+      "measurement": {
+        "x0": 170.6,
+        "y0": 464.0,
+        "x1": 872.6,
+        "y1": 1056.0,
+        "width": 0.65,
+        "height": 0.30833333333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 18,
+      "seconds": 181.0263466666667,
+      "primary": "b2a_water",
+      "measurement": {
+        "x0": 188.6,
+        "y0": 522.0,
+        "x1": 872.6,
+        "y1": 1056.0,
+        "width": 0.6333333333333333,
+        "height": 0.278125,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 19,
+      "seconds": 183.33845333333338,
+      "primary": "b2a_generator,b2a_frog,b2a_assistant",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 19,
+      "seconds": 185.97200000000007,
+      "primary": "b2a_generator,b2a_frog,b2a_assistant",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 19,
+      "seconds": 188.96466666666674,
+      "primary": "b2a_generator,b2a_frog,b2a_assistant",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 19,
+      "seconds": 191.9573333333334,
+      "primary": "b2a_scalpel_nerve_contact",
+      "measurement": {
+        "x0": 243.8,
+        "y0": 718.4,
+        "x1": 837.8,
+        "y1": 801.6,
+        "width": 0.55,
+        "height": 0.043333333333333356,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 19,
+      "seconds": 194.59088000000008,
+      "primary": "b2a_generator,b2a_frog,b2a_assistant",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 20,
+      "seconds": 196.0705333333334,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 20,
+      "seconds": 201.7433333333334,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 20,
+      "seconds": 207.41613333333342,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 21,
+      "seconds": 209.87365333333344,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 21,
+      "seconds": 214.00533333333343,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 21,
+      "seconds": 218.1370133333334,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 22,
+      "seconds": 220.13072000000008,
+      "primary": "b2a_ray,b2a_galvani",
+      "measurement": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 22,
+      "seconds": 226.25600000000009,
+      "primary": "b2a_ray,b2a_galvani",
+      "measurement": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 22,
+      "seconds": 232.3812800000001,
+      "primary": "b2a_frog",
+      "measurement": {
+        "x0": 167.8,
+        "y0": 578.6,
+        "x1": 869.9,
+        "y1": 941.4,
+        "width": 0.6500925925925926,
+        "height": 0.1889583333333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 23,
+      "seconds": 234.04986666666676,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 23,
+      "seconds": 236.47466666666674,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 23,
+      "seconds": 238.89946666666674,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 24,
+      "seconds": 241.3143200000001,
+      "primary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 142.2,
+        "y0": 347.1,
+        "x1": 931.7,
+        "y1": 1164.5,
+        "width": 0.7310185185185185,
+        "height": 0.42572916666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 24,
+      "seconds": 248.47000000000008,
+      "primary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 24,
+      "seconds": 255.62568000000007,
+      "primary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 25,
+      "seconds": 257.42650666666674,
+      "primary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 25,
+      "seconds": 260.34400000000005,
+      "primary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 25,
+      "seconds": 263.6593333333334,
+      "primary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 25,
+      "seconds": 266.9746666666668,
+      "primary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 25,
+      "seconds": 269.8921600000001,
+      "primary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 39.7,
+        "y0": 709.4,
+        "x1": 1033.3,
+        "y1": 810.6,
+        "width": 0.9199999999999999,
+        "height": 0.05270833333333336,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 26,
+      "seconds": 271.4514933333334,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 26,
+      "seconds": 277.33933333333346,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 26,
+      "seconds": 283.22717333333344,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 27,
+      "seconds": 285.30792000000014,
+      "primary": "b2a_alarm",
+      "measurement": {
+        "x0": 213.1,
+        "y0": 320.4,
+        "x1": 915.1,
+        "y1": 1199.6,
+        "width": 0.65,
+        "height": 0.45791666666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 27,
+      "seconds": 290.1340000000001,
+      "primary": "b2a_alarm",
+      "measurement": {
+        "x0": 213.1,
+        "y0": 320.4,
+        "x1": 915.1,
+        "y1": 1199.6,
+        "width": 0.65,
+        "height": 0.45791666666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 27,
+      "seconds": 294.9600800000001,
+      "primary": "b2a_alarm",
+      "measurement": {
+        "x0": 213.1,
+        "y0": 320.4,
+        "x1": 915.1,
+        "y1": 1199.6,
+        "width": 0.65,
+        "height": 0.45791666666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 28,
+      "seconds": 297.20085333333344,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 28,
+      "seconds": 301.04133333333345,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 28,
+      "seconds": 304.88181333333347,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": -961.2,
+        "y0": 689.1,
+        "x1": -268.4,
+        "y1": 830.9,
+        "width": 0.6414814814814815,
+        "height": 0.07385416666666664,
+        "allInCamera": false
+      }
+    },
+    {
+      "row": 29,
+      "seconds": 306.86869333333345,
+      "primary": "b2a_unit",
+      "measurement": {
+        "x0": 191.0,
+        "y0": 357.3,
+        "x1": 889.0,
+        "y1": 967.2,
+        "width": 0.6462962962962963,
+        "height": 0.31765625000000003,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 29,
+      "seconds": 313.2493333333335,
+      "primary": "b2a_unit",
+      "measurement": {
+        "x0": 199.8,
+        "y0": 552.7,
+        "x1": 880.1,
+        "y1": 967.2,
+        "width": 0.6299074074074074,
+        "height": 0.21588541666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 29,
+      "seconds": 319.6299733333335,
+      "primary": "b2a_unit,b2a_cutaway",
+      "measurement": {
+        "x0": 75.0,
+        "y0": 582.0,
+        "x1": 1025.5,
+        "y1": 938.0,
+        "width": 0.8800925925925925,
+        "height": 0.18541666666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 30,
+      "seconds": 321.69621333333345,
+      "primary": "b2a_unit",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 579.6,
+        "x1": 880.1,
+        "y1": 940.4,
+        "width": 0.6300000000000001,
+        "height": 0.18791666666666665,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 30,
+      "seconds": 325.9533333333335,
+      "primary": "b2a_unit",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 579.6,
+        "x1": 880.1,
+        "y1": 940.4,
+        "width": 0.6300000000000001,
+        "height": 0.18791666666666665,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 30,
+      "seconds": 330.2104533333335,
+      "primary": "b2a_unit",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 579.6,
+        "x1": 880.1,
+        "y1": 940.4,
+        "width": 0.6300000000000001,
+        "height": 0.18791666666666665,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 31,
+      "seconds": 331.97546666666676,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 751.0,
+        "y1": 1201.6,
+        "width": 0.41120370370370374,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 31,
+      "seconds": 336.7746666666668,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 751.0,
+        "y1": 1201.6,
+        "width": 0.41120370370370374,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 31,
+      "seconds": 341.5738666666668,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 32,
+      "seconds": 343.10408000000007,
+      "primary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 32,
+      "seconds": 347.3286666666668,
+      "primary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 32,
+      "seconds": 352.1293333333334,
+      "primary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 32,
+      "seconds": 356.93000000000006,
+      "primary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 32,
+      "seconds": 361.1545866666668,
+      "primary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 33,
+      "seconds": 362.2120266666667,
+      "primary": "b2a_pile,b2a_electroscope",
+      "measurement": {
+        "x0": 204.7,
+        "y0": 511.6,
+        "x1": 906.7,
+        "y1": 1008.4,
+        "width": 0.65,
+        "height": 0.25875,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 33,
+      "seconds": 365.4486666666667,
+      "primary": "b2a_pile,b2a_electroscope",
+      "measurement": {
+        "x0": 204.7,
+        "y0": 511.6,
+        "x1": 906.7,
+        "y1": 1008.4,
+        "width": 0.65,
+        "height": 0.25875,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 33,
+      "seconds": 369.1266666666667,
+      "primary": "b2a_pile,b2a_electroscope",
+      "measurement": {
+        "x0": 204.7,
+        "y0": 511.6,
+        "x1": 906.7,
+        "y1": 1008.4,
+        "width": 0.65,
+        "height": 0.25875,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 33,
+      "seconds": 372.8046666666667,
+      "primary": "b2a_electroscope_gold_leaf_pair",
+      "measurement": {
+        "x0": 454.9,
+        "y0": 487.0,
+        "x1": 625.1,
+        "y1": 1029.6,
+        "width": 0.15759259259259265,
+        "height": 0.2826041666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 33,
+      "seconds": 376.04130666666674,
+      "primary": "b2a_electroscope_gold_leaf_pair",
+      "measurement": {
+        "x0": 344.9,
+        "y0": 484.5,
+        "x1": 733.7,
+        "y1": 1035.5,
+        "width": 0.36000000000000004,
+        "height": 0.2869791666666667,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 34,
+      "seconds": 377.57162666666676,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 34,
+      "seconds": 383.0786666666668,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 34,
+      "seconds": 388.58570666666674,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 35,
+      "seconds": 390.17578666666674,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 35,
+      "seconds": 392.80666666666673,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 35,
+      "seconds": 395.4375466666667,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 36,
+      "seconds": 397.2913066666667,
+      "primary": "b2a_frog",
+      "measurement": {
+        "x0": 201.8,
+        "y0": 631.7,
+        "x1": 882.2,
+        "y1": 888.3,
+        "width": 0.6300000000000001,
+        "height": 0.1336458333333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 36,
+      "seconds": 404.1826666666667,
+      "primary": "b2a_frog",
+      "measurement": {
+        "x0": 201.8,
+        "y0": 631.7,
+        "x1": 882.2,
+        "y1": 888.3,
+        "width": 0.6300000000000001,
+        "height": 0.1336458333333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 36,
+      "seconds": 411.0740266666667,
+      "primary": "b2a_frog",
+      "measurement": {
+        "x0": 201.8,
+        "y0": 631.7,
+        "x1": 882.2,
+        "y1": 888.3,
+        "width": 0.6300000000000001,
+        "height": 0.1336458333333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 37,
+      "seconds": 413.67661333333336,
+      "primary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 37,
+      "seconds": 417.3513333333334,
+      "primary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 37,
+      "seconds": 421.0260533333334,
+      "primary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 38,
+      "seconds": 422.97880000000004,
+      "primary": "b2a_map",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 500.3,
+        "x1": 868.6,
+        "y1": 1019.8,
+        "width": 0.65,
+        "height": 0.27057291666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 38,
+      "seconds": 429.346,
+      "primary": "b2a_map",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 500.3,
+        "x1": 868.6,
+        "y1": 1019.8,
+        "width": 0.65,
+        "height": 0.27057291666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 38,
+      "seconds": 435.71320000000003,
+      "primary": "b2a_map",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 500.3,
+        "x1": 868.6,
+        "y1": 1019.8,
+        "width": 0.65,
+        "height": 0.27057291666666666,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 39,
+      "seconds": 437.41696,
+      "primary": "b2a_pile,b2a_glass",
+      "measurement": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 39,
+      "seconds": 440.72400000000005,
+      "primary": "b2a_pile,b2a_glass",
+      "measurement": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 39,
+      "seconds": 444.482,
+      "primary": "b2a_pile,b2a_glass",
+      "measurement": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 39,
+      "seconds": 448.24,
+      "primary": "b2a_pile,b2a_glass",
+      "measurement": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 39,
+      "seconds": 451.54704000000004,
+      "primary": "b2a_pile,b2a_glass",
+      "measurement": {
+        "x0": 61.1,
+        "y0": 395.6,
+        "x1": 1065.6,
+        "y1": 1124.3,
+        "width": 0.9300925925925925,
+        "height": 0.37953125,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 40,
+      "seconds": 453.1625066666667,
+      "primary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 40,
+      "seconds": 456.1786666666667,
+      "primary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 40,
+      "seconds": 459.1948266666667,
+      "primary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 41,
+      "seconds": 460.35141333333337,
+      "primary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 41,
+      "seconds": 463.1973333333334,
+      "primary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 41,
+      "seconds": 466.0432533333334,
+      "primary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 42,
+      "seconds": 468.53085333333337,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 42,
+      "seconds": 475.64733333333334,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 42,
+      "seconds": 482.76381333333336,
+      "primary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 43,
+      "seconds": 484.9962933333334,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 43,
+      "seconds": 487.1006666666667,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 43,
+      "seconds": 489.4920000000001,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 43,
+      "seconds": 491.88333333333344,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 689.1,
+        "x1": 866.2,
+        "y1": 830.9,
+        "width": 0.6100000000000001,
+        "height": 0.07385416666666664,
+        "allInCamera": true
+      }
+    },
+    {
+      "row": 43,
+      "seconds": 493.9877066666667,
+      "primary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 207.4,
+        "y0": 663.3,
+        "x1": 863.6,
+        "y1": 808.7,
+        "width": 0.6075925925925927,
+        "height": 0.07572916666666671,
+        "allInCamera": true
+      }
+    }
+  ],
+  "total": 243,
+  "failed": [],
+  "speechSubtitleSourceEdited": false
+}

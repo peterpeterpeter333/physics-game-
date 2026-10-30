@@ -1,0 +1,2902 @@
+{
+  "scope": "row19 only; five actual times, complete actual kick/spark frame windows",
+  "method": "Existing evaluated-triangle depth raster at540x960; real visible pixels/full image area; not bbox area",
+  "limits": {
+    "leg_area_no_hand": 0.075,
+    "leg_area_with_hand": 0.07,
+    "leg_height": 0.2,
+    "nerve_width": 0.025,
+    "hand_preserved_path": 0.8,
+    "strong_tip_distance_over_height": 0.1,
+    "machine_width": 0.3,
+    "spark_frames": 6
+  },
+  "clock": {
+    "start": 182.9793333333334,
+    "end": 194.95000000000007,
+    "turn": 184.81133333333338,
+    "spark": 187.5213333333334,
+    "contact": 190.9403333333334,
+    "kick": 192.9213333333334,
+    "sparkEnd": 187.72133333333338,
+    "kickPeak": 193.0713333333334,
+    "kickEnd": 193.4713333333334
+  },
+  "frames": [
+    {
+      "j": 5504,
+      "seconds": 183.46666666666667,
+      "reason": "start-no-hand",
+      "handOnScreen": false,
+      "camera": {
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.007505208253860474,
+          0.0,
+          0.42261824011802673,
+          -0.9063078165054321,
+          -0.9038406014442444,
+          0.0,
+          0.9063078165054321,
+          0.42261824011802673,
+          0.5431097149848938,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "lens": 32.7599983215332,
+        "shiftX": 0.0,
+        "shiftY": -0.10854166746139526,
+        "type": "PERSP"
+      },
+      "groups": {
+        "leg_body": {
+          "visible": true,
+          "pixels": 58259,
+          "areaFraction": 0.11238233024691358,
+          "bbox": {
+            "x0": 45,
+            "y0": 336,
+            "x1Exclusive": 465,
+            "y1Exclusive": 605
+          },
+          "widthFraction": 0.7777777777777778,
+          "heightFraction": 0.28020833333333334,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 596.1103920922739,
+            "visibleEssentialLengthPixels": 595.6110301703492,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 0.999162299586538,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 1194,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "criteria": {
+            "height": {
+              "threshold": 0.2,
+              "pass": true
+            },
+            "area": {
+              "threshold": 0.075,
+              "pass": true
+            },
+            "handPreservedPath": {
+              "threshold": 0.8,
+              "pass": true
+            }
+          },
+          "objects": [
+            "b2a_frog_leg_thigh.003",
+            "b2a_frog_leg_knee.003",
+            "b2a_frog_leg_shin.003",
+            "b2a_frog_leg_ankle_joint.002",
+            "b2a_frog_leg_foot.003",
+            "b2a_frog_leg_toe_0.003",
+            "b2a_frog_leg_toe_1.003",
+            "b2a_frog_leg_toe_2.003",
+            "b2a_frog_leg_toe_pad_0.002",
+            "b2a_frog_leg_toe_pad_1.002",
+            "b2a_frog_leg_toe_pad_2.002"
+          ]
+        },
+        "nerve": {
+          "visible": true,
+          "pixels": 5201,
+          "areaFraction": 0.010032793209876543,
+          "bbox": {
+            "x0": 0,
+            "y0": 391,
+            "x1Exclusive": 124,
+            "y1Exclusive": 476
+          },
+          "widthFraction": 0.22962962962962963,
+          "heightFraction": 0.08854166666666667,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 121.74934362914549,
+            "visibleEssentialLengthPixels": 121.74934362914549,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 1.0,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 246,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "thickness": {
+            "status": "measured",
+            "minimumVisibleWidthFraction": 0.06944444444444445,
+            "passes": true,
+            "allowedContactOrHandleSamplesExempted": 0,
+            "exemptionDefinition": "Only centers inside actual V-tip/outer-handle mesh silhouettes; measure main rod core, not junction overlap, regardless of whether a hand is present",
+            "sampling": "Each real poly-curve segment at 30/50/70%; perpendicular to projected tangent across complete viewport chord; conservative minus 1px",
+            "samples": [
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.3,
+                "centerPixels": [
+                  14.1687767613028,
+                  413.89091411464244
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.5,
+                "centerPixels": [
+                  20.759766952034045,
+                  414.5068436047974
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.7,
+                "centerPixels": [
+                  27.32181070142649,
+                  415.12006804361107
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.3,
+                "centerPixels": [
+                  46.475221257622266,
+                  420.2462000647121
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.75,
+                "conservativeVisibleWidthFraction": 0.07361111111111111
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.5,
+                "centerPixels": [
+                  52.65122046062965,
+                  423.02372346286637
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.7,
+                "centerPixels": [
+                  58.77456849208157,
+                  425.77756812400526
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.3,
+                "centerPixels": [
+                  75.42789401127462,
+                  435.53115877459516
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.5,
+                "centerPixels": [
+                  80.43402930069394,
+                  439.28072593235913
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.7,
+                "centerPixels": [
+                  85.41044377616541,
+                  443.00801827828695
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.3,
+                "centerPixels": [
+                  99.3038859860054,
+                  451.5385573665948
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.5,
+                "centerPixels": [
+                  103.63106485296674,
+                  453.5279229526614
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.25,
+                "conservativeVisibleWidthFraction": 0.07083333333333333
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.7,
+                "centerPixels": [
+                  107.96185295276244,
+                  455.518947837734
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              }
+            ]
+          },
+          "objects": [
+            "b2a_frog_leg_white_nerve.003",
+            "b2a_frog_leg_nerve_tip.003"
+          ]
+        }
+      },
+      "machine": {
+        "objectCount": 29,
+        "projectedRealVertices": 3252,
+        "widthFraction": 0.3347300961214705,
+        "heightFraction": 0.16615071186313904,
+        "bounds": [
+          0.03763515033956871,
+          0.18692453724746155,
+          0.3723652464610392,
+          0.35307524911060056
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true,
+        "widthPass": true
+      },
+      "bodyRealVertexProjection": {
+        "objectCount": 11,
+        "projectedRealVertices": 6246,
+        "widthFraction": 0.7840340596609043,
+        "heightFraction": 0.2808571828944446,
+        "bounds": [
+          0.0779826841305114,
+          0.34957065430015266,
+          0.8620167437914158,
+          0.6304278371945973
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true
+      },
+      "forbiddenMetalObjectsVisible": [],
+      "toolContact": null,
+      "transparentOccluders": [
+        {
+          "object": "b2a_generator_glass_disc.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_glass_edge.002",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.016",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.017",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.018",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.019",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.020",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.021",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.022",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.023",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_collector_support.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        }
+      ],
+      "skippedCameraPlaneTriangles": [
+        {
+          "object": "floor.002",
+          "trianglesCrossingCameraPlane": 2,
+          "semanticId": 0
+        }
+      ],
+      "mask": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/配置再点検_02/row19投影面積検査/masks/row19-j05504.png"
+    },
+    {
+      "j": 5629,
+      "seconds": 187.63333333333333,
+      "reason": "white-spark",
+      "handOnScreen": false,
+      "camera": {
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.007505208253860474,
+          0.0,
+          0.42261824011802673,
+          -0.9063078165054321,
+          -0.9038406014442444,
+          0.0,
+          0.9063078165054321,
+          0.42261824011802673,
+          0.5431097149848938,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "lens": 32.7599983215332,
+        "shiftX": 0.0,
+        "shiftY": -0.10854166746139526,
+        "type": "PERSP"
+      },
+      "groups": {
+        "leg_body": {
+          "visible": true,
+          "pixels": 58259,
+          "areaFraction": 0.11238233024691358,
+          "bbox": {
+            "x0": 45,
+            "y0": 336,
+            "x1Exclusive": 465,
+            "y1Exclusive": 605
+          },
+          "widthFraction": 0.7777777777777778,
+          "heightFraction": 0.28020833333333334,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 596.1103920922739,
+            "visibleEssentialLengthPixels": 595.6110301703492,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 0.999162299586538,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 1194,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "criteria": {
+            "height": {
+              "threshold": 0.2,
+              "pass": true
+            },
+            "area": {
+              "threshold": 0.075,
+              "pass": true
+            },
+            "handPreservedPath": {
+              "threshold": 0.8,
+              "pass": true
+            }
+          },
+          "objects": [
+            "b2a_frog_leg_thigh.003",
+            "b2a_frog_leg_knee.003",
+            "b2a_frog_leg_shin.003",
+            "b2a_frog_leg_ankle_joint.002",
+            "b2a_frog_leg_foot.003",
+            "b2a_frog_leg_toe_0.003",
+            "b2a_frog_leg_toe_1.003",
+            "b2a_frog_leg_toe_2.003",
+            "b2a_frog_leg_toe_pad_0.002",
+            "b2a_frog_leg_toe_pad_1.002",
+            "b2a_frog_leg_toe_pad_2.002"
+          ]
+        },
+        "nerve": {
+          "visible": true,
+          "pixels": 5201,
+          "areaFraction": 0.010032793209876543,
+          "bbox": {
+            "x0": 0,
+            "y0": 391,
+            "x1Exclusive": 124,
+            "y1Exclusive": 476
+          },
+          "widthFraction": 0.22962962962962963,
+          "heightFraction": 0.08854166666666667,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 121.74934362914549,
+            "visibleEssentialLengthPixels": 121.74934362914549,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 1.0,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 246,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "thickness": {
+            "status": "measured",
+            "minimumVisibleWidthFraction": 0.06944444444444445,
+            "passes": true,
+            "allowedContactOrHandleSamplesExempted": 0,
+            "exemptionDefinition": "Only centers inside actual V-tip/outer-handle mesh silhouettes; measure main rod core, not junction overlap, regardless of whether a hand is present",
+            "sampling": "Each real poly-curve segment at 30/50/70%; perpendicular to projected tangent across complete viewport chord; conservative minus 1px",
+            "samples": [
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.3,
+                "centerPixels": [
+                  14.1687767613028,
+                  413.89091411464244
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.5,
+                "centerPixels": [
+                  20.759766952034045,
+                  414.5068436047974
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.7,
+                "centerPixels": [
+                  27.32181070142649,
+                  415.12006804361107
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.3,
+                "centerPixels": [
+                  46.475221257622266,
+                  420.2462000647121
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.75,
+                "conservativeVisibleWidthFraction": 0.07361111111111111
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.5,
+                "centerPixels": [
+                  52.65122046062965,
+                  423.02372346286637
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.7,
+                "centerPixels": [
+                  58.77456849208157,
+                  425.77756812400526
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.3,
+                "centerPixels": [
+                  75.42789401127462,
+                  435.53115877459516
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.5,
+                "centerPixels": [
+                  80.43402930069394,
+                  439.28072593235913
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.7,
+                "centerPixels": [
+                  85.41044377616541,
+                  443.00801827828695
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.3,
+                "centerPixels": [
+                  99.3038859860054,
+                  451.5385573665948
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.5,
+                "centerPixels": [
+                  103.63106485296674,
+                  453.5279229526614
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.25,
+                "conservativeVisibleWidthFraction": 0.07083333333333333
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.7,
+                "centerPixels": [
+                  107.96185295276244,
+                  455.518947837734
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              }
+            ]
+          },
+          "objects": [
+            "b2a_frog_leg_white_nerve.003",
+            "b2a_frog_leg_nerve_tip.003"
+          ]
+        }
+      },
+      "machine": {
+        "objectCount": 29,
+        "projectedRealVertices": 3252,
+        "widthFraction": 0.3347300961214705,
+        "heightFraction": 0.16610427808169356,
+        "bounds": [
+          0.03763515033956871,
+          0.18697097102890703,
+          0.3723652464610392,
+          0.35307524911060056
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true,
+        "widthPass": true
+      },
+      "bodyRealVertexProjection": {
+        "objectCount": 11,
+        "projectedRealVertices": 6246,
+        "widthFraction": 0.7840340596609043,
+        "heightFraction": 0.2808571828944446,
+        "bounds": [
+          0.0779826841305114,
+          0.34957065430015266,
+          0.8620167437914158,
+          0.6304278371945973
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true
+      },
+      "forbiddenMetalObjectsVisible": [],
+      "toolContact": null,
+      "transparentOccluders": [
+        {
+          "object": "b2a_generator_glass_disc.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_glass_edge.002",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.016",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.017",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.018",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.019",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.020",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.021",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.022",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.023",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_collector_support.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        }
+      ],
+      "skippedCameraPlaneTriangles": [
+        {
+          "object": "floor.002",
+          "trianglesCrossingCameraPlane": 2,
+          "semanticId": 0
+        }
+      ],
+      "mask": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/配置再点検_02/row19投影面積検査/masks/row19-j05629.png"
+    },
+    {
+      "j": 5733,
+      "seconds": 191.1,
+      "reason": "scalpel-contact",
+      "handOnScreen": true,
+      "camera": {
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.007505208253860474,
+          0.0,
+          0.42261824011802673,
+          -0.9063078165054321,
+          -0.9038406014442444,
+          0.0,
+          0.9063078165054321,
+          0.42261824011802673,
+          0.5431097149848938,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "lens": 32.7599983215332,
+        "shiftX": 0.0,
+        "shiftY": -0.10854166746139526,
+        "type": "PERSP"
+      },
+      "groups": {
+        "leg_body": {
+          "visible": true,
+          "pixels": 58259,
+          "areaFraction": 0.11238233024691358,
+          "bbox": {
+            "x0": 45,
+            "y0": 336,
+            "x1Exclusive": 465,
+            "y1Exclusive": 605
+          },
+          "widthFraction": 0.7777777777777778,
+          "heightFraction": 0.28020833333333334,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 596.1103920922739,
+            "visibleEssentialLengthPixels": 595.6110301703492,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 0.999162299586538,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 1194,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "criteria": {
+            "height": {
+              "threshold": 0.2,
+              "pass": true
+            },
+            "area": {
+              "threshold": 0.07,
+              "pass": true
+            },
+            "handPreservedPath": {
+              "threshold": 0.8,
+              "pass": true
+            }
+          },
+          "objects": [
+            "b2a_frog_leg_thigh.003",
+            "b2a_frog_leg_knee.003",
+            "b2a_frog_leg_shin.003",
+            "b2a_frog_leg_ankle_joint.002",
+            "b2a_frog_leg_foot.003",
+            "b2a_frog_leg_toe_0.003",
+            "b2a_frog_leg_toe_1.003",
+            "b2a_frog_leg_toe_2.003",
+            "b2a_frog_leg_toe_pad_0.002",
+            "b2a_frog_leg_toe_pad_1.002",
+            "b2a_frog_leg_toe_pad_2.002"
+          ]
+        },
+        "nerve": {
+          "visible": true,
+          "pixels": 5082,
+          "areaFraction": 0.00980324074074074,
+          "bbox": {
+            "x0": 0,
+            "y0": 391,
+            "x1Exclusive": 124,
+            "y1Exclusive": 476
+          },
+          "widthFraction": 0.22962962962962963,
+          "heightFraction": 0.08854166666666667,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 121.74934362914549,
+            "visibleEssentialLengthPixels": 121.74934362914549,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 1.0,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 246,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "thickness": {
+            "status": "measured",
+            "minimumVisibleWidthFraction": 0.06712962962962964,
+            "passes": true,
+            "allowedContactOrHandleSamplesExempted": 0,
+            "exemptionDefinition": "Only centers inside actual V-tip/outer-handle mesh silhouettes; measure main rod core, not junction overlap, regardless of whether a hand is present",
+            "sampling": "Each real poly-curve segment at 30/50/70%; perpendicular to projected tangent across complete viewport chord; conservative minus 1px",
+            "samples": [
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.3,
+                "centerPixels": [
+                  14.1687767613028,
+                  413.89091411464244
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 37.25,
+                "conservativeVisibleWidthFraction": 0.06712962962962964
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.5,
+                "centerPixels": [
+                  20.759766952034045,
+                  414.5068436047974
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.7,
+                "centerPixels": [
+                  27.32181070142649,
+                  415.12006804361107
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.3,
+                "centerPixels": [
+                  46.475221257622266,
+                  420.2462000647121
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.75,
+                "conservativeVisibleWidthFraction": 0.07361111111111111
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.5,
+                "centerPixels": [
+                  52.65122046062965,
+                  423.02372346286637
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.7,
+                "centerPixels": [
+                  58.77456849208157,
+                  425.77756812400526
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.3,
+                "centerPixels": [
+                  75.42789401127462,
+                  435.53115877459516
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.5,
+                "centerPixels": [
+                  80.43402930069394,
+                  439.28072593235913
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.7,
+                "centerPixels": [
+                  85.41044377616541,
+                  443.00801827828695
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.3,
+                "centerPixels": [
+                  99.3038859860054,
+                  451.5385573665948
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.5,
+                "centerPixels": [
+                  103.63106485296674,
+                  453.5279229526614
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.25,
+                "conservativeVisibleWidthFraction": 0.07083333333333333
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.7,
+                "centerPixels": [
+                  107.96185295276244,
+                  455.518947837734
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              }
+            ]
+          },
+          "objects": [
+            "b2a_frog_leg_white_nerve.003",
+            "b2a_frog_leg_nerve_tip.003"
+          ]
+        }
+      },
+      "machine": {
+        "objectCount": 29,
+        "projectedRealVertices": 3252,
+        "widthFraction": 0.3347300961214705,
+        "heightFraction": 0.16610515737724582,
+        "bounds": [
+          0.03763515033956871,
+          0.18697009173335477,
+          0.3723652464610392,
+          0.35307524911060056
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true,
+        "widthPass": true
+      },
+      "bodyRealVertexProjection": {
+        "objectCount": 11,
+        "projectedRealVertices": 6246,
+        "widthFraction": 0.7840340596609043,
+        "heightFraction": 0.2808571828944446,
+        "bounds": [
+          0.0779826841305114,
+          0.34957065430015266,
+          0.8620167437914158,
+          0.6304278371945973
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true
+      },
+      "forbiddenMetalObjectsVisible": [],
+      "toolContact": {
+        "actualModelTip": [
+          -0.19419243931770325,
+          -0.3314511775970459,
+          0.23736001551151276
+        ],
+        "nerveCurveCenter": [
+          -0.19419242441654205,
+          -0.3148912191390991,
+          0.23736000061035156
+        ],
+        "surfaceDistanceErrorM": 4.225821875064595e-08,
+        "tipTracksActualToolAnchor": true
+      },
+      "transparentOccluders": [
+        {
+          "object": "b2a_generator_glass_disc.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_glass_edge.002",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.016",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.017",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.018",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.019",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.020",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.021",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.022",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.023",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_collector_support.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        }
+      ],
+      "skippedCameraPlaneTriangles": [
+        {
+          "object": "floor.002",
+          "trianglesCrossingCameraPlane": 2,
+          "semanticId": 0
+        }
+      ],
+      "mask": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/配置再点検_02/row19投影面積検査/masks/row19-j05733.png"
+    },
+    {
+      "j": 5792,
+      "seconds": 193.06666666666666,
+      "reason": "strong-kick-peak",
+      "handOnScreen": true,
+      "camera": {
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.007505208253860474,
+          0.0,
+          0.42261824011802673,
+          -0.9063078165054321,
+          -0.9038406014442444,
+          0.0,
+          0.9063078165054321,
+          0.42261824011802673,
+          0.5431097149848938,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "lens": 32.7599983215332,
+        "shiftX": 0.0,
+        "shiftY": -0.10854166746139526,
+        "type": "PERSP"
+      },
+      "groups": {
+        "leg_body": {
+          "visible": true,
+          "pixels": 60840,
+          "areaFraction": 0.11736111111111111,
+          "bbox": {
+            "x0": 45,
+            "y0": 336,
+            "x1Exclusive": 500,
+            "y1Exclusive": 597
+          },
+          "widthFraction": 0.8425925925925926,
+          "heightFraction": 0.271875,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 590.1567883900169,
+            "visibleEssentialLengthPixels": 589.6571154294057,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 0.9991533216757968,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 1182,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "criteria": {
+            "height": {
+              "threshold": 0.2,
+              "pass": true
+            },
+            "area": {
+              "threshold": 0.07,
+              "pass": true
+            },
+            "handPreservedPath": {
+              "threshold": 0.8,
+              "pass": true
+            }
+          },
+          "objects": [
+            "b2a_frog_leg_thigh.003",
+            "b2a_frog_leg_knee.003",
+            "b2a_frog_leg_shin.003",
+            "b2a_frog_leg_ankle_joint.002",
+            "b2a_frog_leg_foot.003",
+            "b2a_frog_leg_toe_0.003",
+            "b2a_frog_leg_toe_1.003",
+            "b2a_frog_leg_toe_2.003",
+            "b2a_frog_leg_toe_pad_0.002",
+            "b2a_frog_leg_toe_pad_1.002",
+            "b2a_frog_leg_toe_pad_2.002"
+          ]
+        },
+        "nerve": {
+          "visible": true,
+          "pixels": 5082,
+          "areaFraction": 0.00980324074074074,
+          "bbox": {
+            "x0": 0,
+            "y0": 391,
+            "x1Exclusive": 124,
+            "y1Exclusive": 476
+          },
+          "widthFraction": 0.22962962962962963,
+          "heightFraction": 0.08854166666666667,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 121.74934362914549,
+            "visibleEssentialLengthPixels": 121.74934362914549,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 1.0,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 246,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "thickness": {
+            "status": "measured",
+            "minimumVisibleWidthFraction": 0.06712962962962964,
+            "passes": true,
+            "allowedContactOrHandleSamplesExempted": 0,
+            "exemptionDefinition": "Only centers inside actual V-tip/outer-handle mesh silhouettes; measure main rod core, not junction overlap, regardless of whether a hand is present",
+            "sampling": "Each real poly-curve segment at 30/50/70%; perpendicular to projected tangent across complete viewport chord; conservative minus 1px",
+            "samples": [
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.3,
+                "centerPixels": [
+                  14.1687767613028,
+                  413.89091411464244
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 37.25,
+                "conservativeVisibleWidthFraction": 0.06712962962962964
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.5,
+                "centerPixels": [
+                  20.759766952034045,
+                  414.5068436047974
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.7,
+                "centerPixels": [
+                  27.32181070142649,
+                  415.12006804361107
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.3,
+                "centerPixels": [
+                  46.475221257622266,
+                  420.2462000647121
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.75,
+                "conservativeVisibleWidthFraction": 0.07361111111111111
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.5,
+                "centerPixels": [
+                  52.65122046062965,
+                  423.02372346286637
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.7,
+                "centerPixels": [
+                  58.77456849208157,
+                  425.77756812400526
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.3,
+                "centerPixels": [
+                  75.42789401127462,
+                  435.53115877459516
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.5,
+                "centerPixels": [
+                  80.43402930069394,
+                  439.28072593235913
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.7,
+                "centerPixels": [
+                  85.41044377616541,
+                  443.00801827828695
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.3,
+                "centerPixels": [
+                  99.3038859860054,
+                  451.5385573665948
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.5,
+                "centerPixels": [
+                  103.63106485296674,
+                  453.5279229526614
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.25,
+                "conservativeVisibleWidthFraction": 0.07083333333333333
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.7,
+                "centerPixels": [
+                  107.96185295276244,
+                  455.518947837734
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              }
+            ]
+          },
+          "objects": [
+            "b2a_frog_leg_white_nerve.003",
+            "b2a_frog_leg_nerve_tip.003"
+          ]
+        }
+      },
+      "machine": {
+        "objectCount": 29,
+        "projectedRealVertices": 3252,
+        "widthFraction": 0.3347300961214705,
+        "heightFraction": 0.16609780329107646,
+        "bounds": [
+          0.03763515033956871,
+          0.18697744581952414,
+          0.3723652464610392,
+          0.35307524911060056
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true,
+        "widthPass": true
+      },
+      "bodyRealVertexProjection": {
+        "objectCount": 11,
+        "projectedRealVertices": 6246,
+        "widthFraction": 0.8477457162184918,
+        "heightFraction": 0.27215307522931415,
+        "bounds": [
+          0.0779826841305114,
+          0.34957065430015266,
+          0.9257284003490032,
+          0.6217237295294669
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true
+      },
+      "forbiddenMetalObjectsVisible": [],
+      "toolContact": {
+        "actualModelTip": [
+          -0.19419243931770325,
+          -0.3314511775970459,
+          0.23736001551151276
+        ],
+        "nerveCurveCenter": [
+          -0.19419242441654205,
+          -0.3148912191390991,
+          0.23736000061035156
+        ],
+        "surfaceDistanceErrorM": 4.225821875064595e-08,
+        "tipTracksActualToolAnchor": true
+      },
+      "transparentOccluders": [
+        {
+          "object": "b2a_generator_glass_disc.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_glass_edge.002",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.016",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.017",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.018",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.019",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.020",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.021",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.022",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.023",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_collector_support.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        }
+      ],
+      "skippedCameraPlaneTriangles": [
+        {
+          "object": "floor.002",
+          "trianglesCrossingCameraPlane": 2,
+          "semanticId": 0
+        }
+      ],
+      "mask": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/配置再点検_02/row19投影面積検査/masks/row19-j05792.png"
+    },
+    {
+      "j": 5805,
+      "seconds": 193.5,
+      "reason": "returned-to-rest",
+      "handOnScreen": true,
+      "camera": {
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.007505208253860474,
+          0.0,
+          0.42261824011802673,
+          -0.9063078165054321,
+          -0.9038406014442444,
+          0.0,
+          0.9063078165054321,
+          0.42261824011802673,
+          0.5431097149848938,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "lens": 32.7599983215332,
+        "shiftX": 0.0,
+        "shiftY": -0.10854166746139526,
+        "type": "PERSP"
+      },
+      "groups": {
+        "leg_body": {
+          "visible": true,
+          "pixels": 58259,
+          "areaFraction": 0.11238233024691358,
+          "bbox": {
+            "x0": 45,
+            "y0": 336,
+            "x1Exclusive": 465,
+            "y1Exclusive": 605
+          },
+          "widthFraction": 0.7777777777777778,
+          "heightFraction": 0.28020833333333334,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 596.1103920922739,
+            "visibleEssentialLengthPixels": 595.6110301703492,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 0.999162299586538,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 1194,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "criteria": {
+            "height": {
+              "threshold": 0.2,
+              "pass": true
+            },
+            "area": {
+              "threshold": 0.07,
+              "pass": true
+            },
+            "handPreservedPath": {
+              "threshold": 0.8,
+              "pass": true
+            }
+          },
+          "objects": [
+            "b2a_frog_leg_thigh.003",
+            "b2a_frog_leg_knee.003",
+            "b2a_frog_leg_shin.003",
+            "b2a_frog_leg_ankle_joint.002",
+            "b2a_frog_leg_foot.003",
+            "b2a_frog_leg_toe_0.003",
+            "b2a_frog_leg_toe_1.003",
+            "b2a_frog_leg_toe_2.003",
+            "b2a_frog_leg_toe_pad_0.002",
+            "b2a_frog_leg_toe_pad_1.002",
+            "b2a_frog_leg_toe_pad_2.002"
+          ]
+        },
+        "nerve": {
+          "visible": true,
+          "pixels": 5082,
+          "areaFraction": 0.00980324074074074,
+          "bbox": {
+            "x0": 0,
+            "y0": 391,
+            "x1Exclusive": 124,
+            "y1Exclusive": 476
+          },
+          "widthFraction": 0.22962962962962963,
+          "heightFraction": 0.08854166666666667,
+          "essentialVisibility": {
+            "essentialProjectedLengthPixels": 121.74934362914549,
+            "visibleEssentialLengthPixels": 121.74934362914549,
+            "allowedContactHandleLengthExcludedPixels": 0.0,
+            "offscreenEssentialLengthPixels": 0.0,
+            "visibleEssentialLengthFraction": 1.0,
+            "handHiddenEssentialLengthPixels": 0.0,
+            "handPreservedEssentialLengthFraction": 1.0,
+            "criterionQuantity": "handPreservedEssentialLengthFraction",
+            "sampledCenterlinePoints": 246,
+            "passes80Percent": true
+          },
+          "centerlineStatus": "measured",
+          "thickness": {
+            "status": "measured",
+            "minimumVisibleWidthFraction": 0.06712962962962964,
+            "passes": true,
+            "allowedContactOrHandleSamplesExempted": 0,
+            "exemptionDefinition": "Only centers inside actual V-tip/outer-handle mesh silhouettes; measure main rod core, not junction overlap, regardless of whether a hand is present",
+            "sampling": "Each real poly-curve segment at 30/50/70%; perpendicular to projected tangent across complete viewport chord; conservative minus 1px",
+            "samples": [
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.3,
+                "centerPixels": [
+                  14.1687767613028,
+                  413.89091411464244
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 37.25,
+                "conservativeVisibleWidthFraction": 0.06712962962962964
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.5,
+                "centerPixels": [
+                  20.759766952034045,
+                  414.5068436047974
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 0,
+                "fraction": 0.7,
+                "centerPixels": [
+                  27.32181070142649,
+                  415.12006804361107
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.3,
+                "centerPixels": [
+                  46.475221257622266,
+                  420.2462000647121
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.75,
+                "conservativeVisibleWidthFraction": 0.07361111111111111
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.5,
+                "centerPixels": [
+                  52.65122046062965,
+                  423.02372346286637
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 1,
+                "fraction": 0.7,
+                "centerPixels": [
+                  58.77456849208157,
+                  425.77756812400526
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.5,
+                "conservativeVisibleWidthFraction": 0.0712962962962963
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.3,
+                "centerPixels": [
+                  75.42789401127462,
+                  435.53115877459516
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 41.25,
+                "conservativeVisibleWidthFraction": 0.07453703703703704
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.5,
+                "centerPixels": [
+                  80.43402930069394,
+                  439.28072593235913
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 2,
+                "fraction": 0.7,
+                "centerPixels": [
+                  85.41044377616541,
+                  443.00801827828695
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 40.0,
+                "conservativeVisibleWidthFraction": 0.07222222222222222
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.3,
+                "centerPixels": [
+                  99.3038859860054,
+                  451.5385573665948
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.5,
+                "centerPixels": [
+                  103.63106485296674,
+                  453.5279229526614
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 39.25,
+                "conservativeVisibleWidthFraction": 0.07083333333333333
+              },
+              {
+                "object": "b2a_frog_leg_white_nerve.003",
+                "segment": 3,
+                "fraction": 0.7,
+                "centerPixels": [
+                  107.96185295276244,
+                  455.518947837734
+                ],
+                "status": "measured",
+                "visibleWidthPixels": 38.5,
+                "conservativeVisibleWidthFraction": 0.06944444444444445
+              }
+            ]
+          },
+          "objects": [
+            "b2a_frog_leg_white_nerve.003",
+            "b2a_frog_leg_nerve_tip.003"
+          ]
+        }
+      },
+      "machine": {
+        "objectCount": 29,
+        "projectedRealVertices": 3252,
+        "widthFraction": 0.3347300961214705,
+        "heightFraction": 0.1660908988889899,
+        "bounds": [
+          0.03763515033956871,
+          0.1869843502216107,
+          0.3723652464610392,
+          0.35307524911060056
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true,
+        "widthPass": true
+      },
+      "bodyRealVertexProjection": {
+        "objectCount": 11,
+        "projectedRealVertices": 6246,
+        "widthFraction": 0.7840340596609043,
+        "heightFraction": 0.2808571828944446,
+        "bounds": [
+          0.0779826841305114,
+          0.34957065430015266,
+          0.8620167437914158,
+          0.6304278371945973
+        ],
+        "allInCamera": true,
+        "widthMeasuredFromActualEvaluatedVertices": true
+      },
+      "forbiddenMetalObjectsVisible": [],
+      "toolContact": {
+        "actualModelTip": [
+          -0.19419243931770325,
+          -0.3314511775970459,
+          0.23736001551151276
+        ],
+        "nerveCurveCenter": [
+          -0.19419242441654205,
+          -0.3148912191390991,
+          0.23736000061035156
+        ],
+        "surfaceDistanceErrorM": 4.225821875064595e-08,
+        "tipTracksActualToolAnchor": true
+      },
+      "transparentOccluders": [
+        {
+          "object": "b2a_generator_glass_disc.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_glass_edge.002",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.016",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.017",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.018",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.019",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.020",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.021",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.022",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_radial_etch.023",
+          "material": "b2a_s3_glass_rim.002",
+          "alpha": 0.6700000166893005,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        },
+        {
+          "object": "b2a_generator_collector_support.002",
+          "material": "b2a_s3_glass.002",
+          "alpha": 0.12999999523162842,
+          "treatment": "opaque conservative occluder; no transparency-based pass"
+        }
+      ],
+      "skippedCameraPlaneTriangles": [
+        {
+          "object": "floor.002",
+          "trianglesCrossingCameraPlane": 2,
+          "semanticId": 0
+        }
+      ],
+      "mask": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/配置再点検_02/row19投影面積検査/masks/row19-j05805.png"
+    }
+  ],
+  "failures": [],
+  "completed": true,
+  "limitations": [
+    "No rendering or ears/equal-speed video review",
+    "Geometric mask excludes composited2D labels and defocus",
+    "Transparent surfaces treated conservatively as opaque occluders",
+    "Only five critical mask samples; not every-frame visibility certification"
+  ],
+  "kick": {
+    "row": 19,
+    "model": "frog",
+    "actualEvent": true,
+    "intendedAngleDegrees": 30,
+    "maxMeasuredKneeChangeDegrees": 29.91469518718718,
+    "cameraStableThroughout": true,
+    "maximumTipDistanceOverHeight": 0.12981584515421843,
+    "cameraChangeFrames": [],
+    "actualFrameWindowDefinition": "floor(spokenStart*30)-1 through ceil(actionEnd*30)+1, inclusive; actual cameras left unchanged",
+    "maximumTipVerticalChangeOverHeight": 0.12508423179720687,
+    "distanceDefinition": "Maximum pairwise distance among actual encoded-frame tip positions, including return to rest; never camera-motion-adjusted",
+    "passesStrongMotion10Percent": true,
+    "weakFiveDegreeException": false,
+    "literalTenPercentPassEvenForWeak": true,
+    "angleMatchesIntentWithinOneDegree": true,
+    "records": [
+      {
+        "frame": 5786,
+        "time": 192.86666666666667,
+        "tipPixels": [
+          465.322007536637,
+          557.8744097047004
+        ],
+        "worldPoint": [
+          0.1774875819683075,
+          -0.2817712426185608,
+          0.07820001244544983
+        ],
+        "inFront": true,
+        "kneeYDegrees": -0.0,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5787,
+        "time": 192.9,
+        "tipPixels": [
+          465.322007536637,
+          557.8744097047004
+        ],
+        "worldPoint": [
+          0.1774875819683075,
+          -0.2817712426185608,
+          0.07820001244544983
+        ],
+        "inFront": true,
+        "kneeYDegrees": -0.0,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5788,
+        "time": 192.93333333333334,
+        "tipPixels": [
+          466.51093202975625,
+          555.9421540327688
+        ],
+        "worldPoint": [
+          0.17832711338996887,
+          -0.2817712426185608,
+          0.08025281876325607
+        ],
+        "inFront": true,
+        "kneeYDegrees": -0.5452799881774757,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5789,
+        "time": 192.96666666666667,
+        "tipPixels": [
+          478.3405801908397,
+          533.849590642262
+        ],
+        "worldPoint": [
+          0.1862778663635254,
+          -0.2817712426185608,
+          0.10339498519897461
+        ],
+        "inFront": true,
+        "kneeYDegrees": -6.5641772075028495,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5790,
+        "time": 193.0,
+        "tipPixels": [
+          491.84975296222086,
+          496.2933599625311
+        ],
+        "worldPoint": [
+          0.19379131495952606,
+          -0.2817712426185608,
+          0.14139682054519653
+        ],
+        "inFront": true,
+        "kneeYDegrees": -16.09912299638794,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5791,
+        "time": 193.03333333333333,
+        "tipPixels": [
+          498.14111975600076,
+          458.1589952487283
+        ],
+        "worldPoint": [
+          0.19499540328979492,
+          -0.2817712426185608,
+          0.1783529818058014
+        ],
+        "inFront": true,
+        "kneeYDegrees": -25.19950141442556,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5792,
+        "time": 193.06666666666666,
+        "tipPixels": [
+          498.66164253578177,
+          437.7935471793818
+        ],
+        "worldPoint": [
+          0.19331048429012299,
+          -0.2817712426185608,
+          0.19745184481143951
+        ],
+        "inFront": true,
+        "kneeYDegrees": -29.91469518718718,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5793,
+        "time": 193.1,
+        "tipPixels": [
+          498.68997884717317,
+          439.3364177318606
+        ],
+        "worldPoint": [
+          0.19349192082881927,
+          -0.2817712426185608,
+          0.1960199773311615
+        ],
+        "inFront": true,
+        "kneeYDegrees": -29.559836123953755,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5794,
+        "time": 193.13333333333333,
+        "tipPixels": [
+          498.6876224102952,
+          445.83578458846426
+        ],
+        "worldPoint": [
+          0.19416028261184692,
+          -0.2817712426185608,
+          0.18996131420135498
+        ],
+        "inFront": true,
+        "kneeYDegrees": -28.061183337026236,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5795,
+        "time": 193.16666666666666,
+        "tipPixels": [
+          498.2875056348766,
+          456.0128235669582
+        ],
+        "worldPoint": [
+          0.19489116966724396,
+          -0.2817712426185608,
+          0.18038612604141235
+        ],
+        "inFront": true,
+        "kneeYDegrees": -25.70002962963514,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5796,
+        "time": 193.2,
+        "tipPixels": [
+          497.08419247308467,
+          468.8746048075818
+        ],
+        "worldPoint": [
+          0.1952500343322754,
+          -0.2817712426185608,
+          0.1681283712387085
+        ],
+        "inFront": true,
+        "kneeYDegrees": -22.684709431844198,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5797,
+        "time": 193.23333333333332,
+        "tipPixels": [
+          494.769775113857,
+          483.4128051386175
+        ],
+        "worldPoint": [
+          0.19486652314662933,
+          -0.2817712426185608,
+          0.15405793488025665
+        ],
+        "inFront": true,
+        "kneeYDegrees": -19.223557173717133,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5798,
+        "time": 193.26666666666668,
+        "tipPixels": [
+          491.2293947654437,
+          498.6328124941746
+        ],
+        "worldPoint": [
+          0.19351865351200104,
+          -0.2817712426185608,
+          0.13907723128795624
+        ],
+        "inFront": true,
+        "kneeYDegrees": -15.524903870223092,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5799,
+        "time": 193.3,
+        "tipPixels": [
+          486.5875361830315,
+          513.591107746159
+        ],
+        "worldPoint": [
+          0.19118517637252808,
+          -0.2817712426185608,
+          0.12409812957048416
+        ],
+        "inFront": true,
+        "kneeYDegrees": -11.7970856589731,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5800,
+        "time": 193.33333333333334,
+        "tipPixels": [
+          481.20899423765746,
+          527.4297835772882
+        ],
+        "worldPoint": [
+          0.18806345760822296,
+          -0.2817712426185608,
+          0.11000843346118927
+        ],
+        "inFront": true,
+        "kneeYDegrees": -8.248432701162647,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5801,
+        "time": 193.36666666666667,
+        "tipPixels": [
+          475.6629799230412,
+          539.3961817239796
+        ],
+        "worldPoint": [
+          0.18455274403095245,
+          -0.2817712426185608,
+          0.09764110296964645
+        ],
+        "inFront": true,
+        "kneeYDegrees": -5.087279853742292,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5802,
+        "time": 193.4,
+        "tipPixels": [
+          470.66082755421337,
+          548.8387845051923
+        ],
+        "worldPoint": [
+          0.1812058389186859,
+          -0.2817712426185608,
+          0.08775925636291504
+        ],
+        "inFront": true,
+        "kneeYDegrees": -2.5219602661152907,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5803,
+        "time": 193.43333333333334,
+        "tipPixels": [
+          466.97564924496703,
+          555.1751211832515
+        ],
+        "worldPoint": [
+          0.1786535531282425,
+          -0.2817712426185608,
+          0.08106640726327896
+        ],
+        "inFront": true,
+        "kneeYDegrees": -0.7608075145717272,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5804,
+        "time": 193.46666666666667,
+        "tipPixels": [
+          465.34872819828223,
+          557.831481705545
+        ],
+        "worldPoint": [
+          0.17750652134418488,
+          -0.2817712426185608,
+          0.07824566960334778
+        ],
+        "inFront": true,
+        "kneeYDegrees": -0.01215472183443437,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5805,
+        "time": 193.5,
+        "tipPixels": [
+          465.322007536637,
+          557.8744097047004
+        ],
+        "worldPoint": [
+          0.1774875819683075,
+          -0.2817712426185608,
+          0.07820001244544983
+        ],
+        "inFront": true,
+        "kneeYDegrees": -0.0,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      },
+      {
+        "frame": 5806,
+        "time": 193.53333333333333,
+        "tipPixels": [
+          465.322007536637,
+          557.8744097047004
+        ],
+        "worldPoint": [
+          0.1774875819683075,
+          -0.2817712426185608,
+          0.07820001244544983
+        ],
+        "inFront": true,
+        "kneeYDegrees": -0.0,
+        "camera": {
+          "matrixWorld": [
+            1.0,
+            0.0,
+            0.0,
+            0.007505208253860474,
+            0.0,
+            0.42261824011802673,
+            -0.9063078165054321,
+            -0.9038406014442444,
+            0.0,
+            0.9063078165054321,
+            0.42261824011802673,
+            0.5431097149848938,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lens": 32.7599983215332,
+          "shiftX": 0.0,
+          "shiftY": -0.10854166746139526,
+          "type": "PERSP"
+        },
+        "stateName": "b2a_frog_rod_contact"
+      }
+    ]
+  },
+  "spark": {
+    "frames": [
+      {
+        "j": 5624,
+        "visible": false
+      },
+      {
+        "j": 5625,
+        "visible": false
+      },
+      {
+        "j": 5626,
+        "visible": true
+      },
+      {
+        "j": 5627,
+        "visible": true
+      },
+      {
+        "j": 5628,
+        "visible": true
+      },
+      {
+        "j": 5629,
+        "visible": true
+      },
+      {
+        "j": 5630,
+        "visible": true
+      },
+      {
+        "j": 5631,
+        "visible": true
+      },
+      {
+        "j": 5632,
+        "visible": false
+      },
+      {
+        "j": 5633,
+        "visible": false
+      }
+    ],
+    "visibleFrames": [
+      5626,
+      5627,
+      5628,
+      5629,
+      5630,
+      5631
+    ],
+    "visibleCount": 6,
+    "countPass": true,
+    "contiguous": true,
+    "materials": [
+      {
+        "material": "b2a_s4r3_row19_white_spark",
+        "base": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "emission": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "strength": 5.0
+      }
+    ],
+    "whiteEmissiveMaterialPass": true
+  },
+  "rotorAndCrank": [
+    {
+      "seconds": 184.81133333333338,
+      "discY": 0.0,
+      "crankY": 0.0
+    },
+    {
+      "seconds": 185.16133333333337,
+      "discY": 1.4294246435165405,
+      "crankY": 1.4294246435165405
+    }
+  ],
+  "rotorAndCrankMove": true,
+  "elapsedSeconds": 15.981,
+  "allSampledApplicableCriteriaPass": true
+}

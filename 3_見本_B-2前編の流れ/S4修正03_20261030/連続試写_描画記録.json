@@ -1,0 +1,209 @@
+{
+  "completed": true,
+  "result": {
+    "stage": "S3-quality continuous trials",
+    "resolution": [
+      540,
+      960
+    ],
+    "samples": 4,
+    "fps": 30,
+    "windows": [
+      {
+        "id": "correction-1",
+        "fromFrame": 3482,
+        "toFrameExclusive": 3802,
+        "criticalFrames": [
+          {
+            "j": 3618,
+            "label": "rub"
+          },
+          {
+            "j": 3669,
+            "label": "charges"
+          },
+          {
+            "j": 3683,
+            "label": "spark"
+          },
+          {
+            "j": 3689,
+            "label": "empty"
+          }
+        ]
+      },
+      {
+        "id": "correction-2",
+        "fromFrame": 5490,
+        "toFrameExclusive": 5850,
+        "criticalFrames": [
+          {
+            "j": 5556,
+            "label": "crank"
+          },
+          {
+            "j": 5627,
+            "label": "white-spark"
+          },
+          {
+            "j": 5730,
+            "label": "scalpel"
+          },
+          {
+            "j": 5786,
+            "label": "kick-before"
+          },
+          {
+            "j": 5792,
+            "label": "kick-peak"
+          },
+          {
+            "j": 5805,
+            "label": "kick-return"
+          }
+        ]
+      },
+      {
+        "id": "correction-3",
+        "fromFrame": 6273,
+        "toFrameExclusive": 7008,
+        "criticalFrames": [
+          {
+            "j": 6457,
+            "label": "hypothesis-before"
+          },
+          {
+            "j": 6470,
+            "label": "hypothesis-mark"
+          },
+          {
+            "j": 6525,
+            "label": "single-pulse"
+          },
+          {
+            "j": 6838,
+            "label": "path-return"
+          },
+          {
+            "j": 6874,
+            "label": "one-loop-start"
+          },
+          {
+            "j": 6910,
+            "label": "one-loop-middle"
+          },
+          {
+            "j": 6947,
+            "label": "one-loop-end"
+          }
+        ]
+      },
+      {
+        "id": "correction-4",
+        "fromFrame": 8532,
+        "toFrameExclusive": 8895,
+        "criticalFrames": [
+          {
+            "j": 8630,
+            "label": "smoke-before"
+          },
+          {
+            "j": 8635,
+            "label": "smoke-lamp-waves-foot"
+          },
+          {
+            "j": 8647,
+            "label": "lamp-off"
+          },
+          {
+            "j": 8785,
+            "label": "single-underside"
+          },
+          {
+            "j": 8798,
+            "label": "no-alarm-smoke"
+          }
+        ]
+      },
+      {
+        "id": "correction-5",
+        "fromFrame": 11880,
+        "toFrameExclusive": 12390,
+        "criticalFrames": [
+          {
+            "j": 12245,
+            "label": "glyph-before-strike"
+          },
+          {
+            "j": 12251,
+            "label": "glyph-and-label-strike"
+          }
+        ]
+      }
+    ],
+    "rendered": 2288,
+    "allRequestedFrames": true,
+    "reuse": {
+      "last": "5dba03e20a9281c5a67f2098f5c23b8d8edeed89d88fd77af9f2ab4f089087ad",
+      "file": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/blender/desk/12389.jpg",
+      "verifiedRows": [
+        13,
+        19,
+        22,
+        27,
+        36
+      ],
+      "disabledRows": [],
+      "drawn": 1605,
+      "reused": 683,
+      "proofs": [
+        {
+          "j": 3683,
+          "row": 13,
+          "sameVisibleState": true,
+          "actualRenderedJpegByteEqual": false,
+          "actualRenderedJpegImagePayloadByteEqual": true,
+          "excludedMetadata": "JPEG COM only; all image-coding bytes and entropy scan remain exact"
+        },
+        {
+          "j": 5491,
+          "row": 19,
+          "sameVisibleState": true,
+          "actualRenderedJpegByteEqual": false,
+          "actualRenderedJpegImagePayloadByteEqual": true,
+          "excludedMetadata": "JPEG COM only; all image-coding bytes and entropy scan remain exact"
+        },
+        {
+          "j": 6570,
+          "row": 22,
+          "sameVisibleState": true,
+          "actualRenderedJpegByteEqual": false,
+          "actualRenderedJpegImagePayloadByteEqual": true,
+          "excludedMetadata": "JPEG COM only; all image-coding bytes and entropy scan remain exact"
+        },
+        {
+          "j": 8533,
+          "row": 27,
+          "sameVisibleState": true,
+          "actualRenderedJpegByteEqual": false,
+          "actualRenderedJpegImagePayloadByteEqual": true,
+          "excludedMetadata": "JPEG COM only; all image-coding bytes and entropy scan remain exact"
+        },
+        {
+          "j": 11881,
+          "row": 36,
+          "sameVisibleState": true,
+          "actualRenderedJpegByteEqual": false,
+          "actualRenderedJpegImagePayloadByteEqual": true,
+          "excludedMetadata": "JPEG COM only; all image-coding bytes and entropy scan remain exact"
+        }
+      ]
+    }
+  },
+  "cache": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030",
+  "manifest": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/連続試写_manifest.json",
+  "start": "2026-10-30T19:21:26+0900",
+  "end": "2026-10-30T20:30:16+0900",
+  "elapsedWallSeconds": 4130.0941569805145,
+  "sourceVoiceCaptionsBgmChanged": false
+}

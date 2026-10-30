@@ -1,0 +1,109 @@
+{
+  "id": "ys-chain-b2a_gpt_20261029",
+  "variant": "v01",
+  "trialCache": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030",
+  "manifestFile": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/連続試写_manifest.json",
+  "manifestSha256": "708d337a683ac3fb0aa7361b9617f99ad75b54570c005361acff6c3f7da86af5",
+  "immutableAudioReceipt": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S4r03trial_v01-frozen-input-and-audio-reuse_20261030.json",
+  "producerSnapshot": {
+    "sourceStage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-b2a-s4r03-stage-cacheexact_gpt_20261030.mjs",
+    "sourceStageSha256": "4033475fded016d8c82482b7ea72184e64e79e5a08f991b403780ec26c03b574",
+    "sourceOverlay": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-b2a-s4r03-overlay_gpt_20261030.mjs",
+    "sourceOverlaySha256": "3f3e35790ede4e29888d9ef4bd2bbabfbda1a0c8622241ec1fe8fdaddc7c380c",
+    "trialStage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-b2a-r03trial-stage_v01_gpt_20261030.mjs",
+    "trialStageSha256": "13b2641264dc8d3443943a40ca136bf04b717ecebfc3e5ba07f3450e2c24f6ab",
+    "trialOverlay": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/desk-b2a-r03trial-overlay_v01_gpt_20261030.mjs",
+    "trialOverlaySha256": "d3e117efca331abaa9d4ce2bf93d89aa263a5a144f85f3f7659a305d2970348d",
+    "onlySourceDifferences": "Trial CACHE constant, local wrapper import/hook, and fresh trial reuse-receipt path"
+  },
+  "changedNativeFrames": 2288,
+  "nativeResolution": [
+    540,
+    960
+  ],
+  "fps": 30,
+  "windows": [
+    {
+      "id": "correction-1",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-1.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-1.export.json",
+      "fromFrame": 3482,
+      "toFrameExclusive": 3802,
+      "frames": 320,
+      "criticalFrames": [
+        3618,
+        3669,
+        3683,
+        3689
+      ]
+    },
+    {
+      "id": "correction-2",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.export.json",
+      "fromFrame": 5490,
+      "toFrameExclusive": 5850,
+      "frames": 360,
+      "criticalFrames": [
+        5556,
+        5627,
+        5730,
+        5786,
+        5792,
+        5805
+      ]
+    },
+    {
+      "id": "correction-3",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-3.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-3.export.json",
+      "fromFrame": 6273,
+      "toFrameExclusive": 7008,
+      "frames": 735,
+      "criticalFrames": [
+        6457,
+        6470,
+        6525,
+        6838,
+        6874,
+        6910,
+        6947
+      ]
+    },
+    {
+      "id": "correction-4",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-4.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-4.export.json",
+      "fromFrame": 8532,
+      "toFrameExclusive": 8895,
+      "frames": 363,
+      "criticalFrames": [
+        8630,
+        8635,
+        8647,
+        8785,
+        8798
+      ]
+    },
+    {
+      "id": "correction-5",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-5.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-5.export.json",
+      "fromFrame": 11880,
+      "toFrameExclusive": 12390,
+      "frames": 510,
+      "criticalFrames": [
+        12245,
+        12251
+      ]
+    }
+  ],
+  "output": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01",
+  "backup": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/連続試写_修正03_v01",
+  "allDeclaredCriticalFramesCovered": true,
+  "originalAudioAndTimingUnchanged": true,
+  "oldCachesWrittenByThisHelper": false,
+  "earsPerformed": false,
+  "allVisualsReviewed": false,
+  "scope": "Five continuous S3-quality exact-clock trials assembled from root-rendered frames. Generation is not visual review or final S4 acceptance."
+}

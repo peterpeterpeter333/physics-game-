@@ -1,0 +1,137 @@
+{
+  "createdUtc": "2026-10-29T14:35:55.396Z",
+  "episode": "B-2前編",
+  "purpose": "Name the actual primary in all 26 quality-check shot-plan entries; no media regeneration",
+  "directory": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/最終差分_撮影表物体名",
+  "precedingBackups": [
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/確定キャッシュ",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/制作ソース",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/最終差分_布27コマ"
+  ],
+  "previousPlan": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/shot-plan-before-named-primary.json",
+  "previousPlanSha256": "797f4bc3bc0708c7cc6b4b54710f05910f61e90e803553b24103ef0dbc726877",
+  "planSha256": "44f9a99eaaeb5b30914bbffa2fbeae55e93e5ba407476194ef4f2c7424b02ede",
+  "stageSourceSha256": "832587994cfc2f2a41f7aacff80dcc167684f5d43a04ecc718fe0a1aed7cb147",
+  "copiedPayloadFiles": 2,
+  "copiedPayloadTotalBytes": 30970,
+  "payload": [
+    {
+      "path": "確定キャッシュ/shot-plan.json",
+      "sha256": "44f9a99eaaeb5b30914bbffa2fbeae55e93e5ba407476194ef4f2c7424b02ede",
+      "bytes": 6061
+    },
+    {
+      "path": "制作ソース/scripts/umech/desk-b2a-s3-stage_gpt_20261029.mjs",
+      "sha256": "832587994cfc2f2a41f7aacff80dcc167684f5d43a04ecc718fe0a1aed7cb147",
+      "bytes": 24909
+    }
+  ],
+  "planEntries": 26,
+  "namedPrimaryEntries": 26,
+  "primaryAssignmentsAdded": 8,
+  "changedEntries": [
+    {
+      "masterRow": 19,
+      "cue": "cb2agpt-r19:a",
+      "word": "ピクットケッタ",
+      "minWidth": 0.55,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_generator,b2a_frog,b2a_assistant",
+      "changedFields": [
+        "primary"
+      ]
+    },
+    {
+      "masterRow": 25,
+      "cue": "cb2agpt-r25:b",
+      "word": "ツヨクウゴイタ",
+      "minWidth": 0.7,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_frog_same,b2a_frog",
+      "changedFields": [
+        "primary"
+      ]
+    },
+    {
+      "masterRow": 29,
+      "cue": "cb2agpt-r29:b",
+      "word": "アツガミ",
+      "minWidth": 0.5,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_unit",
+      "changedFields": [
+        "primary"
+      ]
+    },
+    {
+      "masterRow": 30,
+      "cue": "cb2agpt-r30:a",
+      "word": "ユビ",
+      "minWidth": 0.5,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_unit",
+      "changedFields": [
+        "primary"
+      ]
+    },
+    {
+      "masterRow": 31,
+      "cue": "cb2agpt-r31:a",
+      "word": "ナンジュックミモカサネマシタ",
+      "minWidth": 0.5,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_pile",
+      "changedFields": [
+        "primary"
+      ]
+    },
+    {
+      "masterRow": 32,
+      "cue": "cb2agpt-r32:a",
+      "word": "ビリット",
+      "minWidth": 0.5,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_pile,b2a_volta",
+      "changedFields": [
+        "primary"
+      ]
+    },
+    {
+      "masterRow": 38,
+      "cue": "cb2agpt-r38:a",
+      "word": "テガミデ",
+      "minWidth": 0.5,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_map",
+      "changedFields": [
+        "primary"
+      ]
+    },
+    {
+      "masterRow": 39,
+      "cue": "cb2agpt-r39:b",
+      "word": "サワッテイルアイダ",
+      "minWidth": 0.7,
+      "beforePrimary": null,
+      "afterPrimary": "b2a_pile,b2a_glass",
+      "changedFields": [
+        "primary"
+      ]
+    }
+  ],
+  "stageSourceChangedLines": 8,
+  "minWidthUnchanged": true,
+  "cueAndWordTimingKeysUnchanged": true,
+  "noRawVideoAudioSubtitleChanges": true,
+  "noExtraFrameAuditRun": true,
+  "copyVerification": {
+    "allBytesEqual": true,
+    "allInodesIndependent": true,
+    "allLinkCountsOne": true,
+    "noSymlinkOrHardlink": true
+  },
+  "qualityGateStatus": "Re-running by root; this manifest does not claim a PASS or lower any threshold",
+  "oldBackupsModified": false,
+  "restoreOrder": "Original full backup -> cloth 27-frame delta -> this shot-plan/source delta, only into a separate new restore directory",
+  "regenerationNote": "Manual cache scope strings are retained; the updated generator produces named-primary scope text for these eight rows. Do not rerun prepare() against this existing immutable cache without reconciling that descriptive metadata. It does not alter video or thresholds."
+}

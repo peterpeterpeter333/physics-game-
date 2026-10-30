@@ -1,0 +1,21 @@
+{
+  "checkedAtUtc": "2026-10-30 03:08:51 UTC",
+  "command": [
+    "/Users/ken/Library/Application Support/physics-quest-tools/pyenv/bin/python",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/prepare-b2a-s4final-frozen-audio_gpt_20261030.py",
+    "--verify"
+  ],
+  "exitCode": 0,
+  "result": {
+    "mode": "read-only current manifest verification",
+    "criticalFileCount": 18,
+    "protectedSourceCount": 33,
+    "mismatches": [],
+    "pass": true
+  },
+  "receipt": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4final-frozen-input-and-audio-reuse_20261030.json",
+  "scope": "Read-only immutable input/voice/subtitle clocks/audio-v4 integrity verification at final-report preparation time only. No final MP4 quality claim; ear listening not performed.",
+  "audioRegenerated": false,
+  "remixed": false,
+  "earsPerformed": false
+}

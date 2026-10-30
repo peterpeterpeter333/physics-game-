@@ -1,0 +1,126 @@
+「技術の疑問の鎖」1-1（第4版）を作る担当です。試作の1本です。
+作業ディレクトリ：/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series
+- コミット・push しない。アプリのコードは触らない。
+- 他の動画の書き出しを、1画素も1サンプルも変えない。新しい仕組みは、新しいファイルか、この動画だけに効く分岐で作る。
+- 変えた既存ファイルがあれば、ys-chain-00b1v3 と ys-deep-12 が変更前と同じに書き出されることを cmp で確かめる。
+
+**背景**
+- 第3版「女王の暗号は、なぜ破られた？」（ys-chain-00b1v3）へのユーザーの指示は、次の2つ。
+  - ユーモアと映像の変化を入れる。
+  - YouTube の「無限の机」を全部1コマずつ調べ、取り入れられる所を極力取り入れる。
+- 調べた結果を受けて、統括の Claude が台本を書き直した。
+
+**まず読む**
+1. 正本：docs/video-revision-20260924/deep/技術の疑問の鎖_1-1_第4版_ナレーション.md
+   - 冒頭の「取り入れること」「登場する二人」、表、検算を全部読む。
+   - 字幕の文言は一字一句このまま、変えない。
+   - 1 cue が3文以上なら、文の区切りで分けてよい。
+2. 分析：docs/video-revision-20260924/deep/無限の机_分析_2026-10-21.md（全部）
+   - 数値（カット、カメラ、字幕の大きさ・位置、音量、構成の型、ユーモアの型）を、作りの目安にする。
+   - 元の動画の絵・文・音を写さない。学ぶのは作り方だけ。
+3. 第3版：
+   - ytseries/chain-00b1v3.mjs、scripts/umech/yt1-chain-00b1v3-diagrams.mjs
+   - 二人の声：scripts/render-dialogue-audio.py ほか。
+   - 字幕と二人の印：scripts/umech/vert-dialogue.mjs
+   - 得点板：scripts/umech/chain-score.mjs
+   - 音：scripts/umech/mix-chain3-audio.py
+   - 長い暗号文と頻度、assert の部品。
+   - これらは使い回してよい。変えるときは新しいファイルにする。
+4. 手順書：docs/video-revision-20260924/deep/AGENT-技術の疑問の鎖.md、AGENT-深掘りショート.md
+   - Blender の組み込み：scripts/blender/、scripts/umech/blender-clip.mjs
+
+**ID と出力**
+- ID は ys-chain-1-1v4、series「技術の疑問の鎖 1-1 ｜ 暗号の2000年」、題「女王を処刑台に送った手紙」。
+- 出力：~/Downloads/physics-quest-youtube/技術の疑問の鎖/1-1_女王を処刑台に送った手紙.mp4
+  - 第3版の mp4 は消さない。旧版/ に「_第3版」を付けて移す。
+- ChatGPT 用：~/Downloads/physics-quest-特別編_台本/技術の疑問の鎖/
+
+**作りの要点**（正本の「取り入れること」の8項目を全部やる）
+- **舞台**
+  - Blender で「机の上」を作る。木の机、白っぽい壁、暖かい光、背景のぼけ（被写界深度）。
+  - 物はこの机の上に置く：手紙、たる、木の円板2枚、文字のタイル、巻物、古い本、ろうそく、得点板。
+  - 写真のようでなくてよい。すっきりした、温かい模型の見た目にする。
+  - 色の意味を固定する：平文は白、暗号文は橙、鍵は青。
+- **カメラは止めない**
+  - 寄り・引き・回り込みを続ける。画の変化は2〜3秒に1回。
+  - 図（数・表・塔）は、机の上の物として 3D で見せるか、3D の上に重ねる。
+- **手**
+  - 簡単な手のモデルでよい（ミトンのような形でも可）。封を切る、円板を回す、タイルをひっくり返す、羽根ペンで書く。
+  - 難しければ、物だけが動く形でもよい。その場合は理由を報告する。
+- **0秒から動き、声は0.3秒以内に入れる。**
+- **笑い**：ナレーションは真顔、絵で笑わせる。
+  - 円板の猛スピード回転（行9）
+  - 机から床まで伸びる巻物（行12）
+  - カイの得意顔・困り顔・がっくり顔、ミオのじと目・きらきら顔
+- **顔**
+  - カイとミオの、表情のある簡単な顔の絵を作る。表情は、得意・困る・驚く・ひらめく・じと目・がっくり・腕まくり。
+  - 節目で、画面いっぱいにアップにする（1話に4〜8回）。
+  - 2D の立ち絵の差し替えでよい。色はカイが青、ミオが桃色。
+- **字幕**
+  - 今の4行をやめる。2行まで、1行12字前後にする。
+  - 声に合わせて、0.5〜2秒ごとに次の区切りへ替える（声の窓の部品を使う）。
+  - 位置は画面の高さの60〜72%あたり。白の太字に、薄い影。文字は 48px 以上。
+  - 名前の色の印は残す。
+  - 題の大きな帯は付けない。series と題は、冒頭の2秒だけ小さく出して消してよい。
+  - deep-lint・chain-dlg-lint の決まりと合わない所は、この動画用の lint を新しいファイルで作る。文言が正本と同じことは、必ず機械で確かめる。
+- **音**
+  - 声の下に、音楽を途切れず流す（無音を作らない）。全体を −14 LUFS 前後にする。
+  - 解ける瞬間（行22）と結末（行27）で、音楽を変える。
+  - 得点が入る時は、小さな効果音。
+- **最後の1〜2秒は、冒頭の手紙に戻る。**
+- **話す速さ**
+  - 声の速さはエンジンの標準のまま。測った字/秒を報告する。「無限の机」の中央値は 6.1 字/秒。
+  - 遅くは絶対にしない。速くするかどうかは、統括が決める。
+
+**決まり**
+- 数・計算は assert で確かめる（カエサル、26!、1300万年、挑戦の暗号、塔の高さ）。
+- 誇張には注記を付ける。手紙の記号は「再現」と注記する。
+- 正本の誤りや分かりにくさに気付いたら、直さずに報告する。
+
+**確認**
+- 手順書の確認を全部やる。lint、読み 0、prosody 0（女声も）、mxr-review 全ページ、qx-verify 0、1秒ごとの全コマ一覧を全部見る。
+- 直したら、直した後の版で全部見直す。
+- 画の変化の間隔、字幕の替わり方、カット数を測って報告する。「無限の机」の数値と並べる。
+- 音量（LUFS）と無音の数も、数値で報告する。耳では聞けないので、そう書く。
+- Blender の書き出し時間を記録する。長くかかるときは、途中で止めずに、残り時間の見込みを統括に知らせる。
+
+**報告は短く**
+- ID・長さ・出力
+- 取り入れた要素と、取り入れられなかった要素（理由つき）
+- 数値（画の変化、字幕、カット、字/秒、LUFS、無音）
+- Blender の時間
+- 確認したこと／していないこと
+- 代表のコマのパス
+- 正本への疑問
+
+さらに担当を立てない。
+=====
+<system-reminder>
+Your final report is delivered through SubagentHandback: when your work is complete, call SubagentHandback({message: <your full report>}). The call ends your run, so make it your last step. Only a SubagentHandback call reaches your caller as your result; plain text you write at the end is not delivered.
+</system-reminder>
+=====
+[Image: original 1620x3024, displayed at 1071x2000. Multiply coordinates by 1.51 to map to original image.]
+=====
+[Image: original 1620x3528, displayed at 918x2000. Multiply coordinates by 1.76 to map to original image.]
+=====
+[Image: original 1620x2016, displayed at 1607x2000. Multiply coordinates by 1.01 to map to original image.]
+=====
+[Image: original 2160x1328, displayed at 2000x1230. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x664, displayed at 2000x615. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x1992, displayed at 2000x1844. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x1328, displayed at 2000x1230. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x1992, displayed at 2000x1844. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x1992, displayed at 2000x1844. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x1328, displayed at 2000x1230. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x2656, displayed at 1627x2000. Multiply coordinates by 1.33 to map to original image.]
+=====
+[Image: original 2160x664, displayed at 2000x615. Multiply coordinates by 1.08 to map to original image.]
+=====
+[Image: original 2160x1328, displayed at 2000x1230. Multiply coordinates by 1.08 to map to original image.]

@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const OUT=path.dirname(fileURLToPath(import.meta.url)),W=path.resolve(OUT,'../../..');
+const C='/private/tmp/ys/ys-chain-b2a_gpt_20261029',ID=path.basename(C);
+const PY='/Users/ken/Library/Application Support/physics-quest-tools/pyenv/bin/python';
+const S=path.join(W,'docs/video-revision-20260924/ytseries/chain-b-2a_gpt_20261029.mjs');
+const M=path.join(W,'docs/video-revision-20260924/deep/技術の疑問の鎖_B-2_前編_第1版_ナレーション.md');
+const env={...process.env,EM_FILM_CACHE:C,NEMO_URL:'http://127.0.0.1:50123'};
+const sha=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const phases=[];
+const run=(name,exe,args)=>{const r=spawnSync(exe,args,{cwd:W,env,encoding:'utf8',maxBuffer:10e6});const log=path.join(OUT,name+'.log');fs.writeFileSync(log,r.stdout+r.stderr,{flag:'wx'});phases.push({name,exitCode:r.status,log});if(r.status)throw Error('Failed '+name);console.log(name+' PASS');};
+run('09-v2-check-readings',PY,['scripts/umech/check-readings.py',C+'/plan.json','--diff']);
+run('10-v2-prosody',PY,['scripts/umech/prosody.py',C+'/plan.json']);
+run('11-v2-prosody-speaker',PY,['scripts/umech/prosody-speaker.py',C+'/plan.json']);
+run('12-v2-phrase-times',PY,['scripts/umech/chain-dlg-phrase-times-1-1v5.py',C,ID]);
+run('13-v2-silent-intro',PY,[path.join(OUT,'finalize-silent-intro_gpt_20261029.py'),'unshifted-render-final']);
+run('14-v2-lint',process.execPath,['scripts/umech/chain-desk-lint.mjs',S,ID,path.join(OUT,'master-audio-rows-derived-for-original-lint.md')]);
+run('15-v2-caption-times',process.execPath,[path.join(OUT,'review-final-caption-times_gpt_20261029.mjs')]);
+const result=JSON.parse(fs.readFileSync(path.join(OUT,'final-caption-and-cue-times.json')));
+if(result.inexact||result.short.length||result.median>1.5)throw Error('Caption timing gate not met');
+const typed=JSON.parse(fs.readFileSync(C+'/'+ID+'.json'));let guardRows=0;
+const orig=fs.readFileSync(M,'utf8').split('\n').filter(l=>/^\|\s*\d+\s*\|/.test(l));
+for(const line of orig.slice(1)){const a=line.split('|').map(x=>x.trim());if(typed.scenes.flatMap(s=>s.cues).filter(q=>q.masterRow===+a[1]).map(q=>q.subtitle).join('')!==a[4])throw Error('Row mismatch '+a[1]);guardRows++;}
+const freeze={completed:new Date().toISOString(),frozen:true,id:ID,script:S,scriptSha256:sha(S),master:M,masterSha256:sha(M),originalVoicedRowsCompared:guardRows,originalSilentIntroSeconds:2,voicedCues:70,duration:typed.duration,captionChunks:result.captionChunks,captionMedianSeconds:result.median,captionShorterThanHalfSecond:0,captionMappingInexact:0,voices:[10001,10005],speedScale:.90,phases,immutableMediaFiles:[ID+'.voice.wav',ID+'.wav',ID+'.json','phrase-times.json','plan.json','timed-selection.json'].map(name=>({path:C+'/'+name,sha256:sha(C+'/'+name)})),scope:'Original Japanese, subtitle text and speaker identity verified. Source speech phrase/sample clocks checked mechanically; no ear listening performed. No video quality claim.',originalLintCompatibility:'The unchanged original lint ran on the 42 voiced-row derived view. Full master row1 (silent 2s) and voiced original rows were separately compared.'};
+fs.writeFileSync(path.join(OUT,'AUDIO_AND_TIMING_FROZEN.json'),JSON.stringify(freeze,null,2),{flag:'wx'});
+// Permanent S0 copy outside the expiring /private/tmp cache.
+const dest=path.join(OUT,'voice-and-timing-frozen');fs.mkdirSync(dest);
+for(const name of [ID+'.voice.wav',ID+'.wav',ID+'.json','phrase-times.json','plan.json','timed-selection.json','silent-intro-record.json'])fs.copyFileSync(C+'/'+name,path.join(dest,name),fs.constants.COPYFILE_EXCL);
+fs.cpSync(C+'/speech',dest+'/speech',{recursive:true,errorOnExist:true,force:false});
+console.log(JSON.stringify({frozen:true,duration:typed.duration,voicedCues:70,captionMedian:result.median,backup:dest}));

@@ -1,0 +1,88 @@
+{
+  "createdUtc": "2026-10-29T14:28:46.467Z",
+  "episode": "B-2前編",
+  "stage": "S3 final native delta; MP4 export pending",
+  "directory": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/最終差分_布27コマ",
+  "baseCache": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/確定キャッシュ",
+  "baseSources": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/制作ソース",
+  "replacementFrames": {
+    "from": 14542,
+    "through": 14568,
+    "count": 27
+  },
+  "copiedPayloadFiles": 35,
+  "copiedPayloadTotalBytes": 8648114,
+  "cacheFiles": [
+    "blender/desk/14542.jpg",
+    "blender/desk/14543.jpg",
+    "blender/desk/14544.jpg",
+    "blender/desk/14545.jpg",
+    "blender/desk/14546.jpg",
+    "blender/desk/14547.jpg",
+    "blender/desk/14548.jpg",
+    "blender/desk/14549.jpg",
+    "blender/desk/14550.jpg",
+    "blender/desk/14551.jpg",
+    "blender/desk/14552.jpg",
+    "blender/desk/14553.jpg",
+    "blender/desk/14554.jpg",
+    "blender/desk/14555.jpg",
+    "blender/desk/14556.jpg",
+    "blender/desk/14557.jpg",
+    "blender/desk/14558.jpg",
+    "blender/desk/14559.jpg",
+    "blender/desk/14560.jpg",
+    "blender/desk/14561.jpg",
+    "blender/desk/14562.jpg",
+    "blender/desk/14563.jpg",
+    "blender/desk/14564.jpg",
+    "blender/desk/14565.jpg",
+    "blender/desk/14566.jpg",
+    "blender/desk/14567.jpg",
+    "blender/desk/14568.jpg",
+    "blender/desk/meta.json",
+    "blender/desk/anchors.json",
+    "blender/primary.json",
+    "blender/camera-records.json",
+    "blender/camera-motion.json",
+    "qa/s3-scene-numerical-check.json",
+    "qa/s3-specific-widths-20261029-1793283932784057000.json"
+  ],
+  "sourceFiles": [
+    "scripts/blender/desk_b2a_s3_gpt_20261029.py"
+  ],
+  "sceneSha256": "28f29685658e041ad43e203942c485d454e9539bb7b0dcc3fe38ecf4f9b75523",
+  "originalBaseSceneSha256": "b90fa52a957a2faf7007a80dec5c14fd6aac611f4e52629151eca0bc386668cf",
+  "qa": {
+    "job027Completed": true,
+    "general": {
+      "total": 243,
+      "failed": 0
+    },
+    "specific": {
+      "file": "s3-specific-widths-20261029-1793283932784057000.json",
+      "total": 302,
+      "failed": 0,
+      "sceneHashMatches": true
+    }
+  },
+  "verification": {
+    "copiedBytesEqual": true,
+    "sourcesStableDuringCopyAndVerification": true,
+    "destinationInodesUnique": true,
+    "destinationLinkCountsOne": true,
+    "noSymlinksOrHardlinks": true,
+    "unchangedBaseCacheFilesCompared": 14831,
+    "unchangedBaseCacheBytesCompared": 1300051415,
+    "otherEightSourceSnapshotsUnchanged": true,
+    "unrecordedChanges": []
+  },
+  "restorePolicy": "Copy original full backup into a NEW restore directory, then overlay these two named subdirectories there. Never overwrite original backup.",
+  "excluded": [
+    "unfinished final MP4",
+    "jobs/PAUSE",
+    "failed mixes"
+  ],
+  "immutableVerificationFile": "原本不変_検証.json",
+  "elapsedVerificationSeconds": 9.53
+}

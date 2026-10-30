@@ -1,0 +1,3195 @@
+{
+  "windowSeconds": 1,
+  "voicePresentCriterion": "original voice PCM RMS > -45 dBFS",
+  "voicedWindows": 455,
+  "medianDb": 22.398616534108726,
+  "p10Db": 10.102094715491893,
+  "minimumDb": -5.600385443543534,
+  "windows": [
+    {
+      "start": 2.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.597444039414802,
+      "bgmDbfs": -37.7278421141862,
+      "differenceDb": 23.1303980747714
+    },
+    {
+      "start": 3.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.0986031234973,
+      "bgmDbfs": -33.68844758118853,
+      "differenceDb": 18.58984445769123
+    },
+    {
+      "start": 4.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.67070829759083,
+      "bgmDbfs": -42.745831022922914,
+      "differenceDb": 30.075122725332086
+    },
+    {
+      "start": 5.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.015333217585518,
+      "bgmDbfs": -38.427028771768605,
+      "differenceDb": 23.411695554183087
+    },
+    {
+      "start": 6.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.11819155677337,
+      "bgmDbfs": -43.05184748287697,
+      "differenceDb": 30.933655926103604
+    },
+    {
+      "start": 7.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.436683275412953,
+      "bgmDbfs": -30.38111157550327,
+      "differenceDb": 14.944428300090316
+    },
+    {
+      "start": 8.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.185486177988254,
+      "bgmDbfs": -42.62344121339602,
+      "differenceDb": 30.437955035407768
+    },
+    {
+      "start": 9.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.949302205792605,
+      "bgmDbfs": -36.17116382074448,
+      "differenceDb": 22.221861614951877
+    },
+    {
+      "start": 10.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.13070090082577,
+      "bgmDbfs": -28.995963719602162,
+      "differenceDb": 14.865262818776392
+    },
+    {
+      "start": 12.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.201041456162105,
+      "bgmDbfs": -42.089115544280595,
+      "differenceDb": 29.88807408811849
+    },
+    {
+      "start": 13.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.687239897705712,
+      "bgmDbfs": -29.294343639099992,
+      "differenceDb": 15.60710374139428
+    },
+    {
+      "start": 14.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.774139723810364,
+      "bgmDbfs": -41.36122659043214,
+      "differenceDb": 29.587086866621775
+    },
+    {
+      "start": 15.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.902973957960356,
+      "bgmDbfs": -31.127448300655566,
+      "differenceDb": 14.22447434269521
+    },
+    {
+      "start": 16.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.793546503334532,
+      "bgmDbfs": -34.07368536927501,
+      "differenceDb": 19.28013886594048
+    },
+    {
+      "start": 17.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.388423370218227,
+      "bgmDbfs": -42.90425734034065,
+      "differenceDb": 30.515833970122422
+    },
+    {
+      "start": 18.0,
+      "seconds": 1.0,
+      "voiceDbfs": -22.366263107087626,
+      "bgmDbfs": -26.704720779341127,
+      "differenceDb": 4.338457672253501
+    },
+    {
+      "start": 19.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.994875370022822,
+      "bgmDbfs": -27.632396557047795,
+      "differenceDb": 11.637521187024973
+    },
+    {
+      "start": 20.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.070625501913606,
+      "bgmDbfs": -29.166573452918296,
+      "differenceDb": 14.09594795100469
+    },
+    {
+      "start": 21.0,
+      "seconds": 1.0,
+      "voiceDbfs": -19.38629762659813,
+      "bgmDbfs": -23.3810519784371,
+      "differenceDb": 3.9947543518389708
+    },
+    {
+      "start": 22.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.916583885925366,
+      "bgmDbfs": -32.38637558767437,
+      "differenceDb": 18.469791701749006
+    },
+    {
+      "start": 23.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.907357535797889,
+      "bgmDbfs": -43.76865547058359,
+      "differenceDb": 30.8612979347857
+    },
+    {
+      "start": 24.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.744008522451473,
+      "bgmDbfs": -32.76862244733125,
+      "differenceDb": 17.02461392487978
+    },
+    {
+      "start": 25.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.64739448514852,
+      "bgmDbfs": -42.73904574031695,
+      "differenceDb": 31.091651255168433
+    },
+    {
+      "start": 26.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.665112961600018,
+      "bgmDbfs": -35.92910533305028,
+      "differenceDb": 21.263992371450264
+    },
+    {
+      "start": 27.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.788121060587518,
+      "bgmDbfs": -39.96550357274921,
+      "differenceDb": 27.177382512161696
+    },
+    {
+      "start": 28.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.331009080035175,
+      "bgmDbfs": -37.779532570455515,
+      "differenceDb": 24.448523490420342
+    },
+    {
+      "start": 29.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.788308363307586,
+      "bgmDbfs": -28.275421119983555,
+      "differenceDb": 9.48711275667597
+    },
+    {
+      "start": 30.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.96712840607505,
+      "bgmDbfs": -25.266345176912274,
+      "differenceDb": 10.299216770837225
+    },
+    {
+      "start": 31.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.553629413473224,
+      "bgmDbfs": -39.10974657941107,
+      "differenceDb": 24.55611716593785
+    },
+    {
+      "start": 32.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.64968441438431,
+      "bgmDbfs": -36.48874332480415,
+      "differenceDb": 22.839058910419837
+    },
+    {
+      "start": 33.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.884591834464551,
+      "bgmDbfs": -32.63350555102855,
+      "differenceDb": 16.748913716563997
+    },
+    {
+      "start": 34.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.495573359577545,
+      "bgmDbfs": -37.04648364289668,
+      "differenceDb": 24.550910283319137
+    },
+    {
+      "start": 35.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.230015777151642,
+      "bgmDbfs": -43.609814870342554,
+      "differenceDb": 30.37979909319091
+    },
+    {
+      "start": 37.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.151942207790668,
+      "bgmDbfs": -29.55208132433038,
+      "differenceDb": 14.400139116539712
+    },
+    {
+      "start": 38.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.582899016317313,
+      "bgmDbfs": -39.451408584660406,
+      "differenceDb": 25.868509568343093
+    },
+    {
+      "start": 39.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.33704761956728,
+      "bgmDbfs": -35.21347989937964,
+      "differenceDb": 19.876432279812363
+    },
+    {
+      "start": 41.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.831219558113132,
+      "bgmDbfs": -29.360268825187514,
+      "differenceDb": 13.529049267074383
+    },
+    {
+      "start": 42.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.918703498506591,
+      "bgmDbfs": -38.218098758903864,
+      "differenceDb": 24.299395260397272
+    },
+    {
+      "start": 43.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.48079962159272,
+      "bgmDbfs": -35.28792822418324,
+      "differenceDb": 20.80712860259052
+    },
+    {
+      "start": 44.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.076809142113303,
+      "bgmDbfs": -34.430237890357276,
+      "differenceDb": 19.35342874824397
+    },
+    {
+      "start": 45.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.333722352920987,
+      "bgmDbfs": -34.032559018244015,
+      "differenceDb": 19.69883666532303
+    },
+    {
+      "start": 46.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.73531792208583,
+      "bgmDbfs": -41.01175373346655,
+      "differenceDb": 28.27643581138072
+    },
+    {
+      "start": 48.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.78712618777843,
+      "bgmDbfs": -24.76288334014365,
+      "differenceDb": 10.975757152365219
+    },
+    {
+      "start": 49.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.45969567450963,
+      "bgmDbfs": -35.280398185609684,
+      "differenceDb": 19.820702511100052
+    },
+    {
+      "start": 50.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.310132331349855,
+      "bgmDbfs": -40.693937554072626,
+      "differenceDb": 27.38380522272277
+    },
+    {
+      "start": 51.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.373336315875557,
+      "bgmDbfs": -33.371999654240824,
+      "differenceDb": 19.99866333836527
+    },
+    {
+      "start": 53.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.083766354391923,
+      "bgmDbfs": -32.87335050749525,
+      "differenceDb": 18.78958415310333
+    },
+    {
+      "start": 54.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.0356523690711,
+      "bgmDbfs": -43.13421272972394,
+      "differenceDb": 31.09856036065284
+    },
+    {
+      "start": 55.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.257868815779391,
+      "bgmDbfs": -34.971564029468716,
+      "differenceDb": 20.713695213689327
+    },
+    {
+      "start": 56.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.10227055791423,
+      "bgmDbfs": -38.576208505557624,
+      "differenceDb": 24.473937947643392
+    },
+    {
+      "start": 58.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.752855194016988,
+      "bgmDbfs": -38.887458713455835,
+      "differenceDb": 24.134603519438848
+    },
+    {
+      "start": 59.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.772131307352687,
+      "bgmDbfs": -38.77506801832761,
+      "differenceDb": 25.00293671097492
+    },
+    {
+      "start": 60.0,
+      "seconds": 1.0,
+      "voiceDbfs": -20.622467216952934,
+      "bgmDbfs": -28.728456652594588,
+      "differenceDb": 8.105989435641654
+    },
+    {
+      "start": 61.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.848678742006012,
+      "bgmDbfs": -26.103315233970616,
+      "differenceDb": 7.254636491964604
+    },
+    {
+      "start": 62.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.278009532631273,
+      "bgmDbfs": -41.88018926894755,
+      "differenceDb": 30.602179736316273
+    },
+    {
+      "start": 63.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.529902015090398,
+      "bgmDbfs": -35.578247358562855,
+      "differenceDb": 22.048345343472455
+    },
+    {
+      "start": 64.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.101121973657934,
+      "bgmDbfs": -33.86549726322995,
+      "differenceDb": 20.764375289572016
+    },
+    {
+      "start": 65.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.536005837893363,
+      "bgmDbfs": -34.671541263562304,
+      "differenceDb": 19.13553542566894
+    },
+    {
+      "start": 66.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.538182391055189,
+      "bgmDbfs": -42.18937944132813,
+      "differenceDb": 28.65119705027294
+    },
+    {
+      "start": 67.0,
+      "seconds": 1.0,
+      "voiceDbfs": -28.29211250220827,
+      "bgmDbfs": -22.691727058664735,
+      "differenceDb": -5.600385443543534
+    },
+    {
+      "start": 68.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.347212649661307,
+      "bgmDbfs": -33.34941071703528,
+      "differenceDb": 20.002198067373975
+    },
+    {
+      "start": 69.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.09262772988052,
+      "bgmDbfs": -30.574101064925028,
+      "differenceDb": 16.481473335044505
+    },
+    {
+      "start": 70.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.306278628749512,
+      "bgmDbfs": -42.68113195762355,
+      "differenceDb": 30.37485332887404
+    },
+    {
+      "start": 71.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.77916851728255,
+      "bgmDbfs": -35.87676137217678,
+      "differenceDb": 22.09759285489423
+    },
+    {
+      "start": 72.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.24454318302039,
+      "bgmDbfs": -29.522508489784805,
+      "differenceDb": 12.277965306764415
+    },
+    {
+      "start": 74.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.279916107207166,
+      "bgmDbfs": -32.75500273150187,
+      "differenceDb": 17.475086624294704
+    },
+    {
+      "start": 75.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.996807862198803,
+      "bgmDbfs": -34.66190420050584,
+      "differenceDb": 20.665096338307034
+    },
+    {
+      "start": 76.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.534995999175097,
+      "bgmDbfs": -40.265609799459305,
+      "differenceDb": 28.73061380028421
+    },
+    {
+      "start": 77.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.643124735075059,
+      "bgmDbfs": -37.78580509133069,
+      "differenceDb": 23.142680356255628
+    },
+    {
+      "start": 78.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.422958998731877,
+      "bgmDbfs": -42.32501690370376,
+      "differenceDb": 29.902057904971883
+    },
+    {
+      "start": 79.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.750918673944405,
+      "bgmDbfs": -35.14953520805313,
+      "differenceDb": 22.398616534108726
+    },
+    {
+      "start": 80.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.120149443908243,
+      "bgmDbfs": -42.2637536204562,
+      "differenceDb": 30.143604176547957
+    },
+    {
+      "start": 81.0,
+      "seconds": 1.0,
+      "voiceDbfs": -20.394176456748493,
+      "bgmDbfs": -23.397199437066018,
+      "differenceDb": 3.0030229803175246
+    },
+    {
+      "start": 82.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.391610145292752,
+      "bgmDbfs": -28.466063879353744,
+      "differenceDb": 11.074453734060992
+    },
+    {
+      "start": 83.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.672133213231021,
+      "bgmDbfs": -37.72898664835047,
+      "differenceDb": 24.05685343511945
+    },
+    {
+      "start": 84.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.58374531305629,
+      "bgmDbfs": -33.37299701618626,
+      "differenceDb": 19.78925170312997
+    },
+    {
+      "start": 85.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.170672879515982,
+      "bgmDbfs": -42.1238234204241,
+      "differenceDb": 28.95315054090812
+    },
+    {
+      "start": 86.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.129600600479202,
+      "bgmDbfs": -31.912094460028968,
+      "differenceDb": 17.782493859549767
+    },
+    {
+      "start": 87.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.261357259950247,
+      "bgmDbfs": -40.36315156911307,
+      "differenceDb": 27.101794309162827
+    },
+    {
+      "start": 88.0,
+      "seconds": 1.0,
+      "voiceDbfs": -10.805376521685744,
+      "bgmDbfs": -42.30019439678263,
+      "differenceDb": 31.494817875096885
+    },
+    {
+      "start": 89.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.618983530668721,
+      "bgmDbfs": -35.73758659517419,
+      "differenceDb": 22.11860306450547
+    },
+    {
+      "start": 90.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.899151549821264,
+      "bgmDbfs": -38.07466465937469,
+      "differenceDb": 25.175513109553428
+    },
+    {
+      "start": 91.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.032426561206224,
+      "bgmDbfs": -38.97696404189248,
+      "differenceDb": 26.944537480686257
+    },
+    {
+      "start": 93.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.470006134325377,
+      "bgmDbfs": -34.409818598283564,
+      "differenceDb": 22.939812463958187
+    },
+    {
+      "start": 94.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.965854339040586,
+      "bgmDbfs": -36.186103683005776,
+      "differenceDb": 22.22024934396519
+    },
+    {
+      "start": 95.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.365036183407728,
+      "bgmDbfs": -39.724890605882266,
+      "differenceDb": 25.359854422474537
+    },
+    {
+      "start": 96.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.550496324405476,
+      "bgmDbfs": -29.105035964443005,
+      "differenceDb": 12.554539640037529
+    },
+    {
+      "start": 97.0,
+      "seconds": 1.0,
+      "voiceDbfs": -21.54298751679139,
+      "bgmDbfs": -25.330099398847096,
+      "differenceDb": 3.787111882055708
+    },
+    {
+      "start": 98.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.371632696868208,
+      "bgmDbfs": -30.196710879192075,
+      "differenceDb": 12.825078182323868
+    },
+    {
+      "start": 99.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.275238178944564,
+      "bgmDbfs": -30.783638962277195,
+      "differenceDb": 15.50840078333263
+    },
+    {
+      "start": 100.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.259997960993797,
+      "bgmDbfs": -38.38960070382275,
+      "differenceDb": 24.129602742828954
+    },
+    {
+      "start": 101.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.537887255830928,
+      "bgmDbfs": -37.457994416376216,
+      "differenceDb": 22.92010716054529
+    },
+    {
+      "start": 102.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.224730315618796,
+      "bgmDbfs": -29.987280169184793,
+      "differenceDb": 11.762549853565996
+    },
+    {
+      "start": 103.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.0007677461978,
+      "bgmDbfs": -23.57416195513494,
+      "differenceDb": 6.573394208937142
+    },
+    {
+      "start": 104.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.592867709224226,
+      "bgmDbfs": -38.89518349221531,
+      "differenceDb": 26.302315782991084
+    },
+    {
+      "start": 105.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.713625893976225,
+      "bgmDbfs": -38.98698885105455,
+      "differenceDb": 26.273362957078323
+    },
+    {
+      "start": 106.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.06852910425723,
+      "bgmDbfs": -27.0172779449579,
+      "differenceDb": 10.94874884070067
+    },
+    {
+      "start": 108.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.356482543054206,
+      "bgmDbfs": -28.54887230287155,
+      "differenceDb": 14.192389759817345
+    },
+    {
+      "start": 109.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.051568152422941,
+      "bgmDbfs": -35.842768440708774,
+      "differenceDb": 21.791200288285832
+    },
+    {
+      "start": 110.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.100646553715546,
+      "bgmDbfs": -41.624635923511676,
+      "differenceDb": 29.52398936979613
+    },
+    {
+      "start": 111.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.214820892535776,
+      "bgmDbfs": -36.420695080718204,
+      "differenceDb": 22.205874188182428
+    },
+    {
+      "start": 112.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.848527985696165,
+      "bgmDbfs": -42.43789141183311,
+      "differenceDb": 30.58936342613694
+    },
+    {
+      "start": 113.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.486050509382844,
+      "bgmDbfs": -39.71421610198809,
+      "differenceDb": 25.22816559260525
+    },
+    {
+      "start": 114.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.308129269962837,
+      "bgmDbfs": -28.634628590687647,
+      "differenceDb": 10.32649932072481
+    },
+    {
+      "start": 116.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.172111066249657,
+      "bgmDbfs": -34.099993125582905,
+      "differenceDb": 19.92788205933325
+    },
+    {
+      "start": 117.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.665743510793309,
+      "bgmDbfs": -41.32430798112357,
+      "differenceDb": 27.65856447033026
+    },
+    {
+      "start": 118.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.64742665644155,
+      "bgmDbfs": -37.678414673406124,
+      "differenceDb": 21.030988016964574
+    },
+    {
+      "start": 119.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.095883178907597,
+      "bgmDbfs": -43.96362133583792,
+      "differenceDb": 30.867738156930322
+    },
+    {
+      "start": 120.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.168541001075859,
+      "bgmDbfs": -32.7088211059215,
+      "differenceDb": 18.540280104845642
+    },
+    {
+      "start": 121.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.522020671136088,
+      "bgmDbfs": -42.23868906274607,
+      "differenceDb": 28.71666839160998
+    },
+    {
+      "start": 122.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.505329253580351,
+      "bgmDbfs": -31.95466172812257,
+      "differenceDb": 16.449332474542217
+    },
+    {
+      "start": 123.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.371100755288499,
+      "bgmDbfs": -40.57333981418793,
+      "differenceDb": 27.202239058899433
+    },
+    {
+      "start": 124.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.933582186042239,
+      "bgmDbfs": -39.21253592108645,
+      "differenceDb": 26.27895373504421
+    },
+    {
+      "start": 126.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.947842699733844,
+      "bgmDbfs": -24.332434674916982,
+      "differenceDb": 6.384591975183138
+    },
+    {
+      "start": 127.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.49867407670401,
+      "bgmDbfs": -32.40809832930578,
+      "differenceDb": 17.90942425260177
+    },
+    {
+      "start": 128.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.166274071966825,
+      "bgmDbfs": -29.538525473424784,
+      "differenceDb": 13.372251401457959
+    },
+    {
+      "start": 129.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.72154630359006,
+      "bgmDbfs": -27.29413770249051,
+      "differenceDb": 12.57259139890045
+    },
+    {
+      "start": 131.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.145122104010072,
+      "bgmDbfs": -43.677694774339116,
+      "differenceDb": 30.532572670329046
+    },
+    {
+      "start": 132.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.60720150991833,
+      "bgmDbfs": -38.59532129176056,
+      "differenceDb": 24.988119781842233
+    },
+    {
+      "start": 133.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.593876817277106,
+      "bgmDbfs": -39.20733913945291,
+      "differenceDb": 25.613462322175806
+    },
+    {
+      "start": 134.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.27871283861852,
+      "bgmDbfs": -34.86802414643389,
+      "differenceDb": 20.589311307815372
+    },
+    {
+      "start": 135.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.697210972306372,
+      "bgmDbfs": -42.67362311315905,
+      "differenceDb": 29.97641214085268
+    },
+    {
+      "start": 136.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.861937888239357,
+      "bgmDbfs": -25.153261330487187,
+      "differenceDb": 9.29132344224783
+    },
+    {
+      "start": 137.0,
+      "seconds": 1.0,
+      "voiceDbfs": -21.40609004452613,
+      "bgmDbfs": -26.908030885100413,
+      "differenceDb": 5.501940840574282
+    },
+    {
+      "start": 138.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.827724250591645,
+      "bgmDbfs": -34.455071937186986,
+      "differenceDb": 19.627347686595343
+    },
+    {
+      "start": 139.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.228365413158965,
+      "bgmDbfs": -40.88133160688885,
+      "differenceDb": 27.652966193729885
+    },
+    {
+      "start": 140.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.172375098835944,
+      "bgmDbfs": -36.078653969038506,
+      "differenceDb": 22.906278870202563
+    },
+    {
+      "start": 141.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.666095273135005,
+      "bgmDbfs": -33.00028605056162,
+      "differenceDb": 20.334190777426613
+    },
+    {
+      "start": 142.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.179730956145919,
+      "bgmDbfs": -36.40387675339041,
+      "differenceDb": 23.224145797244496
+    },
+    {
+      "start": 144.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.257612245762918,
+      "bgmDbfs": -25.110296412659174,
+      "differenceDb": 11.852684166896257
+    },
+    {
+      "start": 145.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.657320474661681,
+      "bgmDbfs": -36.79287919954044,
+      "differenceDb": 24.135558724878756
+    },
+    {
+      "start": 146.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.691612276194789,
+      "bgmDbfs": -29.13363430127129,
+      "differenceDb": 15.4420220250765
+    },
+    {
+      "start": 147.0,
+      "seconds": 1.0,
+      "voiceDbfs": -20.53478271005154,
+      "bgmDbfs": -26.71069496614799,
+      "differenceDb": 6.175912256096449
+    },
+    {
+      "start": 148.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.070048458324782,
+      "bgmDbfs": -32.96508411561731,
+      "differenceDb": 17.895035657292524
+    },
+    {
+      "start": 149.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.396101600242377,
+      "bgmDbfs": -42.76470874812385,
+      "differenceDb": 29.368607147881477
+    },
+    {
+      "start": 150.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.211124323240355,
+      "bgmDbfs": -35.37043873973752,
+      "differenceDb": 19.159314416497168
+    },
+    {
+      "start": 151.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.627872914081593,
+      "bgmDbfs": -29.65916212318446,
+      "differenceDb": 16.031289209102866
+    },
+    {
+      "start": 152.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.249569156391587,
+      "bgmDbfs": -25.127095092311755,
+      "differenceDb": 6.877525935920168
+    },
+    {
+      "start": 153.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.18543373666683,
+      "bgmDbfs": -35.14176502961592,
+      "differenceDb": 22.956331292949088
+    },
+    {
+      "start": 154.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.879146304610813,
+      "bgmDbfs": -41.91494960081114,
+      "differenceDb": 29.035803296200328
+    },
+    {
+      "start": 155.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.52399674276154,
+      "bgmDbfs": -36.239296940015834,
+      "differenceDb": 22.715300197254294
+    },
+    {
+      "start": 156.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.760701549943057,
+      "bgmDbfs": -36.35813385797806,
+      "differenceDb": 22.597432308035003
+    },
+    {
+      "start": 157.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.490614328205698,
+      "bgmDbfs": -36.83913533671457,
+      "differenceDb": 22.34852100850887
+    },
+    {
+      "start": 158.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.398140372832604,
+      "bgmDbfs": -38.10061080121798,
+      "differenceDb": 24.70247042838538
+    },
+    {
+      "start": 160.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.026582577358042,
+      "bgmDbfs": -35.27763646161036,
+      "differenceDb": 23.251053884252322
+    },
+    {
+      "start": 161.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.335522094237907,
+      "bgmDbfs": -35.5334606430994,
+      "differenceDb": 23.197938548861494
+    },
+    {
+      "start": 162.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.627965962437273,
+      "bgmDbfs": -38.48933669547026,
+      "differenceDb": 25.861370733032985
+    },
+    {
+      "start": 163.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.926942578766473,
+      "bgmDbfs": -40.34986576100054,
+      "differenceDb": 28.422923182234065
+    },
+    {
+      "start": 164.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.301098256483492,
+      "bgmDbfs": -25.83548186645604,
+      "differenceDb": 9.534383609972547
+    },
+    {
+      "start": 165.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.583107618708315,
+      "bgmDbfs": -29.87274943496498,
+      "differenceDb": 15.289641816256665
+    },
+    {
+      "start": 166.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.061108645620333,
+      "bgmDbfs": -32.918639927811164,
+      "differenceDb": 18.85753128219083
+    },
+    {
+      "start": 167.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.949844328021177,
+      "bgmDbfs": -36.27856112642616,
+      "differenceDb": 22.328716798404983
+    },
+    {
+      "start": 168.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.062536132813017,
+      "bgmDbfs": -41.890960741807596,
+      "differenceDb": 29.82842460899458
+    },
+    {
+      "start": 169.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.236531067817737,
+      "bgmDbfs": -39.5650980336938,
+      "differenceDb": 25.328566965876064
+    },
+    {
+      "start": 170.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.269788935678305,
+      "bgmDbfs": -41.90353961802839,
+      "differenceDb": 29.633750682350083
+    },
+    {
+      "start": 171.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.244776434026338,
+      "bgmDbfs": -34.50138284436188,
+      "differenceDb": 19.25660641033554
+    },
+    {
+      "start": 172.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.16871622664512,
+      "bgmDbfs": -40.837620880600596,
+      "differenceDb": 27.668904653955476
+    },
+    {
+      "start": 173.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.638873150726232,
+      "bgmDbfs": -33.4012629310403,
+      "differenceDb": 19.762389780314066
+    },
+    {
+      "start": 174.0,
+      "seconds": 1.0,
+      "voiceDbfs": -21.01260689579657,
+      "bgmDbfs": -27.48168749026346,
+      "differenceDb": 6.469080594466892
+    },
+    {
+      "start": 175.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.234553682923618,
+      "bgmDbfs": -25.725209458326507,
+      "differenceDb": 10.490655775402889
+    },
+    {
+      "start": 176.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.86252261479914,
+      "bgmDbfs": -38.41320150449962,
+      "differenceDb": 23.550678889700478
+    },
+    {
+      "start": 177.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.219835485378503,
+      "bgmDbfs": -36.59023029830361,
+      "differenceDb": 22.370394812925106
+    },
+    {
+      "start": 178.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.243801383889926,
+      "bgmDbfs": -42.52361625415743,
+      "differenceDb": 30.279814870267508
+    },
+    {
+      "start": 179.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.436926719155483,
+      "bgmDbfs": -33.21085007245465,
+      "differenceDb": 16.773923353299164
+    },
+    {
+      "start": 180.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.176164750946352,
+      "bgmDbfs": -34.834763543755294,
+      "differenceDb": 20.65859879280894
+    },
+    {
+      "start": 181.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.113896487611942,
+      "bgmDbfs": -27.52816230829406,
+      "differenceDb": 10.414265820682118
+    },
+    {
+      "start": 183.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.498133408375228,
+      "bgmDbfs": -38.8173760030089,
+      "differenceDb": 26.319242594633675
+    },
+    {
+      "start": 184.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.690092962621822,
+      "bgmDbfs": -39.863529606792916,
+      "differenceDb": 26.173436644171094
+    },
+    {
+      "start": 185.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.430641686510757,
+      "bgmDbfs": -43.81190738382194,
+      "differenceDb": 30.381265697311182
+    },
+    {
+      "start": 186.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.640528113818409,
+      "bgmDbfs": -38.35253427018907,
+      "differenceDb": 23.71200615637066
+    },
+    {
+      "start": 187.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.843409988088947,
+      "bgmDbfs": -41.469636594274554,
+      "differenceDb": 28.626226606185607
+    },
+    {
+      "start": 188.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.196872128699024,
+      "bgmDbfs": -34.51923813860424,
+      "differenceDb": 18.322366009905213
+    },
+    {
+      "start": 189.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.359640013952509,
+      "bgmDbfs": -40.62557250338678,
+      "differenceDb": 27.26593248943427
+    },
+    {
+      "start": 190.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.084998404545349,
+      "bgmDbfs": -35.93937509561483,
+      "differenceDb": 22.85437669106948
+    },
+    {
+      "start": 191.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.039381352348073,
+      "bgmDbfs": -43.091461469585106,
+      "differenceDb": 30.052080117237033
+    },
+    {
+      "start": 192.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.37687659793282,
+      "bgmDbfs": -32.68136714234666,
+      "differenceDb": 15.304490544413838
+    },
+    {
+      "start": 193.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.875834724640733,
+      "bgmDbfs": -35.180805748699846,
+      "differenceDb": 19.304971024059114
+    },
+    {
+      "start": 195.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.521216520803911,
+      "bgmDbfs": -40.641679635985625,
+      "differenceDb": 28.120463115181714
+    },
+    {
+      "start": 196.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.16573582804288,
+      "bgmDbfs": -37.74860921344492,
+      "differenceDb": 23.582873385402042
+    },
+    {
+      "start": 197.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.009313822786234,
+      "bgmDbfs": -37.40301717176838,
+      "differenceDb": 24.39370334898215
+    },
+    {
+      "start": 198.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.880169942943546,
+      "bgmDbfs": -34.10675242094124,
+      "differenceDb": 20.226582477997695
+    },
+    {
+      "start": 199.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.192599896425124,
+      "bgmDbfs": -29.980408865522392,
+      "differenceDb": 16.78780896909727
+    },
+    {
+      "start": 200.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.867620398307864,
+      "bgmDbfs": -42.27197248412901,
+      "differenceDb": 29.404352085821145
+    },
+    {
+      "start": 201.0,
+      "seconds": 1.0,
+      "voiceDbfs": -22.52609621886088,
+      "bgmDbfs": -23.70719772205129,
+      "differenceDb": 1.181101503190412
+    },
+    {
+      "start": 202.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.361624043794727,
+      "bgmDbfs": -28.899946929075,
+      "differenceDb": 10.538322885280273
+    },
+    {
+      "start": 203.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.360422388800512,
+      "bgmDbfs": -42.50777293319512,
+      "differenceDb": 29.14735054439461
+    },
+    {
+      "start": 204.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.999920435579808,
+      "bgmDbfs": -37.77000303684818,
+      "differenceDb": 21.77008260126837
+    },
+    {
+      "start": 205.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.241591486213132,
+      "bgmDbfs": -37.40075054324423,
+      "differenceDb": 23.159159057031097
+    },
+    {
+      "start": 206.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.175852756095136,
+      "bgmDbfs": -30.982333182866807,
+      "differenceDb": 15.806480426771671
+    },
+    {
+      "start": 207.0,
+      "seconds": 1.0,
+      "voiceDbfs": -19.001699908795946,
+      "bgmDbfs": -25.736051404529206,
+      "differenceDb": 6.734351495733261
+    },
+    {
+      "start": 209.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.613215137923405,
+      "bgmDbfs": -30.4001012690836,
+      "differenceDb": 17.786886131160195
+    },
+    {
+      "start": 210.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.387433075052556,
+      "bgmDbfs": -37.87461053544095,
+      "differenceDb": 24.487177460388395
+    },
+    {
+      "start": 211.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.584605466458575,
+      "bgmDbfs": -34.985849794865324,
+      "differenceDb": 21.401244328406747
+    },
+    {
+      "start": 212.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.897272882261412,
+      "bgmDbfs": -36.03417310240724,
+      "differenceDb": 21.136900220145826
+    },
+    {
+      "start": 213.0,
+      "seconds": 1.0,
+      "voiceDbfs": -20.244394415278194,
+      "bgmDbfs": -23.453967623347648,
+      "differenceDb": 3.209573208069454
+    },
+    {
+      "start": 214.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.069757866053601,
+      "bgmDbfs": -30.08811287113045,
+      "differenceDb": 15.018355005076847
+    },
+    {
+      "start": 215.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.045520318084074,
+      "bgmDbfs": -32.5199519900036,
+      "differenceDb": 18.474431671919525
+    },
+    {
+      "start": 216.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.186004117460666,
+      "bgmDbfs": -39.4642796939312,
+      "differenceDb": 25.278275576470538
+    },
+    {
+      "start": 217.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.503719333433903,
+      "bgmDbfs": -34.85793302852382,
+      "differenceDb": 22.354213695089914
+    },
+    {
+      "start": 219.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.418573575093502,
+      "bgmDbfs": -35.27712940925366,
+      "differenceDb": 21.858555834160157
+    },
+    {
+      "start": 220.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.072374929312243,
+      "bgmDbfs": -38.070913960297396,
+      "differenceDb": 23.998539030985153
+    },
+    {
+      "start": 221.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.387770283815094,
+      "bgmDbfs": -37.412593766695906,
+      "differenceDb": 22.024823482880812
+    },
+    {
+      "start": 222.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.963205170627036,
+      "bgmDbfs": -41.260533412403575,
+      "differenceDb": 28.29732824177654
+    },
+    {
+      "start": 223.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.262860124458886,
+      "bgmDbfs": -32.75514575602527,
+      "differenceDb": 16.492285631566386
+    },
+    {
+      "start": 224.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.885327730649278,
+      "bgmDbfs": -43.105950763837455,
+      "differenceDb": 30.220623033188176
+    },
+    {
+      "start": 225.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.97917150170862,
+      "bgmDbfs": -40.69903487325777,
+      "differenceDb": 26.719863371549152
+    },
+    {
+      "start": 226.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.164044182291832,
+      "bgmDbfs": -27.449751652387793,
+      "differenceDb": 10.28570747009596
+    },
+    {
+      "start": 227.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.595761747931633,
+      "bgmDbfs": -28.326498080889824,
+      "differenceDb": 12.730736332958191
+    },
+    {
+      "start": 228.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.418442746079652,
+      "bgmDbfs": -39.35057550580684,
+      "differenceDb": 26.932132759727185
+    },
+    {
+      "start": 229.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.16548430145131,
+      "bgmDbfs": -40.831943731962276,
+      "differenceDb": 27.66645943051097
+    },
+    {
+      "start": 230.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.878293490977196,
+      "bgmDbfs": -41.4637867978298,
+      "differenceDb": 28.5854933068526
+    },
+    {
+      "start": 231.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.295001180863625,
+      "bgmDbfs": -38.37468204957945,
+      "differenceDb": 24.079680868715823
+    },
+    {
+      "start": 232.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.60402071835786,
+      "bgmDbfs": -24.96085317401974,
+      "differenceDb": 7.3568324556618805
+    },
+    {
+      "start": 233.0,
+      "seconds": 1.0,
+      "voiceDbfs": -22.23360428640015,
+      "bgmDbfs": -27.11315356701581,
+      "differenceDb": 4.8795492806156595
+    },
+    {
+      "start": 234.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.651481562270696,
+      "bgmDbfs": -42.88568209527455,
+      "differenceDb": 31.23420053300385
+    },
+    {
+      "start": 235.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.105035160140076,
+      "bgmDbfs": -30.019695877849127,
+      "differenceDb": 16.91466071770905
+    },
+    {
+      "start": 236.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.961032139154522,
+      "bgmDbfs": -39.79152200345904,
+      "differenceDb": 26.83048986430452
+    },
+    {
+      "start": 237.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.792359168401413,
+      "bgmDbfs": -39.79286387213788,
+      "differenceDb": 27.000504703736468
+    },
+    {
+      "start": 238.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.846747793257798,
+      "bgmDbfs": -26.477865015192762,
+      "differenceDb": 9.631117221934964
+    },
+    {
+      "start": 240.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.393526080659706,
+      "bgmDbfs": -31.66543499535882,
+      "differenceDb": 18.27190891469911
+    },
+    {
+      "start": 241.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.42058363001532,
+      "bgmDbfs": -37.924426275805764,
+      "differenceDb": 23.503842645790442
+    },
+    {
+      "start": 242.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.14977969644435,
+      "bgmDbfs": -35.231538032998245,
+      "differenceDb": 22.081758336553897
+    },
+    {
+      "start": 243.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.328661606075148,
+      "bgmDbfs": -42.395075827583355,
+      "differenceDb": 31.066414221508207
+    },
+    {
+      "start": 244.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.340086312551055,
+      "bgmDbfs": -38.573734371007276,
+      "differenceDb": 25.23364805845622
+    },
+    {
+      "start": 245.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.552574847877473,
+      "bgmDbfs": -37.06632942299233,
+      "differenceDb": 23.51375457511486
+    },
+    {
+      "start": 246.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.704068285421103,
+      "bgmDbfs": -42.68851308965884,
+      "differenceDb": 30.98444480423774
+    },
+    {
+      "start": 247.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.786743757152433,
+      "bgmDbfs": -39.45790473307254,
+      "differenceDb": 26.671160975920106
+    },
+    {
+      "start": 248.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.256877170001069,
+      "bgmDbfs": -38.786899339821275,
+      "differenceDb": 24.530022169820207
+    },
+    {
+      "start": 249.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.448700851088761,
+      "bgmDbfs": -26.431473641130644,
+      "differenceDb": 10.982772790041883
+    },
+    {
+      "start": 250.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.365806638592844,
+      "bgmDbfs": -28.241798371337076,
+      "differenceDb": 9.875991732744232
+    },
+    {
+      "start": 251.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.664525872878833,
+      "bgmDbfs": -38.04766755899594,
+      "differenceDb": 24.383141686117106
+    },
+    {
+      "start": 252.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.54763491642641,
+      "bgmDbfs": -41.71012048392711,
+      "differenceDb": 30.162485567500703
+    },
+    {
+      "start": 253.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.622869101879157,
+      "bgmDbfs": -35.98008158754051,
+      "differenceDb": 22.357212485661353
+    },
+    {
+      "start": 254.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.358399011800564,
+      "bgmDbfs": -32.728880500329986,
+      "differenceDb": 19.37048148852942
+    },
+    {
+      "start": 255.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.932054741594303,
+      "bgmDbfs": -39.52223149598233,
+      "differenceDb": 26.59017675438803
+    },
+    {
+      "start": 257.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.663877927448631,
+      "bgmDbfs": -34.64528013645173,
+      "differenceDb": 19.9814022090031
+    },
+    {
+      "start": 258.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.896977158448856,
+      "bgmDbfs": -33.61114641643565,
+      "differenceDb": 18.714169257986796
+    },
+    {
+      "start": 259.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.358656417573375,
+      "bgmDbfs": -42.549120491364235,
+      "differenceDb": 31.19046407379086
+    },
+    {
+      "start": 260.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.169636258427449,
+      "bgmDbfs": -31.993301149228746,
+      "differenceDb": 16.823664890801297
+    },
+    {
+      "start": 261.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.728368073247525,
+      "bgmDbfs": -25.239202205301005,
+      "differenceDb": 9.51083413205348
+    },
+    {
+      "start": 262.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.174130731168132,
+      "bgmDbfs": -42.57104309297531,
+      "differenceDb": 31.396912361807175
+    },
+    {
+      "start": 263.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.312781396965622,
+      "bgmDbfs": -37.92246576856831,
+      "differenceDb": 22.609684371602686
+    },
+    {
+      "start": 264.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.698449296254681,
+      "bgmDbfs": -38.515893275887734,
+      "differenceDb": 25.817443979633055
+    },
+    {
+      "start": 265.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.08563007894876,
+      "bgmDbfs": -41.87019186516723,
+      "differenceDb": 29.784561786218468
+    },
+    {
+      "start": 266.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.82636942092565,
+      "bgmDbfs": -34.266232958135596,
+      "differenceDb": 21.439863537209945
+    },
+    {
+      "start": 267.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.380929293917273,
+      "bgmDbfs": -35.4972035945443,
+      "differenceDb": 22.11627430062703
+    },
+    {
+      "start": 268.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.72106765391809,
+      "bgmDbfs": -36.632563738137335,
+      "differenceDb": 24.911496084219245
+    },
+    {
+      "start": 269.0,
+      "seconds": 1.0,
+      "voiceDbfs": -23.322461099909233,
+      "bgmDbfs": -27.68278237322128,
+      "differenceDb": 4.360321273312046
+    },
+    {
+      "start": 270.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.814020097717899,
+      "bgmDbfs": -24.949433840211977,
+      "differenceDb": 11.135413742494078
+    },
+    {
+      "start": 271.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.546180154100188,
+      "bgmDbfs": -37.77890372710853,
+      "differenceDb": 23.23272357300834
+    },
+    {
+      "start": 272.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.753424318378691,
+      "bgmDbfs": -43.36714788997134,
+      "differenceDb": 30.61372357159265
+    },
+    {
+      "start": 273.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.549452726559228,
+      "bgmDbfs": -31.118766579992855,
+      "differenceDb": 15.569313853433627
+    },
+    {
+      "start": 274.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.989318386302775,
+      "bgmDbfs": -37.67652033790072,
+      "differenceDb": 24.68720195159794
+    },
+    {
+      "start": 275.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.716234762865081,
+      "bgmDbfs": -40.08038332342289,
+      "differenceDb": 26.364148560557812
+    },
+    {
+      "start": 276.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.176264429465258,
+      "bgmDbfs": -41.45220015578066,
+      "differenceDb": 29.275935726315403
+    },
+    {
+      "start": 277.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.873213106215005,
+      "bgmDbfs": -29.20318769158773,
+      "differenceDb": 12.329974585372725
+    },
+    {
+      "start": 278.0,
+      "seconds": 1.0,
+      "voiceDbfs": -19.349286450297562,
+      "bgmDbfs": -23.80332121793318,
+      "differenceDb": 4.454034767635619
+    },
+    {
+      "start": 279.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.43107732180336,
+      "bgmDbfs": -36.207324283739446,
+      "differenceDb": 22.77624696193609
+    },
+    {
+      "start": 280.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.644403762546135,
+      "bgmDbfs": -41.83674073870449,
+      "differenceDb": 29.19233697615836
+    },
+    {
+      "start": 281.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.002081497549106,
+      "bgmDbfs": -40.584322962072775,
+      "differenceDb": 27.58224146452367
+    },
+    {
+      "start": 282.0,
+      "seconds": 1.0,
+      "voiceDbfs": -10.869260670021887,
+      "bgmDbfs": -43.10648482408255,
+      "differenceDb": 32.23722415406066
+    },
+    {
+      "start": 283.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.411684195681936,
+      "bgmDbfs": -26.391370408104446,
+      "differenceDb": 9.97968621242251
+    },
+    {
+      "start": 284.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.370772485499442,
+      "bgmDbfs": -28.73984110969611,
+      "differenceDb": 13.369068624196666
+    },
+    {
+      "start": 285.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.59151646441456,
+      "bgmDbfs": -27.284736047207154,
+      "differenceDb": 10.693219582792594
+    },
+    {
+      "start": 286.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.362556648297787,
+      "bgmDbfs": -35.22840351468919,
+      "differenceDb": 20.865846866391404
+    },
+    {
+      "start": 287.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.675155168406302,
+      "bgmDbfs": -43.78199229638263,
+      "differenceDb": 32.106837127976334
+    },
+    {
+      "start": 288.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.449221645476104,
+      "bgmDbfs": -34.304614876437626,
+      "differenceDb": 20.85539323096152
+    },
+    {
+      "start": 289.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.253169686135035,
+      "bgmDbfs": -33.781462938254606,
+      "differenceDb": 20.52829325211957
+    },
+    {
+      "start": 291.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.353488481006025,
+      "bgmDbfs": -34.83964092924096,
+      "differenceDb": 21.486152448234932
+    },
+    {
+      "start": 292.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.150647202491694,
+      "bgmDbfs": -34.736818276352956,
+      "differenceDb": 21.586171073861262
+    },
+    {
+      "start": 293.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.718456458211685,
+      "bgmDbfs": -41.92442244134524,
+      "differenceDb": 30.20596598313356
+    },
+    {
+      "start": 294.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.310292769122192,
+      "bgmDbfs": -39.85745816116896,
+      "differenceDb": 27.547165392046765
+    },
+    {
+      "start": 296.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.794831447435403,
+      "bgmDbfs": -27.135200679355357,
+      "differenceDb": 9.340369231919954
+    },
+    {
+      "start": 297.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.480090124569262,
+      "bgmDbfs": -35.43450655574026,
+      "differenceDb": 21.954416431171
+    },
+    {
+      "start": 298.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.584034111568407,
+      "bgmDbfs": -39.90126490984417,
+      "differenceDb": 27.317230798275766
+    },
+    {
+      "start": 299.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.162745173085083,
+      "bgmDbfs": -36.56219263936985,
+      "differenceDb": 21.399447466284762
+    },
+    {
+      "start": 300.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.863510476713971,
+      "bgmDbfs": -41.172061044237694,
+      "differenceDb": 28.308550567523724
+    },
+    {
+      "start": 301.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.463362750630704,
+      "bgmDbfs": -30.83862219640811,
+      "differenceDb": 15.375259445777406
+    },
+    {
+      "start": 302.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.975341265580276,
+      "bgmDbfs": -41.01846319293185,
+      "differenceDb": 28.04312192735157
+    },
+    {
+      "start": 303.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.165041033511411,
+      "bgmDbfs": -40.588334191448865,
+      "differenceDb": 26.423293157937454
+    },
+    {
+      "start": 304.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.881199368033553,
+      "bgmDbfs": -25.080118803885718,
+      "differenceDb": 7.198919435852165
+    },
+    {
+      "start": 305.0,
+      "seconds": 1.0,
+      "voiceDbfs": -21.743098965591034,
+      "bgmDbfs": -25.985829410672444,
+      "differenceDb": 4.24273044508141
+    },
+    {
+      "start": 306.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.108360204400318,
+      "bgmDbfs": -32.85359901539103,
+      "differenceDb": 18.745238810990713
+    },
+    {
+      "start": 307.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.723101540389958,
+      "bgmDbfs": -40.33762912911544,
+      "differenceDb": 27.614527588725483
+    },
+    {
+      "start": 308.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.265171177003232,
+      "bgmDbfs": -33.10498258335632,
+      "differenceDb": 15.839811406353085
+    },
+    {
+      "start": 309.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.943242941407187,
+      "bgmDbfs": -39.19701096538071,
+      "differenceDb": 26.253768023973528
+    },
+    {
+      "start": 310.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.900716826249017,
+      "bgmDbfs": -37.60238409491607,
+      "differenceDb": 22.70166726866705
+    },
+    {
+      "start": 311.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.110739195822394,
+      "bgmDbfs": -30.143561145821383,
+      "differenceDb": 15.03282194999899
+    },
+    {
+      "start": 312.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.627465504359623,
+      "bgmDbfs": -23.359489760110662,
+      "differenceDb": 7.732024255751039
+    },
+    {
+      "start": 313.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.259423662477372,
+      "bgmDbfs": -34.89106900751968,
+      "differenceDb": 20.63164534504231
+    },
+    {
+      "start": 314.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.243359997892924,
+      "bgmDbfs": -40.59993728033188,
+      "differenceDb": 28.356577282438955
+    },
+    {
+      "start": 315.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.25465569841403,
+      "bgmDbfs": -42.47965615239731,
+      "differenceDb": 30.22500045398328
+    },
+    {
+      "start": 316.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.50942389938379,
+      "bgmDbfs": -37.29825105235368,
+      "differenceDb": 22.788827152969887
+    },
+    {
+      "start": 317.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.671594387991965,
+      "bgmDbfs": -42.962465934538756,
+      "differenceDb": 30.29087154654679
+    },
+    {
+      "start": 318.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.186373527034945,
+      "bgmDbfs": -34.89058685688518,
+      "differenceDb": 21.704213329850234
+    },
+    {
+      "start": 319.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.459786550981486,
+      "bgmDbfs": -30.849760160459226,
+      "differenceDb": 16.389973609477742
+    },
+    {
+      "start": 321.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.747972008069762,
+      "bgmDbfs": -38.887424715059055,
+      "differenceDb": 25.139452706989292
+    },
+    {
+      "start": 322.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.682382217113169,
+      "bgmDbfs": -42.89694206674774,
+      "differenceDb": 31.214559849634572
+    },
+    {
+      "start": 323.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.045026800637547,
+      "bgmDbfs": -38.79717957822896,
+      "differenceDb": 23.752152777591416
+    },
+    {
+      "start": 324.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.613230135404034,
+      "bgmDbfs": -41.956792055822035,
+      "differenceDb": 30.343561920418
+    },
+    {
+      "start": 325.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.937400803963264,
+      "bgmDbfs": -28.973717102843807,
+      "differenceDb": 12.036316298880543
+    },
+    {
+      "start": 326.0,
+      "seconds": 1.0,
+      "voiceDbfs": -19.484158493130245,
+      "bgmDbfs": -23.687836768792643,
+      "differenceDb": 4.203678275662398
+    },
+    {
+      "start": 327.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.200829289709164,
+      "bgmDbfs": -32.15875794323811,
+      "differenceDb": 16.957928653528946
+    },
+    {
+      "start": 328.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.971599738841247,
+      "bgmDbfs": -38.46139808137751,
+      "differenceDb": 26.48979834253626
+    },
+    {
+      "start": 329.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.56587994446004,
+      "bgmDbfs": -43.01881525016966,
+      "differenceDb": 31.45293530570962
+    },
+    {
+      "start": 331.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.586903006196952,
+      "bgmDbfs": -37.445172974322645,
+      "differenceDb": 24.858269968125693
+    },
+    {
+      "start": 332.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.202138501169806,
+      "bgmDbfs": -37.71793749938225,
+      "differenceDb": 23.515798998212446
+    },
+    {
+      "start": 333.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.672463756189948,
+      "bgmDbfs": -42.01177318286122,
+      "differenceDb": 30.33930942667127
+    },
+    {
+      "start": 334.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.105035585323753,
+      "bgmDbfs": -39.48408624468597,
+      "differenceDb": 25.379050659362214
+    },
+    {
+      "start": 335.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.002914262496034,
+      "bgmDbfs": -43.131591259505946,
+      "differenceDb": 30.12867699700991
+    },
+    {
+      "start": 336.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.798257338093462,
+      "bgmDbfs": -34.319500377609124,
+      "differenceDb": 18.52124303951566
+    },
+    {
+      "start": 337.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.27425751851165,
+      "bgmDbfs": -35.194338041627766,
+      "differenceDb": 21.920080523116116
+    },
+    {
+      "start": 338.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.631748807932652,
+      "bgmDbfs": -24.341771141014135,
+      "differenceDb": 5.710022333081483
+    },
+    {
+      "start": 339.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.549209949489043,
+      "bgmDbfs": -29.58771283249434,
+      "differenceDb": 14.038502883005297
+    },
+    {
+      "start": 340.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.757014010144466,
+      "bgmDbfs": -37.698515140653484,
+      "differenceDb": 23.941501130509018
+    },
+    {
+      "start": 341.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.74972772296107,
+      "bgmDbfs": -29.95256297839665,
+      "differenceDb": 13.20283525543558
+    },
+    {
+      "start": 342.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.211642399518613,
+      "bgmDbfs": -25.23763512979519,
+      "differenceDb": 7.0259927302765774
+    },
+    {
+      "start": 343.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.52813425013999,
+      "bgmDbfs": -34.86997591575224,
+      "differenceDb": 20.34184166561225
+    },
+    {
+      "start": 344.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.602605711778109,
+      "bgmDbfs": -37.85890086501761,
+      "differenceDb": 24.2562951532395
+    },
+    {
+      "start": 345.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.155175073553496,
+      "bgmDbfs": -41.364522603514615,
+      "differenceDb": 28.20934752996112
+    },
+    {
+      "start": 346.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.305571646633089,
+      "bgmDbfs": -35.444701462988036,
+      "differenceDb": 20.139129816354945
+    },
+    {
+      "start": 347.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.960411775496611,
+      "bgmDbfs": -37.29397627124906,
+      "differenceDb": 24.333564495752448
+    },
+    {
+      "start": 348.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.39208068205556,
+      "bgmDbfs": -41.23471277231711,
+      "differenceDb": 27.84263209026155
+    },
+    {
+      "start": 349.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.644496842020596,
+      "bgmDbfs": -38.04930458228701,
+      "differenceDb": 23.404807740266413
+    },
+    {
+      "start": 350.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.251695082608611,
+      "bgmDbfs": -33.35450345982763,
+      "differenceDb": 18.10280837721902
+    },
+    {
+      "start": 351.0,
+      "seconds": 1.0,
+      "voiceDbfs": -22.950320307541517,
+      "bgmDbfs": -26.284225520625686,
+      "differenceDb": 3.3339052130841687
+    },
+    {
+      "start": 352.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.11098102044849,
+      "bgmDbfs": -42.794842291224384,
+      "differenceDb": 31.683861270775893
+    },
+    {
+      "start": 353.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.700698887913891,
+      "bgmDbfs": -36.14585330054276,
+      "differenceDb": 21.44515441262887
+    },
+    {
+      "start": 354.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.90519206174032,
+      "bgmDbfs": -42.485689983684026,
+      "differenceDb": 29.580497921943703
+    },
+    {
+      "start": 355.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.743507773055182,
+      "bgmDbfs": -36.36107729610895,
+      "differenceDb": 23.61756952305377
+    },
+    {
+      "start": 356.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.122153063144971,
+      "bgmDbfs": -41.87041812812548,
+      "differenceDb": 28.748265064980508
+    },
+    {
+      "start": 357.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.824432035666106,
+      "bgmDbfs": -36.00726328046987,
+      "differenceDb": 24.182831244803765
+    },
+    {
+      "start": 358.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.714281013704046,
+      "bgmDbfs": -28.93155344560663,
+      "differenceDb": 12.217272431902586
+    },
+    {
+      "start": 359.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.103213696041689,
+      "bgmDbfs": -36.19640971933861,
+      "differenceDb": 22.093196023296922
+    },
+    {
+      "start": 360.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.55705034105781,
+      "bgmDbfs": -35.30694910210993,
+      "differenceDb": 21.749898761052123
+    },
+    {
+      "start": 361.0,
+      "seconds": 1.0,
+      "voiceDbfs": -23.823770207969304,
+      "bgmDbfs": -26.107383544709812,
+      "differenceDb": 2.2836133367405083
+    },
+    {
+      "start": 362.0,
+      "seconds": 1.0,
+      "voiceDbfs": -10.767298719919046,
+      "bgmDbfs": -41.809859596747245,
+      "differenceDb": 31.042560876828198
+    },
+    {
+      "start": 363.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.253545391945826,
+      "bgmDbfs": -37.280571169873724,
+      "differenceDb": 22.027025777927896
+    },
+    {
+      "start": 364.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.842170266205047,
+      "bgmDbfs": -38.571660885374506,
+      "differenceDb": 24.72949061916946
+    },
+    {
+      "start": 365.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.830782868872602,
+      "bgmDbfs": -36.01794781728263,
+      "differenceDb": 22.18716494841003
+    },
+    {
+      "start": 366.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.840456347877145,
+      "bgmDbfs": -36.73412914818718,
+      "differenceDb": 22.893672800310036
+    },
+    {
+      "start": 367.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.63876362614724,
+      "bgmDbfs": -36.772006534074336,
+      "differenceDb": 22.133242907927098
+    },
+    {
+      "start": 368.0,
+      "seconds": 1.0,
+      "voiceDbfs": -10.58267073372493,
+      "bgmDbfs": -43.23804650791888,
+      "differenceDb": 32.65537577419395
+    },
+    {
+      "start": 369.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.380559485556988,
+      "bgmDbfs": -41.49109993205598,
+      "differenceDb": 29.110540446498995
+    },
+    {
+      "start": 370.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.169753859691298,
+      "bgmDbfs": -37.94476621288063,
+      "differenceDb": 22.775012353189332
+    },
+    {
+      "start": 371.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.724014731161088,
+      "bgmDbfs": -33.18499193936388,
+      "differenceDb": 19.460977208202795
+    },
+    {
+      "start": 372.0,
+      "seconds": 1.0,
+      "voiceDbfs": -22.52106625656156,
+      "bgmDbfs": -23.264574969964663,
+      "differenceDb": 0.7435087134031022
+    },
+    {
+      "start": 373.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.183144031279499,
+      "bgmDbfs": -42.55875156256633,
+      "differenceDb": 30.375607531286832
+    },
+    {
+      "start": 374.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.79669555989573,
+      "bgmDbfs": -32.154016241302166,
+      "differenceDb": 17.357320681406435
+    },
+    {
+      "start": 375.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.876018215725704,
+      "bgmDbfs": -25.80763652082862,
+      "differenceDb": 6.931618305102916
+    },
+    {
+      "start": 376.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.482110666229458,
+      "bgmDbfs": -28.11674967833893,
+      "differenceDb": 13.634639012109472
+    },
+    {
+      "start": 377.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.0246604922523,
+      "bgmDbfs": -39.738979761965815,
+      "differenceDb": 26.714319269713513
+    },
+    {
+      "start": 378.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.0065809511895,
+      "bgmDbfs": -35.15591531617695,
+      "differenceDb": 21.149334364987453
+    },
+    {
+      "start": 379.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.338724249325162,
+      "bgmDbfs": -39.648579771612084,
+      "differenceDb": 28.309855522286924
+    },
+    {
+      "start": 380.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.652474315943458,
+      "bgmDbfs": -44.79796930239697,
+      "differenceDb": 31.145494986453514
+    },
+    {
+      "start": 381.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.483669262843597,
+      "bgmDbfs": -36.483256284635964,
+      "differenceDb": 21.999587021792365
+    },
+    {
+      "start": 383.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.117872379270375,
+      "bgmDbfs": -35.82725096400766,
+      "differenceDb": 21.709378584737287
+    },
+    {
+      "start": 384.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.780471272531766,
+      "bgmDbfs": -44.12977389249245,
+      "differenceDb": 32.34930261996068
+    },
+    {
+      "start": 385.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.684816324000193,
+      "bgmDbfs": -38.053590273984646,
+      "differenceDb": 23.36877394998445
+    },
+    {
+      "start": 386.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.98913842774599,
+      "bgmDbfs": -44.82635059042158,
+      "differenceDb": 31.83721216267559
+    },
+    {
+      "start": 387.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.711476963372943,
+      "bgmDbfs": -41.65240998553625,
+      "differenceDb": 27.940933022163307
+    },
+    {
+      "start": 388.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.253434161979396,
+      "bgmDbfs": -32.53358467570268,
+      "differenceDb": 16.28015051372328
+    },
+    {
+      "start": 389.0,
+      "seconds": 1.0,
+      "voiceDbfs": -20.51180460635742,
+      "bgmDbfs": -29.382837143636497,
+      "differenceDb": 8.871032537279078
+    },
+    {
+      "start": 390.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.333760140610954,
+      "bgmDbfs": -42.24633464949317,
+      "differenceDb": 27.912574508882216
+    },
+    {
+      "start": 391.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.134005115907451,
+      "bgmDbfs": -44.49370499138918,
+      "differenceDb": 32.35969987548173
+    },
+    {
+      "start": 392.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.584794878225996,
+      "bgmDbfs": -39.37043688725045,
+      "differenceDb": 22.785642009024453
+    },
+    {
+      "start": 393.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.095937013673092,
+      "bgmDbfs": -45.01786924873581,
+      "differenceDb": 32.92193223506272
+    },
+    {
+      "start": 394.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.178337694448853,
+      "bgmDbfs": -44.394203248364754,
+      "differenceDb": 31.2158655539159
+    },
+    {
+      "start": 396.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.022361928881548,
+      "bgmDbfs": -32.14615128590117,
+      "differenceDb": 16.12378935701962
+    },
+    {
+      "start": 397.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.97937085283584,
+      "bgmDbfs": -42.17178286818334,
+      "differenceDb": 29.1924120153475
+    },
+    {
+      "start": 398.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.688853879257387,
+      "bgmDbfs": -30.768469418379997,
+      "differenceDb": 17.07961553912261
+    },
+    {
+      "start": 399.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.469812929262902,
+      "bgmDbfs": -34.13485383820874,
+      "differenceDb": 19.66504090894584
+    },
+    {
+      "start": 400.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.625594586763427,
+      "bgmDbfs": -39.15466066488972,
+      "differenceDb": 26.52906607812629
+    },
+    {
+      "start": 401.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.43128748719637,
+      "bgmDbfs": -42.744911847020326,
+      "differenceDb": 30.313624359823955
+    },
+    {
+      "start": 402.0,
+      "seconds": 1.0,
+      "voiceDbfs": -17.06218690682547,
+      "bgmDbfs": -30.358381222425855,
+      "differenceDb": 13.296194315600385
+    },
+    {
+      "start": 403.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.179440795774962,
+      "bgmDbfs": -24.18618751897309,
+      "differenceDb": 6.006746723198127
+    },
+    {
+      "start": 404.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.146314090740418,
+      "bgmDbfs": -42.74252338459186,
+      "differenceDb": 30.596209293851444
+    },
+    {
+      "start": 405.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.587065828034167,
+      "bgmDbfs": -37.899997535256446,
+      "differenceDb": 24.31293170722228
+    },
+    {
+      "start": 406.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.436275949024575,
+      "bgmDbfs": -34.90977419554206,
+      "differenceDb": 20.473498246517487
+    },
+    {
+      "start": 407.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.407644282309962,
+      "bgmDbfs": -31.52456526471077,
+      "differenceDb": 17.116920982400806
+    },
+    {
+      "start": 408.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.638238356448653,
+      "bgmDbfs": -32.865282589648636,
+      "differenceDb": 18.227044233199983
+    },
+    {
+      "start": 409.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.158726734730518,
+      "bgmDbfs": -42.72369244227039,
+      "differenceDb": 30.564965707539873
+    },
+    {
+      "start": 410.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.95158468143141,
+      "bgmDbfs": -39.543453190850045,
+      "differenceDb": 26.591868509418635
+    },
+    {
+      "start": 411.0,
+      "seconds": 1.0,
+      "voiceDbfs": -19.410508262035734,
+      "bgmDbfs": -25.619800735636645,
+      "differenceDb": 6.209292473600911
+    },
+    {
+      "start": 413.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.336287279114678,
+      "bgmDbfs": -42.58400212587452,
+      "differenceDb": 30.24771484675984
+    },
+    {
+      "start": 414.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.226278893226958,
+      "bgmDbfs": -37.44451188275612,
+      "differenceDb": 23.21823298952916
+    },
+    {
+      "start": 415.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.99473250919228,
+      "bgmDbfs": -34.53729888665775,
+      "differenceDb": 20.54256637746547
+    },
+    {
+      "start": 416.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.53074164733912,
+      "bgmDbfs": -42.026917058933,
+      "differenceDb": 29.49617541159388
+    },
+    {
+      "start": 417.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.59002376396523,
+      "bgmDbfs": -31.804253501677646,
+      "differenceDb": 17.214229737712415
+    },
+    {
+      "start": 419.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.991350958205322,
+      "bgmDbfs": -37.286238597217704,
+      "differenceDb": 23.29488763901238
+    },
+    {
+      "start": 420.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.11462337434712,
+      "bgmDbfs": -32.750546194091996,
+      "differenceDb": 17.635922819744877
+    },
+    {
+      "start": 421.0,
+      "seconds": 1.0,
+      "voiceDbfs": -20.38829891219697,
+      "bgmDbfs": -25.760289255073463,
+      "differenceDb": 5.371990342876494
+    },
+    {
+      "start": 422.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.03575491161962,
+      "bgmDbfs": -32.940270771454166,
+      "differenceDb": 19.904515859834547
+    },
+    {
+      "start": 423.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.831995992651143,
+      "bgmDbfs": -36.34265283374844,
+      "differenceDb": 20.510656841097294
+    },
+    {
+      "start": 424.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.817041402740282,
+      "bgmDbfs": -40.341894905716885,
+      "differenceDb": 27.524853502976605
+    },
+    {
+      "start": 425.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.024327841786697,
+      "bgmDbfs": -38.53572643332448,
+      "differenceDb": 24.51139859153778
+    },
+    {
+      "start": 426.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.901762667599334,
+      "bgmDbfs": -35.875828458950785,
+      "differenceDb": 20.97406579135145
+    },
+    {
+      "start": 427.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.382612183723284,
+      "bgmDbfs": -35.932067797643825,
+      "differenceDb": 22.549455613920543
+    },
+    {
+      "start": 428.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.322341234380907,
+      "bgmDbfs": -40.3509631374774,
+      "differenceDb": 26.028621903096493
+    },
+    {
+      "start": 429.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.693266520718556,
+      "bgmDbfs": -41.89819058925668,
+      "differenceDb": 28.204924068538123
+    },
+    {
+      "start": 430.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.706299390434953,
+      "bgmDbfs": -36.909966959962205,
+      "differenceDb": 23.20366756952725
+    },
+    {
+      "start": 431.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.26578824099537,
+      "bgmDbfs": -34.23631856277501,
+      "differenceDb": 18.97053032177964
+    },
+    {
+      "start": 432.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.361537573606107,
+      "bgmDbfs": -35.1056435965475,
+      "differenceDb": 21.744106022941395
+    },
+    {
+      "start": 433.0,
+      "seconds": 1.0,
+      "voiceDbfs": -16.16220540109183,
+      "bgmDbfs": -36.3822852980024,
+      "differenceDb": 20.220079896910573
+    },
+    {
+      "start": 434.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.19973696238755,
+      "bgmDbfs": -35.17900636427967,
+      "differenceDb": 19.97926940189212
+    },
+    {
+      "start": 435.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.074877992352175,
+      "bgmDbfs": -33.88632019956627,
+      "differenceDb": 18.811442207214096
+    },
+    {
+      "start": 437.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.475960585038953,
+      "bgmDbfs": -35.66986467707104,
+      "differenceDb": 22.193904092032085
+    },
+    {
+      "start": 438.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.867891163183202,
+      "bgmDbfs": -36.92016619880581,
+      "differenceDb": 23.052275035622607
+    },
+    {
+      "start": 439.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.425739675861578,
+      "bgmDbfs": -35.21085581158141,
+      "differenceDb": 20.785116135719832
+    },
+    {
+      "start": 440.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.822594180583804,
+      "bgmDbfs": -36.77022327824709,
+      "differenceDb": 22.94762909766328
+    },
+    {
+      "start": 441.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.626245531197092,
+      "bgmDbfs": -34.950285636625,
+      "differenceDb": 21.324040105427905
+    },
+    {
+      "start": 442.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.639331467452008,
+      "bgmDbfs": -38.50344787489143,
+      "differenceDb": 25.86411640743942
+    },
+    {
+      "start": 443.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.70723371099025,
+      "bgmDbfs": -29.05953494681244,
+      "differenceDb": 10.352301235822193
+    },
+    {
+      "start": 444.0,
+      "seconds": 1.0,
+      "voiceDbfs": -19.737607158424964,
+      "bgmDbfs": -24.23637283133248,
+      "differenceDb": 4.498765672907517
+    },
+    {
+      "start": 445.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.628935699847741,
+      "bgmDbfs": -43.858322066476106,
+      "differenceDb": 31.229386366628365
+    },
+    {
+      "start": 446.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.053982769626694,
+      "bgmDbfs": -38.85404915284933,
+      "differenceDb": 24.800066383222635
+    },
+    {
+      "start": 447.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.587998272392515,
+      "bgmDbfs": -34.87271475200049,
+      "differenceDb": 21.284716479607976
+    },
+    {
+      "start": 448.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.041883842969822,
+      "bgmDbfs": -42.486103106093545,
+      "differenceDb": 30.44421926312372
+    },
+    {
+      "start": 449.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.765378187054868,
+      "bgmDbfs": -37.849892420457884,
+      "differenceDb": 24.084514233403016
+    },
+    {
+      "start": 450.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.716519915547345,
+      "bgmDbfs": -38.36894250353227,
+      "differenceDb": 23.652422587984923
+    },
+    {
+      "start": 452.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.391946873975636,
+      "bgmDbfs": -27.022452511035453,
+      "differenceDb": 13.630505637059818
+    },
+    {
+      "start": 453.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.842798838379592,
+      "bgmDbfs": -37.731609746961915,
+      "differenceDb": 24.88881090858232
+    },
+    {
+      "start": 454.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.936007283003498,
+      "bgmDbfs": -36.489703826239236,
+      "differenceDb": 21.553696543235738
+    },
+    {
+      "start": 455.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.110188178274731,
+      "bgmDbfs": -37.77648521995539,
+      "differenceDb": 22.666297041680657
+    },
+    {
+      "start": 456.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.330806813258622,
+      "bgmDbfs": -42.02799930014747,
+      "differenceDb": 30.69719248688885
+    },
+    {
+      "start": 457.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.776566944078358,
+      "bgmDbfs": -42.73763634064223,
+      "differenceDb": 29.961069396563875
+    },
+    {
+      "start": 458.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.599622001961384,
+      "bgmDbfs": -31.605570807197235,
+      "differenceDb": 16.005948805235853
+    },
+    {
+      "start": 460.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.45479501757042,
+      "bgmDbfs": -40.2120886050534,
+      "differenceDb": 26.757293587482984
+    },
+    {
+      "start": 461.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.769547830918388,
+      "bgmDbfs": -42.924038995745434,
+      "differenceDb": 30.154491164827046
+    },
+    {
+      "start": 462.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.406373403670175,
+      "bgmDbfs": -42.30557811090531,
+      "differenceDb": 29.899204707235135
+    },
+    {
+      "start": 463.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.521543104832995,
+      "bgmDbfs": -42.0501273513037,
+      "differenceDb": 29.528584246470707
+    },
+    {
+      "start": 464.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.102855744714786,
+      "bgmDbfs": -35.590881572020066,
+      "differenceDb": 22.48802582730528
+    },
+    {
+      "start": 465.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.494422606945227,
+      "bgmDbfs": -25.816621072871865,
+      "differenceDb": 10.322198465926638
+    },
+    {
+      "start": 467.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.570584579324784,
+      "bgmDbfs": -32.862317182954996,
+      "differenceDb": 17.291732603630212
+    },
+    {
+      "start": 468.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.106868713602799,
+      "bgmDbfs": -32.89583853456003,
+      "differenceDb": 18.788969820957227
+    },
+    {
+      "start": 469.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.918359663018085,
+      "bgmDbfs": -41.28577314050087,
+      "differenceDb": 29.367413477482785
+    },
+    {
+      "start": 470.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.708942605729927,
+      "bgmDbfs": -27.785483207610273,
+      "differenceDb": 14.076540601880346
+    },
+    {
+      "start": 471.0,
+      "seconds": 1.0,
+      "voiceDbfs": -10.587002164413342,
+      "bgmDbfs": -43.061340634659814,
+      "differenceDb": 32.47433847024647
+    },
+    {
+      "start": 472.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.694291740701196,
+      "bgmDbfs": -38.54582746239598,
+      "differenceDb": 26.85153572169478
+    },
+    {
+      "start": 473.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.670031932040226,
+      "bgmDbfs": -43.14300449116024,
+      "differenceDb": 31.472972559120016
+    },
+    {
+      "start": 474.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.794748018042714,
+      "bgmDbfs": -34.73165302297496,
+      "differenceDb": 19.936905004932246
+    },
+    {
+      "start": 475.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.234095272415326,
+      "bgmDbfs": -39.0547592226677,
+      "differenceDb": 26.820663950252374
+    },
+    {
+      "start": 476.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.907630351863656,
+      "bgmDbfs": -36.79862363611287,
+      "differenceDb": 21.890993284249216
+    },
+    {
+      "start": 477.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.585893174566134,
+      "bgmDbfs": -24.182752745363647,
+      "differenceDb": 5.596859570797513
+    },
+    {
+      "start": 478.0,
+      "seconds": 1.0,
+      "voiceDbfs": -18.51852401456955,
+      "bgmDbfs": -28.188597788027813,
+      "differenceDb": 9.670073773458263
+    },
+    {
+      "start": 479.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.199370085964759,
+      "bgmDbfs": -33.23675330679955,
+      "differenceDb": 20.03738322083479
+    },
+    {
+      "start": 480.0,
+      "seconds": 1.0,
+      "voiceDbfs": -11.250270983218783,
+      "bgmDbfs": -39.186715737145796,
+      "differenceDb": 27.936444753927013
+    },
+    {
+      "start": 484.0,
+      "seconds": 1.0,
+      "voiceDbfs": -23.751039921010086,
+      "bgmDbfs": -27.6942651237609,
+      "differenceDb": 3.9432252027508135
+    },
+    {
+      "start": 485.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.164773049056649,
+      "bgmDbfs": -43.40143223938221,
+      "differenceDb": 31.23665919032556
+    },
+    {
+      "start": 486.0,
+      "seconds": 1.0,
+      "voiceDbfs": -14.38296374209126,
+      "bgmDbfs": -38.293207929359106,
+      "differenceDb": 23.910244187267846
+    },
+    {
+      "start": 487.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.210974058360387,
+      "bgmDbfs": -39.57150925490388,
+      "differenceDb": 26.360535196543495
+    },
+    {
+      "start": 488.0,
+      "seconds": 1.0,
+      "voiceDbfs": -13.266553412558862,
+      "bgmDbfs": -41.08786863685526,
+      "differenceDb": 27.8213152242964
+    },
+    {
+      "start": 489.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.121329055049912,
+      "bgmDbfs": -35.0323848136964,
+      "differenceDb": 19.91105575864649
+    },
+    {
+      "start": 490.0,
+      "seconds": 1.0,
+      "voiceDbfs": -12.100639528710664,
+      "bgmDbfs": -42.67751741387861,
+      "differenceDb": 30.576877885167946
+    },
+    {
+      "start": 491.0,
+      "seconds": 1.0,
+      "voiceDbfs": -15.214035879844506,
+      "bgmDbfs": -32.30489907718192,
+      "differenceDb": 17.090863197337416
+    }
+  ]
+}

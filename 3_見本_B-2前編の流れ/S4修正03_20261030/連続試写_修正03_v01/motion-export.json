@@ -1,0 +1,423 @@
+{
+  "stage": "Continuous S3-quality motion validation",
+  "id": "ys-chain-b2a_gpt_20261029",
+  "renderKey": "b2a_s4final_gpt_20261030",
+  "fps": 30,
+  "nativeResolution": [
+    540,
+    960
+  ],
+  "manifestFile": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/連続試写_manifest.json",
+  "manifestSha256": "708d337a683ac3fb0aa7361b9617f99ad75b54570c005361acff6c3f7da86af5",
+  "anchorsSha256": "8b924fdc02c7993c1cdd2c9950250022ceb43eba23fe0e323ccaad2a96bde183",
+  "mixFile": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+  "mixRecord": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mix.json",
+  "mixSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+  "mixRecordSha256": "9be8ceefbc624bd4dd8bd3717dfd48127a93dafba75c90f0bd7d57bc90c733f6",
+  "voiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+  "receiptFile": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S4r03trial_v01-frozen-input-and-audio-reuse_20261030.json",
+  "receiptSha256": "54a3fab1f2d381b006b4449d23a6b2eed7367bc830d7e789b6413a4ae3b09bf4",
+  "voiceBgmDifferenceMedianDb": 22.398616534108726,
+  "voiceBgmDifferenceP10Db": 10.102094715491893,
+  "windows": [
+    {
+      "id": "correction-1",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-1.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-1.export.json",
+      "fromFrame": 3482,
+      "toFrameExclusive": 3802,
+      "frames": 320,
+      "criticalFrames": [
+        3618,
+        3669,
+        3683,
+        3689
+      ]
+    },
+    {
+      "id": "correction-2",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.export.json",
+      "fromFrame": 5490,
+      "toFrameExclusive": 5850,
+      "frames": 360,
+      "criticalFrames": [
+        5556,
+        5627,
+        5730,
+        5786,
+        5792,
+        5805
+      ]
+    },
+    {
+      "id": "correction-3",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-3.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-3.export.json",
+      "fromFrame": 6273,
+      "toFrameExclusive": 7008,
+      "frames": 735,
+      "criticalFrames": [
+        6457,
+        6470,
+        6525,
+        6838,
+        6874,
+        6910,
+        6947
+      ]
+    },
+    {
+      "id": "correction-4",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-4.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-4.export.json",
+      "fromFrame": 8532,
+      "toFrameExclusive": 8895,
+      "frames": 363,
+      "criticalFrames": [
+        8630,
+        8635,
+        8647,
+        8785,
+        8798
+      ]
+    },
+    {
+      "id": "correction-5",
+      "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-5.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-5.export.json",
+      "fromFrame": 11880,
+      "toFrameExclusive": 12390,
+      "frames": 510,
+      "criticalFrames": [
+        12245,
+        12251
+      ]
+    }
+  ],
+  "contactPages": [
+    "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/motion-contact-01.jpg",
+    "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/motion-contact-02.jpg",
+    "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/motion-contact-03.jpg",
+    "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/motion-contact-04.jpg",
+    "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/motion-contact-05.jpg"
+  ],
+  "contactSamples": [
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-1-03482.jpg",
+      "id": "correction-1",
+      "j": 3482,
+      "absoluteSeconds": 116.06666666666666,
+      "label": "start",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-1-03618.jpg",
+      "id": "correction-1",
+      "j": 3618,
+      "absoluteSeconds": 120.6,
+      "label": "rub",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-1-03641.jpg",
+      "id": "correction-1",
+      "j": 3641,
+      "absoluteSeconds": 121.36666666666666,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-1-03669.jpg",
+      "id": "correction-1",
+      "j": 3669,
+      "absoluteSeconds": 122.3,
+      "label": "charges",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-1-03683.jpg",
+      "id": "correction-1",
+      "j": 3683,
+      "absoluteSeconds": 122.76666666666667,
+      "label": "spark",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-1-03689.jpg",
+      "id": "correction-1",
+      "j": 3689,
+      "absoluteSeconds": 122.96666666666667,
+      "label": "empty",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-1-03801.jpg",
+      "id": "correction-1",
+      "j": 3801,
+      "absoluteSeconds": 126.7,
+      "label": "end",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05490.jpg",
+      "id": "correction-2",
+      "j": 5490,
+      "absoluteSeconds": 183,
+      "label": "start",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05556.jpg",
+      "id": "correction-2",
+      "j": 5556,
+      "absoluteSeconds": 185.2,
+      "label": "crank",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05627.jpg",
+      "id": "correction-2",
+      "j": 5627,
+      "absoluteSeconds": 187.56666666666666,
+      "label": "white-spark",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05669.jpg",
+      "id": "correction-2",
+      "j": 5669,
+      "absoluteSeconds": 188.96666666666667,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05730.jpg",
+      "id": "correction-2",
+      "j": 5730,
+      "absoluteSeconds": 191,
+      "label": "scalpel",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05786.jpg",
+      "id": "correction-2",
+      "j": 5786,
+      "absoluteSeconds": 192.86666666666667,
+      "label": "kick-before",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05792.jpg",
+      "id": "correction-2",
+      "j": 5792,
+      "absoluteSeconds": 193.06666666666666,
+      "label": "kick-peak",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05805.jpg",
+      "id": "correction-2",
+      "j": 5805,
+      "absoluteSeconds": 193.5,
+      "label": "kick-return",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-2-05849.jpg",
+      "id": "correction-2",
+      "j": 5849,
+      "absoluteSeconds": 194.96666666666667,
+      "label": "end",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06273.jpg",
+      "id": "correction-3",
+      "j": 6273,
+      "absoluteSeconds": 209.1,
+      "label": "start",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06457.jpg",
+      "id": "correction-3",
+      "j": 6457,
+      "absoluteSeconds": 215.23333333333332,
+      "label": "hypothesis-before",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06470.jpg",
+      "id": "correction-3",
+      "j": 6470,
+      "absoluteSeconds": 215.66666666666666,
+      "label": "hypothesis-mark",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06525.jpg",
+      "id": "correction-3",
+      "j": 6525,
+      "absoluteSeconds": 217.5,
+      "label": "single-pulse",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06640.jpg",
+      "id": "correction-3",
+      "j": 6640,
+      "absoluteSeconds": 221.33333333333334,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06838.jpg",
+      "id": "correction-3",
+      "j": 6838,
+      "absoluteSeconds": 227.93333333333334,
+      "label": "path-return",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06874.jpg",
+      "id": "correction-3",
+      "j": 6874,
+      "absoluteSeconds": 229.13333333333333,
+      "label": "one-loop-start",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06910.jpg",
+      "id": "correction-3",
+      "j": 6910,
+      "absoluteSeconds": 230.33333333333334,
+      "label": "one-loop-middle",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-06947.jpg",
+      "id": "correction-3",
+      "j": 6947,
+      "absoluteSeconds": 231.56666666666666,
+      "label": "one-loop-end",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-3-07007.jpg",
+      "id": "correction-3",
+      "j": 7007,
+      "absoluteSeconds": 233.56666666666666,
+      "label": "end",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08532.jpg",
+      "id": "correction-4",
+      "j": 8532,
+      "absoluteSeconds": 284.4,
+      "label": "start",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08630.jpg",
+      "id": "correction-4",
+      "j": 8630,
+      "absoluteSeconds": 287.6666666666667,
+      "label": "smoke-before",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08635.jpg",
+      "id": "correction-4",
+      "j": 8635,
+      "absoluteSeconds": 287.8333333333333,
+      "label": "smoke-lamp-waves-foot",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08647.jpg",
+      "id": "correction-4",
+      "j": 8647,
+      "absoluteSeconds": 288.23333333333335,
+      "label": "lamp-off",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08713.jpg",
+      "id": "correction-4",
+      "j": 8713,
+      "absoluteSeconds": 290.43333333333334,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08785.jpg",
+      "id": "correction-4",
+      "j": 8785,
+      "absoluteSeconds": 292.8333333333333,
+      "label": "single-underside",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08798.jpg",
+      "id": "correction-4",
+      "j": 8798,
+      "absoluteSeconds": 293.26666666666665,
+      "label": "no-alarm-smoke",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-4-08894.jpg",
+      "id": "correction-4",
+      "j": 8894,
+      "absoluteSeconds": 296.46666666666664,
+      "label": "end",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-5-11880.jpg",
+      "id": "correction-5",
+      "j": 11880,
+      "absoluteSeconds": 396,
+      "label": "start",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-5-12134.jpg",
+      "id": "correction-5",
+      "j": 12134,
+      "absoluteSeconds": 404.46666666666664,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-5-12245.jpg",
+      "id": "correction-5",
+      "j": 12245,
+      "absoluteSeconds": 408.1666666666667,
+      "label": "glyph-before-strike",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-5-12251.jpg",
+      "id": "correction-5",
+      "j": 12251,
+      "absoluteSeconds": 408.3666666666667,
+      "label": "glyph-and-label-strike",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/contact-frames/correction-5-12389.jpg",
+      "id": "correction-5",
+      "j": 12389,
+      "absoluteSeconds": 412.96666666666664,
+      "label": "end",
+      "critical": false
+    }
+  ],
+  "samplesCoverEveryDeclaredCriticalFrame": true,
+  "allVisualsReviewed": false,
+  "earsPerformed": false,
+  "scope": "Exact frame/sample-clock short trials plus contact sheets only. Actual motion must be visually reviewed by root; no audio-generation/mixing, interpolation, missing-frame substitution, or final-resolution claim."
+}

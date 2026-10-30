@@ -1,0 +1,19 @@
+{
+  "report": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v03_地表幅修正/完成MP4音声/final-mp4-audio-audit.json",
+  "pass": true,
+  "checks": {
+    "strictAudioDecodeExitZero": true,
+    "strictPcmDecodeExitZero": true,
+    "exactlyOneAacMono24kAudioStream": true,
+    "durationWithinCodecAndVideoQuantization": true,
+    "containerDurationWithinCodecAndVideoQuantization": true,
+    "integratedLufsMinus14WithinPoint5": true,
+    "truePeakBelowZeroDbfs": true,
+    "zeroSilenceRunsMinus35DbQuarterSecond": true,
+    "frozenMixHashUnchanged": true
+  },
+  "integratedLUFS": -14.2,
+  "truePeakDbfs": -0.8,
+  "audioSeconds": 494.8906666666667,
+  "estimatedLagSamples": 0
+}

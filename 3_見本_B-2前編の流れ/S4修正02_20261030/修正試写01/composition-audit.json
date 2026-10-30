@@ -1,0 +1,5392 @@
+{
+  "episode": "B-2前編",
+  "id": "ys-chain-b2a_gpt_20261029",
+  "stage": "S2 actual exact-frame 2D compositions",
+  "nativeFrameManifest": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/storyboard/probe.json",
+  "nativeFrameManifestSha256": "4439bdb84d1ad76a54ce2610b0fbbb6763e2f1416a38f73976263dc9328cc64f",
+  "anchorsFile": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/anchors.json",
+  "anchorsSha256": "3c24ae159192ee1c89e301f8a2a50bea6e0b3913bd39fe78e65cd86b7d45f4d5",
+  "frames": [
+    {
+      "row": 1,
+      "seconds": 0.8,
+      "where": "probe",
+      "cue": null,
+      "key": "silent-intro",
+      "time": 0.8,
+      "frame": 24,
+      "j": 24,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/00024.jpg",
+      "actualPrimary": "b2a_frog,b2a_cover",
+      "measurement": {
+        "x0": -43.4,
+        "y0": 459.6,
+        "x1": 880.1,
+        "y1": 1116.9,
+        "width": 0.8550925925925926,
+        "height": 0.34234375000000006,
+        "allInCamera": false
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/00024.jpg",
+      "sourceSha256": "38143a2b4cef3b270765408304bb2d8b55d25db0389b987134559fd03f2a3003",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/00024.jpg",
+      "outputSha256": "f487f6ef1501619dce324c7f4eac3430534d5ed472ab59c6960c02ddfd348ea4",
+      "audit": [
+        {
+          "type": "label",
+          "text": "B 電気と電波 2",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 307,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 259,
+              "height": 36,
+              "text": "B 電気と電波 2",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "カエルの足の電気は、どこから来た？（前編）",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 178,
+            "width": 780,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 192,
+              "width": 732,
+              "height": 36,
+              "text": "カエルの足の電気は、どこから来た？（前編）",
+              "size": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "row": 6,
+      "seconds": 51.5,
+      "where": "probe",
+      "cue": "r06:b",
+      "key": "cb2agpt-r06:b",
+      "time": 51.5,
+      "frame": 1545,
+      "j": 1545,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/01545.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 151.2,
+        "y0": 458.1,
+        "x1": 928.8,
+        "y1": 980.6,
+        "width": 0.7199999999999999,
+        "height": 0.2721354166666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.11500000208616257,
+          -0.3239593505859375,
+          0.1631169319152832
+        ],
+        "rotation": [
+          1.3613569736480713,
+          0,
+          0
+        ],
+        "shift": -0.10864583402872086
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/01545.jpg",
+      "sourceSha256": "89607402086a0481e498a2c703a8271ce4cfa3f256f5724c1dfd83413cfc142b",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/01545.jpg",
+      "outputSha256": "1225b6386c7864e2edbff6f673d5cf38955e74f80d54f427886f528e7500668e",
+      "audit": [
+        {
+          "type": "label",
+          "text": "答え合わせ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 227,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 179,
+              "height": 35,
+              "text": "答え合わせ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "三段目",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 169,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 121,
+              "height": 42,
+              "text": "三段目",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "オーストラリア（南半球）",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 1080,
+            "width": 524,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 1094,
+              "width": 476,
+              "height": 42,
+              "text": "オーストラリア（南半球）",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.australia",
+          "anchorPosition": [
+            540,
+            695.1,
+            1
+          ],
+          "text": "オーストラリア（南半球）",
+          "rect": {
+            "x": 40,
+            "y": 1080,
+            "width": 524,
+            "height": 73
+          }
+        },
+        {
+          "type": "caption",
+          "text": "上を向きます。",
+          "size": 66,
+          "rect": {
+            "x": 328,
+            "y": 1231,
+            "width": 424,
+            "height": 72
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "seconds": 87.2,
+      "where": "probe",
+      "cue": "r10:a",
+      "key": "cb2agpt-r10:a",
+      "time": 87.2,
+      "frame": 2616,
+      "j": 2616,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02616.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02616.jpg",
+      "sourceSha256": "f4dbe897fd290c17829dd72bca209207bf541872cafc5f7d679fa1bca1e1dac7",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/02616.jpg",
+      "outputSha256": "d3fb6b9b9e20cf328abd353dcbc536bb8c8c2de6fc6abffcf2810148c5ee8af4",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経 ＝ 体に 合図を 伝える 糸",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 620,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 572,
+              "height": 42,
+              "text": "神経 ＝ 体に 合図を 伝える 糸",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "真鍮 ＝ 金色の 金属",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 232,
+            "width": 423,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 246,
+              "width": 375,
+              "height": 42,
+              "text": "真鍮 ＝ 金色の 金属",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 346.8,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 370.8,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            511.8,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 346.8,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "真鍮、",
+          "size": 66,
+          "rect": {
+            "x": 455.5,
+            "y": 1231,
+            "width": 169,
+            "height": 72
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "seconds": 90.33333333333333,
+      "where": "probe",
+      "cue": "r10:a",
+      "key": "cb2agpt-r10:a",
+      "time": 90.33333333333333,
+      "frame": 2710,
+      "j": 2710,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02710.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02710.jpg",
+      "sourceSha256": "74c340edf972f8f3fab2579b9ddaf002bd46d1202309f09663d3152601af8cc8",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/02710.jpg",
+      "outputSha256": "129a3d0899cf6a74de77c375e0146e153de33aa6802ba97a822628a07870434b",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経 ＝ 体に 合図を 伝える 糸",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 620,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 572,
+              "height": 42,
+              "text": "神経 ＝ 体に 合図を 伝える 糸",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "真鍮 ＝ 金色の 金属",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 232,
+            "width": 423,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 246,
+              "width": 375,
+              "height": 42,
+              "text": "真鍮 ＝ 金色の 金属",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 346.8,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 370.8,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            511.8,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 346.8,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "足の肉には、",
+          "size": 66,
+          "rect": {
+            "x": 357,
+            "y": 1232,
+            "width": 366,
+            "height": 72
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "seconds": 91.2,
+      "where": "probe",
+      "cue": "r10:a",
+      "key": "cb2agpt-r10:a",
+      "time": 91.2,
+      "frame": 2736,
+      "j": 2736,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02736.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02736.jpg",
+      "sourceSha256": "915f2eaf9d06a3d4d58f15ee52148998904690d0df842a33e79a9c941090a13a",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/02736.jpg",
+      "outputSha256": "da7514f7a085cb46a6285f284f3de45b264ce0b2d719f300868564a2fa049a82",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経 ＝ 体に 合図を 伝える 糸",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 620,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 572,
+              "height": 42,
+              "text": "神経 ＝ 体に 合図を 伝える 糸",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "真鍮 ＝ 金色の 金属",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 232,
+            "width": 423,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 246,
+              "width": 375,
+              "height": 42,
+              "text": "真鍮 ＝ 金色の 金属",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 346.8,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 370.8,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            511.8,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 346.8,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "鉄の棒を当てます。",
+          "size": 66,
+          "rect": {
+            "x": 260.5,
+            "y": 1231,
+            "width": 559,
+            "height": 73
+          },
+          "chunk": 5,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "seconds": 96.5,
+      "where": "probe",
+      "cue": "r10:b",
+      "key": "cb2agpt-r10:b",
+      "time": 96.5,
+      "frame": 2895,
+      "j": 2895,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02895.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 992.7,
+        "y1": 1062.1,
+        "width": 0.8549074074074074,
+        "height": 0.32296874999999997,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02895.jpg",
+      "sourceSha256": "1a25c28fc61ca27478257c1d67d1fa947dee51b61be170894436e49f7c95beb6",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/02895.jpg",
+      "outputSha256": "ad1327f77b3d9ee887582d24be6c1c6a5062016cb1d56247b4cc3b87f10fcb55",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "ぴくっとけります。",
+          "size": 66,
+          "rect": {
+            "x": 264,
+            "y": 1230,
+            "width": 552,
+            "height": 74
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 11,
+      "seconds": 101.5,
+      "where": "probe",
+      "cue": "r11:a",
+      "key": "cb2agpt-r11:a",
+      "time": 101.5,
+      "frame": 3045,
+      "j": 3045,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/03045.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/03045.jpg",
+      "sourceSha256": "dc0fa4532fd3fb1be1ac5ea2df00d64c9102a39303905be7f4ced9b7ae1a3f81",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/03045.jpg",
+      "outputSha256": "4bf5a4b9a8d73fe62a7b0124cf3feb7b554424cb192f073a65f6d746a0a4ebf2",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "ふれ合わせると、",
+          "size": 66,
+          "rect": {
+            "x": 290.5,
+            "y": 1231,
+            "width": 499,
+            "height": 72
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "seconds": 197.3,
+      "where": "probe",
+      "cue": "r20:a",
+      "key": "cb2agpt-r20:a",
+      "time": 197.3,
+      "frame": 5919,
+      "j": 5919,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/05919.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/05919.jpg",
+      "sourceSha256": "34a7b7bf8f666df3b3beeab6c42a3eb91f74bdb40f572c324d9524fc9f9e468c",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/05919.jpg",
+      "outputSha256": "a11b7a9c41d90a7daa31eabe481f45e9d2e0a7a78399c3f3fce681e8e4b74216",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "電気が 流れる → 足が 動く",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 556,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 508,
+              "height": 42,
+              "text": "電気が 流れる → 足が 動く",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "ガルヴァーニは、",
+          "size": 66,
+          "rect": {
+            "x": 292,
+            "y": 1230,
+            "width": 496,
+            "height": 73
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 24,
+      "seconds": 245.5,
+      "where": "probe",
+      "cue": "r24:a",
+      "key": "cb2agpt-r24:a",
+      "time": 245.5,
+      "frame": 7365,
+      "j": 7365,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07365.jpg",
+      "actualPrimary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 251,
+        "y0": 372.8,
+        "x1": 894.6,
+        "y1": 1100.8,
+        "width": 0.595925925925926,
+        "height": 0.37916666666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.04267960041761398,
+          -0.6593546867370605,
+          0.5437268614768982
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.49799608459989e-9,
+          0.20943956077098846
+        ],
+        "shift": -0.1280989646911621
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07365.jpg",
+      "sourceSha256": "b6df4d9939f31e2018a7c9cdfde42f253eb862d5b25c0a6d1f1d3d4086c56896",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/07365.jpg",
+      "outputSha256": "2d5a80b114990a946a0d4c34a6d23914a177eba220ea67d568cf755f40a77059",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "1791年 ガルヴァーニの 本",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 583,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 535,
+              "height": 42,
+              "text": "1791年 ガルヴァーニの 本",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "それを読んだのが、",
+          "size": 66,
+          "rect": {
+            "x": 260,
+            "y": 1231,
+            "width": 560,
+            "height": 72
+          },
+          "chunk": 3,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 24,
+      "seconds": 251.9,
+      "where": "probe",
+      "cue": "r24:b",
+      "key": "cb2agpt-r24:b",
+      "time": 251.9,
+      "frame": 7557,
+      "j": 7557,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07557.jpg",
+      "actualPrimary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 192.6,
+        "y0": 419.2,
+        "x1": 894.6,
+        "y1": 1100.8,
+        "width": 0.65,
+        "height": 0.3549999999999999,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.04267960041761398,
+          -0.6593546867370605,
+          0.5437268614768982
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.49799608459989e-9,
+          0.20943956077098846
+        ],
+        "shift": -0.1280989646911621
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07557.jpg",
+      "sourceSha256": "db1fcece59985a4ab2bf4f14196e45b999d935c17653fdabd956f40762170b93",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/07557.jpg",
+      "outputSha256": "4d17d1a18ce1bc54081da863822427cc8487fad41c03a1cb6ee87b05a5bd3a48",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "初めは動物電気を信じ、",
+          "size": 66,
+          "rect": {
+            "x": 192,
+            "y": 1230,
+            "width": 696,
+            "height": 74
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 25,
+      "seconds": 263,
+      "where": "probe",
+      "cue": "r25:b",
+      "key": "cb2agpt-r25:b",
+      "time": 263,
+      "frame": 7890,
+      "j": 7890,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07890.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 156.8,
+        "y0": 305.9,
+        "x1": 923.2,
+        "y1": 1444.8,
+        "width": 0.7096296296296297,
+        "height": 0.5931770833333334,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9608718156814575,
+          0.7188479900360107
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.16885416209697723
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07890.jpg",
+      "sourceSha256": "4c7f900e6d5e72c6c8b0736db24cf72b74800c14bf03823d16e1ece155c3b69d",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/07890.jpg",
+      "outputSha256": "a260c28cb8d2c0fb4027c1ee6ae007cc7becfee1a9e55993a252e16e8e56029d",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "見方：具体例",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 190,
+            "width": 298,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 204,
+              "width": 250,
+              "height": 41,
+              "text": "見方：具体例",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "同じ 金属（鉄と 鉄）：弱い",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 250,
+            "width": 1000,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 264,
+              "width": 454,
+              "height": 35,
+              "text": "同じ 金属（鉄と 鉄）：弱い",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "違う 2種類（真鍮と 鉄）：強い",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 826,
+            "width": 1000,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 840,
+              "width": 521,
+              "height": 36,
+              "text": "違う 2種類（真鍮と 鉄）：強い",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "2本とも同じ金属にすると、",
+          "size": 66,
+          "rect": {
+            "x": 134,
+            "y": 1467,
+            "width": 812,
+            "height": 72
+          },
+          "chunk": 0,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 25,
+      "seconds": 265.1,
+      "where": "probe",
+      "cue": "r25:b",
+      "key": "cb2agpt-r25:b",
+      "time": 265.1,
+      "frame": 7953,
+      "j": 7953,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07953.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 156.8,
+        "y0": 305.9,
+        "x1": 923.2,
+        "y1": 1444.8,
+        "width": 0.7096296296296297,
+        "height": 0.5931770833333334,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9608718156814575,
+          0.7188479900360107
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.16885416209697723
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/07953.jpg",
+      "sourceSha256": "258921aa88dc8244c9804623f9177e256795e1beab2f34a5f28c99cddc1a3a12",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/07953.jpg",
+      "outputSha256": "18178b3301ae63d15e98639fec350ac814c6f720c76bd138e0ae3ba2c147dc02",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "見方：具体例",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 190,
+            "width": 298,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 204,
+              "width": 250,
+              "height": 41,
+              "text": "見方：具体例",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "同じ 金属（鉄と 鉄）：弱い",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 250,
+            "width": 1000,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 264,
+              "width": 454,
+              "height": 35,
+              "text": "同じ 金属（鉄と 鉄）：弱い",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "違う 2種類（真鍮と 鉄）：強い",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 826,
+            "width": 1000,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 840,
+              "width": 521,
+              "height": 36,
+              "text": "違う 2種類（真鍮と 鉄）：強い",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "ずっと弱くなります。",
+          "size": 66,
+          "rect": {
+            "x": 229,
+            "y": 1465,
+            "width": 622,
+            "height": 74
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 25,
+      "seconds": 268.3333333333333,
+      "where": "probe",
+      "cue": "r25:b",
+      "key": "cb2agpt-r25:b",
+      "time": 268.3333333333333,
+      "frame": 8050,
+      "j": 8050,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/08050.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 156.8,
+        "y0": 305.9,
+        "x1": 977.9,
+        "y1": 1441.1,
+        "width": 0.7602777777777777,
+        "height": 0.5912499999999999,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9608718156814575,
+          0.7188479900360107
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.16885416209697723
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/08050.jpg",
+      "sourceSha256": "ca4e1045700f72739c021873c788d840323d4e9d428ac9bac822e9c95377cab8",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/08050.jpg",
+      "outputSha256": "4e17b3b9b34c773fc3b7464dac2f180b0beceeb98163dbce7c7f62246f844ebb",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "見方：具体例",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 190,
+            "width": 298,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 204,
+              "width": 250,
+              "height": 41,
+              "text": "見方：具体例",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "同じ 金属（鉄と 鉄）：弱い",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 250,
+            "width": 1000,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 264,
+              "width": 454,
+              "height": 35,
+              "text": "同じ 金属（鉄と 鉄）：弱い",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "違う 2種類（真鍮と 鉄）：強い",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 826,
+            "width": 1000,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 840,
+              "width": 521,
+              "height": 36,
+              "text": "違う 2種類（真鍮と 鉄）：強い",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "強く動いたのです。",
+          "size": 66,
+          "rect": {
+            "x": 261,
+            "y": 1465,
+            "width": 558,
+            "height": 74
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 31,
+      "seconds": 334.9,
+      "where": "probe",
+      "cue": "r31:a",
+      "key": "cb2agpt-r31:a",
+      "time": 334.9,
+      "frame": 10047,
+      "j": 10047,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/10047.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 282.4,
+        "y0": 821,
+        "x1": 797.6,
+        "y1": 1315.5,
+        "width": 0.4770370370370371,
+        "height": 0.25755208333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0,
+          -0.37051618099212646,
+          0.18475112318992615
+        ],
+        "rotation": [
+          1.3613569736480713,
+          0,
+          0
+        ],
+        "shift": -0.16614583134651184
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/10047.jpg",
+      "sourceSha256": "dc4dc1a5c22d92143168e13ed3a323cb119cc472c7ff847594d7a7a4000f19fb",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/10047.jpg",
+      "outputSha256": "a4b269afcb78d687705ba5f5825374423e49ddbf2f12285f96ff24ea08a5a480",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "重ねるほど 強い（わけは 後編）",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 637,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 589,
+              "height": 42,
+              "text": "重ねるほど 強い（わけは 後編）",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "何十組も重ねました。",
+          "size": 66,
+          "rect": {
+            "x": 225.5,
+            "y": 1230,
+            "width": 629,
+            "height": 73
+          },
+          "chunk": 3,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 31,
+      "seconds": 336.5,
+      "where": "probe",
+      "cue": "r31:a",
+      "key": "cb2agpt-r31:a",
+      "time": 336.5,
+      "frame": 10095,
+      "j": 10095,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/10095.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 262.2,
+        "y0": 282.3,
+        "x1": 817.8,
+        "y1": 1315.5,
+        "width": 0.5144444444444444,
+        "height": 0.5381250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0,
+          -0.37051618099212646,
+          0.18475112318992615
+        ],
+        "rotation": [
+          1.3613569736480713,
+          0,
+          0
+        ],
+        "shift": -0.16614583134651184
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/10095.jpg",
+      "sourceSha256": "4b8a79e5081857e272297a04e56a66cbe0547920582c359ec380356701811475",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/10095.jpg",
+      "outputSha256": "fa359d14b318a6bff0ed19a804b1d090f35080c6263cd5f09e862a311e003f69",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "重ねるほど 強い（わけは 後編）",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 637,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 589,
+              "height": 42,
+              "text": "重ねるほど 強い（わけは 後編）",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "重ねるほど、",
+          "size": 66,
+          "rect": {
+            "x": 358,
+            "y": 1231,
+            "width": 364,
+            "height": 72
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 33,
+      "seconds": 374.8,
+      "where": "probe",
+      "cue": "r33:b",
+      "key": "cb2agpt-r33:b",
+      "time": 374.8,
+      "frame": 11244,
+      "j": 11244,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/11244.jpg",
+      "actualPrimary": "b2a_electroscope_gold_leaf_pair",
+      "measurement": {
+        "x0": 390.9,
+        "y0": 485.6,
+        "x1": 688,
+        "y1": 1035.9,
+        "width": 0.2750925925925926,
+        "height": 0.2866145833333334,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.12999999523162842,
+          -0.5520772933959961,
+          0.25253424048423767
+        ],
+        "rotation": [
+          1.4660766124725342,
+          0,
+          0
+        ],
+        "shift": -0.10213541984558105
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/11244.jpg",
+      "sourceSha256": "2d22f6699e586b8ec202c143f0115e06c520c1dbe8415ef0428bf71e516fda23",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/11244.jpg",
+      "outputSha256": "4ff33e06b6f11d40c9d503e368ba9675c6ea4d9873622ec999764eaf6794680a",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "事実2：生き物で ない 道具でも、電気が 出ている",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 562,
+            "height": 126
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 424,
+              "height": 42,
+              "text": "事実2：生き物で ない ",
+              "size": 42
+            },
+            {
+              "x": 64,
+              "y": 377,
+              "width": 514,
+              "height": 42,
+              "text": "道具でも、電気が 出ている",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "葉が開いたのです。",
+          "size": 66,
+          "rect": {
+            "x": 260,
+            "y": 1232,
+            "width": 560,
+            "height": 71
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 34,
+      "seconds": 378,
+      "where": "probe",
+      "cue": "r34:a",
+      "key": "cb2agpt-r34:a",
+      "time": 378,
+      "frame": 11340,
+      "j": 11340,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/11340.jpg",
+      "actualPrimary": "b2a_pile,b2a_electroscope",
+      "measurement": {
+        "x0": 236.8,
+        "y0": 452.8,
+        "x1": 846.6,
+        "y1": 1067.2,
+        "width": 0.5646296296296296,
+        "height": 0.32000000000000006,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.016874998807907104,
+          -1.1283153295516968,
+          0.6585851907730103
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.11348958313465118
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/11340.jpg",
+      "sourceSha256": "a5b9edda2a6ca7954b714cc455fc71adda48d86da33c1a055c4e58c98cae241f",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/11340.jpg",
+      "outputSha256": "59185d6d672f0626b2a4325a211e9122f2d4aa3bde8f6024a3a680b3f474a90b",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "言い伝え 0 − 4 実験",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 190,
+            "width": 465,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 204,
+              "width": 417,
+              "height": 41,
+              "text": "言い伝え 0 − 4 実験",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "予言：カエル なし → 電気は 出ない",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 300,
+            "width": 731,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 314,
+              "width": 683,
+              "height": 42,
+              "text": "予言：カエル なし → 電気は 出ない",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "事実",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 480,
+            "width": 130,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 494,
+              "width": 82,
+              "height": 41,
+              "text": "事実",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "指も生き物ですが、",
+          "size": 66,
+          "rect": {
+            "x": 258,
+            "y": 1230,
+            "width": 564,
+            "height": 73
+          },
+          "chunk": 0,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 36,
+      "seconds": 400.3,
+      "where": "probe",
+      "cue": "r36:a",
+      "key": "cb2agpt-r36:a",
+      "time": 400.3,
+      "frame": 12009,
+      "j": 12009,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/12009.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/12009.jpg",
+      "sourceSha256": "57b04606a29b00a47af822181ca98a5ee83d856268a55ba7a13dd0b24a6617a2",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/12009.jpg",
+      "outputSha256": "dc68b26c19b5cd333a70275e9ca7036579ba865bc5adfa4bf7b363a5f134c506",
+      "audit": [
+        {
+          "type": "label",
+          "text": "後に 分かったこと",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 344,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 296,
+              "height": 35,
+              "text": "後に 分かったこと",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "本当に、",
+          "size": 66,
+          "rect": {
+            "x": 423,
+            "y": 1232,
+            "width": 234,
+            "height": 71
+          },
+          "chunk": 3,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 36,
+      "seconds": 403,
+      "where": "probe",
+      "cue": "r36:a",
+      "key": "cb2agpt-r36:a",
+      "time": 403,
+      "frame": 12090,
+      "j": 12090,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/12090.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.007505208253860474,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/12090.jpg",
+      "sourceSha256": "ff3895a1a3b5c21bb19f109686a7645c96d1cff0820a56b4ca1aa7868b5431c5",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/12090.jpg",
+      "outputSha256": "50874fc7105b7ada94fab3ed9b92c13ecfd805913097d3cca60a5fe12169451a",
+      "audit": [
+        {
+          "type": "label",
+          "text": "後に 分かったこと",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 344,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 296,
+              "height": 35,
+              "text": "後に 分かったこと",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "小さな電気で合図",
+          "size": 66,
+          "rect": {
+            "x": 273.5,
+            "y": 1189,
+            "width": 533,
+            "height": 73
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        },
+        {
+          "type": "caption",
+          "text": "を送っています。",
+          "size": 66,
+          "rect": {
+            "x": 296,
+            "y": 1272,
+            "width": 488,
+            "height": 74
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 39,
+      "seconds": 437.9,
+      "where": "probe",
+      "cue": "r39:a",
+      "key": "cb2agpt-r39:a",
+      "time": 437.9,
+      "frame": 13137,
+      "j": 13137,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/13137.jpg",
+      "actualPrimary": "b2a_glass",
+      "measurement": {
+        "x0": 125,
+        "y0": 509,
+        "x1": 933.7,
+        "y1": 1041.1,
+        "width": 0.7487962962962963,
+        "height": 0.27713541666666663,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          -0.028105244040489197,
+          -0.8115560412406921,
+          0.36410850286483765
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.08851562440395355
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/13137.jpg",
+      "sourceSha256": "8aefc4ba942c7898e539a0198381e3e847538abe9b430948689a6b9cd968fe41",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/13137.jpg",
+      "outputSha256": "a0d7dcd34a151a175207a2dab70f024b5b5f3030616cbb008c14ace192829421",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気：一度",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 299,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 251,
+              "height": 42,
+              "text": "静電気：一度",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "まねを しない",
+          "size": 36,
+          "rect": {
+            "x": 768,
+            "y": 1450,
+            "width": 272,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 792,
+              "y": 1464,
+              "width": 224,
+              "height": 34,
+              "text": "まねを しない",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "静電気のぱちっは、",
+          "size": 66,
+          "rect": {
+            "x": 258.5,
+            "y": 1230,
+            "width": 563,
+            "height": 74
+          },
+          "chunk": 0,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 39,
+      "seconds": 440.5,
+      "where": "probe",
+      "cue": "r39:a",
+      "key": "cb2agpt-r39:a",
+      "time": 440.5,
+      "frame": 13215,
+      "j": 13215,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/13215.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 314.9,
+        "y0": 299.2,
+        "x1": 765.1,
+        "y1": 1220.8,
+        "width": 0.4168518518518519,
+        "height": 0.4799999999999999,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0,
+          -0.7659539580345154,
+          0.49234557151794434
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.11278645694255829
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/13215.jpg",
+      "sourceSha256": "66d8139af9e03b902bf8ac26d9f7b22bb02c8b9d1095f2c75e3364f6a4f54f8c",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/13215.jpg",
+      "outputSha256": "8283fa4bc0663e33f137dc8967f288cdd2f9af2a0f1a043cb74e128788c54a31",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "電堆：ため 直さず 何度でも",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 576,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 528,
+              "height": 42,
+              "text": "電堆：ため 直さず 何度でも",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "まねを しない",
+          "size": 36,
+          "rect": {
+            "x": 768,
+            "y": 1450,
+            "width": 272,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 792,
+              "y": 1464,
+              "width": 224,
+              "height": 34,
+              "text": "まねを しない",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "電堆は、",
+          "size": 66,
+          "rect": {
+            "x": 424.5,
+            "y": 1230,
+            "width": 231,
+            "height": 73
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 42,
+      "seconds": 472,
+      "where": "probe",
+      "cue": "r42:a",
+      "key": "cb2agpt-r42:a",
+      "time": 472,
+      "frame": 14160,
+      "j": 14160,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14160.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 271.7,
+        "y0": 54.8,
+        "x1": 808.3,
+        "y1": 1245.2,
+        "width": 0.49685185185185177,
+        "height": 0.62,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0,
+          -0.382053017616272,
+          0.41064703464508057
+        ],
+        "rotation": [
+          1.4660766124725342,
+          0,
+          0
+        ],
+        "shift": -0.1664583384990692
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14160.jpg",
+      "sourceSha256": "601dcc93c16e47af695dcf89b4e1e927582546b45b1cc3a4e692214cbffe4a57",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/14160.jpg",
+      "outputSha256": "86fa1fda1e5a79db9595993f9d0b92e330e6d0664cbb6b4f573d9f17c9e91113",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "塩水の 厚紙",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 272,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 224,
+              "height": 42,
+              "text": "塩水の 厚紙",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "塩水の厚紙の代わりに、",
+          "size": 66,
+          "rect": {
+            "x": 192.5,
+            "y": 1230,
+            "width": 695,
+            "height": 75
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 42,
+      "seconds": 476,
+      "where": "probe",
+      "cue": "r42:a",
+      "key": "cb2agpt-r42:a",
+      "time": 476,
+      "frame": 14280,
+      "j": 14280,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14280.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 271.7,
+        "y0": 54.8,
+        "x1": 808.3,
+        "y1": 1245.2,
+        "width": 0.49685185185185177,
+        "height": 0.62,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0,
+          -0.382053017616272,
+          0.41064703464508057
+        ],
+        "rotation": [
+          1.4660766124725342,
+          0,
+          0
+        ],
+        "shift": -0.1664583384990692
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14280.jpg",
+      "sourceSha256": "fdad6c894ba7246a46495037f2b4178400f553ff0672b8be4ddb7373e5e24309",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/14280.jpg",
+      "outputSha256": "931347dcfe5848246e33e3f9babe2e6599956ad53ca9e87c3d47379c9c6ec313",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "かわいた 厚紙",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 314,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 266,
+              "height": 41,
+              "text": "かわいた 厚紙",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "さわった指は、",
+          "size": 66,
+          "rect": {
+            "x": 327,
+            "y": 1230,
+            "width": 426,
+            "height": 73
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 43,
+      "seconds": 485.5,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 485.5,
+      "frame": 14565,
+      "j": 14565,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14565.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14565.jpg",
+      "sourceSha256": "d2eb16281afc9cf57bee6373e3ac1817226b18544043e7a60810167860a8f4d1",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/14565.jpg",
+      "outputSha256": "850f0edb2bf29e6686512e7d03358dadda34e4411c7a2e497aac2035dc513fb1",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "言い伝え 0 − 4 実験",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 232,
+            "width": 465,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 246,
+              "width": 417,
+              "height": 41,
+              "text": "言い伝え 0 − 4 実験",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "カエルの足を",
+          "size": 66,
+          "rect": {
+            "x": 339.5,
+            "y": 1231,
+            "width": 401,
+            "height": 73
+          },
+          "chunk": 0,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 43,
+      "seconds": 489.5,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 489.5,
+      "frame": 14685,
+      "j": 14685,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14685.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14685.jpg",
+      "sourceSha256": "1c0445d3acf93a0542b7cce476eeebc2d7140df70fa4172e4b31745b40098579",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/14685.jpg",
+      "outputSha256": "f27bd93e37f01b7cfaa52578b45ca2e093fca4118bc3770b4e35aac73957c27d",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "言い伝え 0 − 4 実験",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 232,
+            "width": 465,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 246,
+              "width": 417,
+              "height": 41,
+              "text": "言い伝え 0 − 4 実験",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "2種類の金属と、",
+          "size": 66,
+          "rect": {
+            "x": 299,
+            "y": 1230,
+            "width": 482,
+            "height": 74
+          },
+          "chunk": 3,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "row": 43,
+      "seconds": 493.9,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 493.9,
+      "frame": 14817,
+      "j": 14817,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14817.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 1019.9,
+        "y1": 1090,
+        "width": 0.8800925925925925,
+        "height": 0.3375,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          0,
+          0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false,
+      "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14817.jpg",
+      "sourceSha256": "e68e17d2ba53d07a20612fc24a441bf110d54163ed1f5b906726b083434b1fb6",
+      "nativeResolution": [
+        540,
+        960
+      ],
+      "output": "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/frames/14817.jpg",
+      "outputSha256": "c1a246ec284958d55edef59486ff7d2ab5e8653f7e84a5a799df4271cc8ad8d3",
+      "audit": [
+        {
+          "type": "label",
+          "text": "1800年 イタリア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 501,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 453,
+              "height": 35,
+              "text": "1800年 イタリア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "言い伝え 0 − 4 実験",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 232,
+            "width": 465,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 246,
+              "width": 417,
+              "height": 41,
+              "text": "言い伝え 0 − 4 実験",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "来ていたのです。",
+          "size": 66,
+          "rect": {
+            "x": 293,
+            "y": 1232,
+            "width": 494,
+            "height": 71
+          },
+          "chunk": 5,
+          "exactVoiceTiming": true
+        }
+      ]
+    }
+  ],
+  "frameCount": 26,
+  "pages": [
+    "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/page-01.jpg",
+    "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/page-02.jpg",
+    "outputs/ys-chain-b2a-backup/S4修正02_20261030/修正試写01/page-03.jpg"
+  ],
+  "sourceRecordCount": 26,
+  "selectedRows": null,
+  "immutableInputHashes": {
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/deep/技術の疑問の鎖_B-2_前編_第1版_ナレーション.md": "a9900445f07735abeb46f39618f5878a161ddb8e3ecc4ad3d7c231e1b322437e",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/ytseries/chain-b-2a_gpt_20261029.mjs": "b10a8c1d85cc01d2f6fba8238fc979e68e1bce5fed8efd3f6be28ab6b2b58760",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/row-cue-map.json": "bc65c50e2c21a68cf637c8177cc51d37909036c40f45664f3ba409fd3686e138",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/plan.json": "810104ded94d21ad9c006ab743947a63aa1a9ffe222f9874e24fbe2c3cc3d078",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/ys-chain-b2a_gpt_20261029.json": "8ef35c89d9a1e49927106f3f21e34ebe4a00577071ee870f521c603e7ab7a75f",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/timed-selection.json": "4a01b874c7ce391ace10772ab9750594b4e4e8f5ac9f5f2e651d6136db4264d5",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/phrase-times.json": "14547a566813eabd9b4590285e16b35e06633257e174bfdd66c37e573bf95612",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/ys-chain-b2a_gpt_20261029.voice.wav": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/ys-chain-b2a_gpt_20261029.wav": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/silent-intro-record.json": "a1d9dae26362d080afa1a20825e31d870f867fe05ed13ae1600454e3c1e16b07",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/plan.json": "810104ded94d21ad9c006ab743947a63aa1a9ffe222f9874e24fbe2c3cc3d078",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.json": "8ef35c89d9a1e49927106f3f21e34ebe4a00577071ee870f521c603e7ab7a75f",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/timed-selection.json": "4a01b874c7ce391ace10772ab9750594b4e4e8f5ac9f5f2e651d6136db4264d5",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/phrase-times.json": "14547a566813eabd9b4590285e16b35e06633257e174bfdd66c37e573bf95612",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.voice.wav": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.wav": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/silent-intro-record.json": "a1d9dae26362d080afa1a20825e31d870f867fe05ed13ae1600454e3c1e16b07"
+  },
+  "safeRectangle": {
+    "xMin": 40,
+    "xMax": 1040,
+    "yMin": 110,
+    "yMax": 1600
+  },
+  "scope": "Actual SVG measured native-font label/caption geometry at every composed sample; not OCR of Blender or a full movie/ear review",
+  "allRecordedTextBoxesSafe": true,
+  "layoutEvidence": {
+    "method": "Native SVG text rasterized with Sharp/Hiragino; measured ink extents and bearings",
+    "fontFamily": "font-family=\"Hiragino Sans, Hiragino Kaku Gothic ProN, sans-serif\"",
+    "minimumLabelFont": 36,
+    "measuredTextCount": 462,
+    "layouts": [
+      {
+        "text": "神経",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "神経",
+            "width": 84,
+            "height": 41,
+            "left": 0,
+            "right": 84,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "真鍮",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "真鍮",
+            "width": 83,
+            "height": 41,
+            "left": 1,
+            "right": 84,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "鉄",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "鉄",
+            "width": 42,
+            "height": 40,
+            "left": 0,
+            "right": 42,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "まねを しない",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "まねを しない",
+            "width": 262,
+            "height": 40,
+            "left": 3,
+            "right": 265,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "電気を ためる 板",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電気を ためる 板",
+            "width": 320,
+            "height": 42,
+            "left": 1,
+            "right": 321,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "ロンドン：下に 傾く",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "ロンドン：下に 傾く",
+            "width": 379,
+            "height": 41,
+            "left": 4,
+            "right": 383,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "オーストラリア：上に 傾く",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "オーストラリア：上に 傾く",
+            "width": 507,
+            "height": 41,
+            "left": 1,
+            "right": 508,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "答え合わせ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "答え合わせ",
+            "width": 209,
+            "height": 41,
+            "left": 1,
+            "right": 210,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "一段目",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "一段目",
+            "width": 121,
+            "height": 42,
+            "left": 1,
+            "right": 122,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "二段目",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "二段目",
+            "width": 121,
+            "height": 42,
+            "left": 1,
+            "right": 122,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "三段目",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "三段目",
+            "width": 121,
+            "height": 42,
+            "left": 1,
+            "right": 122,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "四段目",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "四段目",
+            "width": 120,
+            "height": 42,
+            "left": 2,
+            "right": 122,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "北",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "北",
+            "width": 40,
+            "height": 41,
+            "left": 1,
+            "right": 41,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "南",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "南",
+            "width": 40,
+            "height": 40,
+            "left": 1,
+            "right": 41,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "N",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "N",
+            "width": 34,
+            "height": 37,
+            "left": 2,
+            "right": 36,
+            "top": -35,
+            "bottom": 2
+          }
+        ]
+      },
+      {
+        "text": "S",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "S",
+            "width": 31,
+            "height": 38,
+            "left": 1,
+            "right": 32,
+            "top": -35,
+            "bottom": 3
+          }
+        ]
+      },
+      {
+        "text": "赤い 印",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "赤い 印",
+            "width": 138,
+            "height": 40,
+            "left": 1,
+            "right": 139,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "赤い 印 ＝ 南",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "赤い 印 ＝ 南",
+            "width": 250,
+            "height": 40,
+            "left": 1,
+            "right": 251,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "オーストラリア（南半球）",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "オーストラリア（南半球）",
+            "width": 476,
+            "height": 42,
+            "left": 1,
+            "right": 477,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "イタリア",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "イタリア",
+            "width": 163,
+            "height": 40,
+            "left": 1,
+            "right": 164,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "ロンドン",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "ロンドン",
+            "width": 162,
+            "height": 38,
+            "left": 4,
+            "right": 166,
+            "top": -35,
+            "bottom": 3
+          }
+        ]
+      },
+      {
+        "text": "答え：上に 傾く",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "答え：上に 傾く",
+            "width": 298,
+            "height": 42,
+            "left": 1,
+            "right": 299,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "言い伝え 0 − 3 実験",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "言い伝え 0 − 3 実験",
+            "width": 417,
+            "height": 41,
+            "left": 1,
+            "right": 418,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "言い伝え 0 − 4 実験",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "言い伝え 0 − 4 実験",
+            "width": 417,
+            "height": 41,
+            "left": 1,
+            "right": 418,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "言い伝え ＝ 信じられていたが、実験で 崩れた 考え",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "言い伝え ＝ 信じられていたが、",
+            "width": 588,
+            "height": 42,
+            "left": 1,
+            "right": 589,
+            "top": -37,
+            "bottom": 5
+          },
+          {
+            "text": "実験で 崩れた 考え",
+            "width": 362,
+            "height": 41,
+            "left": 1,
+            "right": 363,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+            "width": 880,
+            "height": 42,
+            "left": 5,
+            "right": 885,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "ガルヴァーニ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "ガルヴァーニ",
+            "width": 248,
+            "height": 41,
+            "left": 1,
+            "right": 249,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "神経 ＝ 体に 合図を 伝える 糸",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "神経 ＝ 体に 合図を 伝える 糸",
+            "width": 572,
+            "height": 42,
+            "left": 0,
+            "right": 572,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "真鍮 ＝ 金色の 金属",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "真鍮 ＝ 金色の 金属",
+            "width": 375,
+            "height": 42,
+            "left": 1,
+            "right": 376,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "電池",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電池",
+            "width": 82,
+            "height": 40,
+            "left": 1,
+            "right": 83,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "静電気：ぱちっと 一瞬",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "静電気：ぱちっと 一瞬",
+            "width": 433,
+            "height": 42,
+            "left": 0,
+            "right": 433,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "見方：たとえ話",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "見方：たとえ話",
+            "width": 292,
+            "height": 41,
+            "left": 1,
+            "right": 293,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "見方：具体例",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "見方：具体例",
+            "width": 250,
+            "height": 41,
+            "left": 1,
+            "right": 251,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "見方：確かめる側から",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "見方：確かめる側から",
+            "width": 415,
+            "height": 41,
+            "left": 1,
+            "right": 416,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "高さの 差 ＝ 押す 力 ＝ 電圧（ボルト）",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "高さの 差 ＝ 押す 力 ＝ 電圧（ボルト）",
+            "width": 729,
+            "height": 42,
+            "left": 1,
+            "right": 730,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "流れる 量（1秒に どれだけ）＝ 電流",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "流れる 量（1秒に どれだけ）＝ 電流",
+            "width": 705,
+            "height": 42,
+            "left": 1,
+            "right": 706,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "1.5ボルト",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1.5ボルト",
+            "width": 199,
+            "height": 41,
+            "left": 5,
+            "right": 204,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "何千ボルト",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "何千ボルト",
+            "width": 205,
+            "height": 41,
+            "left": 0,
+            "right": 205,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "乾電池の 千倍 以上",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "乾電池の 千倍 以上",
+            "width": 362,
+            "height": 42,
+            "left": 1,
+            "right": 363,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "見方：流れる 量から",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "見方：流れる 量から",
+            "width": 387,
+            "height": 40,
+            "left": 1,
+            "right": 388,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "静電気：高いけど 少ない → 一瞬",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "静電気：高いけど 少ない → 一瞬",
+            "width": 629,
+            "height": 42,
+            "left": 0,
+            "right": 629,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "電池 ＝ くみ上げ 続ける ポンプ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電池 ＝ くみ上げ 続ける ポンプ",
+            "width": 601,
+            "height": 42,
+            "left": 1,
+            "right": 602,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "静電気を 作る 機械",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "静電気を 作る 機械",
+            "width": 364,
+            "height": 42,
+            "left": 0,
+            "right": 364,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "研究室で 手伝う 人",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "研究室で 手伝う 人",
+            "width": 363,
+            "height": 41,
+            "left": 0,
+            "right": 363,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "火花 → 足が ける",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "火花 → 足が ける",
+            "width": 332,
+            "height": 40,
+            "left": 1,
+            "right": 333,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "電気が 流れる → 足が 動く",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電気が 流れる → 足が 動く",
+            "width": 508,
+            "height": 42,
+            "left": 1,
+            "right": 509,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "金属だけでも ぴくっ → 電気が 流れた",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "金属だけでも ぴくっ → 電気が 流れた",
+            "width": 723,
+            "height": 42,
+            "left": 1,
+            "right": 724,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "仮説：電気は カエルの 体の 中に ある（動物電気）",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "仮説：電気は カエルの ",
+            "width": 433,
+            "height": 42,
+            "left": 0,
+            "right": 433,
+            "top": -37,
+            "bottom": 5
+          },
+          {
+            "text": "体の 中に ある（動物電気）",
+            "width": 506,
+            "height": 42,
+            "left": 0,
+            "right": 506,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "シビレエイ：体から 電気",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "シビレエイ：体から 電気",
+            "width": 470,
+            "height": 42,
+            "left": 3,
+            "right": 473,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "金属 ＝ 通り道（と ガルヴァーニは 考えた）",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "金属 ＝ 通り道（と ガルヴァーニは 考えた）",
+            "width": 826,
+            "height": 42,
+            "left": 1,
+            "right": 827,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "1790年代 イタリア パヴィーア ヴォルタ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1790年代 イタリア パヴィーア ヴォルタ",
+            "width": 790,
+            "height": 42,
+            "left": 5,
+            "right": 795,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "1791年 ガルヴァーニの 本",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1791年 ガルヴァーニの 本",
+            "width": 535,
+            "height": 42,
+            "left": 5,
+            "right": 540,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "同じ 金属（鉄と 鉄）：弱い",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "同じ 金属（鉄と 鉄）：弱い",
+            "width": 529,
+            "height": 42,
+            "left": 2,
+            "right": 531,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "違う 2種類（真鍮と 鉄）：強い",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "違う 2種類（真鍮と 鉄）：強い",
+            "width": 607,
+            "height": 42,
+            "left": 0,
+            "right": 607,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "ヴォルタの 考え：電気は 違う 2種類の 金属から",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "ヴォルタの 考え：電気は 違う 2種類の 金属から",
+            "width": 920,
+            "height": 42,
+            "left": 3,
+            "right": 923,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "電気を 感じる 道具？",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電気を 感じる 道具？",
+            "width": 398,
+            "height": 42,
+            "left": 1,
+            "right": 399,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "鳴る 物 ≠ 煙を 出す 物",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "鳴る 物 ≠ 煙を 出す 物",
+            "width": 445,
+            "height": 41,
+            "left": 2,
+            "right": 447,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "動く 物 ≠ 電気を 出す 物？",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "動く 物 ≠ 電気を 出す 物？",
+            "width": 524,
+            "height": 42,
+            "left": 1,
+            "right": 525,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "もし正しいなら",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "もし正しいなら",
+            "width": 287,
+            "height": 40,
+            "left": 3,
+            "right": 290,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "予言：カエル なし → 電気は 出ない",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "予言：カエル なし → 電気は 出ない",
+            "width": 683,
+            "height": 42,
+            "left": 2,
+            "right": 685,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "役 その1：しょっぱい 水",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "役 その1：しょっぱい 水",
+            "width": 482,
+            "height": 41,
+            "left": 0,
+            "right": 482,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "亜鉛",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "亜鉛",
+            "width": 82,
+            "height": 40,
+            "left": 1,
+            "right": 83,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "塩水の 厚紙",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "塩水の 厚紙",
+            "width": 224,
+            "height": 42,
+            "left": 0,
+            "right": 224,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "銅",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "銅",
+            "width": 41,
+            "height": 40,
+            "left": 0,
+            "right": 41,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "カエルの 中も しょっぱい 水",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "カエルの 中も しょっぱい 水",
+            "width": 544,
+            "height": 41,
+            "left": 2,
+            "right": 546,
+            "top": -37,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "役 その2：感じる → ぬらした 指",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "役 その2：感じる → ぬらした 指",
+            "width": 636,
+            "height": 40,
+            "left": 0,
+            "right": 636,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "重ねるほど 強い（わけは 後編）",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "重ねるほど 強い（わけは 後編）",
+            "width": 589,
+            "height": 42,
+            "left": 1,
+            "right": 590,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "1800年 イタリア ヴォルタ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1800年 イタリア ヴォルタ",
+            "width": 528,
+            "height": 42,
+            "left": 5,
+            "right": 533,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "事実1：カエル なしで、指に びりっ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "事実1：カエル なしで、指に びりっ",
+            "width": 684,
+            "height": 41,
+            "left": 1,
+            "right": 685,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "金の 葉の 検電器",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "金の 葉の 検電器",
+            "width": 321,
+            "height": 41,
+            "left": 1,
+            "right": 322,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "事実",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "事実",
+            "width": 82,
+            "height": 41,
+            "left": 1,
+            "right": 83,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "事実2：生き物で ない 道具でも、電気が 出ている",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "事実2：生き物で ない ",
+            "width": 424,
+            "height": 42,
+            "left": 1,
+            "right": 425,
+            "top": -37,
+            "bottom": 5
+          },
+          {
+            "text": "道具でも、電気が 出ている",
+            "width": 514,
+            "height": 42,
+            "left": 1,
+            "right": 515,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "判定 ×",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "判定 ×",
+            "width": 132,
+            "height": 40,
+            "left": 1,
+            "right": 133,
+            "top": -36,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "後に 分かったこと",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "後に 分かったこと",
+            "width": 345,
+            "height": 42,
+            "left": 0,
+            "right": 345,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "神経の 合図 ＝ 小さな 電気",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "神経の 合図 ＝ 小さな 電気",
+            "width": 518,
+            "height": 42,
+            "left": 0,
+            "right": 518,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "電堆（でんたい）＝ 電気の 積み重ね",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電堆（でんたい）＝ 電気の 積み重ね",
+            "width": 699,
+            "height": 42,
+            "left": 1,
+            "right": 700,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "1800年3月 ロンドンの 王立協会へ",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1800年3月 ロンドンの 王立協会へ",
+            "width": 697,
+            "height": 42,
+            "left": 5,
+            "right": 702,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "ヴォルタも 会員",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "ヴォルタも 会員",
+            "width": 301,
+            "height": 42,
+            "left": 3,
+            "right": 304,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "静電気：一度",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "静電気：一度",
+            "width": 251,
+            "height": 42,
+            "left": 0,
+            "right": 251,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "電堆：ため 直さず 何度でも",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電堆：ため 直さず 何度でも",
+            "width": 528,
+            "height": 42,
+            "left": 1,
+            "right": 529,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "B-2 後編",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "B-2 後編",
+            "width": 185,
+            "height": 42,
+            "left": 2,
+            "right": 187,
+            "top": -37,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "？",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "？",
+            "width": 28,
+            "height": 37,
+            "left": 7,
+            "right": 35,
+            "top": -35,
+            "bottom": 2
+          }
+        ]
+      },
+      {
+        "text": "かわいた 厚紙",
+        "size": 42,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "かわいた 厚紙",
+            "width": 266,
+            "height": 41,
+            "left": 0,
+            "right": 266,
+            "top": -36,
+            "bottom": 5
+          }
+        ]
+      },
+      {
+        "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+            "width": 754,
+            "height": 35,
+            "left": 4,
+            "right": 758,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "1790年代 イタリア パヴィーア ヴォルタ",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1790年代 イタリア パヴィーア ヴォルタ",
+            "width": 678,
+            "height": 35,
+            "left": 4,
+            "right": 682,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "1800年 イタリア ヴォルタ",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "1800年 イタリア ヴォルタ",
+            "width": 453,
+            "height": 35,
+            "left": 4,
+            "right": 457,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "答え合わせ",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "答え合わせ",
+            "width": 179,
+            "height": 35,
+            "left": 1,
+            "right": 180,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "後に 分かったこと",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "後に 分かったこと",
+            "width": 296,
+            "height": 35,
+            "left": 0,
+            "right": 296,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "B 電気と電波 2",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "B 電気と電波 2",
+            "width": 259,
+            "height": 36,
+            "left": 2,
+            "right": 261,
+            "top": -32,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "カエルの足の電気は、どこから来た？（前編）",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "カエルの足の電気は、どこから来た？（前編）",
+            "width": 732,
+            "height": 36,
+            "left": 2,
+            "right": 734,
+            "top": -32,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "ロンドン：下に 傾く",
+        "size": 36,
+        "maxWidth": 450,
+        "lines": [
+          {
+            "text": "ロンドン：下に 傾く",
+            "width": 326,
+            "height": 35,
+            "left": 3,
+            "right": 329,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "オーストラリア：上に 傾く",
+        "size": 36,
+        "maxWidth": 450,
+        "lines": [
+          {
+            "text": "オーストラリア：上に 傾く",
+            "width": 436,
+            "height": 35,
+            "left": 0,
+            "right": 436,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "同じ 金属（鉄と 鉄）：弱い",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "同じ 金属（鉄と 鉄）：弱い",
+            "width": 454,
+            "height": 35,
+            "left": 1,
+            "right": 455,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "違う 2種類（真鍮と 鉄）：強い",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "違う 2種類（真鍮と 鉄）：強い",
+            "width": 521,
+            "height": 36,
+            "left": 0,
+            "right": 521,
+            "top": -32,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "神経",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "神経",
+            "width": 72,
+            "height": 35,
+            "left": 0,
+            "right": 72,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "真鍮",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "真鍮",
+            "width": 71,
+            "height": 35,
+            "left": 1,
+            "right": 72,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "鉄",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "鉄",
+            "width": 36,
+            "height": 35,
+            "left": 0,
+            "right": 36,
+            "top": -31,
+            "bottom": 4
+          }
+        ]
+      },
+      {
+        "text": "まねを しない",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "まねを しない",
+            "width": 224,
+            "height": 34,
+            "left": 3,
+            "right": 227,
+            "top": -31,
+            "bottom": 3
+          }
+        ]
+      },
+      {
+        "text": "電気を ためる 板",
+        "size": 36,
+        "maxWidth": 952,
+        "lines": [
+          {
+            "text": "電気を ためる 板",
+            "width": 275,
+            "height": 36,
+            "left": 1,
+            "right": 276,
+            "top": -32,
+            "bottom": 4
+          }
+        ]
+      }
+    ]
+  }
+}

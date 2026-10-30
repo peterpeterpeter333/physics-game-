@@ -1,0 +1,33 @@
+{
+  "source": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030",
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "scope": "Actual complete SVG equality, full RGB identity, and changed-visible-SVG negative proof; no media modifications",
+  "results": [
+    {
+      "a": 450,
+      "b": 451,
+      "entireSvgIdentical": true,
+      "exactRgbProof": "PASS",
+      "changedVisibleSvgNegativeProof": "PASS"
+    },
+    {
+      "a": 540,
+      "b": 541,
+      "entireSvgIdentical": true,
+      "exactRgbProof": "PASS",
+      "changedVisibleSvgNegativeProof": "PASS"
+    },
+    {
+      "a": 600,
+      "b": 601,
+      "entireSvgIdentical": true,
+      "exactRgbProof": "PASS",
+      "changedVisibleSvgNegativeProof": "PASS"
+    }
+  ],
+  "pass": true
+}

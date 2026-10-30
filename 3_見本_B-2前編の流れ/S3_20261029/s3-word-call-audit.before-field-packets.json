@@ -1,0 +1,722 @@
+{
+  "scene": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_b2a_s3_gpt_20261029.py",
+  "sceneSha256": "7f41f9262888260604a664d49c0efeba2d0f0ca8ee271852e1ab12acf46a9547",
+  "allLiteralCalls": 69,
+  "calls": [
+    {
+      "line": 221,
+      "call": "word(6,'ウエオムキマス')",
+      "row": 6,
+      "kana": "ウエオムキマス",
+      "kwargs": {},
+      "seconds": 51.30266666666668
+    },
+    {
+      "line": 221,
+      "call": "word(6,'ウエオムキマス')",
+      "row": 6,
+      "kana": "ウエオムキマス",
+      "kwargs": {},
+      "seconds": 51.30266666666668
+    },
+    {
+      "line": 228,
+      "call": "word(2,'オキマス')",
+      "row": 2,
+      "kana": "オキマス",
+      "kwargs": {},
+      "seconds": 6.961
+    },
+    {
+      "line": 243,
+      "call": "word(10,'フレアワセル')",
+      "row": 10,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 94.65966666666668
+    },
+    {
+      "line": 243,
+      "call": "word(10,'ピクット')",
+      "row": 10,
+      "kana": "ピクット",
+      "kwargs": {},
+      "seconds": 96.43866666666668
+    },
+    {
+      "line": 245,
+      "call": "word(10,'シンチュウ')",
+      "row": 10,
+      "kana": "シンチュウ",
+      "kwargs": {},
+      "seconds": 86.85266666666668
+    },
+    {
+      "line": 246,
+      "call": "word(10,'テツノボー')",
+      "row": 10,
+      "kana": "テツノボー",
+      "kwargs": {},
+      "seconds": 90.97066666666669
+    },
+    {
+      "line": 248,
+      "call": "word(11,'ハナスト')",
+      "row": 11,
+      "kana": "ハナスト",
+      "kwargs": {},
+      "seconds": 98.45500000000001
+    },
+    {
+      "line": 248,
+      "call": "word(11,'フレアワセル')",
+      "row": 11,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 100.56
+    },
+    {
+      "line": 248,
+      "call": "word(11,'マタウゴキマス')",
+      "row": 11,
+      "kana": "マタウゴキマス",
+      "kwargs": {},
+      "seconds": 101.641
+    },
+    {
+      "line": 255,
+      "call": "word(12,'デンチデス')",
+      "row": 12,
+      "kana": "デンチデス",
+      "kwargs": {},
+      "seconds": 113.89033333333333
+    },
+    {
+      "line": 256,
+      "call": "word(20,'アシワウゴク')",
+      "row": 20,
+      "kana": "アシワウゴク",
+      "kwargs": {},
+      "seconds": 196.36100000000008
+    },
+    {
+      "line": 256,
+      "call": "word(20,'ピクットシタ')",
+      "row": 20,
+      "kana": "ピクットシタ",
+      "kwargs": {},
+      "seconds": 204.18900000000008
+    },
+    {
+      "line": 259,
+      "call": "word(28,'カエルオトリノゾケバ')",
+      "row": 28,
+      "kana": "カエルオトリノゾケバ",
+      "kwargs": {},
+      "seconds": 301.99833333333345
+    },
+    {
+      "line": 262,
+      "call": "word(36,'チイサナデンキ')",
+      "row": 36,
+      "kana": "チイサナデンキ",
+      "kwargs": {},
+      "seconds": 400.7526666666667
+    },
+    {
+      "line": 267,
+      "call": "word(43,'ピクットサセタ')",
+      "row": 43,
+      "kana": "ピクットサセタ",
+      "kwargs": {},
+      "seconds": 485.6503333333334
+    },
+    {
+      "line": 274,
+      "call": "word(13,'ヒバナ',fraction=.73)",
+      "row": 13,
+      "kana": "ヒバナ",
+      "kwargs": {
+        "fraction": 0.73
+      },
+      "seconds": 123.118
+    },
+    {
+      "line": 284,
+      "call": "word(18,'ポンプ')",
+      "row": 18,
+      "kana": "ポンプ",
+      "kwargs": {},
+      "seconds": 178.8046666666667
+    },
+    {
+      "line": 287,
+      "call": "word(18,'スグニカラニナリマス')",
+      "row": 18,
+      "kana": "スグニカラニナリマス",
+      "kwargs": {},
+      "seconds": 173.16200000000003
+    },
+    {
+      "line": 288,
+      "call": "word(18,'カラニナリマス',end=True)",
+      "row": 18,
+      "kana": "カラニナリマス",
+      "kwargs": {
+        "end": true
+      },
+      "seconds": 174.34800000000004
+    },
+    {
+      "line": 299,
+      "call": "word(18,'ポンプ')",
+      "row": 18,
+      "kana": "ポンプ",
+      "kwargs": {},
+      "seconds": 178.8046666666667
+    },
+    {
+      "line": 301,
+      "call": "word(18,'スグニカラニナリマス')",
+      "row": 18,
+      "kana": "スグニカラニナリマス",
+      "kwargs": {},
+      "seconds": 173.16200000000003
+    },
+    {
+      "line": 307,
+      "call": "word(18,'ポンプ')",
+      "row": 18,
+      "kana": "ポンプ",
+      "kwargs": {},
+      "seconds": 178.8046666666667
+    },
+    {
+      "line": 314,
+      "call": "word(16,'パチッ',fraction=.5)",
+      "row": 16,
+      "kana": "パチッ",
+      "kwargs": {
+        "fraction": 0.5
+      },
+      "seconds": 153.94433333333336
+    },
+    {
+      "line": 319,
+      "call": "word(19,'ヒバナオトバシタ',fraction=.43)",
+      "row": 19,
+      "kana": "ヒバナオトバシタ",
+      "kwargs": {
+        "fraction": 0.43
+      },
+      "seconds": 187.5213333333334
+    },
+    {
+      "line": 320,
+      "call": "word(19,'ピクットケッタ')",
+      "row": 19,
+      "kana": "ピクットケッタ",
+      "kwargs": {},
+      "seconds": 192.9213333333334
+    },
+    {
+      "line": 324,
+      "call": "word(19,'メスガフレテイル')",
+      "row": 19,
+      "kana": "メスガフレテイル",
+      "kwargs": {},
+      "seconds": 190.9403333333334
+    },
+    {
+      "line": 328,
+      "call": "word(22,'シビレサセル',fraction=.47)",
+      "row": 22,
+      "kana": "シビレサセル",
+      "kwargs": {
+        "fraction": 0.47
+      },
+      "seconds": 224.13600000000008
+    },
+    {
+      "line": 333,
+      "call": "word(22,'ニホンノキンゾク')",
+      "row": 22,
+      "kana": "ニホンノキンゾク",
+      "kwargs": {},
+      "seconds": 227.82900000000006
+    },
+    {
+      "line": 339,
+      "call": "word(24,'ソレオヨンダ',fraction=.32)",
+      "row": 24,
+      "kana": "ソレオヨンダ",
+      "kwargs": {
+        "fraction": 0.32
+      },
+      "seconds": 244.67433333333344
+    },
+    {
+      "line": 339,
+      "call": "word(24,'ソレオヨンダ',fraction=.32)",
+      "row": 24,
+      "kana": "ソレオヨンダ",
+      "kwargs": {
+        "fraction": 0.32
+      },
+      "seconds": 244.67433333333344
+    },
+    {
+      "line": 344,
+      "call": "word(25,'ヨワクナリマス',fraction=.58)",
+      "row": 25,
+      "kana": "ヨワクナリマス",
+      "kwargs": {
+        "fraction": 0.58
+      },
+      "seconds": 265.2290000000001
+    },
+    {
+      "line": 344,
+      "call": "word(25,'ツヨクウゴイタ',fraction=.9)",
+      "row": 25,
+      "kana": "ツヨクウゴイタ",
+      "kwargs": {
+        "fraction": 0.9
+      },
+      "seconds": 268.1780000000001
+    },
+    {
+      "line": 347,
+      "call": "word(27,'ケムリ')",
+      "row": 27,
+      "kana": "ケムリ",
+      "kwargs": {},
+      "seconds": 286.9146666666668
+    },
+    {
+      "line": 347,
+      "call": "word(27,'ナル')",
+      "row": 27,
+      "kana": "ナル",
+      "kwargs": {},
+      "seconds": 287.74766666666676
+    },
+    {
+      "line": 357,
+      "call": "word(29,'アツガミ',fraction=.67)",
+      "row": 29,
+      "kana": "アツガミ",
+      "kwargs": {
+        "fraction": 0.67
+      },
+      "seconds": 315.34200000000016
+    },
+    {
+      "line": 358,
+      "call": "word(29,'カエルノカラダノナカ')",
+      "row": 29,
+      "kana": "カエルノカラダノナカ",
+      "kwargs": {},
+      "seconds": 316.67200000000014
+    },
+    {
+      "line": 361,
+      "call": "word(30,'ユビ',fraction=.4)",
+      "row": 30,
+      "kana": "ユビ",
+      "kwargs": {
+        "fraction": 0.4
+      },
+      "seconds": 324.71033333333344
+    },
+    {
+      "line": 362,
+      "call": "word(30,'ユビ',fraction=.4)",
+      "row": 30,
+      "kana": "ユビ",
+      "kwargs": {
+        "fraction": 0.4
+      },
+      "seconds": 324.71033333333344
+    },
+    {
+      "line": 366,
+      "call": "word(31,'ナンジュックミモカサネマシタ')",
+      "row": 31,
+      "kana": "ナンジュックミモカサネマシタ",
+      "kwargs": {},
+      "seconds": 334.79433333333344
+    },
+    {
+      "line": 374,
+      "call": "word(32,'ビリット',fraction=.48)",
+      "row": 32,
+      "kana": "ビリット",
+      "kwargs": {
+        "fraction": 0.48
+      },
+      "seconds": 349.88400000000007
+    },
+    {
+      "line": 388,
+      "call": "word(33,'ハガヒライタ')",
+      "row": 33,
+      "kana": "ハガヒライタ",
+      "kwargs": {},
+      "seconds": 374.4696666666667
+    },
+    {
+      "line": 388,
+      "call": "word(33,'ハナレテヒラク')",
+      "row": 33,
+      "kana": "ハナレテヒラク",
+      "kwargs": {},
+      "seconds": 370.46466666666674
+    },
+    {
+      "line": 388,
+      "call": "word(33,'デンタイノハシニツナグ')",
+      "row": 33,
+      "kana": "デンタイノハシニツナグ",
+      "kwargs": {},
+      "seconds": 372.9076666666667
+    },
+    {
+      "line": 400,
+      "call": "word(33,'ウスイキンノハ',fraction=.52)",
+      "row": 33,
+      "kana": "ウスイキンノハ",
+      "kwargs": {
+        "fraction": 0.52
+      },
+      "seconds": 369.41466666666673
+    },
+    {
+      "line": 408,
+      "call": "word(39,'パチッ')",
+      "row": 39,
+      "kana": "パチッ",
+      "kwargs": {},
+      "seconds": 437.75600000000003
+    },
+    {
+      "line": 408,
+      "call": "word(39,'ナンドデモビリットキマス')",
+      "row": 39,
+      "kana": "ナンドデモビリットキマス",
+      "kwargs": {},
+      "seconds": 442.15000000000003
+    },
+    {
+      "line": 408,
+      "call": "word(39,'サワッテイルアイダ')",
+      "row": 39,
+      "kana": "サワッテイルアイダ",
+      "kwargs": {},
+      "seconds": 444.63633333333337
+    },
+    {
+      "line": 425,
+      "call": "word(42,'カワイタアツガミ')",
+      "row": 42,
+      "kana": "カワイタアツガミ",
+      "kwargs": {},
+      "seconds": 472.82433333333336
+    },
+    {
+      "line": 425,
+      "call": "word(42,'カワイタアツガミオハサム',end=True)",
+      "row": 42,
+      "kana": "カワイタアツガミオハサム",
+      "kwargs": {
+        "end": true
+      },
+      "seconds": 474.37733333333335
+    },
+    {
+      "line": 428,
+      "call": "word(38,'テガミデ',fraction=.3)",
+      "row": 38,
+      "kana": "テガミデ",
+      "kwargs": {
+        "fraction": 0.3
+      },
+      "seconds": 426.946
+    },
+    {
+      "line": 435,
+      "call": "word(10,'フレアワセル')",
+      "row": 10,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 94.65966666666668
+    },
+    {
+      "line": 435,
+      "call": "word(11,'フレアワセル')",
+      "row": 11,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 100.56
+    },
+    {
+      "line": 436,
+      "call": "word(10,'ピクット')",
+      "row": 10,
+      "kana": "ピクット",
+      "kwargs": {},
+      "seconds": 96.43866666666668
+    },
+    {
+      "line": 436,
+      "call": "word(11,'マタウゴキマス')",
+      "row": 11,
+      "kana": "マタウゴキマス",
+      "kwargs": {},
+      "seconds": 101.641
+    },
+    {
+      "line": 443,
+      "call": "word(19,'メスガフレテイル')",
+      "row": 19,
+      "kana": "メスガフレテイル",
+      "kwargs": {},
+      "seconds": 190.9403333333334
+    },
+    {
+      "line": 443,
+      "call": "word(19,'ピクットケッタ')",
+      "row": 19,
+      "kana": "ピクットケッタ",
+      "kwargs": {},
+      "seconds": 192.9213333333334
+    },
+    {
+      "line": 471,
+      "call": "word(33,'ハガヒライタ',fraction=.86)",
+      "row": 33,
+      "kana": "ハガヒライタ",
+      "kwargs": {
+        "fraction": 0.86
+      },
+      "seconds": 374.4696666666667
+    },
+    {
+      "line": 473,
+      "call": "word(10,'フレアワセル')",
+      "row": 10,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 94.65966666666668
+    },
+    {
+      "line": 473,
+      "call": "word(11,'フレアワセル')",
+      "row": 11,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 100.56
+    },
+    {
+      "line": 474,
+      "call": "word(19,'メスガフレテイル')",
+      "row": 19,
+      "kana": "メスガフレテイル",
+      "kwargs": {},
+      "seconds": 190.9403333333334
+    },
+    {
+      "line": 492,
+      "call": "word(33,'ウスイキンノハ',fraction=.52)",
+      "row": 33,
+      "kana": "ウスイキンノハ",
+      "kwargs": {
+        "fraction": 0.52
+      },
+      "seconds": 369.41466666666673
+    },
+    {
+      "line": 493,
+      "call": "word(22,'ニホンノキンゾク')",
+      "row": 22,
+      "kana": "ニホンノキンゾク",
+      "kwargs": {},
+      "seconds": 227.82900000000006
+    },
+    {
+      "line": 495,
+      "call": "word(10,'フレアワセル')",
+      "row": 10,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 94.65966666666668
+    },
+    {
+      "line": 495,
+      "call": "word(11,'フレアワセル')",
+      "row": 11,
+      "kana": "フレアワセル",
+      "kwargs": {},
+      "seconds": 100.56
+    },
+    {
+      "line": 496,
+      "call": "word(10,'ピクット')",
+      "row": 10,
+      "kana": "ピクット",
+      "kwargs": {},
+      "seconds": 96.43866666666668
+    },
+    {
+      "line": 496,
+      "call": "word(11,'マタウゴキマス')",
+      "row": 11,
+      "kana": "マタウゴキマス",
+      "kwargs": {},
+      "seconds": 101.641
+    },
+    {
+      "line": 498,
+      "call": "word(19,'メスガフレテイル')",
+      "row": 19,
+      "kana": "メスガフレテイル",
+      "kwargs": {},
+      "seconds": 190.9403333333334
+    },
+    {
+      "line": 498,
+      "call": "word(19,'ピクットケッタ')",
+      "row": 19,
+      "kana": "ピクットケッタ",
+      "kwargs": {},
+      "seconds": 192.9213333333334
+    }
+  ],
+  "fallbackWarnings": [],
+  "kickEvents": [
+    {
+      "kind": "frog-kick",
+      "row": 1,
+      "start": 0.45,
+      "degrees": 30,
+      "peak": 0.6,
+      "end": 1.0
+    },
+    {
+      "kind": "frog-kick",
+      "row": 10,
+      "start": 96.43866666666668,
+      "degrees": 30,
+      "peak": 96.58866666666668,
+      "end": 96.98866666666667
+    },
+    {
+      "kind": "frog-kick",
+      "row": 11,
+      "start": 101.641,
+      "degrees": 30,
+      "peak": 101.79100000000001,
+      "end": 102.191
+    },
+    {
+      "kind": "frog-kick",
+      "row": 19,
+      "start": 192.9213333333334,
+      "degrees": 30,
+      "peak": 193.0713333333334,
+      "end": 193.4713333333334
+    },
+    {
+      "kind": "frog-kick",
+      "row": 20,
+      "start": 196.36100000000008,
+      "degrees": 30,
+      "peak": 196.51100000000008,
+      "end": 196.9110000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 20,
+      "start": 204.18900000000008,
+      "degrees": 30,
+      "peak": 204.33900000000008,
+      "end": 204.7390000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 25,
+      "start": 265.2290000000001,
+      "degrees": 5,
+      "peak": 265.3790000000001,
+      "end": 265.7790000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 25,
+      "start": 268.1780000000001,
+      "degrees": 30,
+      "peak": 268.3280000000001,
+      "end": 268.7280000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 43,
+      "start": 485.6503333333334,
+      "degrees": 30,
+      "peak": 485.80033333333336,
+      "end": 486.2003333333334
+    },
+    {
+      "kind": "frog-kick",
+      "row": 43,
+      "start": 493.7146666666668,
+      "degrees": 30,
+      "peak": 493.8646666666668,
+      "end": 494.2646666666668
+    }
+  ],
+  "kickEventsUnchangedSinceMixInput": true,
+  "sparkCandidates": [
+    {
+      "row": 13,
+      "kind": "spark-candidate",
+      "spokenAnchor": "ヒバナ",
+      "anchorSeconds": 123.118,
+      "firstPossibleFrame": 3690,
+      "firstPossibleSeconds": 123.0,
+      "sourceCondition": "abs(t-anchor)<0.12",
+      "note": "Read the live stage condition before using this sound; candidates are not added to the frozen voice or current mix."
+    },
+    {
+      "row": 16,
+      "kind": "spark-candidate",
+      "spokenAnchor": "パチッ",
+      "anchorSeconds": 153.94433333333336,
+      "firstPossibleFrame": 4613,
+      "firstPossibleSeconds": 153.76666666666668,
+      "sourceCondition": "abs(t-anchor)<0.18",
+      "note": "Read the live stage condition before using this sound; candidates are not added to the frozen voice or current mix."
+    },
+    {
+      "row": 19,
+      "kind": "spark-candidate",
+      "spokenAnchor": "ヒバナオトバシタ",
+      "anchorSeconds": 187.5213333333334,
+      "firstPossibleFrame": 5622,
+      "firstPossibleSeconds": 187.4,
+      "sourceCondition": "abs(t-anchor)<0.14",
+      "note": "Read the live stage condition before using this sound; candidates are not added to the frozen voice or current mix."
+    },
+    {
+      "row": 39,
+      "kind": "spark-candidate",
+      "spokenAnchor": "パチッ",
+      "anchorSeconds": 437.75600000000003,
+      "firstPossibleFrame": 13129,
+      "firstPossibleSeconds": 437.6333333333333,
+      "sourceCondition": "abs(t-anchor)<0.14",
+      "note": "Read the live stage condition before using this sound; candidates are not added to the frozen voice or current mix."
+    }
+  ],
+  "scope": "No bpy import, rendering or scene edit; exact root functions evaluated against frozen PT. This is not an ear check."
+}

@@ -1,0 +1,94 @@
+{
+  "fps": 30,
+  "events": [
+    {
+      "kind": "frog-kick",
+      "row": 1,
+      "start": 0.45,
+      "degrees": 30,
+      "peak": 0.6,
+      "end": 1.0
+    },
+    {
+      "kind": "frog-kick",
+      "row": 10,
+      "start": 96.43866666666668,
+      "degrees": 30,
+      "peak": 96.58866666666668,
+      "end": 96.98866666666667
+    },
+    {
+      "kind": "frog-kick",
+      "row": 11,
+      "start": 101.641,
+      "degrees": 30,
+      "peak": 101.79100000000001,
+      "end": 102.191
+    },
+    {
+      "kind": "frog-kick",
+      "row": 19,
+      "start": 192.9213333333334,
+      "degrees": 30,
+      "peak": 193.0713333333334,
+      "end": 193.4713333333334
+    },
+    {
+      "kind": "frog-kick",
+      "row": 20,
+      "start": 196.36100000000008,
+      "degrees": 30,
+      "peak": 196.51100000000008,
+      "end": 196.9110000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 20,
+      "start": 204.18900000000008,
+      "degrees": 30,
+      "peak": 204.33900000000008,
+      "end": 204.7390000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 25,
+      "start": 265.2290000000001,
+      "degrees": 5,
+      "peak": 265.3790000000001,
+      "end": 265.7790000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 25,
+      "start": 268.1780000000001,
+      "degrees": 30,
+      "peak": 268.3280000000001,
+      "end": 268.7280000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 43,
+      "start": 485.6503333333334,
+      "degrees": 30,
+      "peak": 485.80033333333336,
+      "end": 486.2003333333334
+    },
+    {
+      "kind": "frog-kick",
+      "row": 43,
+      "start": 493.7146666666668,
+      "degrees": 30,
+      "peak": 493.8646666666668,
+      "end": 494.2646666666668
+    }
+  ],
+  "shape": "150ms rise, 400ms recovery; no anticipation",
+  "provenance": {
+    "method": "read-only AST extraction of the actual root scene word()/kick_events() plus unchanged desk_lib norm; no bpy import",
+    "scene": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_b2a_s3_gpt_20261029.py",
+    "sceneSha256": "7f41f9262888260604a664d49c0efeba2d0f0ca8ee271852e1ab12acf46a9547",
+    "motionFunctionsSha256": "725288264d923f7b09b60a0a55be32145f7f99f5435ea966df01a78932713549",
+    "mustCompareLaterTo": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/blender/motion-events.json",
+    "fallbackWarnings": []
+  }
+}

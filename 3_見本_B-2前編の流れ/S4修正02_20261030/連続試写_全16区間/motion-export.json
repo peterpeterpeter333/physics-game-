@@ -1,0 +1,3650 @@
+{
+  "stage": "Continuous S3-quality motion validation",
+  "id": "ys-chain-b2a_gpt_20261029",
+  "renderKey": "b2a_s4final_gpt_20261030",
+  "fps": 30,
+  "nativeResolution": [
+    540,
+    960
+  ],
+  "manifestFile": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/motion-review-all.json",
+  "manifestSha256": "c4c5a86f95d9eb9a5d338debd35235eac282f10b5ca4d728d2bca94667fab07e",
+  "anchorsSha256": "7b4fcef1fe798753bedd666ab2ba63f22a8a3099194dc5ae4bd402c94c2ef9f2",
+  "mixFile": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+  "mixRecord": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mix.json",
+  "mixSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+  "mixRecordSha256": "9be8ceefbc624bd4dd8bd3717dfd48127a93dafba75c90f0bd7d57bc90c733f6",
+  "voiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+  "receiptFile": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4final-frozen-input-and-audio-reuse_20261030.json",
+  "receiptSha256": "f24d2d5a7dade3554bb0666515fca8996c10477fc125b4f7d99dd50ed7a4fad9",
+  "voiceBgmDifferenceMedianDb": 22.398616534108726,
+  "voiceBgmDifferenceP10Db": 10.102094715491893,
+  "windows": [
+    {
+      "id": "r01-cloth-kick",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r01-cloth-kick.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r01-cloth-kick.export.json",
+      "fromFrame": 0,
+      "toFrameExclusive": 35,
+      "frames": 35,
+      "criticalFrames": [
+        0,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34
+      ]
+    },
+    {
+      "id": "r04-half-turn",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r04-half-turn.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r04-half-turn.export.json",
+      "fromFrame": 725,
+      "toFrameExclusive": 790,
+      "frames": 65,
+      "criticalFrames": [
+        725,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        755,
+        770,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789
+      ]
+    },
+    {
+      "id": "r10-hands",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r10-hands.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r10-hands.export.json",
+      "fromFrame": 2584,
+      "toFrameExclusive": 2772,
+      "frames": 188,
+      "criticalFrames": [
+        2584,
+        2599,
+        2614,
+        2629,
+        2644,
+        2659,
+        2674,
+        2689,
+        2704,
+        2719,
+        2734,
+        2749,
+        2764,
+        2771
+      ]
+    },
+    {
+      "id": "r10-contact-kick",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r10-contact-kick.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r10-contact-kick.export.json",
+      "fromFrame": 2830,
+      "toFrameExclusive": 2913,
+      "frames": 83,
+      "criticalFrames": [
+        2830,
+        2845,
+        2860,
+        2875,
+        2890,
+        2891,
+        2892,
+        2893,
+        2894,
+        2895,
+        2896,
+        2897,
+        2898,
+        2899,
+        2900,
+        2901,
+        2902,
+        2903,
+        2904,
+        2905,
+        2906,
+        2907,
+        2908,
+        2909,
+        2910,
+        2911,
+        2912
+      ]
+    },
+    {
+      "id": "r11-release-kick",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r11-release-kick.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r11-release-kick.export.json",
+      "fromFrame": 2944,
+      "toFrameExclusive": 3069,
+      "frames": 125,
+      "criticalFrames": [
+        2944,
+        2959,
+        2974,
+        2989,
+        3004,
+        3019,
+        3034,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068
+      ]
+    },
+    {
+      "id": "r20-kick-0",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r20-kick-0.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r20-kick-0.export.json",
+      "fromFrame": 5881,
+      "toFrameExclusive": 5911,
+      "frames": 30,
+      "criticalFrames": [
+        5881,
+        5887,
+        5888,
+        5889,
+        5890,
+        5891,
+        5892,
+        5893,
+        5894,
+        5895,
+        5896,
+        5897,
+        5898,
+        5899,
+        5900,
+        5901,
+        5902,
+        5903,
+        5904,
+        5905,
+        5906,
+        5907,
+        5908,
+        5909,
+        5910
+      ]
+    },
+    {
+      "id": "r20-kick-1",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r20-kick-1.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r20-kick-1.export.json",
+      "fromFrame": 6116,
+      "toFrameExclusive": 6146,
+      "frames": 30,
+      "criticalFrames": [
+        6116,
+        6122,
+        6123,
+        6124,
+        6125,
+        6126,
+        6127,
+        6128,
+        6129,
+        6130,
+        6131,
+        6132,
+        6133,
+        6134,
+        6135,
+        6136,
+        6137,
+        6138,
+        6139,
+        6140,
+        6141,
+        6142,
+        6143,
+        6144,
+        6145
+      ]
+    },
+    {
+      "id": "r25-weak-then-strong",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r25-weak-then-strong.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r25-weak-then-strong.export.json",
+      "fromFrame": 7947,
+      "toFrameExclusive": 8065,
+      "frames": 118,
+      "criticalFrames": [
+        7947,
+        7953,
+        7954,
+        7955,
+        7956,
+        7957,
+        7958,
+        7959,
+        7960,
+        7961,
+        7962,
+        7963,
+        7964,
+        7965,
+        7966,
+        7967,
+        7968,
+        7969,
+        7970,
+        7971,
+        7972,
+        7973,
+        7974,
+        7975,
+        7977,
+        7992,
+        8007,
+        8022,
+        8037,
+        8042,
+        8043,
+        8044,
+        8045,
+        8046,
+        8047,
+        8048,
+        8049,
+        8050,
+        8051,
+        8052,
+        8053,
+        8054,
+        8055,
+        8056,
+        8057,
+        8058,
+        8059,
+        8060,
+        8061,
+        8062,
+        8063,
+        8064
+      ]
+    },
+    {
+      "id": "r33-connect-open",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r33-connect-open.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r33-connect-open.export.json",
+      "fromFrame": 11178,
+      "toFrameExclusive": 11262,
+      "frames": 84,
+      "criticalFrames": [
+        11178,
+        11193,
+        11208,
+        11223,
+        11231,
+        11232,
+        11233,
+        11234,
+        11235,
+        11236,
+        11237,
+        11238,
+        11239,
+        11240,
+        11241,
+        11242,
+        11243,
+        11244,
+        11245,
+        11246,
+        11247,
+        11248,
+        11249,
+        11250,
+        11251,
+        11252,
+        11253,
+        11261
+      ]
+    },
+    {
+      "id": "r36-nerve-packets",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r36-nerve-packets.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r36-nerve-packets.export.json",
+      "fromFrame": 12022,
+      "toFrameExclusive": 12209,
+      "frames": 187,
+      "criticalFrames": [
+        12022,
+        12037,
+        12052,
+        12067,
+        12082,
+        12097,
+        12112,
+        12127,
+        12142,
+        12157,
+        12172,
+        12187,
+        12202,
+        12208
+      ]
+    },
+    {
+      "id": "r39-single-spark",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r39-single-spark.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r39-single-spark.export.json",
+      "fromFrame": 13123,
+      "toFrameExclusive": 13157,
+      "frames": 34,
+      "criticalFrames": [
+        13123,
+        13129,
+        13130,
+        13131,
+        13132,
+        13133,
+        13134,
+        13135,
+        13136,
+        13137,
+        13138,
+        13139,
+        13140,
+        13141,
+        13142,
+        13143,
+        13144,
+        13145,
+        13146,
+        13147,
+        13148,
+        13149,
+        13150,
+        13151,
+        13153,
+        13156
+      ]
+    },
+    {
+      "id": "r42-paper-replacement",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r42-paper-replacement.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r42-paper-replacement.export.json",
+      "fromFrame": 14172,
+      "toFrameExclusive": 14290,
+      "frames": 118,
+      "criticalFrames": [
+        14172,
+        14187,
+        14202,
+        14217,
+        14232,
+        14247,
+        14262,
+        14277,
+        14289
+      ]
+    },
+    {
+      "id": "r43-uncover",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r43-uncover.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r43-uncover.export.json",
+      "fromFrame": 14541,
+      "toFrameExclusive": 14576,
+      "frames": 35,
+      "criticalFrames": [
+        14541,
+        14556,
+        14571,
+        14575
+      ]
+    },
+    {
+      "id": "r43-first-kick",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r43-first-kick.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r43-first-kick.export.json",
+      "fromFrame": 14571,
+      "toFrameExclusive": 14590,
+      "frames": 19,
+      "criticalFrames": [
+        14571,
+        14572,
+        14573,
+        14574,
+        14575,
+        14576,
+        14577,
+        14578,
+        14579,
+        14580,
+        14581,
+        14582,
+        14583,
+        14584,
+        14585,
+        14586,
+        14587,
+        14588,
+        14589
+      ]
+    },
+    {
+      "id": "r43-final-hand-kick",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r43-final-hand-kick.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r43-final-hand-kick.export.json",
+      "fromFrame": 14785,
+      "toFrameExclusive": 14843,
+      "frames": 58,
+      "criticalFrames": [
+        14785,
+        14800,
+        14808,
+        14809,
+        14810,
+        14811,
+        14812,
+        14813,
+        14814,
+        14815,
+        14816,
+        14817,
+        14818,
+        14819,
+        14820,
+        14821,
+        14822,
+        14823,
+        14824,
+        14825,
+        14826,
+        14827,
+        14828,
+        14829,
+        14830,
+        14842
+      ]
+    },
+    {
+      "id": "r39-pile-touch",
+      "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r39-pile-touch.mp4",
+      "record": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/r39-pile-touch.export.json",
+      "fromFrame": 13335,
+      "toFrameExclusive": 13410,
+      "frames": 75,
+      "criticalFrames": [
+        13335,
+        13350,
+        13365,
+        13380,
+        13395,
+        13409
+      ]
+    }
+  ],
+  "contactPages": [
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-01.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-02.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-03.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-04.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-05.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-06.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-07.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-08.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-09.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-10.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-11.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-12.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-13.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-14.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-15.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-16.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-17.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-18.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-19.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-20.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-21.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-22.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-23.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-24.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-25.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-26.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-27.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-28.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-29.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-30.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-31.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-32.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-33.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-34.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-35.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-36.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-37.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-38.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-39.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-40.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-41.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-42.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-43.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-44.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-45.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-46.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-47.jpg",
+    "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/motion-contact-48.jpg"
+  ],
+  "contactSamples": [
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00000.jpg",
+      "id": "r01-cloth-kick",
+      "j": 0,
+      "absoluteSeconds": 0,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00010.jpg",
+      "id": "r01-cloth-kick",
+      "j": 10,
+      "absoluteSeconds": 0.3333333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00011.jpg",
+      "id": "r01-cloth-kick",
+      "j": 11,
+      "absoluteSeconds": 0.36666666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00012.jpg",
+      "id": "r01-cloth-kick",
+      "j": 12,
+      "absoluteSeconds": 0.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00013.jpg",
+      "id": "r01-cloth-kick",
+      "j": 13,
+      "absoluteSeconds": 0.43333333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00014.jpg",
+      "id": "r01-cloth-kick",
+      "j": 14,
+      "absoluteSeconds": 0.4666666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00015.jpg",
+      "id": "r01-cloth-kick",
+      "j": 15,
+      "absoluteSeconds": 0.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00016.jpg",
+      "id": "r01-cloth-kick",
+      "j": 16,
+      "absoluteSeconds": 0.5333333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00017.jpg",
+      "id": "r01-cloth-kick",
+      "j": 17,
+      "absoluteSeconds": 0.5666666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00018.jpg",
+      "id": "r01-cloth-kick",
+      "j": 18,
+      "absoluteSeconds": 0.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00019.jpg",
+      "id": "r01-cloth-kick",
+      "j": 19,
+      "absoluteSeconds": 0.6333333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00020.jpg",
+      "id": "r01-cloth-kick",
+      "j": 20,
+      "absoluteSeconds": 0.6666666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00021.jpg",
+      "id": "r01-cloth-kick",
+      "j": 21,
+      "absoluteSeconds": 0.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00022.jpg",
+      "id": "r01-cloth-kick",
+      "j": 22,
+      "absoluteSeconds": 0.7333333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00023.jpg",
+      "id": "r01-cloth-kick",
+      "j": 23,
+      "absoluteSeconds": 0.7666666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00024.jpg",
+      "id": "r01-cloth-kick",
+      "j": 24,
+      "absoluteSeconds": 0.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00025.jpg",
+      "id": "r01-cloth-kick",
+      "j": 25,
+      "absoluteSeconds": 0.8333333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00026.jpg",
+      "id": "r01-cloth-kick",
+      "j": 26,
+      "absoluteSeconds": 0.8666666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00027.jpg",
+      "id": "r01-cloth-kick",
+      "j": 27,
+      "absoluteSeconds": 0.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00028.jpg",
+      "id": "r01-cloth-kick",
+      "j": 28,
+      "absoluteSeconds": 0.9333333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00029.jpg",
+      "id": "r01-cloth-kick",
+      "j": 29,
+      "absoluteSeconds": 0.9666666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00030.jpg",
+      "id": "r01-cloth-kick",
+      "j": 30,
+      "absoluteSeconds": 1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00031.jpg",
+      "id": "r01-cloth-kick",
+      "j": 31,
+      "absoluteSeconds": 1.0333333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00032.jpg",
+      "id": "r01-cloth-kick",
+      "j": 32,
+      "absoluteSeconds": 1.0666666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r01-cloth-kick-00034.jpg",
+      "id": "r01-cloth-kick",
+      "j": 34,
+      "absoluteSeconds": 1.1333333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00725.jpg",
+      "id": "r04-half-turn",
+      "j": 725,
+      "absoluteSeconds": 24.166666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00731.jpg",
+      "id": "r04-half-turn",
+      "j": 731,
+      "absoluteSeconds": 24.366666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00732.jpg",
+      "id": "r04-half-turn",
+      "j": 732,
+      "absoluteSeconds": 24.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00733.jpg",
+      "id": "r04-half-turn",
+      "j": 733,
+      "absoluteSeconds": 24.433333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00734.jpg",
+      "id": "r04-half-turn",
+      "j": 734,
+      "absoluteSeconds": 24.466666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00735.jpg",
+      "id": "r04-half-turn",
+      "j": 735,
+      "absoluteSeconds": 24.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00736.jpg",
+      "id": "r04-half-turn",
+      "j": 736,
+      "absoluteSeconds": 24.533333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00737.jpg",
+      "id": "r04-half-turn",
+      "j": 737,
+      "absoluteSeconds": 24.566666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00738.jpg",
+      "id": "r04-half-turn",
+      "j": 738,
+      "absoluteSeconds": 24.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00739.jpg",
+      "id": "r04-half-turn",
+      "j": 739,
+      "absoluteSeconds": 24.633333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00740.jpg",
+      "id": "r04-half-turn",
+      "j": 740,
+      "absoluteSeconds": 24.666666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00741.jpg",
+      "id": "r04-half-turn",
+      "j": 741,
+      "absoluteSeconds": 24.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00742.jpg",
+      "id": "r04-half-turn",
+      "j": 742,
+      "absoluteSeconds": 24.733333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00743.jpg",
+      "id": "r04-half-turn",
+      "j": 743,
+      "absoluteSeconds": 24.766666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00744.jpg",
+      "id": "r04-half-turn",
+      "j": 744,
+      "absoluteSeconds": 24.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00745.jpg",
+      "id": "r04-half-turn",
+      "j": 745,
+      "absoluteSeconds": 24.833333333333332,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00746.jpg",
+      "id": "r04-half-turn",
+      "j": 746,
+      "absoluteSeconds": 24.866666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00747.jpg",
+      "id": "r04-half-turn",
+      "j": 747,
+      "absoluteSeconds": 24.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00748.jpg",
+      "id": "r04-half-turn",
+      "j": 748,
+      "absoluteSeconds": 24.933333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00749.jpg",
+      "id": "r04-half-turn",
+      "j": 749,
+      "absoluteSeconds": 24.966666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00750.jpg",
+      "id": "r04-half-turn",
+      "j": 750,
+      "absoluteSeconds": 25,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00751.jpg",
+      "id": "r04-half-turn",
+      "j": 751,
+      "absoluteSeconds": 25.033333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00752.jpg",
+      "id": "r04-half-turn",
+      "j": 752,
+      "absoluteSeconds": 25.066666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00753.jpg",
+      "id": "r04-half-turn",
+      "j": 753,
+      "absoluteSeconds": 25.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00755.jpg",
+      "id": "r04-half-turn",
+      "j": 755,
+      "absoluteSeconds": 25.166666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00757.jpg",
+      "id": "r04-half-turn",
+      "j": 757,
+      "absoluteSeconds": 25.233333333333334,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00770.jpg",
+      "id": "r04-half-turn",
+      "j": 770,
+      "absoluteSeconds": 25.666666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00776.jpg",
+      "id": "r04-half-turn",
+      "j": 776,
+      "absoluteSeconds": 25.866666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00777.jpg",
+      "id": "r04-half-turn",
+      "j": 777,
+      "absoluteSeconds": 25.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00778.jpg",
+      "id": "r04-half-turn",
+      "j": 778,
+      "absoluteSeconds": 25.933333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00779.jpg",
+      "id": "r04-half-turn",
+      "j": 779,
+      "absoluteSeconds": 25.966666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00780.jpg",
+      "id": "r04-half-turn",
+      "j": 780,
+      "absoluteSeconds": 26,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00781.jpg",
+      "id": "r04-half-turn",
+      "j": 781,
+      "absoluteSeconds": 26.033333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00782.jpg",
+      "id": "r04-half-turn",
+      "j": 782,
+      "absoluteSeconds": 26.066666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00783.jpg",
+      "id": "r04-half-turn",
+      "j": 783,
+      "absoluteSeconds": 26.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00784.jpg",
+      "id": "r04-half-turn",
+      "j": 784,
+      "absoluteSeconds": 26.133333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00785.jpg",
+      "id": "r04-half-turn",
+      "j": 785,
+      "absoluteSeconds": 26.166666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00786.jpg",
+      "id": "r04-half-turn",
+      "j": 786,
+      "absoluteSeconds": 26.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00787.jpg",
+      "id": "r04-half-turn",
+      "j": 787,
+      "absoluteSeconds": 26.233333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00788.jpg",
+      "id": "r04-half-turn",
+      "j": 788,
+      "absoluteSeconds": 26.266666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r04-half-turn-00789.jpg",
+      "id": "r04-half-turn",
+      "j": 789,
+      "absoluteSeconds": 26.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02584.jpg",
+      "id": "r10-hands",
+      "j": 2584,
+      "absoluteSeconds": 86.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02599.jpg",
+      "id": "r10-hands",
+      "j": 2599,
+      "absoluteSeconds": 86.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02614.jpg",
+      "id": "r10-hands",
+      "j": 2614,
+      "absoluteSeconds": 87.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02629.jpg",
+      "id": "r10-hands",
+      "j": 2629,
+      "absoluteSeconds": 87.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02644.jpg",
+      "id": "r10-hands",
+      "j": 2644,
+      "absoluteSeconds": 88.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02659.jpg",
+      "id": "r10-hands",
+      "j": 2659,
+      "absoluteSeconds": 88.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02674.jpg",
+      "id": "r10-hands",
+      "j": 2674,
+      "absoluteSeconds": 89.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02677.jpg",
+      "id": "r10-hands",
+      "j": 2677,
+      "absoluteSeconds": 89.23333333333333,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02689.jpg",
+      "id": "r10-hands",
+      "j": 2689,
+      "absoluteSeconds": 89.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02704.jpg",
+      "id": "r10-hands",
+      "j": 2704,
+      "absoluteSeconds": 90.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02719.jpg",
+      "id": "r10-hands",
+      "j": 2719,
+      "absoluteSeconds": 90.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02734.jpg",
+      "id": "r10-hands",
+      "j": 2734,
+      "absoluteSeconds": 91.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02749.jpg",
+      "id": "r10-hands",
+      "j": 2749,
+      "absoluteSeconds": 91.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02764.jpg",
+      "id": "r10-hands",
+      "j": 2764,
+      "absoluteSeconds": 92.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-hands-02771.jpg",
+      "id": "r10-hands",
+      "j": 2771,
+      "absoluteSeconds": 92.36666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02830.jpg",
+      "id": "r10-contact-kick",
+      "j": 2830,
+      "absoluteSeconds": 94.33333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02845.jpg",
+      "id": "r10-contact-kick",
+      "j": 2845,
+      "absoluteSeconds": 94.83333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02860.jpg",
+      "id": "r10-contact-kick",
+      "j": 2860,
+      "absoluteSeconds": 95.33333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02871.jpg",
+      "id": "r10-contact-kick",
+      "j": 2871,
+      "absoluteSeconds": 95.7,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02875.jpg",
+      "id": "r10-contact-kick",
+      "j": 2875,
+      "absoluteSeconds": 95.83333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02890.jpg",
+      "id": "r10-contact-kick",
+      "j": 2890,
+      "absoluteSeconds": 96.33333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02891.jpg",
+      "id": "r10-contact-kick",
+      "j": 2891,
+      "absoluteSeconds": 96.36666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02892.jpg",
+      "id": "r10-contact-kick",
+      "j": 2892,
+      "absoluteSeconds": 96.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02893.jpg",
+      "id": "r10-contact-kick",
+      "j": 2893,
+      "absoluteSeconds": 96.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02894.jpg",
+      "id": "r10-contact-kick",
+      "j": 2894,
+      "absoluteSeconds": 96.46666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02895.jpg",
+      "id": "r10-contact-kick",
+      "j": 2895,
+      "absoluteSeconds": 96.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02896.jpg",
+      "id": "r10-contact-kick",
+      "j": 2896,
+      "absoluteSeconds": 96.53333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02897.jpg",
+      "id": "r10-contact-kick",
+      "j": 2897,
+      "absoluteSeconds": 96.56666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02898.jpg",
+      "id": "r10-contact-kick",
+      "j": 2898,
+      "absoluteSeconds": 96.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02899.jpg",
+      "id": "r10-contact-kick",
+      "j": 2899,
+      "absoluteSeconds": 96.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02900.jpg",
+      "id": "r10-contact-kick",
+      "j": 2900,
+      "absoluteSeconds": 96.66666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02901.jpg",
+      "id": "r10-contact-kick",
+      "j": 2901,
+      "absoluteSeconds": 96.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02902.jpg",
+      "id": "r10-contact-kick",
+      "j": 2902,
+      "absoluteSeconds": 96.73333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02903.jpg",
+      "id": "r10-contact-kick",
+      "j": 2903,
+      "absoluteSeconds": 96.76666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02904.jpg",
+      "id": "r10-contact-kick",
+      "j": 2904,
+      "absoluteSeconds": 96.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02905.jpg",
+      "id": "r10-contact-kick",
+      "j": 2905,
+      "absoluteSeconds": 96.83333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02906.jpg",
+      "id": "r10-contact-kick",
+      "j": 2906,
+      "absoluteSeconds": 96.86666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02907.jpg",
+      "id": "r10-contact-kick",
+      "j": 2907,
+      "absoluteSeconds": 96.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02908.jpg",
+      "id": "r10-contact-kick",
+      "j": 2908,
+      "absoluteSeconds": 96.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02909.jpg",
+      "id": "r10-contact-kick",
+      "j": 2909,
+      "absoluteSeconds": 96.96666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02910.jpg",
+      "id": "r10-contact-kick",
+      "j": 2910,
+      "absoluteSeconds": 97,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02911.jpg",
+      "id": "r10-contact-kick",
+      "j": 2911,
+      "absoluteSeconds": 97.03333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r10-contact-kick-02912.jpg",
+      "id": "r10-contact-kick",
+      "j": 2912,
+      "absoluteSeconds": 97.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-02944.jpg",
+      "id": "r11-release-kick",
+      "j": 2944,
+      "absoluteSeconds": 98.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-02959.jpg",
+      "id": "r11-release-kick",
+      "j": 2959,
+      "absoluteSeconds": 98.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-02974.jpg",
+      "id": "r11-release-kick",
+      "j": 2974,
+      "absoluteSeconds": 99.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-02989.jpg",
+      "id": "r11-release-kick",
+      "j": 2989,
+      "absoluteSeconds": 99.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03004.jpg",
+      "id": "r11-release-kick",
+      "j": 3004,
+      "absoluteSeconds": 100.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03006.jpg",
+      "id": "r11-release-kick",
+      "j": 3006,
+      "absoluteSeconds": 100.2,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03019.jpg",
+      "id": "r11-release-kick",
+      "j": 3019,
+      "absoluteSeconds": 100.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03034.jpg",
+      "id": "r11-release-kick",
+      "j": 3034,
+      "absoluteSeconds": 101.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03046.jpg",
+      "id": "r11-release-kick",
+      "j": 3046,
+      "absoluteSeconds": 101.53333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03047.jpg",
+      "id": "r11-release-kick",
+      "j": 3047,
+      "absoluteSeconds": 101.56666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03048.jpg",
+      "id": "r11-release-kick",
+      "j": 3048,
+      "absoluteSeconds": 101.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03049.jpg",
+      "id": "r11-release-kick",
+      "j": 3049,
+      "absoluteSeconds": 101.63333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03050.jpg",
+      "id": "r11-release-kick",
+      "j": 3050,
+      "absoluteSeconds": 101.66666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03051.jpg",
+      "id": "r11-release-kick",
+      "j": 3051,
+      "absoluteSeconds": 101.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03052.jpg",
+      "id": "r11-release-kick",
+      "j": 3052,
+      "absoluteSeconds": 101.73333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03053.jpg",
+      "id": "r11-release-kick",
+      "j": 3053,
+      "absoluteSeconds": 101.76666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03054.jpg",
+      "id": "r11-release-kick",
+      "j": 3054,
+      "absoluteSeconds": 101.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03055.jpg",
+      "id": "r11-release-kick",
+      "j": 3055,
+      "absoluteSeconds": 101.83333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03056.jpg",
+      "id": "r11-release-kick",
+      "j": 3056,
+      "absoluteSeconds": 101.86666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03057.jpg",
+      "id": "r11-release-kick",
+      "j": 3057,
+      "absoluteSeconds": 101.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03058.jpg",
+      "id": "r11-release-kick",
+      "j": 3058,
+      "absoluteSeconds": 101.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03059.jpg",
+      "id": "r11-release-kick",
+      "j": 3059,
+      "absoluteSeconds": 101.96666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03060.jpg",
+      "id": "r11-release-kick",
+      "j": 3060,
+      "absoluteSeconds": 102,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03061.jpg",
+      "id": "r11-release-kick",
+      "j": 3061,
+      "absoluteSeconds": 102.03333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03062.jpg",
+      "id": "r11-release-kick",
+      "j": 3062,
+      "absoluteSeconds": 102.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03063.jpg",
+      "id": "r11-release-kick",
+      "j": 3063,
+      "absoluteSeconds": 102.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03064.jpg",
+      "id": "r11-release-kick",
+      "j": 3064,
+      "absoluteSeconds": 102.13333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03065.jpg",
+      "id": "r11-release-kick",
+      "j": 3065,
+      "absoluteSeconds": 102.16666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03066.jpg",
+      "id": "r11-release-kick",
+      "j": 3066,
+      "absoluteSeconds": 102.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03067.jpg",
+      "id": "r11-release-kick",
+      "j": 3067,
+      "absoluteSeconds": 102.23333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r11-release-kick-03068.jpg",
+      "id": "r11-release-kick",
+      "j": 3068,
+      "absoluteSeconds": 102.26666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05881.jpg",
+      "id": "r20-kick-0",
+      "j": 5881,
+      "absoluteSeconds": 196.03333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05887.jpg",
+      "id": "r20-kick-0",
+      "j": 5887,
+      "absoluteSeconds": 196.23333333333332,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05888.jpg",
+      "id": "r20-kick-0",
+      "j": 5888,
+      "absoluteSeconds": 196.26666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05889.jpg",
+      "id": "r20-kick-0",
+      "j": 5889,
+      "absoluteSeconds": 196.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05890.jpg",
+      "id": "r20-kick-0",
+      "j": 5890,
+      "absoluteSeconds": 196.33333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05891.jpg",
+      "id": "r20-kick-0",
+      "j": 5891,
+      "absoluteSeconds": 196.36666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05892.jpg",
+      "id": "r20-kick-0",
+      "j": 5892,
+      "absoluteSeconds": 196.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05893.jpg",
+      "id": "r20-kick-0",
+      "j": 5893,
+      "absoluteSeconds": 196.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05894.jpg",
+      "id": "r20-kick-0",
+      "j": 5894,
+      "absoluteSeconds": 196.46666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05895.jpg",
+      "id": "r20-kick-0",
+      "j": 5895,
+      "absoluteSeconds": 196.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05896.jpg",
+      "id": "r20-kick-0",
+      "j": 5896,
+      "absoluteSeconds": 196.53333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05897.jpg",
+      "id": "r20-kick-0",
+      "j": 5897,
+      "absoluteSeconds": 196.56666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05898.jpg",
+      "id": "r20-kick-0",
+      "j": 5898,
+      "absoluteSeconds": 196.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05899.jpg",
+      "id": "r20-kick-0",
+      "j": 5899,
+      "absoluteSeconds": 196.63333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05900.jpg",
+      "id": "r20-kick-0",
+      "j": 5900,
+      "absoluteSeconds": 196.66666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05901.jpg",
+      "id": "r20-kick-0",
+      "j": 5901,
+      "absoluteSeconds": 196.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05902.jpg",
+      "id": "r20-kick-0",
+      "j": 5902,
+      "absoluteSeconds": 196.73333333333332,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05903.jpg",
+      "id": "r20-kick-0",
+      "j": 5903,
+      "absoluteSeconds": 196.76666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05904.jpg",
+      "id": "r20-kick-0",
+      "j": 5904,
+      "absoluteSeconds": 196.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05905.jpg",
+      "id": "r20-kick-0",
+      "j": 5905,
+      "absoluteSeconds": 196.83333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05906.jpg",
+      "id": "r20-kick-0",
+      "j": 5906,
+      "absoluteSeconds": 196.86666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05907.jpg",
+      "id": "r20-kick-0",
+      "j": 5907,
+      "absoluteSeconds": 196.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05908.jpg",
+      "id": "r20-kick-0",
+      "j": 5908,
+      "absoluteSeconds": 196.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05909.jpg",
+      "id": "r20-kick-0",
+      "j": 5909,
+      "absoluteSeconds": 196.96666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-0-05910.jpg",
+      "id": "r20-kick-0",
+      "j": 5910,
+      "absoluteSeconds": 197,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06116.jpg",
+      "id": "r20-kick-1",
+      "j": 6116,
+      "absoluteSeconds": 203.86666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06122.jpg",
+      "id": "r20-kick-1",
+      "j": 6122,
+      "absoluteSeconds": 204.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06123.jpg",
+      "id": "r20-kick-1",
+      "j": 6123,
+      "absoluteSeconds": 204.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06124.jpg",
+      "id": "r20-kick-1",
+      "j": 6124,
+      "absoluteSeconds": 204.13333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06125.jpg",
+      "id": "r20-kick-1",
+      "j": 6125,
+      "absoluteSeconds": 204.16666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06126.jpg",
+      "id": "r20-kick-1",
+      "j": 6126,
+      "absoluteSeconds": 204.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06127.jpg",
+      "id": "r20-kick-1",
+      "j": 6127,
+      "absoluteSeconds": 204.23333333333332,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06128.jpg",
+      "id": "r20-kick-1",
+      "j": 6128,
+      "absoluteSeconds": 204.26666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06129.jpg",
+      "id": "r20-kick-1",
+      "j": 6129,
+      "absoluteSeconds": 204.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06130.jpg",
+      "id": "r20-kick-1",
+      "j": 6130,
+      "absoluteSeconds": 204.33333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06131.jpg",
+      "id": "r20-kick-1",
+      "j": 6131,
+      "absoluteSeconds": 204.36666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06132.jpg",
+      "id": "r20-kick-1",
+      "j": 6132,
+      "absoluteSeconds": 204.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06133.jpg",
+      "id": "r20-kick-1",
+      "j": 6133,
+      "absoluteSeconds": 204.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06134.jpg",
+      "id": "r20-kick-1",
+      "j": 6134,
+      "absoluteSeconds": 204.46666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06135.jpg",
+      "id": "r20-kick-1",
+      "j": 6135,
+      "absoluteSeconds": 204.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06136.jpg",
+      "id": "r20-kick-1",
+      "j": 6136,
+      "absoluteSeconds": 204.53333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06137.jpg",
+      "id": "r20-kick-1",
+      "j": 6137,
+      "absoluteSeconds": 204.56666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06138.jpg",
+      "id": "r20-kick-1",
+      "j": 6138,
+      "absoluteSeconds": 204.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06139.jpg",
+      "id": "r20-kick-1",
+      "j": 6139,
+      "absoluteSeconds": 204.63333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06140.jpg",
+      "id": "r20-kick-1",
+      "j": 6140,
+      "absoluteSeconds": 204.66666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06141.jpg",
+      "id": "r20-kick-1",
+      "j": 6141,
+      "absoluteSeconds": 204.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06142.jpg",
+      "id": "r20-kick-1",
+      "j": 6142,
+      "absoluteSeconds": 204.73333333333332,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06143.jpg",
+      "id": "r20-kick-1",
+      "j": 6143,
+      "absoluteSeconds": 204.76666666666668,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06144.jpg",
+      "id": "r20-kick-1",
+      "j": 6144,
+      "absoluteSeconds": 204.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r20-kick-1-06145.jpg",
+      "id": "r20-kick-1",
+      "j": 6145,
+      "absoluteSeconds": 204.83333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07947.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7947,
+      "absoluteSeconds": 264.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07953.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7953,
+      "absoluteSeconds": 265.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07954.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7954,
+      "absoluteSeconds": 265.1333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07955.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7955,
+      "absoluteSeconds": 265.1666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07956.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7956,
+      "absoluteSeconds": 265.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07957.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7957,
+      "absoluteSeconds": 265.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07958.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7958,
+      "absoluteSeconds": 265.26666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07959.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7959,
+      "absoluteSeconds": 265.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07960.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7960,
+      "absoluteSeconds": 265.3333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07961.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7961,
+      "absoluteSeconds": 265.3666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07962.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7962,
+      "absoluteSeconds": 265.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07963.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7963,
+      "absoluteSeconds": 265.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07964.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7964,
+      "absoluteSeconds": 265.46666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07965.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7965,
+      "absoluteSeconds": 265.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07966.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7966,
+      "absoluteSeconds": 265.53333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07967.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7967,
+      "absoluteSeconds": 265.56666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07968.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7968,
+      "absoluteSeconds": 265.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07969.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7969,
+      "absoluteSeconds": 265.6333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07970.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7970,
+      "absoluteSeconds": 265.6666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07971.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7971,
+      "absoluteSeconds": 265.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07972.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7972,
+      "absoluteSeconds": 265.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07973.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7973,
+      "absoluteSeconds": 265.76666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07974.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7974,
+      "absoluteSeconds": 265.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07975.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7975,
+      "absoluteSeconds": 265.8333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07977.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7977,
+      "absoluteSeconds": 265.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-07992.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 7992,
+      "absoluteSeconds": 266.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08005.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8005,
+      "absoluteSeconds": 266.8333333333333,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08007.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8007,
+      "absoluteSeconds": 266.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08022.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8022,
+      "absoluteSeconds": 267.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08037.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8037,
+      "absoluteSeconds": 267.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08042.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8042,
+      "absoluteSeconds": 268.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08043.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8043,
+      "absoluteSeconds": 268.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08044.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8044,
+      "absoluteSeconds": 268.1333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08045.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8045,
+      "absoluteSeconds": 268.1666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08046.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8046,
+      "absoluteSeconds": 268.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08047.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8047,
+      "absoluteSeconds": 268.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08048.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8048,
+      "absoluteSeconds": 268.26666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08049.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8049,
+      "absoluteSeconds": 268.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08050.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8050,
+      "absoluteSeconds": 268.3333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08051.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8051,
+      "absoluteSeconds": 268.3666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08052.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8052,
+      "absoluteSeconds": 268.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08053.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8053,
+      "absoluteSeconds": 268.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08054.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8054,
+      "absoluteSeconds": 268.46666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08055.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8055,
+      "absoluteSeconds": 268.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08056.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8056,
+      "absoluteSeconds": 268.53333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08057.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8057,
+      "absoluteSeconds": 268.56666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08058.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8058,
+      "absoluteSeconds": 268.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08059.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8059,
+      "absoluteSeconds": 268.6333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08060.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8060,
+      "absoluteSeconds": 268.6666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08061.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8061,
+      "absoluteSeconds": 268.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08062.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8062,
+      "absoluteSeconds": 268.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08063.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8063,
+      "absoluteSeconds": 268.76666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r25-weak-then-strong-08064.jpg",
+      "id": "r25-weak-then-strong",
+      "j": 8064,
+      "absoluteSeconds": 268.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11178.jpg",
+      "id": "r33-connect-open",
+      "j": 11178,
+      "absoluteSeconds": 372.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11193.jpg",
+      "id": "r33-connect-open",
+      "j": 11193,
+      "absoluteSeconds": 373.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11208.jpg",
+      "id": "r33-connect-open",
+      "j": 11208,
+      "absoluteSeconds": 373.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11219.jpg",
+      "id": "r33-connect-open",
+      "j": 11219,
+      "absoluteSeconds": 373.96666666666664,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11223.jpg",
+      "id": "r33-connect-open",
+      "j": 11223,
+      "absoluteSeconds": 374.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11231.jpg",
+      "id": "r33-connect-open",
+      "j": 11231,
+      "absoluteSeconds": 374.3666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11232.jpg",
+      "id": "r33-connect-open",
+      "j": 11232,
+      "absoluteSeconds": 374.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11233.jpg",
+      "id": "r33-connect-open",
+      "j": 11233,
+      "absoluteSeconds": 374.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11234.jpg",
+      "id": "r33-connect-open",
+      "j": 11234,
+      "absoluteSeconds": 374.46666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11235.jpg",
+      "id": "r33-connect-open",
+      "j": 11235,
+      "absoluteSeconds": 374.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11236.jpg",
+      "id": "r33-connect-open",
+      "j": 11236,
+      "absoluteSeconds": 374.53333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11237.jpg",
+      "id": "r33-connect-open",
+      "j": 11237,
+      "absoluteSeconds": 374.56666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11238.jpg",
+      "id": "r33-connect-open",
+      "j": 11238,
+      "absoluteSeconds": 374.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11239.jpg",
+      "id": "r33-connect-open",
+      "j": 11239,
+      "absoluteSeconds": 374.6333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11240.jpg",
+      "id": "r33-connect-open",
+      "j": 11240,
+      "absoluteSeconds": 374.6666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11241.jpg",
+      "id": "r33-connect-open",
+      "j": 11241,
+      "absoluteSeconds": 374.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11242.jpg",
+      "id": "r33-connect-open",
+      "j": 11242,
+      "absoluteSeconds": 374.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11243.jpg",
+      "id": "r33-connect-open",
+      "j": 11243,
+      "absoluteSeconds": 374.76666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11244.jpg",
+      "id": "r33-connect-open",
+      "j": 11244,
+      "absoluteSeconds": 374.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11245.jpg",
+      "id": "r33-connect-open",
+      "j": 11245,
+      "absoluteSeconds": 374.8333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11246.jpg",
+      "id": "r33-connect-open",
+      "j": 11246,
+      "absoluteSeconds": 374.8666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11247.jpg",
+      "id": "r33-connect-open",
+      "j": 11247,
+      "absoluteSeconds": 374.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11248.jpg",
+      "id": "r33-connect-open",
+      "j": 11248,
+      "absoluteSeconds": 374.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11249.jpg",
+      "id": "r33-connect-open",
+      "j": 11249,
+      "absoluteSeconds": 374.96666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11250.jpg",
+      "id": "r33-connect-open",
+      "j": 11250,
+      "absoluteSeconds": 375,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11251.jpg",
+      "id": "r33-connect-open",
+      "j": 11251,
+      "absoluteSeconds": 375.03333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11252.jpg",
+      "id": "r33-connect-open",
+      "j": 11252,
+      "absoluteSeconds": 375.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11253.jpg",
+      "id": "r33-connect-open",
+      "j": 11253,
+      "absoluteSeconds": 375.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r33-connect-open-11261.jpg",
+      "id": "r33-connect-open",
+      "j": 11261,
+      "absoluteSeconds": 375.3666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12022.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12022,
+      "absoluteSeconds": 400.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12037.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12037,
+      "absoluteSeconds": 401.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12052.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12052,
+      "absoluteSeconds": 401.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12067.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12067,
+      "absoluteSeconds": 402.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12082.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12082,
+      "absoluteSeconds": 402.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12097.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12097,
+      "absoluteSeconds": 403.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12112.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12112,
+      "absoluteSeconds": 403.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12115.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12115,
+      "absoluteSeconds": 403.8333333333333,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12127.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12127,
+      "absoluteSeconds": 404.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12142.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12142,
+      "absoluteSeconds": 404.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12157.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12157,
+      "absoluteSeconds": 405.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12172.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12172,
+      "absoluteSeconds": 405.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12187.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12187,
+      "absoluteSeconds": 406.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12202.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12202,
+      "absoluteSeconds": 406.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r36-nerve-packets-12208.jpg",
+      "id": "r36-nerve-packets",
+      "j": 12208,
+      "absoluteSeconds": 406.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13123.jpg",
+      "id": "r39-single-spark",
+      "j": 13123,
+      "absoluteSeconds": 437.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13129.jpg",
+      "id": "r39-single-spark",
+      "j": 13129,
+      "absoluteSeconds": 437.6333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13130.jpg",
+      "id": "r39-single-spark",
+      "j": 13130,
+      "absoluteSeconds": 437.6666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13131.jpg",
+      "id": "r39-single-spark",
+      "j": 13131,
+      "absoluteSeconds": 437.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13132.jpg",
+      "id": "r39-single-spark",
+      "j": 13132,
+      "absoluteSeconds": 437.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13133.jpg",
+      "id": "r39-single-spark",
+      "j": 13133,
+      "absoluteSeconds": 437.76666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13134.jpg",
+      "id": "r39-single-spark",
+      "j": 13134,
+      "absoluteSeconds": 437.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13135.jpg",
+      "id": "r39-single-spark",
+      "j": 13135,
+      "absoluteSeconds": 437.8333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13136.jpg",
+      "id": "r39-single-spark",
+      "j": 13136,
+      "absoluteSeconds": 437.8666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13137.jpg",
+      "id": "r39-single-spark",
+      "j": 13137,
+      "absoluteSeconds": 437.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13138.jpg",
+      "id": "r39-single-spark",
+      "j": 13138,
+      "absoluteSeconds": 437.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13139.jpg",
+      "id": "r39-single-spark",
+      "j": 13139,
+      "absoluteSeconds": 437.96666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13140.jpg",
+      "id": "r39-single-spark",
+      "j": 13140,
+      "absoluteSeconds": 438,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13141.jpg",
+      "id": "r39-single-spark",
+      "j": 13141,
+      "absoluteSeconds": 438.03333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13142.jpg",
+      "id": "r39-single-spark",
+      "j": 13142,
+      "absoluteSeconds": 438.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13143.jpg",
+      "id": "r39-single-spark",
+      "j": 13143,
+      "absoluteSeconds": 438.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13144.jpg",
+      "id": "r39-single-spark",
+      "j": 13144,
+      "absoluteSeconds": 438.1333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13145.jpg",
+      "id": "r39-single-spark",
+      "j": 13145,
+      "absoluteSeconds": 438.1666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13146.jpg",
+      "id": "r39-single-spark",
+      "j": 13146,
+      "absoluteSeconds": 438.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13147.jpg",
+      "id": "r39-single-spark",
+      "j": 13147,
+      "absoluteSeconds": 438.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13148.jpg",
+      "id": "r39-single-spark",
+      "j": 13148,
+      "absoluteSeconds": 438.26666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13149.jpg",
+      "id": "r39-single-spark",
+      "j": 13149,
+      "absoluteSeconds": 438.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13150.jpg",
+      "id": "r39-single-spark",
+      "j": 13150,
+      "absoluteSeconds": 438.3333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13151.jpg",
+      "id": "r39-single-spark",
+      "j": 13151,
+      "absoluteSeconds": 438.3666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13153.jpg",
+      "id": "r39-single-spark",
+      "j": 13153,
+      "absoluteSeconds": 438.43333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-single-spark-13156.jpg",
+      "id": "r39-single-spark",
+      "j": 13156,
+      "absoluteSeconds": 438.53333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14172.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14172,
+      "absoluteSeconds": 472.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14187.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14187,
+      "absoluteSeconds": 472.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14202.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14202,
+      "absoluteSeconds": 473.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14217.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14217,
+      "absoluteSeconds": 473.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14230.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14230,
+      "absoluteSeconds": 474.3333333333333,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14232.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14232,
+      "absoluteSeconds": 474.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14247.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14247,
+      "absoluteSeconds": 474.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14262.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14262,
+      "absoluteSeconds": 475.4,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14277.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14277,
+      "absoluteSeconds": 475.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r42-paper-replacement-14289.jpg",
+      "id": "r42-paper-replacement",
+      "j": 14289,
+      "absoluteSeconds": 476.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-uncover-14541.jpg",
+      "id": "r43-uncover",
+      "j": 14541,
+      "absoluteSeconds": 484.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-uncover-14556.jpg",
+      "id": "r43-uncover",
+      "j": 14556,
+      "absoluteSeconds": 485.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-uncover-14558.jpg",
+      "id": "r43-uncover",
+      "j": 14558,
+      "absoluteSeconds": 485.26666666666665,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-uncover-14571.jpg",
+      "id": "r43-uncover",
+      "j": 14571,
+      "absoluteSeconds": 485.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-uncover-14575.jpg",
+      "id": "r43-uncover",
+      "j": 14575,
+      "absoluteSeconds": 485.8333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14571.jpg",
+      "id": "r43-first-kick",
+      "j": 14571,
+      "absoluteSeconds": 485.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14572.jpg",
+      "id": "r43-first-kick",
+      "j": 14572,
+      "absoluteSeconds": 485.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14573.jpg",
+      "id": "r43-first-kick",
+      "j": 14573,
+      "absoluteSeconds": 485.76666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14574.jpg",
+      "id": "r43-first-kick",
+      "j": 14574,
+      "absoluteSeconds": 485.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14575.jpg",
+      "id": "r43-first-kick",
+      "j": 14575,
+      "absoluteSeconds": 485.8333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14576.jpg",
+      "id": "r43-first-kick",
+      "j": 14576,
+      "absoluteSeconds": 485.8666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14577.jpg",
+      "id": "r43-first-kick",
+      "j": 14577,
+      "absoluteSeconds": 485.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14578.jpg",
+      "id": "r43-first-kick",
+      "j": 14578,
+      "absoluteSeconds": 485.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14579.jpg",
+      "id": "r43-first-kick",
+      "j": 14579,
+      "absoluteSeconds": 485.96666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14580.jpg",
+      "id": "r43-first-kick",
+      "j": 14580,
+      "absoluteSeconds": 486,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14581.jpg",
+      "id": "r43-first-kick",
+      "j": 14581,
+      "absoluteSeconds": 486.03333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14582.jpg",
+      "id": "r43-first-kick",
+      "j": 14582,
+      "absoluteSeconds": 486.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14583.jpg",
+      "id": "r43-first-kick",
+      "j": 14583,
+      "absoluteSeconds": 486.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14584.jpg",
+      "id": "r43-first-kick",
+      "j": 14584,
+      "absoluteSeconds": 486.1333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14585.jpg",
+      "id": "r43-first-kick",
+      "j": 14585,
+      "absoluteSeconds": 486.1666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14586.jpg",
+      "id": "r43-first-kick",
+      "j": 14586,
+      "absoluteSeconds": 486.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14587.jpg",
+      "id": "r43-first-kick",
+      "j": 14587,
+      "absoluteSeconds": 486.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14588.jpg",
+      "id": "r43-first-kick",
+      "j": 14588,
+      "absoluteSeconds": 486.26666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-first-kick-14589.jpg",
+      "id": "r43-first-kick",
+      "j": 14589,
+      "absoluteSeconds": 486.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14785.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14785,
+      "absoluteSeconds": 492.8333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14800.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14800,
+      "absoluteSeconds": 493.3333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14808.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14808,
+      "absoluteSeconds": 493.6,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14809.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14809,
+      "absoluteSeconds": 493.6333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14810.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14810,
+      "absoluteSeconds": 493.6666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14811.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14811,
+      "absoluteSeconds": 493.7,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14812.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14812,
+      "absoluteSeconds": 493.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14813.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14813,
+      "absoluteSeconds": 493.76666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14814.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14814,
+      "absoluteSeconds": 493.8,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14815.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14815,
+      "absoluteSeconds": 493.8333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14816.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14816,
+      "absoluteSeconds": 493.8666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14817.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14817,
+      "absoluteSeconds": 493.9,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14818.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14818,
+      "absoluteSeconds": 493.93333333333334,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14819.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14819,
+      "absoluteSeconds": 493.96666666666664,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14820.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14820,
+      "absoluteSeconds": 494,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14821.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14821,
+      "absoluteSeconds": 494.03333333333336,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14822.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14822,
+      "absoluteSeconds": 494.06666666666666,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14823.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14823,
+      "absoluteSeconds": 494.1,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14824.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14824,
+      "absoluteSeconds": 494.1333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14825.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14825,
+      "absoluteSeconds": 494.1666666666667,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14826.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14826,
+      "absoluteSeconds": 494.2,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14827.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14827,
+      "absoluteSeconds": 494.23333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14828.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14828,
+      "absoluteSeconds": 494.26666666666665,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14829.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14829,
+      "absoluteSeconds": 494.3,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14830.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14830,
+      "absoluteSeconds": 494.3333333333333,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r43-final-hand-kick-14842.jpg",
+      "id": "r43-final-hand-kick",
+      "j": 14842,
+      "absoluteSeconds": 494.73333333333335,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-pile-touch-13335.jpg",
+      "id": "r39-pile-touch",
+      "j": 13335,
+      "absoluteSeconds": 444.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-pile-touch-13350.jpg",
+      "id": "r39-pile-touch",
+      "j": 13350,
+      "absoluteSeconds": 445,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-pile-touch-13365.jpg",
+      "id": "r39-pile-touch",
+      "j": 13365,
+      "absoluteSeconds": 445.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-pile-touch-13372.jpg",
+      "id": "r39-pile-touch",
+      "j": 13372,
+      "absoluteSeconds": 445.73333333333335,
+      "label": "middle",
+      "critical": false
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-pile-touch-13380.jpg",
+      "id": "r39-pile-touch",
+      "j": 13380,
+      "absoluteSeconds": 446,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-pile-touch-13395.jpg",
+      "id": "r39-pile-touch",
+      "j": 13395,
+      "absoluteSeconds": 446.5,
+      "label": "event-critical",
+      "critical": true
+    },
+    {
+      "image": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/continuous-review-final/contact-frames/r39-pile-touch-13409.jpg",
+      "id": "r39-pile-touch",
+      "j": 13409,
+      "absoluteSeconds": 446.96666666666664,
+      "label": "event-critical",
+      "critical": true
+    }
+  ],
+  "samplesCoverEveryDeclaredCriticalFrame": true,
+  "allVisualsReviewed": false,
+  "earsPerformed": false,
+  "scope": "Exact frame/sample-clock short trials plus contact sheets only. Actual motion must be visually reviewed by root; no audio-generation/mixing, interpolation, missing-frame substitution, or final-resolution claim."
+}

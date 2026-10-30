@@ -1,0 +1,93 @@
+「技術の疑問の鎖」1-1 を、第6版に直す担当です。最後の仕上げです。
+作業ディレクトリ：/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series
+- コミット・push しない。アプリのコードは触らない。
+- 他の動画の書き出しを変えない。
+
+**背景**
+- 第5版（ys-chain-1-1v5、6:11）へのユーザーの評価：「素晴らしい完成度。ブラックボックスが2か所ある」。
+- 統括が、行40と行43の差し替えを書いた。
+
+**読む**
+1. 差し替えの正本：docs/video-revision-20260924/deep/技術の疑問の鎖_1-1_第6版_差し替え.md
+   - 行40 を 40a〜40k に、行43 を 43a〜43c に差し替える。
+   - それ以外は、第5版の正本（技術の疑問の鎖_1-1_第5版_ナレーション.md）のまま。
+   - 字幕の文言は一字一句このまま。
+2. 第5版の一式：
+   - ytseries/chain-1-1v5.mjs
+   - scripts/blender/desk_1_1v5.py
+   - scripts/umech/desk-1-1v5-*.mjs、desk-frame.mjs、desk-faces.mjs
+   - mix-chain-desk-audio.py、chain-desk-lint.mjs、prosody-speaker.py
+   - キャッシュ /private/tmp/ys/ys-chain-1-1v5（Blender のコマ、カメラの記録）
+   - 第5版のファイルは編集しない。写して …1_1v6… の名前で作る。
+
+**ID と出力**
+- ID は ys-chain-1-1v6、題と series は同じ。
+- 出力：~/Downloads/physics-quest-youtube/技術の疑問の鎖/1-1_女王を処刑台に送った手紙.mp4
+  - 第5版は消さない。旧版/ に「_第5版」を付けて移す。
+- ChatGPT 用も書き出し直す。
+
+**作り方**
+- **使い回す**：差し替え以外の場面の 3D のコマは、第5版のものを使い回してよい（時刻がずれる分は、場面ごとのコマの割り当てで合わせる）。書き出し時間を短くするため。
+- **行40a〜40k**：カメラを止め、541文字の暗号文の紙の、冒頭の数行を大きく見せる。
+  - 分かった文字が白に変わる。
+  - 候補を上下に並べ、×を付ける。
+  - 「Q＝A」「G＝L」の札を出す。
+  - 冒頭の行（JVX QSNI DPGG NXXJ QJ JVX）の下に、分かった文字を入れていく。
+  - 40j で、クロスワードの升目が埋まる小さな絵（見方：たとえ話の札）を出す。
+  - 40k は、第5版の行40の映像と音楽（全体が裏返る）。
+- **行43a〜43c**：第5版の手・たる・封蝋を使う。
+  - 運び役の人形がくるりと向きを変える（寝返り）。
+  - 手紙が別の手へ渡る → 写しを作る → 封をし直す → また運ばれる。
+- **声**：新しい cue の声を作る。カイは10001、ミオは10005。速さは第5版と同じ設定。
+  - Nemo（127.0.0.1:50123）が止まっていれば、手順書のとおり起動する。
+- **数と史実を確かめる**
+  - assert：541文字の暗号文で、単独の Q が4回、NXXJ QJ JVX の並び、JXGG・DPGG の回数、冒頭の行の暗号。
+  - 史実：ギフォードがウォルシンガム側に付いた時期と、写して封をし直して届けたこと。資料に当たって確かめ、違っていれば直さずに報告する。
+
+**確認**
+- 手順書の確認を全部やる。lint、読み 0、prosody 0（女声も）、mxr-review 全ページ、qx-verify 0、1秒ごとの全コマ一覧を全部見る。
+- 特に、差し替えた場面を見る：
+  - 説明の間にカメラが止まっているか。
+  - 文字が声より先に出ていないか。
+- 直したら、直した後の版で全部見直す。
+
+**報告は短く**
+- 長さ・出力
+- 差し替えた場面の代表のコマ
+- 確認したこと／していないこと
+- 史実の確認の結果
+- 正本への疑問
+
+さらに担当を立てない。
+=====
+<system-reminder>
+Your final report is delivered through SubagentHandback: when your work is complete, call SubagentHandback({message: <your full report>}). The call ends your run, so make it your last step. Only a SubagentHandback call reaches your caller as your result; plain text you write at the end is not delivered. Do not also send the report with SendMessage: your caller would get it twice.
+</system-reminder>
+=====
+[Image: original 2184x670, displayed at 2000x614. Multiply coordinates by 1.09 to map to original image.]
+=====
+[Image: original 2128x1126, displayed at 2000x1058. Multiply coordinates by 1.06 to map to original image.]
+=====
+[Image: original 1936x2571, displayed at 1506x2000. Multiply coordinates by 1.29 to map to original image.]
+=====
+The coordinator sent a message while you were working:
+疑問2（ARMY と MEET の飛躍）を受けて、正本に行を2つ足しました。40i と 40j の間に入れて、出し直してください。
+
+足した行（文言は差し替えの正本の表のとおり）：
+- 40i2（カイ）：「□EETは、MEETか、FEETです。AT THEの前に来るなら、MEET、どこかで会う、が自然です。だから、NはMです。」
+  - 画面：NXXJ の下に MEET／FEET の2候補。FEET に×。札「N＝M」。
+- 40i3（カイ）：「すると、QSNIは、A、□、M、□。Aで始まり、3文字目がMの、4文字の言葉。ARMY、軍です。」
+  - 画面：QSNI の下に A□M□ → ARMY。
+
+手順：
+1. 今の第6版の mp4 を 旧版/ に「_第6版の1」を付けて移す。
+2. 新しい2 cue の声を作る。
+3. 3D のコマは使い回し、時刻のずれを合わせる。
+4. 確認一式を流す。直した後の版の全コマ一覧と review を全部見る。前と同じだと分かっている所は、同一であることの確かめでよい。
+5. ChatGPT 用を書き出し直す。
+
+疑問1（「□EET ?T THE」の表示）は、そのままで構いません。
+
+報告は短くお願いします。
+
+Address this before completing your current task.

@@ -1,0 +1,47 @@
+{
+  "requiredVisualsAccepted": true,
+  "measurementsAccepted": true,
+  "stage": "S3-quality continuous five-window preflight",
+  "basis": {
+    "continuousRenderedAndDecodedFrames": 2288,
+    "continuousMovies": 5,
+    "criticalEventsExplicitlyCovered": 24,
+    "rootViewedContactPages": ["motion-contact-01.jpg", "motion-contact-02.jpg", "motion-contact-03.jpg", "motion-contact-04.jpg", "motion-contact-05.jpg"],
+    "rootViewedInitialAndRevisedProbeImages": true,
+    "independentStillReport": "S3連続試写_03/B-2前編_追加修正03_独立静止試写確認_20261030.json",
+    "nativeMovementAudit": "配置再点検_03/row19投影面積検査/row19-independent.json"
+  },
+  "row19Measured": {
+    "minimumVisibleBodyAreaFraction": 0.09325810185185185,
+    "minimumBodyHeightFraction": 0.24791666666666667,
+    "minimumVisibleNerveWidthFraction": 0.05740740740740741,
+    "minimumHandPreservedNerveLengthFraction": 1.0,
+    "actualToeTravelOverScreenHeight": 0.11827605477301575,
+    "actualToeVerticalTravelOverScreenHeight": 0.11394946575944101,
+    "machineWidthFraction": 0.3347300961214705,
+    "whiteSparkFrames": 6,
+    "sampledApplicableCriteriaFailures": []
+  },
+  "otherMeasured": {
+    "alarmWidthFraction": [0.47, 0.5311],
+    "sameZFootPictureWidthFraction": 0.44,
+    "hypothesisGlyphWidthFraction": 0.125,
+    "row13Camera": "same exact pose and shift as existing row39:glass",
+    "row22FrogCamera": "same exact pose and shift as row21"
+  },
+  "movementAssessment": {
+    "row13": "rubbing with connected arm, accumulated marks, finger/spark, marks gone",
+    "row19": "turning disk/crank, white spark, visible scalpel/nerve contact, strong kick and return",
+    "row21": "mark appears at the hypothesis word; one slow emission pulse",
+    "row22": "finite monotonic progress from 0 to 1 through one closed ordered path",
+    "row27": "source-only smoke; arriving smoke triggers lamp/3 arcs and one small foot kick; later lamp cycles do not retrigger the foot; one underside push-in",
+    "row36": "same hypothesis mark crossed at the same spoken word as existing label cancellation"
+  },
+  "limitations": [
+    "Root visual review uses sampled event sequences/contact sheets plus actual-frame geometric/timing traces, not a claim of uninterrupted equal-speed human viewing.",
+    "Ear-based listening is unavailable and was not performed.",
+    "The final native1080 export and unchanged original quality gate are still pending."
+  ],
+  "voiceCaptionWordingAndClocksChanged": false,
+  "originalGateOrThresholdsChanged": false
+}

@@ -1,0 +1,1050 @@
+{
+  "created": "2026-10-29T10:41:55.648Z",
+  "scene": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_b2a_gpt_20261029.py",
+  "sceneSha256": "ffa19d0891090ddba8d65385a1ea664fa01761e7c3a69f2003e73c899676a614",
+  "scope": "Read-only proposed word/action synchronization audit. Root scene untouched. No Blender render or ear check performed.",
+  "counts": {
+    "literalWordCalls": 34,
+    "matched": 34,
+    "missing": 0
+  },
+  "calls": [
+    {
+      "line": 159,
+      "call": "word(6,'ウエオムキマス',fraction=.75)",
+      "row": 6,
+      "kana": "ウエオムキマス",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r06:b",
+        "occ": 0,
+        "start": 51.30266666666668,
+        "end": 52.05166666666668,
+        "value": 51.30266666666668,
+        "matchedKana": "ウエオムキマス"
+      }
+    },
+    {
+      "line": 159,
+      "call": "word(6,'ウエオムキマス',fraction=.75)",
+      "row": 6,
+      "kana": "ウエオムキマス",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r06:b",
+        "occ": 0,
+        "start": 51.30266666666668,
+        "end": 52.05166666666668,
+        "value": 51.30266666666668,
+        "matchedKana": "ウエオムキマス"
+      }
+    },
+    {
+      "line": 163,
+      "call": "word(2,'オキマス',fraction=.6)",
+      "row": 2,
+      "kana": "オキマス",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r02:a",
+        "occ": 0,
+        "start": 6.961,
+        "end": 7.694,
+        "value": 6.961,
+        "matchedKana": "オキマス"
+      }
+    },
+    {
+      "line": 176,
+      "call": "word(10,'フレアワセル',fraction=.83)",
+      "row": 10,
+      "kana": "フレアワセル",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r10:b",
+        "occ": 0,
+        "start": 94.65966666666668,
+        "end": 95.29266666666668,
+        "value": 94.65966666666668,
+        "matchedKana": "フレアワセル"
+      }
+    },
+    {
+      "line": 176,
+      "call": "word(10,'ピクット',fraction=.9)",
+      "row": 10,
+      "kana": "ピクット",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r10:b",
+        "occ": 0,
+        "start": 96.43866666666668,
+        "end": 96.82666666666668,
+        "value": 96.43866666666668,
+        "matchedKana": "ピクット"
+      }
+    },
+    {
+      "line": 178,
+      "call": "word(10,'シンチュウ',fraction=.35)",
+      "row": 10,
+      "kana": "シンチュウ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r10:a",
+        "occ": 0,
+        "start": 86.85266666666668,
+        "end": 87.61966666666667,
+        "value": 86.85266666666668,
+        "matchedKana": "シンチュウ"
+      }
+    },
+    {
+      "line": 179,
+      "call": "word(10,'テツノボー',fraction=.55)",
+      "row": 10,
+      "kana": "テツノボー",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r10:a",
+        "occ": 0,
+        "start": 90.97066666666669,
+        "end": 91.51966666666668,
+        "value": 90.97066666666669,
+        "matchedKana": "テツノボオ"
+      }
+    },
+    {
+      "line": 184,
+      "call": "word(11,'フレアワセル',fraction=.5)",
+      "row": 11,
+      "kana": "フレアワセル",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r11:a",
+        "occ": 0,
+        "start": 100.56,
+        "end": 101.19500000000001,
+        "value": 100.56,
+        "matchedKana": "フレアワセル"
+      }
+    },
+    {
+      "line": 186,
+      "call": "word(12,'デンチデス',fraction=.85)",
+      "row": 12,
+      "kana": "デンチデス",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r12:a",
+        "occ": 0,
+        "start": 113.89033333333333,
+        "end": 114.48533333333333,
+        "value": 113.89033333333333,
+        "matchedKana": "デンチデス"
+      }
+    },
+    {
+      "line": 190,
+      "call": "word(28,'カエルオトリノゾケバ',fraction=.5)",
+      "row": 28,
+      "kana": "カエルオトリノゾケバ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r28:a",
+        "occ": 0,
+        "start": 301.99833333333345,
+        "end": 303.4103333333334,
+        "value": 301.99833333333345,
+        "matchedKana": "カエルオトリノゾケバ"
+      }
+    },
+    {
+      "line": 194,
+      "call": "word(43,'キンゾクト',fraction=.65)",
+      "row": 43,
+      "kana": "キンゾクト",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r43:a",
+        "occ": 0,
+        "start": 488.9833333333334,
+        "end": 489.7173333333334,
+        "value": 488.9833333333334,
+        "matchedKana": "キンゾクト"
+      }
+    },
+    {
+      "line": 199,
+      "call": "word(13,'ヒバナ',fraction=.73)",
+      "row": 13,
+      "kana": "ヒバナ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r13:a",
+        "occ": 0,
+        "start": 123.118,
+        "end": 123.426,
+        "value": 123.118,
+        "matchedKana": "ヒバナ"
+      }
+    },
+    {
+      "line": 204,
+      "call": "word(18,'ポンプ',fraction=.78)",
+      "row": 18,
+      "kana": "ポンプ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r18:b",
+        "occ": 0,
+        "start": 178.8046666666667,
+        "end": 179.0826666666667,
+        "value": 178.8046666666667,
+        "matchedKana": "ポンプ"
+      }
+    },
+    {
+      "line": 207,
+      "call": "word(18,'ポンプ',fraction=.78)",
+      "row": 18,
+      "kana": "ポンプ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r18:b",
+        "occ": 0,
+        "start": 178.8046666666667,
+        "end": 179.0826666666667,
+        "value": 178.8046666666667,
+        "matchedKana": "ポンプ"
+      }
+    },
+    {
+      "line": 210,
+      "call": "word(18,'ポンプ',fraction=.78)",
+      "row": 18,
+      "kana": "ポンプ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r18:b",
+        "occ": 0,
+        "start": 178.8046666666667,
+        "end": 179.0826666666667,
+        "value": 178.8046666666667,
+        "matchedKana": "ポンプ"
+      }
+    },
+    {
+      "line": 213,
+      "call": "word(16,'パチッ',fraction=.5)",
+      "row": 16,
+      "kana": "パチッ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r16:b",
+        "occ": 0,
+        "start": 153.94433333333336,
+        "end": 154.26433333333335,
+        "value": 153.94433333333336,
+        "matchedKana": "パチッ"
+      }
+    },
+    {
+      "line": 218,
+      "call": "word(19,'ヒバナオトバシタ',fraction=.43)",
+      "row": 19,
+      "kana": "ヒバナオトバシタ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r19:a",
+        "occ": 0,
+        "start": 187.5213333333334,
+        "end": 188.3543333333334,
+        "value": 187.5213333333334,
+        "matchedKana": "ヒバナオトバシタ"
+      }
+    },
+    {
+      "line": 226,
+      "call": "word(22,'シビレサセル',fraction=.47)",
+      "row": 22,
+      "kana": "シビレサセル",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r22:a",
+        "occ": 0,
+        "start": 224.13600000000008,
+        "end": 224.7980000000001,
+        "value": 224.13600000000008,
+        "matchedKana": "シビレサセル"
+      }
+    },
+    {
+      "line": 234,
+      "call": "word(24,'ソレオヨンダ',fraction=.32)",
+      "row": 24,
+      "kana": "ソレオヨンダ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r24:a",
+        "occ": 0,
+        "start": 244.67433333333344,
+        "end": 245.31433333333342,
+        "value": 244.67433333333344,
+        "matchedKana": "ソレオヨンダ"
+      }
+    },
+    {
+      "line": 234,
+      "call": "word(24,'ソレオヨンダ',fraction=.32)",
+      "row": 24,
+      "kana": "ソレオヨンダ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r24:a",
+        "occ": 0,
+        "start": 244.67433333333344,
+        "end": 245.31433333333342,
+        "value": 244.67433333333344,
+        "matchedKana": "ソレオヨンダ"
+      }
+    },
+    {
+      "line": 238,
+      "call": "word(25,'ヨワクナリマス',fraction=.58)",
+      "row": 25,
+      "kana": "ヨワクナリマス",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r25:b",
+        "occ": 0,
+        "start": 265.2290000000001,
+        "end": 266.2900000000001,
+        "value": 265.2290000000001,
+        "matchedKana": "ヨワクナリマス"
+      }
+    },
+    {
+      "line": 238,
+      "call": "word(25,'ツヨクウゴイタ',fraction=.9)",
+      "row": 25,
+      "kana": "ツヨクウゴイタ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r25:b",
+        "occ": 0,
+        "start": 268.1780000000001,
+        "end": 268.9090000000001,
+        "value": 268.1780000000001,
+        "matchedKana": "ツヨクウゴイタ"
+      }
+    },
+    {
+      "line": 241,
+      "call": "word(27,'ケムリ',fraction=.5)",
+      "row": 27,
+      "kana": "ケムリ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r27:a",
+        "occ": 0,
+        "start": 286.9146666666668,
+        "end": 287.26666666666677,
+        "value": 286.9146666666668,
+        "matchedKana": "ケムリ"
+      }
+    },
+    {
+      "line": 249,
+      "call": "word(29,'アツガミ',fraction=.67)",
+      "row": 29,
+      "kana": "アツガミ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r29:b",
+        "occ": 0,
+        "start": 315.34200000000016,
+        "end": 315.7430000000001,
+        "value": 315.34200000000016,
+        "matchedKana": "アツガミ"
+      }
+    },
+    {
+      "line": 251,
+      "call": "word(30,'ユビ',fraction=.4)",
+      "row": 30,
+      "kana": "ユビ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r30:a",
+        "occ": 0,
+        "start": 324.71033333333344,
+        "end": 324.9513333333334,
+        "value": 324.71033333333344,
+        "matchedKana": "ユビ"
+      }
+    },
+    {
+      "line": 252,
+      "call": "word(30,'ユビ',fraction=.4)",
+      "row": 30,
+      "kana": "ユビ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r30:a",
+        "occ": 0,
+        "start": 324.71033333333344,
+        "end": 324.9513333333334,
+        "value": 324.71033333333344,
+        "matchedKana": "ユビ"
+      }
+    },
+    {
+      "line": 256,
+      "call": "word(31,'カサネマシタ',fraction=.5)",
+      "row": 31,
+      "kana": "カサネマシタ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r31:a",
+        "occ": 0,
+        "start": 335.5383333333334,
+        "end": 336.45333333333343,
+        "value": 335.5383333333334,
+        "matchedKana": "カサネマシタ"
+      }
+    },
+    {
+      "line": 264,
+      "call": "word(32,'ビリット',fraction=.48)",
+      "row": 32,
+      "kana": "ビリット",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r32:a",
+        "occ": 0,
+        "start": 349.88400000000007,
+        "end": 350.2840000000001,
+        "value": 349.88400000000007,
+        "matchedKana": "ビリット"
+      }
+    },
+    {
+      "line": 274,
+      "call": "word(33,'ハガヒライタ',fraction=.86)",
+      "row": 33,
+      "kana": "ハガヒライタ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r33:b",
+        "occ": 0,
+        "start": 374.4696666666667,
+        "end": 375.1056666666667,
+        "value": 374.4696666666667,
+        "matchedKana": "ワガヒライタ"
+      }
+    },
+    {
+      "line": 284,
+      "call": "word(33,'ウスイキンノハ',fraction=.52)",
+      "row": 33,
+      "kana": "ウスイキンノハ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r33:a",
+        "occ": 0,
+        "start": 369.41466666666673,
+        "end": 370.0716666666667,
+        "value": 369.41466666666673,
+        "matchedKana": "オスイキンノワ"
+      }
+    },
+    {
+      "line": 296,
+      "call": "word(42,'カワイタアツガミ',fraction=.5)",
+      "row": 42,
+      "kana": "カワイタアツガミ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r42:a",
+        "occ": 0,
+        "start": 472.82433333333336,
+        "end": 473.85533333333336,
+        "value": 472.82433333333336,
+        "matchedKana": "カワイタアツガミ"
+      }
+    },
+    {
+      "line": 299,
+      "call": "word(38,'テガミデ',fraction=.3)",
+      "row": 38,
+      "kana": "テガミデ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r38:a",
+        "occ": 0,
+        "start": 426.946,
+        "end": 427.771,
+        "value": 426.946,
+        "matchedKana": "テガミデ"
+      }
+    },
+    {
+      "line": 329,
+      "call": "word(33,'ハガヒライタ',fraction=.86)",
+      "row": 33,
+      "kana": "ハガヒライタ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r33:b",
+        "occ": 0,
+        "start": 374.4696666666667,
+        "end": 375.1056666666667,
+        "value": 374.4696666666667,
+        "matchedKana": "ワガヒライタ"
+      }
+    },
+    {
+      "line": 345,
+      "call": "word(33,'ウスイキンノハ',fraction=.52)",
+      "row": 33,
+      "kana": "ウスイキンノハ",
+      "occ": 0,
+      "result": {
+        "cue": "cb2agpt-r33:a",
+        "occ": 0,
+        "start": 369.41466666666673,
+        "end": 370.0716666666667,
+        "value": 369.41466666666673,
+        "matchedKana": "オスイキンノワ"
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "priority": "P0",
+      "row": 28,
+      "issue": "検索語が実声にない。現在はfraction=.5のfallback。",
+      "current": "word(28,'カエルオハズシタラ')",
+      "replacement": "word(28,'カエルオトリノゾケバ')",
+      "timings": [
+        {
+          "row": 28,
+          "kana": "カエルオトリノゾケバ",
+          "occ": 0,
+          "cue": "cb2agpt-r28:a",
+          "start": 301.998333,
+          "end": 303.410333,
+          "matchedKana": "カエルオトリノゾケバ"
+        }
+      ],
+      "reason": "正本は「カエルを取りのぞけば」。外したらという語は発声しない。"
+    },
+    {
+      "priority": "P1",
+      "row": 10,
+      "issue": "棒の接触と足のkickが「ぴくっ」の発声より約1.72秒早い。",
+      "current": "ct=word(10,'フレアワセル'); kick=bump(t,ct+.06)",
+      "replacement": "approach=word(10,'フレアワセルト'); ct=word(10,'ピクット'); 接近をapproach→ct、接触完成とkick開始をctへ。",
+      "timings": [
+        {
+          "row": 10,
+          "kana": "フレアワセルト",
+          "occ": 0,
+          "cue": "cb2agpt-r10:b",
+          "start": 94.659667,
+          "end": 95.708667,
+          "matchedKana": "フレアワセルト"
+        },
+        {
+          "row": 10,
+          "kana": "ピクット",
+          "occ": 0,
+          "cue": "cb2agpt-r10:b",
+          "start": 96.438667,
+          "end": 96.826667,
+          "matchedKana": "ピクット"
+        }
+      ],
+      "reason": "検索そのものは成功。ただし前半の条件節と後半の結果の語を同じ発声として使っている。"
+    },
+    {
+      "priority": "P1",
+      "row": 11,
+      "issue": "離す動きに語アンカーがなく、再接触後の2回目kickは閉じた接点のまま起こる。",
+      "current": "ct=word(11,'フレアワセル'); kick=max(bump(t,ct),bump(t,ct+1.15))",
+      "replacement": "離す=word(11,'ハナスト')、接近=word(11,'フレアワセルト')、再接触とkick=word(11,'マタウゴキマス')。2回目は画面指定の実演なので、同じ2本をいったん離し再接触してから蹴らせる。",
+      "timings": [
+        {
+          "row": 11,
+          "kana": "ハナスト",
+          "occ": 0,
+          "cue": "cb2agpt-r11:a",
+          "start": 98.455,
+          "end": 99.192,
+          "matchedKana": "ワナスト"
+        },
+        {
+          "row": 11,
+          "kana": "トマリマス",
+          "occ": 0,
+          "cue": "cb2agpt-r11:a",
+          "start": 99.192,
+          "end": 100.016,
+          "matchedKana": "トマリマス"
+        },
+        {
+          "row": 11,
+          "kana": "フレアワセルト",
+          "occ": 0,
+          "cue": "cb2agpt-r11:a",
+          "start": 100.56,
+          "end": 101.641,
+          "matchedKana": "フレアワセルト"
+        },
+        {
+          "row": 11,
+          "kana": "マタウゴキマス",
+          "occ": 0,
+          "cue": "cb2agpt-r11:a",
+          "start": 101.641,
+          "end": 102.458,
+          "matchedKana": "マタウゴキマス"
+        }
+      ],
+      "reason": "同じ語を使わず2回目を任意の秒へ置くなら、声同期ではなく「画面だけの反復」と明示する。"
+    },
+    {
+      "priority": "P1",
+      "row": 20,
+      "issue": "kickのa+.8／a+5がナレーションの結果の語とつながらない。",
+      "current": "kick=bump(t,a+.8)+bump(t,a+5)",
+      "replacement": "kick=max(bump(t,word(20,'アシワウゴク')),bump(t,word(20,'ピクットシタ')))",
+      "timings": [
+        {
+          "row": 20,
+          "kana": "アシワウゴク",
+          "occ": 0,
+          "cue": "cb2agpt-r20:a",
+          "start": 196.361,
+          "end": 197.311,
+          "matchedKana": "アシワウゴク"
+        },
+        {
+          "row": 20,
+          "kana": "キンゾクオアテタ",
+          "occ": 0,
+          "cue": "cb2agpt-r20:b",
+          "start": 203.077,
+          "end": 203.871,
+          "matchedKana": "キンゾクオアテタ"
+        },
+        {
+          "row": 20,
+          "kana": "ピクットシタ",
+          "occ": 0,
+          "cue": "cb2agpt-r20:b",
+          "start": 204.189,
+          "end": 204.75,
+          "matchedKana": "ピクットシタ"
+        }
+      ],
+      "reason": "前者は一般化の説明、後者は金属の実験の回想に対応。"
+    },
+    {
+      "priority": "P1",
+      "row": 18,
+      "issue": "水位を行全体qで減らすため、コップ1杯の紹介より前に水がほぼ空になる。ポンプも名の発声の1秒前にオン。",
+      "current": "levels=max(.03,.9-4*q); pump=t>=word(18,ポンプ)-1",
+      "replacement": "コップ1杯の紹介中は水を保ち、排水は「すぐに空になります」へ向かう短い区間に設定。ポンプの導入はword(18,'ポンプ')、実際の戻り流れはword(18,'クミアゲツズケル')〜word(18,'ナガレガトマリマセン')の説明へ同期。",
+      "timings": [
+        {
+          "row": 18,
+          "kana": "コップイッパイノミズ",
+          "occ": 0,
+          "cue": "cb2agpt-r18:a",
+          "start": 169.298,
+          "end": 170.235,
+          "matchedKana": "コップイッパイノミズ"
+        },
+        {
+          "row": 18,
+          "kana": "スグニカラニナリマス",
+          "occ": 0,
+          "cue": "cb2agpt-r18:a",
+          "start": 173.162,
+          "end": 174.348,
+          "matchedKana": "スグニカラニナリマス"
+        },
+        {
+          "row": 18,
+          "kana": "クミアゲツズケル",
+          "occ": 0,
+          "cue": "cb2agpt-r18:b",
+          "start": 177.969667,
+          "end": 178.804667,
+          "matchedKana": "クミアゲツズケル"
+        },
+        {
+          "row": 18,
+          "kana": "ポンプ",
+          "occ": 0,
+          "cue": "cb2agpt-r18:b",
+          "start": 178.804667,
+          "end": 179.082667,
+          "matchedKana": "ポンプ"
+        },
+        {
+          "row": 18,
+          "kana": "ナガレガトマリマセン",
+          "occ": 0,
+          "cue": "cb2agpt-r18:b",
+          "start": 180.308667,
+          "end": 181.398667,
+          "matchedKana": "ナガレガトマリマセン"
+        }
+      ],
+      "reason": "水が既に空では「ためたようなもの」の画と矛盾する。"
+    },
+    {
+      "priority": "P1",
+      "row": 33,
+      "issue": "冒頭から電堆→検電器の線が完成している。開く動作は後半だけなので、前半の「離れて開く」の説明では閉じたまま。",
+      "current": "opened=word(33,'ハガヒライタ'); wireは行全体で表示",
+      "replacement": "前半はword(33,'ハナレテヒラク')で葉の動作を短く実演。後半cueで接続前へ戻し、word(33,'デンタイノハシニツナグ')で線を結び、word(33,'ハガヒライタ')で再度開く。初回の説明を図解の挿入として区別する。",
+      "timings": [
+        {
+          "row": 33,
+          "kana": "キンノハノケンデンキ",
+          "occ": 0,
+          "cue": "cb2agpt-r33:a",
+          "start": 364.656667,
+          "end": 365.992667,
+          "matchedKana": "キンノワノケンデンキ"
+        },
+        {
+          "row": 33,
+          "kana": "ニマイノウスイキンノハ",
+          "occ": 0,
+          "cue": "cb2agpt-r33:a",
+          "start": 368.976667,
+          "end": 370.071667,
+          "matchedKana": "ニマイノオスイキンノワ"
+        },
+        {
+          "row": 33,
+          "kana": "ハナレテヒラク",
+          "occ": 0,
+          "cue": "cb2agpt-r33:a",
+          "start": 370.464667,
+          "end": 371.198667,
+          "matchedKana": "ワナレテヒラク"
+        },
+        {
+          "row": 33,
+          "kana": "デンタイノハシニツナグ",
+          "occ": 0,
+          "cue": "cb2agpt-r33:b",
+          "start": 372.907667,
+          "end": 374.046667,
+          "matchedKana": "デンタイノワシニツナグ"
+        },
+        {
+          "row": 33,
+          "kana": "ハガヒライタ",
+          "occ": 0,
+          "cue": "cb2agpt-r33:b",
+          "start": 374.469667,
+          "end": 375.105667,
+          "matchedKana": "ワガヒライタ"
+        }
+      ],
+      "reason": "同じ一段落に「装置の動作の説明」と「実験の事実」の2段がある。2つの時刻を使い分ける。"
+    },
+    {
+      "priority": "P1",
+      "row": 39,
+      "issue": "左の火花と右の繰り返しびりっ／持続びりびりが行割合やa+3/a+5で動き、語頭とずれる。",
+      "current": "spark=.12<q<.14; jump at a+3/a+5; shake if q>.72",
+      "replacement": "左火花=word(39,'パチッ')。短い反復の区間=word(39,'ナンドデモビリットキマス')。その後word(39,'サワッテイルアイダ')で触れたまま、word(39,'ビリビリガツズキマス')で持続震えへ。",
+      "timings": [
+        {
+          "row": 39,
+          "kana": "パチッ",
+          "occ": 0,
+          "cue": "cb2agpt-r39:a",
+          "start": 437.756,
+          "end": 438.076,
+          "matchedKana": "パチッ"
+        },
+        {
+          "row": 39,
+          "kana": "ナンドデモビリットキマス",
+          "occ": 0,
+          "cue": "cb2agpt-r39:a",
+          "start": 442.15,
+          "end": 443.476,
+          "matchedKana": "ナンドデモビリットキマス"
+        },
+        {
+          "row": 39,
+          "kana": "サワッテイルアイダ",
+          "occ": 0,
+          "cue": "cb2agpt-r39:b",
+          "start": 444.636333,
+          "end": 445.811333,
+          "matchedKana": "サワッテイルアイダ"
+        },
+        {
+          "row": 39,
+          "kana": "ビリビリガツズキマス",
+          "occ": 0,
+          "cue": "cb2agpt-r39:b",
+          "start": 445.811333,
+          "end": 447.201333,
+          "matchedKana": "ビリビリガツズキマス"
+        }
+      ],
+      "reason": "「何度でも」の反復2〜3回には専用の発声数詞がない。短い反復は画面指定の予定として区間内へ置く。"
+    },
+    {
+      "priority": "P1",
+      "row": 42,
+      "issue": "乾いた厚紙の置換を行の終わりまで引き延ばし、名前を言ってから約4秒後にdryが切り替わる。",
+      "current": "dry=smooth(t,word(42,'カワイタアツガミ'),b-.3); dry>.5",
+      "replacement": "dry0=word(42,'カワイタアツガミ'); dry1=word(42,'カワイタアツガミオハサム',end=True); dry=smooth(t,dry0,dry1)",
+      "timings": [
+        {
+          "row": 42,
+          "kana": "カワイタアツガミ",
+          "occ": 0,
+          "cue": "cb2agpt-r42:a",
+          "start": 472.824333,
+          "end": 473.855333,
+          "matchedKana": "カワイタアツガミ"
+        },
+        {
+          "row": 42,
+          "kana": "カワイタアツガミオハサム",
+          "occ": 0,
+          "cue": "cb2agpt-r42:a",
+          "start": 472.824333,
+          "end": 474.377333,
+          "matchedKana": "カワイタアツガミオワサム"
+        }
+      ],
+      "reason": "厚紙の名前を言う時に新しい色・材質を見せ、はさむの語までに完了させる。"
+    },
+    {
+      "priority": "P1",
+      "row": 43,
+      "issue": "現在の最後のkickは金属の語付近で終わり、最後2秒に冒頭と同じぴくっがない。",
+      "current": "kick=bump(t,word(43,'キンゾクト')+.4)",
+      "replacement": "声のぴくっへの説明用動作を残すならその語で行い、冒頭回収は別にDATA[duration]-2〜DATA[duration]の間で行う。終端の回収に偽の発声時刻は付けない。",
+      "timings": [
+        {
+          "row": 43,
+          "kana": "ピクットサセタ",
+          "occ": 0,
+          "cue": "cb2agpt-r43:a",
+          "start": 485.650333,
+          "end": 486.352333,
+          "matchedKana": "ピクットサセタ"
+        },
+        {
+          "row": 43,
+          "kana": "キンゾクト",
+          "occ": 0,
+          "cue": "cb2agpt-r43:a",
+          "start": 488.983333,
+          "end": 489.717333,
+          "matchedKana": "キンゾクト"
+        }
+      ],
+      "returnWindow": [
+        492.8646666666668,
+        494.8646666666668
+      ],
+      "reason": "正本・共通指示が最後1〜2秒を冒頭に戻すと指定。"
+    },
+    {
+      "priority": "P2",
+      "row": 36,
+      "issue": "神経内の信号粒が行の頭から動き、「後に分かったこと」や神経の名の前に流れる。",
+      "current": "signal=((t-a)*.22)%1",
+      "replacement": "紹介まではsignal=None、word(36,'チイサナデンキ')から粒を見せ、word(36,'アイズオオクッテイマス')で神経に沿って進める。",
+      "timings": [
+        {
+          "row": 36,
+          "kana": "イキモノノシンケイ",
+          "occ": 0,
+          "cue": "cb2agpt-r36:a",
+          "start": 398.528667,
+          "end": 399.434667,
+          "matchedKana": "イキモノノシンケイ"
+        },
+        {
+          "row": 36,
+          "kana": "チイサナデンキ",
+          "occ": 0,
+          "cue": "cb2agpt-r36:a",
+          "start": 400.752667,
+          "end": 401.478667,
+          "matchedKana": "チイサナデンキ"
+        },
+        {
+          "row": 36,
+          "kana": "アイズオオクッテイマス",
+          "occ": 0,
+          "cue": "cb2agpt-r36:a",
+          "start": 401.577667,
+          "end": 402.616667,
+          "matchedKana": "アイズオオクッテイマス"
+        }
+      ],
+      "reason": "仮説だった画と「後に分かった事実」を、同じ先行信号で混同させない。"
+    },
+    {
+      "priority": "P2",
+      "row": 27,
+      "issue": "検索のケムリは最初の煙で合っているが、煙上昇と警報が同時に始まり、感じて鳴るの順が弱い。",
+      "current": "p.alarm_state(...,t>word(27,'ケムリ'))",
+      "replacement": "煙の開始=word(27,'ケムリ')、検出・点滅=word(27,'ナル')。語の時刻間で煙が警報器へ届くようにする。",
+      "timings": [
+        {
+          "row": 27,
+          "kana": "ケムリ",
+          "occ": 0,
+          "cue": "cb2agpt-r27:a",
+          "start": 286.914667,
+          "end": 287.266667,
+          "matchedKana": "ケムリ"
+        },
+        {
+          "row": 27,
+          "kana": "ナル",
+          "occ": 0,
+          "cue": "cb2agpt-r27:a",
+          "start": 287.747667,
+          "end": 288.211667,
+          "matchedKana": "ナル"
+        }
+      ],
+      "reason": "検索語の訂正ではなく、入力→検出の時系列を分ける提案。"
+    }
+  ],
+  "passLookups": [
+    {
+      "row": 10,
+      "request": "シンチュウ",
+      "meaning": "真鍮",
+      "actual": {
+        "row": 10,
+        "kana": "シンチュウ",
+        "occ": 0,
+        "cue": "cb2agpt-r10:a",
+        "start": 86.852667,
+        "end": 87.619667,
+        "matchedKana": "シンチュウ"
+      }
+    },
+    {
+      "row": 10,
+      "request": "テツノボー",
+      "meaning": "鉄の棒。長音表記は正規化で問題なし。",
+      "actual": {
+        "row": 10,
+        "kana": "テツノボー",
+        "occ": 0,
+        "cue": "cb2agpt-r10:a",
+        "start": 90.970667,
+        "end": 91.519667,
+        "matchedKana": "テツノボオ"
+      }
+    },
+    {
+      "row": 29,
+      "request": "アツガミ",
+      "meaning": "塩水をしみこませた厚紙。最初の発声で正しい。",
+      "actual": {
+        "row": 29,
+        "kana": "アツガミ",
+        "occ": 0,
+        "cue": "cb2agpt-r29:b",
+        "start": 315.342,
+        "end": 315.743,
+        "matchedKana": "アツガミ"
+      }
+    },
+    {
+      "row": 30,
+      "request": "ユビ",
+      "meaning": "最初の指はぬらした自分の指。検索は正しい。",
+      "actual": {
+        "row": 30,
+        "kana": "ユビ",
+        "occ": 0,
+        "cue": "cb2agpt-r30:a",
+        "start": 324.710333,
+        "end": 324.951333,
+        "matchedKana": "ユビ"
+      }
+    },
+    {
+      "row": 31,
+      "request": "カサネマシタ",
+      "meaning": "何十組も重ねた動作。検索は正しい。",
+      "actual": {
+        "row": 31,
+        "kana": "カサネマシタ",
+        "occ": 0,
+        "cue": "cb2agpt-r31:a",
+        "start": 335.538333,
+        "end": 336.453333,
+        "matchedKana": "カサネマシタ"
+      }
+    },
+    {
+      "row": 32,
+      "request": "ビリット",
+      "meaning": "触れた結果のびりっ。検索は正しい。",
+      "actual": {
+        "row": 32,
+        "kana": "ビリット",
+        "occ": 0,
+        "cue": "cb2agpt-r32:a",
+        "start": 349.884,
+        "end": 350.284,
+        "matchedKana": "ビリット"
+      }
+    },
+    {
+      "row": 33,
+      "request": "ハガヒライタ",
+      "meaning": "後半の実験事実の葉の開き。normではワガヒライタ。",
+      "actual": {
+        "row": 33,
+        "kana": "ハガヒライタ",
+        "occ": 0,
+        "cue": "cb2agpt-r33:b",
+        "start": 374.469667,
+        "end": 375.105667,
+        "matchedKana": "ワガヒライタ"
+      }
+    },
+    {
+      "row": 33,
+      "request": "ウスイキンノハ",
+      "meaning": "薄い金の葉。直前のノによるウ→オ正規化をウオ許容で拾えている。",
+      "actual": {
+        "row": 33,
+        "kana": "ウスイキンノハ",
+        "occ": 0,
+        "cue": "cb2agpt-r33:a",
+        "start": 369.414667,
+        "end": 370.071667,
+        "matchedKana": "オスイキンノワ"
+      }
+    }
+  ]
+}

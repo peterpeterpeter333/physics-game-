@@ -1,0 +1,32 @@
+{
+  "output": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+  "mixSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+  "sourceVoiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+  "frozenSourceUnchanged": true,
+  "files": {
+    "mixed": {
+      "path": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+      "sha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54"
+    },
+    "bgm": {
+      "path": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.bgmonly.wav",
+      "sha256": "ae3885a981730b3ba0baa65b08919812d59a9b77d561b0f5314d0386843234bb"
+    },
+    "sfx": {
+      "path": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.sfxonly.wav",
+      "sha256": "81e831833e47abae7c6a9ef1844c98c735548e975327e65ee38e7b8cc108f78b"
+    },
+    "voice": {
+      "path": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-contribution.wav",
+      "sha256": "79921ca97b255c4e3409da5882169706197786b34694c9edf52b7104963f3668"
+    },
+    "levels": {
+      "path": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.levels.json",
+      "sha256": "c32de52b7b1aae45162969400a71d1ff86b5ad95d7fc4af7a806a5e20b58808b"
+    },
+    "windows": {
+      "path": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-bgm-windows.json",
+      "sha256": "13d69dc755ec1e76c1268e1fdff79b1ce4a0b894e2af8642026ffc46b592bd48"
+    }
+  }
+}

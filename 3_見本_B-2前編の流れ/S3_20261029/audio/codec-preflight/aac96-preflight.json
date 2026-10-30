@@ -1,0 +1,14 @@
+{
+  "input": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+  "inputSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+  "aac": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/audio/codec-preflight/b2a-s3-aac96-preflight.m4a",
+  "audioCodec": "AAC",
+  "bitrate": "96k",
+  "strictDecodeExit": 0,
+  "integratedLUFS": -14.2,
+  "truePeakDbfs": -0.8,
+  "silenceStarts": [],
+  "silenceEnds": [],
+  "pass": true,
+  "scope": "Audio-codec preflight only; not the final MP4, no ear check."
+}

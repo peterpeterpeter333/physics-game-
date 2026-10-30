@@ -1,0 +1,147 @@
+{
+  "createdUtc": "2026-10-29T12:56:48.599331+00:00",
+  "scope": "Read-only comparison of actual Blender-emitted motion events, independently AST-extracted events, and frozen audio-v4 effect placement. Not visual render verification, not final MP4 validation, not an ear check.",
+  "inputs": {
+    "actualBlender": {
+      "path": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/blender/motion-events.json",
+      "sha256": "f1a47285097e0f87bfa344762e097878b22be49e10056566e50ab695e71cec17"
+    },
+    "astEvaluation": {
+      "path": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/motion-events-readonly-evaluation.json",
+      "sha256": "dbfd1ae400a81fb7d52b04e82f5979801fc4d825aca24e9ba0a7f86abf7afc99"
+    },
+    "mixRecord": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/audio/ys-chain-b2a_gpt_20261029.s3.mix.json",
+    "mixSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+    "sourceVoiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41"
+  },
+  "checks": {
+    "fpsExactly30": true,
+    "tenEventsExactly": true,
+    "eventsExactlyEqualToAst": true,
+    "shapeExactlyEqualToAst": true,
+    "audioSourceEventsExactlyEqualToBlender": true,
+    "audioNearestFramePlacementExact": true,
+    "mixFileHashUnchanged": true,
+    "permanentMixCopyHashUnchanged": true,
+    "aacPreflightPassed": true
+  },
+  "pass": true,
+  "events": [
+    {
+      "kind": "frog-kick",
+      "row": 1,
+      "start": 0.45,
+      "degrees": 30,
+      "peak": 0.6,
+      "end": 1.0
+    },
+    {
+      "kind": "frog-kick",
+      "row": 10,
+      "start": 96.43866666666668,
+      "degrees": 30,
+      "peak": 96.58866666666668,
+      "end": 96.98866666666667
+    },
+    {
+      "kind": "frog-kick",
+      "row": 11,
+      "start": 101.641,
+      "degrees": 30,
+      "peak": 101.79100000000001,
+      "end": 102.191
+    },
+    {
+      "kind": "frog-kick",
+      "row": 19,
+      "start": 192.9213333333334,
+      "degrees": 30,
+      "peak": 193.0713333333334,
+      "end": 193.4713333333334
+    },
+    {
+      "kind": "frog-kick",
+      "row": 20,
+      "start": 196.36100000000008,
+      "degrees": 30,
+      "peak": 196.51100000000008,
+      "end": 196.9110000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 20,
+      "start": 204.18900000000008,
+      "degrees": 30,
+      "peak": 204.33900000000008,
+      "end": 204.7390000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 25,
+      "start": 265.2290000000001,
+      "degrees": 5,
+      "peak": 265.3790000000001,
+      "end": 265.7790000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 25,
+      "start": 268.1780000000001,
+      "degrees": 30,
+      "peak": 268.3280000000001,
+      "end": 268.7280000000001
+    },
+    {
+      "kind": "frog-kick",
+      "row": 43,
+      "start": 485.6503333333334,
+      "degrees": 30,
+      "peak": 485.80033333333336,
+      "end": 486.2003333333334
+    },
+    {
+      "kind": "frog-kick",
+      "row": 43,
+      "start": 493.7146666666668,
+      "degrees": 30,
+      "peak": 493.8646666666668,
+      "end": 494.2646666666668
+    }
+  ],
+  "metricsFromFinalAudio": {
+    "durationSeconds": 494.86466666666666,
+    "integratedLUFS": -14.2,
+    "truePeakDbfs": -0.8,
+    "voiceBgmDifferenceMedianDb": 22.398616534108726,
+    "voiceBgmDifferenceP10Db": 10.102094715491893,
+    "quietRuns": [],
+    "aacPreflight": {
+      "input": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+      "inputSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+      "aac": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/audio/codec-preflight/b2a-s3-aac96-preflight.m4a",
+      "audioCodec": "AAC",
+      "bitrate": "96k",
+      "strictDecodeExit": 0,
+      "integratedLUFS": -14.2,
+      "truePeakDbfs": -0.8,
+      "silenceStarts": [],
+      "silenceEnds": [],
+      "pass": true,
+      "scope": "Audio-codec preflight only; not the final MP4, no ear check."
+    }
+  },
+  "unchanged": [
+    "Master narration",
+    "source script",
+    "original voice",
+    "subtitle text",
+    "subtitle timings",
+    "audio-v4 WAV",
+    "all existing files"
+  ],
+  "remaining": [
+    "Final MP4 strict decode/loudness/silence check",
+    "Rendered movement and flash visual verification",
+    "Ear-based full listen not performed: this chat cannot listen to audio"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "episode": "B-2 前編",
+  "reviewer": "b2a_independent_audit",
+  "date": "2026-10-30",
+  "candidate": "v03 地表幅修正版",
+  "movie": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/out/ys-chain-b2a_gpt_20261029_s4_final.mp4",
+  "movieSha256FromManifest": "1f91678a7fe90b79cfd393002dd65998bab7110cb98a5de781df39b17329a9f0",
+  "manifest": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-manifest.json",
+  "actualReviewScope": {
+    "sheetsViewed": "encoded-motion-01.jpg ～ encoded-motion-16.jpg、全16頁の全パネル",
+    "panelCount": 128,
+    "uniqueDecodedFramesViewed": 128,
+    "movieNativeResolution": [1080, 1920],
+    "reviewFrameResolution": [540, 960],
+    "fps": 30,
+    "method": "最終MP4から直接デコードされた、時刻とフレーム番号付きの順序コマを全パネル目視。連続した重要動作区間に前後・中間のサンプルを加えた抽出で、全動画の全コマではない。",
+    "realTimePlaybackPerformed": false,
+    "earsPerformed": false,
+    "all30fpsMovieFramesViewed": false,
+    "completeManifestPersonallyReviewed": false,
+    "manifestTotal": {"pages": 48, "contactPanels": 380, "uniqueFrames": 378},
+    "manifestTotalIsNotPersonalReviewCount": true
+  },
+  "windowsReviewed": [
+    {
+      "id": "r01-cloth-kick",
+      "panels": 25,
+      "firstJ": 0,
+      "lastJ": 34,
+      "observation": "安静で趾だけが布の外に見え、j15～18で足先が持ち上がり、j24～28で戻る。布全体は足に沿った起伏を保ち、主役の足先が画面外に切れない。",
+      "result": "実見範囲で阻止級NGなし"
+    },
+    {
+      "id": "r04-half-turn",
+      "panels": 41,
+      "firstJ": 725,
+      "lastJ": 789,
+      "observation": "赤上・青下の模型が回転し、j770以降で青上・赤下になる。j780以降の北/S・南/Nの札が実物の上下と一致し、半回転中にラベルが逆位置に貼り付き続けることはない。",
+      "result": "実見範囲で阻止級NGなし"
+    },
+    {
+      "id": "r10-hands",
+      "panels": 15,
+      "firstJ": 2584,
+      "lastJ": 2771,
+      "observation": "手は右下から入り、金色の真鍮、次に灰色の鉄の外側の柄を持つ。神経の上を手が横切ったり、緑のZ型の足の主要部を隠したりしない。神経・真鍮・鉄の引出線札は対象と対応する。",
+      "result": "実見範囲で阻止級NGなし"
+    },
+    {
+      "id": "r10-contact-kick",
+      "panels": 28,
+      "firstJ": 2830,
+      "lastJ": 2912,
+      "observation": "2本の棒の先が離れた状態から接触する状態へ変わる。j2892～2893の安静からj2894以降で足先が上がり、j2897～2901付近で大きく伸び、その後j2908～2912で戻る。接触位置を手が隠さない。字幕の『ぴくっとけります』と蹴りの立ち上がりが対応する。",
+      "result": "実見範囲で阻止級NGなし",
+      "limitation": "字幕と映像の状態を照合した。音声を耳で聞いた同期確認ではない。"
+    },
+    {
+      "id": "r11-release-kick",
+      "panels": 19,
+      "firstJ": 2944,
+      "lastJ": 3056,
+      "observation": "『離すと』『止まります』の間は開いた接点と安静な足を確認。再び接触した後、j3051～3054で再度足が持ち上がる。『また動きます』の字幕と状態が対応し、神経と接点は見える。",
+      "result": "実見範囲で阻止級NGなし",
+      "limitation": "担当範囲はj3056までであり、次頁以降の回復完了コマはこの報告の実見範囲に含めない。"
+    }
+  ],
+  "blockingFindings": [],
+  "decision": "指定された前半16頁128パネル・128固有コマに、新たな阻止級NGなし。足先・接点・神経と字幕の対応を順序コマで確認した。実時間での動画視聴・耳での確認・全編全30fpsの検査とは区別する。",
+  "changesByThisReview": "新規の監査JSONのみ。既存の映像・台本・音声・字幕・検査ファイルは変更していない。コミット・pushなし。"
+}

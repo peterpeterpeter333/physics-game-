@@ -1,0 +1,228 @@
+[
+  {
+    "cue": "cb2agpt-r02:a",
+    "word": "ホーイジシン",
+    "occ": 0,
+    "primary": "b2a_terrella_south_compass",
+    "minWidth": 0.25,
+    "masterRow": 2,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r03:a",
+    "primary": "b2a_terrella_south_compass",
+    "minWidth": 0.25,
+    "masterRow": 3,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r04:b",
+    "word": "エスキョク",
+    "occ": 0,
+    "primary": "b2a_terrella",
+    "minWidth": 0.45,
+    "masterRow": 4,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r05:a",
+    "word": "エヌキョク",
+    "occ": 0,
+    "primary": "b2a_terrella",
+    "minWidth": 0.45,
+    "masterRow": 5,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r06:b",
+    "word": "ウエオムキマス",
+    "occ": 0,
+    "primary": "b2a_terrella_south_compass",
+    "minWidth": 0.25,
+    "masterRow": 6,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r07:b",
+    "word": "ウエニカタムク",
+    "occ": 0,
+    "primary": "b2a_terrella_south_compass",
+    "minWidth": 0.25,
+    "masterRow": 7,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r08:a",
+    "primary": "b2a_compass_comparison",
+    "minWidth": 0.7,
+    "masterRow": 8,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r10:a",
+    "word": "シンケイ",
+    "occ": 0,
+    "primary": "b2a_frog_leg",
+    "minWidth": 0.55,
+    "masterRow": 10,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r10:a",
+    "word": "シンチュウ",
+    "occ": 0,
+    "primary": "b2a_frog_leg",
+    "minWidth": 0.55,
+    "masterRow": 10,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r10:b",
+    "word": "フレアワセル",
+    "occ": 0,
+    "primary": "b2a_frog_rod_contact",
+    "minWidth": 0.5,
+    "masterRow": 10,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r10:b",
+    "word": "ピクット",
+    "occ": 0,
+    "primary": "b2a_frog_leg",
+    "minWidth": 0.55,
+    "masterRow": 10,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r11:a",
+    "word": "フレアワセル",
+    "occ": 0,
+    "primary": "b2a_frog_rod_contact",
+    "minWidth": 0.5,
+    "masterRow": 11,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r19:a",
+    "word": "メスガフレテイル",
+    "occ": 0,
+    "primary": "b2a_scalpel_nerve_contact",
+    "minWidth": 0.5,
+    "masterRow": 19,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r19:a",
+    "word": "ピクットケッタ",
+    "occ": 0,
+    "primary": "b2a_generator,b2a_frog,b2a_assistant",
+    "minWidth": 0.55,
+    "masterRow": 19,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r20:a",
+    "word": "アシワウゴク",
+    "occ": 0,
+    "primary": "b2a_frog_leg",
+    "minWidth": 0.55,
+    "masterRow": 20,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r21:a",
+    "primary": "b2a_frog_leg",
+    "minWidth": 0.55,
+    "masterRow": 21,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r25:b",
+    "word": "ツヨクウゴイタ",
+    "occ": 0,
+    "primary": "b2a_frog_same,b2a_frog",
+    "minWidth": 0.7,
+    "masterRow": 25,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r29:b",
+    "word": "アツガミ",
+    "occ": 0,
+    "primary": "b2a_unit",
+    "minWidth": 0.5,
+    "masterRow": 29,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r30:a",
+    "word": "ユビ",
+    "occ": 0,
+    "primary": "b2a_unit",
+    "minWidth": 0.5,
+    "masterRow": 30,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r31:a",
+    "word": "ナンジュックミモカサネマシタ",
+    "occ": 0,
+    "primary": "b2a_pile",
+    "minWidth": 0.5,
+    "masterRow": 31,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r32:a",
+    "word": "ビリット",
+    "occ": 0,
+    "primary": "b2a_pile,b2a_volta",
+    "minWidth": 0.5,
+    "masterRow": 32,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r33:b",
+    "word": "ハガヒライタ",
+    "occ": 0,
+    "primary": "b2a_electroscope_gold_leaf_pair",
+    "minWidth": 0.3,
+    "masterRow": 33,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r38:a",
+    "word": "テガミデ",
+    "occ": 0,
+    "primary": "b2a_map",
+    "minWidth": 0.5,
+    "masterRow": 38,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r39:b",
+    "word": "サワッテイルアイダ",
+    "occ": 0,
+    "primary": "b2a_pile,b2a_glass",
+    "minWidth": 0.7,
+    "masterRow": 39,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r41:a",
+    "primary": "b2a_pile_one_unit_join",
+    "minWidth": 0.5,
+    "masterRow": 41,
+    "scope": "Named native primary at the exact supplied spoken word"
+  },
+  {
+    "cue": "cb2agpt-r43:a",
+    "word": "ピクットサセタ",
+    "occ": 0,
+    "primary": "b2a_frog_leg",
+    "minWidth": 0.45,
+    "masterRow": 43,
+    "scope": "Named native primary at the exact supplied spoken word"
+  }
+]

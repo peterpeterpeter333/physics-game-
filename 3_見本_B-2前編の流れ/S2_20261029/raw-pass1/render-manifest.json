@@ -1,0 +1,6789 @@
+{
+  "stage": "S2",
+  "episode": "b2a",
+  "resolution": [
+    540,
+    960
+  ],
+  "samples": 4,
+  "fps": 30,
+  "frames": [
+    {
+      "row": 1,
+      "where": "start",
+      "j": 8,
+      "seconds": 0.26666666666666666,
+      "requestedSeconds": 0.25,
+      "cue": null,
+      "key": "silent-intro",
+      "time": 0.26666666666666666,
+      "frame": 8,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00008.jpg",
+      "actualPrimary": "b2a_cover",
+      "measurement": {
+        "x0": 393.5,
+        "y0": 650.9,
+        "x1": 685.1,
+        "y1": 869.5,
+        "width": 0.27,
+        "height": 0.11385416666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.610714316368103,
+          -1.711665153503418,
+          1.3553606271743774
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.09994791448116302
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 1,
+      "where": "middle",
+      "j": 30,
+      "seconds": 1.0,
+      "requestedSeconds": 1,
+      "cue": null,
+      "key": "silent-intro",
+      "time": 1.0,
+      "frame": 30,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00030.jpg",
+      "actualPrimary": "b2a_cover",
+      "measurement": {
+        "x0": 393.5,
+        "y0": 650.5,
+        "x1": 685.1,
+        "y1": 869.5,
+        "width": 0.27,
+        "height": 0.1140625,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.610714316368103,
+          -1.711665153503418,
+          1.3553606271743774
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.09994791448116302
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 1,
+      "where": "end",
+      "j": 57,
+      "seconds": 1.9,
+      "requestedSeconds": 1.9,
+      "cue": null,
+      "key": "silent-intro",
+      "time": 1.9,
+      "frame": 57,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00057.jpg",
+      "actualPrimary": "b2a_cover",
+      "measurement": {
+        "x0": 393.5,
+        "y0": 650.9,
+        "x1": 685.1,
+        "y1": 869.5,
+        "width": 0.27,
+        "height": 0.11385416666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.610714316368103,
+          -1.711665153503418,
+          1.3553606271743774
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.09994791448116302
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 2,
+      "where": "start",
+      "j": 66,
+      "seconds": 2.2,
+      "requestedSeconds": 2.2,
+      "cue": "r02:a",
+      "key": "cb2agpt-r02:a",
+      "time": 2.2,
+      "frame": 66,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00066.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 2,
+      "seconds": 6.933333333333334,
+      "cue": "r02:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r02:a",
+      "time": 6.933333333333334,
+      "frame": 208,
+      "j": 208,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00208.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 2,
+      "where": "end",
+      "j": 349,
+      "seconds": 11.633333333333333,
+      "requestedSeconds": 11.637333333333334,
+      "cue": "r02:a",
+      "key": "cb2agpt-r02:a",
+      "time": 11.633333333333333,
+      "frame": 349,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00349.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 3,
+      "where": "start",
+      "j": 362,
+      "seconds": 12.066666666666666,
+      "requestedSeconds": 12.077333333333334,
+      "cue": "r03:a",
+      "key": "cb2agpt-r03:a",
+      "time": 12.066666666666666,
+      "frame": 362,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00362.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 3,
+      "seconds": 15.566666666666666,
+      "cue": "r03:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r03:a",
+      "time": 15.566666666666666,
+      "frame": 467,
+      "j": 467,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00467.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 3,
+      "where": "end",
+      "j": 571,
+      "seconds": 19.033333333333335,
+      "requestedSeconds": 19.029333333333337,
+      "cue": "r03:a",
+      "key": "cb2agpt-r03:a",
+      "time": 19.033333333333335,
+      "frame": 571,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00571.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 4,
+      "where": "start",
+      "j": 584,
+      "seconds": 19.466666666666665,
+      "requestedSeconds": 19.469333333333335,
+      "cue": "r04:a",
+      "key": "cb2agpt-r04:a",
+      "time": 19.466666666666665,
+      "frame": 584,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00584.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 4,
+      "seconds": 20.733333333333334,
+      "cue": "r04:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r04:a",
+      "time": 20.733333333333334,
+      "frame": 622,
+      "j": 622,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00622.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 4,
+      "where": "middle",
+      "j": 745,
+      "seconds": 24.833333333333332,
+      "requestedSeconds": 24.817333333333337,
+      "cue": "r04:b",
+      "key": "cb2agpt-r04:b",
+      "time": 24.833333333333332,
+      "frame": 745,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00745.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 4,
+      "seconds": 26.3,
+      "cue": "r04:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r04:b",
+      "time": 26.3,
+      "frame": 789,
+      "j": 789,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00789.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 4,
+      "where": "end",
+      "j": 905,
+      "seconds": 30.166666666666668,
+      "requestedSeconds": 30.16533333333334,
+      "cue": "r04:b",
+      "key": "cb2agpt-r04:b",
+      "time": 30.166666666666668,
+      "frame": 905,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00905.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 160.6,
+        "y0": 411.5,
+        "x1": 841.0,
+        "y1": 1108.5,
+        "width": 0.63,
+        "height": 0.36302083333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10976634919643402,
+          -0.6090842485427856,
+          0.5665551424026489
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.11416666954755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 5,
+      "where": "start",
+      "j": 918,
+      "seconds": 30.6,
+      "requestedSeconds": 30.605333333333338,
+      "cue": "r05:a",
+      "key": "cb2agpt-r05:a",
+      "time": 30.6,
+      "frame": 918,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/00918.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 205.7,
+        "y0": 568.1,
+        "x1": 886.2,
+        "y1": 951.9,
+        "width": 0.6300925925925925,
+        "height": 0.1998958333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.31160712242126465,
+          -1.1592018604278564,
+          1.0060268640518188
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1164108687798944e-08,
+          0.2094394862651825
+        ],
+        "shift": -0.11476562172174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 5,
+      "seconds": 33.766666666666666,
+      "cue": "r05:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r05:a",
+      "time": 33.766666666666666,
+      "frame": 1013,
+      "j": 1013,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01013.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 205.7,
+        "y0": 568.1,
+        "x1": 886.2,
+        "y1": 951.9,
+        "width": 0.6300925925925925,
+        "height": 0.1998958333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.31160712242126465,
+          -1.1592018604278564,
+          1.0060268640518188
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1164108687798944e-08,
+          0.2094394862651825
+        ],
+        "shift": -0.11476562172174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 5,
+      "where": "middle",
+      "j": 1073,
+      "seconds": 35.766666666666666,
+      "requestedSeconds": 35.756,
+      "cue": "r05:a",
+      "key": "cb2agpt-r05:a",
+      "time": 35.766666666666666,
+      "frame": 1073,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01073.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 205.7,
+        "y0": 568.1,
+        "x1": 886.2,
+        "y1": 951.9,
+        "width": 0.6300925925925925,
+        "height": 0.1998958333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.31160712242126465,
+          -1.1592018604278564,
+          1.0060268640518188
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1164108687798944e-08,
+          0.2094394862651825
+        ],
+        "shift": -0.11476562172174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 5,
+      "seconds": 39.13333333333333,
+      "cue": "r05:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r05:b",
+      "time": 39.13333333333333,
+      "frame": 1174,
+      "j": 1174,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01174.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 205.7,
+        "y0": 568.1,
+        "x1": 886.2,
+        "y1": 951.9,
+        "width": 0.6300925925925925,
+        "height": 0.1998958333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.31160712242126465,
+          -1.1592018604278564,
+          1.0060268640518188
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1164108687798944e-08,
+          0.2094394862651825
+        ],
+        "shift": -0.11476562172174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 5,
+      "where": "end",
+      "j": 1227,
+      "seconds": 40.9,
+      "requestedSeconds": 40.906666666666666,
+      "cue": "r05:b",
+      "key": "cb2agpt-r05:b",
+      "time": 40.9,
+      "frame": 1227,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01227.jpg",
+      "actualPrimary": "b2a_terrella,b2a_globe_support",
+      "measurement": {
+        "x0": 205.7,
+        "y0": 568.1,
+        "x1": 886.2,
+        "y1": 951.9,
+        "width": 0.6300925925925925,
+        "height": 0.1998958333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.31160712242126465,
+          -1.1592018604278564,
+          1.0060268640518188
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1164108687798944e-08,
+          0.2094394862651825
+        ],
+        "shift": -0.11476562172174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 6,
+      "where": "start",
+      "j": 1240,
+      "seconds": 41.333333333333336,
+      "requestedSeconds": 41.34666666666668,
+      "cue": "r06:a",
+      "key": "cb2agpt-r06:a",
+      "time": 41.333333333333336,
+      "frame": 1240,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01240.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 182.2,
+        "y0": 465.4,
+        "x1": 862.5,
+        "y1": 1054.5,
+        "width": 0.6299074074074074,
+        "height": 0.30682291666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13657431304454803,
+          -0.18434278666973114,
+          0.3266002833843231
+        ],
+        "rotation": [
+          1.0122911930084229,
+          1.5669202824142303e-08,
+          0.5235989093780518
+        ],
+        "shift": -0.07213541865348816
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 6,
+      "seconds": 44.63333333333333,
+      "cue": "r06:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r06:a",
+      "time": 44.63333333333333,
+      "frame": 1339,
+      "j": 1339,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01339.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 182.2,
+        "y0": 465.4,
+        "x1": 862.5,
+        "y1": 1054.5,
+        "width": 0.6299074074074074,
+        "height": 0.30682291666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13657431304454803,
+          -0.18434278666973114,
+          0.3266002833843231
+        ],
+        "rotation": [
+          1.0122911930084229,
+          1.5669202824142303e-08,
+          0.5235989093780518
+        ],
+        "shift": -0.07213541865348816
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 6,
+      "where": "middle",
+      "j": 1413,
+      "seconds": 47.1,
+      "requestedSeconds": 47.09466666666667,
+      "cue": "r06:a",
+      "key": "cb2agpt-r06:a",
+      "time": 47.1,
+      "frame": 1413,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01413.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 182.2,
+        "y0": 465.4,
+        "x1": 862.5,
+        "y1": 1054.5,
+        "width": 0.6299074074074074,
+        "height": 0.30682291666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13657431304454803,
+          -0.18434278666973114,
+          0.3266002833843231
+        ],
+        "rotation": [
+          1.0122911930084229,
+          1.5669202824142303e-08,
+          0.5235989093780518
+        ],
+        "shift": -0.07213541865348816
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 6,
+      "seconds": 50.6,
+      "cue": "r06:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r06:b",
+      "time": 50.6,
+      "frame": 1518,
+      "j": 1518,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01518.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 182.2,
+        "y0": 465.4,
+        "x1": 862.5,
+        "y1": 1054.5,
+        "width": 0.6299074074074074,
+        "height": 0.30682291666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13657431304454803,
+          -0.18434278666973114,
+          0.3266002833843231
+        ],
+        "rotation": [
+          1.0122911930084229,
+          1.5669202824142303e-08,
+          0.5235989093780518
+        ],
+        "shift": -0.07213541865348816
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 6,
+      "where": "end",
+      "j": 1585,
+      "seconds": 52.833333333333336,
+      "requestedSeconds": 52.842666666666666,
+      "cue": "r06:b",
+      "key": "cb2agpt-r06:b",
+      "time": 52.833333333333336,
+      "frame": 1585,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01585.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 182.2,
+        "y0": 476.6,
+        "x1": 879.3,
+        "y1": 1054.5,
+        "width": 0.6454629629629629,
+        "height": 0.3009895833333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13657431304454803,
+          -0.18434278666973114,
+          0.3266002833843231
+        ],
+        "rotation": [
+          1.0122911930084229,
+          1.5669202824142303e-08,
+          0.5235989093780518
+        ],
+        "shift": -0.07213541865348816
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 7,
+      "where": "start",
+      "j": 1598,
+      "seconds": 53.266666666666666,
+      "requestedSeconds": 53.28266666666668,
+      "cue": "r07:a",
+      "key": "cb2agpt-r07:a",
+      "time": 53.266666666666666,
+      "frame": 1598,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01598.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 190.6,
+        "y0": 478.2,
+        "x1": 871.0,
+        "y1": 1041.8,
+        "width": 0.63,
+        "height": 0.29354166666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13835345208644867,
+          -0.18737801909446716,
+          0.3287903070449829
+        ],
+        "rotation": [
+          1.0122911930084229,
+          3.282361404899348e-08,
+          0.523598849773407
+        ],
+        "shift": -0.07536458224058151
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 7,
+      "seconds": 55.5,
+      "cue": "r07:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r07:a",
+      "time": 55.5,
+      "frame": 1665,
+      "j": 1665,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01665.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 190.6,
+        "y0": 478.2,
+        "x1": 871.0,
+        "y1": 1041.8,
+        "width": 0.63,
+        "height": 0.29354166666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13835345208644867,
+          -0.18737801909446716,
+          0.3287903070449829
+        ],
+        "rotation": [
+          1.0122911930084229,
+          3.282361404899348e-08,
+          0.523598849773407
+        ],
+        "shift": -0.07536458224058151
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 7,
+      "where": "middle",
+      "j": 1718,
+      "seconds": 57.266666666666666,
+      "requestedSeconds": 57.26533333333334,
+      "cue": "r07:a",
+      "key": "cb2agpt-r07:a",
+      "time": 57.266666666666666,
+      "frame": 1718,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01718.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 190.6,
+        "y0": 478.2,
+        "x1": 871.0,
+        "y1": 1041.8,
+        "width": 0.63,
+        "height": 0.29354166666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13835345208644867,
+          -0.18737801909446716,
+          0.3287903070449829
+        ],
+        "rotation": [
+          1.0122911930084229,
+          3.282361404899348e-08,
+          0.523598849773407
+        ],
+        "shift": -0.07536458224058151
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 7,
+      "seconds": 59.733333333333334,
+      "cue": "r07:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r07:b",
+      "time": 59.733333333333334,
+      "frame": 1792,
+      "j": 1792,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01792.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 190.6,
+        "y0": 478.2,
+        "x1": 871.0,
+        "y1": 1041.8,
+        "width": 0.63,
+        "height": 0.29354166666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13835345208644867,
+          -0.18737801909446716,
+          0.3287903070449829
+        ],
+        "rotation": [
+          1.0122911930084229,
+          3.282361404899348e-08,
+          0.523598849773407
+        ],
+        "shift": -0.07536458224058151
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 7,
+      "where": "end",
+      "j": 1837,
+      "seconds": 61.233333333333334,
+      "requestedSeconds": 61.248,
+      "cue": "r07:b",
+      "key": "cb2agpt-r07:b",
+      "time": 61.233333333333334,
+      "frame": 1837,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01837.jpg",
+      "actualPrimary": "b2a_terrella_south_compass",
+      "measurement": {
+        "x0": 190.6,
+        "y0": 478.2,
+        "x1": 871.0,
+        "y1": 1041.8,
+        "width": 0.63,
+        "height": 0.29354166666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.13835345208644867,
+          -0.18737801909446716,
+          0.3287903070449829
+        ],
+        "rotation": [
+          1.0122911930084229,
+          3.282361404899348e-08,
+          0.523598849773407
+        ],
+        "shift": -0.07536458224058151
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 8,
+      "where": "start",
+      "j": 1851,
+      "seconds": 61.7,
+      "requestedSeconds": 61.68800000000001,
+      "cue": "r08:a",
+      "key": "cb2agpt-r08:a",
+      "time": 61.7,
+      "frame": 1851,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01851.jpg",
+      "actualPrimary": "b2a_terrella_north_compass",
+      "measurement": {
+        "x0": 137.0,
+        "y0": 506.4,
+        "x1": 817.3,
+        "y1": 1013.6,
+        "width": 0.6299074074074074,
+        "height": 0.2641666666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14546580612659454,
+          -0.29684823751449585,
+          0.19628942012786865
+        ],
+        "rotation": [
+          1.0122910737991333,
+          1.967313423278938e-08,
+          0.5235987305641174
+        ],
+        "shift": -0.15013021230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 8,
+      "seconds": 64.76666666666667,
+      "cue": "r08:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r08:a",
+      "time": 64.76666666666667,
+      "frame": 1943,
+      "j": 1943,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/01943.jpg",
+      "actualPrimary": "b2a_terrella_north_compass",
+      "measurement": {
+        "x0": 137.0,
+        "y0": 506.4,
+        "x1": 817.3,
+        "y1": 1013.6,
+        "width": 0.6299074074074074,
+        "height": 0.2641666666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14546580612659454,
+          -0.29684823751449585,
+          0.19628942012786865
+        ],
+        "rotation": [
+          1.0122910737991333,
+          1.967313423278938e-08,
+          0.5235987305641174
+        ],
+        "shift": -0.15013021230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 8,
+      "where": "middle",
+      "j": 2026,
+      "seconds": 67.53333333333333,
+      "requestedSeconds": 67.52133333333335,
+      "cue": "r08:a",
+      "key": "cb2agpt-r08:a",
+      "time": 67.53333333333333,
+      "frame": 2026,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02026.jpg",
+      "actualPrimary": "b2a_terrella_north_compass",
+      "measurement": {
+        "x0": 137.0,
+        "y0": 506.4,
+        "x1": 817.3,
+        "y1": 1013.6,
+        "width": 0.6299074074074074,
+        "height": 0.2641666666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14546580612659454,
+          -0.29684823751449585,
+          0.19628942012786865
+        ],
+        "rotation": [
+          1.0122910737991333,
+          1.967313423278938e-08,
+          0.5235987305641174
+        ],
+        "shift": -0.15013021230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 8,
+      "seconds": 70.83333333333333,
+      "cue": "r08:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r08:b",
+      "time": 70.83333333333333,
+      "frame": 2125,
+      "j": 2125,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02125.jpg",
+      "actualPrimary": "b2a_terrella_north_compass",
+      "measurement": {
+        "x0": 137.0,
+        "y0": 506.4,
+        "x1": 817.3,
+        "y1": 1013.6,
+        "width": 0.6299074074074074,
+        "height": 0.2641666666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14546580612659454,
+          -0.29684823751449585,
+          0.19628942012786865
+        ],
+        "rotation": [
+          1.0122910737991333,
+          1.967313423278938e-08,
+          0.5235987305641174
+        ],
+        "shift": -0.15013021230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 8,
+      "where": "end",
+      "j": 2201,
+      "seconds": 73.36666666666666,
+      "requestedSeconds": 73.35466666666667,
+      "cue": "r08:b",
+      "key": "cb2agpt-r08:b",
+      "time": 73.36666666666666,
+      "frame": 2201,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02201.jpg",
+      "actualPrimary": "b2a_terrella_north_compass",
+      "measurement": {
+        "x0": 137.0,
+        "y0": 506.4,
+        "x1": 817.3,
+        "y1": 1013.6,
+        "width": 0.6299074074074074,
+        "height": 0.2641666666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14546580612659454,
+          -0.29684823751449585,
+          0.19628942012786865
+        ],
+        "rotation": [
+          1.0122910737991333,
+          1.967313423278938e-08,
+          0.5235987305641174
+        ],
+        "shift": -0.15013021230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 9,
+      "where": "start",
+      "j": 2230,
+      "seconds": 74.33333333333333,
+      "requestedSeconds": 74.34466666666668,
+      "cue": "r09:a",
+      "key": "cb2agpt-r09:a",
+      "time": 74.33333333333333,
+      "frame": 2230,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02230.jpg",
+      "actualPrimary": "b2a_frog,b2a_galvani",
+      "measurement": {
+        "x0": 218.3,
+        "y0": 484.0,
+        "x1": 920.3,
+        "y1": 1036.0,
+        "width": 0.65,
+        "height": 0.2875,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10946466773748398,
+          -0.9220105409622192,
+          0.7548761367797852
+        ],
+        "rotation": [
+          0.9075713753700256,
+          1.5891075122453913e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.12138020992279053
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 9,
+      "seconds": 78.26666666666667,
+      "cue": "r09:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r09:a",
+      "time": 78.26666666666667,
+      "frame": 2348,
+      "j": 2348,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02348.jpg",
+      "actualPrimary": "b2a_frog,b2a_galvani",
+      "measurement": {
+        "x0": 218.3,
+        "y0": 484.0,
+        "x1": 920.3,
+        "y1": 1036.0,
+        "width": 0.65,
+        "height": 0.2875,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10946466773748398,
+          -0.9220105409622192,
+          0.7548761367797852
+        ],
+        "rotation": [
+          0.9075713753700256,
+          1.5891075122453913e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.12138020992279053
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 9,
+      "where": "end",
+      "j": 2465,
+      "seconds": 82.16666666666667,
+      "requestedSeconds": 82.16066666666669,
+      "cue": "r09:a",
+      "key": "cb2agpt-r09:a",
+      "time": 82.16666666666667,
+      "frame": 2465,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02465.jpg",
+      "actualPrimary": "b2a_frog,b2a_galvani",
+      "measurement": {
+        "x0": 218.3,
+        "y0": 484.0,
+        "x1": 920.3,
+        "y1": 1036.0,
+        "width": 0.65,
+        "height": 0.2875,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.10946466773748398,
+          -0.9220105409622192,
+          0.7548761367797852
+        ],
+        "rotation": [
+          0.9075713753700256,
+          1.5891075122453913e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.12138020992279053
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 10,
+      "where": "start",
+      "j": 2478,
+      "seconds": 82.6,
+      "requestedSeconds": 82.60066666666668,
+      "cue": "r10:a",
+      "key": "cb2agpt-r10:a",
+      "time": 82.6,
+      "frame": 2478,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02478.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 154.4,
+        "y0": 539.5,
+        "x1": 878.0,
+        "y1": 980.4,
+        "width": 0.67,
+        "height": 0.22963541666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14668504893779755,
+          -0.7900989651679993,
+          0.6113537549972534
+        ],
+        "rotation": [
+          0.9075713157653809,
+          3.02447986655352e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.14374999701976776
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 10,
+      "seconds": 87.7,
+      "cue": "r10:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r10:a",
+      "time": 87.7,
+      "frame": 2631,
+      "j": 2631,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02631.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 154.4,
+        "y0": 539.5,
+        "x1": 878.0,
+        "y1": 980.4,
+        "width": 0.67,
+        "height": 0.22963541666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14668504893779755,
+          -0.7900989651679993,
+          0.6113537549972534
+        ],
+        "rotation": [
+          0.9075713157653809,
+          3.02447986655352e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.14374999701976776
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 10,
+      "where": "middle",
+      "j": 2710,
+      "seconds": 90.33333333333333,
+      "requestedSeconds": 90.34333333333335,
+      "cue": "r10:a",
+      "key": "cb2agpt-r10:a",
+      "time": 90.33333333333333,
+      "frame": 2710,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02710.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 154.4,
+        "y0": 539.5,
+        "x1": 878.0,
+        "y1": 980.4,
+        "width": 0.67,
+        "height": 0.22963541666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14668504893779755,
+          -0.7900989651679993,
+          0.6113537549972534
+        ],
+        "rotation": [
+          0.9075713157653809,
+          3.02447986655352e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.14374999701976776
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 10,
+      "seconds": 95.66666666666667,
+      "cue": "r10:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r10:b",
+      "time": 95.66666666666667,
+      "frame": 2870,
+      "j": 2870,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02870.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 154.4,
+        "y0": 539.6,
+        "x1": 878.0,
+        "y1": 980.4,
+        "width": 0.67,
+        "height": 0.2295833333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14668504893779755,
+          -0.7900989651679993,
+          0.6113537549972534
+        ],
+        "rotation": [
+          0.9075713157653809,
+          3.02447986655352e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.14374999701976776
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 10,
+      "where": "end",
+      "j": 2943,
+      "seconds": 98.1,
+      "requestedSeconds": 98.08600000000001,
+      "cue": "r10:b",
+      "key": "cb2agpt-r10:b",
+      "time": 98.1,
+      "frame": 2943,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02943.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 154.4,
+        "y0": 539.6,
+        "x1": 878.0,
+        "y1": 980.4,
+        "width": 0.67,
+        "height": 0.2295833333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14668504893779755,
+          -0.7900989651679993,
+          0.6113537549972534
+        ],
+        "rotation": [
+          0.9075713157653809,
+          3.02447986655352e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.14374999701976776
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 11,
+      "where": "start",
+      "j": 2956,
+      "seconds": 98.53333333333333,
+      "requestedSeconds": 98.52600000000001,
+      "cue": "r11:a",
+      "key": "cb2agpt-r11:a",
+      "time": 98.53333333333333,
+      "frame": 2956,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/02956.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 11,
+      "seconds": 100.9,
+      "cue": "r11:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r11:a",
+      "time": 100.9,
+      "frame": 3027,
+      "j": 3027,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03027.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 11,
+      "where": "middle",
+      "j": 3087,
+      "seconds": 102.9,
+      "requestedSeconds": 102.89266666666668,
+      "cue": "r11:a",
+      "key": "cb2agpt-r11:a",
+      "time": 102.9,
+      "frame": 3087,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03087.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 11,
+      "seconds": 105.46666666666667,
+      "cue": "r11:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r11:b",
+      "time": 105.46666666666667,
+      "frame": 3164,
+      "j": 3164,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03164.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 11,
+      "where": "end",
+      "j": 3218,
+      "seconds": 107.26666666666667,
+      "requestedSeconds": 107.25933333333334,
+      "cue": "r11:b",
+      "key": "cb2agpt-r11:b",
+      "time": 107.26666666666667,
+      "frame": 3218,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03218.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 12,
+      "where": "start",
+      "j": 3247,
+      "seconds": 108.23333333333333,
+      "requestedSeconds": 108.24933333333334,
+      "cue": "r12:a",
+      "key": "cb2agpt-r12:a",
+      "time": 108.23333333333333,
+      "frame": 3247,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03247.jpg",
+      "actualPrimary": "b2a_frog,b2a_cell",
+      "measurement": {
+        "x0": 180.8,
+        "y0": 571.5,
+        "x1": 882.8,
+        "y1": 948.4,
+        "width": 0.65,
+        "height": 0.19630208333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2259013056755066,
+          -0.9734678268432617,
+          0.7744737267494202
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.13044270873069763
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 12,
+      "seconds": 111.76666666666667,
+      "cue": "r12:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r12:a",
+      "time": 111.76666666666667,
+      "frame": 3353,
+      "j": 3353,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03353.jpg",
+      "actualPrimary": "b2a_frog,b2a_cell",
+      "measurement": {
+        "x0": 180.8,
+        "y0": 571.5,
+        "x1": 882.8,
+        "y1": 948.4,
+        "width": 0.65,
+        "height": 0.19630208333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2259013056755066,
+          -0.9734678268432617,
+          0.7744737267494202
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.13044270873069763
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 12,
+      "where": "end",
+      "j": 3458,
+      "seconds": 115.26666666666667,
+      "requestedSeconds": 115.276,
+      "cue": "r12:a",
+      "key": "cb2agpt-r12:a",
+      "time": 115.26666666666667,
+      "frame": 3458,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03458.jpg",
+      "actualPrimary": "b2a_frog,b2a_cell",
+      "measurement": {
+        "x0": 180.8,
+        "y0": 571.5,
+        "x1": 882.8,
+        "y1": 948.4,
+        "width": 0.65,
+        "height": 0.19630208333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2259013056755066,
+          -0.9734678268432617,
+          0.7744737267494202
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.13044270873069763
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 13,
+      "where": "start",
+      "j": 3488,
+      "seconds": 116.26666666666667,
+      "requestedSeconds": 116.266,
+      "cue": "r13:a",
+      "key": "cb2agpt-r13:a",
+      "time": 116.26666666666667,
+      "frame": 3488,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03488.jpg",
+      "actualPrimary": "b2a_glass",
+      "measurement": {
+        "x0": 206.1,
+        "y0": 683.5,
+        "x1": 937.9,
+        "y1": 856.5,
+        "width": 0.6775925925925925,
+        "height": 0.09010416666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.11195120960474014,
+          -0.6386890411376953,
+          0.4591876268386841
+        ],
+        "rotation": [
+          0.9075713753700256,
+          1.5891075122453913e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.10192708671092987
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 13,
+      "seconds": 121.1,
+      "cue": "r13:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r13:a",
+      "time": 121.1,
+      "frame": 3633,
+      "j": 3633,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03633.jpg",
+      "actualPrimary": "b2a_glass",
+      "measurement": {
+        "x0": 206.1,
+        "y0": 683.5,
+        "x1": 908.1,
+        "y1": 835.7,
+        "width": 0.65,
+        "height": 0.07927083333333336,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.11195120960474014,
+          -0.6386890411376953,
+          0.4591876268386841
+        ],
+        "rotation": [
+          0.9075713753700256,
+          1.5891075122453913e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.10192708671092987
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 13,
+      "where": "end",
+      "j": 3778,
+      "seconds": 125.93333333333334,
+      "requestedSeconds": 125.91666666666667,
+      "cue": "r13:a",
+      "key": "cb2agpt-r13:a",
+      "time": 125.93333333333334,
+      "frame": 3778,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03778.jpg",
+      "actualPrimary": "b2a_glass",
+      "measurement": {
+        "x0": 206.1,
+        "y0": 683.5,
+        "x1": 908.1,
+        "y1": 827.0,
+        "width": 0.65,
+        "height": 0.07473958333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.11195120960474014,
+          -0.6386890411376953,
+          0.4591876268386841
+        ],
+        "rotation": [
+          0.9075713753700256,
+          1.5891075122453913e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.10192708671092987
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 14,
+      "where": "start",
+      "j": 3807,
+      "seconds": 126.9,
+      "requestedSeconds": 126.90666666666667,
+      "cue": "r14:a",
+      "key": "cb2agpt-r14:a",
+      "time": 126.9,
+      "frame": 3807,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03807.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 14,
+      "seconds": 128.76666666666668,
+      "cue": "r14:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r14:a",
+      "time": 128.76666666666668,
+      "frame": 3863,
+      "j": 3863,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03863.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 14,
+      "where": "middle",
+      "j": 3964,
+      "seconds": 132.13333333333333,
+      "requestedSeconds": 132.13733333333334,
+      "cue": "r14:b",
+      "key": "cb2agpt-r14:b",
+      "time": 132.13333333333333,
+      "frame": 3964,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/03964.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 14,
+      "seconds": 134.2,
+      "cue": "r14:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r14:b",
+      "time": 134.2,
+      "frame": 4026,
+      "j": 4026,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04026.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 14,
+      "where": "end",
+      "j": 4121,
+      "seconds": 137.36666666666667,
+      "requestedSeconds": 137.36800000000002,
+      "cue": "r14:b",
+      "key": "cb2agpt-r14:b",
+      "time": 137.36666666666667,
+      "frame": 4121,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04121.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 15,
+      "where": "start",
+      "j": 4134,
+      "seconds": 137.8,
+      "requestedSeconds": 137.808,
+      "cue": "r15:a",
+      "key": "cb2agpt-r15:a",
+      "time": 137.8,
+      "frame": 4134,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04134.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 15,
+      "seconds": 140.86666666666667,
+      "cue": "r15:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r15:a",
+      "time": 140.86666666666667,
+      "frame": 4226,
+      "j": 4226,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04226.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 15,
+      "where": "middle",
+      "j": 4279,
+      "seconds": 142.63333333333333,
+      "requestedSeconds": 142.61733333333336,
+      "cue": "r15:a",
+      "key": "cb2agpt-r15:a",
+      "time": 142.63333333333333,
+      "frame": 4279,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04279.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 15,
+      "seconds": 145.9,
+      "cue": "r15:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r15:b",
+      "time": 145.9,
+      "frame": 4377,
+      "j": 4377,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04377.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 15,
+      "where": "end",
+      "j": 4423,
+      "seconds": 147.43333333333334,
+      "requestedSeconds": 147.4266666666667,
+      "cue": "r15:b",
+      "key": "cb2agpt-r15:b",
+      "time": 147.43333333333334,
+      "frame": 4423,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04423.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 16,
+      "where": "start",
+      "j": 4436,
+      "seconds": 147.86666666666667,
+      "requestedSeconds": 147.86666666666667,
+      "cue": "r16:a",
+      "key": "cb2agpt-r16:a",
+      "time": 147.86666666666667,
+      "frame": 4436,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04436.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 194.3,
+        "y0": 570.1,
+        "x1": 896.3,
+        "y1": 950.0,
+        "width": 0.65,
+        "height": 0.19786458333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.19074280560016632,
+          -0.8076330423355103,
+          0.6752148866653442
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.09466145932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 16,
+      "seconds": 150.13333333333333,
+      "cue": "r16:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r16:a",
+      "time": 150.13333333333333,
+      "frame": 4504,
+      "j": 4504,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04504.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 194.3,
+        "y0": 570.1,
+        "x1": 896.3,
+        "y1": 950.0,
+        "width": 0.65,
+        "height": 0.19786458333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.19074280560016632,
+          -0.8076330423355103,
+          0.6752148866653442
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.09466145932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 16,
+      "where": "middle",
+      "j": 4615,
+      "seconds": 153.83333333333334,
+      "requestedSeconds": 153.8386666666667,
+      "cue": "r16:b",
+      "key": "cb2agpt-r16:b",
+      "time": 153.83333333333334,
+      "frame": 4615,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04615.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 194.3,
+        "y0": 570.1,
+        "x1": 896.3,
+        "y1": 950.0,
+        "width": 0.65,
+        "height": 0.19786458333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.19074280560016632,
+          -0.8076330423355103,
+          0.6752148866653442
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.09466145932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 16,
+      "seconds": 156.33333333333334,
+      "cue": "r16:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r16:b",
+      "time": 156.33333333333334,
+      "frame": 4690,
+      "j": 4690,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04690.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 194.3,
+        "y0": 570.1,
+        "x1": 896.3,
+        "y1": 950.0,
+        "width": 0.65,
+        "height": 0.19786458333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.19074280560016632,
+          -0.8076330423355103,
+          0.6752148866653442
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.09466145932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 16,
+      "where": "end",
+      "j": 4794,
+      "seconds": 159.8,
+      "requestedSeconds": 159.81066666666672,
+      "cue": "r16:b",
+      "key": "cb2agpt-r16:b",
+      "time": 159.8,
+      "frame": 4794,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04794.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 194.3,
+        "y0": 570.1,
+        "x1": 896.3,
+        "y1": 950.0,
+        "width": 0.65,
+        "height": 0.19786458333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.19074280560016632,
+          -0.8076330423355103,
+          0.6752148866653442
+        ],
+        "rotation": [
+          0.9075711965560913,
+          4.5132164672168074e-10,
+          0.2094395011663437
+        ],
+        "shift": -0.09466145932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 17,
+      "where": "start",
+      "j": 4808,
+      "seconds": 160.26666666666668,
+      "requestedSeconds": 160.2506666666667,
+      "cue": "r17:a",
+      "key": "cb2agpt-r17:a",
+      "time": 160.26666666666668,
+      "frame": 4808,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04808.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 200.4,
+        "y0": 570.2,
+        "x1": 902.4,
+        "y1": 949.9,
+        "width": 0.65,
+        "height": 0.19776041666666663,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1877778172492981,
+          -0.8083188533782959,
+          0.6757626533508301
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.0950520858168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 17,
+      "seconds": 162.66666666666666,
+      "cue": "r17:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r17:a",
+      "time": 162.66666666666666,
+      "frame": 4880,
+      "j": 4880,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04880.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 200.4,
+        "y0": 570.2,
+        "x1": 902.4,
+        "y1": 949.9,
+        "width": 0.65,
+        "height": 0.19776041666666663,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1877778172492981,
+          -0.8083188533782959,
+          0.6757626533508301
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.0950520858168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 17,
+      "where": "end",
+      "j": 4953,
+      "seconds": 165.1,
+      "requestedSeconds": 165.11200000000005,
+      "cue": "r17:a",
+      "key": "cb2agpt-r17:a",
+      "time": 165.1,
+      "frame": 4953,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04953.jpg",
+      "actualPrimary": "b2a_cell,b2a_door",
+      "measurement": {
+        "x0": 200.4,
+        "y0": 570.2,
+        "x1": 902.4,
+        "y1": 949.9,
+        "width": 0.65,
+        "height": 0.19776041666666663,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1877778172492981,
+          -0.8083188533782959,
+          0.6757626533508301
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.0950520858168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 18,
+      "where": "start",
+      "j": 4967,
+      "seconds": 165.56666666666666,
+      "requestedSeconds": 165.55200000000002,
+      "cue": "r18:a",
+      "key": "cb2agpt-r18:a",
+      "time": 165.56666666666666,
+      "frame": 4967,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/04967.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 18,
+      "seconds": 170.33333333333334,
+      "cue": "r18:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r18:a",
+      "time": 170.33333333333334,
+      "frame": 5110,
+      "j": 5110,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05110.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 18,
+      "where": "middle",
+      "j": 5216,
+      "seconds": 173.86666666666667,
+      "requestedSeconds": 173.8706666666667,
+      "cue": "r18:a",
+      "key": "cb2agpt-r18:a",
+      "time": 173.86666666666667,
+      "frame": 5216,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05216.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 18,
+      "seconds": 178.9,
+      "cue": "r18:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r18:b",
+      "time": 178.9,
+      "frame": 5367,
+      "j": 5367,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05367.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 18,
+      "where": "end",
+      "j": 5466,
+      "seconds": 182.2,
+      "requestedSeconds": 182.1893333333334,
+      "cue": "r18:b",
+      "key": "cb2agpt-r18:b",
+      "time": 182.2,
+      "frame": 5466,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05466.jpg",
+      "actualPrimary": "b2a_water",
+      "measurement": {
+        "x0": 179.1,
+        "y0": 485.8,
+        "x1": 881.1,
+        "y1": 1034.2,
+        "width": 0.65,
+        "height": 0.2856250000000001,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1593993753194809,
+          -0.8554825782775879,
+          0.7282372117042542
+        ],
+        "rotation": [
+          0.9075711965560913,
+          7.601371976306837e-09,
+          0.20943957567214966
+        ],
+        "shift": -0.10234375298023224
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 19,
+      "where": "start",
+      "j": 5495,
+      "seconds": 183.16666666666666,
+      "requestedSeconds": 183.17933333333337,
+      "cue": "r19:a",
+      "key": "cb2agpt-r19:a",
+      "time": 183.16666666666666,
+      "frame": 5495,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05495.jpg",
+      "actualPrimary": "b2a_generator,b2a_frog,b2a_assistant",
+      "measurement": {
+        "x0": 212.5,
+        "y0": 491.7,
+        "x1": 914.9,
+        "y1": 1025.3,
+        "width": 0.6503703703703704,
+        "height": 0.27791666666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20038357377052307,
+          -1.0705093145370483,
+          0.9124155044555664
+        ],
+        "rotation": [
+          0.9075711965560913,
+          1.3771028761766502e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12872396409511566
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 19,
+      "seconds": 188.96666666666667,
+      "cue": "r19:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r19:a",
+      "time": 188.96666666666667,
+      "frame": 5669,
+      "j": 5669,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05669.jpg",
+      "actualPrimary": "b2a_generator,b2a_frog,b2a_assistant",
+      "measurement": {
+        "x0": 212.8,
+        "y0": 494.5,
+        "x1": 914.9,
+        "y1": 1025.3,
+        "width": 0.6500925925925926,
+        "height": 0.2764583333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20038357377052307,
+          -1.0705093145370483,
+          0.9124155044555664
+        ],
+        "rotation": [
+          0.9075711965560913,
+          1.3771028761766502e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12872396409511566
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 19,
+      "where": "end",
+      "j": 5843,
+      "seconds": 194.76666666666668,
+      "requestedSeconds": 194.75000000000009,
+      "cue": "r19:a",
+      "key": "cb2agpt-r19:a",
+      "time": 194.76666666666668,
+      "frame": 5843,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05843.jpg",
+      "actualPrimary": "b2a_generator,b2a_frog,b2a_assistant",
+      "measurement": {
+        "x0": 212.8,
+        "y0": 497.8,
+        "x1": 914.9,
+        "y1": 1025.3,
+        "width": 0.6500925925925926,
+        "height": 0.2747395833333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20038357377052307,
+          -1.0705093145370483,
+          0.9124155044555664
+        ],
+        "rotation": [
+          0.9075711965560913,
+          1.3771028761766502e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12872396409511566
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 20,
+      "where": "start",
+      "j": 5856,
+      "seconds": 195.2,
+      "requestedSeconds": 195.19000000000005,
+      "cue": "r20:a",
+      "key": "cb2agpt-r20:a",
+      "time": 195.2,
+      "frame": 5856,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05856.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 20,
+      "seconds": 198.63333333333333,
+      "cue": "r20:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r20:a",
+      "time": 198.63333333333333,
+      "frame": 5959,
+      "j": 5959,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/05959.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 20,
+      "where": "middle",
+      "j": 6052,
+      "seconds": 201.73333333333332,
+      "requestedSeconds": 201.7433333333334,
+      "cue": "r20:a",
+      "key": "cb2agpt-r20:a",
+      "time": 201.73333333333332,
+      "frame": 6052,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06052.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 20,
+      "seconds": 205.4,
+      "cue": "r20:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r20:b",
+      "time": 205.4,
+      "frame": 6162,
+      "j": 6162,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06162.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 20,
+      "where": "end",
+      "j": 6249,
+      "seconds": 208.3,
+      "requestedSeconds": 208.29666666666677,
+      "cue": "r20:b",
+      "key": "cb2agpt-r20:b",
+      "time": 208.3,
+      "frame": 6249,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06249.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 21,
+      "where": "start",
+      "j": 6279,
+      "seconds": 209.3,
+      "requestedSeconds": 209.28666666666675,
+      "cue": "r21:a",
+      "key": "cb2agpt-r21:a",
+      "time": 209.3,
+      "frame": 6279,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06279.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 21,
+      "seconds": 211.66666666666666,
+      "cue": "r21:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r21:a",
+      "time": 211.66666666666666,
+      "frame": 6350,
+      "j": 6350,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06350.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 21,
+      "where": "middle",
+      "j": 6420,
+      "seconds": 214.0,
+      "requestedSeconds": 214.00533333333343,
+      "cue": "r21:a",
+      "key": "cb2agpt-r21:a",
+      "time": 214.0,
+      "frame": 6420,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06420.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 21,
+      "seconds": 216.6,
+      "cue": "r21:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r21:b",
+      "time": 216.6,
+      "frame": 6498,
+      "j": 6498,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06498.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 21,
+      "where": "end",
+      "j": 6562,
+      "seconds": 218.73333333333332,
+      "requestedSeconds": 218.7240000000001,
+      "cue": "r21:b",
+      "key": "cb2agpt-r21:b",
+      "time": 218.73333333333332,
+      "frame": 6562,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06562.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 22,
+      "where": "start",
+      "j": 6575,
+      "seconds": 219.16666666666666,
+      "requestedSeconds": 219.16400000000007,
+      "cue": "r22:a",
+      "key": "cb2agpt-r22:a",
+      "time": 219.16666666666666,
+      "frame": 6575,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06575.jpg",
+      "actualPrimary": "b2a_ray,b2a_galvani",
+      "measurement": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20760215818881989,
+          -0.7013074159622192,
+          0.5879506468772888
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12218750268220901
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 22,
+      "seconds": 223.3,
+      "cue": "r22:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r22:a",
+      "time": 223.3,
+      "frame": 6699,
+      "j": 6699,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06699.jpg",
+      "actualPrimary": "b2a_ray,b2a_galvani",
+      "measurement": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20760215818881989,
+          -0.7013074159622192,
+          0.5879506468772888
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12218750268220901
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 22,
+      "where": "middle",
+      "j": 6788,
+      "seconds": 226.26666666666668,
+      "requestedSeconds": 226.25600000000009,
+      "cue": "r22:a",
+      "key": "cb2agpt-r22:a",
+      "time": 226.26666666666668,
+      "frame": 6788,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06788.jpg",
+      "actualPrimary": "b2a_ray,b2a_galvani",
+      "measurement": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20760215818881989,
+          -0.7013074159622192,
+          0.5879506468772888
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12218750268220901
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 22,
+      "seconds": 230.63333333333333,
+      "cue": "r22:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r22:b",
+      "time": 230.63333333333333,
+      "frame": 6919,
+      "j": 6919,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/06919.jpg",
+      "actualPrimary": "b2a_ray,b2a_galvani",
+      "measurement": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20760215818881989,
+          -0.7013074159622192,
+          0.5879506468772888
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12218750268220901
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 22,
+      "where": "end",
+      "j": 7000,
+      "seconds": 233.33333333333334,
+      "requestedSeconds": 233.3480000000001,
+      "cue": "r22:b",
+      "key": "cb2agpt-r22:b",
+      "time": 233.33333333333334,
+      "frame": 7000,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07000.jpg",
+      "actualPrimary": "b2a_ray,b2a_galvani",
+      "measurement": {
+        "x0": 184.1,
+        "y0": 571.1,
+        "x1": 886.1,
+        "y1": 948.8,
+        "width": 0.65,
+        "height": 0.19671874999999997,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.20760215818881989,
+          -0.7013074159622192,
+          0.5879506468772888
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12218750268220901
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 23,
+      "where": "start",
+      "j": 7014,
+      "seconds": 233.8,
+      "requestedSeconds": 233.78800000000007,
+      "cue": "r23:a",
+      "key": "cb2agpt-r23:a",
+      "time": 233.8,
+      "frame": 7014,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07014.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 23,
+      "seconds": 236.46666666666667,
+      "cue": "r23:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r23:a",
+      "time": 236.46666666666667,
+      "frame": 7094,
+      "j": 7094,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07094.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 23,
+      "where": "end",
+      "j": 7175,
+      "seconds": 239.16666666666666,
+      "requestedSeconds": 239.16133333333343,
+      "cue": "r23:a",
+      "key": "cb2agpt-r23:a",
+      "time": 239.16666666666666,
+      "frame": 7175,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07175.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 24,
+      "where": "start",
+      "j": 7205,
+      "seconds": 240.16666666666666,
+      "requestedSeconds": 240.1513333333334,
+      "cue": "r24:a",
+      "key": "cb2agpt-r24:a",
+      "time": 240.16666666666666,
+      "frame": 7205,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07205.jpg",
+      "actualPrimary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": -85.9,
+        "y0": 322.4,
+        "x1": 931.7,
+        "y1": 1164.5,
+        "width": 0.9422222222222223,
+        "height": 0.43859375,
+        "allInCamera": false
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.03200547397136688,
+          -0.5984015464782715,
+          0.5106539726257324
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.1352604180574417
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 24,
+      "seconds": 245.33333333333334,
+      "cue": "r24:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r24:a",
+      "time": 245.33333333333334,
+      "frame": 7360,
+      "j": 7360,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07360.jpg",
+      "actualPrimary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.03200547397136688,
+          -0.5984015464782715,
+          0.5106539726257324
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.1352604180574417
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 24,
+      "where": "middle",
+      "j": 7454,
+      "seconds": 248.46666666666667,
+      "requestedSeconds": 248.47000000000008,
+      "cue": "r24:a",
+      "key": "cb2agpt-r24:a",
+      "time": 248.46666666666667,
+      "frame": 7454,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07454.jpg",
+      "actualPrimary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.03200547397136688,
+          -0.5984015464782715,
+          0.5106539726257324
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.1352604180574417
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 24,
+      "seconds": 253.86666666666667,
+      "cue": "r24:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r24:b",
+      "time": 253.86666666666667,
+      "frame": 7616,
+      "j": 7616,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07616.jpg",
+      "actualPrimary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.03200547397136688,
+          -0.5984015464782715,
+          0.5106539726257324
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.1352604180574417
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 24,
+      "where": "end",
+      "j": 7704,
+      "seconds": 256.8,
+      "requestedSeconds": 256.78866666666676,
+      "cue": "r24:b",
+      "key": "cb2agpt-r24:b",
+      "time": 256.8,
+      "frame": 7704,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07704.jpg",
+      "actualPrimary": "b2a_book,b2a_volta",
+      "measurement": {
+        "x0": 219.7,
+        "y0": 355.4,
+        "x1": 921.7,
+        "y1": 1164.5,
+        "width": 0.65,
+        "height": 0.42140625000000004,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.03200547397136688,
+          -0.5984015464782715,
+          0.5106539726257324
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.1352604180574417
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 25,
+      "where": "start",
+      "j": 7717,
+      "seconds": 257.23333333333335,
+      "requestedSeconds": 257.2286666666667,
+      "cue": "r25:a",
+      "key": "cb2agpt-r25:a",
+      "time": 257.23333333333335,
+      "frame": 7717,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07717.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 184.4,
+        "y0": 636.7,
+        "x1": 886.3,
+        "y1": 883.3,
+        "width": 0.6499074074074074,
+        "height": 0.12843749999999995,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2872218191623688,
+          -1.4512723684310913,
+          1.133423089981079
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.12203124910593033
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 25,
+      "seconds": 259.3666666666667,
+      "cue": "r25:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r25:a",
+      "time": 259.3666666666667,
+      "frame": 7781,
+      "j": 7781,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07781.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 184.4,
+        "y0": 636.7,
+        "x1": 886.3,
+        "y1": 883.3,
+        "width": 0.6499074074074074,
+        "height": 0.12843749999999995,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2872218191623688,
+          -1.4512723684310913,
+          1.133423089981079
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.12203124910593033
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 25,
+      "where": "middle",
+      "j": 7910,
+      "seconds": 263.6666666666667,
+      "requestedSeconds": 263.6593333333334,
+      "cue": "r25:b",
+      "key": "cb2agpt-r25:b",
+      "time": 263.6666666666667,
+      "frame": 7910,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07910.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 184.4,
+        "y0": 636.7,
+        "x1": 886.3,
+        "y1": 883.3,
+        "width": 0.6499074074074074,
+        "height": 0.12843749999999995,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2872218191623688,
+          -1.4512723684310913,
+          1.133423089981079
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.12203124910593033
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 25,
+      "seconds": 266.0,
+      "cue": "r25:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r25:b",
+      "time": 266.0,
+      "frame": 7980,
+      "j": 7980,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/07980.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 184.4,
+        "y0": 636.7,
+        "x1": 886.3,
+        "y1": 883.3,
+        "width": 0.6499074074074074,
+        "height": 0.12843749999999995,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2872218191623688,
+          -1.4512723684310913,
+          1.133423089981079
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.12203124910593033
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 25,
+      "where": "end",
+      "j": 8103,
+      "seconds": 270.1,
+      "requestedSeconds": 270.09000000000015,
+      "cue": "r25:b",
+      "key": "cb2agpt-r25:b",
+      "time": 270.1,
+      "frame": 8103,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08103.jpg",
+      "actualPrimary": "b2a_frog_same,b2a_frog",
+      "measurement": {
+        "x0": 184.4,
+        "y0": 636.7,
+        "x1": 886.3,
+        "y1": 883.3,
+        "width": 0.6499074074074074,
+        "height": 0.12843749999999995,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.2872218191623688,
+          -1.4512723684310913,
+          1.133423089981079
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.181770319964471e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.12203124910593033
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 26,
+      "where": "start",
+      "j": 8116,
+      "seconds": 270.53333333333336,
+      "requestedSeconds": 270.5300000000001,
+      "cue": "r26:a",
+      "key": "cb2agpt-r26:a",
+      "time": 270.53333333333336,
+      "frame": 8116,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08116.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 26,
+      "seconds": 274.43333333333334,
+      "cue": "r26:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r26:a",
+      "time": 274.43333333333334,
+      "frame": 8233,
+      "j": 8233,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08233.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 26,
+      "where": "middle",
+      "j": 8320,
+      "seconds": 277.3333333333333,
+      "requestedSeconds": 277.33933333333346,
+      "cue": "r26:a",
+      "key": "cb2agpt-r26:a",
+      "time": 277.3333333333333,
+      "frame": 8320,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08320.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 26,
+      "seconds": 281.46666666666664,
+      "cue": "r26:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r26:b",
+      "time": 281.46666666666664,
+      "frame": 8444,
+      "j": 8444,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08444.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 26,
+      "where": "end",
+      "j": 8524,
+      "seconds": 284.1333333333333,
+      "requestedSeconds": 284.14866666666677,
+      "cue": "r26:b",
+      "key": "cb2agpt-r26:b",
+      "time": 284.1333333333333,
+      "frame": 8524,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08524.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 166.6,
+        "y0": 546.7,
+        "x1": 868.5,
+        "y1": 973.2,
+        "width": 0.6499074074074074,
+        "height": 0.22213541666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1513095498085022,
+          -0.8118555545806885,
+          0.6287071108818054
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.1845480152317123e-09,
+          0.2094394713640213
+        ],
+        "shift": -0.14231771230697632
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 27,
+      "where": "start",
+      "j": 8538,
+      "seconds": 284.6,
+      "requestedSeconds": 284.58866666666677,
+      "cue": "r27:a",
+      "key": "cb2agpt-r27:a",
+      "time": 284.6,
+      "frame": 8538,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08538.jpg",
+      "actualPrimary": "b2a_alarm",
+      "measurement": {
+        "x0": 158.5,
+        "y0": 390.3,
+        "x1": 860.5,
+        "y1": 1129.8,
+        "width": 0.65,
+        "height": 0.38515625,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1194879561662674,
+          -0.6621466279029846,
+          0.33517563343048096
+        ],
+        "rotation": [
+          1.2217304706573486,
+          -2.0950475132508473e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.08953125029802322
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 27,
+      "seconds": 287.6666666666667,
+      "cue": "r27:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r27:a",
+      "time": 287.6666666666667,
+      "frame": 8630,
+      "j": 8630,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08630.jpg",
+      "actualPrimary": "b2a_alarm",
+      "measurement": {
+        "x0": 158.5,
+        "y0": 390.3,
+        "x1": 860.5,
+        "y1": 1129.8,
+        "width": 0.65,
+        "height": 0.38515625,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1194879561662674,
+          -0.6621466279029846,
+          0.33517563343048096
+        ],
+        "rotation": [
+          1.2217304706573486,
+          -2.0950475132508473e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.08953125029802322
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 27,
+      "where": "middle",
+      "j": 8704,
+      "seconds": 290.1333333333333,
+      "requestedSeconds": 290.1340000000001,
+      "cue": "r27:a",
+      "key": "cb2agpt-r27:a",
+      "time": 290.1333333333333,
+      "frame": 8704,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08704.jpg",
+      "actualPrimary": "b2a_alarm",
+      "measurement": {
+        "x0": 158.5,
+        "y0": 390.3,
+        "x1": 860.5,
+        "y1": 1129.8,
+        "width": 0.65,
+        "height": 0.38515625,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1194879561662674,
+          -0.6621466279029846,
+          0.33517563343048096
+        ],
+        "rotation": [
+          1.2217304706573486,
+          -2.0950475132508473e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.08953125029802322
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 27,
+      "seconds": 293.43333333333334,
+      "cue": "r27:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r27:b",
+      "time": 293.43333333333334,
+      "frame": 8803,
+      "j": 8803,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08803.jpg",
+      "actualPrimary": "b2a_alarm",
+      "measurement": {
+        "x0": 158.5,
+        "y0": 390.3,
+        "x1": 860.5,
+        "y1": 1129.8,
+        "width": 0.65,
+        "height": 0.38515625,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1194879561662674,
+          -0.6621466279029846,
+          0.33517563343048096
+        ],
+        "rotation": [
+          1.2217304706573486,
+          -2.0950475132508473e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.08953125029802322
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 27,
+      "where": "end",
+      "j": 8870,
+      "seconds": 295.6666666666667,
+      "requestedSeconds": 295.6793333333335,
+      "cue": "r27:b",
+      "key": "cb2agpt-r27:b",
+      "time": 295.6666666666667,
+      "frame": 8870,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08870.jpg",
+      "actualPrimary": "b2a_alarm",
+      "measurement": {
+        "x0": 158.5,
+        "y0": 390.3,
+        "x1": 860.5,
+        "y1": 1129.8,
+        "width": 0.65,
+        "height": 0.38515625,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1194879561662674,
+          -0.6621466279029846,
+          0.33517563343048096
+        ],
+        "rotation": [
+          1.2217304706573486,
+          -2.0950475132508473e-08,
+          0.20943956077098846
+        ],
+        "shift": -0.08953125029802322
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 28,
+      "where": "start",
+      "j": 8900,
+      "seconds": 296.6666666666667,
+      "requestedSeconds": 296.66933333333344,
+      "cue": "r28:a",
+      "key": "cb2agpt-r28:a",
+      "time": 296.6666666666667,
+      "frame": 8900,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/08900.jpg",
+      "actualPrimary": "b2a_frog,b2a_unit",
+      "measurement": {
+        "x0": 165.7,
+        "y0": 580.8,
+        "x1": 867.7,
+        "y1": 939.2,
+        "width": 0.65,
+        "height": 0.1866666666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21334543824195862,
+          -0.9315494298934937,
+          0.7303019762039185
+        ],
+        "rotation": [
+          0.9075711965560913,
+          2.6437138700430296e-08,
+          0.2094394415616989
+        ],
+        "shift": -0.13567708432674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 28,
+      "seconds": 301.03333333333336,
+      "cue": "r28:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r28:a",
+      "time": 301.03333333333336,
+      "frame": 9031,
+      "j": 9031,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09031.jpg",
+      "actualPrimary": "b2a_frog,b2a_unit",
+      "measurement": {
+        "x0": 165.7,
+        "y0": 580.8,
+        "x1": 867.7,
+        "y1": 939.2,
+        "width": 0.65,
+        "height": 0.1866666666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21334543824195862,
+          -0.9315494298934937,
+          0.7303019762039185
+        ],
+        "rotation": [
+          0.9075711965560913,
+          2.6437138700430296e-08,
+          0.2094394415616989
+        ],
+        "shift": -0.13567708432674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 28,
+      "where": "end",
+      "j": 9162,
+      "seconds": 305.4,
+      "requestedSeconds": 305.41333333333347,
+      "cue": "r28:a",
+      "key": "cb2agpt-r28:a",
+      "time": 305.4,
+      "frame": 9162,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09162.jpg",
+      "actualPrimary": "b2a_frog,b2a_unit",
+      "measurement": {
+        "x0": -572.3,
+        "y0": 493.4,
+        "x1": 867.7,
+        "y1": 860.7,
+        "width": 1.3333333333333333,
+        "height": 0.19130208333333337,
+        "allInCamera": false
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21334543824195862,
+          -0.9315494298934937,
+          0.7303019762039185
+        ],
+        "rotation": [
+          0.9075711965560913,
+          2.6437138700430296e-08,
+          0.2094394415616989
+        ],
+        "shift": -0.13567708432674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 29,
+      "where": "start",
+      "j": 9176,
+      "seconds": 305.8666666666667,
+      "requestedSeconds": 305.85333333333347,
+      "cue": "r29:a",
+      "key": "cb2agpt-r29:a",
+      "time": 305.8666666666667,
+      "frame": 9176,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09176.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 165.8,
+        "y0": 259.1,
+        "x1": 913.9,
+        "y1": 1075.0,
+        "width": 0.6926851851851851,
+        "height": 0.42494791666666665,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.07053054124116898,
+          -0.41182011365890503,
+          0.38581693172454834
+        ],
+        "rotation": [
+          0.8377580046653748,
+          5.449588780237491e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.11809895932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 29,
+      "seconds": 309.1,
+      "cue": "r29:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r29:a",
+      "time": 309.1,
+      "frame": 9273,
+      "j": 9273,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09273.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 172.4,
+        "y0": 295.0,
+        "x1": 907.2,
+        "y1": 1075.0,
+        "width": 0.6803703703703704,
+        "height": 0.40625,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.07053054124116898,
+          -0.41182011365890503,
+          0.38581693172454834
+        ],
+        "rotation": [
+          0.8377580046653748,
+          5.449588780237491e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.11809895932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 29,
+      "where": "middle",
+      "j": 9397,
+      "seconds": 313.23333333333335,
+      "requestedSeconds": 313.2493333333335,
+      "cue": "r29:b",
+      "key": "cb2agpt-r29:b",
+      "time": 313.23333333333335,
+      "frame": 9397,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09397.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 199.5,
+        "y0": 444.4,
+        "x1": 880.1,
+        "y1": 1075.0,
+        "width": 0.6301851851851852,
+        "height": 0.3284375,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.07053054124116898,
+          -0.41182011365890503,
+          0.38581693172454834
+        ],
+        "rotation": [
+          0.8377580046653748,
+          5.449588780237491e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.11809895932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 29,
+      "seconds": 316.7,
+      "cue": "r29:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r29:b",
+      "time": 316.7,
+      "frame": 9501,
+      "j": 9501,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09501.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 220.0,
+        "y0": 561.0,
+        "x1": 859.9,
+        "y1": 1075.0,
+        "width": 0.5925,
+        "height": 0.2677083333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.07053054124116898,
+          -0.41182011365890503,
+          0.38581693172454834
+        ],
+        "rotation": [
+          0.8377580046653748,
+          5.449588780237491e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.11809895932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 29,
+      "where": "end",
+      "j": 9619,
+      "seconds": 320.6333333333333,
+      "requestedSeconds": 320.6453333333335,
+      "cue": "r29:b",
+      "key": "cb2agpt-r29:b",
+      "time": 320.6333333333333,
+      "frame": 9619,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09619.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 223.7,
+        "y0": 604.4,
+        "x1": 856.2,
+        "y1": 1075.0,
+        "width": 0.5856481481481481,
+        "height": 0.24510416666666668,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.07053054124116898,
+          -0.41182011365890503,
+          0.38581693172454834
+        ],
+        "rotation": [
+          0.8377580046653748,
+          5.449588780237491e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.11809895932674408
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 30,
+      "where": "start",
+      "j": 9633,
+      "seconds": 321.1,
+      "requestedSeconds": 321.08533333333344,
+      "cue": "r30:a",
+      "key": "cb2agpt-r30:a",
+      "time": 321.1,
+      "frame": 9633,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09633.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 199.6,
+        "y0": 517.0,
+        "x1": 880.0,
+        "y1": 1003.0,
+        "width": 0.63,
+        "height": 0.253125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.06840356439352036,
+          -0.40181344747543335,
+          0.34810560941696167
+        ],
+        "rotation": [
+          0.83775794506073,
+          1.4390642455452962e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12070312350988388
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 30,
+      "seconds": 323.73333333333335,
+      "cue": "r30:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r30:a",
+      "time": 323.73333333333335,
+      "frame": 9712,
+      "j": 9712,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09712.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 199.6,
+        "y0": 517.0,
+        "x1": 880.0,
+        "y1": 1003.0,
+        "width": 0.63,
+        "height": 0.253125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.06840356439352036,
+          -0.40181344747543335,
+          0.34810560941696167
+        ],
+        "rotation": [
+          0.83775794506073,
+          1.4390642455452962e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12070312350988388
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 30,
+      "where": "middle",
+      "j": 9779,
+      "seconds": 325.96666666666664,
+      "requestedSeconds": 325.9533333333335,
+      "cue": "r30:a",
+      "key": "cb2agpt-r30:a",
+      "time": 325.96666666666664,
+      "frame": 9779,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09779.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 199.6,
+        "y0": 517.0,
+        "x1": 880.0,
+        "y1": 1003.0,
+        "width": 0.63,
+        "height": 0.253125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.06840356439352036,
+          -0.40181344747543335,
+          0.34810560941696167
+        ],
+        "rotation": [
+          0.83775794506073,
+          1.4390642455452962e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12070312350988388
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 30,
+      "seconds": 328.8333333333333,
+      "cue": "r30:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r30:b",
+      "time": 328.8333333333333,
+      "frame": 9865,
+      "j": 9865,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09865.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 199.6,
+        "y0": 517.0,
+        "x1": 880.0,
+        "y1": 1003.0,
+        "width": 0.63,
+        "height": 0.253125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.06840356439352036,
+          -0.40181344747543335,
+          0.34810560941696167
+        ],
+        "rotation": [
+          0.83775794506073,
+          1.4390642455452962e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12070312350988388
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 30,
+      "where": "end",
+      "j": 9925,
+      "seconds": 330.8333333333333,
+      "requestedSeconds": 330.8213333333335,
+      "cue": "r30:b",
+      "key": "cb2agpt-r30:b",
+      "time": 330.8333333333333,
+      "frame": 9925,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09925.jpg",
+      "actualPrimary": "b2a_unit",
+      "measurement": {
+        "x0": 199.6,
+        "y0": 517.0,
+        "x1": 880.0,
+        "y1": 1003.0,
+        "width": 0.63,
+        "height": 0.253125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.06840356439352036,
+          -0.40181344747543335,
+          0.34810560941696167
+        ],
+        "rotation": [
+          0.83775794506073,
+          1.4390642455452962e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.12070312350988388
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 31,
+      "where": "start",
+      "j": 9938,
+      "seconds": 331.26666666666665,
+      "requestedSeconds": 331.2613333333334,
+      "cue": "r31:a",
+      "key": "cb2agpt-r31:a",
+      "time": 331.26666666666665,
+      "frame": 9938,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/09938.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 751.0,
+        "y1": 1201.6,
+        "width": 0.41120370370370374,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 31,
+      "seconds": 335.23333333333335,
+      "cue": "r31:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r31:a",
+      "time": 335.23333333333335,
+      "frame": 10057,
+      "j": 10057,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10057.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 753.1,
+        "y1": 1201.6,
+        "width": 0.4131481481481482,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 31,
+      "where": "middle",
+      "j": 10103,
+      "seconds": 336.76666666666665,
+      "requestedSeconds": 336.7746666666668,
+      "cue": "r31:a",
+      "key": "cb2agpt-r31:a",
+      "time": 336.76666666666665,
+      "frame": 10103,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10103.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 31,
+      "seconds": 340.96666666666664,
+      "cue": "r31:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r31:b",
+      "time": 340.96666666666664,
+      "frame": 10229,
+      "j": 10229,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10229.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 31,
+      "where": "end",
+      "j": 10269,
+      "seconds": 342.3,
+      "requestedSeconds": 342.2880000000001,
+      "cue": "r31:b",
+      "key": "cb2agpt-r31:b",
+      "time": 342.3,
+      "frame": 10269,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10269.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 32,
+      "where": "start",
+      "j": 10282,
+      "seconds": 342.73333333333335,
+      "requestedSeconds": 342.72800000000007,
+      "cue": "r32:a",
+      "key": "cb2agpt-r32:a",
+      "time": 342.73333333333335,
+      "frame": 10282,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10282.jpg",
+      "actualPrimary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21510738134384155,
+          -0.6866968274116516,
+          0.6077930927276611
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1490905055543408e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.09382812678813934
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 32,
+      "seconds": 347.1333333333333,
+      "cue": "r32:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r32:a",
+      "time": 347.1333333333333,
+      "frame": 10414,
+      "j": 10414,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10414.jpg",
+      "actualPrimary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21510738134384155,
+          -0.6866968274116516,
+          0.6077930927276611
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1490905055543408e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.09382812678813934
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 32,
+      "where": "middle",
+      "j": 10564,
+      "seconds": 352.1333333333333,
+      "requestedSeconds": 352.1293333333334,
+      "cue": "r32:b",
+      "key": "cb2agpt-r32:b",
+      "time": 352.1333333333333,
+      "frame": 10564,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10564.jpg",
+      "actualPrimary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21510738134384155,
+          -0.6866968274116516,
+          0.6077930927276611
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1490905055543408e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.09382812678813934
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 32,
+      "seconds": 356.76666666666665,
+      "cue": "r32:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r32:b",
+      "time": 356.76666666666665,
+      "frame": 10703,
+      "j": 10703,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10703.jpg",
+      "actualPrimary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21510738134384155,
+          -0.6866968274116516,
+          0.6077930927276611
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1490905055543408e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.09382812678813934
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 32,
+      "where": "end",
+      "j": 10846,
+      "seconds": 361.53333333333336,
+      "requestedSeconds": 361.5306666666668,
+      "cue": "r32:b",
+      "key": "cb2agpt-r32:b",
+      "time": 361.53333333333336,
+      "frame": 10846,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10846.jpg",
+      "actualPrimary": "b2a_pile,b2a_volta",
+      "measurement": {
+        "x0": 179.5,
+        "y0": 447.7,
+        "x1": 881.5,
+        "y1": 1072.4,
+        "width": 0.65,
+        "height": 0.32536458333333335,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.21510738134384155,
+          -0.6866968274116516,
+          0.6077930927276611
+        ],
+        "rotation": [
+          0.9075712561607361,
+          2.1490905055543408e-08,
+          0.20943951606750488
+        ],
+        "shift": -0.09382812678813934
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 33,
+      "where": "start",
+      "j": 10859,
+      "seconds": 361.96666666666664,
+      "requestedSeconds": 361.9706666666667,
+      "cue": "r33:a",
+      "key": "cb2agpt-r33:a",
+      "time": 361.96666666666664,
+      "frame": 10859,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/10859.jpg",
+      "actualPrimary": "b2a_pile,b2a_electroscope",
+      "measurement": {
+        "x0": 186.6,
+        "y0": 497.2,
+        "x1": 888.6,
+        "y1": 1022.8,
+        "width": 0.65,
+        "height": 0.27374999999999994,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.15647396445274353,
+          -0.8702553510665894,
+          0.7882086038589478
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12979166209697723
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 33,
+      "seconds": 367.26666666666665,
+      "cue": "r33:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r33:a",
+      "time": 367.26666666666665,
+      "frame": 11018,
+      "j": 11018,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11018.jpg",
+      "actualPrimary": "b2a_pile,b2a_electroscope",
+      "measurement": {
+        "x0": 186.6,
+        "y0": 497.2,
+        "x1": 888.6,
+        "y1": 1022.8,
+        "width": 0.65,
+        "height": 0.27374999999999994,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.15647396445274353,
+          -0.8702553510665894,
+          0.7882086038589478
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12979166209697723
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 33,
+      "where": "middle",
+      "j": 11074,
+      "seconds": 369.1333333333333,
+      "requestedSeconds": 369.1266666666667,
+      "cue": "r33:a",
+      "key": "cb2agpt-r33:a",
+      "time": 369.1333333333333,
+      "frame": 11074,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11074.jpg",
+      "actualPrimary": "b2a_pile,b2a_electroscope",
+      "measurement": {
+        "x0": 186.6,
+        "y0": 497.2,
+        "x1": 888.6,
+        "y1": 1022.8,
+        "width": 0.65,
+        "height": 0.27374999999999994,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.15647396445274353,
+          -0.8702553510665894,
+          0.7882086038589478
+        ],
+        "rotation": [
+          0.9075712561607361,
+          8.171198828677007e-09,
+          0.20943951606750488
+        ],
+        "shift": -0.12979166209697723
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 33,
+      "seconds": 374.6333333333333,
+      "cue": "r33:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r33:b",
+      "time": 374.6333333333333,
+      "frame": 11239,
+      "j": 11239,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11239.jpg",
+      "actualPrimary": "b2a_electroscope_gold_leaf_pair",
+      "measurement": {
+        "x0": 452.0,
+        "y0": 347.2,
+        "x1": 627.6,
+        "y1": 1173.7,
+        "width": 0.16259259259259262,
+        "height": 0.43046875,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.12999999523162842,
+          -0.47183680534362793,
+          0.25103992223739624
+        ],
+        "rotation": [
+          1.3613569736480713,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.0938020870089531
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 33,
+      "where": "end",
+      "j": 11288,
+      "seconds": 376.26666666666665,
+      "requestedSeconds": 376.2826666666667,
+      "cue": "r33:b",
+      "key": "cb2agpt-r33:b",
+      "time": 376.26666666666665,
+      "frame": 11288,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11288.jpg",
+      "actualPrimary": "b2a_electroscope_gold_leaf_pair",
+      "measurement": {
+        "x0": 424.0,
+        "y0": 347.2,
+        "x1": 655.5,
+        "y1": 1172.8,
+        "width": 0.21435185185185185,
+        "height": 0.42999999999999994,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.12999999523162842,
+          -0.47183680534362793,
+          0.25103992223739624
+        ],
+        "rotation": [
+          1.3613569736480713,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.0938020870089531
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 34,
+      "where": "start",
+      "j": 11302,
+      "seconds": 376.73333333333335,
+      "requestedSeconds": 376.7226666666667,
+      "cue": "r34:a",
+      "key": "cb2agpt-r34:a",
+      "time": 376.73333333333335,
+      "frame": 11302,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11302.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 34,
+      "seconds": 379.6666666666667,
+      "cue": "r34:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r34:a",
+      "time": 379.6666666666667,
+      "frame": 11390,
+      "j": 11390,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11390.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 34,
+      "where": "middle",
+      "j": 11492,
+      "seconds": 383.06666666666666,
+      "requestedSeconds": 383.0786666666668,
+      "cue": "r34:b",
+      "key": "cb2agpt-r34:b",
+      "time": 383.06666666666666,
+      "frame": 11492,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11492.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 34,
+      "seconds": 386.23333333333335,
+      "cue": "r34:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r34:b",
+      "time": 386.23333333333335,
+      "frame": 11587,
+      "j": 11587,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11587.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 34,
+      "where": "end",
+      "j": 11683,
+      "seconds": 389.43333333333334,
+      "requestedSeconds": 389.43466666666677,
+      "cue": "r34:b",
+      "key": "cb2agpt-r34:b",
+      "time": 389.43333333333334,
+      "frame": 11683,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11683.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 35,
+      "where": "start",
+      "j": 11696,
+      "seconds": 389.8666666666667,
+      "requestedSeconds": 389.8746666666667,
+      "cue": "r35:a",
+      "key": "cb2agpt-r35:a",
+      "time": 389.8666666666667,
+      "frame": 11696,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11696.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": true,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 35,
+      "seconds": 392.8,
+      "cue": "r35:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r35:a",
+      "time": 392.8,
+      "frame": 11784,
+      "j": 11784,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11784.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": true,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 35,
+      "where": "end",
+      "j": 11872,
+      "seconds": 395.73333333333335,
+      "requestedSeconds": 395.73866666666675,
+      "cue": "r35:a",
+      "key": "cb2agpt-r35:a",
+      "time": 395.73333333333335,
+      "frame": 11872,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11872.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": true,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 36,
+      "where": "start",
+      "j": 11885,
+      "seconds": 396.1666666666667,
+      "requestedSeconds": 396.1786666666667,
+      "cue": "r36:a",
+      "key": "cb2agpt-r36:a",
+      "time": 396.1666666666667,
+      "frame": 11885,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11885.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 195.7,
+        "y0": 619.9,
+        "x1": 919.4,
+        "y1": 900.1,
+        "width": 0.6700925925925927,
+        "height": 0.14593750000000003,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          -0.0037454068660736084,
+          -0.39229679107666016,
+          0.2934691607952118
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.10869791358709335
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 36,
+      "seconds": 399.8,
+      "cue": "r36:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r36:a",
+      "time": 399.8,
+      "frame": 11994,
+      "j": 11994,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/11994.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 195.7,
+        "y0": 619.9,
+        "x1": 919.4,
+        "y1": 900.1,
+        "width": 0.6700925925925927,
+        "height": 0.14593750000000003,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          -0.0037454068660736084,
+          -0.39229679107666016,
+          0.2934691607952118
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.10869791358709335
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 36,
+      "where": "middle",
+      "j": 12125,
+      "seconds": 404.1666666666667,
+      "requestedSeconds": 404.1826666666667,
+      "cue": "r36:b",
+      "key": "cb2agpt-r36:b",
+      "time": 404.1666666666667,
+      "frame": 12125,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12125.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 195.7,
+        "y0": 619.9,
+        "x1": 919.4,
+        "y1": 900.1,
+        "width": 0.6700925925925927,
+        "height": 0.14593750000000003,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          -0.0037454068660736084,
+          -0.39229679107666016,
+          0.2934691607952118
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.10869791358709335
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 36,
+      "seconds": 408.03333333333336,
+      "cue": "r36:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r36:b",
+      "time": 408.03333333333336,
+      "frame": 12241,
+      "j": 12241,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12241.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 195.7,
+        "y0": 619.9,
+        "x1": 919.4,
+        "y1": 900.1,
+        "width": 0.6700925925925927,
+        "height": 0.14593750000000003,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          -0.0037454068660736084,
+          -0.39229679107666016,
+          0.2934691607952118
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.10869791358709335
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 36,
+      "where": "end",
+      "j": 12366,
+      "seconds": 412.2,
+      "requestedSeconds": 412.1866666666667,
+      "cue": "r36:b",
+      "key": "cb2agpt-r36:b",
+      "time": 412.2,
+      "frame": 12366,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12366.jpg",
+      "actualPrimary": "b2a_frog",
+      "measurement": {
+        "x0": 195.7,
+        "y0": 619.9,
+        "x1": 919.4,
+        "y1": 900.1,
+        "width": 0.6700925925925927,
+        "height": 0.14593750000000003,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          -0.0037454068660736084,
+          -0.39229679107666016,
+          0.2934691607952118
+        ],
+        "rotation": [
+          0.9075713753700256,
+          9.558018376765176e-09,
+          0.20943956077098846
+        ],
+        "shift": -0.10869791358709335
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 37,
+      "where": "start",
+      "j": 12395,
+      "seconds": 413.1666666666667,
+      "requestedSeconds": 413.1766666666667,
+      "cue": "r37:a",
+      "key": "cb2agpt-r37:a",
+      "time": 413.1666666666667,
+      "frame": 12395,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12395.jpg",
+      "actualPrimary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1469866931438446,
+          -0.552893877029419,
+          0.5009192228317261
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.09328124672174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 37,
+      "seconds": 415.96666666666664,
+      "cue": "r37:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r37:a",
+      "time": 415.96666666666664,
+      "frame": 12479,
+      "j": 12479,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12479.jpg",
+      "actualPrimary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1469866931438446,
+          -0.552893877029419,
+          0.5009192228317261
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.09328124672174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 37,
+      "where": "middle",
+      "j": 12521,
+      "seconds": 417.3666666666667,
+      "requestedSeconds": 417.3513333333334,
+      "cue": "r37:a",
+      "key": "cb2agpt-r37:a",
+      "time": 417.3666666666667,
+      "frame": 12521,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12521.jpg",
+      "actualPrimary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1469866931438446,
+          -0.552893877029419,
+          0.5009192228317261
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.09328124672174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 37,
+      "seconds": 420.3666666666667,
+      "cue": "r37:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r37:b",
+      "time": 420.3666666666667,
+      "frame": 12611,
+      "j": 12611,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12611.jpg",
+      "actualPrimary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1469866931438446,
+          -0.552893877029419,
+          0.5009192228317261
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.09328124672174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 37,
+      "where": "end",
+      "j": 12646,
+      "seconds": 421.53333333333336,
+      "requestedSeconds": 421.52600000000007,
+      "cue": "r37:b",
+      "key": "cb2agpt-r37:b",
+      "time": 421.53333333333336,
+      "frame": 12646,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12646.jpg",
+      "actualPrimary": "b2a_pile,b2a_cell",
+      "measurement": {
+        "x0": 184.9,
+        "y0": 363.2,
+        "x1": 886.9,
+        "y1": 1156.8,
+        "width": 0.65,
+        "height": 0.4133333333333333,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1469866931438446,
+          -0.552893877029419,
+          0.5009192228317261
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.09328124672174454
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 38,
+      "where": "start",
+      "j": 12659,
+      "seconds": 421.96666666666664,
+      "requestedSeconds": 421.966,
+      "cue": "r38:a",
+      "key": "cb2agpt-r38:a",
+      "time": 421.96666666666664,
+      "frame": 12659,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12659.jpg",
+      "actualPrimary": "b2a_map",
+      "measurement": {
+        "x0": 166.0,
+        "y0": 496.5,
+        "x1": 868.1,
+        "y1": 1023.5,
+        "width": 0.6500925925925927,
+        "height": 0.27447916666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1367434561252594,
+          -0.7433274388313293,
+          0.9143085479736328
+        ],
+        "rotation": [
+          0.6283185482025146,
+          -1.9927455241486314e-09,
+          0.2094395011663437
+        ],
+        "shift": -0.12182291597127914
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 38,
+      "seconds": 429.3333333333333,
+      "cue": "r38:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r38:a",
+      "time": 429.3333333333333,
+      "frame": 12880,
+      "j": 12880,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/12880.jpg",
+      "actualPrimary": "b2a_map",
+      "measurement": {
+        "x0": 166.0,
+        "y0": 496.5,
+        "x1": 868.1,
+        "y1": 1023.5,
+        "width": 0.6500925925925927,
+        "height": 0.27447916666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1367434561252594,
+          -0.7433274388313293,
+          0.9143085479736328
+        ],
+        "rotation": [
+          0.6283185482025146,
+          -1.9927455241486314e-09,
+          0.2094395011663437
+        ],
+        "shift": -0.12182291597127914
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 38,
+      "where": "end",
+      "j": 13102,
+      "seconds": 436.73333333333335,
+      "requestedSeconds": 436.72600000000006,
+      "cue": "r38:a",
+      "key": "cb2agpt-r38:a",
+      "time": 436.73333333333335,
+      "frame": 13102,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13102.jpg",
+      "actualPrimary": "b2a_map",
+      "measurement": {
+        "x0": 166.0,
+        "y0": 496.5,
+        "x1": 868.1,
+        "y1": 1023.5,
+        "width": 0.6500925925925927,
+        "height": 0.27447916666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1367434561252594,
+          -0.7433274388313293,
+          0.9143085479736328
+        ],
+        "rotation": [
+          0.6283185482025146,
+          -1.9927455241486314e-09,
+          0.2094395011663437
+        ],
+        "shift": -0.12182291597127914
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 39,
+      "where": "start",
+      "j": 13115,
+      "seconds": 437.1666666666667,
+      "requestedSeconds": 437.166,
+      "cue": "r39:a",
+      "key": "cb2agpt-r39:a",
+      "time": 437.1666666666667,
+      "frame": 13115,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13115.jpg",
+      "actualPrimary": "b2a_pile,b2a_glass,b2a_volta",
+      "measurement": {
+        "x0": 205.5,
+        "y0": 551.5,
+        "x1": 907.4,
+        "y1": 968.4,
+        "width": 0.6499074074074074,
+        "height": 0.21713541666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14146362245082855,
+          -0.992394745349884,
+          0.8521658778190613
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.11018229275941849
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 39,
+      "seconds": 440.73333333333335,
+      "cue": "r39:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r39:a",
+      "time": 440.73333333333335,
+      "frame": 13222,
+      "j": 13222,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13222.jpg",
+      "actualPrimary": "b2a_pile,b2a_glass,b2a_volta",
+      "measurement": {
+        "x0": 205.5,
+        "y0": 551.5,
+        "x1": 907.4,
+        "y1": 968.4,
+        "width": 0.6499074074074074,
+        "height": 0.21713541666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14146362245082855,
+          -0.992394745349884,
+          0.8521658778190613
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.11018229275941849
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 39,
+      "where": "middle",
+      "j": 13334,
+      "seconds": 444.46666666666664,
+      "requestedSeconds": 444.482,
+      "cue": "r39:a",
+      "key": "cb2agpt-r39:a",
+      "time": 444.46666666666664,
+      "frame": 13334,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13334.jpg",
+      "actualPrimary": "b2a_pile,b2a_glass,b2a_volta",
+      "measurement": {
+        "x0": 205.5,
+        "y0": 551.5,
+        "x1": 907.4,
+        "y1": 968.4,
+        "width": 0.6499074074074074,
+        "height": 0.21713541666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14146362245082855,
+          -0.992394745349884,
+          0.8521658778190613
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.11018229275941849
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 39,
+      "seconds": 448.26666666666665,
+      "cue": "r39:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r39:b",
+      "time": 448.26666666666665,
+      "frame": 13448,
+      "j": 13448,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13448.jpg",
+      "actualPrimary": "b2a_pile,b2a_glass,b2a_volta",
+      "measurement": {
+        "x0": 205.5,
+        "y0": 551.5,
+        "x1": 904.9,
+        "y1": 968.4,
+        "width": 0.6475925925925926,
+        "height": 0.21713541666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14146362245082855,
+          -0.992394745349884,
+          0.8521658778190613
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.11018229275941849
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 39,
+      "where": "end",
+      "j": 13554,
+      "seconds": 451.8,
+      "requestedSeconds": 451.79800000000006,
+      "cue": "r39:b",
+      "key": "cb2agpt-r39:b",
+      "time": 451.8,
+      "frame": 13554,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13554.jpg",
+      "actualPrimary": "b2a_pile,b2a_glass,b2a_volta",
+      "measurement": {
+        "x0": 205.5,
+        "y0": 551.5,
+        "x1": 907.4,
+        "y1": 968.4,
+        "width": 0.6499074074074074,
+        "height": 0.21713541666666666,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.14146362245082855,
+          -0.992394745349884,
+          0.8521658778190613
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.11018229275941849
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 40,
+      "where": "start",
+      "j": 13584,
+      "seconds": 452.8,
+      "requestedSeconds": 452.788,
+      "cue": "r40:a",
+      "key": "cb2agpt-r40:a",
+      "time": 452.8,
+      "frame": 13584,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13584.jpg",
+      "actualPrimary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "fullFace": true,
+      "camera": {
+        "location": [
+          0.043238215148448944,
+          -0.28341981768608093,
+          0.23357659578323364
+        ],
+        "rotation": [
+          1.0821043252944946,
+          1.8275070345907807e-09,
+          0.20943954586982727
+        ],
+        "shift": -0.12002604454755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 40,
+      "seconds": 456.1666666666667,
+      "cue": "r40:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r40:a",
+      "time": 456.1666666666667,
+      "frame": 13685,
+      "j": 13685,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13685.jpg",
+      "actualPrimary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "fullFace": true,
+      "camera": {
+        "location": [
+          0.043238215148448944,
+          -0.28341981768608093,
+          0.23357659578323364
+        ],
+        "rotation": [
+          1.0821043252944946,
+          1.8275070345907807e-09,
+          0.20943954586982727
+        ],
+        "shift": -0.12002604454755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 40,
+      "where": "end",
+      "j": 13787,
+      "seconds": 459.56666666666666,
+      "requestedSeconds": 459.56933333333336,
+      "cue": "r40:a",
+      "key": "cb2agpt-r40:a",
+      "time": 459.56666666666666,
+      "frame": 13787,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13787.jpg",
+      "actualPrimary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "fullFace": true,
+      "camera": {
+        "location": [
+          0.043238215148448944,
+          -0.28341981768608093,
+          0.23357659578323364
+        ],
+        "rotation": [
+          1.0821043252944946,
+          1.8275070345907807e-09,
+          0.20943954586982727
+        ],
+        "shift": -0.12002604454755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 41,
+      "where": "start",
+      "j": 13800,
+      "seconds": 460.0,
+      "requestedSeconds": 460.00933333333336,
+      "cue": "r41:a",
+      "key": "cb2agpt-r41:a",
+      "time": 460.0,
+      "frame": 13800,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13800.jpg",
+      "actualPrimary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.043238215148448944,
+          -0.28341981768608093,
+          0.23357659578323364
+        ],
+        "rotation": [
+          1.0821043252944946,
+          1.8275070345907807e-09,
+          0.20943954586982727
+        ],
+        "shift": -0.12002604454755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 41,
+      "seconds": 463.2,
+      "cue": "r41:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r41:a",
+      "time": 463.2,
+      "frame": 13896,
+      "j": 13896,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13896.jpg",
+      "actualPrimary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.043238215148448944,
+          -0.28341981768608093,
+          0.23357659578323364
+        ],
+        "rotation": [
+          1.0821043252944946,
+          1.8275070345907807e-09,
+          0.20943954586982727
+        ],
+        "shift": -0.12002604454755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 41,
+      "where": "end",
+      "j": 13992,
+      "seconds": 466.4,
+      "requestedSeconds": 466.3853333333334,
+      "cue": "r41:a",
+      "key": "cb2agpt-r41:a",
+      "time": 466.4,
+      "frame": 13992,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/13992.jpg",
+      "actualPrimary": "b2a_pile_one_unit_join",
+      "measurement": {
+        "x0": 199.7,
+        "y0": 559.1,
+        "x1": 880.1,
+        "y1": 960.9,
+        "width": 0.6300000000000001,
+        "height": 0.20927083333333332,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.043238215148448944,
+          -0.28341981768608093,
+          0.23357659578323364
+        ],
+        "rotation": [
+          1.0821043252944946,
+          1.8275070345907807e-09,
+          0.20943954586982727
+        ],
+        "shift": -0.12002604454755783
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 42,
+      "where": "start",
+      "j": 14021,
+      "seconds": 467.3666666666667,
+      "requestedSeconds": 467.37533333333334,
+      "cue": "r42:a",
+      "key": "cb2agpt-r42:a",
+      "time": 467.3666666666667,
+      "frame": 14021,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14021.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 42,
+      "seconds": 472.8333333333333,
+      "cue": "r42:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r42:a",
+      "time": 472.8333333333333,
+      "frame": 14185,
+      "j": 14185,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14185.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 42,
+      "where": "middle",
+      "j": 14269,
+      "seconds": 475.6333333333333,
+      "requestedSeconds": 475.64733333333334,
+      "cue": "r42:a",
+      "key": "cb2agpt-r42:a",
+      "time": 475.6333333333333,
+      "frame": 14269,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14269.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 42,
+      "seconds": 481.3333333333333,
+      "cue": "r42:b",
+      "where": "cue-middle",
+      "key": "cb2agpt-r42:b",
+      "time": 481.3333333333333,
+      "frame": 14440,
+      "j": 14440,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14440.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 42,
+      "where": "end",
+      "j": 14518,
+      "seconds": 483.93333333333334,
+      "requestedSeconds": 483.9193333333334,
+      "cue": "r42:b",
+      "key": "cb2agpt-r42:b",
+      "time": 483.93333333333334,
+      "frame": 14518,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14518.jpg",
+      "actualPrimary": "b2a_pile",
+      "measurement": {
+        "x0": 306.9,
+        "y0": 318.4,
+        "x1": 756.6,
+        "y1": 1201.6,
+        "width": 0.4163888888888889,
+        "height": 0.45999999999999996,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.09139863401651382,
+          -0.509996771812439,
+          0.4666556417942047
+        ],
+        "rotation": [
+          0.9075712561607361,
+          1.4667653758237975e-08,
+          0.2094395011663437
+        ],
+        "shift": -0.1009114608168602
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "where": "start",
+      "j": 14547,
+      "seconds": 484.9,
+      "requestedSeconds": 484.9093333333334,
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 484.9,
+      "frame": 14547,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14547.jpg",
+      "actualPrimary": "b2a_frog,b2a_pile,b2a_terrella",
+      "measurement": {
+        "x0": 164.9,
+        "y0": 552.8,
+        "x1": 866.8,
+        "y1": 967.2,
+        "width": 0.6499074074074074,
+        "height": 0.21583333333333338,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.29154008626937866,
+          -1.3165332078933716,
+          1.0895445346832275
+        ],
+        "rotation": [
+          0.9075712561607361,
+          -5.1485082863678144e-09,
+          0.2094395011663437
+        ],
+        "shift": -0.1165885403752327
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "seconds": 489.5,
+      "cue": "r43:a",
+      "where": "cue-middle",
+      "key": "cb2agpt-r43:a",
+      "time": 489.5,
+      "frame": 14685,
+      "j": 14685,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14685.jpg",
+      "actualPrimary": "b2a_frog,b2a_pile,b2a_terrella",
+      "measurement": {
+        "x0": 164.9,
+        "y0": 552.8,
+        "x1": 866.8,
+        "y1": 967.2,
+        "width": 0.6499074074074074,
+        "height": 0.21583333333333338,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.29154008626937866,
+          -1.3165332078933716,
+          1.0895445346832275
+        ],
+        "rotation": [
+          0.9075712561607361,
+          -5.1485082863678144e-09,
+          0.2094395011663437
+        ],
+        "shift": -0.1165885403752327
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "where": "end",
+      "j": 14822,
+      "seconds": 494.06666666666666,
+      "requestedSeconds": 494.07466666666676,
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 494.06666666666666,
+      "frame": 14822,
+      "image": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/blender/desk/14822.jpg",
+      "actualPrimary": "b2a_frog,b2a_pile,b2a_terrella",
+      "measurement": {
+        "x0": 164.9,
+        "y0": 552.8,
+        "x1": 866.8,
+        "y1": 967.2,
+        "width": 0.6499074074074074,
+        "height": 0.21583333333333338,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.29154008626937866,
+          -1.3165332078933716,
+          1.0895445346832275
+        ],
+        "rotation": [
+          0.9075712561607361,
+          -5.1485082863678144e-09,
+          0.2094395011663437
+        ],
+        "shift": -0.1165885403752327
+      },
+      "personallyViewed": false
+    }
+  ],
+  "elapsedSeconds": 73.22277402877808,
+  "s3Started": false
+}

@@ -1,0 +1,1088 @@
+{
+  "scope": "actual Blender object matrices and mesh vertices; no render/no .blend save",
+  "partsFile": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_lib_b2a_gpt_20261029.py",
+  "checks": [
+    {
+      "test": "terrella_South_0_False",
+      "error": 7.918560160664731e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_North_0_False",
+      "error": 4.562564271506978e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_South_12_False",
+      "error": 1.363853448859903e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_South_12_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": 0.23744329810142517,
+      "expectedSign": 0.20791169081775934
+    },
+    {
+      "test": "terrella_North_12_False",
+      "error": 7.452468566275621e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_North_12_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": -0.17818886041641235,
+      "expectedSign": -0.20791169081775934
+    },
+    {
+      "test": "terrella_South_45_False",
+      "error": 1.6813869077199882e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_South_45_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": 0.7281997352838516,
+      "expectedSign": 0.7071067811865475
+    },
+    {
+      "test": "terrella_North_45_False",
+      "error": 1.078218216948806e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_North_45_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": -0.6853645592927933,
+      "expectedSign": -0.7071067811865475
+    },
+    {
+      "test": "terrella_South_72_False",
+      "error": 7.45058118546469e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_South_72_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": 0.9599798917770386,
+      "expectedSign": 0.9510565162951535
+    },
+    {
+      "test": "terrella_North_72_False",
+      "error": 1.0536840611561938e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_North_72_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": -0.9412602186203003,
+      "expectedSign": -0.9510565162951535
+    },
+    {
+      "test": "field_arrow_direction_0_False",
+      "error": 3.3527612686157227e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_2_False",
+      "error": 4.1443854570388794e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_3_False",
+      "error": 7.031485438346863e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_4_False",
+      "error": -1.1175870895385742e-07,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_5_False",
+      "error": -2.60770320892334e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_6_False",
+      "error": -6.984919309616089e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_South_0_True",
+      "error": 7.643656629578468e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_North_0_True",
+      "error": 3.57802449023324e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_South_12_True",
+      "error": 8.414951710459976e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_South_12_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": 0.2374415099620819,
+      "expectedSign": 0.20791169081775934
+    },
+    {
+      "test": "terrella_North_12_True",
+      "error": 2.392611015339406e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_North_12_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": -0.17818903923034668,
+      "expectedSign": -0.20791169081775934
+    },
+    {
+      "test": "terrella_South_45_True",
+      "error": 8.078384564146936e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_South_45_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": 0.7281991243362427,
+      "expectedSign": 0.7071067811865475
+    },
+    {
+      "test": "terrella_North_45_True",
+      "error": 2.837096566656198e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_North_45_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": -0.6853647381067276,
+      "expectedSign": -0.7071067811865475
+    },
+    {
+      "test": "terrella_South_72_True",
+      "error": 6.244724472701628e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_South_72_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": 0.9599802792072296,
+      "expectedSign": 0.9510565162951535
+    },
+    {
+      "test": "terrella_North_72_True",
+      "error": 5.866593028613784e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "terrella_sign_North_72_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true,
+      "actualOutwardDot": -0.9412600100040436,
+      "expectedSign": -0.9510565162951535
+    },
+    {
+      "test": "field_arrow_direction_0_True",
+      "error": 3.3527612686157227e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_1_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_2_True",
+      "error": 4.1443854570388794e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_3_True",
+      "error": 7.031485438346863e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_4_True",
+      "error": -1.1175870895385742e-07,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_5_True",
+      "error": -2.60770320892334e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "field_arrow_direction_6_True",
+      "error": -6.984919309616089e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_0_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_0_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_0_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_1_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_1_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_1_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_0_0.5_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_0_0.5_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_0_0.5_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_1_0.5_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_1_0.5_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_1_0.5_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_0_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_0_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_0_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_1_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_1_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_1_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_contact_exact_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_0_0_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_0_0_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_0_0_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_1_0_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_1_0_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_1_0_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_0_0.5_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_0_0.5_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_0_0.5_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_1_0.5_True",
+      "error": 7.450580596923828e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_1_0.5_True",
+      "error": 7.450580596923828e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_1_0.5_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_0_1_True",
+      "error": 1.4901161193847656e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_0_1_True",
+      "error": 1.4901161193847656e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_0_1_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_curve_tip_1_1_True",
+      "error": 1.4901161193847656e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_tip_anchor_1_1_True",
+      "error": 1.4901161193847656e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_fixed_base_1_1_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "frog_contact_exact_True",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_1_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_top_terminal_1_False",
+      "error": 3.725290298461914e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_zinc_paper_gap_False",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_paper_copper_gap_False",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_15_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_15_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_15_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_14_zinc_15_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_14_paper_15_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_14_copper_15_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_top_terminal_15_False",
+      "error": 3.725290298461914e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_zinc_paper_gap_False",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_paper_copper_gap_False",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_copper_nextzinc_gap_False",
+      "error": 1.5348196047426654e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_30_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_30_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_30_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_29_zinc_30_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_29_paper_30_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_29_copper_30_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_top_terminal_30_False",
+      "error": 3.725290298461914e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_zinc_paper_gap_False",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_paper_copper_gap_False",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_copper_nextzinc_gap_False",
+      "error": 1.5348196047426654e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_1_True",
+      "error": 4.570128078157193e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_1_True",
+      "error": 3.414284955677271e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_1_True",
+      "error": 5.165273183532822e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_1_True",
+      "error": 4.570128078157193e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_1_True",
+      "error": 3.414284955677271e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_1_True",
+      "error": 5.165273183532822e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_top_terminal_1_True",
+      "error": 6.664652624284791e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_zinc_paper_gap_True",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_paper_copper_gap_True",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_15_True",
+      "error": 4.570128078157193e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_15_True",
+      "error": 3.414284955677271e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_15_True",
+      "error": 5.165273183532822e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_14_zinc_15_True",
+      "error": 5.176176589574759e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_14_paper_15_True",
+      "error": 5.13580280503714e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_14_copper_15_True",
+      "error": 4.4117567249860653e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_top_terminal_15_True",
+      "error": 5.625835921816139e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_zinc_paper_gap_True",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_paper_copper_gap_True",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_copper_nextzinc_gap_True",
+      "error": 1.5348196047426654e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_zinc_30_True",
+      "error": 4.570128078157193e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_paper_30_True",
+      "error": 3.414284955677271e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_0_copper_30_True",
+      "error": 5.165273183532822e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_29_zinc_30_True",
+      "error": 4.396000400634835e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_29_paper_30_True",
+      "error": 6.214790277444896e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_center_29_copper_30_True",
+      "error": 4.6566128730773926e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_top_terminal_30_True",
+      "error": 4.667775365017976e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_zinc_paper_gap_True",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_paper_copper_gap_True",
+      "error": 1.817941665260836e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "pile_copper_nextzinc_gap_True",
+      "error": 1.5348196047426654e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_0_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_1_0_False",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_0_0.5_False",
+      "error": 9.313225746154785e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_1_0.5_False",
+      "error": 9.313225746154785e-10,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_0_1_False",
+      "error": 7.450580596923828e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_1_1_False",
+      "error": 7.450580596923828e-09,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_0_0_True",
+      "error": 3.540270136473203e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_1_0_True",
+      "error": 3.4307775080547264e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_0_0.5_True",
+      "error": 4.519449109429818e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_1_0.5_True",
+      "error": 4.057954918549663e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_0_1_True",
+      "error": 4.209166571407835e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "goldleaf_actual_tip_1_1_True",
+      "error": 1.0619349248689796e-08,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_terrella",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_terrella",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_frog",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_frog",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_pile",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_pile",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_leaves",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_leaves",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_covered_table",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_covered_table",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_static_generator",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_static_generator",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_rubbed_glass",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_rubbed_glass",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_water_analogy",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_water_analogy",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_dry_cell",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_dry_cell",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_torpedo_ray",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_torpedo_ray",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_smoke_alarm",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_smoke_alarm",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_scientist",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_scientist",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    },
+    {
+      "test": "object_list_audit_door_knob",
+      "error": 0.0,
+      "limit": 0,
+      "pass": true
+    },
+    {
+      "test": "root_preserved_audit_door_knob",
+      "error": 0.0,
+      "limit": 2e-06,
+      "pass": true
+    }
+  ],
+  "total": 176,
+  "failed": []
+}

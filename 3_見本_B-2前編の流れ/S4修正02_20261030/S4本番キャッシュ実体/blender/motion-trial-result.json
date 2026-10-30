@@ -1,0 +1,43 @@
+{
+  "stage": "S3-quality continuous trials",
+  "resolution": [
+    540,
+    960
+  ],
+  "samples": 4,
+  "fps": 30,
+  "windows": [
+    {
+      "id": "r36-nerve-packets",
+      "fromFrame": 12022,
+      "toFrameExclusive": 12209,
+      "criticalFrames": [
+        12022,
+        12037,
+        12052,
+        12067,
+        12082,
+        12097,
+        12112,
+        12127,
+        12142,
+        12157,
+        12172,
+        12187,
+        12202,
+        12208
+      ]
+    }
+  ],
+  "rendered": 187,
+  "allRequestedFrames": true,
+  "reuse": {
+    "last": "c6bdf1abb91dfd5a549140727b744a601c37ae7c31e472eaba49603aaf2306c6",
+    "file": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/12208.jpg",
+    "verifiedRows": [],
+    "disabledRows": [],
+    "drawn": 187,
+    "reused": 0,
+    "proofs": []
+  }
+}

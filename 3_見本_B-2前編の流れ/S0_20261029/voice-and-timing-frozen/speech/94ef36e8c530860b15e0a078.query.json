@@ -1,0 +1,160 @@
+{
+  "subtitle": "答えは、この回の後編で。",
+  "reading": "こたえわ、この かいの こおへんで。",
+  "normalizedReading": "こたえわ、このかいのこおへんで。",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "コタエ'ワ、コノ'、カ'イノ、コ'オヘンデ",
+  "kana": "コタエ'ワ、コノ'、カ'イノ、コ'オヘンデ",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "コ",
+          "consonant": "k",
+          "consonant_length": 0.07103192061185837,
+          "vowel": "o",
+          "vowel_length": 0.08425990492105484,
+          "pitch": 5.455573558807373
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.07069472223520279,
+          "vowel": "a",
+          "vowel_length": 0.09113041311502457,
+          "pitch": 5.624499797821045
+        },
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.047865353524684906,
+          "pitch": 5.565059185028076
+        },
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.11540704220533371,
+          "vowel": "a",
+          "vowel_length": 0.10058853775262833,
+          "pitch": 5.2734375
+        }
+      ],
+      "accent": 2,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.2764842212200165,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "コ",
+          "consonant": "k",
+          "consonant_length": 0.05868835002183914,
+          "vowel": "o",
+          "vowel_length": 0.046757496893405914,
+          "pitch": 5.351385593414307
+        },
+        {
+          "text": "ノ",
+          "consonant": "n",
+          "consonant_length": 0.05509328097105026,
+          "vowel": "o",
+          "vowel_length": 0.0817834660410881,
+          "pitch": 5.46005916595459
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.07884443551301956,
+          "vowel": "a",
+          "vowel_length": 0.07538307458162308,
+          "pitch": 5.696754455566406
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.04254768043756485,
+          "pitch": 5.649367809295654
+        },
+        {
+          "text": "ノ",
+          "consonant": "n",
+          "consonant_length": 0.06038885563611984,
+          "vowel": "o",
+          "vowel_length": 0.0795324370265007,
+          "pitch": 5.441147327423096
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "コ",
+          "consonant": "k",
+          "consonant_length": 0.08823399990797043,
+          "vowel": "o",
+          "vowel_length": 0.04989909380674362,
+          "pitch": 5.280940055847168
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.05827798694372177,
+          "pitch": 5.278177261352539
+        },
+        {
+          "text": "ヘ",
+          "consonant": "h",
+          "consonant_length": 0.08897138386964798,
+          "vowel": "e",
+          "vowel_length": 0.061545588076114655,
+          "pitch": 5.312943458557129
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.09362364560365677,
+          "pitch": 5.2747297286987305
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.04748115688562393,
+          "vowel": "e",
+          "vowel_length": 0.13124409317970276,
+          "pitch": 5.281839370727539
+        }
+      ],
+      "accent": 5,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

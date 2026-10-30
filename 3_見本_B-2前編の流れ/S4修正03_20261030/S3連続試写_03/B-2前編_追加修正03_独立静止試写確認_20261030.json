@@ -1,0 +1,56 @@
+{
+  "reviewer": "b2a_independent_audit",
+  "episode": "B-2 前編",
+  "date": "2026-10-30",
+  "instructionReadFully": "B-2前編_S4最終報告へのClaudeの判断と直しの指示_20261030.md",
+  "candidate": "S4修正03 / S3連続試写_03",
+  "scope": {
+    "rawActuallyViewed": ["13_rub", "13_charge", "13_spark", "19_machine", "19_spark", "19_contact", "19_kick_peak", "21_glyph", "21_pulse", "22_path", "27_before", "27_ring", "27_macro", "36_glyph", "36_cancel"],
+    "rawCount": 15,
+    "composedActuallyViewed": "字幕札つき確認/page-01.jpg～page-03.jpg の全17パネル（上記15状態＋09_name、23_face）",
+    "composedPanels": 17,
+    "realTimeMotionPlayed": false,
+    "continuousFramesViewed": false,
+    "earsPerformed": false,
+    "limitation": "このフォルダ名に『連続試写』とあるが、今回実見したのは代表静止コマと札付き一覧。全周期の点滅、火花の0.2秒、粒の1周、脚の動作回数を静止画だけから合格にしない。"
+  },
+  "results": [
+    {
+      "row": 13,
+      "evidence": [118.0, 122.3, 122.766667],
+      "observed": "袖と手がつながり、布がガラスに接している。＋印がたまった画、指先付近の白い火花と＋印がなくなった画を確認。棒と手は大きく、旧候補の小ささは解消されている。",
+      "mandatoryVisualMissing": false,
+      "remainingTemporalVerification": "こする動き、火花の表示時間、放電後の印の復活がないことを連続試写で確認。"
+    },
+    {
+      "row": 19,
+      "evidence": [185.3, 187.566667, 191.033333, 193.066667],
+      "observed": "左に静電機、右にZ型の足が入り、露出神経の端も収まる。機械の端の白い火花、神経に触れる銀のメス、柄を持つ手、大きく持ち上がった足先を確認。真鍮と鉄の実験棒は出ていない。",
+      "mandatoryVisualMissing": false,
+      "remainingTemporalVerification": "取っ手と円盤の回転、0.2秒火花、蹴りの時間変化と移動量の実測は、静止画だけで合格扱いしない。"
+    },
+    {
+      "rows": [21, 22, 36],
+      "evidence": [215.766667, 217.5, 230.333333, 408.066667, 408.466667],
+      "observed": "行21ではももに大きい黄色の稲妻があり、神経と棒の主要部を隠していない。行22では同じ稲妻を残して真鍮上の黄色い粒を確認。行36では同じ形の稲妻と赤い取り消し線、神経の粒が見える。札の仮説・取り消しも対応している。",
+      "mandatoryVisualMissing": false,
+      "remainingTemporalVerification": "行21のゆっくり1回の明暗、行22の神経→真鍮→鉄→肉への1周、行36の粒の運動は連続試写で確認。"
+    },
+    {
+      "row": 27,
+      "evidence": [287.633333, 287.833333, 292.833333],
+      "observed": "上半分に大きい白丸本体・赤ランプ・細い天井。左下の独立した煙源から灰色の煙が上がり、細い灰色の矢印も警報器へ向く。鳴る直前には弧がなく、鳴る状態では3本の弧と脚の小さな持ち上がりが見える。後半は下面が大きくなり『鳴る物≠煙を出す物』札がある。煙は下側の源につながり、警報器から発生したような反転した煙は見られない。下半分には現在と同じZ型の足、その上に比較の札、上下を分ける線がある。",
+      "mandatoryVisualMissing": false,
+      "minorObservation": "足の札の下縁が、ももの一番上に少し重なる。Z形の主要部と動作差は読めるため、必須の画の欠落や作業を止めるNGとは見なさない。",
+      "remainingTemporalVerification": "ランプの点滅周期、到着した煙と初回点灯の接続、足が1度だけ動くこと、下面の寄りが1度だけであることは連続試写で確認。"
+    },
+    {
+      "rows": [9, 23],
+      "observed": "人物名札は神経より上へ移り、ミオの顔は右上の余白へ移っている。旧P2の主な重なりが解消されている。",
+      "mandatoryVisualMissing": false
+    }
+  ],
+  "blockingFindingsInViewedStills": [],
+  "decision": "今回実見した代表静止15状態と札付き17パネルに、最新指示で必要な画の欠落は見つけなかった。ただし映像の連続した動作・時間・数値・音声はこの報告の合格対象外。主観的な新規要件を追加せず、指示の必須項目についてのみ判定した。",
+  "edits": "新規監査JSONのみ。既存素材・台本・声・字幕・検査・動画は変更なし。コミット・pushなし。"
+}

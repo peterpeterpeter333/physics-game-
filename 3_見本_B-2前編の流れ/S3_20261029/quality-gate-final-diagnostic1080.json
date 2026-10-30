@@ -1,0 +1,312 @@
+{
+ "id": "ys-chain-b2a_gpt_20261029",
+ "mp4": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/draft/diagnostic-only-revealfix1080-not-S4.mp4",
+ "cache": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029",
+ "ref": "/Users/ken/Downloads/physics-quest-youtube/技術の疑問の鎖/完成形/1-1_女王を処刑台に送った手紙.mp4",
+ "date": "2026-10-29T14:34:57.764Z",
+ "pass": false,
+ "thresholds": {
+  "safe": {
+   "x0": 40,
+   "x1": 1040,
+   "y0": 110,
+   "y1": 1600
+  },
+  "tol": 6,
+  "tolRect": 16,
+  "persist": 2,
+  "cardTol": 2,
+  "cardMax": 15,
+  "cardCount": 5,
+  "svgSamples": [
+   0.03,
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   0.97
+  ],
+  "edgeText": 200,
+  "minFont": 36,
+  "sepOnly": {},
+  "cameraMax": 0.2,
+  "camMoveFrac": 0.5,
+  "step": 0.5,
+  "overheadWoodTop": 0.9,
+  "overheadMax": 0.3,
+  "wallBand": 0.03,
+  "wallMin": 0.35,
+  "capBand": [
+   0.55,
+   0.75
+  ],
+  "staticBlockDiff": 3,
+  "staticBlocks": 2,
+  "staticMax": 8,
+  "sparseWood": 0.85,
+  "sparseBusy": 0.02,
+  "sparseMax": 4,
+  "subjectMedian": 0.6,
+  "subjectSmall": 0.35,
+  "subjectSmallMax": 0.2,
+  "primaryCover": 0.9,
+  "primaryMedian": 0.5,
+  "primarySmall": 0.35,
+  "primarySmallMax": 0.15,
+  "primaryClip": 0.15,
+  "primaryClipMax": 0.05,
+  "primaryWin": 1.5,
+  "capMedian": [
+   1,
+   1.5
+  ],
+  "capMin": 0.4,
+  "capWarn": 0.5,
+  "lufs": -14,
+  "lufsTol": 0.5,
+  "silenceDb": -35,
+  "silenceSec": 0.25,
+  "endsSec": 2,
+  "endsMin": 0.5
+ },
+ "metrics": {
+  "step": 0.5,
+  "world_source": "desk",
+  "samples": 990,
+  "wall_ratio": 0.9303,
+  "overhead_ratio": 0,
+  "sparse_runs": [],
+  "sparse_longest": 0,
+  "sparse_ratio": 0,
+  "subject_median": 0.237,
+  "subject_small_ratio": 0.6778,
+  "subject_small_runs": [
+   [
+    74.5,
+    73.5
+   ],
+   [
+    245.5,
+    60.5
+   ],
+   [
+    195,
+    50
+   ],
+   [
+    422,
+    31
+   ],
+   [
+    0,
+    30.5
+   ],
+   [
+    160.5,
+    22.5
+   ]
+  ],
+  "camera_est_ratio": 0.0485,
+  "static_runs": [
+   [
+    396,
+    16.5
+   ],
+   [
+    376.5,
+    12.5
+   ],
+   [
+    19.5,
+    10.5
+   ],
+   [
+    126.5,
+    10.5
+   ],
+   [
+    473.5,
+    10
+   ]
+  ],
+  "static_longest": 16.5,
+  "ends_corr": 0.3887,
+  "ends_color_corr": 0.8206,
+  "edge_ratio": 0,
+  "edge_times": [],
+  "mp4_samples": 990
+ },
+ "results": [
+  {
+   "no": 1,
+   "name": "はみ出し（SVG：画面の枠）",
+   "status": "OK",
+   "value": "0 件／422 コマ（一瞬だけ 0）",
+   "rule": "x 40〜1040・y 110〜1600（文字 ±6px・札の地 ±16px）",
+   "detail": []
+  },
+  {
+   "no": "1b",
+   "name": "画面の端の文字（mp4・参考）",
+   "status": "—",
+   "value": "0.0％ のコマ",
+   "rule": "端 0〜40px の明るい字の縁 200 以上（合否に使わない）",
+   "detail": []
+  },
+  {
+   "no": "1c",
+   "name": "はみ出し（SVG：字が札の外へ）",
+   "status": "OK",
+   "value": "0 個・最大 0px",
+   "rule": "2px を越える物が 5 個未満、かつ最大 15px 以下（見本で校正）",
+   "detail": []
+  },
+  {
+   "no": 2,
+   "name": "36px 未満の文字",
+   "status": "OK",
+   "value": "0 件",
+   "rule": "36px 以上",
+   "detail": []
+  },
+  {
+   "no": 3,
+   "name": "カメラが動く割合",
+   "status": "OK",
+   "value": "0.0％",
+   "rule": "20％ 以下",
+   "detail": [
+    "camera-motion.json（undefined/14846 コマ） 方法：All explanatory shot cameras are static. Hard cuts are separately counted."
+   ]
+  },
+  {
+   "no": 4,
+   "name": "真上の画の割合",
+   "status": "OK",
+   "value": "0.0％",
+   "rule": "30％ 以下",
+   "detail": [
+    "3D のコマで推定（カメラの姿勢はキャッシュに無い）：画面の上 25％ が木目、かつ壁の帯なし"
+   ]
+  },
+  {
+   "no": 5,
+   "name": "同じ構図の長さ（何も動かない）",
+   "status": "NG",
+   "value": "最長 16.5 秒",
+   "rule": "8 秒未満",
+   "detail": [
+    "6:36.0から 16.5 秒",
+    "6:16.5から 12.5 秒",
+    "0:19.5から 10.5 秒",
+    "2:06.5から 10.5 秒",
+    "7:53.5から 10 秒"
+   ]
+  },
+  {
+   "no": 6,
+   "name": "壁か窓が映る割合",
+   "status": "OK",
+   "value": "93.0％",
+   "rule": "35％ 以上（見本で校正）",
+   "detail": [
+    "3D のコマで推定：画面の上に、壁の色でぼけた帯か窓の光が、横いっぱいに続く"
+   ]
+  },
+  {
+   "no": 7,
+   "name": "物が少ない画面の長さ",
+   "status": "OK",
+   "value": "最長 0 秒",
+   "rule": "4 秒未満（見本で校正）",
+   "detail": []
+  },
+  {
+   "no": "7b",
+   "name": "物の大きさ（主役の横幅）",
+   "status": "NG",
+   "value": "中央値 24％・小さい画 67.8％",
+   "rule": "中央値 60％ 以上、35％ 未満の画が 20％ 以下",
+   "detail": [
+    "3D のコマで推定：ピントの合った模様が縦に続く列の横幅",
+    "小さい画 1:14.5から 73.5 秒",
+    "小さい画 4:05.5から 60.5 秒",
+    "小さい画 3:15.0から 50 秒",
+    "小さい画 7:02.0から 31 秒",
+    "小さい画 0:00.0から 30.5 秒",
+    "小さい画 2:40.5から 22.5 秒"
+   ]
+  },
+  {
+   "no": "7c",
+   "name": "主役の大きさ（主役の外枠で測る）",
+   "status": "OK",
+   "value": "中央値 63％・小さい画 1.7％・切れる画 0.5％・外枠あり 100％",
+   "rule": "外枠あり 90％以上、中央値 50％以上、35％未満が 15％以下、切れる画 5％以下",
+   "detail": [
+    "小さい画 5:03.5から 2.5 秒",
+    "小さい画 6:13.0から 2.0 秒",
+    "小さい画 6:09.5から 1.5 秒",
+    "小さい画 1:35.0から 1.0 秒",
+    "小さい画 1:41.0から 1.0 秒",
+    "画の外で切れる 5:03.5から 2.5 秒"
+   ]
+  },
+  {
+   "no": "7d",
+   "name": "名前を言った物が映るか（撮影の表）",
+   "status": "NG",
+   "value": "26 行中 1 行が足りない（声の時刻で測れた行 26）",
+   "rule": "各行：合わせる語から 1.5 秒の間に、主役が表の横幅以上で映る",
+   "detail": [
+    "5:34.8 cue「r31:a」「ナンジュックミモカサネマシタ」：主役「b2a_pile」の横幅 41％（50％ 以上が要る）"
+   ]
+  },
+  {
+   "no": 8,
+   "name": "字幕の区切りの表示時間",
+   "status": "OK",
+   "value": "中央値 1.45 秒・0.4 秒未満 0 個（0.5 秒未満 0／317 個）",
+   "rule": "中央値 1〜1.5 秒、0.4 秒未満なし（見本で校正）",
+   "detail": []
+  },
+  {
+   "no": 9,
+   "name": "音量・無音",
+   "status": "OK",
+   "value": "-14.2 LUFS・無音 0 回",
+   "rule": "-14±0.5 LUFS、-35dB 以下 0.25 秒以上の無音 0 回",
+   "detail": []
+  },
+  {
+   "no": 10,
+   "name": "冒頭と最後の画",
+   "status": "NG",
+   "value": "相関 0.3887",
+   "rule": "0.5 以上",
+   "detail": [
+    "最初と最後の 2 秒の「模様の位置」の相関の最大（参考：色の相関 0.8206）"
+   ]
+  },
+  {
+   "no": 11,
+   "name": "既存の確認",
+   "status": "OK",
+   "value": "2 本を確認",
+   "rule": "lint・読み・アクセント・qx-verify が通る",
+   "detail": [
+    "chain-desk-lint：○ 問題なし",
+    "check-readings・prosody・prosody-speaker：— 省略（--no-voice-checks）",
+    "qx-verify（report.txt）：○ × 0・△ 0"
+   ]
+  },
+  {
+   "no": 12,
+   "name": "見本との見比べ画像",
+   "status": "—",
+   "value": "省略",
+   "rule": "（合否に使わない）",
+   "detail": []
+  }
+ ]
+}

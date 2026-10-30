@@ -1,0 +1,79 @@
+{
+  "kind": "B-2前編・S4候補v02・独立した前半の実MP4映像確認",
+  "candidateOnly": true,
+  "finalAllCriteriaPassClaimed": false,
+  "video": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/out/ys-chain-b2a_gpt_20261029_s4_final.mp4",
+  "videoSha256": "7a0427e579eac80d6522305336cadd4794f9aea0ff7efa8aea198e2be0194045",
+  "instructionsPersonallyReadInFull": [
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/B-2前編_S3_Claudeの直しの指示_20261029.md",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4_20261030/B-2前編_S4前_Claudeの直しの指示_20261030.md"
+  ],
+  "reviewScope": {
+    "decodedFromCompletedMp4": true,
+    "sheetDirectory": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/verify",
+    "sheetNames": ["sheet-01.jpg", "sheet-02.jpg", "sheet-03.jpg", "sheet-04.jpg", "sheet-05.jpg", "sheet-06.jpg", "sheet-07.jpg", "sheet-08.jpg", "sheet-09.jpg", "sheet-10.jpg", "sheet-11.jpg", "sheet-12.jpg", "sheet-13.jpg", "sheet-14.jpg", "sheet-15.jpg", "sheet-16.jpg", "sheet-17.jpg", "sheet-18.jpg", "sheet-19.jpg", "sheet-20.jpg", "sheet-21.jpg", "sheet-22.jpg", "sheet-23.jpg", "sheet-24.jpg", "sheet-25.jpg"],
+    "personallyViewedSheets": 25,
+    "personallyViewedSheetPanels": 250,
+    "allPanelsOnListedSheetsPersonallyViewed": true,
+    "sheetTimeLabels": "0:00〜4:09",
+    "sampling": "既存qx-verifyのfps=1抽出。表示秒はおおよその秒区間を表し、正確な全30fps時刻の検査とは区別する。",
+    "extraFullResolutionFrameViews": [
+      {"seconds": 76.5, "image": "前半_原寸疑義確認_v02_20261030/t076p5.png", "resolution": [1080,1920]},
+      {"seconds": 190.5, "image": "前半_原寸疑義確認_v02_20261030/t190p5.png", "resolution": [1080,1920]},
+      {"seconds": 235.5, "image": "前半_原寸疑義確認_v02_20261030/t235p5.png", "resolution": [1080,1920]}
+    ],
+    "extraViewsMayDuplicateSheetSamples": true,
+    "allThirtyFpsFramesPersonallyViewed": false,
+    "realtimePlaybackPerformed": false,
+    "earsPerformed": false,
+    "entireMoviePersonallyViewed": false
+  },
+  "mechanicalReportRead": {
+    "path": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/verify/report.txt",
+    "reportedDurationSeconds": 494.87,
+    "reportedDecodeErrors": 0,
+    "reportedCaptionCues": 70,
+    "reportedOneHzFrames": 495,
+    "reportedLastVoiceEndSeconds": 492.06,
+    "independentRerunPerformed": false,
+    "mechanicalAudioChecksAreNotAnEarReview": true
+  },
+  "observations": [
+    {"timeLabelRange": "0:00〜0:19", "result": "概ね良好", "detail": "足の丸みに沿う布と3本の緑の趾、テレラの全景、上にある赤い印、方位磁針を置く手が見える。黒い球の全体が切れていた旧状態はこの抽出には見られない。"},
+    {"timeLabelRange": "0:19〜0:30", "result": "概ね良好", "detail": "赤上/青下から半回転し、青Sが北、赤Nが南になる前後の姿を確認。1Hz一覧のため回転全フレームの滑らかさの確認とはしない。"},
+    {"timeLabelRange": "0:30〜0:40", "result": "概ね良好", "detail": "磁力線が南側のNから出て北側のSに入る説明、線上の動く点、北/南の札が同じ図の中で対応する。"},
+    {"timeLabelRange": "0:41〜1:01", "result": "既知の修正待ち", "detail": "緑上面と茶色断面の地表板は見えるが左右端が画面外。横幅7割という指定に届かない既知NG。担当rootが別キャッシュで行6/7を再制作中であり、この候補を最終合格とはしない。"},
+    {"timeLabelRange": "1:02〜1:13", "result": "概ね良好", "detail": "左のロンドンは赤い北向き針先が下、右のオーストラリアは上。左右札が対象の下に固定され、混同しにくい。"},
+    {"timeLabelRange": "1:14〜1:21", "result": "P2所見あり", "detail": "太いZ形の足と白い神経、金色/灰色の棒、人物の導入は見える。人名札は白い神経の一部に重なる。神経を説明する次の区間では人名札が消えるので新しい阻止級とは判定しない。"},
+    {"timeLabelRange": "1:22〜1:47", "result": "概ね良好", "detail": "白い神経、真鍮、鉄の引出線札が表示される。棒を持つ手は右下の持手へ入り、脚と神経を横断していない。接触前後で棒のV先端間隔が変わり、96秒台の足の上昇姿勢が見える。1Hzだけで150msの上昇や接触瞬間を全確認したとはしない。"},
+    {"timeLabelRange": "1:48〜2:06", "result": "概ね良好", "detail": "足と乾電池の比較、ガラス棒と布・手、帯電を示す＋、＋が消えた後の棒が見える。0.2秒の火花自体は1Hzでは取り落とすため、この一覧だけで火花の長さや全描画を合格とはしない。"},
+    {"timeLabelRange": "2:07〜3:02", "result": "概ね良好", "detail": "水のたとえと明記され、水位と管の粒が変化する。電圧/電流の札、太い水槽と木色の台、少量の水が尽きる場面、汲み上げるポンプを順に確認。札や字幕の切れは発見しなかった。"},
+    {"timeLabelRange": "3:03〜3:14", "result": "P2所見あり", "detail": "真鍮/鉄を除いた足、白い神経上にある小さな灰色のメス先、手、人物が見える。静電気発生機本体は左端に大きく切れる。足優先の構図と『行19の機械とメスは維持』の指示があるため勝手に変更しないが、装置全体の理解は弱い。"},
+    {"timeLabelRange": "3:15〜3:38", "result": "概ね良好", "detail": "大きな足の蹴り姿勢と復帰、金属だけでも動くという観察から動物電気という当時の仮説へ進む。札が『仮説』と明記し、確定事実と分けている。"},
+    {"timeLabelRange": "3:39〜3:59", "result": "P2所見あり", "detail": "シビレエイと接触、カエルへの推論を確認。まねをしない札あり。ミオの顔丸が足先/外側の鉄持手を部分的に隠すが、接触や蹴りの仕組みを指す時点ではないので新しい阻止級とはしない。"},
+    {"timeLabelRange": "4:00〜4:09", "result": "概ね良好", "detail": "本の表紙とページが開き、緑のZ形の足の絵が白いページに残る。ヴォルタの人形が本に寄る。本の札が人物頭部の上に近いが、字幕・絵の読解を妨げる衝突は発見しなかった。"}
+  ],
+  "knownBlockingIssue": {
+    "rows": [6,7],
+    "priority": "P1",
+    "issue": "地表板の左右端切れ・横幅70%指定未達",
+    "ownerAlreadyFixing": "root",
+    "requiresReplacementMovieAndReplacementIntervalReview": true
+  },
+  "additionalBlockingIssuesFound": [],
+  "nonBlockingResiduals": [
+    {"priority":"P2","row":9,"seconds":76.5,"issue":"人名札が白い神経の一部と重なる。人物導入の区間のみで、神経の説明時は消える。","suggestion":"今後必要なら人名札だけを人物の左下へ移す。正本の文章や音声を変更する理由にはしない。"},
+    {"priority":"P2","row":19,"seconds":190.5,"issue":"静電気発生機の本体が左端に大きく切れ、メス先端も小さい。","suggestion":"今後の改訂では装置を最初の一瞬だけ全景で見せてから足に寄る案。ただし今回の維持指定があるため、監査側では変更しない。"},
+    {"priority":"P2","row":23,"seconds":235.5,"issue":"ミオの小さい顔丸が足先と外側の鉄持手に部分的に重なる。","suggestion":"今後必要なら話者の顔だけを字幕の余白側へ移す。接触点・神経は隠れていない。"}
+  ],
+  "decision": "前半250パネルで行6/7の既知NGを再現。それ以外に新たなP0/P1は発見しなかった。行6/7差し替え版の実映像、後半、全編の原自動検査は別途確認が必要。最終合格とはまだ扱わない。",
+  "changesByThisAudit": {
+    "newReportOnly": true,
+    "newEvidenceImages": 3,
+    "sourceEdited": false,
+    "audioEdited": false,
+    "subtitlesEdited": false,
+    "qualityGateEditedOrRerun": false,
+    "commitOrPushPerformed": false
+  }
+}

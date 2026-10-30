@@ -1,0 +1,316 @@
+{
+  "episode": "B-2 前編",
+  "date": "2026-10-30",
+  "purpose": "最終報告のための下準備。最終報告そのものではなく、未完了の動作確認や本番確認を完了に置き換えない。",
+  "author": "b2a_independent_audit",
+  "allRequirementsFinished": false,
+  "earsPerformed": false,
+  "statusDefinitions": {
+    "measured-still-pass": "保存済み試写の静止実画または記録された実測値で、当該範囲だけを確認。完成MP4での合格ではない。",
+    "measured-scene-pass": "実際に評価したシーンの動作窓・マスク等の数値で確認。符号・実コマ・実測値に限り、MP4の目視を代替しない。",
+    "pending-motion": "代表静止画では存在を見たが、回数・順序・表示時間等の連続確認がまだ必要。",
+    "pending-final": "本番の部分描き直し・完成MP4・原本の自動検査等で再確認が必要。",
+    "authorized-exception": "Claudeが明示的に認めた例外。元のNGと判定条件を保存し、PASSへ書き換えない。",
+    "not-applicable": "該当物が意図的に非表示などの非該当。PASS件数へ入れない。"
+  },
+  "evidence": {
+    "instruction": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/B-2前編_S4最終報告へのClaudeの判断と直しの指示_20261030.md",
+    "probe03": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/probe-result.json",
+    "raw03": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/",
+    "composed03": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/",
+    "compositionAudit03": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/composition-audit.json",
+    "independentStillReview03": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/B-2前編_追加修正03_独立静止試写確認_20261030.json",
+    "row19Measurement03": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/配置再点検_03/row19投影面積検査/row19-independent.json",
+    "frozenPreparationReceipt": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S4r03-frozen-input-and-audio-reuse_20261030.json",
+    "motionInputManifest": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/連続試写_manifest.json",
+    "coordinatorSource": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/patch_b2a_s4r03_coordinator_gpt_20261030.py",
+    "alarmSource": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/blender/desk_b2a_row27_alarm_gpt_20261030.py"
+  },
+  "plannedFinalEvidence": {
+    "expectedNativeCache": "/private/tmp/ys/ys-chain-b2a_s4r03_gpt_20261030",
+    "expectedNativeMovie": "/private/tmp/ys/ys-chain-b2a_s4r03_gpt_20261030/out/ys-chain-b2a_gpt_20261029_s4_final.mp4",
+    "actualTrialCacheFromPreparationReceipt": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030",
+    "motionExportPath": null,
+    "gateReportPath": null,
+    "note": "expectedは予定であり、作成済み・確認済みの意味ではない。連続試写のexport、完成MP4の実コマ、原本QAのパスはrootが確定後に最終報告へ記録する。"
+  },
+  "items": [
+    {
+      "id": "27-body40",
+      "requirement": "警報器は白い丸い本体と赤いランプ、幅40％以上、上半分。天井は上端に細く。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["probe03: records 27_before/27_ring/27_macro.alarm.alarm_round_body", "raw03: 27_before.jpg/27_ring.jpg/27_macro.jpg"],
+      "actual": {"widthBeforeAndRing": 0.4700000286102295, "widthMacro": 0.5311000049114227, "allInFrameAtThreeSamples": true},
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "27-lamp-3arcs",
+      "requirement": "煙が触れた語から赤ランプが点滅し、音の波の弧3本が広がる。",
+      "provenStatus": "pending-motion",
+      "evidence": ["probe03: 27_before.state / 27_ring.state", "composed03: 27_before.jpg/27_ring.jpg", "motionInputManifest: correction-4 criticalFrames"],
+      "actual": {"beforeLamp": false, "beforeArcs": 0, "ringLamp": true, "ringArcs": 3, "eventClock": 287.74766666666676},
+      "pending": "初回接触から点灯へつながること、点滅・弧の時間変化を連続コマで確認する。"
+    },
+    {
+      "id": "27-smoke-source-only",
+      "requirement": "煙は下の独立した源から上がるだけ。警報器は煙を出さない。灰色の細い矢印は下から警報器へ。",
+      "provenStatus": "pending-motion",
+      "evidence": ["raw03: 27_before.jpg/27_ring.jpg/27_macro.jpg", "probe03: three row27 state records", "motionInputManifest: correction-4"],
+      "actual": {"alarmEmitsSmokeAtThreeSamples": false, "emissionObject": "b2a_r27_alarm_c03_20261030_smoking_wick"},
+      "pending": "実動画でも上から煙が生じたり流れが逆転したりしないことを確認。"
+    },
+    {
+      "id": "27-one-underside-closeup",
+      "requirement": "警報器下面を一度だけ寄って見せる。",
+      "provenStatus": "pending-motion",
+      "evidence": ["probe03: row27Clocks and 27_macro.state", "raw03: 27_macro.jpg", "motionInputManifest: correction-4"],
+      "actual": {"start": 292.09733333333344, "end": 292.7473333333334, "macroProgressAtSample": 1.0},
+      "pending": "寄りの回数・戻りやジャンプがないことを連続試写で確認。"
+    },
+    {
+      "id": "27-foot40",
+      "requirement": "下半分に今のZ脚の絵を幅40％で置く。別物の緑ブロブを使わない。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["probe03: row27 alarm.frog_picture_body", "raw03: three row27 images"],
+      "actual": {"widthRest": 0.4400000274181366, "widthDuringKick": 0.45110324025154114, "allInFrameAtThreeSamples": true},
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "27-one-small-kick",
+      "requirement": "警報器の初回点灯で足絵を小さく1回動かす。",
+      "provenStatus": "pending-motion",
+      "evidence": ["probe03: 27_before.state/27_ring.state/27_macro.state", "motionInputManifest: correction-4"],
+      "actual": {"amountBefore": 0, "amountDuringRing": 0.8748455352410769, "amountMacroLater": 0, "eventClock": 287.74766666666676},
+      "pending": "全区間で1回だけか、点滅のたびに反復しないかを連続確認。"
+    },
+    {
+      "id": "27-labels-and-separator",
+      "requirement": "警報器下に『鳴る物≠煙を出す物』、脚絵上に『動く物≠電気を出す物？』、上下の薄い横線。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["composed03: page-02.jpg/page-03.jpg", "independentStillReview03"],
+      "note": "脚札がももの最上縁に少し重なる軽微な点は記録済み。主要Z形は読め、必須の絵の欠落とは判定していない。",
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "19-machine30-inside",
+      "requirement": "機械は幅30％以上で全体が入り、左の機械と右の足が同時に見える。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["probe03: four row19.layout.machine records", "row19Measurement03: frames[].machine", "raw03: 19_machine.jpg/19_contact.jpg"],
+      "actual": {"minimumMachineWidth": 0.3347300961214705, "allInFrameAtFiveMaskSamples": true},
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "19-leg20-area",
+      "requirement": "脚高さ20％以上、実占有面積は手なし7.5％・手あり7％以上。bboxの積を面積に使わない。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["row19Measurement03: five actual evaluated-triangle depth masks"],
+      "actual": {"minimumHeight": 0.24791666666666667, "minimumVisiblePixelAreaFraction": 0.09325810185185185, "sampledActualTimes": 5},
+      "note": "実ピクセル面積でありbbox面積ではない。全本番フレームを測定したという意味ではない。",
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "19-nerve025",
+      "requirement": "表示される神経の実投影太さ2.5％以上。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["row19Measurement03: frames[].groups.nerve.thickness"],
+      "actual": {"minimumVisibleWidthFraction": 0.05740740740740741},
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "19-metal-bars-absent",
+      "requirement": "行19では真鍮・鉄の実験棒を出さない。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["row19Measurement03: frames[].forbiddenMetalObjectsVisible", "raw03: all four row19 stills"],
+      "actual": {"forbiddenMetalObjectsAtFiveSamples": 0},
+      "thicknessOfAbsentRodsStatus": "not-applicable",
+      "note": "非表示棒の2.5％条件をPASSとして加算しない。銀色のメスは別の指定された道具。"
+    },
+    {
+      "id": "19-nerve80-handles",
+      "requirement": "手はメスの柄だけを持ち、神経の8割は見える。手で脚・神経を隠さない。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["row19Measurement03: groups.leg_body/nerve.essentialVisibility", "raw03: 19_contact.jpg/19_kick_peak.jpg"],
+      "actual": {"minimumHandPreservedNerveLength": 1.0, "minimumHandPreservedBodyLength": 1.0},
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "19-crank-disc",
+      "requirement": "『静電気を作る機械』の語で、取っ手とガラスの円盤が回る。",
+      "provenStatus": "measured-scene-pass",
+      "evidence": ["row19Measurement03: rotorAndCrankMove", "motionInputManifest: correction-2"],
+      "actual": {"rotorAndCrankMove": true},
+      "pending": "シーン回転値の変化は記録済み。実試写コマで回転が読めることは別確認。"
+    },
+    {
+      "id": "19-white-spark6",
+      "requirement": "機械の端から白い火花を0.2秒＝30fpsの6コマだけ表示。",
+      "provenStatus": "measured-scene-pass",
+      "evidence": ["row19Measurement03: spark", "raw03: 19_spark.jpg", "motionInputManifest: correction-2"],
+      "actual": {"visibleFrames": [5626, 5627, 5628, 5629, 5630, 5631], "count": 6, "contiguous": true, "whiteEmissiveMaterial": true},
+      "pending": "シーンの実コマ別表示フラグと代表火花画は確認。エンコード済み試写の前後を最終的に照合。"
+    },
+    {
+      "id": "19-scalpel-contact",
+      "requirement": "銀色のメスの先が神経に触れ、手は柄だけを持つ。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["row19Measurement03: frames[].toolContact", "raw03: 19_contact.jpg/19_kick_peak.jpg"],
+      "actual": {"surfaceDistanceErrorMeters": 1.844646043379361e-8, "actualToolAnchorTracksTip": true},
+      "pending": "『神経と同じくらいのメスの太さ』は実画で確認したが、メスの独立した太さの比率の数値は本記録からは未確定。"
+    },
+    {
+      "id": "19-strong-kick10",
+      "requirement": "強い蹴りで、足先が画面高の10％以上動く。カメラ移動を足の移動としない。",
+      "provenStatus": "measured-scene-pass",
+      "evidence": ["row19Measurement03: kick", "raw03: 19_machine.jpg/19_kick_peak.jpg"],
+      "actual": {"distanceOverHeight": 0.11827605477301575, "verticalChangeOverHeight": 0.11394946575944101, "kneeChangeDegrees": 29.91469518718718, "cameraStable": true},
+      "pending": "シーンの安静→ピーク→安静の実コマを測定済み。エンコード済み連続試写を目視。"
+    },
+    {
+      "id": "19-event-order-and-labels",
+      "requirement": "回る→白火花→神経へのメス→蹴りを語に合わせ、『静電気を作る機械』『火花→足がける』を表示。",
+      "provenStatus": "pending-motion",
+      "evidence": ["probe03: row19Clocks", "composed03: page-01.jpg/page-02.jpg", "motionInputManifest: correction-2"],
+      "actualClocks": {"turn": 184.81133333333338, "spark": 187.5213333333334, "contact": 190.9403333333334, "kick": 192.9213333333334},
+      "note": "札と各状態は静止実画で確認済み。順序・時刻の連続目視は未完了。"
+    },
+    {
+      "id": "21-glyph10",
+      "requirement": "『体の中にある』で、ももに黄色い稲妻1つ。幅10％以上、神経と棒を隠さない。",
+      "provenStatus": "pending-final",
+      "evidence": ["raw03: 21_glyph.jpg/21_pulse.jpg", "composed03: page-02.jpg", "coordinatorSource: _billboard(...,1080*.125)"],
+      "proven": "もも上の稲妻の存在と神経・棒の主要部を隠さないことは実見済み。",
+      "notYetProvenBySavedMeasurement": "probe03には稲妻単独の実投影幅がない。ソース設定12.5％を実測済みと読み替えない。"
+    },
+    {
+      "id": "21-one-pulse-and-stay",
+      "requirement": "『動物電気です』で稲妻がゆっくり1回明るくなり、行末まで薄く残る。",
+      "provenStatus": "pending-motion",
+      "evidence": ["probe03: events.r21Reveal/r21Pulse", "raw03: 21_glyph.jpg/21_pulse.jpg", "motionInputManifest: correction-3"],
+      "actualClocks": {"reveal": 215.26000000000008, "pulse": 216.9430000000001}
+    },
+    {
+      "id": "36-same-glyph-strike",
+      "requirement": "行36で同じ稲妻に赤線を引き、札の取り消しと同時にする。既存の札・線は保持。",
+      "provenStatus": "pending-motion",
+      "evidence": ["raw03: 36_glyph.jpg/36_cancel.jpg", "composed03: page-03.jpg", "motionInputManifest: correction-5"],
+      "actualClock": 408.264,
+      "proven": "同じ稲妻の形と赤線、取り消し札の存在は前後静止コマで確認。"
+    },
+    {
+      "id": "13-camera-same-as39",
+      "requirement": "行39の大きいガラス棒・手と同じカメラと大きさ。",
+      "provenStatus": "pending-final",
+      "evidence": ["coordinatorSource: CAMERAS['13'] takes camera39", "raw03: three row13 stills"],
+      "proven": "新しいシーンのコードにカメラ39の共用があり、行13が大きくなった実画は確認。",
+      "pending": "実際の行39との比較画像または本番カメラメタデータで一致を確認。"
+    },
+    {
+      "id": "13-width50-connected-arm",
+      "requirement": "棒と手で幅50％以上、手と袖はつながった腕。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["probe03: row13.primary", "raw03: 13_rub.jpg/13_charge.jpg/13_spark.jpg"],
+      "actual": {"primaryWidths": [0.8136111111111112, 0.6900000000000001, 0.7487962962962963], "allInCameraAtThreeSamples": true},
+      "note": "記録のprimary対象群の幅。腕の全長を画面に収めるという要件ではなく、手と袖の分離がないことを実画で確認。",
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "13-rub-charge-finger-spark-empty",
+      "requirement": "布でこする→＋がたまる→指を近づけ火花0.2秒→＋が全部消える。",
+      "provenStatus": "pending-motion",
+      "evidence": ["raw03: three row13 stills", "probe03: events.r13Rub/r13Spark/r13SparkEnd", "motionInputManifest: correction-1"],
+      "actualClocks": {"rub": 120.476, "sparkStart": 122.711, "sparkEnd": 122.911},
+      "proven": "布・＋・指先火花・＋なしの状態は実画で確認。時刻差は0.2秒。",
+      "pending": "実フレーム6コマの火花、＋全消去と以後の非復活、順序を連続試写で確認。"
+    },
+    {
+      "id": "22-camera21",
+      "requirement": "行21と同じ、大きな足のカメラへ戻す。",
+      "provenStatus": "pending-final",
+      "evidence": ["coordinatorSource: CAMERAS['22:frog'] takes camera21", "raw03: 21_glyph.jpg/22_path.jpg"],
+      "proven": "静止実画の大きさと配置は対応する。実カメラメタデータの全区間一致は未照合。"
+    },
+    {
+      "id": "22-one-circuit-from-glyph",
+      "requirement": "同じ稲妻から神経→真鍮→鉄→足の肉へ、黄色い粒が1周する。札は保持。",
+      "provenStatus": "pending-motion",
+      "evidence": ["raw03: 22_path.jpg", "composed03: page-02.jpg", "probe03: events.r22Circuit/r22CircuitEnd", "motionInputManifest: correction-3"],
+      "actualClocks": {"start": 229.12800000000007, "end": 231.57000000000008},
+      "proven": "稲妻・真鍮上の粒・保持された通り道の札は実見済み。経路全体と1周だけであることは未確認。"
+    },
+    {
+      "id": "09-name-above-head",
+      "requirement": "75～81秒の人物名札を人形の頭の上へ移し、神経を隠さない。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["composed03: 09_name.jpg/page-03.jpg"],
+      "proven": "実見した77.0秒の名札は神経の上の余白にあり、神経に重なっていない。",
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "23-face-top-right",
+      "requirement": "234～238秒の顔を画面右上、帯の下へ移す。",
+      "provenStatus": "measured-still-pass",
+      "evidence": ["composed03: 23_face.jpg/page-03.jpg"],
+      "proven": "235.5秒の顔は右上の余白。趾・持ち手の重なりを解消。",
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "original10-exception",
+      "requirement": "冒頭と最後の相関NGは、同じカメラ・板・脚、布の有無だけの例外として保持。",
+      "provenStatus": "authorized-exception",
+      "evidence": ["instruction: section1", "frozenPreparationReceipt: acceptedOriginalGateExceptions.10"],
+      "note": "元の相関0.2885を合格値へ書き換えない。本版の原本ゲート結果とともに報告する。"
+    },
+    {
+      "id": "original7d-exception",
+      "requirement": "行10・11の旧マクロ名NGは、全体画内でV接点が見える例外。旧計画・しきい値を変えない。",
+      "provenStatus": "authorized-exception",
+      "evidence": ["instruction: section1", "frozenPreparationReceipt: acceptedOriginalGateExceptions.7d"],
+      "finalStatus": "pending-final"
+    },
+    {
+      "id": "original5-specific-exceptions",
+      "requirement": "静止の例外は行9の8秒、行37の8.5秒、行42の8.5秒のみ。行21は再測定。",
+      "provenStatus": "authorized-exception",
+      "evidence": ["instruction: section1", "frozenPreparationReceipt: acceptedOriginalGateExceptions.5"],
+      "pending": "行21の稲妻アニメ後の原本ゲート結果はpending-final。例外を全ての長い静止へ拡張しない。"
+    },
+    {
+      "id": "original7b-rerun-residual-report",
+      "requirement": "元の模様量による主役幅検査を再実行し、残った全区間を報告。指定修正を済ませていれば残存だけで止めない。",
+      "provenStatus": "pending-final",
+      "evidence": ["instruction: section1", "frozenPreparationReceipt: acceptedOriginalGateExceptions.7b"],
+      "note": "別の実投影測定のPASSを原本7bのPASSに置き換えない。残存許可は元NGの削除許可ではない。"
+    },
+    {
+      "id": "original-fullgate-native-require-primary",
+      "requirement": "部分描き直し後、1080の本番MP4で原本自動検査を --require-primary で実行。",
+      "provenStatus": "pending-final",
+      "evidence": ["instruction: section6.3", "plannedFinalEvidence.expectedNativeMovie"],
+      "note": "S3試写や代表15枚だけで本番ゲートを実行済みにしない。"
+    },
+    {
+      "id": "immutability-preservation",
+      "requirement": "台本・声・字幕文言と時刻・BGM・原本検査としきい値を変更せず、既存動画を上書きしない。",
+      "provenStatus": "pending-final",
+      "evidence": ["frozenPreparationReceipt", "compositionAudit03"],
+      "actualPreparationFacts": {"sourcesUnchanged": true, "audioRegenerated": false, "remixed": false, "captionWordsAndTimesChanged": false},
+      "pending": "最終書き出し後にもハッシュを照合する。準備時の事実だけで最後まで不変としない。"
+    },
+    {
+      "id": "partial-frames-time-and-before-after",
+      "requirement": "その区間だけ描き直し、前後比較画像・コマ数・開始終了時刻と所要時間を最終報告へ。完成品は新名。",
+      "provenStatus": "pending-final",
+      "evidence": ["frozenPreparationReceipt: partialRevision", "instruction: section6.4/6.5"],
+      "actualPreparationPlan": {"nativeRows": [13, 19, 21, 22, 27, 36], "nativeRevisionFrames": 2288, "totalFrames": 14846, "unchangedNativeFrames": 12558},
+      "note": "2288は計画コマ数。実際の描画完了数や費やした時間として未報告。2Dだけの行9・23は別集計。"
+    }
+  ],
+  "nextEvidenceToFill": [
+    "rootが見るエンコード済み連続試写のmotion-export.json、全重要動作窓の実見範囲・NGを登録。",
+    "行21稲妻の実投影幅と行13/39・行22/21のカメラ一致の本番証拠を登録。",
+    "本番の部分描き直し・つなぎ直し後、完成MP4の全編サンプルと変更動作の実コマを再確認。",
+    "原本ゲートの全結果と、Claudeが認めた例外・7b残存区間をそのまま最終報告に記載。",
+    "耳での確認未実施を残し、機械検査や静止実見で代替したと言わない。"
+  ],
+  "changes": "この新規下準備JSONだけを作成。既存報告、制作ソース、台本、声、字幕、QA、成果物を変更していない。コミット・pushなし。"
+}

@@ -1,0 +1,273 @@
+{
+  "parts": [
+    {
+      "part": "frog",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/frog_oblique.jpg",
+      "objects": 21
+    },
+    {
+      "part": "frog",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/frog_top.jpg",
+      "objects": 21
+    },
+    {
+      "part": "frog_same",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/frog_same_oblique.jpg",
+      "objects": 21
+    },
+    {
+      "part": "frog_same",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/frog_same_top.jpg",
+      "objects": 21
+    },
+    {
+      "part": "cover",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/cover_oblique.jpg",
+      "objects": 10
+    },
+    {
+      "part": "cover",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/cover_top.jpg",
+      "objects": 10
+    },
+    {
+      "part": "glass",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/glass_oblique.jpg",
+      "objects": 30
+    },
+    {
+      "part": "glass",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/glass_top.jpg",
+      "objects": 30
+    },
+    {
+      "part": "generator",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/generator_oblique.jpg",
+      "objects": 32
+    },
+    {
+      "part": "generator",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/generator_top.jpg",
+      "objects": 32
+    },
+    {
+      "part": "water",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/water_oblique.jpg",
+      "objects": 51
+    },
+    {
+      "part": "water",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/water_top.jpg",
+      "objects": 51
+    },
+    {
+      "part": "pile",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/pile_oblique.jpg",
+      "objects": 163
+    },
+    {
+      "part": "pile",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/pile_top.jpg",
+      "objects": 163
+    },
+    {
+      "part": "unit",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/unit_oblique.jpg",
+      "objects": 18
+    },
+    {
+      "part": "unit",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/unit_top.jpg",
+      "objects": 18
+    },
+    {
+      "part": "electroscope",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/electroscope_oblique.jpg",
+      "objects": 15
+    },
+    {
+      "part": "electroscope",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/electroscope_top.jpg",
+      "objects": 15
+    },
+    {
+      "part": "cell",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/cell_oblique.jpg",
+      "objects": 7
+    },
+    {
+      "part": "cell",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/cell_top.jpg",
+      "objects": 7
+    },
+    {
+      "part": "ray",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/ray_oblique.jpg",
+      "objects": 9
+    },
+    {
+      "part": "ray",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/ray_top.jpg",
+      "objects": 9
+    },
+    {
+      "part": "alarm",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/alarm_oblique.jpg",
+      "objects": 29
+    },
+    {
+      "part": "alarm",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/alarm_top.jpg",
+      "objects": 29
+    },
+    {
+      "part": "galvani",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/galvani_oblique.jpg",
+      "objects": 18
+    },
+    {
+      "part": "galvani",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/galvani_top.jpg",
+      "objects": 18
+    },
+    {
+      "part": "volta",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/volta_oblique.jpg",
+      "objects": 14
+    },
+    {
+      "part": "volta",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/volta_top.jpg",
+      "objects": 14
+    },
+    {
+      "part": "assistant",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/assistant_oblique.jpg",
+      "objects": 13
+    },
+    {
+      "part": "assistant",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/assistant_top.jpg",
+      "objects": 13
+    },
+    {
+      "part": "door",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/door_oblique.jpg",
+      "objects": 7
+    },
+    {
+      "part": "door",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/door_top.jpg",
+      "objects": 7
+    },
+    {
+      "part": "terrella",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/terrella_oblique.jpg",
+      "objects": 69
+    },
+    {
+      "part": "terrella",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/terrella_top.jpg",
+      "objects": 69
+    },
+    {
+      "part": "book",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/book_oblique.jpg",
+      "objects": 5
+    },
+    {
+      "part": "book",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/book_top.jpg",
+      "objects": 5
+    },
+    {
+      "part": "map",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/map_oblique.jpg",
+      "objects": 8
+    },
+    {
+      "part": "map",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/map_top.jpg",
+      "objects": 8
+    },
+    {
+      "part": "globe_support",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/globe_support_oblique.jpg",
+      "objects": 2
+    },
+    {
+      "part": "globe_support",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/globe_support_top.jpg",
+      "objects": 2
+    },
+    {
+      "part": "cup",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/cup_oblique.jpg",
+      "objects": 40
+    },
+    {
+      "part": "cup",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/cup_top.jpg",
+      "objects": 40
+    },
+    {
+      "part": "seam",
+      "top": false,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/seam_oblique.jpg",
+      "objects": 2
+    },
+    {
+      "part": "seam",
+      "top": true,
+      "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像/seam_top.jpg",
+      "objects": 2
+    }
+  ],
+  "nativeResolution": [
+    540,
+    960
+  ],
+  "stage": "S1"
+}

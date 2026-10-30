@@ -1,0 +1,2591 @@
+{
+  "stage": "S3 review only",
+  "nativeProductionCacheWritten": false,
+  "captionWordsAndTimesChanged": false,
+  "records": [
+    {
+      "name": "13_rub",
+      "j": 3540,
+      "time": 118,
+      "row": 13,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/13_rub.jpg",
+      "primary": {
+        "x0": 188.5,
+        "y0": 408.5,
+        "x1": 1067.2,
+        "y1": 1011,
+        "width": 0.8136111111111112,
+        "height": 0.3138020833333333,
+        "allInCamera": true
+      },
+      "anchors": {},
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/13_rub.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気：ぱちっと 一瞬",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 481,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 433,
+              "height": 42,
+              "text": "静電気：ぱちっと 一瞬",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "まねを しない",
+          "size": 36,
+          "rect": {
+            "x": 768,
+            "y": 1450,
+            "width": 272,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 792,
+              "y": 1464,
+              "width": 224,
+              "height": 34,
+              "text": "まねを しない",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "人が作れた電気は、",
+          "size": 66,
+          "rect": {
+            "x": 257.5,
+            "y": 1230,
+            "width": 565,
+            "height": 74
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "13_charge",
+      "j": 3669,
+      "time": 122.3,
+      "row": 13,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/13_charge.jpg",
+      "primary": {
+        "x0": 188.5,
+        "y0": 509,
+        "x1": 933.7,
+        "y1": 1011,
+        "width": 0.6900000000000001,
+        "height": 0.26145833333333335,
+        "allInCamera": true
+      },
+      "anchors": {},
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/13_charge.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気：ぱちっと 一瞬",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 481,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 433,
+              "height": 42,
+              "text": "静電気：ぱちっと 一瞬",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "まねを しない",
+          "size": 36,
+          "rect": {
+            "x": 768,
+            "y": 1450,
+            "width": 272,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 792,
+              "y": 1464,
+              "width": 224,
+              "height": 34,
+              "text": "まねを しない",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "ためた電気は、",
+          "size": 66,
+          "rect": {
+            "x": 325,
+            "y": 1231,
+            "width": 430,
+            "height": 73
+          },
+          "chunk": 5,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "13_spark",
+      "j": 3683,
+      "time": 122.76666666666667,
+      "row": 13,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/13_spark.jpg",
+      "primary": {
+        "x0": 125,
+        "y0": 509,
+        "x1": 933.7,
+        "y1": 1041.1,
+        "width": 0.7487962962962963,
+        "height": 0.27713541666666663,
+        "allInCamera": true
+      },
+      "anchors": {},
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/13_spark.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気：ぱちっと 一瞬",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 481,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 433,
+              "height": 42,
+              "text": "静電気：ぱちっと 一瞬",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "まねを しない",
+          "size": 36,
+          "rect": {
+            "x": 768,
+            "y": 1450,
+            "width": 272,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 792,
+              "y": 1464,
+              "width": 224,
+              "height": 34,
+              "text": "まねを しない",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "ぱちっと火花を飛ばすと、",
+          "size": 66,
+          "rect": {
+            "x": 162.5,
+            "y": 1230,
+            "width": 755,
+            "height": 74
+          },
+          "chunk": 6,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "19_machine",
+      "j": 5559,
+      "time": 185.3,
+      "row": 19,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/19_machine.jpg",
+      "primary": {
+        "x0": 23.8,
+        "y0": 319.6,
+        "x1": 937.1,
+        "y1": 1252.9,
+        "width": 0.8456481481481483,
+        "height": 0.48609375000000005,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          165.1,
+          842.5,
+          1
+        ],
+        "label.brass": [
+          543.7,
+          1175.8,
+          1
+        ],
+        "label.iron": [
+          358.1,
+          935.3,
+          1
+        ],
+        "label.row19Machine": [
+          170.6,
+          484.4,
+          1
+        ],
+        "label.row19Terminal": [
+          313.3,
+          421.6,
+          1
+        ],
+        "label.row19Nerve": [
+          106.8,
+          837.1,
+          1
+        ],
+        "label.row19Toe": [
+          936.8,
+          1100.2,
+          1
+        ]
+      },
+      "layout": {
+        "body": {
+          "x0": 0.15233223140239716,
+          "x1": 0.867667555809021,
+          "y0": 0.3620328903198242,
+          "y1": 0.6179659962654114,
+          "width": 0.7153353244066238,
+          "height": 0.25593310594558716,
+          "allInCamera": true
+        },
+        "machine": {
+          "x0": 0.037635140120983124,
+          "x1": 0.37236523628234863,
+          "y0": 0.1869245171546936,
+          "y1": 0.3530752658843994,
+          "width": 0.3347300961613655,
+          "height": 0.1661507487297058,
+          "allInCamera": true
+        }
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/19_machine.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気を 作る 機械",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 230,
+            "width": 412,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 244,
+              "width": 364,
+              "height": 42,
+              "text": "静電気を 作る 機械",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "静電気を作る機械",
+          "size": 66,
+          "rect": {
+            "x": 272.5,
+            "y": 1188,
+            "width": 535,
+            "height": 74
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        },
+        {
+          "type": "caption",
+          "text": "がありました。",
+          "size": 66,
+          "rect": {
+            "x": 323.5,
+            "y": 1274,
+            "width": 433,
+            "height": 70
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "19_spark",
+      "j": 5627,
+      "time": 187.56666666666666,
+      "row": 19,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/19_spark.jpg",
+      "primary": {
+        "x0": 37.8,
+        "y0": 331.8,
+        "x1": 937.1,
+        "y1": 1252.9,
+        "width": 0.8326851851851852,
+        "height": 0.4797395833333334,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          165.1,
+          842.5,
+          1
+        ],
+        "label.brass": [
+          543.7,
+          1175.8,
+          1
+        ],
+        "label.iron": [
+          358.1,
+          935.3,
+          1
+        ],
+        "label.row19Machine": [
+          170.6,
+          484.4,
+          1
+        ],
+        "label.row19Terminal": [
+          313.3,
+          421.6,
+          1
+        ],
+        "label.row19Nerve": [
+          106.8,
+          837.1,
+          1
+        ],
+        "label.row19Toe": [
+          936.8,
+          1100.2,
+          1
+        ]
+      },
+      "layout": {
+        "body": {
+          "x0": 0.15233223140239716,
+          "x1": 0.867667555809021,
+          "y0": 0.3620328903198242,
+          "y1": 0.6179659962654114,
+          "width": 0.7153353244066238,
+          "height": 0.25593310594558716,
+          "allInCamera": true
+        },
+        "machine": {
+          "x0": 0.037635140120983124,
+          "x1": 0.37236523628234863,
+          "y0": 0.1869245171546936,
+          "y1": 0.3530752658843994,
+          "width": 0.3347300961613655,
+          "height": 0.1661507487297058,
+          "allInCamera": true
+        }
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/19_spark.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気を 作る 機械",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 230,
+            "width": 412,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 244,
+              "width": 364,
+              "height": 42,
+              "text": "静電気を 作る 機械",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "その機械が火花",
+          "size": 66,
+          "rect": {
+            "x": 306.5,
+            "y": 1188,
+            "width": 467,
+            "height": 73
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        },
+        {
+          "type": "caption",
+          "text": "を飛ばした時、",
+          "size": 66,
+          "rect": {
+            "x": 325,
+            "y": 1272,
+            "width": 430,
+            "height": 74
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "19_contact",
+      "j": 5731,
+      "time": 191.03333333333333,
+      "row": 19,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/19_contact.jpg",
+      "primary": {
+        "x0": 36.3,
+        "y0": 330.1,
+        "x1": 937.1,
+        "y1": 1252.9,
+        "width": 0.8340740740740742,
+        "height": 0.480625,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          165.1,
+          842.5,
+          1
+        ],
+        "label.brass": [
+          543.7,
+          1175.8,
+          1
+        ],
+        "label.iron": [
+          358.1,
+          935.3,
+          1
+        ],
+        "label.row19Machine": [
+          170.6,
+          484.4,
+          1
+        ],
+        "label.row19Terminal": [
+          313.3,
+          421.6,
+          1
+        ],
+        "label.row19Nerve": [
+          106.8,
+          837.1,
+          1
+        ],
+        "label.row19Toe": [
+          936.8,
+          1100.2,
+          1
+        ],
+        "label.row19Scalpeltip": [
+          97.8,
+          855.8,
+          1
+        ],
+        "label.row19Scalpelgrip": [
+          335.9,
+          1318.3,
+          1
+        ]
+      },
+      "layout": {
+        "body": {
+          "x0": 0.15233223140239716,
+          "x1": 0.867667555809021,
+          "y0": 0.3620328903198242,
+          "y1": 0.6179659962654114,
+          "width": 0.7153353244066238,
+          "height": 0.25593310594558716,
+          "allInCamera": true
+        },
+        "machine": {
+          "x0": 0.037635140120983124,
+          "x1": 0.37236523628234863,
+          "y0": 0.1869245171546936,
+          "y1": 0.3530752658843994,
+          "width": 0.3347300961613655,
+          "height": 0.1661507487297058,
+          "allInCamera": true
+        }
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/19_contact.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気を 作る 機械",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 230,
+            "width": 412,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 244,
+              "width": 364,
+              "height": 42,
+              "text": "静電気を 作る 機械",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "ちょうどメスが",
+          "size": 66,
+          "rect": {
+            "x": 307.5,
+            "y": 1189,
+            "width": 465,
+            "height": 71
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        },
+        {
+          "type": "caption",
+          "text": "ふれていると、",
+          "size": 66,
+          "rect": {
+            "x": 325,
+            "y": 1273,
+            "width": 430,
+            "height": 72
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "19_kick_peak",
+      "j": 5792,
+      "time": 193.06666666666666,
+      "row": 19,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/19_kick_peak.jpg",
+      "primary": {
+        "x0": 7.6,
+        "y0": 308.9,
+        "x1": 999.9,
+        "y1": 1259.2,
+        "width": 0.9187962962962962,
+        "height": 0.4949479166666667,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          165.1,
+          842.5,
+          1
+        ],
+        "label.brass": [
+          543.7,
+          1175.8,
+          1
+        ],
+        "label.iron": [
+          358.1,
+          935.3,
+          1
+        ],
+        "label.row19Machine": [
+          170.6,
+          484.4,
+          1
+        ],
+        "label.row19Terminal": [
+          313.3,
+          421.6,
+          1
+        ],
+        "label.row19Nerve": [
+          106.8,
+          837.1,
+          1
+        ],
+        "label.row19Toe": [
+          997.6,
+          881.4,
+          1
+        ],
+        "label.row19Scalpeltip": [
+          97.8,
+          855.8,
+          1
+        ],
+        "label.row19Scalpelgrip": [
+          335.9,
+          1318.3,
+          1
+        ]
+      },
+      "layout": {
+        "body": {
+          "x0": 0.15233223140239716,
+          "x1": 0.867667555809021,
+          "y0": 0.3620328903198242,
+          "y1": 0.6179659962654114,
+          "width": 0.7153353244066238,
+          "height": 0.25593310594558716,
+          "allInCamera": true
+        },
+        "machine": {
+          "x0": 0.037635140120983124,
+          "x1": 0.37236523628234863,
+          "y0": 0.1869245171546936,
+          "y1": 0.3530752658843994,
+          "width": 0.3347300961613655,
+          "height": 0.1661507487297058,
+          "allInCamera": true
+        }
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/19_kick_peak.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "静電気を 作る 機械",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 230,
+            "width": 412,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 244,
+              "width": 364,
+              "height": 42,
+              "text": "静電気を 作る 機械",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "火花 → 足が ける",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 1110,
+            "width": 380,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 1124,
+              "width": 332,
+              "height": 40,
+              "text": "火花 → 足が ける",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "ぴくっとけったのです。",
+          "size": 66,
+          "rect": {
+            "x": 198,
+            "y": 1230,
+            "width": 684,
+            "height": 74
+          },
+          "chunk": 6,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "21_glyph",
+      "j": 6473,
+      "time": 215.76666666666668,
+      "row": 21,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/21_glyph.jpg",
+      "primary": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          171.2,
+          644.1,
+          1
+        ],
+        "label.brass": [
+          556.9,
+          978.5,
+          1
+        ],
+        "label.iron": [
+          367.2,
+          748.2,
+          1
+        ],
+        "label.hypothesisGlyph": [
+          413.6,
+          624.9,
+          1
+        ]
+      },
+      "glyph": {
+        "x0": 346.1,
+        "y0": 535.7,
+        "x1": 481.1,
+        "y1": 722.1,
+        "width": 0.125,
+        "height": 0.09708333333333333,
+        "allInCamera": true
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/21_glyph.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "仮説：電気は カエルの 体の 中に ある（動物電気）",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 554,
+            "height": 126
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 433,
+              "height": 42,
+              "text": "仮説：電気は カエルの ",
+              "size": 42
+            },
+            {
+              "x": 64,
+              "y": 377,
+              "width": 506,
+              "height": 42,
+              "text": "体の 中に ある（動物電気）",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "カエルの体の中にある。",
+          "size": 66,
+          "rect": {
+            "x": 192.5,
+            "y": 1231,
+            "width": 695,
+            "height": 71
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "21_pulse",
+      "j": 6525,
+      "time": 217.5,
+      "row": 21,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/21_pulse.jpg",
+      "primary": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          171.2,
+          644.1,
+          1
+        ],
+        "label.brass": [
+          556.9,
+          978.5,
+          1
+        ],
+        "label.iron": [
+          367.2,
+          748.2,
+          1
+        ],
+        "label.hypothesisGlyph": [
+          413.6,
+          624.9,
+          1
+        ]
+      },
+      "glyph": {
+        "x0": 346.1,
+        "y0": 535.7,
+        "x1": 481.1,
+        "y1": 722.1,
+        "width": 0.125,
+        "height": 0.09708333333333333,
+        "allInCamera": true
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/21_pulse.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "仮説：電気は カエルの 体の 中に ある（動物電気）",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 554,
+            "height": 126
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 433,
+              "height": 42,
+              "text": "仮説：電気は カエルの ",
+              "size": 42
+            },
+            {
+              "x": 64,
+              "y": 377,
+              "width": 506,
+              "height": 42,
+              "text": "体の 中に ある（動物電気）",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "caption",
+          "text": "動物電気です。",
+          "size": 66,
+          "rect": {
+            "x": 327,
+            "y": 1230,
+            "width": 426,
+            "height": 74
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "22_path",
+      "j": 6910,
+      "time": 230.33333333333334,
+      "row": 22,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/22_path.jpg",
+      "primary": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          171.2,
+          644.1,
+          1
+        ],
+        "label.brass": [
+          556.9,
+          978.5,
+          1
+        ],
+        "label.iron": [
+          367.2,
+          748.2,
+          1
+        ],
+        "label.hypothesisGlyph": [
+          413.6,
+          624.9,
+          1
+        ]
+      },
+      "glyph": {
+        "x0": 346.1,
+        "y0": 535.7,
+        "x1": 481.1,
+        "y1": 722.1,
+        "width": 0.125,
+        "height": 0.09708333333333333,
+        "allInCamera": true
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/22_path.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "金属 ＝ 通り道（と ガルヴァーニは 考えた）",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 874,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 826,
+              "height": 42,
+              "text": "金属 ＝ 通り道（と ガルヴァーニは 考えた）",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "通す道にすぎない、",
+          "size": 66,
+          "rect": {
+            "x": 258,
+            "y": 1230,
+            "width": 564,
+            "height": 75
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "27_before",
+      "j": 8629,
+      "time": 287.6333333333333,
+      "row": 27,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/27_before.jpg",
+      "primary": {
+        "x0": 286.2,
+        "y0": 274.2,
+        "x1": 793.8,
+        "y1": 781.8,
+        "width": 0.47,
+        "height": 0.26437499999999997,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.alarm27": [
+          540,
+          528,
+          1
+        ],
+        "label.alarm27NoSmoke": [
+          540,
+          835.8,
+          1
+        ],
+        "label.alarm27SmokeSource": [
+          270,
+          925.4,
+          1
+        ],
+        "label.alarm27Foot": [
+          540,
+          1200,
+          1
+        ],
+        "label.alarm27FootLabel": [
+          540,
+          1019.4,
+          1
+        ],
+        "label.alarm27Separator": [
+          540,
+          989.2,
+          1
+        ]
+      },
+      "alarm": {
+        "alarm_round_body": {
+          "present": true,
+          "actualMeshVertexWidth": 0.4700000286102295,
+          "actualMeshVertexHeight": 0.2643750309944153,
+          "normalizedBounds": [
+            0.26499998569488525,
+            0.1428128480911255,
+            0.7350000143051147,
+            0.40718787908554077
+          ],
+          "allInFrame": true,
+          "passesWidth40Percent": true,
+          "filledPixelAreaMeasured": false
+        },
+        "frog_picture_body": {
+          "present": true,
+          "actualMeshVertexWidth": 0.4400000274181366,
+          "actualMeshVertexHeight": 0.1552547812461853,
+          "normalizedBounds": [
+            0.2800000011920929,
+            0.5473729372024536,
+            0.7200000286102295,
+            0.7026277184486389
+          ],
+          "allInFrame": true,
+          "passesWidth40Percent": true,
+          "filledPixelAreaMeasured": false
+        }
+      },
+      "state": {
+        "row": 27,
+        "time": 287.6333333333333,
+        "lampOn": false,
+        "soundWaveArcsVisible": 0,
+        "footPictureKickAmount": 0,
+        "smokeEmissionObject": "b2a_r27_alarm_c03_20261030_smoking_wick",
+        "alarmEmitsSmoke": false,
+        "visibleSmokeParticles": 8,
+        "maximumSmokeCenterZ": 1.1595433950424194,
+        "currentAlarmLowerEdgeZ": 1.1649999761581422,
+        "smokeActualContactWorld": [
+          -0.11,
+          -0.08,
+          1.1923343795851902
+        ],
+        "undersidePushInProgress": 0,
+        "camera": {
+          "type": "ORTHO",
+          "location": [
+            0,
+            -4,
+            1
+          ],
+          "rotation": [
+            1.5707964897155762,
+            0,
+            0
+          ],
+          "ortho_scale": 1.7777777910232544,
+          "shift_x": 0,
+          "shift_y": 0,
+          "use_dof": false
+        },
+        "primaryMeasurementTargets": {
+          "alarmRoundBody": [
+            "b2a_r27_alarm_c03_20261030_white_round_body"
+          ],
+          "sameZFootBody": [
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_thigh",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_knee",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_shin",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_ankle_joint",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_foot",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_0",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_1",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_2",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_0",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_1",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_2"
+          ],
+          "alarmMinimumWidth": 0.4,
+          "footPictureTargetWidth": 0.44
+        }
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/27_before.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "見方：たとえ話",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 190,
+            "width": 340,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 204,
+              "width": 292,
+              "height": 41,
+              "text": "見方：たとえ話",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "動く 物 ≠ 電気を 出す 物？",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 1010,
+            "width": 572,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 1024,
+              "width": 524,
+              "height": 42,
+              "text": "動く 物 ≠ 電気を 出す 物？",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "煙を感じて鳴る、",
+          "size": 66,
+          "rect": {
+            "x": 291,
+            "y": 1466,
+            "width": 498,
+            "height": 73
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "27_ring",
+      "j": 8635,
+      "time": 287.8333333333333,
+      "row": 27,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/27_ring.jpg",
+      "primary": {
+        "x0": 286.2,
+        "y0": 274.2,
+        "x1": 793.8,
+        "y1": 781.8,
+        "width": 0.47,
+        "height": 0.26437499999999997,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.alarm27": [
+          540,
+          528,
+          1
+        ],
+        "label.alarm27NoSmoke": [
+          540,
+          835.8,
+          1
+        ],
+        "label.alarm27SmokeSource": [
+          270,
+          925.4,
+          1
+        ],
+        "label.alarm27Foot": [
+          540,
+          1200,
+          1
+        ],
+        "label.alarm27FootLabel": [
+          540,
+          1019.4,
+          1
+        ],
+        "label.alarm27Separator": [
+          540,
+          989.2,
+          1
+        ]
+      },
+      "alarm": {
+        "alarm_round_body": {
+          "present": true,
+          "actualMeshVertexWidth": 0.4700000286102295,
+          "actualMeshVertexHeight": 0.2643750309944153,
+          "normalizedBounds": [
+            0.26499998569488525,
+            0.1428128480911255,
+            0.7350000143051147,
+            0.40718787908554077
+          ],
+          "allInFrame": true,
+          "passesWidth40Percent": true,
+          "filledPixelAreaMeasured": false
+        },
+        "frog_picture_body": {
+          "present": true,
+          "actualMeshVertexWidth": 0.45110324025154114,
+          "actualMeshVertexHeight": 0.1530517339706421,
+          "normalizedBounds": [
+            0.2800000011920929,
+            0.5473729372024536,
+            0.731103241443634,
+            0.7004246711730957
+          ],
+          "allInFrame": true,
+          "passesWidth40Percent": true,
+          "filledPixelAreaMeasured": false
+        }
+      },
+      "state": {
+        "row": 27,
+        "time": 287.8333333333333,
+        "lampOn": true,
+        "soundWaveArcsVisible": 3,
+        "footPictureKickAmount": 0.8748455352410769,
+        "smokeEmissionObject": "b2a_r27_alarm_c03_20261030_smoking_wick",
+        "alarmEmitsSmoke": false,
+        "visibleSmokeParticles": 9,
+        "maximumSmokeCenterZ": 1.1781779527664185,
+        "currentAlarmLowerEdgeZ": 1.1649999761581422,
+        "smokeActualContactWorld": [
+          -0.11,
+          -0.08,
+          1.1923343795851902
+        ],
+        "undersidePushInProgress": 0,
+        "camera": {
+          "type": "ORTHO",
+          "location": [
+            0,
+            -4,
+            1
+          ],
+          "rotation": [
+            1.5707964897155762,
+            0,
+            0
+          ],
+          "ortho_scale": 1.7777777910232544,
+          "shift_x": 0,
+          "shift_y": 0,
+          "use_dof": false
+        },
+        "primaryMeasurementTargets": {
+          "alarmRoundBody": [
+            "b2a_r27_alarm_c03_20261030_white_round_body"
+          ],
+          "sameZFootBody": [
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_thigh",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_knee",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_shin",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_ankle_joint",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_foot",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_0",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_1",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_2",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_0",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_1",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_2"
+          ],
+          "alarmMinimumWidth": 0.4,
+          "footPictureTargetWidth": 0.44
+        }
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/27_ring.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "見方：たとえ話",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 190,
+            "width": 340,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 204,
+              "width": 292,
+              "height": 41,
+              "text": "見方：たとえ話",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "動く 物 ≠ 電気を 出す 物？",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 1010,
+            "width": 572,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 1024,
+              "width": 524,
+              "height": 42,
+              "text": "動く 物 ≠ 電気を 出す 物？",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "煙を感じて鳴る、",
+          "size": 66,
+          "rect": {
+            "x": 291,
+            "y": 1466,
+            "width": 498,
+            "height": 73
+          },
+          "chunk": 2,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "27_macro",
+      "j": 8785,
+      "time": 292.8333333333333,
+      "row": 27,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/27_macro.jpg",
+      "primary": {
+        "x0": 253.2,
+        "y0": 241.2,
+        "x1": 826.8,
+        "y1": 814.8,
+        "width": 0.531111111111111,
+        "height": 0.29874999999999996,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.alarm27": [
+          540,
+          528,
+          1
+        ],
+        "label.alarm27NoSmoke": [
+          540,
+          835.8,
+          1
+        ],
+        "label.alarm27SmokeSource": [
+          270,
+          925.4,
+          1
+        ],
+        "label.alarm27Foot": [
+          540,
+          1200,
+          1
+        ],
+        "label.alarm27FootLabel": [
+          540,
+          1019.4,
+          1
+        ],
+        "label.alarm27Separator": [
+          540,
+          989.2,
+          1
+        ]
+      },
+      "alarm": {
+        "alarm_round_body": {
+          "present": true,
+          "actualMeshVertexWidth": 0.5311000049114227,
+          "actualMeshVertexHeight": 0.2987437844276428,
+          "normalizedBounds": [
+            0.23445001244544983,
+            0.12562847137451172,
+            0.7655500173568726,
+            0.42437225580215454
+          ],
+          "allInFrame": true,
+          "passesWidth40Percent": true,
+          "filledPixelAreaMeasured": false
+        },
+        "frog_picture_body": {
+          "present": true,
+          "actualMeshVertexWidth": 0.4400000274181366,
+          "actualMeshVertexHeight": 0.1552547812461853,
+          "normalizedBounds": [
+            0.2800000011920929,
+            0.5473729372024536,
+            0.7200000286102295,
+            0.7026277184486389
+          ],
+          "allInFrame": true,
+          "passesWidth40Percent": true,
+          "filledPixelAreaMeasured": false
+        }
+      },
+      "state": {
+        "row": 27,
+        "time": 292.8333333333333,
+        "lampOn": true,
+        "soundWaveArcsVisible": 3,
+        "footPictureKickAmount": 0,
+        "smokeEmissionObject": "b2a_r27_alarm_c03_20261030_smoking_wick",
+        "alarmEmitsSmoke": false,
+        "visibleSmokeParticles": 18,
+        "maximumSmokeCenterZ": 1.1458042860031128,
+        "currentAlarmLowerEdgeZ": 1.1344499761581421,
+        "smokeActualContactWorld": [
+          -0.11,
+          -0.08,
+          1.1583042945666002
+        ],
+        "undersidePushInProgress": 1,
+        "camera": {
+          "type": "ORTHO",
+          "location": [
+            0,
+            -4,
+            1
+          ],
+          "rotation": [
+            1.5707964897155762,
+            0,
+            0
+          ],
+          "ortho_scale": 1.7777777910232544,
+          "shift_x": 0,
+          "shift_y": 0,
+          "use_dof": false
+        },
+        "primaryMeasurementTargets": {
+          "alarmRoundBody": [
+            "b2a_r27_alarm_c03_20261030_white_round_body"
+          ],
+          "sameZFootBody": [
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_thigh",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_knee",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_shin",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_ankle_joint",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_foot",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_0",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_1",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_2",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_0",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_1",
+            "b2a_r27_alarm_c03_20261030_same_Z_foot_picture_toe_pad_2"
+          ],
+          "alarmMinimumWidth": 0.4,
+          "footPictureTargetWidth": 0.44
+        }
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/27_macro.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1790年代 イタリア パヴィーア ヴォルタ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 726,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 678,
+              "height": 35,
+              "text": "1790年代 イタリア パヴィーア ヴォルタ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "見方：たとえ話",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 190,
+            "width": 340,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 204,
+              "width": 292,
+              "height": 41,
+              "text": "見方：たとえ話",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "鳴る 物 ≠ 煙を 出す 物",
+          "size": 36,
+          "rect": {
+            "x": 480,
+            "y": 830,
+            "width": 429,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 504,
+              "y": 844,
+              "width": 381,
+              "height": 35,
+              "text": "鳴る 物 ≠ 煙を 出す 物",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "動く 物 ≠ 電気を 出す 物？",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 1010,
+            "width": 572,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 1024,
+              "width": 524,
+              "height": 42,
+              "text": "動く 物 ≠ 電気を 出す 物？",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "鳴りはしても、",
+          "size": 66,
+          "rect": {
+            "x": 327,
+            "y": 1466,
+            "width": 426,
+            "height": 73
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "36_glyph",
+      "j": 12242,
+      "time": 408.06666666666666,
+      "row": 36,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/36_glyph.jpg",
+      "primary": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          171.2,
+          644.1,
+          1
+        ],
+        "label.brass": [
+          556.9,
+          978.5,
+          1
+        ],
+        "label.iron": [
+          367.2,
+          748.2,
+          1
+        ],
+        "label.hypothesisGlyph": [
+          413.6,
+          624.9,
+          1
+        ]
+      },
+      "glyph": {
+        "x0": 346.1,
+        "y0": 535.7,
+        "x1": 481.1,
+        "y1": 722.1,
+        "width": 0.125,
+        "height": 0.09708333333333333,
+        "allInCamera": true
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/36_glyph.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "後に 分かったこと",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 344,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 296,
+              "height": 35,
+              "text": "後に 分かったこと",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経の 合図 ＝ 小さな 電気",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 566,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 518,
+              "height": 42,
+              "text": "神経の 合図 ＝ 小さな 電気",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "崩れたのは、",
+          "size": 66,
+          "rect": {
+            "x": 357,
+            "y": 1232,
+            "width": 366,
+            "height": 73
+          },
+          "chunk": 3,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "36_cancel",
+      "j": 12254,
+      "time": 408.46666666666664,
+      "row": 36,
+      "file": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/36_cancel.jpg",
+      "primary": {
+        "x0": 69.4,
+        "y0": 442,
+        "x1": 955,
+        "y1": 1078,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "anchors": {
+        "label.nerve": [
+          171.2,
+          644.1,
+          1
+        ],
+        "label.brass": [
+          556.9,
+          978.5,
+          1
+        ],
+        "label.iron": [
+          367.2,
+          748.2,
+          1
+        ],
+        "label.hypothesisGlyph": [
+          413.6,
+          624.9,
+          1
+        ]
+      },
+      "glyph": {
+        "x0": 346.1,
+        "y0": 535.7,
+        "x1": 481.1,
+        "y1": 722.1,
+        "width": 0.125,
+        "height": 0.09708333333333333,
+        "allInCamera": true
+      },
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/36_cancel.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "後に 分かったこと",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 344,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 296,
+              "height": 35,
+              "text": "後に 分かったこと",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経の 合図 ＝ 小さな 電気",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 310,
+            "width": 566,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 324,
+              "width": 518,
+              "height": 42,
+              "text": "神経の 合図 ＝ 小さな 電気",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "仮説：電気は カエルの 体の 中に ある（動物電気）",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 950,
+            "width": 554,
+            "height": 126
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 964,
+              "width": 433,
+              "height": 42,
+              "text": "仮説：電気は カエルの ",
+              "size": 42
+            },
+            {
+              "x": 64,
+              "y": 1017,
+              "width": 506,
+              "height": 42,
+              "text": "体の 中に ある（動物電気）",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "この机のぴくっの",
+          "size": 66,
+          "rect": {
+            "x": 279,
+            "y": 1230,
+            "width": 522,
+            "height": 74
+          },
+          "chunk": 4,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "09_name",
+      "time": 77,
+      "j": 2310,
+      "row": 9,
+      "anchors": {},
+      "file": "/private/tmp/ys/ys-chain-b2a_s4r03_gpt_20261030/blender/desk/02310.jpg",
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/09_name.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "text": "神経",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 513.1,
+              "width": 72,
+              "height": 35,
+              "text": "神経",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.nerve",
+          "anchorPosition": [
+            171.2,
+            644.1,
+            1
+          ],
+          "text": "神経",
+          "rect": {
+            "x": 40,
+            "y": 499.1,
+            "width": 120,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "真鍮",
+          "size": 36,
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 415.9,
+              "y": 892.5,
+              "width": 71,
+              "height": 35,
+              "text": "真鍮",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.brass",
+          "anchorPosition": [
+            556.9,
+            978.5,
+            1
+          ],
+          "text": "真鍮",
+          "rect": {
+            "x": 391.9,
+            "y": 878.5,
+            "width": 119,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "鉄",
+          "size": 36,
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 451.2,
+              "y": 807.2,
+              "width": 36,
+              "height": 35,
+              "text": "鉄",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.iron",
+          "anchorPosition": [
+            367.2,
+            748.2,
+            1
+          ],
+          "text": "鉄",
+          "rect": {
+            "x": 427.2,
+            "y": 793.2,
+            "width": 84,
+            "height": 65
+          }
+        },
+        {
+          "type": "label",
+          "text": "ガルヴァーニ",
+          "size": 42,
+          "rect": {
+            "x": 40,
+            "y": 365,
+            "width": 296,
+            "height": 73
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 379,
+              "width": 248,
+              "height": 41,
+              "text": "ガルヴァーニ",
+              "size": 42
+            }
+          ]
+        },
+        {
+          "type": "anchorTarget",
+          "anchor": "label.galvani",
+          "anchorPosition": [
+            178.9,
+            728.7,
+            1
+          ],
+          "text": "ガルヴァーニ",
+          "rect": {
+            "x": 40,
+            "y": 365,
+            "width": 296,
+            "height": 73
+          }
+        },
+        {
+          "type": "caption",
+          "text": "イタリアのボローニャ。",
+          "size": 66,
+          "rect": {
+            "x": 196.5,
+            "y": 1231,
+            "width": 687,
+            "height": 72
+          },
+          "chunk": 1,
+          "exactVoiceTiming": true
+        }
+      ]
+    },
+    {
+      "name": "23_face",
+      "time": 235.5,
+      "j": 7065,
+      "row": 23,
+      "anchors": {},
+      "file": "/private/tmp/ys/ys-chain-b2a_s4r03_gpt_20261030/blender/desk/07065.jpg",
+      "composed": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/23_face.jpg",
+      "typography": [
+        {
+          "type": "label",
+          "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+          "size": 36,
+          "rect": {
+            "x": 40,
+            "y": 110,
+            "width": 802,
+            "height": 65
+          },
+          "textBoxes": [
+            {
+              "x": 64,
+              "y": 124,
+              "width": 754,
+              "height": 35,
+              "text": "1780年代 イタリア ボローニャ ガルヴァーニ",
+              "size": 36
+            }
+          ]
+        },
+        {
+          "type": "caption",
+          "text": "魚が電気を出すなら、",
+          "size": 66,
+          "rect": {
+            "x": 225,
+            "y": 1230,
+            "width": 630,
+            "height": 74
+          },
+          "chunk": 0,
+          "exactVoiceTiming": true
+        }
+      ]
+    }
+  ],
+  "pages": [
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/page-01.jpg",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/page-02.jpg",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S3連続試写_03/字幕札つき確認/page-03.jpg"
+  ]
+}

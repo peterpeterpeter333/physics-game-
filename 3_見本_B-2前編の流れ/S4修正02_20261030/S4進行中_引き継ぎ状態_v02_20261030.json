@@ -1,0 +1,31 @@
+{
+  "recorded": "2026-10-30T07:33:16.496Z",
+  "status": "native-render-continues",
+  "native": {
+    "stage": "S4",
+    "resolution": [
+      1080,
+      1920
+    ],
+    "samples": 16,
+    "lastFrame": 9450,
+    "totalFrames": 14846,
+    "completed": false,
+    "elapsedThisRun": 15059.34452676773,
+    "sourceVoiceUnchanged": true
+  },
+  "newAfterRenderSession": 6944,
+  "oldAfterRenderSession96021Stopped": true,
+  "oldRunnerExitCode": 130,
+  "newAfterRenderResult": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v02/after-render-result.json",
+  "exactSvgCachePreflight": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4合成_完全一致SVGキャッシュ_事前確認_20261030.json",
+  "sourceHashes": {
+    "scripts/blender/desk_b2a_s4final_gpt_20261030.py": "50e9dc3fd9f3f92f95c8fced99635d0e49cde4a2fc47fb075ddf5ec7a680d704",
+    "scripts/umech/desk-b2a-s4final-stage-cacheexact_gpt_20261030.mjs": "c17073c939d93ba1688cf52f2c934fb261492c4264c5006904eee3d46ea0fa83",
+    "scripts/umech/run-b2a-s4final-after-render-v02_gpt_20261030.mjs": "d67987dc637891255988c3b1fa83f062caf0d0a005553728de255cf1fc922540"
+  },
+  "oldFilesPreserved": true,
+  "manualFinalVisualReviewPending": true,
+  "earsPerformed": false,
+  "noCommitOrPush": true
+}

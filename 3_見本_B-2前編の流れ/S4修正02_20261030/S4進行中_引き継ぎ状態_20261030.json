@@ -1,0 +1,28 @@
+{
+  "recorded": "2026-10-30T03:48:45.711Z",
+  "status": "native-production-in-progress-not-final",
+  "renderState": {
+    "stage": "S4",
+    "resolution": [
+      1080,
+      1920
+    ],
+    "samples": 16,
+    "lastFrame": 3600,
+    "totalFrames": 14846,
+    "completed": false,
+    "elapsedThisRun": 1708.7612617015839,
+    "sourceVoiceUnchanged": true
+  },
+  "cache": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030",
+  "guiJob": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/jobs/029-native-resume.json",
+  "afterRenderRunner": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/scripts/umech/run-b2a-s4final-after-render_gpt_20261030.mjs",
+  "afterRenderSession": 96021,
+  "afterRenderExpectedResult": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査/after-render-result.json",
+  "manualFullVisualReviewStillRequired": true,
+  "earsPerformed": false,
+  "sourceSha256": "50e9dc3fd9f3f92f95c8fced99635d0e49cde4a2fc47fb075ddf5ec7a680d704",
+  "optimisation": "exact native JPEG image coding bytes including entropy scan; only non-pixel COM metadata excluded for still identity",
+  "unchanged": "script,voice,caption wording/timing,BGM,shared gates and thresholds",
+  "commitOrPush": false
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "Updated S1 catalog: all 22 oblique and 22 top images personally viewed; still-image shape and reference-style review, not animation playback",
+  "catalog": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S1_20261029/catalog.json",
+  "viewedPartsBothAngles": ["frog", "frog_same", "cover", "glass", "generator", "water", "pile", "unit", "electroscope", "cell", "ray", "alarm", "galvani", "volta", "assistant", "door", "terrella", "book", "map", "globe_support", "cup", "seam"],
+  "imagesViewed": 44,
+  "referenceImagesViewed": [
+    "docs/video-revision-20260924/deep/部品カタログ画像/doll_oblique.png",
+    "docs/video-revision-20260924/deep/部品カタログ画像/book_oblique.png",
+    "docs/video-revision-20260924/deep/部品カタログ画像/caesar_disk_top.png",
+    "/Users/ken/Downloads/physics-quest-ChatGPT引き継ぎ_技術の疑問の鎖_2026-10-22/見本_1-1第6版/全コマ一覧_1秒ごと/sheet-04.jpg"
+  ],
+  "resolvedFindings": [
+    {"issue": "Old catalog missed the updated root transforms and cropped or omitted several models", "updatedImages": "All 44 updated images now contain the complete intended model"},
+    {"issue": "Old alarm ceiling slab occluded the entire alarm body", "updatedImages": "Ceiling is now a narrow beam; the circular alarm body and separate smoke source are visible"},
+    {"issue": "Old catalog smoke appeared as a rigid stacked column", "updatedImages": "Smoke is now distributed into irregular separate rising-looking clusters in the oblique still"}
+  ],
+  "findings": [
+    {
+      "priority": "P1",
+      "part": "generator",
+      "image": "部品カタログ画像/generator_oblique.jpg",
+      "issue": "The small return electrode ball floats separately from its vertical support",
+      "evidence": "return_ball center is (0.186,-0.02,0.235), while vertical return support is at x=0.21 with top z=0.23; there is no short horizontal connecting rod",
+      "recommendation": "Add a short brass link between the return support's upper end and the return ball. Do not alter narration or shared source. Recheck this catalog image and affected S2 scene."
+    },
+    {
+      "priority": "P2",
+      "part": "map",
+      "issue": "The map's continent outline is highly schematic and not readily recognizable as Europe",
+      "recommendation": "Retain the simple prop, but ensure the London/Italy city labels and route are explicit in the lesson overlay."
+    },
+    {
+      "priority": "P2",
+      "part": "terrella",
+      "issue": "When all field loops are visible, the surface needle is necessarily small in the full-model catalog view",
+      "recommendation": "Use the planned close-up for dip and direction explanations; do not rely on this full-model still to explain inclination."
+    },
+    {
+      "priority": "P2",
+      "part": "glass",
+      "issue": "The three-dimensional plus markers look like minus signs from a near-overhead camera because the vertical stroke is foreshortened",
+      "recommendation": "Use the oblique camera for charge markers, or orient the markers toward the active camera in the lesson. No charge-sign explanation should rely on the top catalog view."
+    }
+  ],
+  "styleAssessment": "Warm wood, cream accents, rounded matte toy geometry and face-free historical dolls are consistent with the reference tabletop world. New catalog framing no longer has the old clear clipping errors. Preview sample noise is not evaluated as a final-render defect.",
+  "parentingProbe": {"file": "probe_parts_parenting_gpt_20261029.json", "checks": 176, "failed": 0, "maximumObservedErrorMeters": 8.414951710459976e-8},
+  "sourceEditedDuringVisualReview": false,
+  "remainingScope": ["Moving-state timing and object size in actual S2/S3 lesson shots", "Narration/overlay synchronization", "Final video rendering and audio checks"]
+}

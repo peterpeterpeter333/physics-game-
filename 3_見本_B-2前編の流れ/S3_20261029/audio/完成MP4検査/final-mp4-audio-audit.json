@@ -1,0 +1,104 @@
+{
+  "createdUtc": "2026-10-29T14:11:40.164007+00:00",
+  "movie": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/draft/ys-chain-b2a_gpt_20261029_s3_draft.mp4",
+  "movieSha256": "93dde42e529b8b3d1765bf1e8dd154602c91c8d696942fb4acd108399a282ae9",
+  "mix": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+  "mixSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+  "sourceVoiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+  "audioStreams": [
+    "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 24000 Hz, mono, fltp, 110 kb/s (default)"
+  ],
+  "strictDecodeExit": 0,
+  "pcmDecodeExit": 0,
+  "decodedPcmSampleCount": 11877376,
+  "decodedPcmSha256": "1af11ede98e07cddceff8751a30e57726b9a92c0197ba53becc926ac827b6891",
+  "decodedAudioSeconds": 494.8906666666667,
+  "expectedSeconds": 494.8646666666668,
+  "containerSeconds": 494.87,
+  "durationToleranceSeconds": 0.076,
+  "integratedLUFS": -14.2,
+  "truePeakDbfs": -0.8,
+  "silenceStarts": [],
+  "silenceEnds": [],
+  "voiceBgmDifferenceFromFrozenStemMeasurement": {
+    "medianDb": 22.398616534108726,
+    "p10Db": 10.102094715491893,
+    "scope": "From immutable audio-v4 stems; cannot separate voice/BGM after AAC encoding."
+  },
+  "waveformComparisonToFrozenMix": {
+    "estimatedLagSamples": 0,
+    "estimatedLagSeconds": 0.0,
+    "blocks": [
+      {
+        "startSeconds": 2,
+        "samples": 96000,
+        "pearson": 0.999896916676515,
+        "relativeRmsError": 0.014514787668989313
+      },
+      {
+        "startSeconds": 60,
+        "samples": 96000,
+        "pearson": 0.9999614596869673,
+        "relativeRmsError": 0.008838978858095427
+      },
+      {
+        "startSeconds": 150,
+        "samples": 96000,
+        "pearson": 0.9999558833999175,
+        "relativeRmsError": 0.009441826654172255
+      },
+      {
+        "startSeconds": 260,
+        "samples": 96000,
+        "pearson": 0.9999507126869058,
+        "relativeRmsError": 0.010042129461574708
+      },
+      {
+        "startSeconds": 380,
+        "samples": 96000,
+        "pearson": 0.9998981757070526,
+        "relativeRmsError": 0.014368069425639722
+      },
+      {
+        "startSeconds": 485,
+        "samples": 96000,
+        "pearson": 0.9998981753357689,
+        "relativeRmsError": 0.014472162667422142
+      }
+    ],
+    "scope": "AAC fidelity diagnostic only; not an ear check or a new mixing pass."
+  },
+  "command": [
+    "/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "-hide_banner",
+    "-nostats",
+    "-xerror",
+    "-err_detect",
+    "explode",
+    "-i",
+    "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/draft/ys-chain-b2a_gpt_20261029_s3_draft.mp4",
+    "-map",
+    "0:a:0",
+    "-vn",
+    "-sn",
+    "-dn",
+    "-af",
+    "ebur128=framelog=quiet:peak=true,silencedetect=n=-35dB:d=0.25",
+    "-f",
+    "null",
+    "-"
+  ],
+  "checks": {
+    "strictAudioDecodeExitZero": true,
+    "strictPcmDecodeExitZero": true,
+    "exactlyOneAacMono24kAudioStream": true,
+    "durationWithinCodecAndVideoQuantization": true,
+    "containerDurationWithinCodecAndVideoQuantization": true,
+    "integratedLufsMinus14WithinPoint5": true,
+    "truePeakBelowZeroDbfs": true,
+    "zeroSilenceRunsMinus35DbQuarterSecond": true,
+    "frozenMixHashUnchanged": true
+  },
+  "pass": true,
+  "scope": "Final MP4 audio stream mechanical validation only. Does not replace visual video review, or ear-based full listening. No voice, subtitle, timing, mix or movie modifications."
+}

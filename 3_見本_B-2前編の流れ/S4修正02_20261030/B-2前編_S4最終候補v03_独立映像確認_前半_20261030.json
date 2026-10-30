@@ -1,0 +1,87 @@
+{
+  "episode": "B-2 前編",
+  "reviewer": "b2a_independent_audit",
+  "date": "2026-10-30",
+  "candidate": "v03 地表幅修正版",
+  "movie": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/out/ys-chain-b2a_gpt_20261029_s4_final.mp4",
+  "movieSha256FromEncodedMotionManifest": "1f91678a7fe90b79cfd393002dd65998bab7110cb98a5de781df39b17329a9f0",
+  "scope": {
+    "actuallyViewed": true,
+    "sheetDirectory": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/verify",
+    "sheets": "sheet-01.jpg ～ sheet-25.jpg、全25頁の全250パネル",
+    "actualVideoSampleSeconds": {"first": 0, "last": 249, "step": 1},
+    "sampleOrigin": "完成MP4をデコードした毎秒コマ。Blenderの途中rawや旧候補の絵コンテで代用していない。",
+    "realTimePlaybackPerformed": false,
+    "earsPerformed": false,
+    "all30fpsFramesViewed": false,
+    "wholeMovieViewedByThisReviewer": false,
+    "limitations": [
+      "この報告の実見範囲は前半0～249秒。後半250秒以降の合格をこの報告だけで主張しない。",
+      "毎秒コマから0.2秒の火花や接触と蹴りの全30fps同期を確定しない。別の連続コマ報告で範囲を限定して確認する。",
+      "音声は耳で聞いていない。音声と日本語の自然さの聴覚的な最終確認は未実施。",
+      "画面幅70％は本報告では視覚的な概算であり、ピクセル実測を行ったという意味ではない。"
+    ]
+  },
+  "instructionsReadCompletely": [
+    "outputs/ys-chain-b2a-backup/S3_20261029/B-2前編_S3_Claudeの直しの指示_20261029.md",
+    "outputs/ys-chain-b2a-backup/S4_20261030/B-2前編_S4前_Claudeの直しの指示_20261030.md"
+  ],
+  "mechanicalReportRead": {
+    "path": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/verify/report.txt",
+    "independentlyRerun": false,
+    "reported": [
+      "ffmpeg -xerror デコードエラーなし",
+      "494.87秒、音声JSONと一致",
+      "495コマ・50頁を生成",
+      "70 cueの機械的な声・字幕時刻照合",
+      "3.5秒以上の -40 dB 無音なし",
+      "耳での確認は未実施"
+    ]
+  },
+  "resolvedBlockingFinding": {
+    "sourceCandidate": "v02",
+    "rows": [6, 7],
+    "oldIssue": "地表板が画面幅いっぱいになり、左右端が切れ、70％幅の指示を満たしていなかった。",
+    "v03Evidence": "sheet-05～07の該当パネル（約41～61秒）を実見。地表板は左右に余白があり、横幅がおおむね70％。緑色の曲面上面と茶色の土の断面の両方が見える。白い水平線・赤い針先・大きい黄色の上向き矢印も保持されている。",
+    "status": "実見した該当コマでは解消"
+  },
+  "positiveObservations": [
+    {"seconds": "0～19", "observation": "布は足の起伏に沿い、先の趾が見える。黒いテレラ球は全体と上側の赤い印が見え、配置を把握できる。"},
+    {"seconds": "19～40", "observation": "半回転後は青Sが上・赤Nが下。北南札は針を大きく隠さず、後の磁力線と粒も追える。"},
+    {"seconds": "41～73", "observation": "地表板は収まり、局所の水平線に対する針の傾きが読める。ロンドンとオーストラリアの比較は左右の札と赤い針先で対応する。"},
+    {"seconds": "82～107", "observation": "太いZ型の足・白い神経・金色の真鍮・灰色の鉄を区別できる。手は外側の柄を持ち、説明対象の神経や足全体を覆わない。"},
+    {"seconds": "108～126", "observation": "電池と静電気のガラス棒を画として切り替え、ガラス上の＋印が放電の前後で消える。安全の小札がある。"},
+    {"seconds": "127～182", "observation": "高低差・水の量・くみ上げポンプを順に使った比喩で、槽の水位変化と水路の粒が確認できる。見方札と字幕は主役を大きく隠していない。"},
+    {"seconds": "183～218", "observation": "静電機に近い足と、金属だけで動く足が別場面になっている。動物電気の説明は仮説と明示され、現在の確定事実として一方的に表示されていない。"},
+    {"seconds": "219～249", "observation": "シビレエイの接触時に『まねをしない』が表示される。本を開いた後も緑の足の絵が消えずに残る。"}
+  ],
+  "blockingFindings": [],
+  "nonBlockingFindings": [
+    {
+      "priority": "P2",
+      "row": 9,
+      "seconds": "約75～81",
+      "observation": "ガルヴァーニの人物札が、白い神経の一部に重なる。",
+      "whyNotBlocking": "人物導入時であり、その後の神経を説明する場面では札がなくなり、白い神経と真鍮の接触箇所が読める。",
+      "futureSuggestion": "人物札を足本体の上の余白側に置く。"
+    },
+    {
+      "priority": "P2",
+      "row": 19,
+      "seconds": "約183～194",
+      "observation": "静電気を作る機械は左端に寄り、装置本体のかなりの部分が画面外。神経に当たる灰色のメスも、足や白い神経に比べて小さめ。",
+      "whyNotBlocking": "この場面の配置維持は修正指示の範囲にあり、足と神経・メスの先は見える。新たに生じた映像破綻や、禁止された手の遮蔽ではない。",
+      "futureSuggestion": "別改訂で許可されるなら、最初に装置全体を短く見せ、その後で接触箇所へ寄る。"
+    },
+    {
+      "priority": "P2",
+      "row": 23,
+      "seconds": "約234～238",
+      "observation": "ミオの顔アイコンが趾と外側の鉄の柄の一部に重なる。",
+      "whyNotBlocking": "能動的な接触・蹴りの説明中ではなく、神経・肉との接点・主要なZ型の足は見える。",
+      "futureSuggestion": "顔を足の下の余白へ逃がす。"
+    }
+  ],
+  "decision": "実見した前半250コマについて新たなP0/P1なし。旧v02の地表板の見切れは解消。これは前半の視覚点検結果であり、全編・全30fps・耳での合格や、原本の品質ゲート合格を代替しない。",
+  "changesByThisReview": "新規の監査JSONのみ。既存ソース・台本・音声・字幕・共通検査・完成動画は変更していない。コミット・pushなし。"
+}

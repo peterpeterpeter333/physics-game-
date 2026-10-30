@@ -1,0 +1,297 @@
+{
+  "purpose": "S4本番rawの正確なjから採集した部品確認。S1/S3の標準カタログ撮影ではない。",
+  "sourceCache": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030",
+  "nativeMeta": {
+    "key": "b2a_s4final_gpt_20261030",
+    "frames": 14846,
+    "fps": 30,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "samples": 16,
+    "finished": "2026-10-30T18:20:51",
+    "previewOnly": false,
+    "sampleOnly": false,
+    "stage": "S4"
+  },
+  "nativeMetaSha256": "98572ffac2cba99c63a11b683689a7a81078de0478436cce894bc9b275b4aafa",
+  "items": [
+    {
+      "key": "01_足",
+      "label": "Z字の後脚と神経",
+      "j": 14785,
+      "seconds": 492.8333333333333,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/14785.jpg",
+      "sourceSha256": "1ccb4b0061dbaddb629e4b55752fb1968b165424c34364d3df1ebf68dadd21e3",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14785.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/01_足_j14785.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/01_足_j14785.png",
+      "crop": {
+        "left": 0,
+        "top": 450,
+        "width": 1080,
+        "height": 850
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    },
+    {
+      "key": "02_持ち手",
+      "label": "真鍮と鉄の外側持ち手",
+      "j": 2704,
+      "seconds": 90.13333333333334,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/02704.jpg",
+      "sourceSha256": "f3321e91c6de2f00afa141fa58ade5aea0baa92eea971a7ecc2b21ae6c14fecc",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/02704.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/02_持ち手_j2704.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/02_持ち手_j2704.png",
+      "crop": {
+        "left": 0,
+        "top": 560,
+        "width": 1080,
+        "height": 720
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    },
+    {
+      "key": "03_薄布",
+      "label": "薄布と実際の三つの趾",
+      "j": 0,
+      "seconds": 0,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/00000.jpg",
+      "sourceSha256": "8bdb58eeed3622235734deccb9d8024cf155b8bd44184f1dd743593c9721c67f",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/00000.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/03_薄布_j0.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/03_薄布_j0.png",
+      "crop": {
+        "left": 0,
+        "top": 450,
+        "width": 1080,
+        "height": 850
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    },
+    {
+      "key": "05_検電器",
+      "label": "開いた金箔葉と暗い背面",
+      "j": 11245,
+      "seconds": 374.8333333333333,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/11245.jpg",
+      "sourceSha256": "f035f6a031d9a373b2b87b50ed28c9ecba2a3a2378e00600dd82d0579aa37cfe",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/11245.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/05_検電器_j11245.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/05_検電器_j11245.png",
+      "crop": {
+        "left": 200,
+        "top": 350,
+        "width": 680,
+        "height": 850
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    },
+    {
+      "key": "06a_厚紙_湿",
+      "label": "塩水の厚紙と水滴",
+      "j": 14172,
+      "seconds": 472.4,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/14172.jpg",
+      "sourceSha256": "23e811f6c3b63908fa8b535a1bdf6198c32534f10261213550c9e35ec2df0c48",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14172.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/06a_厚紙_湿_j14172.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/06a_厚紙_湿_j14172.png",
+      "crop": {
+        "left": 130,
+        "top": 0,
+        "width": 810,
+        "height": 1920
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true,
+      "contactCrop": {
+        "left": 130,
+        "top": 550,
+        "width": 810,
+        "height": 690
+      }
+    },
+    {
+      "key": "06b_厚紙_乾",
+      "label": "白い乾いた厚紙",
+      "j": 14247,
+      "seconds": 474.9,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/14247.jpg",
+      "sourceSha256": "4e7fb15d3cfabdfa01e0a9a33bf99d99fc24a01a5f888f12bc205b9d296aa973",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14247.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/06b_厚紙_乾_j14247.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/06b_厚紙_乾_j14247.png",
+      "crop": {
+        "left": 130,
+        "top": 0,
+        "width": 810,
+        "height": 1920
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true,
+      "contactCrop": {
+        "left": 130,
+        "top": 550,
+        "width": 810,
+        "height": 690
+      }
+    },
+    {
+      "key": "07_神経粒",
+      "label": "神経上の黄色い光粒",
+      "j": 12112,
+      "seconds": 403.73333333333335,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/12112.jpg",
+      "sourceSha256": "5b241be0f108c4498b01e23bfeb3b6ca60652a803382264b3275df5628a03a5a",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/12112.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/07_神経粒_j12112.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/07_神経粒_j12112.png",
+      "crop": {
+        "left": 70,
+        "top": 590,
+        "width": 580,
+        "height": 230
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    },
+    {
+      "key": "08_一体の腕",
+      "label": "袖と手首と布を持つ手",
+      "j": 13133,
+      "seconds": 437.76666666666665,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/13133.jpg",
+      "sourceSha256": "9f27489271335b1a77ece1ffffaa4d166b6123d1ca828f1d83eb50481ac17cc3",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/13133.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/08_一体の腕_j13133.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/08_一体の腕_j13133.png",
+      "crop": {
+        "left": 0,
+        "top": 380,
+        "width": 960,
+        "height": 700
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    },
+    {
+      "key": "02b_持ち手接触",
+      "label": "右下の手が持ち手に触れる",
+      "j": 14814,
+      "seconds": 493.8,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/14814.jpg",
+      "sourceSha256": "3a1f53439c757323d8e8978558d70e0c29845da4611ef42c2098078dec557c4d",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4final_gpt_20261030/blender/desk/14814.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/02b_持ち手接触_j14814.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/02b_持ち手接触_j14814.png",
+      "crop": {
+        "left": 0,
+        "top": 490,
+        "width": 1080,
+        "height": 800
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    },
+    {
+      "key": "04_地表",
+      "label": "緑の上面と茶色の断面",
+      "j": 1718,
+      "seconds": 57.266666666666666,
+      "finalNativeSource": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/01718.jpg",
+      "sourceSha256": "3bbb50046d2d08475161db03b07fe73e9653aff8d91ef66008c1963a353c2a1d",
+      "copiedFrom": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/01718.jpg",
+      "finalNativeSourceMatchesCopiedImage": true,
+      "nativeCopy": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/原寸/04_地表_j1718.jpg",
+      "cropImage": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/切り出し/04_地表_j1718.png",
+      "crop": {
+        "left": 100,
+        "top": 300,
+        "width": 880,
+        "height": 1200
+      },
+      "sourceResolution": [
+        1080,
+        1920
+      ],
+      "sameRawHash": true,
+      "differentInode": true
+    }
+  ],
+  "contactSheet": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4修正部品_本番画面からの確認/S4本番場面_部品確認一覧.jpg",
+  "standardCatalogues": [
+    {
+      "stage": "S1",
+      "path": "W/outputs/ys-chain-b2a-backup/S1_20261029/catalog.json",
+      "images": "W/outputs/ys-chain-b2a-backup/S1_20261029/部品カタログ画像",
+      "currentFinalShapes": false
+    },
+    {
+      "stage": "S3",
+      "path": "W/outputs/ys-chain-b2a-backup/S3_20261029/catalog.json",
+      "images": "W/outputs/ys-chain-b2a-backup/S3_20261029/修正部品カタログ画像",
+      "currentFinalShapes": false
+    }
+  ],
+  "operations": [
+    "raw JPEG byte copy",
+    "rectangular crop decoded to PNG",
+    "resize only in contact sheet"
+  ],
+  "newBlenderRendering": false,
+  "existingCataloguesChanged": false,
+  "earsPerformed": false,
+  "scope": "Representative source-j stills only. Not a turntable/top+oblique standard catalogue or all-motion review."
+}

@@ -1,0 +1,153 @@
+{
+  "stage": "S2",
+  "date": "2026-10-29",
+  "episode": "B-2前編",
+  "completedMovie": false,
+  "nextAction": "Stop for Claude S2 review",
+  "sourceRows": 43,
+  "spokenCues": 70,
+  "durationSeconds": 494.8646666666668,
+  "captionChunks": 317,
+  "resolution": [
+    540,
+    960
+  ],
+  "samples": 4,
+  "finalPages": 27,
+  "finalComposedFrames": 267,
+  "rawBackupVerification": {
+    "count": 267,
+    "missing": 0,
+    "shaMismatch": 0
+  },
+  "inputChecks": [
+    {
+      "name": "master",
+      "ok": true
+    },
+    {
+      "name": "script",
+      "ok": true
+    },
+    {
+      "name": "ys-chain-b2a_gpt_20261029.voice.wav",
+      "ok": true
+    },
+    {
+      "name": "ys-chain-b2a_gpt_20261029.wav",
+      "ok": true
+    },
+    {
+      "name": "ys-chain-b2a_gpt_20261029.json",
+      "ok": true
+    },
+    {
+      "name": "phrase-times.json",
+      "ok": true
+    },
+    {
+      "name": "plan.json",
+      "ok": true
+    },
+    {
+      "name": "timed-selection.json",
+      "ok": true
+    }
+  ],
+  "partChecks": {
+    "total": 176,
+    "failed": []
+  },
+  "hashes": {
+    "manifest": "c2657dcbc3ebd071d251a868aee6fb3cd3280bbf57ccc316a9df34639cb3d62f",
+    "composition": "398783fa2828e862ef5ba4e811023246e2d36714046b4f1d5b3ea2577fc007b5",
+    "independent": "fd788a0b8f4bc006f7d918df58dba27865e5639b813d6e22dd601e054804d357"
+  },
+  "personallyViewed": {
+    "root": {
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "composedStills": 267,
+      "continuousMovie": false,
+      "earListening": false
+    },
+    "independent": {
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "composedStills": 267,
+      "report": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S2_20261029/B-2前編_S2_独立2D最終監査_20261029.json"
+    }
+  },
+  "unverified": [
+    "S3/S4 continuous video",
+    "full-movie quality-gate and qx-verify",
+    "ear listening",
+    "final BGM/SFX mix",
+    "camera-motion/top-view time fractions",
+    "full 1Hz movie contact sheets",
+    "problem-ready final stills"
+  ],
+  "originalNarrationHoldPoints": [
+    "row15 per-unit-time missing from water analogy",
+    "rows28/34/35/43 exclusion of biological source is not established just by nonbiological battery",
+    "row33 condenser electroscope operation underexplained",
+    "row39 repeated shocks versus sustained physiological response",
+    "wet-finger and electric-ray demonstration safety"
+  ],
+  "commit": false,
+  "push": false
+}

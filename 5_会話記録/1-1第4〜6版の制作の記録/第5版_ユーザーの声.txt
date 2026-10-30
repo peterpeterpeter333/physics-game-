@@ -1,0 +1,108 @@
+「技術の疑問の鎖」1-1（第5版）を作る担当です。
+作業ディレクトリ：/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series
+- コミット・push しない。アプリのコードは触らない。
+- 他の動画の書き出しを変えない。新しいファイルで作る。
+- 既存ファイルを変えた場合は、ys-chain-1-1v4 と ys-deep-12 が変更前と同じに書き出されることを cmp で確かめる。
+
+**背景**
+- 第4版（ys-chain-1-1v4、2:52）の、ユーザーの評価：「素晴らしい。3D の質は非常に良く、このディズニーのような動き回る 3D 映像は残して欲しい」。
+- 変えてほしいこと：
+  1. カメラの動きが多すぎる。動かす必要のない所では止める。
+  2. 一つの現象を理解する時間がない。いろいろな側面から理解させる所を、3D と合わせて解説する。
+  3. 特殊的好奇心に全振りして、100％理解させる設計が抜け落ちている。
+  4. 少し短い。
+- 統括の Claude が、台本を第5版に書き直した。
+
+**まず読む**
+1. 正本：docs/video-revision-20260924/deep/技術の疑問の鎖_1-1_第5版_ナレーション.md
+   - 「作り方の約束」、表（画面の欄の「止める／動く」の指定）、検算を全部読む。
+   - 字幕の文言は一字一句このまま、変えない。
+2. 第4版の一式：
+   - 台本 ytseries/chain-1-1v4.mjs
+   - 3D scripts/blender/desk_1_1v4.py
+   - 重ねる絵 scripts/umech/desk-frame.mjs、desk-1-1v4-overlay.mjs、desk-faces.mjs
+   - 数と模様 desk-1-1v4-data.mjs
+   - 音 mix-chain-desk-audio.py
+   - lint chain-desk-lint.mjs、prosody-speaker.py
+   - 机・物・手・顔・得点板・字幕・音は、全部そのまま使う。新しく要る物だけを足す。
+   - 第4版のファイルは編集しない。写して、新しい名前（…1_1v5…）で作る。
+3. 分析：docs/video-revision-20260924/deep/無限の机_分析_2026-10-21.md
+
+**ID と出力**
+- ID は ys-chain-1-1v5、題は同じ「女王を処刑台に送った手紙」、series は「技術の疑問の鎖 1-1 ｜ 暗号の2000年」。
+- 出力：~/Downloads/physics-quest-youtube/技術の疑問の鎖/1-1_女王を処刑台に送った手紙.mp4
+  - 第4版は消さない。旧版/ に「_第4版」を付けて移す。
+- ChatGPT 用：~/Downloads/physics-quest-特別編_台本/技術の疑問の鎖/
+
+**新しく要る物（3D、第4版と同じ見た目で）**
+- 置き時計：針が12を過ぎて1へ。
+- 円板の上を1目盛りずつ進む指。
+- 表の前で 1 枚ずつ裏返るタイル。
+- 枝分かれの木の模型（26・25・24…）。
+- 小さな人形6体と、名札の付け替え、吹き出し。
+- E のタイル3枚 → X に裏返る → 同じ高さの塔。
+- 白の塔の列（英文）と、橙の塔の列（暗号文）を並べる。
+- サイコロ。
+- 論理の筋の札。
+- 三つの見方の札（「見方：具体例／たとえ話／破る側から」）。机の世界に合う見た目で、その見方の間ずっと出す。
+
+**カメラ**
+- 正本の画面欄の「止める」の所は、カメラを止め、物の動きで見せる。
+- 動かすのは、切り替わり・見せる瞬間・笑いの所だけ。
+- 動いている時間の割合を測って報告する（目標は3〜4割まで）。
+
+**間と速さ**
+- 1段の計算や「なるほど」の後に、間（0.8〜1.5秒）を置く。音楽は止めない。
+- 声の速さは、第4版と同じ設定のまま。変えない。
+
+**決まり**
+- 数は assert で確かめる：CAT→EQJ、E→X、T→J、H→V、X 70、J 60、JVX 14、26!、1300万年、カエサル、挑戦。
+- 誇張・再現には注記を付ける。
+- 正本の誤りや分かりにくさは、直さずに報告する。
+
+**確認**
+- 手順書の確認を全部やる。lint、読み 0、prosody 0（女声も）、mxr-review 全ページ、qx-verify 0、1秒ごとの全コマ一覧を全部見る。
+- 直したら、直した後の版で全部見直す。
+- 特に見ること：
+  - 説明の間、カメラが止まっているか。
+  - 三つの見方の札が正しい区間に出ているか。
+  - 計算の段が声より先に出ていないか。
+- Blender の書き出し時間を記録する。長いときは、残りの見込みを統括に知らせる。
+
+**報告は短く**
+- ID・長さ・出力
+- カメラが動いている割合
+- 新しく作った物
+- 数値（字幕・LUFS・無音・字/秒）
+- Blender の時間
+- 確認したこと／していないこと
+- 代表のコマ
+- 正本への疑問
+
+さらに担当を立てない。
+=====
+<system-reminder>
+Your final report is delivered through SubagentHandback: when your work is complete, call SubagentHandback({message: <your full report>}). The call ends your run, so make it your last step. Only a SubagentHandback call reaches your caller as your result; plain text you write at the end is not delivered.
+</system-reminder>
+=====
+[Image: original 1620x2016, displayed at 1607x2000. Multiply coordinates by 1.01 to map to original image.]
+=====
+[Image: original 1800x2560, displayed at 1406x2000. Multiply coordinates by 1.28 to map to original image.]
+=====
+[Image: original 1800x3200, displayed at 1125x2000. Multiply coordinates by 1.60 to map to original image.]
+=====
+[Image: original 1800x3840, displayed at 938x2000. Multiply coordinates by 1.92 to map to original image.]
+=====
+[Image: original 1800x3200, displayed at 1125x2000. Multiply coordinates by 1.60 to map to original image.]
+=====
+[Image: original 1800x6400, displayed at 563x2000. Multiply coordinates by 3.20 to map to original image.]
+=====
+[Image: original 1800x2560, displayed at 1406x2000. Multiply coordinates by 1.28 to map to original image.]
+=====
+[Image: original 1800x4480, displayed at 804x2000. Multiply coordinates by 2.24 to map to original image.]
+=====
+[Image: original 1800x3840, displayed at 938x2000. Multiply coordinates by 1.92 to map to original image.]
+=====
+[Image: original 1800x3200, displayed at 1125x2000. Multiply coordinates by 1.60 to map to original image.]
+=====
+[Image: original 1800x3200, displayed at 1125x2000. Multiply coordinates by 1.60 to map to original image.]

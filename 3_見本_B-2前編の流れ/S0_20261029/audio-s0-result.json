@@ -1,0 +1,70 @@
+{
+  "started": "2026-10-29T10:17:18.025Z",
+  "id": "ys-chain-b2a_gpt_20261029",
+  "masterSha256": "a9900445f07735abeb46f39618f5878a161ddb8e3ecc4ad3d7c231e1b322437e",
+  "scriptSha256": "babe19a9b5ec6c66700164523506bd16664559fa8cd531f25db2bafbe8557033",
+  "phases": [
+    {
+      "name": "01-original-lint-before-voice",
+      "exitCode": 0,
+      "elapsedSeconds": 4.238,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/01-original-lint-before-voice.log"
+    },
+    {
+      "name": "02-original-check-readings",
+      "exitCode": 0,
+      "elapsedSeconds": 0.556,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/02-original-check-readings.log"
+    },
+    {
+      "name": "03-original-prosody",
+      "exitCode": 0,
+      "elapsedSeconds": 0.491,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/03-original-prosody.log"
+    },
+    {
+      "name": "04-original-prosody-speaker",
+      "exitCode": 0,
+      "elapsedSeconds": 0.443,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/04-original-prosody-speaker.log"
+    },
+    {
+      "name": "05-original-render-dialogue",
+      "exitCode": 0,
+      "elapsedSeconds": 103.265,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/05-original-render-dialogue.log"
+    },
+    {
+      "name": "06-original-phrase-times",
+      "exitCode": 0,
+      "elapsedSeconds": 0.074,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/06-original-phrase-times.log"
+    },
+    {
+      "name": "07-add-two-second-intro",
+      "exitCode": 0,
+      "elapsedSeconds": 0.077,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/07-add-two-second-intro.log"
+    },
+    {
+      "name": "08-original-lint-after-voice",
+      "exitCode": 0,
+      "elapsedSeconds": 4.531,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/08-original-lint-after-voice.log"
+    }
+  ],
+  "scope": "S0 speech and caption timing only; no ear listening or video quality claim",
+  "structuredMasterCheck": {
+    "originalRows": 43,
+    "silentRows": 1,
+    "voicedRows": 42,
+    "voicedCues": 70,
+    "allOriginalVoicedTextUnchanged": true,
+    "originalSilentIntroSeconds": 2,
+    "originalCheckerLimitation": "Original lint rejects silent narration rows; original checker is run on a documented derived audio-only view, alongside this strict 43-row check.",
+    "derived": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/master-audio-rows-derived-for-original-lint.md"
+  },
+  "completed": "2026-10-29T10:19:11.711Z",
+  "masterUnchanged": true,
+  "scriptUnchanged": true
+}

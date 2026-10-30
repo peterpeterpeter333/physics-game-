@@ -1,0 +1,3020 @@
+{
+  "purpose": "Dense event inspection from the actual native S4 encoded MP4, not the earlier preflight movie",
+  "movie": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/out/ys-chain-b2a_gpt_20261029_s4_final.mp4",
+  "movieSha256": "1f91678a7fe90b79cfd393002dd65998bab7110cb98a5de781df39b17329a9f0",
+  "sourceManifest": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/連続試写_全16区間/motion-export.json",
+  "sourceManifestSha256": "52b73cb633885f298eca6f40ccf47ce202f519ee31d579fded1aed690fb66c16",
+  "nativeResolution": [
+    1080,
+    1920
+  ],
+  "reviewResolution": [
+    540,
+    960
+  ],
+  "fps": 30,
+  "uniqueExtractedFrames": 378,
+  "contactSamples": 380,
+  "pages": [
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-01.jpg",
+      "firstSample": 0,
+      "lastSample": 7,
+      "samples": [
+        {
+          "id": "r01-cloth-kick",
+          "j": 0,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0000.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 10,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0001.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 11,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0002.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 12,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0003.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 13,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0004.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 14,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0005.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 15,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0006.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 16,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0007.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-02.jpg",
+      "firstSample": 8,
+      "lastSample": 15,
+      "samples": [
+        {
+          "id": "r01-cloth-kick",
+          "j": 17,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0008.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 18,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0009.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 19,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0010.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 20,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0011.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 21,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0012.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 22,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0013.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 23,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0014.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 24,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0015.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-03.jpg",
+      "firstSample": 16,
+      "lastSample": 23,
+      "samples": [
+        {
+          "id": "r01-cloth-kick",
+          "j": 25,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0016.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 26,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0017.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 27,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0018.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 28,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0019.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 29,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0020.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 30,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0021.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 31,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0022.jpg"
+        },
+        {
+          "id": "r01-cloth-kick",
+          "j": 32,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0023.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-04.jpg",
+      "firstSample": 24,
+      "lastSample": 31,
+      "samples": [
+        {
+          "id": "r01-cloth-kick",
+          "j": 34,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0024.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 725,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0025.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 731,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0026.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 732,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0027.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 733,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0028.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 734,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0029.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 735,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0030.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 736,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0031.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-05.jpg",
+      "firstSample": 32,
+      "lastSample": 39,
+      "samples": [
+        {
+          "id": "r04-half-turn",
+          "j": 737,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0032.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 738,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0033.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 739,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0034.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 740,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0035.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 741,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0036.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 742,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0037.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 743,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0038.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 744,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0039.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-06.jpg",
+      "firstSample": 40,
+      "lastSample": 47,
+      "samples": [
+        {
+          "id": "r04-half-turn",
+          "j": 745,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0040.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 746,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0041.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 747,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0042.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 748,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0043.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 749,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0044.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 750,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0045.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 751,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0046.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 752,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0047.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-07.jpg",
+      "firstSample": 48,
+      "lastSample": 55,
+      "samples": [
+        {
+          "id": "r04-half-turn",
+          "j": 753,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0048.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 755,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0049.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 757,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0050.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 770,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0051.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 776,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0052.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 777,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0053.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 778,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0054.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 779,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0055.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-08.jpg",
+      "firstSample": 56,
+      "lastSample": 63,
+      "samples": [
+        {
+          "id": "r04-half-turn",
+          "j": 780,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0056.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 781,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0057.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 782,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0058.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 783,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0059.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 784,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0060.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 785,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0061.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 786,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0062.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 787,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0063.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-09.jpg",
+      "firstSample": 64,
+      "lastSample": 71,
+      "samples": [
+        {
+          "id": "r04-half-turn",
+          "j": 788,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0064.jpg"
+        },
+        {
+          "id": "r04-half-turn",
+          "j": 789,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0065.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2584,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0066.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2599,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0067.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2614,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0068.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2629,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0069.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2644,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0070.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2659,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0071.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-10.jpg",
+      "firstSample": 72,
+      "lastSample": 79,
+      "samples": [
+        {
+          "id": "r10-hands",
+          "j": 2674,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0072.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2677,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0073.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2689,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0074.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2704,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0075.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2719,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0076.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2734,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0077.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2749,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0078.jpg"
+        },
+        {
+          "id": "r10-hands",
+          "j": 2764,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0079.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-11.jpg",
+      "firstSample": 80,
+      "lastSample": 87,
+      "samples": [
+        {
+          "id": "r10-hands",
+          "j": 2771,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0080.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2830,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0081.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2845,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0082.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2860,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0083.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2871,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0084.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2875,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0085.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2890,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0086.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2891,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0087.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-12.jpg",
+      "firstSample": 88,
+      "lastSample": 95,
+      "samples": [
+        {
+          "id": "r10-contact-kick",
+          "j": 2892,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0088.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2893,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0089.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2894,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0090.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2895,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0091.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2896,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0092.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2897,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0093.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2898,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0094.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2899,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0095.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-13.jpg",
+      "firstSample": 96,
+      "lastSample": 103,
+      "samples": [
+        {
+          "id": "r10-contact-kick",
+          "j": 2900,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0096.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2901,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0097.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2902,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0098.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2903,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0099.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2904,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0100.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2905,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0101.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2906,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0102.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2907,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0103.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-14.jpg",
+      "firstSample": 104,
+      "lastSample": 111,
+      "samples": [
+        {
+          "id": "r10-contact-kick",
+          "j": 2908,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0104.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2909,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0105.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2910,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0106.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2911,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0107.jpg"
+        },
+        {
+          "id": "r10-contact-kick",
+          "j": 2912,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0108.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 2944,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0109.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 2959,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0110.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 2974,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0111.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-15.jpg",
+      "firstSample": 112,
+      "lastSample": 119,
+      "samples": [
+        {
+          "id": "r11-release-kick",
+          "j": 2989,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0112.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3004,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0113.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3006,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0114.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3019,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0115.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3034,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0116.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3046,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0117.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3047,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0118.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3048,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0119.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-16.jpg",
+      "firstSample": 120,
+      "lastSample": 127,
+      "samples": [
+        {
+          "id": "r11-release-kick",
+          "j": 3049,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0120.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3050,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0121.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3051,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0122.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3052,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0123.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3053,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0124.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3054,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0125.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3055,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0126.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3056,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0127.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-17.jpg",
+      "firstSample": 128,
+      "lastSample": 135,
+      "samples": [
+        {
+          "id": "r11-release-kick",
+          "j": 3057,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0128.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3058,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0129.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3059,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0130.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3060,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0131.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3061,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0132.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3062,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0133.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3063,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0134.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3064,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0135.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-18.jpg",
+      "firstSample": 136,
+      "lastSample": 143,
+      "samples": [
+        {
+          "id": "r11-release-kick",
+          "j": 3065,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0136.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3066,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0137.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3067,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0138.jpg"
+        },
+        {
+          "id": "r11-release-kick",
+          "j": 3068,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0139.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5881,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0140.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5887,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0141.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5888,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0142.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5889,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0143.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-19.jpg",
+      "firstSample": 144,
+      "lastSample": 151,
+      "samples": [
+        {
+          "id": "r20-kick-0",
+          "j": 5890,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0144.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5891,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0145.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5892,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0146.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5893,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0147.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5894,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0148.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5895,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0149.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5896,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0150.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5897,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0151.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-20.jpg",
+      "firstSample": 152,
+      "lastSample": 159,
+      "samples": [
+        {
+          "id": "r20-kick-0",
+          "j": 5898,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0152.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5899,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0153.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5900,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0154.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5901,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0155.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5902,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0156.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5903,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0157.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5904,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0158.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5905,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0159.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-21.jpg",
+      "firstSample": 160,
+      "lastSample": 167,
+      "samples": [
+        {
+          "id": "r20-kick-0",
+          "j": 5906,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0160.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5907,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0161.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5908,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0162.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5909,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0163.jpg"
+        },
+        {
+          "id": "r20-kick-0",
+          "j": 5910,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0164.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6116,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0165.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6122,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0166.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6123,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0167.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-22.jpg",
+      "firstSample": 168,
+      "lastSample": 175,
+      "samples": [
+        {
+          "id": "r20-kick-1",
+          "j": 6124,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0168.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6125,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0169.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6126,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0170.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6127,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0171.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6128,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0172.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6129,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0173.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6130,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0174.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6131,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0175.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-23.jpg",
+      "firstSample": 176,
+      "lastSample": 183,
+      "samples": [
+        {
+          "id": "r20-kick-1",
+          "j": 6132,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0176.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6133,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0177.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6134,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0178.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6135,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0179.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6136,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0180.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6137,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0181.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6138,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0182.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6139,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0183.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-24.jpg",
+      "firstSample": 184,
+      "lastSample": 191,
+      "samples": [
+        {
+          "id": "r20-kick-1",
+          "j": 6140,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0184.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6141,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0185.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6142,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0186.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6143,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0187.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6144,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0188.jpg"
+        },
+        {
+          "id": "r20-kick-1",
+          "j": 6145,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0189.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7947,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0190.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7953,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0191.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-25.jpg",
+      "firstSample": 192,
+      "lastSample": 199,
+      "samples": [
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7954,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0192.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7955,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0193.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7956,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0194.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7957,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0195.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7958,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0196.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7959,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0197.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7960,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0198.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7961,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0199.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-26.jpg",
+      "firstSample": 200,
+      "lastSample": 207,
+      "samples": [
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7962,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0200.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7963,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0201.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7964,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0202.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7965,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0203.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7966,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0204.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7967,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0205.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7968,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0206.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7969,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0207.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-27.jpg",
+      "firstSample": 208,
+      "lastSample": 215,
+      "samples": [
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7970,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0208.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7971,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0209.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7972,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0210.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7973,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0211.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7974,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0212.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7975,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0213.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7977,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0214.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 7992,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0215.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-28.jpg",
+      "firstSample": 216,
+      "lastSample": 223,
+      "samples": [
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8005,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0216.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8007,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0217.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8022,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0218.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8037,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0219.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8042,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0220.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8043,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0221.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8044,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0222.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8045,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0223.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-29.jpg",
+      "firstSample": 224,
+      "lastSample": 231,
+      "samples": [
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8046,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0224.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8047,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0225.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8048,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0226.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8049,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0227.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8050,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0228.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8051,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0229.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8052,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0230.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8053,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0231.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-30.jpg",
+      "firstSample": 232,
+      "lastSample": 239,
+      "samples": [
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8054,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0232.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8055,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0233.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8056,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0234.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8057,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0235.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8058,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0236.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8059,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0237.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8060,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0238.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8061,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0239.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-31.jpg",
+      "firstSample": 240,
+      "lastSample": 247,
+      "samples": [
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8062,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0240.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8063,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0241.jpg"
+        },
+        {
+          "id": "r25-weak-then-strong",
+          "j": 8064,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0242.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11178,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0243.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11193,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0244.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11208,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0245.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11219,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0246.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11223,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0247.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-32.jpg",
+      "firstSample": 248,
+      "lastSample": 255,
+      "samples": [
+        {
+          "id": "r33-connect-open",
+          "j": 11231,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0248.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11232,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0249.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11233,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0250.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11234,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0251.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11235,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0252.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11236,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0253.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11237,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0254.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11238,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0255.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-33.jpg",
+      "firstSample": 256,
+      "lastSample": 263,
+      "samples": [
+        {
+          "id": "r33-connect-open",
+          "j": 11239,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0256.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11240,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0257.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11241,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0258.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11242,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0259.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11243,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0260.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11244,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0261.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11245,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0262.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11246,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0263.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-34.jpg",
+      "firstSample": 264,
+      "lastSample": 271,
+      "samples": [
+        {
+          "id": "r33-connect-open",
+          "j": 11247,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0264.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11248,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0265.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11249,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0266.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11250,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0267.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11251,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0268.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11252,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0269.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11253,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0270.jpg"
+        },
+        {
+          "id": "r33-connect-open",
+          "j": 11261,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0271.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-35.jpg",
+      "firstSample": 272,
+      "lastSample": 279,
+      "samples": [
+        {
+          "id": "r36-nerve-packets",
+          "j": 12022,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0272.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12037,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0273.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12052,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0274.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12067,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0275.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12082,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0276.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12097,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0277.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12112,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0278.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12115,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0279.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-36.jpg",
+      "firstSample": 280,
+      "lastSample": 287,
+      "samples": [
+        {
+          "id": "r36-nerve-packets",
+          "j": 12127,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0280.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12142,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0281.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12157,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0282.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12172,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0283.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12187,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0284.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12202,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0285.jpg"
+        },
+        {
+          "id": "r36-nerve-packets",
+          "j": 12208,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0286.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13123,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0287.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-37.jpg",
+      "firstSample": 288,
+      "lastSample": 295,
+      "samples": [
+        {
+          "id": "r39-single-spark",
+          "j": 13129,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0288.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13130,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0289.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13131,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0290.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13132,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0291.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13133,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0292.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13134,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0293.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13135,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0294.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13136,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0295.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-38.jpg",
+      "firstSample": 296,
+      "lastSample": 303,
+      "samples": [
+        {
+          "id": "r39-single-spark",
+          "j": 13137,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0296.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13138,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0297.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13139,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0298.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13140,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0299.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13141,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0300.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13142,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0301.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13143,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0302.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13144,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0303.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-39.jpg",
+      "firstSample": 304,
+      "lastSample": 311,
+      "samples": [
+        {
+          "id": "r39-single-spark",
+          "j": 13145,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0304.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13146,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0305.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13147,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0306.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13148,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0307.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13149,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0308.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13150,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0309.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13151,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0310.jpg"
+        },
+        {
+          "id": "r39-single-spark",
+          "j": 13153,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0311.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-40.jpg",
+      "firstSample": 312,
+      "lastSample": 319,
+      "samples": [
+        {
+          "id": "r39-single-spark",
+          "j": 13156,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0312.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14172,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0320.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14187,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0321.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14202,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0322.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14217,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0323.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14230,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0324.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14232,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0325.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14247,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0326.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-41.jpg",
+      "firstSample": 320,
+      "lastSample": 327,
+      "samples": [
+        {
+          "id": "r42-paper-replacement",
+          "j": 14262,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0327.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14277,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0328.jpg"
+        },
+        {
+          "id": "r42-paper-replacement",
+          "j": 14289,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0329.jpg"
+        },
+        {
+          "id": "r43-uncover",
+          "j": 14541,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0330.jpg"
+        },
+        {
+          "id": "r43-uncover",
+          "j": 14556,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0331.jpg"
+        },
+        {
+          "id": "r43-uncover",
+          "j": 14558,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0332.jpg"
+        },
+        {
+          "id": "r43-uncover",
+          "j": 14571,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0333.jpg"
+        },
+        {
+          "id": "r43-uncover",
+          "j": 14575,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0337.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-42.jpg",
+      "firstSample": 328,
+      "lastSample": 335,
+      "samples": [
+        {
+          "id": "r43-first-kick",
+          "j": 14571,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0333.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14572,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0334.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14573,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0335.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14574,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0336.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14575,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0337.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14576,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0338.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14577,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0339.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14578,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0340.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-43.jpg",
+      "firstSample": 336,
+      "lastSample": 343,
+      "samples": [
+        {
+          "id": "r43-first-kick",
+          "j": 14579,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0341.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14580,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0342.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14581,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0343.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14582,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0344.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14583,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0345.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14584,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0346.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14585,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0347.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14586,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0348.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-44.jpg",
+      "firstSample": 344,
+      "lastSample": 351,
+      "samples": [
+        {
+          "id": "r43-first-kick",
+          "j": 14587,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0349.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14588,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0350.jpg"
+        },
+        {
+          "id": "r43-first-kick",
+          "j": 14589,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0351.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14785,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0352.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14800,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0353.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14808,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0354.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14809,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0355.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14810,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0356.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-45.jpg",
+      "firstSample": 352,
+      "lastSample": 359,
+      "samples": [
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14811,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0357.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14812,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0358.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14813,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0359.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14814,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0360.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14815,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0361.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14816,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0362.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14817,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0363.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14818,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0364.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-46.jpg",
+      "firstSample": 360,
+      "lastSample": 367,
+      "samples": [
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14819,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0365.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14820,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0366.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14821,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0367.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14822,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0368.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14823,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0369.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14824,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0370.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14825,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0371.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14826,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0372.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-47.jpg",
+      "firstSample": 368,
+      "lastSample": 375,
+      "samples": [
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14827,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0373.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14828,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0374.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14829,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0375.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14830,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0376.jpg"
+        },
+        {
+          "id": "r43-final-hand-kick",
+          "j": 14842,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0377.jpg"
+        },
+        {
+          "id": "r39-pile-touch",
+          "j": 13335,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0313.jpg"
+        },
+        {
+          "id": "r39-pile-touch",
+          "j": 13350,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0314.jpg"
+        },
+        {
+          "id": "r39-pile-touch",
+          "j": 13365,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0315.jpg"
+        }
+      ]
+    },
+    {
+      "page": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/encoded-motion-48.jpg",
+      "firstSample": 376,
+      "lastSample": 379,
+      "samples": [
+        {
+          "id": "r39-pile-touch",
+          "j": 13372,
+          "critical": false,
+          "label": "middle",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0316.jpg"
+        },
+        {
+          "id": "r39-pile-touch",
+          "j": 13380,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0317.jpg"
+        },
+        {
+          "id": "r39-pile-touch",
+          "j": 13395,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0318.jpg"
+        },
+        {
+          "id": "r39-pile-touch",
+          "j": 13409,
+          "critical": true,
+          "label": "event-critical",
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/完成MP4から直接抽出_連続動作確認_地表幅修正/frames/0319.jpg"
+        }
+      ]
+    }
+  ],
+  "allDeclaredCriticalFramesCovered": true,
+  "allVisualsReviewed": false,
+  "earsPerformed": false,
+  "scope": "Exact decoded frame indices; this is a contact-sheet inspection aid, not real-time or every-frame viewing."
+}

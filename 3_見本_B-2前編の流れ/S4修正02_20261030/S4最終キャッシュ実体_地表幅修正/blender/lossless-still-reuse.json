@@ -1,0 +1,30 @@
+{
+  "identityVersion": "jpeg-image-data-v2",
+  "last": "fac2b7e0548cc541cc90c7eb30395476633662a055a4cb73062bee4d1c8e010a",
+  "file": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/blender/desk/01843.jpg",
+  "verifiedRows": [
+    6,
+    7
+  ],
+  "disabledRows": [],
+  "drawn": 39,
+  "reused": 570,
+  "proofs": [
+    {
+      "j": 1236,
+      "row": 6,
+      "sameVisibleState": true,
+      "actualRenderedJpegByteEqual": false,
+      "actualRenderedJpegImagePayloadByteEqual": true,
+      "excludedMetadata": "JPEG COM only; all image-coding bytes and entropy scan remain exact"
+    },
+    {
+      "j": 1594,
+      "row": 7,
+      "sameVisibleState": true,
+      "actualRenderedJpegByteEqual": false,
+      "actualRenderedJpegImagePayloadByteEqual": true,
+      "excludedMetadata": "JPEG COM only; all image-coding bytes and entropy scan remain exact"
+    }
+  ]
+}

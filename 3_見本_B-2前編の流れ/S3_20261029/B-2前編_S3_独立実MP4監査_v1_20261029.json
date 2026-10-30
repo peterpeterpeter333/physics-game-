@@ -1,0 +1,71 @@
+{
+  "kind": "B-2 前編 S3 初回完成 MP4 の独立・実映像監査",
+  "date": "2026-10-29",
+  "reviewer": "b2a_independent_audit",
+  "source": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/draft/ys-chain-b2a_gpt_20261029_s3_draft.mp4",
+  "sourceSha256": "93dde42e529b8b3d1765bf1e8dd154602c91c8d696942fb4acd108399a282ae9",
+  "stage": "S3",
+  "verdict": "P1 の布の貫通を修正して再検査するまで保留。その他の実見した重要動作・札に公開を止める誤りは未検出。S4 最終完成の認定ではない。",
+  "evidence": {
+    "mainManifest": "実MP4映像確認/actual-video-review-manifest.json",
+    "extraManifest": "実MP4追加確認/actual-video-extra-manifest.json",
+    "method": "書き出し済み MP4 を先頭からデコードし、整数フレーム番号と PTS を一致検証した PNG を抽出。生の Blender コマやアンカーを代用していない。コンタクトシートは、その実 PNG の縮小 JPEG。",
+    "exactGlobalPTSValidated": true,
+    "allTwentyCriticalWindowsActuallyViewed": true,
+    "criticalContactSheetPagesActuallyViewed": 62,
+    "criticalFrameAppearancesViewedIncludingDuplicates": 797,
+    "criticalUniqueFramesActuallyViewed": 788,
+    "extraGroupsActuallyViewed": [
+      {"id": "21-field-packets", "pages": 9, "frames": 131, "sampling": "行5 全区間を 0.1秒間隔、語の開始・終了付近を追加。全フレームの実見ではない。"},
+      {"id": "22-dry-transition", "pages": 5, "frames": 61, "sampling": "j14205〜14265、473.5〜475.5秒の連続フレーム。"}
+    ],
+    "nativePNGAlsoViewed": [14160, 14250, 14280],
+    "totalDistinctActualVideoFramesPersonallyViewed": 948,
+    "totalContactSheetPagesPersonallyViewed": 76,
+    "allOneHzPagesPersonallyViewedByThisReviewer": false,
+    "oneHzReviewer": "root が全50頁と最終コマを別に実見。ここではその確認を自分の実見数に含めない。",
+    "all14846FramesVisuallyReviewed": false,
+    "audioEarReviewPerformed": false,
+    "limits": "静止コマの順列で動作・字幕位置を確認した。リアルタイム全編視聴・耳による確認は、この報告では実施していない。機械的デコード成功は内容の全件合格を意味しない。"
+  },
+  "criticalWindows": [
+    {"id": "01-intro-cloth", "reviewedAllPages": true, "result": "最初の無声2秒に字幕なし。布の山が一度だけ持ち上がり、元に戻る。"},
+    {"id": "02-metal-join", "reviewedAllPages": true, "result": "金・灰の棒の反対側の先端が接近して接触する。寄りは約1秒、輪の全景へ戻る。札は接点を隠さない。"},
+    {"id": "03-first-kick", "reviewedAllPages": true, "result": "ぴくっの字幕付近で、脚先が大きく上がり戻る。予告的な蹴りは抽出前半では見られない。"},
+    {"id": "04-release-still", "reviewedAllPages": true, "result": "棒を離す間に脚は蹴らず静止。"},
+    {"id": "05-rejoin", "reviewedAllPages": true, "result": "再び寄った棒先が接触し、全景へ戻る。真鍮・鉄の札は対象と対応する。"},
+    {"id": "06-second-kick", "reviewedAllPages": true, "result": "また動きますの場面で2回目の大きい蹴りが分かる。"},
+    {"id": "07-static-spark", "reviewedAllPages": true, "result": "123.13秒付近から白い火花が約0.2秒出て、プラスの印が消える。安全札は表示される。"},
+    {"id": "08-scalpel-contact", "reviewedAllPages": true, "result": "手は柄側を握り、メス先と白い神経の接点に寄る。札や手が接点を完全に隠さない。"},
+    {"id": "09-scalpel-kick", "reviewedAllPages": true, "result": "脚の蹴りの語付近で全景へ戻り、大きい動きが見える。"},
+    {"id": "10-same-metal-weak", "reviewedAllPages": true, "result": "左の脚はごく小さく動く。両札は各脚の直上。"},
+    {"id": "11-different-metal-strong", "reviewedAllPages": true, "result": "右の脚は左より明らかに大きく動き、札と対応する。"},
+    {"id": "12-salty-cutaway", "reviewedAllPages": true, "result": "銅・厚紙・亜鉛の層を見せた後、右に脚の断面と青い水滴が出る。大きな見切れや札の衝突はない。"},
+    {"id": "13-stacked-units", "reviewedAllPages": true, "result": "三色の縞の組が順に増えて柱になる。単色の板だけには見えない。"},
+    {"id": "14-finger-loop", "reviewedAllPages": true, "result": "両端に指が接触し、柱と人の体を通る黄色い輪が現れる。安全札あり。"},
+    {"id": "15-gold-leaf-opens", "reviewedAllPages": true, "result": "暗い背景で金の葉2枚の開きが確認でき、結果が残る。"},
+    {"id": "16-static-comparison", "reviewedAllPages": true, "result": "左の棒で短い白い火花が1回。縮小シートでは小さいが動作の前後を読める。"},
+    {"id": "17-continuous-contact", "reviewedAllPages": true, "result": "右の柱の上下を指が触れ続ける。安全札あり。淡い指先の光は縮小時に控えめ。"},
+    {"id": "18-dry-paper", "reviewedAllPages": true, "result": "元の窓の後半で水滴が消える。追加61コマで乾燥への切替を確認した。"},
+    {"id": "19-final-reveal", "reviewedAllPages": true, "result": "NG。行43開始直後に足が布を貫通して見え、隠れた後に布が外れる。root へ即連絡済み、修正版は未点検。"},
+    {"id": "20-final-kick", "reviewedAllPages": true, "result": "左からの手、接触、最後の大きい蹴りが確認できる。神経・真鍮・鉄の札も対象に対応。"}
+  ],
+  "additionalResults": [
+    {"row": 5, "result": "N→S／南→北の2巡を、下側から出る粒と上側へ入る粒の位置変化で確認した。最初の出発32.822秒付近、入場35.108〜36.147秒、2回目38.157秒付近の出発と39.275〜40.116秒の到着に対応。逆向きには流れていない。", "caveat": "粒は小さいので、スマホ縮小時の追いやすさは最終段階で実時間再生して確認する余地がある。"},
+    {"row": 42, "result": "472秒では青い水滴があり、475秒・476秒では水滴がなく白系の厚紙になる。『替わっていない』という不具合ではない。", "caveat": "紙は濡れていても淡い色なので、主な視覚差は水滴の有無。乾いた白い柱への変化は派手ではない。"}
+  ],
+  "findings": [
+    {"id": "V1-P1-01", "priority": "P1", "row": 43, "frames": [14542,14543,14544,14545,14546], "seconds": "484.733〜484.867", "status": "root が再現し、布だけを高くする局所修正と新 MP4 を準備中。監査時点では未解消。", "problem": "布を外す前に、緑の脚と棒が布の上へ貫通する。", "evidence": "実MP4映像確認/19-final-reveal/page-001.jpg", "recommendation": "新 MP4 の行43冒頭を連続コマで再確認し、変更外の映像・声・字幕が不変であることも検証する。"},
+    {"id": "V1-P2-01", "priority": "P2", "row": 42, "status": "弱点として残す。今回、無断修正しない。", "problem": "乾燥紙の変更は水滴の消失が主で、色の変化が小さい。", "recommendation": "Claude の S3 判定で、現状で十分か、次段階で白のコントラストを強めるか判断する。"},
+    {"id": "V1-P2-02", "priority": "P2", "row": 39, "status": "弱点として残す。", "problem": "右の指先の淡い光は縮小シートでは控えめで、接触継続は読めるが『びりびりが続く』の視覚的強調は弱い。", "recommendation": "最終実時間視聴で、指先の発光をもう少し読み取りやすくする必要があるか判断する。"}
+  ],
+  "preservation": {
+    "narrationChangedByReviewer": false,
+    "audioChangedByReviewer": false,
+    "subtitlesChangedByReviewer": false,
+    "sourceMP4ChangedByReviewer": false,
+    "BlenderRawOrAnchorsChangedByReviewer": false,
+    "existingSharedToolsChangedByReviewer": false,
+    "commitOrPushPerformed": false
+  }
+}

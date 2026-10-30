@@ -1,0 +1,2430 @@
+{
+  "episode": "b2a",
+  "id": "ys-chain-b2a_gpt_20261029",
+  "fps": 30,
+  "duration": 494.8646666666668,
+  "frames": 14846,
+  "nativeResolution": [
+    1080,
+    1920
+  ],
+  "sampledFrames": 129,
+  "stills": [
+    {
+      "row": 1,
+      "where": "start",
+      "j": 8,
+      "seconds": 0.26666666666666666,
+      "requestedSeconds": 0.25
+    },
+    {
+      "row": 1,
+      "where": "middle",
+      "j": 30,
+      "seconds": 1,
+      "requestedSeconds": 1
+    },
+    {
+      "row": 1,
+      "where": "end",
+      "j": 57,
+      "seconds": 1.9,
+      "requestedSeconds": 1.9
+    },
+    {
+      "row": 2,
+      "where": "start",
+      "j": 66,
+      "seconds": 2.2,
+      "requestedSeconds": 2.2
+    },
+    {
+      "row": 2,
+      "where": "middle",
+      "j": 208,
+      "seconds": 6.933333333333334,
+      "requestedSeconds": 6.918666666666667
+    },
+    {
+      "row": 2,
+      "where": "end",
+      "j": 349,
+      "seconds": 11.633333333333333,
+      "requestedSeconds": 11.637333333333334
+    },
+    {
+      "row": 3,
+      "where": "start",
+      "j": 362,
+      "seconds": 12.066666666666666,
+      "requestedSeconds": 12.077333333333334
+    },
+    {
+      "row": 3,
+      "where": "middle",
+      "j": 467,
+      "seconds": 15.566666666666666,
+      "requestedSeconds": 15.553333333333335
+    },
+    {
+      "row": 3,
+      "where": "end",
+      "j": 571,
+      "seconds": 19.033333333333335,
+      "requestedSeconds": 19.029333333333337
+    },
+    {
+      "row": 4,
+      "where": "start",
+      "j": 584,
+      "seconds": 19.466666666666665,
+      "requestedSeconds": 19.469333333333335
+    },
+    {
+      "row": 4,
+      "where": "middle",
+      "j": 745,
+      "seconds": 24.833333333333332,
+      "requestedSeconds": 24.817333333333337
+    },
+    {
+      "row": 4,
+      "where": "end",
+      "j": 905,
+      "seconds": 30.166666666666668,
+      "requestedSeconds": 30.16533333333334
+    },
+    {
+      "row": 5,
+      "where": "start",
+      "j": 918,
+      "seconds": 30.6,
+      "requestedSeconds": 30.605333333333338
+    },
+    {
+      "row": 5,
+      "where": "middle",
+      "j": 1073,
+      "seconds": 35.766666666666666,
+      "requestedSeconds": 35.756
+    },
+    {
+      "row": 5,
+      "where": "end",
+      "j": 1227,
+      "seconds": 40.9,
+      "requestedSeconds": 40.906666666666666
+    },
+    {
+      "row": 6,
+      "where": "start",
+      "j": 1240,
+      "seconds": 41.333333333333336,
+      "requestedSeconds": 41.34666666666668
+    },
+    {
+      "row": 6,
+      "where": "middle",
+      "j": 1413,
+      "seconds": 47.1,
+      "requestedSeconds": 47.09466666666667
+    },
+    {
+      "row": 6,
+      "where": "end",
+      "j": 1585,
+      "seconds": 52.833333333333336,
+      "requestedSeconds": 52.842666666666666
+    },
+    {
+      "row": 7,
+      "where": "start",
+      "j": 1598,
+      "seconds": 53.266666666666666,
+      "requestedSeconds": 53.28266666666668
+    },
+    {
+      "row": 7,
+      "where": "middle",
+      "j": 1718,
+      "seconds": 57.266666666666666,
+      "requestedSeconds": 57.26533333333334
+    },
+    {
+      "row": 7,
+      "where": "end",
+      "j": 1837,
+      "seconds": 61.233333333333334,
+      "requestedSeconds": 61.248
+    },
+    {
+      "row": 8,
+      "where": "start",
+      "j": 1851,
+      "seconds": 61.7,
+      "requestedSeconds": 61.68800000000001
+    },
+    {
+      "row": 8,
+      "where": "middle",
+      "j": 2026,
+      "seconds": 67.53333333333333,
+      "requestedSeconds": 67.52133333333335
+    },
+    {
+      "row": 8,
+      "where": "end",
+      "j": 2201,
+      "seconds": 73.36666666666666,
+      "requestedSeconds": 73.35466666666667
+    },
+    {
+      "row": 9,
+      "where": "start",
+      "j": 2230,
+      "seconds": 74.33333333333333,
+      "requestedSeconds": 74.34466666666668
+    },
+    {
+      "row": 9,
+      "where": "middle",
+      "j": 2348,
+      "seconds": 78.26666666666667,
+      "requestedSeconds": 78.25266666666668
+    },
+    {
+      "row": 9,
+      "where": "end",
+      "j": 2465,
+      "seconds": 82.16666666666667,
+      "requestedSeconds": 82.16066666666669
+    },
+    {
+      "row": 10,
+      "where": "start",
+      "j": 2478,
+      "seconds": 82.6,
+      "requestedSeconds": 82.60066666666668
+    },
+    {
+      "row": 10,
+      "where": "middle",
+      "j": 2710,
+      "seconds": 90.33333333333333,
+      "requestedSeconds": 90.34333333333335
+    },
+    {
+      "row": 10,
+      "where": "end",
+      "j": 2943,
+      "seconds": 98.1,
+      "requestedSeconds": 98.08600000000001
+    },
+    {
+      "row": 11,
+      "where": "start",
+      "j": 2956,
+      "seconds": 98.53333333333333,
+      "requestedSeconds": 98.52600000000001
+    },
+    {
+      "row": 11,
+      "where": "middle",
+      "j": 3087,
+      "seconds": 102.9,
+      "requestedSeconds": 102.89266666666668
+    },
+    {
+      "row": 11,
+      "where": "end",
+      "j": 3218,
+      "seconds": 107.26666666666667,
+      "requestedSeconds": 107.25933333333334
+    },
+    {
+      "row": 12,
+      "where": "start",
+      "j": 3247,
+      "seconds": 108.23333333333333,
+      "requestedSeconds": 108.24933333333334
+    },
+    {
+      "row": 12,
+      "where": "middle",
+      "j": 3353,
+      "seconds": 111.76666666666667,
+      "requestedSeconds": 111.76266666666666
+    },
+    {
+      "row": 12,
+      "where": "end",
+      "j": 3458,
+      "seconds": 115.26666666666667,
+      "requestedSeconds": 115.276
+    },
+    {
+      "row": 13,
+      "where": "start",
+      "j": 3488,
+      "seconds": 116.26666666666667,
+      "requestedSeconds": 116.266
+    },
+    {
+      "row": 13,
+      "where": "middle",
+      "j": 3633,
+      "seconds": 121.1,
+      "requestedSeconds": 121.09133333333334
+    },
+    {
+      "row": 13,
+      "where": "end",
+      "j": 3778,
+      "seconds": 125.93333333333334,
+      "requestedSeconds": 125.91666666666667
+    },
+    {
+      "row": 14,
+      "where": "start",
+      "j": 3807,
+      "seconds": 126.9,
+      "requestedSeconds": 126.90666666666667
+    },
+    {
+      "row": 14,
+      "where": "middle",
+      "j": 3964,
+      "seconds": 132.13333333333333,
+      "requestedSeconds": 132.13733333333334
+    },
+    {
+      "row": 14,
+      "where": "end",
+      "j": 4121,
+      "seconds": 137.36666666666667,
+      "requestedSeconds": 137.36800000000002
+    },
+    {
+      "row": 15,
+      "where": "start",
+      "j": 4134,
+      "seconds": 137.8,
+      "requestedSeconds": 137.808
+    },
+    {
+      "row": 15,
+      "where": "middle",
+      "j": 4279,
+      "seconds": 142.63333333333333,
+      "requestedSeconds": 142.61733333333336
+    },
+    {
+      "row": 15,
+      "where": "end",
+      "j": 4423,
+      "seconds": 147.43333333333334,
+      "requestedSeconds": 147.4266666666667
+    },
+    {
+      "row": 16,
+      "where": "start",
+      "j": 4436,
+      "seconds": 147.86666666666667,
+      "requestedSeconds": 147.86666666666667
+    },
+    {
+      "row": 16,
+      "where": "middle",
+      "j": 4615,
+      "seconds": 153.83333333333334,
+      "requestedSeconds": 153.8386666666667
+    },
+    {
+      "row": 16,
+      "where": "end",
+      "j": 4794,
+      "seconds": 159.8,
+      "requestedSeconds": 159.81066666666672
+    },
+    {
+      "row": 17,
+      "where": "start",
+      "j": 4808,
+      "seconds": 160.26666666666668,
+      "requestedSeconds": 160.2506666666667
+    },
+    {
+      "row": 17,
+      "where": "middle",
+      "j": 4880,
+      "seconds": 162.66666666666666,
+      "requestedSeconds": 162.68133333333338
+    },
+    {
+      "row": 17,
+      "where": "end",
+      "j": 4953,
+      "seconds": 165.1,
+      "requestedSeconds": 165.11200000000005
+    },
+    {
+      "row": 18,
+      "where": "start",
+      "j": 4967,
+      "seconds": 165.56666666666666,
+      "requestedSeconds": 165.55200000000002
+    },
+    {
+      "row": 18,
+      "where": "middle",
+      "j": 5216,
+      "seconds": 173.86666666666667,
+      "requestedSeconds": 173.8706666666667
+    },
+    {
+      "row": 18,
+      "where": "end",
+      "j": 5466,
+      "seconds": 182.2,
+      "requestedSeconds": 182.1893333333334
+    },
+    {
+      "row": 19,
+      "where": "start",
+      "j": 5495,
+      "seconds": 183.16666666666666,
+      "requestedSeconds": 183.17933333333337
+    },
+    {
+      "row": 19,
+      "where": "middle",
+      "j": 5669,
+      "seconds": 188.96666666666667,
+      "requestedSeconds": 188.96466666666674
+    },
+    {
+      "row": 19,
+      "where": "end",
+      "j": 5843,
+      "seconds": 194.76666666666668,
+      "requestedSeconds": 194.75000000000009
+    },
+    {
+      "row": 20,
+      "where": "start",
+      "j": 5856,
+      "seconds": 195.2,
+      "requestedSeconds": 195.19000000000005
+    },
+    {
+      "row": 20,
+      "where": "middle",
+      "j": 6052,
+      "seconds": 201.73333333333332,
+      "requestedSeconds": 201.7433333333334
+    },
+    {
+      "row": 20,
+      "where": "end",
+      "j": 6249,
+      "seconds": 208.3,
+      "requestedSeconds": 208.29666666666677
+    },
+    {
+      "row": 21,
+      "where": "start",
+      "j": 6279,
+      "seconds": 209.3,
+      "requestedSeconds": 209.28666666666675
+    },
+    {
+      "row": 21,
+      "where": "middle",
+      "j": 6420,
+      "seconds": 214,
+      "requestedSeconds": 214.00533333333343
+    },
+    {
+      "row": 21,
+      "where": "end",
+      "j": 6562,
+      "seconds": 218.73333333333332,
+      "requestedSeconds": 218.7240000000001
+    },
+    {
+      "row": 22,
+      "where": "start",
+      "j": 6575,
+      "seconds": 219.16666666666666,
+      "requestedSeconds": 219.16400000000007
+    },
+    {
+      "row": 22,
+      "where": "middle",
+      "j": 6788,
+      "seconds": 226.26666666666668,
+      "requestedSeconds": 226.25600000000009
+    },
+    {
+      "row": 22,
+      "where": "end",
+      "j": 7000,
+      "seconds": 233.33333333333334,
+      "requestedSeconds": 233.3480000000001
+    },
+    {
+      "row": 23,
+      "where": "start",
+      "j": 7014,
+      "seconds": 233.8,
+      "requestedSeconds": 233.78800000000007
+    },
+    {
+      "row": 23,
+      "where": "middle",
+      "j": 7094,
+      "seconds": 236.46666666666667,
+      "requestedSeconds": 236.47466666666674
+    },
+    {
+      "row": 23,
+      "where": "end",
+      "j": 7175,
+      "seconds": 239.16666666666666,
+      "requestedSeconds": 239.16133333333343
+    },
+    {
+      "row": 24,
+      "where": "start",
+      "j": 7205,
+      "seconds": 240.16666666666666,
+      "requestedSeconds": 240.1513333333334
+    },
+    {
+      "row": 24,
+      "where": "middle",
+      "j": 7454,
+      "seconds": 248.46666666666667,
+      "requestedSeconds": 248.47000000000008
+    },
+    {
+      "row": 24,
+      "where": "end",
+      "j": 7704,
+      "seconds": 256.8,
+      "requestedSeconds": 256.78866666666676
+    },
+    {
+      "row": 25,
+      "where": "start",
+      "j": 7717,
+      "seconds": 257.23333333333335,
+      "requestedSeconds": 257.2286666666667
+    },
+    {
+      "row": 25,
+      "where": "middle",
+      "j": 7910,
+      "seconds": 263.6666666666667,
+      "requestedSeconds": 263.6593333333334
+    },
+    {
+      "row": 25,
+      "where": "end",
+      "j": 8103,
+      "seconds": 270.1,
+      "requestedSeconds": 270.09000000000015
+    },
+    {
+      "row": 26,
+      "where": "start",
+      "j": 8116,
+      "seconds": 270.53333333333336,
+      "requestedSeconds": 270.5300000000001
+    },
+    {
+      "row": 26,
+      "where": "middle",
+      "j": 8320,
+      "seconds": 277.3333333333333,
+      "requestedSeconds": 277.33933333333346
+    },
+    {
+      "row": 26,
+      "where": "end",
+      "j": 8524,
+      "seconds": 284.1333333333333,
+      "requestedSeconds": 284.14866666666677
+    },
+    {
+      "row": 27,
+      "where": "start",
+      "j": 8538,
+      "seconds": 284.6,
+      "requestedSeconds": 284.58866666666677
+    },
+    {
+      "row": 27,
+      "where": "middle",
+      "j": 8704,
+      "seconds": 290.1333333333333,
+      "requestedSeconds": 290.1340000000001
+    },
+    {
+      "row": 27,
+      "where": "end",
+      "j": 8870,
+      "seconds": 295.6666666666667,
+      "requestedSeconds": 295.6793333333335
+    },
+    {
+      "row": 28,
+      "where": "start",
+      "j": 8900,
+      "seconds": 296.6666666666667,
+      "requestedSeconds": 296.66933333333344
+    },
+    {
+      "row": 28,
+      "where": "middle",
+      "j": 9031,
+      "seconds": 301.03333333333336,
+      "requestedSeconds": 301.04133333333345
+    },
+    {
+      "row": 28,
+      "where": "end",
+      "j": 9162,
+      "seconds": 305.4,
+      "requestedSeconds": 305.41333333333347
+    },
+    {
+      "row": 29,
+      "where": "start",
+      "j": 9176,
+      "seconds": 305.8666666666667,
+      "requestedSeconds": 305.85333333333347
+    },
+    {
+      "row": 29,
+      "where": "middle",
+      "j": 9397,
+      "seconds": 313.23333333333335,
+      "requestedSeconds": 313.2493333333335
+    },
+    {
+      "row": 29,
+      "where": "end",
+      "j": 9619,
+      "seconds": 320.6333333333333,
+      "requestedSeconds": 320.6453333333335
+    },
+    {
+      "row": 30,
+      "where": "start",
+      "j": 9633,
+      "seconds": 321.1,
+      "requestedSeconds": 321.08533333333344
+    },
+    {
+      "row": 30,
+      "where": "middle",
+      "j": 9779,
+      "seconds": 325.96666666666664,
+      "requestedSeconds": 325.9533333333335
+    },
+    {
+      "row": 30,
+      "where": "end",
+      "j": 9925,
+      "seconds": 330.8333333333333,
+      "requestedSeconds": 330.8213333333335
+    },
+    {
+      "row": 31,
+      "where": "start",
+      "j": 9938,
+      "seconds": 331.26666666666665,
+      "requestedSeconds": 331.2613333333334
+    },
+    {
+      "row": 31,
+      "where": "middle",
+      "j": 10103,
+      "seconds": 336.76666666666665,
+      "requestedSeconds": 336.7746666666668
+    },
+    {
+      "row": 31,
+      "where": "end",
+      "j": 10269,
+      "seconds": 342.3,
+      "requestedSeconds": 342.2880000000001
+    },
+    {
+      "row": 32,
+      "where": "start",
+      "j": 10282,
+      "seconds": 342.73333333333335,
+      "requestedSeconds": 342.72800000000007
+    },
+    {
+      "row": 32,
+      "where": "middle",
+      "j": 10564,
+      "seconds": 352.1333333333333,
+      "requestedSeconds": 352.1293333333334
+    },
+    {
+      "row": 32,
+      "where": "end",
+      "j": 10846,
+      "seconds": 361.53333333333336,
+      "requestedSeconds": 361.5306666666668
+    },
+    {
+      "row": 33,
+      "where": "start",
+      "j": 10859,
+      "seconds": 361.96666666666664,
+      "requestedSeconds": 361.9706666666667
+    },
+    {
+      "row": 33,
+      "where": "middle",
+      "j": 11074,
+      "seconds": 369.1333333333333,
+      "requestedSeconds": 369.1266666666667
+    },
+    {
+      "row": 33,
+      "where": "end",
+      "j": 11288,
+      "seconds": 376.26666666666665,
+      "requestedSeconds": 376.2826666666667
+    },
+    {
+      "row": 34,
+      "where": "start",
+      "j": 11302,
+      "seconds": 376.73333333333335,
+      "requestedSeconds": 376.7226666666667
+    },
+    {
+      "row": 34,
+      "where": "middle",
+      "j": 11492,
+      "seconds": 383.06666666666666,
+      "requestedSeconds": 383.0786666666668
+    },
+    {
+      "row": 34,
+      "where": "end",
+      "j": 11683,
+      "seconds": 389.43333333333334,
+      "requestedSeconds": 389.43466666666677
+    },
+    {
+      "row": 35,
+      "where": "start",
+      "j": 11696,
+      "seconds": 389.8666666666667,
+      "requestedSeconds": 389.8746666666667
+    },
+    {
+      "row": 35,
+      "where": "middle",
+      "j": 11784,
+      "seconds": 392.8,
+      "requestedSeconds": 392.80666666666673
+    },
+    {
+      "row": 35,
+      "where": "end",
+      "j": 11872,
+      "seconds": 395.73333333333335,
+      "requestedSeconds": 395.73866666666675
+    },
+    {
+      "row": 36,
+      "where": "start",
+      "j": 11885,
+      "seconds": 396.1666666666667,
+      "requestedSeconds": 396.1786666666667
+    },
+    {
+      "row": 36,
+      "where": "middle",
+      "j": 12125,
+      "seconds": 404.1666666666667,
+      "requestedSeconds": 404.1826666666667
+    },
+    {
+      "row": 36,
+      "where": "end",
+      "j": 12366,
+      "seconds": 412.2,
+      "requestedSeconds": 412.1866666666667
+    },
+    {
+      "row": 37,
+      "where": "start",
+      "j": 12395,
+      "seconds": 413.1666666666667,
+      "requestedSeconds": 413.1766666666667
+    },
+    {
+      "row": 37,
+      "where": "middle",
+      "j": 12521,
+      "seconds": 417.3666666666667,
+      "requestedSeconds": 417.3513333333334
+    },
+    {
+      "row": 37,
+      "where": "end",
+      "j": 12646,
+      "seconds": 421.53333333333336,
+      "requestedSeconds": 421.52600000000007
+    },
+    {
+      "row": 38,
+      "where": "start",
+      "j": 12659,
+      "seconds": 421.96666666666664,
+      "requestedSeconds": 421.966
+    },
+    {
+      "row": 38,
+      "where": "middle",
+      "j": 12880,
+      "seconds": 429.3333333333333,
+      "requestedSeconds": 429.346
+    },
+    {
+      "row": 38,
+      "where": "end",
+      "j": 13102,
+      "seconds": 436.73333333333335,
+      "requestedSeconds": 436.72600000000006
+    },
+    {
+      "row": 39,
+      "where": "start",
+      "j": 13115,
+      "seconds": 437.1666666666667,
+      "requestedSeconds": 437.166
+    },
+    {
+      "row": 39,
+      "where": "middle",
+      "j": 13334,
+      "seconds": 444.46666666666664,
+      "requestedSeconds": 444.482
+    },
+    {
+      "row": 39,
+      "where": "end",
+      "j": 13554,
+      "seconds": 451.8,
+      "requestedSeconds": 451.79800000000006
+    },
+    {
+      "row": 40,
+      "where": "start",
+      "j": 13584,
+      "seconds": 452.8,
+      "requestedSeconds": 452.788
+    },
+    {
+      "row": 40,
+      "where": "middle",
+      "j": 13685,
+      "seconds": 456.1666666666667,
+      "requestedSeconds": 456.1786666666667
+    },
+    {
+      "row": 40,
+      "where": "end",
+      "j": 13787,
+      "seconds": 459.56666666666666,
+      "requestedSeconds": 459.56933333333336
+    },
+    {
+      "row": 41,
+      "where": "start",
+      "j": 13800,
+      "seconds": 460,
+      "requestedSeconds": 460.00933333333336
+    },
+    {
+      "row": 41,
+      "where": "middle",
+      "j": 13896,
+      "seconds": 463.2,
+      "requestedSeconds": 463.1973333333334
+    },
+    {
+      "row": 41,
+      "where": "end",
+      "j": 13992,
+      "seconds": 466.4,
+      "requestedSeconds": 466.3853333333334
+    },
+    {
+      "row": 42,
+      "where": "start",
+      "j": 14021,
+      "seconds": 467.3666666666667,
+      "requestedSeconds": 467.37533333333334
+    },
+    {
+      "row": 42,
+      "where": "middle",
+      "j": 14269,
+      "seconds": 475.6333333333333,
+      "requestedSeconds": 475.64733333333334
+    },
+    {
+      "row": 42,
+      "where": "end",
+      "j": 14518,
+      "seconds": 483.93333333333334,
+      "requestedSeconds": 483.9193333333334
+    },
+    {
+      "row": 43,
+      "where": "start",
+      "j": 14547,
+      "seconds": 484.9,
+      "requestedSeconds": 484.9093333333334
+    },
+    {
+      "row": 43,
+      "where": "middle",
+      "j": 14685,
+      "seconds": 489.5,
+      "requestedSeconds": 489.4920000000001
+    },
+    {
+      "row": 43,
+      "where": "end",
+      "j": 14822,
+      "seconds": 494.06666666666666,
+      "requestedSeconds": 494.07466666666676
+    }
+  ],
+  "rows": [
+    {
+      "row": 1,
+      "start": 0,
+      "end": 2,
+      "shot": "0秒",
+      "screen": "0秒から：机の右の端の、布をかぶった小さな台（画面の4分の1の大きさ）。布のすそから、緑の丸っこい足先が一度だけ、ぴくっとけって、布が少し揺れる。音は、ぴくっの小さな効果音だけ。カメラは止めたまま。",
+      "narration": "（なし。2秒）",
+      "cues": [],
+      "stills": [
+        {
+          "row": 1,
+          "where": "start",
+          "j": 8,
+          "seconds": 0.26666666666666666,
+          "requestedSeconds": 0.25
+        },
+        {
+          "row": 1,
+          "where": "middle",
+          "j": 30,
+          "seconds": 1,
+          "requestedSeconds": 1
+        },
+        {
+          "row": 1,
+          "where": "end",
+          "j": 57,
+          "seconds": 1.9,
+          "requestedSeconds": 1.9
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "start": 2,
+      "end": 11.837333333333333,
+      "shot": "答え合わせ",
+      "screen": "カメラが机の中央へ移る（場面の切り替え）。手が、テレラ（黒っぽい石の球。画面の高さの半分の大きさ）の赤い印のてっぺん近くに、上下にも回る小さな方位磁針を置く。針はまだ揺れている。左上「答え合わせ」。",
+      "narration": "小さな地球、テレラの、赤い印のてっぺんの近くに、小さな方位磁針を置きます。電気と電波の前の回の、挑戦の答え合わせです。",
+      "cues": [
+        "r02:a"
+      ],
+      "stills": [
+        {
+          "row": 2,
+          "where": "start",
+          "j": 66,
+          "seconds": 2.2,
+          "requestedSeconds": 2.2
+        },
+        {
+          "row": 2,
+          "where": "middle",
+          "j": 208,
+          "seconds": 6.933333333333334,
+          "requestedSeconds": 6.918666666666667
+        },
+        {
+          "row": 2,
+          "where": "end",
+          "j": 349,
+          "seconds": 11.633333333333333,
+          "requestedSeconds": 11.637333333333334
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "start": 11.877333333333334,
+      "end": 19.229333333333336,
+      "shot": "答え合わせ",
+      "screen": "ミオの考え顔（小、右下）。テレラの横に、前の回の挑戦の札を再び出す。",
+      "narration": "オーストラリアでは、方位磁針の北を向く先は、下と上、どちらに傾くでしょう。",
+      "cues": [
+        "r03:a"
+      ],
+      "stills": [
+        {
+          "row": 3,
+          "where": "start",
+          "j": 362,
+          "seconds": 12.066666666666666,
+          "requestedSeconds": 12.077333333333334
+        },
+        {
+          "row": 3,
+          "where": "middle",
+          "j": 467,
+          "seconds": 15.566666666666666,
+          "requestedSeconds": 15.553333333333335
+        },
+        {
+          "row": 3,
+          "where": "end",
+          "j": 571,
+          "seconds": 19.033333333333335,
+          "requestedSeconds": 19.029333333333337
+        }
+      ]
+    },
+    {
+      "row": 4,
+      "start": 19.269333333333336,
+      "end": 30.36533333333334,
+      "shot": "答え合わせ",
+      "screen": "札「一段目」。テレラの中に、棒磁石の影が透けて見える。北側の端に青い S、南側の端に赤い N（声に合わせて光る）。テレラの赤い印のてっぺんに札「南」、青い印のてっぺんに札「北」。",
+      "narration": "一段ずつ解きます。一段目。電気と電波の前の回で分かったように、地球の北にあるのは、磁石のS極。南にあるのは、N極です。",
+      "cues": [
+        "r04:a",
+        "r04:b"
+      ],
+      "stills": [
+        {
+          "row": 4,
+          "where": "start",
+          "j": 584,
+          "seconds": 19.466666666666665,
+          "requestedSeconds": 19.469333333333335
+        },
+        {
+          "row": 4,
+          "where": "middle",
+          "j": 745,
+          "seconds": 24.833333333333332,
+          "requestedSeconds": 24.817333333333337
+        },
+        {
+          "row": 4,
+          "where": "end",
+          "j": 905,
+          "seconds": 30.166666666666668,
+          "requestedSeconds": 30.16533333333334
+        }
+      ]
+    },
+    {
+      "row": 5,
+      "start": 30.40533333333334,
+      "end": 41.10666666666667,
+      "shot": "答え合わせ",
+      "screen": "札「二段目」。テレラのまわりに鉄の粉がまかれ、線の模様が浮かぶ。赤いてっぺん（南）から線が出て、外を回り、青いてっぺん（北）へ入る向きに、線の上を小さな矢印が流れる。",
+      "narration": "二段目。磁石の力の線は、N極から出て、まわりを回り、S極へ入ります。地球なら、南から出て、北へ入ります。",
+      "cues": [
+        "r05:a",
+        "r05:b"
+      ],
+      "stills": [
+        {
+          "row": 5,
+          "where": "start",
+          "j": 918,
+          "seconds": 30.6,
+          "requestedSeconds": 30.605333333333338
+        },
+        {
+          "row": 5,
+          "where": "middle",
+          "j": 1073,
+          "seconds": 35.766666666666666,
+          "requestedSeconds": 35.756
+        },
+        {
+          "row": 5,
+          "where": "end",
+          "j": 1227,
+          "seconds": 40.9,
+          "requestedSeconds": 40.906666666666666
+        }
+      ]
+    },
+    {
+      "row": 6,
+      "start": 41.146666666666675,
+      "end": 53.04266666666667,
+      "shot": "答え合わせ",
+      "screen": "札「三段目」。カメラが赤いてっぺんの近くに寄る（寄ったら止める）。地面の断面に、下から斜め上へ出てくる線が1本、太く光る。そこに置いた針が、線に沿って先を上へ向ける。",
+      "narration": "三段目。線が出てくるてっぺんの近くでは、線は、地面の下から、斜め上へ出てきます。針の北を向く先は、線に沿って向くので、上を向きます。",
+      "cues": [
+        "r06:a",
+        "r06:b"
+      ],
+      "stills": [
+        {
+          "row": 6,
+          "where": "start",
+          "j": 1240,
+          "seconds": 41.333333333333336,
+          "requestedSeconds": 41.34666666666668
+        },
+        {
+          "row": 6,
+          "where": "middle",
+          "j": 1413,
+          "seconds": 47.1,
+          "requestedSeconds": 47.09466666666667
+        },
+        {
+          "row": 6,
+          "where": "end",
+          "j": 1585,
+          "seconds": 52.833333333333336,
+          "requestedSeconds": 52.842666666666666
+        }
+      ]
+    },
+    {
+      "row": 7,
+      "start": 53.082666666666675,
+      "end": 61.448,
+      "shot": "答え合わせ",
+      "screen": "札「四段目」。テレラの赤い側に、オーストラリアの形の小さな札。行2 で置いた針が止まり、北を向く先が、はっきり上に傾く。札「答え：上に 傾く」。",
+      "narration": "四段目。オーストラリアは南半球、線が出てくる側です。だから答えは、上に傾く、です。",
+      "cues": [
+        "r07:a",
+        "r07:b"
+      ],
+      "stills": [
+        {
+          "row": 7,
+          "where": "start",
+          "j": 1598,
+          "seconds": 53.266666666666666,
+          "requestedSeconds": 53.28266666666668
+        },
+        {
+          "row": 7,
+          "where": "middle",
+          "j": 1718,
+          "seconds": 57.266666666666666,
+          "requestedSeconds": 57.26533333333334
+        },
+        {
+          "row": 7,
+          "where": "end",
+          "j": 1837,
+          "seconds": 61.233333333333334,
+          "requestedSeconds": 61.248
+        }
+      ]
+    },
+    {
+      "row": 8,
+      "start": 61.48800000000001,
+      "end": 73.55466666666668,
+      "shot": "答え合わせ",
+      "screen": "テレラの青い側に、ロンドンの札と、下に傾く針（前の回の約72度）を並べて出す。次に、勝負の札「言い伝え 0 − 3 実験」に寄る。札の横に「言い伝え ＝ 信じられていたが、実験で 崩れた 考え」。",
+      "narration": "北半球のロンドンとは、ちょうど反対です。勝負の札は、言い伝え 0 − 3 実験。信じられていた考えが、実験で崩れるたびに、実験に1点です。",
+      "cues": [
+        "r08:a",
+        "r08:b"
+      ],
+      "stills": [
+        {
+          "row": 8,
+          "where": "start",
+          "j": 1851,
+          "seconds": 61.7,
+          "requestedSeconds": 61.68800000000001
+        },
+        {
+          "row": 8,
+          "where": "middle",
+          "j": 2026,
+          "seconds": 67.53333333333333,
+          "requestedSeconds": 67.52133333333335
+        },
+        {
+          "row": 8,
+          "where": "end",
+          "j": 2201,
+          "seconds": 73.36666666666666,
+          "requestedSeconds": 73.35466666666667
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "start": 74.14466666666668,
+      "end": 82.36066666666669,
+      "shot": "カエル",
+      "screen": "左上「1780年代 イタリア ボローニャ ガルヴァーニ」。カメラが机の右の台へ移る（場面の切り替え）。布が取られ、カエルの足の模型（おもちゃ風。緑の、丸っこい、ゴムの人形のような足。怖くしない。画面の3分の1の大きさ）。足の付け根から、白い糸が1本出ている。台の横に、ガルヴァーニの人形（白いかつら、黒い上着）。",
+      "narration": "1780年代、イタリアのボローニャ。医者で学者のルイージ・ガルヴァーニの机の上に、死んだカエルの足があります。",
+      "cues": [
+        "r09:a"
+      ],
+      "stills": [
+        {
+          "row": 9,
+          "where": "start",
+          "j": 2230,
+          "seconds": 74.33333333333333,
+          "requestedSeconds": 74.34466666666668
+        },
+        {
+          "row": 9,
+          "where": "middle",
+          "j": 2348,
+          "seconds": 78.26666666666667,
+          "requestedSeconds": 78.25266666666668
+        },
+        {
+          "row": 9,
+          "where": "end",
+          "j": 2465,
+          "seconds": 82.16666666666667,
+          "requestedSeconds": 82.16066666666669
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "start": 82.40066666666668,
+      "end": 98.28600000000002,
+      "shot": "カエル",
+      "screen": "白い糸に札「神経 ＝ 体に 合図を 伝える 糸」。人形の手が、金色の真鍮の棒を白い糸に、灰色の鉄の棒を足の肉に当てる。札「真鍮 ＝ 金色の 金属」「鉄」。2本の棒の先がふれ合った瞬間、足がぴくっとける（カエルの足に寄る。拡大の丸で、棒の先がふれる所）。",
+      "narration": "足の付け根の白い糸、神経、つまり体に合図を伝える糸に、真鍮、つまり金色の金属の棒を当てます。足の肉には、鉄の棒を当てます。その2本の棒の先を、ふれ合わせると、足が、ぴくっとけります。",
+      "cues": [
+        "r10:a",
+        "r10:b"
+      ],
+      "stills": [
+        {
+          "row": 10,
+          "where": "start",
+          "j": 2478,
+          "seconds": 82.6,
+          "requestedSeconds": 82.60066666666668
+        },
+        {
+          "row": 10,
+          "where": "middle",
+          "j": 2710,
+          "seconds": 90.33333333333333,
+          "requestedSeconds": 90.34333333333335
+        },
+        {
+          "row": 10,
+          "where": "end",
+          "j": 2943,
+          "seconds": 98.1,
+          "requestedSeconds": 98.08600000000001
+        }
+      ]
+    },
+    {
+      "row": 11,
+      "start": 98.32600000000001,
+      "end": 107.45933333333335,
+      "shot": "カエル",
+      "screen": "棒の先を離すと、足が止まる。ふれ合わせると、またぴくっ（2回）。引いて、机の上の全体。電池や電線は、どこにもない。",
+      "narration": "離すと、止まります。また、ふれ合わせると、また動きます。机の上には、電池も、電線もありません。",
+      "cues": [
+        "r11:a",
+        "r11:b"
+      ],
+      "stills": [
+        {
+          "row": 11,
+          "where": "start",
+          "j": 2956,
+          "seconds": 98.53333333333333,
+          "requestedSeconds": 98.52600000000001
+        },
+        {
+          "row": 11,
+          "where": "middle",
+          "j": 3087,
+          "seconds": 102.9,
+          "requestedSeconds": 102.89266666666668
+        },
+        {
+          "row": 11,
+          "where": "end",
+          "j": 3218,
+          "seconds": 107.26666666666667,
+          "requestedSeconds": 107.25933333333334
+        }
+      ]
+    },
+    {
+      "row": 12,
+      "start": 108.04933333333334,
+      "end": 115.476,
+      "shot": "概要",
+      "screen": "カエルの足の横に、いまの乾電池が1本、ころんと置かれる。札「電池」。",
+      "narration": "この小さなぴくっから、およそ20年後、電気を、ずっと流し続ける道具が生まれました。電池です。",
+      "cues": [
+        "r12:a"
+      ],
+      "stills": [
+        {
+          "row": 12,
+          "where": "start",
+          "j": 3247,
+          "seconds": 108.23333333333333,
+          "requestedSeconds": 108.24933333333334
+        },
+        {
+          "row": 12,
+          "where": "middle",
+          "j": 3353,
+          "seconds": 111.76666666666667,
+          "requestedSeconds": 111.76266666666666
+        },
+        {
+          "row": 12,
+          "where": "end",
+          "j": 3458,
+          "seconds": 115.26666666666667,
+          "requestedSeconds": 115.276
+        }
+      ]
+    },
+    {
+      "row": 13,
+      "start": 116.066,
+      "end": 126.11666666666667,
+      "shot": "静電気",
+      "screen": "机の左に、ガラスの棒と布。手がこすると、棒に小さな「＋」の印がたまる。指を近づけると、ぱちっと青い火花。印が一度に消える。札「静電気：ぱちっと 一瞬」。",
+      "narration": "そのころ、人が作れた電気は、こすって作る静電気だけでした。ガラスを布でこすってためた電気は、ぱちっと火花を飛ばすと、それで終わりです。",
+      "cues": [
+        "r13:a"
+      ],
+      "stills": [
+        {
+          "row": 13,
+          "where": "start",
+          "j": 3488,
+          "seconds": 116.26666666666667,
+          "requestedSeconds": 116.266
+        },
+        {
+          "row": 13,
+          "where": "middle",
+          "j": 3633,
+          "seconds": 121.1,
+          "requestedSeconds": 121.09133333333334
+        },
+        {
+          "row": 13,
+          "where": "end",
+          "j": 3778,
+          "seconds": 125.93333333333334,
+          "requestedSeconds": 125.91666666666667
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "start": 126.70666666666666,
+      "end": 137.568,
+      "shot": "押す力",
+      "screen": "札「見方：たとえ話」。机の中央に、水そうが2つ（左が高い台の上、右が低い台の上。どちらも手のひらの大きさ）と、つなぐ透明な管。水が左から右へ流れる（青）。",
+      "narration": "電気を、水でたとえます。たとえ話です。高い水そうと低い水そうを、管でつなぐと、水は、高い方から低い方へ流れます。",
+      "cues": [
+        "r14:a",
+        "r14:b"
+      ],
+      "stills": [
+        {
+          "row": 14,
+          "where": "start",
+          "j": 3807,
+          "seconds": 126.9,
+          "requestedSeconds": 126.90666666666667
+        },
+        {
+          "row": 14,
+          "where": "middle",
+          "j": 3964,
+          "seconds": 132.13333333333333,
+          "requestedSeconds": 132.13733333333334
+        },
+        {
+          "row": 14,
+          "where": "end",
+          "j": 4121,
+          "seconds": 137.36666666666667,
+          "requestedSeconds": 137.36800000000002
+        }
+      ]
+    },
+    {
+      "row": 15,
+      "start": 137.608,
+      "end": 147.6266666666667,
+      "shot": "押す力",
+      "screen": "高さの差に黄の縦の矢印。札「高さの 差 ＝ 押す 力 ＝ 電圧（ボルト）」。管の中の流れに札「流れる 量 ＝ 電流」。",
+      "narration": "高さの差が、水を押す力。電気では、これを電圧と呼び、単位はボルトです。管を流れる水の量が、電流です。",
+      "cues": [
+        "r15:a",
+        "r15:b"
+      ],
+      "stills": [
+        {
+          "row": 15,
+          "where": "start",
+          "j": 4134,
+          "seconds": 137.8,
+          "requestedSeconds": 137.808
+        },
+        {
+          "row": 15,
+          "where": "middle",
+          "j": 4279,
+          "seconds": 142.63333333333333,
+          "requestedSeconds": 142.61733333333336
+        },
+        {
+          "row": 15,
+          "where": "end",
+          "j": 4423,
+          "seconds": 147.43333333333334,
+          "requestedSeconds": 147.4266666666667
+        }
+      ]
+    },
+    {
+      "row": 16,
+      "start": 147.66666666666669,
+      "end": 160.0106666666667,
+      "shot": "押す力",
+      "screen": "札「見方：具体例」。乾電池1本（札「1.5ボルト」）と、ドアの模型（人形の指がノブでぱちっ。札「何千ボルト」）。2つの水そうの絵の高さで比べる：乾電池は低い段差、ドアノブは見上げるほどの段差。札「乾電池の 千倍 以上」。",
+      "narration": "具体例です。乾電池1本の押す力は、1.5ボルト。冬にドアノブで、ぱちっとくる静電気は、何千ボルトにもなります。乾電池の、千倍以上です。",
+      "cues": [
+        "r16:a",
+        "r16:b"
+      ],
+      "stills": [
+        {
+          "row": 16,
+          "where": "start",
+          "j": 4436,
+          "seconds": 147.86666666666667,
+          "requestedSeconds": 147.86666666666667
+        },
+        {
+          "row": 16,
+          "where": "middle",
+          "j": 4615,
+          "seconds": 153.83333333333334,
+          "requestedSeconds": 153.8386666666667
+        },
+        {
+          "row": 16,
+          "where": "end",
+          "j": 4794,
+          "seconds": 159.8,
+          "requestedSeconds": 159.81066666666672
+        }
+      ]
+    },
+    {
+      "row": 17,
+      "start": 160.0506666666667,
+      "end": 165.31200000000004,
+      "shot": "押す力",
+      "screen": "ミオの驚き顔（小）。",
+      "narration": "そんなに強いのに、ぱちっと一瞬で、終わっちゃうんですね。",
+      "cues": [
+        "r17:a"
+      ],
+      "stills": [
+        {
+          "row": 17,
+          "where": "start",
+          "j": 4808,
+          "seconds": 160.26666666666668,
+          "requestedSeconds": 160.2506666666667
+        },
+        {
+          "row": 17,
+          "where": "middle",
+          "j": 4880,
+          "seconds": 162.66666666666666,
+          "requestedSeconds": 162.68133333333338
+        },
+        {
+          "row": 17,
+          "where": "end",
+          "j": 4953,
+          "seconds": 165.1,
+          "requestedSeconds": 165.11200000000005
+        }
+      ]
+    },
+    {
+      "row": 18,
+      "start": 165.35200000000003,
+      "end": 182.38933333333338,
+      "shot": "押す力",
+      "screen": "札「見方：流れる 量から」。左の台がぐんと高くなり、上にコップ1杯の水だけ。管を開けると、勢いよく流れて、すぐ空になる。札「静電気：高いけど 少ない → 一瞬」。次に、2つの水そうの間に小さな手回しのポンプ。右の水を左へ戻し、水が輪になって流れ続ける。札「電池 ＝ くみ上げ 続ける ポンプ」。",
+      "narration": "流れる量から見ると、静電気は、とても高い所に、コップ1杯の水をためたようなものです。押す力は強くても、すぐに空になります。電池は、流れた水を、高い方へくみ上げ続けるポンプです。だから、流れが止まりません。",
+      "cues": [
+        "r18:a",
+        "r18:b"
+      ],
+      "stills": [
+        {
+          "row": 18,
+          "where": "start",
+          "j": 4967,
+          "seconds": 165.56666666666666,
+          "requestedSeconds": 165.55200000000002
+        },
+        {
+          "row": 18,
+          "where": "middle",
+          "j": 5216,
+          "seconds": 173.86666666666667,
+          "requestedSeconds": 173.8706666666667
+        },
+        {
+          "row": 18,
+          "where": "end",
+          "j": 5466,
+          "seconds": 182.2,
+          "requestedSeconds": 182.1893333333334
+        }
+      ]
+    },
+    {
+      "row": 19,
+      "start": 182.9793333333334,
+      "end": 194.95000000000007,
+      "shot": "火花",
+      "screen": "カエルの台の横に、取っ手を回すガラスの円盤の機械（札「静電気を 作る 機械」）。機械から、ぱちっと火花。同じ瞬間、メスを持つ人形（前かけ姿。札「研究室で 手伝う 人」）のメスが神経にふれていて、足がぴくっ。札「火花 → 足が ける」。",
+      "narration": "ガルヴァーニの研究室にも、静電気を作る機械がありました。その機械が火花を飛ばした時、近くのカエルの神経に、ちょうどメスがふれていると、足が、ぴくっとけったのです。",
+      "cues": [
+        "r19:a"
+      ],
+      "stills": [
+        {
+          "row": 19,
+          "where": "start",
+          "j": 5495,
+          "seconds": 183.16666666666666,
+          "requestedSeconds": 183.17933333333337
+        },
+        {
+          "row": 19,
+          "where": "middle",
+          "j": 5669,
+          "seconds": 188.96666666666667,
+          "requestedSeconds": 188.96466666666674
+        },
+        {
+          "row": 19,
+          "where": "end",
+          "j": 5843,
+          "seconds": 194.76666666666668,
+          "requestedSeconds": 194.75000000000009
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "start": 194.99000000000007,
+      "end": 208.49666666666675,
+      "shot": "火花",
+      "screen": "札「電気が 流れる → 足が 動く」。行10 の、2本の金属の棒でぴくっとする足の絵が、横に並ぶ。札「金属だけでも ぴくっ → 電気が 流れた」。",
+      "narration": "電気が流れると、足は動く。ガルヴァーニは、ここから何年も、カエルの足と電気を調べました。だから、金属を当てただけでぴくっとした時も、電気が流れた、と考えたのです。",
+      "cues": [
+        "r20:a",
+        "r20:b"
+      ],
+      "stills": [
+        {
+          "row": 20,
+          "where": "start",
+          "j": 5856,
+          "seconds": 195.2,
+          "requestedSeconds": 195.19000000000005
+        },
+        {
+          "row": 20,
+          "where": "middle",
+          "j": 6052,
+          "seconds": 201.73333333333332,
+          "requestedSeconds": 201.7433333333334
+        },
+        {
+          "row": 20,
+          "where": "end",
+          "j": 6249,
+          "seconds": 208.3,
+          "requestedSeconds": 208.29666666666677
+        }
+      ]
+    },
+    {
+      "row": 21,
+      "start": 209.08666666666676,
+      "end": 218.9240000000001,
+      "shot": "動物電気",
+      "screen": "カエルの足に戻る。論理の筋「仮説：電気は カエルの 体の 中に ある（動物電気）」。カエルの足の中に、小さな稲妻の印。",
+      "narration": "その電気の源を、ガルヴァーニは、こう考えました。仮説。電気は、カエルの体の中にある。動物電気です。",
+      "cues": [
+        "r21:a",
+        "r21:b"
+      ],
+      "stills": [
+        {
+          "row": 21,
+          "where": "start",
+          "j": 6279,
+          "seconds": 209.3,
+          "requestedSeconds": 209.28666666666675
+        },
+        {
+          "row": 21,
+          "where": "middle",
+          "j": 6420,
+          "seconds": 214,
+          "requestedSeconds": 214.00533333333343
+        },
+        {
+          "row": 21,
+          "where": "end",
+          "j": 6562,
+          "seconds": 218.73333333333332,
+          "requestedSeconds": 218.7240000000001
+        }
+      ]
+    },
+    {
+      "row": 22,
+      "start": 218.96400000000008,
+      "end": 233.5480000000001,
+      "shot": "動物電気",
+      "screen": "机の上に、平たいシビレエイの模型（おもちゃ風）。人形の指がさわって、びりっ（笑い）。札「シビレエイ：体から 電気」。カエルの足の稲妻から、金属の棒へ流れる矢印。札「金属 ＝ 通り道（と ガルヴァーニは 考えた）」。",
+      "narration": "自然な考えでした。シビレエイという魚が、体から電気を出して、さわった人をしびれさせることは、もう知られていたからです。2本の金属は、体の中の電気を通す道にすぎない、と考えたのです。",
+      "cues": [
+        "r22:a",
+        "r22:b"
+      ],
+      "stills": [
+        {
+          "row": 22,
+          "where": "start",
+          "j": 6575,
+          "seconds": 219.16666666666666,
+          "requestedSeconds": 219.16400000000007
+        },
+        {
+          "row": 22,
+          "where": "middle",
+          "j": 6788,
+          "seconds": 226.26666666666668,
+          "requestedSeconds": 226.25600000000009
+        },
+        {
+          "row": 22,
+          "where": "end",
+          "j": 7000,
+          "seconds": 233.33333333333334,
+          "requestedSeconds": 233.3480000000001
+        }
+      ]
+    },
+    {
+      "row": 23,
+      "start": 233.58800000000008,
+      "end": 239.36133333333342,
+      "shot": "動物電気",
+      "screen": "ミオのうなずき顔（小）。",
+      "narration": "魚が電気を出すなら、カエルが出しても、おかしくないですね。",
+      "cues": [
+        "r23:a"
+      ],
+      "stills": [
+        {
+          "row": 23,
+          "where": "start",
+          "j": 7014,
+          "seconds": 233.8,
+          "requestedSeconds": 233.78800000000007
+        },
+        {
+          "row": 23,
+          "where": "middle",
+          "j": 7094,
+          "seconds": 236.46666666666667,
+          "requestedSeconds": 236.47466666666674
+        },
+        {
+          "row": 23,
+          "where": "end",
+          "j": 7175,
+          "seconds": 239.16666666666666,
+          "requestedSeconds": 239.16133333333343
+        }
+      ]
+    },
+    {
+      "row": 24,
+      "start": 239.95133333333342,
+      "end": 256.98866666666675,
+      "shot": "ヴォルタ",
+      "screen": "左上「1790年代 イタリア パヴィーア ヴォルタ」。古い本の模型（札「1791年 ガルヴァーニの 本」）。机の左から、ヴォルタの人形（髪を後ろでまとめた、灰色の上着）が来て、本を開く。",
+      "narration": "1791年、ガルヴァーニは、この発見を本にまとめました。それを読んだのが、パヴィーアの大学で物理を教えていた、アレッサンドロ・ヴォルタです。ヴォルタは、初めは動物電気を信じ、同じ実験を、自分でくり返しました。",
+      "cues": [
+        "r24:a",
+        "r24:b"
+      ],
+      "stills": [
+        {
+          "row": 24,
+          "where": "start",
+          "j": 7205,
+          "seconds": 240.16666666666666,
+          "requestedSeconds": 240.1513333333334
+        },
+        {
+          "row": 24,
+          "where": "middle",
+          "j": 7454,
+          "seconds": 248.46666666666667,
+          "requestedSeconds": 248.47000000000008
+        },
+        {
+          "row": 24,
+          "where": "end",
+          "j": 7704,
+          "seconds": 256.8,
+          "requestedSeconds": 256.78866666666676
+        }
+      ]
+    },
+    {
+      "row": 25,
+      "start": 257.0286666666667,
+      "end": 270.29000000000013,
+      "shot": "ヴォルタ",
+      "screen": "札「見方：具体例」。カエルの足の模型が2つ並ぶ。左：鉄と鉄の棒 → 足がかすかに動くだけ。右：真鍮と鉄の棒 → 大きくぴくっ。札「同じ 金属：弱い」「違う 2種類：強い」。",
+      "narration": "具体例です。ヴォルタは、棒の組み合わせを変えてみました。2本とも同じ金属にすると、足の動きは、ずっと弱くなります。違う2種類の金属のとき、強く動いたのです。",
+      "cues": [
+        "r25:a",
+        "r25:b"
+      ],
+      "stills": [
+        {
+          "row": 25,
+          "where": "start",
+          "j": 7717,
+          "seconds": 257.23333333333335,
+          "requestedSeconds": 257.2286666666667
+        },
+        {
+          "row": 25,
+          "where": "middle",
+          "j": 7910,
+          "seconds": 263.6666666666667,
+          "requestedSeconds": 263.6593333333334
+        },
+        {
+          "row": 25,
+          "where": "end",
+          "j": 8103,
+          "seconds": 270.1,
+          "requestedSeconds": 270.09000000000015
+        }
+      ]
+    },
+    {
+      "row": 26,
+      "start": 270.3300000000001,
+      "end": 284.34866666666676,
+      "shot": "ヴォルタ",
+      "screen": "論理の筋の横に、もう1本の札「ヴォルタの 考え：電気は 違う 2種類の 金属から」。カエルの足に札「電気を 感じる 道具？」。",
+      "narration": "そこでヴォルタは、別の考えを立てました。電気は、カエルからではなく、違う2種類の金属の出会いから生まれる。カエルの足は、流れた電気を感じて動く、とても敏感な道具にすぎない。",
+      "cues": [
+        "r26:a",
+        "r26:b"
+      ],
+      "stills": [
+        {
+          "row": 26,
+          "where": "start",
+          "j": 8116,
+          "seconds": 270.53333333333336,
+          "requestedSeconds": 270.5300000000001
+        },
+        {
+          "row": 26,
+          "where": "middle",
+          "j": 8320,
+          "seconds": 277.3333333333333,
+          "requestedSeconds": 277.33933333333346
+        },
+        {
+          "row": 26,
+          "where": "end",
+          "j": 8524,
+          "seconds": 284.1333333333333,
+          "requestedSeconds": 284.14866666666677
+        }
+      ]
+    },
+    {
+      "row": 27,
+      "start": 284.3886666666668,
+      "end": 295.8793333333335,
+      "shot": "ヴォルタ",
+      "screen": "札「見方：たとえ話」。天井の警報器の模型。下から煙が上がると、警報器が鳴って光る。警報器から煙は出ていない。札「鳴る 物 ≠ 煙を 出す 物」。横に、カエルの足の絵（札「動く 物 ≠ 電気を 出す 物？」）。",
+      "narration": "たとえ話です。カエルの足は、煙を感じて鳴る、火事の警報器のようなものです。警報器は、鳴りはしても、煙を出しているわけではありません。",
+      "cues": [
+        "r27:a",
+        "r27:b"
+      ],
+      "stills": [
+        {
+          "row": 27,
+          "where": "start",
+          "j": 8538,
+          "seconds": 284.6,
+          "requestedSeconds": 284.58866666666677
+        },
+        {
+          "row": 27,
+          "where": "middle",
+          "j": 8704,
+          "seconds": 290.1333333333333,
+          "requestedSeconds": 290.1340000000001
+        },
+        {
+          "row": 27,
+          "where": "end",
+          "j": 8870,
+          "seconds": 295.6666666666667,
+          "requestedSeconds": 295.6793333333335
+        }
+      ]
+    },
+    {
+      "row": 28,
+      "start": 296.46933333333345,
+      "end": 305.61333333333346,
+      "shot": "確かめる",
+      "screen": "札「見方：確かめる側から」。論理の筋「もし正しいなら」→「予言：カエル なし → 電気は 出ない」。カエルの足の模型が、台からそっと外される。",
+      "narration": "確かめる側から見ます。もしガルヴァーニが正しく、電気がカエルの体の中にあるなら、カエルを取りのぞけば、電気は出ないはずです。",
+      "cues": [
+        "r28:a"
+      ],
+      "stills": [
+        {
+          "row": 28,
+          "where": "start",
+          "j": 8900,
+          "seconds": 296.6666666666667,
+          "requestedSeconds": 296.66933333333344
+        },
+        {
+          "row": 28,
+          "where": "middle",
+          "j": 9031,
+          "seconds": 301.03333333333336,
+          "requestedSeconds": 301.04133333333345
+        },
+        {
+          "row": 28,
+          "where": "end",
+          "j": 9162,
+          "seconds": 305.4,
+          "requestedSeconds": 305.41333333333347
+        }
+      ]
+    },
+    {
+      "row": 29,
+      "start": 305.6533333333335,
+      "end": 320.8453333333335,
+      "shot": "確かめる",
+      "screen": "札「役 その1：しょっぱい 水」。手が、丸い亜鉛の板（灰色、500円玉くらいの大きさ）の上に、塩水でぬれた丸い厚紙（茶色）、その上に丸い銅の板（赤茶）を重ねる。札「亜鉛」「塩水の 厚紙」「銅」。横に、カエルの足の断面の小さな絵（札「カエルの 中も しょっぱい 水」）。",
+      "narration": "カエルには、2つの役がありました。1つは、2つの金属の間の、しょっぱい水の役。ヴォルタは、これを、塩水をしみこませた厚紙に代えました。カエルの体の中も、しょっぱい水でぬれているからです。",
+      "cues": [
+        "r29:a",
+        "r29:b"
+      ],
+      "stills": [
+        {
+          "row": 29,
+          "where": "start",
+          "j": 9176,
+          "seconds": 305.8666666666667,
+          "requestedSeconds": 305.85333333333347
+        },
+        {
+          "row": 29,
+          "where": "middle",
+          "j": 9397,
+          "seconds": 313.23333333333335,
+          "requestedSeconds": 313.2493333333335
+        },
+        {
+          "row": 29,
+          "where": "end",
+          "j": 9619,
+          "seconds": 320.6333333333333,
+          "requestedSeconds": 320.6453333333335
+        }
+      ]
+    },
+    {
+      "row": 30,
+      "start": 320.88533333333345,
+      "end": 331.0213333333335,
+      "shot": "確かめる",
+      "screen": "札「役 その2：感じる → ぬらした 指」。ヴォルタの人形のぬれた指（水滴の印）。1組にさわっても何も起きない。",
+      "narration": "もう1つは、電気を感じる役。これは、ぬらした自分の指に代えました。ただ、指は、カエルの足ほど敏感ではありません。",
+      "cues": [
+        "r30:a",
+        "r30:b"
+      ],
+      "stills": [
+        {
+          "row": 30,
+          "where": "start",
+          "j": 9633,
+          "seconds": 321.1,
+          "requestedSeconds": 321.08533333333344
+        },
+        {
+          "row": 30,
+          "where": "middle",
+          "j": 9779,
+          "seconds": 325.96666666666664,
+          "requestedSeconds": 325.9533333333335
+        },
+        {
+          "row": 30,
+          "where": "end",
+          "j": 9925,
+          "seconds": 330.8333333333333,
+          "requestedSeconds": 330.8213333333335
+        }
+      ]
+    },
+    {
+      "row": 31,
+      "start": 331.06133333333344,
+      "end": 342.4880000000001,
+      "shot": "確かめる",
+      "screen": "3枚1組が、とん、とん、と積み上がり、ガラスの棒で支えた柱になる（手のひらくらいの高さ）。札「重ねるほど 強い（わけは 後編）」。",
+      "narration": "そこでヴォルタは、亜鉛と塩水の厚紙と銅の組を、何十組も重ねました。重ねるほど、強くなったのです。そのわけは、後編で開けます。",
+      "cues": [
+        "r31:a",
+        "r31:b"
+      ],
+      "stills": [
+        {
+          "row": 31,
+          "where": "start",
+          "j": 9938,
+          "seconds": 331.26666666666665,
+          "requestedSeconds": 331.2613333333334
+        },
+        {
+          "row": 31,
+          "where": "middle",
+          "j": 10103,
+          "seconds": 336.76666666666665,
+          "requestedSeconds": 336.7746666666668
+        },
+        {
+          "row": 31,
+          "where": "end",
+          "j": 10269,
+          "seconds": 342.3,
+          "requestedSeconds": 342.2880000000001
+        }
+      ]
+    },
+    {
+      "row": 32,
+      "start": 342.5280000000001,
+      "end": 361.73066666666676,
+      "shot": "確かめる",
+      "screen": "左上「1800年 イタリア ヴォルタ」。ヴォルタの人形が、片手の指を柱の下の端、もう片手の指を上の端にふれる。柱の下から上へ、全部の組を通る光の線が走り、指から体を通って戻る。人形が、びりっと跳ねる（笑い）。論理の筋「事実1：カエル なしで、指に びりっ」。",
+      "narration": "事実。1800年、何十組も積んだ柱の、いちばん下と、いちばん上を、ぬらした指でさわると、びりっときました。両方の端をさわったのは、下の端から上の端まで、全部の組を通った電気が、指を通るようにするためです。カエルは、どこにもいません。",
+      "cues": [
+        "r32:a",
+        "r32:b"
+      ],
+      "stills": [
+        {
+          "row": 32,
+          "where": "start",
+          "j": 10282,
+          "seconds": 342.73333333333335,
+          "requestedSeconds": 342.72800000000007
+        },
+        {
+          "row": 32,
+          "where": "middle",
+          "j": 10564,
+          "seconds": 352.1333333333333,
+          "requestedSeconds": 352.1293333333334
+        },
+        {
+          "row": 32,
+          "where": "end",
+          "j": 10846,
+          "seconds": 361.53333333333336,
+          "requestedSeconds": 361.5306666666668
+        }
+      ]
+    },
+    {
+      "row": 33,
+      "start": 361.7706666666667,
+      "end": 376.4826666666667,
+      "shot": "確かめる",
+      "screen": "机の上に、金の葉の検電器（ガラスの瓶、上に金属の頭、中に2枚の金の薄い葉。画面の3分の1の大きさ）。札「金の 葉の 検電器」。電堆の上の端から、検電器の頭へ細い線がつながる。2枚の葉が、すっと開く（寄る）。論理の筋「事実2：生き物で ない 道具でも、電気が 出ている」。",
+      "narration": "生き物でない道具でも、確かめられました。金の葉の検電器、つまり、電気がたまると、ガラスの瓶の中の2枚の薄い金の葉が、離れて開く道具です。電堆の端につなぐと、葉が開いたのです。",
+      "cues": [
+        "r33:a",
+        "r33:b"
+      ],
+      "stills": [
+        {
+          "row": 33,
+          "where": "start",
+          "j": 10859,
+          "seconds": 361.96666666666664,
+          "requestedSeconds": 361.9706666666667
+        },
+        {
+          "row": 33,
+          "where": "middle",
+          "j": 11074,
+          "seconds": 369.1333333333333,
+          "requestedSeconds": 369.1266666666667
+        },
+        {
+          "row": 33,
+          "where": "end",
+          "j": 11288,
+          "seconds": 376.26666666666665,
+          "requestedSeconds": 376.2826666666667
+        }
+      ]
+    },
+    {
+      "row": 34,
+      "start": 376.52266666666674,
+      "end": 389.63466666666676,
+      "shot": "確かめる",
+      "screen": "論理の筋「判定 ×」。勝負の札「言い伝え 0 − 4 実験」。",
+      "narration": "指も生き物ですが、検電器は、生き物ではありません。予言と事実が合いません。崩れたのは、この足を動かした電気は、カエルの体の中から出ている、という考えです。",
+      "cues": [
+        "r34:a",
+        "r34:b"
+      ],
+      "stills": [
+        {
+          "row": 34,
+          "where": "start",
+          "j": 11302,
+          "seconds": 376.73333333333335,
+          "requestedSeconds": 376.7226666666667
+        },
+        {
+          "row": 34,
+          "where": "middle",
+          "j": 11492,
+          "seconds": 383.06666666666666,
+          "requestedSeconds": 383.0786666666668
+        },
+        {
+          "row": 34,
+          "where": "end",
+          "j": 11683,
+          "seconds": 389.43333333333334,
+          "requestedSeconds": 389.43466666666677
+        }
+      ]
+    },
+    {
+      "row": 35,
+      "start": 389.6746666666667,
+      "end": 395.93866666666673,
+      "shot": "確かめる",
+      "screen": "ミオのひらめき顔（全画面）。",
+      "narration": "カエルは、電気を出す係じゃなくて、電気を感じる係だったんですね。",
+      "cues": [
+        "r35:a"
+      ],
+      "stills": [
+        {
+          "row": 35,
+          "where": "start",
+          "j": 11696,
+          "seconds": 389.8666666666667,
+          "requestedSeconds": 389.8746666666667
+        },
+        {
+          "row": 35,
+          "where": "middle",
+          "j": 11784,
+          "seconds": 392.8,
+          "requestedSeconds": 392.80666666666673
+        },
+        {
+          "row": 35,
+          "where": "end",
+          "j": 11872,
+          "seconds": 395.73333333333335,
+          "requestedSeconds": 395.73866666666675
+        }
+      ]
+    },
+    {
+      "row": 36,
+      "start": 395.9786666666667,
+      "end": 412.3866666666667,
+      "shot": "確かめる",
+      "screen": "札「後に 分かったこと」（灰色の枠の札。当時は 分かっていなかった ことを示す）。カエルの足の中の神経に、小さな光の粒が走る。札「神経の 合図 ＝ 小さな 電気」。",
+      "narration": "ただし、後に分かったこともあります。生き物の神経は、本当に、小さな電気で合図を送っています。ガルヴァーニの考えも、全部がまちがいではなかったのです。崩れたのは、この机のぴくっの源はカエル、という所でした。",
+      "cues": [
+        "r36:a",
+        "r36:b"
+      ],
+      "stills": [
+        {
+          "row": 36,
+          "where": "start",
+          "j": 11885,
+          "seconds": 396.1666666666667,
+          "requestedSeconds": 396.1786666666667
+        },
+        {
+          "row": 36,
+          "where": "middle",
+          "j": 12125,
+          "seconds": 404.1666666666667,
+          "requestedSeconds": 404.1826666666667
+        },
+        {
+          "row": 36,
+          "where": "end",
+          "j": 12366,
+          "seconds": 412.2,
+          "requestedSeconds": 412.1866666666667
+        }
+      ]
+    },
+    {
+      "row": 37,
+      "start": 412.9766666666667,
+      "end": 421.72600000000006,
+      "shot": "電堆",
+      "screen": "積み上がった柱に寄る。札「電堆（でんたい）＝ 電気の 積み重ね」。行12 の乾電池と並べる。",
+      "narration": "ヴォルタの積み重ねは、電堆と呼ばれます。電気の積み重ね、という意味です。世界で初めての電池です。",
+      "cues": [
+        "r37:a",
+        "r37:b"
+      ],
+      "stills": [
+        {
+          "row": 37,
+          "where": "start",
+          "j": 12395,
+          "seconds": 413.1666666666667,
+          "requestedSeconds": 413.1766666666667
+        },
+        {
+          "row": 37,
+          "where": "middle",
+          "j": 12521,
+          "seconds": 417.3666666666667,
+          "requestedSeconds": 417.3513333333334
+        },
+        {
+          "row": 37,
+          "where": "end",
+          "j": 12646,
+          "seconds": 421.53333333333336,
+          "requestedSeconds": 421.52600000000007
+        }
+      ]
+    },
+    {
+      "row": 38,
+      "start": 421.766,
+      "end": 436.92600000000004,
+      "shot": "電堆",
+      "screen": "手紙の模型「1800年3月 ロンドンの 王立協会へ」。手紙が、机の上のヨーロッパの地図の上を、イタリアからロンドンへ飛ぶ。札「ヴォルタも 会員」。",
+      "narration": "ヴォルタは、その年の3月、ロンドンの王立協会へ、手紙でこれを知らせました。ヴォルタ自身も会員で、前に賞も受けた、よく知られた学会だったからです。",
+      "cues": [
+        "r38:a"
+      ],
+      "stills": [
+        {
+          "row": 38,
+          "where": "start",
+          "j": 12659,
+          "seconds": 421.96666666666664,
+          "requestedSeconds": 421.966
+        },
+        {
+          "row": 38,
+          "where": "middle",
+          "j": 12880,
+          "seconds": 429.3333333333333,
+          "requestedSeconds": 429.346
+        },
+        {
+          "row": 38,
+          "where": "end",
+          "j": 13102,
+          "seconds": 436.73333333333335,
+          "requestedSeconds": 436.72600000000006
+        }
+      ]
+    },
+    {
+      "row": 39,
+      "start": 436.966,
+      "end": 451.99800000000005,
+      "shot": "電堆",
+      "screen": "左に、行13 のガラスの棒（ぱちっと一瞬で消える）。右に、電堆。ヴォルタの人形が、2回、3回とさわり、そのたびにびりっ。最後はさわったまま、人形が小さく震え続ける。横に、行18 のポンプの小さな絵。札「静電気：一度」「電堆：ため 直さず 何度でも」。",
+      "narration": "静電気のぱちっは、一度で終わりでした。電堆は、ため直さなくても、何度でもびりっときます。さわっている間、びりびりが続きます。流れた水をくみ上げ続けるポンプが、ここに初めてできたのです。",
+      "cues": [
+        "r39:a",
+        "r39:b"
+      ],
+      "stills": [
+        {
+          "row": 39,
+          "where": "start",
+          "j": 13115,
+          "seconds": 437.1666666666667,
+          "requestedSeconds": 437.166
+        },
+        {
+          "row": 39,
+          "where": "middle",
+          "j": 13334,
+          "seconds": 444.46666666666664,
+          "requestedSeconds": 444.482
+        },
+        {
+          "row": 39,
+          "where": "end",
+          "j": 13554,
+          "seconds": 451.8,
+          "requestedSeconds": 451.79800000000006
+        }
+      ]
+    },
+    {
+      "row": 40,
+      "start": 452.588,
+      "end": 459.76933333333335,
+      "shot": "次へ",
+      "screen": "ミオのじと目（全画面）。電堆の1組に「？」。",
+      "narration": "でも、金属の板と、塩水だけで、どうして水をくみ上げ続けられるんですか？",
+      "cues": [
+        "r40:a"
+      ],
+      "stills": [
+        {
+          "row": 40,
+          "where": "start",
+          "j": 13584,
+          "seconds": 452.8,
+          "requestedSeconds": 452.788
+        },
+        {
+          "row": 40,
+          "where": "middle",
+          "j": 13685,
+          "seconds": 456.1666666666667,
+          "requestedSeconds": 456.1786666666667
+        },
+        {
+          "row": 40,
+          "where": "end",
+          "j": 13787,
+          "seconds": 459.56666666666666,
+          "requestedSeconds": 459.56933333333336
+        }
+      ]
+    },
+    {
+      "row": 41,
+      "start": 459.80933333333337,
+      "end": 466.5853333333334,
+      "shot": "次へ",
+      "screen": "電堆の1組の板の継ぎ目に、開きそうな線が光る（まだ開けない）。札「B-2 後編」。",
+      "narration": "それは、電堆の1組の中を、目に見えない粒の大きさまで開けて見る、この回の後編で。",
+      "cues": [
+        "r41:a"
+      ],
+      "stills": [
+        {
+          "row": 41,
+          "where": "start",
+          "j": 13800,
+          "seconds": 460,
+          "requestedSeconds": 460.00933333333336
+        },
+        {
+          "row": 41,
+          "where": "middle",
+          "j": 13896,
+          "seconds": 463.2,
+          "requestedSeconds": 463.1973333333334
+        },
+        {
+          "row": 41,
+          "where": "end",
+          "j": 13992,
+          "seconds": 466.4,
+          "requestedSeconds": 466.3853333333334
+        }
+      ]
+    },
+    {
+      "row": 42,
+      "start": 467.17533333333336,
+      "end": 484.1193333333334,
+      "shot": "挑戦",
+      "screen": "電堆の模型の、厚紙の全部が、白くかわいた厚紙に入れかわる。「？」。",
+      "narration": "今回の挑戦です。ヴォルタの電堆で、塩水の厚紙の代わりに、かわいた厚紙をはさむと、さわった指は、びりっとくるでしょうか。答えは、この回の後編で。",
+      "cues": [
+        "r42:a",
+        "r42:b"
+      ],
+      "stills": [
+        {
+          "row": 42,
+          "where": "start",
+          "j": 14021,
+          "seconds": 467.3666666666667,
+          "requestedSeconds": 467.37533333333334
+        },
+        {
+          "row": 42,
+          "where": "middle",
+          "j": 14269,
+          "seconds": 475.6333333333333,
+          "requestedSeconds": 475.64733333333334
+        },
+        {
+          "row": 42,
+          "where": "end",
+          "j": 14518,
+          "seconds": 483.93333333333334,
+          "requestedSeconds": 483.9193333333334
+        }
+      ]
+    },
+    {
+      "row": 43,
+      "start": 484.7093333333334,
+      "end": 494.27466666666675,
+      "shot": "終わり",
+      "screen": "冒頭の、机の右の台に戻る。カエルの足の模型に、人形の手が2本の棒をふれ合わせ、足が最後にもう一度ぴくっ（行1 と同じ動き、回収）。横に、テレラと小さな方位磁針、電堆。勝負の札「言い伝え 0 − 4 実験」。",
+      "narration": "カエルの足をぴくっとさせた電気は、カエルからではなく、2種類の金属と、しょっぱい水の組から、来ていたのです。",
+      "cues": [
+        "r43:a"
+      ],
+      "stills": [
+        {
+          "row": 43,
+          "where": "start",
+          "j": 14547,
+          "seconds": 484.9,
+          "requestedSeconds": 484.9093333333334
+        },
+        {
+          "row": 43,
+          "where": "middle",
+          "j": 14685,
+          "seconds": 489.5,
+          "requestedSeconds": 489.4920000000001
+        },
+        {
+          "row": 43,
+          "where": "end",
+          "j": 14822,
+          "seconds": 494.06666666666666,
+          "requestedSeconds": 494.07466666666676
+        }
+      ]
+    }
+  ],
+  "noNearestFrameSubstitution": true,
+  "immutableInputHashes": {
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/deep/技術の疑問の鎖_B-2_前編_第1版_ナレーション.md": "a9900445f07735abeb46f39618f5878a161ddb8e3ecc4ad3d7c231e1b322437e",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/docs/video-revision-20260924/ytseries/chain-b-2a_gpt_20261029.mjs": "b10a8c1d85cc01d2f6fba8238fc979e68e1bce5fed8efd3f6be28ab6b2b58760",
+    "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/row-cue-map.json": "bc65c50e2c21a68cf637c8177cc51d37909036c40f45664f3ba409fd3686e138",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/plan.json": "810104ded94d21ad9c006ab743947a63aa1a9ffe222f9874e24fbe2c3cc3d078",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.json": "8ef35c89d9a1e49927106f3f21e34ebe4a00577071ee870f521c603e7ab7a75f",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/timed-selection.json": "4a01b874c7ce391ace10772ab9750594b4e4e8f5ac9f5f2e651d6136db4264d5",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/phrase-times.json": "14547a566813eabd9b4590285e16b35e06633257e174bfdd66c37e573bf95612",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.voice.wav": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.wav": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+    "/private/tmp/ys/ys-chain-b2a_gpt_20261029/silent-intro-record.json": "a1d9dae26362d080afa1a20825e31d870f867fe05ed13ae1600454e3c1e16b07"
+  },
+  "anchorFormat": "{anchors:{name:Array(frames) of [pixelX,pixelY,visible]}}",
+  "optionalLabelAnchors": [
+    "label.north",
+    "label.south",
+    "label.australia",
+    "label.london",
+    "label.zinc",
+    "label.cardboard",
+    "label.copper"
+  ]
+}

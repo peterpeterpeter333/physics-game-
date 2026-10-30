@@ -1,0 +1,227 @@
+{
+  "reportType": "B-2前編 S2 最終合成静止画の独立2D監査",
+  "date": "2026-10-29",
+  "reviewer": "b2a_independent_audit",
+  "episode": "B-2 前編 カエルの足の電気は、どこから来た？（前編）",
+  "judgment": {
+    "twoDimensionalLayout": "最終S2の全27頁・267コマを実見。新たな必須2D修正は見つからず、ClaudeのS2確認へ渡せる。",
+    "completedVideo": false,
+    "pedagogicalAndHistoricalApproval": "保留事項あり。固定台本に由来するS0のP1論点は、映像だけで完全解消したとは判定しない。ClaudeのS2確認時に判断を依頼する。",
+    "nextStage": "S2で停止。S3・S4の合格や全編動画視聴済みを意味しない。"
+  },
+  "scope": {
+    "finalRawFrozen": "rootがjob020完了後にraw・anchors・manifestを固定した旨を通知。その後にcomposeを実施。",
+    "compositionDirectory": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/storyboard/composed-v3",
+    "compositionAudit": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/storyboard/composed-v3/composition-audit.json",
+    "compositionAuditSha256": "398783fa2828e862ef5ba4e811023246e2d36714046b4f1d5b3ea2577fc007b5",
+    "nativeFrameManifestSha256": "c2657dcbc3ebd071d251a868aee6fb3cd3280bbf57ccc316a9df34639cb3d62f",
+    "anchorsSha256": "d54fc6d58a392af80f2aaae4e713564d07cbaa2084e79bb8d6293a7bc799dd18",
+    "personallyViewed": {
+      "medium": "最終合成のコンタクトシート画像を実際に表示して目視",
+      "pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+      "frameCount": 267,
+      "masterRows": "1〜43の全行",
+      "firstSampleSeconds": 0.26666666666666666,
+      "lastSampleSeconds": 494.06666666666666,
+      "earlierPasses": "v1の19頁185コマ、部分再合成の4頁33コマも確認したが、本判定は最終v3を根拠とする。"
+    },
+    "notVerified": [
+      "S3/S4の連続動画は未制作・未確認。267コマの間にある全14,846フレームを目視したわけではない。",
+      "実際の音声を耳で聴く通し確認は実施していない。音声の自然さ・読みの正しさ・BGM音量の主観的合格を出していない。",
+      "動作速度、連続的なカメラ移動、口パク、音声との細かな間はS3以後の確認対象。",
+      "S2画は540×960の低サンプル描画であり、本番解像度・本番画質の最終保証ではない。"
+    ],
+    "auditFlagExplanation": "自動composition-auditの個別personallyViewed:falseは生成時の初期値であり、手動の実見記録はこの独立報告にのみ記載した。自動検査ファイルは書き換えていない。"
+  },
+  "immutableInputs": {
+    "masterSha256": "a9900445f07735abeb46f39618f5878a161ddb8e3ecc4ad3d7c231e1b322437e",
+    "frozenScriptSha256": "b10a8c1d85cc01d2f6fba8238fc979e68e1bce5fed8efd3f6be28ab6b2b58760",
+    "rowCueMapSha256": "bc65c50e2c21a68cf637c8177cc51d37909036c40f45664f3ba409fd3686e138",
+    "durationSeconds": 494.8646666666668,
+    "fps": 30,
+    "frameCountForProduction": 14846,
+    "spokenCues": 70,
+    "captionChunks": 317,
+    "integrityMethod": "composeは凍結計画・時刻・音声・正本のSHAを照合し、合成開始時のmanifest/anchors SHAと終了時のSHAも一致確認。各raw画像も合成前後で同一SHAを確認した。",
+    "originalMasterAudioSubtitlesChangedByReviewer": false,
+    "commitOrPush": false
+  },
+  "measuredTypography": {
+    "safeRectangle1080x1920": { "xMin": 40, "xMax": 1040, "yMin": 110, "yMax": 1600 },
+    "allRecordedTextBoxesSafe": true,
+    "minimumLabelFontPixels": 36,
+    "captionFontPixels": 66,
+    "measuredTextVariants": 442,
+    "method": "HiraginoをSharpで実際にラスタライズし、文字のインク幅・高さ・bearingを測定。背景は実測幅から作成。2行札は単語の切れ目を使って均衡化。字幕の文言・既存の分割は不変。",
+    "limits": "文字枠が安全域内にあることは、主役の大きさや物理内容の正しさまで保証しない。以下の目視結果を別途併用した。"
+  },
+  "fixesPersonallyConfirmedInFinalV3": [
+    {
+      "rows": [4],
+      "pages": [2],
+      "result": "地理的な北・南は左、赤N・青Sは右の引出線付き札に分離。札同士も磁石の極も重ならず、方角と磁極を区別できる。"
+    },
+    {
+      "rows": [7, 8],
+      "pages": [4, 5],
+      "result": "オーストラリア・ロンドン札を針の下に移動し、針を隠さない。row7の答え札と国札も離れている。"
+    },
+    {
+      "rows": [8],
+      "pages": [5],
+      "result": "長い定義札は均衡のよい2行で、末尾1文字だけの孤立や背景からのはみ出しがない。"
+    },
+    {
+      "rows": [10, 11],
+      "pages": [6, 7],
+      "result": "接触拡大の最終画で真鍮棒と鉄棒の両先端が画面内に収まる。接触対象を失っていた旧passの拡大見切れは解消。"
+    },
+    {
+      "rows": [18],
+      "pages": [11],
+      "result": "小さい貯水が減る・空になる画と、ポンプ付きの水系への切り替えを確認。空の貯水槽から流れ続けるように見える旧問題は改善。"
+    },
+    {
+      "rows": [25],
+      "pages": [16],
+      "result": "同じ金属・違う2種類の札をそれぞれ左右の実験の下へ分離し、ラベルの対応が分かる。足の状態差も確認できる。"
+    },
+    {
+      "rows": [29],
+      "pages": [18, 19],
+      "result": "銅・塩水の厚紙・亜鉛を左に縦並び、短い引出線で材料へ対応付け。終盤の材料札の大きな重なりが消え、上の説明札や字幕とも衝突しない。"
+    },
+    {
+      "rows": [30, 31, 32],
+      "pages": [19, 20, 21],
+      "result": "指で触れる時は層が閉じ、積み上げ時だけ一番上の部品が降りる。電流の黄色い模型線が積層と人体を通る経路を表している。"
+    },
+    {
+      "rows": [33],
+      "pages": [21, 22],
+      "result": "電堆と検電器の全体位置を先に見せ、その後に葉の拡大へ切り替わる。上部の2枚の皿・分離動作と、葉が開く結果をサンプル画で確認。"
+    },
+    {
+      "rows": [38],
+      "pages": [24],
+      "result": "イタリア・ロンドン札と引出線を追加し、地図のピンの意味を原稿内の語だけで補足。国札・史実札・字幕が重ならない。"
+    },
+    {
+      "rows": [36, 41],
+      "pages": [23, 26],
+      "result": "神経の合図と電堆1段の物理的拡大を確認。物全体でなく説明対象の部分に寄った画として区別できる。"
+    },
+    {
+      "rows": [43],
+      "pages": [27],
+      "result": "最後の振り返りでカエル・2種類の金属・触れる指が表示され、話している物が消えたままになる場面は見つからない。"
+    }
+  ],
+  "sizeAndFramingExceptions": [
+    {
+      "rows": [1],
+      "classification": "指示された導入の例外",
+      "evidence": "3サンプルとも覆いの幅0.27。冒頭は伏せた物を見せる導入であり、全コマ40〜70％合格とは記載しない。"
+    },
+    {
+      "rows": [24, 28],
+      "classification": "意図した入退場",
+      "evidence": "row24 j7205は人物の入場、row28 j9162はカエルの退場。合成の見切れ事故や接触先端の欠落とは分けて扱う。"
+    },
+    {
+      "rows": [10, 33],
+      "classification": "細い接触部・閉じた葉の幾何学的性質",
+      "evidence": "row10 j2870接触部幅0.303、row33の葉の幅は0.085〜0.214。細い主役の投影幅は40％未満のままなので、単純な全件合格とはしない。拡大画で対象の有無・両端・動作の差を実見した。"
+    },
+    {
+      "rows": [33, 36, 41],
+      "classification": "意図した部分拡大",
+      "evidence": "row33で持ち上げた上皿の一部、row36のカエル胴体、row41の電堆の上端などは画面外。説明対象は葉・神経・積層の1段であり、物の全体が常に収まっているという主張はしない。"
+    }
+  ],
+  "remainingVisualWeaknesses": [
+    {
+      "id": "B2A-S2-P2-01",
+      "priority": "P2",
+      "rows": [5],
+      "pages": [3],
+      "issue": "磁力線の弧全体を大きく収めるため、磁石の球そのものは小さめ。複合物の幅が0.65でも、球の部分だけが大きいとは言えない。",
+      "suggestionForS3Review": "球と外側の線を同時に理解できるか、動画速度で確認。必要なら球と線の関係を近いカメラで先に示す。"
+    },
+    {
+      "id": "B2A-S2-P2-02",
+      "priority": "P2",
+      "rows": [10, 11, 19],
+      "pages": [6, 7, 12],
+      "issue": "接触拡大は改善したが、広い実験図の棒・神経・メスは小さく、素材札が実験後半に常時近接表示される構成ではない。row19のメスと神経の接点は特に小さい。",
+      "suggestionForS3Review": "初学者が目で接点を追える滞留時間を確認。重要な箇所だけ実カメラによる寄りを使う。"
+    },
+    {
+      "id": "B2A-S2-P2-03",
+      "priority": "P2",
+      "rows": [25, 39],
+      "pages": [16, 25],
+      "issue": "二つの実験や道具を並べた場面は複合幅を確保している一方、一つ一つのカエルや指は小さめ。字幕は読めるが、スマートフォンで足の動作の差が即座に伝わるかは連続動画での確認が必要。",
+      "suggestionForS3Review": "同じ金属・違う金属の状態差、静電気・電堆の違いを、字幕を追いながら見分けられるかを確認する。"
+    },
+    {
+      "id": "B2A-S2-P2-04",
+      "priority": "P2",
+      "rows": [38],
+      "pages": [24],
+      "issue": "地名札で意味は明確になったが、地図自体は簡略な模型。実際の欧州の地理を細かく学ぶ図ではない。",
+      "suggestionForS3Review": "手紙がイタリアからロンドンへ渡る、という因果の補助として扱い、正確な地形再現とは紹介しない。"
+    }
+  ],
+  "fixedNarrationHoldPointsInheritedFromS0": [
+    {
+      "sourceFinding": "B2A-P1-01",
+      "rows": [15],
+      "classification": "比喩と厳密な物理量の区別",
+      "status": "未解消・要Claude判断",
+      "issue": "『管を流れる水の量が電流』には単位時間あたりが明記されていない。電圧の『押す力』もたとえであり、力そのものの定義ではない。流れる画は助けになるが、厳密な定義を映像だけで追加した扱いにはできない。"
+    },
+    {
+      "sourceFinding": "B2A-P1-02",
+      "rows": [28, 33, 34, 35, 36, 43],
+      "classification": "歴史上の仮説と論理的証明の区別",
+      "status": "未解消・要Claude判断",
+      "issue": "『非生物の電堆も発電する』だけでは、『このカエルが電源ではなかった』を排他的に証明できない。生体電気と金属電池は両立する。後の生体電気の補足はあるが、正本の結論にある論理の一段は勝手に補ったことにしない。"
+    },
+    {
+      "sourceFinding": "B2A-P1-03",
+      "rows": [33],
+      "classification": "歴史上の測定器の理想化",
+      "status": "映像上は改善・史実上の説明は保留",
+      "issue": "微弱電圧の検出に蓄電式検電器を用いる点は上皿2枚の模型で補強した。ただし接地・接続解除・上皿分離による感度向上まで正本音声が説明しているわけではない。普通の金箔検電器が小電圧へ同様に反応するとは一般化しない。"
+    },
+    {
+      "sourceFinding": "B2A-P1-05",
+      "rows": [22, 30, 32, 39, 42],
+      "classification": "歴史上の危険な実演の再現",
+      "status": "模型として制作・安全上の留保は残る",
+      "issue": "ぬれた指やシビレエイに触れる画は歴史上の模型表現であり、視聴者へ実践を勧めるものではない。固定字幕を勝手に増やしていないため、公開時の説明欄などで『再現模型。人体で試さない』という注意を検討してほしい。"
+    },
+    {
+      "sourceFinding": "B2A-P1-06",
+      "rows": [39],
+      "classification": "史実の要約と生理現象の区別",
+      "status": "未解消・要Claude判断",
+      "issue": "繰り返し感電できることと、触れている間ずっと同じ強さの筋肉反応が続くことは同一ではない。映像は誇張しない模型反応にしたが、固定音声『びりびりが続きます』の生理的な厳密性を合格にはしていない。Royal Societyの歴史的要約では繰り返すぬれた指の電撃は裏付けられるが、原書簡全文の全記述は未確認。"
+    }
+  ],
+  "changesByThisReviewer": {
+    "newDedicatedFiles": [
+      "scripts/umech/desk-b2a-overlay_gpt_20261029.mjs",
+      "scripts/umech/desk-b2a-stage_gpt_20261029.mjs"
+    ],
+    "method": "B-2専用の描画・stageファイルだけを実装。共通desk-frameはディスク上で変更せず、専用driverからメモリ内で切り替える。",
+    "s2DeliverablesOnly": true,
+    "existingSharedFilesOverwritten": false,
+    "nativeRawAnchorsManifestEditedByReviewer": false,
+    "originalJapaneseChanged": false,
+    "newNarrationOrSubtitles": false,
+    "commit": false,
+    "push": false
+  }
+}

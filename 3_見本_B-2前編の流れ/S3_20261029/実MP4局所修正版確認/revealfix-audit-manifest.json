@@ -1,0 +1,148 @@
+{
+  "sourceOld": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/draft/ys-chain-b2a_gpt_20261029_s3_draft.mp4",
+  "sourceNew": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/draft/ys-chain-b2a_gpt_20261029_s3_draft_revealfix.mp4",
+  "oldSha256": "93dde42e529b8b3d1765bf1e8dd154602c91c8d696942fb4acd108399a282ae9",
+  "newSha256": "00f70632bfd74f12b2c571dc90a5b72d92ed843274073aa9e9111717bcd44037",
+  "comparedDecodedFrames": 14846,
+  "prefix": {
+    "first": 0,
+    "last": 14541,
+    "frames": 14542,
+    "oldAggregateSha256": "7c9e7dd57922134d1edcdbfca4bcf69c3c2c49893581a03253219660c6ca0b1c",
+    "newAggregateSha256": "7c9e7dd57922134d1edcdbfca4bcf69c3c2c49893581a03253219660c6ca0b1c",
+    "equal": true
+  },
+  "allFrameDifferences": {
+    "count": 224,
+    "ranges": [
+      {
+        "first": 14542,
+        "last": 14765,
+        "frames": 224
+      }
+    ]
+  },
+  "outsideIntended27Frames": 197,
+  "decodedAudio": {
+    "old": "SHA256=1af11ede98e07cddceff8751a30e57726b9a92c0197ba53becc926ac827b6891",
+    "new": "SHA256=1af11ede98e07cddceff8751a30e57726b9a92c0197ba53becc926ac827b6891",
+    "equal": true
+  },
+  "hashTablesSaved": false,
+  "selectedActualVideoFrames": 38,
+  "exactGlobalPTSValidated": true,
+  "groups": [
+    {
+      "id": "reveal-27-contiguous",
+      "indices": [
+        14542,
+        14543,
+        14544,
+        14545,
+        14546,
+        14547,
+        14548,
+        14549,
+        14550,
+        14551,
+        14552,
+        14553,
+        14554,
+        14555,
+        14556,
+        14557,
+        14558,
+        14559,
+        14560,
+        14561,
+        14562,
+        14563,
+        14564,
+        14565,
+        14566,
+        14567,
+        14568
+      ],
+      "pages": [
+        {
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/実MP4局所修正版確認/reveal-27-contiguous/page-001.jpg",
+          "frames": [
+            14542,
+            14543,
+            14544,
+            14545,
+            14546,
+            14547,
+            14548,
+            14549,
+            14550,
+            14551,
+            14552,
+            14553,
+            14554,
+            14555,
+            14556
+          ],
+          "viewed": false
+        },
+        {
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/実MP4局所修正版確認/reveal-27-contiguous/page-002.jpg",
+          "frames": [
+            14557,
+            14558,
+            14559,
+            14560,
+            14561,
+            14562,
+            14563,
+            14564,
+            14565,
+            14566,
+            14567,
+            14568
+          ],
+          "viewed": false
+        }
+      ]
+    },
+    {
+      "id": "last-ten-seconds-one-hz",
+      "indices": [
+        14520,
+        14550,
+        14580,
+        14610,
+        14640,
+        14670,
+        14700,
+        14730,
+        14760,
+        14790,
+        14820,
+        14845
+      ],
+      "pages": [
+        {
+          "image": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/実MP4局所修正版確認/last-ten-seconds-one-hz/page-001.jpg",
+          "frames": [
+            14520,
+            14550,
+            14580,
+            14610,
+            14640,
+            14670,
+            14700,
+            14730,
+            14760,
+            14790,
+            14820,
+            14845
+          ],
+          "viewed": false
+        }
+      ]
+    }
+  ],
+  "visualReviewPerformed": false,
+  "audioEarReviewPerformed": false
+}

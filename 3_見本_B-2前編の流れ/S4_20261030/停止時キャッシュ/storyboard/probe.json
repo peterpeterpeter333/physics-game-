@@ -1,0 +1,266 @@
+{
+  "stage": "S2",
+  "episode": "b2a",
+  "resolution": [
+    540,
+    960
+  ],
+  "samples": 4,
+  "fps": 30,
+  "frames": [
+    {
+      "row": 1,
+      "seconds": 0.8,
+      "where": "probe",
+      "cue": null,
+      "key": "silent-intro",
+      "time": 0.8,
+      "frame": 24,
+      "j": 24,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/desk/00024.jpg",
+      "actualPrimary": "b2a_cover",
+      "measurement": {
+        "x0": -89.6,
+        "y0": 319.0,
+        "x1": 1123.4,
+        "y1": 1204.9,
+        "width": 1.1231481481481482,
+        "height": 0.4614062500000001,
+        "allInCamera": false
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "seconds": 484.73333333333335,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 484.73333333333335,
+      "frame": 14542,
+      "j": 14542,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/desk/14542.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442.0,
+        "x1": 955.0,
+        "y1": 1078.0,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "seconds": 485.0,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 485.0,
+      "frame": 14550,
+      "j": 14550,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/desk/14550.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442.0,
+        "x1": 955.0,
+        "y1": 1078.0,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "seconds": 485.3,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 485.3,
+      "frame": 14559,
+      "j": 14559,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/desk/14559.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442.0,
+        "x1": 955.0,
+        "y1": 1078.0,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "seconds": 485.6,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 485.6,
+      "frame": 14568,
+      "j": 14568,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/desk/14568.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442.0,
+        "x1": 955.0,
+        "y1": 1078.0,
+        "width": 0.8200000000000001,
+        "height": 0.33125,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "seconds": 486.0,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 486.0,
+      "frame": 14580,
+      "j": 14580,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/desk/14580.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442.0,
+        "x1": 1002.9,
+        "y1": 1070.7,
+        "width": 0.8643518518518518,
+        "height": 0.32744791666666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false
+    },
+    {
+      "row": 43,
+      "seconds": 493.8666666666667,
+      "where": "probe",
+      "cue": "r43:a",
+      "key": "cb2agpt-r43:a",
+      "time": 493.8666666666667,
+      "frame": 14816,
+      "j": 14816,
+      "image": "/private/tmp/ys/ys-chain-b2a_s4_gpt_20261030/blender/desk/14816.jpg",
+      "actualPrimary": "b2a_frog_leg",
+      "measurement": {
+        "x0": 69.4,
+        "y0": 442.0,
+        "x1": 1019.9,
+        "y1": 1090.5,
+        "width": 0.8800925925925925,
+        "height": 0.3377604166666667,
+        "allInCamera": true
+      },
+      "fullFace": false,
+      "camera": {
+        "location": [
+          0.1675052046775818,
+          -0.9038406014442444,
+          0.5431097149848938
+        ],
+        "rotation": [
+          1.1344640254974365,
+          -0.0,
+          0.0
+        ],
+        "shift": -0.10854166746139526
+      },
+      "personallyViewed": false
+    }
+  ],
+  "elapsedSeconds": 9.74940299987793,
+  "s3Started": false
+}

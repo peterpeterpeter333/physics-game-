@@ -1,0 +1,66 @@
+{
+  "createdUtc": "2026-10-29T14:28:46.461Z",
+  "reference": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S0_20261029/AUDIO_AND_TIMING_FROZEN.json",
+  "referenceSha256": "ab5aebbbd41deff290499245118e0cc39653f49098aa529ae0922b4ced0f66e3",
+  "allOriginalFrozenHashesMatch": true,
+  "allCurrentCacheVoiceCaptionTimingCopiesMatch": true,
+  "checkedOriginals": 8,
+  "sourceTextVoiceSubtitleEdited": false,
+  "checks": [
+    {
+      "kind": "master",
+      "file": "技術の疑問の鎖_B-2_前編_第1版_ナレーション.md",
+      "originalFrozenSha256": "a9900445f07735abeb46f39618f5878a161ddb8e3ecc4ad3d7c231e1b322437e",
+      "actualMatches": true
+    },
+    {
+      "kind": "script",
+      "file": "chain-b-2a_gpt_20261029.mjs",
+      "originalFrozenSha256": "b10a8c1d85cc01d2f6fba8238fc979e68e1bce5fed8efd3f6be28ab6b2b58760",
+      "actualMatches": true
+    },
+    {
+      "kind": "voice/captions/timing",
+      "file": "ys-chain-b2a_gpt_20261029.voice.wav",
+      "originalFrozenSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+      "actualMatches": true,
+      "currentCacheMatches": true
+    },
+    {
+      "kind": "voice/captions/timing",
+      "file": "ys-chain-b2a_gpt_20261029.wav",
+      "originalFrozenSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+      "actualMatches": true,
+      "currentCacheMatches": true
+    },
+    {
+      "kind": "voice/captions/timing",
+      "file": "ys-chain-b2a_gpt_20261029.json",
+      "originalFrozenSha256": "8ef35c89d9a1e49927106f3f21e34ebe4a00577071ee870f521c603e7ab7a75f",
+      "actualMatches": true,
+      "currentCacheMatches": true
+    },
+    {
+      "kind": "voice/captions/timing",
+      "file": "phrase-times.json",
+      "originalFrozenSha256": "14547a566813eabd9b4590285e16b35e06633257e174bfdd66c37e573bf95612",
+      "actualMatches": true,
+      "currentCacheMatches": true
+    },
+    {
+      "kind": "voice/captions/timing",
+      "file": "plan.json",
+      "originalFrozenSha256": "810104ded94d21ad9c006ab743947a63aa1a9ffe222f9874e24fbe2c3cc3d078",
+      "actualMatches": true,
+      "currentCacheMatches": true
+    },
+    {
+      "kind": "voice/captions/timing",
+      "file": "timed-selection.json",
+      "originalFrozenSha256": "4a01b874c7ce391ace10772ab9750594b4e4e8f5ac9f5f2e651d6136db4264d5",
+      "actualMatches": true,
+      "currentCacheMatches": true
+    }
+  ],
+  "scope": "Original S0 hash equality. No ear check or final MP4 validation."
+}

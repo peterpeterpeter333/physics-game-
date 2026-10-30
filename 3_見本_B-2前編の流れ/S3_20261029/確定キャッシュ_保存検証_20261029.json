@@ -1,0 +1,53 @@
+{
+  "createdUtc": "2026-10-29T14:11:33.050Z",
+  "episode": "B-2前編",
+  "stage": "Complete S3 native cache; MP4 export not included",
+  "sourceCache": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029",
+  "nativeJpegCount": 14846,
+  "nativeFps": 30,
+  "nativeResolution": [
+    540,
+    960
+  ],
+  "cache": {
+    "directory": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/確定キャッシュ",
+    "fileCount": 14864,
+    "totalBytes": 1308337698,
+    "actualOrdinaryCopies": true,
+    "allBytesEqual": true,
+    "allSourceSizesAndMtimesStable": true,
+    "allDestinationInodesUnique": true,
+    "allDestinationLinkCountsOne": true
+  },
+  "sources": {
+    "directory": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/制作ソース",
+    "fileCount": 9,
+    "totalBytes": 210181,
+    "actualOrdinaryCopies": true,
+    "allBytesEqual": true,
+    "allSourceSizesAndMtimesStable": true,
+    "allDestinationInodesUnique": true,
+    "allDestinationLinkCountsOne": true
+  },
+  "combinedFileCount": 14873,
+  "combinedTotalBytes": 1308547879,
+  "verification": "Every file byte-compared, source size/mtime unchanged, destination inode differs from source, all destination inodes unique, nlink=1; no symlinks/hardlinks",
+  "sourceSnapshotPaths": [
+    "scripts/blender/desk_b2a_s3_gpt_20261029.py",
+    "scripts/blender/desk_lib_b2a_s3_gpt_20261029.py",
+    "scripts/blender/desk_b2a_s3_gui_gpt_20261029.py",
+    "scripts/blender/check_b2a_s3_gpt_20261029.py",
+    "scripts/blender/check_b2a_s3_specific_widths_gpt_20261029.py",
+    "scripts/umech/desk-b2a-s3-overlay_gpt_20261029.mjs",
+    "scripts/umech/desk-b2a-s3-stage_gpt_20261029.mjs",
+    "scripts/umech/mix-chain-desk-audio-b2a_s3_gpt_20261029.py",
+    "scripts/umech/desk-b2a-s3-video-audit_gpt_20261029.mjs"
+  ],
+  "excluded": [
+    "jobs/PAUSE",
+    "failed mixes",
+    "draft MP4",
+    "per-frame hashes"
+  ],
+  "elapsedSeconds": 10.845
+}

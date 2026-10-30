@@ -1,0 +1,63 @@
+{
+  "kind": "B-2 前編 S3 布貫通の局所修正版・独立再監査",
+  "date": "2026-10-29",
+  "reviewer": "b2a_independent_audit",
+  "source": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/draft/ys-chain-b2a_gpt_20261029_s3_draft_revealfix.mp4",
+  "sourceSha256": "00f70632bfd74f12b2c571dc90a5b72d92ed843274073aa9e9111717bcd44037",
+  "priorReport": "B-2前編_S3_独立実MP4監査_v1_20261029.json",
+  "mechanicalEvidence": "実MP4局所修正版確認/revealfix-audit-manifest.json",
+  "verdict": "初回の P1 布貫通は実 MP4 で解消を確認。S3 下書きとして Claude に渡せる。前報告の P2 弱点と耳未実施は残す。S4 本番の最終合格認定ではない。",
+  "actualVisualReview": {
+    "reviewedNewMovieContactSheets": [
+      "実MP4局所修正版確認/reveal-27-contiguous/page-001.jpg",
+      "実MP4局所修正版確認/reveal-27-contiguous/page-002.jpg",
+      "実MP4局所修正版確認/last-ten-seconds-one-hz/page-001.jpg"
+    ],
+    "allThreePagesActuallyViewed": true,
+    "revealFrames": {"first": 14542, "last": 14568, "count": 27, "sampling": "連続全コマ"},
+    "tailSamples": [14520,14550,14580,14610,14640,14670,14700,14730,14760,14790,14820,14845],
+    "uniqueNewMovieFramesActuallyViewed": 38,
+    "result": "行43の開始時点では布が脚と棒を完全に覆う。布の上昇・移動につれて脚が下から見え、外す前に上へ貫通する初回の破綻はなくなった。札は布が取り去られてから現れる。最後10秒の代表点と最終コマで、指の左からの入場・最後の蹴り・字幕位置を確認し、新しい致命的な破綻は見つからない。",
+    "earReviewPerformed": false,
+    "allFramesOfNewMovieVisuallyReviewed": false
+  },
+  "preservationComparison": {
+    "comparedActualDecodedFrames": 14846,
+    "method": "旧・新の実 MP4 を各全編デコードしてフレームの画素 MD5 をメモリ内だけで比較し、範囲と aggregate のみ保存。生の Blender 画を代用していない。",
+    "prefix": {
+      "first": 0,
+      "last": 14541,
+      "count": 14542,
+      "oldAggregateSha256": "7c9e7dd57922134d1edcdbfca4bcf69c3c2c49893581a03253219660c6ca0b1c",
+      "newAggregateSha256": "7c9e7dd57922134d1edcdbfca4bcf69c3c2c49893581a03253219660c6ca0b1c",
+      "identical": true
+    },
+    "differentDecodedFrameRanges": [{"first":14542,"last":14765,"count":224}],
+    "intendedRawChange": {"first":14542,"last":14568,"count":27},
+    "decodedDifferencesOutsideIntendedRawChange": 197,
+    "interpretation": "旧・新の画素は、修正した27コマだけでなく同じ符号化区間の後続197コマでも異なる。H.264 の参照フレーム・量子化の伝播と整合するが、この比較だけで原因を断定しない。『27コマ以外すべて画素が同一』とは認定しない。後続差分区間を含む末尾1Hzの実見では内容上の変化・破綻を発見せず、14766以降は再び画素が完全一致している。",
+    "decodedAudio": {
+      "sha256Both": "1af11ede98e07cddceff8751a30e57726b9a92c0197ba53becc926ac827b6891",
+      "identical": true,
+      "meaning": "デコードした音声サンプルの一致。耳による音質・読みの確認を意味しない。"
+    },
+    "allFrameHashTablesSaved": false,
+    "exactPTSValidatedForExtractedNewFrames": true
+  },
+  "resolvedFindings": [
+    {"id":"V1-P1-01","status":"修正済み・実 MP4 の27連続コマで再確認済み"}
+  ],
+  "remainingP2": [
+    {"id":"V1-P2-01","row":42,"issue":"乾燥紙への変化は水滴消失が主で、色差は控えめ。","status":"旧・新 prefix の画素一致により前報告の実見が有効。Claude の S3 判定へ引き継ぐ。"},
+    {"id":"V1-P2-02","row":39,"issue":"継続接触時の淡い指先の光は控えめ。","status":"旧・新 prefix の画素一致により前報告の実見が有効。Claude の S3 判定へ引き継ぐ。"}
+  ],
+  "scopeAndLimits": {
+    "priorActualVisualReview": "全20 critical 窓62頁と追加14頁を実見済み、重複除948コマ。修正前報告に詳細を残す。prefix一致により、そのうち行43より前の実見内容は新 MP4 にも同じ画素で引き継がれる。",
+    "rootIndependentReview": "root による旧 MP4 全1Hz50頁・最終コマの確認は、独立担当自身の実見数と混ぜない。",
+    "audioEarReviewPerformed": false,
+    "originalNarrationAudioSubtitlesChangedByReviewer": false,
+    "originalMovieOrToolsOverwrittenByReviewer": false,
+    "commitOrPushPerformed": false,
+    "stageDecision": "S3 報告で止まり、Claude の確認・次段階の指示を待つ。"
+  }
+}

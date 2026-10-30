@@ -1,0 +1,255 @@
+{
+  "id": "ys-chain-b2a_gpt_20261029",
+  "durationSeconds": 494.86466666666666,
+  "sampleRate": 24000,
+  "channels": 1,
+  "integrated_lufs": -14.2,
+  "peak_dbfs": -0.8,
+  "gain": 3.427677865464504,
+  "outputSamplePeakCeilingDbfs": -1.5,
+  "quiet_runs_below_-35dB_0.25s": [],
+  "music_spans": {
+    "solve": [
+      296.46933333333345,
+      342.4880000000001
+    ],
+    "solved": [
+      342.5280000000001,
+      376.4826666666667
+    ],
+    "dark": [
+      376.52266666666674,
+      389.63466666666676
+    ],
+    "toll": [
+      389.6746666666667,
+      395.93866666666673
+    ],
+    "after": [
+      395.9786666666667,
+      412.3866666666667
+    ]
+  },
+  "bright": 0,
+  "solveBoost": 1,
+  "voiceDuckingDepth": 0.9,
+  "bedDuckingDepth": 0.75,
+  "gateReference": "25th percentile of non-silent smoothed source voice envelope",
+  "extraMusicReductionDb": 5.171102984849347,
+  "extraMusicGain": 0.5513721814854337,
+  "continuityGapFills": [
+    {
+      "start": 94.5,
+      "end": 94.75,
+      "padGain": 0.0205507979861822,
+      "targetGapFloorDbfs": -31,
+      "round": 0
+    },
+    {
+      "start": 382.63,
+      "end": 382.98,
+      "padGain": 0.03669034822785241,
+      "targetGapFloorDbfs": -31,
+      "round": 0
+    }
+  ],
+  "voiceBgmDifferenceMedianDb": 22.398616534108726,
+  "voiceBgmDifferenceP10Db": 10.102094715491893,
+  "voiceBgmMeasurement": {
+    "windowSeconds": 1,
+    "voicePresentCriterion": "original voice PCM RMS > -45 dBFS",
+    "voicedWindows": 455,
+    "medianDb": 22.398616534108726,
+    "p10Db": 10.102094715491893,
+    "minimumDb": -5.600385443543534
+  },
+  "sfx": [
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 0.45,
+      "frame": 14,
+      "seconds": 0.4666666666666667,
+      "sample": 11200,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 1,
+        "start": 0.45,
+        "degrees": 30,
+        "peak": 0.6,
+        "end": 1.0
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 96.43866666666668,
+      "frame": 2893,
+      "seconds": 96.43333333333334,
+      "sample": 2314400,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 10,
+        "start": 96.43866666666668,
+        "degrees": 30,
+        "peak": 96.58866666666668,
+        "end": 96.98866666666667
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 101.641,
+      "frame": 3049,
+      "seconds": 101.63333333333334,
+      "sample": 2439200,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 11,
+        "start": 101.641,
+        "degrees": 30,
+        "peak": 101.79100000000001,
+        "end": 102.191
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 192.9213333333334,
+      "frame": 5788,
+      "seconds": 192.93333333333334,
+      "sample": 4630400,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 19,
+        "start": 192.9213333333334,
+        "degrees": 30,
+        "peak": 193.0713333333334,
+        "end": 193.4713333333334
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 196.36100000000008,
+      "frame": 5891,
+      "seconds": 196.36666666666667,
+      "sample": 4712800,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 20,
+        "start": 196.36100000000008,
+        "degrees": 30,
+        "peak": 196.51100000000008,
+        "end": 196.9110000000001
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 204.18900000000008,
+      "frame": 6126,
+      "seconds": 204.2,
+      "sample": 4900800,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 20,
+        "start": 204.18900000000008,
+        "degrees": 30,
+        "peak": 204.33900000000008,
+        "end": 204.7390000000001
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 265.2290000000001,
+      "frame": 7957,
+      "seconds": 265.23333333333335,
+      "sample": 6365600,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 25,
+        "start": 265.2290000000001,
+        "degrees": 5,
+        "peak": 265.3790000000001,
+        "end": 265.7790000000001
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 268.1780000000001,
+      "frame": 8045,
+      "seconds": 268.1666666666667,
+      "sample": 6436000,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 25,
+        "start": 268.1780000000001,
+        "degrees": 30,
+        "peak": 268.3280000000001,
+        "end": 268.7280000000001
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 485.6503333333334,
+      "frame": 14570,
+      "seconds": 485.6666666666667,
+      "sample": 11656000,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 43,
+        "start": 485.6503333333334,
+        "degrees": 30,
+        "peak": 485.80033333333336,
+        "end": 486.2003333333334
+      }
+    },
+    {
+      "kind": "frog-kick",
+      "sourceSeconds": 493.7146666666668,
+      "frame": 14811,
+      "seconds": 493.7,
+      "sample": 11848800,
+      "sourceEvent": {
+        "kind": "frog-kick",
+        "row": 43,
+        "start": 493.7146666666668,
+        "degrees": 30,
+        "peak": 493.8646666666668,
+        "end": 494.2646666666668
+      }
+    },
+    {
+      "kind": "score",
+      "sourceSeconds": 382.98766666666677,
+      "frame": 11490,
+      "seconds": 383.0,
+      "sample": 9192000,
+      "sourceEvent": {
+        "cue": "cb2agpt-r34:b",
+        "score": {
+          "at": "クズレタ",
+          "make": 0,
+          "brk": 4
+        }
+      }
+    }
+  ],
+  "motionEvents": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S3_20261029/motion-events-readonly-evaluation.json",
+  "motionEventsSha256": "dbfd1ae400a81fb7d52b04e82f5979801fc4d825aca24e9ba0a7f86abf7afc99",
+  "frozenSourceVoice": "/private/tmp/ys/ys-chain-b2a_gpt_20261029/ys-chain-b2a_gpt_20261029.voice.wav",
+  "frozenSourceVoiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+  "sourceAndScriptAndSubtitleClocksUnchanged": true,
+  "speechRegenerated": false,
+  "timeStretching": false,
+  "earListeningPerformed": false,
+  "voiceProcessing": "Only the common output gain/short-window peak-limiter envelope is applied during mixing; frozen voice PCM and timing remain unchanged at source.",
+  "stemSumMaxPcmError": 6.103515625e-05,
+  "musicSource": "Locally synthesized original procedural tones; no downloaded music or third-party recording.",
+  "introPolicy": "Continuous very quiet BGM per S2/common6.5. Master row1 SFX-only wording is a reported instruction conflict; no voice/subtitles were added.",
+  "paths": {
+    "mixed": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+    "bgm": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.bgmonly.wav",
+    "sfx": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.sfxonly.wav",
+    "voice": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-contribution.wav",
+    "levels": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.levels.json",
+    "mix": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.mix.json",
+    "windows": "/private/tmp/ys/ys-chain-b2a_s3_gpt_20261029/audio-v4/ys-chain-b2a_gpt_20261029.s3.voice-bgm-windows.json"
+  },
+  "limitedSampleFraction": 0.21066357199342042
+}

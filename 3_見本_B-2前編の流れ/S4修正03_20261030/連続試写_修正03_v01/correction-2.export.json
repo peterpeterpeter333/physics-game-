@@ -1,0 +1,61 @@
+{
+  "output": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.mp4",
+  "partial": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.partial.mp4",
+  "record": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.export.json",
+  "stage": "S3-quality continuous motion trial",
+  "video": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/continuous-trials_v01/correction-2.mp4",
+  "videoSha256": "18fbfecf4c40e941d12df95f1c07a491b86646a373035b748dfae6f2d07bd689",
+  "resolution": [
+    540,
+    960
+  ],
+  "fps": 30,
+  "inputFrames": 360,
+  "encodedFrames": 360,
+  "absoluteFromFrame": 5490,
+  "absoluteToFrameExclusive": 5850,
+  "absoluteStartSeconds": 183,
+  "absoluteEndSeconds": 195,
+  "videoDuration": 12,
+  "audioTrimStartSample": 4392000,
+  "audioTrimEndSample": 4680000,
+  "audioFilter": "atrim=start_sample=4392000:end_sample=4680000,asetpts=PTS-STARTPTS,apad=whole_dur=12",
+  "nativeFrameAggregateSha256": "7a1ae3bf32ae645e6e53eb83a83d3cb6ac687f946d1292e548f88cf2c2edfb1a",
+  "nativeHashMethod": "SHA256(j + NUL + JPEG-SHA256 + LF) in ascending j order; no per-frame hash table saved",
+  "elapsedSeconds": 2.325,
+  "allFrameDecode": true,
+  "allVisualsReviewed": false,
+  "earsPerformed": false,
+  "exactSvgCache": {
+    "comparison": "entire SVG string ===; no normalization or approximation",
+    "framesWritten": 360,
+    "rasterInvocationsIncludingProof": 309,
+    "reusedFrames": 52,
+    "firstReuseProof": {
+      "j": 5492,
+      "fullRgbBufferExactlyEqual": true
+    },
+    "sourceHashCheckedForEveryFrame": true
+  },
+  "id": "ys-chain-b2a_gpt_20261029",
+  "renderKey": "b2a_s4final_gpt_20261030",
+  "windowId": "correction-2",
+  "criticalFrames": [
+    5556,
+    5627,
+    5730,
+    5786,
+    5792,
+    5805
+  ],
+  "mixFile": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mixed.wav",
+  "mixRecord": "/private/tmp/ys/ys-chain-b2a_r03trial_gpt_20261030/audio-v4/ys-chain-b2a_gpt_20261029.s3.mix.json",
+  "mixSha256": "389c690dee1fe8949ab447792d886318d65a135acb18456f48e1868039cdbf54",
+  "mixRecordSha256": "9be8ceefbc624bd4dd8bd3717dfd48127a93dafba75c90f0bd7d57bc90c733f6",
+  "voiceSha256": "1bf0ee817705b66479d46af2835f415175dde49238fa1384a07d7bcc9afb7f41",
+  "receiptFile": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正03_20261030/S4r03trial_v01-frozen-input-and-audio-reuse_20261030.json",
+  "receiptSha256": "54a3fab1f2d381b006b4449d23a6b2eed7367bc830d7e789b6413a4ae3b09bf4",
+  "voiceBgmDifferenceMedianDb": 22.398616534108726,
+  "voiceBgmDifferenceP10Db": 10.102094715491893,
+  "scope": "Short native-540 motion trial, not final S4. Frozen audio trimmed by absolute 24k sample clock."
+}

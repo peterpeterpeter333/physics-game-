@@ -1,0 +1,324 @@
+{
+  "reportType": "S0 independent historical, physical and prerequisite review; not a completed-video approval",
+  "episode": "B-2前編 カエルの足の電気は、どこから来た？（前編）",
+  "date": "2026-10-29",
+  "scope": {
+    "readInFull": [
+      "docs/video-revision-20260924/deep/技術の疑問の鎖_B-2_前編_第1版_ナレーション.md",
+      "docs/video-revision-20260924/deep/技術の疑問の鎖_台本の決まり_第2周から_20261029.md",
+      "docs/video-revision-20260924/deep/技術の疑問の鎖_B-1_第1版_ナレーション.md"
+    ],
+    "additionalRead": "B-2後編のナレーション全45行と位置・色規則・検算を読み、前編の先送りと照合。後編の変更履歴全文の再点検はしていない。",
+    "allFrontNarrationRowsRead": 43,
+    "notDone": ["B-2前編の完成映像視聴", "耳での音声確認", "Blender起動", "Nemo生成", "元ファイル編集", "コミット", "push"],
+    "writeScope": "この新規JSONのみ。既存ファイルは読み取り専用。",
+    "sourceHashesBefore": {
+      "frontMaster": "a9900445f07735abeb46f39618f5878a161ddb8e3ecc4ad3d7c231e1b322437e",
+      "secondRoundRules": "dd1c1575e89b0eff484eefc2f57612cebffe4bb76706945ef22a137a7bfe418b",
+      "backMaster": "90a9a112f3b7127c0062924eb99f6e14f688b7a597630a396e3076f4bd960641"
+    }
+  },
+  "judgment": {
+    "historicalBackbone": "ガルヴァーニの1780年代の実験、1791年の刊行、ヴォルタの異種金属説、湿った板の積み重ね、1800年の王立協会への報告は博物館資料と整合。",
+    "readyForStoryboardWithRecordedCautions": true,
+    "allFactsProvenOrAllGatesPassed": false,
+    "mostImportant": ["水の量と単位時間あたりの流量を混同させない", "光の経路を電子の流れと呼ばない", "検電器の感度・蓄電器・接地を模型に反映", "代替の電池が作れたことだけで元のカエル実験の原因を一意に証明したとは言えない", "ぬれた指への感電を実験勧誘にしない"],
+    "scriptPolicy": "台本・字幕・日本語は変更しない。映像だけで完全には補えない説明上の穴は、この報告に残す。"
+  },
+  "evidenceSources": [
+    {
+      "id": "RS-1800-abstract-1832",
+      "kind": "Royal Society自身による歴史論文の公式要約（1832年刊、1800年論文の全文ではない）",
+      "url": "https://knowledge.electrochem.org/estir/hist/hist-20-Volta-2.pdf",
+      "location": "PDF p4-5、印刷p27-28、抽出行99-152",
+      "supports": "積層順の統一、塩水の乾燥で効果停止、蓄電器を併用した検出、湿った指での反復刺激。",
+      "limit": "継続して触れた人形が同じ強さで震え続ける映像を、そのまま原手紙全文で立証したものではない。"
+    },
+    {
+      "id": "RS-original-DOI",
+      "kind": "ヴォルタ1800年論文の一次書誌・冒頭本文",
+      "url": "https://doi.org/10.1098/rstl.1800.0018",
+      "accessibleMetadata": "https://cir.nii.ac.jp/crid/1360855569707052288",
+      "limit": "出版社PDFは403。CiNiiの書誌と冒頭抄録を閲覧。全文原文の確認済みとはしない。"
+    },
+    {
+      "id": "MuseoGalileo-pile",
+      "kind": "歴史科学博物館の収蔵解説",
+      "url": "https://catalogo.museogalileo.it/approfondimento/Pila.html",
+      "location": "本文抽出行12-14",
+      "supports": "異種金属弓・神経筋肉・電堆の亜鉛銅塩水紙・1800年の発表。"
+    },
+    {
+      "id": "Whipple-frogs",
+      "kind": "Cambridge University Whipple Museumの研究解説",
+      "url": "https://www.whipplemuseum.cam.ac.uk/explore-whipple-collections/frogs/frogs-and-animal-electricity",
+      "access": "検索結果の博物館本文を閲覧。直接openは403。",
+      "supports": "神経を露出させた標本、1791年刊行、ガルヴァーニとヴォルタの対立する解釈。"
+    },
+    {
+      "id": "Bologna-condenser",
+      "kind": "Bologna大学の化学収蔵コレクション",
+      "url": "https://sma.unibo.it/it/area-download-1/le-schede-della-collezione-di-chimica-giacomo-ciamician/strumenti-per-la-didattica-elettroscopio-condensatore/%40%40download/file/ELETTROSCOPIO_CONDENSATORE.pdf",
+      "supports": "通常の検電器で見えない弱い電荷を蓄電器付き形で検出する。金葉と接地・可動上皿の関係。"
+    },
+    {
+      "id": "Lombardia-condenser",
+      "kind": "Lombardia文化財のPavia大学収蔵機器解説",
+      "url": "https://www.lombardiabeniculturali.it/scienza-tecnologia/schede/8e020-00010/",
+      "supports": "上部の固定皿と絶縁持ち手の可動皿、充電時の接地と離す段階。感度増幅の実物形。"
+    },
+    {
+      "id": "NOAA-inclination",
+      "kind": "NOAA NCEI公式地磁気解説",
+      "url": "https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions",
+      "supports": "磁気南極では北指向端が上向き、磁気赤道では水平。磁気赤道と地理赤道は同一ではない。"
+    },
+    {
+      "id": "Pavia-history",
+      "kind": "Pavia大学物理学部公式史",
+      "url": "https://fisica.dip.unipv.it/en/department/who-we-are/history",
+      "supports": "1804年に教職を後任に譲り1819年まで物理実験室の活動を続けたこと。"
+    },
+    {
+      "id": "RS-election",
+      "kind": "Royal Societyの会員選出原記録",
+      "url": "https://catalogues.royalsociety.org/calmview/Record.aspx?id=EC%2F1791%2F11&src=CalmView.Catalog",
+      "supports": "1791年の外国会員候補記録、Paviaの教授であること。"
+    },
+    {
+      "id": "Galileo-Volta-biography",
+      "kind": "Museo Galileoの人物解説",
+      "url": "https://catalogue.museogalileo.it/biography/AlessandroVolta.html",
+      "supports": "1794年のCopley Medal受賞。"
+    },
+    {
+      "id": "HSE-shock",
+      "kind": "英国HSEの電気安全公式説明",
+      "url": "https://www.hse.gov.uk/electricity/injuries.htm",
+      "supports": "身体を通る電流による筋収縮や傷害。湿った指の実験を推奨しない判断の根拠。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "B2A-P1-01",
+      "priority": "P1",
+      "rows": [15],
+      "masterFileLines": [37],
+      "classification": "物理量の定義／水の比喩",
+      "issue": "『管を流れる水の量が電流』だけでは、累積量・水そう内の量・単位時間あたりの流量の区別がない。電圧も文字どおりの力ではなく電荷あたりのエネルギー差。",
+      "visualActionWithoutEditingScript": "同じ長さの時間に管の同じ断面を通る青い水粒の数を見せる。タンク残量だけを電流としてハイライトしない。水位差の縦矢印と流れる粒の横移動を分ける。",
+      "fullyRepairableVisually": false,
+      "reasonNotFully": "単位時間の明示がない定義文そのものは固定されている。映像で誤読を減らせるが厳密な定義の補完を完了したとは報告しない。"
+    },
+    {
+      "id": "B2A-P1-02",
+      "priority": "P1",
+      "rows": [28, 33, 34, 35, 36, 43],
+      "masterFileLines": [50, 55, 56, 57, 58, 65],
+      "classification": "歴史上の仮説と論理的検証の範囲",
+      "issue": "非生物の電池でも電気が出る事実は『生き物が電気源であることが必要』を否定するが、それだけで元のカエル実験の電気源を一意に決める証明にはならない。異種金属の効果と、生体自身の電気は共存可能。",
+      "sources": ["Whipple-frogs", "MuseoGalileo-pile"],
+      "visualActionWithoutEditingScript": "ガルヴァーニの説の札とヴォルタの解釈の札を、人形に対応させた歴史上の説明として保つ。行36で神経自体の合図が残ることを明瞭に見せ、カエル内部全体に全面×を付けない。",
+      "fullyRepairableVisually": false,
+      "reasonNotFully": "判定文の推論上の強さは音声・字幕固定のため完全には直せない。S0から最終報告まで留保として保持。"
+    },
+    {
+      "id": "B2A-P1-03",
+      "priority": "P1",
+      "rows": [33],
+      "masterFileLines": [55, 82],
+      "classification": "実在の測定機器／理想化",
+      "issue": "小電圧の電堆で、蓄電器も基準電位も示さない普通の金箔検電器が大きく開くと感度・測定方法を誤解する。原稿の資料欄は蓄電器付きと認めている。",
+      "sources": ["RS-1800-abstract-1832", "Bologna-condenser", "Lombardia-condenser"],
+      "visualActionWithoutEditingScript": "瓶と2枚の金葉は維持し、頭部を絶縁持ち手付きの上下2枚の皿にする。充電・切り離し・可動皿を離す動きを短い寄りで示す。葉は同じ符号で左右対称に少し開き、激しい連続回転・発光放電をさせない。",
+      "fullyRepairableVisually": true,
+      "caution": "蓄電器の新しい名称の札や新しい説明文は勝手に足さない。接地を人形の手で示すなら電池両端を短絡させない。"
+    },
+    {
+      "id": "B2A-P1-04",
+      "priority": "P1",
+      "rows": [29, 31, 32],
+      "masterFileLines": [51, 53, 54],
+      "classification": "電流と電子・正負の区別",
+      "issue": "下の亜鉛から上の銅へ積層内を進み、身体経由で下へ戻る光は正電流の向きとしては整合する。青い電子そのものが同経路を塩水・身体内まで一周する描写は誤り。",
+      "visualActionWithoutEditingScript": "前編は黄色・金色の抽象的な経路光とし、−付き青点を使わない。下端Zn・上端Cuと反復順を固定し、組間はCu-Znが直接接触。厚紙を飛び越す電子矢印を出さない。",
+      "fullyRepairableVisually": true,
+      "connection": "後編行15-16・23-24で青い電子、正電流、赤＋青−を初めて区別する。"
+    },
+    {
+      "id": "B2A-P1-05",
+      "priority": "P1",
+      "rows": [22, 30, 32, 39, 42],
+      "masterFileLines": [44, 52, 54, 61, 64],
+      "classification": "歴史上の人体実験と安全上の表現",
+      "issue": "ぬれた指で両端を触り感電する描写が反復される。模型の歴史再現であり、見た人の実験や動物接触を促す課題にしない。",
+      "sources": ["HSE-shock", "RS-1800-abstract-1832"],
+      "visualActionWithoutEditingScript": "人形は関節・木/ゴム質感のある玩具として保つ。実写の手・現代のコンセント・家庭で実験する道具セットは出さない。シビレエイも玩具の小模型。",
+      "fullyRepairableVisually": "部分的",
+      "safetyNoticeProposal": "元の字幕を変えない条件なので、安全注意文の追加は独断でせず提案だけ残す。公開用概要欄・補足欄に『歴史上の実験を模型で再現。電池の端にぬれた指を触れる実験はしない』等を置くのが推奨。"
+    },
+    {
+      "id": "B2A-P1-06",
+      "priority": "P1",
+      "rows": [39],
+      "masterFileLines": [61, 81],
+      "classification": "継続電流と感覚の違い／一次確認の限界",
+      "issue": "原手紙は再接触で繰り返し刺激を得る点を明確に記す。『保持中ずっと同じ震え』は継続電流からそのまま一意に決まらない。マスター自身も原文未確認と記す。",
+      "sources": ["RS-1800-abstract-1832", "RS-original-DOI"],
+      "visualActionWithoutEditingScript": "再接触時の短いぴくっと、接触保持中の控えめなジンジンを区別する。同じ大ジャンプを永遠に反復しない。",
+      "fullyRepairableVisually": false,
+      "reasonNotFully": "ナレーションの生理描写に条件がないことは固定音声のままでは消えない。全文一次資料で確認済みと報告しない。"
+    },
+    {
+      "id": "B2A-P2-07",
+      "priority": "P2",
+      "rows": [4, 5, 6, 7, 8],
+      "masterFileLines": [26, 27, 28, 29, 30],
+      "classification": "双極子モデルと地球の近似",
+      "issue": "地球は完全な南北対称棒磁石ではない。磁気赤道と地理赤道はずれる。オーストラリアで北指向端が上という答えは適切。ロンドン72度は歴史値で、現在値一般としない。",
+      "sources": ["NOAA-inclination"],
+      "visualActionWithoutEditingScript": "B-1と同じテレラ・赤Nが南側/青Sが北側を使い、棒磁石は影/半透明の模型的比喩とする。ロンドン針の72度を現代の測定値として再演しない。極付近は垂直に近く、オーストラリア地点では斜め上にする。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-08",
+      "priority": "P2",
+      "rows": [5],
+      "masterFileLines": [27],
+      "classification": "可視化と物質の実際の動き",
+      "issue": "鉄粉が空中に自由浮遊して3Dの線そのものになったり、磁場の線が液体のように移動したりすると実験と記号が混ざる。",
+      "visualActionWithoutEditingScript": "透明な支持板上の鉄粉の向きで線を可視化し、上を走る矢印は別材質・別形状の説明記号として描く。物質がNからSへ流れる実験にはしない。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-09",
+      "priority": "P2",
+      "rows": [10, 11, 19, 20],
+      "masterFileLines": [32, 33, 41, 42],
+      "classification": "電気回路の接続と時間一致",
+      "issue": "神経と筋肉のどちらに棒が触れるか、棒どうしが触れた瞬間と足のぴくっが対応するかが理解の中心。金属が一本だけ触れても毎回足が動くと比較不能。",
+      "visualActionWithoutEditingScript": "白い神経→真鍮、緑の筋肉→鉄の2接点を同時に画面に保持。2棒先端の閉路のみを寄り/拡大円で示し、閉じた直後に一回収縮。火花実験は別セットでメス接触との同時性を示す。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-10",
+      "priority": "P2",
+      "rows": [13],
+      "masterFileLines": [35],
+      "classification": "歴史の概括と静電気の理想化",
+      "issue": "『作れた電気はこする静電気だけ』は概括。電気機械を回し続ければ静電気は繰り返し作れる。完全に一度しか使用不能な道具だとはしない。",
+      "visualActionWithoutEditingScript": "一回こする→一回放電という1サイクルを見せる。火花後の再充電操作が必要な対比であり、ガラス棒自体が永久に死ぬ演出は避ける。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-11",
+      "priority": "P2",
+      "rows": [16],
+      "masterFileLines": [38, 83],
+      "classification": "電圧の目安と桁比較",
+      "issue": "1.5Vは代表的な乾電池の値で、静電気は条件依存。3000/1.5=2000は千倍以上と整合する。高さ模型を単位付き実寸図だと誤認させない。",
+      "visualActionWithoutEditingScript": "1.5の札を代表の乾電池1本に、何千の札をドアノブ模型に結ぶ。見上げる段差は量感の比喩で、計量器の実測グラフや厳密な同縮尺にはしない。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-12",
+      "priority": "P2",
+      "rows": [18, 31, 39, 40, 41],
+      "masterFileLines": [40, 53, 61, 62, 63],
+      "classification": "比喩の限界と後編への先送り",
+      "issue": "ポンプはエネルギー源の比喩。自動で永久に回ると、後編の亜鉛が減る説明と矛盾する。ミオの『水をくみ上げ続ける』も実物電堆が液体を揚水する意味に見せない。",
+      "visualActionWithoutEditingScript": "水の側だけ手回しポンプを動かす。電堆は濡れた板の柱のまま、現実に水を高所へ吐き出させない。電堆と水模型の画面枠を区別し、後編の開ける継ぎ目は閉じたまま残す。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-13",
+      "priority": "P2",
+      "rows": [25],
+      "masterFileLines": [47, 73],
+      "classification": "異種金属効果の比較実験とモデル",
+      "issue": "同じ金属でも弱く動く条件は試料表面や接触・生体電気に依存。常に決まった振幅比が得られる普遍則ではない。",
+      "visualActionWithoutEditingScript": "同じ大きさ・同じ模型・同じ接触時間の左右2セットを用い、左弱い/右強いの定性的比較に限定。振幅の実測数値やすべての生物電気否定を足さない。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-14",
+      "priority": "P2",
+      "rows": [29, 31, 32],
+      "masterFileLines": [51, 53, 54],
+      "classification": "積層の物理的組み方",
+      "issue": "Zn-湿紙-Cuの3枚組を重ねれば組間Cu-Znの直接接触になり直列につながる。組間にも絶縁紙/空間を入れたり毎組の向きを変えたりしない。",
+      "visualActionWithoutEditingScript": "一段ずつZn/茶色の湿紙/Cuを同じ順序で置き、ガラス支柱は電流経路を短絡しない位置に置く。棒や指の接点が柱側面全部を一括短絡しないようにする。",
+      "sources": ["RS-1800-abstract-1832", "MuseoGalileo-pile"],
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-15",
+      "priority": "P2",
+      "rows": [42],
+      "masterFileLines": [64, 95, 96],
+      "classification": "挑戦問題の仮定",
+      "issue": "乾いた厚紙で持続的なイオン伝導が途切れ、想定された電堆では感電しない、という比較として正しい。『あらゆる電気が絶対に流れない』という物性一般の断言に拡張しない。",
+      "sources": ["RS-1800-abstract-1832"],
+      "visualActionWithoutEditingScript": "全層の茶色湿紙を乾いた白紙に置き換える操作を明示し、元の水滴が残る/柱だけ乾く/板の順も変わる等の別条件を混ぜない。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-16",
+      "priority": "P2",
+      "rows": [24, 38],
+      "masterFileLines": [46, 60, 75],
+      "classification": "未発話の資料欄の史実差",
+      "issue": "資料欄『教授1779〜1819』と、Pavia大学の公式史『1778年招聘・1804年教職を後任へ・1819年まで実験室活動』には粒度差がある。ナレーションの『パヴィーアの大学で物理を教えていた』は1790年代の文脈で妥当。",
+      "sources": ["Pavia-history", "RS-election", "Galileo-Volta-biography"],
+      "visualActionWithoutEditingScript": "原稿にない任期を新しい年表に足さない。1800年3月の手紙とロンドン学会の会員関係の範囲だけ示す。",
+      "fullyRepairableVisually": true
+    },
+    {
+      "id": "B2A-P2-17",
+      "priority": "P2",
+      "rows": [1, 9, 33],
+      "masterFileLines": [23, 31, 55],
+      "classification": "台本の構図指定と汎用サイズ基準の衝突",
+      "issue": "冒頭4分の1、足模型3分の1、検電器3分の1という指定は、汎用の主役幅4〜7割と両立しない可能性がある。高さか横幅かも行ごとに異なる。",
+      "visualActionWithoutEditingScript": "初登場の引きは台本を守り、説明の瞬間に寄る/拡大円を使用。両条件を満たしたと一括報告せず、引きの意図的例外と説明時の投影幅を別記録。",
+      "fullyRepairableVisually": true
+    }
+  ],
+  "prerequisiteAndContinuity": {
+    "B1AnswerMatches": true,
+    "B1SharedKnowledge": ["N-Sの引き合い", "地理北側は磁石のS側", "N側から外へ出てS側へ入る線", "北を向く端が線に沿って傾く", "オーストラリアでは上"],
+    "scoreTransitions": ["B-1終わり0-3 → B-2前編冒頭0-3", "前編行34で0-4 → 前編終わり0-4", "後編冒頭0-4 → 後編行12で0-5"],
+    "frontLearningSteps": ["前回の磁気の答え合わせ", "異種金属で足が動く全体", "電池という到達点", "水位差と流量の比喩", "静電気の限界", "動物電気という歴史仮説", "異種金属の比較", "湿紙と指の役割分離", "積層と閉路", "非生物の検出", "現代の生体電気との区別", "後編の粒と化学への予告"],
+    "legitimateDeferralsToBack": ["なぜ異なる金属が必要か", "塩水の粒と乾燥で停止する理由", "電子と正電流の逆向き", "積むほど電圧が足される理由", "化学変化がエネルギー源であること"],
+    "doNotPreempt": ["青電子が塩水を通過する図", "後編の0.76V・イオン・反応式を前編で未説明表示", "B-3エルステッドの方位磁針実験を前編の答えとして先出し"],
+    "remainingPedagogicalLimits": ["検電器で葉が開く理由の説明は後編行9まで待つ", "前編の判定は厳密な排他的証明ではない", "電流の単位時間あたりという限定が固定台本では未明示"]
+  },
+  "numericChecks": [
+    {"claim": "3000Vの静電気は1.5V乾電池の千倍以上", "calculation": "3000 / 1.5 = 2000", "result": "算術は整合。ただし3000は条件依存の目安で本編は何千と表現。"},
+    {"claim": "1780年代から1800年までおよそ20年", "calculation": "1800-1780=20、1800-1786=14", "result": "歴史上の複数観察をまとめた約数として許容。特定日の20年後とはしない。"},
+    {"claim": "43行、声あり42行", "result": "表を通読、番号1〜43を確認。行1だけ声なし2秒。実声長・実cue数はまだ生成していないため未確認。"}
+  ],
+  "recommendedPreRenderAssertions": [
+    "前編43表行→実cueの対応を全件保存し、文言連結一致を検査",
+    "棒の先端接触から足の収縮開始までの時刻を数値化",
+    "白神経=真鍮、筋肉=鉄の端点接触をワールド座標で検査",
+    "全段Zn/湿紙/Cu、組間Cu-Zn接触の順序を検査",
+    "上端Cu下端Znと一般経路光の区別を検査（電子粒未導入）",
+    "静電気放電で一度消灯・再充電なしの再火花を出さない",
+    "開放端では持続的な輪の流れを出さない",
+    "検電器の2葉は頭部と導電接続、同じ符号で外向きに開く",
+    "乾紙化する挑戦の全層から水滴を除き、金属順は維持",
+    "B-1と同じ赤N南側/青S北側、オーストラリアで北指向端上向き",
+    "説明中カメラ固定、説明対象の投影幅と見切れを実際の輪郭で計測",
+    "模型・比喩・仮説・後に分かったことの札を混同しない"
+  ],
+  "referencePathsReadOnlyLocatedNotViewed": {
+    "referenceMovie": "/Users/ken/Downloads/physics-quest-youtube/技術の疑問の鎖/完成形/1-1_女王を処刑台に送った手紙.mp4",
+    "referenceMovieBytes": 43514102,
+    "referenceCueEndSheets": "/Users/ken/Downloads/physics-quest-ChatGPT引き継ぎ_技術の疑問の鎖_2026-10-22/見本_1-1第6版/cueの終わりのコマ/page-01.jpg 〜 page-11.jpg",
+    "referenceCache": "/Users/ken/Downloads/physics-quest-ChatGPT引き継ぎ_技術の疑問の鎖_2026-10-22/見本_1-1第6版/キャッシュの小物/v6/",
+    "referenceNativeSource": "scripts/blender/desk_1_1v6.py",
+    "catalogContactSheet": "docs/video-revision-20260924/deep/部品カタログ画像/見本_1-1全50枚一覧.jpg",
+    "claimLimit": "この独立点検では存在を確認しただけで、見本動画全編視聴済みとはしない。"
+  }
+}

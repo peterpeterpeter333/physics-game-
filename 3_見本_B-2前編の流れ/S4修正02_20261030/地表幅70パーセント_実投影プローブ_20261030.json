@@ -1,0 +1,226 @@
+{
+  "purpose": "Runtime-only row 6/7 land-slice X-width correction",
+  "targetWidthFraction": 0.7,
+  "measurements": [
+    {
+      "row": 6,
+      "seconds": 41.18000000000001,
+      "frameTime": 1235.4,
+      "originalScale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio": 0.4732091161461105,
+      "patchedScale": [
+        0.47320911288261414,
+        1.0,
+        1.0
+      ],
+      "before": {
+        "x0": -0.23963074386119843,
+        "x1": 1.2396306991577148,
+        "y0": 0.2689087986946106,
+        "y1": 0.5420414209365845,
+        "width": 1.4792614430189133,
+        "vertices": 574
+      },
+      "after": {
+        "x0": 0.15000000596046448,
+        "x1": 0.8500000238418579,
+        "y0": 0.2689087986946106,
+        "y1": 0.5420414209365845,
+        "width": 0.7000000178813934,
+        "vertices": 574
+      },
+      "allOtherObjectTransformsVisibilityUnchanged": true,
+      "allMeshVertexGeometryUnchanged": true,
+      "cameraUnchanged": true,
+      "onlyEarthRootScaleXChanged": true
+    },
+    {
+      "row": 6,
+      "seconds": 47.09466666666667,
+      "frameTime": 1412.8400000000001,
+      "originalScale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio": 0.4732091161461105,
+      "patchedScale": [
+        0.47320911288261414,
+        1.0,
+        1.0
+      ],
+      "before": {
+        "x0": -0.23963074386119843,
+        "x1": 1.2396306991577148,
+        "y0": 0.2689087986946106,
+        "y1": 0.5420414209365845,
+        "width": 1.4792614430189133,
+        "vertices": 574
+      },
+      "after": {
+        "x0": 0.15000000596046448,
+        "x1": 0.8500000238418579,
+        "y0": 0.2689087986946106,
+        "y1": 0.5420414209365845,
+        "width": 0.7000000178813934,
+        "vertices": 574
+      },
+      "allOtherObjectTransformsVisibilityUnchanged": true,
+      "allMeshVertexGeometryUnchanged": true,
+      "cameraUnchanged": true,
+      "onlyEarthRootScaleXChanged": true
+    },
+    {
+      "row": 6,
+      "seconds": 53.00933333333334,
+      "frameTime": 1590.2800000000002,
+      "originalScale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio": 0.4732091161461105,
+      "patchedScale": [
+        0.47320911288261414,
+        1.0,
+        1.0
+      ],
+      "before": {
+        "x0": -0.23963074386119843,
+        "x1": 1.2396306991577148,
+        "y0": 0.2689087986946106,
+        "y1": 0.5420414209365845,
+        "width": 1.4792614430189133,
+        "vertices": 574
+      },
+      "after": {
+        "x0": 0.15000000596046448,
+        "x1": 0.8500000238418579,
+        "y0": 0.2689087986946106,
+        "y1": 0.5420414209365845,
+        "width": 0.7000000178813934,
+        "vertices": 574
+      },
+      "allOtherObjectTransformsVisibilityUnchanged": true,
+      "allMeshVertexGeometryUnchanged": true,
+      "cameraUnchanged": true,
+      "onlyEarthRootScaleXChanged": true
+    },
+    {
+      "row": 7,
+      "seconds": 53.11600000000001,
+      "frameTime": 1593.4800000000002,
+      "originalScale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio": 0.47325643628113334,
+      "patchedScale": [
+        0.4732564389705658,
+        1.0,
+        1.0
+      ],
+      "before": {
+        "x0": -0.23955674469470978,
+        "x1": 1.2395567893981934,
+        "y0": 0.24569635093212128,
+        "y1": 0.523747444152832,
+        "width": 1.4791135340929031,
+        "vertices": 574
+      },
+      "after": {
+        "x0": 0.1499999761581421,
+        "x1": 0.8500000238418579,
+        "y0": 0.24569635093212128,
+        "y1": 0.523747444152832,
+        "width": 0.7000000476837158,
+        "vertices": 574
+      },
+      "allOtherObjectTransformsVisibilityUnchanged": true,
+      "allMeshVertexGeometryUnchanged": true,
+      "cameraUnchanged": true,
+      "onlyEarthRootScaleXChanged": true
+    },
+    {
+      "row": 7,
+      "seconds": 57.26533333333334,
+      "frameTime": 1717.96,
+      "originalScale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio": 0.47325643628113334,
+      "patchedScale": [
+        0.4732564389705658,
+        1.0,
+        1.0
+      ],
+      "before": {
+        "x0": -0.23955674469470978,
+        "x1": 1.2395567893981934,
+        "y0": 0.24569635093212128,
+        "y1": 0.523747444152832,
+        "width": 1.4791135340929031,
+        "vertices": 574
+      },
+      "after": {
+        "x0": 0.1499999761581421,
+        "x1": 0.8500000238418579,
+        "y0": 0.24569635093212128,
+        "y1": 0.523747444152832,
+        "width": 0.7000000476837158,
+        "vertices": 574
+      },
+      "allOtherObjectTransformsVisibilityUnchanged": true,
+      "allMeshVertexGeometryUnchanged": true,
+      "cameraUnchanged": true,
+      "onlyEarthRootScaleXChanged": true
+    },
+    {
+      "row": 7,
+      "seconds": 61.41466666666667,
+      "frameTime": 1842.44,
+      "originalScale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio": 0.47325643628113334,
+      "patchedScale": [
+        0.4732564389705658,
+        1.0,
+        1.0
+      ],
+      "before": {
+        "x0": -0.23955674469470978,
+        "x1": 1.2395567893981934,
+        "y0": 0.24569635093212128,
+        "y1": 0.523747444152832,
+        "width": 1.4791135340929031,
+        "vertices": 574
+      },
+      "after": {
+        "x0": 0.1499999761581421,
+        "x1": 0.8500000238418579,
+        "y0": 0.24569635093212128,
+        "y1": 0.523747444152832,
+        "width": 0.7000000476837158,
+        "vertices": 574
+      },
+      "allOtherObjectTransformsVisibilityUnchanged": true,
+      "allMeshVertexGeometryUnchanged": true,
+      "cameraUnchanged": true,
+      "onlyEarthRootScaleXChanged": true
+    }
+  ],
+  "originalProducerFileEdited": false,
+  "existingQaEdited": false,
+  "drawingPerformed": false,
+  "allVisualsReviewed": false
+}

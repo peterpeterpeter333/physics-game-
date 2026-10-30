@@ -1,0 +1,40 @@
+{
+  "stage": "Native S4 encoded; mechanical results recorded; manual full-movie visual review still required",
+  "movie": "/private/tmp/ys/ys-chain-b2a_s4earth_gpt_20261030/out/ys-chain-b2a_gpt_20261029_s4_final.mp4",
+  "results": [
+    {
+      "name": "00_修正対象外と凍結入力不変",
+      "code": 0,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v03_地表幅修正/00_修正対象外と凍結入力不変.log"
+    },
+    {
+      "name": "01_本番合成",
+      "code": 0,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v03_地表幅修正/01_本番合成.log"
+    },
+    {
+      "name": "02_全編機械確認と毎秒一覧",
+      "code": 0,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v03_地表幅修正/02_全編機械確認と毎秒一覧.log"
+    },
+    {
+      "name": "03_変更していない共通品質検査",
+      "code": 1,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v03_地表幅修正/03_変更していない共通品質検査.log"
+    },
+    {
+      "name": "04_完成MP4音声の実検査",
+      "code": 0,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v03_地表幅修正/04_完成MP4音声の実検査.log"
+    },
+    {
+      "name": "05_台本時刻音声BGM不変",
+      "code": 0,
+      "log": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/本番完成後の機械検査_v03_地表幅修正/05_台本時刻音声BGM不変.log"
+    }
+  ],
+  "backup": "/Users/ken/Documents/Codex/2026-09-15/github-plugin-github-openai-curated-remote/work/physics-game-yt-series/outputs/ys-chain-b2a-backup/S4修正02_20261030/S4最終キャッシュ実体_地表幅修正",
+  "allCommandsPassed": false,
+  "earsPerformed": false,
+  "finalReportComplete": false
+}
