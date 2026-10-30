@@ -1,0 +1,113 @@
+{
+  "subtitle": "答えも、その回で。",
+  "reading": "こたえも、その かいで。",
+  "normalizedReading": "こたえも、そのかいで。",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "コタ'エモ、ソノ'、カイデ'",
+  "kana": "コタ'エモ、ソノ'、カイデ'",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "コ",
+          "consonant": "k",
+          "consonant_length": 0.07063557952642441,
+          "vowel": "o",
+          "vowel_length": 0.0857522115111351,
+          "pitch": 5.446096897125244
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.06765388697385788,
+          "vowel": "a",
+          "vowel_length": 0.07934770733118057,
+          "pitch": 5.6305975914001465
+        },
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.03634672611951828,
+          "pitch": 5.582788467407227
+        },
+        {
+          "text": "モ",
+          "consonant": "m",
+          "consonant_length": 0.0775550827383995,
+          "vowel": "o",
+          "vowel_length": 0.15914160013198853,
+          "pitch": 5.308798789978027
+        }
+      ],
+      "accent": 2,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.23997056484222412,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ソ",
+          "consonant": "s",
+          "consonant_length": 0.11539318412542343,
+          "vowel": "o",
+          "vowel_length": 0.035537295043468475,
+          "pitch": 5.328078269958496
+        },
+        {
+          "text": "ノ",
+          "consonant": "n",
+          "consonant_length": 0.0556347593665123,
+          "vowel": "o",
+          "vowel_length": 0.08491837233304977,
+          "pitch": 5.417895317077637
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.08248565346002579,
+          "vowel": "a",
+          "vowel_length": 0.07494822889566422,
+          "pitch": 5.537503242492676
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.06328558176755905,
+          "pitch": 5.415510177612305
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.047165848314762115,
+          "vowel": "e",
+          "vowel_length": 0.14137747883796692,
+          "pitch": 5.193643569946289
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

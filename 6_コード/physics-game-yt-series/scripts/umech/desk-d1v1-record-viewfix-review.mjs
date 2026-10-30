@@ -1,0 +1,11 @@
+// Record only after individually viewing the final three relocated-label composites.
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+const c='/private/tmp/ys/ys-chain-d1v1-render',out=c+'/d1-r15-viewfix-final-actual-review.json';
+if(fs.existsSync(out))throw Error('Existing D1 final view-fix review preserved');
+const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const coverage=JSON.parse(fs.readFileSync(c+'/blender/landmarks-d1v1-r15/trial-coverage-d1v1-r15.json'));
+const expected=['b63b24613c6daf3d2e2ba243f57af10b7913a412b01867b86760ea34a002138e','d8da993e88f166c34b38f50919150131f2fc0b8f583cbfb86248dd81697f12a6','5a19db7841f2acb3364708dba0dfdb2c93642f09fb02d258b96d93d135148b64'];
+const rows=coverage.times.map((time,i)=>{const raw=c+'/blender/landmarks-d1v1-r15/'+coverage.files[i],image=c+'/gate-c-d1v1-r15-viewfix-final/d1v1-'+String(i+1).padStart(2,'0')+'.png';if(sha(raw)!==expected[i])throw Error('D1 raw 3D changed during 2D-only view fix');return {time,image,imageSha256:sha(image),raw3D:raw,raw3DSha256:sha(raw),raw3DByteUnchanged:true,individuallyViewed:true,viewBadgeAboveRimWithoutOverlap:true};});
+const record={episode:'D-1',revision:'r15-viewfix-final',recordedAt:new Date().toISOString(),sourceSha256:coverage.sourceSha256,geometrySourceSha256:coverage.geometrySourceSha256,overlaySource:'scripts/umech/desk-d1v1-overlay.mjs',overlaySourceSha256:sha('scripts/umech/desk-d1v1-overlay.mjs'),previousOverlaySourceSha256:'efe93ac2d09dd746f5d23a2fa1d1d517732f42f6d25c33a75c39f021802a7111',onlyChange:'D1 view badge as a whole translates up 66 px, to board Y110, in can group only. Japanese, captions, narration, 3D, all timings unchanged.',actualCompositeFramesViewed:3,allListedActuallyViewed:true,rows,obsoleteIntermediateComposition:c+'/gate-c-d1v1-r15-viewfix',intermediateNotFinal:'First composition moved only the outer board; detected and replaced with whole-group translation. Intermediate images preserved but not final evidence.',productionStarted:false,currentRevisionFullRangeReviewed:false,finalVideoGateComplete:false,strictInspectorWaiver:false,actualEarListeningDone:false};
+fs.writeFileSync(out,JSON.stringify(record,null,1));console.log(JSON.stringify({out,recordedAt:record.recordedAt,overlaySha256:record.overlaySourceSha256,actualCompositeFramesViewed:3,productionStarted:false}));

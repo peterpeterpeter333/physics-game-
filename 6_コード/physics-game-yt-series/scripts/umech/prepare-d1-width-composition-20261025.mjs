@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const [source,destination]=process.argv.slice(2);
+assert(source&&destination&&!fs.existsSync(destination));
+const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const a=JSON.parse(fs.readFileSync(source));
+assert(a.episode==='D-1'&&['probe','render'].includes(a.mode));
+assert(a.allAffectedAndBoundaryPhysicalPass&&!a.error&&!a.cleanupError);
+assert(Object.values(a.protectionChecks).every(v=>v===true));
+assert(a.rows.length===a.renders);
+for(const r of a.rows)assert.equal(sha(r.image),r.imageSha256);
+const result={episode:'D-1',sourceCache:'/private/tmp/ys/ys-chain-d1v1-final-camera-pier-layout-20261025',sourceReport:source,sourceReportSha256:sha(source),frames:a.rows.map(r=>({frame:r.frame,raw:r.image,anchorProjections:r.newProjectedAnchors}))};
+fs.writeFileSync(destination,JSON.stringify(result,null,1),{flag:'wx'});
+console.log(JSON.stringify({manifest:destination,frames:result.frames.length}));

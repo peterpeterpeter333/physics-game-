@@ -1,0 +1,40 @@
+// Preserve the initial full raw production; substitute only the corrected row37.
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const base='/private/tmp/ys/ys-chain-b1v1',patch='/private/tmp/ys/ys-chain-b1v1-timing-final-20261024';
+const cache='/private/tmp/ys/ys-chain-b1v1-final-20261024',out=cache+'/out',id='ys-chain-b1v1';
+const sha=f=>createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const production=JSON.parse(fs.readFileSync(base+'/b1-production-20261024.json'));
+const fix=JSON.parse(fs.readFileSync(patch+'/timing-patch.json'));
+assert.equal(production.status,'done');assert.equal(production.frames,fix.frames);assert(fix.allPatchFramesActuallyRendered);
+assert.equal(sha(base+'/'+id+'.wav'),fix.voiceSha256);
+assert.equal(sha('scripts/blender/desk_b1v1.py'),fix.originalStageSourceSha256);
+assert.equal(sha('scripts/blender/desk_axes_b1_timing_patch_20261024.py'),fix.patchSourceSha256);
+assert(!fs.existsSync(cache),'Preserve any prior final composite/export cache');
+const n=fix.frames,desk=cache+'/blender/desk';fs.mkdirSync(desk,{recursive:true});fs.mkdirSync(out);
+const link=(src,dst)=>{assert(fs.statSync(src).isFile()||fs.statSync(src).isDirectory());fs.symlinkSync(src,dst);};
+for(const f of ['plan.json',id+'.json','phrase-times.json'])link(base+'/'+f,cache+'/'+f);
+link(base+'/'+id+'.wav',cache+'/'+id+'.voice.wav');
+link(base+'/'+id+'.mixed.wav',cache+'/'+id+'.wav');
+for(const f of ['data.json','camera-motion.json'])link(base+'/blender/'+f,cache+'/blender/'+f);
+link(base+'/blender/desk/anchors.json',desk+'/anchors.json');
+const files=[];
+for(let j=0;j<n;j++){
+ const name=String(j).padStart(5,'0')+'.jpg',changed=j>=fix.firstFrame&&j<=fix.lastFrame;
+ const source=(changed?fix.raw:fix.baseRaw)+'/'+name;assert(fs.statSync(source).size>1000,'Missing or empty actual raw frame '+j);
+ link(source,desk+'/'+name);files.push({frame:j,source,sha256:sha(source),kind:changed?'actual30fps-row37-correction':'unchanged-original-full-production'});
+}
+const anchor=JSON.parse(fs.readFileSync(desk+'/anchors.json'));assert(Object.values(anchor.anchors).every(a=>a.length===n));
+const provenance={id,frames:n,fps:30,baseProduction:production,correctedCue:fix,files,anchorsByteIdenticalToOriginal:true,anchorSha256:sha(desk+'/anchors.json'),otherFramesByteIdentical:true,originalBaseAndPatchPreserved:true,stage:'assembled correct raw series, final MP4 not yet verified'};
+fs.writeFileSync(cache+'/composite-provenance.json',JSON.stringify(provenance,null,1));
+const inputFiles=[base+'/plan.json',base+'/'+id+'.json',base+'/phrase-times.json',base+'/'+id+'.wav',base+'/'+id+'.mixed.wav','scripts/umech/desk-axes-render-entry.mjs','scripts/umech/desk-axes-frame.mjs','scripts/umech/desk-b1v1-overlay.mjs'];
+const before=Object.fromEntries(inputFiles.map(f=>[path.resolve(f),sha(f)]));
+const started=Date.now(),r=spawnSync(process.execPath,['scripts/umech/desk-axes-render-entry.mjs',id],{env:{...process.env,EM_FILM_CACHE:cache,FILM_OUTPUT:out,FFMPEG:process.env.FFMPEG??'/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1'},stdio:'inherit'});
+if(r.status!==0)throw Error('B1 encoder failed '+r.status);
+for(const [f,h]of Object.entries(before))assert.equal(sha(f),h,f);
+const video=out+'/'+id+'.mp4';assert(fs.statSync(video).size>1e6);
+fs.writeFileSync(cache+'/export.json',JSON.stringify({id,video,sha256:sha(video),frames:n,seconds:(Date.now()-started)/1000,encoder:'unchanged render-all-films-gptv2.mjs, CRF18',protectedInputSha256:before,finalVideoReviewPending:true},null,1));
+console.log(JSON.stringify({video,frames:n,finalVideoReviewPending:true}));

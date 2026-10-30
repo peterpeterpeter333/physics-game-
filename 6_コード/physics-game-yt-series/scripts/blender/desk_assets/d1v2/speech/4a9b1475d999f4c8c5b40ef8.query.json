@@ -1,0 +1,107 @@
+{
+  "subtitle": "馬がかわいそうです。",
+  "reading": "うまが かわいそう です。",
+  "normalizedReading": "うまがかわいそうです。",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "ウマ'ガ、カワイソ'オ、デ'_ス",
+  "kana": "ウマ'ガ、カワイソ'オ、デ'_ス",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ウ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "u",
+          "vowel_length": 0.05157683044672012,
+          "pitch": 5.450859069824219
+        },
+        {
+          "text": "マ",
+          "consonant": "m",
+          "consonant_length": 0.0636720135807991,
+          "vowel": "a",
+          "vowel_length": 0.06792861968278885,
+          "pitch": 5.5707855224609375
+        },
+        {
+          "text": "ガ",
+          "consonant": "g",
+          "consonant_length": 0.0655040368437767,
+          "vowel": "a",
+          "vowel_length": 0.07682100683450699,
+          "pitch": 5.5604352951049805
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.07675870507955551,
+          "vowel": "a",
+          "vowel_length": 0.05106533318758011,
+          "pitch": 5.298336982727051
+        },
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.07388173788785934,
+          "vowel": "a",
+          "vowel_length": 0.06903018802404404,
+          "pitch": 5.416020393371582
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.05409831553697586,
+          "pitch": 5.511598587036133
+        },
+        {
+          "text": "ソ",
+          "consonant": "s",
+          "consonant_length": 0.12717732787132263,
+          "vowel": "o",
+          "vowel_length": 0.04930449277162552,
+          "pitch": 5.549060344696045
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.05221237987279892,
+          "pitch": 5.4701008796691895
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.052614204585552216,
+          "vowel": "e",
+          "vowel_length": 0.06641865521669388,
+          "pitch": 5.245598316192627
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.20144084095954895,
+          "vowel": "U",
+          "vowel_length": 0.03159509599208832,
+          "pitch": 0.0
+        }
+      ],
+      "accent": 4,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

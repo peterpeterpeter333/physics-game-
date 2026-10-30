@@ -1,0 +1,154 @@
+{
+  "subtitle": "言い伝え、まちがってたんですね。",
+  "reading": "いいつたえ、まちがってたんですね。",
+  "normalizedReading": "いいつたえ、まちがってたんですね。",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "イイ_ツタエ'、マチガ'ッテタ/ン'デ_スネ",
+  "kana": "イイ_ツタエ'、マチガ'ッテタ/ン'デ_スネ",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.10414841026067734,
+          "pitch": 5.550404071807861
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.09988021105527878,
+          "pitch": 5.6021013259887695
+        },
+        {
+          "text": "ツ",
+          "consonant": "ts",
+          "consonant_length": 0.09722534567117691,
+          "vowel": "U",
+          "vowel_length": 0.026859775185585022,
+          "pitch": 0.0
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.05506855994462967,
+          "vowel": "a",
+          "vowel_length": 0.09344761818647385,
+          "pitch": 5.493358612060547
+        },
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.13100898265838623,
+          "pitch": 5.395160675048828
+        }
+      ],
+      "accent": 5,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.28565898537635803,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "マ",
+          "consonant": "m",
+          "consonant_length": 0.05799257010221481,
+          "vowel": "a",
+          "vowel_length": 0.07219021767377853,
+          "pitch": 5.260171413421631
+        },
+        {
+          "text": "チ",
+          "consonant": "ch",
+          "consonant_length": 0.1097664013504982,
+          "vowel": "i",
+          "vowel_length": 0.0431453213095665,
+          "pitch": 5.618383884429932
+        },
+        {
+          "text": "ガ",
+          "consonant": "g",
+          "consonant_length": 0.05801745504140854,
+          "vowel": "a",
+          "vowel_length": 0.08933841437101364,
+          "pitch": 5.654102325439453
+        },
+        {
+          "text": "ッ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "cl",
+          "vowel_length": 0.0644678846001625,
+          "pitch": 0.0
+        },
+        {
+          "text": "テ",
+          "consonant": "t",
+          "consonant_length": 0.04407259076833725,
+          "vowel": "e",
+          "vowel_length": 0.07755797356367111,
+          "pitch": 5.514703750610352
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.069087453186512,
+          "vowel": "a",
+          "vowel_length": 0.08367931097745895,
+          "pitch": 5.362576961517334
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.07089246064424515,
+          "pitch": 5.282828330993652
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.03224140405654907,
+          "vowel": "e",
+          "vowel_length": 0.04791713505983353,
+          "pitch": 5.225161552429199
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.10778883844614029,
+          "vowel": "U",
+          "vowel_length": 0.024276405572891235,
+          "pitch": 0.0
+        },
+        {
+          "text": "ネ",
+          "consonant": "n",
+          "consonant_length": 0.058448635041713715,
+          "vowel": "e",
+          "vowel_length": 0.1709330976009369,
+          "pitch": 5.194666862487793
+        }
+      ],
+      "accent": 3,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "subtitle": "具体例です。北極星の高さを、測ります。",
+  "reading": "ぐたいれい です。ほっきょくせいの たかさを、ハかります。",
+  "normalizedReading": "ぐたいれいです。ほっきょくせいのたかさを、ハかります。",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "グタイ'レイ、デ'_ス、ホッキョク'セイノ、タカ'サオ、ハ'/カリマ'_ス",
+  "kana": "グタイ'レイ、デ'_ス、ホッキョク'セイノ、タカ'サオ、ハ'/カリマ'_ス",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "グ",
+          "consonant": "g",
+          "consonant_length": 0.04027290642261505,
+          "vowel": "u",
+          "vowel_length": 0.05389607697725296,
+          "pitch": 4.866479873657227
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.04399742931127548,
+          "vowel": "a",
+          "vowel_length": 0.10855776071548462,
+          "pitch": 5.311573028564453
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.038187652826309204,
+          "pitch": 5.315684795379639
+        },
+        {
+          "text": "レ",
+          "consonant": "r",
+          "consonant_length": 0.03819086402654648,
+          "vowel": "e",
+          "vowel_length": 0.048962801694869995,
+          "pitch": 5.219834804534912
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.04670756310224533,
+          "pitch": 5.0519256591796875
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.034251660108566284,
+          "vowel": "e",
+          "vowel_length": 0.058799609541893005,
+          "pitch": 4.861419677734375
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.13248249888420105,
+          "vowel": "U",
+          "vowel_length": 0.03263314068317413,
+          "pitch": 0.0
+        }
+      ],
+      "accent": 3,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.1960369050502777,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ホ",
+          "consonant": "h",
+          "consonant_length": 0.05802755057811737,
+          "vowel": "o",
+          "vowel_length": 0.0827406495809555,
+          "pitch": 4.860886096954346
+        },
+        {
+          "text": "ッ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "cl",
+          "vowel_length": 0.03899528086185455,
+          "pitch": 0.0
+        },
+        {
+          "text": "キョ",
+          "consonant": "ky",
+          "consonant_length": 0.07899026572704315,
+          "vowel": "o",
+          "vowel_length": 0.054613545536994934,
+          "pitch": 5.265544414520264
+        },
+        {
+          "text": "ク",
+          "consonant": "k",
+          "consonant_length": 0.035226866602897644,
+          "vowel": "u",
+          "vowel_length": 0.03462634235620499,
+          "pitch": 5.170640468597412
+        },
+        {
+          "text": "セ",
+          "consonant": "s",
+          "consonant_length": 0.0741482600569725,
+          "vowel": "e",
+          "vowel_length": 0.049648068845272064,
+          "pitch": 5.267720699310303
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.04475855827331543,
+          "pitch": 5.184190273284912
+        },
+        {
+          "text": "ノ",
+          "consonant": "n",
+          "consonant_length": 0.04341091960668564,
+          "vowel": "o",
+          "vowel_length": 0.05729810148477554,
+          "pitch": 5.049182891845703
+        }
+      ],
+      "accent": 4,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.04381806403398514,
+          "vowel": "a",
+          "vowel_length": 0.05896533280611038,
+          "pitch": 4.961581707000732
+        },
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.052592918276786804,
+          "vowel": "a",
+          "vowel_length": 0.04758173227310181,
+          "pitch": 4.986082077026367
+        },
+        {
+          "text": "サ",
+          "consonant": "s",
+          "consonant_length": 0.07495731860399246,
+          "vowel": "a",
+          "vowel_length": 0.048295989632606506,
+          "pitch": 4.860092639923096
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.1402834802865982,
+          "pitch": 4.722316265106201
+        }
+      ],
+      "accent": 2,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.1389443576335907,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ハ",
+          "consonant": "h",
+          "consonant_length": 0.06837188452482224,
+          "vowel": "a",
+          "vowel_length": 0.05213754624128342,
+          "pitch": 4.815957546234131
+        },
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.05326191335916519,
+          "vowel": "a",
+          "vowel_length": 0.0363151952624321,
+          "pitch": 5.106441497802734
+        },
+        {
+          "text": "リ",
+          "consonant": "r",
+          "consonant_length": 0.04026898741722107,
+          "vowel": "i",
+          "vowel_length": 0.03451133519411087,
+          "pitch": 5.091681480407715
+        },
+        {
+          "text": "マ",
+          "consonant": "m",
+          "consonant_length": 0.06266055256128311,
+          "vowel": "a",
+          "vowel_length": 0.04511111229658127,
+          "pitch": 5.0730767250061035
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.12181180715560913,
+          "vowel": "U",
+          "vowel_length": 0.02737841010093689,
+          "pitch": 0.0
+        }
+      ],
+      "accent": 4,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

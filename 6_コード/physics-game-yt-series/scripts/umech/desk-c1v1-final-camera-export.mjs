@@ -1,0 +1,28 @@
+// Final C export only after actual corrected JPEGs have been reviewed.
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=process.env.C1_FINAL_CACHE,helper=process.env.C1_CAMERA_SOURCE,id='ys-chain-c1v1';
+assert(root&&helper,'Specify C1_FINAL_CACHE and exact C1_CAMERA_SOURCE');
+const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),read=p=>JSON.parse(fs.readFileSync(p));
+const proof=read(root+'/camera-patch.json'),original=proof.originalRoot,production=read(original+'/c1-production-r13.json'),face=read(original+'/c1-r13-human-qa.json'),mix=read(original+'/c1-r13-mix-provenance.json'),review=read(root+'/actual-patch-human-qa.json'),index=read(root+'/actual-patch-review/actual-patch-index.json');
+assert(production.status==='done'&&production.missing===0&&face.readyForProduction&&face.allActualFramesViewed);
+assert(proof.root===root&&proof.frames===10814&&proof.allPatchJpegsActuallyRendered&&proof.allMeasuredPatchGeometryWithinFrame&&proof.allFrozenInputsUnchanged&&proof.otherSceneOutputsUnchanged);
+assert(proof.cameraOnly||proof.cameraAndConfirmedSemanticHoldCorrectionOnly);
+assert.equal(hash(helper),proof.patchSourceSha256);assert.equal(review.patchProofSha256,hash(root+'/camera-patch.json'));
+assert(review.allActualPatchFramesViewed&&review.actualImageDefectsRemaining===0&&review.readyForExport);
+assert.equal(review.actualPatchFrames,index.actualFrames);assert.equal(index.actualFrames,proof.patchFrames.length);assert.equal(index.errors.length,0);
+const protectedFiles={...production.sourceSha256,...production.immutableInputSha256,...mix.protectedSha256,...proof.patchDependencySha256,[helper]:proof.patchSourceSha256};
+for(const [p,h]of Object.entries(protectedFiles))assert.equal(hash(p),h,p);
+assert.equal(hash(root+'/'+id+'.wav'),mix.newMixSha256);assert.equal(hash(root+'/'+id+'.voice.wav'),hash(original+'/'+id+'.voice.wav'));
+const meta=read(root+'/blender/desk/meta.json');assert(meta.frames===10814&&meta.missing===0);
+for(let j=0;j<10814;j++)assert(fs.statSync(root+'/blender/desk/'+String(j).padStart(5,'0')+'.jpg').size>1024);
+const out=root+'/out';assert(!fs.existsSync(out),'Preserve prior final export');fs.mkdirSync(out);
+const renderer=Object.fromEntries(['./desk-c1v1-final-frame.mjs','./desk-c1v1-final-render-entry.mjs','./desk-c1v1-final-quality-loader.mjs','./desk-c1v1-approved-frame.mjs','./desk-c1v1-approved-render-entry.mjs','./desk-axes-frame.mjs','./desk-c1v1-overlay.mjs','./desk-c1v1-final-camera-export.mjs','../render-all-films-gptv2.mjs'].map(f=>{const p=fileURLToPath(new URL(f,import.meta.url));return[p,hash(p)];}));
+const env={...process.env,EM_FILM_CACHE:root,FILM_OUTPUT:out,FILM_COPY_AUDIO:'0',FFMPEG:process.env.FFMPEG??'/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1'},started=Date.now();
+const r=spawnSync(process.execPath,['scripts/umech/desk-c1v1-final-render-entry.mjs',id],{env,stdio:'inherit'});if(r.status)process.exit(r.status);
+for(const [p,h]of Object.entries({...protectedFiles,...renderer}))assert.equal(hash(p),h,p);
+const video=out+'/'+id+'.mp4';assert(fs.statSync(video).size>1e6);
+fs.writeFileSync(root+'/c1-final-export.json',JSON.stringify({date:new Date().toISOString(),revision:proof.revision+' plus r13 approved row34 face and Pascal name-card-only90px vertical separation',seconds:(Date.now()-started)/1000,cache:root,video,videoSha256:hash(video),voiceSha256:hash(root+'/'+id+'.voice.wav'),mixSha256:mix.newMixSha256,patchProofSha256:hash(root+'/camera-patch.json'),patchHumanQaSha256:hash(root+'/actual-patch-human-qa.json'),originalInputsAndPreviousMixUnchanged:true,productionSourceSha256:production.sourceSha256,rendererSourceSha256:renderer,encoder:'unchanged render-all-films-gptv2.mjs CRF18',finalGateNotYetRun:true,finalActualMp4NotYetReviewed:true,earsVerified:false},null,1));

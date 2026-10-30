@@ -1,0 +1,153 @@
+{
+  "subtitle": "2トン！ 馬何頭分ですか。",
+  "reading": "にトン！ うま なんとう ぶん ですか。",
+  "normalizedReading": "にトン！うまなんとうぶんですか。",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "ニ'/ト'ン、ウマ'、ナ'ント/ウ'、ブ'ン、デ'_スカ",
+  "kana": "ニ'/ト'ン、ウマ'、ナ'ント/ウ'、ブ'ン、デ'_スカ",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ニ",
+          "consonant": "n",
+          "consonant_length": 0.0608685240149498,
+          "vowel": "i",
+          "vowel_length": 0.0931396558880806,
+          "pitch": 5.375336647033691
+        },
+        {
+          "text": "ト",
+          "consonant": "t",
+          "consonant_length": 0.07841118425130844,
+          "vowel": "o",
+          "vowel_length": 0.07589956372976303,
+          "pitch": 5.566978454589844
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.1457470953464508,
+          "pitch": 5.271401405334473
+        }
+      ],
+      "accent": 2,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.36581841111183167,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ウ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "u",
+          "vowel_length": 0.056026391685009,
+          "pitch": 5.295896530151367
+        },
+        {
+          "text": "マ",
+          "consonant": "m",
+          "consonant_length": 0.06343155354261398,
+          "vowel": "a",
+          "vowel_length": 0.05948779731988907,
+          "pitch": 5.4549946784973145
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ナ",
+          "consonant": "n",
+          "consonant_length": 0.07305165380239487,
+          "vowel": "a",
+          "vowel_length": 0.07973375171422958,
+          "pitch": 5.596579074859619
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.07746843248605728,
+          "pitch": 5.644046783447266
+        },
+        {
+          "text": "ト",
+          "consonant": "t",
+          "consonant_length": 0.059333376586437225,
+          "vowel": "o",
+          "vowel_length": 0.07111077755689621,
+          "pitch": 5.509025573730469
+        },
+        {
+          "text": "ウ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "u",
+          "vowel_length": 0.051239944994449615,
+          "pitch": 5.418130397796631
+        },
+        {
+          "text": "ブ",
+          "consonant": "b",
+          "consonant_length": 0.059470586478710175,
+          "vowel": "u",
+          "vowel_length": 0.0614863857626915,
+          "pitch": 5.315816879272461
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.08275546878576279,
+          "pitch": 5.26251745223999
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.03643350303173065,
+          "vowel": "e",
+          "vowel_length": 0.050313375890254974,
+          "pitch": 5.216419696807861
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.09709005802869797,
+          "vowel": "U",
+          "vowel_length": 0.03165552765130997,
+          "pitch": 0.0
+        },
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.06631741672754288,
+          "vowel": "a",
+          "vowel_length": 0.12625828385353088,
+          "pitch": 5.111368656158447
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

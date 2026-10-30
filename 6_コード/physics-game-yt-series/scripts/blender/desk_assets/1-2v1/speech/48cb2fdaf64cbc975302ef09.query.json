@@ -1,0 +1,152 @@
+{
+  "subtitle": "だから、Aはgになります。",
+  "reading": "だから、エーは ジーに なります。",
+  "normalizedReading": "だから、エーはジーになります。",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "ダ'カラ、エ'エワ、ジイニ'、ナリマ'_ス",
+  "kana": "ダ'カラ、エ'エワ、ジイニ'、ナリマ'_ス",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.05043411999940872,
+          "vowel": "a",
+          "vowel_length": 0.059512071311473846,
+          "pitch": 5.039531707763672
+        },
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.04819673299789429,
+          "vowel": "a",
+          "vowel_length": 0.04633922129869461,
+          "pitch": 5.037973403930664
+        },
+        {
+          "text": "ラ",
+          "consonant": "r",
+          "consonant_length": 0.049625739455223083,
+          "vowel": "a",
+          "vowel_length": 0.12552641332149506,
+          "pitch": 4.7690749168396
+        }
+      ],
+      "accent": 1,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.2256600260734558,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.08782711625099182,
+          "pitch": 5.114089488983154
+        },
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.05823056399822235,
+          "pitch": 5.19557523727417
+        },
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.05826285481452942,
+          "vowel": "a",
+          "vowel_length": 0.05134979635477066,
+          "pitch": 4.902526378631592
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ジ",
+          "consonant": "j",
+          "consonant_length": 0.10719075798988342,
+          "vowel": "i",
+          "vowel_length": 0.0623738169670105,
+          "pitch": 4.919702529907227
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.04235580563545227,
+          "pitch": 5.24747371673584
+        },
+        {
+          "text": "ニ",
+          "consonant": "n",
+          "consonant_length": 0.05057821422815323,
+          "vowel": "i",
+          "vowel_length": 0.04597832262516022,
+          "pitch": 5.062361717224121
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ナ",
+          "consonant": "n",
+          "consonant_length": 0.04862953722476959,
+          "vowel": "a",
+          "vowel_length": 0.040786586701869965,
+          "pitch": 4.8093342781066895
+        },
+        {
+          "text": "リ",
+          "consonant": "r",
+          "consonant_length": 0.04298773407936096,
+          "vowel": "i",
+          "vowel_length": 0.0348307341337204,
+          "pitch": 4.791950702667236
+        },
+        {
+          "text": "マ",
+          "consonant": "m",
+          "consonant_length": 0.06231466680765152,
+          "vowel": "a",
+          "vowel_length": 0.04477357119321823,
+          "pitch": 4.825683116912842
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.12206559628248215,
+          "vowel": "U",
+          "vowel_length": 0.02737841010093689,
+          "pitch": 0.0
+        }
+      ],
+      "accent": 3,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

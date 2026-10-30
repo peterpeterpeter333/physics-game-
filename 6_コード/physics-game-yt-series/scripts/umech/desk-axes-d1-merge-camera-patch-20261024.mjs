@@ -1,0 +1,55 @@
+// Fresh derived cache only. No GPU, no ffmpeg, no overwrite of old raw/media.
+// Run after root's GUI camera-patch mode=render. Export is a SEPARATE command.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const base='/private/tmp/ys/ys-chain-d1v1-production-r15';
+const patch='/private/tmp/ys/ys-chain-d1v1-camera-patch-20261024';
+const dest=process.env.D1_MERGE_CACHE??'/private/tmp/ys/ys-chain-d1v1-final-patched-20261024';
+const read=p=>JSON.parse(fs.readFileSync(p));
+const sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const jsha=v=>crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex');
+const require=(v,m)=>{if(!v)throw new Error(m);};
+const finished=read(base+'/d1-production-finished.json');
+const report=read(patch+'/camera-patch-complete.json');
+require(finished.all12163JpegsPresent&&finished.all5070RenderSourcesDone,'Original r15 production incomplete');
+require(report.allPatchFramesActuallyRendered&&report.allReplacementFramesPhysicalPass,'Camera patch incomplete/physical guard failed');
+require(report.episodeRuntimeBindingsUnchanged&&report.original12163JpegSizeAndMtimeUnchanged,'Original runtime/raw protection failed');
+require(report.otherSceneFilepathsUnchanged&&report.oldOtherEpisodeSampledRawUnchanged,'Other scene/raw sampled protection failed');
+require(report.patchFrameCount===report.actualReplacementFrames.length,'Patch count mismatch');
+require(report.patchSourceSha256===sha('scripts/blender/desk_axes_d1_camera_patch_20261024.py'),'Patch helper changed after rendering');
+const n=finished.frames;require(n===12163&&finished.fps===30,'Unexpected D1 frame count/fps');
+const originalMeta=read(base+'/blender/desk/meta.json'),originalAnchors=read(base+'/blender/desk/anchors.json');
+const patchAnchors=read(report.anchors),replacements=report.replacementFrameToActualPatchFrame;
+require(originalMeta.key===originalAnchors.key&&originalMeta.frames===n&&originalAnchors.frames===n,'Original anchors/meta mismatch');
+require(patchAnchors.fps===30&&JSON.stringify(Object.keys(originalAnchors.anchors).sort())===JSON.stringify(Object.keys(patchAnchors.anchors).sort()),'Patch anchor names/fps mismatch');
+for(const arr of Object.values(originalAnchors.anchors))require(arr.length===n,'Incomplete original anchors');
+for(const arr of Object.values(patchAnchors.anchors))require(arr.length===n,'Incomplete patch anchors');
+require(!fs.existsSync(dest)&&!fs.lstatSync(path.dirname(dest)).isSymbolicLink(),'Preserve an existing final cache; do not redirect its parent');
+require(dest!==base&&dest!==patch,'Derived cache must be distinct');
+const selected=[],selectedSources=new Map();
+for(let j=0;j<n;j++){
+ const k=replacements[j];
+ const source=k===undefined?base+'/blender/desk/'+String(j).padStart(5,'0')+'.jpg':report.raw+'/'+String(k).padStart(5,'0')+'.jpg';
+ const st=fs.lstatSync(source);require(st.isFile()&&!st.isSymbolicLink()&&st.size>1000,'Missing/redirected real source '+source);
+ selected.push(source);selectedSources.set(source,{bytes:st.size,mtimeMs:st.mtimeMs});
+ if(k!==undefined)require(report.actualReplacementFrames.includes(k),'Unknown replacement source '+k);
+}
+for(const [p,h] of Object.entries(report.protectedInputSha256))require(sha(p)===h,'Protected input changed '+p);
+for(const [p,h] of Object.entries(report.originalRawSampleSha256))require(sha(p)===h,'Original sampled raw changed '+p);
+const anchors=structuredClone(originalAnchors);
+for(const [j,k] of Object.entries(replacements))for(const name of Object.keys(anchors.anchors))anchors.anchors[name][Number(j)]=patchAnchors.anchors[name][k];
+const key=jsha([originalMeta.key,report.patchSourceSha256,replacements,report.patchFrameToUnchangedObjectSourceFrame,anchors.anchors]).slice(0,20);
+anchors.key=key;
+const desk=dest+'/blender/desk';fs.mkdirSync(desk,{recursive:true});
+const link=(src,dst)=>fs.symlinkSync(src,dst);
+for(const f of ['plan.json','ys-chain-d1v1.json','phrase-times.json','ys-chain-d1v1.voice.wav','ys-chain-d1v1.wav','ys-chain-d1v1.mix.json'])link(base+'/'+f,dest+'/'+f);
+link(base+'/blender/data.json',dest+'/blender/data.json');
+if(fs.existsSync(base+'/blender/tex'))link(base+'/blender/tex',dest+'/blender/tex');
+for(let j=0;j<n;j++)link(selected[j],desk+'/'+String(j).padStart(5,'0')+'.jpg');
+fs.writeFileSync(desk+'/anchors.json',JSON.stringify(anchors));
+fs.writeFileSync(desk+'/meta.json',JSON.stringify({...originalMeta,key,derivedCameraPatch:true,originalRenderKey:originalMeta.key,patchSourceSha256:report.patchSourceSha256},null,1));
+link(patch+'/blender/camera-motion.json',dest+'/blender/camera-motion.json');
+const merge={episode:'D-1',createdAt:new Date().toISOString(),sourceProduction:base,cameraDerivative:patch,finalCache:dest,frames:n,fps:30,originalRenderKey:originalMeta.key,derivedRenderKey:key,replacementOutputs:Object.keys(replacements).length,actualCameraPatchFrames:report.actualReplacementFrames.length,originalObjectStateSourcesUnchanged:true,stageLibVoiceCaptionsAndTimesUnchanged:true,overlaySourceSha256:report.frozenSourceSha256['scripts/umech/desk-d1v1-overlay.mjs'],patchHelperSha256:report.patchSourceSha256,patchCompleteReportSha256:sha(patch+'/camera-patch-complete.json'),mergeHelperSha256:sha(new URL(import.meta.url)),originalAndPatchRawNotOverwritten:true,sourceFileStatManifest:[...selectedSources].map(([file,stat])=>({file,...stat})),anchorsMergedForEveryReplacementOutput:true,actualCompositeAndFinalMp4ReviewPending:true,allOriginalNGMustBeRetained:true,automaticGateWaiverApplied:false,finalPassed:false,exportCommand:'EM_FILM_CACHE='+dest+' node scripts/umech/desk-d1v1-export.mjs'};
+fs.writeFileSync(dest+'/d1-camera-merge.json',JSON.stringify(merge,null,1));
+console.log(JSON.stringify({cache:dest,frames:n,replaced:merge.replacementOutputs,actualPatch:merge.actualCameraPatchFrames,key,finalPassed:false,exportCommand:merge.exportCommand},null,1));

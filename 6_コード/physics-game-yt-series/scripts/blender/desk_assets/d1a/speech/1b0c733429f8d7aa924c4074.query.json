@@ -1,0 +1,83 @@
+{
+  "subtitle": "缶と同じだ！",
+  "reading": "かんと おなじだ！",
+  "normalizedReading": "かんとおなじだ！",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "カ'ント、オナジダ'",
+  "kana": "カ'ント、オナジダ'",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.07837394624948502,
+          "vowel": "a",
+          "vowel_length": 0.07304473966360092,
+          "pitch": 5.750527858734131
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.08943744748830795,
+          "pitch": 5.753105640411377
+        },
+        {
+          "text": "ト",
+          "consonant": "t",
+          "consonant_length": 0.05598820000886917,
+          "vowel": "o",
+          "vowel_length": 0.050028808414936066,
+          "pitch": 5.484561920166016
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.047442056238651276,
+          "pitch": 5.270228385925293
+        },
+        {
+          "text": "ナ",
+          "consonant": "n",
+          "consonant_length": 0.07290744036436081,
+          "vowel": "a",
+          "vowel_length": 0.05707552284002304,
+          "pitch": 5.264734268188477
+        },
+        {
+          "text": "ジ",
+          "consonant": "j",
+          "consonant_length": 0.10209015756845474,
+          "vowel": "i",
+          "vowel_length": 0.0411381796002388,
+          "pitch": 5.266702651977539
+        },
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.05411212891340256,
+          "vowel": "a",
+          "vowel_length": 0.12254252284765244,
+          "pitch": 5.269986629486084
+        }
+      ],
+      "accent": 4,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

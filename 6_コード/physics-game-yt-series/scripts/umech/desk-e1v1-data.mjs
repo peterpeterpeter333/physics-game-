@@ -1,0 +1,49 @@
+// E-1: immutable supplied narration, deterministic dimensions and verified numbers.
+import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+import sharp from 'sharp';
+export const CACHE=process.env.EM_FILM_CACHE??'/private/tmp/ys/ys-chain-e1v1';
+const W=fileURLToPath(new URL('../../',import.meta.url));
+const clip=JSON.parse(readFileSync(CACHE+'/ys-chain-e1v1.json'));
+const pt=JSON.parse(readFileSync(CACHE+'/phrase-times.json'));
+const timingText=readFileSync(W+'docs/video-revision-20260924/deep/E-1_cue時刻一覧.md','utf8');
+const instructions=readFileSync('/Users/ken/Downloads/physics-quest-ChatGPT引き継ぎ_技術の疑問の鎖_2026-10-22/E-1/E-1_制作指示書.md','utf8');
+const rows=new Map(),times=new Map();
+for(const line of instructions.split('\n')){const m=line.match(/^\| (\d+) \| (.*?) \| (.*?) \| (.*?) \| (.*?) \|$/);if(m)rows.set(+m[1],m.slice(2));}
+for(const line of timingText.split('\n')){const m=line.match(/^\| (\d+) \| `([^`]+)` \| .*? \| [\d.]+ \| [\d.]+ \| [\d.]+ \| .*? \| (.*?) \|$/);if(m)times.set(m[2],{row:+m[1],words:m[3].split('<br>').map(s=>{const z=s.match(/^(.*?) ([\d.]+)$/);return z?{word:z[1],time:+z[2]}:null;}).filter(Boolean)});}
+const cameras={map:[0,-.08,.025,1.0,-15,40,40],grid:[0,-.08,.01,1,0,65,40],globe:[0,.20,.19,.7,0,35,40],latitude:[0,.20,.19,.7,0,10,40],star:[0,.20,.19,.7,0,30,40],dial:[0,.20,.19,.7,0,70,40],torch:[-.11,.20,.18,1,0,25,40],clocks:[.36,.05,.08,.7,0,22,40],arc:[0,.20,.19,.7,0,65,40],ship:[.25,-.05,.11,.6,0,32,40],log:[.22,-.07,.08,.6,-15,40,40],clock:[.25,-.05,.11,.5,0,25,40],pendulum:[-.30,.10,.11,.7,0,35,40],sway:[.25,-.05,.13,.7,0,35,40],prize:[.40,-.12,.055,.5,0,40,40]};
+function setup(row){if(row<=6||[26,27,30,31,32,41].includes(row))return ['map','map',.66];if(row===8)return ['grid','grid',.66];if(row<=7||row===25)return ['globe','globe',.64];if(row<=12)return ['latitude','latitude',.64];if(row===13)return ['star','star',.64];if(row===14)return ['dial','dial',.66];if(row<=16)return ['torch','torch',.68];if(row<=18)return ['clocks','clocks',.64];if(row<=20)return ['arc','arc',.66];if(row===24)return ['clock','clock',.64];if(row===28||row===29)return ['ship','log',.66];if(row===33||row===34)return ['pendulum','pendulum',.64];if(row===35||row===36)return ['sway','sway',.66];if(row===37||row===38)return ['prize','prize',.64];return ['ship','ship',.66];}
+export const cues=[];let previous=null;
+for(const scene of clip.scenes)for(let i=0;i<scene.cues.length;i++){const q=scene.cues[i],cap=scene.captions[i],key=q.diagram.replace(/^ce1v1-/,''),info=times.get(key);assert.ok(info,key);const [group,camera,width]=setup(info.row);const move=previous===camera?0:key==='fog:night'?1.5:key==='last:clock'||[7,21].includes(info.row)?1.2:info.row===24?.8:1.0;const instruction=rows.get(info.row);assert.ok(instruction,key);cues.push({key,row:info.row,start:cap.start,end:cap.end,voiceEnd:cap.start+pt[q.subtitle].end,subtitle:q.subtitle,group,camera,width,pose:cameras[camera],move,objects:instruction[0],cameraInstruction:instruction[1],action:instruction[2],labels:instruction[3],wordEvents:info.words,face:q.face??null,view:q.view??null,music:q.music??null});previous=camera;}
+assert.equal(cues.length,54);
+export function event(key,word,index=0){const c=cues.find(c=>c.key===key);assert.ok(c,key);const exact=c.wordEvents.filter(w=>w.word.includes(word));assert.ok(exact[index],key+'/'+word);return exact[index].time;}
+const degreesPerHour=360/24,minutesPerDegree=60/degreesPerHour,cos50=Math.cos(50*Math.PI/180),equatorialKm=40000/360,km50=equatorialKm*cos50;
+assert.equal(degreesPerHour,15);assert.equal(minutesPerDegree,4);assert.equal(9*degreesPerHour,135);assert.equal((12-13)*degreesPerHour,-15);assert.equal((12-10)*degreesPerHour,30);assert.equal(.5*minutesPerDegree,2);assert.ok(Math.abs(cos50-.643)<.001);assert.ok(Math.abs(equatorialKm-111.1)<.1);assert.ok(Math.abs(km50-71.4)<.1);
+const latitudes=[0,10,20,30,50,90].map(latitude=>{const a=latitude*Math.PI/180,normal=[0,-Math.cos(a),Math.sin(a)],star=[0,0,1];const altitude=Math.asin(normal.reduce((s,x,i)=>s+x*star[i],0))*180/Math.PI;assert.ok(Math.abs(altitude-latitude)<1e-8);return {latitude,altitude,normal,width:Math.cos(a)};});
+const scores=[{time:event('fog:wreck','沈み'),make:1,brk:0},{time:event('lat:50','50度'),make:1,brk:1},{time:event('pen:judge','負けた'),make:2,brk:1}];
+assert.deepEqual(scores.map(s=>[s.make,s.brk]),[[1,0],[1,1],[2,1]]);
+export const DATA={episode:'E-1',id:'ys-chain-e1v1',duration:clip.duration,cues,cameras,degreesPerHour,minutesPerDegree,cos50,equatorialKm,km50,latitudes,scores,map:{width:.4,depth:.28,center:[0,-.08,0],thought:[-.105,-.145,.012],real:[.158,-.06,.012],fleetLead:[.09,-.015,.007],fleetPitch:[.038,.031,0],fleetMove:[.04,.025,0],km70World:.16},globe:{diameter:.24,center:[0,.20,.19],london:0,akashi:135},challenge:{london:10,noon:12,difference:2,direction:'east',angle:30},gateTimes:[1.5,31.5,38.5,55.2,81.8,131,156.8,199.5,233.8,260.5,318.8,385]};
+const root=CACHE+'/blender';
+async function main(){mkdirSync(root+'/tex',{recursive:true});
+// Decorative chart is an explicit reconstruction. The source narration and all labels stay literal.
+const sea='#b2cbd0',land='#c8ab72',coast='#70523b';
+const map=`<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120"><rect width="1600" height="1120" fill="#e9dcc0"/><rect x="28" y="28" width="1544" height="1064" rx="14" fill="${sea}" stroke="${coast}" stroke-width="5"/><g stroke="#8ca9ad" stroke-width="2" opacity=".55">${Array.from({length:10},(_,i)=>`<path d="M0 ${i*120}H1600 M${i*180} 0V1120"/>`).join('')}</g><g fill="${land}" stroke="${coast}" stroke-width="5"><path d="M960 0L950 80 1020 135 980 220 1050 310 1120 345 1170 405 1230 390 1200 305 1320 245 1400 150 1600 110V0Z"/><path d="M1600 620L1450 690 1320 730 1260 810 1180 830 1200 900 1340 920 1450 1000 1600 1040Z"/><path d="M740 0L700 85 650 145 670 220 630 260 710 280 760 200 790 100Z"/></g><g fill="none" stroke="${coast}" stroke-width="3" opacity=".7">${Array.from({length:21},(_,i)=>`<path d="M${50+i*73} 40V1080"/>`).join('')}</g><g transform="translate(185 910)" fill="#795934" stroke="#795934"><circle r="80" fill="none" stroke-width="4"/><path d="M0-90L16-16 90 0 16 16 0 90-16 16-90 0-16-16Z"/><path d="M-60-60L0-20 60-60 20 0 60 60 0 20-60 60-20 0Z" fill="#d0b47a"/></g><rect x="40" y="40" width="1520" height="1040" fill="none" stroke="#8d6b47" stroke-width="3"/></svg>`;
+// Engraved navigation rules remain legible through a thin veil of fog. This is
+// chart content, not a screen-space pattern or a substitute for larger models.
+const readableChart=map.replace('stroke="#8ca9ad" stroke-width="2" opacity=".55"','stroke="#70523b" stroke-width="6" opacity=".68"');
+await sharp(Buffer.from(readableChart)).png().toFile(root+'/tex/e1-chart.png');
+// Geographic texture is deliberately simplified, matching B-1's warm model colours.
+const globe=`<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="1024"><rect width="2048" height="1024" fill="#4f8fa8"/><g fill="#8ba479" stroke="#c1b278" stroke-width="8" stroke-linejoin="round"><path d="M75 190L200 100 410 135 500 250 450 350 320 390 270 460 190 370 135 280Z"/><path d="M400 460L510 500 560 620 500 800 430 910 390 740 330 560Z"/><path d="M850 210L1010 120 1240 150 1410 230 1650 200 1790 320 1600 410 1450 420 1360 550 1260 440 1130 350 1040 370 970 280Z"/><path d="M960 365L1100 400 1160 540 1080 720 1010 750 930 590 900 450Z"/><path d="M1640 660L1810 630 1910 750 1770 810 1640 770Z"/><path d="M0 960Q1000 910 2048 960V1024H0Z"/></g></svg>`;
+await sharp(Buffer.from(globe)).png().toFile(root+'/tex/e1-globe.png');
+writeFileSync(root+'/data.json',JSON.stringify(DATA,null,1));
+const md=['# E-1 撮影台本（ChatGPT）','',`全${cues.length} cue、${clip.duration.toFixed(2)}秒。字幕・日本語・声・時刻は固定。主役の横幅は各ショットに明記し、Blenderの投影から距離を合わせる。説明中のカメラは固定。`,'','冒頭1〜6は笑い・跳ね・破壊・沈没の表現なし。4隻は岩の前で止まり20°傾くだけ。音楽は低い持続音のみ。','','## 再試写の配置補正（共通6.2の目安位置から重なりを避ける）','','艦隊は7隻を一列のまま、隣同士の中心をx .038／y .031ずつ離す。船の長手はx向きとし、帆・船体が重ならない列にする。旗艦の開始点(.09,−.015)、1.5秒で(.04,.025)移る。赤印は岩のそばの空き(.158,−.060)へ。振り子の文字盤を木箱より手前へ.008移す。綱と糸巻きは船尾から見えるようy −.10に置き、糸巻きは動かさず綱の結び目だけを繰り出す。行28・29は船・箱・綱・砂時計をひと組として66%に収める専用の固定姿勢を使う。帽子(−.29,−.14)、懐中電灯(−.29,.20)、2時計(.26,.05)と(.46,.05)は札と遮蔽を避ける補正。台本・声・語の秒は変更しない。',''];
+md[md.length-2]=md[md.length-2].replace('2時計(.26,.05)と(.46,.05)','2時計は指示表どおり(.30,.05)と(.42,.05)').replace('は札と遮蔽を避ける補正','。帽子と懐中電灯だけは札と遮蔽を避ける補正');
+md.push('船の横幅は波板ではなく船体・帆の実頂点で66%に校正する。行22の小さな地球儀は(.34,.06,.17)へ寄せて、同じ固定カメラ内の右上に収める。海図の古い航海用の罫は茶で少し濃くし、薄霧の中でも印と海図の面が区別できるようにする。','');
+for(const c of cues)md.push(`## 行${c.row} ${c.key}（${c.start.toFixed(2)}〜${c.end.toFixed(2)}秒）`,'',`- カメラ：${c.move?`${c.start.toFixed(2)}秒から${c.move}秒移り、その後止める`:'全区間止める'}。P((${c.pose.slice(0,3).join(',')}),${c.pose.slice(3).join(',')})。距離は投影による横幅${Math.round(c.width*100)}％へ補正。`,`- 主役・横幅：${c.objects}／${Math.round(c.width*100)}％。`,`- 手と動き：${c.action}`,`- 語・絶対秒：${c.wordEvents.map(w=>w.word+'＝'+w.time.toFixed(2)).join('／')}`,`- 札：${c.labels}`,`- 顔：${c.face?JSON.stringify(c.face):'なし'}／見方：${c.view??'なし'}。`,'');
+writeFileSync(W+'docs/video-revision-20260924/deep/E-1_撮影台本_ChatGPT.md',md.join('\n'));
+const source=readFileSync(W+'docs/video-revision-20260924/deep/技術の疑問の鎖_E-1_第1版_ナレーション.md','utf8');
+mkdirSync(CACHE+'/problem',{recursive:true});const section=source.split('## 問題編への接続（いまは作らない。入れるときのため）')[1].split('\n## ')[0].trim();
+writeFileSync(CACHE+'/problem/problem.json',JSON.stringify({episode:'E-1',sourceSection:section,parts:['N3 船の模型','E3 ロンドンの置き時計','E4 地球儀','N7 弧と角度','N3 太陽'],answer:DATA.challenge},null,2));
+console.log(JSON.stringify({cues:cues.length,duration:clip.duration,assertions:'PASS',scores,gateTimes:DATA.gateTimes},null,2));}
+if(process.argv[1]&&fileURLToPath(import.meta.url)===process.argv[1])await main();

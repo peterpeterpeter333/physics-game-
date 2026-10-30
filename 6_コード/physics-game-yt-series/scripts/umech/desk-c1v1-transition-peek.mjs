@@ -1,0 +1,10 @@
+// Read-only early transition check from already rendered production JPEGs.
+import fs from 'node:fs';import assert from 'node:assert/strict';import sharp from 'sharp';import {createHash} from 'node:crypto';
+const root='/private/tmp/ys/ys-chain-c1v1',out=root+'/r13-transition-peek',d=JSON.parse(fs.readFileSync(root+'/blender/data.json'));assert(!fs.existsSync(out));fs.mkdirSync(out);const cards=[],rows=[],hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+for(const c of d.cues.filter(c=>c.move&&c.start>0)){
+ let duration=c.key==='arm:domino'?.8:c.move,start=c.start;if(c.key==='desk:revolt'){const word=c.words.find(w=>w.word.includes('大きな反乱'));assert(word);start=word.time-duration;}
+ const time=start+duration*.5,j=Math.round(time*30),file=root+'/blender/desk/'+String(j).padStart(5,'0')+'.jpg',row={cue:c.key,row:c.row,camera:c.camera,start,duration,time:j/30,frame:j,file,available:fs.existsSync(file)};rows.push(row);if(!row.available)continue;row.sha256=hash(file);
+ const label=Buffer.from(`<svg width="360" height="36"><rect width="360" height="36" fill="white"/><text x="5" y="15" font-family="Arial" font-size="13">${c.key} / row${c.row}</text><text x="5" y="31" font-family="Arial" font-size="13">actual ${row.time.toFixed(3)}s / ${j} / mid-move</text></svg>`);cards.push(await sharp({create:{width:360,height:676,channels:3,background:'white'}}).composite([{input:await sharp(file).resize(360,640).toBuffer(),left:0,top:36},{input:label,left:0,top:0}]).jpeg({quality:94}).toBuffer());
+}
+for(let i=0;i<cards.length;i+=6)await sharp({create:{width:1080,height:1352,channels:3,background:'white'}}).composite(cards.slice(i,i+6).map((input,k)=>({input,left:k%3*360,top:Math.floor(k/3)*676}))).jpeg({quality:94}).toFile(out+'/sheet-'+String(i/6+1).padStart(2,'0')+'.jpg');
+fs.writeFileSync(out+'/index.json',JSON.stringify({notACompleteTransitionAudit:true,source:'already present exact production mid-move JPEGs; no rendering or source edits',rows,available:cards.length,pending:rows.length-cards.length,allViewed:false},null,1));console.log(JSON.stringify({out,available:cards.length,pending:rows.length-cards.length}));

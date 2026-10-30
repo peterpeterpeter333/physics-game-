@@ -1,0 +1,21 @@
+// Full MP4 regression in new caches; original reference media and caches are read-only.
+import fs from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const id=process.argv[2],phase=process.argv[3]??'after';
+assert(['ys-chain-1-1v6','ys-chain-1-2v2'].includes(id));assert(['before','after'].includes(phase));
+const source='/private/tmp/ys/'+id,root='/private/tmp/ys/axes-regression/'+id+'/mp4-'+phase,cache=root+'/cache',out=root+'/out';
+fs.mkdirSync(cache,{recursive:true});fs.mkdirSync(out,{recursive:true});
+const link=(a,b)=>{if(fs.existsSync(b)){assert.equal(fs.realpathSync(a),fs.realpathSync(b));return;}fs.symlinkSync(a,b);};
+for(const name of ['plan.json',id+'.json','phrase-times.json',id+'.wav','blender'])link(source+'/'+name,cache+'/'+name);
+const args=phase==='before'?['--import','./scripts/umech/desk-axes-reference-before-loader.mjs']:[];
+args.push('scripts/render-all-films.mjs',id);
+const sha=f=>createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const original=source+'/out/'+id+'.mp4',inputHash=sha(original),started=Date.now();
+const result=spawnSync(process.execPath,args,{stdio:'inherit',env:{...process.env,EM_FILM_CACHE:cache,FILM_OUTPUT:out,FFMPEG:process.env.FFMPEG??'/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1'}});
+if(result.status)process.exit(result.status);
+const video=out+'/'+id+'.mp4';
+assert.equal(sha(original),inputHash,'Reference media was modified');
+const report={id,phase,seconds:(Date.now()-started)/1000,original,video,originalSha256:inputHash,renderSha256:sha(video),cmpOriginal:fs.readFileSync(original).equals(fs.readFileSync(video)),originalUnchanged:true};
+fs.writeFileSync(root+'/cmp-report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));

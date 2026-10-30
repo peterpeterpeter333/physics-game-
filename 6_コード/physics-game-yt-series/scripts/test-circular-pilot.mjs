@@ -1,0 +1,80 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {circularPilotIds} from '../docs/video-revision-20260924/circular-pilot.mjs';
+import {circularPilotFrame} from './circular-pilot-visuals.mjs';
+import {clarityDiagram} from './circular-clarity-visuals.mjs';
+const plan=JSON.parse(readFileSync('docs/video-revision-20260924/full-plan.generated.json'));
+let frames=0;
+// Independent editorial expectation: a valid frame is not enough if it hides
+// the object that the narration is describing. Cover every cue, not just new ones.
+const expectedFocus={
+ 'm-circular-intro':['DDDD','DD','FDD'],
+ 'm-circular-middle':['DDDDD','DDDDDF','FFFF','DDFFFF','DDD','FFFD'],
+ 'm-circular-advanced':['DFDF','FFFFD','DFF','FFF','DDF'],
+ 'hm-why-18':['DDD'],'hm-why-19':['FFFD'],'hm-why-20':['DFFF']
+};
+for(const id of circularPilotIds){
+ const c=structuredClone(plan.find(c=>c.id===id));assert.ok(c);let start=0;
+ assert.deepEqual(c.scenes.map(s=>s.cues.map(q=>q.display==='diagram'?'D':q.display==='equation'?'F':'?').join('')),expectedFocus[id],`Narration-to-visual contract: ${id}`);
+ for(const s of c.scenes){
+  assert.equal(s.cues.length,s.utterances.length);
+  assert.equal(s.narration,s.utterances.map(u=>u.subtitle).join(''));
+  s.start=start;s.captions=s.utterances.map(u=>{const a={text:u.subtitle,start,end:start+5};start+=5;assert.ok(u.reading&&!/\s/.test(u.reading));return a;});s.end=start;
+  assert.ok(s.cues.every(cue=>cue.operation&&cue.diagram));
+ }
+ c.duration=start;
+ for(const s of c.scenes)for(const cap of s.captions){
+  const sampled=[];for(const p of [.02,.2,.5,.98]){
+   const svg=circularPilotFrame(c,s,cap.start+p*5);assert.ok(svg);
+   assert.ok(!/NaN|undefined|Infinity|data-mjx-error|data-mml-node="merror"/.test(svg));
+   assert.equal((svg.match(/data-presentation=/g)??[]).length,1,'Exactly one visual focus per frame');
+   if(svg.includes('data-presentation="diagram"')){
+    assert.ok(!svg.includes('data-mml-node'),'No formula panel on geometry frames');
+    const body=svg.split('data-presentation="diagram"')[1].split('</svg>')[0];
+    assert.match(body,/<(?:circle|path|line|rect)\b/,'Diagram must contain geometry, not only labels');
+   }
+   assert.ok(svg.includes(cap.text.slice(0,8)));sampled.push(svg);frames++;
+  }
+  assert.notEqual(sampled[0],sampled[3],'Every spoken cue has a time-dependent animation');
+ }
+}
+// Finite chords, not arcs, give the exact similar-triangle relation.
+for(const h of [1,.1,.001]){
+ const r=2,v=3,dt=r*h/v,chord=2*r*Math.sin(h/2),dv=2*v*Math.sin(h/2);
+ assert.ok(Math.abs(dv/v-chord/r)<1e-12);
+ if(h===.001)assert.ok(Math.abs(dv/dt-v*v/r)<1e-6);
+}
+const GM=3.986004418e14,r=6.8e6,m=1000,v2=GM/r,T2=4*Math.PI**2*r**3/GM;
+assert.ok(Math.abs(m*v2/r-GM*m/r**2)<1e-9);
+assert.ok(Math.abs((2*Math.PI*r/Math.sqrt(v2))**2/T2-1)<1e-12);
+assert.equal(Math.sqrt(4**3),8);assert.equal((2*3)**2/3**2,4);
+assert.equal(6/(3/2),6*(2/3));
+const advanced=plan.find(c=>c.id==='m-circular-advanced');
+for(const needed of ['÷ m','× r','2乗','逆数','r² × r'])assert.ok(JSON.stringify(advanced).includes(needed),needed);
+const routes=JSON.parse(readFileSync('src/content/prerequisite-routes.generated.json'));
+for(const l of ['intro','middle','advanced'])assert.deepEqual(routes[`m-circular-${l}`],{required:[],review:[]});
+console.log(`PASS: six circular/gravity films, ${frames} cue frames, readings, algebra, geometry, and scoped prerequisite routing`);
+const middle=plan.find(c=>c.id==='m-circular-middle'),intro=plan.find(c=>c.id==='m-circular-intro');
+const spoken=c=>c.scenes.map(s=>s.narration).join('');
+assert.ok(!spoken(middle).includes('右へ平行移動'),'Narration must match upper/lower layout');
+for(const phrase of ['上の図','下の図','速さの差ではない','一秒あたり','球が実際に進んだ道のり','近づく先の値を極限','瞬間の加速度は中心向き'])assert.ok(spoken(middle).includes(phrase),phrase);
+assert.ok(spoken(intro).includes('速さだけでなく向きの変化'));
+assert.ok(spoken(advanced).includes('重い衛星も軽い衛星も'));
+assert.ok(spoken(advanced).includes('衛星の質量は約分で消えますが、地球の質量は残ります'));
+const kinds=middle.scenes.flatMap(s=>s.cues.map(q=>q.diagram));
+for(const kind of ['velocity-add','right-angle','similarity','correspondence','arc-chord','limit','direction'])assert.ok(kinds.includes(kind),kind);
+assert.deepEqual(middle.navigationBreaks,[2,4]);
+assert.deepEqual(advanced.navigationBreaks,[2,3]);
+// The average velocity-change arrow approaches the inward direction as dt shrinks.
+let previous=Infinity;
+for(const h of [1,.1,.01]){
+ const dv=[-Math.sin(h),1-Math.cos(h)];
+ const angle=Math.atan2(dv[1],-dv[0]);assert.ok(angle<previous);previous=angle;
+ assert.ok(Math.abs(angle-h/2)<1e-12);
+}
+console.log('PASS: all ten clarity points mapped to narration, geometry, interpretation, and manual breaks');
+// The released ball must not loop/reset with global video time, or ease in/out.
+const releasedY=(p,t)=>Number(clarityDiagram('release',p,0,t).match(/<circle cx="[\d.]+" cy="([\d.]+)" r="14"/)[1]);
+assert.equal(releasedY(.4,8),releasedY(.4,10));
+assert.ok(Math.abs(releasedY(.6,1)-releasedY(.4,1)-(releasedY(.4,1)-releasedY(.2,1)))<1e-9);
+for(const p of [0,.5,1])assert.ok(releasedY(p,1)-65>0,'Velocity arrow stays inside the diagram');

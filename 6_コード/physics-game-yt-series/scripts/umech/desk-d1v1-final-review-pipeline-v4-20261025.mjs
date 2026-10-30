@@ -1,0 +1,60 @@
+// Root-allocated CPU only. Encode-to-review is not final delivery approval.
+// Reuses the unchanged CRF18 entry and existing actual-MP4 review extractor.
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import{createHash}from'node:crypto';import{spawnSync}from'node:child_process';
+const mode=process.argv[2];assert(['--encode','--review'].includes(mode)&&process.argv.length===3);
+const c=process.env.EM_FILM_CACHE??'/private/tmp/ys/ys-chain-d1v1-final-complete-v4-20261025',id='ys-chain-d1v1',out=c+'/out-final-d1v1';
+const read=p=>JSON.parse(fs.readFileSync(p)),sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),write=(p,x)=>fs.writeFileSync(p,JSON.stringify(x,null,1),{flag:'wx'});
+const ff=process.env.FFMPEG??'/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1';
+assert(!fs.lstatSync(c).isSymbolicLink());const mergePath=c+'/d1-complete-merge.json',merge=read(mergePath),data=read(c+'/blender/data.json'),timed=read(c+'/'+id+'.json');
+assert.equal(merge.frames,12163);assert.equal(merge.localActualCount,1991);assert.equal(merge.localOutputCount,2905);
+assert.equal(merge.finalPassed,false);assert.equal(merge.finalAcceptance,false);assert.equal(merge.allFinalIntegerSecondsReviewPending,true);
+const qa=read(merge.localPreEncodeProbeQa),lpFile=merge.localBundle+'/render/report.json',lp=read(lpFile),probeFile=merge.localBundle+'/probe/report.json';
+assert.equal(sha(merge.localPreEncodeProbeQa),merge.localPreEncodeProbeQaSha256);assert.equal(merge.localPreEncodeProbeQaSha256,'516d30491caf041ca3c268714cf3af584fb7979d06efeabb8c81b78ad34eeb28');
+assert.equal(qa.finalAcceptance,false);assert.equal(qa.all1991ActualLocalFramesViewed,false);assert.equal(qa.defectsInReviewedProbes,0);assert(qa.approvedForFullLocalV4Render&&qa.all22RawIndividuallyDisplayedAndViewed&&qa.coalSupportVisuallyVerified);
+assert.equal(sha(lpFile),merge.localRenderReportSha256);assert(lp.allPatchFramesActuallyRendered&&lp.allReplacementPhysicalPass&&lp.actualFrameCount===1991&&lp.renders===1991&&Object.values(lp.protection).every(Boolean));
+assert.equal(sha(merge.localHelper),merge.localHelperSha256);assert.equal(merge.localHelperSha256,'1edcafa6e7d52033554834398ce49daf2f2022133c13ec6b87d7d77655d33ca2');
+assert.equal(sha(probeFile),merge.localProbeSha256);assert.equal(lp.approvedProbeReportSha256,merge.localProbeSha256);assert.equal(qa.probeReportSha256,merge.localProbeSha256);
+const mix=read(c+'/'+id+'.mix.json');assert.equal(mix.voiceSha256,'74b0951c096caea1be50a5442030cac089dc51c41ea076987bd7633fe369d0ab');
+assert.equal(sha(c+'/'+id+'.voice.wav'),mix.voiceSha256);assert.equal(sha('scripts/blender/desk_assets/d1v1/'+id+'.wav'),mix.voiceSha256);assert.equal(sha(c+'/'+id+'.wav'),mix.mixSha256);
+assert.equal(sha('scripts/umech/desk-d1v1-overlay.mjs'),'9e1105b7a0c4a077b9f4a9067a31760882398304460132ecb22b78ab50ad4a2f');
+const sourcePaths=['scripts/umech/desk-axes-render-entry.mjs','scripts/umech/desk-axes-frame.mjs','scripts/umech/frame-vert.mjs','scripts/umech/desk-frame.mjs','scripts/umech/desk-d1v1-overlay.mjs','scripts/umech/desk-faces.mjs','scripts/umech/desk-overlay-lib.mjs','scripts/umech/desk-d1v1-review.mjs','scripts/render-all-films-gptv2.mjs'];
+const inputs={};for(const p of [mergePath,merge.localPreEncodeProbeQa,merge.localHelper,lpFile,probeFile,merge.camera+'/camera-patch-complete.json',c+'/plan.json',c+'/'+id+'.json',c+'/phrase-times.json',c+'/'+id+'.voice.wav',c+'/'+id+'.wav',c+'/'+id+'.mix.json',c+'/blender/data.json',c+'/blender/desk/anchors.json',c+'/blender/desk/meta.json',c+'/blender/delivered-camera-poses.json',c+'/blender/delivered-provenance.json',c+'/blender/camera-motion.json',...sourcePaths])inputs[p]=sha(p);
+for(const[p,h]of Object.entries(lp.frozen))assert.equal(sha(p),h,p);
+for(const row of lp.actualImages)assert.equal(sha(row.path),row.sha256,row.path);
+for(const row of merge.newPartCatalogImages)assert.equal(sha(row.path),row.sha256,row.path);
+const verify=()=>{for(const[p,h]of Object.entries(inputs))assert.equal(sha(p),h,p);for(const[p,h]of Object.entries(lp.frozen))assert.equal(sha(p),h,p);for(const r of merge.sourceFileStats){const st=fs.statSync(r.file);assert.equal(st.size,r.bytes);assert.equal(st.mtimeMs,r.mtimeMs);}};
+verify();const started=Date.now(),exportFile=out+'/d1-encode-to-review-v4-20261025.json',video=out+'/'+id+'.mp4';
+if(mode==='--encode'){
+ assert(!fs.existsSync(out)&&!fs.existsSync(c+'/'+id+'.rendering.mp4'),'Preserve any previous candidate or partial');
+ for(let j=0;j<12163;j++)assert(fs.statSync(c+'/blender/desk/'+String(j).padStart(5,'0')+'.jpg').size>1000);
+ fs.mkdirSync(out);const env={...process.env,EM_FILM_CACHE:c,FILM_OUTPUT:out,FILM_COPY_AUDIO:'0',FFMPEG:ff};delete env.DESK_ALLOW_MISSING;
+ const result=spawnSync(process.execPath,['scripts/umech/desk-axes-render-entry.mjs',id],{env,stdio:'inherit'});if(result.error)throw result.error;assert.equal(result.status,0);
+ verify();assert(fs.statSync(video).size>1e6);
+ const meta=spawnSync(ff,['-hide_banner','-i',video],{encoding:'utf8',maxBuffer:1e7});assert(!meta.error&&meta.status===1,'Metadata-only ffmpeg invocation must report an input, with no output requested');
+ const metadata=meta.stderr??'',duration=metadata.match(/Duration:\s*(\d+):(\d+):([\d.]+)/),videoDescriptor=metadata.split('\n').find(l=>l.includes('Video:')),audioDescriptor=metadata.split('\n').find(l=>l.includes('Audio:'));
+ assert(duration&&videoDescriptor&&audioDescriptor&&videoDescriptor.includes('1080x1920')&&/\b30 fps\b/.test(videoDescriptor),'The original visual-pilot stream must stay1080x1920 at30fps for exact decoded-frame joins');const seconds=Number(duration[1])*3600+Number(duration[2])*60+Number(duration[3]);assert(Math.abs(seconds-timed.duration)<.15);
+ write(out+'/d1-encoded-metadata-v4-20261025.json',{metadata,metadataCommandExit:meta.status,durationSeconds:seconds,videoDescriptor,audioDescriptor,notAFullDecodeOrActualEarCheck:true});
+ write(exportFile,{episode:'D-1',video,videoSha256:sha(video),metadata:out+'/d1-encoded-metadata-v4-20261025.json',metadataSha256:sha(out+'/d1-encoded-metadata-v4-20261025.json'),frames:12163,cues:data.cues.length,durationSeconds:seconds,voiceSha256:mix.voiceSha256,mixSha256:mix.mixSha256,inputSha256Before:inputs,inputSha256After:Object.fromEntries(Object.keys(inputs).map(p=>[p,sha(p)])),mergeSha256:sha(mergePath),pipelineSha256:sha(new URL(import.meta.url)),seconds:(Date.now()-started)/1000,encoder:'unchanged render-all-films-gptv2.mjs CRF18 via unchanged desk-axes-render-entry.mjs',approvalScope:'Encode-to-review only;22 approved actual probes plus2 catalog views and1991 strict numerical actual states. No all1991 human-eye claim.',allFinalIntegerSecondsReviewPending:true,finalCueEndsCritical12AndAllOriginalCandidatesReviewPending:true,originalFinalGatesPending:true,suppliedVoiceWaveformUnchanged:true,earsVerified:false,originalInspectorNGPreserved:true,finalAcceptance:false});
+ console.log(JSON.stringify({video,videoSha256:sha(video),exportReceipt:exportFile,encodeToReviewOnly:true,finalAcceptance:false}));
+}else{
+ const exported=read(exportFile);assert.equal(sha(video),exported.videoSha256);assert.equal(exported.mergeSha256,sha(mergePath));assert.deepEqual(inputs,exported.inputSha256Before);assert.deepEqual(inputs,exported.inputSha256After);assert.equal(sha(exported.metadata),exported.metadataSha256);
+ const requestFile=c+'/d1-supplement-requests.json',request=read(requestFile);assert(request.episode==='D-1'&&request.automaticApproval===false&&Array.isArray(request.requests));
+ assert.equal(sha(request.originalGate),request.originalGateSha256);assert.equal(sha(request.originalFrameSamples),request.originalFrameSamplesSha256);
+ const gateReceipt=read(path.dirname(request.originalGate)+'/d1-original-and-supplement-pending.json');assert.equal(gateReceipt.mp4Sha256,exported.videoSha256);
+ const selected=[];for(let t=0;t<Math.ceil(data.duration);t++)selected.push({time:t,reasons:['required-integer-second']});
+ for(const q of data.cues)selected.push({time:(Math.ceil(q.end*30-1e-7)-1)/30,reasons:['exact-cue-final:'+q.key]});
+ for(const t of data.landmarks)selected.push({time:t,reasons:['required-main12']});
+ const critical=[0,2,20,34.216667,35.24,118.8,120.6,121.5,122.3,124.3,125.975667,126.084,126.17,133.287333,133.570667,133.870667,134.462667,140.5,150.16666666666666,152,153.06666666666666,169.8,172.3,220.26666666666668,221.5,240.5,333.2,334.6666666666667,334.73333333333335,339.5,339.8,341.6,365.2,367.2,379.43333333333334,398.2,403.3,405.4];
+ for(const t of critical)selected.push({time:t,reasons:['required-critical-tongs-straw-valve-coal-pressure-bookend']});
+ const motion=read(c+'/blender/camera-motion.json');for(const[a,b]of motion.moving_spans)selected.push({time:(a+b)/2,reasons:['every-delivered-camera-move-middle']});
+ selected.push(...request.requests);const selection=c+'/d1-final-required-selection-v4-20261025.json';assert(!fs.existsSync(selection));
+ write(selection,{episode:'D-1',automaticApproval:false,originalCandidates:requestFile,originalCandidatesSha256:sha(requestFile),scope:'Required integer/cue-end/major12/critical/move-midpoint and every original7/7b/sparse evidence candidate; not every30fps local raw',requests:selected});
+ const reviewOut=process.env.D1_REVIEW_OUT??c+'/actual-final-required-review-v4-20261025';assert(!fs.existsSync(reviewOut));
+ const env={...process.env,EM_FILM_CACHE:c,FFMPEG:ff,D1_REVIEW_MP4:video,D1_REVIEW_OUT:reviewOut,D1_SUPPLEMENT_REQUEST:selection,D1_FINAL_AUDIT:''};delete env.DESK_ALLOW_MISSING;
+ const r=spawnSync(process.execPath,['scripts/umech/desk-d1v1-review.mjs'],{env,stdio:'inherit'});if(r.error)throw r.error;assert.equal(r.status,0);
+ verify();assert.equal(sha(video),exported.videoSha256);const manifestPath=reviewOut+'/d1v1-review-manifest.json',manifest=read(manifestPath),frames=new Set(manifest.frames.map(r=>r.frameIndex));
+ assert.equal(manifest.mp4Sha256,exported.videoSha256);assert.equal(manifest.integerSeconds,406);assert.equal(manifest.cueEnds,57);assert.equal(data.landmarks.length,12);
+ const required=selected.map(r=>Math.max(0,Math.min(12162,Math.round(r.time*30))));assert(required.every(j=>frames.has(j)),'All exact required frames and original proxy candidates must exist');
+ write(reviewOut+'/required-coverage-v4-20261025.json',{episode:'D-1',actualMp4Sha256:exported.videoSha256,manifest:manifestPath,manifestSha256:sha(manifestPath),selectionSha256:sha(selection),originalCandidatesSha256:sha(requestFile),integerSeconds:406,exactCueFinalFrames:57,major12:12,criticalRequestCount:critical.length,cameraMoveMidpoints:motion.moving_spans.length,originalProxyCandidateRequests:request.requests.length,allSelectedFramesPresent:true,selectedUniqueFrames:frames.size,pages:manifest.pages.length,allActuallyViewed:false,earsVerified:false,originalInspectorNGPreserved:true,finalAcceptance:false});
+ console.log(JSON.stringify({reviewOut,frames:frames.size,pages:manifest.pages.length,requiredCoverage:true,allActuallyViewed:false,finalAcceptance:false}));
+}

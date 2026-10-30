@@ -1,0 +1,15 @@
+import {C,text,line,circle,arrow,path,clamp} from './all-film-visuals.mjs';
+import {authoredMotionFrame} from './motion-foundation-visuals.mjs';
+const P=([x,y,z])=>[580+x+.45*z,275-y+.2*z];
+function plates(gap=220,scale=1,lines=5,strength=1){let out='';const h=125*scale,w=90*scale;for(const sign of [-1,1]){const x=sign*gap/2,col=sign<0?C.gold:C.purple;out+=path([[-h,-w],[-h,w],[h,w],[h,-w],[-h,-w]].map(([y,z])=>P([x,y,z])),col,3,col+'18');for(let i=0;i<5;i++){const [a,b]=P([x,-90+45*i,0]);out+=text(sign<0?'+':'−',a-10,b+10,28,col);}}
+ for(let i=0;i<lines;i++){const y=lines===1?0:scale*(-90+i*180/(lines-1)),a=P([-gap/2+12,y,0]),b=P([gap/2-12,y,0]);out+=arrow(...a,...b,C.cyan);}return out;}
+export const capacitorGeometryKinds=['capgeo-uniform','capgeo-isolated','capgeo-battery','capgeo-charge-density','capgeo-area-density','capgeo-numbers'];
+export function capacitorGeometryDiagram(kind,p){if(!capacitorGeometryKinds.includes(kind))throw Error(kind);const u=clamp(p/.75);
+ if(kind==='capgeo-uniform')return text('広い平行板の中央では、電場を一様とみなす',110,40,32)+`<g opacity="${.4+.6*u}">`+plates(230,1.1,5)+'</g>'+text('正の板',275,230,30,C.gold)+text('負の板',805,230,30,C.purple)+text('端を除く中央を見る。青い矢印は正の板から負の板へ',120,495,28);
+ if(kind==='capgeo-isolated'){const d=280-140*u;return text('電池を切り離す：電荷Q・面積S・物質を固定',90,40,31)+plates(d,1,5)+line(...P([-d/2,-180,0]),...P([d/2,-180,0]),C.dim,3)+text(`間隔 ${(1-.5*u).toFixed(2)} 倍`,100,175,29)+text('電場 1.00 倍',845,175,29,C.cyan)+text(`電圧 ${(1-.5*u).toFixed(2)} 倍`,845,260,29,C.gold)+text(`容量 ${(1/(1-.5*u)).toFixed(2)} 倍`,845,345,29,C.purple)+text('青い矢印の長さは板間の距離。電場の大きさは右の数値で比較',35,505,26);}
+ if(kind==='capgeo-battery'){const ratio=1/(1-.5*u),d=280-140*u;return text('電池につないだまま：電圧Vを固定',220,40,32)+plates(d,1,5,ratio)+path([[580-d/2,275],[280,275],[280,95],[900,95],[900,275],[580+d/2,275]],C.dim,2)+`<rect x="525" y="70" width="130" height="55" fill="#101c2a" stroke="${C.gold}"/>`+text('電池',550,110,29,C.gold)+text('電圧 1.00 倍',930,180,26)+text(`電荷 ${ratio.toFixed(2)} 倍`,930,250,26,C.purple)+text(`容量 ${ratio.toFixed(2)} 倍`,930,320,26,C.cyan)+text('間隔が半分になると、容量と電荷が二倍。電場も二倍になる',65,505,27);}
+ if(kind==='capgeo-charge-density'){const n=5+Math.floor(5*u);return text('面積が同じなら、電荷二倍に対応して線を二倍に描く',25,40,30)+plates(250,1.1,n)+text(`図の線 ${n} 本`,850,235,31,C.cyan)+text('面積は一定',845,310,28)+text('電荷の増加を線の密度で表す。描き方を変えれば本数自体は変わる',20,505,25);}
+ if(kind==='capgeo-area-density'){const a=1+u;return text('電荷が同じなら、面積二倍で密度が半分',165,40,31)+plates(220,Math.sqrt(a),5)+text(`面積 ${a.toFixed(2)} 倍`,890,190,28,C.gold)+text('電荷 1.00 倍',890,270,28)+text(`電場 ${(1/a).toFixed(2)} 倍`,890,350,28,C.cyan)+text('面積は縦×横。一辺を約1.41倍にすると、面積は二倍',135,505,27);}
+ if(kind==='capgeo-numbers')return text('面積0.01 m²、間隔1 mm。板の間は真空',145,40,31)+`<g opacity="${.5+.5*u}">`+plates(230,1.1,4)+'</g>'+text('面積 0.01 m²',85,180,32,C.gold)+text('真空',540,110,31,C.cyan)+line(...P([-115,-190,0]),...P([115,-190,0]),C.dim,3)+text('間隔1 mm = 0.001 m',780,430,27)+text('間隔は見やすく拡大。図の縦横の比は実物の比と異なる',130,505,27);
+}
+export function capacitorGeometryFrame(c,s,t){return c.visualPilot==='capacitor-geometry-v1'?authoredMotionFrame(c,s,t,capacitorGeometryDiagram):null;}

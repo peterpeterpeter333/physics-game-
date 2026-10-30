@@ -1,0 +1,36 @@
+{
+  "subtitle": "くせ？",
+  "reading": "くせ？",
+  "normalizedReading": "くせ？",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "_クセ'？",
+  "kana": "_クセ'？",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ク",
+          "consonant": "k",
+          "consonant_length": 0.07695923000574112,
+          "vowel": "u",
+          "vowel_length": 0.05089924484491348,
+          "pitch": 5.45907735824585
+        },
+        {
+          "text": "セ",
+          "consonant": "s",
+          "consonant_length": 0.12945681810379028,
+          "vowel": "e",
+          "vowel_length": 0.16849076747894287,
+          "pitch": 5.432040691375732
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": true
+    }
+  ]
+}

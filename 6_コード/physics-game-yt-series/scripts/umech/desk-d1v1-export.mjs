@@ -1,0 +1,31 @@
+// D-1 only: validate all 3D frames and export without touching supplied audio.
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const id='ys-chain-d1v1',source=process.env.EM_FILM_CACHE??'/private/tmp/ys/ys-chain-d1v1-render';
+const out=process.env.D1_EXPORT_OUT??source+'/out-final-d1v1',cache=source+'/export-cache-d1v1';
+const hash=f=>createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const supplied=new URL('../blender/desk_assets/d1v1/'+id+'.wav',import.meta.url);
+const voice=source+'/'+id+'.voice.wav',mix=source+'/'+id+'.wav';
+const provenance=JSON.parse(fs.readFileSync(source+'/'+id+'.mix.json'));
+if(hash(voice)!==hash(supplied)||hash(voice)!==provenance.voiceSha256)throw Error('D1 supplied voice changed');
+if(hash(mix)!==provenance.mixSha256)throw Error('D1 mixed audio changed');
+const timed=JSON.parse(fs.readFileSync(source+'/'+id+'.json')),nf=Math.ceil(timed.duration*30),desk=source+'/blender/desk';
+const absent=Array.from({length:nf},(_,j)=>path.join(desk,String(j).padStart(5,'0')+'.jpg')).filter(f=>!fs.existsSync(f));
+if(absent.length)throw Error(`Incomplete D1 3D: ${absent.length}/${nf}, first ${absent[0]}`);
+const anchors=JSON.parse(fs.readFileSync(desk+'/anchors.json'));
+if(anchors.frames!==nf||anchors.fps!==30||!Object.values(anchors.anchors).every(a=>a.length===nf))throw Error('Incomplete D1 anchors');
+const meta=JSON.parse(fs.readFileSync(desk+'/meta.json'));
+if(meta.frames!==nf||meta.fps!==30||meta.key!==anchors.key)throw Error('D1 3D provenance mismatch');
+if(fs.existsSync(out+'/'+id+'.mp4'))throw Error('Existing D1 MP4 is preserved; use a new D1_EXPORT_OUT for another version');
+fs.mkdirSync(cache,{recursive:true});fs.mkdirSync(out,{recursive:true});
+function link(src,dst){if(!fs.existsSync(dst))fs.symlinkSync(src,dst);else if(fs.realpathSync(dst)!==fs.realpathSync(src))throw Error('Unexpected export input '+dst);}
+for(const f of ['plan.json',id+'.json','phrase-times.json',id+'.voice.wav',id+'.wav'])link(source+'/'+f,cache+'/'+f);
+link(source+'/blender',cache+'/blender');
+const env={...process.env,EM_FILM_CACHE:cache,FILM_OUTPUT:out,FFMPEG:process.env.FFMPEG??'/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1'};
+delete env.DESK_ALLOW_MISSING;
+const start=Date.now(),result=spawnSync(process.execPath,['scripts/umech/desk-axes-render-entry.mjs',id],{env,stdio:'inherit'});
+if(result.status!==0)process.exit(result.status??1);
+const record={episode:'D-1',video:out+'/'+id+'.mp4',frames:nf,fps:30,duration:timed.duration,seconds:(Date.now()-start)/1000,renderKey:meta.key,voiceSha256:hash(voice),mixSha256:hash(mix),videoSha256:hash(out+'/'+id+'.mp4'),suppliedVoiceUnchanged:hash(voice)===hash(supplied),privateFrameWrapper:'scripts/umech/desk-axes-frame.mjs',privateFrameWrapperSha256:hash('scripts/umech/desk-axes-frame.mjs'),privateRenderEntrySha256:hash('scripts/umech/desk-axes-render-entry.mjs'),originalEncoderSourceSha256:hash('scripts/render-all-films.mjs')};
+fs.writeFileSync(out+'/d1-export.json',JSON.stringify(record,null,1));console.log(JSON.stringify(record,null,1));

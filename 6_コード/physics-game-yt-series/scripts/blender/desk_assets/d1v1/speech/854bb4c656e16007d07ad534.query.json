@@ -1,0 +1,137 @@
+{
+  "subtitle": "じゃあ、なんで冷やすんですか？",
+  "reading": "じゃあ、なんで ひやすんですか？",
+  "normalizedReading": "じゃあ、なんでひやすんですか？",
+  "spacingVersion": "20260924-furigana-spacing-v2",
+  "pronunciationMatched": true,
+  "readingMode": "furigana",
+  "selection": "accent-kana",
+  "referenceKana": "ジャ'ア、ナ'ンデ、ヒヤ'ス/ン'デ_スカ？",
+  "kana": "ジャ'ア、ナ'ンデ、ヒヤ'ス/ン'デ_スカ？",
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ジャ",
+          "consonant": "j",
+          "consonant_length": 0.09460069984197617,
+          "vowel": "a",
+          "vowel_length": 0.10111705213785172,
+          "pitch": 5.473758697509766
+        },
+        {
+          "text": "ア",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "a",
+          "vowel_length": 0.10188261419534683,
+          "pitch": 5.374891757965088
+        }
+      ],
+      "accent": 1,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.3278166949748993,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ナ",
+          "consonant": "n",
+          "consonant_length": 0.05653747171163559,
+          "vowel": "a",
+          "vowel_length": 0.0892328992486,
+          "pitch": 5.445591926574707
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.07150403410196304,
+          "pitch": 5.527430534362793
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.03590414673089981,
+          "vowel": "e",
+          "vowel_length": 0.057677872478961945,
+          "pitch": 5.322198390960693
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ヒ",
+          "consonant": "h",
+          "consonant_length": 0.09690972417593002,
+          "vowel": "i",
+          "vowel_length": 0.0365261435508728,
+          "pitch": 5.314579963684082
+        },
+        {
+          "text": "ヤ",
+          "consonant": "y",
+          "consonant_length": 0.05722685903310776,
+          "vowel": "a",
+          "vowel_length": 0.04516606777906418,
+          "pitch": 5.4726881980896
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.12430369108915329,
+          "vowel": "u",
+          "vowel_length": 0.03757686913013458,
+          "pitch": 5.51542329788208
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.06703933328390121,
+          "pitch": 5.398425579071045
+        },
+        {
+          "text": "デ",
+          "consonant": "d",
+          "consonant_length": 0.03672394901514053,
+          "vowel": "e",
+          "vowel_length": 0.04853213578462601,
+          "pitch": 5.260712146759033
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.09665504842996597,
+          "vowel": "U",
+          "vowel_length": 0.03187606483697891,
+          "pitch": 0.0
+        },
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.06631741672754288,
+          "vowel": "a",
+          "vowel_length": 0.12625828385353088,
+          "pitch": 5.102720260620117
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ]
+}

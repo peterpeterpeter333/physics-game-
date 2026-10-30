@@ -1,0 +1,616 @@
+{
+ "caesar": {
+  "plain": "CAT",
+  "key": 3,
+  "cipher": "FDW",
+  "back": [
+   "ECV",
+   "DBU",
+   "CAT"
+  ]
+ },
+ "sub": "QWEMXAZVPBTGNOCLRSUJHYDFIK",
+ "abc": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+ "fact": [
+  "26",
+  "25",
+  "24",
+  "23",
+  "22",
+  "21",
+  "20",
+  "19",
+  "18",
+  "17",
+  "16",
+  "15",
+  "14",
+  "13",
+  "12",
+  "11",
+  "10",
+  "9",
+  "8",
+  "7",
+  "6",
+  "5",
+  "4",
+  "3",
+  "2",
+  "1"
+ ],
+ "tower": [
+  12,
+  0,
+  37,
+  20,
+  10,
+  1,
+  23,
+  12,
+  11,
+  60,
+  0,
+  6,
+  23,
+  11,
+  37,
+  31,
+  44,
+  2,
+  36,
+  6,
+  32,
+  33,
+  7,
+  70,
+  4,
+  13
+ ],
+ "cipherLetters": "JVXQSNIDPGGNXXJQJJVXCGMWSPMZXWXACSXJVXUHOSPUXUXYXSIUCGMPXSNHUJWSPOZQNQLDQJXSQOMXOCHZVACCMACSJVSXXMQIUOCWCMIUVCHGMJXGGJVXXOXNIDVXSXDXQSXZCPOZPAJVXDXQJVXSJHSOUWQMDQPJOXQSJVXSPYXSQOMUXOMQSPMXSJCJVXJCDOJVXLQUUDCSMACSJVXZQJXPUDSPJJXOCOJVXWQETCAJVPUGXJJXSTXXLPJUXESXJQOMWHSOJVPUGXJJXSQAJXSICHSXQMPJCHSZXOXSQGJVPOTUJVQJJVXQJJQETEQODCSTCOGIPAXQEVNQOUJQIURHPXJQOMNCYXURHPETGIQJOPZVJJDCUECHJUDPGGDQJEVJVXSCQMASCNJVXVPGGQOMECHOJJVXDQZCOUJVXIDPGGUPZOQGDPJVQGQNLCOXAGQUVNXQOUUJCLJDCAGQUVXUNXQOZCMCOCJGPZVJQAPSXQOMMCOCJUPOZDXXFLXEJOXDCSMXSUDPJVPOUXYXOMQIU",
+ "rows": {
+  "plain": [
+   "THE ARMY WILL",
+   "MEET AT THE",
+   "OLD BRIDGE",
+   "BEFORE THE SUN",
+   "RISES"
+  ],
+  "cipher": [
+   "JVX QSNI DPGG",
+   "NXXJ QJ JVX",
+   "CGM WSPMZX",
+   "WXACSX JVX UHO",
+   "SPUXU"
+  ]
+ },
+ "fill": [
+  "X",
+  "J",
+  "V",
+  "Q",
+  "C",
+  "O",
+  "S",
+  "U",
+  "P",
+  "G",
+  "M",
+  "D",
+  "Z",
+  "A",
+  "H",
+  "I",
+  "N",
+  "E",
+  "W",
+  "L",
+  "T",
+  "Y",
+  "R",
+  "F"
+ ],
+ "glyphs": [
+  "○",
+  "‡",
+  "∧",
+  "∂",
+  "θ",
+  "∞",
+  "∆",
+  "ε",
+  "ψ",
+  "Ω",
+  "≠",
+  "§",
+  "¶",
+  "♯",
+  "∴",
+  "λ",
+  "π",
+  "Σ",
+  "φ",
+  "∇",
+  "⊕",
+  "∩",
+  "∪",
+  "≈",
+  "†",
+  "◇"
+ ],
+ "gtower": [
+  33,
+  37,
+  31,
+  32,
+  7,
+  11,
+  20,
+  23,
+  2,
+  70,
+  12,
+  44,
+  11,
+  23,
+  36,
+  12,
+  0,
+  0,
+  4,
+  37,
+  10,
+  60,
+  13,
+  6,
+  6,
+  1
+ ],
+ "symPlain": "§θ⊕εΩλ∪○∧Σ†♯∞∇‡≈ψ∴∂∩≠φ∆◇¶π",
+ "challenge": "MYEXD DRO VODDOBC",
+ "scroll": {
+  "w": 0.15,
+  "len": 2.25,
+  "rows": [
+   {
+    "s": 0.05,
+    "text": "26"
+   },
+   {
+    "s": 0.135,
+    "text": "× 25"
+   },
+   {
+    "s": 0.22000000000000003,
+    "text": "× 24"
+   },
+   {
+    "s": 0.33,
+    "text": "× 23"
+   },
+   {
+    "s": 0.375,
+    "text": "× 22"
+   },
+   {
+    "s": 0.42000000000000004,
+    "text": "× 21"
+   },
+   {
+    "s": 0.465,
+    "text": "× 20"
+   },
+   {
+    "s": 0.51,
+    "text": "× 19"
+   },
+   {
+    "s": 0.5549999999999999,
+    "text": "× 18"
+   },
+   {
+    "s": 0.6000000000000001,
+    "text": "× 17"
+   },
+   {
+    "s": 0.645,
+    "text": "× 16"
+   },
+   {
+    "s": 0.69,
+    "text": "× 15"
+   },
+   {
+    "s": 0.735,
+    "text": "× 14"
+   },
+   {
+    "s": 0.78,
+    "text": "× 13"
+   },
+   {
+    "s": 0.825,
+    "text": "× 12"
+   },
+   {
+    "s": 0.8700000000000001,
+    "text": "× 11"
+   },
+   {
+    "s": 0.915,
+    "text": "× 10"
+   },
+   {
+    "s": 0.96,
+    "text": "× 9"
+   },
+   {
+    "s": 1.005,
+    "text": "× 8"
+   },
+   {
+    "s": 1.05,
+    "text": "× 7"
+   },
+   {
+    "s": 1.095,
+    "text": "× 6"
+   },
+   {
+    "s": 1.14,
+    "text": "× 5"
+   },
+   {
+    "s": 1.185,
+    "text": "× 4"
+   },
+   {
+    "s": 1.23,
+    "text": "× 3"
+   },
+   {
+    "s": 1.275,
+    "text": "× 2"
+   },
+   {
+    "s": 1.32,
+    "text": "× 1"
+   },
+   {
+    "s": 1.4,
+    "text": "＝約4×10²⁶"
+   },
+   {
+    "s": 1.5,
+    "text": "通り"
+   },
+   {
+    "s": 1.74,
+    "text": "1秒に1兆通り"
+   },
+   {
+    "s": 1.82,
+    "text": "試すと"
+   },
+   {
+    "s": 2.02,
+    "text": "1300万年"
+   }
+  ]
+ },
+ "letterLines": [
+  "∩○Ω §∴∞¶ ∆∧♯♯",
+  "∞ΩΩ∩ §∩ ∩○Ω ‡♯ε",
+  "θ∴∧ε∪Ω θΩλ‡∴Ω",
+  "∩○Ω ∂≠∇ ∴∧∂Ω∂.",
+  "ΩφΩ∴¶ ∂‡♯ε∧Ω∴",
+  "∞≠∂∩ θ∴∧∇∪ §",
+  "∞§≈, ∆§∩Ω∴, §∇ε",
+  "Ω∇‡≠∪○ λ‡‡ε λ‡∴",
+  "∩○∴ΩΩ ε§¶∂.",
+  "∇‡θ‡ε¶ ∂○‡≠♯ε",
+  "∩Ω♯♯ ∩○Ω Ω∇Ω∞¶"
+ ],
+ "ps": "∩Ω♯♯ ∞Ω ∩○Ω ∇§∞Ω∂",
+ "steps": {
+  "ad": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "be": [
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "zc": [
+   "Z",
+   "A",
+   "B",
+   "C"
+  ]
+ },
+ "choices": [
+  26,
+  25,
+  24,
+  23,
+  22,
+  21,
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ],
+ "dolls": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "dollNick": [
+  "Q",
+  "W",
+  "E",
+  "M",
+  "X",
+  "A"
+ ],
+ "dollTalk": [
+  2,
+  1,
+  1,
+  1,
+  7,
+  1
+ ],
+ "plainCnt": [
+  44,
+  7,
+  10,
+  23,
+  70,
+  12,
+  13,
+  33,
+  31,
+  0,
+  6,
+  23,
+  11,
+  37,
+  37,
+  6,
+  2,
+  36,
+  32,
+  60,
+  12,
+  4,
+  20,
+  1,
+  11,
+  0
+ ],
+ "enPct": [
+  8.2,
+  1.5,
+  2.8,
+  4.3,
+  12.7,
+  2.2,
+  2,
+  6.1,
+  7,
+  0.15,
+  0.77,
+  4,
+  2.4,
+  6.7,
+  7.5,
+  1.9,
+  0.095,
+  6,
+  6.3,
+  9.1,
+  2.8,
+  0.98,
+  2.4,
+  0.15,
+  2,
+  0.074
+ ],
+ "dice": [
+  3,
+  3,
+  5,
+  3,
+  1
+ ],
+ "jvxN": 14,
+ "sheet": {
+  "w": 0.5,
+  "h": 0.6267,
+  "cw": 30,
+  "lh": 48,
+  "px": 36,
+  "py": 52,
+  "H": 1256,
+  "W": 1002
+ },
+ "sheetLines": [
+  "JVX QSNI DPGG NXXJ QJ JVX CGM",
+  "WSPMZX WXACSX JVX UHO SPUXU.",
+  "XYXSI UCGMPXS NHUJ WSPOZ Q NQL,",
+  "DQJXS, QOM XOCHZV ACCM ACS",
+  "JVSXX MQIU. OCWCMI UVCHGM JXGG",
+  "JVX XOXNI DVXSX DX QSX ZCPOZ.",
+  "PA JVX DXQJVXS JHSOU WQM, DQPJ",
+  "OXQS JVX SPYXS QOM UXOM Q SPMXS",
+  "JC JVX JCDO. JVX LQUUDCSM ACS",
+  "JVX ZQJX PU DSPJJXO CO JVX WQET",
+  "CA JVPU GXJJXS. TXXL PJ UXESXJ,",
+  "QOM WHSO JVPU GXJJXS QAJXS ICH",
+  "SXQM PJ. CHS ZXOXSQG JVPOTU",
+  "JVQJ JVX QJJQET EQO DCST COGI",
+  "PA XQEV NQO UJQIU RHPXJ QOM",
+  "NCYXU RHPETGI. QJ OPZVJ, JDC",
+  "UECHJU DPGG DQJEV JVX SCQM ASCN",
+  "JVX VPGG QOM ECHOJ JVX DQZCOU.",
+  "JVXI DPGG UPZOQG DPJV Q GQNL:",
+  "COX AGQUV NXQOU UJCL, JDC",
+  "AGQUVXU NXQO ZC. MC OCJ GPZVJ Q",
+  "APSX, QOM MC OCJ UPOZ. DX",
+  "XFLXEJ OXD CSMXSU DPJVPO UXYXO",
+  "MQIU."
+ ],
+ "jvxPos": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   22
+  ],
+  [
+   1,
+   14
+  ],
+  [
+   5,
+   0
+  ],
+  [
+   6,
+   3
+  ],
+  [
+   7,
+   5
+  ],
+  [
+   8,
+   3
+  ],
+  [
+   8,
+   13
+  ],
+  [
+   9,
+   0
+  ],
+  [
+   9,
+   23
+  ],
+  [
+   13,
+   5
+  ],
+  [
+   16,
+   18
+  ],
+  [
+   17,
+   0
+  ],
+  [
+   17,
+   19
+  ]
+ ],
+ "catSub": "EQJ",
+ "fill6": {
+  "sheetLines": [
+   "JVX QSNI DPGG NXXJ QJ JVX CGM",
+   "WSPMZX WXACSX JVX UHO SPUXU.",
+   "XYXSI UCGMPXS NHUJ WSPOZ Q NQL,",
+   "DQJXS, QOM XOCHZV ACCM ACS",
+   "JVSXX MQIU. OCWCMI UVCHGM JXGG",
+   "JVX XOXNI DVXSX DX QSX ZCPOZ.",
+   "PA JVX DXQJVXS JHSOU WQM, DQPJ",
+   "OXQS JVX SPYXS QOM UXOM Q SPMXS",
+   "JC JVX JCDO. JVX LQUUDCSM ACS",
+   "JVX ZQJX PU DSPJJXO CO JVX WQET",
+   "CA JVPU GXJJXS. TXXL PJ UXESXJ,",
+   "QOM WHSO JVPU GXJJXS QAJXS ICH",
+   "SXQM PJ. CHS ZXOXSQG JVPOTU",
+   "JVQJ JVX QJJQET EQO DCST COGI",
+   "PA XQEV NQO UJQIU RHPXJ QOM",
+   "NCYXU RHPETGI. QJ OPZVJ, JDC",
+   "UECHJU DPGG DQJEV JVX SCQM ASCN",
+   "JVX VPGG QOM ECHOJ JVX DQZCOU.",
+   "JVXI DPGG UPZOQG DPJV Q GQNL:",
+   "COX AGQUV NXQOU UJCL, JDC",
+   "AGQUVXU NXQO ZC. MC OCJ GPZVJ Q",
+   "APSX, QOM MC OCJ UPOZ. DX",
+   "XFLXEJ OXD CSMXSU DPJVPO UXYXO",
+   "MQIU."
+  ],
+  "sheet": {
+   "w": 0.5,
+   "h": 0.6267,
+   "cw": 30,
+   "lh": 48,
+   "px": 36,
+   "py": 52,
+   "H": 1256,
+   "W": 1002
+  },
+  "qPos": [
+   [
+    2,
+    25
+   ],
+   [
+    7,
+    24
+   ],
+   [
+    18,
+    22
+   ],
+   [
+    20,
+    30
+   ]
+  ],
+  "jxggPos": [
+   [
+    4,
+    26
+   ]
+  ],
+  "meetPos": [
+   [
+    0,
+    14
+   ]
+  ],
+  "headCiph": "JVX QSNI DPGG NXXJ QJ JVX",
+  "headPlain": "THE ARMY WILL MEET AT THE"
+ }
+}

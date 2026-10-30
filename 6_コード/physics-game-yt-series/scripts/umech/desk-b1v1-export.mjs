@@ -1,0 +1,22 @@
+// B-1 only: all 30 fps images are required; supplied voice never overwritten.
+import fs from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const source='/private/tmp/ys/ys-chain-b1v1',id='ys-chain-b1v1',cache=source+'/render-cache-b1v1',out=process.env.B1_EXPORT_OUT??source+'/out-final-b1v1';
+const sha=f=>createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const supplied=new URL('../blender/desk_assets/b1v1/'+id+'.wav',import.meta.url),voice=source+'/'+id+'.wav',mix=source+'/'+id+'.mixed.wav';
+assert.equal(sha(voice),sha(supplied),'B1 source voice changed');
+const nf=Math.ceil(JSON.parse(fs.readFileSync(source+'/'+id+'.json')).duration*30),desk=source+'/blender/desk';
+for(let j=0;j<nf;j++)assert(fs.existsSync(desk+'/'+String(j).padStart(5,'0')+'.jpg'),'Missing B1 3D frame '+j);
+const anchors=JSON.parse(fs.readFileSync(desk+'/anchors.json'));assert(Object.values(anchors.anchors).every(a=>a.length===nf));
+assert(!fs.existsSync(out+'/'+id+'.mp4'),'Existing movie is preserved; choose a new B1_EXPORT_OUT');
+fs.mkdirSync(cache,{recursive:true});fs.mkdirSync(out,{recursive:true});
+const link=(a,b)=>{if(fs.existsSync(b)){assert.equal(fs.realpathSync(a),fs.realpathSync(b));return;}fs.symlinkSync(a,b);};
+for(const name of ['plan.json',id+'.json','phrase-times.json'])link(source+'/'+name,cache+'/'+name);
+link(mix,cache+'/'+id+'.wav');link(source+'/blender',cache+'/blender');
+const started=Date.now(),result=spawnSync(process.execPath,['scripts/umech/desk-axes-render-entry.mjs',id],{stdio:'inherit',env:{...process.env,EM_FILM_CACHE:cache,FILM_OUTPUT:out,FFMPEG:process.env.FFMPEG??'/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1'}});
+if(result.status)process.exit(result.status);
+assert.equal(sha(voice),sha(supplied));
+const report={id,video:out+'/'+id+'.mp4',frames:nf,seconds:(Date.now()-started)/1000,voiceSha256:sha(voice),mixSha256:sha(mix),originalUnchanged:true};
+fs.writeFileSync(out+'/b1-export.json',JSON.stringify(report,null,1));console.log(JSON.stringify(report));

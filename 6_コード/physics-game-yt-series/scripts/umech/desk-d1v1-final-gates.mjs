@@ -1,0 +1,26 @@
+// Run the unchanged final validators in a fresh D1-only evidence directory.
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const id='ys-chain-d1v1',source=process.env.EM_FILM_CACHE??'/private/tmp/ys/ys-chain-d1v1-render';
+const mp4=process.argv[2],out=process.env.D1_FINAL_GATE_CACHE??source+'/final-gate-d1v1-r8';
+if(!mp4||!fs.existsSync(mp4))throw Error('A real final D1 MP4 path is required');
+if(fs.existsSync(out))throw Error('Existing D1 final-gate evidence preserved; choose a fresh D1_FINAL_GATE_CACHE');
+const hash=f=>createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const timed=JSON.parse(fs.readFileSync(source+'/'+id+'.json')),nf=Math.ceil(timed.duration*30);
+const anchors=JSON.parse(fs.readFileSync(source+'/blender/desk/anchors.json')),meta=JSON.parse(fs.readFileSync(source+'/blender/desk/meta.json'));
+if(meta.frames!==nf||anchors.frames!==nf||meta.key!==anchors.key)throw Error('Final D1 3D provenance incomplete');
+for(let j=0;j<nf;j++)if(!fs.existsSync(source+'/blender/desk/'+String(j).padStart(5,'0')+'.jpg'))throw Error('Final D1 frame missing '+j);
+const provenance=JSON.parse(fs.readFileSync(source+'/'+id+'.mix.json'));
+if(hash(source+'/'+id+'.voice.wav')!==provenance.voiceSha256||hash(source+'/'+id+'.wav')!==provenance.mixSha256)throw Error('D1 protected audio changed');
+fs.mkdirSync(out,{recursive:true});
+for(const f of ['plan.json',id+'.json','phrase-times.json',id+'.voice.wav',id+'.wav'])fs.symlinkSync(source+'/'+f,out+'/'+f);
+fs.symlinkSync(source+'/blender',out+'/blender');
+const env={...process.env,EM_FILM_CACHE:out,FFMPEG:process.env.FFMPEG??'/Users/ken/Library/Application Support/physics-quest-tools/pyenv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1'};delete env.DESK_ALLOW_MISSING;
+const run=(name,args)=>{const start=Date.now(),r=spawnSync(process.execPath,args,{env,encoding:'utf8',maxBuffer:1<<28});fs.writeFileSync(out+'/'+name+'.log',(r.stdout??'')+(r.stderr??''));console.log(name+' exit '+r.status+' ('+((Date.now()-start)/1000).toFixed(1)+'s)');return{exitCode:r.status,seconds:(Date.now()-start)/1000,error:r.error?.message??null};};
+const qx=run('d1-qx-verify',['scripts/umech/qx-verify.mjs',id,mp4]);
+const gate=run('d1-quality-gate',['--import','./scripts/umech/desk-axes-caption165-loader.mjs','scripts/umech/desk-quality-gate.mjs',id,'--script','docs/video-revision-20260924/ytseries/chain-d-1.mjs','--md','docs/video-revision-20260924/deep/技術の疑問の鎖_D-1_第1版_ナレーション.md','--cache',out,'--mp4',mp4,'--ref','ys-chain-1-1v6']);
+const record={episode:'D-1',mp4,mp4Sha256:hash(mp4),frames:nf,renderKey:meta.key,voiceSha256:provenance.voiceSha256,mixSha256:provenance.mixSha256,qxVerify:qx,qualityGate:gate,captionException:'Only the human-approved 1.65 s median limit for the four allowed episode IDs; original checker unchanged',originalGateSha256:hash('scripts/umech/desk-quality-gate.mjs'),originalFrameGateSha256:hash('scripts/umech/desk-quality-gate-frames.py'),visualReview:'Separate final MP4 every-second/cue-end visual inspection is still required',evidenceDirectory:out};
+fs.writeFileSync(out+'/d1-final-validator-results.json',JSON.stringify(record,null,1));console.log(JSON.stringify(record,null,1));
+if(qx.exitCode!==0||gate.exitCode!==0)process.exit(1);
